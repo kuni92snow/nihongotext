@@ -1,0 +1,75 @@
+<!doctype html><meta charset="utf-8">
+<title>ブログ | nihongotext.com</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:#fafafa;color:#222}
+.wrap{max-width:900px;margin:24px auto;padding:0 14px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px}
+a{color:#333;text-decoration:none}
+.card{background:#fff;border:1px solid #eee;border-radius:12px;padding:14px;margin:10px 0}
+h1{margin:8px 0 0;font-size:20px}
+.meta{color:#777;font-size:12px;margin:6px 0 10px}
+.tag{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
+footer{margin:18px 0;color:#666;font-size:13px}
+
+/* ヘッダー右：言語ボタン */
+.lang{display:flex;gap:8px}
+.lang button{min-width:116px;font-size:14px;padding:8px 14px;border-radius:12px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.lang button.on{background:#fdecec;border-color:#e6452e;font-weight:600}
+</style>
+
+<div class="wrap">
+  <header>
+    <a id="backLink" href="../NTindex.html">← トップへ戻る</a>
+    <strong id="title">ブログ</strong>
+    <div class="lang">
+      <button id="btnJa" class="on">日本語</button>
+      <button id="btnEn">English</button>
+    </div>
+  </header>
+
+  <div id="list"></div>
+  <footer>© 2025 nihongotext.com</footer>
+</div>
+
+<script>
+/* -------- 設定 -------- */
+const LS_KEY = 'blogLang'; // 'ja' or 'en'
+const url = new URL(location.href);
+const urlLang = url.searchParams.get('lang'); // ?lang=en でも切替可
+
+/* -------- 言語状態の決定 -------- */
+let lang = (urlLang || localStorage.getItem(LS_KEY) || 'ja').toLowerCase();
+if(!['ja','en'].includes(lang)) lang='ja';
+
+/* -------- UIラベル -------- */
+const T = {
+  ja:{ back:'← トップへ戻る', title:'ブログ' },
+  en:{ back:'← Back to Home', title:'Blog' }
+};
+function applyLabels(){
+  document.getElementById('backLink').textContent = T[lang].back;
+  document.getElementById('title').textContent    = T[lang].title;
+  document.getElementById('btnJa').classList.toggle('on', lang==='ja');
+  document.getElementById('btnEn').classList.toggle('on', lang==='en');
+}
+
+/* -------- データロード -------- */
+async function loadPosts(){
+  const file = lang==='ja' ? 'posts_ja.json' : 'posts_en.json';
+  const res  = await fetch(file, {cache:'no-store'});
+  const posts = await res.json();
+  // 日付降順
+  posts.sort((a,b)=> a.date<b.date?1:-1);
+  render(posts);
+}
+
+/* -------- レンダリング -------- */
+function render(posts){
+  const el = document.getElementById('list');
+  el.innerHTML = '';
+  posts.forEach(p=>{
+    const d=document.createElement('div'); d.className='card';
+    d.innerHTML = `
+      <h1>${p.title}</h1>
+      <div class="meta">${p.date}　${(p.tags||[]).map(t=>`<span class="tag">${t

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "2025-03-01-hello",
+    "title": "Site Launched",
+    "date": "2025-03-01",
+    "tags": ["Announcement","Release"],
+    "body": "<p>We started publishing N5 <em>i-adjectives</em>. More content will be added continuously.</p>"
+  },
+  {
+    "id": "2025-03-10-update",
+    "title": "Added N5 Nouns",
+    "date": "2025-03-10",
+    "tags": ["Update","N5"],
+    "body": "<p>N5 nouns have been added with five example sentences for each entry.</p>"
+  }
+]
