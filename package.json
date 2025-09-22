@@ -1,0 +1,9 @@
+{
+  "name": "nihongotext-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:blog": "node build/generate.mjs"
+  },
+  "dependencies": {}
+}
