@@ -1,0 +1,279 @@
+{
+  "levels": [
+    {
+      "level": "N5",
+      "parts": [
+        {
+          "pos": "nouns",
+          "path": "data/N5/nouns.json",
+          "count": 10
+        },
+        {
+          "pos": "i_adjectives",
+          "path": "data/N5/i_adjectives.json",
+          "count": 10
+        },
+        {
+          "pos": "na_adjectives",
+          "path": "data/N5/na_adjectives.json",
+          "count": 10
+        },
+        {
+          "pos": "verbs",
+          "path": "data/N5/verbs.json",
+          "count": 10
+        },
+        {
+          "pos": "adverbs",
+          "path": "data/N5/adverbs.json",
+          "count": 10
+        },
+        {
+          "pos": "particles",
+          "path": "data/N5/particles.json",
+          "count": 10
+        },
+        {
+          "pos": "conjunctions",
+          "path": "data/N5/conjunctions.json",
+          "count": 10
+        },
+        {
+          "pos": "bunkei",
+          "path": "data/N5/bunkei.json",
+          "count": 10
+        },
+        {
+          "pos": "numerals",
+          "path": "data/N5/numerals.json",
+          "count": 10
+        },
+        {
+          "pos": "interjections",
+          "path": "data/N5/interjections.json",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "level": "N4",
+      "parts": [
+        {
+          "pos": "nouns",
+          "path": "data/N4/nouns.json",
+          "count": 0
+        },
+        {
+          "pos": "i_adjectives",
+          "path": "data/N4/i_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "na_adjectives",
+          "path": "data/N4/na_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "verbs",
+          "path": "data/N4/verbs.json",
+          "count": 0
+        },
+        {
+          "pos": "adverbs",
+          "path": "data/N4/adverbs.json",
+          "count": 0
+        },
+        {
+          "pos": "particles",
+          "path": "data/N4/particles.json",
+          "count": 0
+        },
+        {
+          "pos": "conjunctions",
+          "path": "data/N4/conjunctions.json",
+          "count": 0
+        },
+        {
+          "pos": "bunkei",
+          "path": "data/N4/bunkei.json",
+          "count": 0
+        },
+        {
+          "pos": "numerals",
+          "path": "data/N4/numerals.json",
+          "count": 0
+        },
+        {
+          "pos": "interjections",
+          "path": "data/N4/interjections.json",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "level": "N3",
+      "parts": [
+        {
+          "pos": "nouns",
+          "path": "data/N3/nouns.json",
+          "count": 0
+        },
+        {
+          "pos": "i_adjectives",
+          "path": "data/N3/i_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "na_adjectives",
+          "path": "data/N3/na_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "verbs",
+          "path": "data/N3/verbs.json",
+          "count": 0
+        },
+        {
+          "pos": "adverbs",
+          "path": "data/N3/adverbs.json",
+          "count": 0
+        },
+        {
+          "pos": "particles",
+          "path": "data/N3/particles.json",
+          "count": 0
+        },
+        {
+          "pos": "conjunctions",
+          "path": "data/N3/conjunctions.json",
+          "count": 0
+        },
+        {
+          "pos": "bunkei",
+          "path": "data/N3/bunkei.json",
+          "count": 0
+        },
+        {
+          "pos": "numerals",
+          "path": "data/N3/numerals.json",
+          "count": 0
+        },
+        {
+          "pos": "interjections",
+          "path": "data/N3/interjections.json",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "level": "N2",
+      "parts": [
+        {
+          "pos": "nouns",
+          "path": "data/N2/nouns.json",
+          "count": 0
+        },
+        {
+          "pos": "i_adjectives",
+          "path": "data/N2/i_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "na_adjectives",
+          "path": "data/N2/na_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "verbs",
+          "path": "data/N2/verbs.json",
+          "count": 0
+        },
+        {
+          "pos": "adverbs",
+          "path": "data/N2/adverbs.json",
+          "count": 0
+        },
+        {
+          "pos": "particles",
+          "path": "data/N2/particles.json",
+          "count": 0
+        },
+        {
+          "pos": "conjunctions",
+          "path": "data/N2/conjunctions.json",
+          "count": 0
+        },
+        {
+          "pos": "bunkei",
+          "path": "data/N2/bunkei.json",
+          "count": 0
+        },
+        {
+          "pos": "numerals",
+          "path": "data/N2/numerals.json",
+          "count": 0
+        },
+        {
+          "pos": "interjections",
+          "path": "data/N2/interjections.json",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "level": "N1",
+      "parts": [
+        {
+          "pos": "nouns",
+          "path": "data/N1/nouns.json",
+          "count": 0
+        },
+        {
+          "pos": "i_adjectives",
+          "path": "data/N1/i_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "na_adjectives",
+          "path": "data/N1/na_adjectives.json",
+          "count": 0
+        },
+        {
+          "pos": "verbs",
+          "path": "data/N1/verbs.json",
+          "count": 0
+        },
+        {
+          "pos": "adverbs",
+          "path": "data/N1/adverbs.json",
+          "count": 0
+        },
+        {
+          "pos": "particles",
+          "path": "data/N1/particles.json",
+          "count": 0
+        },
+        {
+          "pos": "conjunctions",
+          "path": "data/N1/conjunctions.json",
+          "count": 0
+        },
+        {
+          "pos": "bunkei",
+          "path": "data/N1/bunkei.json",
+          "count": 0
+        },
+        {
+          "pos": "numerals",
+          "path": "data/N1/numerals.json",
+          "count": 0
+        },
+        {
+          "pos": "interjections",
+          "path": "data/N1/interjections.json",
+          "count": 0
+        }
+      ]
+    }
+  ]
+}
