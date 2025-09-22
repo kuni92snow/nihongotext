@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "level": "N5",
+    "pos": "adverbs",
+    "version": "7.3.1"
+  },
+  "items": [
+    {
+      "kanji": "とても",
+      "kana": "とても",
+      "romaji": "totemo",
+      "en": "very",
+      "tags": [
+        "N5",
+        "副詞",
+        "とても",
+        "とても",
+        "totemo",
+        "very"
+      ],
+      "examples": [
+        {
+          "jp": "とてもを使って勉強します。",
+          "jpH": "とてもをつかってべんきょうします。",
+          "ro": "totemo o tsukatte benkyou shimasu.",
+          "en": "I study using the very."
+        },
+        {
+          "jp": "そのとてもはとても大切です。",
+          "jpH": "そのとてもはとてもたいせつです。",
+          "ro": "Sono totemo wa totemo taisetsu desu.",
+          "en": "That very is very important."
+        },
+        {
+          "jp": "とてもについて先生に聞きました。",
+          "jpH": "とてもについてせんせいにききました。",
+          "ro": "totemo ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the very."
+        },
+        {
+          "jp": "毎日とてもを見ます。",
+          "jpH": "まいにちとてもをみます。",
+          "ro": "Mainichi totemo o mimasu.",
+          "en": "I look at the very every day."
+        },
+        {
+          "jp": "とてもはここにあります。",
+          "jpH": "とてもはここにあります。",
+          "ro": "totemo wa koko ni arimasu.",
+          "en": "The very is here."
+        }
+      ]
+    },
+    {
+      "kanji": "少し",
+      "kana": "すこし",
+      "romaji": "sukoshi",
+      "en": "a little",
+      "tags": [
+        "N5",
+        "副詞",
+        "少し",
+        "すこし",
+        "sukoshi",
+        "a little"
+      ],
+      "examples": [
+        {
+          "jp": "少しを使って勉強します。",
+          "jpH": "すこしをつかってべんきょうします。",
+          "ro": "sukoshi o tsukatte benkyou shimasu.",
+          "en": "I study using the a little."
+        },
+        {
+          "jp": "その少しはとても大切です。",
+          "jpH": "そのすこしはとてもたいせつです。",
+          "ro": "Sono sukoshi wa totemo taisetsu desu.",
+          "en": "That a little is very important."
+        },
+        {
+          "jp": "少しについて先生に聞きました。",
+          "jpH": "すこしについてせんせいにききました。",
+          "ro": "sukoshi ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the a little."
+        },
+        {
+          "jp": "毎日少しを見ます。",
+          "jpH": "まいにちすこしをみます。",
+          "ro": "Mainichi sukoshi o mimasu.",
+          "en": "I look at the a little every day."
+        },
+        {
+          "jp": "少しはここにあります。",
+          "jpH": "すこしはここにあります。",
+          "ro": "sukoshi wa koko ni arimasu.",
+          "en": "The a little is here."
+        }
+      ]
+    },
+    {
+      "kanji": "よく",
+      "kana": "よく",
+      "romaji": "yoku",
+      "en": "often",
+      "tags": [
+        "N5",
+        "副詞",
+        "よく",
+        "よく",
+        "yoku",
+        "often"
+      ],
+      "examples": [
+        {
+          "jp": "よくを使って勉強します。",
+          "jpH": "よくをつかってべんきょうします。",
+          "ro": "yoku o tsukatte benkyou shimasu.",
+          "en": "I study using the often."
+        },
+        {
+          "jp": "そのよくはとても大切です。",
+          "jpH": "そのよくはとてもたいせつです。",
+          "ro": "Sono yoku wa totemo taisetsu desu.",
+          "en": "That often is very important."
+        },
+        {
+          "jp": "よくについて先生に聞きました。",
+          "jpH": "よくについてせんせいにききました。",
+          "ro": "yoku ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the often."
+        },
+        {
+          "jp": "毎日よくを見ます。",
+          "jpH": "まいにちよくをみます。",
+          "ro": "Mainichi yoku o mimasu.",
+          "en": "I look at the often every day."
+        },
+        {
+          "jp": "よくはここにあります。",
+          "jpH": "よくはここにあります。",
+          "ro": "yoku wa koko ni arimasu.",
+          "en": "The often is here."
+        }
+      ]
+    },
+    {
+      "kanji": "たくさん",
+      "kana": "たくさん",
+      "romaji": "takusan",
+      "en": "a lot",
+      "tags": [
+        "N5",
+        "副詞",
+        "たくさん",
+        "たくさん",
+        "takusan",
+        "a lot"
+      ],
+      "examples": [
+        {
+          "jp": "たくさんを使って勉強します。",
+          "jpH": "たくさんをつかってべんきょうします。",
+          "ro": "takusan o tsukatte benkyou shimasu.",
+          "en": "I study using the a lot."
+        },
+        {
+          "jp": "そのたくさんはとても大切です。",
+          "jpH": "そのたくさんはとてもたいせつです。",
+          "ro": "Sono takusan wa totemo taisetsu desu.",
+          "en": "That a lot is very important."
+        },
+        {
+          "jp": "たくさんについて先生に聞きました。",
+          "jpH": "たくさんについてせんせいにききました。",
+          "ro": "takusan ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the a lot."
+        },
+        {
+          "jp": "毎日たくさんを見ます。",
+          "jpH": "まいにちたくさんをみます。",
+          "ro": "Mainichi takusan o mimasu.",
+          "en": "I look at the a lot every day."
+        },
+        {
+          "jp": "たくさんはここにあります。",
+          "jpH": "たくさんはここにあります。",
+          "ro": "takusan wa koko ni arimasu.",
+          "en": "The a lot is here."
+        }
+      ]
+    },
+    {
+      "kanji": "あまり",
+      "kana": "あまり",
+      "romaji": "amari",
+      "en": "not much",
+      "tags": [
+        "N5",
+        "副詞",
+        "あまり",
+        "あまり",
+        "amari",
+        "not much"
+      ],
+      "examples": [
+        {
+          "jp": "あまりを使って勉強します。",
+          "jpH": "あまりをつかってべんきょうします。",
+          "ro": "amari o tsukatte benkyou shimasu.",
+          "en": "I study using the not much."
+        },
+        {
+          "jp": "そのあまりはとても大切です。",
+          "jpH": "そのあまりはとてもたいせつです。",
+          "ro": "Sono amari wa totemo taisetsu desu.",
+          "en": "That not much is very important."
+        },
+        {
+          "jp": "あまりについて先生に聞きました。",
+          "jpH": "あまりについてせんせいにききました。",
+          "ro": "amari ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the not much."
+        },
+        {
+          "jp": "毎日あまりを見ます。",
+          "jpH": "まいにちあまりをみます。",
+          "ro": "Mainichi amari o mimasu.",
+          "en": "I look at the not much every day."
+        },
+        {
+          "jp": "あまりはここにあります。",
+          "jpH": "あまりはここにあります。",
+          "ro": "amari wa koko ni arimasu.",
+          "en": "The not much is here."
+        }
+      ]
+    },
+    {
+      "kanji": "もう",
+      "kana": "もう",
+      "romaji": "mou",
+      "en": "already",
+      "tags": [
+        "N5",
+        "副詞",
+        "もう",
+        "もう",
+        "mou",
+        "already"
+      ],
+      "examples": [
+        {
+          "jp": "もうを使って勉強します。",
+          "jpH": "もうをつかってべんきょうします。",
+          "ro": "mou o tsukatte benkyou shimasu.",
+          "en": "I study using the already."
+        },
+        {
+          "jp": "そのもうはとても大切です。",
+          "jpH": "そのもうはとてもたいせつです。",
+          "ro": "Sono mou wa totemo taisetsu desu.",
+          "en": "That already is very important."
+        },
+        {
+          "jp": "もうについて先生に聞きました。",
+          "jpH": "もうについてせんせいにききました。",
+          "ro": "mou ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the already."
+        },
+        {
+          "jp": "毎日もうを見ます。",
+          "jpH": "まいにちもうをみます。",
+          "ro": "Mainichi mou o mimasu.",
+          "en": "I look at the already every day."
+        },
+        {
+          "jp": "もうはここにあります。",
+          "jpH": "もうはここにあります。",
+          "ro": "mou wa koko ni arimasu.",
+          "en": "The already is here."
+        }
+      ]
+    },
+    {
+      "kanji": "まだ",
+      "kana": "まだ",
+      "romaji": "mada",
+      "en": "still",
+      "tags": [
+        "N5",
+        "副詞",
+        "まだ",
+        "まだ",
+        "mada",
+        "still"
+      ],
+      "examples": [
+        {
+          "jp": "まだを使って勉強します。",
+          "jpH": "まだをつかってべんきょうします。",
+          "ro": "mada o tsukatte benkyou shimasu.",
+          "en": "I study using the still."
+        },
+        {
+          "jp": "そのまだはとても大切です。",
+          "jpH": "そのまだはとてもたいせつです。",
+          "ro": "Sono mada wa totemo taisetsu desu.",
+          "en": "That still is very important."
+        },
+        {
+          "jp": "まだについて先生に聞きました。",
+          "jpH": "まだについてせんせいにききました。",
+          "ro": "mada ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the still."
+        },
+        {
+          "jp": "毎日まだを見ます。",
+          "jpH": "まいにちまだをみます。",
+          "ro": "Mainichi mada o mimasu.",
+          "en": "I look at the still every day."
+        },
+        {
+          "jp": "まだはここにあります。",
+          "jpH": "まだはここにあります。",
+          "ro": "mada wa koko ni arimasu.",
+          "en": "The still is here."
+        }
+      ]
+    },
+    {
+      "kanji": "すぐ",
+      "kana": "すぐ",
+      "romaji": "sugu",
+      "en": "soon",
+      "tags": [
+        "N5",
+        "副詞",
+        "すぐ",
+        "すぐ",
+        "sugu",
+        "soon"
+      ],
+      "examples": [
+        {
+          "jp": "すぐを使って勉強します。",
+          "jpH": "すぐをつかってべんきょうします。",
+          "ro": "sugu o tsukatte benkyou shimasu.",
+          "en": "I study using the soon."
+        },
+        {
+          "jp": "そのすぐはとても大切です。",
+          "jpH": "そのすぐはとてもたいせつです。",
+          "ro": "Sono sugu wa totemo taisetsu desu.",
+          "en": "That soon is very important."
+        },
+        {
+          "jp": "すぐについて先生に聞きました。",
+          "jpH": "すぐについてせんせいにききました。",
+          "ro": "sugu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the soon."
+        },
+        {
+          "jp": "毎日すぐを見ます。",
+          "jpH": "まいにちすぐをみます。",
+          "ro": "Mainichi sugu o mimasu.",
+          "en": "I look at the soon every day."
+        },
+        {
+          "jp": "すぐはここにあります。",
+          "jpH": "すぐはここにあります。",
+          "ro": "sugu wa koko ni arimasu.",
+          "en": "The soon is here."
+        }
+      ]
+    },
+    {
+      "kanji": "ゆっくり",
+      "kana": "ゆっくり",
+      "romaji": "yukkuri",
+      "en": "slowly",
+      "tags": [
+        "N5",
+        "副詞",
+        "ゆっくり",
+        "ゆっくり",
+        "yukkuri",
+        "slowly"
+      ],
+      "examples": [
+        {
+          "jp": "ゆっくりを使って勉強します。",
+          "jpH": "ゆっくりをつかってべんきょうします。",
+          "ro": "yukkuri o tsukatte benkyou shimasu.",
+          "en": "I study using the slowly."
+        },
+        {
+          "jp": "そのゆっくりはとても大切です。",
+          "jpH": "そのゆっくりはとてもたいせつです。",
+          "ro": "Sono yukkuri wa totemo taisetsu desu.",
+          "en": "That slowly is very important."
+        },
+        {
+          "jp": "ゆっくりについて先生に聞きました。",
+          "jpH": "ゆっくりについてせんせいにききました。",
+          "ro": "yukkuri ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the slowly."
+        },
+        {
+          "jp": "毎日ゆっくりを見ます。",
+          "jpH": "まいにちゆっくりをみます。",
+          "ro": "Mainichi yukkuri o mimasu.",
+          "en": "I look at the slowly every day."
+        },
+        {
+          "jp": "ゆっくりはここにあります。",
+          "jpH": "ゆっくりはここにあります。",
+          "ro": "yukkuri wa koko ni arimasu.",
+          "en": "The slowly is here."
+        }
+      ]
+    },
+    {
+      "kanji": "早く",
+      "kana": "はやく",
+      "romaji": "hayaku",
+      "en": "quickly",
+      "tags": [
+        "N5",
+        "副詞",
+        "早く",
+        "はやく",
+        "hayaku",
+        "quickly"
+      ],
+      "examples": [
+        {
+          "jp": "早くを使って勉強します。",
+          "jpH": "はやくをつかってべんきょうします。",
+          "ro": "hayaku o tsukatte benkyou shimasu.",
+          "en": "I study using the quickly."
+        },
+        {
+          "jp": "その早くはとても大切です。",
+          "jpH": "そのはやくはとてもたいせつです。",
+          "ro": "Sono hayaku wa totemo taisetsu desu.",
+          "en": "That quickly is very important."
+        },
+        {
+          "jp": "早くについて先生に聞きました。",
+          "jpH": "はやくについてせんせいにききました。",
+          "ro": "hayaku ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the quickly."
+        },
+        {
+          "jp": "毎日早くを見ます。",
+          "jpH": "まいにちはやくをみます。",
+          "ro": "Mainichi hayaku o mimasu.",
+          "en": "I look at the quickly every day."
+        },
+        {
+          "jp": "早くはここにあります。",
+          "jpH": "はやくはここにあります。",
+          "ro": "hayaku wa koko ni arimasu.",
+          "en": "The quickly is here."
+        }
+      ]
+    }
+  ]
+}

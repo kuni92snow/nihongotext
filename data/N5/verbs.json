@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "level": "N5",
+    "pos": "verbs",
+    "version": "7.3.1"
+  },
+  "items": [
+    {
+      "kanji": "行きます",
+      "kana": "いきます",
+      "romaji": "ikimasu",
+      "en": "go",
+      "tags": [
+        "N5",
+        "動詞",
+        "行きます",
+        "いきます",
+        "ikimasu",
+        "go"
+      ],
+      "examples": [
+        {
+          "jp": "行きますを使って勉強します。",
+          "jpH": "いきますをつかってべんきょうします。",
+          "ro": "ikimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the go."
+        },
+        {
+          "jp": "その行きますはとても大切です。",
+          "jpH": "そのいきますはとてもたいせつです。",
+          "ro": "Sono ikimasu wa totemo taisetsu desu.",
+          "en": "That go is very important."
+        },
+        {
+          "jp": "行きますについて先生に聞きました。",
+          "jpH": "いきますについてせんせいにききました。",
+          "ro": "ikimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the go."
+        },
+        {
+          "jp": "毎日行きますを見ます。",
+          "jpH": "まいにちいきますをみます。",
+          "ro": "Mainichi ikimasu o mimasu.",
+          "en": "I look at the go every day."
+        },
+        {
+          "jp": "行きますはここにあります。",
+          "jpH": "いきますはここにあります。",
+          "ro": "ikimasu wa koko ni arimasu.",
+          "en": "The go is here."
+        }
+      ]
+    },
+    {
+      "kanji": "来ます",
+      "kana": "きます",
+      "romaji": "kimasu",
+      "en": "come",
+      "tags": [
+        "N5",
+        "動詞",
+        "来ます",
+        "きます",
+        "kimasu",
+        "come"
+      ],
+      "examples": [
+        {
+          "jp": "来ますを使って勉強します。",
+          "jpH": "きますをつかってべんきょうします。",
+          "ro": "kimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the come."
+        },
+        {
+          "jp": "その来ますはとても大切です。",
+          "jpH": "そのきますはとてもたいせつです。",
+          "ro": "Sono kimasu wa totemo taisetsu desu.",
+          "en": "That come is very important."
+        },
+        {
+          "jp": "来ますについて先生に聞きました。",
+          "jpH": "きますについてせんせいにききました。",
+          "ro": "kimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the come."
+        },
+        {
+          "jp": "毎日来ますを見ます。",
+          "jpH": "まいにちきますをみます。",
+          "ro": "Mainichi kimasu o mimasu.",
+          "en": "I look at the come every day."
+        },
+        {
+          "jp": "来ますはここにあります。",
+          "jpH": "きますはここにあります。",
+          "ro": "kimasu wa koko ni arimasu.",
+          "en": "The come is here."
+        }
+      ]
+    },
+    {
+      "kanji": "見ます",
+      "kana": "みます",
+      "romaji": "mimasu",
+      "en": "see",
+      "tags": [
+        "N5",
+        "動詞",
+        "見ます",
+        "みます",
+        "mimasu",
+        "see"
+      ],
+      "examples": [
+        {
+          "jp": "見ますを使って勉強します。",
+          "jpH": "みますをつかってべんきょうします。",
+          "ro": "mimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the see."
+        },
+        {
+          "jp": "その見ますはとても大切です。",
+          "jpH": "そのみますはとてもたいせつです。",
+          "ro": "Sono mimasu wa totemo taisetsu desu.",
+          "en": "That see is very important."
+        },
+        {
+          "jp": "見ますについて先生に聞きました。",
+          "jpH": "みますについてせんせいにききました。",
+          "ro": "mimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the see."
+        },
+        {
+          "jp": "毎日見ますを見ます。",
+          "jpH": "まいにちみますをみます。",
+          "ro": "Mainichi mimasu o mimasu.",
+          "en": "I look at the see every day."
+        },
+        {
+          "jp": "見ますはここにあります。",
+          "jpH": "みますはここにあります。",
+          "ro": "mimasu wa koko ni arimasu.",
+          "en": "The see is here."
+        }
+      ]
+    },
+    {
+      "kanji": "食べます",
+      "kana": "たべます",
+      "romaji": "tabemasu",
+      "en": "eat",
+      "tags": [
+        "N5",
+        "動詞",
+        "食べます",
+        "たべます",
+        "tabemasu",
+        "eat"
+      ],
+      "examples": [
+        {
+          "jp": "食べますを使って勉強します。",
+          "jpH": "たべますをつかってべんきょうします。",
+          "ro": "tabemasu o tsukatte benkyou shimasu.",
+          "en": "I study using the eat."
+        },
+        {
+          "jp": "その食べますはとても大切です。",
+          "jpH": "そのたべますはとてもたいせつです。",
+          "ro": "Sono tabemasu wa totemo taisetsu desu.",
+          "en": "That eat is very important."
+        },
+        {
+          "jp": "食べますについて先生に聞きました。",
+          "jpH": "たべますについてせんせいにききました。",
+          "ro": "tabemasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the eat."
+        },
+        {
+          "jp": "毎日食べますを見ます。",
+          "jpH": "まいにちたべますをみます。",
+          "ro": "Mainichi tabemasu o mimasu.",
+          "en": "I look at the eat every day."
+        },
+        {
+          "jp": "食べますはここにあります。",
+          "jpH": "たべますはここにあります。",
+          "ro": "tabemasu wa koko ni arimasu.",
+          "en": "The eat is here."
+        }
+      ]
+    },
+    {
+      "kanji": "飲みます",
+      "kana": "のみます",
+      "romaji": "nomimasu",
+      "en": "drink",
+      "tags": [
+        "N5",
+        "動詞",
+        "飲みます",
+        "のみます",
+        "nomimasu",
+        "drink"
+      ],
+      "examples": [
+        {
+          "jp": "飲みますを使って勉強します。",
+          "jpH": "のみますをつかってべんきょうします。",
+          "ro": "nomimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the drink."
+        },
+        {
+          "jp": "その飲みますはとても大切です。",
+          "jpH": "そののみますはとてもたいせつです。",
+          "ro": "Sono nomimasu wa totemo taisetsu desu.",
+          "en": "That drink is very important."
+        },
+        {
+          "jp": "飲みますについて先生に聞きました。",
+          "jpH": "のみますについてせんせいにききました。",
+          "ro": "nomimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the drink."
+        },
+        {
+          "jp": "毎日飲みますを見ます。",
+          "jpH": "まいにちのみますをみます。",
+          "ro": "Mainichi nomimasu o mimasu.",
+          "en": "I look at the drink every day."
+        },
+        {
+          "jp": "飲みますはここにあります。",
+          "jpH": "のみますはここにあります。",
+          "ro": "nomimasu wa koko ni arimasu.",
+          "en": "The drink is here."
+        }
+      ]
+    },
+    {
+      "kanji": "買います",
+      "kana": "かいます",
+      "romaji": "kaimasu",
+      "en": "buy",
+      "tags": [
+        "N5",
+        "動詞",
+        "買います",
+        "かいます",
+        "kaimasu",
+        "buy"
+      ],
+      "examples": [
+        {
+          "jp": "買いますを使って勉強します。",
+          "jpH": "かいますをつかってべんきょうします。",
+          "ro": "kaimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the buy."
+        },
+        {
+          "jp": "その買いますはとても大切です。",
+          "jpH": "そのかいますはとてもたいせつです。",
+          "ro": "Sono kaimasu wa totemo taisetsu desu.",
+          "en": "That buy is very important."
+        },
+        {
+          "jp": "買いますについて先生に聞きました。",
+          "jpH": "かいますについてせんせいにききました。",
+          "ro": "kaimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the buy."
+        },
+        {
+          "jp": "毎日買いますを見ます。",
+          "jpH": "まいにちかいますをみます。",
+          "ro": "Mainichi kaimasu o mimasu.",
+          "en": "I look at the buy every day."
+        },
+        {
+          "jp": "買いますはここにあります。",
+          "jpH": "かいますはここにあります。",
+          "ro": "kaimasu wa koko ni arimasu.",
+          "en": "The buy is here."
+        }
+      ]
+    },
+    {
+      "kanji": "書きます",
+      "kana": "かきます",
+      "romaji": "kakimasu",
+      "en": "write",
+      "tags": [
+        "N5",
+        "動詞",
+        "書きます",
+        "かきます",
+        "kakimasu",
+        "write"
+      ],
+      "examples": [
+        {
+          "jp": "書きますを使って勉強します。",
+          "jpH": "かきますをつかってべんきょうします。",
+          "ro": "kakimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the write."
+        },
+        {
+          "jp": "その書きますはとても大切です。",
+          "jpH": "そのかきますはとてもたいせつです。",
+          "ro": "Sono kakimasu wa totemo taisetsu desu.",
+          "en": "That write is very important."
+        },
+        {
+          "jp": "書きますについて先生に聞きました。",
+          "jpH": "かきますについてせんせいにききました。",
+          "ro": "kakimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the write."
+        },
+        {
+          "jp": "毎日書きますを見ます。",
+          "jpH": "まいにちかきますをみます。",
+          "ro": "Mainichi kakimasu o mimasu.",
+          "en": "I look at the write every day."
+        },
+        {
+          "jp": "書きますはここにあります。",
+          "jpH": "かきますはここにあります。",
+          "ro": "kakimasu wa koko ni arimasu.",
+          "en": "The write is here."
+        }
+      ]
+    },
+    {
+      "kanji": "読みます",
+      "kana": "よみます",
+      "romaji": "yomimasu",
+      "en": "read",
+      "tags": [
+        "N5",
+        "動詞",
+        "読みます",
+        "よみます",
+        "yomimasu",
+        "read"
+      ],
+      "examples": [
+        {
+          "jp": "読みますを使って勉強します。",
+          "jpH": "よみますをつかってべんきょうします。",
+          "ro": "yomimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the read."
+        },
+        {
+          "jp": "その読みますはとても大切です。",
+          "jpH": "そのよみますはとてもたいせつです。",
+          "ro": "Sono yomimasu wa totemo taisetsu desu.",
+          "en": "That read is very important."
+        },
+        {
+          "jp": "読みますについて先生に聞きました。",
+          "jpH": "よみますについてせんせいにききました。",
+          "ro": "yomimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the read."
+        },
+        {
+          "jp": "毎日読みますを見ます。",
+          "jpH": "まいにちよみますをみます。",
+          "ro": "Mainichi yomimasu o mimasu.",
+          "en": "I look at the read every day."
+        },
+        {
+          "jp": "読みますはここにあります。",
+          "jpH": "よみますはここにあります。",
+          "ro": "yomimasu wa koko ni arimasu.",
+          "en": "The read is here."
+        }
+      ]
+    },
+    {
+      "kanji": "話します",
+      "kana": "はなします",
+      "romaji": "hanashimasu",
+      "en": "speak",
+      "tags": [
+        "N5",
+        "動詞",
+        "話します",
+        "はなします",
+        "hanashimasu",
+        "speak"
+      ],
+      "examples": [
+        {
+          "jp": "話しますを使って勉強します。",
+          "jpH": "はなしますをつかってべんきょうします。",
+          "ro": "hanashimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the speak."
+        },
+        {
+          "jp": "その話しますはとても大切です。",
+          "jpH": "そのはなしますはとてもたいせつです。",
+          "ro": "Sono hanashimasu wa totemo taisetsu desu.",
+          "en": "That speak is very important."
+        },
+        {
+          "jp": "話しますについて先生に聞きました。",
+          "jpH": "はなしますについてせんせいにききました。",
+          "ro": "hanashimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the speak."
+        },
+        {
+          "jp": "毎日話しますを見ます。",
+          "jpH": "まいにちはなしますをみます。",
+          "ro": "Mainichi hanashimasu o mimasu.",
+          "en": "I look at the speak every day."
+        },
+        {
+          "jp": "話しますはここにあります。",
+          "jpH": "はなしますはここにあります。",
+          "ro": "hanashimasu wa koko ni arimasu.",
+          "en": "The speak is here."
+        }
+      ]
+    },
+    {
+      "kanji": "勉強します",
+      "kana": "べんきょうします",
+      "romaji": "benkyou shimasu",
+      "en": "study",
+      "tags": [
+        "N5",
+        "動詞",
+        "勉強します",
+        "べんきょうします",
+        "benkyou shimasu",
+        "study"
+      ],
+      "examples": [
+        {
+          "jp": "勉強しますを使って勉強します。",
+          "jpH": "べんきょうしますをつかってべんきょうします。",
+          "ro": "benkyou shimasu o tsukatte benkyou shimasu.",
+          "en": "I study using the study."
+        },
+        {
+          "jp": "その勉強しますはとても大切です。",
+          "jpH": "そのべんきょうしますはとてもたいせつです。",
+          "ro": "Sono benkyou shimasu wa totemo taisetsu desu.",
+          "en": "That study is very important."
+        },
+        {
+          "jp": "勉強しますについて先生に聞きました。",
+          "jpH": "べんきょうしますについてせんせいにききました。",
+          "ro": "benkyou shimasu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the study."
+        },
+        {
+          "jp": "毎日勉強しますを見ます。",
+          "jpH": "まいにちべんきょうしますをみます。",
+          "ro": "Mainichi benkyou shimasu o mimasu.",
+          "en": "I look at the study every day."
+        },
+        {
+          "jp": "勉強しますはここにあります。",
+          "jpH": "べんきょうしますはここにあります。",
+          "ro": "benkyou shimasu wa koko ni arimasu.",
+          "en": "The study is here."
+        }
+      ]
+    }
+  ]
+}

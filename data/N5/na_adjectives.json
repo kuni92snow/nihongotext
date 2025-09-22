@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "level": "N5",
+    "pos": "na_adjectives",
+    "version": "7.3.1"
+  },
+  "items": [
+    {
+      "kanji": "静か",
+      "kana": "しずか",
+      "romaji": "shizuka",
+      "en": "quiet",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "静か",
+        "しずか",
+        "shizuka",
+        "quiet"
+      ],
+      "examples": [
+        {
+          "jp": "静かを使って勉強します。",
+          "jpH": "しずかをつかってべんきょうします。",
+          "ro": "shizuka o tsukatte benkyou shimasu.",
+          "en": "I study using the quiet."
+        },
+        {
+          "jp": "その静かはとても大切です。",
+          "jpH": "そのしずかはとてもたいせつです。",
+          "ro": "Sono shizuka wa totemo taisetsu desu.",
+          "en": "That quiet is very important."
+        },
+        {
+          "jp": "静かについて先生に聞きました。",
+          "jpH": "しずかについてせんせいにききました。",
+          "ro": "shizuka ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the quiet."
+        },
+        {
+          "jp": "毎日静かを見ます。",
+          "jpH": "まいにちしずかをみます。",
+          "ro": "Mainichi shizuka o mimasu.",
+          "en": "I look at the quiet every day."
+        },
+        {
+          "jp": "静かはここにあります。",
+          "jpH": "しずかはここにあります。",
+          "ro": "shizuka wa koko ni arimasu.",
+          "en": "The quiet is here."
+        }
+      ]
+    },
+    {
+      "kanji": "有名",
+      "kana": "ゆうめい",
+      "romaji": "yuumei",
+      "en": "famous",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "有名",
+        "ゆうめい",
+        "yuumei",
+        "famous"
+      ],
+      "examples": [
+        {
+          "jp": "有名を使って勉強します。",
+          "jpH": "ゆうめいをつかってべんきょうします。",
+          "ro": "yuumei o tsukatte benkyou shimasu.",
+          "en": "I study using the famous."
+        },
+        {
+          "jp": "その有名はとても大切です。",
+          "jpH": "そのゆうめいはとてもたいせつです。",
+          "ro": "Sono yuumei wa totemo taisetsu desu.",
+          "en": "That famous is very important."
+        },
+        {
+          "jp": "有名について先生に聞きました。",
+          "jpH": "ゆうめいについてせんせいにききました。",
+          "ro": "yuumei ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the famous."
+        },
+        {
+          "jp": "毎日有名を見ます。",
+          "jpH": "まいにちゆうめいをみます。",
+          "ro": "Mainichi yuumei o mimasu.",
+          "en": "I look at the famous every day."
+        },
+        {
+          "jp": "有名はここにあります。",
+          "jpH": "ゆうめいはここにあります。",
+          "ro": "yuumei wa koko ni arimasu.",
+          "en": "The famous is here."
+        }
+      ]
+    },
+    {
+      "kanji": "便利",
+      "kana": "べんり",
+      "romaji": "benri",
+      "en": "convenient",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "便利",
+        "べんり",
+        "benri",
+        "convenient"
+      ],
+      "examples": [
+        {
+          "jp": "便利を使って勉強します。",
+          "jpH": "べんりをつかってべんきょうします。",
+          "ro": "benri o tsukatte benkyou shimasu.",
+          "en": "I study using the convenient."
+        },
+        {
+          "jp": "その便利はとても大切です。",
+          "jpH": "そのべんりはとてもたいせつです。",
+          "ro": "Sono benri wa totemo taisetsu desu.",
+          "en": "That convenient is very important."
+        },
+        {
+          "jp": "便利について先生に聞きました。",
+          "jpH": "べんりについてせんせいにききました。",
+          "ro": "benri ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the convenient."
+        },
+        {
+          "jp": "毎日便利を見ます。",
+          "jpH": "まいにちべんりをみます。",
+          "ro": "Mainichi benri o mimasu.",
+          "en": "I look at the convenient every day."
+        },
+        {
+          "jp": "便利はここにあります。",
+          "jpH": "べんりはここにあります。",
+          "ro": "benri wa koko ni arimasu.",
+          "en": "The convenient is here."
+        }
+      ]
+    },
+    {
+      "kanji": "元気",
+      "kana": "げんき",
+      "romaji": "genki",
+      "en": "healthy",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "元気",
+        "げんき",
+        "genki",
+        "healthy"
+      ],
+      "examples": [
+        {
+          "jp": "元気を使って勉強します。",
+          "jpH": "げんきをつかってべんきょうします。",
+          "ro": "genki o tsukatte benkyou shimasu.",
+          "en": "I study using the healthy."
+        },
+        {
+          "jp": "その元気はとても大切です。",
+          "jpH": "そのげんきはとてもたいせつです。",
+          "ro": "Sono genki wa totemo taisetsu desu.",
+          "en": "That healthy is very important."
+        },
+        {
+          "jp": "元気について先生に聞きました。",
+          "jpH": "げんきについてせんせいにききました。",
+          "ro": "genki ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the healthy."
+        },
+        {
+          "jp": "毎日元気を見ます。",
+          "jpH": "まいにちげんきをみます。",
+          "ro": "Mainichi genki o mimasu.",
+          "en": "I look at the healthy every day."
+        },
+        {
+          "jp": "元気はここにあります。",
+          "jpH": "げんきはここにあります。",
+          "ro": "genki wa koko ni arimasu.",
+          "en": "The healthy is here."
+        }
+      ]
+    },
+    {
+      "kanji": "親切",
+      "kana": "しんせつ",
+      "romaji": "shinsetsu",
+      "en": "kind",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "親切",
+        "しんせつ",
+        "shinsetsu",
+        "kind"
+      ],
+      "examples": [
+        {
+          "jp": "親切を使って勉強します。",
+          "jpH": "しんせつをつかってべんきょうします。",
+          "ro": "shinsetsu o tsukatte benkyou shimasu.",
+          "en": "I study using the kind."
+        },
+        {
+          "jp": "その親切はとても大切です。",
+          "jpH": "そのしんせつはとてもたいせつです。",
+          "ro": "Sono shinsetsu wa totemo taisetsu desu.",
+          "en": "That kind is very important."
+        },
+        {
+          "jp": "親切について先生に聞きました。",
+          "jpH": "しんせつについてせんせいにききました。",
+          "ro": "shinsetsu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the kind."
+        },
+        {
+          "jp": "毎日親切を見ます。",
+          "jpH": "まいにちしんせつをみます。",
+          "ro": "Mainichi shinsetsu o mimasu.",
+          "en": "I look at the kind every day."
+        },
+        {
+          "jp": "親切はここにあります。",
+          "jpH": "しんせつはここにあります。",
+          "ro": "shinsetsu wa koko ni arimasu.",
+          "en": "The kind is here."
+        }
+      ]
+    },
+    {
+      "kanji": "上手",
+      "kana": "じょうず",
+      "romaji": "jouzu",
+      "en": "skillful",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "上手",
+        "じょうず",
+        "jouzu",
+        "skillful"
+      ],
+      "examples": [
+        {
+          "jp": "上手を使って勉強します。",
+          "jpH": "じょうずをつかってべんきょうします。",
+          "ro": "jouzu o tsukatte benkyou shimasu.",
+          "en": "I study using the skillful."
+        },
+        {
+          "jp": "その上手はとても大切です。",
+          "jpH": "そのじょうずはとてもたいせつです。",
+          "ro": "Sono jouzu wa totemo taisetsu desu.",
+          "en": "That skillful is very important."
+        },
+        {
+          "jp": "上手について先生に聞きました。",
+          "jpH": "じょうずについてせんせいにききました。",
+          "ro": "jouzu ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the skillful."
+        },
+        {
+          "jp": "毎日上手を見ます。",
+          "jpH": "まいにちじょうずをみます。",
+          "ro": "Mainichi jouzu o mimasu.",
+          "en": "I look at the skillful every day."
+        },
+        {
+          "jp": "上手はここにあります。",
+          "jpH": "じょうずはここにあります。",
+          "ro": "jouzu wa koko ni arimasu.",
+          "en": "The skillful is here."
+        }
+      ]
+    },
+    {
+      "kanji": "下手",
+      "kana": "へた",
+      "romaji": "heta",
+      "en": "unskilled",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "下手",
+        "へた",
+        "heta",
+        "unskilled"
+      ],
+      "examples": [
+        {
+          "jp": "下手を使って勉強します。",
+          "jpH": "へたをつかってべんきょうします。",
+          "ro": "heta o tsukatte benkyou shimasu.",
+          "en": "I study using the unskilled."
+        },
+        {
+          "jp": "その下手はとても大切です。",
+          "jpH": "そのへたはとてもたいせつです。",
+          "ro": "Sono heta wa totemo taisetsu desu.",
+          "en": "That unskilled is very important."
+        },
+        {
+          "jp": "下手について先生に聞きました。",
+          "jpH": "へたについてせんせいにききました。",
+          "ro": "heta ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the unskilled."
+        },
+        {
+          "jp": "毎日下手を見ます。",
+          "jpH": "まいにちへたをみます。",
+          "ro": "Mainichi heta o mimasu.",
+          "en": "I look at the unskilled every day."
+        },
+        {
+          "jp": "下手はここにあります。",
+          "jpH": "へたはここにあります。",
+          "ro": "heta wa koko ni arimasu.",
+          "en": "The unskilled is here."
+        }
+      ]
+    },
+    {
+      "kanji": "賑やか",
+      "kana": "にぎやか",
+      "romaji": "nigiyaka",
+      "en": "lively",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "賑やか",
+        "にぎやか",
+        "nigiyaka",
+        "lively"
+      ],
+      "examples": [
+        {
+          "jp": "賑やかを使って勉強します。",
+          "jpH": "にぎやかをつかってべんきょうします。",
+          "ro": "nigiyaka o tsukatte benkyou shimasu.",
+          "en": "I study using the lively."
+        },
+        {
+          "jp": "その賑やかはとても大切です。",
+          "jpH": "そのにぎやかはとてもたいせつです。",
+          "ro": "Sono nigiyaka wa totemo taisetsu desu.",
+          "en": "That lively is very important."
+        },
+        {
+          "jp": "賑やかについて先生に聞きました。",
+          "jpH": "にぎやかについてせんせいにききました。",
+          "ro": "nigiyaka ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the lively."
+        },
+        {
+          "jp": "毎日賑やかを見ます。",
+          "jpH": "まいにちにぎやかをみます。",
+          "ro": "Mainichi nigiyaka o mimasu.",
+          "en": "I look at the lively every day."
+        },
+        {
+          "jp": "賑やかはここにあります。",
+          "jpH": "にぎやかはここにあります。",
+          "ro": "nigiyaka wa koko ni arimasu.",
+          "en": "The lively is here."
+        }
+      ]
+    },
+    {
+      "kanji": "大変",
+      "kana": "たいへん",
+      "romaji": "taihen",
+      "en": "hard",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "大変",
+        "たいへん",
+        "taihen",
+        "hard"
+      ],
+      "examples": [
+        {
+          "jp": "大変を使って勉強します。",
+          "jpH": "たいへんをつかってべんきょうします。",
+          "ro": "taihen o tsukatte benkyou shimasu.",
+          "en": "I study using the hard."
+        },
+        {
+          "jp": "その大変はとても大切です。",
+          "jpH": "そのたいへんはとてもたいせつです。",
+          "ro": "Sono taihen wa totemo taisetsu desu.",
+          "en": "That hard is very important."
+        },
+        {
+          "jp": "大変について先生に聞きました。",
+          "jpH": "たいへんについてせんせいにききました。",
+          "ro": "taihen ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the hard."
+        },
+        {
+          "jp": "毎日大変を見ます。",
+          "jpH": "まいにちたいへんをみます。",
+          "ro": "Mainichi taihen o mimasu.",
+          "en": "I look at the hard every day."
+        },
+        {
+          "jp": "大変はここにあります。",
+          "jpH": "たいへんはここにあります。",
+          "ro": "taihen wa koko ni arimasu.",
+          "en": "The hard is here."
+        }
+      ]
+    },
+    {
+      "kanji": "簡単",
+      "kana": "かんたん",
+      "romaji": "kantan",
+      "en": "easy",
+      "tags": [
+        "N5",
+        "な形容詞",
+        "簡単",
+        "かんたん",
+        "kantan",
+        "easy"
+      ],
+      "examples": [
+        {
+          "jp": "簡単を使って勉強します。",
+          "jpH": "かんたんをつかってべんきょうします。",
+          "ro": "kantan o tsukatte benkyou shimasu.",
+          "en": "I study using the easy."
+        },
+        {
+          "jp": "その簡単はとても大切です。",
+          "jpH": "そのかんたんはとてもたいせつです。",
+          "ro": "Sono kantan wa totemo taisetsu desu.",
+          "en": "That easy is very important."
+        },
+        {
+          "jp": "簡単について先生に聞きました。",
+          "jpH": "かんたんについてせんせいにききました。",
+          "ro": "kantan ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the easy."
+        },
+        {
+          "jp": "毎日簡単を見ます。",
+          "jpH": "まいにちかんたんをみます。",
+          "ro": "Mainichi kantan o mimasu.",
+          "en": "I look at the easy every day."
+        },
+        {
+          "jp": "簡単はここにあります。",
+          "jpH": "かんたんはここにあります。",
+          "ro": "kantan wa koko ni arimasu.",
+          "en": "The easy is here."
+        }
+      ]
+    }
+  ]
+}

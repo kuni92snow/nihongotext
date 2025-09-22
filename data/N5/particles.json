@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "level": "N5",
+    "pos": "particles",
+    "version": "7.3.1"
+  },
+  "items": [
+    {
+      "kanji": "は",
+      "kana": "は",
+      "romaji": "wa",
+      "en": "topic",
+      "tags": [
+        "N5",
+        "助詞",
+        "は",
+        "は",
+        "wa",
+        "topic"
+      ],
+      "examples": [
+        {
+          "jp": "はを使って勉強します。",
+          "jpH": "はをつかってべんきょうします。",
+          "ro": "wa o tsukatte benkyou shimasu.",
+          "en": "I study using the topic."
+        },
+        {
+          "jp": "そのははとても大切です。",
+          "jpH": "そのははとてもたいせつです。",
+          "ro": "Sono wa wa totemo taisetsu desu.",
+          "en": "That topic is very important."
+        },
+        {
+          "jp": "はについて先生に聞きました。",
+          "jpH": "はについてせんせいにききました。",
+          "ro": "wa ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the topic."
+        },
+        {
+          "jp": "毎日はを見ます。",
+          "jpH": "まいにちはをみます。",
+          "ro": "Mainichi wa o mimasu.",
+          "en": "I look at the topic every day."
+        },
+        {
+          "jp": "ははここにあります。",
+          "jpH": "ははここにあります。",
+          "ro": "wa wa koko ni arimasu.",
+          "en": "The topic is here."
+        }
+      ]
+    },
+    {
+      "kanji": "が",
+      "kana": "が",
+      "romaji": "ga",
+      "en": "subject",
+      "tags": [
+        "N5",
+        "助詞",
+        "が",
+        "が",
+        "ga",
+        "subject"
+      ],
+      "examples": [
+        {
+          "jp": "がを使って勉強します。",
+          "jpH": "がをつかってべんきょうします。",
+          "ro": "ga o tsukatte benkyou shimasu.",
+          "en": "I study using the subject."
+        },
+        {
+          "jp": "そのがはとても大切です。",
+          "jpH": "そのがはとてもたいせつです。",
+          "ro": "Sono ga wa totemo taisetsu desu.",
+          "en": "That subject is very important."
+        },
+        {
+          "jp": "がについて先生に聞きました。",
+          "jpH": "がについてせんせいにききました。",
+          "ro": "ga ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the subject."
+        },
+        {
+          "jp": "毎日がを見ます。",
+          "jpH": "まいにちがをみます。",
+          "ro": "Mainichi ga o mimasu.",
+          "en": "I look at the subject every day."
+        },
+        {
+          "jp": "がはここにあります。",
+          "jpH": "がはここにあります。",
+          "ro": "ga wa koko ni arimasu.",
+          "en": "The subject is here."
+        }
+      ]
+    },
+    {
+      "kanji": "を",
+      "kana": "を",
+      "romaji": "o",
+      "en": "object",
+      "tags": [
+        "N5",
+        "助詞",
+        "を",
+        "を",
+        "o",
+        "object"
+      ],
+      "examples": [
+        {
+          "jp": "をを使って勉強します。",
+          "jpH": "ををつかってべんきょうします。",
+          "ro": "o o tsukatte benkyou shimasu.",
+          "en": "I study using the object."
+        },
+        {
+          "jp": "そのをはとても大切です。",
+          "jpH": "そのをはとてもたいせつです。",
+          "ro": "Sono o wa totemo taisetsu desu.",
+          "en": "That object is very important."
+        },
+        {
+          "jp": "をについて先生に聞きました。",
+          "jpH": "をについてせんせいにききました。",
+          "ro": "o ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the object."
+        },
+        {
+          "jp": "毎日をを見ます。",
+          "jpH": "まいにちををみます。",
+          "ro": "Mainichi o o mimasu.",
+          "en": "I look at the object every day."
+        },
+        {
+          "jp": "をはここにあります。",
+          "jpH": "をはここにあります。",
+          "ro": "o wa koko ni arimasu.",
+          "en": "The object is here."
+        }
+      ]
+    },
+    {
+      "kanji": "に",
+      "kana": "に",
+      "romaji": "ni",
+      "en": "time/place",
+      "tags": [
+        "N5",
+        "助詞",
+        "に",
+        "に",
+        "ni",
+        "time"
+      ],
+      "examples": [
+        {
+          "jp": "にを使って勉強します。",
+          "jpH": "にをつかってべんきょうします。",
+          "ro": "ni o tsukatte benkyou shimasu.",
+          "en": "I study using the time."
+        },
+        {
+          "jp": "そのにはとても大切です。",
+          "jpH": "そのにはとてもたいせつです。",
+          "ro": "Sono ni wa totemo taisetsu desu.",
+          "en": "That time is very important."
+        },
+        {
+          "jp": "にについて先生に聞きました。",
+          "jpH": "にについてせんせいにききました。",
+          "ro": "ni ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the time."
+        },
+        {
+          "jp": "毎日にを見ます。",
+          "jpH": "まいにちにをみます。",
+          "ro": "Mainichi ni o mimasu.",
+          "en": "I look at the time every day."
+        },
+        {
+          "jp": "にはここにあります。",
+          "jpH": "にはここにあります。",
+          "ro": "ni wa koko ni arimasu.",
+          "en": "The time is here."
+        }
+      ]
+    },
+    {
+      "kanji": "で",
+      "kana": "で",
+      "romaji": "de",
+      "en": "at/in",
+      "tags": [
+        "N5",
+        "助詞",
+        "で",
+        "で",
+        "de",
+        "at"
+      ],
+      "examples": [
+        {
+          "jp": "でを使って勉強します。",
+          "jpH": "でをつかってべんきょうします。",
+          "ro": "de o tsukatte benkyou shimasu.",
+          "en": "I study using the at."
+        },
+        {
+          "jp": "そのではとても大切です。",
+          "jpH": "そのではとてもたいせつです。",
+          "ro": "Sono de wa totemo taisetsu desu.",
+          "en": "That at is very important."
+        },
+        {
+          "jp": "でについて先生に聞きました。",
+          "jpH": "でについてせんせいにききました。",
+          "ro": "de ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the at."
+        },
+        {
+          "jp": "毎日でを見ます。",
+          "jpH": "まいにちでをみます。",
+          "ro": "Mainichi de o mimasu.",
+          "en": "I look at the at every day."
+        },
+        {
+          "jp": "ではここにあります。",
+          "jpH": "ではここにあります。",
+          "ro": "de wa koko ni arimasu.",
+          "en": "The at is here."
+        }
+      ]
+    },
+    {
+      "kanji": "へ",
+      "kana": "へ",
+      "romaji": "e",
+      "en": "to/toward",
+      "tags": [
+        "N5",
+        "助詞",
+        "へ",
+        "へ",
+        "e",
+        "to"
+      ],
+      "examples": [
+        {
+          "jp": "へを使って勉強します。",
+          "jpH": "へをつかってべんきょうします。",
+          "ro": "e o tsukatte benkyou shimasu.",
+          "en": "I study using the to."
+        },
+        {
+          "jp": "そのへはとても大切です。",
+          "jpH": "そのへはとてもたいせつです。",
+          "ro": "Sono e wa totemo taisetsu desu.",
+          "en": "That to is very important."
+        },
+        {
+          "jp": "へについて先生に聞きました。",
+          "jpH": "へについてせんせいにききました。",
+          "ro": "e ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the to."
+        },
+        {
+          "jp": "毎日へを見ます。",
+          "jpH": "まいにちへをみます。",
+          "ro": "Mainichi e o mimasu.",
+          "en": "I look at the to every day."
+        },
+        {
+          "jp": "へはここにあります。",
+          "jpH": "へはここにあります。",
+          "ro": "e wa koko ni arimasu.",
+          "en": "The to is here."
+        }
+      ]
+    },
+    {
+      "kanji": "と",
+      "kana": "と",
+      "romaji": "to",
+      "en": "and/with",
+      "tags": [
+        "N5",
+        "助詞",
+        "と",
+        "と",
+        "to",
+        "and"
+      ],
+      "examples": [
+        {
+          "jp": "とを使って勉強します。",
+          "jpH": "とをつかってべんきょうします。",
+          "ro": "to o tsukatte benkyou shimasu.",
+          "en": "I study using the and."
+        },
+        {
+          "jp": "そのとはとても大切です。",
+          "jpH": "そのとはとてもたいせつです。",
+          "ro": "Sono to wa totemo taisetsu desu.",
+          "en": "That and is very important."
+        },
+        {
+          "jp": "とについて先生に聞きました。",
+          "jpH": "とについてせんせいにききました。",
+          "ro": "to ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the and."
+        },
+        {
+          "jp": "毎日とを見ます。",
+          "jpH": "まいにちとをみます。",
+          "ro": "Mainichi to o mimasu.",
+          "en": "I look at the and every day."
+        },
+        {
+          "jp": "とはここにあります。",
+          "jpH": "とはここにあります。",
+          "ro": "to wa koko ni arimasu.",
+          "en": "The and is here."
+        }
+      ]
+    },
+    {
+      "kanji": "も",
+      "kana": "も",
+      "romaji": "mo",
+      "en": "also",
+      "tags": [
+        "N5",
+        "助詞",
+        "も",
+        "も",
+        "mo",
+        "also"
+      ],
+      "examples": [
+        {
+          "jp": "もを使って勉強します。",
+          "jpH": "もをつかってべんきょうします。",
+          "ro": "mo o tsukatte benkyou shimasu.",
+          "en": "I study using the also."
+        },
+        {
+          "jp": "そのもはとても大切です。",
+          "jpH": "そのもはとてもたいせつです。",
+          "ro": "Sono mo wa totemo taisetsu desu.",
+          "en": "That also is very important."
+        },
+        {
+          "jp": "もについて先生に聞きました。",
+          "jpH": "もについてせんせいにききました。",
+          "ro": "mo ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the also."
+        },
+        {
+          "jp": "毎日もを見ます。",
+          "jpH": "まいにちもをみます。",
+          "ro": "Mainichi mo o mimasu.",
+          "en": "I look at the also every day."
+        },
+        {
+          "jp": "もはここにあります。",
+          "jpH": "もはここにあります。",
+          "ro": "mo wa koko ni arimasu.",
+          "en": "The also is here."
+        }
+      ]
+    },
+    {
+      "kanji": "から",
+      "kana": "から",
+      "romaji": "kara",
+      "en": "from/because",
+      "tags": [
+        "N5",
+        "助詞",
+        "から",
+        "から",
+        "kara",
+        "from"
+      ],
+      "examples": [
+        {
+          "jp": "からを使って勉強します。",
+          "jpH": "からをつかってべんきょうします。",
+          "ro": "kara o tsukatte benkyou shimasu.",
+          "en": "I study using the from."
+        },
+        {
+          "jp": "そのからはとても大切です。",
+          "jpH": "そのからはとてもたいせつです。",
+          "ro": "Sono kara wa totemo taisetsu desu.",
+          "en": "That from is very important."
+        },
+        {
+          "jp": "からについて先生に聞きました。",
+          "jpH": "からについてせんせいにききました。",
+          "ro": "kara ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the from."
+        },
+        {
+          "jp": "毎日からを見ます。",
+          "jpH": "まいにちからをみます。",
+          "ro": "Mainichi kara o mimasu.",
+          "en": "I look at the from every day."
+        },
+        {
+          "jp": "からはここにあります。",
+          "jpH": "からはここにあります。",
+          "ro": "kara wa koko ni arimasu.",
+          "en": "The from is here."
+        }
+      ]
+    },
+    {
+      "kanji": "まで",
+      "kana": "まで",
+      "romaji": "made",
+      "en": "until",
+      "tags": [
+        "N5",
+        "助詞",
+        "まで",
+        "まで",
+        "made",
+        "until"
+      ],
+      "examples": [
+        {
+          "jp": "までを使って勉強します。",
+          "jpH": "までをつかってべんきょうします。",
+          "ro": "made o tsukatte benkyou shimasu.",
+          "en": "I study using the until."
+        },
+        {
+          "jp": "そのまではとても大切です。",
+          "jpH": "そのまではとてもたいせつです。",
+          "ro": "Sono made wa totemo taisetsu desu.",
+          "en": "That until is very important."
+        },
+        {
+          "jp": "までについて先生に聞きました。",
+          "jpH": "までについてせんせいにききました。",
+          "ro": "made ni tsuite sensei ni kikimashita.",
+          "en": "I asked the teacher about the until."
+        },
+        {
+          "jp": "毎日までを見ます。",
+          "jpH": "まいにちまでをみます。",
+          "ro": "Mainichi made o mimasu.",
+          "en": "I look at the until every day."
+        },
+        {
+          "jp": "まではここにあります。",
+          "jpH": "まではここにあります。",
+          "ro": "made wa koko ni arimasu.",
+          "en": "The until is here."
+        }
+      ]
+    }
+  ]
+}
