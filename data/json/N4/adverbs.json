@@ -1,0 +1,2344 @@
+{
+  "entries": [
+    {
+      "id": "n4-adv-001",
+      "ja": "たいてい",
+      "kana": "たいてい",
+      "ro": "taitei",
+      "en": "usually / generally",
+      "examples": [
+        {
+          "ja": "たいてい朝7時に起きます。",
+          "kana": "たいてい あさ しちじ に おきます。",
+          "ro": "Taitei asa shichiji ni okimasu.",
+          "en": "I usually get up at 7 a.m."
+        },
+        {
+          "ja": "たいてい日曜日は家にいます。",
+          "kana": "たいてい にちようび は いえ に います。",
+          "ro": "Taitei nichiyoubi wa ie ni imasu.",
+          "en": "I’m usually at home on Sundays."
+        },
+        {
+          "ja": "たいてい友達と昼ご飯を食べます。",
+          "kana": "たいてい ともだち と ひるごはん を たべます。",
+          "ro": "Taitei tomodachi to hirugohan o tabemasu.",
+          "en": "I usually have lunch with friends."
+        },
+        {
+          "ja": "たいていバスで学校へ行きます。",
+          "kana": "たいてい ばす で がっこう へ いきます。",
+          "ro": "Taitei basu de gakkou e ikimasu.",
+          "en": "I usually go to school by bus."
+        },
+        {
+          "ja": "たいてい夜10時に寝ます。",
+          "kana": "たいてい よる じゅうじ に ねます。",
+          "ro": "Taitei yoru juuji ni nemasu.",
+          "en": "I usually go to bed at 10 p.m."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-002",
+      "ja": "けっこう",
+      "kana": "けっこう",
+      "ro": "kekkou",
+      "en": "quite / fairly / fine",
+      "examples": [
+        {
+          "ja": "この料理はけっこうおいしいです。",
+          "kana": "この りょうり は けっこう おいしい です。",
+          "ro": "Kono ryouri wa kekkou oishii desu.",
+          "en": "This dish is quite delicious."
+        },
+        {
+          "ja": "今日はけっこう寒いです。",
+          "kana": "きょう は けっこう さむい です。",
+          "ro": "Kyou wa kekkou samui desu.",
+          "en": "It’s pretty cold today."
+        },
+        {
+          "ja": "けっこう早く終わりました。",
+          "kana": "けっこう はやく おわりました。",
+          "ro": "Kekkou hayaku owarimashita.",
+          "en": "It finished quite early."
+        },
+        {
+          "ja": "その映画はけっこう面白かったです。",
+          "kana": "その えいが は けっこう おもしろかった です。",
+          "ro": "Sono eiga wa kekkou omoshirokatta desu.",
+          "en": "That movie was quite interesting."
+        },
+        {
+          "ja": "けっこう時間がかかりました。",
+          "kana": "けっこう じかん が かかりました。",
+          "ro": "Kekkou jikan ga kakarimashita.",
+          "en": "It took quite some time."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-003",
+      "ja": "ぜったい",
+      "kana": "ぜったい",
+      "ro": "zettai",
+      "en": "absolutely / definitely",
+      "examples": [
+        {
+          "ja": "これはぜったいに必要です。",
+          "kana": "これは ぜったい に ひつよう です。",
+          "ro": "Kore wa zettai ni hitsuyou desu.",
+          "en": "This is absolutely necessary."
+        },
+        {
+          "ja": "ぜったいに忘れないでください。",
+          "kana": "ぜったい に わすれないで ください。",
+          "ro": "Zettai ni wasurenaide kudasai.",
+          "en": "Please don’t forget this, no matter what."
+        },
+        {
+          "ja": "明日はぜったいに行きます。",
+          "kana": "あした は ぜったい に いきます。",
+          "ro": "Ashita wa zettai ni ikimasu.",
+          "en": "I will definitely go tomorrow."
+        },
+        {
+          "ja": "これはぜったいに秘密です。",
+          "kana": "これは ぜったい に ひみつ です。",
+          "ro": "Kore wa zettai ni himitsu desu.",
+          "en": "This is absolutely a secret."
+        },
+        {
+          "ja": "ぜったいに負けません。",
+          "kana": "ぜったい に まけません。",
+          "ro": "Zettai ni makemasen.",
+          "en": "I will never lose."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-004",
+      "ja": "たまに",
+      "kana": "たまに",
+      "ro": "tamani",
+      "en": "occasionally / once in a while",
+      "examples": [
+        {
+          "ja": "たまに映画を見ます。",
+          "kana": "たまに えいが を みます。",
+          "ro": "Tamani eiga o mimasu.",
+          "en": "I watch movies once in a while."
+        },
+        {
+          "ja": "たまに外で食事します。",
+          "kana": "たまに そと で しょくじ します。",
+          "ro": "Tamani soto de shokuji shimasu.",
+          "en": "I sometimes eat out."
+        },
+        {
+          "ja": "たまに友達に会います。",
+          "kana": "たまに ともだち に あいます。",
+          "ro": "Tamani tomodachi ni aimasu.",
+          "en": "I occasionally meet my friends."
+        },
+        {
+          "ja": "たまに母に電話します。",
+          "kana": "たまに はは に でんわ します。",
+          "ro": "Tamani haha ni denwa shimasu.",
+          "en": "I sometimes call my mother."
+        },
+        {
+          "ja": "たまに旅行に行きます。",
+          "kana": "たまに りょこう に いきます。",
+          "ro": "Tamani ryokou ni ikimasu.",
+          "en": "I go on trips once in a while."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-005",
+      "ja": "ちゃんと",
+      "kana": "ちゃんと",
+      "ro": "chanto",
+      "en": "properly / correctly",
+      "examples": [
+        {
+          "ja": "ちゃんと宿題をしました。",
+          "kana": "ちゃんと しゅくだい を しました。",
+          "ro": "Chanto shukudai o shimashita.",
+          "en": "I did my homework properly."
+        },
+        {
+          "ja": "約束をちゃんと守ります。",
+          "kana": "やくそく を ちゃんと まもります。",
+          "ro": "Yakusoku o chanto mamorimasu.",
+          "en": "I keep my promises properly."
+        },
+        {
+          "ja": "ちゃんと挨拶してください。",
+          "kana": "ちゃんと あいさつ して ください。",
+          "ro": "Chanto aisatsu shite kudasai.",
+          "en": "Please greet properly."
+        },
+        {
+          "ja": "毎日ちゃんと食べています。",
+          "kana": "まいにち ちゃんと たべて います。",
+          "ro": "Mainichi chanto tabeteimasu.",
+          "en": "I eat properly every day."
+        },
+        {
+          "ja": "ちゃんと勉強しなさい。",
+          "kana": "ちゃんと べんきょう しなさい。",
+          "ro": "Chanto benkyou shinasai.",
+          "en": "Study properly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-006",
+      "ja": "きっと",
+      "kana": "きっと",
+      "ro": "kitto",
+      "en": "surely / definitely / probably",
+      "examples": [
+        {
+          "ja": "彼はきっと来ます。",
+          "kana": "かれ は きっと きます。",
+          "ro": "Kare wa kitto kimasu.",
+          "en": "He will surely come."
+        },
+        {
+          "ja": "明日はきっと晴れます。",
+          "kana": "あした は きっと はれます。",
+          "ro": "Ashita wa kitto haremasu.",
+          "en": "It will surely be sunny tomorrow."
+        },
+        {
+          "ja": "きっと合格します。",
+          "kana": "きっと ごうかく します。",
+          "ro": "Kitto goukaku shimasu.",
+          "en": "I will definitely pass."
+        },
+        {
+          "ja": "きっと彼は元気です。",
+          "kana": "きっと かれ は げんき です。",
+          "ro": "Kitto kare wa genki desu.",
+          "en": "He must be fine."
+        },
+        {
+          "ja": "きっといいことがありますよ。",
+          "kana": "きっと いい こと が あります よ。",
+          "ro": "Kitto ii koto ga arimasu yo.",
+          "en": "Something good will surely happen."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-007",
+      "ja": "とくに",
+      "kana": "とくに",
+      "ro": "tokuni",
+      "en": "especially / particularly",
+      "examples": [
+        {
+          "ja": "私はとくに魚が好きです。",
+          "kana": "わたし は とくに さかな が すき です。",
+          "ro": "Watashi wa tokuni sakana ga suki desu.",
+          "en": "I especially like fish."
+        },
+        {
+          "ja": "今日はとくに寒いです。",
+          "kana": "きょう は とくに さむい です。",
+          "ro": "Kyou wa tokuni samui desu.",
+          "en": "It’s especially cold today."
+        },
+        {
+          "ja": "とくに問題はありません。",
+          "kana": "とくに もんだい は ありません。",
+          "ro": "Tokuni mondai wa arimasen.",
+          "en": "There is no particular problem."
+        },
+        {
+          "ja": "彼はとくに数学が得意です。",
+          "kana": "かれ は とくに すうがく が とくい です。",
+          "ro": "Kare wa tokuni suugaku ga tokui desu.",
+          "en": "He’s especially good at math."
+        },
+        {
+          "ja": "とくに理由はありません。",
+          "kana": "とくに りゆう は ありません。",
+          "ro": "Tokuni riyuu wa arimasen.",
+          "en": "There’s no special reason."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-008",
+      "ja": "はっきり",
+      "kana": "はっきり",
+      "ro": "hakkiri",
+      "en": "clearly / distinctly",
+      "examples": [
+        {
+          "ja": "はっきり言ってください。",
+          "kana": "はっきり いって ください。",
+          "ro": "Hakkiri itte kudasai.",
+          "en": "Please say it clearly."
+        },
+        {
+          "ja": "はっきり覚えています。",
+          "kana": "はっきり おぼえています。",
+          "ro": "Hakkiri oboeteimasu.",
+          "en": "I remember it clearly."
+        },
+        {
+          "ja": "彼ははっきり話します。",
+          "kana": "かれ は はっきり はなします。",
+          "ro": "Kare wa hakkiri hanashimasu.",
+          "en": "He speaks clearly."
+        },
+        {
+          "ja": "答えをはっきり言いました。",
+          "kana": "こたえ を はっきり いいました。",
+          "ro": "Kotae o hakkiri iimashita.",
+          "en": "He stated the answer clearly."
+        },
+        {
+          "ja": "はっきり見えません。",
+          "kana": "はっきり みえません。",
+          "ro": "Hakkiri miemasen.",
+          "en": "I can’t see clearly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-009",
+      "ja": "まず",
+      "kana": "まず",
+      "ro": "mazu",
+      "en": "first / to begin with",
+      "examples": [
+        {
+          "ja": "まず手を洗ってください。",
+          "kana": "まず て を あらって ください。",
+          "ro": "Mazu te o aratte kudasai.",
+          "en": "First, please wash your hands."
+        },
+        {
+          "ja": "まず朝ご飯を食べます。",
+          "kana": "まず あさごはん を たべます。",
+          "ro": "Mazu asagohan o tabemasu.",
+          "en": "First, I eat breakfast."
+        },
+        {
+          "ja": "まず名前を書いてください。",
+          "kana": "まず なまえ を かいて ください。",
+          "ro": "Mazu namae o kaite kudasai.",
+          "en": "First, please write your name."
+        },
+        {
+          "ja": "まず先生に聞いてください。",
+          "kana": "まず せんせい に きいて ください。",
+          "ro": "Mazu sensei ni kiite kudasai.",
+          "en": "Ask the teacher first."
+        },
+        {
+          "ja": "まず何をしますか？",
+          "kana": "まず なに を します か？",
+          "ro": "Mazu nani o shimasu ka?",
+          "en": "What will you do first?"
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-010",
+      "ja": "最初に",
+      "kana": "さいしょに",
+      "ro": "saisho ni",
+      "en": "at first / in the beginning",
+      "examples": [
+        {
+          "ja": "最初に自己紹介をしました。",
+          "kana": "さいしょ に じこしょうかい を しました。",
+          "ro": "Saisho ni jikoshoukai o shimashita.",
+          "en": "I introduced myself first."
+        },
+        {
+          "ja": "最初にドアを開けてください。",
+          "kana": "さいしょ に どあ を あけて ください。",
+          "ro": "Saisho ni doa o akete kudasai.",
+          "en": "Please open the door first."
+        },
+        {
+          "ja": "最初に問題を読みます。",
+          "kana": "さいしょ に もんだい を よみます。",
+          "ro": "Saisho ni mondai o yomimasu.",
+          "en": "I will read the question first."
+        },
+        {
+          "ja": "最初に先生の話を聞きます。",
+          "kana": "さいしょ に せんせい の はなし を ききます。",
+          "ro": "Saisho ni sensei no hanashi o kikimasu.",
+          "en": "First, I listen to the teacher’s talk."
+        },
+        {
+          "ja": "最初に手を挙げた人が答えます。",
+          "kana": "さいしょ に て を あげた ひと が こたえます。",
+          "ro": "Saisho ni te o ageta hito ga kotaemasu.",
+          "en": "The person who raised their hand first will answer."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-011",
+      "ja": "しっかり",
+      "kana": "しっかり",
+      "ro": "shikkari",
+      "en": "firmly / properly / reliably",
+      "examples": [
+        {
+          "ja": "しっかり勉強してください。",
+          "kana": "しっかり べんきょう して ください。",
+          "ro": "Shikkari benkyou shite kudasai.",
+          "en": "Please study hard."
+        },
+        {
+          "ja": "朝ご飯をしっかり食べます。",
+          "kana": "あさごはん を しっかり たべます。",
+          "ro": "Asagohan o shikkari tabemasu.",
+          "en": "I eat a good breakfast."
+        },
+        {
+          "ja": "荷物をしっかり持ってください。",
+          "kana": "にもつ を しっかり もって ください。",
+          "ro": "Nimotsu o shikkari motte kudasai.",
+          "en": "Hold your luggage firmly."
+        },
+        {
+          "ja": "彼はしっかり働いています。",
+          "kana": "かれ は しっかり はたらいて います。",
+          "ro": "Kare wa shikkari hataraiteimasu.",
+          "en": "He is working diligently."
+        },
+        {
+          "ja": "しっかりドアを閉めてください。",
+          "kana": "しっかり どあ を しめて ください。",
+          "ro": "Shikkari doa o shimete kudasai.",
+          "en": "Please close the door tightly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-012",
+      "ja": "ずいぶん",
+      "kana": "ずいぶん",
+      "ro": "zuibun",
+      "en": "very / quite / a lot",
+      "examples": [
+        {
+          "ja": "ずいぶん時間がかかりました。",
+          "kana": "ずいぶん じかん が かかりました。",
+          "ro": "Zuibun jikan ga kakarimashita.",
+          "en": "It took quite a long time."
+        },
+        {
+          "ja": "今日はずいぶん暑いですね。",
+          "kana": "きょう は ずいぶん あつい ですね。",
+          "ro": "Kyou wa zuibun atsui desu ne.",
+          "en": "It’s really hot today."
+        },
+        {
+          "ja": "彼はずいぶん元気になりました。",
+          "kana": "かれ は ずいぶん げんき に なりました。",
+          "ro": "Kare wa zuibun genki ni narimashita.",
+          "en": "He has become much better."
+        },
+        {
+          "ja": "ずいぶん大きな家ですね。",
+          "kana": "ずいぶん おおきな いえ ですね。",
+          "ro": "Zuibun ookina ie desu ne.",
+          "en": "That’s quite a big house."
+        },
+        {
+          "ja": "ずいぶん早く来ましたね。",
+          "kana": "ずいぶん はやく きました ね。",
+          "ro": "Zuibun hayaku kimashita ne.",
+          "en": "You came pretty early, didn’t you?"
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-013",
+      "ja": "すっかり",
+      "kana": "すっかり",
+      "ro": "sukkari",
+      "en": "completely / entirely",
+      "examples": [
+        {
+          "ja": "風がすっかり止みました。",
+          "kana": "かぜ が すっかり やみました。",
+          "ro": "Kaze ga sukkari yamimashita.",
+          "en": "The wind has completely stopped."
+        },
+        {
+          "ja": "すっかり忘れました。",
+          "kana": "すっかり わすれました。",
+          "ro": "Sukkari wasuremashita.",
+          "en": "I completely forgot."
+        },
+        {
+          "ja": "部屋がすっかりきれいになりました。",
+          "kana": "へや が すっかり きれい に なりました。",
+          "ro": "Heya ga sukkari kirei ni narimashita.",
+          "en": "The room has become completely clean."
+        },
+        {
+          "ja": "雪がすっかり溶けました。",
+          "kana": "ゆき が すっかり とけました。",
+          "ro": "Yuki ga sukkari tokemashita.",
+          "en": "The snow has completely melted."
+        },
+        {
+          "ja": "彼のことをすっかり信じています。",
+          "kana": "かれ の こと を すっかり しんじています。",
+          "ro": "Kare no koto o sukkari shinjiteimasu.",
+          "en": "I completely trust him."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-014",
+      "ja": "そろそろ",
+      "kana": "そろそろ",
+      "ro": "sorosoro",
+      "en": "soon / it’s about time",
+      "examples": [
+        {
+          "ja": "そろそろ行きましょう。",
+          "kana": "そろそろ いきましょう。",
+          "ro": "Sorosoro ikimashou.",
+          "en": "Let’s go soon."
+        },
+        {
+          "ja": "そろそろ春になります。",
+          "kana": "そろそろ はる に なります。",
+          "ro": "Sorosoro haru ni narimasu.",
+          "en": "It will be spring soon."
+        },
+        {
+          "ja": "そろそろご飯の時間です。",
+          "kana": "そろそろ ごはん の じかん です。",
+          "ro": "Sorosoro gohan no jikan desu.",
+          "en": "It’s almost time to eat."
+        },
+        {
+          "ja": "そろそろ帰ります。",
+          "kana": "そろそろ かえります。",
+          "ro": "Sorosoro kaerimasu.",
+          "en": "I’ll go home soon."
+        },
+        {
+          "ja": "そろそろ雨が降りそうです。",
+          "kana": "そろそろ あめ が ふりそう です。",
+          "ro": "Sorosoro ame ga furisou desu.",
+          "en": "It looks like it’s going to rain soon."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-015",
+      "ja": "たしか",
+      "kana": "たしか",
+      "ro": "tashika",
+      "en": "certainly / if I remember correctly",
+      "examples": [
+        {
+          "ja": "たしか明日が休みです。",
+          "kana": "たしか あした が やすみ です。",
+          "ro": "Tashika ashita ga yasumi desu.",
+          "en": "If I remember correctly, tomorrow is a holiday."
+        },
+        {
+          "ja": "たしか彼の名前は田中さんです。",
+          "kana": "たしか かれ の なまえ は たなか さん です。",
+          "ro": "Tashika kare no namae wa Tanaka-san desu.",
+          "en": "I’m pretty sure his name is Mr. Tanaka."
+        },
+        {
+          "ja": "たしか7時に始まります。",
+          "kana": "たしか しちじ に はじまります。",
+          "ro": "Tashika shichiji ni hajimarimasu.",
+          "en": "If I recall correctly, it starts at 7 o’clock."
+        },
+        {
+          "ja": "たしかこの道でした。",
+          "kana": "たしか この みち でした。",
+          "ro": "Tashika kono michi deshita.",
+          "en": "I’m certain it was this road."
+        },
+        {
+          "ja": "たしかに見たことがあります。",
+          "kana": "たしか に みた こと が あります。",
+          "ro": "Tashika ni mita koto ga arimasu.",
+          "en": "I’ve certainly seen it before."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-016",
+      "ja": "だいたい",
+      "kana": "だいたい",
+      "ro": "daitai",
+      "en": "mostly / approximately",
+      "examples": [
+        {
+          "ja": "だいたい分かりました。",
+          "kana": "だいたい わかりました。",
+          "ro": "Daitai wakarimashita.",
+          "en": "I mostly understood."
+        },
+        {
+          "ja": "だいたい10分ぐらいかかります。",
+          "kana": "だいたい じゅっぷん ぐらい かかります。",
+          "ro": "Daitai juppun gurai kakarimasu.",
+          "en": "It takes about ten minutes."
+        },
+        {
+          "ja": "だいたい準備ができました。",
+          "kana": "だいたい じゅんび が できました。",
+          "ro": "Daitai junbi ga dekimashita.",
+          "en": "The preparation is mostly done."
+        },
+        {
+          "ja": "だいたい同じ意味です。",
+          "kana": "だいたい おなじ いみ です。",
+          "ro": "Daitai onaji imi desu.",
+          "en": "It’s roughly the same meaning."
+        },
+        {
+          "ja": "だいたいの場所を知っています。",
+          "kana": "だいたい の ばしょ を しっています。",
+          "ro": "Daitai no basho o shitteimasu.",
+          "en": "I know the approximate location."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-017",
+      "ja": "たとえば",
+      "kana": "たとえば",
+      "ro": "tatoeba",
+      "en": "for example",
+      "examples": [
+        {
+          "ja": "たとえばりんごやバナナがあります。",
+          "kana": "たとえば りんご や ばなな が あります。",
+          "ro": "Tatoeba ringo ya banana ga arimasu.",
+          "en": "For example, there are apples and bananas."
+        },
+        {
+          "ja": "たとえば英語で話してみましょう。",
+          "kana": "たとえば えいご で はなして みましょう。",
+          "ro": "Tatoeba eigo de hanashite mimashou.",
+          "en": "For example, let’s try speaking in English."
+        },
+        {
+          "ja": "たとえばスポーツが好きです。",
+          "kana": "たとえば すぽーつ が すき です。",
+          "ro": "Tatoeba supootsu ga suki desu.",
+          "en": "For example, I like sports."
+        },
+        {
+          "ja": "たとえば日本ではお茶をよく飲みます。",
+          "kana": "たとえば にほん では おちゃ を よく のみます。",
+          "ro": "Tatoeba Nihon de wa ocha o yoku nomimasu.",
+          "en": "For example, people in Japan often drink tea."
+        },
+        {
+          "ja": "たとえば数学ではこう解きます。",
+          "kana": "たとえば すうがく では こう ときます。",
+          "ro": "Tatoeba suugaku de wa kou tokimasu.",
+          "en": "For example, in math, you solve it like this."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-018",
+      "ja": "どんどん",
+      "kana": "どんどん",
+      "ro": "dondon",
+      "en": "rapidly / more and more",
+      "examples": [
+        {
+          "ja": "どんどん寒くなっています。",
+          "kana": "どんどん さむく なっています。",
+          "ro": "Dondon samuku natteimasu.",
+          "en": "It’s getting colder and colder."
+        },
+        {
+          "ja": "日本語がどんどん上手になります。",
+          "kana": "にほんご が どんどん じょうず に なります。",
+          "ro": "Nihongo ga dondon jouzu ni narimasu.",
+          "en": "My Japanese is improving rapidly."
+        },
+        {
+          "ja": "どんどん食べてください。",
+          "kana": "どんどん たべて ください。",
+          "ro": "Dondon tabete kudasai.",
+          "en": "Please eat more and more."
+        },
+        {
+          "ja": "どんどん人が増えています。",
+          "kana": "どんどん ひと が ふえています。",
+          "ro": "Dondon hito ga fueteimasu.",
+          "en": "More and more people are increasing."
+        },
+        {
+          "ja": "どんどん話してください。",
+          "kana": "どんどん はなして ください。",
+          "ro": "Dondon hanashite kudasai.",
+          "en": "Please keep talking freely."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-019",
+      "ja": "なるべく",
+      "kana": "なるべく",
+      "ro": "narubeku",
+      "en": "as much as possible / if possible",
+      "examples": [
+        {
+          "ja": "なるべく早く来てください。",
+          "kana": "なるべく はやく きて ください。",
+          "ro": "Narubeku hayaku kite kudasai.",
+          "en": "Please come as early as possible."
+        },
+        {
+          "ja": "なるべく車を使わないようにしています。",
+          "kana": "なるべく くるま を つかわない よう に しています。",
+          "ro": "Narubeku kuruma o tsukawanai you ni shiteimasu.",
+          "en": "I try not to use a car as much as possible."
+        },
+        {
+          "ja": "なるべく日本語で話します。",
+          "kana": "なるべく にほんご で はなします。",
+          "ro": "Narubeku nihongo de hanashimasu.",
+          "en": "I speak in Japanese as much as possible."
+        },
+        {
+          "ja": "なるべく簡単に説明してください。",
+          "kana": "なるべく かんたん に せつめい してください。",
+          "ro": "Narubeku kantan ni setsumei shite kudasai.",
+          "en": "Please explain as simply as possible."
+        },
+        {
+          "ja": "なるべく毎日運動します。",
+          "kana": "なるべく まいにち うんどう します。",
+          "ro": "Narubeku mainichi undou shimasu.",
+          "en": "I exercise every day as much as I can."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-020",
+      "ja": "びっくり",
+      "kana": "びっくり",
+      "ro": "bikkuri",
+      "en": "to be surprised / shocked",
+      "examples": [
+        {
+          "ja": "大きな音にびっくりしました。",
+          "kana": "おおきな おと に びっくり しました。",
+          "ro": "Ookina oto ni bikkuri shimashita.",
+          "en": "I was surprised by the loud sound."
+        },
+        {
+          "ja": "彼の上手な日本語にびっくりしました。",
+          "kana": "かれ の じょうず な にほんご に びっくり しました。",
+          "ro": "Kare no jouzu na nihongo ni bikkuri shimashita.",
+          "en": "I was amazed by his good Japanese."
+        },
+        {
+          "ja": "値段を見てびっくりしました。",
+          "kana": "ねだん を みて びっくり しました。",
+          "ro": "Nedan o mite bikkuri shimashita.",
+          "en": "I was surprised by the price."
+        },
+        {
+          "ja": "突然の雨にびっくりしました。",
+          "kana": "とつぜん の あめ に びっくり しました。",
+          "ro": "Totsuzen no ame ni bikkuri shimashita.",
+          "en": "I was surprised by the sudden rain."
+        },
+        {
+          "ja": "友達が結婚すると聞いてびっくりしました。",
+          "kana": "ともだち が けっこん すると きいて びっくり しました。",
+          "ro": "Tomodachi ga kekkon suru to kiite bikkuri shimashita.",
+          "en": "I was surprised to hear that my friend is getting married."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-021",
+      "ja": "はっきり",
+      "kana": "はっきり",
+      "ro": "hakkiri",
+      "en": "clearly / distinctly",
+      "examples": [
+        {
+          "ja": "はっきり言ってください。",
+          "kana": "はっきり いって ください。",
+          "ro": "Hakkiri itte kudasai.",
+          "en": "Please say it clearly."
+        },
+        {
+          "ja": "今日は山がはっきり見えます。",
+          "kana": "きょう は やま が はっきり みえます。",
+          "ro": "Kyou wa yama ga hakkiri miemasu.",
+          "en": "We can see the mountain clearly today."
+        },
+        {
+          "ja": "はっきり覚えていません。",
+          "kana": "はっきり おぼえて いません。",
+          "ro": "Hakkiri oboeteimasen.",
+          "en": "I don’t remember clearly."
+        },
+        {
+          "ja": "彼ははっきりと答えました。",
+          "kana": "かれ は はっきり と こたえました。",
+          "ro": "Kare wa hakkiri to kotaemashita.",
+          "en": "He answered clearly."
+        },
+        {
+          "ja": "その違いがはっきり分かります。",
+          "kana": "その ちがい が はっきり わかります。",
+          "ro": "Sono chigai ga hakkiri wakarimasu.",
+          "en": "I can clearly see the difference."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-022",
+      "ja": "まっすぐ",
+      "kana": "まっすぐ",
+      "ro": "massugu",
+      "en": "straight / directly",
+      "examples": [
+        {
+          "ja": "まっすぐ行ってください。",
+          "kana": "まっすぐ いって ください。",
+          "ro": "Massugu itte kudasai.",
+          "en": "Go straight ahead."
+        },
+        {
+          "ja": "まっすぐ帰ります。",
+          "kana": "まっすぐ かえります。",
+          "ro": "Massugu kaerimasu.",
+          "en": "I’ll go straight home."
+        },
+        {
+          "ja": "まっすぐ立ってください。",
+          "kana": "まっすぐ たって ください。",
+          "ro": "Massugu tatte kudasai.",
+          "en": "Please stand straight."
+        },
+        {
+          "ja": "彼はまっすぐな性格です。",
+          "kana": "かれ は まっすぐ な せいかく です。",
+          "ro": "Kare wa massugu na seikaku desu.",
+          "en": "He has an honest personality."
+        },
+        {
+          "ja": "まっすぐに座りなさい。",
+          "kana": "まっすぐ に すわりなさい。",
+          "ro": "Massugu ni suwarinasai.",
+          "en": "Sit up straight."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-023",
+      "ja": "めったに",
+      "kana": "めったに",
+      "ro": "mettani",
+      "en": "rarely / seldom",
+      "examples": [
+        {
+          "ja": "彼はめったに外出しません。",
+          "kana": "かれ は めったに がいしゅつ しません。",
+          "ro": "Kare wa mettani gaishutsu shimasen.",
+          "en": "He rarely goes out."
+        },
+        {
+          "ja": "この花はめったに見られません。",
+          "kana": "この はな は めったに みられません。",
+          "ro": "Kono hana wa mettani miraremasen.",
+          "en": "You seldom see this flower."
+        },
+        {
+          "ja": "彼女はめったに怒りません。",
+          "kana": "かのじょ は めったに おこりません。",
+          "ro": "Kanojo wa mettani okorimasen.",
+          "en": "She rarely gets angry."
+        },
+        {
+          "ja": "私はめったにテレビを見ません。",
+          "kana": "わたし は めったに てれび を みません。",
+          "ro": "Watashi wa mettani terebi o mimasen.",
+          "en": "I seldom watch TV."
+        },
+        {
+          "ja": "こんな機会はめったにありません。",
+          "kana": "こんな きかい は めったに ありません。",
+          "ro": "Konna kikai wa mettani arimasen.",
+          "en": "Such an opportunity is rare."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-024",
+      "ja": "やはり",
+      "kana": "やはり",
+      "ro": "yahari",
+      "en": "as expected / after all",
+      "examples": [
+        {
+          "ja": "やはり雨が降りました。",
+          "kana": "やはり あめ が ふりました。",
+          "ro": "Yahari ame ga furimashita.",
+          "en": "It rained after all."
+        },
+        {
+          "ja": "やはり彼が勝ちました。",
+          "kana": "やはり かれ が かちました。",
+          "ro": "Yahari kare ga kachimashita.",
+          "en": "As expected, he won."
+        },
+        {
+          "ja": "やはり行かないことにしました。",
+          "kana": "やはり いかない こと に しました。",
+          "ro": "Yahari ikanai koto ni shimashita.",
+          "en": "I decided not to go after all."
+        },
+        {
+          "ja": "やはり日本の食べ物はおいしいです。",
+          "kana": "やはり にほん の たべもの は おいしい です。",
+          "ro": "Yahari Nihon no tabemono wa oishii desu.",
+          "en": "Japanese food is delicious, as expected."
+        },
+        {
+          "ja": "やはり彼に頼みましょう。",
+          "kana": "やはり かれ に たのみましょう。",
+          "ro": "Yahari kare ni tanomimashou.",
+          "en": "Let’s ask him after all."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-025",
+      "ja": "ゆっくり",
+      "kana": "ゆっくり",
+      "ro": "yukkuri",
+      "en": "slowly / leisurely",
+      "examples": [
+        {
+          "ja": "ゆっくり休んでください。",
+          "kana": "ゆっくり やすんで ください。",
+          "ro": "Yukkuri yasunde kudasai.",
+          "en": "Please rest slowly."
+        },
+        {
+          "ja": "ゆっくり話してください。",
+          "kana": "ゆっくり はなして ください。",
+          "ro": "Yukkuri hanashite kudasai.",
+          "en": "Please speak slowly."
+        },
+        {
+          "ja": "今日はゆっくりします。",
+          "kana": "きょう は ゆっくり します。",
+          "ro": "Kyou wa yukkuri shimasu.",
+          "en": "I’ll take it easy today."
+        },
+        {
+          "ja": "ゆっくり歩きましょう。",
+          "kana": "ゆっくり あるきましょう。",
+          "ro": "Yukkuri arukimashou.",
+          "en": "Let’s walk slowly."
+        },
+        {
+          "ja": "温泉でゆっくりしました。",
+          "kana": "おんせん で ゆっくり しました。",
+          "ro": "Onsen de yukkuri shimashita.",
+          "en": "I relaxed at the hot spring."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-026",
+      "ja": "わざと",
+      "kana": "わざと",
+      "ro": "wazato",
+      "en": "on purpose / intentionally",
+      "examples": [
+        {
+          "ja": "わざと遅れましたか。",
+          "kana": "わざと おくれました か。",
+          "ro": "Wazato okuremashita ka?",
+          "en": "Did you come late on purpose?"
+        },
+        {
+          "ja": "彼はわざと間違えました。",
+          "kana": "かれ は わざと まちがえました。",
+          "ro": "Kare wa wazato machigaemashita.",
+          "en": "He made a mistake on purpose."
+        },
+        {
+          "ja": "わざとドアを閉めませんでした。",
+          "kana": "わざと どあ を しめません でした。",
+          "ro": "Wazato doa o shimemasen deshita.",
+          "en": "I didn’t close the door intentionally."
+        },
+        {
+          "ja": "彼はわざと知らないふりをしました。",
+          "kana": "かれ は わざと しらない ふり を しました。",
+          "ro": "Kare wa wazato shiranai furi o shimashita.",
+          "en": "He pretended not to know on purpose."
+        },
+        {
+          "ja": "わざとやったのではありません。",
+          "kana": "わざと やった の では ありません。",
+          "ro": "Wazato yatta no dewa arimasen.",
+          "en": "I didn’t do it on purpose."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-027",
+      "ja": "わりと",
+      "kana": "わりと",
+      "ro": "warito",
+      "en": "relatively / fairly",
+      "examples": [
+        {
+          "ja": "この本はわりと簡単です。",
+          "kana": "この ほん は わりと かんたん です。",
+          "ro": "Kono hon wa warito kantan desu.",
+          "en": "This book is fairly easy."
+        },
+        {
+          "ja": "今日はわりと涼しいです。",
+          "kana": "きょう は わりと すずしい です。",
+          "ro": "Kyou wa warito suzushii desu.",
+          "en": "It’s relatively cool today."
+        },
+        {
+          "ja": "彼はわりと親切です。",
+          "kana": "かれ は わりと しんせつ です。",
+          "ro": "Kare wa warito shinsetsu desu.",
+          "en": "He is fairly kind."
+        },
+        {
+          "ja": "このレストランはわりと安いです。",
+          "kana": "この れすとらん は わりと やすい です。",
+          "ro": "Kono resutoran wa warito yasui desu.",
+          "en": "This restaurant is quite cheap."
+        },
+        {
+          "ja": "わりと静かな場所ですね。",
+          "kana": "わりと しずかな ばしょ ですね。",
+          "ro": "Warito shizukana basho desu ne.",
+          "en": "It’s a relatively quiet place, isn’t it?"
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-028",
+      "ja": "うっかり",
+      "kana": "うっかり",
+      "ro": "ukkari",
+      "en": "carelessly / accidentally",
+      "examples": [
+        {
+          "ja": "うっかり約束を忘れました。",
+          "kana": "うっかり やくそく を わすれました。",
+          "ro": "Ukkari yakusoku o wasuremashita.",
+          "en": "I accidentally forgot the promise."
+        },
+        {
+          "ja": "うっかりミスをしました。",
+          "kana": "うっかり みす を しました。",
+          "ro": "Ukkari misu o shimashita.",
+          "en": "I made a careless mistake."
+        },
+        {
+          "ja": "うっかり財布を落としました。",
+          "kana": "うっかり さいふ を おとしました。",
+          "ro": "Ukkari saifu o otoshimashita.",
+          "en": "I accidentally dropped my wallet."
+        },
+        {
+          "ja": "うっかりコーヒーをこぼしました。",
+          "kana": "うっかり こーひー を こぼしました。",
+          "ro": "Ukkari koohii o koboshimashita.",
+          "en": "I spilled my coffee by mistake."
+        },
+        {
+          "ja": "うっかり言ってしまいました。",
+          "kana": "うっかり いって しまいました。",
+          "ro": "Ukkari itte shimaimashita.",
+          "en": "I said it carelessly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-029",
+      "ja": "きちんと",
+      "kana": "きちんと",
+      "ro": "kichinto",
+      "en": "neatly / properly / exactly",
+      "examples": [
+        {
+          "ja": "きちんと片付けてください。",
+          "kana": "きちんと かたづけて ください。",
+          "ro": "Kichinto katazukete kudasai.",
+          "en": "Please tidy up properly."
+        },
+        {
+          "ja": "きちんとあいさつしましょう。",
+          "kana": "きちんと あいさつ しましょう。",
+          "ro": "Kichinto aisatsu shimashou.",
+          "en": "Let’s greet people properly."
+        },
+        {
+          "ja": "服をきちんとたたみました。",
+          "kana": "ふく を きちんと たたみました。",
+          "ro": "Fuku o kichinto tatamimashita.",
+          "en": "I folded my clothes neatly."
+        },
+        {
+          "ja": "きちんと時間を守ってください。",
+          "kana": "きちんと じかん を まもって ください。",
+          "ro": "Kichinto jikan o mamotte kudasai.",
+          "en": "Please be punctual."
+        },
+        {
+          "ja": "部屋をきちんと掃除しました。",
+          "kana": "へや を きちんと そうじ しました。",
+          "ro": "Heya o kichinto souji shimashita.",
+          "en": "I cleaned the room properly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-030",
+      "ja": "ぐっすり",
+      "kana": "ぐっすり",
+      "ro": "gussuri",
+      "en": "soundly / deeply (sleep)",
+      "examples": [
+        {
+          "ja": "昨夜ぐっすり寝ました。",
+          "kana": "さくや ぐっすり ねました。",
+          "ro": "Sakuya gussuri nemashita.",
+          "en": "I slept soundly last night."
+        },
+        {
+          "ja": "子どもたちはぐっすり眠っています。",
+          "kana": "こどもたち は ぐっすり ねむっています。",
+          "ro": "Kodomotachi wa gussuri nemutteimasu.",
+          "en": "The children are sleeping deeply."
+        },
+        {
+          "ja": "ぐっすり休んでください。",
+          "kana": "ぐっすり やすんで ください。",
+          "ro": "Gussuri yasunde kudasai.",
+          "en": "Please rest well."
+        },
+        {
+          "ja": "ぐっすり寝たので元気です。",
+          "kana": "ぐっすり ねた ので げんき です。",
+          "ro": "Gussuri neta node genki desu.",
+          "en": "I feel great because I slept deeply."
+        },
+        {
+          "ja": "ぐっすり眠れましたか。",
+          "kana": "ぐっすり ねむれました か。",
+          "ro": "Gussuri nemuremashita ka?",
+          "en": "Did you sleep well?"
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-031",
+      "ja": "きっと",
+      "kana": "きっと",
+      "ro": "kitto",
+      "en": "surely / definitely / probably",
+      "examples": [
+        {
+          "ja": "明日はきっと晴れます。",
+          "kana": "あした は きっと はれます。",
+          "ro": "Ashita wa kitto haremasu.",
+          "en": "It will surely be sunny tomorrow."
+        },
+        {
+          "ja": "彼はきっと来ると思います。",
+          "kana": "かれ は きっと くる と おもいます。",
+          "ro": "Kare wa kitto kuru to omoimasu.",
+          "en": "I think he will definitely come."
+        },
+        {
+          "ja": "きっと大丈夫ですよ。",
+          "kana": "きっと だいじょうぶ です よ。",
+          "ro": "Kitto daijoubu desu yo.",
+          "en": "I’m sure it will be fine."
+        },
+        {
+          "ja": "きっと成功します。",
+          "kana": "きっと せいこう します。",
+          "ro": "Kitto seikou shimasu.",
+          "en": "You will surely succeed."
+        },
+        {
+          "ja": "彼はきっと驚くでしょう。",
+          "kana": "かれ は きっと おどろく でしょう。",
+          "ro": "Kare wa kitto odoroku deshou.",
+          "en": "He will surely be surprised."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-032",
+      "ja": "けっして",
+      "kana": "けっして",
+      "ro": "kesshite",
+      "en": "never / by no means",
+      "examples": [
+        {
+          "ja": "けっしてあきらめません。",
+          "kana": "けっして あきらめません。",
+          "ro": "Kesshite akiramemasen.",
+          "en": "I will never give up."
+        },
+        {
+          "ja": "けっして嘘をついてはいけません。",
+          "kana": "けっして うそ を ついて は いけません。",
+          "ro": "Kesshite uso o tsuite wa ikemasen.",
+          "en": "You must never tell a lie."
+        },
+        {
+          "ja": "けっして忘れません。",
+          "kana": "けっして わすれません。",
+          "ro": "Kesshite wasuremasen.",
+          "en": "I will never forget."
+        },
+        {
+          "ja": "けっして遅れないでください。",
+          "kana": "けっして おくれないで ください。",
+          "ro": "Kesshite okurenaide kudasai.",
+          "en": "Please don’t ever be late."
+        },
+        {
+          "ja": "けっして一人ではありません。",
+          "kana": "けっして ひとり では ありません。",
+          "ro": "Kesshite hitori dewa arimasen.",
+          "en": "You are never alone."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-033",
+      "ja": "たいてい",
+      "kana": "たいてい",
+      "ro": "taitei",
+      "en": "usually / generally / mostly",
+      "examples": [
+        {
+          "ja": "たいてい朝はコーヒーを飲みます。",
+          "kana": "たいてい あさ は こーひー を のみます。",
+          "ro": "Taitei asa wa koohii o nomimasu.",
+          "en": "I usually drink coffee in the morning."
+        },
+        {
+          "ja": "彼はたいてい家にいます。",
+          "kana": "かれ は たいてい いえ に います。",
+          "ro": "Kare wa taitei ie ni imasu.",
+          "en": "He is usually at home."
+        },
+        {
+          "ja": "休日はたいてい映画を見ます。",
+          "kana": "きゅうじつ は たいてい えいが を みます。",
+          "ro": "Kyuujitsu wa taitei eiga o mimasu.",
+          "en": "I usually watch movies on my days off."
+        },
+        {
+          "ja": "たいていの人はこの歌を知っています。",
+          "kana": "たいてい の ひと は この うた を しっています。",
+          "ro": "Taitei no hito wa kono uta o shitteimasu.",
+          "en": "Most people know this song."
+        },
+        {
+          "ja": "たいてい夜は10時に寝ます。",
+          "kana": "たいてい よる は じゅうじ に ねます。",
+          "ro": "Taitei yoru wa juuji ni nemasu.",
+          "en": "I usually go to bed at 10 p.m."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-034",
+      "ja": "だんだん",
+      "kana": "だんだん",
+      "ro": "dandan",
+      "en": "gradually / little by little",
+      "examples": [
+        {
+          "ja": "だんだん寒くなってきました。",
+          "kana": "だんだん さむく なって きました。",
+          "ro": "Dandan samuku natte kimashita.",
+          "en": "It’s gradually getting colder."
+        },
+        {
+          "ja": "だんだん上手になっています。",
+          "kana": "だんだん じょうず に なっています。",
+          "ro": "Dandan jouzu ni natteimasu.",
+          "en": "You’re getting better little by little."
+        },
+        {
+          "ja": "だんだん暗くなってきました。",
+          "kana": "だんだん くらく なって きました。",
+          "ro": "Dandan kuraku natte kimashita.",
+          "en": "It’s getting darker little by little."
+        },
+        {
+          "ja": "だんだん分かってきました。",
+          "kana": "だんだん わかって きました。",
+          "ro": "Dandan wakatte kimashita.",
+          "en": "I’m starting to understand gradually."
+        },
+        {
+          "ja": "だんだん速く歩きました。",
+          "kana": "だんだん はやく あるきました。",
+          "ro": "Dandan hayaku arukimashita.",
+          "en": "I walked faster and faster."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-035",
+      "ja": "とつぜん",
+      "kana": "とつぜん",
+      "ro": "totsuzen",
+      "en": "suddenly / abruptly",
+      "examples": [
+        {
+          "ja": "とつぜん雨が降り出しました。",
+          "kana": "とつぜん あめ が ふりだしました。",
+          "ro": "Totsuzen ame ga furidashimashita.",
+          "en": "It suddenly started to rain."
+        },
+        {
+          "ja": "とつぜん電話が鳴りました。",
+          "kana": "とつぜん でんわ が なりました。",
+          "ro": "Totsuzen denwa ga narimashita.",
+          "en": "The phone rang suddenly."
+        },
+        {
+          "ja": "とつぜん泣き出しました。",
+          "kana": "とつぜん なきだしました。",
+          "ro": "Totsuzen nakidashimashita.",
+          "en": "She suddenly started crying."
+        },
+        {
+          "ja": "とつぜん立ち止まりました。",
+          "kana": "とつぜん たちどまりました。",
+          "ro": "Totsuzen tachidomarimashita.",
+          "en": "He suddenly stopped walking."
+        },
+        {
+          "ja": "とつぜん大きな音がしました。",
+          "kana": "とつぜん おおきな おと が しました。",
+          "ro": "Totsuzen ookina oto ga shimashita.",
+          "en": "There was a sudden loud sound."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-036",
+      "ja": "やっと",
+      "kana": "やっと",
+      "ro": "yatto",
+      "en": "finally / at last",
+      "examples": [
+        {
+          "ja": "やっと仕事が終わりました。",
+          "kana": "やっと しごと が おわりました。",
+          "ro": "Yatto shigoto ga owarimashita.",
+          "en": "I finally finished work."
+        },
+        {
+          "ja": "やっと春が来ました。",
+          "kana": "やっと はる が きました。",
+          "ro": "Yatto haru ga kimashita.",
+          "en": "Spring has finally come."
+        },
+        {
+          "ja": "やっと問題が解けました。",
+          "kana": "やっと もんだい が とけました。",
+          "ro": "Yatto mondai ga tokemashita.",
+          "en": "I finally solved the problem."
+        },
+        {
+          "ja": "やっと彼に会えました。",
+          "kana": "やっと かれ に あえました。",
+          "ro": "Yatto kare ni aemashita.",
+          "en": "I finally met him."
+        },
+        {
+          "ja": "やっと電車が来ました。",
+          "kana": "やっと でんしゃ が きました。",
+          "ro": "Yatto densha ga kimashita.",
+          "en": "The train has finally arrived."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-037",
+      "ja": "わざわざ",
+      "kana": "わざわざ",
+      "ro": "wazawaza",
+      "en": "especially / to go out of one’s way",
+      "examples": [
+        {
+          "ja": "わざわざ来てくれてありがとう。",
+          "kana": "わざわざ きて くれて ありがとう。",
+          "ro": "Wazawaza kite kurete arigatou.",
+          "en": "Thank you for coming all the way."
+        },
+        {
+          "ja": "わざわざ電話をくれました。",
+          "kana": "わざわざ でんわ を くれました。",
+          "ro": "Wazawaza denwa o kuremashita.",
+          "en": "He called me especially."
+        },
+        {
+          "ja": "わざわざ駅まで迎えに行きました。",
+          "kana": "わざわざ えき まで むかえ に いきました。",
+          "ro": "Wazawaza eki made mukae ni ikimashita.",
+          "en": "I went all the way to the station to pick him up."
+        },
+        {
+          "ja": "わざわざ持ってきてくれました。",
+          "kana": "わざわざ もってきて くれました。",
+          "ro": "Wazawaza motte kite kuremashita.",
+          "en": "They brought it especially for me."
+        },
+        {
+          "ja": "わざわざ来なくてもよかったのに。",
+          "kana": "わざわざ こなくて も よかった のに。",
+          "ro": "Wazawaza konakute mo yokatta noni.",
+          "en": "You didn’t have to come all the way."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-038",
+      "ja": "そっと",
+      "kana": "そっと",
+      "ro": "sotto",
+      "en": "quietly / gently / softly",
+      "examples": [
+        {
+          "ja": "そっとドアを閉めました。",
+          "kana": "そっと どあ を しめました。",
+          "ro": "Sotto doa o shimemashita.",
+          "en": "I quietly closed the door."
+        },
+        {
+          "ja": "そっと彼女の肩に手を置きました。",
+          "kana": "そっと かのじょ の かた に て を おきました。",
+          "ro": "Sotto kanojo no kata ni te o okimashita.",
+          "en": "I gently put my hand on her shoulder."
+        },
+        {
+          "ja": "そっと部屋を出ました。",
+          "kana": "そっと へや を でました。",
+          "ro": "Sotto heya o demashita.",
+          "en": "I quietly left the room."
+        },
+        {
+          "ja": "そっと本を机に置きました。",
+          "kana": "そっと ほん を つくえ に おきました。",
+          "ro": "Sotto hon o tsukue ni okimashita.",
+          "en": "I softly placed the book on the desk."
+        },
+        {
+          "ja": "赤ちゃんをそっと寝かせました。",
+          "kana": "あかちゃん を そっと ねかせました。",
+          "ro": "Akachan o sotto nekasemashita.",
+          "en": "I gently put the baby to sleep."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-039",
+      "ja": "ちゃんと",
+      "kana": "ちゃんと",
+      "ro": "chanto",
+      "en": "properly / correctly / neatly",
+      "examples": [
+        {
+          "ja": "ちゃんと宿題をしました。",
+          "kana": "ちゃんと しゅくだい を しました。",
+          "ro": "Chanto shukudai o shimashita.",
+          "en": "I did my homework properly."
+        },
+        {
+          "ja": "ちゃんと話を聞いてください。",
+          "kana": "ちゃんと はなし を きいて ください。",
+          "ro": "Chanto hanashi o kiite kudasai.",
+          "en": "Please listen carefully."
+        },
+        {
+          "ja": "ちゃんと説明してください。",
+          "kana": "ちゃんと せつめい してください。",
+          "ro": "Chanto setsumei shite kudasai.",
+          "en": "Please explain it properly."
+        },
+        {
+          "ja": "ちゃんと立ってください。",
+          "kana": "ちゃんと たって ください。",
+          "ro": "Chanto tatte kudasai.",
+          "en": "Stand up properly."
+        },
+        {
+          "ja": "ちゃんと時間を守りました。",
+          "kana": "ちゃんと じかん を まもりました。",
+          "ro": "Chanto jikan o mamorimashita.",
+          "en": "I kept the time properly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-040",
+      "ja": "ぴったり",
+      "kana": "ぴったり",
+      "ro": "pittari",
+      "en": "perfectly / exactly / just right",
+      "examples": [
+        {
+          "ja": "この服は私にぴったりです。",
+          "kana": "この ふく は わたし に ぴったり です。",
+          "ro": "Kono fuku wa watashi ni pittari desu.",
+          "en": "These clothes fit me perfectly."
+        },
+        {
+          "ja": "ドアがぴったり閉まっています。",
+          "kana": "どあ が ぴったり しまっています。",
+          "ro": "Doa ga pittari shimatteimasu.",
+          "en": "The door is tightly closed."
+        },
+        {
+          "ja": "時間がぴったり合いました。",
+          "kana": "じかん が ぴったり あいました。",
+          "ro": "Jikan ga pittari aimashita.",
+          "en": "The timing was perfect."
+        },
+        {
+          "ja": "彼の答えはぴったりでした。",
+          "kana": "かれ の こたえ は ぴったり でした。",
+          "ro": "Kare no kotae wa pittari deshita.",
+          "en": "His answer was exactly right."
+        },
+        {
+          "ja": "二人はぴったりのカップルです。",
+          "kana": "ふたり は ぴったり の かっぷる です。",
+          "ro": "Futari wa pittari no kappuru desu.",
+          "en": "They are a perfect couple."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-041",
+      "ja": "ほとんど",
+      "kana": "ほとんど",
+      "ro": "hotondo",
+      "en": "almost / nearly / mostly",
+      "examples": [
+        {
+          "ja": "ほとんどの人が知っています。",
+          "kana": "ほとんど の ひと が しっています。",
+          "ro": "Hotondo no hito ga shitteimasu.",
+          "en": "Almost everyone knows."
+        },
+        {
+          "ja": "宿題はほとんど終わりました。",
+          "kana": "しゅくだい は ほとんど おわりました。",
+          "ro": "Shukudai wa hotondo owarimashita.",
+          "en": "The homework is almost finished."
+        },
+        {
+          "ja": "彼の話はほとんど本当です。",
+          "kana": "かれ の はなし は ほとんど ほんとう です。",
+          "ro": "Kare no hanashi wa hotondo hontou desu.",
+          "en": "Most of what he said is true."
+        },
+        {
+          "ja": "ほとんど寝ていません。",
+          "kana": "ほとんど ねて いません。",
+          "ro": "Hotondo neteimasen.",
+          "en": "I hardly slept."
+        },
+        {
+          "ja": "ほとんど毎日運動します。",
+          "kana": "ほとんど まいにち うんどう します。",
+          "ro": "Hotondo mainichi undou shimasu.",
+          "en": "I exercise almost every day."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-042",
+      "ja": "まるで",
+      "kana": "まるで",
+      "ro": "marude",
+      "en": "just like / as if",
+      "examples": [
+        {
+          "ja": "まるで夢のようです。",
+          "kana": "まるで ゆめ の よう です。",
+          "ro": "Marude yume no you desu.",
+          "en": "It’s just like a dream."
+        },
+        {
+          "ja": "まるで子どものように笑いました。",
+          "kana": "まるで こども の よう に わらいました。",
+          "ro": "Marude kodomo no you ni waraimashita.",
+          "en": "He laughed just like a child."
+        },
+        {
+          "ja": "まるで別人のようです。",
+          "kana": "まるで べつじん の よう です。",
+          "ro": "Marude betsujin no you desu.",
+          "en": "He looks like a completely different person."
+        },
+        {
+          "ja": "まるで春のように暖かいです。",
+          "kana": "まるで はる の よう に あたたかい です。",
+          "ro": "Marude haru no you ni atatakai desu.",
+          "en": "It’s warm just like spring."
+        },
+        {
+          "ja": "まるで映画を見ているようでした。",
+          "kana": "まるで えいが を みている よう でした。",
+          "ro": "Marude eiga o miteiru you deshita.",
+          "en": "It was as if I were watching a movie."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-043",
+      "ja": "むしろ",
+      "kana": "むしろ",
+      "ro": "mushiro",
+      "en": "rather / instead",
+      "examples": [
+        {
+          "ja": "暑いよりむしろ寒い方が好きです。",
+          "kana": "あつい より むしろ さむい ほう が すき です。",
+          "ro": "Atsui yori mushiro samui hou ga suki desu.",
+          "en": "I prefer the cold rather than the heat."
+        },
+        {
+          "ja": "失敗してもむしろ良い経験です。",
+          "kana": "しっぱい しても むしろ よい けいけん です。",
+          "ro": "Shippai shitemo mushiro yoi keiken desu.",
+          "en": "Even failure is rather a good experience."
+        },
+        {
+          "ja": "怒るよりむしろ笑いました。",
+          "kana": "おこる より むしろ わらいました。",
+          "ro": "Okoru yori mushiro waraimashita.",
+          "en": "I laughed rather than got angry."
+        },
+        {
+          "ja": "今日は休むよりむしろ働きたいです。",
+          "kana": "きょう は やすむ より むしろ はたらきたい です。",
+          "ro": "Kyou wa yasumu yori mushiro hatarakitai desu.",
+          "en": "I’d rather work than rest today."
+        },
+        {
+          "ja": "むしろ彼に任せた方がいいです。",
+          "kana": "むしろ かれ に まかせた ほう が いい です。",
+          "ro": "Mushiro kare ni makaseta hou ga ii desu.",
+          "en": "It’s better to leave it to him."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-044",
+      "ja": "わくわく",
+      "kana": "わくわく",
+      "ro": "wakuwaku",
+      "en": "excitedly / with anticipation",
+      "examples": [
+        {
+          "ja": "旅行が楽しみでわくわくしています。",
+          "kana": "りょこう が たのしみ で わくわく しています。",
+          "ro": "Ryokou ga tanoshimi de wakuwaku shiteimasu.",
+          "en": "I’m excited about the trip."
+        },
+        {
+          "ja": "プレゼントを開けるときわくわくします。",
+          "kana": "ぷれぜんと を あける とき わくわく します。",
+          "ro": "Purezento o akeru toki wakuwaku shimasu.",
+          "en": "I get excited when opening presents."
+        },
+        {
+          "ja": "わくわくする映画を見ました。",
+          "kana": "わくわく する えいが を みました。",
+          "ro": "Wakuwaku suru eiga o mimashita.",
+          "en": "I watched an exciting movie."
+        },
+        {
+          "ja": "新しい仕事にわくわくしています。",
+          "kana": "あたらしい しごと に わくわく しています。",
+          "ro": "Atarashii shigoto ni wakuwaku shiteimasu.",
+          "en": "I’m excited about my new job."
+        },
+        {
+          "ja": "わくわくして眠れませんでした。",
+          "kana": "わくわく して ねむれません でした。",
+          "ro": "Wakuwaku shite nemuremasen deshita.",
+          "en": "I was too excited to sleep."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-045",
+      "ja": "やや",
+      "kana": "やや",
+      "ro": "yaya",
+      "en": "slightly / somewhat",
+      "examples": [
+        {
+          "ja": "今日はやや寒いです。",
+          "kana": "きょう は やや さむい です。",
+          "ro": "Kyou wa yaya samui desu.",
+          "en": "It’s slightly cold today."
+        },
+        {
+          "ja": "彼はやや疲れているようです。",
+          "kana": "かれ は やや つかれている よう です。",
+          "ro": "Kare wa yaya tsukareteiru you desu.",
+          "en": "He seems a bit tired."
+        },
+        {
+          "ja": "この部屋はやや暗いです。",
+          "kana": "この へや は やや くらい です。",
+          "ro": "Kono heya wa yaya kurai desu.",
+          "en": "This room is a little dark."
+        },
+        {
+          "ja": "やや難しい問題です。",
+          "kana": "やや むずかしい もんだい です。",
+          "ro": "Yaya muzukashii mondai desu.",
+          "en": "It’s a somewhat difficult problem."
+        },
+        {
+          "ja": "やや高めの値段です。",
+          "kana": "やや たかめ の ねだん です。",
+          "ro": "Yaya takame no nedan desu.",
+          "en": "The price is slightly high."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-046",
+      "ja": "しばらく",
+      "kana": "しばらく",
+      "ro": "shibaraku",
+      "en": "for a while / a moment / soon",
+      "examples": [
+        {
+          "ja": "しばらくお待ちください。",
+          "kana": "しばらく おまち ください。",
+          "ro": "Shibaraku omachi kudasai.",
+          "en": "Please wait a moment."
+        },
+        {
+          "ja": "しばらく東京に住んでいました。",
+          "kana": "しばらく とうきょう に すんでいました。",
+          "ro": "Shibaraku Toukyou ni sundeimashita.",
+          "en": "I lived in Tokyo for a while."
+        },
+        {
+          "ja": "しばらく会っていませんね。",
+          "kana": "しばらく あって いません ね。",
+          "ro": "Shibaraku atteimasen ne.",
+          "en": "It’s been a while since we met."
+        },
+        {
+          "ja": "しばらく静かにしてください。",
+          "kana": "しばらく しずか に して ください。",
+          "ro": "Shibaraku shizuka ni shite kudasai.",
+          "en": "Please be quiet for a while."
+        },
+        {
+          "ja": "しばらくしたら戻ります。",
+          "kana": "しばらく したら もどります。",
+          "ro": "Shibaraku shitara modorimasu.",
+          "en": "I’ll be back in a while."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-047",
+      "ja": "たしかに",
+      "kana": "たしかに",
+      "ro": "tashika ni",
+      "en": "certainly / indeed / surely",
+      "examples": [
+        {
+          "ja": "たしかに彼の言う通りです。",
+          "kana": "たしかに かれ の いう とおり です。",
+          "ro": "Tashika ni kare no iu toori desu.",
+          "en": "That’s certainly true."
+        },
+        {
+          "ja": "たしかに覚えています。",
+          "kana": "たしかに おぼえています。",
+          "ro": "Tashika ni oboeteimasu.",
+          "en": "I definitely remember."
+        },
+        {
+          "ja": "たしかに見ました。",
+          "kana": "たしかに みました。",
+          "ro": "Tashika ni mimashita.",
+          "en": "I certainly saw it."
+        },
+        {
+          "ja": "たしかにその方がいいですね。",
+          "kana": "たしかに その ほう が いい です ね。",
+          "ro": "Tashika ni sono hou ga ii desu ne.",
+          "en": "That’s surely better."
+        },
+        {
+          "ja": "たしかに彼は優しい人です。",
+          "kana": "たしかに かれ は やさしい ひと です。",
+          "ro": "Tashika ni kare wa yasashii hito desu.",
+          "en": "He is indeed a kind person."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-048",
+      "ja": "つい",
+      "kana": "つい",
+      "ro": "tsui",
+      "en": "unintentionally / just / by accident",
+      "examples": [
+        {
+          "ja": "つい食べすぎてしまいました。",
+          "kana": "つい たべすぎて しまいました。",
+          "ro": "Tsui tabesugite shimaimashita.",
+          "en": "I accidentally ate too much."
+        },
+        {
+          "ja": "つい本当のことを言いました。",
+          "kana": "つい ほんとう の こと を いいました。",
+          "ro": "Tsui hontou no koto o iimashita.",
+          "en": "I accidentally said the truth."
+        },
+        {
+          "ja": "つい笑ってしまいました。",
+          "kana": "つい わらって しまいました。",
+          "ro": "Tsui waratte shimaimashita.",
+          "en": "I couldn’t help but laugh."
+        },
+        {
+          "ja": "つい遅くまで起きていました。",
+          "kana": "つい おそく まで おきていました。",
+          "ro": "Tsui osoku made okiteimashita.",
+          "en": "I ended up staying up late."
+        },
+        {
+          "ja": "つい約束を忘れました。",
+          "kana": "つい やくそく を わすれました。",
+          "ro": "Tsui yakusoku o wasuremashita.",
+          "en": "I unintentionally forgot the promise."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-049",
+      "ja": "ついに",
+      "kana": "ついに",
+      "ro": "tsuini",
+      "en": "finally / at last / in the end",
+      "examples": [
+        {
+          "ja": "ついに試験に合格しました。",
+          "kana": "ついに しけん に ごうかく しました。",
+          "ro": "Tsuini shiken ni goukaku shimashita.",
+          "en": "I finally passed the exam."
+        },
+        {
+          "ja": "ついに夢がかなった。",
+          "kana": "ついに ゆめ が かなった。",
+          "ro": "Tsuini yume ga kanatta.",
+          "en": "My dream finally came true."
+        },
+        {
+          "ja": "ついに新しい家が完成しました。",
+          "kana": "ついに あたらしい いえ が かんせい しました。",
+          "ro": "Tsuini atarashii ie ga kansei shimashita.",
+          "en": "The new house is finally finished."
+        },
+        {
+          "ja": "ついに彼が帰ってきました。",
+          "kana": "ついに かれ が かえってきました。",
+          "ro": "Tsuini kare ga kaette kimashita.",
+          "en": "He finally came back."
+        },
+        {
+          "ja": "ついにその日が来ました。",
+          "kana": "ついに その ひ が きました。",
+          "ro": "Tsuini sono hi ga kimashita.",
+          "en": "The day has finally come."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-050",
+      "ja": "たまに",
+      "kana": "たまに",
+      "ro": "tamani",
+      "en": "occasionally / sometimes",
+      "examples": [
+        {
+          "ja": "たまに外食します。",
+          "kana": "たまに がいしょく します。",
+          "ro": "Tamani gaishoku shimasu.",
+          "en": "I eat out occasionally."
+        },
+        {
+          "ja": "たまに映画を見に行きます。",
+          "kana": "たまに えいが を みに いきます。",
+          "ro": "Tamani eiga o mini ikimasu.",
+          "en": "I sometimes go to see movies."
+        },
+        {
+          "ja": "たまに実家に帰ります。",
+          "kana": "たまに じっか に かえります。",
+          "ro": "Tamani jikka ni kaerimasu.",
+          "en": "I occasionally visit my parents’ home."
+        },
+        {
+          "ja": "たまに友達と飲みに行きます。",
+          "kana": "たまに ともだち と のみに いきます。",
+          "ro": "Tamani tomodachi to nomi ni ikimasu.",
+          "en": "I sometimes go drinking with friends."
+        },
+        {
+          "ja": "たまに甘いものを食べたくなります。",
+          "kana": "たまに あまい もの を たべたく なります。",
+          "ro": "Tamani amai mono o tabetaku narimasu.",
+          "en": "I sometimes feel like eating sweets."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-051",
+      "ja": "ぜひ",
+      "kana": "ぜひ",
+      "ro": "zehi",
+      "en": "by all means / definitely",
+      "examples": [
+        {
+          "ja": "ぜひ来てください。",
+          "kana": "ぜひ きて ください。",
+          "ro": "Zehi kite kudasai.",
+          "en": "Please come by all means."
+        },
+        {
+          "ja": "ぜひ参加したいです。",
+          "kana": "ぜひ さんか したい です。",
+          "ro": "Zehi sanka shitai desu.",
+          "en": "I definitely want to participate."
+        },
+        {
+          "ja": "この映画をぜひ見てください。",
+          "kana": "この えいが を ぜひ みて ください。",
+          "ro": "Kono eiga o zehi mite kudasai.",
+          "en": "Please watch this movie by all means."
+        },
+        {
+          "ja": "またぜひ会いましょう。",
+          "kana": "また ぜひ あいましょう。",
+          "ro": "Mata zehi aimashou.",
+          "en": "Let’s meet again for sure."
+        },
+        {
+          "ja": "ぜひ日本に来てください。",
+          "kana": "ぜひ にほん に きて ください。",
+          "ro": "Zehi Nihon ni kite kudasai.",
+          "en": "Please come to Japan by all means."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-052",
+      "ja": "いきなり",
+      "kana": "いきなり",
+      "ro": "ikinari",
+      "en": "suddenly / abruptly",
+      "examples": [
+        {
+          "ja": "いきなり走り出しました。",
+          "kana": "いきなり はしりだしました。",
+          "ro": "Ikinari hashiridashimashita.",
+          "en": "He suddenly started running."
+        },
+        {
+          "ja": "いきなり泣き出しました。",
+          "kana": "いきなり なきだしました。",
+          "ro": "Ikinari nakidashimashita.",
+          "en": "She suddenly began to cry."
+        },
+        {
+          "ja": "いきなり大声を出さないでください。",
+          "kana": "いきなり おおごえ を ださないで ください。",
+          "ro": "Ikinari oogoe o dasanaide kudasai.",
+          "en": "Don’t suddenly shout."
+        },
+        {
+          "ja": "彼はいきなり質問しました。",
+          "kana": "かれ は いきなり しつもん しました。",
+          "ro": "Kare wa ikinari shitsumon shimashita.",
+          "en": "He asked a question suddenly."
+        },
+        {
+          "ja": "いきなり電話が鳴りました。",
+          "kana": "いきなり でんわ が なりました。",
+          "ro": "Ikinari denwa ga narimashita.",
+          "en": "The phone rang suddenly."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-053",
+      "ja": "たとえ",
+      "kana": "たとえ",
+      "ro": "tatoe",
+      "en": "even if / even though",
+      "examples": [
+        {
+          "ja": "たとえ雨でも行きます。",
+          "kana": "たとえ あめ でも いきます。",
+          "ro": "Tatoe ame demo ikimasu.",
+          "en": "Even if it rains, I will go."
+        },
+        {
+          "ja": "たとえ難しくても頑張ります。",
+          "kana": "たとえ むずかしく ても がんばります。",
+          "ro": "Tatoe muzukashiku temo ganbarimasu.",
+          "en": "Even if it’s hard, I’ll do my best."
+        },
+        {
+          "ja": "たとえ失敗しても大丈夫です。",
+          "kana": "たとえ しっぱい しても だいじょうぶ です。",
+          "ro": "Tatoe shippai shitemo daijoubu desu.",
+          "en": "It’s okay even if you fail."
+        },
+        {
+          "ja": "たとえ一人でもやります。",
+          "kana": "たとえ ひとり でも やります。",
+          "ro": "Tatoe hitori demo yarimasu.",
+          "en": "I’ll do it even if I’m alone."
+        },
+        {
+          "ja": "たとえ彼が反対しても行きます。",
+          "kana": "たとえ かれ が はんたい しても いきます。",
+          "ro": "Tatoe kare ga hantai shitemo ikimasu.",
+          "en": "I’ll go even if he’s against it."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-054",
+      "ja": "しっかり",
+      "kana": "しっかり",
+      "ro": "shikkari",
+      "en": "firmly / properly / steadily",
+      "examples": [
+        {
+          "ja": "しっかり勉強してください。",
+          "kana": "しっかり べんきょう してください。",
+          "ro": "Shikkari benkyou shite kudasai.",
+          "en": "Study hard."
+        },
+        {
+          "ja": "しっかり覚えてください。",
+          "kana": "しっかり おぼえて ください。",
+          "ro": "Shikkari oboete kudasai.",
+          "en": "Remember it well."
+        },
+        {
+          "ja": "しっかり食べてください。",
+          "kana": "しっかり たべて ください。",
+          "ro": "Shikkari tabete kudasai.",
+          "en": "Eat properly."
+        },
+        {
+          "ja": "しっかり準備しました。",
+          "kana": "しっかり じゅんび しました。",
+          "ro": "Shikkari junbi shimashita.",
+          "en": "I prepared thoroughly."
+        },
+        {
+          "ja": "しっかり話を聞きなさい。",
+          "kana": "しっかり はなし を ききなさい。",
+          "ro": "Shikkari hanashi o kikinasai.",
+          "en": "Listen carefully."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-055",
+      "ja": "ぐらい",
+      "kana": "ぐらい",
+      "ro": "gurai",
+      "en": "about / approximately / around",
+      "examples": [
+        {
+          "ja": "一時間ぐらいかかります。",
+          "kana": "いちじかん ぐらい かかります。",
+          "ro": "Ichijikan gurai kakarimasu.",
+          "en": "It takes about an hour."
+        },
+        {
+          "ja": "千円ぐらい持っています。",
+          "kana": "せんえん ぐらい もっています。",
+          "ro": "Sen'en gurai motteimasu.",
+          "en": "I have about a thousand yen."
+        },
+        {
+          "ja": "週に三回ぐらい運動します。",
+          "kana": "しゅう に さんかい ぐらい うんどう します。",
+          "ro": "Shuu ni sankai gurai undou shimasu.",
+          "en": "I exercise about three times a week."
+        },
+        {
+          "ja": "この本は五百円ぐらいです。",
+          "kana": "この ほん は ごひゃくえん ぐらい です。",
+          "ro": "Kono hon wa gohyaku-en gurai desu.",
+          "en": "This book costs around 500 yen."
+        },
+        {
+          "ja": "三十分ぐらい待ちました。",
+          "kana": "さんじっぷん ぐらい まちました。",
+          "ro": "Sanjippun gurai machimashita.",
+          "en": "I waited for about 30 minutes."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-056",
+      "ja": "ちゃんと",
+      "kana": "ちゃんと",
+      "ro": "chanto",
+      "en": "properly / correctly",
+      "examples": [
+        {
+          "ja": "ちゃんと宿題をしました。",
+          "kana": "ちゃんと しゅくだい を しました。",
+          "ro": "Chanto shukudai o shimashita.",
+          "en": "I did my homework properly."
+        },
+        {
+          "ja": "ちゃんと挨拶してください。",
+          "kana": "ちゃんと あいさつ してください。",
+          "ro": "Chanto aisatsu shite kudasai.",
+          "en": "Please greet properly."
+        },
+        {
+          "ja": "ちゃんと掃除しました。",
+          "kana": "ちゃんと そうじ しました。",
+          "ro": "Chanto souji shimashita.",
+          "en": "I cleaned properly."
+        },
+        {
+          "ja": "ちゃんと約束を守ります。",
+          "kana": "ちゃんと やくそく を まもります。",
+          "ro": "Chanto yakusoku o mamorimasu.",
+          "en": "I keep my promises properly."
+        },
+        {
+          "ja": "ちゃんと食べましたか。",
+          "kana": "ちゃんと たべました か。",
+          "ro": "Chanto tabemashita ka?",
+          "en": "Did you eat properly?"
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-057",
+      "ja": "すっかり",
+      "kana": "すっかり",
+      "ro": "sukkari",
+      "en": "completely / entirely",
+      "examples": [
+        {
+          "ja": "すっかり忘れました。",
+          "kana": "すっかり わすれました。",
+          "ro": "Sukkari wasuremashita.",
+          "en": "I completely forgot."
+        },
+        {
+          "ja": "風がすっかりやみました。",
+          "kana": "かぜ が すっかり やみました。",
+          "ro": "Kaze ga sukkari yamimashita.",
+          "en": "The wind has completely stopped."
+        },
+        {
+          "ja": "すっかり元気になりました。",
+          "kana": "すっかり げんき に なりました。",
+          "ro": "Sukkari genki ni narimashita.",
+          "en": "I’ve completely recovered."
+        },
+        {
+          "ja": "雪がすっかり溶けました。",
+          "kana": "ゆき が すっかり とけました。",
+          "ro": "Yuki ga sukkari tokemashita.",
+          "en": "The snow has completely melted."
+        },
+        {
+          "ja": "すっかり安心しました。",
+          "kana": "すっかり あんしん しました。",
+          "ro": "Sukkari anshin shimashita.",
+          "en": "I feel completely relieved."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-058",
+      "ja": "うっかり",
+      "kana": "うっかり",
+      "ro": "ukkari",
+      "en": "carelessly / accidentally",
+      "examples": [
+        {
+          "ja": "うっかりミスをしました。",
+          "kana": "うっかり みす を しました。",
+          "ro": "Ukkari misu o shimashita.",
+          "en": "I made a careless mistake."
+        },
+        {
+          "ja": "うっかり財布を忘れました。",
+          "kana": "うっかり さいふ を わすれました。",
+          "ro": "Ukkari saifu o wasuremashita.",
+          "en": "I accidentally forgot my wallet."
+        },
+        {
+          "ja": "うっかり話してしまいました。",
+          "kana": "うっかり はなして しまいました。",
+          "ro": "Ukkari hanashite shimaimashita.",
+          "en": "I accidentally talked about it."
+        },
+        {
+          "ja": "うっかり遅刻しました。",
+          "kana": "うっかり ちこく しました。",
+          "ro": "Ukkari chikoku shimashita.",
+          "en": "I was late by mistake."
+        },
+        {
+          "ja": "うっかりメールを送ってしまいました。",
+          "kana": "うっかり めーる を おくって しまいました。",
+          "ro": "Ukkari meeru o okutte shimaimashita.",
+          "en": "I accidentally sent the email."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-059",
+      "ja": "きっと",
+      "kana": "きっと",
+      "ro": "kitto",
+      "en": "surely / definitely",
+      "examples": [
+        {
+          "ja": "きっとうまくいきます。",
+          "kana": "きっと うまく いきます。",
+          "ro": "Kitto umaku ikimasu.",
+          "en": "It will surely go well."
+        },
+        {
+          "ja": "きっとまた会えます。",
+          "kana": "きっと また あえます。",
+          "ro": "Kitto mata aemasu.",
+          "en": "We’ll surely meet again."
+        },
+        {
+          "ja": "きっと成功すると思います。",
+          "kana": "きっと せいこう する と おもいます。",
+          "ro": "Kitto seikou suru to omoimasu.",
+          "en": "I’m sure you’ll succeed."
+        },
+        {
+          "ja": "きっと明日はいい日です。",
+          "kana": "きっと あした は いい ひ です。",
+          "ro": "Kitto ashita wa ii hi desu.",
+          "en": "Tomorrow will surely be a good day."
+        },
+        {
+          "ja": "きっと彼は来ます。",
+          "kana": "きっと かれ は きます。",
+          "ro": "Kitto kare wa kimasu.",
+          "en": "He will surely come."
+        }
+      ]
+    },
+    {
+      "id": "n4-adv-060",
+      "ja": "けっきょく",
+      "kana": "けっきょく",
+      "ro": "kekkyoku",
+      "en": "after all / in the end",
+      "examples": [
+        {
+          "ja": "けっきょく行きませんでした。",
+          "kana": "けっきょく いきません でした。",
+          "ro": "Kekkyoku ikimasen deshita.",
+          "en": "In the end, I didn’t go."
+        },
+        {
+          "ja": "けっきょく彼が勝ちました。",
+          "kana": "けっきょく かれ が かちました。",
+          "ro": "Kekkyoku kare ga kachimashita.",
+          "en": "After all, he won."
+        },
+        {
+          "ja": "けっきょく何も変わりませんでした。",
+          "kana": "けっきょく なにも かわりません でした。",
+          "ro": "Kekkyoku nanimo kawarimasen deshita.",
+          "en": "In the end, nothing changed."
+        },
+        {
+          "ja": "けっきょく間に合いませんでした。",
+          "kana": "けっきょく まにあいません でした。",
+          "ro": "Kekkyoku maniaimasen deshita.",
+          "en": "I couldn’t make it in time after all."
+        },
+        {
+          "ja": "けっきょく彼と話しませんでした。",
+          "kana": "けっきょく かれ と はなしません でした。",
+          "ro": "Kekkyoku kare to hanashimasen deshita.",
+          "en": "I didn’t talk to him in the end."
+        }
+      ]
+    }
+  ]
+}

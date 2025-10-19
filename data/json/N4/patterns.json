@@ -1,0 +1,1364 @@
+{
+  "entries": [
+    {
+      "id": "n4-grammar-001",
+      "ja": "〜ようにする",
+      "kana": "〜ようにする",
+      "ro": "youni suru",
+      "en": "to try to / to make an effort to",
+      "examples": [
+        {
+          "en": "I try to sleep early every night.",
+          "ja": "毎晩早く寝るようにしています。",
+          "kana": "まいばん はやく ねる ように しています。",
+          "ro": "maiban hayaku neru youni shiteimasu."
+        },
+        {
+          "en": "Try not to forget your homework.",
+          "ja": "宿題を忘れないようにしてください。",
+          "kana": "しゅくだい を わすれない ように して ください。",
+          "ro": "shukudai o wasurenai youni shite kudasai."
+        },
+        {
+          "en": "I make sure to exercise every day.",
+          "ja": "毎日運動するようにしています。",
+          "kana": "まいにち うんどう する ように しています。",
+          "ro": "mainichi undou suru youni shiteimasu."
+        },
+        {
+          "en": "Please try to come on time.",
+          "ja": "時間どおりに来るようにしてください。",
+          "kana": "じかんどおり に くる ように して ください。",
+          "ro": "jikandoori ni kuru youni shite kudasai."
+        },
+        {
+          "en": "I try to speak politely.",
+          "ja": "ていねいに話すようにしています。",
+          "kana": "ていねい に はなす ように しています。",
+          "ro": "teinei ni hanasu youni shiteimasu."
+        }
+      ],
+      "grammar": "Verb (dictionary form / negative form) + ようにする"
+    },
+    {
+      "id": "n4-grammar-002",
+      "ja": "〜みたい",
+      "kana": "〜みたい",
+      "ro": "mitai",
+      "en": "seems like / looks like / resembles",
+      "examples": [
+        {
+          "en": "It seems like it will rain.",
+          "ja": "雨が降るみたいです。",
+          "kana": "あめ が ふる みたい です。",
+          "ro": "ame ga furu mitai desu."
+        },
+        {
+          "en": "He looks tired.",
+          "ja": "彼は疲れているみたいです。",
+          "kana": "かれ は つかれている みたい です。",
+          "ro": "kare wa tsukareteiru mitai desu."
+        },
+        {
+          "en": "She seems happy today.",
+          "ja": "彼女は今日うれしそうみたいです。",
+          "kana": "かのじょ は きょう うれしそう みたい です。",
+          "ro": "kanojo wa kyou ureshisou mitai desu."
+        },
+        {
+          "en": "It looks like a dog, but it’s a fox.",
+          "ja": "犬みたいだけど、きつねです。",
+          "kana": "いぬ みたい だけど、きつね です。",
+          "ro": "inu mitai da kedo, kitsune desu."
+        },
+        {
+          "en": "It seems like she’s angry.",
+          "ja": "彼女は怒っているみたいです。",
+          "kana": "かのじょ は おこっている みたい です。",
+          "ro": "kanojo wa okotteiru mitai desu."
+        }
+      ],
+      "grammar": "Noun / Verb (plain form) + みたい"
+    },
+    {
+      "id": "n4-grammar-003",
+      "ja": "〜ようになる",
+      "kana": "〜ようになる",
+      "ro": "youni naru",
+      "en": "to reach the point that / to become able to",
+      "examples": [
+        {
+          "en": "I’ve become able to speak Japanese.",
+          "ja": "日本語が話せるようになりました。",
+          "kana": "にほんご が はなせる ように なりました。",
+          "ro": "nihongo ga hanaseru youni narimashita."
+        },
+        {
+          "en": "I’ve come to wake up early.",
+          "ja": "早く起きるようになりました。",
+          "kana": "はやく おきる ように なりました。",
+          "ro": "hayaku okiru youni narimashita."
+        },
+        {
+          "en": "I’ve started to exercise every day.",
+          "ja": "毎日運動するようになりました。",
+          "kana": "まいにち うんどう する ように なりました。",
+          "ro": "mainichi undou suru youni narimashita."
+        },
+        {
+          "en": "He has stopped drinking alcohol.",
+          "ja": "彼はお酒を飲まないようになりました。",
+          "kana": "かれ は おさけ を のまない ように なりました。",
+          "ro": "kare wa osake o nomanai youni narimashita."
+        },
+        {
+          "en": "She started to cook by herself.",
+          "ja": "彼女は自分で料理するようになりました。",
+          "kana": "かのじょ は じぶん で りょうり する ように なりました。",
+          "ro": "kanojo wa jibun de ryouri suru youni narimashita."
+        }
+      ],
+      "grammar": "Verb (potential / dictionary / negative) + ようになる"
+    },
+    {
+      "id": "n4-grammar-004",
+      "ja": "〜てしまう",
+      "kana": "〜てしまう",
+      "ro": "te shimau",
+      "en": "to do something completely / to regretfully do",
+      "examples": [
+        {
+          "en": "I accidentally forgot my wallet.",
+          "ja": "財布を忘れてしまいました。",
+          "kana": "さいふ を わすれて しまいました。",
+          "ro": "saifu o wasurete shimaimashita."
+        },
+        {
+          "en": "I finished all the homework.",
+          "ja": "宿題を全部やってしまいました。",
+          "kana": "しゅくだい を ぜんぶ やって しまいました。",
+          "ro": "shukudai o zenbu yatte shimaimashita."
+        },
+        {
+          "en": "I broke my phone!",
+          "ja": "スマホを壊してしまった！",
+          "kana": "すまほ を こわして しまった！",
+          "ro": "sumaho o kowashite shimatta!"
+        },
+        {
+          "en": "I ate too much.",
+          "ja": "食べすぎてしまいました。",
+          "kana": "たべすぎて しまいました。",
+          "ro": "tabesugite shimaimashita."
+        },
+        {
+          "en": "I said something rude.",
+          "ja": "失礼なことを言ってしまいました。",
+          "kana": "しつれい な こと を いって しまいました。",
+          "ro": "shitsurei na koto o itte shimaimashita."
+        }
+      ],
+      "grammar": "Verb (て-form) + しまう"
+    },
+    {
+      "id": "n4-grammar-005",
+      "ja": "〜ようと思う",
+      "kana": "〜ようとおもう",
+      "ro": "youto omou",
+      "en": "to think of doing / to intend to do",
+      "examples": [
+        {
+          "en": "I’m thinking of studying abroad.",
+          "ja": "留学しようと思っています。",
+          "kana": "りゅうがく しよう と おもっています。",
+          "ro": "ryuugaku shiyou to omotteimasu."
+        },
+        {
+          "en": "I intend to buy a new car.",
+          "ja": "新しい車を買おうと思います。",
+          "kana": "あたらしい くるま を かおう と おもいます。",
+          "ro": "atarashii kuruma o kaou to omoimasu."
+        },
+        {
+          "en": "I think I’ll start running.",
+          "ja": "走ろうと思います。",
+          "kana": "はしろう と おもいます。",
+          "ro": "hashirou to omoimasu."
+        },
+        {
+          "en": "I’ve decided to quit my job.",
+          "ja": "仕事をやめようと思っています。",
+          "kana": "しごと を やめよう と おもっています。",
+          "ro": "shigoto o yameyou to omotteimasu."
+        },
+        {
+          "en": "I think I’ll call him later.",
+          "ja": "あとで彼に電話しようと思います。",
+          "kana": "あとで かれ に でんわ しよう と おもいます。",
+          "ro": "atode kare ni denwa shiyou to omoimasu."
+        }
+      ],
+      "grammar": "Verb (volitional form) + と思う"
+    },
+    {
+      "id": "n4-grammar-006",
+      "ja": "〜ために",
+      "kana": "〜ために",
+      "ro": "tame ni",
+      "en": "in order to / for the purpose of / because of",
+      "examples": [
+        {
+          "en": "I study hard in order to pass the exam.",
+          "ja": "試験に合格するために一生懸命勉強します。",
+          "kana": "しけん に ごうかく する ために いっしょうけんめい べんきょう します。",
+          "ro": "shiken ni goukaku suru tame ni isshoukenmei benkyou shimasu."
+        },
+        {
+          "en": "He came to Japan to study Japanese.",
+          "ja": "彼は日本語を勉強するために日本へ来ました。",
+          "kana": "かれ は にほんご を べんきょう する ために にほん へ きました。",
+          "ro": "kare wa nihongo o benkyou suru tame ni nihon e kimashita."
+        },
+        {
+          "en": "I exercise for my health.",
+          "ja": "健康のために運動します。",
+          "kana": "けんこう の ために うんどう します。",
+          "ro": "kenkou no tame ni undou shimasu."
+        },
+        {
+          "en": "I work to earn money.",
+          "ja": "お金をかせぐために働きます。",
+          "kana": "おかね を かせぐ ために はたらきます。",
+          "ro": "okane o kasegu tame ni hatarakimasu."
+        },
+        {
+          "en": "He studies for his future.",
+          "ja": "彼は将来のために勉強しています。",
+          "kana": "かれ は しょうらい の ために べんきょう しています。",
+          "ro": "kare wa shourai no tame ni benkyou shiteimasu."
+        }
+      ],
+      "grammar": "Verb (dictionary form) / Noun + の + ために"
+    },
+    {
+      "id": "n4-grammar-007",
+      "ja": "〜ながら",
+      "kana": "〜ながら",
+      "ro": "nagara",
+      "en": "while doing / simultaneously",
+      "examples": [
+        {
+          "en": "I listen to music while studying.",
+          "ja": "勉強しながら音楽を聞きます。",
+          "kana": "べんきょう しながら おんがく を ききます。",
+          "ro": "benkyou shinagara ongaku o kikimasu."
+        },
+        {
+          "en": "She eats while watching TV.",
+          "ja": "テレビを見ながらごはんを食べます。",
+          "kana": "てれび を みながら ごはん を たべます。",
+          "ro": "terebi o minagara gohan o tabemasu."
+        },
+        {
+          "en": "He drives while talking.",
+          "ja": "彼は話しながら運転します。",
+          "kana": "かれ は はなしながら うんてん します。",
+          "ro": "kare wa hanashinagara unten shimasu."
+        },
+        {
+          "en": "I was thinking while walking.",
+          "ja": "歩きながら考えていました。",
+          "kana": "あるきながら かんがえて いました。",
+          "ro": "aruki nagara kangaete imashita."
+        },
+        {
+          "en": "Please don’t use your phone while driving.",
+          "ja": "運転しながらスマホを使わないでください。",
+          "kana": "うんてん しながら すまほ を つかわないで ください。",
+          "ro": "unten shinagara sumaho o tsukawanaide kudasai."
+        }
+      ],
+      "grammar": "Verb (ます-form without ます) + ながら"
+    },
+    {
+      "id": "n4-grammar-008",
+      "ja": "〜ように言う",
+      "kana": "〜ようにいう",
+      "ro": "youni iu",
+      "en": "to tell someone to do / to advise to",
+      "examples": [
+        {
+          "en": "The teacher told the students to study every day.",
+          "ja": "先生は学生に毎日勉強するように言いました。",
+          "kana": "せんせい は がくせい に まいにち べんきょう する ように いいました。",
+          "ro": "sensei wa gakusei ni mainichi benkyou suru youni iimashita."
+        },
+        {
+          "en": "I told him not to be late.",
+          "ja": "彼に遅れないように言いました。",
+          "kana": "かれ に おくれない ように いいました。",
+          "ro": "kare ni okurenai youni iimashita."
+        },
+        {
+          "en": "Mother told me to clean my room.",
+          "ja": "母は私に部屋をそうじするように言いました。",
+          "kana": "はは は わたし に へや を そうじ する ように いいました。",
+          "ro": "haha wa watashi ni heya o souji suru youni iimashita."
+        },
+        {
+          "en": "The doctor told me to take medicine.",
+          "ja": "医者は薬を飲むように言いました。",
+          "kana": "いしゃ は くすり を のむ ように いいました。",
+          "ro": "isha wa kusuri o nomu youni iimashita."
+        },
+        {
+          "en": "I told him to come early.",
+          "ja": "彼に早く来るように言いました。",
+          "kana": "かれ に はやく くる ように いいました。",
+          "ro": "kare ni hayaku kuru youni iimashita."
+        }
+      ],
+      "grammar": "Verb (dictionary / negative) + ように言う"
+    },
+    {
+      "id": "n4-grammar-009",
+      "ja": "〜ておく",
+      "kana": "〜ておく",
+      "ro": "te oku",
+      "en": "to do something in advance / to prepare",
+      "examples": [
+        {
+          "en": "I’ll buy tickets in advance.",
+          "ja": "チケットを買っておきます。",
+          "kana": "ちけっと を かって おきます。",
+          "ro": "chiketto o katte okimasu."
+        },
+        {
+          "en": "I’ll prepare dinner before guests come.",
+          "ja": "お客さんが来る前に晩ごはんを作っておきます。",
+          "kana": "おきゃくさん が くる まえに ばんごはん を つくって おきます。",
+          "ro": "okyakusan ga kuru mae ni bangohan o tsukutte okimasu."
+        },
+        {
+          "en": "I’ll charge my phone before I go out.",
+          "ja": "出かける前にスマホを充電しておきます。",
+          "kana": "でかける まえに すまほ を じゅうでん して おきます。",
+          "ro": "dekakeru mae ni sumaho o juuden shite okimasu."
+        },
+        {
+          "en": "I’ll write it down just in case.",
+          "ja": "念のためメモしておきます。",
+          "kana": "ねんのため めも して おきます。",
+          "ro": "nen no tame memo shite okimasu."
+        },
+        {
+          "en": "I’ll reserve a restaurant beforehand.",
+          "ja": "レストランを予約しておきます。",
+          "kana": "れすとらん を よやく して おきます。",
+          "ro": "resutoran o yoyaku shite okimasu."
+        }
+      ],
+      "grammar": "Verb (て-form) + おく"
+    },
+    {
+      "id": "n4-grammar-010",
+      "ja": "〜ように",
+      "kana": "〜ように",
+      "ro": "youni",
+      "en": "so that / in order that / (used for wishes or instructions)",
+      "examples": [
+        {
+          "en": "Please speak so that everyone can hear.",
+          "ja": "みんなに聞こえるように話してください。",
+          "kana": "みんな に きこえる ように はなして ください。",
+          "ro": "minna ni kikoeru youni hanashite kudasai."
+        },
+        {
+          "en": "I prayed so that I would pass the exam.",
+          "ja": "試験に合格するように祈りました。",
+          "kana": "しけん に ごうかく する ように いのりました。",
+          "ro": "shiken ni goukaku suru youni inorimashita."
+        },
+        {
+          "en": "Please write neatly so that it’s easy to read.",
+          "ja": "読みやすいようにきれいに書いてください。",
+          "kana": "よみやすい ように きれい に かいて ください。",
+          "ro": "yomiyasui youni kirei ni kaite kudasai."
+        },
+        {
+          "en": "I hope I can see you again.",
+          "ja": "また会えるように願っています。",
+          "kana": "また あえる ように ねがって います。",
+          "ro": "mata aeru youni negatteimasu."
+        },
+        {
+          "en": "He studies hard so that he can enter university.",
+          "ja": "大学に入れるように一生懸命勉強しています。",
+          "kana": "だいがく に はいれる ように いっしょうけんめい べんきょう しています。",
+          "ro": "daigaku ni haireru youni isshoukenmei benkyou shiteimasu."
+        }
+      ],
+      "grammar": "Verb (potential / dictionary / negative form) + ように"
+    },
+    {
+      "id": "n4-grammar-011",
+      "ja": "〜ば",
+      "kana": "〜ば",
+      "ro": "ba",
+      "en": "if / when (conditional form)",
+      "examples": [
+        {
+          "en": "If it rains, I won’t go out.",
+          "ja": "雨が降れば出かけません。",
+          "kana": "あめ が ふれば でかけません。",
+          "ro": "ame ga fureba dekakemasen."
+        },
+        {
+          "en": "If you study hard, you will pass the exam.",
+          "ja": "一生懸命勉強すれば合格できます。",
+          "kana": "いっしょうけんめい べんきょう すれば ごうかく できます。",
+          "ro": "isshoukenmei benkyou sureba goukaku dekimasu."
+        },
+        {
+          "en": "If you go early, you can get a seat.",
+          "ja": "早く行けば席が取れます。",
+          "kana": "はやく いけば せき が とれます。",
+          "ro": "hayaku ikeba seki ga toremasu."
+        },
+        {
+          "en": "If you eat too much, you’ll get fat.",
+          "ja": "食べすぎれば太ります。",
+          "kana": "たべすぎれば ふとります。",
+          "ro": "tabesugireba futorimasu."
+        },
+        {
+          "en": "If you have time, please come to my house.",
+          "ja": "時間があれば私の家に来てください。",
+          "kana": "じかん が あれば わたし の いえ に きて ください。",
+          "ro": "jikan ga areba watashi no ie ni kite kudasai."
+        }
+      ],
+      "grammar": "Verb (え-form) + ば / い-adjective + ければ / な-adjective + ならば / Noun + ならば"
+    },
+    {
+      "id": "n4-grammar-012",
+      "ja": "〜たことがある",
+      "kana": "〜たことがある",
+      "ro": "ta koto ga aru",
+      "en": "have done / have experienced",
+      "examples": [
+        {
+          "en": "I have been to Kyoto.",
+          "ja": "京都へ行ったことがあります。",
+          "kana": "きょうと へ いった こと が あります。",
+          "ro": "kyouto e itta koto ga arimasu."
+        },
+        {
+          "en": "I have eaten sushi before.",
+          "ja": "寿司を食べたことがあります。",
+          "kana": "すし を たべた こと が あります。",
+          "ro": "sushi o tabeta koto ga arimasu."
+        },
+        {
+          "en": "I have never seen snow.",
+          "ja": "雪を見たことがありません。",
+          "kana": "ゆき を みた こと が ありません。",
+          "ro": "yuki o mita koto ga arimasen."
+        },
+        {
+          "en": "I’ve ridden a Shinkansen once.",
+          "ja": "一度新幹線に乗ったことがあります。",
+          "kana": "いちど しんかんせん に のった こと が あります。",
+          "ro": "ichido shinkansen ni notta koto ga arimasu."
+        },
+        {
+          "en": "I’ve met a famous person before.",
+          "ja": "有名な人に会ったことがあります。",
+          "kana": "ゆうめい な ひと に あった こと が あります。",
+          "ro": "yuumei na hito ni atta koto ga arimasu."
+        }
+      ],
+      "grammar": "Verb (た-form) + ことがある"
+    },
+    {
+      "id": "n4-grammar-013",
+      "ja": "〜ほうがいい",
+      "kana": "〜ほうがいい",
+      "ro": "hou ga ii",
+      "en": "had better / should",
+      "examples": [
+        {
+          "en": "You should go to the hospital.",
+          "ja": "病院へ行ったほうがいいです。",
+          "kana": "びょういん へ いった ほうが いい です。",
+          "ro": "byouin e itta hou ga ii desu."
+        },
+        {
+          "en": "You should sleep early.",
+          "ja": "早く寝たほうがいいです。",
+          "kana": "はやく ねた ほうが いい です。",
+          "ro": "hayaku neta hou ga ii desu."
+        },
+        {
+          "en": "You shouldn’t eat too much.",
+          "ja": "食べすぎないほうがいいです。",
+          "kana": "たべすぎない ほうが いい です。",
+          "ro": "tabesuginai hou ga ii desu."
+        },
+        {
+          "en": "You should study Japanese every day.",
+          "ja": "毎日日本語を勉強したほうがいいです。",
+          "kana": "まいにち にほんご を べんきょう した ほうが いい です。",
+          "ro": "mainichi nihongo o benkyou shita hou ga ii desu."
+        },
+        {
+          "en": "You’d better bring an umbrella.",
+          "ja": "かさを持っていったほうがいいですよ。",
+          "kana": "かさ を もって いった ほうが いい ですよ。",
+          "ro": "kasa o motte itta hou ga ii desu yo."
+        }
+      ],
+      "grammar": "Verb (た-form / ない-form) + ほうがいい"
+    },
+    {
+      "id": "n4-grammar-014",
+      "ja": "〜ように言われる",
+      "kana": "〜ようにいわれる",
+      "ro": "youni iwareru",
+      "en": "to be told to do / passive of ように言う",
+      "examples": [
+        {
+          "en": "I was told to come early.",
+          "ja": "早く来るように言われました。",
+          "kana": "はやく くる ように いわれました。",
+          "ro": "hayaku kuru youni iwaremashita."
+        },
+        {
+          "en": "I was told not to be late.",
+          "ja": "遅れないように言われました。",
+          "kana": "おくれない ように いわれました。",
+          "ro": "okurenai youni iwaremashita."
+        },
+        {
+          "en": "I was told to take medicine.",
+          "ja": "薬を飲むように言われました。",
+          "kana": "くすり を のむ ように いわれました。",
+          "ro": "kusuri o nomu youni iwaremashita."
+        },
+        {
+          "en": "I was told to submit the report.",
+          "ja": "レポートを出すように言われました。",
+          "kana": "れぽーと を だす ように いわれました。",
+          "ro": "repooto o dasu youni iwaremashita."
+        },
+        {
+          "en": "I was told to study every day.",
+          "ja": "毎日勉強するように言われました。",
+          "kana": "まいにち べんきょう する ように いわれました。",
+          "ro": "mainichi benkyou suru youni iwaremashita."
+        }
+      ],
+      "grammar": "Verb (dictionary / negative) + ように言われる"
+    },
+    {
+      "id": "n4-grammar-015",
+      "ja": "〜てはいけない",
+      "kana": "〜てはいけない",
+      "ro": "te wa ikenai",
+      "en": "must not / not allowed to",
+      "examples": [
+        {
+          "en": "You must not smoke here.",
+          "ja": "ここでたばこを吸ってはいけません。",
+          "kana": "ここで たばこ を すって は いけません。",
+          "ro": "koko de tabako o sutte wa ikemasen."
+        },
+        {
+          "en": "You must not be late.",
+          "ja": "遅れてはいけません。",
+          "kana": "おくれて は いけません。",
+          "ro": "okurete wa ikemasen."
+        },
+        {
+          "en": "You must not forget this rule.",
+          "ja": "このルールを忘れてはいけません。",
+          "kana": "この るーる を わすれて は いけません。",
+          "ro": "kono ruuru o wasurete wa ikemasen."
+        },
+        {
+          "en": "You must not enter that room.",
+          "ja": "あの部屋に入ってはいけません。",
+          "kana": "あの へや に はいって は いけません。",
+          "ro": "ano heya ni haitte wa ikemasen."
+        },
+        {
+          "en": "You must not cheat on the exam.",
+          "ja": "試験でカンニングしてはいけません。",
+          "kana": "しけん で かんにんぐ して は いけません。",
+          "ro": "shiken de kanningu shite wa ikemasen."
+        }
+      ],
+      "grammar": "Verb (て-form) + はいけない"
+    },
+    {
+      "id": "n4-grammar-016",
+      "ja": "〜なければならない",
+      "kana": "〜なければならない",
+      "ro": "nakereba naranai",
+      "en": "must / have to / need to",
+      "examples": [
+        {
+          "en": "I must go to school tomorrow.",
+          "ja": "明日学校へ行かなければなりません。",
+          "kana": "あした がっこう へ いかなければ なりません。",
+          "ro": "ashita gakkou e ikanakereba narimasen."
+        },
+        {
+          "en": "I have to finish this homework today.",
+          "ja": "今日この宿題を終わらせなければなりません。",
+          "kana": "きょう この しゅくだい を おわらせなければ なりません。",
+          "ro": "kyou kono shukudai o owarasenakereba narimasen."
+        },
+        {
+          "en": "You have to wear a mask on the train.",
+          "ja": "電車の中ではマスクをしなければなりません。",
+          "kana": "でんしゃ の なか では ますく を しなければ なりません。",
+          "ro": "densha no naka de wa masuku o shinakereba narimasen."
+        },
+        {
+          "en": "We must keep our promises.",
+          "ja": "約束を守らなければなりません。",
+          "kana": "やくそく を まもらなければ なりません。",
+          "ro": "yakusoku o mamoranakereba narimasen."
+        },
+        {
+          "en": "I must wake up early tomorrow.",
+          "ja": "明日は早く起きなければなりません。",
+          "kana": "あした は はやく おきなければ なりません。",
+          "ro": "ashita wa hayaku okinakereba narimasen."
+        }
+      ],
+      "grammar": "Verb (ない-form) + なければならない"
+    },
+    {
+      "id": "n4-grammar-017",
+      "ja": "〜てもいい",
+      "kana": "〜てもいい",
+      "ro": "te mo ii",
+      "en": "may / it’s okay to / permission",
+      "examples": [
+        {
+          "en": "You may go home now.",
+          "ja": "もう帰ってもいいです。",
+          "kana": "もう かえっても いい です。",
+          "ro": "mou kaette mo ii desu."
+        },
+        {
+          "en": "Can I use this pen?",
+          "ja": "このペンを使ってもいいですか？",
+          "kana": "この ぺん を つかっても いい です か？",
+          "ro": "kono pen o tsukatte mo ii desu ka?"
+        },
+        {
+          "en": "It’s okay to eat here.",
+          "ja": "ここで食べてもいいです。",
+          "kana": "ここで たべても いい です。",
+          "ro": "koko de tabete mo ii desu."
+        },
+        {
+          "en": "May I open the window?",
+          "ja": "窓を開けてもいいですか？",
+          "kana": "まど を あけても いい です か？",
+          "ro": "mado o akete mo ii desu ka?"
+        },
+        {
+          "en": "You can take a break now.",
+          "ja": "今休んでもいいですよ。",
+          "kana": "いま やすんでも いい ですよ。",
+          "ro": "ima yasunde mo ii desu yo."
+        }
+      ],
+      "grammar": "Verb (て-form) + もいい"
+    },
+    {
+      "id": "n4-grammar-018",
+      "ja": "〜ないでください",
+      "kana": "〜ないでください",
+      "ro": "naide kudasai",
+      "en": "please don’t / do not",
+      "examples": [
+        {
+          "en": "Please don’t forget this.",
+          "ja": "これを忘れないでください。",
+          "kana": "これ を わすれないで ください。",
+          "ro": "kore o wasurenaide kudasai."
+        },
+        {
+          "en": "Please don’t be late.",
+          "ja": "遅れないでください。",
+          "kana": "おくれないで ください。",
+          "ro": "okurenaide kudasai."
+        },
+        {
+          "en": "Please don’t smoke here.",
+          "ja": "ここでたばこを吸わないでください。",
+          "kana": "ここで たばこ を すわないで ください。",
+          "ro": "koko de tabako o suwanaide kudasai."
+        },
+        {
+          "en": "Please don’t touch that button.",
+          "ja": "そのボタンに触らないでください。",
+          "kana": "その ぼたん に さわらないで ください。",
+          "ro": "sono botan ni sawaranaide kudasai."
+        },
+        {
+          "en": "Please don’t talk during the test.",
+          "ja": "テストの間は話さないでください。",
+          "kana": "てすと の あいだ は はなさないで ください。",
+          "ro": "tesuto no aida wa hanasanaide kudasai."
+        }
+      ],
+      "grammar": "Verb (ない-form) + でください"
+    },
+    {
+      "id": "n4-grammar-020",
+      "ja": "〜ても",
+      "kana": "〜ても",
+      "ro": "te mo",
+      "en": "even if / although",
+      "examples": [
+        {
+          "en": "Even if it rains, I will go out.",
+          "ja": "雨が降っても出かけます。",
+          "kana": "あめ が ふっても でかけます。",
+          "ro": "ame ga futte mo dekakemasu."
+        },
+        {
+          "en": "Even if you are busy, please call me.",
+          "ja": "忙しくても電話してください。",
+          "kana": "いそがしくても でんわ して ください。",
+          "ro": "isogashikutemo denwa shite kudasai."
+        },
+        {
+          "en": "Even if it’s expensive, I want it.",
+          "ja": "高くても欲しいです。",
+          "kana": "たかくても ほしい です。",
+          "ro": "takakutemo hoshii desu."
+        },
+        {
+          "en": "Even if I make a mistake, I will try again.",
+          "ja": "間違えてももう一度やります。",
+          "kana": "まちがえても もういちど やります。",
+          "ro": "machigaete mo mou ichido yarimasu."
+        },
+        {
+          "en": "Even if I don’t understand, I’ll keep studying.",
+          "ja": "わからなくても勉強を続けます。",
+          "kana": "わからなくても べんきょう を つづけます。",
+          "ro": "wakaranakutemo benkyou o tsuzukemasu."
+        }
+      ],
+      "grammar": "Verb (て-form) + も / い-adjective + くても / な-adjective + でも / Noun + でも"
+    },
+    {
+      "id": "n4-grammar-021",
+      "ja": "〜すぎる",
+      "kana": "〜すぎる",
+      "ro": "sugiru",
+      "en": "too much / excessively",
+      "examples": [
+        {
+          "en": "I ate too much.",
+          "ja": "食べすぎました。",
+          "kana": "たべすぎました。",
+          "ro": "tabesugimashita."
+        },
+        {
+          "en": "This bag is too heavy.",
+          "ja": "このかばんは重すぎます。",
+          "kana": "この かばん は おもすぎます。",
+          "ro": "kono kaban wa omosugimasu."
+        },
+        {
+          "en": "It’s too cold today.",
+          "ja": "今日は寒すぎます。",
+          "kana": "きょう は さむすぎます。",
+          "ro": "kyou wa samusugimasu."
+        },
+        {
+          "en": "This room is too small.",
+          "ja": "この部屋は狭すぎます。",
+          "kana": "この へや は せますぎます。",
+          "ro": "kono heya wa semasugimasu."
+        },
+        {
+          "en": "He works too much.",
+          "ja": "彼は働きすぎです。",
+          "kana": "かれ は はたらきすぎ です。",
+          "ro": "kare wa hatarakisugi desu."
+        }
+      ],
+      "grammar": "Verb (ます-form without ます) / い-adjective stem + すぎる"
+    },
+    {
+      "id": "n4-grammar-022",
+      "ja": "〜やすい / 〜にくい",
+      "kana": "〜やすい / 〜にくい",
+      "ro": "yasui / nikui",
+      "en": "easy to / hard to",
+      "examples": [
+        {
+          "en": "This pen is easy to use.",
+          "ja": "このペンは使いやすいです。",
+          "kana": "この ぺん は つかいやすい です。",
+          "ro": "kono pen wa tsukaiyasui desu."
+        },
+        {
+          "en": "This kanji is hard to read.",
+          "ja": "この漢字は読みにくいです。",
+          "kana": "この かんじ は よみにくい です。",
+          "ro": "kono kanji wa yominikui desu."
+        },
+        {
+          "en": "This cup is easy to break.",
+          "ja": "このコップは割れやすいです。",
+          "kana": "この こっぷ は われやすい です。",
+          "ro": "kono koppu wa wareyasui desu."
+        },
+        {
+          "en": "The soup is too hot to drink.",
+          "ja": "このスープは飲みにくいです。",
+          "kana": "この すーぷ は のみにくい です。",
+          "ro": "kono suupu wa nominikui desu."
+        },
+        {
+          "en": "This smartphone is easy to use.",
+          "ja": "このスマホは使いやすいです。",
+          "kana": "この すまほ は つかいやすい です。",
+          "ro": "kono sumaho wa tsukaiyasui desu."
+        }
+      ],
+      "grammar": "Verb (ます-form without ます) + やすい / にくい"
+    },
+    {
+      "id": "n4-grammar-023",
+      "ja": "〜のに",
+      "kana": "〜のに",
+      "ro": "noni",
+      "en": "although / even though",
+      "examples": [
+        {
+          "en": "Even though it’s raining, he’s playing outside.",
+          "ja": "雨なのに外で遊んでいます。",
+          "kana": "あめ なのに そと で あそんでいます。",
+          "ro": "ame nanoni soto de asondeimasu."
+        },
+        {
+          "en": "Even though she’s tired, she’s studying.",
+          "ja": "疲れているのに勉強しています。",
+          "kana": "つかれている のに べんきょう しています。",
+          "ro": "tsukareteiru noni benkyou shiteimasu."
+        },
+        {
+          "en": "Even though it’s Sunday, I have to work.",
+          "ja": "日曜日なのに働かなければなりません。",
+          "kana": "にちようび なのに はたらかなければ なりません。",
+          "ro": "nichiyoubi nanoni hatarakanakereba narimasen."
+        },
+        {
+          "en": "Even though he’s young, he’s very wise.",
+          "ja": "彼は若いのにとても賢いです。",
+          "kana": "かれ は わかい のに とても かしこい です。",
+          "ro": "kare wa wakai noni totemo kashikoi desu."
+        },
+        {
+          "en": "Even though it’s cheap, it tastes good.",
+          "ja": "安いのにおいしいです。",
+          "kana": "やすい のに おいしい です。",
+          "ro": "yasui noni oishii desu."
+        }
+      ],
+      "grammar": "Verb (plain) / い-adjective / な-adjective + な / Noun + なのに"
+    },
+    {
+      "id": "n4-grammar-024",
+      "ja": "〜のように",
+      "kana": "〜のように",
+      "ro": "no you ni",
+      "en": "like / as if / similar to",
+      "examples": [
+        {
+          "en": "He runs like the wind.",
+          "ja": "彼は風のように走ります。",
+          "kana": "かれ は かぜ の ように はしります。",
+          "ro": "kare wa kaze no you ni hashirimasu."
+        },
+        {
+          "en": "This flower is like a rose.",
+          "ja": "この花はバラのようです。",
+          "kana": "この はな は ばら の よう です。",
+          "ro": "kono hana wa bara no you desu."
+        },
+        {
+          "en": "He talks like his father.",
+          "ja": "彼は父のように話します。",
+          "kana": "かれ は ちち の ように はなします。",
+          "ro": "kare wa chichi no you ni hanashimasu."
+        },
+        {
+          "en": "She sings like a professional.",
+          "ja": "彼女はプロのように歌います。",
+          "kana": "かのじょ は ぷろ の ように うたいます。",
+          "ro": "kanojo wa puro no you ni utaimasu."
+        },
+        {
+          "en": "He works like a robot.",
+          "ja": "彼はロボットのように働きます。",
+          "kana": "かれ は ろぼっと の ように はたらきます。",
+          "ro": "kare wa robotto no you ni hatarakimasu."
+        }
+      ],
+      "grammar": "Noun + のように / Verb + ように"
+    },
+    {
+      "id": "n4-grammar-025",
+      "ja": "〜ことにする",
+      "kana": "〜ことにする",
+      "ro": "koto ni suru",
+      "en": "decide to / make a decision to",
+      "examples": [
+        {
+          "en": "I decided to study abroad.",
+          "ja": "留学することにしました。",
+          "kana": "りゅうがく する こと に しました。",
+          "ro": "ryuugaku suru koto ni shimashita."
+        },
+        {
+          "en": "I decided to start exercising.",
+          "ja": "運動を始めることにしました。",
+          "kana": "うんどう を はじめる こと に しました。",
+          "ro": "undou o hajimeru koto ni shimashita."
+        },
+        {
+          "en": "I decided to stop drinking coffee.",
+          "ja": "コーヒーをやめることにしました。",
+          "kana": "こーひー を やめる こと に しました。",
+          "ro": "koohii o yameru koto ni shimashita."
+        },
+        {
+          "en": "I decided to call him tomorrow.",
+          "ja": "明日彼に電話することにします。",
+          "kana": "あした かれ に でんわ する こと に します。",
+          "ro": "ashita kare ni denwa suru koto ni shimasu."
+        },
+        {
+          "en": "I decided to save money every month.",
+          "ja": "毎月お金を貯めることにしました。",
+          "kana": "まいつき おかね を ためる こと に しました。",
+          "ro": "maitsuki okane o tameru koto ni shimashita."
+        }
+      ],
+      "grammar": "Verb (dictionary / ない-form) + ことにする"
+    },
+    {
+      "id": "n4-grammar-026",
+      "ja": "〜ことになる",
+      "kana": "〜ことになる",
+      "ro": "koto ni naru",
+      "en": "it is decided that / turns out that",
+      "examples": [
+        {
+          "en": "It has been decided that I will go to Tokyo.",
+          "ja": "東京へ行くことになりました。",
+          "kana": "とうきょう へ いく こと に なりました。",
+          "ro": "toukyou e iku koto ni narimashita."
+        },
+        {
+          "en": "It’s been decided that we will move next month.",
+          "ja": "来月引っ越すことになりました。",
+          "kana": "らいげつ ひっこす こと に なりました。",
+          "ro": "raigetsu hikkosu koto ni narimashita."
+        },
+        {
+          "en": "It turns out that he is getting married.",
+          "ja": "彼が結婚することになりました。",
+          "kana": "かれ が けっこん する こと に なりました。",
+          "ro": "kare ga kekkon suru koto ni narimashita."
+        },
+        {
+          "en": "It has been decided that I will teach the class.",
+          "ja": "私が授業を教えることになりました。",
+          "kana": "わたし が じゅぎょう を おしえる こと に なりました。",
+          "ro": "watashi ga jugyou o oshieru koto ni narimashita."
+        },
+        {
+          "en": "It’s decided that we will go on a trip next week.",
+          "ja": "来週旅行に行くことになりました。",
+          "kana": "らいしゅう りょこう に いく こと に なりました。",
+          "ro": "raishuu ryokou ni iku koto ni narimashita."
+        }
+      ],
+      "grammar": "Verb (dictionary / ない-form) + ことになる"
+    },
+    {
+      "id": "n4-grammar-029",
+      "ja": "〜らしい",
+      "kana": "〜らしい",
+      "ro": "rashii",
+      "en": "seems like / I heard that / typical of",
+      "examples": [
+        {
+          "en": "It seems that he is busy.",
+          "ja": "彼は忙しいらしいです。",
+          "kana": "かれ は いそがしい らしい です。",
+          "ro": "kare wa isogashii rashii desu."
+        },
+        {
+          "en": "I heard that she’s going abroad.",
+          "ja": "彼女は留学するらしいです。",
+          "kana": "かのじょ は りゅうがく する らしい です。",
+          "ro": "kanojo wa ryuugaku suru rashii desu."
+        },
+        {
+          "en": "It seems that this restaurant is famous.",
+          "ja": "このレストランは有名らしいです。",
+          "kana": "この れすとらん は ゆうめい らしい です。",
+          "ro": "kono resutoran wa yuumei rashii desu."
+        },
+        {
+          "en": "It seems it will rain today.",
+          "ja": "今日は雨が降るらしいです。",
+          "kana": "きょう は あめ が ふる らしい です。",
+          "ro": "kyou wa ame ga furu rashii desu."
+        },
+        {
+          "en": "He acts like a teacher.",
+          "ja": "彼は先生らしいです。",
+          "kana": "かれ は せんせい らしい です。",
+          "ro": "kare wa sensei rashii desu."
+        }
+      ],
+      "grammar": "Verb (plain) / い-adjective / な-adjective / Noun + らしい"
+    },
+    {
+      "id": "n4-grammar-030",
+      "ja": "〜そうだ（伝聞）",
+      "kana": "〜そうだ（でんぶん）",
+      "ro": "sou da (denbun)",
+      "en": "I heard that / it is said that",
+      "examples": [
+        {
+          "en": "I heard that he got married.",
+          "ja": "彼は結婚したそうです。",
+          "kana": "かれ は けっこん した そう です。",
+          "ro": "kare wa kekkon shita sou desu."
+        },
+        {
+          "en": "I heard that tomorrow will be cold.",
+          "ja": "明日は寒いそうです。",
+          "kana": "あした は さむい そう です。",
+          "ro": "ashita wa samui sou desu."
+        },
+        {
+          "en": "I heard that the teacher is sick.",
+          "ja": "先生は病気だそうです。",
+          "kana": "せんせい は びょうき だ そう です。",
+          "ro": "sensei wa byouki da sou desu."
+        },
+        {
+          "en": "I heard that the shop will close soon.",
+          "ja": "その店はもうすぐ閉まるそうです。",
+          "kana": "その みせ は もうすぐ しまる そう です。",
+          "ro": "sono mise wa mousugu shimaru sou desu."
+        },
+        {
+          "en": "I heard that she passed the exam.",
+          "ja": "彼女は試験に合格したそうです。",
+          "kana": "かのじょ は しけん に ごうかく した そう です。",
+          "ro": "kanojo wa shiken ni goukaku shita sou desu."
+        }
+      ],
+      "grammar": "Verb (plain) / い-adjective / な-adjective + だ / Noun + だ + そうだ"
+    },
+    {
+      "id": "n4-grammar-033",
+      "ja": "〜てみる",
+      "kana": "〜てみる",
+      "ro": "te miru",
+      "en": "try doing / give something a try",
+      "examples": [
+        {
+          "en": "I’ll try eating sushi.",
+          "ja": "すしを食べてみます。",
+          "kana": "すし を たべて みます。",
+          "ro": "sushi o tabete mimasu."
+        },
+        {
+          "en": "I’ll try using this app.",
+          "ja": "このアプリを使ってみます。",
+          "kana": "この あぷり を つかって みます。",
+          "ro": "kono apuri o tsukatte mimasu."
+        },
+        {
+          "en": "I’ll try asking the teacher.",
+          "ja": "先生に聞いてみます。",
+          "kana": "せんせい に きいて みます。",
+          "ro": "sensei ni kiite mimasu."
+        },
+        {
+          "en": "I’ll try going there once.",
+          "ja": "一度行ってみます。",
+          "kana": "いちど いって みます。",
+          "ro": "ichido itte mimasu."
+        },
+        {
+          "en": "I’ll try making this dish.",
+          "ja": "この料理を作ってみます。",
+          "kana": "この りょうり を つくって みます。",
+          "ro": "kono ryouri o tsukutte mimasu."
+        }
+      ],
+      "grammar": "Verb (て-form) + みる"
+    },
+    {
+      "id": "n4-grammar-035",
+      "ja": "〜ところだ",
+      "kana": "〜ところだ",
+      "ro": "tokoro da",
+      "en": "about to / in the middle of / just finished",
+      "examples": [
+        {
+          "en": "I’m about to eat dinner.",
+          "ja": "今から晩ごはんを食べるところです。",
+          "kana": "いまから ばんごはん を たべる ところ です。",
+          "ro": "imakara bangohan o taberu tokoro desu."
+        },
+        {
+          "en": "I’m studying right now.",
+          "ja": "今勉強しているところです。",
+          "kana": "いま べんきょう している ところ です。",
+          "ro": "ima benkyou shiteiru tokoro desu."
+        },
+        {
+          "en": "I just finished taking a bath.",
+          "ja": "今お風呂に入ったところです。",
+          "kana": "いま おふろ に はいった ところ です。",
+          "ro": "ima ofuro ni haitta tokoro desu."
+        },
+        {
+          "en": "I was about to go out.",
+          "ja": "出かけるところでした。",
+          "kana": "でかける ところ でした。",
+          "ro": "dekakeru tokoro deshita."
+        },
+        {
+          "en": "He’s about to call you.",
+          "ja": "彼はあなたに電話するところです。",
+          "kana": "かれ は あなた に でんわ する ところ です。",
+          "ro": "kare wa anata ni denwa suru tokoro desu."
+        }
+      ],
+      "grammar": "Verb (dictionary / ている / た-form) + ところだ"
+    },
+    {
+      "id": "n4-grammar-036",
+      "ja": "〜てある",
+      "kana": "〜てある",
+      "ro": "te aru",
+      "en": "something is done / has been done (intentionally)",
+      "examples": [
+        {
+          "en": "The window is open (by someone).",
+          "ja": "まどが開けてあります。",
+          "kana": "まど が あけて あります。",
+          "ro": "mado ga akete arimasu."
+        },
+        {
+          "en": "The light is on (someone turned it on).",
+          "ja": "電気がつけてあります。",
+          "kana": "でんき が つけて あります。",
+          "ro": "denki ga tsukete arimasu."
+        },
+        {
+          "en": "The chairs are arranged.",
+          "ja": "いすが並べてあります。",
+          "kana": "いす が ならべて あります。",
+          "ro": "isu ga narabete arimasu."
+        },
+        {
+          "en": "The documents are already prepared.",
+          "ja": "資料が準備してあります。",
+          "kana": "しりょう が じゅんび して あります。",
+          "ro": "shiryou ga junbi shite arimasu."
+        },
+        {
+          "en": "The door is locked.",
+          "ja": "ドアが閉めてあります。",
+          "kana": "どあ が しめて あります。",
+          "ro": "doa ga shimete arimasu."
+        }
+      ],
+      "grammar": "Verb (て-form) + ある"
+    },
+    {
+      "id": "n4-grammar-037",
+      "ja": "〜ておく（準備）",
+      "kana": "〜ておく（じゅんび）",
+      "ro": "te oku (junbi)",
+      "en": "to do something beforehand / for preparation",
+      "examples": [
+        {
+          "en": "I’ll prepare the tickets in advance.",
+          "ja": "切符を買っておきます。",
+          "kana": "きっぷ を かって おきます。",
+          "ro": "kippu o katte okimasu."
+        },
+        {
+          "en": "I’ll study before the test.",
+          "ja": "テストの前に勉強しておきます。",
+          "kana": "てすと の まえ に べんきょう して おきます。",
+          "ro": "tesuto no mae ni benkyou shite okimasu."
+        },
+        {
+          "en": "I’ll clean the house before guests come.",
+          "ja": "お客さんが来る前に家を掃除しておきます。",
+          "kana": "おきゃくさん が くる まえ に いえ を そうじ して おきます。",
+          "ro": "okyakusan ga kuru mae ni ie o souji shite okimasu."
+        },
+        {
+          "en": "I’ll write it down just in case.",
+          "ja": "念のため書いておきます。",
+          "kana": "ねん の ため かいて おきます。",
+          "ro": "nen no tame kaite okimasu."
+        },
+        {
+          "en": "I’ll turn off the lights before going to bed.",
+          "ja": "寝る前に電気を消しておきます。",
+          "kana": "ねる まえ に でんき を けして おきます。",
+          "ro": "neru mae ni denki o keshite okimasu."
+        }
+      ],
+      "grammar": "Verb (て-form) + おく"
+    },
+    {
+      "id": "n4-grammar-038",
+      "ja": "〜ているところ",
+      "kana": "〜ているところ",
+      "ro": "te iru tokoro",
+      "en": "in the middle of doing something",
+      "examples": [
+        {
+          "en": "I’m studying now.",
+          "ja": "今勉強しているところです。",
+          "kana": "いま べんきょう している ところ です。",
+          "ro": "ima benkyou shiteiru tokoro desu."
+        },
+        {
+          "en": "She’s talking on the phone right now.",
+          "ja": "今電話しているところです。",
+          "kana": "いま でんわ している ところ です。",
+          "ro": "ima denwa shiteiru tokoro desu."
+        },
+        {
+          "en": "He’s eating lunch.",
+          "ja": "昼ごはんを食べているところです。",
+          "kana": "ひるごはん を たべている ところ です。",
+          "ro": "hirugohan o tabeteiru tokoro desu."
+        },
+        {
+          "en": "I’m watching a movie now.",
+          "ja": "今映画を見ているところです。",
+          "kana": "いま えいが を みている ところ です。",
+          "ro": "ima eiga o miteiru tokoro desu."
+        },
+        {
+          "en": "We’re talking about tomorrow’s plan.",
+          "ja": "明日の予定について話しているところです。",
+          "kana": "あした の よてい に ついて はなしている ところ です。",
+          "ro": "ashita no yotei ni tsuite hanashiteiru tokoro desu."
+        }
+      ],
+      "grammar": "Verb (ている-form) + ところ"
+    },
+    {
+      "id": "n4-grammar-039",
+      "ja": "〜てから",
+      "kana": "〜てから",
+      "ro": "te kara",
+      "en": "after doing something / since doing",
+      "examples": [
+        {
+          "en": "After eating, I’ll take a walk.",
+          "ja": "ごはんを食べてから散歩します。",
+          "kana": "ごはん を たべて から さんぽ します。",
+          "ro": "gohan o tabete kara sanpo shimasu."
+        },
+        {
+          "en": "After finishing work, I’ll go home.",
+          "ja": "仕事が終わってから帰ります。",
+          "kana": "しごと が おわって から かえります。",
+          "ro": "shigoto ga owatte kara kaerimasu."
+        },
+        {
+          "en": "I’ll call you after I arrive.",
+          "ja": "着いてから電話します。",
+          "kana": "ついて から でんわ します。",
+          "ro": "tsuite kara denwa shimasu."
+        },
+        {
+          "en": "I’ll study after dinner.",
+          "ja": "晩ごはんを食べてから勉強します。",
+          "kana": "ばんごはん を たべて から べんきょう します。",
+          "ro": "bangohan o tabete kara benkyou shimasu."
+        },
+        {
+          "en": "Please wash your hands after using the toilet.",
+          "ja": "トイレを使ってから手を洗ってください。",
+          "kana": "といれ を つかって から て を あらって ください。",
+          "ro": "toire o tsukatte kara te o aratte kudasai."
+        }
+      ],
+      "grammar": "Verb (て-form) + から"
+    },
+    {
+      "id": "n4-grammar-040",
+      "ja": "〜ておく（完了）",
+      "kana": "〜ておく（かんりょう）",
+      "ro": "te oku (kanryou)",
+      "en": "to finish doing something / complete in advance",
+      "examples": [
+        {
+          "en": "I’ve already done my homework.",
+          "ja": "宿題をしておきました。",
+          "kana": "しゅくだい を して おきました。",
+          "ro": "shukudai o shite okimashita."
+        },
+        {
+          "en": "I’ve cleaned the room.",
+          "ja": "部屋を掃除しておきました。",
+          "kana": "へや を そうじ して おきました。",
+          "ro": "heya o souji shite okimashita."
+        },
+        {
+          "en": "I’ve turned off the lights.",
+          "ja": "電気を消しておきました。",
+          "kana": "でんき を けして おきました。",
+          "ro": "denki o keshite okimashita."
+        },
+        {
+          "en": "I’ve put the documents away.",
+          "ja": "資料を片付けておきました。",
+          "kana": "しりょう を かたづけて おきました。",
+          "ro": "shiryou o katazukete okimashita."
+        },
+        {
+          "en": "I’ve prepared dinner already.",
+          "ja": "晩ごはんを作っておきました。",
+          "kana": "ばんごはん を つくって おきました。",
+          "ro": "bangohan o tsukutte okimashita."
+        }
+      ],
+      "grammar": "Verb (て-form) + おく"
+    }
+  ]
+}

@@ -1,0 +1,823 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "kanji": "百",
+      "kana": "ひゃく",
+      "romaji": "hyaku",
+      "en": "one hundred",
+      "examples": [
+        {
+          "jp": "その店では百円でジュースが買えます。",
+          "jpH": "その みせ では ひゃく えん で じゅーす が かえます。",
+          "ro": "sono mise de wa hyaku en de juusu ga kaemasu.",
+          "en": "You can buy juice for 100 yen at that shop."
+        },
+        {
+          "jp": "この町には百本の桜があります。",
+          "jpH": "この まち には ひゃく ぼん の さくら が あります。",
+          "ro": "kono machi ni wa hyaku bon no sakura ga arimasu.",
+          "en": "There are a hundred cherry trees in this town."
+        },
+        {
+          "jp": "父は百ページの本を読みました。",
+          "jpH": "ちち は ひゃく ぺーじ の ほん を よみました。",
+          "ro": "chichi wa hyaku peeji no hon o yomimashita.",
+          "en": "My father read a 100-page book."
+        },
+        {
+          "jp": "百人の子どもが運動会に参加しました。",
+          "jpH": "ひゃく にん の こども が うんどうかい に さんか しました。",
+          "ro": "hyaku nin no kodomo ga undoukai ni sanka shimashita.",
+          "en": "A hundred children joined the sports day."
+        },
+        {
+          "jp": "百回も同じ映画を見たそうです。",
+          "jpH": "ひゃっかい も おなじ えいが を みた そう です。",
+          "ro": "hyakkai mo onaji eiga o mita sou desu.",
+          "en": "He said he watched the same movie a hundred times."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kanji": "二百",
+      "kana": "にひゃく",
+      "romaji": "nihyaku",
+      "en": "two hundred",
+      "examples": [
+        {
+          "jp": "二百円のノートを買いました。",
+          "jpH": "にひゃく えん の のーと を かいました。",
+          "ro": "nihyaku en no nooto o kaimashita.",
+          "en": "I bought a notebook for 200 yen."
+        },
+        {
+          "jp": "教室には二百冊の本があります。",
+          "jpH": "きょうしつ には にひゃく さつ の ほん が あります。",
+          "ro": "kyoushitsu ni wa nihyaku satsu no hon ga arimasu.",
+          "en": "There are 200 books in the classroom."
+        },
+        {
+          "jp": "母は二百回も料理を作りました。",
+          "jpH": "はは は にひゃく かい も りょうり を つくりました。",
+          "ro": "haha wa nihyaku kai mo ryouri o tsukurimashita.",
+          "en": "My mother has cooked 200 times."
+        },
+        {
+          "jp": "二百人が駅の前に集まりました。",
+          "jpH": "にひゃく にん が えき の まえ に あつまりました。",
+          "ro": "nihyaku nin ga eki no mae ni atsumarimashita.",
+          "en": "Two hundred people gathered in front of the station."
+        },
+        {
+          "jp": "彼は二百メートルを走りました。",
+          "jpH": "かれ は にひゃく めーとる を はしりました。",
+          "ro": "kare wa nihyaku meetoru o hashirimashita.",
+          "en": "He ran 200 meters."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "kanji": "三百",
+      "kana": "さんびゃく",
+      "romaji": "sanbyaku",
+      "en": "three hundred",
+      "examples": [
+        {
+          "jp": "三百円のパンを二つ買いました。",
+          "jpH": "さんびゃく えん の ぱん を ふたつ かいました。",
+          "ro": "sanbyaku en no pan o futatsu kaimashita.",
+          "en": "I bought two breads for 300 yen."
+        },
+        {
+          "jp": "三百人のファンがコンサートに来ました。",
+          "jpH": "さんびゃく にん の ふぁん が こんさーと に きました。",
+          "ro": "sanbyaku nin no fan ga konsaato ni kimashita.",
+          "en": "Three hundred fans came to the concert."
+        },
+        {
+          "jp": "三百本の木が山にあります。",
+          "jpH": "さんびゃく ぼん の き が やま に あります。",
+          "ro": "sanbyaku bon no ki ga yama ni arimasu.",
+          "en": "There are three hundred trees on the mountain."
+        },
+        {
+          "jp": "その会社には三百人の社員がいます。",
+          "jpH": "その かいしゃ には さんびゃく にん の しゃいん が います。",
+          "ro": "sono kaisha ni wa sanbyaku nin no shain ga imasu.",
+          "en": "The company has 300 employees."
+        },
+        {
+          "jp": "三百ページの小説を読み終えました。",
+          "jpH": "さんびゃく ぺーじ の しょうせつ を よみおえました。",
+          "ro": "sanbyaku peeji no shousetsu o yomioemashita.",
+          "en": "I finished reading a 300-page novel."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "kanji": "四百",
+      "kana": "よんひゃく",
+      "romaji": "yonhyaku",
+      "en": "four hundred",
+      "examples": [
+        {
+          "jp": "このコートは四百円では買えません。",
+          "jpH": "この こーと は よんひゃく えん では かえません。",
+          "ro": "kono kooto wa yonhyaku en de wa kaemasen.",
+          "en": "You can’t buy this coat for 400 yen."
+        },
+        {
+          "jp": "四百人がイベントに参加しました。",
+          "jpH": "よんひゃく にん が いべんと に さんか しました。",
+          "ro": "yonhyaku nin ga ibento ni sanka shimashita.",
+          "en": "Four hundred people joined the event."
+        },
+        {
+          "jp": "学校に四百冊の本があります。",
+          "jpH": "がっこう に よんひゃく さつ の ほん が あります。",
+          "ro": "gakkou ni yonhyaku satsu no hon ga arimasu.",
+          "en": "The school has 400 books."
+        },
+        {
+          "jp": "四百回練習したので上手になりました。",
+          "jpH": "よんひゃく かい れんしゅう した ので じょうず に なりました。",
+          "ro": "yonhyaku kai renshuu shita node jouzu ni narimashita.",
+          "en": "I practiced 400 times, so I got better."
+        },
+        {
+          "jp": "四百メートルの橋を渡りました。",
+          "jpH": "よんひゃく めーとる の はし を わたりました。",
+          "ro": "yonhyaku meetoru no hashi o watarimashita.",
+          "en": "I crossed a 400-meter bridge."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "kanji": "五百",
+      "kana": "ごひゃく",
+      "romaji": "gohyaku",
+      "en": "five hundred",
+      "examples": [
+        {
+          "jp": "この町には五百人が住んでいます。",
+          "jpH": "この まち には ごひゃく にん が すんで います。",
+          "ro": "kono machi ni wa gohyaku nin ga sunde imasu.",
+          "en": "Five hundred people live in this town."
+        },
+        {
+          "jp": "五百円で昼ごはんを食べました。",
+          "jpH": "ごひゃく えん で ひる ごはん を たべました。",
+          "ro": "gohyaku en de hiru gohan o tabemashita.",
+          "en": "I had lunch for 500 yen."
+        },
+        {
+          "jp": "図書館に五百冊の本があります。",
+          "jpH": "としょかん に ごひゃく さつ の ほん が あります。",
+          "ro": "toshokan ni gohyaku satsu no hon ga arimasu.",
+          "en": "The library has 500 books."
+        },
+        {
+          "jp": "兄は五百回ピアノを練習しました。",
+          "jpH": "あに は ごひゃく かい ぴあの を れんしゅう しました。",
+          "ro": "ani wa gohyaku kai piano o renshuu shimashita.",
+          "en": "My brother practiced the piano 500 times."
+        },
+        {
+          "jp": "五百メートル泳ぐのは大変です。",
+          "jpH": "ごひゃく めーとる およぐ の は たいへん です。",
+          "ro": "gohyaku meetoru oyogu no wa taihen desu.",
+          "en": "Swimming 500 meters is hard."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "kanji": "六百",
+      "kana": "ろっぴゃく",
+      "romaji": "roppyaku",
+      "en": "six hundred",
+      "examples": [
+        {
+          "jp": "六百円で映画のチケットを買いました。",
+          "jpH": "ろっぴゃく えん で えいが の ちけっと を かいました。",
+          "ro": "roppyaku en de eiga no chiketto o kaimashita.",
+          "en": "I bought a movie ticket for 600 yen."
+        },
+        {
+          "jp": "六百人がマラソンに参加しました。",
+          "jpH": "ろっぴゃく にん が まらそん に さんか しました。",
+          "ro": "roppyaku nin ga marason ni sanka shimashita.",
+          "en": "Six hundred people joined the marathon."
+        },
+        {
+          "jp": "六百ページの本を二週間で読みました。",
+          "jpH": "ろっぴゃく ぺーじ の ほん を にしゅうかん で よみました。",
+          "ro": "roppyaku peeji no hon o nishuukan de yomimashita.",
+          "en": "I read a 600-page book in two weeks."
+        },
+        {
+          "jp": "六百本の木が公園にあります。",
+          "jpH": "ろっぴゃく ぼん の き が こうえん に あります。",
+          "ro": "roppyaku bon no ki ga kouen ni arimasu.",
+          "en": "There are six hundred trees in the park."
+        },
+        {
+          "jp": "六百回も練習して上手になりました。",
+          "jpH": "ろっぴゃく かい も れんしゅう して じょうず に なりました。",
+          "ro": "roppyaku kai mo renshuu shite jouzu ni narimashita.",
+          "en": "I practiced six hundred times and got better."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "kanji": "七百",
+      "kana": "ななひゃく",
+      "romaji": "nanahyaku",
+      "en": "seven hundred",
+      "examples": [
+        {
+          "jp": "七百円のランチを食べました。",
+          "jpH": "ななひゃく えん の らんち を たべました。",
+          "ro": "nanahyaku en no ranchi o tabemashita.",
+          "en": "I had a 700-yen lunch."
+        },
+        {
+          "jp": "七百人の観客が野球を見ました。",
+          "jpH": "ななひゃく にん の かんきゃく が やきゅう を みました。",
+          "ro": "nanahyaku nin no kankyaku ga yakyuu o mimashita.",
+          "en": "Seven hundred people watched the baseball game."
+        },
+        {
+          "jp": "七百枚の写真を撮りました。",
+          "jpH": "ななひゃく まい の しゃしん を とりました。",
+          "ro": "nanahyaku mai no shashin o torimashita.",
+          "en": "I took seven hundred photos."
+        },
+        {
+          "jp": "七百本のペンを会社に送りました。",
+          "jpH": "ななひゃく ぼん の ぺん を かいしゃ に おくりました。",
+          "ro": "nanahyaku bon no pen o kaisha ni okurimashita.",
+          "en": "I sent seven hundred pens to the company."
+        },
+        {
+          "jp": "七百時間も働いたそうです。",
+          "jpH": "ななひゃく じかん も はたらいた そう です。",
+          "ro": "nanahyaku jikan mo hataraita sou desu.",
+          "en": "I heard he worked for seven hundred hours."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "kanji": "八百",
+      "kana": "はっぴゃく",
+      "romaji": "happyaku",
+      "en": "eight hundred",
+      "examples": [
+        {
+          "jp": "八百円のケーキを二つ買いました。",
+          "jpH": "はっぴゃく えん の けーき を ふたつ かいました。",
+          "ro": "happyaku en no keeki o futatsu kaimashita.",
+          "en": "I bought two cakes for 800 yen."
+        },
+        {
+          "jp": "八百人が駅の前で歌いました。",
+          "jpH": "はっぴゃく にん が えき の まえ で うたいました。",
+          "ro": "happyaku nin ga eki no mae de utaimashita.",
+          "en": "Eight hundred people sang in front of the station."
+        },
+        {
+          "jp": "八百本の花を育てています。",
+          "jpH": "はっぴゃく ぼん の はな を そだてて います。",
+          "ro": "happyaku bon no hana o sodatete imasu.",
+          "en": "I am growing eight hundred flowers."
+        },
+        {
+          "jp": "八百回も同じ問題を解きました。",
+          "jpH": "はっぴゃく かい も おなじ もんだい を ときました。",
+          "ro": "happyaku kai mo onaji mondai o tokimashita.",
+          "en": "I solved the same problem eight hundred times."
+        },
+        {
+          "jp": "八百円でバスの回数券を買いました。",
+          "jpH": "はっぴゃく えん で ばす の かいすうけん を かいました。",
+          "ro": "happyaku en de basu no kaisuuken o kaimashita.",
+          "en": "I bought a bus pass for 800 yen."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "kanji": "九百",
+      "kana": "きゅうひゃく",
+      "romaji": "kyuuhyaku",
+      "en": "nine hundred",
+      "examples": [
+        {
+          "jp": "九百円のシャツを買いました。",
+          "jpH": "きゅうひゃく えん の しゃつ を かいました。",
+          "ro": "kyuuhyaku en no shatsu o kaimashita.",
+          "en": "I bought a shirt for 900 yen."
+        },
+        {
+          "jp": "九百人が試験を受けました。",
+          "jpH": "きゅうひゃく にん が しけん を うけました。",
+          "ro": "kyuuhyaku nin ga shiken o ukemashita.",
+          "en": "Nine hundred people took the exam."
+        },
+        {
+          "jp": "九百本の木が山にあります。",
+          "jpH": "きゅうひゃく ぼん の き が やま に あります。",
+          "ro": "kyuuhyaku bon no ki ga yama ni arimasu.",
+          "en": "There are nine hundred trees on the mountain."
+        },
+        {
+          "jp": "九百回も聞いた歌です。",
+          "jpH": "きゅうひゃく かい も きいた うた です。",
+          "ro": "kyuuhyaku kai mo kiita uta desu.",
+          "en": "It’s a song I’ve listened to nine hundred times."
+        },
+        {
+          "jp": "九百円でチョコをたくさん買いました。",
+          "jpH": "きゅうひゃく えん で ちょこ を たくさん かいました。",
+          "ro": "kyuuhyaku en de choko o takusan kaimashita.",
+          "en": "I bought lots of chocolate for 900 yen."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "kanji": "千",
+      "kana": "せん",
+      "romaji": "sen",
+      "en": "one thousand",
+      "examples": [
+        {
+          "jp": "千円札を二枚持っています。",
+          "jpH": "せん えん さつ を にまい もって います。",
+          "ro": "sen en satsu o nimai motte imasu.",
+          "en": "I have two one-thousand-yen bills."
+        },
+        {
+          "jp": "千人が花見に来ました。",
+          "jpH": "せん にん が はなみ に きました。",
+          "ro": "sen nin ga hanami ni kimashita.",
+          "en": "A thousand people came to see the cherry blossoms."
+        },
+        {
+          "jp": "千枚の写真を整理しています。",
+          "jpH": "せん まい の しゃしん を せいり して います。",
+          "ro": "sen mai no shashin o seiri shite imasu.",
+          "en": "I’m organizing a thousand photos."
+        },
+        {
+          "jp": "千本の木を植えました。",
+          "jpH": "せん ぼん の き を うえました。",
+          "ro": "sen bon no ki o uemashita.",
+          "en": "We planted a thousand trees."
+        },
+        {
+          "jp": "千回も同じ曲を聞きました。",
+          "jpH": "せん かい も おなじ きょく を ききました。",
+          "ro": "sen kai mo onaji kyoku o kikimashita.",
+          "en": "I listened to the same song a thousand times."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "kanji": "千五百",
+      "kana": "せんごひゃく",
+      "romaji": "sengohyaku",
+      "en": "one thousand five hundred",
+      "examples": [
+        {
+          "jp": "千五百円のシャツを買いました。",
+          "jpH": "せん ごひゃく えん の しゃつ を かいました。",
+          "ro": "sen gohyaku en no shatsu o kaimashita.",
+          "en": "I bought a shirt for 1,500 yen."
+        },
+        {
+          "jp": "千五百人がマラソンに参加しました。",
+          "jpH": "せん ごひゃく にん が まらそん に さんか しました。",
+          "ro": "sen gohyaku nin ga marason ni sanka shimashita.",
+          "en": "1,500 people joined the marathon."
+        },
+        {
+          "jp": "この町には千五百本の木があります。",
+          "jpH": "この まち には せん ごひゃく ぼん の き が あります。",
+          "ro": "kono machi ni wa sen gohyaku bon no ki ga arimasu.",
+          "en": "There are 1,500 trees in this town."
+        },
+        {
+          "jp": "千五百円でおいしいランチが食べられます。",
+          "jpH": "せん ごひゃく えん で おいしい らんち が たべられます。",
+          "ro": "sen gohyaku en de oishii ranchi ga taberaremasu.",
+          "en": "You can have a good lunch for 1,500 yen."
+        },
+        {
+          "jp": "父は千五百回も練習しました。",
+          "jpH": "ちち は せん ごひゃく かい も れんしゅう しました。",
+          "ro": "chichi wa sen gohyaku kai mo renshuu shimashita.",
+          "en": "My father practiced 1,500 times."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "kanji": "二千",
+      "kana": "にせん",
+      "romaji": "nisen",
+      "en": "two thousand",
+      "examples": [
+        {
+          "jp": "二千円札を見たことがありますか。",
+          "jpH": "にせん えん さつ を みた こと が あります か。",
+          "ro": "nisen en satsu o mita koto ga arimasu ka.",
+          "en": "Have you ever seen a 2,000-yen bill?"
+        },
+        {
+          "jp": "二千人が駅に集まりました。",
+          "jpH": "にせん にん が えき に あつまりました。",
+          "ro": "nisen nin ga eki ni atsumarimashita.",
+          "en": "2,000 people gathered at the station."
+        },
+        {
+          "jp": "二千本の花を植えました。",
+          "jpH": "にせん ぼん の はな を うえました。",
+          "ro": "nisen bon no hana o uemashita.",
+          "en": "We planted 2,000 flowers."
+        },
+        {
+          "jp": "この会社には二千人の社員がいます。",
+          "jpH": "この かいしゃ には にせん にん の しゃいん が います。",
+          "ro": "kono kaisha ni wa nisen nin no shain ga imasu.",
+          "en": "This company has 2,000 employees."
+        },
+        {
+          "jp": "二千円で映画とポップコーンを買いました。",
+          "jpH": "にせん えん で えいが と ぽっぷこーん を かいました。",
+          "ro": "nisen en de eiga to poppukoon o kaimashita.",
+          "en": "I bought a movie ticket and popcorn for 2,000 yen."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "kanji": "三千",
+      "kana": "さんぜん",
+      "romaji": "sanzen",
+      "en": "three thousand",
+      "examples": [
+        {
+          "jp": "三千円のくつを買いました。",
+          "jpH": "さんぜん えん の くつ を かいました。",
+          "ro": "sanzen en no kutsu o kaimashita.",
+          "en": "I bought shoes for 3,000 yen."
+        },
+        {
+          "jp": "三千人の学生がその学校にいます。",
+          "jpH": "さんぜん にん の がくせい が その がっこう に います。",
+          "ro": "sanzen nin no gakusei ga sono gakkou ni imasu.",
+          "en": "There are 3,000 students at that school."
+        },
+        {
+          "jp": "三千本の花がきれいに咲きました。",
+          "jpH": "さんぜん ぼん の はな が きれい に さきました。",
+          "ro": "sanzen bon no hana ga kirei ni sakimashita.",
+          "en": "Three thousand flowers bloomed beautifully."
+        },
+        {
+          "jp": "三千円で友達と食事をしました。",
+          "jpH": "さんぜん えん で ともだち と しょくじ を しました。",
+          "ro": "sanzen en de tomodachi to shokuji o shimashita.",
+          "en": "I had a meal with my friend for 3,000 yen."
+        },
+        {
+          "jp": "三千回も練習して歌を覚えました。",
+          "jpH": "さんぜん かい も れんしゅう して うた を おぼえました。",
+          "ro": "sanzen kai mo renshuu shite uta o oboemashita.",
+          "en": "I practiced three thousand times to learn the song."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "kanji": "四千",
+      "kana": "よんせん",
+      "romaji": "yonsen",
+      "en": "four thousand",
+      "examples": [
+        {
+          "jp": "四千円で新しいかばんを買いました。",
+          "jpH": "よんせん えん で あたらしい かばん を かいました。",
+          "ro": "yonsen en de atarashii kaban o kaimashita.",
+          "en": "I bought a new bag for 4,000 yen."
+        },
+        {
+          "jp": "四千人がコンサートに来ました。",
+          "jpH": "よんせん にん が こんさーと に きました。",
+          "ro": "yonsen nin ga konsaato ni kimashita.",
+          "en": "4,000 people came to the concert."
+        },
+        {
+          "jp": "四千本の木を植える計画です。",
+          "jpH": "よんせん ぼん の き を うえる けいかく です。",
+          "ro": "yonsen bon no ki o ueru keikaku desu.",
+          "en": "We plan to plant 4,000 trees."
+        },
+        {
+          "jp": "四千円でホテルに泊まりました。",
+          "jpH": "よんせん えん で ほてる に とまりました。",
+          "ro": "yonsen en de hoteru ni tomarimashita.",
+          "en": "I stayed at a hotel for 4,000 yen."
+        },
+        {
+          "jp": "四千回もピアノを練習したそうです。",
+          "jpH": "よんせん かい も ぴあの を れんしゅう した そう です。",
+          "ro": "yonsen kai mo piano o renshuu shita sou desu.",
+          "en": "I heard he practiced the piano 4,000 times."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "kanji": "五千",
+      "kana": "ごせん",
+      "romaji": "gosen",
+      "en": "five thousand",
+      "examples": [
+        {
+          "jp": "五千円を財布に入れました。",
+          "jpH": "ごせん えん を さいふ に いれました。",
+          "ro": "gosen en o saifu ni iremashita.",
+          "en": "I put 5,000 yen in my wallet."
+        },
+        {
+          "jp": "五千人の観光客が町に来ました。",
+          "jpH": "ごせん にん の かんこうきゃく が まち に きました。",
+          "ro": "gosen nin no kankoukyaku ga machi ni kimashita.",
+          "en": "5,000 tourists came to the town."
+        },
+        {
+          "jp": "五千本の花を準備しました。",
+          "jpH": "ごせん ぼん の はな を じゅんび しました。",
+          "ro": "gosen bon no hana o junbi shimashita.",
+          "en": "We prepared 5,000 flowers."
+        },
+        {
+          "jp": "五千円でおいしい夕食を食べました。",
+          "jpH": "ごせん えん で おいしい ゆうしょく を たべました。",
+          "ro": "gosen en de oishii yuushoku o tabemashita.",
+          "en": "I had a nice dinner for 5,000 yen."
+        },
+        {
+          "jp": "五千回の練習で大会に出ました。",
+          "jpH": "ごせん かい の れんしゅう で たいかい に でました。",
+          "ro": "gosen kai no renshuu de taikai ni demashita.",
+          "en": "After 5,000 practices, I joined the competition."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "kanji": "一万",
+      "kana": "いちまん",
+      "romaji": "ichiman",
+      "en": "ten thousand",
+      "examples": [
+        {
+          "jp": "この時計は一万円しました。",
+          "jpH": "この とけい は いちまん えん しました。",
+          "ro": "kono tokei wa ichiman en shimashita.",
+          "en": "This watch cost ten thousand yen."
+        },
+        {
+          "jp": "父は一万人の前で話しました。",
+          "jpH": "ちち は いちまん にん の まえ で はなしました。",
+          "ro": "chichi wa ichiman nin no mae de hanashimashita.",
+          "en": "My father spoke in front of ten thousand people."
+        },
+        {
+          "jp": "一万歩歩いたので疲れました。",
+          "jpH": "いちまん ほ あるいた ので つかれました。",
+          "ro": "ichiman po aruita node tsukaremashita.",
+          "en": "I walked ten thousand steps, so I’m tired."
+        },
+        {
+          "jp": "図書館には一万冊の本があります。",
+          "jpH": "としょかん には いちまん さつ の ほん が あります。",
+          "ro": "toshokan ni wa ichiman satsu no hon ga arimasu.",
+          "en": "There are ten thousand books in the library."
+        },
+        {
+          "jp": "彼は一万時間も勉強したそうです。",
+          "jpH": "かれ は いちまん じかん も べんきょう した そう です。",
+          "ro": "kare wa ichiman jikan mo benkyou shita sou desu.",
+          "en": "I heard he studied for ten thousand hours."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "kanji": "二万",
+      "kana": "にまん",
+      "romaji": "niman",
+      "en": "twenty thousand",
+      "examples": [
+        {
+          "jp": "二万円のかばんを買いました。",
+          "jpH": "にまん えん の かばん を かいました。",
+          "ro": "niman en no kaban o kaimashita.",
+          "en": "I bought a bag for twenty thousand yen."
+        },
+        {
+          "jp": "二万人が花火大会に来ました。",
+          "jpH": "にまん にん が はなび たいかい に きました。",
+          "ro": "niman nin ga hanabi taikai ni kimashita.",
+          "en": "Twenty thousand people came to the fireworks festival."
+        },
+        {
+          "jp": "二万本の木が森にあります。",
+          "jpH": "にまん ぼん の き が もり に あります。",
+          "ro": "niman bon no ki ga mori ni arimasu.",
+          "en": "There are twenty thousand trees in the forest."
+        },
+        {
+          "jp": "二万円で旅行のチケットを買いました。",
+          "jpH": "にまん えん で りょこう の ちけっと を かいました。",
+          "ro": "niman en de ryokou no chiketto o kaimashita.",
+          "en": "I bought a travel ticket for twenty thousand yen."
+        },
+        {
+          "jp": "二万時間も働いた人がいます。",
+          "jpH": "にまん じかん も はたらいた ひと が います。",
+          "ro": "niman jikan mo hataraita hito ga imasu.",
+          "en": "There is a person who worked twenty thousand hours."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "kanji": "三万",
+      "kana": "さんまん",
+      "romaji": "sanman",
+      "en": "thirty thousand",
+      "examples": [
+        {
+          "jp": "三万円のパソコンを買いました。",
+          "jpH": "さんまん えん の ぱそこん を かいました。",
+          "ro": "sanman en no pasokon o kaimashita.",
+          "en": "I bought a computer for thirty thousand yen."
+        },
+        {
+          "jp": "三万人がコンサートに集まりました。",
+          "jpH": "さんまん にん が こんさーと に あつまりました。",
+          "ro": "sanman nin ga konsaato ni atsumarimashita.",
+          "en": "Thirty thousand people gathered for the concert."
+        },
+        {
+          "jp": "三万本の花が公園に咲いています。",
+          "jpH": "さんまん ぼん の はな が こうえん に さいて います。",
+          "ro": "sanman bon no hana ga kouen ni saite imasu.",
+          "en": "Thirty thousand flowers are blooming in the park."
+        },
+        {
+          "jp": "三万円で新しい自転車を買いました。",
+          "jpH": "さんまん えん で あたらしい じてんしゃ を かいました。",
+          "ro": "sanman en de atarashii jitensha o kaimashita.",
+          "en": "I bought a new bicycle for thirty thousand yen."
+        },
+        {
+          "jp": "三万人の前で歌を歌いました。",
+          "jpH": "さんまん にん の まえ で うた を うたいました。",
+          "ro": "sanman nin no mae de uta o utaimashita.",
+          "en": "I sang a song in front of thirty thousand people."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "kanji": "五万",
+      "kana": "ごまん",
+      "romaji": "goman",
+      "en": "fifty thousand",
+      "examples": [
+        {
+          "jp": "五万円のスマホを買いました。",
+          "jpH": "ごまん えん の すまほ を かいました。",
+          "ro": "goman en no sumaho o kaimashita.",
+          "en": "I bought a smartphone for fifty thousand yen."
+        },
+        {
+          "jp": "五万人が試合を見に来ました。",
+          "jpH": "ごまん にん が しあい を み に きました。",
+          "ro": "goman nin ga shiai o mi ni kimashita.",
+          "en": "Fifty thousand people came to watch the game."
+        },
+        {
+          "jp": "五万本の花を植えました。",
+          "jpH": "ごまん ぼん の はな を うえました。",
+          "ro": "goman bon no hana o uemashita.",
+          "en": "We planted fifty thousand flowers."
+        },
+        {
+          "jp": "五万円でテレビと冷蔵庫を買いました。",
+          "jpH": "ごまん えん で てれび と れいぞうこ を かいました。",
+          "ro": "goman en de terebi to reizouko o kaimashita.",
+          "en": "I bought a TV and a refrigerator for fifty thousand yen."
+        },
+        {
+          "jp": "五万時間も練習したそうです。",
+          "jpH": "ごまん じかん も れんしゅう した そう です。",
+          "ro": "goman jikan mo renshuu shita sou desu.",
+          "en": "I heard he practiced for fifty thousand hours."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "kanji": "十万",
+      "kana": "じゅうまん",
+      "romaji": "juuman",
+      "en": "one hundred thousand",
+      "examples": [
+        {
+          "jp": "十万円のカメラを買いました。",
+          "jpH": "じゅうまん えん の かめら を かいました。",
+          "ro": "juuman en no kamera o kaimashita.",
+          "en": "I bought a camera for one hundred thousand yen."
+        },
+        {
+          "jp": "十万人がコンサートに来ました。",
+          "jpH": "じゅうまん にん が こんさーと に きました。",
+          "ro": "juuman nin ga konsaato ni kimashita.",
+          "en": "One hundred thousand people came to the concert."
+        },
+        {
+          "jp": "十万本の木が森にあります。",
+          "jpH": "じゅうまん ぼん の き が もり に あります。",
+          "ro": "juuman bon no ki ga mori ni arimasu.",
+          "en": "There are one hundred thousand trees in the forest."
+        },
+        {
+          "jp": "十万円で中古の車を買いました。",
+          "jpH": "じゅうまん えん で ちゅうこ の くるま を かいました。",
+          "ro": "juuman en de chuuko no kuruma o kaimashita.",
+          "en": "I bought a used car for one hundred thousand yen."
+        },
+        {
+          "jp": "十万人の前でスピーチをしました。",
+          "jpH": "じゅうまん にん の まえ で すぴーち を しました。",
+          "ro": "juuman nin no mae de supiichi o shimashita.",
+          "en": "I gave a speech in front of one hundred thousand people."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "kanji": "百万",
+      "kana": "ひゃくまん",
+      "romaji": "hyakuman",
+      "en": "one million",
+      "examples": [
+        {
+          "jp": "百万の人がこの番組を見ました。",
+          "jpH": "ひゃくまん の ひと が この ばんぐみ を みました。",
+          "ro": "hyakuman no hito ga kono bangumi o mimashita.",
+          "en": "A million people watched this show."
+        },
+        {
+          "jp": "百万本の花が咲いています。",
+          "jpH": "ひゃくまん ぼん の はな が さいて います。",
+          "ro": "hyakuman bon no hana ga saite imasu.",
+          "en": "A million flowers are blooming."
+        },
+        {
+          "jp": "百万回も聞いた曲です。",
+          "jpH": "ひゃくまん かい も きいた きょく です。",
+          "ro": "hyakuman kai mo kiita kyoku desu.",
+          "en": "It’s a song I’ve listened to a million times."
+        },
+        {
+          "jp": "百万冊の本を持つ図書館があります。",
+          "jpH": "ひゃくまん さつ の ほん を もつ としょかん が あります。",
+          "ro": "hyakuman satsu no hon o motsu toshokan ga arimasu.",
+          "en": "There is a library with a million books."
+        },
+        {
+          "jp": "百万時間の努力が必要です。",
+          "jpH": "ひゃくまん じかん の どりょく が ひつよう です。",
+          "ro": "hyakuman jikan no doryoku ga hitsuyou desu.",
+          "en": "A million hours of effort are needed."
+        }
+      ]
+    }
+  ]
+}

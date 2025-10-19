@@ -1,0 +1,5964 @@
+{
+  "entries": [
+    {
+      "id": "n4-noun-001",
+      "ja": "計画",
+      "kana": "けいかく",
+      "ro": "keikaku",
+      "en": "plan / schedule / project",
+      "examples": [
+        {
+          "en": "We made a plan for the trip.",
+          "ja": "私たちは旅行の計画を立てた。",
+          "kana": "わたしたち は りょこう の けいかく を たてた。",
+          "ro": "watashitachi wa ryokou no keikaku o tateta."
+        },
+        {
+          "en": "The project is going according to plan.",
+          "ja": "計画通りにプロジェクトが進んでいる。",
+          "kana": "けいかくどおり に ぷろじぇくと が すすんで いる。",
+          "ro": "keikaku doori ni purojekuto ga susunde iru."
+        },
+        {
+          "en": "He made a study plan for the exam.",
+          "ja": "彼は試験のための勉強計画を作った。",
+          "kana": "かれ は しけん の ため の べんきょうけいかく を つくった。",
+          "ro": "kare wa shiken no tame no benkyou keikaku o tsukutta."
+        },
+        {
+          "en": "The plan was changed suddenly.",
+          "ja": "計画は急に変わった。",
+          "kana": "けいかく は きゅう に かわった。",
+          "ro": "keikaku wa kyuu ni kawatta."
+        },
+        {
+          "en": "Let's follow the plan carefully.",
+          "ja": "計画に従って慎重に進もう。",
+          "kana": "けいかく に したがって しんちょう に すすもう。",
+          "ro": "keikaku ni shitagatte shinchou ni susumou."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-002",
+      "ja": "準備",
+      "kana": "じゅんび",
+      "ro": "junbi",
+      "en": "preparation / arrangements / readiness",
+      "examples": [
+        {
+          "en": "I am preparing for the exam.",
+          "ja": "試験の準備をしています。",
+          "kana": "しけん の じゅんび を して います。",
+          "ro": "shiken no junbi o shite imasu."
+        },
+        {
+          "en": "The party preparations are complete.",
+          "ja": "パーティーの準備ができました。",
+          "kana": "ぱーてぃー の じゅんび が できました。",
+          "ro": "paatii no junbi ga dekimashita."
+        },
+        {
+          "en": "She helped with dinner preparation.",
+          "ja": "彼女は夕食の準備を手伝った。",
+          "kana": "かのじょ は ゆうしょく の じゅんび を てつだった。",
+          "ro": "kanojo wa yuushoku no junbi o tetsudatta."
+        },
+        {
+          "en": "We have to make preparations for tomorrow.",
+          "ja": "明日の準備をしなければならない。",
+          "kana": "あした の じゅんび を しなければ ならない。",
+          "ro": "ashita no junbi o shinakereba naranai."
+        },
+        {
+          "en": "He is getting ready to go out.",
+          "ja": "彼は出かける準備をしている。",
+          "kana": "かれ は でかける じゅんび を して いる。",
+          "ro": "kare wa dekakeru junbi o shite iru."
+        }
+      ],
+      "grammar": "Noun + を + する"
+    },
+    {
+      "id": "n4-noun-003",
+      "ja": "伝統",
+      "kana": "でんとう",
+      "ro": "dentou",
+      "en": "tradition / heritage / custom",
+      "examples": [
+        {
+          "en": "Japan has a long history and rich traditions.",
+          "ja": "日本には長い歴史と豊かな伝統がある。",
+          "kana": "にほん に は ながい れきし と ゆたかな でんとう が ある。",
+          "ro": "nihon ni wa nagai rekishi to yutaka na dentou ga aru."
+        },
+        {
+          "en": "We must protect our traditions.",
+          "ja": "私たちは伝統を守らなければならない。",
+          "kana": "わたしたち は でんとう を まもらなければ ならない。",
+          "ro": "watashitachi wa dentou o mamoranakereba naranai."
+        },
+        {
+          "en": "Tea ceremony is a Japanese tradition.",
+          "ja": "茶道は日本の伝統の一つです。",
+          "kana": "さどう は にほん の でんとう の ひとつ です。",
+          "ro": "sadou wa nihon no dentou no hitotsu desu."
+        },
+        {
+          "en": "Traditional music is still popular.",
+          "ja": "伝統音楽はいまでも人気がある。",
+          "kana": "でんとうおんがく は いま でも にんき が ある。",
+          "ro": "dentou ongaku wa ima demo ninki ga aru."
+        },
+        {
+          "en": "This town values traditional culture.",
+          "ja": "この町は伝統文化を大切にしている。",
+          "kana": "この まち は でんとうぶんか を たいせつ に して いる。",
+          "ro": "kono machi wa dentou bunka o taisetsu ni shite iru."
+        }
+      ],
+      "grammar": "Noun + を + Verb"
+    },
+    {
+      "id": "n4-noun-004",
+      "ja": "成績",
+      "kana": "せいせき",
+      "ro": "seiseki",
+      "en": "grade / academic record / performance",
+      "examples": [
+        {
+          "en": "His grades are excellent.",
+          "ja": "彼の成績はとても良い。",
+          "kana": "かれ の せいせき は とても よい。",
+          "ro": "kare no seiseki wa totemo yoi."
+        },
+        {
+          "en": "My grades improved this semester.",
+          "ja": "今学期の成績が上がった。",
+          "kana": "こんがっき の せいせき が あがった。",
+          "ro": "kongakki no seiseki ga agatta."
+        },
+        {
+          "en": "She works hard to get good grades.",
+          "ja": "彼女は良い成績を取るために頑張っている。",
+          "kana": "かのじょ は よい せいせき を とる ため に がんばって いる。",
+          "ro": "kanojo wa yoi seiseki o toru tame ni ganbatte iru."
+        },
+        {
+          "en": "He was praised for his performance.",
+          "ja": "彼は成績の良さをほめられた。",
+          "kana": "かれ は せいせき の よさ を ほめられた。",
+          "ro": "kare wa seiseki no yosa o homerareta."
+        },
+        {
+          "en": "Her academic record is stable.",
+          "ja": "彼女の成績は安定している。",
+          "kana": "かのじょ の せいせき は あんてい して いる。",
+          "ro": "kanojo no seiseki wa antei shite iru."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-005",
+      "ja": "交通",
+      "kana": "こうつう",
+      "ro": "koutsuu",
+      "en": "traffic / transportation / transit",
+      "examples": [
+        {
+          "en": "Traffic is heavy this morning.",
+          "ja": "今朝は交通が混んでいる。",
+          "kana": "けさ は こうつう が こんで いる。",
+          "ro": "kesa wa koutsuu ga konde iru."
+        },
+        {
+          "en": "Public transportation is convenient here.",
+          "ja": "この地域は公共交通が便利です。",
+          "kana": "この ちいき は こうきょうこうつう が べんり です。",
+          "ro": "kono chiiki wa koukyou koutsuu ga benri desu."
+        },
+        {
+          "en": "Traffic accidents have decreased.",
+          "ja": "交通事故が減った。",
+          "kana": "こうつうじこ が へった。",
+          "ro": "koutsuu jiko ga hetta."
+        },
+        {
+          "en": "Please be careful of traffic.",
+          "ja": "交通に気をつけてください。",
+          "kana": "こうつう に き を つけて ください。",
+          "ro": "koutsuu ni ki o tsukete kudasai."
+        },
+        {
+          "en": "The traffic lights are broken.",
+          "ja": "信号が壊れて交通が混乱している。",
+          "kana": "しんごう が こわれて こうつう が こんらん して いる。",
+          "ro": "shingou ga kowarete koutsuu ga konran shite iru."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-006",
+      "ja": "調査",
+      "kana": "ちょうさ",
+      "ro": "chousa",
+      "en": "investigation / survey / research",
+      "examples": [
+        {
+          "en": "The police started an investigation.",
+          "ja": "警察は調査を始めた。",
+          "kana": "けいさつ は ちょうさ を はじめた。",
+          "ro": "keisatsu wa chousa o hajimeta."
+        },
+        {
+          "en": "They conducted a survey about the environment.",
+          "ja": "彼らは環境についての調査を行った。",
+          "kana": "かれら は かんきょう に ついて の ちょうさ を おこなった。",
+          "ro": "karera wa kankyou ni tsuite no chousa o okonatta."
+        },
+        {
+          "en": "The results of the research were published.",
+          "ja": "調査の結果が発表された。",
+          "kana": "ちょうさ の けっか が はっぴょう された。",
+          "ro": "chousa no kekka ga happyou sareta."
+        },
+        {
+          "en": "The survey showed interesting data.",
+          "ja": "調査はおもしろいデータを示した。",
+          "kana": "ちょうさ は おもしろい でーた を しめした。",
+          "ro": "chousa wa omoshiroi deeta o shimeshita."
+        },
+        {
+          "en": "We need to investigate the cause.",
+          "ja": "原因を調査する必要がある。",
+          "kana": "げんいん を ちょうさ する ひつよう が ある。",
+          "ro": "gen'in o chousa suru hitsuyou ga aru."
+        }
+      ],
+      "grammar": "Noun + を + 調査する"
+    },
+    {
+      "id": "n4-noun-007",
+      "ja": "景色",
+      "kana": "けしき",
+      "ro": "keshiki",
+      "en": "scenery / landscape / view",
+      "examples": [
+        {
+          "en": "The mountain scenery is beautiful.",
+          "ja": "山の景色が美しい。",
+          "kana": "やま の けしき が うつくしい。",
+          "ro": "yama no keshiki ga utsukushii."
+        },
+        {
+          "en": "I enjoyed the view from the train window.",
+          "ja": "電車の窓からの景色を楽しんだ。",
+          "kana": "でんしゃ の まど から の けしき を たのしんだ。",
+          "ro": "densha no mado kara no keshiki o tanoshinda."
+        },
+        {
+          "en": "The scenery changes with the seasons.",
+          "ja": "季節によって景色が変わる。",
+          "kana": "きせつ に よって けしき が かわる。",
+          "ro": "kisetsu ni yotte keshiki ga kawaru."
+        },
+        {
+          "en": "This town has beautiful ocean views.",
+          "ja": "この町は海の景色がきれいです。",
+          "kana": "この まち は うみ の けしき が きれい です。",
+          "ro": "kono machi wa umi no keshiki ga kirei desu."
+        },
+        {
+          "en": "I will never forget the night view.",
+          "ja": "夜の景色を忘れられない。",
+          "kana": "よる の けしき を わすれられない。",
+          "ro": "yoru no keshiki o wasurerarenai."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-008",
+      "ja": "約束",
+      "kana": "やくそく",
+      "ro": "yakusoku",
+      "en": "promise / appointment / arrangement",
+      "examples": [
+        {
+          "en": "I promised to meet him tomorrow.",
+          "ja": "明日彼と会う約束をした。",
+          "kana": "あした かれ と あう やくそく を した。",
+          "ro": "ashita kare to au yakusoku o shita."
+        },
+        {
+          "en": "Don’t forget our promise.",
+          "ja": "私たちの約束を忘れないで。",
+          "kana": "わたしたち の やくそく を わすれないで。",
+          "ro": "watashitachi no yakusoku o wasurenaide."
+        },
+        {
+          "en": "He broke the promise again.",
+          "ja": "彼はまた約束を破った。",
+          "kana": "かれ は また やくそく を やぶった。",
+          "ro": "kare wa mata yakusoku o yabutta."
+        },
+        {
+          "en": "We have a dinner appointment tonight.",
+          "ja": "今夜は食事の約束がある。",
+          "kana": "こんや は しょくじ の やくそく が ある。",
+          "ro": "konya wa shokuji no yakusoku ga aru."
+        },
+        {
+          "en": "Promise me you will come.",
+          "ja": "必ず来ると約束して。",
+          "kana": "かならず くる と やくそく して。",
+          "ro": "kanarazu kuru to yakusoku shite."
+        }
+      ],
+      "grammar": "Noun + を + する"
+    },
+    {
+      "id": "n4-noun-009",
+      "ja": "温度",
+      "kana": "おんど",
+      "ro": "ondo",
+      "en": "temperature / degree of heat",
+      "examples": [
+        {
+          "en": "The room temperature is comfortable.",
+          "ja": "部屋の温度はちょうどいい。",
+          "kana": "へや の おんど は ちょうど いい。",
+          "ro": "heya no ondo wa choudo ii."
+        },
+        {
+          "en": "The temperature is rising.",
+          "ja": "温度が上がっている。",
+          "kana": "おんど が あがって いる。",
+          "ro": "ondo ga agatte iru."
+        },
+        {
+          "en": "Measure the water temperature.",
+          "ja": "水の温度をはかってください。",
+          "kana": "みず の おんど を はかって ください。",
+          "ro": "mizu no ondo o hakatte kudasai."
+        },
+        {
+          "en": "Keep the food at a low temperature.",
+          "ja": "食べ物を低い温度で保存してください。",
+          "kana": "たべもの を ひくい おんど で ほぞん して ください。",
+          "ro": "tabemono o hikui ondo de hozon shite kudasai."
+        },
+        {
+          "en": "The temperature of the bath is perfect.",
+          "ja": "お風呂の温度がちょうどいい。",
+          "kana": "おふろ の おんど が ちょうど いい。",
+          "ro": "ofuro no ondo ga choudo ii."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-010",
+      "ja": "笑顔",
+      "kana": "えがお",
+      "ro": "egao",
+      "en": "smile / smiling face",
+      "examples": [
+        {
+          "en": "Her smile makes everyone happy.",
+          "ja": "彼女の笑顔はみんなを幸せにする。",
+          "kana": "かのじょ の えがお は みんな を しあわせ に する。",
+          "ro": "kanojo no egao wa minna o shiawase ni suru."
+        },
+        {
+          "en": "He greeted me with a smile.",
+          "ja": "彼は笑顔であいさつした。",
+          "kana": "かれ は えがお で あいさつ した。",
+          "ro": "kare wa egao de aisatsu shita."
+        },
+        {
+          "en": "Her smile is beautiful.",
+          "ja": "彼女の笑顔は美しい。",
+          "kana": "かのじょ の えがお は うつくしい。",
+          "ro": "kanojo no egao wa utsukushii."
+        },
+        {
+          "en": "Don’t forget your smile.",
+          "ja": "笑顔を忘れないで。",
+          "kana": "えがお を わすれないで。",
+          "ro": "egao o wasurenaide."
+        },
+        {
+          "en": "Children’s smiles are pure.",
+          "ja": "子どもたちの笑顔は純粋だ。",
+          "kana": "こどもたち の えがお は じゅんすい だ。",
+          "ro": "kodomotachi no egao wa junsui da."
+        }
+      ],
+      "grammar": "Noun + で／を + Verb"
+    },
+    {
+      "id": "n4-noun-011",
+      "ja": "成長",
+      "kana": "せいちょう",
+      "ro": "seichou",
+      "en": "growth / development / progress",
+      "examples": [
+        {
+          "en": "The child has grown a lot this year.",
+          "ja": "その子は今年ずいぶん成長した。",
+          "kana": "その こ は ことし ずいぶん せいちょう した。",
+          "ro": "sono ko wa kotoshi zuibun seichou shita."
+        },
+        {
+          "en": "Economic growth is slowing down.",
+          "ja": "経済の成長が遅れている。",
+          "kana": "けいざい の せいちょう が おくれて いる。",
+          "ro": "keizai no seichou ga okurete iru."
+        },
+        {
+          "en": "He is working hard for his personal growth.",
+          "ja": "彼は自分の成長のために努力している。",
+          "kana": "かれ は じぶん の せいちょう の ため に どりょく して いる。",
+          "ro": "kare wa jibun no seichou no tame ni doryoku shite iru."
+        },
+        {
+          "en": "This experience helped my growth.",
+          "ja": "この経験は私の成長に役立った。",
+          "kana": "この けいけん は わたし の せいちょう に やくだった。",
+          "ro": "kono keiken wa watashi no seichou ni yakudatta."
+        },
+        {
+          "en": "The company has achieved remarkable growth.",
+          "ja": "その会社は著しい成長を遂げた。",
+          "kana": "その かいしゃ は いちじるしい せいちょう を とげた。",
+          "ro": "sono kaisha wa ichijirushii seichou o togeta."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-012",
+      "ja": "文化",
+      "kana": "ぶんか",
+      "ro": "bunka",
+      "en": "culture / civilization",
+      "examples": [
+        {
+          "en": "I am interested in Japanese culture.",
+          "ja": "日本の文化に興味があります。",
+          "kana": "にほん の ぶんか に きょうみ が あります。",
+          "ro": "nihon no bunka ni kyoumi ga arimasu."
+        },
+        {
+          "en": "We should respect other cultures.",
+          "ja": "他の文化を尊重すべきだ。",
+          "kana": "ほか の ぶんか を そんちょう すべき だ。",
+          "ro": "hoka no bunka o sonchou subeki da."
+        },
+        {
+          "en": "The festival is part of local culture.",
+          "ja": "その祭りは地域の文化の一部です。",
+          "kana": "その まつり は ちいき の ぶんか の いちぶ です。",
+          "ro": "sono matsuri wa chiiki no bunka no ichibu desu."
+        },
+        {
+          "en": "I learned a lot about Asian cultures.",
+          "ja": "アジアの文化について多く学んだ。",
+          "kana": "あじあ の ぶんか に ついて おおく まなんだ。",
+          "ro": "ajia no bunka ni tsuite ooku mananda."
+        },
+        {
+          "en": "Language is a part of culture.",
+          "ja": "言語は文化の一部である。",
+          "kana": "げんご は ぶんか の いちぶ で ある。",
+          "ro": "gengo wa bunka no ichibu de aru."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-013",
+      "ja": "経験",
+      "kana": "けいけん",
+      "ro": "keiken",
+      "en": "experience / background / knowledge",
+      "examples": [
+        {
+          "en": "I have experience working abroad.",
+          "ja": "海外で働いた経験があります。",
+          "kana": "かいがい で はたらいた けいけん が あります。",
+          "ro": "kaigai de hataraita keiken ga arimasu."
+        },
+        {
+          "en": "It was a valuable experience for me.",
+          "ja": "それは私にとって貴重な経験だった。",
+          "kana": "それ は わたし に とって きちょう な けいけん だった。",
+          "ro": "sore wa watashi ni totte kichou na keiken datta."
+        },
+        {
+          "en": "He gained a lot of experience through his job.",
+          "ja": "彼は仕事を通じて多くの経験を積んだ。",
+          "kana": "かれ は しごと を つうじて おおく の けいけん を つんだ。",
+          "ro": "kare wa shigoto o tsuujite ooku no keiken o tsunda."
+        },
+        {
+          "en": "This experience will help you in the future.",
+          "ja": "この経験は将来役に立つでしょう。",
+          "kana": "この けいけん は しょうらい やく に たつ でしょう。",
+          "ro": "kono keiken wa shourai yaku ni tatsu deshou."
+        },
+        {
+          "en": "He has teaching experience.",
+          "ja": "彼には教える経験がある。",
+          "kana": "かれ に は おしえる けいけん が ある。",
+          "ro": "kare ni wa oshieru keiken ga aru."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-014",
+      "ja": "会場",
+      "kana": "かいじょう",
+      "ro": "kaijou",
+      "en": "venue / event hall / meeting place",
+      "examples": [
+        {
+          "en": "The concert venue was full of people.",
+          "ja": "コンサートの会場は人でいっぱいだった。",
+          "kana": "こんさーと の かいじょう は ひと で いっぱい だった。",
+          "ro": "konsaato no kaijou wa hito de ippai datta."
+        },
+        {
+          "en": "Please come to the meeting venue by ten.",
+          "ja": "10時までに会場に来てください。",
+          "kana": "じゅうじ まで に かいじょう に きて ください。",
+          "ro": "juuji made ni kaijou ni kite kudasai."
+        },
+        {
+          "en": "The wedding will be held at this hall.",
+          "ja": "結婚式はこの会場で行われます。",
+          "kana": "けっこんしき は この かいじょう で おこなわれます。",
+          "ro": "kekkonshiki wa kono kaijou de okonawaremasu."
+        },
+        {
+          "en": "We are preparing the venue now.",
+          "ja": "今、会場の準備をしています。",
+          "kana": "いま かいじょう の じゅんび を して います。",
+          "ro": "ima kaijou no junbi o shite imasu."
+        },
+        {
+          "en": "The atmosphere in the venue was exciting.",
+          "ja": "会場の雰囲気がとても盛り上がっていた。",
+          "kana": "かいじょう の ふんいき が とても もりあがって いた。",
+          "ro": "kaijou no fun'iki ga totemo moriagatte ita."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-015",
+      "ja": "出席",
+      "kana": "しゅっせき",
+      "ro": "shusseki",
+      "en": "attendance / presence / participation",
+      "examples": [
+        {
+          "en": "I will attend the meeting.",
+          "ja": "会議に出席します。",
+          "kana": "かいぎ に しゅっせき します。",
+          "ro": "kaigi ni shusseki shimasu."
+        },
+        {
+          "en": "He was absent from school yesterday.",
+          "ja": "彼は昨日学校を欠席した。",
+          "kana": "かれ は きのう がっこう を けっせき した。",
+          "ro": "kare wa kinou gakkou o kesseki shita."
+        },
+        {
+          "en": "Everyone attended the ceremony.",
+          "ja": "みんなが式に出席した。",
+          "kana": "みんな が しき に しゅっせき した。",
+          "ro": "minna ga shiki ni shusseki shita."
+        },
+        {
+          "en": "Attendance is required for this class.",
+          "ja": "この授業は出席が必要です。",
+          "kana": "この じゅぎょう は しゅっせき が ひつよう です。",
+          "ro": "kono jugyou wa shusseki ga hitsuyou desu."
+        },
+        {
+          "en": "Please check the attendance list.",
+          "ja": "出席のリストを確認してください。",
+          "kana": "しゅっせき の りすと を かくにん して ください。",
+          "ro": "shusseki no risuto o kakunin shite kudasai."
+        }
+      ],
+      "grammar": "Noun + に + 出席する"
+    },
+    {
+      "id": "n4-noun-016",
+      "ja": "連絡",
+      "kana": "れんらく",
+      "ro": "renraku",
+      "en": "contact / communication / message",
+      "examples": [
+        {
+          "en": "Please contact me by email.",
+          "ja": "メールで連絡してください。",
+          "kana": "めーる で れんらく して ください。",
+          "ro": "meeru de renraku shite kudasai."
+        },
+        {
+          "en": "He hasn’t contacted me yet.",
+          "ja": "彼からまだ連絡がありません。",
+          "kana": "かれ から まだ れんらく が ありません。",
+          "ro": "kare kara mada renraku ga arimasen."
+        },
+        {
+          "en": "I will get in touch with you later.",
+          "ja": "あとで連絡します。",
+          "kana": "あとで れんらく します。",
+          "ro": "atode renraku shimasu."
+        },
+        {
+          "en": "Please contact the teacher if you have any questions.",
+          "ja": "質問があれば先生に連絡してください。",
+          "kana": "しつもん が あれば せんせい に れんらく して ください。",
+          "ro": "shitsumon ga areba sensei ni renraku shite kudasai."
+        },
+        {
+          "en": "We will contact you as soon as possible.",
+          "ja": "できるだけ早く連絡いたします。",
+          "kana": "できるだけ はやく れんらく いたします。",
+          "ro": "dekirudake hayaku renraku itashimasu."
+        }
+      ],
+      "grammar": "Noun + を／に + 連絡する"
+    },
+    {
+      "id": "n4-noun-017",
+      "ja": "予定",
+      "kana": "よてい",
+      "ro": "yotei",
+      "en": "schedule / plan / arrangement",
+      "examples": [
+        {
+          "en": "What is your plan for tomorrow?",
+          "ja": "明日の予定は何ですか。",
+          "kana": "あした の よてい は なん です か。",
+          "ro": "ashita no yotei wa nan desu ka."
+        },
+        {
+          "en": "The meeting is scheduled for next week.",
+          "ja": "会議は来週の予定です。",
+          "kana": "かいぎ は らいしゅう の よてい です。",
+          "ro": "kaigi wa raishuu no yotei desu."
+        },
+        {
+          "en": "We changed our travel plan.",
+          "ja": "旅行の予定を変更した。",
+          "kana": "りょこう の よてい を へんこう した。",
+          "ro": "ryokou no yotei o henkou shita."
+        },
+        {
+          "en": "The event will be held as scheduled.",
+          "ja": "イベントは予定通りに行われます。",
+          "kana": "いべんと は よていどおり に おこなわれます。",
+          "ro": "ibento wa yotei doori ni okonawaremasu."
+        },
+        {
+          "en": "There are no plans for tonight.",
+          "ja": "今夜の予定はありません。",
+          "kana": "こんや の よてい は ありません。",
+          "ro": "konya no yotei wa arimasen."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-018",
+      "ja": "相談",
+      "kana": "そうだん",
+      "ro": "soudan",
+      "en": "consultation / discussion / advice",
+      "examples": [
+        {
+          "en": "I want to talk with my teacher.",
+          "ja": "先生に相談したいです。",
+          "kana": "せんせい に そうだん したい です。",
+          "ro": "sensei ni soudan shitai desu."
+        },
+        {
+          "en": "Let’s discuss this problem together.",
+          "ja": "この問題を一緒に相談しましょう。",
+          "kana": "この もんだい を いっしょ に そうだん しましょう。",
+          "ro": "kono mondai o issho ni soudan shimashou."
+        },
+        {
+          "en": "He always consults with his parents.",
+          "ja": "彼はいつも両親に相談する。",
+          "kana": "かれ は いつも りょうしん に そうだん する。",
+          "ro": "kare wa itsumo ryoushin ni soudan suru."
+        },
+        {
+          "en": "She gave me good advice.",
+          "ja": "彼女はいい相談に乗ってくれた。",
+          "kana": "かのじょ は いい そうだん に のって くれた。",
+          "ro": "kanojo wa ii soudan ni notte kureta."
+        },
+        {
+          "en": "We will discuss the plan at the meeting.",
+          "ja": "会議で計画について相談します。",
+          "kana": "かいぎ で けいかく に ついて そうだん します。",
+          "ro": "kaigi de keikaku ni tsuite soudan shimasu."
+        }
+      ],
+      "grammar": "Noun + を／に + 相談する"
+    },
+    {
+      "id": "n4-noun-019",
+      "ja": "経験者",
+      "kana": "けいけんしゃ",
+      "ro": "keikensha",
+      "en": "experienced person / skilled worker / veteran",
+      "examples": [
+        {
+          "en": "We are looking for experienced staff.",
+          "ja": "経験者を募集しています。",
+          "kana": "けいけんしゃ を ぼしゅう して います。",
+          "ro": "keikensha o boshuu shite imasu."
+        },
+        {
+          "en": "He is an experienced teacher.",
+          "ja": "彼は経験者の先生です。",
+          "kana": "かれ は けいけんしゃ の せんせい です。",
+          "ro": "kare wa keikensha no sensei desu."
+        },
+        {
+          "en": "They hired an experienced engineer.",
+          "ja": "彼らは経験者のエンジニアを雇った。",
+          "kana": "かれら は けいけんしゃ の えんじにあ を やとった。",
+          "ro": "karera wa keikensha no enjinia o yatotta."
+        },
+        {
+          "en": "Experienced people will teach the new staff.",
+          "ja": "経験者が新人に教える。",
+          "kana": "けいけんしゃ が しんじん に おしえる。",
+          "ro": "keikensha ga shinjin ni oshieru."
+        },
+        {
+          "en": "We need experienced members for this project.",
+          "ja": "このプロジェクトには経験者が必要です。",
+          "kana": "この ぷろじぇくと に は けいけんしゃ が ひつよう です。",
+          "ro": "kono purojekuto ni wa keikensha ga hitsuyou desu."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-020",
+      "ja": "結果",
+      "kana": "けっか",
+      "ro": "kekka",
+      "en": "result / outcome / consequence",
+      "examples": [
+        {
+          "en": "The result of the test was good.",
+          "ja": "テストの結果は良かった。",
+          "kana": "てすと の けっか は よかった。",
+          "ro": "tesuto no kekka wa yokatta."
+        },
+        {
+          "en": "We are waiting for the result.",
+          "ja": "結果を待っています。",
+          "kana": "けっか を まって います。",
+          "ro": "kekka o matte imasu."
+        },
+        {
+          "en": "He succeeded as a result of his effort.",
+          "ja": "努力の結果、彼は成功した。",
+          "kana": "どりょく の けっか、かれ は せいこう した。",
+          "ro": "doryoku no kekka, kare wa seikou shita."
+        },
+        {
+          "en": "The results will be announced tomorrow.",
+          "ja": "結果は明日発表されます。",
+          "kana": "けっか は あした はっぴょう されます。",
+          "ro": "kekka wa ashita happyou saremasu."
+        },
+        {
+          "en": "He took responsibility for the result.",
+          "ja": "彼は結果に責任を取った。",
+          "kana": "かれ は けっか に せきにん を とった。",
+          "ro": "kare wa kekka ni sekinin o totta."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-022",
+      "ja": "場合",
+      "kana": "ばあい",
+      "ro": "baai",
+      "en": "case / situation / occasion",
+      "examples": [
+        {
+          "en": "In case of fire, please use the stairs.",
+          "ja": "火事の場合は階段を使ってください。",
+          "kana": "かじ の ばあい は かいだん を つかって ください。",
+          "ro": "kaji no baai wa kaidan o tsukatte kudasai."
+        },
+        {
+          "en": "In this case, you don’t need to pay.",
+          "ja": "この場合はお金を払う必要はありません。",
+          "kana": "この ばあい は おかね を はらう ひつよう は ありません。",
+          "ro": "kono baai wa okane o harau hitsuyou wa arimasen."
+        },
+        {
+          "en": "Please call me in case you’re late.",
+          "ja": "遅れる場合は電話をしてください。",
+          "kana": "おくれる ばあい は でんわ を して ください。",
+          "ro": "okureru baai wa denwa o shite kudasai."
+        },
+        {
+          "en": "In case of rain, the event will be canceled.",
+          "ja": "雨の場合はイベントは中止です。",
+          "kana": "あめ の ばあい は いべんと は ちゅうし です。",
+          "ro": "ame no baai wa ibento wa chuushi desu."
+        },
+        {
+          "en": "If that’s the case, let’s change the plan.",
+          "ja": "その場合は計画を変えましょう。",
+          "kana": "その ばあい は けいかく を かえましょう。",
+          "ro": "sono baai wa keikaku o kaemashou."
+        }
+      ],
+      "grammar": "Clause + 場合（は／には）"
+    },
+    {
+      "id": "n4-noun-023",
+      "ja": "周り",
+      "kana": "まわり",
+      "ro": "mawari",
+      "en": "surroundings / around / nearby area",
+      "examples": [
+        {
+          "en": "There are many trees around the school.",
+          "ja": "学校の周りに木がたくさんあります。",
+          "kana": "がっこう の まわり に き が たくさん あります。",
+          "ro": "gakkou no mawari ni ki ga takusan arimasu."
+        },
+        {
+          "en": "Please clean the area around your desk.",
+          "ja": "机の周りをきれいにしてください。",
+          "kana": "つくえ の まわり を きれい に して ください。",
+          "ro": "tsukue no mawari o kirei ni shite kudasai."
+        },
+        {
+          "en": "There are few people around here.",
+          "ja": "この辺の周りには人が少ない。",
+          "kana": "この へん の まわり に は ひと が すくない。",
+          "ro": "kono hen no mawari ni wa hito ga sukunai."
+        },
+        {
+          "en": "Look around before you cross the street.",
+          "ja": "道を渡る前に周りを見てください。",
+          "kana": "みち を わたる まえ に まわり を みて ください。",
+          "ro": "michi o wataru mae ni mawari o mite kudasai."
+        },
+        {
+          "en": "The people around me were very kind.",
+          "ja": "周りの人たちはとても親切だった。",
+          "kana": "まわり の ひとたち は とても しんせつ だった。",
+          "ro": "mawari no hitotachi wa totemo shinsetsu datta."
+        }
+      ],
+      "grammar": "Noun + の + Noun"
+    },
+    {
+      "id": "n4-noun-024",
+      "ja": "説明",
+      "kana": "せつめい",
+      "ro": "setsumei",
+      "en": "explanation / description",
+      "examples": [
+        {
+          "en": "The teacher gave an easy explanation.",
+          "ja": "先生はわかりやすい説明をした。",
+          "kana": "せんせい は わかりやすい せつめい を した。",
+          "ro": "sensei wa wakariyasui setsumei o shita."
+        },
+        {
+          "en": "I couldn’t understand his explanation.",
+          "ja": "彼の説明が理解できなかった。",
+          "kana": "かれ の せつめい が りかい できなかった。",
+          "ro": "kare no setsumei ga rikai dekinakatta."
+        },
+        {
+          "en": "Could you explain it again, please?",
+          "ja": "もう一度説明してもらえますか。",
+          "kana": "もう いちど せつめい して もらえます か。",
+          "ro": "mou ichido setsumei shite moraemasu ka."
+        },
+        {
+          "en": "The manual includes a detailed explanation.",
+          "ja": "マニュアルに詳しい説明が書かれている。",
+          "kana": "まにゅある に くわしい せつめい が かかれて いる。",
+          "ro": "manyuaru ni kuwashii setsumei ga kakarete iru."
+        },
+        {
+          "en": "I need to explain the reason clearly.",
+          "ja": "理由をはっきり説明する必要がある。",
+          "kana": "りゆう を はっきり せつめい する ひつよう が ある。",
+          "ro": "riyuu o hakkiri setsumei suru hitsuyou ga aru."
+        }
+      ],
+      "grammar": "Noun + を + 説明する"
+    },
+    {
+      "id": "n4-noun-025",
+      "ja": "発表",
+      "kana": "はっぴょう",
+      "ro": "happyou",
+      "en": "presentation / announcement / publication",
+      "examples": [
+        {
+          "en": "The results will be announced tomorrow.",
+          "ja": "結果は明日発表されます。",
+          "kana": "けっか は あした はっぴょう されます。",
+          "ro": "kekka wa ashita happyou saremasu."
+        },
+        {
+          "en": "I gave a presentation in class.",
+          "ja": "授業で発表をしました。",
+          "kana": "じゅぎょう で はっぴょう を しました。",
+          "ro": "jugyou de happyou o shimashita."
+        },
+        {
+          "en": "The teacher praised her presentation.",
+          "ja": "先生は彼女の発表をほめた。",
+          "kana": "せんせい は かのじょ の はっぴょう を ほめた。",
+          "ro": "sensei wa kanojo no happyou o hometa."
+        },
+        {
+          "en": "They announced the new product.",
+          "ja": "彼らは新しい製品を発表した。",
+          "kana": "かれら は あたらしい せいひん を はっぴょう した。",
+          "ro": "karera wa atarashii seihin o happyou shita."
+        },
+        {
+          "en": "I am nervous about tomorrow’s presentation.",
+          "ja": "明日の発表が緊張します。",
+          "kana": "あした の はっぴょう が きんちょう します。",
+          "ro": "ashita no happyou ga kinchou shimasu."
+        }
+      ],
+      "grammar": "Noun + を／が + 発表する"
+    },
+    {
+      "id": "n4-noun-026",
+      "ja": "経験談",
+      "kana": "けいけんだん",
+      "ro": "keikendan",
+      "en": "personal experience / story of experience",
+      "examples": [
+        {
+          "en": "He told us an interesting experience story.",
+          "ja": "彼はおもしろい経験談を話してくれた。",
+          "kana": "かれ は おもしろい けいけんだん を はなして くれた。",
+          "ro": "kare wa omoshiroi keikendan o hanashite kureta."
+        },
+        {
+          "en": "I wrote about my experience abroad.",
+          "ja": "海外での経験談を書いた。",
+          "kana": "かいがい で の けいけんだん を かいた。",
+          "ro": "kaigai de no keikendan o kaita."
+        },
+        {
+          "en": "Her story was very helpful.",
+          "ja": "彼女の経験談はとても参考になった。",
+          "kana": "かのじょ の けいけんだん は とても さんこう に なった。",
+          "ro": "kanojo no keikendan wa totemo sankou ni natta."
+        },
+        {
+          "en": "We shared our experience stories at the meeting.",
+          "ja": "会議でそれぞれの経験談を共有した。",
+          "kana": "かいぎ で それぞれ の けいけんだん を きょうゆう した。",
+          "ro": "kaigi de sorezore no keikendan o kyouyuu shita."
+        },
+        {
+          "en": "I like listening to others’ experience stories.",
+          "ja": "人の経験談を聞くのが好きです。",
+          "kana": "ひと の けいけんだん を きく の が すき です。",
+          "ro": "hito no keikendan o kiku no ga suki desu."
+        }
+      ],
+      "grammar": "Noun + を + 話す／聞く"
+    },
+    {
+      "id": "n4-noun-028",
+      "ja": "関係",
+      "kana": "かんけい",
+      "ro": "kankei",
+      "en": "relationship / connection / relevance",
+      "examples": [
+        {
+          "en": "He has a good relationship with his boss.",
+          "ja": "彼は上司と良い関係にある。",
+          "kana": "かれ は じょうし と いい かんけい に ある。",
+          "ro": "kare wa joushi to ii kankei ni aru."
+        },
+        {
+          "en": "This has nothing to do with me.",
+          "ja": "これは私とは関係ありません。",
+          "kana": "これ は わたし と は かんけい ありません。",
+          "ro": "kore wa watashi to wa kankei arimasen."
+        },
+        {
+          "en": "There is a close connection between health and diet.",
+          "ja": "健康と食事には深い関係がある。",
+          "kana": "けんこう と しょくじ に は ふかい かんけい が ある。",
+          "ro": "kenkou to shokuji ni wa fukai kankei ga aru."
+        },
+        {
+          "en": "He works in a government-related company.",
+          "ja": "彼は政府関係の会社で働いている。",
+          "kana": "かれ は せいふ かんけい の かいしゃ で はたらいて いる。",
+          "ro": "kare wa seifu kankei no kaisha de hataraite iru."
+        },
+        {
+          "en": "We discussed the relationship between language and culture.",
+          "ja": "言語と文化の関係について話し合った。",
+          "kana": "げんご と ぶんか の かんけい に ついて はなしあった。",
+          "ro": "gengo to bunka no kankei ni tsuite hanashiatta."
+        }
+      ],
+      "grammar": "Noun + に／と + 関係がある"
+    },
+    {
+      "id": "n4-noun-029",
+      "ja": "注意",
+      "kana": "ちゅうい",
+      "ro": "chuui",
+      "en": "attention / caution / warning",
+      "examples": [
+        {
+          "en": "Please pay attention to the traffic lights.",
+          "ja": "信号に注意してください。",
+          "kana": "しんごう に ちゅうい して ください。",
+          "ro": "shingou ni chuui shite kudasai."
+        },
+        {
+          "en": "He gave me a warning about my mistake.",
+          "ja": "彼は私のミスを注意した。",
+          "kana": "かれ は わたし の みす を ちゅうい した。",
+          "ro": "kare wa watashi no misu o chuui shita."
+        },
+        {
+          "en": "Be careful when using fire.",
+          "ja": "火を使うときは注意が必要です。",
+          "kana": "ひ を つかう とき は ちゅうい が ひつよう です。",
+          "ro": "hi o tsukau toki wa chuui ga hitsuyou desu."
+        },
+        {
+          "en": "He always pays attention to small details.",
+          "ja": "彼はいつも細かいことに注意している。",
+          "kana": "かれ は いつも こまかい こと に ちゅうい して いる。",
+          "ro": "kare wa itsumo komakai koto ni chuui shite iru."
+        },
+        {
+          "en": "The teacher warned students about being late.",
+          "ja": "先生は遅刻について注意した。",
+          "kana": "せんせい は ちこく に ついて ちゅうい した。",
+          "ro": "sensei wa chikoku ni tsuite chuui shita."
+        }
+      ],
+      "grammar": "Noun + に + 注意する"
+    },
+    {
+      "id": "n4-noun-030",
+      "ja": "発音",
+      "kana": "はつおん",
+      "ro": "hatsuon",
+      "en": "pronunciation",
+      "examples": [
+        {
+          "en": "Her pronunciation is very clear.",
+          "ja": "彼女の発音はとてもはっきりしている。",
+          "kana": "かのじょ の はつおん は とても はっきり して いる。",
+          "ro": "kanojo no hatsuon wa totemo hakkiri shite iru."
+        },
+        {
+          "en": "Please practice your pronunciation every day.",
+          "ja": "毎日発音を練習してください。",
+          "kana": "まいにち はつおん を れんしゅう して ください。",
+          "ro": "mainichi hatsuon o renshuu shite kudasai."
+        },
+        {
+          "en": "Japanese pronunciation is not difficult.",
+          "ja": "日本語の発音は難しくない。",
+          "kana": "にほんご の はつおん は むずかしく ない。",
+          "ro": "nihongo no hatsuon wa muzukashiku nai."
+        },
+        {
+          "en": "I learned the correct pronunciation from my teacher.",
+          "ja": "先生から正しい発音を学んだ。",
+          "kana": "せんせい から ただしい はつおん を まなんだ。",
+          "ro": "sensei kara tadashii hatsuon o mananda."
+        },
+        {
+          "en": "Your pronunciation has improved a lot.",
+          "ja": "あなたの発音はだいぶ上手になりました。",
+          "kana": "あなた の はつおん は だいぶ じょうず に なりました。",
+          "ro": "anata no hatsuon wa daibu jouzu ni narimashita."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-031",
+      "ja": "遠慮",
+      "kana": "えんりょ",
+      "ro": "enryo",
+      "en": "restraint / hesitation / modesty",
+      "examples": [
+        {
+          "en": "Please don’t hesitate to eat more.",
+          "ja": "どうぞ遠慮しないでたくさん食べてください。",
+          "kana": "どうぞ えんりょ しないで たくさん たべて ください。",
+          "ro": "douzo enryo shinaide takusan tabete kudasai."
+        },
+        {
+          "en": "He refused out of modesty.",
+          "ja": "彼は遠慮して断った。",
+          "kana": "かれ は えんりょ して ことわった。",
+          "ro": "kare wa enryo shite kotowatta."
+        },
+        {
+          "en": "Please feel free to ask questions.",
+          "ja": "質問は遠慮なくしてください。",
+          "kana": "しつもん は えんりょ なく して ください。",
+          "ro": "shitsumon wa enryo naku shite kudasai."
+        },
+        {
+          "en": "There’s no need to be reserved.",
+          "ja": "遠慮する必要はありません。",
+          "kana": "えんりょ する ひつよう は ありません。",
+          "ro": "enryo suru hitsuyou wa arimasen."
+        },
+        {
+          "en": "He always acts with restraint.",
+          "ja": "彼はいつも遠慮深い人です。",
+          "kana": "かれ は いつも えんりょぶかい ひと です。",
+          "ro": "kare wa itsumo enryo bukai hito desu."
+        }
+      ],
+      "grammar": "Noun + する／しないで"
+    },
+    {
+      "id": "n4-noun-033",
+      "ja": "予約",
+      "kana": "よやく",
+      "ro": "yoyaku",
+      "en": "reservation / booking / appointment",
+      "examples": [
+        {
+          "en": "I made a hotel reservation.",
+          "ja": "ホテルの予約をしました。",
+          "kana": "ほてる の よやく を しました。",
+          "ro": "hoteru no yoyaku o shimashita."
+        },
+        {
+          "en": "Do I need to make a reservation?",
+          "ja": "予約は必要ですか。",
+          "kana": "よやく は ひつよう です か。",
+          "ro": "yoyaku wa hitsuyou desu ka."
+        },
+        {
+          "en": "The restaurant was fully booked.",
+          "ja": "レストランは予約でいっぱいだった。",
+          "kana": "れすとらん は よやく で いっぱい だった。",
+          "ro": "resutoran wa yoyaku de ippai datta."
+        },
+        {
+          "en": "Please confirm your reservation.",
+          "ja": "予約を確認してください。",
+          "kana": "よやく を かくにん して ください。",
+          "ro": "yoyaku o kakunin shite kudasai."
+        },
+        {
+          "en": "I canceled my flight reservation.",
+          "ja": "飛行機の予約をキャンセルした。",
+          "kana": "ひこうき の よやく を きゃんせる した。",
+          "ro": "hikouki no yoyaku o kyanseru shita."
+        }
+      ],
+      "grammar": "Noun + を + する／確認する／キャンセルする"
+    },
+    {
+      "id": "n4-noun-034",
+      "ja": "途中",
+      "kana": "とちゅう",
+      "ro": "tochuu",
+      "en": "on the way / in the middle of / halfway",
+      "examples": [
+        {
+          "en": "I met my friend on the way to school.",
+          "ja": "学校へ行く途中で友だちに会った。",
+          "kana": "がっこう へ いく とちゅう で ともだち に あった。",
+          "ro": "gakkou e iku tochuu de tomodachi ni atta."
+        },
+        {
+          "en": "He stopped reading halfway through the book.",
+          "ja": "彼は本を途中で読むのをやめた。",
+          "kana": "かれ は ほん を とちゅう で よむ の を やめた。",
+          "ro": "kare wa hon o tochuu de yomu no o yameta."
+        },
+        {
+          "en": "I fell asleep in the middle of the movie.",
+          "ja": "映画の途中で寝てしまった。",
+          "kana": "えいが の とちゅう で ねて しまった。",
+          "ro": "eiga no tochuu de nete shimatta."
+        },
+        {
+          "en": "I lost my wallet on the way home.",
+          "ja": "家に帰る途中で財布をなくした。",
+          "kana": "いえ に かえる とちゅう で さいふ を なくした。",
+          "ro": "ie ni kaeru tochuu de saifu o nakushita."
+        },
+        {
+          "en": "The train stopped halfway.",
+          "ja": "電車が途中で止まった。",
+          "kana": "でんしゃ が とちゅう で とまった。",
+          "ro": "densha ga tochuu de tomatta."
+        }
+      ],
+      "grammar": "Noun + で／の + Verb"
+    },
+    {
+      "id": "n4-noun-035",
+      "ja": "案内",
+      "kana": "あんない",
+      "ro": "annai",
+      "en": "guidance / information / showing around",
+      "examples": [
+        {
+          "en": "I guided my friend around the city.",
+          "ja": "友だちに町を案内した。",
+          "kana": "ともだち に まち を あんない した。",
+          "ro": "tomodachi ni machi o annai shita."
+        },
+        {
+          "en": "The guide gave us a tour of the museum.",
+          "ja": "ガイドが博物館を案内した。",
+          "kana": "がいど が はくぶつかん を あんない した。",
+          "ro": "gaido ga hakubutsukan o annai shita."
+        },
+        {
+          "en": "Please show me to the meeting room.",
+          "ja": "会議室まで案内してください。",
+          "kana": "かいぎしつ まで あんない して ください。",
+          "ro": "kaigishitsu made annai shite kudasai."
+        },
+        {
+          "en": "I received guidance from my teacher.",
+          "ja": "先生に案内してもらった。",
+          "kana": "せんせい に あんない して もらった。",
+          "ro": "sensei ni annai shite moratta."
+        },
+        {
+          "en": "The staff gave us information about the hotel.",
+          "ja": "スタッフがホテルの案内をしてくれた。",
+          "kana": "すたっふ が ほてる の あんない を して くれた。",
+          "ro": "sutaffu ga hoteru no annai o shite kureta."
+        }
+      ],
+      "grammar": "Noun + を + 案内する"
+    },
+    {
+      "id": "n4-noun-036",
+      "ja": "連休",
+      "kana": "れんきゅう",
+      "ro": "renkyuu",
+      "en": "consecutive holidays / long weekend",
+      "examples": [
+        {
+          "en": "We’re planning a trip for the long weekend.",
+          "ja": "連休に旅行を計画しています。",
+          "kana": "れんきゅう に りょこう を けいかく して います。",
+          "ro": "renkyuu ni ryokou o keikaku shite imasu."
+        },
+        {
+          "en": "Do you have any plans for the holidays?",
+          "ja": "連休の予定はありますか。",
+          "kana": "れんきゅう の よてい は あります か。",
+          "ro": "renkyuu no yotei wa arimasu ka."
+        },
+        {
+          "en": "The trains are crowded during the holidays.",
+          "ja": "連休中は電車が混みます。",
+          "kana": "れんきゅうちゅう は でんしゃ が こみます。",
+          "ro": "renkyuuchuu wa densha ga komimasu."
+        },
+        {
+          "en": "I stayed home during the long weekend.",
+          "ja": "連休は家で過ごしました。",
+          "kana": "れんきゅう は いえ で すごしました。",
+          "ro": "renkyuu wa ie de sugoshimashita."
+        },
+        {
+          "en": "He traveled abroad during the long break.",
+          "ja": "彼は連休に海外旅行をした。",
+          "kana": "かれ は れんきゅう に かいがいりょこう を した。",
+          "ro": "kare wa renkyuu ni kaigairyokou o shita."
+        }
+      ],
+      "grammar": "Noun + に／の + Verb"
+    },
+    {
+      "id": "n4-noun-037",
+      "ja": "地震",
+      "kana": "じしん",
+      "ro": "jishin",
+      "en": "earthquake",
+      "examples": [
+        {
+          "en": "A big earthquake happened yesterday.",
+          "ja": "昨日大きな地震がありました。",
+          "kana": "きのう おおきな じしん が ありました。",
+          "ro": "kinou ookina jishin ga arimashita."
+        },
+        {
+          "en": "The earthquake lasted for about ten seconds.",
+          "ja": "地震は十秒ほど続いた。",
+          "kana": "じしん は じゅうびょう ほど つづいた。",
+          "ro": "jishin wa juubyou hodo tsuzuita."
+        },
+        {
+          "en": "I was sleeping when the earthquake happened.",
+          "ja": "地震が起きたとき私は寝ていた。",
+          "kana": "じしん が おきた とき わたし は ねて いた。",
+          "ro": "jishin ga okita toki watashi wa nete ita."
+        },
+        {
+          "en": "There were no injuries in the earthquake.",
+          "ja": "地震でけが人はいなかった。",
+          "kana": "じしん で けがにん は いなかった。",
+          "ro": "jishin de keganin wa inakatta."
+        },
+        {
+          "en": "I felt the building shake during the earthquake.",
+          "ja": "地震のとき建物が揺れた。",
+          "kana": "じしん の とき たてもの が ゆれた。",
+          "ro": "jishin no toki tatemono ga yureta."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-038",
+      "ja": "祭り",
+      "kana": "まつり",
+      "ro": "matsuri",
+      "en": "festival",
+      "examples": [
+        {
+          "en": "We went to the summer festival.",
+          "ja": "夏祭りに行きました。",
+          "kana": "なつまつり に いきました。",
+          "ro": "natsu matsuri ni ikimashita."
+        },
+        {
+          "en": "There are many food stalls at the festival.",
+          "ja": "祭りにはたくさんの屋台があります。",
+          "kana": "まつり に は たくさん の やたい が あります。",
+          "ro": "matsuri ni wa takusan no yatai ga arimasu."
+        },
+        {
+          "en": "Children danced happily at the festival.",
+          "ja": "子どもたちは祭りで楽しく踊った。",
+          "kana": "こどもたち は まつり で たのしく おどった。",
+          "ro": "kodomotachi wa matsuri de tanoshiku odotta."
+        },
+        {
+          "en": "This festival is held every year.",
+          "ja": "この祭りは毎年行われます。",
+          "kana": "この まつり は まいとし おこなわれます。",
+          "ro": "kono matsuri wa maitoshi okonawaremasu."
+        },
+        {
+          "en": "The town becomes lively during the festival.",
+          "ja": "祭りのとき町がにぎやかになる。",
+          "kana": "まつり の とき まち が にぎやか に なる。",
+          "ro": "matsuri no toki machi ga nigiyaka ni naru."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-040",
+      "ja": "紹介",
+      "kana": "しょうかい",
+      "ro": "shoukai",
+      "en": "introduction / presentation / referral",
+      "examples": [
+        {
+          "en": "Let me introduce my friend.",
+          "ja": "友だちを紹介します。",
+          "kana": "ともだち を しょうかい します。",
+          "ro": "tomodachi o shoukai shimasu."
+        },
+        {
+          "en": "He introduced me to his teacher.",
+          "ja": "彼は私を先生に紹介した。",
+          "kana": "かれ は わたし を せんせい に しょうかい した。",
+          "ro": "kare wa watashi o sensei ni shoukai shita."
+        },
+        {
+          "en": "I was introduced by my colleague.",
+          "ja": "同僚の紹介で来ました。",
+          "kana": "どうりょう の しょうかい で きました。",
+          "ro": "douryou no shoukai de kimashita."
+        },
+        {
+          "en": "Please write a short self-introduction.",
+          "ja": "短い自己紹介を書いてください。",
+          "kana": "みじかい じこしょうかい を かいて ください。",
+          "ro": "mijikai jikoshoukai o kaite kudasai."
+        },
+        {
+          "en": "The teacher introduced a new book.",
+          "ja": "先生は新しい本を紹介した。",
+          "kana": "せんせい は あたらしい ほん を しょうかい した。",
+          "ro": "sensei wa atarashii hon o shoukai shita."
+        }
+      ],
+      "grammar": "Noun + を + 紹介する"
+    },
+    {
+      "id": "n4-noun-041",
+      "ja": "支度",
+      "kana": "したく",
+      "ro": "shitaku",
+      "en": "preparation / getting ready",
+      "examples": [
+        {
+          "en": "I’m getting ready to go out.",
+          "ja": "出かける支度をしています。",
+          "kana": "でかける したく を して います。",
+          "ro": "dekakeru shitaku o shite imasu."
+        },
+        {
+          "en": "Please get ready quickly.",
+          "ja": "早く支度してください。",
+          "kana": "はやく したく して ください。",
+          "ro": "hayaku shitaku shite kudasai."
+        },
+        {
+          "en": "She finished getting ready for the trip.",
+          "ja": "彼女は旅行の支度を終えた。",
+          "kana": "かのじょ は りょこう の したく を おえた。",
+          "ro": "kanojo wa ryokou no shitaku o oeta."
+        },
+        {
+          "en": "I need to get ready for dinner.",
+          "ja": "夕食の支度をしなければならない。",
+          "kana": "ゆうしょく の したく を しなければ ならない。",
+          "ro": "yuushoku no shitaku o shinakereba naranai."
+        },
+        {
+          "en": "The children are getting ready for school.",
+          "ja": "子どもたちは学校の支度をしている。",
+          "kana": "こどもたち は がっこう の したく を して いる。",
+          "ro": "kodomotachi wa gakkou no shitaku o shite iru."
+        }
+      ],
+      "grammar": "Noun + を + する"
+    },
+    {
+      "id": "n4-noun-042",
+      "ja": "説明書",
+      "kana": "せつめいしょ",
+      "ro": "setsumeisho",
+      "en": "manual / instruction book / guide",
+      "examples": [
+        {
+          "en": "Please read the manual before use.",
+          "ja": "使う前に説明書を読んでください。",
+          "kana": "つかう まえ に せつめいしょ を よんで ください。",
+          "ro": "tsukau mae ni setsumeisho o yonde kudasai."
+        },
+        {
+          "en": "The manual was written in Japanese.",
+          "ja": "説明書は日本語で書かれていた。",
+          "kana": "せつめいしょ は にほんご で かかれて いた。",
+          "ro": "setsumeisho wa nihongo de kakarete ita."
+        },
+        {
+          "en": "I lost the instruction manual.",
+          "ja": "説明書をなくしてしまった。",
+          "kana": "せつめいしょ を なくして しまった。",
+          "ro": "setsumeisho o nakushite shimatta."
+        },
+        {
+          "en": "The manual includes pictures.",
+          "ja": "説明書には絵が入っています。",
+          "kana": "せつめいしょ に は え が はいって います。",
+          "ro": "setsumeisho ni wa e ga haitte imasu."
+        },
+        {
+          "en": "The guide was easy to understand.",
+          "ja": "説明書はわかりやすかった。",
+          "kana": "せつめいしょ は わかりやすかった。",
+          "ro": "setsumeisho wa wakariyasukatta."
+        }
+      ],
+      "grammar": "Noun + を + 読む／書く"
+    },
+    {
+      "id": "n4-noun-043",
+      "ja": "合格",
+      "kana": "ごうかく",
+      "ro": "goukaku",
+      "en": "passing (an exam) / success / qualification",
+      "examples": [
+        {
+          "en": "He passed the university exam.",
+          "ja": "彼は大学に合格した。",
+          "kana": "かれ は だいがく に ごうかく した。",
+          "ro": "kare wa daigaku ni goukaku shita."
+        },
+        {
+          "en": "Congratulations on your success!",
+          "ja": "合格おめでとうございます。",
+          "kana": "ごうかく おめでとう ございます。",
+          "ro": "goukaku omedetou gozaimasu."
+        },
+        {
+          "en": "She failed the test this time.",
+          "ja": "彼女は今回は合格しなかった。",
+          "kana": "かのじょ は こんかい は ごうかく しなかった。",
+          "ro": "kanojo wa konkai wa goukaku shinakatta."
+        },
+        {
+          "en": "He is studying hard to pass.",
+          "ja": "彼は合格するために一生懸命勉強している。",
+          "kana": "かれ は ごうかく する ため に いっしょうけんめい べんきょう して いる。",
+          "ro": "kare wa goukaku suru tame ni isshoukenmei benkyou shite iru."
+        },
+        {
+          "en": "My goal is to pass the N4 exam.",
+          "ja": "私の目標はN4試験に合格することです。",
+          "kana": "わたし の もくひょう は えぬよん しけん に ごうかく する こと です。",
+          "ro": "watashi no mokuhyou wa enyonn shiken ni goukaku suru koto desu."
+        }
+      ],
+      "grammar": "Noun + に + 合格する"
+    },
+    {
+      "id": "n4-noun-045",
+      "ja": "卒業",
+      "kana": "そつぎょう",
+      "ro": "sotsugyou",
+      "en": "graduation / completion (of a course)",
+      "examples": [
+        {
+          "en": "She graduated from high school last year.",
+          "ja": "彼女は去年高校を卒業した。",
+          "kana": "かのじょ は きょねん こうこう を そつぎょう した。",
+          "ro": "kanojo wa kyonen koukou o sotsugyou shita."
+        },
+        {
+          "en": "Congratulations on your graduation!",
+          "ja": "卒業おめでとうございます。",
+          "kana": "そつぎょう おめでとう ございます。",
+          "ro": "sotsugyou omedetou gozaimasu."
+        },
+        {
+          "en": "I will graduate from university next year.",
+          "ja": "私は来年大学を卒業します。",
+          "kana": "わたし は らいねん だいがく を そつぎょう します。",
+          "ro": "watashi wa rainen daigaku o sotsugyou shimasu."
+        },
+        {
+          "en": "After graduation, he started working.",
+          "ja": "卒業してから彼は働き始めた。",
+          "kana": "そつぎょう して から かれ は はたらき はじめた。",
+          "ro": "sotsugyou shite kara kare wa hataraki hajimeta."
+        },
+        {
+          "en": "Graduation day was very emotional.",
+          "ja": "卒業の日はとても感動的だった。",
+          "kana": "そつぎょう の ひ は とても かんどうてき だった。",
+          "ro": "sotsugyou no hi wa totemo kandouteki datta."
+        }
+      ],
+      "grammar": "Noun + を + 卒業する"
+    },
+    {
+      "id": "n4-noun-046",
+      "ja": "卒業式",
+      "kana": "そつぎょうしき",
+      "ro": "sotsugyoushiki",
+      "en": "graduation ceremony",
+      "examples": [
+        {
+          "en": "The graduation ceremony will be held in March.",
+          "ja": "卒業式は3月に行われます。",
+          "kana": "そつぎょうしき は さんがつ に おこなわれます。",
+          "ro": "sotsugyoushiki wa sangatsu ni okonawaremasu."
+        },
+        {
+          "en": "Everyone cried at the graduation ceremony.",
+          "ja": "卒業式でみんなが泣いた。",
+          "kana": "そつぎょうしき で みんな が ないた。",
+          "ro": "sotsugyoushiki de minna ga naita."
+        },
+        {
+          "en": "I gave a speech at the ceremony.",
+          "ja": "卒業式でスピーチをした。",
+          "kana": "そつぎょうしき で すぴーち を した。",
+          "ro": "sotsugyoushiki de supiichi o shita."
+        },
+        {
+          "en": "Parents attended the graduation ceremony.",
+          "ja": "保護者が卒業式に出席した。",
+          "kana": "ほごしゃ が そつぎょうしき に しゅっせき した。",
+          "ro": "hogosha ga sotsugyoushiki ni shusseki shita."
+        },
+        {
+          "en": "The principal spoke at the ceremony.",
+          "ja": "校長先生が卒業式で話をした。",
+          "kana": "こうちょうせんせい が そつぎょうしき で はなし を した。",
+          "ro": "kouchou sensei ga sotsugyoushiki de hanashi o shita."
+        }
+      ],
+      "grammar": "Noun + で／に + Verb"
+    },
+    {
+      "id": "n4-noun-047",
+      "ja": "準決勝",
+      "kana": "じゅんけっしょう",
+      "ro": "junkesshou",
+      "en": "semifinal",
+      "examples": [
+        {
+          "en": "Our team won the semifinal.",
+          "ja": "私たちのチームは準決勝に勝った。",
+          "kana": "わたしたち の ちーむ は じゅんけっしょう に かった。",
+          "ro": "watashitachi no chiimu wa junkesshou ni katta."
+        },
+        {
+          "en": "The semifinal will be held next week.",
+          "ja": "準決勝は来週行われます。",
+          "kana": "じゅんけっしょう は らいしゅう おこなわれます。",
+          "ro": "junkesshou wa raishuu okonawaremasu."
+        },
+        {
+          "en": "They lost in the semifinal.",
+          "ja": "彼らは準決勝で負けた。",
+          "kana": "かれら は じゅんけっしょう で まけた。",
+          "ro": "karera wa junkesshou de maketa."
+        },
+        {
+          "en": "We advanced to the semifinal.",
+          "ja": "私たちは準決勝に進んだ。",
+          "kana": "わたしたち は じゅんけっしょう に すすんだ。",
+          "ro": "watashitachi wa junkesshou ni susunda."
+        },
+        {
+          "en": "The semifinal match was very exciting.",
+          "ja": "準決勝の試合はとても盛り上がった。",
+          "kana": "じゅんけっしょう の しあい は とても もりあがった。",
+          "ro": "junkesshou no shiai wa totemo moriagatta."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-048",
+      "ja": "決勝",
+      "kana": "けっしょう",
+      "ro": "kesshou",
+      "en": "final match / championship",
+      "examples": [
+        {
+          "en": "The final will be held tomorrow.",
+          "ja": "決勝は明日行われます。",
+          "kana": "けっしょう は あした おこなわれます。",
+          "ro": "kesshou wa ashita okonawaremasu."
+        },
+        {
+          "en": "Our team made it to the final.",
+          "ja": "私たちのチームは決勝に進んだ。",
+          "kana": "わたしたち の ちーむ は けっしょう に すすんだ。",
+          "ro": "watashitachi no chiimu wa kesshou ni susunda."
+        },
+        {
+          "en": "The final match was very close.",
+          "ja": "決勝の試合はとても接戦だった。",
+          "kana": "けっしょう の しあい は とても せっせん だった。",
+          "ro": "kesshou no shiai wa totemo sessen datta."
+        },
+        {
+          "en": "They lost the final.",
+          "ja": "彼らは決勝で負けた。",
+          "kana": "かれら は けっしょう で まけた。",
+          "ro": "karera wa kesshou de maketa."
+        },
+        {
+          "en": "She won the championship.",
+          "ja": "彼女は決勝で優勝した。",
+          "kana": "かのじょ は けっしょう で ゆうしょう した。",
+          "ro": "kanojo wa kesshou de yuushou shita."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-049",
+      "ja": "優勝",
+      "kana": "ゆうしょう",
+      "ro": "yuushou",
+      "en": "victory / championship / first place",
+      "examples": [
+        {
+          "en": "Our team won the championship.",
+          "ja": "私たちのチームが優勝した。",
+          "kana": "わたしたち の ちーむ が ゆうしょう した。",
+          "ro": "watashitachi no chiimu ga yuushou shita."
+        },
+        {
+          "en": "They celebrated their victory.",
+          "ja": "彼らは優勝を祝った。",
+          "kana": "かれら は ゆうしょう を いわった。",
+          "ro": "karera wa yuushou o iwatta."
+        },
+        {
+          "en": "Winning the championship was his dream.",
+          "ja": "優勝することが彼の夢だった。",
+          "kana": "ゆうしょう する こと が かれ の ゆめ だった。",
+          "ro": "yuushou suru koto ga kare no yume datta."
+        },
+        {
+          "en": "She worked hard to win the tournament.",
+          "ja": "彼女は優勝するために一生懸命練習した。",
+          "kana": "かのじょ は ゆうしょう する ため に いっしょうけんめい れんしゅう した。",
+          "ro": "kanojo wa yuushou suru tame ni isshoukenmei renshuu shita."
+        },
+        {
+          "en": "They received a trophy for winning.",
+          "ja": "優勝したチームはトロフィーをもらった。",
+          "kana": "ゆうしょう した ちーむ は とろふぃー を もらった。",
+          "ro": "yuushou shita chiimu wa torofii o moratta."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-050",
+      "ja": "試合",
+      "kana": "しあい",
+      "ro": "shiai",
+      "en": "match / game / contest",
+      "examples": [
+        {
+          "en": "The match starts at three o’clock.",
+          "ja": "試合は3時に始まります。",
+          "kana": "しあい は さんじ に はじまります。",
+          "ro": "shiai wa sanji ni hajimarimasu."
+        },
+        {
+          "en": "We won the match.",
+          "ja": "私たちは試合に勝った。",
+          "kana": "わたしたち は しあい に かった。",
+          "ro": "watashitachi wa shiai ni katta."
+        },
+        {
+          "en": "The game ended in a draw.",
+          "ja": "試合は引き分けに終わった。",
+          "kana": "しあい は ひきわけ に おわった。",
+          "ro": "shiai wa hikiwake ni owatta."
+        },
+        {
+          "en": "He will play in tomorrow’s match.",
+          "ja": "彼は明日の試合に出る。",
+          "kana": "かれ は あした の しあい に でる。",
+          "ro": "kare wa ashita no shiai ni deru."
+        },
+        {
+          "en": "It was a very exciting game.",
+          "ja": "とても楽しい試合だった。",
+          "kana": "とても たのしい しあい だった。",
+          "ro": "totemo tanoshii shiai datta."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-051",
+      "ja": "運転",
+      "kana": "うんてん",
+      "ro": "unten",
+      "en": "driving / operation (of a vehicle)",
+      "examples": [
+        {
+          "en": "My father is good at driving.",
+          "ja": "父は運転が上手です。",
+          "kana": "ちち は うんてん が じょうず です。",
+          "ro": "chichi wa unten ga jouzu desu."
+        },
+        {
+          "en": "Please drive carefully.",
+          "ja": "気をつけて運転してください。",
+          "kana": "き を つけて うんてん して ください。",
+          "ro": "ki o tsukete unten shite kudasai."
+        },
+        {
+          "en": "I got my driver’s license last year.",
+          "ja": "去年運転免許を取りました。",
+          "kana": "きょねん うんてんめんきょ を とりました。",
+          "ro": "kyonen unten menkyo o torimashita."
+        },
+        {
+          "en": "Driving in Tokyo is difficult.",
+          "ja": "東京での運転は難しいです。",
+          "kana": "とうきょう で の うんてん は むずかしい です。",
+          "ro": "toukyou de no unten wa muzukashii desu."
+        },
+        {
+          "en": "He was tired after long driving.",
+          "ja": "長い運転で彼は疲れた。",
+          "kana": "ながい うんてん で かれ は つかれた。",
+          "ro": "nagai unten de kare wa tsukareta."
+        }
+      ],
+      "grammar": "Noun + を／が + する"
+    },
+    {
+      "id": "n4-noun-052",
+      "ja": "運転手",
+      "kana": "うんてんしゅ",
+      "ro": "untenshu",
+      "en": "driver / chauffeur",
+      "examples": [
+        {
+          "en": "The taxi driver was very kind.",
+          "ja": "タクシーの運転手はとても親切だった。",
+          "kana": "たくしー の うんてんしゅ は とても しんせつ だった。",
+          "ro": "takushii no untenshu wa totemo shinsetsu datta."
+        },
+        {
+          "en": "The driver is waiting outside.",
+          "ja": "運転手が外で待っています。",
+          "kana": "うんてんしゅ が そと で まって います。",
+          "ro": "untenshu ga soto de matte imasu."
+        },
+        {
+          "en": "Bus drivers have a hard job.",
+          "ja": "バスの運転手は大変な仕事です。",
+          "kana": "ばす の うんてんしゅ は たいへん な しごと です。",
+          "ro": "basu no untenshu wa taihen na shigoto desu."
+        },
+        {
+          "en": "Please thank the driver.",
+          "ja": "運転手さんにお礼を言ってください。",
+          "kana": "うんてんしゅ さん に おれい を いって ください。",
+          "ro": "untenshu san ni orei o itte kudasai."
+        },
+        {
+          "en": "The driver opened the door for me.",
+          "ja": "運転手がドアを開けてくれた。",
+          "kana": "うんてんしゅ が どあ を あけて くれた。",
+          "ro": "untenshu ga doa o akete kureta."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-053",
+      "ja": "工場",
+      "kana": "こうじょう",
+      "ro": "koujou",
+      "en": "factory / plant / workshop",
+      "examples": [
+        {
+          "en": "My uncle works at a factory.",
+          "ja": "おじは工場で働いています。",
+          "kana": "おじ は こうじょう で はたらいて います。",
+          "ro": "oji wa koujou de hataraite imasu."
+        },
+        {
+          "en": "The factory produces cars.",
+          "ja": "その工場は車を作っています。",
+          "kana": "その こうじょう は くるま を つくって います。",
+          "ro": "sono koujou wa kuruma o tsukutte imasu."
+        },
+        {
+          "en": "This factory is very large.",
+          "ja": "この工場はとても大きい。",
+          "kana": "この こうじょう は とても おおきい。",
+          "ro": "kono koujou wa totemo ookii."
+        },
+        {
+          "en": "The factory closes at six o’clock.",
+          "ja": "工場は6時に閉まります。",
+          "kana": "こうじょう は ろくじ に しまります。",
+          "ro": "koujou wa rokuji ni shimarimasu."
+        },
+        {
+          "en": "He visited a food factory.",
+          "ja": "彼は食品工場を見学した。",
+          "kana": "かれ は しょくひん こうじょう を けんがく した。",
+          "ro": "kare wa shokuhin koujou o kengaku shita."
+        }
+      ],
+      "grammar": "Noun + で／を + Verb"
+    },
+    {
+      "id": "n4-noun-054",
+      "ja": "材料",
+      "kana": "ざいりょう",
+      "ro": "zairyou",
+      "en": "material / ingredient / data",
+      "examples": [
+        {
+          "en": "What materials do we need for this?",
+          "ja": "これに必要な材料は何ですか。",
+          "kana": "これ に ひつよう な ざいりょう は なん です か。",
+          "ro": "kore ni hitsuyou na zairyou wa nan desu ka."
+        },
+        {
+          "en": "I bought ingredients for curry.",
+          "ja": "カレーの材料を買いました。",
+          "kana": "かれー の ざいりょう を かいました。",
+          "ro": "karee no zairyou o kaimashita."
+        },
+        {
+          "en": "Wood is the main material for this product.",
+          "ja": "木はこの製品の主な材料です。",
+          "kana": "き は この せいひん の おもな ざいりょう です。",
+          "ro": "ki wa kono seihin no omona zairyou desu."
+        },
+        {
+          "en": "We used plastic as a material.",
+          "ja": "材料としてプラスチックを使った。",
+          "kana": "ざいりょう として ぷらすちっく を つかった。",
+          "ro": "zairyou toshite purasuchikku o tsukatta."
+        },
+        {
+          "en": "These ingredients are fresh.",
+          "ja": "この材料は新鮮です。",
+          "kana": "この ざいりょう は しんせん です。",
+          "ro": "kono zairyou wa shinsen desu."
+        }
+      ],
+      "grammar": "Noun + を／として + Verb"
+    },
+    {
+      "id": "n4-noun-055",
+      "ja": "技術",
+      "kana": "ぎじゅつ",
+      "ro": "gijutsu",
+      "en": "technology / skill / technique",
+      "examples": [
+        {
+          "en": "Japanese technology is advanced.",
+          "ja": "日本の技術は進んでいる。",
+          "kana": "にほん の ぎじゅつ は すすんで いる。",
+          "ro": "nihon no gijutsu wa susunde iru."
+        },
+        {
+          "en": "He has high technical skills.",
+          "ja": "彼は高い技術を持っている。",
+          "kana": "かれ は たかい ぎじゅつ を もって いる。",
+          "ro": "kare wa takai gijutsu o motte iru."
+        },
+        {
+          "en": "Technology is developing rapidly.",
+          "ja": "技術は急速に発展している。",
+          "kana": "ぎじゅつ は きゅうそく に はってん して いる。",
+          "ro": "gijutsu wa kyuusoku ni hatten shite iru."
+        },
+        {
+          "en": "We need new technology for this project.",
+          "ja": "このプロジェクトには新しい技術が必要です。",
+          "kana": "この ぷろじぇくと に は あたらしい ぎじゅつ が ひつよう です。",
+          "ro": "kono purojekuto ni wa atarashii gijutsu ga hitsuyou desu."
+        },
+        {
+          "en": "He studies information technology.",
+          "ja": "彼は情報技術を勉強している。",
+          "kana": "かれ は じょうほう ぎじゅつ を べんきょう して いる。",
+          "ro": "kare wa jouhou gijutsu o benkyou shite iru."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-056",
+      "ja": "工事",
+      "kana": "こうじ",
+      "ro": "kouji",
+      "en": "construction / construction work",
+      "examples": [
+        {
+          "en": "The road construction will start tomorrow.",
+          "ja": "道路の工事は明日始まります。",
+          "kana": "どうろ の こうじ は あした はじまります。",
+          "ro": "douro no kouji wa ashita hajimarimasu."
+        },
+        {
+          "en": "The construction noise is loud.",
+          "ja": "工事の音がうるさいです。",
+          "kana": "こうじ の おと が うるさい です。",
+          "ro": "kouji no oto ga urusai desu."
+        },
+        {
+          "en": "The construction will continue for three months.",
+          "ja": "工事は3か月続きます。",
+          "kana": "こうじ は さんかげつ つづきます。",
+          "ro": "kouji wa sankagetsu tsuzukimasu."
+        },
+        {
+          "en": "The construction of the bridge has finished.",
+          "ja": "橋の工事が終わりました。",
+          "kana": "はし の こうじ が おわりました。",
+          "ro": "hashi no kouji ga owarimashita."
+        },
+        {
+          "en": "Please be careful near the construction site.",
+          "ja": "工事現場の近くでは気をつけてください。",
+          "kana": "こうじ げんば の ちかく では き を つけて ください。",
+          "ro": "kouji genba no chikaku de wa ki o tsukete kudasai."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-058",
+      "ja": "安全",
+      "kana": "あんぜん",
+      "ro": "anzen",
+      "en": "safety / security",
+      "examples": [
+        {
+          "en": "Safety comes first.",
+          "ja": "安全が第一です。",
+          "kana": "あんぜん が だいいち です。",
+          "ro": "anzen ga daiichi desu."
+        },
+        {
+          "en": "Please drive safely.",
+          "ja": "安全に運転してください。",
+          "kana": "あんぜん に うんてん して ください。",
+          "ro": "anzen ni unten shite kudasai."
+        },
+        {
+          "en": "This area is very safe.",
+          "ja": "この地域はとても安全です。",
+          "kana": "この ちいき は とても あんぜん です。",
+          "ro": "kono chiiki wa totemo anzen desu."
+        },
+        {
+          "en": "They checked the safety of the bridge.",
+          "ja": "橋の安全を確認した。",
+          "kana": "はし の あんぜん を かくにん した。",
+          "ro": "hashi no anzen o kakunin shita."
+        },
+        {
+          "en": "We care about the safety of our customers.",
+          "ja": "お客様の安全を大切にしています。",
+          "kana": "おきゃくさま の あんぜん を たいせつ に して います。",
+          "ro": "okyakusama no anzen o taisetsu ni shite imasu."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-059",
+      "ja": "危険",
+      "kana": "きけん",
+      "ro": "kiken",
+      "en": "danger / risk / hazard",
+      "examples": [
+        {
+          "en": "It’s dangerous to swim here.",
+          "ja": "ここで泳ぐのは危険です。",
+          "kana": "ここ で およぐ の は きけん です。",
+          "ro": "koko de oyogu no wa kiken desu."
+        },
+        {
+          "en": "That road is dangerous at night.",
+          "ja": "その道は夜危険です。",
+          "kana": "その みち は よる きけん です。",
+          "ro": "sono michi wa yoru kiken desu."
+        },
+        {
+          "en": "Smoking too much is dangerous to your health.",
+          "ja": "たばこの吸いすぎは健康に危険です。",
+          "kana": "たばこ の すいすぎ は けんこう に きけん です。",
+          "ro": "tabako no suisugi wa kenkou ni kiken desu."
+        },
+        {
+          "en": "They avoided the dangerous area.",
+          "ja": "彼らは危険な場所を避けた。",
+          "kana": "かれら は きけん な ばしょ を さけた。",
+          "ro": "karera wa kiken na basho o saketa."
+        },
+        {
+          "en": "It’s dangerous to touch that wire.",
+          "ja": "その電線に触るのは危険です。",
+          "kana": "その でんせん に さわる の は きけん です。",
+          "ro": "sono densen ni sawaru no wa kiken desu."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-060",
+      "ja": "事故",
+      "kana": "じこ",
+      "ro": "jiko",
+      "en": "accident / incident / crash",
+      "examples": [
+        {
+          "en": "A car accident happened on this road.",
+          "ja": "この道で車の事故がありました。",
+          "kana": "この みち で くるま の じこ が ありました。",
+          "ro": "kono michi de kuruma no jiko ga arimashita."
+        },
+        {
+          "en": "He was injured in the accident.",
+          "ja": "彼は事故でけがをした。",
+          "kana": "かれ は じこ で けが を した。",
+          "ro": "kare wa jiko de kega o shita."
+        },
+        {
+          "en": "The accident caused a traffic jam.",
+          "ja": "事故で交通が混んでいた。",
+          "kana": "じこ で こうつう が こんで いた。",
+          "ro": "jiko de koutsuu ga konde ita."
+        },
+        {
+          "en": "Luckily, no one was hurt in the accident.",
+          "ja": "幸い、事故でけが人はいなかった。",
+          "kana": "さいわい、じこ で けがにん は いなかった。",
+          "ro": "saiwai, jiko de keganin wa inakatta."
+        },
+        {
+          "en": "He reported the accident to the police.",
+          "ja": "彼は事故を警察に報告した。",
+          "kana": "かれ は じこ を けいさつ に ほうこく した。",
+          "ro": "kare wa jiko o keisatsu ni houkoku shita."
+        }
+      ],
+      "grammar": "Noun + で／を + Verb"
+    },
+    {
+      "id": "n4-noun-061",
+      "ja": "原因",
+      "kana": "げんいん",
+      "ro": "gen'in",
+      "en": "cause / origin / reason",
+      "examples": [
+        {
+          "en": "We don’t know the cause of the accident.",
+          "ja": "事故の原因はわかっていません。",
+          "kana": "じこ の げんいん は わかって いません。",
+          "ro": "jiko no gen'in wa wakatte imasen."
+        },
+        {
+          "en": "The cause of the fire is under investigation.",
+          "ja": "火事の原因を調べています。",
+          "kana": "かじ の げんいん を しらべて います。",
+          "ro": "kaji no gen'in o shirabete imasu."
+        },
+        {
+          "en": "Stress is the cause of his illness.",
+          "ja": "ストレスが病気の原因です。",
+          "kana": "すとれす が びょうき の げんいん です。",
+          "ro": "sutoresu ga byouki no gen'in desu."
+        },
+        {
+          "en": "We found the cause of the problem.",
+          "ja": "問題の原因が見つかりました。",
+          "kana": "もんだい の げんいん が みつかりました。",
+          "ro": "mondai no gen'in ga mitsukarimashita."
+        },
+        {
+          "en": "He caused the accident.",
+          "ja": "彼が事故の原因を作った。",
+          "kana": "かれ が じこ の げんいん を つくった。",
+          "ro": "kare ga jiko no gen'in o tsukutta."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-062",
+      "ja": "理由",
+      "kana": "りゆう",
+      "ro": "riyuu",
+      "en": "reason / cause / motive",
+      "examples": [
+        {
+          "en": "What’s the reason for being late?",
+          "ja": "遅れた理由は何ですか。",
+          "kana": "おくれた りゆう は なん です か。",
+          "ro": "okureta riyuu wa nan desu ka."
+        },
+        {
+          "en": "He didn’t tell me the reason.",
+          "ja": "彼は理由を教えてくれなかった。",
+          "kana": "かれ は りゆう を おしえて くれなかった。",
+          "ro": "kare wa riyuu o oshiete kurenakatta."
+        },
+        {
+          "en": "There is no reason to worry.",
+          "ja": "心配する理由はありません。",
+          "kana": "しんぱい する りゆう は ありません。",
+          "ro": "shinpai suru riyuu wa arimasen."
+        },
+        {
+          "en": "She has a good reason for that.",
+          "ja": "彼女にはそれをする理由がある。",
+          "kana": "かのじょ に は それ を する りゆう が ある。",
+          "ro": "kanojo ni wa sore o suru riyuu ga aru."
+        },
+        {
+          "en": "He quit for personal reasons.",
+          "ja": "彼は個人的な理由で辞めた。",
+          "kana": "かれ は こじんてき な りゆう で やめた。",
+          "ro": "kare wa kojinteki na riyuu de yameta."
+        }
+      ],
+      "grammar": "Noun + が／を／で + Verb"
+    },
+    {
+      "id": "n4-noun-064",
+      "ja": "影響",
+      "kana": "えいきょう",
+      "ro": "eikyou",
+      "en": "influence / effect / impact",
+      "examples": [
+        {
+          "en": "The weather had a big influence on the result.",
+          "ja": "天気が結果に大きな影響を与えた。",
+          "kana": "てんき が けっか に おおきな えいきょう を あたえた。",
+          "ro": "tenki ga kekka ni ookina eikyou o ataeta."
+        },
+        {
+          "en": "She was influenced by her teacher.",
+          "ja": "彼女は先生の影響を受けた。",
+          "kana": "かのじょ は せんせい の えいきょう を うけた。",
+          "ro": "kanojo wa sensei no eikyou o uketa."
+        },
+        {
+          "en": "That movie had a great impact on me.",
+          "ja": "その映画は私に大きな影響を与えた。",
+          "kana": "その えいが は わたし に おおきな えいきょう を あたえた。",
+          "ro": "sono eiga wa watashi ni ookina eikyou o ataeta."
+        },
+        {
+          "en": "The news influenced public opinion.",
+          "ja": "そのニュースは世論に影響した。",
+          "kana": "その にゅーす は よろん に えいきょう した。",
+          "ro": "sono nyuusu wa yoron ni eikyou shita."
+        },
+        {
+          "en": "The economy was affected by the policy.",
+          "ja": "経済はその政策の影響を受けた。",
+          "kana": "けいざい は その せいさく の えいきょう を うけた。",
+          "ro": "keizai wa sono seisaku no eikyou o uketa."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-066",
+      "ja": "会議",
+      "kana": "かいぎ",
+      "ro": "kaigi",
+      "en": "meeting / conference",
+      "examples": [
+        {
+          "en": "The meeting will start at 10 a.m.",
+          "ja": "会議は午前10時に始まります。",
+          "kana": "かいぎ は ごぜん じゅうじ に はじまります。",
+          "ro": "kaigi wa gozen juuji ni hajimarimasu."
+        },
+        {
+          "en": "We had a long meeting yesterday.",
+          "ja": "昨日は長い会議がありました。",
+          "kana": "きのう は ながい かいぎ が ありました。",
+          "ro": "kinou wa nagai kaigi ga arimashita."
+        },
+        {
+          "en": "He is preparing for the meeting.",
+          "ja": "彼は会議の準備をしています。",
+          "kana": "かれ は かいぎ の じゅんび を して います。",
+          "ro": "kare wa kaigi no junbi o shite imasu."
+        },
+        {
+          "en": "The meeting was held in Tokyo.",
+          "ja": "会議は東京で行われた。",
+          "kana": "かいぎ は とうきょう で おこなわれた。",
+          "ro": "kaigi wa toukyou de okonawareta."
+        },
+        {
+          "en": "The meeting ended successfully.",
+          "ja": "会議は無事に終わりました。",
+          "kana": "かいぎ は ぶじ に おわりました。",
+          "ro": "kaigi wa buji ni owarimashita."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-069",
+      "ja": "発見",
+      "kana": "はっけん",
+      "ro": "hakken",
+      "en": "discovery / finding / detection",
+      "examples": [
+        {
+          "en": "A new planet was discovered.",
+          "ja": "新しい星が発見された。",
+          "kana": "あたらしい ほし が はっけん された。",
+          "ro": "atarashii hoshi ga hakken sareta."
+        },
+        {
+          "en": "This discovery is very important.",
+          "ja": "この発見はとても重要です。",
+          "kana": "この はっけん は とても じゅうよう です。",
+          "ro": "kono hakken wa totemo juuyou desu."
+        },
+        {
+          "en": "He discovered a new species of flower.",
+          "ja": "彼は新しい花の種類を発見した。",
+          "kana": "かれ は あたらしい はな の しゅるい を はっけん した。",
+          "ro": "kare wa atarashii hana no shurui o hakken shita."
+        },
+        {
+          "en": "It was a great discovery in science.",
+          "ja": "それは科学の大きな発見だった。",
+          "kana": "それ は かがく の おおきな はっけん だった。",
+          "ro": "sore wa kagaku no ookina hakken datta."
+        },
+        {
+          "en": "The police discovered the missing car.",
+          "ja": "警察が行方不明の車を発見した。",
+          "kana": "けいさつ が ゆくえふめい の くるま を はっけん した。",
+          "ro": "keisatsu ga yukuefumei no kuruma o hakken shita."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-070",
+      "ja": "発明",
+      "kana": "はつめい",
+      "ro": "hatsumei",
+      "en": "invention / innovation",
+      "examples": [
+        {
+          "en": "The telephone was a great invention.",
+          "ja": "電話は偉大な発明だった。",
+          "kana": "でんわ は いだい な はつめい だった。",
+          "ro": "denwa wa idai na hatsumei datta."
+        },
+        {
+          "en": "He invented a new machine.",
+          "ja": "彼は新しい機械を発明した。",
+          "kana": "かれ は あたらしい きかい を はつめい した。",
+          "ro": "kare wa atarashii kikai o hatsumei shita."
+        },
+        {
+          "en": "This invention changed the world.",
+          "ja": "この発明は世界を変えた。",
+          "kana": "この はつめい は せかい を かえた。",
+          "ro": "kono hatsumei wa sekai o kaeta."
+        },
+        {
+          "en": "Edison made many inventions.",
+          "ja": "エジソンは多くの発明をした。",
+          "kana": "えじそん は おおく の はつめい を した。",
+          "ro": "ejison wa ooku no hatsumei o shita."
+        },
+        {
+          "en": "He won a prize for his invention.",
+          "ja": "彼は発明で賞をもらった。",
+          "kana": "かれ は はつめい で しょう を もらった。",
+          "ro": "kare wa hatsumei de shou o moratta."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-071",
+      "ja": "研究",
+      "kana": "けんきゅう",
+      "ro": "kenkyuu",
+      "en": "research / study / investigation",
+      "examples": [
+        {
+          "en": "He is researching Japanese history.",
+          "ja": "彼は日本の歴史を研究しています。",
+          "kana": "かれ は にほん の れきし を けんきゅう して います。",
+          "ro": "kare wa nihon no rekishi o kenkyuu shite imasu."
+        },
+        {
+          "en": "This is an interesting research topic.",
+          "ja": "これはおもしろい研究テーマです。",
+          "kana": "これ は おもしろい けんきゅう てーま です。",
+          "ro": "kore wa omoshiroi kenkyuu teema desu."
+        },
+        {
+          "en": "The research is still in progress.",
+          "ja": "研究はまだ進行中です。",
+          "kana": "けんきゅう は まだ しんこうちゅう です。",
+          "ro": "kenkyuu wa mada shinkouchuu desu."
+        },
+        {
+          "en": "She is doing research on medicine.",
+          "ja": "彼女は医学の研究をしている。",
+          "kana": "かのじょ は いがく の けんきゅう を して いる。",
+          "ro": "kanojo wa igaku no kenkyuu o shite iru."
+        },
+        {
+          "en": "He published the results of his research.",
+          "ja": "彼は研究の結果を発表した。",
+          "kana": "かれ は けんきゅう の けっか を はっぴょう した。",
+          "ro": "kare wa kenkyuu no kekka o happyou shita."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-072",
+      "ja": "教育",
+      "kana": "きょういく",
+      "ro": "kyouiku",
+      "en": "education / training",
+      "examples": [
+        {
+          "en": "Education is important for children.",
+          "ja": "子どもにとって教育は大切です。",
+          "kana": "こども に とって きょういく は たいせつ です。",
+          "ro": "kodomo ni totte kyouiku wa taisetsu desu."
+        },
+        {
+          "en": "He is studying education at university.",
+          "ja": "彼は大学で教育を学んでいます。",
+          "kana": "かれ は だいがく で きょういく を まなんで います。",
+          "ro": "kare wa daigaku de kyouiku o manande imasu."
+        },
+        {
+          "en": "Japanese education is strict.",
+          "ja": "日本の教育はきびしいです。",
+          "kana": "にほん の きょういく は きびしい です。",
+          "ro": "nihon no kyouiku wa kibishii desu."
+        },
+        {
+          "en": "The government is improving education.",
+          "ja": "政府は教育を改善している。",
+          "kana": "せいふ は きょういく を かいぜん して いる。",
+          "ro": "seifu wa kyouiku o kaizen shite iru."
+        },
+        {
+          "en": "Education builds the future.",
+          "ja": "教育は未来を作る。",
+          "kana": "きょういく は みらい を つくる。",
+          "ro": "kyouiku wa mirai o tsukuru."
+        }
+      ],
+      "grammar": "Noun + を／は + Verb"
+    },
+    {
+      "id": "n4-noun-074",
+      "ja": "社会",
+      "kana": "しゃかい",
+      "ro": "shakai",
+      "en": "society / community",
+      "examples": [
+        {
+          "en": "We live in a modern society.",
+          "ja": "私たちは現代社会に生きています。",
+          "kana": "わたしたち は げんだい しゃかい に いきて います。",
+          "ro": "watashitachi wa gendai shakai ni ikite imasu."
+        },
+        {
+          "en": "Society is changing rapidly.",
+          "ja": "社会は急速に変化している。",
+          "kana": "しゃかい は きゅうそく に へんか して いる。",
+          "ro": "shakai wa kyuusoku ni henka shite iru."
+        },
+        {
+          "en": "This problem affects society.",
+          "ja": "この問題は社会に影響を与える。",
+          "kana": "この もんだい は しゃかい に えいきょう を あたえる。",
+          "ro": "kono mondai wa shakai ni eikyou o ataeru."
+        },
+        {
+          "en": "He works for society.",
+          "ja": "彼は社会のために働いている。",
+          "kana": "かれ は しゃかい の ため に はたらいて いる。",
+          "ro": "kare wa shakai no tame ni hataraite iru."
+        },
+        {
+          "en": "Social problems are increasing.",
+          "ja": "社会問題が増えている。",
+          "kana": "しゃかい もんだい が ふえて いる。",
+          "ro": "shakai mondai ga fuete iru."
+        }
+      ],
+      "grammar": "Noun + に／の + Verb"
+    },
+    {
+      "id": "n4-noun-075",
+      "ja": "政治",
+      "kana": "せいじ",
+      "ro": "seiji",
+      "en": "politics / government",
+      "examples": [
+        {
+          "en": "He is interested in politics.",
+          "ja": "彼は政治に興味があります。",
+          "kana": "かれ は せいじ に きょうみ が あります。",
+          "ro": "kare wa seiji ni kyoumi ga arimasu."
+        },
+        {
+          "en": "Politics affects our lives.",
+          "ja": "政治は私たちの生活に影響する。",
+          "kana": "せいじ は わたしたち の せいかつ に えいきょう する。",
+          "ro": "seiji wa watashitachi no seikatsu ni eikyou suru."
+        },
+        {
+          "en": "He studies political science at university.",
+          "ja": "彼は大学で政治学を学んでいる。",
+          "kana": "かれ は だいがく で せいじがく を まなんで いる。",
+          "ro": "kare wa daigaku de seijigaku o manande iru."
+        },
+        {
+          "en": "People talked about politics at the meeting.",
+          "ja": "人々は会議で政治について話した。",
+          "kana": "ひとびと は かいぎ で せいじ に ついて はなした。",
+          "ro": "hitobito wa kaigi de seiji ni tsuite hanashita."
+        },
+        {
+          "en": "Politics should be transparent.",
+          "ja": "政治は透明であるべきだ。",
+          "kana": "せいじ は とうめい で ある べき だ。",
+          "ro": "seiji wa toumei de aru beki da."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-076",
+      "ja": "経済",
+      "kana": "けいざい",
+      "ro": "keizai",
+      "en": "economy / economics",
+      "examples": [
+        {
+          "en": "The Japanese economy is recovering.",
+          "ja": "日本の経済は回復している。",
+          "kana": "にほん の けいざい は かいふく して いる。",
+          "ro": "nihon no keizai wa kaifuku shite iru."
+        },
+        {
+          "en": "He studies economics at university.",
+          "ja": "彼は大学で経済を勉強している。",
+          "kana": "かれ は だいがく で けいざい を べんきょう して いる。",
+          "ro": "kare wa daigaku de keizai o benkyou shite iru."
+        },
+        {
+          "en": "The economy is getting worse.",
+          "ja": "経済が悪くなっている。",
+          "kana": "けいざい が わるく なって いる。",
+          "ro": "keizai ga waruku natte iru."
+        },
+        {
+          "en": "The government announced an economic plan.",
+          "ja": "政府は経済計画を発表した。",
+          "kana": "せいふ は けいざい けいかく を はっぴょう した。",
+          "ro": "seifu wa keizai keikaku o happyou shita."
+        },
+        {
+          "en": "Economic growth is important for the country.",
+          "ja": "経済の成長は国にとって大切です。",
+          "kana": "けいざい の せいちょう は くに に とって たいせつ です。",
+          "ro": "keizai no seichou wa kuni ni totte taisetsu desu."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-077",
+      "ja": "産業",
+      "kana": "さんぎょう",
+      "ro": "sangyou",
+      "en": "industry / industrial sector",
+      "examples": [
+        {
+          "en": "The car industry is growing rapidly.",
+          "ja": "自動車産業は急速に成長している。",
+          "kana": "じどうしゃ さんぎょう は きゅうそく に せいちょう して いる。",
+          "ro": "jidousha sangyou wa kyuusoku ni seichou shite iru."
+        },
+        {
+          "en": "Tourism is an important industry.",
+          "ja": "観光は大切な産業です。",
+          "kana": "かんこう は たいせつ な さんぎょう です。",
+          "ro": "kankou wa taisetsu na sangyou desu."
+        },
+        {
+          "en": "Japan has many advanced industries.",
+          "ja": "日本には先進的な産業が多い。",
+          "kana": "にほん に は せんしんてき な さんぎょう が おおい。",
+          "ro": "nihon ni wa senshinteki na sangyou ga ooi."
+        },
+        {
+          "en": "This city developed because of the steel industry.",
+          "ja": "この町は鉄鋼産業で発展した。",
+          "kana": "この まち は てっこう さんぎょう で はってん した。",
+          "ro": "kono machi wa tekkou sangyou de hatten shita."
+        },
+        {
+          "en": "The IT industry is very competitive.",
+          "ja": "IT産業はとても競争が激しい。",
+          "kana": "あいてぃー さんぎょう は とても きょうそう が はげしい。",
+          "ro": "aitii sangyou wa totemo kyousou ga hageshii."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-078",
+      "ja": "商業",
+      "kana": "しょうぎょう",
+      "ro": "shougyou",
+      "en": "commerce / trade / business",
+      "examples": [
+        {
+          "en": "This city is a center of commerce.",
+          "ja": "この町は商業の中心です。",
+          "kana": "この まち は しょうぎょう の ちゅうしん です。",
+          "ro": "kono machi wa shougyou no chuushin desu."
+        },
+        {
+          "en": "He works in the commercial sector.",
+          "ja": "彼は商業の分野で働いている。",
+          "kana": "かれ は しょうぎょう の ぶんや で はたらいて いる。",
+          "ro": "kare wa shougyou no bunya de hataraite iru."
+        },
+        {
+          "en": "Commercial activity is increasing.",
+          "ja": "商業活動が増えている。",
+          "kana": "しょうぎょう かつどう が ふえて いる。",
+          "ro": "shougyou katsudou ga fuete iru."
+        },
+        {
+          "en": "This area is full of shops and businesses.",
+          "ja": "この地域は商業施設が多い。",
+          "kana": "この ちいき は しょうぎょう しせつ が おおい。",
+          "ro": "kono chiiki wa shougyou shisetsu ga ooi."
+        },
+        {
+          "en": "They studied commercial law.",
+          "ja": "彼らは商業法を学んだ。",
+          "kana": "かれら は しょうぎょうほう を まなんだ。",
+          "ro": "karera wa shougyouhou o mananda."
+        }
+      ],
+      "grammar": "Noun + の／が + Verb"
+    },
+    {
+      "id": "n4-noun-079",
+      "ja": "農業",
+      "kana": "のうぎょう",
+      "ro": "nougyou",
+      "en": "agriculture / farming",
+      "examples": [
+        {
+          "en": "My grandfather works in agriculture.",
+          "ja": "祖父は農業をしています。",
+          "kana": "そふ は のうぎょう を して います。",
+          "ro": "sofu wa nougyou o shite imasu."
+        },
+        {
+          "en": "Agriculture is important for the country.",
+          "ja": "農業は国にとって大切です。",
+          "kana": "のうぎょう は くに に とって たいせつ です。",
+          "ro": "nougyou wa kuni ni totte taisetsu desu."
+        },
+        {
+          "en": "They are learning about modern agriculture.",
+          "ja": "彼らは現代農業について学んでいる。",
+          "kana": "かれら は げんだい のうぎょう に ついて まなんで いる。",
+          "ro": "karera wa gendai nougyou ni tsuite manande iru."
+        },
+        {
+          "en": "Agricultural products are exported overseas.",
+          "ja": "農業製品は海外に輸出されている。",
+          "kana": "のうぎょう せいひん は かいがい に ゆしゅつ されて いる。",
+          "ro": "nougyou seihin wa kaigai ni yushutsu sarete iru."
+        },
+        {
+          "en": "Many people are leaving farming.",
+          "ja": "多くの人が農業をやめている。",
+          "kana": "おおく の ひと が のうぎょう を やめて いる。",
+          "ro": "ooku no hito ga nougyou o yamete iru."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-080",
+      "ja": "工業",
+      "kana": "こうぎょう",
+      "ro": "kougyou",
+      "en": "industry / manufacturing industry",
+      "examples": [
+        {
+          "en": "Japan is strong in the manufacturing industry.",
+          "ja": "日本は工業が発達している。",
+          "kana": "にほん は こうぎょう が はったつ して いる。",
+          "ro": "nihon wa kougyou ga hattatsu shite iru."
+        },
+        {
+          "en": "The city developed through heavy industry.",
+          "ja": "その都市は重工業で発展した。",
+          "kana": "その とし は じゅうこうぎょう で はってん した。",
+          "ro": "sono toshi wa juukougyou de hatten shita."
+        },
+        {
+          "en": "They are learning industrial technology.",
+          "ja": "彼らは工業技術を学んでいる。",
+          "kana": "かれら は こうぎょう ぎじゅつ を まなんで いる。",
+          "ro": "karera wa kougyou gijutsu o manande iru."
+        },
+        {
+          "en": "Industrial areas are often near the port.",
+          "ja": "工業地帯は港の近くにある。",
+          "kana": "こうぎょう ちたい は みなと の ちかく に ある。",
+          "ro": "kougyou chitai wa minato no chikaku ni aru."
+        },
+        {
+          "en": "The development of industry supports the economy.",
+          "ja": "工業の発展が経済を支えている。",
+          "kana": "こうぎょう の はってん が けいざい を ささえて いる。",
+          "ro": "kougyou no hatten ga keizai o sasaete iru."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-081",
+      "ja": "自然",
+      "kana": "しぜん",
+      "ro": "shizen",
+      "en": "nature / natural world",
+      "examples": [
+        {
+          "en": "Japan has a lot of beautiful nature.",
+          "ja": "日本には美しい自然がたくさんあります。",
+          "kana": "にほん に は うつくしい しぜん が たくさん あります。",
+          "ro": "nihon ni wa utsukushii shizen ga takusan arimasu."
+        },
+        {
+          "en": "Let’s protect nature together.",
+          "ja": "みんなで自然を守りましょう。",
+          "kana": "みんな で しぜん を まもりましょう。",
+          "ro": "minna de shizen o mamorimashou."
+        },
+        {
+          "en": "She loves nature very much.",
+          "ja": "彼女は自然が大好きです。",
+          "kana": "かのじょ は しぜん が だいすき です。",
+          "ro": "kanojo wa shizen ga daisuki desu."
+        },
+        {
+          "en": "We should live in harmony with nature.",
+          "ja": "自然と共に生きるべきです。",
+          "kana": "しぜん と とも に いきる べき です。",
+          "ro": "shizen to tomo ni ikiru beki desu."
+        },
+        {
+          "en": "Natural disasters sometimes happen.",
+          "ja": "自然災害は時々起こります。",
+          "kana": "しぜん さいがい は ときどき おこります。",
+          "ro": "shizen saigai wa tokidoki okorimasu."
+        }
+      ],
+      "grammar": "Noun + を／と + Verb"
+    },
+    {
+      "id": "n4-noun-082",
+      "ja": "環境",
+      "kana": "かんきょう",
+      "ro": "kankyou",
+      "en": "environment / surroundings",
+      "examples": [
+        {
+          "en": "We must protect the environment.",
+          "ja": "環境を守らなければなりません。",
+          "kana": "かんきょう を まもらなければ なりません。",
+          "ro": "kankyou o mamoranakereba narimasen."
+        },
+        {
+          "en": "The global environment is changing.",
+          "ja": "地球の環境が変わっている。",
+          "kana": "ちきゅう の かんきょう が かわって いる。",
+          "ro": "chikyuu no kankyou ga kawatte iru."
+        },
+        {
+          "en": "This city has a good living environment.",
+          "ja": "この町は生活環境がいい。",
+          "kana": "この まち は せいかつ かんきょう が いい。",
+          "ro": "kono machi wa seikatsu kankyou ga ii."
+        },
+        {
+          "en": "We talked about environmental problems.",
+          "ja": "環境問題について話した。",
+          "kana": "かんきょう もんだい に ついて はなした。",
+          "ro": "kankyou mondai ni tsuite hanashita."
+        },
+        {
+          "en": "They work for environmental protection.",
+          "ja": "彼らは環境保護のために働いている。",
+          "kana": "かれら は かんきょう ほご の ため に はたらいて いる。",
+          "ro": "karera wa kankyou hogo no tame ni hataraite iru."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-083",
+      "ja": "地球",
+      "kana": "ちきゅう",
+      "ro": "chikyuu",
+      "en": "Earth / the planet",
+      "examples": [
+        {
+          "en": "The Earth goes around the sun.",
+          "ja": "地球は太陽のまわりを回っています。",
+          "kana": "ちきゅう は たいよう の まわり を まわって います。",
+          "ro": "chikyuu wa taiyou no mawari o mawatte imasu."
+        },
+        {
+          "en": "We must protect the Earth.",
+          "ja": "地球を守ることが大切です。",
+          "kana": "ちきゅう を まもる こと が たいせつ です。",
+          "ro": "chikyuu o mamoru koto ga taisetsu desu."
+        },
+        {
+          "en": "The Earth is getting warmer.",
+          "ja": "地球があたたかくなっている。",
+          "kana": "ちきゅう が あたたかく なって いる。",
+          "ro": "chikyuu ga atatakaku natte iru."
+        },
+        {
+          "en": "The Earth is blue from space.",
+          "ja": "宇宙から見る地球は青い。",
+          "kana": "うちゅう から みる ちきゅう は あおい。",
+          "ro": "uchuu kara miru chikyuu wa aoi."
+        },
+        {
+          "en": "We live on the same Earth.",
+          "ja": "私たちは同じ地球に生きている。",
+          "kana": "わたしたち は おなじ ちきゅう に いきて いる。",
+          "ro": "watashitachi wa onaji chikyuu ni ikite iru."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-084",
+      "ja": "空気",
+      "kana": "くうき",
+      "ro": "kuuki",
+      "en": "air / atmosphere",
+      "examples": [
+        {
+          "en": "The air in the mountains is clean.",
+          "ja": "山の空気はきれいです。",
+          "kana": "やま の くうき は きれい です。",
+          "ro": "yama no kuuki wa kirei desu."
+        },
+        {
+          "en": "Let’s open the window to change the air.",
+          "ja": "空気を入れ替えましょう。",
+          "kana": "くうき を いれかえましょう。",
+          "ro": "kuuki o irekaemashou."
+        },
+        {
+          "en": "I felt the cold air.",
+          "ja": "冷たい空気を感じた。",
+          "kana": "つめたい くうき を かんじた。",
+          "ro": "tsumetai kuuki o kanjita."
+        },
+        {
+          "en": "The air in the room is bad.",
+          "ja": "部屋の空気が悪い。",
+          "kana": "へや の くうき が わるい。",
+          "ro": "heya no kuuki ga warui."
+        },
+        {
+          "en": "The air was filled with excitement.",
+          "ja": "空気がわくわくした雰囲気だった。",
+          "kana": "くうき が わくわく した ふんいき だった。",
+          "ro": "kuuki ga wakuwaku shita fun'iki datta."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-086",
+      "ja": "気温",
+      "kana": "きおん",
+      "ro": "kion",
+      "en": "air temperature / temperature (weather)",
+      "examples": [
+        {
+          "en": "The temperature is 30 degrees today.",
+          "ja": "今日は気温が30度です。",
+          "kana": "きょう は きおん が さんじゅうど です。",
+          "ro": "kyou wa kion ga sanjuudo desu."
+        },
+        {
+          "en": "The temperature is rising.",
+          "ja": "気温が上がっています。",
+          "kana": "きおん が あがって います。",
+          "ro": "kion ga agatte imasu."
+        },
+        {
+          "en": "The temperature dropped suddenly.",
+          "ja": "気温が急に下がった。",
+          "kana": "きおん が きゅう に さがった。",
+          "ro": "kion ga kyuu ni sagatta."
+        },
+        {
+          "en": "The temperature difference is large in this area.",
+          "ja": "この地域は気温の差が大きい。",
+          "kana": "この ちいき は きおん の さ が おおきい。",
+          "ro": "kono chiiki wa kion no sa ga ookii."
+        },
+        {
+          "en": "They recorded the highest temperature of the year.",
+          "ja": "今年の最高気温を記録した。",
+          "kana": "ことし の さいこう きおん を きろく した。",
+          "ro": "kotoshi no saikou kion o kiroku shita."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-087",
+      "ja": "湿度",
+      "kana": "しつど",
+      "ro": "shitsudo",
+      "en": "humidity / moisture level",
+      "examples": [
+        {
+          "en": "The humidity is high today.",
+          "ja": "今日は湿度が高いです。",
+          "kana": "きょう は しつど が たかい です。",
+          "ro": "kyou wa shitsudo ga takai desu."
+        },
+        {
+          "en": "Please measure the humidity.",
+          "ja": "湿度を測ってください。",
+          "kana": "しつど を はかって ください。",
+          "ro": "shitsudo o hakatte kudasai."
+        },
+        {
+          "en": "High humidity makes it feel hot.",
+          "ja": "湿度が高いと暑く感じます。",
+          "kana": "しつど が たかい と あつく かんじます。",
+          "ro": "shitsudo ga takai to atsuku kanjimasu."
+        },
+        {
+          "en": "The humidity in the room is low.",
+          "ja": "部屋の湿度が低いです。",
+          "kana": "へや の しつど が ひくい です。",
+          "ro": "heya no shitsudo ga hikui desu."
+        },
+        {
+          "en": "Humidity affects our comfort.",
+          "ja": "湿度は快適さに影響します。",
+          "kana": "しつど は かいてきさ に えいきょう します。",
+          "ro": "shitsudo wa kaitekisa ni eikyou shimasu."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-088",
+      "ja": "天気予報",
+      "kana": "てんきよほう",
+      "ro": "tenkiyohou",
+      "en": "weather forecast",
+      "examples": [
+        {
+          "en": "I checked the weather forecast.",
+          "ja": "天気予報を確認しました。",
+          "kana": "てんきよほう を かくにん しました。",
+          "ro": "tenkiyohou o kakunin shimashita."
+        },
+        {
+          "en": "The weather forecast said it will rain tomorrow.",
+          "ja": "天気予報では明日雨だそうです。",
+          "kana": "てんきよほう では あした あめ だ そう です。",
+          "ro": "tenkiyohou de wa ashita ame da sou desu."
+        },
+        {
+          "en": "Let’s see the weather forecast on TV.",
+          "ja": "テレビで天気予報を見ましょう。",
+          "kana": "てれび で てんきよほう を みましょう。",
+          "ro": "terebi de tenkiyohou o mimashou."
+        },
+        {
+          "en": "The forecast was wrong today.",
+          "ja": "今日は天気予報がはずれた。",
+          "kana": "きょう は てんきよほう が はずれた。",
+          "ro": "kyou wa tenkiyohou ga hazureta."
+        },
+        {
+          "en": "The weather forecast is very accurate.",
+          "ja": "天気予報はとても正確です。",
+          "kana": "てんきよほう は とても せいかく です。",
+          "ro": "tenkiyohou wa totemo seikaku desu."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-090",
+      "ja": "火事",
+      "kana": "かじ",
+      "ro": "kaji",
+      "en": "fire / blaze",
+      "examples": [
+        {
+          "en": "There was a big fire last night.",
+          "ja": "昨夜大きな火事がありました。",
+          "kana": "さくや おおきな かじ が ありました。",
+          "ro": "sakuya ookina kaji ga arimashita."
+        },
+        {
+          "en": "The fire spread quickly.",
+          "ja": "火事はすぐに広がった。",
+          "kana": "かじ は すぐ に ひろがった。",
+          "ro": "kaji wa sugu ni hirogatta."
+        },
+        {
+          "en": "They called the fire department.",
+          "ja": "火事で消防車を呼んだ。",
+          "kana": "かじ で しょうぼうしゃ を よんだ。",
+          "ro": "kaji de shoubousha o yonda."
+        },
+        {
+          "en": "Please be careful not to cause a fire.",
+          "ja": "火事を起こさないように気をつけてください。",
+          "kana": "かじ を おこさない よう に き を つけて ください。",
+          "ro": "kaji o okosanai you ni ki o tsukete kudasai."
+        },
+        {
+          "en": "The fire destroyed many houses.",
+          "ja": "火事で多くの家が焼けた。",
+          "kana": "かじ で おおく の いえ が やけた。",
+          "ro": "kaji de ooku no ie ga yaketa."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-094",
+      "ja": "法律",
+      "kana": "ほうりつ",
+      "ro": "houritsu",
+      "en": "law / legislation",
+      "examples": [
+        {
+          "en": "We must follow the law.",
+          "ja": "法律を守らなければならない。",
+          "kana": "ほうりつ を まもらなければ ならない。",
+          "ro": "houritsu o mamoranakereba naranai."
+        },
+        {
+          "en": "The new law was passed yesterday.",
+          "ja": "新しい法律が昨日通った。",
+          "kana": "あたらしい ほうりつ が きのう とおった。",
+          "ro": "atarashii houritsu ga kinou tootta."
+        },
+        {
+          "en": "He studies law at university.",
+          "ja": "彼は大学で法律を勉強している。",
+          "kana": "かれ は だいがく で ほうりつ を べんきょう して いる。",
+          "ro": "kare wa daigaku de houritsu o benkyou shite iru."
+        },
+        {
+          "en": "This law protects the environment.",
+          "ja": "この法律は環境を守るものです。",
+          "kana": "この ほうりつ は かんきょう を まもる もの です。",
+          "ro": "kono houritsu wa kankyou o mamoru mono desu."
+        },
+        {
+          "en": "He knows a lot about the law.",
+          "ja": "彼は法律に詳しい。",
+          "kana": "かれ は ほうりつ に くわしい。",
+          "ro": "kare wa houritsu ni kuwashii."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-098",
+      "ja": "国際",
+      "kana": "こくさい",
+      "ro": "kokusai",
+      "en": "international / global",
+      "examples": [
+        {
+          "en": "He works for an international company.",
+          "ja": "彼は国際的な会社で働いている。",
+          "kana": "かれ は こくさいてき な かいしゃ で はたらいて いる。",
+          "ro": "kare wa kokusaiteki na kaisha de hataraite iru."
+        },
+        {
+          "en": "They attended an international meeting.",
+          "ja": "彼らは国際会議に出席した。",
+          "kana": "かれら は こくさい かいぎ に しゅっせき した。",
+          "ro": "karera wa kokusai kaigi ni shusseki shita."
+        },
+        {
+          "en": "Tokyo is an international city.",
+          "ja": "東京は国際都市です。",
+          "kana": "とうきょう は こくさい とし です。",
+          "ro": "toukyou wa kokusai toshi desu."
+        },
+        {
+          "en": "The international situation is changing.",
+          "ja": "国際情勢が変わっている。",
+          "kana": "こくさい じょうせい が かわって いる。",
+          "ro": "kokusai jousei ga kawatte iru."
+        },
+        {
+          "en": "International cooperation is important.",
+          "ja": "国際協力が大切です。",
+          "kana": "こくさい きょうりょく が たいせつ です。",
+          "ro": "kokusai kyouryoku ga taisetsu desu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-100",
+      "ja": "旅行",
+      "kana": "りょこう",
+      "ro": "ryokou",
+      "en": "trip / travel / journey",
+      "examples": [
+        {
+          "en": "I went on a trip to Okinawa.",
+          "ja": "沖縄へ旅行に行きました。",
+          "kana": "おきなわ へ りょこう に いきました。",
+          "ro": "okinawa e ryokou ni ikimashita."
+        },
+        {
+          "en": "We are planning a family trip.",
+          "ja": "家族旅行を計画しています。",
+          "kana": "かぞく りょこう を けいかく して います。",
+          "ro": "kazoku ryokou o keikaku shite imasu."
+        },
+        {
+          "en": "She likes traveling abroad.",
+          "ja": "彼女は海外旅行が好きです。",
+          "kana": "かのじょ は かいがい りょこう が すき です。",
+          "ro": "kanojo wa kaigai ryokou ga suki desu."
+        },
+        {
+          "en": "I bought souvenirs during the trip.",
+          "ja": "旅行中におみやげを買いました。",
+          "kana": "りょこう ちゅう に おみやげ を かいました。",
+          "ro": "ryokou chuu ni omiyage o kaimashita."
+        },
+        {
+          "en": "Traveling is my hobby.",
+          "ja": "旅行は私の趣味です。",
+          "kana": "りょこう は わたし の しゅみ です。",
+          "ro": "ryokou wa watashi no shumi desu."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-101",
+      "ja": "生活",
+      "kana": "せいかつ",
+      "ro": "seikatsu",
+      "en": "life / daily life / living",
+      "examples": [
+        {
+          "en": "My life in Japan is enjoyable.",
+          "ja": "日本での生活は楽しいです。",
+          "kana": "にほん で の せいかつ は たのしい です。",
+          "ro": "nihon de no seikatsu wa tanoshii desu."
+        },
+        {
+          "en": "He is used to city life.",
+          "ja": "彼は都会の生活に慣れている。",
+          "kana": "かれ は とかい の せいかつ に なれて いる。",
+          "ro": "kare wa tokai no seikatsu ni narete iru."
+        },
+        {
+          "en": "A healthy life is important.",
+          "ja": "健康な生活が大切です。",
+          "kana": "けんこう な せいかつ が たいせつ です。",
+          "ro": "kenkou na seikatsu ga taisetsu desu."
+        },
+        {
+          "en": "He started a new life in Tokyo.",
+          "ja": "彼は東京で新しい生活を始めた。",
+          "kana": "かれ は とうきょう で あたらしい せいかつ を はじめた。",
+          "ro": "kare wa toukyou de atarashii seikatsu o hajimeta."
+        },
+        {
+          "en": "Living costs are high in this city.",
+          "ja": "この町の生活費は高い。",
+          "kana": "この まち の せいかつひ は たかい。",
+          "ro": "kono machi no seikatsuhi wa takai."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-102",
+      "ja": "健康",
+      "kana": "けんこう",
+      "ro": "kenkou",
+      "en": "health / well-being",
+      "examples": [
+        {
+          "en": "Health is the most important thing.",
+          "ja": "健康が一番大切です。",
+          "kana": "けんこう が いちばん たいせつ です。",
+          "ro": "kenkou ga ichiban taisetsu desu."
+        },
+        {
+          "en": "He is in good health.",
+          "ja": "彼はとても健康です。",
+          "kana": "かれ は とても けんこう です。",
+          "ro": "kare wa totemo kenkou desu."
+        },
+        {
+          "en": "Please take care of your health.",
+          "ja": "健康に気をつけてください。",
+          "kana": "けんこう に き を つけて ください。",
+          "ro": "kenkou ni ki o tsukete kudasai."
+        },
+        {
+          "en": "Lack of sleep is bad for your health.",
+          "ja": "睡眠不足は健康によくない。",
+          "kana": "すいみん ぶそく は けんこう に よくない。",
+          "ro": "suimin busoku wa kenkou ni yokunai."
+        },
+        {
+          "en": "He eats vegetables for his health.",
+          "ja": "彼は健康のために野菜を食べる。",
+          "kana": "かれ は けんこう の ため に やさい を たべる。",
+          "ro": "kare wa kenkou no tame ni yasai o taberu."
+        }
+      ],
+      "grammar": "Noun + に／の + Verb"
+    },
+    {
+      "id": "n4-noun-103",
+      "ja": "感情",
+      "kana": "かんじょう",
+      "ro": "kanjou",
+      "en": "emotion / feeling",
+      "examples": [
+        {
+          "en": "She can’t hide her emotions.",
+          "ja": "彼女は感情を隠せない。",
+          "kana": "かのじょ は かんじょう を かくせない。",
+          "ro": "kanojo wa kanjou o kakusenai."
+        },
+        {
+          "en": "He expressed his feelings honestly.",
+          "ja": "彼は正直に感情を表した。",
+          "kana": "かれ は しょうじき に かんじょう を あらわした。",
+          "ro": "kare wa shoujiki ni kanjou o arawashita."
+        },
+        {
+          "en": "She has rich emotions.",
+          "ja": "彼女は感情が豊かです。",
+          "kana": "かのじょ は かんじょう が ゆたか です。",
+          "ro": "kanojo wa kanjou ga yutaka desu."
+        },
+        {
+          "en": "Don’t let emotions control your actions.",
+          "ja": "感情に流されないようにしなさい。",
+          "kana": "かんじょう に ながされない よう に しなさい。",
+          "ro": "kanjou ni nagasarenai you ni shinasai."
+        },
+        {
+          "en": "He has difficulty expressing emotions.",
+          "ja": "彼は感情を表すのが苦手だ。",
+          "kana": "かれ は かんじょう を あらわす の が にがて だ。",
+          "ro": "kare wa kanjou o arawasu no ga nigate da."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-104",
+      "ja": "希望",
+      "kana": "きぼう",
+      "ro": "kibou",
+      "en": "hope / wish / aspiration",
+      "examples": [
+        {
+          "en": "I have a hope for the future.",
+          "ja": "私は将来に希望を持っています。",
+          "kana": "わたし は しょうらい に きぼう を もって います。",
+          "ro": "watashi wa shourai ni kibou o motte imasu."
+        },
+        {
+          "en": "He lost his hope.",
+          "ja": "彼は希望を失った。",
+          "kana": "かれ は きぼう を うしなった。",
+          "ro": "kare wa kibou o ushinatta."
+        },
+        {
+          "en": "There is still hope.",
+          "ja": "まだ希望があります。",
+          "kana": "まだ きぼう が あります。",
+          "ro": "mada kibou ga arimasu."
+        },
+        {
+          "en": "She talks about her dreams and hopes.",
+          "ja": "彼女は夢や希望について話す。",
+          "kana": "かのじょ は ゆめ や きぼう に ついて はなす。",
+          "ro": "kanojo wa yume ya kibou ni tsuite hanasu."
+        },
+        {
+          "en": "Don’t give up hope.",
+          "ja": "希望をあきらめないでください。",
+          "kana": "きぼう を あきらめないで ください。",
+          "ro": "kibou o akiramenaide kudasai."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-105",
+      "ja": "努力",
+      "kana": "どりょく",
+      "ro": "doryoku",
+      "en": "effort / hard work / endeavor",
+      "examples": [
+        {
+          "en": "Success comes from effort.",
+          "ja": "成功は努力から生まれる。",
+          "kana": "せいこう は どりょく から うまれる。",
+          "ro": "seikou wa doryoku kara umareru."
+        },
+        {
+          "en": "She is making a lot of effort.",
+          "ja": "彼女はたくさん努力している。",
+          "kana": "かのじょ は たくさん どりょく して いる。",
+          "ro": "kanojo wa takusan doryoku shite iru."
+        },
+        {
+          "en": "He succeeded through effort.",
+          "ja": "彼は努力によって成功した。",
+          "kana": "かれ は どりょく に よって せいこう した。",
+          "ro": "kare wa doryoku ni yotte seikou shita."
+        },
+        {
+          "en": "Effort never betrays you.",
+          "ja": "努力は裏切らない。",
+          "kana": "どりょく は うらぎらない。",
+          "ro": "doryoku wa uragiranai."
+        },
+        {
+          "en": "Keep making an effort every day.",
+          "ja": "毎日努力を続けなさい。",
+          "kana": "まいにち どりょく を つづけなさい。",
+          "ro": "mainichi doryoku o tsuzukenasai."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-110",
+      "ja": "報告",
+      "kana": "ほうこく",
+      "ro": "houkoku",
+      "en": "report / reporting / information",
+      "examples": [
+        {
+          "en": "He reported the accident to the police.",
+          "ja": "彼は事故を警察に報告した。",
+          "kana": "かれ は じこ を けいさつ に ほうこく した。",
+          "ro": "kare wa jiko o keisatsu ni houkoku shita."
+        },
+        {
+          "en": "I’ll report the results tomorrow.",
+          "ja": "結果を明日報告します。",
+          "kana": "けっか を あした ほうこく します。",
+          "ro": "kekka o ashita houkoku shimasu."
+        },
+        {
+          "en": "The teacher reported the problem to the principal.",
+          "ja": "先生は校長に問題を報告した。",
+          "kana": "せんせい は こうちょう に もんだい を ほうこく した。",
+          "ro": "sensei wa kouchou ni mondai o houkoku shita."
+        },
+        {
+          "en": "I have to write a report about this project.",
+          "ja": "このプロジェクトについて報告書を書かなければならない。",
+          "kana": "この ぷろじぇくと に ついて ほうこくしょ を かかなければ ならない。",
+          "ro": "kono purojekuto ni tsuite houkokusho o kakanakereba naranai."
+        },
+        {
+          "en": "The report will be submitted next week.",
+          "ja": "報告は来週提出される予定です。",
+          "kana": "ほうこく は らいしゅう ていしゅつ される よてい です。",
+          "ro": "houkoku wa raishuu teishutsu sareru yotei desu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-111",
+      "ja": "仕事",
+      "kana": "しごと",
+      "ro": "shigoto",
+      "en": "work / job / occupation",
+      "examples": [
+        {
+          "en": "I started a new job this month.",
+          "ja": "今月、新しい仕事を始めました。",
+          "kana": "こんげつ、あたらしい しごと を はじめました。",
+          "ro": "kongetsu, atarashii shigoto o hajimemashita."
+        },
+        {
+          "en": "He is busy with work every day.",
+          "ja": "彼は毎日仕事で忙しいです。",
+          "kana": "かれ は まいにち しごと で いそがしい です。",
+          "ro": "kare wa mainichi shigoto de isogashii desu."
+        },
+        {
+          "en": "I’m looking for a job.",
+          "ja": "私は仕事を探しています。",
+          "kana": "わたし は しごと を さがして います。",
+          "ro": "watashi wa shigoto o sagashite imasu."
+        },
+        {
+          "en": "His job is teaching English.",
+          "ja": "彼の仕事は英語を教えることです。",
+          "kana": "かれ の しごと は えいご を おしえる こと です。",
+          "ro": "kare no shigoto wa eigo o oshieru koto desu."
+        },
+        {
+          "en": "I finished my work early today.",
+          "ja": "今日は早く仕事が終わりました。",
+          "kana": "きょう は はやく しごと が おわりました。",
+          "ro": "kyou wa hayaku shigoto ga owarimashita."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-113",
+      "ja": "会社",
+      "kana": "かいしゃ",
+      "ro": "kaisha",
+      "en": "company / workplace / office",
+      "examples": [
+        {
+          "en": "He works for a big company.",
+          "ja": "彼は大きい会社で働いています。",
+          "kana": "かれ は おおきい かいしゃ で はたらいて います。",
+          "ro": "kare wa ookii kaisha de hataraite imasu."
+        },
+        {
+          "en": "The company is closed on Sundays.",
+          "ja": "会社は日曜日は休みです。",
+          "kana": "かいしゃ は にちようび は やすみ です。",
+          "ro": "kaisha wa nichiyoubi wa yasumi desu."
+        },
+        {
+          "en": "She joined a new company last month.",
+          "ja": "彼女は先月新しい会社に入りました。",
+          "kana": "かのじょ は せんげつ あたらしい かいしゃ に はいりました。",
+          "ro": "kanojo wa sengetsu atarashii kaisha ni hairimashita."
+        },
+        {
+          "en": "My company is near the station.",
+          "ja": "私の会社は駅の近くにあります。",
+          "kana": "わたし の かいしゃ は えき の ちかく に あります。",
+          "ro": "watashi no kaisha wa eki no chikaku ni arimasu."
+        },
+        {
+          "en": "He will visit the company tomorrow.",
+          "ja": "彼は明日その会社を訪ねます。",
+          "kana": "かれ は あした その かいしゃ を たずねます。",
+          "ro": "kare wa ashita sono kaisha o tazunemasu."
+        }
+      ],
+      "grammar": "Noun + で／に + Verb"
+    },
+    {
+      "id": "n4-noun-115",
+      "ja": "交流",
+      "kana": "こうりゅう",
+      "ro": "kouryuu",
+      "en": "exchange / interaction / communication",
+      "examples": [
+        {
+          "en": "International exchange is important.",
+          "ja": "国際交流は大切です。",
+          "kana": "こくさい こうりゅう は たいせつ です。",
+          "ro": "kokusai kouryuu wa taisetsu desu."
+        },
+        {
+          "en": "Our school has cultural exchanges with other countries.",
+          "ja": "私たちの学校は他の国と文化交流があります。",
+          "kana": "わたしたち の がっこう は ほか の くに と ぶんか こうりゅう が あります。",
+          "ro": "watashitachi no gakkou wa hoka no kuni to bunka kouryuu ga arimasu."
+        },
+        {
+          "en": "We had a friendly exchange with local people.",
+          "ja": "地元の人たちと交流を持った。",
+          "kana": "じもと の ひとたち と こうりゅう を もった。",
+          "ro": "jimoto no hitotachi to kouryuu o motta."
+        },
+        {
+          "en": "There was an exchange event yesterday.",
+          "ja": "昨日、交流会がありました。",
+          "kana": "きのう、こうりゅうかい が ありました。",
+          "ro": "kinou, kouryuukai ga arimashita."
+        },
+        {
+          "en": "This project promotes international exchange.",
+          "ja": "このプロジェクトは国際交流を促進する。",
+          "kana": "この ぷろじぇくと は こくさい こうりゅう を そくしん する。",
+          "ro": "kono purojekuto wa kokusai kouryuu o sokushin suru."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-117",
+      "ja": "会話",
+      "kana": "かいわ",
+      "ro": "kaiwa",
+      "en": "conversation / dialogue / talk",
+      "examples": [
+        {
+          "en": "I had a pleasant conversation with my friend.",
+          "ja": "友達と楽しい会話をしました。",
+          "kana": "ともだち と たのしい かいわ を しました。",
+          "ro": "tomodachi to tanoshii kaiwa o shimashita."
+        },
+        {
+          "en": "This book is about everyday conversation.",
+          "ja": "この本は日常会話についてです。",
+          "kana": "この ほん は にちじょう かいわ に ついて です。",
+          "ro": "kono hon wa nichijou kaiwa ni tsuite desu."
+        },
+        {
+          "en": "We had a long conversation last night.",
+          "ja": "昨夜長い会話をした。",
+          "kana": "さくや ながい かいわ を した。",
+          "ro": "sakuya nagai kaiwa o shita."
+        },
+        {
+          "en": "She practices Japanese conversation every day.",
+          "ja": "彼女は毎日日本語の会話を練習している。",
+          "kana": "かのじょ は まいにち にほんご の かいわ を れんしゅう して いる。",
+          "ro": "kanojo wa mainichi nihongo no kaiwa o renshuu shite iru."
+        },
+        {
+          "en": "Conversation skills are important in business.",
+          "ja": "ビジネスでは会話の力が大切です。",
+          "kana": "びじねす では かいわ の ちから が たいせつ です。",
+          "ro": "bijinesu de wa kaiwa no chikara ga taisetsu desu."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-120",
+      "ja": "規則",
+      "kana": "きそく",
+      "ro": "kisoku",
+      "en": "rule / regulation / code",
+      "examples": [
+        {
+          "en": "We must follow the school rules.",
+          "ja": "学校の規則を守らなければなりません。",
+          "kana": "がっこう の きそく を まもらなければ なりません。",
+          "ro": "gakkou no kisoku o mamoranakereba narimasen."
+        },
+        {
+          "en": "There are many company rules.",
+          "ja": "会社にはたくさんの規則がある。",
+          "kana": "かいしゃ に は たくさん の きそく が ある。",
+          "ro": "kaisha ni wa takusan no kisoku ga aru."
+        },
+        {
+          "en": "He broke the rules.",
+          "ja": "彼は規則を破った。",
+          "kana": "かれ は きそく を やぶった。",
+          "ro": "kare wa kisoku o yabutta."
+        },
+        {
+          "en": "Please read the rules before using it.",
+          "ja": "使う前に規則を読んでください。",
+          "kana": "つかう まえ に きそく を よんで ください。",
+          "ro": "tsukau mae ni kisoku o yonde kudasai."
+        },
+        {
+          "en": "That is against the rules.",
+          "ja": "それは規則に反しています。",
+          "kana": "それ は きそく に はんして います。",
+          "ro": "sore wa kisoku ni hanshite imasu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-122",
+      "ja": "涙",
+      "kana": "なみだ",
+      "ro": "namida",
+      "en": "tears / crying",
+      "examples": [
+        {
+          "en": "Tears fell from her eyes.",
+          "ja": "彼女の目から涙がこぼれた。",
+          "kana": "かのじょ の め から なみだ が こぼれた。",
+          "ro": "kanojo no me kara namida ga koboreta."
+        },
+        {
+          "en": "He couldn’t hold back his tears.",
+          "ja": "彼は涙をこらえられなかった。",
+          "kana": "かれ は なみだ を こらえられなかった。",
+          "ro": "kare wa namida o koraerarenakatta."
+        },
+        {
+          "en": "She smiled through her tears.",
+          "ja": "彼女は涙の中で笑った。",
+          "kana": "かのじょ は なみだ の なか で わらった。",
+          "ro": "kanojo wa namida no naka de waratta."
+        },
+        {
+          "en": "He wiped away his tears.",
+          "ja": "彼は涙をぬぐった。",
+          "kana": "かれ は なみだ を ぬぐった。",
+          "ro": "kare wa namida o nugutta."
+        },
+        {
+          "en": "The movie brought tears to my eyes.",
+          "ja": "その映画を見て涙が出た。",
+          "kana": "その えいが を みて なみだ が でた。",
+          "ro": "sono eiga o mite namida ga deta."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-124",
+      "ja": "感謝",
+      "kana": "かんしゃ",
+      "ro": "kansha",
+      "en": "gratitude / thanks / appreciation",
+      "examples": [
+        {
+          "en": "I feel deep gratitude to my parents.",
+          "ja": "両親に深く感謝しています。",
+          "kana": "りょうしん に ふかく かんしゃ して います。",
+          "ro": "ryoushin ni fukaku kansha shite imasu."
+        },
+        {
+          "en": "Thank you for your help.",
+          "ja": "助けてくれて感謝します。",
+          "kana": "たすけて くれて かんしゃ します。",
+          "ro": "tasukete kurete kansha shimasu."
+        },
+        {
+          "en": "He expressed his gratitude to the teacher.",
+          "ja": "彼は先生に感謝の言葉を述べた。",
+          "kana": "かれ は せんせい に かんしゃ の ことば を のべた。",
+          "ro": "kare wa sensei ni kansha no kotoba o nobeta."
+        },
+        {
+          "en": "We should live with gratitude.",
+          "ja": "感謝の気持ちを持って生きよう。",
+          "kana": "かんしゃ の きもち を もって いきよう。",
+          "ro": "kansha no kimochi o motte ikiyou."
+        },
+        {
+          "en": "She thanked everyone with a smile.",
+          "ja": "彼女は笑顔でみんなに感謝した。",
+          "kana": "かのじょ は えがお で みんな に かんしゃ した。",
+          "ro": "kanojo wa egao de minna ni kansha shita."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-125",
+      "ja": "表現",
+      "kana": "ひょうげん",
+      "ro": "hyougen",
+      "en": "expression / representation / phrase",
+      "examples": [
+        {
+          "en": "That expression is difficult for beginners.",
+          "ja": "その表現は初心者には難しいです。",
+          "kana": "その ひょうげん は しょしんしゃ には むずかしい です。",
+          "ro": "sono hyougen wa shoshinsha ni wa muzukashii desu."
+        },
+        {
+          "en": "This word has many meanings.",
+          "ja": "この言葉にはいくつかの表現があります。",
+          "kana": "この ことば には いくつか の ひょうげん が あります。",
+          "ro": "kono kotoba ni wa ikutsuka no hyougen ga arimasu."
+        },
+        {
+          "en": "He expressed his feelings clearly.",
+          "ja": "彼は自分の気持ちをはっきり表現した。",
+          "kana": "かれ は じぶん の きもち を はっきり ひょうげん した。",
+          "ro": "kare wa jibun no kimochi o hakkiri hyougen shita."
+        },
+        {
+          "en": "That expression is very natural.",
+          "ja": "その表現はとても自然です。",
+          "kana": "その ひょうげん は とても しぜん です。",
+          "ro": "sono hyougen wa totemo shizen desu."
+        },
+        {
+          "en": "She is good at expressing herself.",
+          "ja": "彼女は自分を表現するのが上手です。",
+          "kana": "かのじょ は じぶん を ひょうげん する の が じょうず です。",
+          "ro": "kanojo wa jibun o hyougen suru no ga jouzu desu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-127",
+      "ja": "習慣",
+      "kana": "しゅうかん",
+      "ro": "shuukan",
+      "en": "custom / habit / practice",
+      "examples": [
+        {
+          "en": "It's a Japanese custom to take off shoes indoors.",
+          "ja": "日本では家の中で靴を脱ぐ習慣があります。",
+          "kana": "にほん では いえ の なか で くつ を ぬぐ しゅうかん が あります。",
+          "ro": "nihon de wa ie no naka de kutsu o nugu shuukan ga arimasu."
+        },
+        {
+          "en": "I’m trying to change my bad habits.",
+          "ja": "悪い習慣を変えようとしています。",
+          "kana": "わるい しゅうかん を かえよう と して います。",
+          "ro": "warui shuukan o kaeyou to shite imasu."
+        },
+        {
+          "en": "Drinking tea after meals is my habit.",
+          "ja": "食後にお茶を飲むのが私の習慣です。",
+          "kana": "しょくご に おちゃ を のむ の が わたし の しゅうかん です。",
+          "ro": "shokugo ni ocha o nomu no ga watashi no shuukan desu."
+        },
+        {
+          "en": "It’s a good habit to study every day.",
+          "ja": "毎日勉強するのは良い習慣です。",
+          "kana": "まいにち べんきょう する の は いい しゅうかん です。",
+          "ro": "mainichi benkyou suru no wa ii shuukan desu."
+        },
+        {
+          "en": "He made it a habit to get up early.",
+          "ja": "彼は早起きを習慣にしました。",
+          "kana": "かれ は はやおき を しゅうかん に しました。",
+          "ro": "kare wa hayaoki o shuukan ni shimashita."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-128",
+      "ja": "行事",
+      "kana": "ぎょうじ",
+      "ro": "gyouji",
+      "en": "event / ceremony / occasion",
+      "examples": [
+        {
+          "en": "There are many traditional events in Japan.",
+          "ja": "日本にはたくさんの伝統的な行事があります。",
+          "kana": "にほん には たくさん の でんとうてき な ぎょうじ が あります。",
+          "ro": "nihon ni wa takusan no dentouteki na gyouji ga arimasu."
+        },
+        {
+          "en": "The school festival is a big event.",
+          "ja": "学園祭は大きな行事です。",
+          "kana": "がくえんさい は おおきな ぎょうじ です。",
+          "ro": "gakuensai wa ookina gyouji desu."
+        },
+        {
+          "en": "We have many family events in December.",
+          "ja": "12月には家族の行事が多いです。",
+          "kana": "じゅうにがつ には かぞく の ぎょうじ が おおい です。",
+          "ro": "juunigatsu ni wa kazoku no gyouji ga ooi desu."
+        },
+        {
+          "en": "They prepared well for the event.",
+          "ja": "彼らは行事のためによく準備した。",
+          "kana": "かれら は ぎょうじ の ため に よく じゅんび した。",
+          "ro": "karera wa gyouji no tame ni yoku junbi shita."
+        },
+        {
+          "en": "That event was very moving.",
+          "ja": "その行事はとても感動的だった。",
+          "kana": "その ぎょうじ は とても かんどうてき だった。",
+          "ro": "sono gyouji wa totemo kandouteki datta."
+        }
+      ],
+      "grammar": "Noun + が／の + Verb"
+    },
+    {
+      "id": "n4-noun-132",
+      "ja": "進学",
+      "kana": "しんがく",
+      "ro": "shingaku",
+      "en": "advancing to a higher school / continuing education",
+      "examples": [
+        {
+          "en": "He plans to go on to university.",
+          "ja": "彼は大学に進学する予定です。",
+          "kana": "かれ は だいがく に しんがく する よてい です。",
+          "ro": "kare wa daigaku ni shingaku suru yotei desu."
+        },
+        {
+          "en": "Many students advance to high school.",
+          "ja": "多くの生徒が高校に進学します。",
+          "kana": "おおく の せいと が こうこう に しんがく します。",
+          "ro": "ooku no seito ga koukou ni shingaku shimasu."
+        },
+        {
+          "en": "She decided not to go on to college.",
+          "ja": "彼女は大学に進学しないことにした。",
+          "kana": "かのじょ は だいがく に しんがく しない こと に した。",
+          "ro": "kanojo wa daigaku ni shingaku shinai koto ni shita."
+        },
+        {
+          "en": "His parents supported his decision to advance.",
+          "ja": "両親は彼の進学を応援した。",
+          "kana": "りょうしん は かれ の しんがく を おうえん した。",
+          "ro": "ryoushin wa kare no shingaku o ouen shita."
+        },
+        {
+          "en": "The rate of advancement to college is increasing.",
+          "ja": "大学への進学率が上がっています。",
+          "kana": "だいがく への しんがくりつ が あがって います。",
+          "ro": "daigaku e no shingakuritsu ga agatte imasu."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-134",
+      "ja": "就職",
+      "kana": "しゅうしょく",
+      "ro": "shuushoku",
+      "en": "employment / finding a job",
+      "examples": [
+        {
+          "en": "He found a job at a big company.",
+          "ja": "彼は大きな会社に就職した。",
+          "kana": "かれ は おおきな かいしゃ に しゅうしょく した。",
+          "ro": "kare wa ookina kaisha ni shuushoku shita."
+        },
+        {
+          "en": "She is looking for a job now.",
+          "ja": "彼女は今就職活動をしています。",
+          "kana": "かのじょ は いま しゅうしょく かつどう を して います。",
+          "ro": "kanojo wa ima shuushoku katsudou o shite imasu."
+        },
+        {
+          "en": "After graduation, I want to work in Tokyo.",
+          "ja": "卒業後は東京で就職したいです。",
+          "kana": "そつぎょう ご は とうきょう で しゅうしょく したい です。",
+          "ro": "sotsugyou go wa toukyou de shuushoku shitai desu."
+        },
+        {
+          "en": "He finally got a job last month.",
+          "ja": "彼は先月やっと就職した。",
+          "kana": "かれ は せんげつ やっと しゅうしょく した。",
+          "ro": "kare wa sengetsu yatto shuushoku shita."
+        },
+        {
+          "en": "Job hunting starts in spring.",
+          "ja": "就職活動は春に始まります。",
+          "kana": "しゅうしょく かつどう は はる に はじまります。",
+          "ro": "shuushoku katsudou wa haru ni hajimarimasu."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-140",
+      "ja": "政府",
+      "kana": "せいふ",
+      "ro": "seifu",
+      "en": "government / administration / authorities",
+      "examples": [
+        {
+          "en": "The government announced a new policy.",
+          "ja": "政府は新しい政策を発表しました。",
+          "kana": "せいふ は あたらしい せいさく を はっぴょう しました。",
+          "ro": "seifu wa atarashii seisaku o happyou shimashita."
+        },
+        {
+          "en": "The government is responsible for the people.",
+          "ja": "政府は国民に対して責任があります。",
+          "kana": "せいふ は こくみん に たいして せきにん が あります。",
+          "ro": "seifu wa kokumin ni taishite sekinin ga arimasu."
+        },
+        {
+          "en": "He works for the government.",
+          "ja": "彼は政府で働いています。",
+          "kana": "かれ は せいふ で はたらいて います。",
+          "ro": "kare wa seifu de hataraite imasu."
+        },
+        {
+          "en": "The government decided to raise taxes.",
+          "ja": "政府は税金を上げることを決めた。",
+          "kana": "せいふ は ぜいきん を あげる こと を きめた。",
+          "ro": "seifu wa zeikin o ageru koto o kimeta."
+        },
+        {
+          "en": "The government supports education reform.",
+          "ja": "政府は教育改革を支援しています。",
+          "kana": "せいふ は きょういく かいかく を しえん して います。",
+          "ro": "seifu wa kyouiku kaikaku o shien shite imasu."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-145",
+      "ja": "科学",
+      "kana": "かがく",
+      "ro": "kagaku",
+      "en": "science / scientific study",
+      "examples": [
+        {
+          "en": "He is studying science at school.",
+          "ja": "彼は学校で科学を勉強しています。",
+          "kana": "かれ は がっこう で かがく を べんきょう して います。",
+          "ro": "kare wa gakkou de kagaku o benkyou shite imasu."
+        },
+        {
+          "en": "Science is developing quickly.",
+          "ja": "科学は急速に進歩しています。",
+          "kana": "かがく は きゅうそく に しんぽ して います。",
+          "ro": "kagaku wa kyuusoku ni shinpo shite imasu."
+        },
+        {
+          "en": "He likes studying physics and chemistry.",
+          "ja": "彼は物理と化学の勉強が好きです。",
+          "kana": "かれ は ぶつり と かがく の べんきょう が すき です。",
+          "ro": "kare wa butsuri to kagaku no benkyou ga suki desu."
+        },
+        {
+          "en": "Science and technology are connected.",
+          "ja": "科学と技術は関係しています。",
+          "kana": "かがく と ぎじゅつ は かんけい して います。",
+          "ro": "kagaku to gijutsu wa kankei shite imasu."
+        },
+        {
+          "en": "He believes in the power of science.",
+          "ja": "彼は科学の力を信じています。",
+          "kana": "かれ は かがく の ちから を しんじて います。",
+          "ro": "kare wa kagaku no chikara o shinjite imasu."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-147",
+      "ja": "病気",
+      "kana": "びょうき",
+      "ro": "byouki",
+      "en": "illness / disease / sickness",
+      "examples": [
+        {
+          "en": "He is suffering from a serious illness.",
+          "ja": "彼は重い病気で苦しんでいます。",
+          "kana": "かれ は おもい びょうき で くるしんで います。",
+          "ro": "kare wa omoi byouki de kurushinde imasu."
+        },
+        {
+          "en": "She caught a cold last week.",
+          "ja": "彼女は先週風邪の病気になった。",
+          "kana": "かのじょ は せんしゅう かぜ の びょうき に なった。",
+          "ro": "kanojo wa senshuu kaze no byouki ni natta."
+        },
+        {
+          "en": "He took time off because of illness.",
+          "ja": "彼は病気のために休みました。",
+          "kana": "かれ は びょうき の ため に やすみました。",
+          "ro": "kare wa byouki no tame ni yasumimashita."
+        },
+        {
+          "en": "This medicine helps prevent illness.",
+          "ja": "この薬は病気を防ぐのに役立ちます。",
+          "kana": "この くすり は びょうき を ふせぐ の に やくだちます。",
+          "ro": "kono kusuri wa byouki o fusegu no ni yakudachimasu."
+        },
+        {
+          "en": "He recovered from his illness.",
+          "ja": "彼は病気から回復しました。",
+          "kana": "かれ は びょうき から かいふく しました。",
+          "ro": "kare wa byouki kara kaifuku shimashita."
+        }
+      ],
+      "grammar": "Noun + に／から + Verb"
+    },
+    {
+      "id": "n4-noun-148",
+      "ja": "病院",
+      "kana": "びょういん",
+      "ro": "byouin",
+      "en": "hospital / medical clinic",
+      "examples": [
+        {
+          "en": "He went to the hospital yesterday.",
+          "ja": "彼は昨日病院に行きました。",
+          "kana": "かれ は きのう びょういん に いきました。",
+          "ro": "kare wa kinou byouin ni ikimashita."
+        },
+        {
+          "en": "This hospital is very clean.",
+          "ja": "この病院はとてもきれいです。",
+          "kana": "この びょういん は とても きれい です。",
+          "ro": "kono byouin wa totemo kirei desu."
+        },
+        {
+          "en": "My mother works at a hospital.",
+          "ja": "母は病院で働いています。",
+          "kana": "はは は びょういん で はたらいて います。",
+          "ro": "haha wa byouin de hataraite imasu."
+        },
+        {
+          "en": "I stayed in the hospital for three days.",
+          "ja": "私は3日間病院に入院しました。",
+          "kana": "わたし は みっかかん びょういん に にゅういん しました。",
+          "ro": "watashi wa mikkakan byouin ni nyuuin shimashita."
+        },
+        {
+          "en": "The hospital is near the station.",
+          "ja": "病院は駅の近くにあります。",
+          "kana": "びょういん は えき の ちかく に あります。",
+          "ro": "byouin wa eki no chikaku ni arimasu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-149",
+      "ja": "薬",
+      "kana": "くすり",
+      "ro": "kusuri",
+      "en": "medicine / drug / remedy",
+      "examples": [
+        {
+          "en": "Take this medicine after meals.",
+          "ja": "この薬は食後に飲んでください。",
+          "kana": "この くすり は しょくご に のんで ください。",
+          "ro": "kono kusuri wa shokugo ni nonde kudasai."
+        },
+        {
+          "en": "This medicine is effective for headaches.",
+          "ja": "この薬は頭痛に効きます。",
+          "kana": "この くすり は ずつう に ききます。",
+          "ro": "kono kusuri wa zutsuu ni kikimasu."
+        },
+        {
+          "en": "He forgot to take his medicine.",
+          "ja": "彼は薬を飲むのを忘れました。",
+          "kana": "かれ は くすり を のむ の を わすれました。",
+          "ro": "kare wa kusuri o nomu no o wasuremashita."
+        },
+        {
+          "en": "Please don't take too much medicine.",
+          "ja": "薬を飲みすぎないでください。",
+          "kana": "くすり を のみすぎないで ください。",
+          "ro": "kusuri o nomisuginai de kudasai."
+        },
+        {
+          "en": "You can buy medicine at a pharmacy.",
+          "ja": "薬は薬局で買えます。",
+          "kana": "くすり は やっきょく で かえます。",
+          "ro": "kusuri wa yakkyoku de kaemasu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-156",
+      "ja": "都市",
+      "kana": "とし",
+      "ro": "toshi",
+      "en": "city / urban area / metropolis",
+      "examples": [
+        {
+          "en": "Tokyo is the largest city in Japan.",
+          "ja": "東京は日本で一番大きな都市です。",
+          "kana": "とうきょう は にほん で いちばん おおきな とし です。",
+          "ro": "toukyou wa nihon de ichiban ookina toshi desu."
+        },
+        {
+          "en": "Many people live in big cities.",
+          "ja": "多くの人が大都市に住んでいます。",
+          "kana": "おおく の ひと が だいとし に すんで います。",
+          "ro": "ooku no hito ga daitoshi ni sunde imasu."
+        },
+        {
+          "en": "The city is developing quickly.",
+          "ja": "その都市は急速に発展しています。",
+          "kana": "その とし は きゅうそく に はってん して います。",
+          "ro": "sono toshi wa kyuusoku ni hatten shite imasu."
+        },
+        {
+          "en": "He moved from the countryside to the city.",
+          "ja": "彼は田舎から都市に引っ越しました。",
+          "kana": "かれ は いなか から とし に ひっこしました。",
+          "ro": "kare wa inaka kara toshi ni hikkoshimashita."
+        },
+        {
+          "en": "Urban life is convenient but busy.",
+          "ja": "都市の生活は便利ですが忙しいです。",
+          "kana": "とし の せいかつ は べんり ですが いそがしい です。",
+          "ro": "toshi no seikatsu wa benri desu ga isogashii desu."
+        }
+      ],
+      "grammar": "Noun + に／の + Verb"
+    },
+    {
+      "id": "n4-noun-157",
+      "ja": "建物",
+      "kana": "たてもの",
+      "ro": "tatemono",
+      "en": "building / structure",
+      "examples": [
+        {
+          "en": "That building is very old.",
+          "ja": "あの建物はとても古いです。",
+          "kana": "あの たてもの は とても ふるい です。",
+          "ro": "ano tatemono wa totemo furui desu."
+        },
+        {
+          "en": "This building has five floors.",
+          "ja": "この建物は5階建てです。",
+          "kana": "この たてもの は ごかいだて です。",
+          "ro": "kono tatemono wa gokaidate desu."
+        },
+        {
+          "en": "They built a new building last year.",
+          "ja": "彼らは去年新しい建物を建てた。",
+          "kana": "かれら は きょねん あたらしい たてもの を たてた。",
+          "ro": "karera wa kyonen atarashii tatemono o tateta."
+        },
+        {
+          "en": "The museum is a beautiful building.",
+          "ja": "その美術館は美しい建物です。",
+          "kana": "その びじゅつかん は うつくしい たてもの です。",
+          "ro": "sono bijutsukan wa utsukushii tatemono desu."
+        },
+        {
+          "en": "This building is made of wood.",
+          "ja": "この建物は木でできています。",
+          "kana": "この たてもの は き で できて います。",
+          "ro": "kono tatemono wa ki de dekite imasu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-158",
+      "ja": "橋",
+      "kana": "はし",
+      "ro": "hashi",
+      "en": "bridge",
+      "examples": [
+        {
+          "en": "There is a big bridge over the river.",
+          "ja": "川の上に大きな橋があります。",
+          "kana": "かわ の うえ に おおきな はし が あります。",
+          "ro": "kawa no ue ni ookina hashi ga arimasu."
+        },
+        {
+          "en": "We crossed the bridge together.",
+          "ja": "私たちは一緒に橋を渡った。",
+          "kana": "わたしたち は いっしょ に はし を わたった。",
+          "ro": "watashitachi wa issho ni hashi o watatta."
+        },
+        {
+          "en": "This bridge connects two cities.",
+          "ja": "この橋は二つの都市をつなぎます。",
+          "kana": "この はし は ふたつ の とし を つなぎます。",
+          "ro": "kono hashi wa futatsu no toshi o tsunagimasu."
+        },
+        {
+          "en": "The old bridge was rebuilt last year.",
+          "ja": "古い橋は去年建て直されました。",
+          "kana": "ふるい はし は きょねん たてなおされました。",
+          "ro": "furui hashi wa kyonen tatenaosaremashita."
+        },
+        {
+          "en": "A red bridge stands out in the scenery.",
+          "ja": "赤い橋が景色の中で目立ちます。",
+          "kana": "あかい はし が けしき の なか で めだちます。",
+          "ro": "akai hashi ga keshiki no naka de medachimasu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-159",
+      "ja": "公園",
+      "kana": "こうえん",
+      "ro": "kouen",
+      "en": "park / public garden",
+      "examples": [
+        {
+          "en": "There is a park near my house.",
+          "ja": "家の近くに公園があります。",
+          "kana": "いえ の ちかく に こうえん が あります。",
+          "ro": "ie no chikaku ni kouen ga arimasu."
+        },
+        {
+          "en": "We played soccer in the park.",
+          "ja": "公園でサッカーをしました。",
+          "kana": "こうえん で さっかー を しました。",
+          "ro": "kouen de sakkaa o shimashita."
+        },
+        {
+          "en": "Many children are playing in the park.",
+          "ja": "多くの子どもたちが公園で遊んでいます。",
+          "kana": "おおく の こどもたち が こうえん で あそんで います。",
+          "ro": "ooku no kodomotachi ga kouen de asonde imasu."
+        },
+        {
+          "en": "The park is beautiful in spring.",
+          "ja": "春の公園はとてもきれいです。",
+          "kana": "はる の こうえん は とても きれい です。",
+          "ro": "haru no kouen wa totemo kirei desu."
+        },
+        {
+          "en": "They go jogging in the park every morning.",
+          "ja": "彼らは毎朝公園でジョギングをします。",
+          "kana": "かれら は まいあさ こうえん で じょぎんぐ を します。",
+          "ro": "karera wa maiasa kouen de jogingu o shimasu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-160",
+      "ja": "図書館",
+      "kana": "としょかん",
+      "ro": "toshokan",
+      "en": "library",
+      "examples": [
+        {
+          "en": "I borrowed a book from the library.",
+          "ja": "図書館で本を借りました。",
+          "kana": "としょかん で ほん を かりました。",
+          "ro": "toshokan de hon o karimashita."
+        },
+        {
+          "en": "The library is quiet and clean.",
+          "ja": "図書館は静かで清潔です。",
+          "kana": "としょかん は しずか で せいけつ です。",
+          "ro": "toshokan wa shizuka de seiketsu desu."
+        },
+        {
+          "en": "I often study at the library.",
+          "ja": "私はよく図書館で勉強します。",
+          "kana": "わたし は よく としょかん で べんきょう します。",
+          "ro": "watashi wa yoku toshokan de benkyou shimasu."
+        },
+        {
+          "en": "Please return books to the library on time.",
+          "ja": "図書館には期限内に本を返してください。",
+          "kana": "としょかん には きげんない に ほん を かえして ください。",
+          "ro": "toshokan ni wa kigennai ni hon o kaeshite kudasai."
+        },
+        {
+          "en": "There is a large library near the station.",
+          "ja": "駅の近くに大きな図書館があります。",
+          "kana": "えき の ちかく に おおきな としょかん が あります。",
+          "ro": "eki no chikaku ni ookina toshokan ga arimasu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-161",
+      "ja": "映画",
+      "kana": "えいが",
+      "ro": "eiga",
+      "en": "movie / film / cinema",
+      "examples": [
+        {
+          "en": "I watched a movie last night.",
+          "ja": "昨夜映画を見ました。",
+          "kana": "ゆうべ えいが を みました。",
+          "ro": "yuube eiga o mimashita."
+        },
+        {
+          "en": "That movie was very interesting.",
+          "ja": "その映画はとてもおもしろかったです。",
+          "kana": "その えいが は とても おもしろかった です。",
+          "ro": "sono eiga wa totemo omoshirokatta desu."
+        },
+        {
+          "en": "We went to the movie theater together.",
+          "ja": "私たちは一緒に映画館へ行きました。",
+          "kana": "わたしたち は いっしょ に えいがかん へ いきました。",
+          "ro": "watashitachi wa issho ni eigakan e ikimashita."
+        },
+        {
+          "en": "I like foreign movies.",
+          "ja": "私は外国の映画が好きです。",
+          "kana": "わたし は がいこく の えいが が すき です。",
+          "ro": "watashi wa gaikoku no eiga ga suki desu."
+        },
+        {
+          "en": "She cried while watching the movie.",
+          "ja": "彼女は映画を見ながら泣きました。",
+          "kana": "かのじょ は えいが を みながら なきました。",
+          "ro": "kanojo wa eiga o minagara nakimashita."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-162",
+      "ja": "音楽",
+      "kana": "おんがく",
+      "ro": "ongaku",
+      "en": "music / sound art",
+      "examples": [
+        {
+          "en": "I listen to music every day.",
+          "ja": "毎日音楽を聞きます。",
+          "kana": "まいにち おんがく を ききます。",
+          "ro": "mainichi ongaku o kikimasu."
+        },
+        {
+          "en": "She likes classical music.",
+          "ja": "彼女はクラシック音楽が好きです。",
+          "kana": "かのじょ は くらしっく おんがく が すき です。",
+          "ro": "kanojo wa kurashikku ongaku ga suki desu."
+        },
+        {
+          "en": "Music makes people happy.",
+          "ja": "音楽は人を幸せにします。",
+          "kana": "おんがく は ひと を しあわせ に します。",
+          "ro": "ongaku wa hito o shiawase ni shimasu."
+        },
+        {
+          "en": "He studies music at university.",
+          "ja": "彼は大学で音楽を勉強しています。",
+          "kana": "かれ は だいがく で おんがく を べんきょう して います。",
+          "ro": "kare wa daigaku de ongaku o benkyou shite imasu."
+        },
+        {
+          "en": "I can’t live without music.",
+          "ja": "私は音楽なしでは生きられません。",
+          "kana": "わたし は おんがく なし では いきられません。",
+          "ro": "watashi wa ongaku nashi de wa ikiraremasen."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-163",
+      "ja": "絵",
+      "kana": "え",
+      "ro": "e",
+      "en": "painting / picture / drawing",
+      "examples": [
+        {
+          "en": "She drew a beautiful picture.",
+          "ja": "彼女はきれいな絵を描いた。",
+          "kana": "かのじょ は きれい な え を かいた。",
+          "ro": "kanojo wa kirei na e o kaita."
+        },
+        {
+          "en": "I like looking at paintings.",
+          "ja": "私は絵を見るのが好きです。",
+          "kana": "わたし は え を みる の が すき です。",
+          "ro": "watashi wa e o miru no ga suki desu."
+        },
+        {
+          "en": "There are many pictures in this museum.",
+          "ja": "この美術館にはたくさんの絵があります。",
+          "kana": "この びじゅつかん には たくさん の え が あります。",
+          "ro": "kono bijutsukan ni wa takusan no e ga arimasu."
+        },
+        {
+          "en": "He painted a picture of a mountain.",
+          "ja": "彼は山の絵を描きました。",
+          "kana": "かれ は やま の え を かきました。",
+          "ro": "kare wa yama no e o kakimashita."
+        },
+        {
+          "en": "This picture is very famous.",
+          "ja": "この絵はとても有名です。",
+          "kana": "この え は とても ゆうめい です。",
+          "ro": "kono e wa totemo yuumei desu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-164",
+      "ja": "新聞",
+      "kana": "しんぶん",
+      "ro": "shinbun",
+      "en": "newspaper / daily news",
+      "examples": [
+        {
+          "en": "I read the newspaper every morning.",
+          "ja": "毎朝新聞を読みます。",
+          "kana": "まいあさ しんぶん を よみます。",
+          "ro": "maiasa shinbun o yomimasu."
+        },
+        {
+          "en": "There is interesting news in today’s paper.",
+          "ja": "今日の新聞におもしろいニュースがあります。",
+          "kana": "きょう の しんぶん に おもしろい にゅーす が あります。",
+          "ro": "kyou no shinbun ni omoshiroi nyuusu ga arimasu."
+        },
+        {
+          "en": "My father works for a newspaper company.",
+          "ja": "父は新聞社で働いています。",
+          "kana": "ちち は しんぶんしゃ で はたらいて います。",
+          "ro": "chichi wa shinbunsha de hataraite imasu."
+        },
+        {
+          "en": "The newspaper was delivered early this morning.",
+          "ja": "新聞は今朝早く配達されました。",
+          "kana": "しんぶん は けさ はやく はいたつ されました。",
+          "ro": "shinbun wa kesa hayaku haitatsu saremashita."
+        },
+        {
+          "en": "I saw the news in the newspaper.",
+          "ja": "そのニュースを新聞で見ました。",
+          "kana": "その にゅーす を しんぶん で みました。",
+          "ro": "sono nyuusu o shinbun de mimashita."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-165",
+      "ja": "写真",
+      "kana": "しゃしん",
+      "ro": "shashin",
+      "en": "photo / picture / photograph",
+      "examples": [
+        {
+          "en": "I took a picture of Mt. Fuji.",
+          "ja": "富士山の写真を撮りました。",
+          "kana": "ふじさん の しゃしん を とりました。",
+          "ro": "fujisan no shashin o torimashita."
+        },
+        {
+          "en": "This is a photo of my family.",
+          "ja": "これは私の家族の写真です。",
+          "kana": "これ は わたし の かぞく の しゃしん です。",
+          "ro": "kore wa watashi no kazoku no shashin desu."
+        },
+        {
+          "en": "Can I take a picture here?",
+          "ja": "ここで写真を撮ってもいいですか。",
+          "kana": "ここ で しゃしん を とって も いい です か。",
+          "ro": "koko de shashin o totte mo ii desu ka."
+        },
+        {
+          "en": "He likes taking pictures of nature.",
+          "ja": "彼は自然の写真を撮るのが好きです。",
+          "kana": "かれ は しぜん の しゃしん を とる の が すき です。",
+          "ro": "kare wa shizen no shashin o toru no ga suki desu."
+        },
+        {
+          "en": "Please don’t take photos in the museum.",
+          "ja": "美術館では写真を撮らないでください。",
+          "kana": "びじゅつかん では しゃしん を とらないで ください。",
+          "ro": "bijutsukan de wa shashin o toranaide kudasai."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-166",
+      "ja": "学校",
+      "kana": "がっこう",
+      "ro": "gakkou",
+      "en": "school",
+      "examples": [
+        {
+          "en": "I go to school every day.",
+          "ja": "毎日学校へ行きます。",
+          "kana": "まいにち がっこう へ いきます。",
+          "ro": "mainichi gakkou e ikimasu."
+        },
+        {
+          "en": "Our school is near the station.",
+          "ja": "私たちの学校は駅の近くにあります。",
+          "kana": "わたしたち の がっこう は えき の ちかく に あります。",
+          "ro": "watashitachi no gakkou wa eki no chikaku ni arimasu."
+        },
+        {
+          "en": "The school is closed on Sunday.",
+          "ja": "学校は日曜日は休みです。",
+          "kana": "がっこう は にちようび は やすみ です。",
+          "ro": "gakkou wa nichiyoubi wa yasumi desu."
+        },
+        {
+          "en": "I have many friends at school.",
+          "ja": "学校に友達がたくさんいます。",
+          "kana": "がっこう に ともだち が たくさん います。",
+          "ro": "gakkou ni tomodachi ga takusan imasu."
+        },
+        {
+          "en": "He goes to an international school.",
+          "ja": "彼はインターナショナルスクールに通っています。",
+          "kana": "かれ は いんたーなしょなる すくーる に かよって います。",
+          "ro": "kare wa intānashonaru sukūru ni kayotte imasu."
+        }
+      ],
+      "grammar": "Noun + へ／に + Verb"
+    },
+    {
+      "id": "n4-noun-167",
+      "ja": "授業",
+      "kana": "じゅぎょう",
+      "ro": "jugyou",
+      "en": "class / lesson / lecture",
+      "examples": [
+        {
+          "en": "The class starts at 9 a.m.",
+          "ja": "授業は午前9時に始まります。",
+          "kana": "じゅぎょう は ごぜん くじ に はじまります。",
+          "ro": "jugyou wa gozen kuji ni hajimarimasu."
+        },
+        {
+          "en": "I like English class.",
+          "ja": "私は英語の授業が好きです。",
+          "kana": "わたし は えいご の じゅぎょう が すき です。",
+          "ro": "watashi wa eigo no jugyou ga suki desu."
+        },
+        {
+          "en": "Today’s class was very fun.",
+          "ja": "今日の授業はとても楽しかったです。",
+          "kana": "きょう の じゅぎょう は とても たのしかった です。",
+          "ro": "kyou no jugyou wa totemo tanoshikatta desu."
+        },
+        {
+          "en": "The teacher canceled the class.",
+          "ja": "先生は授業を休みにしました。",
+          "kana": "せんせい は じゅぎょう を やすみ に しました。",
+          "ro": "sensei wa jugyou o yasumi ni shimashita."
+        },
+        {
+          "en": "The class finished early today.",
+          "ja": "今日は授業が早く終わりました。",
+          "kana": "きょう は じゅぎょう が はやく おわりました。",
+          "ro": "kyou wa jugyou ga hayaku owarimashita."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-168",
+      "ja": "試験",
+      "kana": "しけん",
+      "ro": "shiken",
+      "en": "exam / test",
+      "examples": [
+        {
+          "en": "The exam will be next week.",
+          "ja": "試験は来週行われます。",
+          "kana": "しけん は らいしゅう おこなわれます。",
+          "ro": "shiken wa raishuu okonawaremasu."
+        },
+        {
+          "en": "I have a Japanese test tomorrow.",
+          "ja": "明日日本語の試験があります。",
+          "kana": "あした にほんご の しけん が あります。",
+          "ro": "ashita nihongo no shiken ga arimasu."
+        },
+        {
+          "en": "He passed the exam.",
+          "ja": "彼は試験に合格しました。",
+          "kana": "かれ は しけん に ごうかく しました。",
+          "ro": "kare wa shiken ni goukaku shimashita."
+        },
+        {
+          "en": "The exam was very difficult.",
+          "ja": "その試験はとても難しかったです。",
+          "kana": "その しけん は とても むずかしかった です。",
+          "ro": "sono shiken wa totemo muzukashikatta desu."
+        },
+        {
+          "en": "Please study hard for the test.",
+          "ja": "試験のために一生懸命勉強してください。",
+          "kana": "しけん の ため に いっしょうけんめい べんきょう して ください。",
+          "ro": "shiken no tame ni isshoukenmei benkyou shite kudasai."
+        }
+      ],
+      "grammar": "Noun + に／の + Verb"
+    },
+    {
+      "id": "n4-noun-173",
+      "ja": "上司",
+      "kana": "じょうし",
+      "ro": "joushi",
+      "en": "boss / superior / manager",
+      "examples": [
+        {
+          "en": "My boss is very kind.",
+          "ja": "私の上司はとても親切です。",
+          "kana": "わたし の じょうし は とても しんせつ です。",
+          "ro": "watashi no joushi wa totemo shinsetsu desu."
+        },
+        {
+          "en": "I reported the problem to my boss.",
+          "ja": "上司に問題を報告しました。",
+          "kana": "じょうし に もんだい を ほうこく しました。",
+          "ro": "joushi ni mondai o houkoku shimashita."
+        },
+        {
+          "en": "My boss gave me good advice.",
+          "ja": "上司が良いアドバイスをくれました。",
+          "kana": "じょうし が よい あどばいす を くれました。",
+          "ro": "joushi ga yoi adobaisu o kuremashita."
+        },
+        {
+          "en": "He doesn’t get along with his boss.",
+          "ja": "彼は上司とうまくいっていません。",
+          "kana": "かれ は じょうし と うまく いって いません。",
+          "ro": "kare wa joushi to umaku itte imasen."
+        },
+        {
+          "en": "The boss called him to the office.",
+          "ja": "上司が彼をオフィスに呼びました。",
+          "kana": "じょうし が かれ を おふぃす に よびました。",
+          "ro": "joushi ga kare o ofisu ni yobimashita."
+        }
+      ],
+      "grammar": "Noun + に／と + Verb"
+    },
+    {
+      "id": "n4-noun-175",
+      "ja": "給料",
+      "kana": "きゅうりょう",
+      "ro": "kyuuryou",
+      "en": "salary / pay / wages",
+      "examples": [
+        {
+          "en": "He receives his salary at the end of the month.",
+          "ja": "彼は月末に給料をもらいます。",
+          "kana": "かれ は げつまつ に きゅうりょう を もらいます。",
+          "ro": "kare wa getsumatsu ni kyuuryou o moraimasu."
+        },
+        {
+          "en": "Her salary is higher than mine.",
+          "ja": "彼女の給料は私より高いです。",
+          "kana": "かのじょ の きゅうりょう は わたし より たかい です。",
+          "ro": "kanojo no kyuuryou wa watashi yori takai desu."
+        },
+        {
+          "en": "The company raised everyone’s salary.",
+          "ja": "会社は全員の給料を上げました。",
+          "kana": "かいしゃ は ぜんいん の きゅうりょう を あげました。",
+          "ro": "kaisha wa zen'in no kyuuryou o agemashita."
+        },
+        {
+          "en": "He is satisfied with his salary.",
+          "ja": "彼は自分の給料に満足しています。",
+          "kana": "かれ は じぶん の きゅうりょう に まんぞく して います。",
+          "ro": "kare wa jibun no kyuuryou ni manzoku shite imasu."
+        },
+        {
+          "en": "The salary will be paid on Friday.",
+          "ja": "給料は金曜日に支払われます。",
+          "kana": "きゅうりょう は きんようび に しはらわれます。",
+          "ro": "kyuuryou wa kinyoubi ni shiharawaremasu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-177",
+      "ja": "空港",
+      "kana": "くうこう",
+      "ro": "kuukou",
+      "en": "airport",
+      "examples": [
+        {
+          "en": "We went to the airport to pick up my friend.",
+          "ja": "友達を迎えに空港へ行きました。",
+          "kana": "ともだち を むかえ に くうこう へ いきました。",
+          "ro": "tomodachi o mukae ni kuukou e ikimashita."
+        },
+        {
+          "en": "The airport is very crowded today.",
+          "ja": "今日は空港がとても混んでいます。",
+          "kana": "きょう は くうこう が とても こんで います。",
+          "ro": "kyou wa kuukou ga totemo konde imasu."
+        },
+        {
+          "en": "There are many shops inside the airport.",
+          "ja": "空港の中にたくさんの店があります。",
+          "kana": "くうこう の なか に たくさん の みせ が あります。",
+          "ro": "kuukou no naka ni takusan no mise ga arimasu."
+        },
+        {
+          "en": "The plane will depart from Haneda Airport.",
+          "ja": "飛行機は羽田空港から出発します。",
+          "kana": "ひこうき は はねだ くうこう から しゅっぱつ します。",
+          "ro": "hikouki wa Haneda kuukou kara shuppatsu shimasu."
+        },
+        {
+          "en": "Please arrive at the airport two hours before your flight.",
+          "ja": "出発の2時間前に空港へ着いてください。",
+          "kana": "しゅっぱつ の にじかん まえ に くうこう へ ついて ください。",
+          "ro": "shuppatsu no nijikan mae ni kuukou e tsuite kudasai."
+        }
+      ],
+      "grammar": "Noun + へ／で + Verb"
+    },
+    {
+      "id": "n4-noun-178",
+      "ja": "飛行機",
+      "kana": "ひこうき",
+      "ro": "hikouki",
+      "en": "airplane / aircraft",
+      "examples": [
+        {
+          "en": "The airplane flew over the sea.",
+          "ja": "飛行機が海の上を飛びました。",
+          "kana": "ひこうき が うみ の うえ を とびました。",
+          "ro": "hikouki ga umi no ue o tobimashita."
+        },
+        {
+          "en": "I took an airplane to Osaka.",
+          "ja": "大阪まで飛行機で行きました。",
+          "kana": "おおさか まで ひこうき で いきました。",
+          "ro": "oosaka made hikouki de ikimashita."
+        },
+        {
+          "en": "The airplane landed safely.",
+          "ja": "飛行機は無事に着陸しました。",
+          "kana": "ひこうき は ぶじ に ちゃくりく しました。",
+          "ro": "hikouki wa buji ni chakuriku shimashita."
+        },
+        {
+          "en": "He is afraid of flying on an airplane.",
+          "ja": "彼は飛行機に乗るのが怖いです。",
+          "kana": "かれ は ひこうき に のる の が こわい です。",
+          "ro": "kare wa hikouki ni noru no ga kowai desu."
+        },
+        {
+          "en": "The airplane was delayed by the storm.",
+          "ja": "嵐のため飛行機が遅れました。",
+          "kana": "あらし の ため ひこうき が おくれました。",
+          "ro": "arashi no tame hikouki ga okuremashita."
+        }
+      ],
+      "grammar": "Noun + で／に + Verb"
+    },
+    {
+      "id": "n4-noun-179",
+      "ja": "駅",
+      "kana": "えき",
+      "ro": "eki",
+      "en": "station",
+      "examples": [
+        {
+          "en": "I met my friend at the station.",
+          "ja": "駅で友達に会いました。",
+          "kana": "えき で ともだち に あいました。",
+          "ro": "eki de tomodachi ni aimashita."
+        },
+        {
+          "en": "There is a convenience store near the station.",
+          "ja": "駅の近くにコンビニがあります。",
+          "kana": "えき の ちかく に こんびに が あります。",
+          "ro": "eki no chikaku ni konbini ga arimasu."
+        },
+        {
+          "en": "Which station should I get off at?",
+          "ja": "どの駅で降りればいいですか。",
+          "kana": "どの えき で おりれば いい です か。",
+          "ro": "dono eki de orireba ii desu ka."
+        },
+        {
+          "en": "The station was crowded this morning.",
+          "ja": "今朝駅は混んでいました。",
+          "kana": "けさ えき は こんで いました。",
+          "ro": "kesa eki wa konde imashita."
+        },
+        {
+          "en": "Let’s meet in front of the station.",
+          "ja": "駅の前で会いましょう。",
+          "kana": "えき の まえ で あいましょう。",
+          "ro": "eki no mae de aimashou."
+        }
+      ],
+      "grammar": "Noun + で／に + Verb"
+    },
+    {
+      "id": "n4-noun-180",
+      "ja": "電車",
+      "kana": "でんしゃ",
+      "ro": "densha",
+      "en": "train (electric)",
+      "examples": [
+        {
+          "en": "I go to work by train every morning.",
+          "ja": "毎朝電車で通勤します。",
+          "kana": "まいあさ でんしゃ で つうきん します。",
+          "ro": "maiasa densha de tsuukin shimasu."
+        },
+        {
+          "en": "The train was delayed by five minutes.",
+          "ja": "電車が5分遅れました。",
+          "kana": "でんしゃ が ごふん おくれました。",
+          "ro": "densha ga gofun okuremashita."
+        },
+        {
+          "en": "I fell asleep on the train.",
+          "ja": "電車の中で寝てしまいました。",
+          "kana": "でんしゃ の なか で ねて しまいました。",
+          "ro": "densha no naka de nete shimaimashita."
+        },
+        {
+          "en": "This train goes to Shinjuku.",
+          "ja": "この電車は新宿に行きます。",
+          "kana": "この でんしゃ は しんじゅく に いきます。",
+          "ro": "kono densha wa Shinjuku ni ikimasu."
+        },
+        {
+          "en": "Please do not talk loudly on the train.",
+          "ja": "電車の中で大声で話さないでください。",
+          "kana": "でんしゃ の なか で おおごえ で はなさないで ください。",
+          "ro": "densha no naka de oogoe de hanasanaide kudasai."
+        }
+      ],
+      "grammar": "Noun + で／に + Verb"
+    },
+    {
+      "id": "n4-noun-181",
+      "ja": "ホテル",
+      "kana": "ほてる",
+      "ro": "hoteru",
+      "en": "hotel",
+      "examples": [
+        {
+          "en": "We stayed at a nice hotel.",
+          "ja": "私たちは良いホテルに泊まりました。",
+          "kana": "わたしたち は よい ほてる に とまりました。",
+          "ro": "watashitachi wa yoi hoteru ni tomarimashita."
+        },
+        {
+          "en": "This hotel is very famous.",
+          "ja": "このホテルはとても有名です。",
+          "kana": "この ほてる は とても ゆうめい です。",
+          "ro": "kono hoteru wa totemo yuumei desu."
+        },
+        {
+          "en": "There is a large hotel near the station.",
+          "ja": "駅の近くに大きなホテルがあります。",
+          "kana": "えき の ちかく に おおきな ほてる が あります。",
+          "ro": "eki no chikaku ni ookina hoteru ga arimasu."
+        },
+        {
+          "en": "The hotel staff were very kind.",
+          "ja": "ホテルのスタッフはとても親切でした。",
+          "kana": "ほてる の すたっふ は とても しんせつ でした。",
+          "ro": "hoteru no sutaffu wa totemo shinsetsu deshita."
+        },
+        {
+          "en": "We made a reservation at the hotel.",
+          "ja": "ホテルを予約しました。",
+          "kana": "ほてる を よやく しました。",
+          "ro": "hoteru o yoyaku shimashita."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-182",
+      "ja": "旅館",
+      "kana": "りょかん",
+      "ro": "ryokan",
+      "en": "Japanese inn / traditional hotel",
+      "examples": [
+        {
+          "en": "We stayed at a ryokan in Kyoto.",
+          "ja": "京都の旅館に泊まりました。",
+          "kana": "きょうと の りょかん に とまりました。",
+          "ro": "kyouto no ryokan ni tomarimashita."
+        },
+        {
+          "en": "The ryokan serves delicious Japanese food.",
+          "ja": "その旅館ではおいしい和食が出ます。",
+          "kana": "その りょかん では おいしい わしょく が でます。",
+          "ro": "sono ryokan de wa oishii washoku ga demasu."
+        },
+        {
+          "en": "There is a hot spring in this ryokan.",
+          "ja": "この旅館には温泉があります。",
+          "kana": "この りょかん には おんせん が あります。",
+          "ro": "kono ryokan ni wa onsen ga arimasu."
+        },
+        {
+          "en": "The ryokan is located near the mountains.",
+          "ja": "旅館は山の近くにあります。",
+          "kana": "りょかん は やま の ちかく に あります。",
+          "ro": "ryokan wa yama no chikaku ni arimasu."
+        },
+        {
+          "en": "We made a reservation at the ryokan.",
+          "ja": "旅館を予約しました。",
+          "kana": "りょかん を よやく しました。",
+          "ro": "ryokan o yoyaku shimashita."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-183",
+      "ja": "観光",
+      "kana": "かんこう",
+      "ro": "kankou",
+      "en": "sightseeing / tourism",
+      "examples": [
+        {
+          "en": "We went sightseeing in Tokyo.",
+          "ja": "東京で観光をしました。",
+          "kana": "とうきょう で かんこう を しました。",
+          "ro": "toukyou de kankou o shimashita."
+        },
+        {
+          "en": "Kyoto is famous for sightseeing.",
+          "ja": "京都は観光で有名です。",
+          "kana": "きょうと は かんこう で ゆうめい です。",
+          "ro": "kyouto wa kankou de yuumei desu."
+        },
+        {
+          "en": "The sightseeing bus stops at many places.",
+          "ja": "観光バスはいろいろな場所に止まります。",
+          "kana": "かんこう ばす は いろいろ な ばしょ に とまります。",
+          "ro": "kankou basu wa iroiro na basho ni tomarimasu."
+        },
+        {
+          "en": "We enjoyed sightseeing with friends.",
+          "ja": "友達と一緒に観光を楽しみました。",
+          "kana": "ともだち と いっしょ に かんこう を たのしみました。",
+          "ro": "tomodachi to issho ni kankou o tanoshimimashita."
+        },
+        {
+          "en": "The city depends on tourism.",
+          "ja": "その町は観光に頼っています。",
+          "kana": "その まち は かんこう に たよって います。",
+          "ro": "sono machi wa kankou ni tayotte imasu."
+        }
+      ],
+      "grammar": "Noun + を／で + Verb"
+    },
+    {
+      "id": "n4-noun-184",
+      "ja": "天気",
+      "kana": "てんき",
+      "ro": "tenki",
+      "en": "weather",
+      "examples": [
+        {
+          "en": "The weather is nice today.",
+          "ja": "今日はいい天気です。",
+          "kana": "きょう は いい てんき です。",
+          "ro": "kyou wa ii tenki desu."
+        },
+        {
+          "en": "Tomorrow’s weather will be rainy.",
+          "ja": "明日の天気は雨でしょう。",
+          "kana": "あした の てんき は あめ でしょう。",
+          "ro": "ashita no tenki wa ame deshou."
+        },
+        {
+          "en": "The weather changes quickly in this season.",
+          "ja": "この季節は天気が変わりやすいです。",
+          "kana": "この きせつ は てんき が かわりやすい です。",
+          "ro": "kono kisetsu wa tenki ga kawariyasui desu."
+        },
+        {
+          "en": "Let’s go out if the weather is good.",
+          "ja": "天気が良ければ出かけましょう。",
+          "kana": "てんき が よければ でかけましょう。",
+          "ro": "tenki ga yokereba dekakemashou."
+        },
+        {
+          "en": "I checked the weather forecast.",
+          "ja": "天気予報を確認しました。",
+          "kana": "てんきよほう を かくにん しました。",
+          "ro": "tenkiyohou o kakunin shimashita."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-185",
+      "ja": "季節",
+      "kana": "きせつ",
+      "ro": "kisetsu",
+      "en": "season",
+      "examples": [
+        {
+          "en": "Spring is my favorite season.",
+          "ja": "春は私の好きな季節です。",
+          "kana": "はる は わたし の すき な きせつ です。",
+          "ro": "haru wa watashi no sukina kisetsu desu."
+        },
+        {
+          "en": "Japan has four seasons.",
+          "ja": "日本には四つの季節があります。",
+          "kana": "にほん には よっつ の きせつ が あります。",
+          "ro": "nihon ni wa yottsu no kisetsu ga arimasu."
+        },
+        {
+          "en": "Each season has its charm.",
+          "ja": "それぞれの季節に魅力があります。",
+          "kana": "それぞれ の きせつ に みりょく が あります。",
+          "ro": "sorezore no kisetsu ni miryoku ga arimasu."
+        },
+        {
+          "en": "The season is changing from summer to autumn.",
+          "ja": "季節は夏から秋に変わっています。",
+          "kana": "きせつ は なつ から あき に かわって います。",
+          "ro": "kisetsu wa natsu kara aki ni kawatte imasu."
+        },
+        {
+          "en": "I like the cool season.",
+          "ja": "涼しい季節が好きです。",
+          "kana": "すずしい きせつ が すき です。",
+          "ro": "suzushii kisetsu ga suki desu."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-186",
+      "ja": "山",
+      "kana": "やま",
+      "ro": "yama",
+      "en": "mountain",
+      "examples": [
+        {
+          "en": "That mountain is very high.",
+          "ja": "あの山はとても高いです。",
+          "kana": "あの やま は とても たかい です。",
+          "ro": "ano yama wa totemo takai desu."
+        },
+        {
+          "en": "We climbed the mountain yesterday.",
+          "ja": "昨日山に登りました。",
+          "kana": "きのう やま に のぼりました。",
+          "ro": "kinou yama ni noborimashita."
+        },
+        {
+          "en": "The view from the mountain is beautiful.",
+          "ja": "山の上からの景色はきれいです。",
+          "kana": "やま の うえ から の けしき は きれい です。",
+          "ro": "yama no ue kara no keshiki wa kirei desu."
+        },
+        {
+          "en": "There are many animals in the mountain.",
+          "ja": "山にはたくさんの動物がいます。",
+          "kana": "やま には たくさん の どうぶつ が います。",
+          "ro": "yama ni wa takusan no doubutsu ga imasu."
+        },
+        {
+          "en": "I want to go hiking in the mountains.",
+          "ja": "山でハイキングをしたいです。",
+          "kana": "やま で はいきんぐ を したい です。",
+          "ro": "yama de haikingu o shitai desu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-187",
+      "ja": "川",
+      "kana": "かわ",
+      "ro": "kawa",
+      "en": "river / stream",
+      "examples": [
+        {
+          "en": "There is a river near my house.",
+          "ja": "家の近くに川があります。",
+          "kana": "いえ の ちかく に かわ が あります。",
+          "ro": "ie no chikaku ni kawa ga arimasu."
+        },
+        {
+          "en": "The river is very clean.",
+          "ja": "その川はとてもきれいです。",
+          "kana": "その かわ は とても きれい です。",
+          "ro": "sono kawa wa totemo kirei desu."
+        },
+        {
+          "en": "We swam in the river.",
+          "ja": "川で泳ぎました。",
+          "kana": "かわ で およぎました。",
+          "ro": "kawa de oyogimashita."
+        },
+        {
+          "en": "A bridge crosses the river.",
+          "ja": "川に橋がかかっています。",
+          "kana": "かわ に はし が かかって います。",
+          "ro": "kawa ni hashi ga kakatte imasu."
+        },
+        {
+          "en": "The river flows through the town.",
+          "ja": "川が町を流れています。",
+          "kana": "かわ が まち を ながれています。",
+          "ro": "kawa ga machi o nagarete imasu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-188",
+      "ja": "海",
+      "kana": "うみ",
+      "ro": "umi",
+      "en": "sea / ocean",
+      "examples": [
+        {
+          "en": "We went to the sea during summer vacation.",
+          "ja": "夏休みに海へ行きました。",
+          "kana": "なつやすみ に うみ へ いきました。",
+          "ro": "natsuyasumi ni umi e ikimashita."
+        },
+        {
+          "en": "The sea was very blue.",
+          "ja": "海はとても青かったです。",
+          "kana": "うみ は とても あおかった です。",
+          "ro": "umi wa totemo aokatta desu."
+        },
+        {
+          "en": "I like watching the sea.",
+          "ja": "海を見るのが好きです。",
+          "kana": "うみ を みる の が すき です。",
+          "ro": "umi o miru no ga suki desu."
+        },
+        {
+          "en": "There are many fish in the sea.",
+          "ja": "海にはたくさんの魚がいます。",
+          "kana": "うみ には たくさん の さかな が います。",
+          "ro": "umi ni wa takusan no sakana ga imasu."
+        },
+        {
+          "en": "The sea breeze feels good.",
+          "ja": "海の風が気持ちいいです。",
+          "kana": "うみ の かぜ が きもち いい です。",
+          "ro": "umi no kaze ga kimochi ii desu."
+        }
+      ],
+      "grammar": "Noun + へ／で + Verb"
+    },
+    {
+      "id": "n4-noun-189",
+      "ja": "森",
+      "kana": "もり",
+      "ro": "mori",
+      "en": "forest / woods",
+      "examples": [
+        {
+          "en": "We walked in the forest.",
+          "ja": "森の中を歩きました。",
+          "kana": "もり の なか を あるきました。",
+          "ro": "mori no naka o arukimashita."
+        },
+        {
+          "en": "The forest is full of birds and animals.",
+          "ja": "森には鳥や動物がたくさんいます。",
+          "kana": "もり には とり や どうぶつ が たくさん います。",
+          "ro": "mori ni wa tori ya doubutsu ga takusan imasu."
+        },
+        {
+          "en": "It is cool in the forest.",
+          "ja": "森の中は涼しいです。",
+          "kana": "もり の なか は すずしい です。",
+          "ro": "mori no naka wa suzushii desu."
+        },
+        {
+          "en": "He got lost in the forest.",
+          "ja": "彼は森で迷いました。",
+          "kana": "かれ は もり で まよいました。",
+          "ro": "kare wa mori de mayoimashita."
+        },
+        {
+          "en": "We could hear the sound of the forest.",
+          "ja": "森の音が聞こえました。",
+          "kana": "もり の おと が きこえました。",
+          "ro": "mori no oto ga kikoemashita."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-190",
+      "ja": "空",
+      "kana": "そら",
+      "ro": "sora",
+      "en": "sky",
+      "examples": [
+        {
+          "en": "The sky is clear today.",
+          "ja": "今日は空が晴れています。",
+          "kana": "きょう は そら が はれています。",
+          "ro": "kyou wa sora ga hareteimasu."
+        },
+        {
+          "en": "Birds are flying in the sky.",
+          "ja": "空に鳥が飛んでいます。",
+          "kana": "そら に とり が とんで います。",
+          "ro": "sora ni tori ga tonde imasu."
+        },
+        {
+          "en": "The evening sky is beautiful.",
+          "ja": "夕方の空は美しいです。",
+          "kana": "ゆうがた の そら は うつくしい です。",
+          "ro": "yuugata no sora wa utsukushii desu."
+        },
+        {
+          "en": "Clouds are floating in the sky.",
+          "ja": "空に雲が浮かんでいます。",
+          "kana": "そら に くも が うかんで います。",
+          "ro": "sora ni kumo ga ukande imasu."
+        },
+        {
+          "en": "I like watching the blue sky.",
+          "ja": "青い空を見るのが好きです。",
+          "kana": "あおい そら を みる の が すき です。",
+          "ro": "aoi sora o miru no ga suki desu."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-191",
+      "ja": "雨",
+      "kana": "あめ",
+      "ro": "ame",
+      "en": "rain",
+      "examples": [
+        {
+          "en": "It rained yesterday.",
+          "ja": "昨日雨が降りました。",
+          "kana": "きのう あめ が ふりました。",
+          "ro": "kinou ame ga furimashita."
+        },
+        {
+          "en": "The rain stopped in the afternoon.",
+          "ja": "午後に雨がやみました。",
+          "kana": "ごご に あめ が やみました。",
+          "ro": "gogo ni ame ga yamimashita."
+        },
+        {
+          "en": "I forgot my umbrella and got wet in the rain.",
+          "ja": "傘を忘れて雨にぬれました。",
+          "kana": "かさ を わすれて あめ に ぬれました。",
+          "ro": "kasa o wasurete ame ni nuremashita."
+        },
+        {
+          "en": "Heavy rain fell last night.",
+          "ja": "昨夜は強い雨が降りました。",
+          "kana": "さくや は つよい あめ が ふりました。",
+          "ro": "sakuya wa tsuyoi ame ga furimashita."
+        },
+        {
+          "en": "The sound of rain is relaxing.",
+          "ja": "雨の音は落ち着きます。",
+          "kana": "あめ の おと は おちつきます。",
+          "ro": "ame no oto wa ochitsukimasu."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-192",
+      "ja": "雪",
+      "kana": "ゆき",
+      "ro": "yuki",
+      "en": "snow",
+      "examples": [
+        {
+          "en": "It snowed a lot last night.",
+          "ja": "昨夜たくさん雪が降りました。",
+          "kana": "さくや たくさん ゆき が ふりました。",
+          "ro": "sakuya takusan yuki ga furimashita."
+        },
+        {
+          "en": "Children are playing in the snow.",
+          "ja": "子どもたちは雪で遊んでいます。",
+          "kana": "こどもたち は ゆき で あそんで います。",
+          "ro": "kodomotachi wa yuki de asonde imasu."
+        },
+        {
+          "en": "The mountain is covered with snow.",
+          "ja": "山は雪でおおわれています。",
+          "kana": "やま は ゆき で おおわれています。",
+          "ro": "yama wa yuki de oowarete imasu."
+        },
+        {
+          "en": "It’s snowing outside now.",
+          "ja": "今外は雪が降っています。",
+          "kana": "いま そと は ゆき が ふっています。",
+          "ro": "ima soto wa yuki ga futte imasu."
+        },
+        {
+          "en": "I made a snowman with my friends.",
+          "ja": "友達と一緒に雪だるまを作りました。",
+          "kana": "ともだち と いっしょ に ゆきだるま を つくりました。",
+          "ro": "tomodachi to issho ni yukidaruma o tsukurimashita."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-193",
+      "ja": "風",
+      "kana": "かぜ",
+      "ro": "kaze",
+      "en": "wind / breeze",
+      "examples": [
+        {
+          "en": "The wind is strong today.",
+          "ja": "今日は風が強いです。",
+          "kana": "きょう は かぜ が つよい です。",
+          "ro": "kyou wa kaze ga tsuyoi desu."
+        },
+        {
+          "en": "A cold wind is blowing.",
+          "ja": "冷たい風が吹いています。",
+          "kana": "つめたい かぜ が ふいて います。",
+          "ro": "tsumetai kaze ga fuite imasu."
+        },
+        {
+          "en": "The wind opened the window.",
+          "ja": "風で窓が開きました。",
+          "kana": "かぜ で まど が あきました。",
+          "ro": "kaze de mado ga akimashita."
+        },
+        {
+          "en": "The trees are shaking in the wind.",
+          "ja": "木が風でゆれています。",
+          "kana": "き が かぜ で ゆれています。",
+          "ro": "ki ga kaze de yurete imasu."
+        },
+        {
+          "en": "The wind feels nice in summer.",
+          "ja": "夏の風は気持ちがいいです。",
+          "kana": "なつ の かぜ は きもち が いい です。",
+          "ro": "natsu no kaze wa kimochi ga ii desu."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-194",
+      "ja": "雷",
+      "kana": "かみなり",
+      "ro": "kaminari",
+      "en": "thunder / lightning",
+      "examples": [
+        {
+          "en": "I heard thunder last night.",
+          "ja": "昨夜雷が鳴りました。",
+          "kana": "さくや かみなり が なりました。",
+          "ro": "sakuya kaminari ga narimashita."
+        },
+        {
+          "en": "Children are afraid of thunder.",
+          "ja": "子どもたちは雷を怖がります。",
+          "kana": "こどもたち は かみなり を こわがります。",
+          "ro": "kodomotachi wa kaminari o kowagarimasu."
+        },
+        {
+          "en": "Lightning struck a tree.",
+          "ja": "雷が木に落ちました。",
+          "kana": "かみなり が き に おちました。",
+          "ro": "kaminari ga ki ni ochimashita."
+        },
+        {
+          "en": "Thunder and rain came together.",
+          "ja": "雷と雨が同時に来ました。",
+          "kana": "かみなり と あめ が どうじ に きました。",
+          "ro": "kaminari to ame ga douji ni kimashita."
+        },
+        {
+          "en": "Thunder sounded loudly in the distance.",
+          "ja": "遠くで雷の音が大きく聞こえました。",
+          "kana": "とおく で かみなり の おと が おおきく きこえました。",
+          "ro": "tooku de kaminari no oto ga ookiku kikoemashita."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-200",
+      "ja": "買い物",
+      "kana": "かいもの",
+      "ro": "kaimono",
+      "en": "shopping",
+      "examples": [
+        {
+          "en": "I went shopping with my friend.",
+          "ja": "友達と買い物に行きました。",
+          "kana": "ともだち と かいもの に いきました。",
+          "ro": "tomodachi to kaimono ni ikimashita."
+        },
+        {
+          "en": "Shopping is fun.",
+          "ja": "買い物は楽しいです。",
+          "kana": "かいもの は たのしい です。",
+          "ro": "kaimono wa tanoshii desu."
+        },
+        {
+          "en": "My mother is doing the shopping now.",
+          "ja": "母は今買い物をしています。",
+          "kana": "はは は いま かいもの を しています。",
+          "ro": "haha wa ima kaimono o shiteimasu."
+        },
+        {
+          "en": "I spent too much money on shopping.",
+          "ja": "買い物でお金を使いすぎました。",
+          "kana": "かいもの で おかね を つかいすぎました。",
+          "ro": "kaimono de okane o tsukaisugimashita."
+        },
+        {
+          "en": "Let’s go shopping this weekend.",
+          "ja": "今週末に買い物へ行きましょう。",
+          "kana": "こんしゅうまつ に かいもの へ いきましょう。",
+          "ro": "konshuumatsu ni kaimono e ikimashou."
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-202",
+      "ja": "社員",
+      "kana": "しゃいん",
+      "ro": "shain",
+      "en": "employee / staff member",
+      "examples": [
+        {
+          "en": "There are about 500 employees in this company.",
+          "ja": "この会社には約500人の社員がいます。",
+          "kana": "この かいしゃ には やく ごひゃくにん の しゃいん が います。",
+          "ro": "kono kaisha ni wa yaku gohyakunin no shain ga imasu."
+        },
+        {
+          "en": "He is a company employee.",
+          "ja": "彼は会社の社員です。",
+          "kana": "かれ は かいしゃ の しゃいん です。",
+          "ro": "kare wa kaisha no shain desu."
+        },
+        {
+          "en": "All employees attended the meeting.",
+          "ja": "全ての社員が会議に出席しました。",
+          "kana": "すべて の しゃいん が かいぎ に しゅっせき しました。",
+          "ro": "subete no shain ga kaigi ni shusseki shimashita."
+        },
+        {
+          "en": "Our employees work hard every day.",
+          "ja": "私たちの社員は毎日一生懸命働いています。",
+          "kana": "わたしたち の しゃいん は まいにち いっしょうけんめい はたらいて います。",
+          "ro": "watashitachi no shain wa mainichi isshoukenmei hataraite imasu."
+        },
+        {
+          "en": "The company treats its employees well.",
+          "ja": "会社は社員を大切にしています。",
+          "kana": "かいしゃ は しゃいん を たいせつ に しています。",
+          "ro": "kaisha wa shain o taisetsu ni shiteimasu."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-207",
+      "ja": "教室",
+      "kana": "きょうしつ",
+      "ro": "kyoushitsu",
+      "en": "classroom",
+      "examples": [
+        {
+          "en": "Our classroom is on the second floor.",
+          "ja": "私たちの教室は2階にあります。",
+          "kana": "わたしたち の きょうしつ は にかい に あります。",
+          "ro": "watashitachi no kyoushitsu wa nikai ni arimasu."
+        },
+        {
+          "en": "The classroom is clean and bright.",
+          "ja": "教室はきれいで明るいです。",
+          "kana": "きょうしつ は きれい で あかるい です。",
+          "ro": "kyoushitsu wa kirei de akarui desu."
+        },
+        {
+          "en": "The students are studying in the classroom.",
+          "ja": "生徒たちは教室で勉強しています。",
+          "kana": "せいとたち は きょうしつ で べんきょう しています。",
+          "ro": "seitotachi wa kyoushitsu de benkyou shiteimasu."
+        },
+        {
+          "en": "There are thirty chairs in the classroom.",
+          "ja": "教室には三十のいすがあります。",
+          "kana": "きょうしつ には さんじゅう の いす が あります。",
+          "ro": "kyoushitsu ni wa sanjuu no isu ga arimasu."
+        },
+        {
+          "en": "The teacher entered the classroom.",
+          "ja": "先生が教室に入りました。",
+          "kana": "せんせい が きょうしつ に はいりました。",
+          "ro": "sensei ga kyoushitsu ni hairimashita."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-208",
+      "ja": "先生",
+      "kana": "せんせい",
+      "ro": "sensei",
+      "en": "teacher / instructor",
+      "examples": [
+        {
+          "en": "Our teacher is very kind.",
+          "ja": "私たちの先生はとても優しいです。",
+          "kana": "わたしたち の せんせい は とても やさしい です。",
+          "ro": "watashitachi no sensei wa totemo yasashii desu."
+        },
+        {
+          "en": "The teacher teaches Japanese.",
+          "ja": "先生は日本語を教えます。",
+          "kana": "せんせい は にほんご を おしえます。",
+          "ro": "sensei wa nihongo o oshiemasu."
+        },
+        {
+          "en": "I met my old teacher yesterday.",
+          "ja": "昨日、昔の先生に会いました。",
+          "kana": "きのう むかし の せんせい に あいました。",
+          "ro": "kinou mukashi no sensei ni aimashita."
+        },
+        {
+          "en": "The teacher came to the classroom.",
+          "ja": "先生が教室に来ました。",
+          "kana": "せんせい が きょうしつ に きました。",
+          "ro": "sensei ga kyoushitsu ni kimashita."
+        },
+        {
+          "en": "Please ask the teacher if you don’t understand.",
+          "ja": "わからない時は先生に聞いてください。",
+          "kana": "わからない とき は せんせい に きいて ください。",
+          "ro": "wakaranai toki wa sensei ni kiite kudasai."
+        }
+      ],
+      "grammar": "Noun + が／に + Verb"
+    },
+    {
+      "id": "n4-noun-209",
+      "ja": "生徒",
+      "kana": "せいと",
+      "ro": "seito",
+      "en": "student / pupil",
+      "examples": [
+        {
+          "en": "There are many students in this school.",
+          "ja": "この学校には多くの生徒がいます。",
+          "kana": "この がっこう には おおく の せいと が います。",
+          "ro": "kono gakkou ni wa ooku no seito ga imasu."
+        },
+        {
+          "en": "The students greeted the teacher.",
+          "ja": "生徒たちは先生にあいさつしました。",
+          "kana": "せいとたち は せんせい に あいさつ しました。",
+          "ro": "seitotachi wa sensei ni aisatsu shimashita."
+        },
+        {
+          "en": "All students took the test.",
+          "ja": "全ての生徒がテストを受けました。",
+          "kana": "すべて の せいと が てすと を うけました。",
+          "ro": "subete no seito ga tesuto o ukemashita."
+        },
+        {
+          "en": "The students are cleaning the classroom.",
+          "ja": "生徒たちは教室を掃除しています。",
+          "kana": "せいとたち は きょうしつ を そうじ しています。",
+          "ro": "seitotachi wa kyoushitsu o souji shiteimasu."
+        },
+        {
+          "en": "The students like their school life.",
+          "ja": "生徒たちは学校生活が好きです。",
+          "kana": "せいとたち は がっこう せいかつ が すき です。",
+          "ro": "seitotachi wa gakkou seikatsu ga suki desu."
+        }
+      ],
+      "grammar": "Noun + が／を + Verb"
+    },
+    {
+      "id": "n4-noun-212",
+      "ja": "問題",
+      "kana": "もんだい",
+      "ro": "mondai",
+      "en": "question / problem / issue",
+      "examples": [
+        {
+          "en": "I couldn’t solve this problem.",
+          "ja": "この問題を解けませんでした。",
+          "kana": "この もんだい を とけませんでした。",
+          "ro": "kono mondai o tokemasendeshita."
+        },
+        {
+          "en": "The test has ten questions.",
+          "ja": "テストには十の問題があります。",
+          "kana": "てすと には じゅう の もんだい が あります。",
+          "ro": "tesuto ni wa juu no mondai ga arimasu."
+        },
+        {
+          "en": "There is no problem with this plan.",
+          "ja": "この計画には問題がありません。",
+          "kana": "この けいかく には もんだい が ありません。",
+          "ro": "kono keikaku ni wa mondai ga arimasen."
+        },
+        {
+          "en": "This is an important social issue.",
+          "ja": "これは重要な社会問題です。",
+          "kana": "これは じゅうよう な しゃかい もんだい です。",
+          "ro": "kore wa juuyou na shakai mondai desu."
+        },
+        {
+          "en": "We discussed the problem in class.",
+          "ja": "クラスでその問題について話しました。",
+          "kana": "くらす で その もんだい に ついて はなしました。",
+          "ro": "kurasu de sono mondai ni tsuite hanashimashita."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-213",
+      "ja": "答え",
+      "kana": "こたえ",
+      "ro": "kotae",
+      "en": "answer / reply / solution",
+      "examples": [
+        {
+          "en": "Please write your answer here.",
+          "ja": "ここに答えを書いてください。",
+          "kana": "ここ に こたえ を かいて ください。",
+          "ro": "koko ni kotae o kaite kudasai."
+        },
+        {
+          "en": "His answer was correct.",
+          "ja": "彼の答えは正しかったです。",
+          "kana": "かれ の こたえ は ただしかった です。",
+          "ro": "kare no kotae wa tadashikatta desu."
+        },
+        {
+          "en": "I don’t know the answer.",
+          "ja": "答えがわかりません。",
+          "kana": "こたえ が わかりません。",
+          "ro": "kotae ga wakarimasen."
+        },
+        {
+          "en": "There is no easy answer to this question.",
+          "ja": "この質問には簡単な答えがありません。",
+          "kana": "この しつもん には かんたん な こたえ が ありません。",
+          "ro": "kono shitsumon ni wa kantan na kotae ga arimasen."
+        },
+        {
+          "en": "He didn’t give an answer.",
+          "ja": "彼は答えを言いませんでした。",
+          "kana": "かれ は こたえ を いいませんでした。",
+          "ro": "kare wa kotae o iimasendeshita."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-215",
+      "ja": "宿題",
+      "kana": "しゅくだい",
+      "ro": "shukudai",
+      "en": "homework / assignment",
+      "examples": [
+        {
+          "en": "I have a lot of homework today.",
+          "ja": "今日は宿題がたくさんあります。",
+          "kana": "きょう は しゅくだい が たくさん あります。",
+          "ro": "kyou wa shukudai ga takusan arimasu."
+        },
+        {
+          "en": "Did you finish your homework?",
+          "ja": "宿題を終わりましたか。",
+          "kana": "しゅくだい を おわりました か。",
+          "ro": "shukudai o owarimashita ka?"
+        },
+        {
+          "en": "The teacher checked our homework.",
+          "ja": "先生が宿題を確認しました。",
+          "kana": "せんせい が しゅくだい を かくにん しました。",
+          "ro": "sensei ga shukudai o kakunin shimashita."
+        },
+        {
+          "en": "I forgot to do my homework.",
+          "ja": "宿題をするのを忘れました。",
+          "kana": "しゅくだい を する の を わすれました。",
+          "ro": "shukudai o suru no o wasuremashita."
+        },
+        {
+          "en": "Let’s do homework together.",
+          "ja": "一緒に宿題をしましょう。",
+          "kana": "いっしょ に しゅくだい を しましょう。",
+          "ro": "issho ni shukudai o shimashou."
+        }
+      ],
+      "grammar": "Noun + を／が + Verb"
+    },
+    {
+      "id": "n4-noun-217",
+      "ja": "運動会",
+      "kana": "うんどうかい",
+      "ro": "undoukai",
+      "en": "sports day / athletic meet",
+      "examples": [
+        {
+          "en": "The sports day will be held next Sunday.",
+          "ja": "来週の日曜日に運動会があります。",
+          "kana": "らいしゅう の にちようび に うんどうかい が あります。",
+          "ro": "raishuu no nichiyoubi ni undoukai ga arimasu."
+        },
+        {
+          "en": "My child ran very fast at the sports day.",
+          "ja": "子どもは運動会でとても速く走りました。",
+          "kana": "こども は うんどうかい で とても はやく はしりました。",
+          "ro": "kodomo wa undoukai de totemo hayaku hashirimashita."
+        },
+        {
+          "en": "We are practicing for the sports day.",
+          "ja": "運動会の練習をしています。",
+          "kana": "うんどうかい の れんしゅう を しています。",
+          "ro": "undoukai no renshuu o shiteimasu."
+        },
+        {
+          "en": "It was very hot on the day of the sports event.",
+          "ja": "運動会の日はとても暑かったです。",
+          "kana": "うんどうかい の ひ は とても あつかった です。",
+          "ro": "undoukai no hi wa totemo atsukatta desu."
+        },
+        {
+          "en": "The parents enjoyed the sports day, too.",
+          "ja": "保護者も運動会を楽しみました。",
+          "kana": "ほごしゃ も うんどうかい を たのしみました。",
+          "ro": "hogosha mo undoukai o tanoshimimashita."
+        }
+      ],
+      "grammar": "Noun + が／で + Verb"
+    },
+    {
+      "id": "n4-noun-218",
+      "ja": "文化祭",
+      "kana": "ぶんかさい",
+      "ro": "bunkasai",
+      "en": "school festival / cultural festival",
+      "examples": [
+        {
+          "en": "The school festival was held in October.",
+          "ja": "文化祭は10月に行われました。",
+          "kana": "ぶんかさい は じゅうがつ に おこなわれました。",
+          "ro": "bunkasai wa juugatsu ni okonawaremashita."
+        },
+        {
+          "en": "We made a play for the school festival.",
+          "ja": "文化祭のために劇を作りました。",
+          "kana": "ぶんかさい の ため に げき を つくりました。",
+          "ro": "bunkasai no tame ni geki o tsukurimashita."
+        },
+        {
+          "en": "Many visitors came to the cultural festival.",
+          "ja": "文化祭に多くの人が来ました。",
+          "kana": "ぶんかさい に おおく の ひと が きました。",
+          "ro": "bunkasai ni ooku no hito ga kimashita."
+        },
+        {
+          "en": "We enjoyed delicious food at the school festival.",
+          "ja": "文化祭でおいしい食べ物を楽しみました。",
+          "kana": "ぶんかさい で おいしい たべもの を たのしみました。",
+          "ro": "bunkasai de oishii tabemono o tanoshimimashita."
+        },
+        {
+          "en": "The students are preparing for the school festival.",
+          "ja": "生徒たちは文化祭の準備をしています。",
+          "kana": "せいとたち は ぶんかさい の じゅんび を しています。",
+          "ro": "seitotachi wa bunkasai no junbi o shiteimasu."
+        }
+      ],
+      "grammar": "Noun + に／で + Verb"
+    },
+    {
+      "id": "n4-noun-220",
+      "ja": "入学",
+      "kana": "にゅうがく",
+      "ro": "nyuugaku",
+      "en": "entrance to school / admission",
+      "examples": [
+        {
+          "en": "My son entered elementary school this spring.",
+          "ja": "息子はこの春小学校に入学しました。",
+          "kana": "むすこ は この はる しょうがっこう に にゅうがく しました。",
+          "ro": "musuko wa kono haru shougakkou ni nyuugaku shimashita."
+        },
+        {
+          "en": "The entrance ceremony was held yesterday.",
+          "ja": "昨日、入学式が行われました。",
+          "kana": "きのう にゅうがくしき が おこなわれました。",
+          "ro": "kinou nyuugakushiki ga okonawaremashita."
+        },
+        {
+          "en": "She passed the entrance exam.",
+          "ja": "彼女は入学試験に合格しました。",
+          "kana": "かのじょ は にゅうがく しけん に ごうかく しました。",
+          "ro": "kanojo wa nyuugaku shiken ni goukaku shimashita."
+        },
+        {
+          "en": "He is preparing for university admission.",
+          "ja": "彼は大学入学の準備をしています。",
+          "kana": "かれ は だいがく にゅうがく の じゅんび を しています。",
+          "ro": "kare wa daigaku nyuugaku no junbi o shiteimasu."
+        },
+        {
+          "en": "Congratulations on your admission!",
+          "ja": "入学おめでとうございます！",
+          "kana": "にゅうがく おめでとう ございます！",
+          "ro": "nyuugaku omedetou gozaimasu!"
+        }
+      ],
+      "grammar": "Noun + に／を + Verb"
+    },
+    {
+      "id": "n4-noun-228",
+      "ja": "地図",
+      "kana": "ちず",
+      "ro": "chizu",
+      "en": "map",
+      "examples": [
+        {
+          "en": "Please look at this map.",
+          "ja": "この地図を見てください。",
+          "kana": "この ちず を みて ください。",
+          "ro": "kono chizu o mite kudasai."
+        },
+        {
+          "en": "I bought a map of Tokyo.",
+          "ja": "東京の地図を買いました。",
+          "kana": "とうきょう の ちず を かいました。",
+          "ro": "toukyou no chizu o kaimashita."
+        },
+        {
+          "en": "The map shows the location of the station.",
+          "ja": "地図には駅の場所が書いてあります。",
+          "kana": "ちず には えき の ばしょ が かいて あります。",
+          "ro": "chizu ni wa eki no basho ga kaite arimasu."
+        },
+        {
+          "en": "I got lost because I forgot the map.",
+          "ja": "地図を忘れて道に迷いました。",
+          "kana": "ちず を わすれて みち に まよいました。",
+          "ro": "chizu o wasurete michi ni mayoimashita."
+        },
+        {
+          "en": "This map is very easy to read.",
+          "ja": "この地図はとても見やすいです。",
+          "kana": "この ちず は とても みやすい です。",
+          "ro": "kono chizu wa totemo miyasui desu."
+        }
+      ],
+      "grammar": "Noun + を／に + Verb"
+    },
+    {
+      "id": "n4-noun-230",
+      "ja": "場所",
+      "kana": "ばしょ",
+      "ro": "basho",
+      "en": "place / location",
+      "examples": [
+        {
+          "en": "This is a famous place.",
+          "ja": "ここは有名な場所です。",
+          "kana": "ここ は ゆうめい な ばしょ です。",
+          "ro": "koko wa yuumei na basho desu."
+        },
+        {
+          "en": "Please tell me the meeting place.",
+          "ja": "待ち合わせの場所を教えてください。",
+          "kana": "まちあわせ の ばしょ を おしえて ください。",
+          "ro": "machiawase no basho o oshiete kudasai."
+        },
+        {
+          "en": "This is a quiet place.",
+          "ja": "ここは静かな場所です。",
+          "kana": "ここ は しずか な ばしょ です。",
+          "ro": "koko wa shizuka na basho desu."
+        },
+        {
+          "en": "The place is near the station.",
+          "ja": "場所は駅の近くにあります。",
+          "kana": "ばしょ は えき の ちかく に あります。",
+          "ro": "basho wa eki no chikaku ni arimasu."
+        },
+        {
+          "en": "This is the right place.",
+          "ja": "ここが正しい場所です。",
+          "kana": "ここ が ただしい ばしょ です。",
+          "ro": "koko ga tadashii basho desu."
+        }
+      ],
+      "grammar": "Noun + は／を + Verb"
+    }
+  ]
+}
