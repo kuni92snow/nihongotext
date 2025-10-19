@@ -1,0 +1,2324 @@
+{
+  "entries": [
+    {
+      "id": "n3-naadj-001",
+      "ja": "曖昧",
+      "kana": "あいまい",
+      "ro": "aimai",
+      "en": "vague / ambiguous / unclear",
+      "examples": [
+        {
+          "en": "His answer was vague.",
+          "ja": "彼の答えは曖昧でした。",
+          "kana": "かれ の こたえ は あいまい でした。",
+          "ro": "kare no kotae wa aimai deshita."
+        },
+        {
+          "en": "She gave an ambiguous smile.",
+          "ja": "彼女は曖昧な笑顔を見せました。",
+          "kana": "かのじょ は あいまい な えがお を みせました。",
+          "ro": "kanojo wa aimai na egao o misemashita."
+        },
+        {
+          "en": "The explanation was unclear.",
+          "ja": "説明が曖昧でした。",
+          "kana": "せつめい が あいまい でした。",
+          "ro": "setsumei ga aimai deshita."
+        },
+        {
+          "en": "He gave a vague reply.",
+          "ja": "彼は曖昧な返事をしました。",
+          "kana": "かれ は あいまい な へんじ を しました。",
+          "ro": "kare wa aimai na henji o shimashita."
+        },
+        {
+          "en": "The meaning of this word is ambiguous.",
+          "ja": "この言葉の意味は曖昧です。",
+          "kana": "この ことば の いみ は あいまい です。",
+          "ro": "kono kotoba no imi wa aimai desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-002",
+      "ja": "安易",
+      "kana": "あんい",
+      "ro": "an’i",
+      "en": "easy / simplistic / careless",
+      "examples": [
+        {
+          "en": "Don’t make an easy decision.",
+          "ja": "安易な決定をしないでください。",
+          "kana": "あんい な けってい を しないで ください。",
+          "ro": "an’i na kettei o shinaide kudasai."
+        },
+        {
+          "en": "That’s a too simple answer.",
+          "ja": "それは安易な答えです。",
+          "kana": "それ は あんい な こたえ です。",
+          "ro": "sore wa an’i na kotae desu."
+        },
+        {
+          "en": "He took an easy way out.",
+          "ja": "彼は安易な方法を選びました。",
+          "kana": "かれ は あんい な ほうほう を えらびました。",
+          "ro": "kare wa an’i na houhou o erabimashita."
+        },
+        {
+          "en": "Don’t think about it too lightly.",
+          "ja": "安易に考えないほうがいいです。",
+          "kana": "あんい に かんがえない ほう が いい です。",
+          "ro": "an’i ni kangaenai hou ga ii desu."
+        },
+        {
+          "en": "The teacher warned against easy thinking.",
+          "ja": "先生は安易な考えを注意しました。",
+          "kana": "せんせい は あんい な かんがえ を ちゅうい しました。",
+          "ro": "sensei wa an’i na kangae o chuui shimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-003",
+      "ja": "意外",
+      "kana": "いがい",
+      "ro": "igai",
+      "en": "unexpected / surprising",
+      "examples": [
+        {
+          "en": "The result was unexpected.",
+          "ja": "結果は意外でした。",
+          "kana": "けっか は いがい でした。",
+          "ro": "kekka wa igai deshita."
+        },
+        {
+          "en": "It’s surprising that he came.",
+          "ja": "彼が来たのは意外です。",
+          "kana": "かれ が きた の は いがい です。",
+          "ro": "kare ga kita no wa igai desu."
+        },
+        {
+          "en": "That movie was surprisingly good.",
+          "ja": "あの映画は意外によかったです。",
+          "kana": "あの えいが は いがい に よかった です。",
+          "ro": "ano eiga wa igai ni yokatta desu."
+        },
+        {
+          "en": "She’s unexpectedly strong.",
+          "ja": "彼女は意外に強いです。",
+          "kana": "かのじょ は いがい に つよい です。",
+          "ro": "kanojo wa igai ni tsuyoi desu."
+        },
+        {
+          "en": "It was an unexpected question.",
+          "ja": "それは意外な質問でした。",
+          "kana": "それ は いがい な しつもん でした。",
+          "ro": "sore wa igai na shitsumon deshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-004",
+      "ja": "印象的",
+      "kana": "いんしょうてき",
+      "ro": "inshouteki",
+      "en": "impressive / memorable",
+      "examples": [
+        {
+          "en": "That speech was impressive.",
+          "ja": "あのスピーチは印象的でした。",
+          "kana": "あの すぴーち は いんしょうてき でした。",
+          "ro": "ano supiichi wa inshouteki deshita."
+        },
+        {
+          "en": "The ending was very memorable.",
+          "ja": "エンディングはとても印象的でした。",
+          "kana": "えんでぃんぐ は とても いんしょうてき でした。",
+          "ro": "endingu wa totemo inshouteki deshita."
+        },
+        {
+          "en": "She gave an impressive presentation.",
+          "ja": "彼女は印象的な発表をしました。",
+          "kana": "かのじょ は いんしょうてき な はっぴょう を しました。",
+          "ro": "kanojo wa inshouteki na happyou o shimashita."
+        },
+        {
+          "en": "The scene was truly impressive.",
+          "ja": "その場面は本当に印象的でした。",
+          "kana": "その ばめん は ほんとうに いんしょうてき でした。",
+          "ro": "sono bamen wa hontou ni inshouteki deshita."
+        },
+        {
+          "en": "His words left a deep impression.",
+          "ja": "彼の言葉は印象的でした。",
+          "kana": "かれ の ことば は いんしょうてき でした。",
+          "ro": "kare no kotoba wa inshouteki deshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-005",
+      "ja": "安全",
+      "kana": "あんぜん",
+      "ro": "anzen",
+      "en": "safe / secure",
+      "examples": [
+        {
+          "en": "This city is safe.",
+          "ja": "この町は安全です。",
+          "kana": "この まち は あんぜん です。",
+          "ro": "kono machi wa anzen desu."
+        },
+        {
+          "en": "Please drive safely.",
+          "ja": "安全に運転してください。",
+          "kana": "あんぜん に うんてん して ください。",
+          "ro": "anzen ni unten shite kudasai."
+        },
+        {
+          "en": "Safety is the top priority.",
+          "ja": "安全が第一です。",
+          "kana": "あんぜん が だいいち です。",
+          "ro": "anzen ga daiichi desu."
+        },
+        {
+          "en": "We live in a safe area.",
+          "ja": "私たちは安全な地域に住んでいます。",
+          "kana": "わたしたち は あんぜん な ちいき に すんでいます。",
+          "ro": "watashitachi wa anzen na chiiki ni sundeimasu."
+        },
+        {
+          "en": "The plane landed safely.",
+          "ja": "飛行機は安全に着陸しました。",
+          "kana": "ひこうき は あんぜん に ちゃくりく しました。",
+          "ro": "hikouki wa anzen ni chakuriku shimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-006",
+      "ja": "活発",
+      "kana": "かっぱつ",
+      "ro": "kappatsu",
+      "en": "active / lively / energetic",
+      "examples": [
+        {
+          "en": "He is an active boy.",
+          "ja": "彼は活発な男の子です。",
+          "kana": "かれ は かっぱつ な おとこのこ です。",
+          "ro": "kare wa kappatsu na otokonoko desu."
+        },
+        {
+          "en": "The discussion was very lively.",
+          "ja": "議論はとても活発でした。",
+          "kana": "ぎろん は とても かっぱつ でした。",
+          "ro": "giron wa totemo kappatsu deshita."
+        },
+        {
+          "en": "My sister is active and cheerful.",
+          "ja": "妹は活発で明るいです。",
+          "kana": "いもうと は かっぱつ で あかるい です。",
+          "ro": "imouto wa kappatsu de akarui desu."
+        },
+        {
+          "en": "He always joins in class activities.",
+          "ja": "彼はいつも活発に授業に参加します。",
+          "kana": "かれ は いつも かっぱつ に じゅぎょう に さんか します。",
+          "ro": "kare wa itsumo kappatsu ni jugyou ni sanka shimasu."
+        },
+        {
+          "en": "This area has active trade.",
+          "ja": "この地域は貿易が活発です。",
+          "kana": "この ちいき は ぼうえき が かっぱつ です。",
+          "ro": "kono chiiki wa boueki ga kappatsu desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-007",
+      "ja": "確実",
+      "kana": "かくじつ",
+      "ro": "kakujitsu",
+      "en": "certain / reliable / sure",
+      "examples": [
+        {
+          "en": "That information is reliable.",
+          "ja": "その情報は確実です。",
+          "kana": "その じょうほう は かくじつ です。",
+          "ro": "sono jouhou wa kakujitsu desu."
+        },
+        {
+          "en": "He made a sure plan.",
+          "ja": "彼は確実な計画を立てました。",
+          "kana": "かれ は かくじつ な けいかく を たてました。",
+          "ro": "kare wa kakujitsu na keikaku o tatemashita."
+        },
+        {
+          "en": "We must take certain measures.",
+          "ja": "確実な対策を取らなければなりません。",
+          "kana": "かくじつ な たいさく を とらなければ なりません。",
+          "ro": "kakujitsu na taisaku o toranakereba narimasen."
+        },
+        {
+          "en": "He gave me a definite answer.",
+          "ja": "彼は確実な返事をくれました。",
+          "kana": "かれ は かくじつ な へんじ を くれました。",
+          "ro": "kare wa kakujitsu na henji o kuremashita."
+        },
+        {
+          "en": "It’s certain that he’ll come.",
+          "ja": "彼が来るのは確実です。",
+          "kana": "かれ が くる の は かくじつ です。",
+          "ro": "kare ga kuru no wa kakujitsu desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-008",
+      "ja": "過剰",
+      "kana": "かじょう",
+      "ro": "kajou",
+      "en": "excessive / too much / over-",
+      "examples": [
+        {
+          "en": "You ate too much sugar.",
+          "ja": "砂糖を過剰に取りました。",
+          "kana": "さとう を かじょう に とりました。",
+          "ro": "satou o kajou ni torimashita."
+        },
+        {
+          "en": "His reaction was excessive.",
+          "ja": "彼の反応は過剰でした。",
+          "kana": "かれ の はんのう は かじょう でした。",
+          "ro": "kare no hannou wa kajou deshita."
+        },
+        {
+          "en": "We need to avoid excessive stress.",
+          "ja": "過剰なストレスを避ける必要があります。",
+          "kana": "かじょう な すとれす を さける ひつよう が あります。",
+          "ro": "kajou na sutoresu o sakeru hitsuyou ga arimasu."
+        },
+        {
+          "en": "He showed too much confidence.",
+          "ja": "彼は過剰な自信を持っていました。",
+          "kana": "かれ は かじょう な じしん を もっていました。",
+          "ro": "kare wa kajou na jishin o motteimashita."
+        },
+        {
+          "en": "Excessive drinking is bad for health.",
+          "ja": "過剰な飲酒は健康に悪いです。",
+          "kana": "かじょう な いんしゅ は けんこう に わるい です。",
+          "ro": "kajou na inshu wa kenkou ni warui desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-009",
+      "ja": "簡潔",
+      "kana": "かんけつ",
+      "ro": "kanketsu",
+      "en": "concise / brief / clear",
+      "examples": [
+        {
+          "en": "Please write it briefly.",
+          "ja": "簡潔に書いてください。",
+          "kana": "かんけつ に かいて ください。",
+          "ro": "kanketsu ni kaite kudasai."
+        },
+        {
+          "en": "His speech was concise and clear.",
+          "ja": "彼のスピーチは簡潔で分かりやすかったです。",
+          "kana": "かれ の すぴーち は かんけつ で わかりやすかった です。",
+          "ro": "kare no supiichi wa kanketsu de wakariyasukatta desu."
+        },
+        {
+          "en": "This manual is simple and concise.",
+          "ja": "このマニュアルは簡潔です。",
+          "kana": "この まにゅある は かんけつ です。",
+          "ro": "kono manyuaru wa kanketsu desu."
+        },
+        {
+          "en": "She gave a concise explanation.",
+          "ja": "彼女は簡潔な説明をしました。",
+          "kana": "かのじょ は かんけつ な せつめい を しました。",
+          "ro": "kanojo wa kanketsu na setsumei o shimashita."
+        },
+        {
+          "en": "His report was short and concise.",
+          "ja": "彼の報告は短くて簡潔でした。",
+          "kana": "かれ の ほうこく は みじかくて かんけつ でした。",
+          "ro": "kare no houkoku wa mijikakute kanketsu deshita."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-010",
+      "ja": "頑固",
+      "kana": "がんこ",
+      "ro": "ganko",
+      "en": "stubborn / obstinate / firm",
+      "examples": [
+        {
+          "en": "My grandfather is stubborn.",
+          "ja": "祖父は頑固です。",
+          "kana": "そふ は がんこ です。",
+          "ro": "sofu wa ganko desu."
+        },
+        {
+          "en": "He has a stubborn personality.",
+          "ja": "彼は頑固な性格です。",
+          "kana": "かれ は がんこ な せいかく です。",
+          "ro": "kare wa ganko na seikaku desu."
+        },
+        {
+          "en": "She never changes her opinion.",
+          "ja": "彼女は頑固に自分の意見を変えません。",
+          "kana": "かのじょ は がんこ に じぶん の いけん を かえません。",
+          "ro": "kanojo wa ganko ni jibun no iken o kaemasen."
+        },
+        {
+          "en": "My boss is quite stubborn.",
+          "ja": "上司はかなり頑固です。",
+          "kana": "じょうし は かなり がんこ です。",
+          "ro": "joushi wa kanari ganko desu."
+        },
+        {
+          "en": "He stubbornly refused to apologize.",
+          "ja": "彼は頑固に謝ることを拒みました。",
+          "kana": "かれ は がんこ に あやまる こと を こばみました。",
+          "ro": "kare wa ganko ni ayamaru koto o kobamimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-011",
+      "ja": "強引",
+      "kana": "ごういん",
+      "ro": "gouin",
+      "en": "forceful / pushy / coercive",
+      "examples": [
+        {
+          "en": "He used a forceful method.",
+          "ja": "彼は強引な方法を使いました。",
+          "kana": "かれ は ごういん な ほうほう を つかいました。",
+          "ro": "kare wa gouin na houhou o tsukaimashita."
+        },
+        {
+          "en": "Don’t be too pushy.",
+          "ja": "あまり強引にならないでください。",
+          "kana": "あまり ごういん に ならないで ください。",
+          "ro": "amari gouin ni naranaide kudasai."
+        },
+        {
+          "en": "He forced the plan through.",
+          "ja": "彼は強引に計画を進めました。",
+          "kana": "かれ は ごういん に けいかく を すすめました。",
+          "ro": "kare wa gouin ni keikaku o susumemashita."
+        },
+        {
+          "en": "She was forced to agree.",
+          "ja": "彼女は強引に同意させられました。",
+          "kana": "かのじょ は ごういん に どうい させられました。",
+          "ro": "kanojo wa gouin ni doui saseraremashita."
+        },
+        {
+          "en": "His way of speaking is a bit pushy.",
+          "ja": "彼の話し方は少し強引です。",
+          "kana": "かれ の はなしかた は すこし ごういん です。",
+          "ro": "kare no hanashikata wa sukoshi gouin desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-012",
+      "ja": "豪華",
+      "kana": "ごうか",
+      "ro": "gouka",
+      "en": "luxurious / gorgeous / splendid",
+      "examples": [
+        {
+          "en": "We stayed at a luxurious hotel.",
+          "ja": "私たちは豪華なホテルに泊まりました。",
+          "kana": "わたしたち は ごうか な ほてる に とまりました。",
+          "ro": "watashitachi wa gouka na hoteru ni tomarimashita."
+        },
+        {
+          "en": "This meal is really gorgeous.",
+          "ja": "この食事は本当に豪華です。",
+          "kana": "この しょくじ は ほんとうに ごうか です。",
+          "ro": "kono shokuji wa hontou ni gouka desu."
+        },
+        {
+          "en": "She wore a gorgeous dress.",
+          "ja": "彼女は豪華なドレスを着ていました。",
+          "kana": "かのじょ は ごうか な どれす を きていました。",
+          "ro": "kanojo wa gouka na doresu o kiteimashita."
+        },
+        {
+          "en": "They live in a luxurious house.",
+          "ja": "彼らは豪華な家に住んでいます。",
+          "kana": "かれら は ごうか な いえ に すんでいます。",
+          "ro": "karera wa gouka na ie ni sundeimasu."
+        },
+        {
+          "en": "It was a splendid party.",
+          "ja": "それは豪華なパーティーでした。",
+          "kana": "それ は ごうか な ぱーてぃー でした。",
+          "ro": "sore wa gouka na paatii deshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-013",
+      "ja": "穏やか",
+      "kana": "おだやか",
+      "ro": "odayaka",
+      "en": "calm / gentle / peaceful",
+      "examples": [
+        {
+          "en": "He has a gentle personality.",
+          "ja": "彼は穏やかな性格です。",
+          "kana": "かれ は おだやか な せいかく です。",
+          "ro": "kare wa odayaka na seikaku desu."
+        },
+        {
+          "en": "The sea is calm today.",
+          "ja": "今日は海が穏やかです。",
+          "kana": "きょう は うみ が おだやか です。",
+          "ro": "kyou wa umi ga odayaka desu."
+        },
+        {
+          "en": "She spoke in a calm voice.",
+          "ja": "彼女は穏やかな声で話しました。",
+          "kana": "かのじょ は おだやか な こえ で はなしました。",
+          "ro": "kanojo wa odayaka na koe de hanashimashita."
+        },
+        {
+          "en": "We spent a peaceful day.",
+          "ja": "私たちは穏やかな一日を過ごしました。",
+          "kana": "わたしたち は おだやか な いちにち を すごしました。",
+          "ro": "watashitachi wa odayaka na ichinichi o sugoshimashita."
+        },
+        {
+          "en": "His expression became calm.",
+          "ja": "彼の表情が穏やかになりました。",
+          "kana": "かれ の ひょうじょう が おだやか に なりました。",
+          "ro": "kare no hyoujou ga odayaka ni narimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-014",
+      "ja": "快適",
+      "kana": "かいてき",
+      "ro": "kaiteki",
+      "en": "comfortable / pleasant / cozy",
+      "examples": [
+        {
+          "en": "This room is very comfortable.",
+          "ja": "この部屋はとても快適です。",
+          "kana": "この へや は とても かいてき です。",
+          "ro": "kono heya wa totemo kaiteki desu."
+        },
+        {
+          "en": "We had a comfortable flight.",
+          "ja": "快適な飛行でした。",
+          "kana": "かいてき な ひこう でした。",
+          "ro": "kaiteki na hikou deshita."
+        },
+        {
+          "en": "I like this sofa because it’s comfortable.",
+          "ja": "このソファーは快適なので好きです。",
+          "kana": "この そふぁー は かいてき なので すき です。",
+          "ro": "kono sofaa wa kaiteki nanode suki desu."
+        },
+        {
+          "en": "Please make your stay comfortable.",
+          "ja": "快適にお過ごしください。",
+          "kana": "かいてき に おすごし ください。",
+          "ro": "kaiteki ni osugoshi kudasai."
+        },
+        {
+          "en": "This chair has a comfortable design.",
+          "ja": "この椅子は快適なデザインです。",
+          "kana": "この いす は かいてき な でざいん です。",
+          "ro": "kono isu wa kaiteki na dezain desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-015",
+      "ja": "確か",
+      "kana": "たしか",
+      "ro": "tashika",
+      "en": "certain / sure / reliable",
+      "examples": [
+        {
+          "en": "I’m sure it was yesterday.",
+          "ja": "それは確か昨日でした。",
+          "kana": "それ は たしか きのう でした。",
+          "ro": "sore wa tashika kinou deshita."
+        },
+        {
+          "en": "That’s a reliable source.",
+          "ja": "それは確かな情報です。",
+          "kana": "それ は たしか な じょうほう です。",
+          "ro": "sore wa tashika na jouhou desu."
+        },
+        {
+          "en": "I’m not sure about that.",
+          "ja": "それは確かではありません。",
+          "kana": "それ は たしか では ありません。",
+          "ro": "sore wa tashika de wa arimasen."
+        },
+        {
+          "en": "He spoke with confidence.",
+          "ja": "彼は確かな口調で話しました。",
+          "kana": "かれ は たしか な くちょう で はなしました。",
+          "ro": "kare wa tashika na kuchou de hanashimashita."
+        },
+        {
+          "en": "It’s certain that he will come.",
+          "ja": "彼が来るのは確かです。",
+          "kana": "かれ が くる の は たしか です。",
+          "ro": "kare ga kuru no wa tashika desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-016",
+      "ja": "華やか",
+      "kana": "はなやか",
+      "ro": "hanayaka",
+      "en": "bright / showy / splendid",
+      "examples": [
+        {
+          "en": "She wore a bright dress.",
+          "ja": "彼女は華やかなドレスを着ていました。",
+          "kana": "かのじょ は はなやか な どれす を きていました。",
+          "ro": "kanojo wa hanayaka na doresu o kiteimashita."
+        },
+        {
+          "en": "It was a splendid ceremony.",
+          "ja": "それは華やかな式でした。",
+          "kana": "それ は はなやか な しき でした。",
+          "ro": "sore wa hanayaka na shiki deshita."
+        },
+        {
+          "en": "The city looks bright at night.",
+          "ja": "夜の街は華やかです。",
+          "kana": "よる の まち は はなやか です。",
+          "ro": "yoru no machi wa hanayaka desu."
+        },
+        {
+          "en": "She has a cheerful and bright personality.",
+          "ja": "彼女は明るく華やかな性格です。",
+          "kana": "かのじょ は あかるく はなやか な せいかく です。",
+          "ro": "kanojo wa akaruku hanayaka na seikaku desu."
+        },
+        {
+          "en": "The stage looked glamorous.",
+          "ja": "ステージは華やかに見えました。",
+          "kana": "すてーじ は はなやか に みえました。",
+          "ro": "suteeji wa hanayaka ni miemashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-017",
+      "ja": "平気",
+      "kana": "へいき",
+      "ro": "heiki",
+      "en": "calm / unconcerned / fine",
+      "examples": [
+        {
+          "en": "I’m fine, don’t worry.",
+          "ja": "大丈夫、平気です。",
+          "kana": "だいじょうぶ、へいき です。",
+          "ro": "daijoubu, heiki desu."
+        },
+        {
+          "en": "He seems calm even under pressure.",
+          "ja": "彼はプレッシャーの中でも平気そうです。",
+          "kana": "かれ は ぷれっしゃー の なか でも へいき そう です。",
+          "ro": "kare wa puresshaa no naka demo heiki sou desu."
+        },
+        {
+          "en": "She said she was fine after falling.",
+          "ja": "彼女は転んでも平気だと言いました。",
+          "kana": "かのじょ は ころんでも へいき だ と いいました。",
+          "ro": "kanojo wa korondemo heiki da to iimashita."
+        },
+        {
+          "en": "I’m fine without lunch.",
+          "ja": "昼ごはんを食べなくても平気です。",
+          "kana": "ひるごはん を たべなくても へいき です。",
+          "ro": "hirugohan o tabenakutemo heiki desu."
+        },
+        {
+          "en": "He talked calmly about the accident.",
+          "ja": "彼は事故のことを平気で話しました。",
+          "kana": "かれ は じこ の こと を へいき で はなしました。",
+          "ro": "kare wa jiko no koto o heiki de hanashimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-018",
+      "ja": "真剣",
+      "kana": "しんけん",
+      "ro": "shinken",
+      "en": "serious / earnest / sincere",
+      "examples": [
+        {
+          "en": "He looked serious.",
+          "ja": "彼は真剣な顔をしていました。",
+          "kana": "かれ は しんけん な かお を していました。",
+          "ro": "kare wa shinken na kao o shiteimashita."
+        },
+        {
+          "en": "She is studying seriously.",
+          "ja": "彼女は真剣に勉強しています。",
+          "kana": "かのじょ は しんけん に べんきょう しています。",
+          "ro": "kanojo wa shinken ni benkyou shiteimasu."
+        },
+        {
+          "en": "This is a serious matter.",
+          "ja": "これは真剣な問題です。",
+          "kana": "これ は しんけん な もんだい です。",
+          "ro": "kore wa shinken na mondai desu."
+        },
+        {
+          "en": "He listens seriously to others.",
+          "ja": "彼は人の話を真剣に聞きます。",
+          "kana": "かれ は ひと の はなし を しんけん に ききます。",
+          "ro": "kare wa hito no hanashi o shinken ni kikimasu."
+        },
+        {
+          "en": "She gave me a sincere look.",
+          "ja": "彼女は真剣な目で私を見ました。",
+          "kana": "かのじょ は しんけん な め で わたし を みました。",
+          "ro": "kanojo wa shinken na me de watashi o mimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-019",
+      "ja": "慎重",
+      "kana": "しんちょう",
+      "ro": "shinchou",
+      "en": "careful / cautious / prudent",
+      "examples": [
+        {
+          "en": "He is a careful person.",
+          "ja": "彼は慎重な人です。",
+          "kana": "かれ は しんちょう な ひと です。",
+          "ro": "kare wa shinchou na hito desu."
+        },
+        {
+          "en": "Please decide carefully.",
+          "ja": "慎重に決めてください。",
+          "kana": "しんちょう に きめて ください。",
+          "ro": "shinchou ni kimete kudasai."
+        },
+        {
+          "en": "He is cautious about money.",
+          "ja": "彼はお金に慎重です。",
+          "kana": "かれ は おかね に しんちょう です。",
+          "ro": "kare wa okane ni shinchou desu."
+        },
+        {
+          "en": "We must proceed carefully.",
+          "ja": "慎重に進める必要があります。",
+          "kana": "しんちょう に すすめる ひつよう が あります。",
+          "ro": "shinchou ni susumeru hitsuyou ga arimasu."
+        },
+        {
+          "en": "She answered in a careful manner.",
+          "ja": "彼女は慎重な態度で答えました。",
+          "kana": "かのじょ は しんちょう な たいど で こたえました。",
+          "ro": "kanojo wa shinchou na taido de kotaemashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-020",
+      "ja": "素直",
+      "kana": "すなお",
+      "ro": "sunao",
+      "en": "honest / obedient / gentle",
+      "examples": [
+        {
+          "en": "He is an honest child.",
+          "ja": "彼は素直な子どもです。",
+          "kana": "かれ は すなお な こども です。",
+          "ro": "kare wa sunao na kodomo desu."
+        },
+        {
+          "en": "She apologized honestly.",
+          "ja": "彼女は素直に謝りました。",
+          "kana": "かのじょ は すなお に あやまりました。",
+          "ro": "kanojo wa sunao ni ayamarimashita."
+        },
+        {
+          "en": "I like people who are honest.",
+          "ja": "素直な人が好きです。",
+          "kana": "すなお な ひと が すき です。",
+          "ro": "sunao na hito ga suki desu."
+        },
+        {
+          "en": "He accepted the advice honestly.",
+          "ja": "彼は素直にアドバイスを受け入れました。",
+          "kana": "かれ は すなお に あどばいす を うけいれました。",
+          "ro": "kare wa sunao ni adobaisu o ukeiremashita."
+        },
+        {
+          "en": "She has a gentle and honest personality.",
+          "ja": "彼女は優しくて素直な性格です。",
+          "kana": "かのじょ は やさしくて すなお な せいかく です。",
+          "ro": "kanojo wa yasashikute sunao na seikaku desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-021",
+      "ja": "積極的",
+      "kana": "せっきょくてき",
+      "ro": "sekkyokuteki",
+      "en": "positive / proactive / active",
+      "examples": [
+        {
+          "en": "He has a positive attitude toward work.",
+          "ja": "彼は仕事に積極的な態度を持っています。",
+          "kana": "かれ は しごと に せっきょくてき な たいど を もっています。",
+          "ro": "kare wa shigoto ni sekkyokuteki na taido o motteimasu."
+        },
+        {
+          "en": "She actively participates in class.",
+          "ja": "彼女は授業に積極的に参加します。",
+          "kana": "かのじょ は じゅぎょう に せっきょくてき に さんか します。",
+          "ro": "kanojo wa jugyou ni sekkyokuteki ni sanka shimasu."
+        },
+        {
+          "en": "We need to take positive action.",
+          "ja": "積極的な行動が必要です。",
+          "kana": "せっきょくてき な こうどう が ひつよう です。",
+          "ro": "sekkyokuteki na koudou ga hitsuyou desu."
+        },
+        {
+          "en": "He gave a proactive opinion.",
+          "ja": "彼は積極的な意見を言いました。",
+          "kana": "かれ は せっきょくてき な いけん を いいました。",
+          "ro": "kare wa sekkyokuteki na iken o iimashita."
+        },
+        {
+          "en": "Try to be positive in life.",
+          "ja": "人生には積極的でありましょう。",
+          "kana": "じんせい に は せっきょくてき で ありましょう。",
+          "ro": "jinsei ni wa sekkyokuteki de arimashou."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-022",
+      "ja": "丁寧",
+      "kana": "ていねい",
+      "ro": "teinei",
+      "en": "polite / careful / respectful",
+      "examples": [
+        {
+          "en": "She speaks politely.",
+          "ja": "彼女は丁寧に話します。",
+          "kana": "かのじょ は ていねい に はなします。",
+          "ro": "kanojo wa teinei ni hanashimasu."
+        },
+        {
+          "en": "He gave a polite explanation.",
+          "ja": "彼は丁寧な説明をしました。",
+          "kana": "かれ は ていねい な せつめい を しました。",
+          "ro": "kare wa teinei na setsumei o shimashita."
+        },
+        {
+          "en": "This letter was written carefully.",
+          "ja": "この手紙は丁寧に書かれています。",
+          "kana": "この てがみ は ていねい に かかれています。",
+          "ro": "kono tegami wa teinei ni kakareteimasu."
+        },
+        {
+          "en": "Please handle this politely.",
+          "ja": "丁寧に対応してください。",
+          "kana": "ていねい に たいおう して ください。",
+          "ro": "teinei ni taiou shite kudasai."
+        },
+        {
+          "en": "His behavior is always polite.",
+          "ja": "彼の態度はいつも丁寧です。",
+          "kana": "かれ の たいど は いつも ていねい です。",
+          "ro": "kare no taido wa itsumo teinei desu."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-023",
+      "ja": "突然",
+      "kana": "とつぜん",
+      "ro": "totsuzen",
+      "en": "sudden / abrupt / unexpected",
+      "examples": [
+        {
+          "en": "It suddenly started to rain.",
+          "ja": "突然雨が降り始めました。",
+          "kana": "とつぜん あめ が ふりはじめました。",
+          "ro": "totsuzen ame ga furihajimemashita."
+        },
+        {
+          "en": "He suddenly stood up.",
+          "ja": "彼は突然立ち上がりました。",
+          "kana": "かれ は とつぜん たちあがりました。",
+          "ro": "kare wa totsuzen tachiagarimashita."
+        },
+        {
+          "en": "A sudden change happened.",
+          "ja": "突然の変化が起きました。",
+          "kana": "とつぜん の へんか が おきました。",
+          "ro": "totsuzen no henka ga okimashita."
+        },
+        {
+          "en": "She suddenly cried.",
+          "ja": "彼女は突然泣き出しました。",
+          "kana": "かのじょ は とつぜん なきだしました。",
+          "ro": "kanojo wa totsuzen nakidashimashita."
+        },
+        {
+          "en": "The meeting was canceled suddenly.",
+          "ja": "会議は突然中止になりました。",
+          "kana": "かいぎ は とつぜん ちゅうし に なりました。",
+          "ro": "kaigi wa totsuzen chuushi ni narimashita."
+        }
+      ],
+      "grammar": "Adverb / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-024",
+      "ja": "明確",
+      "kana": "めいかく",
+      "ro": "meikaku",
+      "en": "clear / definite / explicit",
+      "examples": [
+        {
+          "en": "Please give a clear answer.",
+          "ja": "明確な答えをください。",
+          "kana": "めいかく な こたえ を ください。",
+          "ro": "meikaku na kotae o kudasai."
+        },
+        {
+          "en": "The rule is very clear.",
+          "ja": "そのルールはとても明確です。",
+          "kana": "その るーる は とても めいかく です。",
+          "ro": "sono ruuru wa totemo meikaku desu."
+        },
+        {
+          "en": "He has a clear goal.",
+          "ja": "彼には明確な目標があります。",
+          "kana": "かれ には めいかく な もくひょう が あります。",
+          "ro": "kare ni wa meikaku na mokuhyou ga arimasu."
+        },
+        {
+          "en": "Please state it clearly.",
+          "ja": "明確に述べてください。",
+          "kana": "めいかく に のべて ください。",
+          "ro": "meikaku ni nobete kudasai."
+        },
+        {
+          "en": "The meaning of this word is clear.",
+          "ja": "この言葉の意味は明確です。",
+          "kana": "この ことば の いみ は めいかく です。",
+          "ro": "kono kotoba no imi wa meikaku desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-025",
+      "ja": "有能",
+      "kana": "ゆうのう",
+      "ro": "yuunou",
+      "en": "capable / competent / talented",
+      "examples": [
+        {
+          "en": "He is a capable manager.",
+          "ja": "彼は有能なマネージャーです。",
+          "kana": "かれ は ゆうのう な まねーじゃー です。",
+          "ro": "kare wa yuunou na maneejaa desu."
+        },
+        {
+          "en": "She is a very talented person.",
+          "ja": "彼女はとても有能な人です。",
+          "kana": "かのじょ は とても ゆうのう な ひと です。",
+          "ro": "kanojo wa totemo yuunou na hito desu."
+        },
+        {
+          "en": "He handled the job well.",
+          "ja": "彼は仕事を有能にこなしました。",
+          "kana": "かれ は しごと を ゆうのう に こなしました。",
+          "ro": "kare wa shigoto o yuunou ni konashimashita."
+        },
+        {
+          "en": "That company has capable employees.",
+          "ja": "その会社には有能な社員が多いです。",
+          "kana": "その かいしゃ には ゆうのう な しゃいん が おおい です。",
+          "ro": "sono kaisha ni wa yuunou na shain ga ooi desu."
+        },
+        {
+          "en": "He is known as a competent engineer.",
+          "ja": "彼は有能なエンジニアとして知られています。",
+          "kana": "かれ は ゆうのう な えんじにあ として しられています。",
+          "ro": "kare wa yuunou na enjinia toshite shirareteimasu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-026",
+      "ja": "豊か",
+      "kana": "ゆたか",
+      "ro": "yutaka",
+      "en": "rich / abundant / wealthy",
+      "examples": [
+        {
+          "en": "This country is rich in nature.",
+          "ja": "この国は自然が豊かです。",
+          "kana": "この くに は しぜん が ゆたか です。",
+          "ro": "kono kuni wa shizen ga yutaka desu."
+        },
+        {
+          "en": "He leads a wealthy life.",
+          "ja": "彼は豊かな生活を送っています。",
+          "kana": "かれ は ゆたか な せいかつ を おくっています。",
+          "ro": "kare wa yutaka na seikatsu o okutteimasu."
+        },
+        {
+          "en": "Japan has abundant culture.",
+          "ja": "日本は文化が豊かです。",
+          "kana": "にほん は ぶんか が ゆたか です。",
+          "ro": "nihon wa bunka ga yutaka desu."
+        },
+        {
+          "en": "He has a rich imagination.",
+          "ja": "彼は想像力が豊かです。",
+          "kana": "かれ は そうぞうりょく が ゆたか です。",
+          "ro": "kare wa souzouryoku ga yutaka desu."
+        },
+        {
+          "en": "They live in a rich land.",
+          "ja": "彼らは豊かな土地に住んでいます。",
+          "kana": "かれら は ゆたか な とち に すんでいます。",
+          "ro": "karera wa yutaka na tochi ni sundeimasu."
+        }
+      ],
+      "grammar": "Noun / が / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-027",
+      "ja": "冷静",
+      "kana": "れいせい",
+      "ro": "reisei",
+      "en": "calm / composed / cool-headed",
+      "examples": [
+        {
+          "en": "He is a calm person.",
+          "ja": "彼は冷静な人です。",
+          "kana": "かれ は れいせい な ひと です。",
+          "ro": "kare wa reisei na hito desu."
+        },
+        {
+          "en": "Please stay calm.",
+          "ja": "冷静にしてください。",
+          "kana": "れいせい に して ください。",
+          "ro": "reisei ni shite kudasai."
+        },
+        {
+          "en": "She calmly explained the situation.",
+          "ja": "彼女は冷静に状況を説明しました。",
+          "kana": "かのじょ は れいせい に じょうきょう を せつめい しました。",
+          "ro": "kanojo wa reisei ni joukyou o setsumei shimashita."
+        },
+        {
+          "en": "He made a cool-headed decision.",
+          "ja": "彼は冷静な判断をしました。",
+          "kana": "かれ は れいせい な はんだん を しました。",
+          "ro": "kare wa reisei na handan o shimashita."
+        },
+        {
+          "en": "She remained calm even in danger.",
+          "ja": "危険な時でも彼女は冷静でした。",
+          "kana": "きけん な とき でも かのじょ は れいせい でした。",
+          "ro": "kiken na toki demo kanojo wa reisei deshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-028",
+      "ja": "面倒",
+      "kana": "めんどう",
+      "ro": "mendou",
+      "en": "troublesome / bothersome / caring",
+      "examples": [
+        {
+          "en": "This work is troublesome.",
+          "ja": "この仕事は面倒です。",
+          "kana": "この しごと は めんどう です。",
+          "ro": "kono shigoto wa mendou desu."
+        },
+        {
+          "en": "He finds cleaning troublesome.",
+          "ja": "彼は掃除を面倒だと思っています。",
+          "kana": "かれ は そうじ を めんどう だ と おもっています。",
+          "ro": "kare wa souji o mendou da to omotteimasu."
+        },
+        {
+          "en": "Taking care of a cat is fun but also troublesome.",
+          "ja": "猫の世話は楽しいけど面倒です。",
+          "kana": "ねこ の せわ は たのしい けど めんどう です。",
+          "ro": "neko no sewa wa tanoshii kedo mendou desu."
+        },
+        {
+          "en": "He took care of me kindly.",
+          "ja": "彼は私の面倒を見てくれました。",
+          "kana": "かれ は わたし の めんどう を みて くれました。",
+          "ro": "kare wa watashi no mendou o mite kuremashita."
+        },
+        {
+          "en": "It's troublesome to fill out this form.",
+          "ja": "この書類を書くのは面倒です。",
+          "kana": "この しょるい を かく の は めんどう です。",
+          "ro": "kono shorui o kaku no wa mendou desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-029",
+      "ja": "真面目",
+      "kana": "まじめ",
+      "ro": "majime",
+      "en": "serious / earnest / diligent",
+      "examples": [
+        {
+          "en": "He is a serious student.",
+          "ja": "彼は真面目な学生です。",
+          "kana": "かれ は まじめ な がくせい です。",
+          "ro": "kare wa majime na gakusei desu."
+        },
+        {
+          "en": "She works seriously every day.",
+          "ja": "彼女は毎日真面目に働いています。",
+          "kana": "かのじょ は まいにち まじめ に はたらいています。",
+          "ro": "kanojo wa mainichi majime ni hataraiteimasu."
+        },
+        {
+          "en": "He has a diligent personality.",
+          "ja": "彼は真面目な性格です。",
+          "kana": "かれ は まじめ な せいかく です。",
+          "ro": "kare wa majime na seikaku desu."
+        },
+        {
+          "en": "That’s a serious answer.",
+          "ja": "それは真面目な答えですね。",
+          "kana": "それ は まじめ な こたえ ですね。",
+          "ro": "sore wa majime na kotae desu ne."
+        },
+        {
+          "en": "She studies very diligently.",
+          "ja": "彼女はとても真面目に勉強しています。",
+          "kana": "かのじょ は とても まじめ に べんきょう しています。",
+          "ro": "kanojo wa totemo majime ni benkyou shiteimasu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-030",
+      "ja": "不思議",
+      "kana": "ふしぎ",
+      "ro": "fushigi",
+      "en": "mysterious / strange / wonderful",
+      "examples": [
+        {
+          "en": "It’s a mysterious story.",
+          "ja": "それは不思議な話です。",
+          "kana": "それ は ふしぎ な はなし です。",
+          "ro": "sore wa fushigi na hanashi desu."
+        },
+        {
+          "en": "This place has a strange atmosphere.",
+          "ja": "この場所は不思議な雰囲気があります。",
+          "kana": "この ばしょ は ふしぎ な ふんいき が あります。",
+          "ro": "kono basho wa fushigi na fun'iki ga arimasu."
+        },
+        {
+          "en": "He met her in a mysterious way.",
+          "ja": "彼は不思議な出会い方で彼女に会いました。",
+          "kana": "かれ は ふしぎ な であいかた で かのじょ に あいました。",
+          "ro": "kare wa fushigi na deaikata de kanojo ni aimashita."
+        },
+        {
+          "en": "It’s strange that he knows that.",
+          "ja": "彼がそれを知っているのは不思議です。",
+          "kana": "かれ が それ を しっている の は ふしぎ です。",
+          "ro": "kare ga sore o shitteiru no wa fushigi desu."
+        },
+        {
+          "en": "This is a truly mysterious thing.",
+          "ja": "これは本当に不思議なことです。",
+          "kana": "これ は ほんとうに ふしぎ な こと です。",
+          "ro": "kore wa hontou ni fushigi na koto desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-031",
+      "ja": "平等",
+      "kana": "びょうどう",
+      "ro": "byoudou",
+      "en": "equal / fair / impartial",
+      "examples": [
+        {
+          "en": "Everyone should be treated equally.",
+          "ja": "みんな平等に扱われるべきです。",
+          "kana": "みんな びょうどう に あつかわれる べき です。",
+          "ro": "minna byoudou ni atsukawareru beki desu."
+        },
+        {
+          "en": "Education should be fair for all.",
+          "ja": "教育はすべての人に平等であるべきです。",
+          "kana": "きょういく は すべて の ひと に びょうどう で ある べき です。",
+          "ro": "kyouiku wa subete no hito ni byoudou de aru beki desu."
+        },
+        {
+          "en": "We want an equal society.",
+          "ja": "私たちは平等な社会を望んでいます。",
+          "kana": "わたしたち は びょうどう な しゃかい を のぞんでいます。",
+          "ro": "watashitachi wa byoudou na shakai o nozondeimasu."
+        },
+        {
+          "en": "He believes all people are equal.",
+          "ja": "彼はすべての人が平等だと信じています。",
+          "kana": "かれ は すべて の ひと が びょうどう だ と しんじています。",
+          "ro": "kare wa subete no hito ga byoudou da to shinjiteimasu."
+        },
+        {
+          "en": "The law must be fair to everyone.",
+          "ja": "法律はすべての人に平等でなければなりません。",
+          "kana": "ほうりつ は すべて の ひと に びょうどう で なければ なりません。",
+          "ro": "houritsu wa subete no hito ni byoudou de nakereba narimasen."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-032",
+      "ja": "不自由",
+      "kana": "ふじゆう",
+      "ro": "fujiyuu",
+      "en": "inconvenient / disabled / restricted",
+      "examples": [
+        {
+          "en": "He has trouble walking.",
+          "ja": "彼は足が不自由です。",
+          "kana": "かれ は あし が ふじゆう です。",
+          "ro": "kare wa ashi ga fujiyuu desu."
+        },
+        {
+          "en": "This life is a bit inconvenient.",
+          "ja": "この生活は少し不自由です。",
+          "kana": "この せいかつ は すこし ふじゆう です。",
+          "ro": "kono seikatsu wa sukoshi fujiyuu desu."
+        },
+        {
+          "en": "He lives a restricted life.",
+          "ja": "彼は不自由な生活をしています。",
+          "kana": "かれ は ふじゆう な せいかつ を しています。",
+          "ro": "kare wa fujiyuu na seikatsu o shiteimasu."
+        },
+        {
+          "en": "She helps people with disabilities.",
+          "ja": "彼女は体の不自由な人を助けています。",
+          "kana": "かのじょ は からだ の ふじゆう な ひと を たすけています。",
+          "ro": "kanojo wa karada no fujiyuu na hito o tasuketeimasu."
+        },
+        {
+          "en": "The room is too small, so it’s inconvenient.",
+          "ja": "部屋が狭くて不自由です。",
+          "kana": "へや が せまくて ふじゆう です。",
+          "ro": "heya ga semakute fujiyuu desu."
+        }
+      ],
+      "grammar": "Noun / が / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-034",
+      "ja": "不安",
+      "kana": "ふあん",
+      "ro": "fuan",
+      "en": "anxious / uneasy / insecure",
+      "examples": [
+        {
+          "en": "I’m worried about the exam.",
+          "ja": "試験が不安です。",
+          "kana": "しけん が ふあん です。",
+          "ro": "shiken ga fuan desu."
+        },
+        {
+          "en": "She looks anxious.",
+          "ja": "彼女は不安そうです。",
+          "kana": "かのじょ は ふあん そう です。",
+          "ro": "kanojo wa fuan sou desu."
+        },
+        {
+          "en": "He feels uneasy about the future.",
+          "ja": "彼は将来に不安を感じています。",
+          "kana": "かれ は しょうらい に ふあん を かんじています。",
+          "ro": "kare wa shourai ni fuan o kanjiteimasu."
+        },
+        {
+          "en": "Don’t worry too much.",
+          "ja": "そんなに不安にならないでください。",
+          "kana": "そんなに ふあん に ならないで ください。",
+          "ro": "sonna ni fuan ni naranaide kudasai."
+        },
+        {
+          "en": "I feel a little uneasy today.",
+          "ja": "今日は少し不安な気持ちです。",
+          "kana": "きょう は すこし ふあん な きもち です。",
+          "ro": "kyou wa sukoshi fuan na kimochi desu."
+        }
+      ],
+      "grammar": "Noun / が / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-036",
+      "ja": "有名",
+      "kana": "ゆうめい",
+      "ro": "yuumei",
+      "en": "famous / well-known / renowned",
+      "examples": [
+        {
+          "en": "He is a famous singer.",
+          "ja": "彼は有名な歌手です。",
+          "kana": "かれ は ゆうめい な かしゅ です。",
+          "ro": "kare wa yuumei na kashu desu."
+        },
+        {
+          "en": "Kyoto is famous for its temples.",
+          "ja": "京都はお寺で有名です。",
+          "kana": "きょうと は おてら で ゆうめい です。",
+          "ro": "kyouto wa otera de yuumei desu."
+        },
+        {
+          "en": "She became a famous actress.",
+          "ja": "彼女は有名な女優になりました。",
+          "kana": "かのじょ は ゆうめい な じょゆう に なりました。",
+          "ro": "kanojo wa yuumei na joyuu ni narimashita."
+        },
+        {
+          "en": "That restaurant is very well-known.",
+          "ja": "そのレストランはとても有名です。",
+          "kana": "その れすとらん は とても ゆうめい です。",
+          "ro": "sono resutoran wa totemo yuumei desu."
+        },
+        {
+          "en": "He is famous in his hometown.",
+          "ja": "彼は地元で有名です。",
+          "kana": "かれ は じもと で ゆうめい です。",
+          "ro": "kare wa jimoto de yuumei desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-037",
+      "ja": "複雑",
+      "kana": "ふくざつ",
+      "ro": "fukuzatsu",
+      "en": "complex / complicated / confusing",
+      "examples": [
+        {
+          "en": "This problem is complicated.",
+          "ja": "この問題は複雑です。",
+          "kana": "この もんだい は ふくざつ です。",
+          "ro": "kono mondai wa fukuzatsu desu."
+        },
+        {
+          "en": "Human emotions are complex.",
+          "ja": "人間の感情は複雑です。",
+          "kana": "にんげん の かんじょう は ふくざつ です。",
+          "ro": "ningen no kanjou wa fukuzatsu desu."
+        },
+        {
+          "en": "The system is too complicated to use.",
+          "ja": "そのシステムは使うのが複雑すぎます。",
+          "kana": "その しすてむ は つかう の が ふくざつ すぎます。",
+          "ro": "sono shisutemu wa tsukau no ga fukuzatsu sugimasu."
+        },
+        {
+          "en": "This route is complicated.",
+          "ja": "この道は少し複雑です。",
+          "kana": "この みち は すこし ふくざつ です。",
+          "ro": "kono michi wa sukoshi fukuzatsu desu."
+        },
+        {
+          "en": "The situation has become complicated.",
+          "ja": "状況が複雑になってきました。",
+          "kana": "じょうきょう が ふくざつ に なって きました。",
+          "ro": "joukyou ga fukuzatsu ni natte kimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-038",
+      "ja": "豊富",
+      "kana": "ほうふ",
+      "ro": "houfu",
+      "en": "abundant / rich / plentiful",
+      "examples": [
+        {
+          "en": "This area has abundant water.",
+          "ja": "この地域は水が豊富です。",
+          "kana": "この ちいき は みず が ほうふ です。",
+          "ro": "kono chiiki wa mizu ga houfu desu."
+        },
+        {
+          "en": "He has rich experience.",
+          "ja": "彼は経験が豊富です。",
+          "kana": "かれ は けいけん が ほうふ です。",
+          "ro": "kare wa keiken ga houfu desu."
+        },
+        {
+          "en": "Japan has rich nature.",
+          "ja": "日本は自然が豊富です。",
+          "kana": "にほん は しぜん が ほうふ です。",
+          "ro": "nihon wa shizen ga houfu desu."
+        },
+        {
+          "en": "The store has a wide variety of products.",
+          "ja": "この店は商品が豊富です。",
+          "kana": "この みせ は しょうひん が ほうふ です。",
+          "ro": "kono mise wa shouhin ga houfu desu."
+        },
+        {
+          "en": "That person has abundant knowledge.",
+          "ja": "あの人は知識が豊富です。",
+          "kana": "あの ひと は ちしき が ほうふ です。",
+          "ro": "ano hito wa chishiki ga houfu desu."
+        }
+      ],
+      "grammar": "Noun / が / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-040",
+      "ja": "冷淡",
+      "kana": "れいたん",
+      "ro": "reitan",
+      "en": "cold / indifferent / unfriendly",
+      "examples": [
+        {
+          "en": "He gave me a cold response.",
+          "ja": "彼は私に冷淡な返事をしました。",
+          "kana": "かれ は わたし に れいたん な へんじ を しました。",
+          "ro": "kare wa watashi ni reitan na henji o shimashita."
+        },
+        {
+          "en": "She seems cold toward others.",
+          "ja": "彼女は他人に冷淡です。",
+          "kana": "かのじょ は たにん に れいたん です。",
+          "ro": "kanojo wa tanin ni reitan desu."
+        },
+        {
+          "en": "His attitude was unfriendly.",
+          "ja": "彼の態度は冷淡でした。",
+          "kana": "かれ の たいど は れいたん でした。",
+          "ro": "kare no taido wa reitan deshita."
+        },
+        {
+          "en": "He gave a cold look.",
+          "ja": "彼は冷淡な目で見ました。",
+          "kana": "かれ は れいたん な め で みました。",
+          "ro": "kare wa reitan na me de mimashita."
+        },
+        {
+          "en": "She spoke in a cold tone.",
+          "ja": "彼女は冷淡な口調で話しました。",
+          "kana": "かのじょ は れいたん な くちょう で はなしました。",
+          "ro": "kanojo wa reitan na kuchou de hanashimashita."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-041",
+      "ja": "重大",
+      "kana": "じゅうだい",
+      "ro": "juudai",
+      "en": "serious / important / significant",
+      "examples": [
+        {
+          "en": "This is a serious problem.",
+          "ja": "これは重大な問題です。",
+          "kana": "これ は じゅうだい な もんだい です。",
+          "ro": "kore wa juudai na mondai desu."
+        },
+        {
+          "en": "He made a serious mistake.",
+          "ja": "彼は重大なミスをしました。",
+          "kana": "かれ は じゅうだい な みす を しました。",
+          "ro": "kare wa juudai na misu o shimashita."
+        },
+        {
+          "en": "This news is very important.",
+          "ja": "このニュースは重大です。",
+          "kana": "この にゅーす は じゅうだい です。",
+          "ro": "kono nyuusu wa juudai desu."
+        },
+        {
+          "en": "It could have serious results.",
+          "ja": "それは重大な結果を招くかもしれません。",
+          "kana": "それ は じゅうだい な けっか を まねく かもしれません。",
+          "ro": "sore wa juudai na kekka o maneku kamoshiremasen."
+        },
+        {
+          "en": "He is in a serious situation.",
+          "ja": "彼は重大な立場にいます。",
+          "kana": "かれ は じゅうだい な たちば に います。",
+          "ro": "kare wa juudai na tachiba ni imasu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-045",
+      "ja": "新鮮",
+      "kana": "しんせん",
+      "ro": "shinsen",
+      "en": "fresh / new / refreshing",
+      "examples": [
+        {
+          "en": "These vegetables are fresh.",
+          "ja": "この野菜は新鮮です。",
+          "kana": "この やさい は しんせん です。",
+          "ro": "kono yasai wa shinsen desu."
+        },
+        {
+          "en": "He always has fresh ideas.",
+          "ja": "彼はいつも新鮮なアイデアを持っています。",
+          "kana": "かれ は いつも しんせん な あいであ を もっています。",
+          "ro": "kare wa itsumo shinsen na aidea o motteimasu."
+        },
+        {
+          "en": "The air in the mountains is fresh.",
+          "ja": "山の空気は新鮮です。",
+          "kana": "やま の くうき は しんせん です。",
+          "ro": "yama no kuuki wa shinsen desu."
+        },
+        {
+          "en": "That experience was new to me.",
+          "ja": "その経験は私にとって新鮮でした。",
+          "kana": "その けいけん は わたし に とって しんせん でした。",
+          "ro": "sono keiken wa watashi ni totte shinsen deshita."
+        },
+        {
+          "en": "This salad looks fresh and delicious.",
+          "ja": "このサラダは新鮮でおいしそうです。",
+          "kana": "この さらだ は しんせん で おいしそう です。",
+          "ro": "kono sarada wa shinsen de oishisou desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-046",
+      "ja": "大胆",
+      "kana": "だいたん",
+      "ro": "daitan",
+      "en": "bold / daring / fearless",
+      "examples": [
+        {
+          "en": "He made a bold decision.",
+          "ja": "彼は大胆な決断をしました。",
+          "kana": "かれ は だいたん な けつだん を しました。",
+          "ro": "kare wa daitan na ketsudan o shimashita."
+        },
+        {
+          "en": "Her idea was very bold.",
+          "ja": "彼女のアイデアはとても大胆でした。",
+          "kana": "かのじょ の あいであ は とても だいたん でした。",
+          "ro": "kanojo no aidea wa totemo daitan deshita."
+        },
+        {
+          "en": "He spoke in a daring way.",
+          "ja": "彼は大胆に話しました。",
+          "kana": "かれ は だいたん に はなしました。",
+          "ro": "kare wa daitan ni hanashimashita."
+        },
+        {
+          "en": "She wore a bold dress.",
+          "ja": "彼女は大胆なドレスを着ていました。",
+          "kana": "かのじょ は だいたん な どれす を きていました。",
+          "ro": "kanojo wa daitan na doresu o kiteimashita."
+        },
+        {
+          "en": "His plan is bold but interesting.",
+          "ja": "彼の計画は大胆ですが面白いです。",
+          "kana": "かれ の けいかく は だいたん ですが おもしろい です。",
+          "ro": "kare no keikaku wa daitan desu ga omoshiroi desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-053",
+      "ja": "率直",
+      "kana": "そっちょく",
+      "ro": "sotchoku",
+      "en": "frank / honest / straightforward",
+      "examples": [
+        {
+          "en": "He gave an honest opinion.",
+          "ja": "彼は率直な意見を言いました。",
+          "kana": "かれ は そっちょく な いけん を いいました。",
+          "ro": "kare wa sotchoku na iken o iimashita."
+        },
+        {
+          "en": "Please speak frankly.",
+          "ja": "率直に話してください。",
+          "kana": "そっちょく に はなして ください。",
+          "ro": "sotchoku ni hanashite kudasai."
+        },
+        {
+          "en": "I appreciate your honesty.",
+          "ja": "あなたの率直さに感謝します。",
+          "kana": "あなた の そっちょく さ に かんしゃ します。",
+          "ro": "anata no sotchoku sa ni kansha shimasu."
+        },
+        {
+          "en": "He is an honest person.",
+          "ja": "彼は率直な人です。",
+          "kana": "かれ は そっちょく な ひと です。",
+          "ro": "kare wa sotchoku na hito desu."
+        },
+        {
+          "en": "Her words were very straightforward.",
+          "ja": "彼女の言葉はとても率直でした。",
+          "kana": "かのじょ の ことば は とても そっちょく でした。",
+          "ro": "kanojo no kotoba wa totemo sotchoku deshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-055",
+      "ja": "地味",
+      "kana": "じみ",
+      "ro": "jimi",
+      "en": "plain / simple / modest",
+      "examples": [
+        {
+          "en": "Her clothes are plain.",
+          "ja": "彼女の服は地味です。",
+          "kana": "かのじょ の ふく は じみ です。",
+          "ro": "kanojo no fuku wa jimi desu."
+        },
+        {
+          "en": "He prefers modest colors.",
+          "ja": "彼は地味な色を好みます。",
+          "kana": "かれ は じみ な いろ を このみます。",
+          "ro": "kare wa jimi na iro o konomimasu."
+        },
+        {
+          "en": "This design is too simple.",
+          "ja": "このデザインは少し地味です。",
+          "kana": "この でざいん は すこし じみ です。",
+          "ro": "kono dezain wa sukoshi jimi desu."
+        },
+        {
+          "en": "She has a quiet personality.",
+          "ja": "彼女は地味な性格です。",
+          "kana": "かのじょ は じみ な せいかく です。",
+          "ro": "kanojo wa jimi na seikaku desu."
+        },
+        {
+          "en": "The event was small and plain.",
+          "ja": "そのイベントは地味でした。",
+          "kana": "その いべんと は じみ でした。",
+          "ro": "sono ibento wa jimi deshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-056",
+      "ja": "派手",
+      "kana": "はで",
+      "ro": "hade",
+      "en": "flashy / showy / loud",
+      "examples": [
+        {
+          "en": "Her dress is very flashy.",
+          "ja": "彼女のドレスはとても派手です。",
+          "kana": "かのじょ の どれす は とても はで です。",
+          "ro": "kanojo no doresu wa totemo hade desu."
+        },
+        {
+          "en": "He likes showy cars.",
+          "ja": "彼は派手な車が好きです。",
+          "kana": "かれ は はで な くるま が すき です。",
+          "ro": "kare wa hade na kuruma ga suki desu."
+        },
+        {
+          "en": "This design is too showy for me.",
+          "ja": "このデザインは私には少し派手です。",
+          "kana": "この でざいん は わたし には すこし はで です。",
+          "ro": "kono dezain wa watashi ni wa sukoshi hade desu."
+        },
+        {
+          "en": "She wore flashy makeup.",
+          "ja": "彼女は派手な化粧をしました。",
+          "kana": "かのじょ は はで な けしょう を しました。",
+          "ro": "kanojo wa hade na keshou o shimashita."
+        },
+        {
+          "en": "He enjoys flashy parties.",
+          "ja": "彼は派手なパーティーが好きです。",
+          "kana": "かれ は はで な ぱーてぃー が すき です。",
+          "ro": "kare wa hade na paatii ga suki desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-062",
+      "ja": "貴重",
+      "kana": "きちょう",
+      "ro": "kichou",
+      "en": "valuable / precious / important",
+      "examples": [
+        {
+          "en": "This experience is valuable.",
+          "ja": "この経験は貴重です。",
+          "kana": "この けいけん は きちょう です。",
+          "ro": "kono keiken wa kichou desu."
+        },
+        {
+          "en": "That book is very valuable.",
+          "ja": "あの本はとても貴重です。",
+          "kana": "あの ほん は とても きちょう です。",
+          "ro": "ano hon wa totemo kichou desu."
+        },
+        {
+          "en": "Thank you for your valuable time.",
+          "ja": "貴重なお時間をありがとうございます。",
+          "kana": "きちょう な おじかん を ありがとうございます。",
+          "ro": "kichou na ojikan o arigatou gozaimasu."
+        },
+        {
+          "en": "He gave me valuable advice.",
+          "ja": "彼は貴重なアドバイスをくれました。",
+          "kana": "かれ は きちょう な あどばいす を くれました。",
+          "ro": "kare wa kichou na adobaisu o kuremashita."
+        },
+        {
+          "en": "This is an important opportunity.",
+          "ja": "これは貴重な機会です。",
+          "kana": "これ は きちょう な きかい です。",
+          "ro": "kore wa kichou na kikai desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-064",
+      "ja": "幸運",
+      "kana": "こううん",
+      "ro": "kouun",
+      "en": "lucky / fortunate",
+      "examples": [
+        {
+          "en": "I was lucky to meet him.",
+          "ja": "彼に会えて幸運でした。",
+          "kana": "かれ に あえて こううん でした。",
+          "ro": "kare ni aete kouun deshita."
+        },
+        {
+          "en": "It was a lucky coincidence.",
+          "ja": "それは幸運な偶然でした。",
+          "kana": "それ は こううん な ぐうぜん でした。",
+          "ro": "sore wa kouun na guuzen deshita."
+        },
+        {
+          "en": "She is a very lucky person.",
+          "ja": "彼女はとても幸運な人です。",
+          "kana": "かのじょ は とても こううん な ひと です。",
+          "ro": "kanojo wa totemo kouun na hito desu."
+        },
+        {
+          "en": "I had the good fortune to get the job.",
+          "ja": "仕事に受かったのは幸運でした。",
+          "kana": "しごと に うかった の は こううん でした。",
+          "ro": "shigoto ni ukatta no wa kouun deshita."
+        },
+        {
+          "en": "You’re lucky to live here.",
+          "ja": "ここに住めて幸運ですね。",
+          "kana": "ここ に すめて こううん ですね。",
+          "ro": "koko ni sumete kouun desu ne."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-065",
+      "ja": "不満",
+      "kana": "ふまん",
+      "ro": "fuman",
+      "en": "dissatisfied / discontent",
+      "examples": [
+        {
+          "en": "He is dissatisfied with his job.",
+          "ja": "彼は仕事に不満です。",
+          "kana": "かれ は しごと に ふまん です。",
+          "ro": "kare wa shigoto ni fuman desu."
+        },
+        {
+          "en": "I have a complaint about the service.",
+          "ja": "サービスに不満があります。",
+          "kana": "さーびす に ふまん が あります。",
+          "ro": "saabisu ni fuman ga arimasu."
+        },
+        {
+          "en": "She looks dissatisfied.",
+          "ja": "彼女は不満そうな顔をしています。",
+          "kana": "かのじょ は ふまん そう な かお を しています。",
+          "ro": "kanojo wa fuman sou na kao o shiteimasu."
+        },
+        {
+          "en": "He expressed his dissatisfaction.",
+          "ja": "彼は不満を口にしました。",
+          "kana": "かれ は ふまん を くち に しました。",
+          "ro": "kare wa fuman o kuchi ni shimashita."
+        },
+        {
+          "en": "There is dissatisfaction among the workers.",
+          "ja": "労働者の間に不満があります。",
+          "kana": "ろうどうしゃ の あいだ に ふまん が あります。",
+          "ro": "roudousha no aida ni fuman ga arimasu."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-069",
+      "ja": "残念",
+      "kana": "ざんねん",
+      "ro": "zannen",
+      "en": "regrettable / unfortunate / disappointing",
+      "examples": [
+        {
+          "en": "It’s unfortunate that he couldn’t come.",
+          "ja": "彼が来られなくて残念です。",
+          "kana": "かれ が こられなくて ざんねん です。",
+          "ro": "kare ga korarenakute zannen desu."
+        },
+        {
+          "en": "That result was disappointing.",
+          "ja": "その結果は残念でした。",
+          "kana": "その けっか は ざんねん でした。",
+          "ro": "sono kekka wa zannen deshita."
+        },
+        {
+          "en": "It’s a shame we lost the game.",
+          "ja": "試合に負けて残念です。",
+          "kana": "しあい に まけて ざんねん です。",
+          "ro": "shiai ni makete zannen desu."
+        },
+        {
+          "en": "I’m sorry, but I can’t go.",
+          "ja": "残念ですが、行けません。",
+          "kana": "ざんねん ですが、いけません。",
+          "ro": "zannen desu ga, ikemasen."
+        },
+        {
+          "en": "She looked disappointed.",
+          "ja": "彼女は残念そうな顔をしていました。",
+          "kana": "かのじょ は ざんねん そう な かお を していました。",
+          "ro": "kanojo wa zannen sou na kao o shiteimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-072",
+      "ja": "便利",
+      "kana": "べんり",
+      "ro": "benri",
+      "en": "convenient / handy / useful",
+      "examples": [
+        {
+          "en": "This app is very convenient.",
+          "ja": "このアプリはとても便利です。",
+          "kana": "この あぷり は とても べんり です。",
+          "ro": "kono apuri wa totemo benri desu."
+        },
+        {
+          "en": "It’s convenient to live near the station.",
+          "ja": "駅の近くに住むのは便利です。",
+          "kana": "えき の ちかく に すむ の は べんり です。",
+          "ro": "eki no chikaku ni sumu no wa benri desu."
+        },
+        {
+          "en": "This tool is very useful.",
+          "ja": "この道具は便利です。",
+          "kana": "この どうぐ は べんり です。",
+          "ro": "kono dougu wa benri desu."
+        },
+        {
+          "en": "That store is convenient because it’s open 24 hours.",
+          "ja": "あの店は24時間開いていて便利です。",
+          "kana": "あの みせ は にじゅうよじかん あいていて べんり です。",
+          "ro": "ano mise wa nijuu-yojikan aiteite benri desu."
+        },
+        {
+          "en": "It’s convenient to use a smartphone.",
+          "ja": "スマートフォンを使うのは便利です。",
+          "kana": "すまーとふぉん を つかう の は べんり です。",
+          "ro": "sumaato fon o tsukau no wa benri desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-077",
+      "ja": "消極的",
+      "kana": "しょうきょくてき",
+      "ro": "shoukyokuteki",
+      "en": "passive / negative / unassertive",
+      "examples": [
+        {
+          "en": "He is passive about work.",
+          "ja": "彼は仕事に消極的です。",
+          "kana": "かれ は しごと に しょうきょくてき です。",
+          "ro": "kare wa shigoto ni shoukyokuteki desu."
+        },
+        {
+          "en": "Her opinion was rather passive.",
+          "ja": "彼女の意見は少し消極的でした。",
+          "kana": "かのじょ の いけん は すこし しょうきょくてき でした。",
+          "ro": "kanojo no iken wa sukoshi shoukyokuteki deshita."
+        },
+        {
+          "en": "He tends to be negative about new things.",
+          "ja": "彼は新しいことに消極的です。",
+          "kana": "かれ は あたらしい こと に しょうきょくてき です。",
+          "ro": "kare wa atarashii koto ni shoukyokuteki desu."
+        },
+        {
+          "en": "She answered in a passive tone.",
+          "ja": "彼女は消極的な口調で答えました。",
+          "kana": "かのじょ は しょうきょくてき な くちょう で こたえました。",
+          "ro": "kanojo wa shoukyokuteki na kuchou de kotaemashita."
+        },
+        {
+          "en": "He should try to be less passive.",
+          "ja": "彼はもう少し消極的でない方がいいです。",
+          "kana": "かれ は もうすこし しょうきょくてき で ない ほう が いい です。",
+          "ro": "kare wa mousukoshi shoukyokuteki de nai hou ga ii desu."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-079",
+      "ja": "感動的",
+      "kana": "かんどうてき",
+      "ro": "kandouteki",
+      "en": "moving / touching / impressive",
+      "examples": [
+        {
+          "en": "The movie was very moving.",
+          "ja": "その映画はとても感動的でした。",
+          "kana": "その えいが は とても かんどうてき でした。",
+          "ro": "sono eiga wa totemo kandouteki deshita."
+        },
+        {
+          "en": "It was a touching story.",
+          "ja": "それは感動的な話でした。",
+          "kana": "それ は かんどうてき な はなし でした。",
+          "ro": "sore wa kandouteki na hanashi deshita."
+        },
+        {
+          "en": "Her speech was very impressive.",
+          "ja": "彼女のスピーチは感動的でした。",
+          "kana": "かのじょ の すぴーち は かんどうてき でした。",
+          "ro": "kanojo no supiichi wa kandouteki deshita."
+        },
+        {
+          "en": "It was an emotional scene.",
+          "ja": "感動的な場面でした。",
+          "kana": "かんどうてき な ばめん でした。",
+          "ro": "kandouteki na bamen deshita."
+        },
+        {
+          "en": "Everyone was moved to tears.",
+          "ja": "みんなが感動的な涙を流しました。",
+          "kana": "みんな が かんどうてき な なみだ を ながしました。",
+          "ro": "minna ga kandouteki na namida o nagashimashita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-080",
+      "ja": "基本的",
+      "kana": "きほんてき",
+      "ro": "kihonteki",
+      "en": "basic / fundamental / essential",
+      "examples": [
+        {
+          "en": "He learned the basic rules.",
+          "ja": "彼は基本的なルールを学びました。",
+          "kana": "かれ は きほんてき な るーる を まなびました。",
+          "ro": "kare wa kihonteki na ruuru o manabimashita."
+        },
+        {
+          "en": "This is a basic problem.",
+          "ja": "これは基本的な問題です。",
+          "kana": "これ は きほんてき な もんだい です。",
+          "ro": "kore wa kihonteki na mondai desu."
+        },
+        {
+          "en": "Understanding is the most fundamental step.",
+          "ja": "理解することが基本的な第一歩です。",
+          "kana": "りかい する こと が きほんてき な だいいっぽ です。",
+          "ro": "rikai suru koto ga kihonteki na daiippo desu."
+        },
+        {
+          "en": "He explained the basic ideas.",
+          "ja": "彼は基本的な考え方を説明しました。",
+          "kana": "かれ は きほんてき な かんがえかた を せつめい しました。",
+          "ro": "kare wa kihonteki na kangaekata o setsumei shimashita."
+        },
+        {
+          "en": "This is a basic part of the plan.",
+          "ja": "これは計画の基本的な部分です。",
+          "kana": "これ は けいかく の きほんてき な ぶぶん です。",
+          "ro": "kore wa keikaku no kihonteki na bubun desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-081",
+      "ja": "積極",
+      "kana": "せっきょく",
+      "ro": "sekkyoku",
+      "en": "positive / assertive (attitude or approach)",
+      "examples": [
+        {
+          "en": "He has a positive attitude toward study.",
+          "ja": "彼は勉強に積極です。",
+          "kana": "かれ は べんきょう に せっきょく です。",
+          "ro": "kare wa benkyou ni sekkyoku desu."
+        },
+        {
+          "en": "She took a positive approach to the problem.",
+          "ja": "彼女は問題に積極な姿勢を見せました。",
+          "kana": "かのじょ は もんだい に せっきょく な しせい を みせました。",
+          "ro": "kanojo wa mondai ni sekkyoku na shisei o misemashita."
+        },
+        {
+          "en": "Being positive brings good results.",
+          "ja": "積極であることが良い結果を生みます。",
+          "kana": "せっきょく で ある こと が よい けっか を うみます。",
+          "ro": "sekkyoku de aru koto ga yoi kekka o umimasu."
+        },
+        {
+          "en": "He is assertive in expressing his opinions.",
+          "ja": "彼は意見を言うとき積極です。",
+          "kana": "かれ は いけん を いう とき せっきょく です。",
+          "ro": "kare wa iken o iu toki sekkyoku desu."
+        },
+        {
+          "en": "Her positive attitude impressed me.",
+          "ja": "彼女の積極な態度に感心しました。",
+          "kana": "かのじょ の せっきょく な たいど に かんしん しました。",
+          "ro": "kanojo no sekkyoku na taido ni kanshin shimashita."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-082",
+      "ja": "幸福",
+      "kana": "こうふく",
+      "ro": "koufuku",
+      "en": "happiness / blessed / fortunate",
+      "examples": [
+        {
+          "en": "I wish you happiness.",
+          "ja": "あなたの幸福を願います。",
+          "kana": "あなた の こうふく を ねがいます。",
+          "ro": "anata no koufuku o negaimasu."
+        },
+        {
+          "en": "They live a happy life.",
+          "ja": "彼らは幸福な生活を送っています。",
+          "kana": "かれら は こうふく な せいかつ を おくっています。",
+          "ro": "karera wa koufuku na seikatsu o okutteimasu."
+        },
+        {
+          "en": "Happiness is not about money.",
+          "ja": "幸福はお金の問題ではありません。",
+          "kana": "こうふく は おかね の もんだい では ありません。",
+          "ro": "koufuku wa okane no mondai de wa arimasen."
+        },
+        {
+          "en": "She looks happy.",
+          "ja": "彼女は幸福そうです。",
+          "kana": "かのじょ は こうふく そう です。",
+          "ro": "kanojo wa koufuku sou desu."
+        },
+        {
+          "en": "Health is the key to happiness.",
+          "ja": "健康は幸福の鍵です。",
+          "kana": "けんこう は こうふく の かぎ です。",
+          "ro": "kenkou wa koufuku no kagi desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-083",
+      "ja": "平和",
+      "kana": "へいわ",
+      "ro": "heiwa",
+      "en": "peace / peaceful",
+      "examples": [
+        {
+          "en": "I hope for world peace.",
+          "ja": "世界の平和を願います。",
+          "kana": "せかい の へいわ を ねがいます。",
+          "ro": "sekai no heiwa o negaimasu."
+        },
+        {
+          "en": "It’s a peaceful day.",
+          "ja": "今日は平和な日です。",
+          "kana": "きょう は へいわ な ひ です。",
+          "ro": "kyou wa heiwa na hi desu."
+        },
+        {
+          "en": "They live a peaceful life.",
+          "ja": "彼らは平和な生活を送っています。",
+          "kana": "かれら は へいわ な せいかつ を おくっています。",
+          "ro": "karera wa heiwa na seikatsu o okutteimasu."
+        },
+        {
+          "en": "Peace is important for everyone.",
+          "ja": "平和はみんなにとって大切です。",
+          "kana": "へいわ は みんな に とって たいせつ です。",
+          "ro": "heiwa wa minna ni totte taisetsu desu."
+        },
+        {
+          "en": "We had a peaceful weekend.",
+          "ja": "平和な週末を過ごしました。",
+          "kana": "へいわ な しゅうまつ を すごしました。",
+          "ro": "heiwa na shuumatsu o sugoshimashita."
+        }
+      ],
+      "grammar": "Noun / の / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-084",
+      "ja": "自由",
+      "kana": "じゆう",
+      "ro": "jiyuu",
+      "en": "free / freedom / unrestricted",
+      "examples": [
+        {
+          "en": "Everyone should have freedom.",
+          "ja": "みんなが自由を持つべきです。",
+          "kana": "みんな が じゆう を もつ べき です。",
+          "ro": "minna ga jiyuu o motsu beki desu."
+        },
+        {
+          "en": "We can choose freely.",
+          "ja": "自由に選べます。",
+          "kana": "じゆう に えらべます。",
+          "ro": "jiyuu ni erabemasu."
+        },
+        {
+          "en": "This country is a free nation.",
+          "ja": "この国は自由な国です。",
+          "kana": "この くに は じゆう な くに です。",
+          "ro": "kono kuni wa jiyuu na kuni desu."
+        },
+        {
+          "en": "He wants to live freely.",
+          "ja": "彼は自由に生きたいです。",
+          "kana": "かれ は じゆう に いきたい です。",
+          "ro": "kare wa jiyuu ni ikitai desu."
+        },
+        {
+          "en": "Freedom of speech is important.",
+          "ja": "言論の自由は大切です。",
+          "kana": "げんろん の じゆう は たいせつ です。",
+          "ro": "genron no jiyuu wa taisetsu desu."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-092",
+      "ja": "危険",
+      "kana": "きけん",
+      "ro": "kiken",
+      "en": "dangerous / risky / hazardous",
+      "examples": [
+        {
+          "en": "It’s dangerous to climb alone.",
+          "ja": "一人で登るのは危険です。",
+          "kana": "ひとり で のぼる の は きけん です。",
+          "ro": "hitori de noboru no wa kiken desu."
+        },
+        {
+          "en": "This road is dangerous at night.",
+          "ja": "この道は夜になると危険です。",
+          "kana": "この みち は よる に なる と きけん です。",
+          "ro": "kono michi wa yoru ni naru to kiken desu."
+        },
+        {
+          "en": "Don’t do anything dangerous.",
+          "ja": "危険なことをしないでください。",
+          "kana": "きけん な こと を しないで ください。",
+          "ro": "kiken na koto o shinaide kudasai."
+        },
+        {
+          "en": "This area is unsafe.",
+          "ja": "この地域は少し危険です。",
+          "kana": "この ちいき は すこし きけん です。",
+          "ro": "kono chiiki wa sukoshi kiken desu."
+        },
+        {
+          "en": "It’s risky to drive fast.",
+          "ja": "スピードを出すのは危険です。",
+          "kana": "すぴーど を だす の は きけん です。",
+          "ro": "supiido o dasu no wa kiken desu."
+        }
+      ],
+      "grammar": "Noun / が / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-094",
+      "ja": "不便",
+      "kana": "ふべん",
+      "ro": "fuben",
+      "en": "inconvenient / uncomfortable",
+      "examples": [
+        {
+          "en": "This place is inconvenient without a car.",
+          "ja": "車がないとこの場所は不便です。",
+          "kana": "くるま が ない と この ばしょ は ふべん です。",
+          "ro": "kuruma ga nai to kono basho wa fuben desu."
+        },
+        {
+          "en": "It’s inconvenient to live far from the station.",
+          "ja": "駅から遠いと不便です。",
+          "kana": "えき から とおい と ふべん です。",
+          "ro": "eki kara tooi to fuben desu."
+        },
+        {
+          "en": "This tool is a bit inconvenient to use.",
+          "ja": "この道具は少し不便です。",
+          "kana": "この どうぐ は すこし ふべん です。",
+          "ro": "kono dougu wa sukoshi fuben desu."
+        },
+        {
+          "en": "It’s inconvenient without electricity.",
+          "ja": "電気がないととても不便です。",
+          "kana": "でんき が ない と とても ふべん です。",
+          "ro": "denki ga nai to totemo fuben desu."
+        },
+        {
+          "en": "He feels inconvenient living in the countryside.",
+          "ja": "彼は田舎の生活を不便に感じています。",
+          "kana": "かれ は いなか の せいかつ を ふべん に かんじて います。",
+          "ro": "kare wa inaka no seikatsu o fuben ni kanjiteimasu."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    },
+    {
+      "id": "n3-naadj-100",
+      "ja": "特別",
+      "kana": "とくべつ",
+      "ro": "tokubetsu",
+      "en": "special / extraordinary",
+      "examples": [
+        {
+          "en": "Today is a special day.",
+          "ja": "今日は特別な日です。",
+          "kana": "きょう は とくべつ な ひ です。",
+          "ro": "kyou wa tokubetsu na hi desu."
+        },
+        {
+          "en": "He gave me a special gift.",
+          "ja": "彼は私に特別なプレゼントをくれました。",
+          "kana": "かれ は わたし に とくべつ な ぷれぜんと を くれました。",
+          "ro": "kare wa watashi ni tokubetsu na purezento o kuremashita."
+        },
+        {
+          "en": "This dish has a special flavor.",
+          "ja": "この料理は特別な味があります。",
+          "kana": "この りょうり は とくべつ な あじ が あります。",
+          "ro": "kono ryouri wa tokubetsu na aji ga arimasu."
+        },
+        {
+          "en": "He has a special talent for music.",
+          "ja": "彼は音楽に特別な才能があります。",
+          "kana": "かれ は おんがく に とくべつ な さいのう が あります。",
+          "ro": "kare wa ongaku ni tokubetsu na sainou ga arimasu."
+        },
+        {
+          "en": "She treated me specially.",
+          "ja": "彼女は私を特別に扱いました。",
+          "kana": "かのじょ は わたし を とくべつ に あつかいました。",
+          "ro": "kanojo wa watashi o tokubetsu ni atsukaimashita."
+        }
+      ],
+      "grammar": "Noun / に / な-Adjective / Copula"
+    }
+  ]
+}

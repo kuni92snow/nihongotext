@@ -1,0 +1,4882 @@
+[
+  {
+    "id": "n3-verb-001",
+    "ja": "扱う",
+    "kana": "あつかう",
+    "ro": "atsukau",
+    "en": "to handle / to deal with / to treat",
+    "examples": [
+      {
+        "en": "This store handles imported goods.",
+        "ja": "この店は輸入品を扱っています。",
+        "kana": "この みせ は ゆにゅうひん を あつかっています。",
+        "ro": "kono mise wa yunyuu hin o atsukatteimasu."
+      },
+      {
+        "en": "He deals with customer complaints.",
+        "ja": "彼はお客様の苦情を扱っています。",
+        "kana": "かれ は おきゃくさま の くじょう を あつかっています。",
+        "ro": "kare wa okyakusama no kujou o atsukatteimasu."
+      },
+      {
+        "en": "Be careful when handling this machine.",
+        "ja": "この機械を扱うときは注意してください。",
+        "kana": "この きかい を あつかう とき は ちゅうい して ください。",
+        "ro": "kono kikai o atsukau toki wa chuui shite kudasai."
+      },
+      {
+        "en": "He is treated as a hero.",
+        "ja": "彼は英雄として扱われている。",
+        "kana": "かれ は えいゆう として あつかわれて いる。",
+        "ro": "kare wa eiyuu to shite atsukawarete iru."
+      },
+      {
+        "en": "The article treats this issue carefully.",
+        "ja": "その記事はこの問題を慎重に扱っている。",
+        "kana": "その きじ は この もんだい を しんちょう に あつかっている。",
+        "ro": "sono kiji wa kono mondai o shinchou ni atsukatte iru."
+      }
+    ],
+    "grammar": "Noun + を + 扱う"
+  },
+  {
+    "id": "n3-verb-002",
+    "ja": "諦める",
+    "kana": "あきらめる",
+    "ro": "akirameru",
+    "en": "to give up / to abandon / to resign oneself",
+    "examples": [
+      {
+        "en": "Don’t give up your dream.",
+        "ja": "夢を諦めないでください。",
+        "kana": "ゆめ を あきらめないで ください。",
+        "ro": "yume o akiramenaide kudasai."
+      },
+      {
+        "en": "He gave up going abroad.",
+        "ja": "彼は留学を諦めた。",
+        "kana": "かれ は りゅうがく を あきらめた。",
+        "ro": "kare wa ryuugaku o akirameta."
+      },
+      {
+        "en": "She decided to give up the competition.",
+        "ja": "彼女は試合を諦めることにした。",
+        "kana": "かのじょ は しあい を あきらめる こと に した。",
+        "ro": "kanojo wa shiai o akirameru koto ni shita."
+      },
+      {
+        "en": "I cannot give up so easily.",
+        "ja": "そんなに簡単には諦められない。",
+        "kana": "そんなに かんたん には あきらめられない。",
+        "ro": "sonna ni kantan ni wa akiramerarenai."
+      },
+      {
+        "en": "He gave up his job for his family.",
+        "ja": "彼は家族のために仕事を諦めた。",
+        "kana": "かれ は かぞく の ため に しごと を あきらめた。",
+        "ro": "kare wa kazoku no tame ni shigoto o akirameta."
+      }
+    ],
+    "grammar": "Noun + を + 諦める"
+  },
+  {
+    "id": "n3-verb-003",
+    "ja": "預ける",
+    "kana": "あずける",
+    "ro": "azukeru",
+    "en": "to deposit / to leave in someone's care / to entrust",
+    "examples": [
+      {
+        "en": "I left my luggage at the hotel.",
+        "ja": "ホテルに荷物を預けました。",
+        "kana": "ほてる に にもつ を あずけました。",
+        "ro": "hoteru ni nimotsu o azukemashita."
+      },
+      {
+        "en": "Please leave your coat at the front desk.",
+        "ja": "コートを受付に預けてください。",
+        "kana": "こーと を うけつけ に あずけて ください。",
+        "ro": "kooto o uketsuke ni azukete kudasai."
+      },
+      {
+        "en": "I left my child with my parents.",
+        "ja": "子どもを両親に預けた。",
+        "kana": "こども を りょうしん に あずけた。",
+        "ro": "kodomo o ryoushin ni azuketa."
+      },
+      {
+        "en": "He entrusted his savings to the bank.",
+        "ja": "彼は貯金を銀行に預けた。",
+        "kana": "かれ は ちょきん を ぎんこう に あずけた。",
+        "ro": "kare wa chokin o ginkou ni azuketa."
+      },
+      {
+        "en": "I’ll leave my bag here for a while.",
+        "ja": "しばらくここにかばんを預けます。",
+        "kana": "しばらく ここ に かばん を あずけます。",
+        "ro": "shibaraku koko ni kaban o azukemasu."
+      }
+    ],
+    "grammar": "Noun + を + 預ける"
+  },
+  {
+    "id": "n3-verb-004",
+    "ja": "争う",
+    "kana": "あらそう",
+    "ro": "arasou",
+    "en": "to compete / to fight / to dispute / to argue",
+    "examples": [
+      {
+        "en": "Two teams competed for the championship.",
+        "ja": "2つのチームが優勝を争った。",
+        "kana": "ふたつ の ちーむ が ゆうしょう を あらそった。",
+        "ro": "futatsu no chiimu ga yuushou o arasotta."
+      },
+      {
+        "en": "They are fighting over money.",
+        "ja": "彼らはお金をめぐって争っている。",
+        "kana": "かれら は おかね を めぐって あらそって いる。",
+        "ro": "karera wa okane o megutte arasotte iru."
+      },
+      {
+        "en": "He doesn’t like to argue with others.",
+        "ja": "彼は人と争うのが好きではない。",
+        "kana": "かれ は ひと と あらそう の が すき では ない。",
+        "ro": "kare wa hito to arasou no ga suki de wa nai."
+      },
+      {
+        "en": "The brothers fought for inheritance.",
+        "ja": "兄弟が遺産を争った。",
+        "kana": "きょうだい が いさん を あらそった。",
+        "ro": "kyoudai ga isan o arasotta."
+      },
+      {
+        "en": "They competed fiercely for the first place.",
+        "ja": "彼らは一位を激しく争った。",
+        "kana": "かれら は いちい を はげしく あらそった。",
+        "ro": "karera wa ichii o hageshiku arasotta."
+      }
+    ],
+    "grammar": "Noun + を + 争う"
+  },
+  {
+    "id": "n3-verb-005",
+    "ja": "与える",
+    "kana": "あたえる",
+    "ro": "ataeru",
+    "en": "to give / to provide / to grant / to cause",
+    "examples": [
+      {
+        "en": "The teacher gave homework to the students.",
+        "ja": "先生は生徒に宿題を与えた。",
+        "kana": "せんせい は せいと に しゅくだい を あたえた。",
+        "ro": "sensei wa seito ni shukudai o ataeta."
+      },
+      {
+        "en": "The sun gives light to the earth.",
+        "ja": "太陽は地球に光を与える。",
+        "kana": "たいよう は ちきゅう に ひかり を あたえる。",
+        "ro": "taiyou wa chikyuu ni hikari o ataeru."
+      },
+      {
+        "en": "This event gives courage to many people.",
+        "ja": "この出来事は多くの人に勇気を与える。",
+        "kana": "この できごと は おおく の ひと に ゆうき を あたえる。",
+        "ro": "kono dekigoto wa ooku no hito ni yuuki o ataeru."
+      },
+      {
+        "en": "Lack of sleep gives stress to the body.",
+        "ja": "睡眠不足は体にストレスを与える。",
+        "kana": "すいみん ぶそく は からだ に すとれす を あたえる。",
+        "ro": "suimin busoku wa karada ni sutoresu o ataeru."
+      },
+      {
+        "en": "He gave a good impression to the interviewer.",
+        "ja": "彼は面接官に良い印象を与えた。",
+        "kana": "かれ は めんせつかん に よい いんしょう を あたえた。",
+        "ro": "kare wa mensetsukan ni yoi inshou o ataeta."
+      }
+    ],
+    "grammar": "Person + に + Noun + を + 与える"
+  },
+  {
+    "id": "n3-verb-006",
+    "ja": "当たる",
+    "kana": "あたる",
+    "ro": "ataru",
+    "en": "to hit / to be right / to win / to be chosen",
+    "examples": [
+      {
+        "en": "The ball hit the wall.",
+        "ja": "ボールが壁に当たった。",
+        "kana": "ぼーる が かべ に あたった。",
+        "ro": "booru ga kabe ni atatta."
+      },
+      {
+        "en": "My guess was right.",
+        "ja": "私の予想が当たった。",
+        "kana": "わたし の よそう が あたった。",
+        "ro": "watashi no yosou ga atatta."
+      },
+      {
+        "en": "He won the lottery.",
+        "ja": "彼は宝くじに当たった。",
+        "kana": "かれ は たからくじ に あたった。",
+        "ro": "kare wa takarakuji ni atatta."
+      },
+      {
+        "en": "The sunlight hit the window.",
+        "ja": "日光が窓に当たっている。",
+        "kana": "にっこう が まど に あたって いる。",
+        "ro": "nikkou ga mado ni atatte iru."
+      },
+      {
+        "en": "He was chosen as the representative.",
+        "ja": "彼が代表に当たった。",
+        "kana": "かれ が だいひょう に あたった。",
+        "ro": "kare ga daihyou ni atatta."
+      }
+    ],
+    "grammar": "Noun + が / に + 当たる"
+  },
+  {
+    "id": "n3-verb-007",
+    "ja": "当てる",
+    "kana": "あてる",
+    "ro": "ateru",
+    "en": "to hit / to guess / to expose / to apply",
+    "examples": [
+      {
+        "en": "He hit the target.",
+        "ja": "彼は的に矢を当てた。",
+        "kana": "かれ は まと に や を あてた。",
+        "ro": "kare wa mato ni ya o ateta."
+      },
+      {
+        "en": "Can you guess the answer?",
+        "ja": "答えを当てられますか？",
+        "kana": "こたえ を あてられますか？",
+        "ro": "kotae o ateraremasu ka?"
+      },
+      {
+        "en": "She put her hand on his shoulder.",
+        "ja": "彼女は彼の肩に手を当てた。",
+        "kana": "かのじょ は かれ の かた に て を あてた。",
+        "ro": "kanojo wa kare no kata ni te o ateta."
+      },
+      {
+        "en": "Please apply heat to the wound.",
+        "ja": "傷に熱を当ててください。",
+        "kana": "きず に ねつ を あてて ください。",
+        "ro": "kizu ni netsu o atete kudasai."
+      },
+      {
+        "en": "Try to guess which one is correct.",
+        "ja": "どれが正しいか当ててみてください。",
+        "kana": "どれ が ただしい か あてて みて ください。",
+        "ro": "dore ga tadashii ka atete mite kudasai."
+      }
+    ],
+    "grammar": "Noun + に / を + 当てる"
+  },
+  {
+    "id": "n3-verb-008",
+    "ja": "表す",
+    "kana": "あらわす",
+    "ro": "arawasu",
+    "en": "to express / to show / to represent",
+    "examples": [
+      {
+        "en": "This word expresses gratitude.",
+        "ja": "この言葉は感謝を表している。",
+        "kana": "この ことば は かんしゃ を あらわして いる。",
+        "ro": "kono kotoba wa kansha o arawashite iru."
+      },
+      {
+        "en": "Her face showed joy.",
+        "ja": "彼女の顔が喜びを表した。",
+        "kana": "かのじょ の かお が よろこび を あらわした。",
+        "ro": "kanojo no kao ga yorokobi o arawashita."
+      },
+      {
+        "en": "His speech expressed his true feelings.",
+        "ja": "彼のスピーチは本当の気持ちを表した。",
+        "kana": "かれ の すぴーち は ほんとう の きもち を あらわした。",
+        "ro": "kare no supiichi wa hontou no kimochi o arawashita."
+      },
+      {
+        "en": "This symbol represents peace.",
+        "ja": "このシンボルは平和を表している。",
+        "kana": "この しんぼる は へいわ を あらわして いる。",
+        "ro": "kono shinboru wa heiwa o arawashite iru."
+      },
+      {
+        "en": "He expressed his gratitude with words.",
+        "ja": "彼は言葉で感謝の気持ちを表した。",
+        "kana": "かれ は ことば で かんしゃ の きもち を あらわした。",
+        "ro": "kare wa kotoba de kansha no kimochi o arawashita."
+      }
+    ],
+    "grammar": "Noun + を + 表す"
+  },
+  {
+    "id": "n3-verb-009",
+    "ja": "現れる",
+    "kana": "あらわれる",
+    "ro": "arawareru",
+    "en": "to appear / to emerge / to show up",
+    "examples": [
+      {
+        "en": "A rainbow appeared after the rain.",
+        "ja": "雨の後に虹が現れた。",
+        "kana": "あめ の あと に にじ が あらわれた。",
+        "ro": "ame no ato ni niji ga arawareta."
+      },
+      {
+        "en": "His true feelings appeared on his face.",
+        "ja": "彼の本当の気持ちが顔に現れた。",
+        "kana": "かれ の ほんとう の きもち が かお に あらわれた。",
+        "ro": "kare no hontou no kimochi ga kao ni arawareta."
+      },
+      {
+        "en": "A new star appeared in the sky.",
+        "ja": "空に新しい星が現れた。",
+        "kana": "そら に あたらしい ほし が あらわれた。",
+        "ro": "sora ni atarashii hoshi ga arawareta."
+      },
+      {
+        "en": "He finally appeared at the party.",
+        "ja": "彼はやっとパーティーに現れた。",
+        "kana": "かれ は やっと ぱーてぃー に あらわれた。",
+        "ro": "kare wa yatto paatii ni arawareta."
+      },
+      {
+        "en": "No one appeared at the meeting.",
+        "ja": "会議には誰も現れなかった。",
+        "kana": "かいぎ には だれ も あらわれなかった。",
+        "ro": "kaigi ni wa dare mo arawarenakatta."
+      }
+    ],
+    "grammar": "Noun + が / に + 現れる"
+  },
+  {
+    "id": "n3-verb-010",
+    "ja": "表れる",
+    "kana": "あらわれる",
+    "ro": "arawareru",
+    "en": "to be expressed / to become visible / to be manifested",
+    "examples": [
+      {
+        "en": "Her effort was reflected in the results.",
+        "ja": "彼女の努力が結果に表れた。",
+        "kana": "かのじょ の どりょく が けっか に あらわれた。",
+        "ro": "kanojo no doryoku ga kekka ni arawareta."
+      },
+      {
+        "en": "His emotions appeared in his eyes.",
+        "ja": "彼の感情が目に表れた。",
+        "kana": "かれ の かんじょう が め に あらわれた。",
+        "ro": "kare no kanjou ga me ni arawareta."
+      },
+      {
+        "en": "The results of the test appeared clearly.",
+        "ja": "テストの結果がはっきり表れた。",
+        "kana": "てすと の けっか が はっきり あらわれた。",
+        "ro": "tesuto no kekka ga hakkiri arawareta."
+      },
+      {
+        "en": "His kindness was shown in his actions.",
+        "ja": "彼の優しさが行動に表れた。",
+        "kana": "かれ の やさしさ が こうどう に あらわれた。",
+        "ro": "kare no yasashisa ga koudou ni arawareta."
+      },
+      {
+        "en": "The change appeared on her face.",
+        "ja": "その変化は彼女の顔に表れた。",
+        "kana": "その へんか は かのじょ の かお に あらわれた。",
+        "ro": "sono henka wa kanojo no kao ni arawareta."
+      }
+    ],
+    "grammar": "Noun + が / に + 表れる"
+  },
+  {
+    "id": "n3-verb-011",
+    "ja": "現す",
+    "kana": "あらわす",
+    "ro": "arawasu",
+    "en": "to reveal / to show up / to make an appearance",
+    "examples": [
+      {
+        "en": "He suddenly appeared at the station.",
+        "ja": "彼は駅に突然姿を現した。",
+        "kana": "かれ は えき に とつぜん すがた を あらわした。",
+        "ro": "kare wa eki ni totsuzen sugata o arawashita."
+      },
+      {
+        "en": "The moon appeared from behind the clouds.",
+        "ja": "雲の間から月が現れた。",
+        "kana": "くも の あいだ から つき が あらわれた。",
+        "ro": "kumo no aida kara tsuki ga arawareta."
+      },
+      {
+        "en": "A smile appeared on his face.",
+        "ja": "彼の顔に笑顔が現れた。",
+        "kana": "かれ の かお に えがお が あらわれた。",
+        "ro": "kare no kao ni egao ga arawareta."
+      },
+      {
+        "en": "The suspect appeared in court.",
+        "ja": "容疑者が法廷に現れた。",
+        "kana": "ようぎしゃ が ほうてい に あらわれた。",
+        "ro": "yougisha ga houtei ni arawareta."
+      },
+      {
+        "en": "The truth finally came to light.",
+        "ja": "ついに真実が現れた。",
+        "kana": "ついに しんじつ が あらわれた。",
+        "ro": "tsuini shinjitsu ga arawareta."
+      }
+    ],
+    "grammar": "Noun + が / に + 現す"
+  },
+  {
+    "id": "n3-verb-013",
+    "ja": "表現する",
+    "kana": "ひょうげんする",
+    "ro": "hyougen suru",
+    "en": "to express / to represent / to describe",
+    "examples": [
+      {
+        "en": "He expressed his feelings honestly.",
+        "ja": "彼は正直に自分の気持ちを表現した。",
+        "kana": "かれ は しょうじき に じぶん の きもち を ひょうげん した。",
+        "ro": "kare wa shoujiki ni jibun no kimochi o hyougen shita."
+      },
+      {
+        "en": "You can express yourself through art.",
+        "ja": "芸術を通して自分を表現できる。",
+        "kana": "げいじゅつ を とおして じぶん を ひょうげん できる。",
+        "ro": "geijutsu o tooshite jibun o hyougen dekiru."
+      },
+      {
+        "en": "It’s difficult to express emotions in words.",
+        "ja": "感情を言葉で表現するのは難しい。",
+        "kana": "かんじょう を ことば で ひょうげん する の は むずかしい。",
+        "ro": "kanjou o kotoba de hyougen suru no wa muzukashii."
+      },
+      {
+        "en": "She expressed her opinion clearly.",
+        "ja": "彼女は意見をはっきり表現した。",
+        "kana": "かのじょ は いけん を はっきり ひょうげん した。",
+        "ro": "kanojo wa iken o hakkiri hyougen shita."
+      },
+      {
+        "en": "Music can express feelings that words cannot.",
+        "ja": "音楽は言葉で言えない気持ちを表現できる。",
+        "kana": "おんがく は ことば で いえない きもち を ひょうげん できる。",
+        "ro": "ongaku wa kotoba de ienai kimochi o hyougen dekiru."
+      }
+    ],
+    "grammar": "Noun + を + 表現する"
+  },
+  {
+    "id": "n3-verb-014",
+    "ja": "祝う",
+    "kana": "いわう",
+    "ro": "iwau",
+    "en": "to celebrate / to congratulate",
+    "examples": [
+      {
+        "en": "We celebrated his birthday.",
+        "ja": "私たちは彼の誕生日を祝った。",
+        "kana": "わたしたち は かれ の たんじょうび を いわった。",
+        "ro": "watashitachi wa kare no tanjoubi o iwatta."
+      },
+      {
+        "en": "They celebrated their wedding anniversary.",
+        "ja": "彼らは結婚記念日を祝った。",
+        "kana": "かれら は けっこん きねんび を いわった。",
+        "ro": "karera wa kekkon kinenbi o iwatta."
+      },
+      {
+        "en": "We celebrated the New Year together.",
+        "ja": "みんなで新年を祝った。",
+        "kana": "みんな で しんねん を いわった。",
+        "ro": "minna de shinnen o iwatta."
+      },
+      {
+        "en": "I want to celebrate your success.",
+        "ja": "あなたの成功を祝いたいです。",
+        "kana": "あなた の せいこう を いわいたい です。",
+        "ro": "anata no seikou o iwaitai desu."
+      },
+      {
+        "en": "They celebrated the victory with cheers.",
+        "ja": "彼らは勝利を祝って歓声を上げた。",
+        "kana": "かれら は しょうり を いわって かんせい を あげた。",
+        "ro": "karera wa shouri o iwatte kansei o ageta."
+      }
+    ],
+    "grammar": "Noun + を + 祝う"
+  },
+  {
+    "id": "n3-verb-015",
+    "ja": "受け取る",
+    "kana": "うけとる",
+    "ro": "uketoru",
+    "en": "to receive / to accept / to interpret",
+    "examples": [
+      {
+        "en": "I received a letter from my friend.",
+        "ja": "友達から手紙を受け取った。",
+        "kana": "ともだち から てがみ を うけとった。",
+        "ro": "tomodachi kara tegami o uketotta."
+      },
+      {
+        "en": "Please receive this gift.",
+        "ja": "このプレゼントを受け取ってください。",
+        "kana": "この ぷれぜんと を うけとって ください。",
+        "ro": "kono purezento o uketotte kudasai."
+      },
+      {
+        "en": "He accepted the manager’s offer.",
+        "ja": "彼は部長の提案を受け取った。",
+        "kana": "かれ は ぶちょう の ていあん を うけとった。",
+        "ro": "kare wa buchou no teian o uketotta."
+      },
+      {
+        "en": "She took his words seriously.",
+        "ja": "彼女は彼の言葉を真剣に受け取った。",
+        "kana": "かのじょ は かれ の ことば を しんけん に うけとった。",
+        "ro": "kanojo wa kare no kotoba o shinken ni uketotta."
+      },
+      {
+        "en": "The application was received successfully.",
+        "ja": "申し込みが無事に受け取られた。",
+        "kana": "もうしこみ が ぶじ に うけとられた。",
+        "ro": "moushikomi ga buji ni uketorareta."
+      }
+    ],
+    "grammar": "Person + から + Noun + を + 受け取る"
+  },
+  {
+    "id": "n3-verb-016",
+    "ja": "動かす",
+    "kana": "うごかす",
+    "ro": "ugokasu",
+    "en": "to move (something) / to operate / to set in motion",
+    "examples": [
+      {
+        "en": "He moved the desk to the corner.",
+        "ja": "彼は机を隅に動かした。",
+        "kana": "かれ は つくえ を すみ に うごかした。",
+        "ro": "kare wa tsukue o sumi ni ugokashita."
+      },
+      {
+        "en": "She operates a large machine at work.",
+        "ja": "彼女は職場で大きな機械を動かしている。",
+        "kana": "かのじょ は しょくば で おおきな きかい を うごかして いる。",
+        "ro": "kanojo wa shokuba de ookina kikai o ugokashite iru."
+      },
+      {
+        "en": "Please move your car forward a little.",
+        "ja": "車を少し前に動かしてください。",
+        "kana": "くるま を すこし まえ に うごかして ください。",
+        "ro": "kuruma o sukoshi mae ni ugokashite kudasai."
+      },
+      {
+        "en": "He was moved by her words.",
+        "ja": "彼は彼女の言葉に心を動かされた。",
+        "kana": "かれ は かのじょ の ことば に こころ を うごかされた。",
+        "ro": "kare wa kanojo no kotoba ni kokoro o ugokasareta."
+      },
+      {
+        "en": "The wind moved the branches.",
+        "ja": "風が枝を動かした。",
+        "kana": "かぜ が えだ を うごかした。",
+        "ro": "kaze ga eda o ugokashita."
+      }
+    ],
+    "grammar": "Noun + を + 動かす"
+  },
+  {
+    "id": "n3-verb-017",
+    "ja": "受け入れる",
+    "kana": "うけいれる",
+    "ro": "ukeireru",
+    "en": "to accept / to receive / to embrace (ideas, people, etc.)",
+    "examples": [
+      {
+        "en": "Japan accepted many foreign workers.",
+        "ja": "日本は多くの外国人労働者を受け入れた。",
+        "kana": "にほん は おおく の がいこくじん ろうどうしゃ を うけいれた。",
+        "ro": "nihon wa ooku no gaikokujin roudousha o ukeireta."
+      },
+      {
+        "en": "He accepted the company’s decision.",
+        "ja": "彼は会社の決定を受け入れた。",
+        "kana": "かれ は かいしゃ の けってい を うけいれた。",
+        "ro": "kare wa kaisha no kettei o ukeireta."
+      },
+      {
+        "en": "She accepted his apology.",
+        "ja": "彼女は彼の謝罪を受け入れた。",
+        "kana": "かのじょ は かれ の しゃざい を うけいれた。",
+        "ro": "kanojo wa kare no shazai o ukeireta."
+      },
+      {
+        "en": "It is important to accept different opinions.",
+        "ja": "違う意見を受け入れることは大切です。",
+        "kana": "ちがう いけん を うけいれる こと は たいせつ です。",
+        "ro": "chigau iken o ukeireru koto wa taisetsu desu."
+      },
+      {
+        "en": "The school accepted new students.",
+        "ja": "学校は新しい生徒を受け入れた。",
+        "kana": "がっこう は あたらしい せいと を うけいれた。",
+        "ro": "gakkou wa atarashii seito o ukeireta."
+      }
+    ],
+    "grammar": "Noun + を + 受け入れる"
+  },
+  {
+    "id": "n3-verb-018",
+    "ja": "失う",
+    "kana": "うしなう",
+    "ro": "ushinau",
+    "en": "to lose / to be deprived of / to miss",
+    "examples": [
+      {
+        "en": "He lost his job last year.",
+        "ja": "彼は去年仕事を失った。",
+        "kana": "かれ は きょねん しごと を うしなった。",
+        "ro": "kare wa kyonen shigoto o ushinatta."
+      },
+      {
+        "en": "She lost confidence.",
+        "ja": "彼女は自信を失った。",
+        "kana": "かのじょ は じしん を うしなった。",
+        "ro": "kanojo wa jishin o ushinatta."
+      },
+      {
+        "en": "He lost his best friend.",
+        "ja": "彼は親友を失った。",
+        "kana": "かれ は しんゆう を うしなった。",
+        "ro": "kare wa shinyuu o ushinatta."
+      },
+      {
+        "en": "We must not lose hope.",
+        "ja": "希望を失ってはいけない。",
+        "kana": "きぼう を うしなって は いけない。",
+        "ro": "kibou o ushinatte wa ikenai."
+      },
+      {
+        "en": "He lost consciousness after the accident.",
+        "ja": "事故で意識を失った。",
+        "kana": "じこ で いしき を うしなった。",
+        "ro": "jiko de ishiki o ushinatta."
+      }
+    ],
+    "grammar": "Noun + を + 失う"
+  },
+  {
+    "id": "n3-verb-019",
+    "ja": "疑う",
+    "kana": "うたがう",
+    "ro": "utagau",
+    "en": "to doubt / to suspect / to question",
+    "examples": [
+      {
+        "en": "I doubted his story.",
+        "ja": "私は彼の話を疑った。",
+        "kana": "わたし は かれ の はなし を うたがった。",
+        "ro": "watashi wa kare no hanashi o utagatta."
+      },
+      {
+        "en": "Don’t doubt your own ability.",
+        "ja": "自分の能力を疑わないでください。",
+        "kana": "じぶん の のうりょく を うたがわないで ください。",
+        "ro": "jibun no nouryoku o utagawanaide kudasai."
+      },
+      {
+        "en": "He was suspected by the police.",
+        "ja": "彼は警察に疑われた。",
+        "kana": "かれ は けいさつ に うたがわれた。",
+        "ro": "kare wa keisatsu ni utagawareta."
+      },
+      {
+        "en": "I have no reason to doubt her honesty.",
+        "ja": "彼女の正直さを疑う理由はない。",
+        "kana": "かのじょ の しょうじきさ を うたがう りゆう は ない。",
+        "ro": "kanojo no shoujikisa o utagau riyuu wa nai."
+      },
+      {
+        "en": "His behavior made me suspicious.",
+        "ja": "彼の行動を見て疑った。",
+        "kana": "かれ の こうどう を みて うたがった。",
+        "ro": "kare no koudou o mite utagatta."
+      }
+    ],
+    "grammar": "Noun + を + 疑う"
+  },
+  {
+    "id": "n3-verb-020",
+    "ja": "奪う",
+    "kana": "うばう",
+    "ro": "ubau",
+    "en": "to steal / to take away / to deprive",
+    "examples": [
+      {
+        "en": "The thief stole the bag.",
+        "ja": "泥棒がかばんを奪った。",
+        "kana": "どろぼう が かばん を うばった。",
+        "ro": "dorobou ga kaban o ubatta."
+      },
+      {
+        "en": "The war took many lives.",
+        "ja": "戦争が多くの命を奪った。",
+        "kana": "せんそう が おおく の いのち を うばった。",
+        "ro": "sensou ga ooku no inochi o ubatta."
+      },
+      {
+        "en": "He took the ball from me.",
+        "ja": "彼は私からボールを奪った。",
+        "kana": "かれ は わたし から ぼーる を うばった。",
+        "ro": "kare wa watashi kara booru o ubatta."
+      },
+      {
+        "en": "The accident deprived him of freedom.",
+        "ja": "事故が彼の自由を奪った。",
+        "kana": "じこ が かれ の じゆう を うばった。",
+        "ro": "jiko ga kare no jiyuu o ubatta."
+      },
+      {
+        "en": "The performance captured the audience’s attention.",
+        "ja": "その演技が観客の心を奪った。",
+        "kana": "その えんぎ が かんきゃく の こころ を うばった。",
+        "ro": "sono engi ga kankyaku no kokoro o ubatta."
+      }
+    ],
+    "grammar": "Person + から + Noun + を + 奪う"
+  },
+  {
+    "id": "n3-verb-021",
+    "ja": "受け付ける",
+    "kana": "うけつける",
+    "ro": "uketsukeru",
+    "en": "to accept / to receive (applications, requests, etc.)",
+    "examples": [
+      {
+        "en": "We are accepting applications until Friday.",
+        "ja": "金曜日まで申し込みを受け付けています。",
+        "kana": "きんようび まで もうしこみ を うけつけています。",
+        "ro": "kinyoubi made moushikomi o uketsuketeimasu."
+      },
+      {
+        "en": "This office does not accept cash payments.",
+        "ja": "この事務所では現金の支払いを受け付けません。",
+        "kana": "この じむしょ では げんきん の しはらい を うけつけません。",
+        "ro": "kono jimusho de wa genkin no shiharai o uketsukemasen."
+      },
+      {
+        "en": "The hospital accepts new patients every morning.",
+        "ja": "病院は毎朝新しい患者を受け付けています。",
+        "kana": "びょういん は まいあさ あたらしい かんじゃ を うけつけています。",
+        "ro": "byouin wa maiasa atarashii kanja o uketsuketeimasu."
+      },
+      {
+        "en": "Applications are accepted online only.",
+        "ja": "申し込みはオンラインでのみ受け付けます。",
+        "kana": "もうしこみ は おんらいん で のみ うけつけます。",
+        "ro": "moushikomi wa onrain de nomi uketsukemasu."
+      },
+      {
+        "en": "They are not accepting complaints at this time.",
+        "ja": "現在は苦情を受け付けていません。",
+        "kana": "げんざい は くじょう を うけつけていません。",
+        "ro": "genzai wa kujou o uketsuketeimasen."
+      }
+    ],
+    "grammar": "Noun + を + 受け付ける"
+  },
+  {
+    "id": "n3-verb-022",
+    "ja": "動く",
+    "kana": "うごく",
+    "ro": "ugoku",
+    "en": "to move / to work / to function / to take action",
+    "examples": [
+      {
+        "en": "The car doesn’t move.",
+        "ja": "車が動かない。",
+        "kana": "くるま が うごかない。",
+        "ro": "kuruma ga ugokanai."
+      },
+      {
+        "en": "The machine is not working properly.",
+        "ja": "機械が正しく動いていない。",
+        "kana": "きかい が ただしく うごいて いない。",
+        "ro": "kikai ga tadashiku ugoite inai."
+      },
+      {
+        "en": "My heart is still moving.",
+        "ja": "私の心はまだ動いている。",
+        "kana": "わたし の こころ は まだ うごいて いる。",
+        "ro": "watashi no kokoro wa mada ugoite iru."
+      },
+      {
+        "en": "He finally started to take action.",
+        "ja": "彼はついに動き始めた。",
+        "kana": "かれ は ついに うごき はじめた。",
+        "ro": "kare wa tsuini ugoki hajimeta."
+      },
+      {
+        "en": "The elevator suddenly moved.",
+        "ja": "エレベーターが突然動いた。",
+        "kana": "えれべーたー が とつぜん うごいた。",
+        "ro": "erebeetaa ga totsuzen ugoita."
+      }
+    ],
+    "grammar": "Noun + が + 動く"
+  },
+  {
+    "id": "n3-verb-023",
+    "ja": "写す",
+    "kana": "うつす",
+    "ro": "utsusu",
+    "en": "to copy / to photograph / to project / to reflect",
+    "examples": [
+      {
+        "en": "He copied the notes from the blackboard.",
+        "ja": "彼は黒板のメモを写した。",
+        "kana": "かれ は こくばん の めも を うつした。",
+        "ro": "kare wa kokuban no memo o utsushita."
+      },
+      {
+        "en": "I took a picture of the scenery.",
+        "ja": "景色を写真に写した。",
+        "kana": "けしき を しゃしん に うつした。",
+        "ro": "keshiki o shashin ni utsushita."
+      },
+      {
+        "en": "The mountain was reflected in the lake.",
+        "ja": "山が湖に写っていた。",
+        "kana": "やま が みずうみ に うつって いた。",
+        "ro": "yama ga mizuumi ni utsutte ita."
+      },
+      {
+        "en": "He projected the image onto the screen.",
+        "ja": "彼は映像をスクリーンに写した。",
+        "kana": "かれ は えいぞう を すくりーん に うつした。",
+        "ro": "kare wa eizou o sukuriin ni utsushita."
+      },
+      {
+        "en": "Please copy the words from the textbook.",
+        "ja": "教科書の言葉を写してください。",
+        "kana": "きょうかしょ の ことば を うつして ください。",
+        "ro": "kyoukasho no kotoba o utsushite kudasai."
+      }
+    ],
+    "grammar": "Noun + を + 写す"
+  },
+  {
+    "id": "n3-verb-024",
+    "ja": "移す",
+    "kana": "うつす",
+    "ro": "utsusu",
+    "en": "to move / to transfer / to shift / to infect",
+    "examples": [
+      {
+        "en": "He moved the meeting to another room.",
+        "ja": "会議を別の部屋に移した。",
+        "kana": "かいぎ を べつ の へや に うつした。",
+        "ro": "kaigi o betsu no heya ni utsushita."
+      },
+      {
+        "en": "Please move the flowers to a sunny place.",
+        "ja": "花を日当たりの良い場所に移してください。",
+        "kana": "はな を ひあたり の よい ばしょ に うつして ください。",
+        "ro": "hana o hiatari no yoi basho ni utsushite kudasai."
+      },
+      {
+        "en": "The patient was moved to another hospital.",
+        "ja": "患者は別の病院に移された。",
+        "kana": "かんじゃ は べつ の びょういん に うつされた。",
+        "ro": "kanja wa betsu no byouin ni utsusareta."
+      },
+      {
+        "en": "He transferred the data to a USB drive.",
+        "ja": "データをUSBに移した。",
+        "kana": "でーた を ゆーえすびー に うつした。",
+        "ro": "deeta o yuuesubii ni utsushita."
+      },
+      {
+        "en": "He caught a cold from his friend.",
+        "ja": "友達から風邪を移された。",
+        "kana": "ともだち から かぜ を うつされた。",
+        "ro": "tomodachi kara kaze o utsusareta."
+      }
+    ],
+    "grammar": "Noun + を / に + 移す"
+  },
+  {
+    "id": "n3-verb-025",
+    "ja": "写る",
+    "kana": "うつる",
+    "ro": "utsuru",
+    "en": "to be photographed / to be reflected / to come out (in a photo)",
+    "examples": [
+      {
+        "en": "You look good in this photo.",
+        "ja": "この写真によく写っています。",
+        "kana": "この しゃしん に よく うつっています。",
+        "ro": "kono shashin ni yoku utsutteimasu."
+      },
+      {
+        "en": "The mountain was reflected in the lake.",
+        "ja": "山が湖に写っている。",
+        "kana": "やま が みずうみ に うつって いる。",
+        "ro": "yama ga mizuumi ni utsutte iru."
+      },
+      {
+        "en": "She didn’t come out in the photo.",
+        "ja": "彼女は写真に写らなかった。",
+        "kana": "かのじょ は しゃしん に うつらなかった。",
+        "ro": "kanojo wa shashin ni utsuranakatta."
+      },
+      {
+        "en": "The tree was beautifully reflected in the water.",
+        "ja": "木が水面に美しく写っていた。",
+        "kana": "き が すいめん に うつくしく うつって いた。",
+        "ro": "ki ga suimen ni utsukushiku utsutte ita."
+      },
+      {
+        "en": "Everyone was clearly shown in the video.",
+        "ja": "全員がビデオにしっかり写っていた。",
+        "kana": "ぜんいん が びでお に しっかり うつって いた。",
+        "ro": "zen'in ga bideo ni shikkari utsutte ita."
+      }
+    ],
+    "grammar": "Noun + が / に + 写る"
+  },
+  {
+    "id": "n3-verb-026",
+    "ja": "移る",
+    "kana": "うつる",
+    "ro": "utsuru",
+    "en": "to move / to transfer / to shift / to spread (disease, etc.)",
+    "examples": [
+      {
+        "en": "He moved to a new company.",
+        "ja": "彼は新しい会社に移った。",
+        "kana": "かれ は あたらしい かいしゃ に うつった。",
+        "ro": "kare wa atarashii kaisha ni utsutta."
+      },
+      {
+        "en": "The teacher moved to another school.",
+        "ja": "先生は別の学校に移った。",
+        "kana": "せんせい は べつ の がっこう に うつった。",
+        "ro": "sensei wa betsu no gakkou ni utsutta."
+      },
+      {
+        "en": "The meeting moved to the next topic.",
+        "ja": "会議は次の議題に移った。",
+        "kana": "かいぎ は つぎ の ぎだい に うつった。",
+        "ro": "kaigi wa tsugi no gidai ni utsutta."
+      },
+      {
+        "en": "The cold spread to his brother.",
+        "ja": "風邪が弟に移った。",
+        "kana": "かぜ が おとうと に うつった。",
+        "ro": "kaze ga otouto ni utsutta."
+      },
+      {
+        "en": "The focus has shifted to a new project.",
+        "ja": "関心が新しいプロジェクトに移った。",
+        "kana": "かんしん が あたらしい ぷろじぇくと に うつった。",
+        "ro": "kanshin ga atarashii purojekuto ni utsutta."
+      }
+    ],
+    "grammar": "Noun + が / に + 移る"
+  },
+  {
+    "id": "n3-verb-027",
+    "ja": "訴える",
+    "kana": "うったえる",
+    "ro": "uttaeru",
+    "en": "to sue / to complain / to appeal / to plead",
+    "examples": [
+      {
+        "en": "He sued the company for unfair dismissal.",
+        "ja": "彼は会社を不当解雇で訴えた。",
+        "kana": "かれ は かいしゃ を ふとう かいこ で うったえた。",
+        "ro": "kare wa kaisha o futou kaiko de uttaeta."
+      },
+      {
+        "en": "She complained of a headache.",
+        "ja": "彼女は頭痛を訴えた。",
+        "kana": "かのじょ は ずつう を うったえた。",
+        "ro": "kanojo wa zutsuu o uttaeta."
+      },
+      {
+        "en": "He appealed to the public for help.",
+        "ja": "彼は人々に助けを訴えた。",
+        "kana": "かれ は ひとびと に たすけ を うったえた。",
+        "ro": "kare wa hitobito ni tasuke o uttaeta."
+      },
+      {
+        "en": "She pleaded her innocence in court.",
+        "ja": "彼女は法廷で無実を訴えた。",
+        "kana": "かのじょ は ほうてい で むじつ を うったえた。",
+        "ro": "kanojo wa houtei de mujitsu o uttaeta."
+      },
+      {
+        "en": "The workers demanded better conditions.",
+        "ja": "労働者たちは改善を訴えた。",
+        "kana": "ろうどうしゃ たち は かいぜん を うったえた。",
+        "ro": "roudousha-tachi wa kaizen o uttaeta."
+      }
+    ],
+    "grammar": "Person + に / Noun + を + 訴える"
+  },
+  {
+    "id": "n3-verb-028",
+    "ja": "奨める",
+    "kana": "すすめる",
+    "ro": "susumeru",
+    "en": "to recommend / to encourage / to suggest",
+    "examples": [
+      {
+        "en": "The doctor recommended rest.",
+        "ja": "医者は休養を奨めた。",
+        "kana": "いしゃ は きゅうよう を すすめた。",
+        "ro": "isha wa kyuuyou o susumeta."
+      },
+      {
+        "en": "He recommended me to read this book.",
+        "ja": "彼は私にこの本を奨めた。",
+        "kana": "かれ は わたし に この ほん を すすめた。",
+        "ro": "kare wa watashi ni kono hon o susumeta."
+      },
+      {
+        "en": "My teacher encouraged me to study abroad.",
+        "ja": "先生は私に留学を奨めた。",
+        "kana": "せんせい は わたし に りゅうがく を すすめた。",
+        "ro": "sensei wa watashi ni ryuugaku o susumeta."
+      },
+      {
+        "en": "He encouraged her to take the exam.",
+        "ja": "彼は彼女に試験を受けるよう奨めた。",
+        "kana": "かれ は かのじょ に しけん を うける よう すすめた。",
+        "ro": "kare wa kanojo ni shiken o ukeru you susumeta."
+      },
+      {
+        "en": "I was encouraged by my friend to try it.",
+        "ja": "友人にやってみるよう奨められた。",
+        "kana": "ゆうじん に やって みる よう すすめられた。",
+        "ro": "yuujin ni yatte miru you susumerareta."
+      }
+    ],
+    "grammar": "Person + に + Noun / Verb + を + 奨める"
+  },
+  {
+    "id": "n3-verb-029",
+    "ja": "移動する",
+    "kana": "いどうする",
+    "ro": "idou suru",
+    "en": "to move / to transfer / to relocate",
+    "examples": [
+      {
+        "en": "The president moved to another branch.",
+        "ja": "社長は別の支店に移動した。",
+        "kana": "しゃちょう は べつ の してん に いどう した。",
+        "ro": "shachou wa betsu no shiten ni idou shita."
+      },
+      {
+        "en": "Please move to the next room.",
+        "ja": "次の部屋に移動してください。",
+        "kana": "つぎ の へや に いどう して ください。",
+        "ro": "tsugi no heya ni idou shite kudasai."
+      },
+      {
+        "en": "The train is moving to Tokyo.",
+        "ja": "電車は東京へ移動している。",
+        "kana": "でんしゃ は とうきょう へ いどう して いる。",
+        "ro": "densha wa toukyou e idou shite iru."
+      },
+      {
+        "en": "Data was moved to the cloud.",
+        "ja": "データがクラウドに移動された。",
+        "kana": "でーた が くらうど に いどう された。",
+        "ro": "deeta ga kuraudo ni idou sareta."
+      },
+      {
+        "en": "The meeting location has been changed.",
+        "ja": "会議の場所が移動になりました。",
+        "kana": "かいぎ の ばしょ が いどう に なりました。",
+        "ro": "kaigi no basho ga idou ni narimashita."
+      }
+    ],
+    "grammar": "Noun + が / に / へ + 移動する"
+  },
+  {
+    "id": "n3-verb-030",
+    "ja": "浮かぶ",
+    "kana": "うかぶ",
+    "ro": "ukabu",
+    "en": "to float / to come to mind / to rise",
+    "examples": [
+      {
+        "en": "A boat is floating on the river.",
+        "ja": "川に船が浮かんでいる。",
+        "kana": "かわ に ふね が うかんで いる。",
+        "ro": "kawa ni fune ga ukande iru."
+      },
+      {
+        "en": "Her name came to my mind.",
+        "ja": "彼女の名前が頭に浮かんだ。",
+        "kana": "かのじょ の なまえ が あたま に うかんだ。",
+        "ro": "kanojo no namae ga atama ni ukanda."
+      },
+      {
+        "en": "A smile appeared on his face.",
+        "ja": "彼の顔に笑みが浮かんだ。",
+        "kana": "かれ の かお に えみ が うかんだ。",
+        "ro": "kare no kao ni emi ga ukanda."
+      },
+      {
+        "en": "A memory of childhood came back to me.",
+        "ja": "子どもの頃の思い出が浮かんだ。",
+        "kana": "こども の ころ の おもいで が うかんだ。",
+        "ro": "kodomo no koro no omoide ga ukanda."
+      },
+      {
+        "en": "A balloon floated in the sky.",
+        "ja": "風船が空に浮かんでいた。",
+        "kana": "ふうせん が そら に うかんで いた。",
+        "ro": "fuusen ga sora ni ukande ita."
+      }
+    ],
+    "grammar": "Noun + が / に + 浮かぶ"
+  },
+  {
+    "id": "n3-verb-031",
+    "ja": "浮かべる",
+    "kana": "うかべる",
+    "ro": "ukaberu",
+    "en": "to float / to show (emotion) / to express / to recall",
+    "examples": [
+      {
+        "en": "She floated a boat on the pond.",
+        "ja": "彼女は池に船を浮かべた。",
+        "kana": "かのじょ は いけ に ふね を うかべた。",
+        "ro": "kanojo wa ike ni fune o ukabeta."
+      },
+      {
+        "en": "He smiled slightly.",
+        "ja": "彼はほほえみを浮かべた。",
+        "kana": "かれ は ほほえみ を うかべた。",
+        "ro": "kare wa hohoemi o ukabeta."
+      },
+      {
+        "en": "Tears filled her eyes.",
+        "ja": "彼女の目に涙を浮かべた。",
+        "kana": "かのじょ の め に なみだ を うかべた。",
+        "ro": "kanojo no me ni namida o ukabeta."
+      },
+      {
+        "en": "He recalled his old memories.",
+        "ja": "彼は昔の思い出を心に浮かべた。",
+        "kana": "かれ は むかし の おもいで を こころ に うかべた。",
+        "ro": "kare wa mukashi no omoide o kokoro ni ukabeta."
+      },
+      {
+        "en": "She had a smile floating on her face.",
+        "ja": "彼女の顔に笑みを浮かべていた。",
+        "kana": "かのじょ の かお に えみ を うかべて いた。",
+        "ro": "kanojo no kao ni emi o ukabete ita."
+      }
+    ],
+    "grammar": "Noun + を + 浮かべる"
+  },
+  {
+    "id": "n3-verb-032",
+    "ja": "受け止める",
+    "kana": "うけとめる",
+    "ro": "uketomeru",
+    "en": "to catch / to receive / to accept / to take seriously",
+    "examples": [
+      {
+        "en": "He caught the ball with both hands.",
+        "ja": "彼は両手でボールを受け止めた。",
+        "kana": "かれ は りょうて で ぼーる を うけとめた。",
+        "ro": "kare wa ryoute de booru o uketometa."
+      },
+      {
+        "en": "She accepted the news calmly.",
+        "ja": "彼女はその知らせを冷静に受け止めた。",
+        "kana": "かのじょ は その しらせ を れいせい に うけとめた。",
+        "ro": "kanojo wa sono shirase o reisei ni uketometa."
+      },
+      {
+        "en": "He took the criticism seriously.",
+        "ja": "彼は批判を真剣に受け止めた。",
+        "kana": "かれ は ひはん を しんけん に うけとめた。",
+        "ro": "kare wa hihan o shinken ni uketometa."
+      },
+      {
+        "en": "She caught the child who was falling.",
+        "ja": "彼女は落ちそうな子どもを受け止めた。",
+        "kana": "かのじょ は おちそう な こども を うけとめた。",
+        "ro": "kanojo wa ochisou na kodomo o uketometa."
+      },
+      {
+        "en": "The team accepted the loss positively.",
+        "ja": "チームは敗北を前向きに受け止めた。",
+        "kana": "ちーむ は はいぼく を まえむき に うけとめた。",
+        "ro": "chiimu wa haiboku o maemuki ni uketometa."
+      }
+    ],
+    "grammar": "Noun + を + 受け止める"
+  },
+  {
+    "id": "n3-verb-033",
+    "ja": "打ち合わせる",
+    "kana": "うちあわせる",
+    "ro": "uchiawaseru",
+    "en": "to discuss / to arrange / to plan together",
+    "examples": [
+      {
+        "en": "We discussed the schedule.",
+        "ja": "私たちはスケジュールを打ち合わせた。",
+        "kana": "わたしたち は すけじゅーる を うちあわせた。",
+        "ro": "watashitachi wa sukejuuru o uchiawaseta."
+      },
+      {
+        "en": "They met to plan the event.",
+        "ja": "彼らはイベントの計画を打ち合わせた。",
+        "kana": "かれら は いべんと の けいかく を うちあわせた。",
+        "ro": "karera wa ibento no keikaku o uchiawaseta."
+      },
+      {
+        "en": "We discussed it in advance.",
+        "ja": "事前に打ち合わせをした。",
+        "kana": "じぜん に うちあわせ を した。",
+        "ro": "jizen ni uchiawase o shita."
+      },
+      {
+        "en": "The team members coordinated their opinions.",
+        "ja": "チームのメンバーが意見を打ち合わせた。",
+        "kana": "ちーむ の めんばー が いけん を うちあわせた。",
+        "ro": "chiimu no menbaa ga iken o uchiawaseta."
+      },
+      {
+        "en": "We had a meeting with the client.",
+        "ja": "クライアントと打ち合わせを行った。",
+        "kana": "くらいあんと と うちあわせ を おこなった。",
+        "ro": "kuraianto to uchiawase o okonatta."
+      }
+    ],
+    "grammar": "Person + と / Noun + を + 打ち合わせる"
+  },
+  {
+    "id": "n3-verb-034",
+    "ja": "打ち消す",
+    "kana": "うちけす",
+    "ro": "uchikesu",
+    "en": "to deny / to negate / to contradict / to cancel out",
+    "examples": [
+      {
+        "en": "He denied the rumor clearly.",
+        "ja": "彼はそのうわさをはっきり打ち消した。",
+        "kana": "かれ は その うわさ を はっきり うちけした。",
+        "ro": "kare wa sono uwasa o hakkiri uchikeshita."
+      },
+      {
+        "en": "She denied what he said.",
+        "ja": "彼女は彼の言葉を打ち消した。",
+        "kana": "かのじょ は かれ の ことば を うちけした。",
+        "ro": "kanojo wa kare no kotoba o uchikeshita."
+      },
+      {
+        "en": "He tried to cancel the negative impression.",
+        "ja": "彼は悪い印象を打ち消そうとした。",
+        "kana": "かれ は わるい いんしょう を うちけそう と した。",
+        "ro": "kare wa warui inshou o uchikesou to shita."
+      },
+      {
+        "en": "The laughter canceled the tension in the room.",
+        "ja": "笑い声が部屋の緊張を打ち消した。",
+        "kana": "わらいごえ が へや の きんちょう を うちけした。",
+        "ro": "waraigoe ga heya no kinchou o uchikeshita."
+      },
+      {
+        "en": "He strongly denied the accusation.",
+        "ja": "彼はその非難を強く打ち消した。",
+        "kana": "かれ は その ひなん を つよく うちけした。",
+        "ro": "kare wa sono hinan o tsuyoku uchikeshita."
+      }
+    ],
+    "grammar": "Noun + を + 打ち消す"
+  },
+  {
+    "id": "n3-verb-036",
+    "ja": "打つ",
+    "kana": "うつ",
+    "ro": "utsu",
+    "en": "to hit / to strike / to type / to beat",
+    "examples": [
+      {
+        "en": "He hit the ball strongly.",
+        "ja": "彼はボールを強く打った。",
+        "kana": "かれ は ぼーる を つよく うった。",
+        "ro": "kare wa booru o tsuyoku utta."
+      },
+      {
+        "en": "She hit the drum rhythmically.",
+        "ja": "彼女はリズムよく太鼓を打った。",
+        "kana": "かのじょ は りずむ よく たいこ を うった。",
+        "ro": "kanojo wa rizumu yoku taiko o utta."
+      },
+      {
+        "en": "He typed a letter on the computer.",
+        "ja": "彼はコンピューターで手紙を打った。",
+        "kana": "かれ は こんぴゅーたー で てがみ を うった。",
+        "ro": "kare wa konpyuutaa de tegami o utta."
+      },
+      {
+        "en": "The rain beat against the window.",
+        "ja": "雨が窓を打っていた。",
+        "kana": "あめ が まど を うって いた。",
+        "ro": "ame ga mado o utte ita."
+      },
+      {
+        "en": "He hit his hand on the table.",
+        "ja": "彼は手を机に打った。",
+        "kana": "かれ は て を つくえ に うった。",
+        "ro": "kare wa te o tsukue ni utta."
+      }
+    ],
+    "grammar": "Noun + を + 打つ"
+  },
+  {
+    "id": "n3-verb-037",
+    "ja": "売れる",
+    "kana": "うれる",
+    "ro": "ureru",
+    "en": "to sell well / to be popular",
+    "examples": [
+      {
+        "en": "This book sells well.",
+        "ja": "この本はよく売れている。",
+        "kana": "この ほん は よく うれて いる。",
+        "ro": "kono hon wa yoku urete iru."
+      },
+      {
+        "en": "That singer became very popular.",
+        "ja": "あの歌手はとても売れている。",
+        "kana": "あの かしゅ は とても うれて いる。",
+        "ro": "ano kashu wa totemo urete iru."
+      },
+      {
+        "en": "This model sold out quickly.",
+        "ja": "このモデルはすぐに売れた。",
+        "kana": "この もでる は すぐ に うれた。",
+        "ro": "kono moderu wa sugu ni ureta."
+      },
+      {
+        "en": "His paintings are selling well abroad.",
+        "ja": "彼の絵は海外でよく売れている。",
+        "kana": "かれ の え は かいがい で よく うれて いる。",
+        "ro": "kare no e wa kaigai de yoku urete iru."
+      },
+      {
+        "en": "That shop’s bread sells fast every morning.",
+        "ja": "あの店のパンは毎朝すぐに売れる。",
+        "kana": "あの みせ の ぱん は まいあさ すぐ に うれる。",
+        "ro": "ano mise no pan wa maiasa sugu ni ureru."
+      }
+    ],
+    "grammar": "Noun + が + 売れる"
+  },
+  {
+    "id": "n3-verb-038",
+    "ja": "得る",
+    "kana": "える",
+    "ro": "eru",
+    "en": "to obtain / to gain / to get / to acquire",
+    "examples": [
+      {
+        "en": "He gained experience through his work.",
+        "ja": "彼は仕事を通じて経験を得た。",
+        "kana": "かれ は しごと を つうじて けいけん を えた。",
+        "ro": "kare wa shigoto o tsuujite keiken o eta."
+      },
+      {
+        "en": "I got useful information from him.",
+        "ja": "彼から有益な情報を得た。",
+        "kana": "かれ から ゆうえき な じょうほう を えた。",
+        "ro": "kare kara yueki na jouhou o eta."
+      },
+      {
+        "en": "She gained the trust of her team.",
+        "ja": "彼女はチームの信頼を得た。",
+        "kana": "かのじょ は ちーむ の しんらい を えた。",
+        "ro": "kanojo wa chiimu no shinrai o eta."
+      },
+      {
+        "en": "We obtained permission from the city.",
+        "ja": "市から許可を得た。",
+        "kana": "し から きょか を えた。",
+        "ro": "shi kara kyoka o eta."
+      },
+      {
+        "en": "He earned respect from everyone.",
+        "ja": "彼はみんなの尊敬を得た。",
+        "kana": "かれ は みんな の そんけい を えた。",
+        "ro": "kare wa minna no sonkei o eta."
+      }
+    ],
+    "grammar": "Noun + を + 得る"
+  },
+  {
+    "id": "n3-verb-039",
+    "ja": "伺う",
+    "kana": "うかがう",
+    "ro": "ukagau",
+    "en": "to visit / to ask / to hear (humble form)",
+    "examples": [
+      {
+        "en": "I will visit your office tomorrow.",
+        "ja": "明日御社に伺います。",
+        "kana": "あした おんしゃ に うかがいます。",
+        "ro": "ashita onsha ni ukagaimasu."
+      },
+      {
+        "en": "May I ask your name?",
+        "ja": "お名前を伺ってもよろしいですか。",
+        "kana": "おなまえ を うかがって も よろしい です か。",
+        "ro": "onamae o ukagatte mo yoroshii desu ka."
+      },
+      {
+        "en": "I heard about it from my friend.",
+        "ja": "友人からその話を伺いました。",
+        "kana": "ゆうじん から その はなし を うかがいました。",
+        "ro": "yuujin kara sono hanashi o ukagaimashita."
+      },
+      {
+        "en": "I will ask the teacher about it.",
+        "ja": "その件について先生に伺います。",
+        "kana": "その けん に ついて せんせい に うかがいます。",
+        "ro": "sono ken ni tsuite sensei ni ukagaimasu."
+      },
+      {
+        "en": "I came to visit your home today.",
+        "ja": "本日ご自宅に伺いました。",
+        "kana": "ほんじつ ごじたく に うかがいました。",
+        "ro": "honjitsu gojitaku ni ukagaimashita."
+      }
+    ],
+    "grammar": "Person / Place + に + 伺う"
+  },
+  {
+    "id": "n3-verb-040",
+    "ja": "受け持つ",
+    "kana": "うけもつ",
+    "ro": "ukemotsu",
+    "en": "to take charge of / to be responsible for / to teach (a class)",
+    "examples": [
+      {
+        "en": "He is in charge of this project.",
+        "ja": "彼はこのプロジェクトを受け持っている。",
+        "kana": "かれ は この ぷろじぇくと を うけもって いる。",
+        "ro": "kare wa kono purojekuto o ukemotte iru."
+      },
+      {
+        "en": "She is responsible for first-year students.",
+        "ja": "彼女は一年生のクラスを受け持っている。",
+        "kana": "かのじょ は いちねんせい の くらす を うけもって いる。",
+        "ro": "kanojo wa ichinensei no kurasu o ukemotte iru."
+      },
+      {
+        "en": "I took charge of accounting.",
+        "ja": "私は経理を受け持っています。",
+        "kana": "わたし は けいり を うけもって います。",
+        "ro": "watashi wa keiri o ukemotte imasu."
+      },
+      {
+        "en": "He is in charge of maintenance work.",
+        "ja": "彼は保守作業を受け持っている。",
+        "kana": "かれ は ほしゅ さぎょう を うけもって いる。",
+        "ro": "kare wa hoshu sagyou o ukemotte iru."
+      },
+      {
+        "en": "She took charge of the event’s management.",
+        "ja": "彼女はイベントの運営を受け持った。",
+        "kana": "かのじょ は いべんと の うんえい を うけもった。",
+        "ro": "kanojo wa ibento no un'ei o ukemotta."
+      }
+    ],
+    "grammar": "Noun + を + 受け持つ"
+  },
+  {
+    "id": "n3-verb-041",
+    "ja": "疑われる",
+    "kana": "うたがわれる",
+    "ro": "utagawareru",
+    "en": "to be suspected / to be doubted",
+    "examples": [
+      {
+        "en": "He was suspected by the police.",
+        "ja": "彼は警察に疑われた。",
+        "kana": "かれ は けいさつ に うたがわれた。",
+        "ro": "kare wa keisatsu ni utagawareta."
+      },
+      {
+        "en": "Her honesty was doubted.",
+        "ja": "彼女の正直さが疑われた。",
+        "kana": "かのじょ の しょうじきさ が うたがわれた。",
+        "ro": "kanojo no shoujikisa ga utagawareta."
+      },
+      {
+        "en": "He was suspected of the crime.",
+        "ja": "彼はその犯罪を疑われた。",
+        "kana": "かれ は その はんざい を うたがわれた。",
+        "ro": "kare wa sono hanzai o utagawareta."
+      },
+      {
+        "en": "I was wrongly suspected.",
+        "ja": "私は誤って疑われた。",
+        "kana": "わたし は あやまって うたがわれた。",
+        "ro": "watashi wa ayamette utagawareta."
+      },
+      {
+        "en": "He was suspected of cheating on the exam.",
+        "ja": "彼は試験で不正を疑われた。",
+        "kana": "かれ は しけん で ふせい を うたがわれた。",
+        "ro": "kare wa shiken de fusei o utagawareta."
+      }
+    ],
+    "grammar": "Person + に / Noun + を + 疑われる"
+  },
+  {
+    "id": "n3-verb-042",
+    "ja": "討論する",
+    "kana": "とうろんする",
+    "ro": "touron suru",
+    "en": "to discuss / to debate / to argue",
+    "examples": [
+      {
+        "en": "We discussed the new law.",
+        "ja": "私たちは新しい法律について討論した。",
+        "kana": "わたしたち は あたらしい ほうりつ について とうろん した。",
+        "ro": "watashitachi wa atarashii houritsu ni tsuite touron shita."
+      },
+      {
+        "en": "The students debated about environmental issues.",
+        "ja": "学生たちは環境問題を討論した。",
+        "kana": "がくせい たち は かんきょう もんだい を とうろん した。",
+        "ro": "gakusei-tachi wa kankyou mondai o touron shita."
+      },
+      {
+        "en": "They had a heated discussion.",
+        "ja": "彼らは激しく討論した。",
+        "kana": "かれら は はげしく とうろん した。",
+        "ro": "karera wa hageshiku touron shita."
+      },
+      {
+        "en": "We debated which plan was better.",
+        "ja": "どちらの計画が良いか討論した。",
+        "kana": "どちら の けいかく が よい か とうろん した。",
+        "ro": "dochira no keikaku ga yoi ka touron shita."
+      },
+      {
+        "en": "The topic was thoroughly discussed.",
+        "ja": "その話題は徹底的に討論された。",
+        "kana": "その わだい は てっていてき に とうろん された。",
+        "ro": "sono wadai wa tetteiteki ni touron sareta."
+      }
+    ],
+    "grammar": "Noun + を / について + 討論する"
+  },
+  {
+    "id": "n3-verb-044",
+    "ja": "浮く",
+    "kana": "うく",
+    "ro": "uku",
+    "en": "to float / to rise / to be left out",
+    "examples": [
+      {
+        "en": "The leaf is floating on the water.",
+        "ja": "葉っぱが水に浮いている。",
+        "kana": "はっぱ が みず に ういて いる。",
+        "ro": "happa ga mizu ni uite iru."
+      },
+      {
+        "en": "A balloon floated into the sky.",
+        "ja": "風船が空に浮いた。",
+        "kana": "ふうせん が そら に ういた。",
+        "ro": "fuusen ga sora ni uita."
+      },
+      {
+        "en": "Her name came to mind.",
+        "ja": "彼女の名前が頭に浮いた。",
+        "kana": "かのじょ の なまえ が あたま に ういた。",
+        "ro": "kanojo no namae ga atama ni uita."
+      },
+      {
+        "en": "He looked out of place at the party.",
+        "ja": "彼はパーティーで浮いていた。",
+        "kana": "かれ は ぱーてぃー で ういて いた。",
+        "ro": "kare wa paatii de uite ita."
+      },
+      {
+        "en": "An idea suddenly came to me.",
+        "ja": "ふとアイデアが浮いた。",
+        "kana": "ふと あいであ が ういた。",
+        "ro": "futo aidea ga uita."
+      }
+    ],
+    "grammar": "Noun + が / に + 浮く"
+  },
+  {
+    "id": "n3-verb-047",
+    "ja": "失礼する",
+    "kana": "しつれいする",
+    "ro": "shitsurei suru",
+    "en": "to be rude / to leave / to excuse oneself",
+    "examples": [
+      {
+        "en": "Excuse me for interrupting.",
+        "ja": "お話の途中で失礼します。",
+        "kana": "おはなし の とちゅう で しつれい します。",
+        "ro": "ohanashi no tochuu de shitsurei shimasu."
+      },
+      {
+        "en": "Please excuse me, I must be going now.",
+        "ja": "それでは失礼いたします。",
+        "kana": "それでは しつれい いたします。",
+        "ro": "sore de wa shitsurei itashimasu."
+      },
+      {
+        "en": "He left the room politely.",
+        "ja": "彼は礼儀正しく失礼した。",
+        "kana": "かれ は れいぎただしく しつれい した。",
+        "ro": "kare wa reigitadashiku shitsurei shita."
+      },
+      {
+        "en": "I’m sorry for being late.",
+        "ja": "遅れて失礼しました。",
+        "kana": "おくれて しつれい しました。",
+        "ro": "okurete shitsurei shimashita."
+      },
+      {
+        "en": "I was rude to my teacher.",
+        "ja": "先生に失礼なことを言ってしまった。",
+        "kana": "せんせい に しつれい な こと を いって しまった。",
+        "ro": "sensei ni shitsurei na koto o itte shimatta."
+      }
+    ],
+    "grammar": "Person + に + 失礼する"
+  },
+  {
+    "id": "n3-verb-048",
+    "ja": "植える",
+    "kana": "うえる",
+    "ro": "ueru",
+    "en": "to plant / to grow / to raise",
+    "examples": [
+      {
+        "en": "I planted a tree in the garden.",
+        "ja": "庭に木を植えた。",
+        "kana": "にわ に き を うえた。",
+        "ro": "niwa ni ki o ueta."
+      },
+      {
+        "en": "They planted flowers along the road.",
+        "ja": "道に花を植えた。",
+        "kana": "みち に はな を うえた。",
+        "ro": "michi ni hana o ueta."
+      },
+      {
+        "en": "He planted vegetables in the field.",
+        "ja": "彼は畑に野菜を植えた。",
+        "kana": "かれ は はたけ に やさい を うえた。",
+        "ro": "kare wa hatake ni yasai o ueta."
+      },
+      {
+        "en": "We planted many trees this spring.",
+        "ja": "この春、たくさんの木を植えた。",
+        "kana": "この はる たくさん の き を うえた。",
+        "ro": "kono haru takusan no ki o ueta."
+      },
+      {
+        "en": "She planted hope in our hearts.",
+        "ja": "彼女は私たちの心に希望を植えた。",
+        "kana": "かのじょ は わたしたち の こころ に きぼう を うえた。",
+        "ro": "kanojo wa watashitachi no kokoro ni kibou o ueta."
+      }
+    ],
+    "grammar": "Place + に + Noun + を + 植える"
+  },
+  {
+    "id": "n3-verb-051",
+    "ja": "失望する",
+    "kana": "しつぼうする",
+    "ro": "shitsubou suru",
+    "en": "to be disappointed / to lose hope",
+    "examples": [
+      {
+        "en": "He was disappointed with the result.",
+        "ja": "彼は結果に失望した。",
+        "kana": "かれ は けっか に しつぼう した。",
+        "ro": "kare wa kekka ni shitsubou shita."
+      },
+      {
+        "en": "She felt disappointed in herself.",
+        "ja": "彼女は自分に失望した。",
+        "kana": "かのじょ は じぶん に しつぼう した。",
+        "ro": "kanojo wa jibun ni shitsubou shita."
+      },
+      {
+        "en": "Many fans were disappointed by the news.",
+        "ja": "多くのファンがそのニュースに失望した。",
+        "kana": "おおく の ふぁん が その にゅーす に しつぼう した。",
+        "ro": "ooku no fan ga sono nyuusu ni shitsubou shita."
+      },
+      {
+        "en": "I was disappointed with his attitude.",
+        "ja": "私は彼の態度に失望した。",
+        "kana": "わたし は かれ の たいど に しつぼう した。",
+        "ro": "watashi wa kare no taido ni shitsubou shita."
+      },
+      {
+        "en": "Don’t make your parents disappointed.",
+        "ja": "両親を失望させないでください。",
+        "kana": "りょうしん を しつぼう させないで ください。",
+        "ro": "ryoushin o shitsubou sasenaide kudasai."
+      }
+    ],
+    "grammar": "Person / Thing + に + 失望する"
+  },
+  {
+    "id": "n3-verb-053",
+    "ja": "奨励する",
+    "kana": "しょうれいする",
+    "ro": "shourei suru",
+    "en": "to encourage / to promote / to recommend",
+    "examples": [
+      {
+        "en": "The government promotes recycling.",
+        "ja": "政府はリサイクルを奨励している。",
+        "kana": "せいふ は りさいくる を しょうれい して いる。",
+        "ro": "seifu wa risaikuru o shourei shite iru."
+      },
+      {
+        "en": "Teachers encourage students to read.",
+        "ja": "先生たちは読書を奨励している。",
+        "kana": "せんせい たち は どくしょ を しょうれい して いる。",
+        "ro": "sensei-tachi wa dokusho o shourei shite iru."
+      },
+      {
+        "en": "Exercise is strongly encouraged.",
+        "ja": "運動が強く奨励されている。",
+        "kana": "うんどう が つよく しょうれい されて いる。",
+        "ro": "undou ga tsuyoku shourei sarete iru."
+      },
+      {
+        "en": "They encouraged participation in the event.",
+        "ja": "彼らはイベントへの参加を奨励した。",
+        "kana": "かれら は いべんと への さんか を しょうれい した。",
+        "ro": "karera wa ibento e no sanka o shourei shita."
+      },
+      {
+        "en": "Healthy eating habits are encouraged.",
+        "ja": "健康的な食習慣が奨励されている。",
+        "kana": "けんこうてき な しょくしゅうかん が しょうれい されて いる。",
+        "ro": "kenkouteki na shokushuukan ga shourei sarete iru."
+      }
+    ],
+    "grammar": "Noun + を + 奨励する"
+  },
+  {
+    "id": "n3-verb-054",
+    "ja": "受け取れる",
+    "kana": "うけとれる",
+    "ro": "uketoreru",
+    "en": "to be able to receive / to interpret / to take as",
+    "examples": [
+      {
+        "en": "You can receive the parcel tomorrow.",
+        "ja": "明日荷物を受け取れる。",
+        "kana": "あした にもつ を うけとれる。",
+        "ro": "ashita nimotsu o uketoreru."
+      },
+      {
+        "en": "This message can be taken as an apology.",
+        "ja": "このメッセージは謝罪として受け取れる。",
+        "kana": "この めっせーじ は しゃざい として うけとれる。",
+        "ro": "kono messeeji wa shazai toshite uketoreru."
+      },
+      {
+        "en": "I can receive the documents at home.",
+        "ja": "家で書類を受け取れる。",
+        "kana": "いえ で しょるい を うけとれる。",
+        "ro": "ie de shorui o uketoreru."
+      },
+      {
+        "en": "His words can be interpreted in many ways.",
+        "ja": "彼の言葉はいろいろに受け取れる。",
+        "kana": "かれ の ことば は いろいろ に うけとれる。",
+        "ro": "kare no kotoba wa iroiro ni uketoreru."
+      },
+      {
+        "en": "This can be taken as a compliment.",
+        "ja": "これはほめ言葉として受け取れる。",
+        "kana": "これは ほめことば として うけとれる。",
+        "ro": "kore wa homekotoba toshite uketoreru."
+      }
+    ],
+    "grammar": "Noun + を + 受け取れる"
+  },
+  {
+    "id": "n3-verb-057",
+    "ja": "訴えられる",
+    "kana": "うったえられる",
+    "ro": "uttaerareru",
+    "en": "to be sued / to be appealed / to be complained about",
+    "examples": [
+      {
+        "en": "The company was sued by a customer.",
+        "ja": "会社は顧客に訴えられた。",
+        "kana": "かいしゃ は こきゃく に うったえられた。",
+        "ro": "kaisha wa kokyaku ni uttaerareta."
+      },
+      {
+        "en": "He was accused of fraud.",
+        "ja": "彼は詐欺で訴えられた。",
+        "kana": "かれ は さぎ で うったえられた。",
+        "ro": "kare wa sagi de uttaerareta."
+      },
+      {
+        "en": "The politician was sued for corruption.",
+        "ja": "その政治家は汚職で訴えられた。",
+        "kana": "その せいじか は おしょく で うったえられた。",
+        "ro": "sono seijika wa oshoku de uttaerareta."
+      },
+      {
+        "en": "The company was sued for damages.",
+        "ja": "その会社は損害賠償で訴えられた。",
+        "kana": "その かいしゃ は そんがい ばいしょう で うったえられた。",
+        "ro": "sono kaisha wa songai baishou de uttaerareta."
+      },
+      {
+        "en": "He was complained about by his coworkers.",
+        "ja": "彼は同僚に訴えられた。",
+        "kana": "かれ は どうりょう に うったえられた。",
+        "ro": "kare wa douryou ni uttaerareta."
+      }
+    ],
+    "grammar": "Person + に + 訴えられる"
+  },
+  {
+    "id": "n3-verb-060",
+    "ja": "受け取られる",
+    "kana": "うけとられる",
+    "ro": "uketorareru",
+    "en": "to be received / to be interpreted / to be understood",
+    "examples": [
+      {
+        "en": "The message was received positively.",
+        "ja": "そのメッセージは前向きに受け取られた。",
+        "kana": "その めっせーじ は まえむき に うけとられた。",
+        "ro": "sono messeeji wa maemuki ni uketorareta."
+      },
+      {
+        "en": "His comment was taken as criticism.",
+        "ja": "彼の発言は批判として受け取られた。",
+        "kana": "かれ の はつげん は ひはん として うけとられた。",
+        "ro": "kare no hatsugen wa hihan toshite uketorareta."
+      },
+      {
+        "en": "The gift was kindly accepted.",
+        "ja": "贈り物は親切に受け取られた。",
+        "kana": "おくりもの は しんせつ に うけとられた。",
+        "ro": "okurimono wa shinsetsu ni uketorareta."
+      },
+      {
+        "en": "His behavior was misunderstood.",
+        "ja": "彼の行動は誤って受け取られた。",
+        "kana": "かれ の こうどう は あやまって うけとられた。",
+        "ro": "kare no koudou wa ayamette uketorareta."
+      },
+      {
+        "en": "The joke was not well received.",
+        "ja": "その冗談はよく受け取られなかった。",
+        "kana": "その じょうだん は よく うけとられなかった。",
+        "ro": "sono joudan wa yoku uketorarenakatta."
+      }
+    ],
+    "grammar": "Noun + が / として + 受け取られる"
+  },
+  {
+    "id": "n3-verb-061",
+    "ja": "打ち明ける",
+    "kana": "うちあける",
+    "ro": "uchiakeru",
+    "en": "to confess / to reveal / to open up one’s heart",
+    "examples": [
+      {
+        "en": "He confessed his secret to his friend.",
+        "ja": "彼は友達に秘密を打ち明けた。",
+        "kana": "かれ は ともだち に ひみつ を うちあけた。",
+        "ro": "kare wa tomodachi ni himitsu o uchiaketa."
+      },
+      {
+        "en": "She finally opened up about her worries.",
+        "ja": "彼女はやっと悩みを打ち明けた。",
+        "kana": "かのじょ は やっと なやみ を うちあけた。",
+        "ro": "kanojo wa yatto nayami o uchiaketa."
+      },
+      {
+        "en": "I told my parents everything.",
+        "ja": "両親にすべてを打ち明けた。",
+        "kana": "りょうしん に すべて を うちあけた。",
+        "ro": "ryoushin ni subete o uchiaketa."
+      },
+      {
+        "en": "He revealed his true feelings.",
+        "ja": "彼は本音を打ち明けた。",
+        "kana": "かれ は ほんね を うちあけた。",
+        "ro": "kare wa honne o uchiaketa."
+      },
+      {
+        "en": "She confided in her best friend.",
+        "ja": "彼女は親友に打ち明けた。",
+        "kana": "かのじょ は しんゆう に うちあけた。",
+        "ro": "kanojo wa shinyuu ni uchiaketa."
+      }
+    ],
+    "grammar": "Person + に + Noun + を + 打ち明ける"
+  },
+  {
+    "id": "n3-verb-062",
+    "ja": "打ち込む",
+    "kana": "うちこむ",
+    "ro": "uchikomu",
+    "en": "to devote oneself / to input / to shoot / to drive in",
+    "examples": [
+      {
+        "en": "He is devoted to research.",
+        "ja": "彼は研究に打ち込んでいる。",
+        "kana": "かれ は けんきゅう に うちこんで いる。",
+        "ro": "kare wa kenkyuu ni uchikonde iru."
+      },
+      {
+        "en": "She typed the data into the computer.",
+        "ja": "彼女はコンピューターにデータを打ち込んだ。",
+        "kana": "かのじょ は こんぴゅーたー に でーた を うちこんだ。",
+        "ro": "kanojo wa konpyuutaa ni deeta o uchikonda."
+      },
+      {
+        "en": "He drove the nail into the wall.",
+        "ja": "彼は釘を壁に打ち込んだ。",
+        "kana": "かれ は くぎ を かべ に うちこんだ。",
+        "ro": "kare wa kugi o kabe ni uchikonda."
+      },
+      {
+        "en": "She is fully engaged in her work.",
+        "ja": "彼女は仕事に打ち込んでいる。",
+        "kana": "かのじょ は しごと に うちこんで いる。",
+        "ro": "kanojo wa shigoto ni uchikonde iru."
+      },
+      {
+        "en": "He is passionate about music.",
+        "ja": "彼は音楽に打ち込んでいる。",
+        "kana": "かれ は おんがく に うちこんで いる。",
+        "ro": "kare wa ongaku ni uchikonde iru."
+      }
+    ],
+    "grammar": "Noun + に + 打ち込む"
+  },
+  {
+    "id": "n3-verb-063",
+    "ja": "打ち破る",
+    "kana": "うちやぶる",
+    "ro": "uchiyaburu",
+    "en": "to break through / to destroy / to overcome",
+    "examples": [
+      {
+        "en": "He broke the record.",
+        "ja": "彼は記録を打ち破った。",
+        "kana": "かれ は きろく を うちやぶった。",
+        "ro": "kare wa kiroku o uchiyabutta."
+      },
+      {
+        "en": "She overcame her fear.",
+        "ja": "彼女は恐怖を打ち破った。",
+        "kana": "かのじょ は きょうふ を うちやぶった。",
+        "ro": "kanojo wa kyoufu o uchiyabutta."
+      },
+      {
+        "en": "The team broke through the defense.",
+        "ja": "チームは相手の守りを打ち破った。",
+        "kana": "ちーむ は あいて の まもり を うちやぶった。",
+        "ro": "chiimu wa aite no mamori o uchiyabutta."
+      },
+      {
+        "en": "He broke the silence.",
+        "ja": "彼は沈黙を打ち破った。",
+        "kana": "かれ は ちんもく を うちやぶった。",
+        "ro": "kare wa chinmoku o uchiyabutta."
+      },
+      {
+        "en": "They broke the enemy’s line.",
+        "ja": "彼らは敵の陣を打ち破った。",
+        "kana": "かれら は てき の じん を うちやぶった。",
+        "ro": "karera wa teki no jin o uchiyabutta."
+      }
+    ],
+    "grammar": "Noun + を + 打ち破る"
+  },
+  {
+    "id": "n3-verb-064",
+    "ja": "打ち上げる",
+    "kana": "うちあげる",
+    "ro": "uchiageru",
+    "en": "to launch / to shoot up / to finish up (celebrate)",
+    "examples": [
+      {
+        "en": "They launched a rocket.",
+        "ja": "彼らはロケットを打ち上げた。",
+        "kana": "かれら は ろけっと を うちあげた。",
+        "ro": "karera wa roketto o uchiageta."
+      },
+      {
+        "en": "Fireworks were launched into the sky.",
+        "ja": "花火が夜空に打ち上げられた。",
+        "kana": "はなび が よぞら に うちあげられた。",
+        "ro": "hanabi ga yozora ni uchiagerareta."
+      },
+      {
+        "en": "We held a party to celebrate the project.",
+        "ja": "プロジェクトの打ち上げをした。",
+        "kana": "ぷろじぇくと の うちあげ を した。",
+        "ro": "purojekuto no uchiage o shita."
+      },
+      {
+        "en": "They launched a satellite.",
+        "ja": "彼らは人工衛星を打ち上げた。",
+        "kana": "かれら は じんこう えいせい を うちあげた。",
+        "ro": "karera wa jinkou eisei o uchiageta."
+      },
+      {
+        "en": "The fireworks show ended with a big launch.",
+        "ja": "花火大会は大きな打ち上げで終わった。",
+        "kana": "はなび たいかい は おおきな うちあげ で おわった。",
+        "ro": "hanabi taikai wa ookina uchiage de owatta."
+      }
+    ],
+    "grammar": "Noun + を + 打ち上げる"
+  },
+  {
+    "id": "n3-verb-066",
+    "ja": "届く",
+    "kana": "とどく",
+    "ro": "todoku",
+    "en": "to be delivered / to reach / to arrive",
+    "examples": [
+      {
+        "en": "The package has arrived.",
+        "ja": "荷物が届きました。",
+        "kana": "にもつ が とどきました。",
+        "ro": "nimotsu ga todokimashita."
+      },
+      {
+        "en": "Your message reached me.",
+        "ja": "あなたのメッセージが届きました。",
+        "kana": "あなた の めっせーじ が とどきました。",
+        "ro": "anata no messeeji ga todokimashita."
+      },
+      {
+        "en": "The sound reached the mountain.",
+        "ja": "音が山に届いた。",
+        "kana": "おと が やま に とどいた。",
+        "ro": "oto ga yama ni todoita."
+      },
+      {
+        "en": "The letter didn’t reach him.",
+        "ja": "手紙は彼に届かなかった。",
+        "kana": "てがみ は かれ に とどかなかった。",
+        "ro": "tegami wa kare ni todokanakatta."
+      },
+      {
+        "en": "The news reached the whole country.",
+        "ja": "そのニュースは全国に届いた。",
+        "kana": "その にゅーす は ぜんこく に とどいた。",
+        "ro": "sono nyuusu wa zenkoku ni todoita."
+      }
+    ],
+    "grammar": "Noun + が / に + 届く"
+  },
+  {
+    "id": "n3-verb-067",
+    "ja": "届ける",
+    "kana": "とどける",
+    "ro": "todokeru",
+    "en": "to deliver / to send / to submit",
+    "examples": [
+      {
+        "en": "I delivered the parcel to my friend.",
+        "ja": "友達に荷物を届けました。",
+        "kana": "ともだち に にもつ を とどけました。",
+        "ro": "tomodachi ni nimotsu o todokemashita."
+      },
+      {
+        "en": "Please deliver this document to the office.",
+        "ja": "この書類を事務所に届けてください。",
+        "kana": "この しょるい を じむしょ に とどけて ください。",
+        "ro": "kono shorui o jimusho ni todokete kudasai."
+      },
+      {
+        "en": "He delivered the letter by hand.",
+        "ja": "彼は手紙を手渡しで届けた。",
+        "kana": "かれ は てがみ を てわたし で とどけた。",
+        "ro": "kare wa tegami o tewatashi de todoketa."
+      },
+      {
+        "en": "The company delivers goods quickly.",
+        "ja": "会社は商品をすぐに届ける。",
+        "kana": "かいしゃ は しょうひん を すぐ に とどける。",
+        "ro": "kaisha wa shouhin o sugu ni todokeru."
+      },
+      {
+        "en": "She delivered a message to the teacher.",
+        "ja": "彼女は先生にメッセージを届けた。",
+        "kana": "かのじょ は せんせい に めっせーじ を とどけた。",
+        "ro": "kanojo wa sensei ni messeeji o todoketa."
+      }
+    ],
+    "grammar": "Person / Place + に + Noun + を + 届ける"
+  },
+  {
+    "id": "n3-verb-068",
+    "ja": "泊まる",
+    "kana": "とまる",
+    "ro": "tomaru",
+    "en": "to stay overnight / to lodge",
+    "examples": [
+      {
+        "en": "I stayed at a hotel in Osaka.",
+        "ja": "大阪のホテルに泊まりました。",
+        "kana": "おおさか の ほてる に とまりました。",
+        "ro": "oosaka no hoteru ni tomarimashita."
+      },
+      {
+        "en": "We stayed at a friend’s house.",
+        "ja": "友達の家に泊まった。",
+        "kana": "ともだち の いえ に とまった。",
+        "ro": "tomodachi no ie ni tomatta."
+      },
+      {
+        "en": "He stayed at a ryokan for two nights.",
+        "ja": "彼は旅館に二泊しました。",
+        "kana": "かれ は りょかん に にはく しました。",
+        "ro": "kare wa ryokan ni nihaku shimashita."
+      },
+      {
+        "en": "I couldn’t stay at that inn.",
+        "ja": "その宿には泊まれなかった。",
+        "kana": "その やど に は とまれなかった。",
+        "ro": "sono yado ni wa tomarenakatta."
+      },
+      {
+        "en": "We decided to stay overnight in Kyoto.",
+        "ja": "京都に泊まることにした。",
+        "kana": "きょうと に とまる こと に した。",
+        "ro": "kyouto ni tomaru koto ni shita."
+      }
+    ],
+    "grammar": "Place + に + 泊まる"
+  },
+  {
+    "id": "n3-verb-069",
+    "ja": "泊める",
+    "kana": "とめる",
+    "ro": "tomeru",
+    "en": "to let someone stay / to give lodging",
+    "examples": [
+      {
+        "en": "I let my friend stay at my house.",
+        "ja": "友達を家に泊めました。",
+        "kana": "ともだち を いえ に とめました。",
+        "ro": "tomodachi o ie ni tomemashita."
+      },
+      {
+        "en": "She let a guest stay overnight.",
+        "ja": "彼女はお客さんを泊めた。",
+        "kana": "かのじょ は おきゃくさん を とめた。",
+        "ro": "kanojo wa okyakusan o tometa."
+      },
+      {
+        "en": "Please let me stay for one night.",
+        "ja": "一晩泊めてください。",
+        "kana": "ひとばん とめて ください。",
+        "ro": "hitoban tomete kudasai."
+      },
+      {
+        "en": "The hotel let us stay for free.",
+        "ja": "ホテルは私たちを無料で泊めてくれた。",
+        "kana": "ほてる は わたしたち を むりょう で とめて くれた。",
+        "ro": "hoteru wa watashitachi o muryou de tomete kureta."
+      },
+      {
+        "en": "He let a traveler stay in his home.",
+        "ja": "彼は旅人を家に泊めた。",
+        "kana": "かれ は たびびと を いえ に とめた。",
+        "ro": "kare wa tabibito o ie ni tometa."
+      }
+    ],
+    "grammar": "Person + を + Place + に + 泊める"
+  },
+  {
+    "id": "n3-verb-070",
+    "ja": "止まる",
+    "kana": "とまる",
+    "ro": "tomaru",
+    "en": "to stop / to come to a halt / to cease",
+    "examples": [
+      {
+        "en": "The car stopped suddenly.",
+        "ja": "車が急に止まりました。",
+        "kana": "くるま が きゅうに とまりました。",
+        "ro": "kuruma ga kyuuni tomarimashita."
+      },
+      {
+        "en": "The clock stopped.",
+        "ja": "時計が止まった。",
+        "kana": "とけい が とまった。",
+        "ro": "tokei ga tomatta."
+      },
+      {
+        "en": "The rain has stopped.",
+        "ja": "雨が止みました。",
+        "kana": "あめ が やみました。",
+        "ro": "ame ga yamimashita."
+      },
+      {
+        "en": "The music suddenly stopped.",
+        "ja": "音楽が突然止まった。",
+        "kana": "おんがく が とつぜん とまった。",
+        "ro": "ongaku ga totsuzen tomatta."
+      },
+      {
+        "en": "The elevator stopped between floors.",
+        "ja": "エレベーターが階の間で止まった。",
+        "kana": "えれべーたー が かい の あいだ で とまった。",
+        "ro": "erebeetaa ga kai no aida de tomatta."
+      }
+    ],
+    "grammar": "Noun + が + 止まる"
+  },
+  {
+    "id": "n3-verb-071",
+    "ja": "止める",
+    "kana": "とめる",
+    "ro": "tomeru",
+    "en": "to stop (something) / to park / to hold back",
+    "examples": [
+      {
+        "en": "Please stop the car here.",
+        "ja": "車をここに止めてください。",
+        "kana": "くるま を ここ に とめて ください。",
+        "ro": "kuruma o koko ni tomete kudasai."
+      },
+      {
+        "en": "He stopped the music.",
+        "ja": "彼は音楽を止めた。",
+        "kana": "かれ は おんがく を とめた。",
+        "ro": "kare wa ongaku o tometa."
+      },
+      {
+        "en": "She parked the bicycle in front of the station.",
+        "ja": "彼女は駅の前に自転車を止めた。",
+        "kana": "かのじょ は えき の まえ に じてんしゃ を とめた。",
+        "ro": "kanojo wa eki no mae ni jitensha o tometa."
+      },
+      {
+        "en": "Please hold back your anger.",
+        "ja": "怒りを止めてください。",
+        "kana": "いかり を とめて ください。",
+        "ro": "ikari o tomete kudasai."
+      },
+      {
+        "en": "The guard stopped the suspect.",
+        "ja": "警備員が容疑者を止めた。",
+        "kana": "けいびいん が ようぎしゃ を とめた。",
+        "ro": "keibiin ga yougisha o tometa."
+      }
+    ],
+    "grammar": "Noun + を + 止める"
+  },
+  {
+    "id": "n3-verb-072",
+    "ja": "取れる",
+    "kana": "とれる",
+    "ro": "toreru",
+    "en": "to come off / to be removed / to be obtained",
+    "examples": [
+      {
+        "en": "The button came off.",
+        "ja": "ボタンが取れました。",
+        "kana": "ぼたん が とれました。",
+        "ro": "botan ga toremashita."
+      },
+      {
+        "en": "The pain has gone away.",
+        "ja": "痛みが取れた。",
+        "kana": "いたみ が とれた。",
+        "ro": "itami ga toreta."
+      },
+      {
+        "en": "The stain can be removed easily.",
+        "ja": "そのしみは簡単に取れます。",
+        "kana": "その しみ は かんたん に とれます。",
+        "ro": "sono shimi wa kantan ni toremasu."
+      },
+      {
+        "en": "He got good results.",
+        "ja": "彼は良い結果が取れた。",
+        "kana": "かれ は よい けっか が とれた。",
+        "ro": "kare wa yoi kekka ga toreta."
+      },
+      {
+        "en": "The photo came out well.",
+        "ja": "写真がうまく取れました。",
+        "kana": "しゃしん が うまく とれました。",
+        "ro": "shashin ga umaku toremashita."
+      }
+    ],
+    "grammar": "Noun + が + 取れる"
+  },
+  {
+    "id": "n3-verb-073",
+    "ja": "撮る",
+    "kana": "とる",
+    "ro": "toru",
+    "en": "to take (a photo or video)",
+    "examples": [
+      {
+        "en": "I took a picture of Mt. Fuji.",
+        "ja": "富士山の写真を撮りました。",
+        "kana": "ふじさん の しゃしん を とりました。",
+        "ro": "fujisan no shashin o torimashita."
+      },
+      {
+        "en": "He took a video of the festival.",
+        "ja": "彼は祭りの動画を撮った。",
+        "kana": "かれ は まつり の どうが を とった。",
+        "ro": "kare wa matsuri no douga o totta."
+      },
+      {
+        "en": "Please don’t take photos here.",
+        "ja": "ここで写真を撮らないでください。",
+        "kana": "ここ で しゃしん を とらないで ください。",
+        "ro": "koko de shashin o toranaide kudasai."
+      },
+      {
+        "en": "She took a selfie with her friend.",
+        "ja": "彼女は友達と自撮りを撮った。",
+        "kana": "かのじょ は ともだち と じどり を とった。",
+        "ro": "kanojo wa tomodachi to jidori o totta."
+      },
+      {
+        "en": "I want to take a photo together.",
+        "ja": "いっしょに写真を撮りたいです。",
+        "kana": "いっしょ に しゃしん を とりたい です。",
+        "ro": "issho ni shashin o toritai desu."
+      }
+    ],
+    "grammar": "Noun + を + 撮る"
+  },
+  {
+    "id": "n3-verb-074",
+    "ja": "取る",
+    "kana": "とる",
+    "ro": "toru",
+    "en": "to take / to pick up / to get / to obtain",
+    "examples": [
+      {
+        "en": "I took a day off from work.",
+        "ja": "仕事を休みを取りました。",
+        "kana": "しごと を やすみ を とりました。",
+        "ro": "shigoto o yasumi o torimashita."
+      },
+      {
+        "en": "He picked up a coin from the ground.",
+        "ja": "彼は地面からコインを取った。",
+        "kana": "かれ は じめん から こいん を とった。",
+        "ro": "kare wa jimen kara koin o totta."
+      },
+      {
+        "en": "She took notes during the class.",
+        "ja": "彼女は授業中にメモを取った。",
+        "kana": "かのじょ は じゅぎょうちゅう に めも を とった。",
+        "ro": "kanojo wa jugyouchuu ni memo o totta."
+      },
+      {
+        "en": "I got permission from the teacher.",
+        "ja": "先生から許可を取った。",
+        "kana": "せんせい から きょか を とった。",
+        "ro": "sensei kara kyoka o totta."
+      },
+      {
+        "en": "He took responsibility for the mistake.",
+        "ja": "彼は間違いの責任を取った。",
+        "kana": "かれ は まちがい の せきにん を とった。",
+        "ro": "kare wa machigai no sekinin o totta."
+      }
+    ],
+    "grammar": "Noun + を + 取る"
+  },
+  {
+    "id": "n3-verb-075",
+    "ja": "通う",
+    "kana": "かよう",
+    "ro": "kayou",
+    "en": "to commute / to attend regularly",
+    "examples": [
+      {
+        "en": "I commute to school by train.",
+        "ja": "電車で学校に通っています。",
+        "kana": "でんしゃ で がっこう に かよっています。",
+        "ro": "densha de gakkou ni kayootteimasu."
+      },
+      {
+        "en": "He commutes to work every day.",
+        "ja": "彼は毎日会社に通っている。",
+        "kana": "かれ は まいにち かいしゃ に かよって いる。",
+        "ro": "kare wa mainichi kaisha ni kayotte iru."
+      },
+      {
+        "en": "My sister attends piano lessons.",
+        "ja": "妹はピアノ教室に通っています。",
+        "kana": "いもうと は ぴあの きょうしつ に かよっています。",
+        "ro": "imouto wa piano kyoushitsu ni kayootteimasu."
+      },
+      {
+        "en": "He used to attend that university.",
+        "ja": "彼はその大学に通っていた。",
+        "kana": "かれ は その だいがく に かよって いた。",
+        "ro": "kare wa sono daigaku ni kayotte ita."
+      },
+      {
+        "en": "Children go to the same kindergarten.",
+        "ja": "子どもたちは同じ幼稚園に通っている。",
+        "kana": "こどもたち は おなじ ようちえん に かよって いる。",
+        "ro": "kodomotachi wa onaji youchien ni kayotte iru."
+      }
+    ],
+    "grammar": "Place + に + 通う"
+  },
+  {
+    "id": "n3-verb-076",
+    "ja": "変える",
+    "kana": "かえる",
+    "ro": "kaeru",
+    "en": "to change / to alter / to modify",
+    "examples": [
+      {
+        "en": "I changed the meeting time.",
+        "ja": "会議の時間を変えました。",
+        "kana": "かいぎ の じかん を かえました。",
+        "ro": "kaigi no jikan o kaemashita."
+      },
+      {
+        "en": "She changed her hairstyle.",
+        "ja": "彼女は髪型を変えた。",
+        "kana": "かのじょ は かみがた を かえた。",
+        "ro": "kanojo wa kamigata o kaeta."
+      },
+      {
+        "en": "Please change your password.",
+        "ja": "パスワードを変えてください。",
+        "kana": "ぱすわーど を かえて ください。",
+        "ro": "pasuwaado o kaete kudasai."
+      },
+      {
+        "en": "I want to change my lifestyle.",
+        "ja": "生活を変えたいです。",
+        "kana": "せいかつ を かえたい です。",
+        "ro": "seikatsu o kaetai desu."
+      },
+      {
+        "en": "They changed the company policy.",
+        "ja": "彼らは会社の方針を変えた。",
+        "kana": "かれら は かいしゃ の ほうしん を かえた。",
+        "ro": "karera wa kaisha no houshin o kaeta."
+      }
+    ],
+    "grammar": "Noun + を + 変える"
+  },
+  {
+    "id": "n3-verb-077",
+    "ja": "代える",
+    "kana": "かえる",
+    "ro": "kaeru",
+    "en": "to substitute / to replace / to exchange (one thing for another)",
+    "examples": [
+      {
+        "en": "I replaced the broken bulb with a new one.",
+        "ja": "壊れた電球を新しいのに代えました。",
+        "kana": "こわれた でんきゅう を あたらしい の に かえました。",
+        "ro": "kowareta denkyuu o atarashii no ni kaemashita."
+      },
+      {
+        "en": "He replaced words with gestures.",
+        "ja": "彼は言葉をジェスチャーに代えた。",
+        "kana": "かれ は ことば を じぇすちゃー に かえた。",
+        "ro": "kare wa kotoba o jesuchaa ni kaeta."
+      },
+      {
+        "en": "You can substitute water for milk.",
+        "ja": "水を牛乳に代えてもいい。",
+        "kana": "みず を ぎゅうにゅう に かえて も いい。",
+        "ro": "mizu o gyuunyuu ni kaete mo ii."
+      },
+      {
+        "en": "We changed the old rule for a new one.",
+        "ja": "古い規則を新しいものに代えた。",
+        "kana": "ふるい きそく を あたらしい もの に かえた。",
+        "ro": "furui kisoku o atarashii mono ni kaeta."
+      },
+      {
+        "en": "He changed sadness into strength.",
+        "ja": "彼は悲しみを力に代えた。",
+        "kana": "かれ は かなしみ を ちから に かえた。",
+        "ro": "kare wa kanashimi o chikara ni kaeta."
+      }
+    ],
+    "grammar": "Noun + を + Noun + に + 代える"
+  },
+  {
+    "id": "n3-verb-078",
+    "ja": "替える",
+    "kana": "かえる",
+    "ro": "kaeru",
+    "en": "to exchange / to change (clothes, batteries, sheets, etc.)",
+    "examples": [
+      {
+        "en": "I changed the sheets.",
+        "ja": "シーツを替えました。",
+        "kana": "しーつ を かえました。",
+        "ro": "shiitsu o kaemashita."
+      },
+      {
+        "en": "He changed his shirt.",
+        "ja": "彼はシャツを替えた。",
+        "kana": "かれ は しゃつ を かえた。",
+        "ro": "kare wa shatsu o kaeta."
+      },
+      {
+        "en": "Please change the batteries.",
+        "ja": "電池を替えてください。",
+        "kana": "でんち を かえて ください。",
+        "ro": "denchi o kaete kudasai."
+      },
+      {
+        "en": "She changed the curtains for the season.",
+        "ja": "彼女は季節に合わせてカーテンを替えた。",
+        "kana": "かのじょ は きせつ に あわせて かーてん を かえた。",
+        "ro": "kanojo wa kisetsu ni awasete kaaten o kaeta."
+      },
+      {
+        "en": "We changed the cover of the sofa.",
+        "ja": "ソファのカバーを替えました。",
+        "kana": "そふぁ の かばー を かえました。",
+        "ro": "sofa no kabaa o kaemashita."
+      }
+    ],
+    "grammar": "Noun + を + 替える"
+  },
+  {
+    "id": "n3-verb-079",
+    "ja": "換える",
+    "kana": "かえる",
+    "ro": "kaeru",
+    "en": "to exchange / to convert (money, air, energy, etc.)",
+    "examples": [
+      {
+        "en": "I exchanged yen into dollars.",
+        "ja": "円をドルに換えました。",
+        "kana": "えん を どる に かえました。",
+        "ro": "en o doru ni kaemashita."
+      },
+      {
+        "en": "He exchanged his anger for calm.",
+        "ja": "彼は怒りを冷静に換えた。",
+        "kana": "かれ は いかり を れいせい に かえた。",
+        "ro": "kare wa ikari o reisei ni kaeta."
+      },
+      {
+        "en": "Please convert this money into coins.",
+        "ja": "このお金を小銭に換えてください。",
+        "kana": "この おかね を こぜに に かえて ください。",
+        "ro": "kono okane o kozeni ni kaete kudasai."
+      },
+      {
+        "en": "They changed the air in the room.",
+        "ja": "部屋の空気を換えた。",
+        "kana": "へや の くうき を かえた。",
+        "ro": "heya no kuuki o kaeta."
+      },
+      {
+        "en": "We exchanged greetings.",
+        "ja": "挨拶を交わして気持ちを換えた。",
+        "kana": "あいさつ を かわして きもち を かえた。",
+        "ro": "aisatsu o kawashite kimochi o kaeta."
+      }
+    ],
+    "grammar": "Noun + を + Noun + に + 換える"
+  },
+  {
+    "id": "n3-verb-080",
+    "ja": "帰す",
+    "kana": "かえす",
+    "ro": "kaesu",
+    "en": "to send someone home / to let go / to dismiss",
+    "examples": [
+      {
+        "en": "The teacher let the students go home early.",
+        "ja": "先生は生徒を早めに帰しました。",
+        "kana": "せんせい は せいと を はやめ に かえしました。",
+        "ro": "sensei wa seito o hayame ni kaeshimashita."
+      },
+      {
+        "en": "He sent the guests home.",
+        "ja": "彼は客を帰した。",
+        "kana": "かれ は きゃく を かえした。",
+        "ro": "kare wa kyaku o kaeshita."
+      },
+      {
+        "en": "The manager dismissed the employees.",
+        "ja": "部長は社員を帰した。",
+        "kana": "ぶちょう は しゃいん を かえした。",
+        "ro": "buchou wa shain o kaeshita."
+      },
+      {
+        "en": "Please send the children home before dark.",
+        "ja": "暗くなる前に子どもたちを帰してください。",
+        "kana": "くらく なる まえ に こどもたち を かえして ください。",
+        "ro": "kuraku naru mae ni kodomotachi o kaeshite kudasai."
+      },
+      {
+        "en": "He was sent home from the hospital.",
+        "ja": "彼は病院から帰された。",
+        "kana": "かれ は びょういん から かえされた。",
+        "ro": "kare wa byouin kara kaesareta."
+      }
+    ],
+    "grammar": "Person + を + 帰す"
+  },
+  {
+    "id": "n3-verb-081",
+    "ja": "返す",
+    "kana": "かえす",
+    "ro": "kaesu",
+    "en": "to return / to give back / to repay",
+    "examples": [
+      {
+        "en": "I returned the book to the library.",
+        "ja": "図書館に本を返しました。",
+        "kana": "としょかん に ほん を かえしました。",
+        "ro": "toshokan ni hon o kaeshimashita."
+      },
+      {
+        "en": "Please return the money soon.",
+        "ja": "お金を早く返してください。",
+        "kana": "おかね を はやく かえして ください。",
+        "ro": "okane o hayaku kaeshite kudasai."
+      },
+      {
+        "en": "He gave the favor back.",
+        "ja": "彼はお礼を返した。",
+        "kana": "かれ は おれい を かえした。",
+        "ro": "kare wa orei o kaeshita."
+      },
+      {
+        "en": "I returned the favor with a gift.",
+        "ja": "お返しにプレゼントを渡した。",
+        "kana": "おかえし に ぷれぜんと を わたした。",
+        "ro": "okaeshi ni purezento o watashita."
+      },
+      {
+        "en": "Don’t forget to return what you borrowed.",
+        "ja": "借りたものを返すのを忘れないでください。",
+        "kana": "かりた もの を かえす の を わすれないで ください。",
+        "ro": "karita mono o kaesu no o wasurenaide kudasai."
+      }
+    ],
+    "grammar": "Noun + を + 返す"
+  },
+  {
+    "id": "n3-verb-082",
+    "ja": "通す",
+    "kana": "とおす",
+    "ro": "toosu",
+    "en": "to let pass / to run through / to approve / to go through",
+    "examples": [
+      {
+        "en": "Please let me through.",
+        "ja": "通してください。",
+        "kana": "とおして ください。",
+        "ro": "tooshi te kudasai."
+      },
+      {
+        "en": "He put a thread through the needle.",
+        "ja": "彼は針に糸を通した。",
+        "kana": "かれ は はり に いと を とおした。",
+        "ro": "kare wa hari ni ito o tooshita."
+      },
+      {
+        "en": "I got my proposal approved.",
+        "ja": "提案を通しました。",
+        "kana": "ていあん を とおしました。",
+        "ro": "teian o tooshimashita."
+      },
+      {
+        "en": "She led the guests to the meeting room.",
+        "ja": "彼女は客を会議室に通した。",
+        "kana": "かのじょ は きゃく を かいぎしつ に とおした。",
+        "ro": "kanojo wa kyaku o kaigishitsu ni tooshita."
+      },
+      {
+        "en": "Please pass the cable through the hole.",
+        "ja": "ケーブルを穴に通してください。",
+        "kana": "けーぶる を あな に とおして ください。",
+        "ro": "keeburu o ana ni tooshite kudasai."
+      }
+    ],
+    "grammar": "Noun + を + 通す"
+  },
+  {
+    "id": "n3-verb-083",
+    "ja": "通じる",
+    "kana": "つうじる",
+    "ro": "tsuujiru",
+    "en": "to be understood / to be connected / to pass through",
+    "examples": [
+      {
+        "en": "My feelings were understood.",
+        "ja": "気持ちが通じた。",
+        "kana": "きもち が つうじた。",
+        "ro": "kimochi ga tsuujita."
+      },
+      {
+        "en": "The phone didn’t go through.",
+        "ja": "電話が通じなかった。",
+        "kana": "でんわ が つうじなかった。",
+        "ro": "denwa ga tsuujinakatta."
+      },
+      {
+        "en": "Our hearts are connected.",
+        "ja": "心が通じています。",
+        "kana": "こころ が つうじています。",
+        "ro": "kokoro ga tsuujiteimasu."
+      },
+      {
+        "en": "This road connects to the station.",
+        "ja": "この道は駅に通じている。",
+        "kana": "この みち は えき に つうじている。",
+        "ro": "kono michi wa eki ni tsuujiteiru."
+      },
+      {
+        "en": "He can communicate in English.",
+        "ja": "彼は英語で通じる。",
+        "kana": "かれ は えいご で つうじる。",
+        "ro": "kare wa eigo de tsuujiru."
+      }
+    ],
+    "grammar": "Noun + が / に + 通じる"
+  },
+  {
+    "id": "n3-verb-084",
+    "ja": "通り過ぎる",
+    "kana": "とおりすぎる",
+    "ro": "toorisugiru",
+    "en": "to pass by / to go past / to go beyond",
+    "examples": [
+      {
+        "en": "I walked past the station by mistake.",
+        "ja": "間違えて駅を通り過ぎた。",
+        "kana": "まちがえて えき を とおりすぎた。",
+        "ro": "machigaete eki o toorisugita."
+      },
+      {
+        "en": "The car passed by quickly.",
+        "ja": "車がすぐに通り過ぎた。",
+        "kana": "くるま が すぐ に とおりすぎた。",
+        "ro": "kuruma ga sugu ni toorisugita."
+      },
+      {
+        "en": "He just passed by without greeting.",
+        "ja": "彼はあいさつもせずに通り過ぎた。",
+        "kana": "かれ は あいさつ も せず に とおりすぎた。",
+        "ro": "kare wa aisatsu mo sezu ni toorisugita."
+      },
+      {
+        "en": "The typhoon passed Japan.",
+        "ja": "台風が日本を通り過ぎた。",
+        "kana": "たいふう が にほん を とおりすぎた。",
+        "ro": "taifuu ga nihon o toorisugita."
+      },
+      {
+        "en": "I went past the restaurant I was looking for.",
+        "ja": "探していたレストランを通り過ぎてしまった。",
+        "kana": "さがしていた れすとらん を とおりすぎて しまった。",
+        "ro": "sagashiteita resutoran o toorisugite shimatta."
+      }
+    ],
+    "grammar": "Noun + を + 通り過ぎる"
+  },
+  {
+    "id": "n3-verb-085",
+    "ja": "捕まる",
+    "kana": "つかまる",
+    "ro": "tsukamaru",
+    "en": "to be caught / to be arrested / to hold on to",
+    "examples": [
+      {
+        "en": "The thief was caught by the police.",
+        "ja": "泥棒が警察に捕まった。",
+        "kana": "どろぼう が けいさつ に つかまった。",
+        "ro": "dorobou ga keisatsu ni tsukamatta."
+      },
+      {
+        "en": "He was arrested for speeding.",
+        "ja": "彼はスピード違反で捕まった。",
+        "kana": "かれ は すぴーどいはん で つかまった。",
+        "ro": "kare wa supiido ihan de tsukamatta."
+      },
+      {
+        "en": "Please hold on to the handrail.",
+        "ja": "手すりに捕まってください。",
+        "kana": "てすり に つかまって ください。",
+        "ro": "tesuri ni tsukamatte kudasai."
+      },
+      {
+        "en": "He got caught in a trap.",
+        "ja": "彼は罠に捕まった。",
+        "kana": "かれ は わな に つかまった。",
+        "ro": "kare wa wana ni tsukamatta."
+      },
+      {
+        "en": "I got caught by my boss.",
+        "ja": "上司に捕まった。",
+        "kana": "じょうし に つかまった。",
+        "ro": "joushi ni tsukamatta."
+      }
+    ],
+    "grammar": "Noun + に + 捕まる"
+  },
+  {
+    "id": "n3-verb-086",
+    "ja": "捕まえる",
+    "kana": "つかまえる",
+    "ro": "tsukamaeru",
+    "en": "to catch / to arrest / to seize / to grab",
+    "examples": [
+      {
+        "en": "The police caught the thief.",
+        "ja": "警察が泥棒を捕まえた。",
+        "kana": "けいさつ が どろぼう を つかまえた。",
+        "ro": "keisatsu ga dorobou o tsukamaeta."
+      },
+      {
+        "en": "She caught a butterfly.",
+        "ja": "彼女はちょうを捕まえた。",
+        "kana": "かのじょ は ちょう を つかまえた。",
+        "ro": "kanojo wa chou o tsukamaeta."
+      },
+      {
+        "en": "He grabbed my hand tightly.",
+        "ja": "彼は私の手をしっかり捕まえた。",
+        "kana": "かれ は わたし の て を しっかり つかまえた。",
+        "ro": "kare wa watashi no te o shikkari tsukamaeta."
+      },
+      {
+        "en": "The police arrested the suspect yesterday.",
+        "ja": "警察は昨日容疑者を捕まえた。",
+        "kana": "けいさつ は きのう ようぎしゃ を つかまえた。",
+        "ro": "keisatsu wa kinou yougisha o tsukamaeta."
+      },
+      {
+        "en": "I caught a cold.",
+        "ja": "かぜを捕まえた。",
+        "kana": "かぜ を つかまえた。",
+        "ro": "kaze o tsukamaeta."
+      }
+    ],
+    "grammar": "Noun + を + 捕まえる"
+  },
+  {
+    "id": "n3-verb-087",
+    "ja": "繋がる",
+    "kana": "つながる",
+    "ro": "tsunagaru",
+    "en": "to be connected / to be linked / to lead to",
+    "examples": [
+      {
+        "en": "The two cities are connected by a bridge.",
+        "ja": "二つの都市は橋で繋がっている。",
+        "kana": "ふたつ の とし は はし で つながっている。",
+        "ro": "futatsu no toshi wa hashi de tsunagatteiru."
+      },
+      {
+        "en": "The phone finally connected.",
+        "ja": "電話がやっと繋がった。",
+        "kana": "でんわ が やっと つながった。",
+        "ro": "denwa ga yatto tsunagatta."
+      },
+      {
+        "en": "Our hearts are connected.",
+        "ja": "私たちの心は繋がっている。",
+        "kana": "わたしたち の こころ は つながっている。",
+        "ro": "watashitachi no kokoro wa tsunagatteiru."
+      },
+      {
+        "en": "This road connects to the main highway.",
+        "ja": "この道は高速道路に繋がっている。",
+        "kana": "この みち は こうそくどうろ に つながっている。",
+        "ro": "kono michi wa kousokudouro ni tsunagatteiru."
+      },
+      {
+        "en": "This problem is linked to the previous one.",
+        "ja": "この問題は前の問題に繋がっている。",
+        "kana": "この もんだい は まえ の もんだい に つながっている。",
+        "ro": "kono mondai wa mae no mondai ni tsunagatteiru."
+      }
+    ],
+    "grammar": "Noun + と / に + 繋がる"
+  },
+  {
+    "id": "n3-verb-088",
+    "ja": "繋げる",
+    "kana": "つなげる",
+    "ro": "tsunageru",
+    "en": "to connect / to link / to tie / to join",
+    "examples": [
+      {
+        "en": "I connected the two computers with a cable.",
+        "ja": "二台のコンピューターをケーブルで繋げた。",
+        "kana": "にだい の こんぴゅーたー を けーぶる で つなげた。",
+        "ro": "nidai no konpyuutaa o keeburu de tsunageta."
+      },
+      {
+        "en": "He tied the rope together.",
+        "ja": "彼はロープを繋げた。",
+        "kana": "かれ は ろーぷ を つなげた。",
+        "ro": "kare wa roopu o tsunageta."
+      },
+      {
+        "en": "Let's connect this idea to the next one.",
+        "ja": "このアイデアを次のものに繋げよう。",
+        "kana": "この あいであ を つぎ の もの に つなげよう。",
+        "ro": "kono aidea o tsugi no mono ni tsunageyou."
+      },
+      {
+        "en": "She connected the story lines well.",
+        "ja": "彼女はストーリーをうまく繋げた。",
+        "kana": "かのじょ は すとーりー を うまく つなげた。",
+        "ro": "kanojo wa sutoorii o umaku tsunageta."
+      },
+      {
+        "en": "Please connect me to the manager.",
+        "ja": "部長につないでください。",
+        "kana": "ぶちょう に つないで ください。",
+        "ro": "buchou ni tsunaide kudasai."
+      }
+    ],
+    "grammar": "Noun + を + Noun + に + 繋げる"
+  },
+  {
+    "id": "n3-verb-089",
+    "ja": "続く",
+    "kana": "つづく",
+    "ro": "tsuzuku",
+    "en": "to continue / to last / to follow",
+    "examples": [
+      {
+        "en": "The rain continued for three days.",
+        "ja": "雨が三日間続いた。",
+        "kana": "あめ が みっかかん つづいた。",
+        "ro": "ame ga mikkakan tsuzuita."
+      },
+      {
+        "en": "His success continued.",
+        "ja": "彼の成功が続いた。",
+        "kana": "かれ の せいこう が つづいた。",
+        "ro": "kare no seikou ga tsuzuita."
+      },
+      {
+        "en": "The road continues straight ahead.",
+        "ja": "道はまっすぐに続いている。",
+        "kana": "みち は まっすぐ に つづいている。",
+        "ro": "michi wa massugu ni tsuzuiteiru."
+      },
+      {
+        "en": "The story continues in the next chapter.",
+        "ja": "物語は次の章に続く。",
+        "kana": "ものがたり は つぎ の しょう に つづく。",
+        "ro": "monogatari wa tsugi no shou ni tsuzuku."
+      },
+      {
+        "en": "The hot weather continues.",
+        "ja": "暑い日が続いています。",
+        "kana": "あつい ひ が つづいています。",
+        "ro": "atsui hi ga tsuzuiteimasu."
+      }
+    ],
+    "grammar": "Noun + が / に + 続く"
+  },
+  {
+    "id": "n3-verb-090",
+    "ja": "続ける",
+    "kana": "つづける",
+    "ro": "tsuzukeru",
+    "en": "to continue (something) / to keep doing",
+    "examples": [
+      {
+        "en": "I continued studying Japanese.",
+        "ja": "日本語の勉強を続けました。",
+        "kana": "にほんご の べんきょう を つづけました。",
+        "ro": "nihongo no benkyou o tsuzukemashita."
+      },
+      {
+        "en": "She kept working until late at night.",
+        "ja": "彼女は夜遅くまで働き続けた。",
+        "kana": "かのじょ は よる おそく まで はたらき つづけた。",
+        "ro": "kanojo wa yoru osoku made hataraki tsuzuketa."
+      },
+      {
+        "en": "He continues to write novels.",
+        "ja": "彼は小説を書き続けている。",
+        "kana": "かれ は しょうせつ を かき つづけている。",
+        "ro": "kare wa shousetsu o kaki tsuzuketeiru."
+      },
+      {
+        "en": "I want to continue this project.",
+        "ja": "このプロジェクトを続けたいです。",
+        "kana": "この ぷろじぇくと を つづけたい です。",
+        "ro": "kono purojekuto o tsuzuketai desu."
+      },
+      {
+        "en": "They continued talking for hours.",
+        "ja": "彼らは何時間も話し続けた。",
+        "kana": "かれら は なんじかん も はなし つづけた。",
+        "ro": "karera wa nanjikan mo hanashi tsuzuketa."
+      }
+    ],
+    "grammar": "Noun + を + 続ける"
+  },
+  {
+    "id": "n3-verb-091",
+    "ja": "積もる",
+    "kana": "つもる",
+    "ro": "tsumoru",
+    "en": "to pile up / to accumulate / to gather",
+    "examples": [
+      {
+        "en": "Snow piled up on the road.",
+        "ja": "道に雪が積もった。",
+        "kana": "みち に ゆき が つもった。",
+        "ro": "michi ni yuki ga tsumotta."
+      },
+      {
+        "en": "My work has piled up.",
+        "ja": "仕事が積もっている。",
+        "kana": "しごと が つもっている。",
+        "ro": "shigoto ga tsumotteiru."
+      },
+      {
+        "en": "Dust accumulated on the shelf.",
+        "ja": "棚にほこりが積もった。",
+        "kana": "たな に ほこり が つもった。",
+        "ro": "tana ni hokori ga tsumotta."
+      },
+      {
+        "en": "Our memories have piled up over time.",
+        "ja": "時間とともに思い出が積もった。",
+        "kana": "じかん と ともに おもいで が つもった。",
+        "ro": "jikan to tomoni omoide ga tsumotta."
+      },
+      {
+        "en": "Complaints have been accumulating.",
+        "ja": "不満が積もっている。",
+        "kana": "ふまん が つもっている。",
+        "ro": "fuman ga tsumotteiru."
+      }
+    ],
+    "grammar": "Noun + が + 積もる"
+  },
+  {
+    "id": "n3-verb-092",
+    "ja": "積む",
+    "kana": "つむ",
+    "ro": "tsumu",
+    "en": "to load / to pile up / to accumulate / to stack",
+    "examples": [
+      {
+        "en": "They loaded boxes into the truck.",
+        "ja": "トラックに箱を積んだ。",
+        "kana": "とらっく に はこ を つんだ。",
+        "ro": "torakku ni hako o tsunda."
+      },
+      {
+        "en": "He piled up books on the desk.",
+        "ja": "彼は机に本を積んだ。",
+        "kana": "かれ は つくえ に ほん を つんだ。",
+        "ro": "kare wa tsukue ni hon o tsunda."
+      },
+      {
+        "en": "I’m gaining experience little by little.",
+        "ja": "少しずつ経験を積んでいます。",
+        "kana": "すこしずつ けいけん を つんでいます。",
+        "ro": "sukoshizutsu keiken o tsundeimasu."
+      },
+      {
+        "en": "He loaded luggage into the car.",
+        "ja": "彼は車に荷物を積んだ。",
+        "kana": "かれ は くるま に にもつ を つんだ。",
+        "ro": "kare wa kuruma ni nimotsu o tsunda."
+      },
+      {
+        "en": "We piled firewood in the yard.",
+        "ja": "庭に薪を積んだ。",
+        "kana": "にわ に まき を つんだ。",
+        "ro": "niwa ni maki o tsunda."
+      }
+    ],
+    "grammar": "Noun + を + 積む"
+  },
+  {
+    "id": "n3-verb-093",
+    "ja": "釣る",
+    "kana": "つる",
+    "ro": "tsuru",
+    "en": "to fish / to catch / to lure",
+    "examples": [
+      {
+        "en": "I went fishing in the river.",
+        "ja": "川で魚を釣った。",
+        "kana": "かわ で さかな を つった。",
+        "ro": "kawa de sakana o tsutta."
+      },
+      {
+        "en": "He caught a big tuna.",
+        "ja": "彼は大きなマグロを釣った。",
+        "kana": "かれ は おおきな まぐろ を つった。",
+        "ro": "kare wa ookina maguro o tsutta."
+      },
+      {
+        "en": "I want to try fishing someday.",
+        "ja": "いつか釣りをしてみたい。",
+        "kana": "いつか つり を して みたい。",
+        "ro": "itsuka tsuri o shite mitai."
+      },
+      {
+        "en": "He caught a lot of fish today.",
+        "ja": "今日はたくさん魚を釣った。",
+        "kana": "きょう は たくさん さかな を つった。",
+        "ro": "kyou wa takusan sakana o tsutta."
+      },
+      {
+        "en": "I was lured by the advertisement.",
+        "ja": "広告に釣られた。",
+        "kana": "こうこく に つられた。",
+        "ro": "koukoku ni tsurareta."
+      }
+    ],
+    "grammar": "Noun + を + 釣る"
+  },
+  {
+    "id": "n3-verb-094",
+    "ja": "連れる",
+    "kana": "つれる",
+    "ro": "tsureru",
+    "en": "to take someone along / to bring someone",
+    "examples": [
+      {
+        "en": "I took my child to the zoo.",
+        "ja": "子どもを動物園に連れていった。",
+        "kana": "こども を どうぶつえん に つれていった。",
+        "ro": "kodomo o doubutsuen ni tsurete itta."
+      },
+      {
+        "en": "She brought her friend to the party.",
+        "ja": "彼女は友達をパーティーに連れてきた。",
+        "kana": "かのじょ は ともだち を ぱーてぃー に つれてきた。",
+        "ro": "kanojo wa tomodachi o paatii ni tsuretekita."
+      },
+      {
+        "en": "He took his parents to the restaurant.",
+        "ja": "彼は両親をレストランに連れていった。",
+        "kana": "かれ は りょうしん を れすとらん に つれていった。",
+        "ro": "kare wa ryoushin o resutoran ni tsurete itta."
+      },
+      {
+        "en": "Please take me with you.",
+        "ja": "私を連れていってください。",
+        "kana": "わたし を つれていって ください。",
+        "ro": "watashi o tsurete itte kudasai."
+      },
+      {
+        "en": "He took the dog for a walk.",
+        "ja": "彼は犬を散歩に連れていった。",
+        "kana": "かれ は いぬ を さんぽ に つれていった。",
+        "ro": "kare wa inu o sanpo ni tsurete itta."
+      }
+    ],
+    "grammar": "Person + を + Place + に + 連れる"
+  },
+  {
+    "id": "n3-verb-095",
+    "ja": "手伝う",
+    "kana": "てつだう",
+    "ro": "tetsudau",
+    "en": "to help / to assist / to aid",
+    "examples": [
+      {
+        "en": "I helped my mother cook dinner.",
+        "ja": "母の夕食作りを手伝った。",
+        "kana": "はは の ゆうしょく づくり を てつだった。",
+        "ro": "haha no yuushoku zukuri o tetsudatta."
+      },
+      {
+        "en": "He helped me move.",
+        "ja": "彼は引っ越しを手伝ってくれた。",
+        "kana": "かれ は ひっこし を てつだって くれた。",
+        "ro": "kare wa hikkoshi o tetsudatte kureta."
+      },
+      {
+        "en": "Can you help me with this work?",
+        "ja": "この仕事を手伝ってくれますか。",
+        "kana": "この しごと を てつだって くれますか。",
+        "ro": "kono shigoto o tetsudatte kuremasu ka."
+      },
+      {
+        "en": "My friend helped me study.",
+        "ja": "友達が勉強を手伝ってくれた。",
+        "kana": "ともだち が べんきょう を てつだって くれた。",
+        "ro": "tomodachi ga benkyou o tetsudatte kureta."
+      },
+      {
+        "en": "I often help at home.",
+        "ja": "家でよく手伝います。",
+        "kana": "いえ で よく てつだいます。",
+        "ro": "ie de yoku tetsudaimasu."
+      }
+    ],
+    "grammar": "Person / Noun + を + 手伝う"
+  },
+  {
+    "id": "n3-verb-096",
+    "ja": "通る",
+    "kana": "とおる",
+    "ro": "tooru",
+    "en": "to go through / to pass / to be accepted",
+    "examples": [
+      {
+        "en": "This road goes through the park.",
+        "ja": "この道は公園を通る。",
+        "kana": "この みち は こうえん を とおる。",
+        "ro": "kono michi wa kouen o tooru."
+      },
+      {
+        "en": "The train passes through the tunnel.",
+        "ja": "電車はトンネルを通る。",
+        "kana": "でんしゃ は とんねる を とおる。",
+        "ro": "densha wa tonneru o tooru."
+      },
+      {
+        "en": "My proposal was approved.",
+        "ja": "私の提案が通った。",
+        "kana": "わたし の ていあん が とおった。",
+        "ro": "watashi no teian ga tootta."
+      },
+      {
+        "en": "The wind passes through the window.",
+        "ja": "風が窓を通る。",
+        "kana": "かぜ が まど を とおる。",
+        "ro": "kaze ga mado o tooru."
+      },
+      {
+        "en": "He passed the exam.",
+        "ja": "彼は試験に通った。",
+        "kana": "かれ は しけん に とおった。",
+        "ro": "kare wa shiken ni tootta."
+      }
+    ],
+    "grammar": "Noun + を / に + 通る"
+  },
+  {
+    "id": "n3-verb-097",
+    "ja": "倒す",
+    "kana": "たおす",
+    "ro": "taosu",
+    "en": "to knock down / to defeat / to overthrow",
+    "examples": [
+      {
+        "en": "He knocked over the chair.",
+        "ja": "彼はいすを倒した。",
+        "kana": "かれ は いす を たおした。",
+        "ro": "kare wa isu o taoshita."
+      },
+      {
+        "en": "The boxer defeated his opponent.",
+        "ja": "ボクサーは相手を倒した。",
+        "kana": "ぼくさー は あいて を たおした。",
+        "ro": "bokusaa wa aite o taoshita."
+      },
+      {
+        "en": "They overthrew the government.",
+        "ja": "彼らは政府を倒した。",
+        "kana": "かれら は せいふ を たおした。",
+        "ro": "karera wa seifu o taoshita."
+      },
+      {
+        "en": "Please lay the seat back.",
+        "ja": "シートを倒してください。",
+        "kana": "しーと を たおして ください。",
+        "ro": "shiito o taoshite kudasai."
+      },
+      {
+        "en": "He defeated all enemies.",
+        "ja": "彼はすべての敵を倒した。",
+        "kana": "かれ は すべて の てき を たおした。",
+        "ro": "kare wa subete no teki o taoshita."
+      }
+    ],
+    "grammar": "Noun + を + 倒す"
+  },
+  {
+    "id": "n3-verb-098",
+    "ja": "倒れる",
+    "kana": "たおれる",
+    "ro": "taoreru",
+    "en": "to fall down / to collapse / to be defeated",
+    "examples": [
+      {
+        "en": "The tree fell down in the storm.",
+        "ja": "嵐で木が倒れた。",
+        "kana": "あらし で き が たおれた。",
+        "ro": "arashi de ki ga taoreta."
+      },
+      {
+        "en": "The building collapsed.",
+        "ja": "建物が倒れた。",
+        "kana": "たてもの が たおれた。",
+        "ro": "tatemono ga taoreta."
+      },
+      {
+        "en": "He fainted from exhaustion.",
+        "ja": "彼は疲れて倒れた。",
+        "kana": "かれ は つかれて たおれた。",
+        "ro": "kare wa tsukarete taoreta."
+      },
+      {
+        "en": "The company went bankrupt.",
+        "ja": "会社が倒れた。",
+        "kana": "かいしゃ が たおれた。",
+        "ro": "kaisha ga taoreta."
+      },
+      {
+        "en": "Many people collapsed from the heat.",
+        "ja": "多くの人が暑さで倒れた。",
+        "kana": "おおく の ひと が あつさ で たおれた。",
+        "ro": "ooku no hito ga atsusa de taoreta."
+      }
+    ],
+    "grammar": "Noun + が + 倒れる"
+  },
+  {
+    "id": "n3-verb-099",
+    "ja": "足りる",
+    "kana": "たりる",
+    "ro": "tariru",
+    "en": "to be enough / to be sufficient",
+    "examples": [
+      {
+        "en": "This money is enough.",
+        "ja": "このお金で足ります。",
+        "kana": "この おかね で たります。",
+        "ro": "kono okane de tarimasu."
+      },
+      {
+        "en": "Five minutes is enough.",
+        "ja": "五分で足ります。",
+        "kana": "ごふん で たります。",
+        "ro": "gofun de tarimasu."
+      },
+      {
+        "en": "The food wasn’t enough.",
+        "ja": "食べ物が足りなかった。",
+        "kana": "たべもの が たりなかった。",
+        "ro": "tabemono ga tarinakatta."
+      },
+      {
+        "en": "There isn’t enough time.",
+        "ja": "時間が足りません。",
+        "kana": "じかん が たりません。",
+        "ro": "jikan ga tarimasen."
+      },
+      {
+        "en": "One person is not enough.",
+        "ja": "一人では足りない。",
+        "kana": "ひとり では たりない。",
+        "ro": "hitori dewa tarinai."
+      }
+    ],
+    "grammar": "Noun + が / で + 足りる"
+  },
+  {
+    "id": "n3-verb-100",
+    "ja": "訪ねる",
+    "kana": "たずねる",
+    "ro": "tazuneru",
+    "en": "to visit / to call on / to go see",
+    "examples": [
+      {
+        "en": "I visited my old teacher.",
+        "ja": "昔の先生を訪ねました。",
+        "kana": "むかし の せんせい を たずねました。",
+        "ro": "mukashi no sensei o tazunemashita."
+      },
+      {
+        "en": "He visited Kyoto last week.",
+        "ja": "彼は先週京都を訪ねた。",
+        "kana": "かれ は せんしゅう きょうと を たずねた。",
+        "ro": "kare wa senshuu kyouto o tazuneta."
+      },
+      {
+        "en": "She visited her friend’s house.",
+        "ja": "彼女は友達の家を訪ねた。",
+        "kana": "かのじょ は ともだち の いえ を たずねた。",
+        "ro": "kanojo wa tomodachi no ie o tazuneta."
+      },
+      {
+        "en": "We visited the museum together.",
+        "ja": "私たちはいっしょに博物館を訪ねた。",
+        "kana": "わたしたち は いっしょ に はくぶつかん を たずねた。",
+        "ro": "watashitachi wa issho ni hakubutsukan o tazuneta."
+      },
+      {
+        "en": "He visited his grandfather’s grave.",
+        "ja": "彼は祖父の墓を訪ねた。",
+        "kana": "かれ は そふ の はか を たずねた。",
+        "ro": "kare wa sofu no haka o tazuneta."
+      }
+    ],
+    "grammar": "Place / Person + を + 訪ねる"
+  },
+  {
+    "id": "n3-verb-101",
+    "ja": "訪れる",
+    "kana": "おとずれる",
+    "ro": "otozureru",
+    "en": "to visit / to come / to arrive (a time or season)",
+    "examples": [
+      {
+        "en": "Spring has come.",
+        "ja": "春が訪れた。",
+        "kana": "はる が おとずれた。",
+        "ro": "haru ga otozureta."
+      },
+      {
+        "en": "He visited Japan last year.",
+        "ja": "彼は去年日本を訪れた。",
+        "kana": "かれ は きょねん にほん を おとずれた。",
+        "ro": "kare wa kyonen nihon o otozureta."
+      },
+      {
+        "en": "She visits her parents every summer.",
+        "ja": "彼女は毎年夏に両親を訪れる。",
+        "kana": "かのじょ は まいとし なつ に りょうしん を おとずれる。",
+        "ro": "kanojo wa maitoshi natsu ni ryoushin o otozureru."
+      },
+      {
+        "en": "Many tourists visited the city.",
+        "ja": "多くの観光客がその町を訪れた。",
+        "kana": "おおく の かんこうきゃく が その まち を おとずれた。",
+        "ro": "ooku no kankoukyaku ga sono machi o otozureta."
+      },
+      {
+        "en": "Winter will soon arrive.",
+        "ja": "まもなく冬が訪れる。",
+        "kana": "まもなく ふゆ が おとずれる。",
+        "ro": "mamonaku fuyu ga otozureru."
+      }
+    ],
+    "grammar": "Noun + を / が + 訪れる"
+  },
+  {
+    "id": "n3-verb-102",
+    "ja": "例える",
+    "kana": "たとえる",
+    "ro": "tatoeru",
+    "en": "to compare / to liken / to illustrate by example",
+    "examples": [
+      {
+        "en": "He compared life to a journey.",
+        "ja": "彼は人生を旅に例えた。",
+        "kana": "かれ は じんせい を たび に たとえた。",
+        "ro": "kare wa jinsei o tabi ni tatoeta."
+      },
+      {
+        "en": "This story can be compared to a fairy tale.",
+        "ja": "この話はおとぎ話に例えられる。",
+        "kana": "この はなし は おとぎばなし に たとえられる。",
+        "ro": "kono hanashi wa otogibanashi ni tatoerareru."
+      },
+      {
+        "en": "He illustrated it with an easy example.",
+        "ja": "彼は簡単な例でそれを例えた。",
+        "kana": "かれ は かんたん な れい で それ を たとえた。",
+        "ro": "kare wa kantan na rei de sore o tatoeta."
+      },
+      {
+        "en": "She likened his smile to the sun.",
+        "ja": "彼女は彼の笑顔を太陽に例えた。",
+        "kana": "かのじょ は かれ の えがお を たいよう に たとえた。",
+        "ro": "kanojo wa kare no egao o taiyou ni tatoeta."
+      },
+      {
+        "en": "This feeling is hard to describe by comparison.",
+        "ja": "この気持ちは何かに例えにくい。",
+        "kana": "この きもち は なにか に たとえにくい。",
+        "ro": "kono kimochi wa nanika ni tatoenikui."
+      }
+    ],
+    "grammar": "Noun + を + Noun + に + 例える"
+  },
+  {
+    "id": "n3-verb-103",
+    "ja": "助ける",
+    "kana": "たすける",
+    "ro": "tasukeru",
+    "en": "to help / to save / to rescue",
+    "examples": [
+      {
+        "en": "He helped a drowning child.",
+        "ja": "彼はおぼれている子どもを助けた。",
+        "kana": "かれ は おぼれている こども を たすけた。",
+        "ro": "kare wa oboreteiru kodomo o tasuketa."
+      },
+      {
+        "en": "Thank you for helping me.",
+        "ja": "助けてくれてありがとう。",
+        "kana": "たすけて くれて ありがとう。",
+        "ro": "tasukete kurete arigatou."
+      },
+      {
+        "en": "The doctor saved her life.",
+        "ja": "医者が彼女の命を助けた。",
+        "kana": "いしゃ が かのじょ の いのち を たすけた。",
+        "ro": "isha ga kanojo no inochi o tasuketa."
+      },
+      {
+        "en": "He helped his friend move.",
+        "ja": "彼は友達の引っ越しを助けた。",
+        "kana": "かれ は ともだち の ひっこし を たすけた。",
+        "ro": "kare wa tomodachi no hikkoshi o tasuketa."
+      },
+      {
+        "en": "The police rescued the victims.",
+        "ja": "警察が被害者を助けた。",
+        "kana": "けいさつ が ひがいしゃ を たすけた。",
+        "ro": "keisatsu ga higaisha o tasuketa."
+      }
+    ],
+    "grammar": "Noun + を + 助ける"
+  },
+  {
+    "id": "n3-verb-104",
+    "ja": "立てる",
+    "kana": "たてる",
+    "ro": "tateru",
+    "en": "to stand up / to erect / to set up / to establish",
+    "examples": [
+      {
+        "en": "He built a house.",
+        "ja": "彼は家を建てた。",
+        "kana": "かれ は いえ を たてた。",
+        "ro": "kare wa ie o tateta."
+      },
+      {
+        "en": "Please set up the tent.",
+        "ja": "テントを立ててください。",
+        "kana": "てんと を たてて ください。",
+        "ro": "tento o tatete kudasai."
+      },
+      {
+        "en": "They started a new company.",
+        "ja": "彼らは新しい会社を立てた。",
+        "kana": "かれら は あたらしい かいしゃ を たてた。",
+        "ro": "karera wa atarashii kaisha o tateta."
+      },
+      {
+        "en": "He made a plan for the project.",
+        "ja": "彼はプロジェクトの計画を立てた。",
+        "kana": "かれ は ぷろじぇくと の けいかく を たてた。",
+        "ro": "kare wa purojekuto no keikaku o tateta."
+      },
+      {
+        "en": "Please make a sound when you enter.",
+        "ja": "入るときは音を立ててください。",
+        "kana": "はいる とき は おと を たてて ください。",
+        "ro": "hairu toki wa oto o tatete kudasai."
+      }
+    ],
+    "grammar": "Noun + を + 立てる"
+  },
+  {
+    "id": "n3-verb-105",
+    "ja": "頼る",
+    "kana": "たよる",
+    "ro": "tayoru",
+    "en": "to rely on / to depend on / to trust in",
+    "examples": [
+      {
+        "en": "I relied on my friend for help.",
+        "ja": "友達に助けを頼った。",
+        "kana": "ともだち に たすけ を たよった。",
+        "ro": "tomodachi ni tasuke o tayotta."
+      },
+      {
+        "en": "He depends on his parents.",
+        "ja": "彼は両親に頼っている。",
+        "kana": "かれ は りょうしん に たよっている。",
+        "ro": "kare wa ryoushin ni tayotteiru."
+      },
+      {
+        "en": "Don’t rely too much on others.",
+        "ja": "他人にあまり頼らないでください。",
+        "kana": "たにん に あまり たよらないで ください。",
+        "ro": "tanin ni amari tayoranaide kudasai."
+      },
+      {
+        "en": "She relies on her teacher for advice.",
+        "ja": "彼女は先生に相談を頼っている。",
+        "kana": "かのじょ は せんせい に そうだん を たよっている。",
+        "ro": "kanojo wa sensei ni soudan o tayotteiru."
+      },
+      {
+        "en": "I can’t rely on him anymore.",
+        "ja": "もう彼には頼れない。",
+        "kana": "もう かれ に は たよれない。",
+        "ro": "mou kare ni wa tayorenai."
+      }
+    ],
+    "grammar": "Person + に + 頼る"
+  },
+  {
+    "id": "n3-verb-106",
+    "ja": "足す",
+    "kana": "たす",
+    "ro": "tasu",
+    "en": "to add / to supplement / to increase",
+    "examples": [
+      {
+        "en": "Add some sugar to the coffee.",
+        "ja": "コーヒーに砂糖を足してください。",
+        "kana": "こーひー に さとう を たして ください。",
+        "ro": "koohii ni satou o tashite kudasai."
+      },
+      {
+        "en": "Please add a few more chairs.",
+        "ja": "いすをもう少し足してください。",
+        "kana": "いす を もう すこし たして ください。",
+        "ro": "isu o mou sukoshi tashite kudasai."
+      },
+      {
+        "en": "We need to add some details.",
+        "ja": "もう少し詳しい説明を足す必要があります。",
+        "kana": "もう すこし くわしい せつめい を たす ひつよう が あります。",
+        "ro": "mou sukoshi kuwashii setsumei o tasu hitsuyou ga arimasu."
+      },
+      {
+        "en": "Add more hot water.",
+        "ja": "お湯を足してください。",
+        "kana": "おゆ を たして ください。",
+        "ro": "oyu o tashite kudasai."
+      },
+      {
+        "en": "He added two numbers together.",
+        "ja": "彼は二つの数字を足した。",
+        "kana": "かれ は ふたつ の すうじ を たした。",
+        "ro": "kare wa futatsu no suuji o tashita."
+      }
+    ],
+    "grammar": "Noun + を + 足す"
+  },
+  {
+    "id": "n3-verb-107",
+    "ja": "立ち上がる",
+    "kana": "たちあがる",
+    "ro": "tachiagaru",
+    "en": "to stand up / to rise / to recover",
+    "examples": [
+      {
+        "en": "He stood up from his chair.",
+        "ja": "彼はいすから立ち上がった。",
+        "kana": "かれ は いす から たちあがった。",
+        "ro": "kare wa isu kara tachiagatta."
+      },
+      {
+        "en": "The people rose up for freedom.",
+        "ja": "人々は自由のために立ち上がった。",
+        "kana": "ひとびと は じゆう の ため に たちあがった。",
+        "ro": "hitobito wa jiyuu no tame ni tachiagatta."
+      },
+      {
+        "en": "He stood up to greet his boss.",
+        "ja": "上司を迎えるために立ち上がった。",
+        "kana": "じょうし を むかえる ため に たちあがった。",
+        "ro": "joushi o mukaeru tame ni tachiagatta."
+      },
+      {
+        "en": "She recovered from her illness.",
+        "ja": "彼女は病気から立ち上がった。",
+        "kana": "かのじょ は びょうき から たちあがった。",
+        "ro": "kanojo wa byouki kara tachiagatta."
+      },
+      {
+        "en": "He stood up after falling down.",
+        "ja": "転んでもすぐ立ち上がった。",
+        "kana": "ころんでも すぐ たちあがった。",
+        "ro": "korondemo sugu tachiagatta."
+      }
+    ],
+    "grammar": "Noun / Place + から + 立ち上がる"
+  },
+  {
+    "id": "n3-verb-108",
+    "ja": "確かめる",
+    "kana": "たしかめる",
+    "ro": "tashikameru",
+    "en": "to confirm / to verify / to make sure",
+    "examples": [
+      {
+        "en": "Please confirm the schedule.",
+        "ja": "スケジュールを確かめてください。",
+        "kana": "すけじゅーる を たしかめて ください。",
+        "ro": "sukejuuru o tashikamete kudasai."
+      },
+      {
+        "en": "He checked the address again.",
+        "ja": "彼は住所をもう一度確かめた。",
+        "kana": "かれ は じゅうしょ を もういちど たしかめた。",
+        "ro": "kare wa juusho o mou ichido tashikameta."
+      },
+      {
+        "en": "I want to make sure of the meeting time.",
+        "ja": "会議の時間を確かめたいです。",
+        "kana": "かいぎ の じかん を たしかめたい です。",
+        "ro": "kaigi no jikan o tashikametai desu."
+      },
+      {
+        "en": "Please make sure that the door is locked.",
+        "ja": "ドアが閉まっているか確かめてください。",
+        "kana": "どあ が しまっている か たしかめて ください。",
+        "ro": "doa ga shimatteiru ka tashikamete kudasai."
+      },
+      {
+        "en": "He confirmed her safety.",
+        "ja": "彼は彼女の安全を確かめた。",
+        "kana": "かれ は かのじょ の あんぜん を たしかめた。",
+        "ro": "kare wa kanojo no anzen o tashikameta."
+      }
+    ],
+    "grammar": "Noun + を + 確かめる"
+  },
+  {
+    "id": "n3-verb-109",
+    "ja": "立ち寄る",
+    "kana": "たちよる",
+    "ro": "tachiyoru",
+    "en": "to stop by / to drop in / to visit briefly",
+    "examples": [
+      {
+        "en": "I stopped by the bookstore on my way home.",
+        "ja": "帰りに本屋に立ち寄った。",
+        "kana": "かえり に ほんや に たちよった。",
+        "ro": "kaeri ni honya ni tachiyotta."
+      },
+      {
+        "en": "He dropped by my office yesterday.",
+        "ja": "彼は昨日私のオフィスに立ち寄った。",
+        "kana": "かれ は きのう わたし の おふぃす に たちよった。",
+        "ro": "kare wa kinou watashi no ofisu ni tachiyotta."
+      },
+      {
+        "en": "Please stop by if you have time.",
+        "ja": "時間があったら立ち寄ってください。",
+        "kana": "じかん が あったら たちよって ください。",
+        "ro": "jikan ga attara tachiyotte kudasai."
+      },
+      {
+        "en": "We stopped by a café.",
+        "ja": "私たちはカフェに立ち寄った。",
+        "kana": "わたしたち は かふぇ に たちよった。",
+        "ro": "watashitachi wa kafe ni tachiyotta."
+      },
+      {
+        "en": "He stopped by his parents’ house.",
+        "ja": "彼は実家に立ち寄った。",
+        "kana": "かれ は じっか に たちよった。",
+        "ro": "kare wa jikka ni tachiyotta."
+      }
+    ],
+    "grammar": "Place + に + 立ち寄る"
+  },
+  {
+    "id": "n3-verb-110",
+    "ja": "楽しむ",
+    "kana": "たのしむ",
+    "ro": "tanoshimu",
+    "en": "to enjoy / to have fun / to take pleasure in",
+    "examples": [
+      {
+        "en": "I enjoyed the movie.",
+        "ja": "映画を楽しんだ。",
+        "kana": "えいが を たのしんだ。",
+        "ro": "eiga o tanoshinda."
+      },
+      {
+        "en": "He enjoys reading books.",
+        "ja": "彼は読書を楽しんでいる。",
+        "kana": "かれ は どくしょ を たのしんでいる。",
+        "ro": "kare wa dokusho o tanoshindeiru."
+      },
+      {
+        "en": "Let’s enjoy the festival.",
+        "ja": "祭りを楽しもう。",
+        "kana": "まつり を たのしもう。",
+        "ro": "matsuri o tanoshimou."
+      },
+      {
+        "en": "She enjoys talking with her friends.",
+        "ja": "彼女は友達との会話を楽しんでいる。",
+        "kana": "かのじょ は ともだち との かいわ を たのしんでいる。",
+        "ro": "kanojo wa tomodachi to no kaiwa o tanoshindeiru."
+      },
+      {
+        "en": "They enjoyed their trip to Okinawa.",
+        "ja": "彼らは沖縄旅行を楽しんだ。",
+        "kana": "かれら は おきなわ りょこう を たのしんだ。",
+        "ro": "karera wa Okinawa ryokou o tanoshinda."
+      }
+    ],
+    "grammar": "Noun + を + 楽しむ"
+  },
+  {
+    "id": "n3-verb-111",
+    "ja": "頼む",
+    "kana": "たのむ",
+    "ro": "tanomu",
+    "en": "to ask / to request / to rely on",
+    "examples": [
+      {
+        "en": "I asked him for help.",
+        "ja": "彼に助けを頼んだ。",
+        "kana": "かれ に たすけ を たのんだ。",
+        "ro": "kare ni tasuke o tanonda."
+      },
+      {
+        "en": "Can I ask you a favor?",
+        "ja": "お願いを頼んでもいいですか。",
+        "kana": "おねがい を たのんでも いい です か。",
+        "ro": "onegai o tanondemo ii desu ka."
+      },
+      {
+        "en": "He asked me to buy some bread.",
+        "ja": "彼は私にパンを買うように頼んだ。",
+        "kana": "かれ は わたし に ぱん を かう よう に たのんだ。",
+        "ro": "kare wa watashi ni pan o kau you ni tanonda."
+      },
+      {
+        "en": "She asked her friend to come early.",
+        "ja": "彼女は友達に早く来るように頼んだ。",
+        "kana": "かのじょ は ともだち に はやく くる よう に たのんだ。",
+        "ro": "kanojo wa tomodachi ni hayaku kuru you ni tanonda."
+      },
+      {
+        "en": "Can I count on you?",
+        "ja": "あなたに頼ってもいい？",
+        "kana": "あなた に たよっても いい？",
+        "ro": "anata ni tayotte mo ii?"
+      }
+    ],
+    "grammar": "Person + に + 〜を + 頼む"
+  },
+  {
+    "id": "n3-verb-112",
+    "ja": "倒産する",
+    "kana": "とうさんする",
+    "ro": "tousan suru",
+    "en": "to go bankrupt / to fail (a business)",
+    "examples": [
+      {
+        "en": "The company went bankrupt last year.",
+        "ja": "その会社は去年倒産した。",
+        "kana": "その かいしゃ は きょねん とうさん した。",
+        "ro": "sono kaisha wa kyonen tousan shita."
+      },
+      {
+        "en": "Many small companies went bankrupt.",
+        "ja": "多くの小企業が倒産した。",
+        "kana": "おおく の しょうきぎょう が とうさん した。",
+        "ro": "ooku no shou kigyou ga tousan shita."
+      },
+      {
+        "en": "The restaurant went bankrupt after a year.",
+        "ja": "そのレストランは一年で倒産した。",
+        "kana": "その れすとらん は いちねん で とうさん した。",
+        "ro": "sono resutoran wa ichinen de tousan shita."
+      },
+      {
+        "en": "Due to bad management, the company failed.",
+        "ja": "経営の失敗で会社が倒産した。",
+        "kana": "けいえい の しっぱい で かいしゃ が とうさん した。",
+        "ro": "keiei no shippai de kaisha ga tousan shita."
+      },
+      {
+        "en": "They tried to prevent bankruptcy.",
+        "ja": "彼らは倒産を防ごうとした。",
+        "kana": "かれら は とうさん を ふせごう と した。",
+        "ro": "karera wa tousan o fusegou to shita."
+      }
+    ],
+    "grammar": "会社 / 組織 + が + 倒産する"
+  },
+  {
+    "id": "n3-verb-113",
+    "ja": "溜まる",
+    "kana": "たまる",
+    "ro": "tamaru",
+    "en": "to accumulate / to pile up / to collect",
+    "examples": [
+      {
+        "en": "Dust has accumulated on the shelf.",
+        "ja": "棚にほこりが溜まっている。",
+        "kana": "たな に ほこり が たまっている。",
+        "ro": "tana ni hokori ga tamatteiru."
+      },
+      {
+        "en": "Stress has been piling up lately.",
+        "ja": "最近ストレスが溜まっている。",
+        "kana": "さいきん すとれす が たまっている。",
+        "ro": "saikin sutoresu ga tamatteiru."
+      },
+      {
+        "en": "Dirty laundry has piled up.",
+        "ja": "洗濯物が溜まった。",
+        "kana": "せんたくもの が たまった。",
+        "ro": "sentakumono ga tamatta."
+      },
+      {
+        "en": "Money has accumulated in the bank.",
+        "ja": "銀行にお金が溜まった。",
+        "kana": "ぎんこう に おかね が たまった。",
+        "ro": "ginkou ni okane ga tamatta."
+      },
+      {
+        "en": "Unfinished work keeps piling up.",
+        "ja": "終わっていない仕事が溜まっていく。",
+        "kana": "おわっていない しごと が たまっていく。",
+        "ro": "owatteinai shigoto ga tamatteiku."
+      }
+    ],
+    "grammar": "Noun + が + 溜まる"
+  },
+  {
+    "id": "n3-verb-114",
+    "ja": "試す",
+    "kana": "ためす",
+    "ro": "tamesu",
+    "en": "to try / to test / to attempt",
+    "examples": [
+      {
+        "en": "I tried a new recipe.",
+        "ja": "新しいレシピを試した。",
+        "kana": "あたらしい れしぴ を ためした。",
+        "ro": "atarashii reshipi o tameshita."
+      },
+      {
+        "en": "He tested the new software.",
+        "ja": "彼は新しいソフトを試した。",
+        "kana": "かれ は あたらしい そふと を ためした。",
+        "ro": "kare wa atarashii sofuto o tameshita."
+      },
+      {
+        "en": "Let’s try this method.",
+        "ja": "この方法を試してみよう。",
+        "kana": "この ほうほう を ためして みよう。",
+        "ro": "kono houhou o tameshite miyou."
+      },
+      {
+        "en": "I want to test my English skills.",
+        "ja": "英語力を試したい。",
+        "kana": "えいごりょく を ためしたい。",
+        "ro": "eigoryoku o tameshitai."
+      },
+      {
+        "en": "She tried using the app.",
+        "ja": "彼女はそのアプリを試してみた。",
+        "kana": "かのじょ は その あぷり を ためして みた。",
+        "ro": "kanojo wa sono apuri o tameshite mita."
+      }
+    ],
+    "grammar": "Noun + を + 試す"
+  },
+  {
+    "id": "n3-verb-115",
+    "ja": "楽しみにする",
+    "kana": "たのしみにする",
+    "ro": "tanoshimi ni suru",
+    "en": "to look forward to / to anticipate with pleasure",
+    "examples": [
+      {
+        "en": "I’m looking forward to the trip.",
+        "ja": "旅行を楽しみにしています。",
+        "kana": "りょこう を たのしみに しています。",
+        "ro": "ryokou o tanoshimi ni shiteimasu."
+      },
+      {
+        "en": "He’s looking forward to seeing his friends.",
+        "ja": "彼は友達に会うのを楽しみにしている。",
+        "kana": "かれ は ともだち に あう の を たのしみに している。",
+        "ro": "kare wa tomodachi ni au no o tanoshimi ni shiteiru."
+      },
+      {
+        "en": "I’m looking forward to your reply.",
+        "ja": "お返事を楽しみにしています。",
+        "kana": "おへんじ を たのしみに しています。",
+        "ro": "ohenji o tanoshimi ni shiteimasu."
+      },
+      {
+        "en": "She’s looking forward to next summer.",
+        "ja": "彼女は来年の夏を楽しみにしている。",
+        "kana": "かのじょ は らいねん の なつ を たのしみに している。",
+        "ro": "kanojo wa rainen no natsu o tanoshimi ni shiteiru."
+      },
+      {
+        "en": "We’re looking forward to your visit.",
+        "ja": "あなたの訪問を楽しみにしています。",
+        "kana": "あなた の ほうもん を たのしみに しています。",
+        "ro": "anata no houmon o tanoshimi ni shiteimasu."
+      }
+    ],
+    "grammar": "Noun + を + 楽しみにする"
+  },
+  {
+    "id": "n3-verb-116",
+    "ja": "貯める",
+    "kana": "ためる",
+    "ro": "tameru",
+    "en": "to save (money) / to store / to accumulate",
+    "examples": [
+      {
+        "en": "I save money every month.",
+        "ja": "毎月お金を貯めています。",
+        "kana": "まいつき おかね を ためています。",
+        "ro": "maitsuki okane o tameteimasu."
+      },
+      {
+        "en": "She saved up to buy a car.",
+        "ja": "彼女は車を買うためにお金を貯めた。",
+        "kana": "かのじょ は くるま を かう ため に おかね を ためた。",
+        "ro": "kanojo wa kuruma o kau tame ni okane o tameta."
+      },
+      {
+        "en": "He stored rainwater in a tank.",
+        "ja": "彼はタンクに雨水を貯めた。",
+        "kana": "かれ は たんく に あまみず を ためた。",
+        "ro": "kare wa tanku ni amamizu o tameta."
+      },
+      {
+        "en": "Let’s save energy.",
+        "ja": "エネルギーを貯めましょう。",
+        "kana": "えねるぎー を ためましょう。",
+        "ro": "enerugii o tamemashou."
+      },
+      {
+        "en": "I saved my points for a discount.",
+        "ja": "割引のためにポイントを貯めた。",
+        "kana": "わりびき の ため に ぽいんと を ためた。",
+        "ro": "waribiki no tame ni pointo o tameta."
+      }
+    ],
+    "grammar": "Noun + を + 貯める"
+  },
+  {
+    "id": "n3-verb-117",
+    "ja": "足りなくなる",
+    "kana": "たりなくなる",
+    "ro": "tarinaku naru",
+    "en": "to become insufficient / to run short of",
+    "examples": [
+      {
+        "en": "We ran out of money.",
+        "ja": "お金が足りなくなった。",
+        "kana": "おかね が たりなく なった。",
+        "ro": "okane ga tarinaku natta."
+      },
+      {
+        "en": "Time is running short.",
+        "ja": "時間が足りなくなってきた。",
+        "kana": "じかん が たりなく なってきた。",
+        "ro": "jikan ga tarinaku natte kita."
+      },
+      {
+        "en": "We’ll run out of food soon.",
+        "ja": "もうすぐ食べ物が足りなくなる。",
+        "kana": "もうすぐ たべもの が たりなく なる。",
+        "ro": "mousugu tabemono ga tarinaku naru."
+      },
+      {
+        "en": "There are not enough chairs.",
+        "ja": "いすが足りなくなった。",
+        "kana": "いす が たりなく なった。",
+        "ro": "isu ga tarinaku natta."
+      },
+      {
+        "en": "He felt short of breath.",
+        "ja": "息が足りなくなった。",
+        "kana": "いき が たりなく なった。",
+        "ro": "iki ga tarinaku natta."
+      }
+    ],
+    "grammar": "Noun + が + 足りなくなる"
+  },
+  {
+    "id": "n3-verb-118",
+    "ja": "叩く",
+    "kana": "たたく",
+    "ro": "tataku",
+    "en": "to hit / to strike / to knock / to clap",
+    "examples": [
+      {
+        "en": "He hit the drum.",
+        "ja": "彼は太鼓を叩いた。",
+        "kana": "かれ は たいこ を たたいた。",
+        "ro": "kare wa taiko o tataita."
+      },
+      {
+        "en": "Please knock on the door.",
+        "ja": "ドアを叩いてください。",
+        "kana": "どあ を たたいて ください。",
+        "ro": "doa o tataite kudasai."
+      },
+      {
+        "en": "She clapped her hands.",
+        "ja": "彼女は手を叩いた。",
+        "kana": "かのじょ は て を たたいた。",
+        "ro": "kanojo wa te o tataita."
+      },
+      {
+        "en": "He hit the table in anger.",
+        "ja": "怒ってテーブルを叩いた。",
+        "kana": "おこって てーぶる を たたいた。",
+        "ro": "okotte teeburu o tataita."
+      },
+      {
+        "en": "The rain was beating against the window.",
+        "ja": "雨が窓を叩いていた。",
+        "kana": "あめ が まど を たたいていた。",
+        "ro": "ame ga mado o tataiteita."
+      }
+    ],
+    "grammar": "Noun + を + 叩く"
+  },
+  {
+    "id": "n3-verb-119",
+    "ja": "助かる",
+    "kana": "たすかる",
+    "ro": "tasukaru",
+    "en": "to be saved / to be helped / to survive / to be relieved",
+    "examples": [
+      {
+        "en": "He was saved from the accident.",
+        "ja": "彼は事故から助かった。",
+        "kana": "かれ は じこ から たすかった。",
+        "ro": "kare wa jiko kara tasukatta."
+      },
+      {
+        "en": "I was saved thanks to your help.",
+        "ja": "あなたの助けで助かりました。",
+        "kana": "あなた の たすけ で たすかりました。",
+        "ro": "anata no tasuke de tasukarimashita."
+      },
+      {
+        "en": "All passengers survived.",
+        "ja": "乗客全員が助かった。",
+        "kana": "じょうきゃく ぜんいん が たすかった。",
+        "ro": "joukyaku zen'in ga tasukatta."
+      },
+      {
+        "en": "It would be a great help if you came.",
+        "ja": "来てくれると助かります。",
+        "kana": "きて くれる と たすかります。",
+        "ro": "kite kureru to tasukarimasu."
+      },
+      {
+        "en": "I was relieved to hear that news.",
+        "ja": "その知らせを聞いて助かった。",
+        "kana": "その しらせ を きいて たすかった。",
+        "ro": "sono shirase o kiite tasukatta."
+      }
+    ],
+    "grammar": "Noun + が + 助かる"
+  },
+  {
+    "id": "n3-verb-120",
+    "ja": "立ち止まる",
+    "kana": "たちどまる",
+    "ro": "tachidomaru",
+    "en": "to stop walking / to halt / to pause",
+    "examples": [
+      {
+        "en": "He stopped walking suddenly.",
+        "ja": "彼は急に立ち止まった。",
+        "kana": "かれ は きゅうに たちどまった。",
+        "ro": "kare wa kyuu ni tachidomatta."
+      },
+      {
+        "en": "She stopped to look at the flowers.",
+        "ja": "彼女は花を見るために立ち止まった。",
+        "kana": "かのじょ は はな を みる ため に たちどまった。",
+        "ro": "kanojo wa hana o miru tame ni tachidomatta."
+      },
+      {
+        "en": "Please stop and listen.",
+        "ja": "立ち止まって聞いてください。",
+        "kana": "たちどまって きいて ください。",
+        "ro": "tachidomatte kiite kudasai."
+      },
+      {
+        "en": "He paused to think for a moment.",
+        "ja": "彼は少し考えるために立ち止まった。",
+        "kana": "かれ は すこし かんがえる ため に たちどまった。",
+        "ro": "kare wa sukoshi kangaeru tame ni tachidomatta."
+      },
+      {
+        "en": "People stopped to see what happened.",
+        "ja": "人々は何が起きたか見ようと立ち止まった。",
+        "kana": "ひとびと は なに が おきたか みよう と たちどまった。",
+        "ro": "hitobito wa nani ga okitaka miyou to tachidomatta."
+      }
+    ],
+    "grammar": "Person + が + 立ち止まる"
+  },
+  {
+    "id": "n3-verb-121",
+    "ja": "尋ねる",
+    "kana": "たずねる",
+    "ro": "tazuneru",
+    "en": "to ask / to inquire / to question",
+    "examples": [
+      {
+        "en": "I asked him the way to the station.",
+        "ja": "彼に駅への道を尋ねた。",
+        "kana": "かれ に えき への みち を たずねた。",
+        "ro": "kare ni eki e no michi o tazuneta."
+      },
+      {
+        "en": "She asked her teacher a question.",
+        "ja": "彼女は先生に質問を尋ねた。",
+        "kana": "かのじょ は せんせい に しつもん を たずねた。",
+        "ro": "kanojo wa sensei ni shitsumon o tazuneta."
+      },
+      {
+        "en": "He inquired about the schedule.",
+        "ja": "彼はスケジュールを尋ねた。",
+        "kana": "かれ は すけじゅーる を たずねた。",
+        "ro": "kare wa sukejuuru o tazuneta."
+      },
+      {
+        "en": "May I ask your name?",
+        "ja": "お名前を尋ねてもよろしいですか。",
+        "kana": "おなまえ を たずねても よろしい です か。",
+        "ro": "onamae o tazunetemo yoroshii desu ka."
+      },
+      {
+        "en": "He asked the police for information.",
+        "ja": "彼は警察に情報を尋ねた。",
+        "kana": "かれ は けいさつ に じょうほう を たずねた。",
+        "ro": "kare wa keisatsu ni jouhou o tazuneta."
+      }
+    ],
+    "grammar": "Person + に + Noun + を + 尋ねる"
+  },
+  {
+    "id": "n3-verb-122",
+    "ja": "足を運ぶ",
+    "kana": "あしをはこぶ",
+    "ro": "ashi o hakobu",
+    "en": "to go (somewhere) / to visit / to come in person",
+    "examples": [
+      {
+        "en": "I went to see the exhibition.",
+        "ja": "展示会に足を運んだ。",
+        "kana": "てんじかい に あし を はこんだ。",
+        "ro": "tenjikai ni ashi o hakonda."
+      },
+      {
+        "en": "He visited his parents regularly.",
+        "ja": "彼は定期的に実家に足を運んでいる。",
+        "kana": "かれ は ていきてき に じっか に あし を はこんでいる。",
+        "ro": "kare wa teikiteki ni jikka ni ashi o hakondeiru."
+      },
+      {
+        "en": "Many people came to the event.",
+        "ja": "多くの人がイベントに足を運んだ。",
+        "kana": "おおく の ひと が いべんと に あし を はこんだ。",
+        "ro": "ooku no hito ga ibento ni ashi o hakonda."
+      },
+      {
+        "en": "I go there every week.",
+        "ja": "私は毎週そこに足を運ぶ。",
+        "kana": "わたし は まいしゅう そこ に あし を はこぶ。",
+        "ro": "watashi wa maishuu soko ni ashi o hakobu."
+      },
+      {
+        "en": "She came to the shop in person.",
+        "ja": "彼女は自分で店に足を運んだ。",
+        "kana": "かのじょ は じぶん で みせ に あし を はこんだ。",
+        "ro": "kanojo wa jibun de mise ni ashi o hakonda."
+      }
+    ],
+    "grammar": "Place + に + 足を運ぶ"
+  },
+  {
+    "id": "n3-verb-123",
+    "ja": "助言する",
+    "kana": "じょげんする",
+    "ro": "jogen suru",
+    "en": "to advise / to give advice / to counsel",
+    "examples": [
+      {
+        "en": "He gave me useful advice.",
+        "ja": "彼は私に有益な助言をした。",
+        "kana": "かれ は わたし に ゆうえき な じょげん を した。",
+        "ro": "kare wa watashi ni yuueki na jogen o shita."
+      },
+      {
+        "en": "The teacher advised the students.",
+        "ja": "先生が学生に助言した。",
+        "kana": "せんせい が がくせい に じょげん した。",
+        "ro": "sensei ga gakusei ni jogen shita."
+      },
+      {
+        "en": "I want to give him some advice.",
+        "ja": "彼に少し助言したい。",
+        "kana": "かれ に すこし じょげん したい。",
+        "ro": "kare ni sukoshi jogen shitai."
+      },
+      {
+        "en": "The lawyer advised his client.",
+        "ja": "弁護士が依頼人に助言した。",
+        "kana": "べんごし が いらいにん に じょげん した。",
+        "ro": "bengoshi ga irainin ni jogen shita."
+      },
+      {
+        "en": "Thank you for your advice.",
+        "ja": "助言してくださってありがとうございます。",
+        "kana": "じょげん して くださって ありがとう ございます。",
+        "ro": "jogen shite kudasatte arigatou gozaimasu."
+      }
+    ],
+    "grammar": "Person + に + 助言する"
+  },
+  {
+    "id": "n3-verb-126",
+    "ja": "取り替える",
+    "kana": "とりかえる",
+    "ro": "torikaeru",
+    "en": "to exchange / to replace / to swap",
+    "examples": [
+      {
+        "en": "I replaced the battery in the clock.",
+        "ja": "時計の電池を取り替えた。",
+        "kana": "とけい の でんち を とりかえた。",
+        "ro": "tokei no denchi o torikaeta."
+      },
+      {
+        "en": "Please replace the old light bulb.",
+        "ja": "古い電球を取り替えてください。",
+        "kana": "ふるい でんきゅう を とりかえて ください。",
+        "ro": "furui denkyuu o torikaete kudasai."
+      },
+      {
+        "en": "They exchanged seats.",
+        "ja": "彼らは席を取り替えた。",
+        "kana": "かれら は せき を とりかえた。",
+        "ro": "karera wa seki o torikaeta."
+      },
+      {
+        "en": "I changed my phone case.",
+        "ja": "スマホのケースを取り替えた。",
+        "kana": "すまほ の けーす を とりかえた。",
+        "ro": "sumaho no keesu o torikaeta."
+      },
+      {
+        "en": "He replaced the tires of the car.",
+        "ja": "車のタイヤを取り替えた。",
+        "kana": "くるま の たいや を とりかえた。",
+        "ro": "kuruma no taiya o torikaeta."
+      }
+    ],
+    "grammar": "Noun + を + 取り替える"
+  },
+  {
+    "id": "n3-verb-127",
+    "ja": "取り消す",
+    "kana": "とりけす",
+    "ro": "torikesu",
+    "en": "to cancel / to revoke / to withdraw",
+    "examples": [
+      {
+        "en": "I canceled the order.",
+        "ja": "注文を取り消した。",
+        "kana": "ちゅうもん を とりけした。",
+        "ro": "chuumon o torikeshita."
+      },
+      {
+        "en": "He withdrew his statement.",
+        "ja": "彼は発言を取り消した。",
+        "kana": "かれ は はつげん を とりけした。",
+        "ro": "kare wa hatsugen o torikeshita."
+      },
+      {
+        "en": "Please cancel my reservation.",
+        "ja": "予約を取り消してください。",
+        "kana": "よやく を とりけして ください。",
+        "ro": "yoyaku o torikeshite kudasai."
+      },
+      {
+        "en": "The company canceled the event.",
+        "ja": "会社はイベントを取り消した。",
+        "kana": "かいしゃ は いべんと を とりけした。",
+        "ro": "kaisha wa ibento o torikeshita."
+      },
+      {
+        "en": "He took back his words immediately.",
+        "ja": "彼はすぐに言葉を取り消した。",
+        "kana": "かれ は すぐ に ことば を とりけした。",
+        "ro": "kare wa sugu ni kotoba o torikeshita."
+      }
+    ],
+    "grammar": "Noun + を + 取り消す"
+  },
+  {
+    "id": "n3-verb-128",
+    "ja": "取り出す",
+    "kana": "とりだす",
+    "ro": "toridasu",
+    "en": "to take out / to pull out / to produce",
+    "examples": [
+      {
+        "en": "He took his wallet out of his bag.",
+        "ja": "彼はカバンから財布を取り出した。",
+        "kana": "かれ は かばん から さいふ を とりだした。",
+        "ro": "kare wa kaban kara saifu o toridashita."
+      },
+      {
+        "en": "She took a letter from the drawer.",
+        "ja": "彼女は引き出しから手紙を取り出した。",
+        "kana": "かのじょ は ひきだし から てがみ を とりだした。",
+        "ro": "kanojo wa hikidashi kara tegami o toridashita."
+      },
+      {
+        "en": "He pulled the files out of the folder.",
+        "ja": "彼はフォルダーからファイルを取り出した。",
+        "kana": "かれ は ふぉるだー から ふぁいる を とりだした。",
+        "ro": "kare wa forudaa kara fairu o toridashita."
+      },
+      {
+        "en": "She took the food out of the fridge.",
+        "ja": "彼女は冷蔵庫から食べ物を取り出した。",
+        "kana": "かのじょ は れいぞうこ から たべもの を とりだした。",
+        "ro": "kanojo wa reizouko kara tabemono o toridashita."
+      },
+      {
+        "en": "He took his phone out of his pocket.",
+        "ja": "彼はポケットから携帯を取り出した。",
+        "kana": "かれ は ぽけっと から けいたい を とりだした。",
+        "ro": "kare wa poketto kara keitai o toridashita."
+      }
+    ],
+    "grammar": "Noun + を + 取り出す"
+  },
+  {
+    "id": "n3-verb-129",
+    "ja": "取り戻す",
+    "kana": "とりもどす",
+    "ro": "torimodosu",
+    "en": "to regain / to recover / to take back",
+    "examples": [
+      {
+        "en": "He regained his confidence.",
+        "ja": "彼は自信を取り戻した。",
+        "kana": "かれ は じしん を とりもどした。",
+        "ro": "kare wa jishin o torimodoshita."
+      },
+      {
+        "en": "She recovered her health.",
+        "ja": "彼女は健康を取り戻した。",
+        "kana": "かのじょ は けんこう を とりもどした。",
+        "ro": "kanojo wa kenkou o torimodoshita."
+      },
+      {
+        "en": "The police recovered the stolen car.",
+        "ja": "警察が盗まれた車を取り戻した。",
+        "kana": "けいさつ が ぬすまれた くるま を とりもどした。",
+        "ro": "keisatsu ga nusumareta kuruma o torimodoshita."
+      },
+      {
+        "en": "We regained our lost time.",
+        "ja": "私たちは失った時間を取り戻した。",
+        "kana": "わたしたち は うしなった じかん を とりもどした。",
+        "ro": "watashitachi wa ushinatta jikan o torimodoshita."
+      },
+      {
+        "en": "He took back control of the situation.",
+        "ja": "彼は状況の主導権を取り戻した。",
+        "kana": "かれ は じょうきょう の しゅどうけん を とりもどした。",
+        "ro": "kare wa joukyou no shudouken o torimodoshita."
+      }
+    ],
+    "grammar": "Noun + を + 取り戻す"
+  },
+  {
+    "id": "n3-verb-133",
+    "ja": "疲れる",
+    "kana": "つかれる",
+    "ro": "tsukareru",
+    "en": "to get tired / to become exhausted",
+    "examples": [
+      {
+        "en": "I got tired from walking.",
+        "ja": "歩いて疲れた。",
+        "kana": "あるいて つかれた。",
+        "ro": "aruite tsukareta."
+      },
+      {
+        "en": "He is tired from work.",
+        "ja": "彼は仕事で疲れている。",
+        "kana": "かれ は しごと で つかれている。",
+        "ro": "kare wa shigoto de tsukareteiru."
+      },
+      {
+        "en": "I’m tired but happy.",
+        "ja": "疲れたけど幸せだ。",
+        "kana": "つかれた けど しあわせ だ。",
+        "ro": "tsukareta kedo shiawase da."
+      },
+      {
+        "en": "She looked tired.",
+        "ja": "彼女は疲れた様子だった。",
+        "kana": "かのじょ は つかれた ようす だった。",
+        "ro": "kanojo wa tsukareta yousu datta."
+      },
+      {
+        "en": "You must be tired.",
+        "ja": "お疲れでしょう。",
+        "kana": "おつかれ でしょう。",
+        "ro": "otsukare deshou."
+      }
+    ],
+    "grammar": "Person + が + 疲れる"
+  },
+  {
+    "id": "n3-verb-134",
+    "ja": "包む",
+    "kana": "つつむ",
+    "ro": "tsutsumu",
+    "en": "to wrap / to cover / to conceal",
+    "examples": [
+      {
+        "en": "She wrapped the gift in paper.",
+        "ja": "彼女はプレゼントを紙で包んだ。",
+        "kana": "かのじょ は ぷれぜんと を かみ で つつんだ。",
+        "ro": "kanojo wa purezento o kami de tsutsunda."
+      },
+      {
+        "en": "He covered the baby with a blanket.",
+        "ja": "彼は赤ちゃんを毛布で包んだ。",
+        "kana": "かれ は あかちゃん を もうふ で つつんだ。",
+        "ro": "kare wa akachan o moufu de tsutsunda."
+      },
+      {
+        "en": "The city was covered in fog.",
+        "ja": "街は霧に包まれていた。",
+        "kana": "まち は きり に つつまれていた。",
+        "ro": "machi wa kiri ni tsutsumareteita."
+      },
+      {
+        "en": "She wrapped the bread in plastic.",
+        "ja": "彼女はパンをビニールで包んだ。",
+        "kana": "かのじょ は ぱん を びにーる で つつんだ。",
+        "ro": "kanojo wa pan o biniiru de tsutsunda."
+      },
+      {
+        "en": "The house was surrounded by silence.",
+        "ja": "家は静けさに包まれていた。",
+        "kana": "いえ は しずけさ に つつまれていた。",
+        "ro": "ie wa shizukesa ni tsutsumareteita."
+      }
+    ],
+    "grammar": "Noun + を + Material + で + 包む"
+  },
+  {
+    "id": "n3-verb-137",
+    "ja": "包まる",
+    "kana": "つつまる",
+    "ro": "tsutsumaru",
+    "en": "to be wrapped / to be covered / to be enveloped",
+    "examples": [
+      {
+        "en": "The mountain was covered in snow.",
+        "ja": "山が雪に包まれていた。",
+        "kana": "やま が ゆき に つつまれていた。",
+        "ro": "yama ga yuki ni tsutsumareteita."
+      },
+      {
+        "en": "The town was enveloped in darkness.",
+        "ja": "町が暗闇に包まれた。",
+        "kana": "まち が くらやみ に つつまれた。",
+        "ro": "machi ga kurayami ni tsutsumareta."
+      },
+      {
+        "en": "She was wrapped in a blanket.",
+        "ja": "彼女は毛布に包まれていた。",
+        "kana": "かのじょ は もうふ に つつまれていた。",
+        "ro": "kanojo wa moufu ni tsutsumareteita."
+      },
+      {
+        "en": "The city was wrapped in silence.",
+        "ja": "街が静けさに包まれた。",
+        "kana": "まち が しずけさ に つつまれた。",
+        "ro": "machi ga shizukesa ni tsutsumareta."
+      },
+      {
+        "en": "Her face was covered by a scarf.",
+        "ja": "彼女の顔はスカーフに包まれた。",
+        "kana": "かのじょ の かお は すかーふ に つつまれた。",
+        "ro": "kanojo no kao wa sukaafu ni tsutsumareta."
+      }
+    ],
+    "grammar": "Noun + が + ～に + 包まる"
+  },
+  {
+    "id": "n3-verb-138",
+    "ja": "捕る",
+    "kana": "とる",
+    "ro": "toru",
+    "en": "to catch / to take / to capture (usually for animals or fish)",
+    "examples": [
+      {
+        "en": "He caught a fish in the river.",
+        "ja": "彼は川で魚を捕った。",
+        "kana": "かれ は かわ で さかな を とった。",
+        "ro": "kare wa kawa de sakana o totta."
+      },
+      {
+        "en": "They caught birds in the forest.",
+        "ja": "彼らは森で鳥を捕った。",
+        "kana": "かれら は もり で とり を とった。",
+        "ro": "karera wa mori de tori o totta."
+      },
+      {
+        "en": "He caught a crab at the beach.",
+        "ja": "彼は浜辺でカニを捕った。",
+        "kana": "かれ は はまべ で かに を とった。",
+        "ro": "kare wa hamabe de kani o totta."
+      },
+      {
+        "en": "My father caught a big fish.",
+        "ja": "父は大きな魚を捕った。",
+        "kana": "ちち は おおきな さかな を とった。",
+        "ro": "chichi wa ookina sakana o totta."
+      },
+      {
+        "en": "They caught insects in summer.",
+        "ja": "彼らは夏に虫を捕った。",
+        "kana": "かれら は なつ に むし を とった。",
+        "ro": "karera wa natsu ni mushi o totta."
+      }
+    ],
+    "grammar": "Noun + を + 捕る"
+  },
+  {
+    "id": "n3-verb-139",
+    "ja": "捕まえる（比喩）",
+    "kana": "つかまえる（ひゆ）",
+    "ro": "tsukamaeru (hiyu)",
+    "en": "to grasp (an idea) / to interpret / to take (figuratively)",
+    "examples": [
+      {
+        "en": "He took her words seriously.",
+        "ja": "彼は彼女の言葉を真剣に捕まえた。",
+        "kana": "かれ は かのじょ の ことば を しんけん に つかまえた。",
+        "ro": "kare wa kanojo no kotoba o shinken ni tsukamaeta."
+      },
+      {
+        "en": "The child took it as a joke.",
+        "ja": "子どもはそれを冗談として捕まえた。",
+        "kana": "こども は それ を じょうだん として つかまえた。",
+        "ro": "kodomo wa sore o joudan to shite tsukamaeta."
+      },
+      {
+        "en": "He misunderstood her meaning.",
+        "ja": "彼は彼女の意味を違って捕まえた。",
+        "kana": "かれ は かのじょ の いみ を ちがって つかまえた。",
+        "ro": "kare wa kanojo no imi o chigatte tsukamaeta."
+      },
+      {
+        "en": "She took the news as good news.",
+        "ja": "彼女はその知らせを良いこととして捕まえた。",
+        "kana": "かのじょ は その しらせ を よい こと として つかまえた。",
+        "ro": "kanojo wa sono shirase o yoi koto to shite tsukamaeta."
+      },
+      {
+        "en": "He took my words too literally.",
+        "ja": "彼は私の言葉を文字通りに捕まえた。",
+        "kana": "かれ は わたし の ことば を もじどおり に つかまえた。",
+        "ro": "kare wa watashi no kotoba o mojidoori ni tsukamaeta."
+      }
+    ],
+    "grammar": "Noun + を + 状況 / 感情 + として + 捕まえる"
+  },
+  {
+    "id": "n3-verb-144",
+    "ja": "捕える",
+    "kana": "とらえる",
+    "ro": "toraeru",
+    "en": "to catch / to capture / to seize / to grasp (conceptually)",
+    "examples": [
+      {
+        "en": "The police caught the criminal.",
+        "ja": "警察が犯人を捕えた。",
+        "kana": "けいさつ が はんにん を とらえた。",
+        "ro": "keisatsu ga hannin o toraeta."
+      },
+      {
+        "en": "He caught the ball firmly.",
+        "ja": "彼はボールをしっかり捕えた。",
+        "kana": "かれ は ぼーる を しっかり とらえた。",
+        "ro": "kare wa booru o shikkari toraeta."
+      },
+      {
+        "en": "She grasped the meaning quickly.",
+        "ja": "彼女は意味をすぐに捕えた。",
+        "kana": "かのじょ は いみ を すぐ に とらえた。",
+        "ro": "kanojo wa imi o sugu ni toraeta."
+      },
+      {
+        "en": "He was captured by the enemy.",
+        "ja": "彼は敵に捕えられた。",
+        "kana": "かれ は てき に とらえられた。",
+        "ro": "kare wa teki ni toraerareta."
+      },
+      {
+        "en": "She captured the beauty of nature in her painting.",
+        "ja": "彼女は自然の美しさを絵で捕えた。",
+        "kana": "かのじょ は しぜん の うつくしさ を え で とらえた。",
+        "ro": "kanojo wa shizen no utsukushisa o e de toraeta."
+      }
+    ],
+    "grammar": "Noun + を + 捕える"
+  },
+  {
+    "id": "n3-verb-145",
+    "ja": "捕まる（比喩）",
+    "kana": "つかまる（ひゆ）",
+    "ro": "tsukamaru (hiyu)",
+    "en": "to be caught (figuratively) / to be stuck / to be occupied",
+    "examples": [
+      {
+        "en": "He was caught in a traffic jam.",
+        "ja": "彼は渋滞に捕まった。",
+        "kana": "かれ は じゅうたい に つかまった。",
+        "ro": "kare wa juutai ni tsukamatta."
+      },
+      {
+        "en": "She got stuck talking with her boss.",
+        "ja": "彼女は上司に捕まった。",
+        "kana": "かのじょ は じょうし に つかまった。",
+        "ro": "kanojo wa joushi ni tsukamatta."
+      },
+      {
+        "en": "I was caught in the rain.",
+        "ja": "雨に捕まった。",
+        "kana": "あめ に つかまった。",
+        "ro": "ame ni tsukamatta."
+      },
+      {
+        "en": "He got caught by a salesperson.",
+        "ja": "彼はセールスマンに捕まった。",
+        "kana": "かれ は せーるすまん に つかまった。",
+        "ro": "kare wa seerusuman ni tsukamatta."
+      },
+      {
+        "en": "I got caught up in a long phone call.",
+        "ja": "長い電話に捕まった。",
+        "kana": "ながい でんわ に つかまった。",
+        "ro": "nagai denwa ni tsukamatta."
+      }
+    ],
+    "grammar": "Noun + に + 捕まる"
+  },
+  {
+    "id": "n3-verb-146",
+    "ja": "飛ばす",
+    "kana": "とばす",
+    "ro": "tobasu",
+    "en": "to fly (something) / to skip / to omit / to accelerate",
+    "examples": [
+      {
+        "en": "He flew a paper airplane.",
+        "ja": "彼は紙飛行機を飛ばした。",
+        "kana": "かれ は かみひこうき を とばした。",
+        "ro": "kare wa kamihikouki o tobashita."
+      },
+      {
+        "en": "She skipped the boring part.",
+        "ja": "彼女は退屈な部分を飛ばした。",
+        "kana": "かのじょ は たいくつ な ぶぶん を とばした。",
+        "ro": "kanojo wa taikutsu na bubun o tobashita."
+      },
+      {
+        "en": "He made a joke and lightened the mood.",
+        "ja": "彼は冗談を飛ばして場を和ませた。",
+        "kana": "かれ は じょうだん を とばして ば を なごませた。",
+        "ro": "kare wa joudan o tobashite ba o nagomaseta."
+      },
+      {
+        "en": "She drove at full speed.",
+        "ja": "彼女は全速力で車を飛ばした。",
+        "kana": "かのじょ は ぜんそくりょく で くるま を とばした。",
+        "ro": "kanojo wa zensokuryoku de kuruma o tobashita."
+      },
+      {
+        "en": "He skipped a few questions.",
+        "ja": "彼はいくつかの質問を飛ばした。",
+        "kana": "かれ は いくつか の しつもん を とばした。",
+        "ro": "kare wa ikutsuka no shitsumon o tobashita."
+      }
+    ],
+    "grammar": "Noun + を + 飛ばす"
+  }
+]

@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "n3-intj-001",
+    "ja": "あれ",
+    "kana": "あれ",
+    "ro": "are",
+    "en": "Huh? / Oh? — used when surprised or noticing something unexpected",
+    "examples": [
+      {
+        "en": "Huh? What’s that?",
+        "ja": "あれ？それは何？",
+        "kana": "あれ？ それ は なに？",
+        "ro": "are? sore wa nani?"
+      },
+      {
+        "en": "Oh? You’re already here!",
+        "ja": "あれ？もう来てたの？",
+        "kana": "あれ？ もう きてた の？",
+        "ro": "are? mou kiteta no?"
+      },
+      {
+        "en": "Huh? I thought I had it.",
+        "ja": "あれ？持ってたはずなのに。",
+        "kana": "あれ？ もってた はず なのに。",
+        "ro": "are? motteta hazu nanoni."
+      },
+      {
+        "en": "Oh? It’s different today.",
+        "ja": "あれ？今日は違うね。",
+        "kana": "あれ？ きょう は ちがう ね。",
+        "ro": "are? kyou wa chigau ne."
+      },
+      {
+        "en": "Huh? Where did it go?",
+        "ja": "あれ？どこ行った？",
+        "kana": "あれ？ どこ いった？",
+        "ro": "are? doko itta?"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Curiosity"
+  },
+  {
+    "id": "n3-intj-002",
+    "ja": "へえ",
+    "kana": "へえ",
+    "ro": "hee",
+    "en": "Oh! / Really! — used when impressed or surprised",
+    "examples": [
+      {
+        "en": "Oh! That’s amazing!",
+        "ja": "へえ！すごいね！",
+        "kana": "へえ！ すごい ね！",
+        "ro": "hee! sugoi ne!"
+      },
+      {
+        "en": "Really? I didn’t know that.",
+        "ja": "へえ、知らなかった。",
+        "kana": "へえ、しらなかった。",
+        "ro": "hee, shiranakatta."
+      },
+      {
+        "en": "Oh! So you did that!",
+        "ja": "へえ、そんなことしたんだ。",
+        "kana": "へえ、そんな こと した ん だ。",
+        "ro": "hee, sonna koto shita n da."
+      },
+      {
+        "en": "Wow, that’s interesting!",
+        "ja": "へえ、おもしろいね。",
+        "kana": "へえ、おもしろい ね。",
+        "ro": "hee, omoshiroi ne."
+      },
+      {
+        "en": "Oh! That’s great news!",
+        "ja": "へえ、それはいいね！",
+        "kana": "へえ、それ は いい ね！",
+        "ro": "hee, sore wa ii ne!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Admiration"
+  },
+  {
+    "id": "n3-intj-003",
+    "ja": "うわ",
+    "kana": "うわ",
+    "ro": "uwa",
+    "en": "Whoa! / Ew! — used when surprised, shocked, or disgusted",
+    "examples": [
+      {
+        "en": "Whoa! That’s huge!",
+        "ja": "うわ！大きい！",
+        "kana": "うわ！ おおきい！",
+        "ro": "uwa! ookii!"
+      },
+      {
+        "en": "Ew! That’s dirty!",
+        "ja": "うわ！きたない！",
+        "kana": "うわ！ きたない！",
+        "ro": "uwa! kitanai!"
+      },
+      {
+        "en": "Wow! So many people!",
+        "ja": "うわ！人がいっぱい！",
+        "kana": "うわ！ ひと が いっぱい！",
+        "ro": "uwa! hito ga ippai!"
+      },
+      {
+        "en": "Whoa! That’s scary!",
+        "ja": "うわ！こわい！",
+        "kana": "うわ！ こわい！",
+        "ro": "uwa! kowai!"
+      },
+      {
+        "en": "Whoa! It’s falling!",
+        "ja": "うわ！落ちる！",
+        "kana": "うわ！ おちる！",
+        "ro": "uwa! ochiru!"
+      }
+    ],
+    "grammar": "Interjection / Shock, Disgust, or Surprise"
+  },
+  {
+    "id": "n3-intj-004",
+    "ja": "おっと",
+    "kana": "おっと",
+    "ro": "otto",
+    "en": "Oops! / Oh! — used when reacting quickly to a mistake or near accident",
+    "examples": [
+      {
+        "en": "Oops! Sorry!",
+        "ja": "おっと、ごめん！",
+        "kana": "おっと、ごめん！",
+        "ro": "otto, gomen!"
+      },
+      {
+        "en": "Oh! Watch out!",
+        "ja": "おっと、危ない！",
+        "kana": "おっと、あぶない！",
+        "ro": "otto, abunai!"
+      },
+      {
+        "en": "Oops! I dropped it!",
+        "ja": "おっと、落とした！",
+        "kana": "おっと、おとした！",
+        "ro": "otto, otoshita!"
+      },
+      {
+        "en": "Oops! I forgot!",
+        "ja": "おっと、忘れてた！",
+        "kana": "おっと、わすれてた！",
+        "ro": "otto, wasureteta!"
+      },
+      {
+        "en": "Oh! That was close!",
+        "ja": "おっと、危なかった！",
+        "kana": "おっと、あぶなかった！",
+        "ro": "otto, abunakatta!"
+      }
+    ],
+    "grammar": "Interjection / Reaction to Mistake or Sudden Situation"
+  },
+  {
+    "id": "n3-intj-005",
+    "ja": "ふう",
+    "kana": "ふう",
+    "ro": "fuu",
+    "en": "Phew... / Whew... — used to express relief or tiredness",
+    "examples": [
+      {
+        "en": "Phew... it’s finally done.",
+        "ja": "ふう、やっと終わった。",
+        "kana": "ふう、やっと おわった。",
+        "ro": "fuu, yatto owatta."
+      },
+      {
+        "en": "Whew... that was hard.",
+        "ja": "ふう、たいへんだった。",
+        "kana": "ふう、たいへん だった。",
+        "ro": "fuu, taihen datta."
+      },
+      {
+        "en": "Phew... I made it in time.",
+        "ja": "ふう、間に合った。",
+        "kana": "ふう、まにあった。",
+        "ro": "fuu, maniatta."
+      },
+      {
+        "en": "Whew... I’m tired.",
+        "ja": "ふう、つかれたな。",
+        "kana": "ふう、つかれた な。",
+        "ro": "fuu, tsukareta na."
+      },
+      {
+        "en": "Phew... what a day.",
+        "ja": "ふう、今日は長かった。",
+        "kana": "ふう、きょう は ながかった。",
+        "ro": "fuu, kyou wa nagakatta."
+      }
+    ],
+    "grammar": "Interjection / Relief or Exhaustion"
+  },
+  {
+    "id": "n3-intj-006",
+    "ja": "あっ",
+    "kana": "あっ",
+    "ro": "a",
+    "en": "Ah! / Oh! — used when noticing or realizing something",
+    "examples": [
+      {
+        "en": "Ah! I remember now!",
+        "ja": "あっ、思い出した！",
+        "kana": "あっ、おもいだした！",
+        "ro": "a, omoidashta!"
+      },
+      {
+        "en": "Oh! That’s my bag!",
+        "ja": "あっ、それは私のかばん！",
+        "kana": "あっ、それ は わたし の かばん！",
+        "ro": "a, sore wa watashi no kaban!"
+      },
+      {
+        "en": "Ah! I forgot!",
+        "ja": "あっ、忘れてた！",
+        "kana": "あっ、わすれてた！",
+        "ro": "a, wasureteta!"
+      },
+      {
+        "en": "Oh! Be careful!",
+        "ja": "あっ、気をつけて！",
+        "kana": "あっ、き を つけて！",
+        "ro": "a, ki o tsukete!"
+      },
+      {
+        "en": "Ah! There it is!",
+        "ja": "あっ、あった！",
+        "kana": "あっ、あった！",
+        "ro": "a, atta!"
+      }
+    ],
+    "grammar": "Interjection / Realization or Notice"
+  },
+  {
+    "id": "n3-intj-007",
+    "ja": "えっ",
+    "kana": "えっ",
+    "ro": "e",
+    "en": "What? / Huh? — used when surprised or confused by something",
+    "examples": [
+      {
+        "en": "What? Really?",
+        "ja": "えっ？ほんとうに？",
+        "kana": "えっ？ ほんとうに？",
+        "ro": "e? hontou ni?"
+      },
+      {
+        "en": "Huh? You’re leaving now?",
+        "ja": "えっ？もう帰るの？",
+        "kana": "えっ？ もう かえる の？",
+        "ro": "e? mou kaeru no?"
+      },
+      {
+        "en": "What? I didn’t hear that.",
+        "ja": "えっ？聞いてなかった。",
+        "kana": "えっ？ きいて なかった。",
+        "ro": "e? kiite nakatta."
+      },
+      {
+        "en": "Huh? You mean me?",
+        "ja": "えっ？私のこと？",
+        "kana": "えっ？ わたし の こと？",
+        "ro": "e? watashi no koto?"
+      },
+      {
+        "en": "What? I can’t believe it!",
+        "ja": "えっ？信じられない！",
+        "kana": "えっ？ しんじられない！",
+        "ro": "e? shinjirarenai!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Confusion"
+  },
+  {
+    "id": "n3-intj-008",
+    "ja": "おお",
+    "kana": "おお",
+    "ro": "oo",
+    "en": "Oh! / Wow! — used to express admiration or strong impression",
+    "examples": [
+      {
+        "en": "Oh! That’s amazing!",
+        "ja": "おお！すごいね！",
+        "kana": "おお！ すごい ね！",
+        "ro": "oo! sugoi ne!"
+      },
+      {
+        "en": "Wow! Beautiful!",
+        "ja": "おお！きれいだ！",
+        "kana": "おお！ きれい だ！",
+        "ro": "oo! kirei da!"
+      },
+      {
+        "en": "Oh! You did it!",
+        "ja": "おお！やったね！",
+        "kana": "おお！ やった ね！",
+        "ro": "oo! yatta ne!"
+      },
+      {
+        "en": "Wow! What a view!",
+        "ja": "おお！なんて景色だ！",
+        "kana": "おお！ なんて けしき だ！",
+        "ro": "oo! nante keshiki da!"
+      },
+      {
+        "en": "Oh! That’s cool!",
+        "ja": "おお！かっこいい！",
+        "kana": "おお！ かっこいい！",
+        "ro": "oo! kakkoii!"
+      }
+    ],
+    "grammar": "Interjection / Admiration or Surprise"
+  },
+  {
+    "id": "n3-intj-009",
+    "ja": "うーん",
+    "kana": "うーん",
+    "ro": "uun",
+    "en": "Hmm... / Well... — used when thinking or hesitating to respond",
+    "examples": [
+      {
+        "en": "Hmm... I’m not sure.",
+        "ja": "うーん、わからないな。",
+        "kana": "うーん、わからない な。",
+        "ro": "uun, wakaranai na."
+      },
+      {
+        "en": "Hmm... maybe later.",
+        "ja": "うーん、あとでにしよう。",
+        "kana": "うーん、あとで に しよう。",
+        "ro": "uun, atode ni shiyou."
+      },
+      {
+        "en": "Hmm... that’s difficult.",
+        "ja": "うーん、むずかしいね。",
+        "kana": "うーん、むずかしい ね。",
+        "ro": "uun, muzukashii ne."
+      },
+      {
+        "en": "Hmm... let me think.",
+        "ja": "うーん、ちょっと考えるね。",
+        "kana": "うーん、ちょっと かんがえる ね。",
+        "ro": "uun, chotto kangaeru ne."
+      },
+      {
+        "en": "Hmm... I guess so.",
+        "ja": "うーん、そうかもね。",
+        "kana": "うーん、そう かも ね。",
+        "ro": "uun, sou kamo ne."
+      }
+    ],
+    "grammar": "Interjection / Thinking or Hesitation"
+  },
+  {
+    "id": "n3-intj-010",
+    "ja": "おや",
+    "kana": "おや",
+    "ro": "oya",
+    "en": "Oh? / Well! — used when noticing something unexpected or surprising",
+    "examples": [
+      {
+        "en": "Oh? You’re early today!",
+        "ja": "おや？今日は早いね。",
+        "kana": "おや？ きょう は はやい ね。",
+        "ro": "oya? kyou wa hayai ne."
+      },
+      {
+        "en": "Oh? What’s this?",
+        "ja": "おや？これは何だ？",
+        "kana": "おや？ これ は なん だ？",
+        "ro": "oya? kore wa nan da?"
+      },
+      {
+        "en": "Oh! He’s not here.",
+        "ja": "おや？彼はいないのか。",
+        "kana": "おや？ かれ は いない の か。",
+        "ro": "oya? kare wa inai no ka."
+      },
+      {
+        "en": "Oh? That’s strange.",
+        "ja": "おや？おかしいな。",
+        "kana": "おや？ おかしい な。",
+        "ro": "oya? okashii na."
+      },
+      {
+        "en": "Oh! You changed your hair!",
+        "ja": "おや？髪を切ったの？",
+        "kana": "おや？ かみ を きった の？",
+        "ro": "oya? kami o kitta no?"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Curiosity"
+  },
+  {
+    "id": "n3-intj-011",
+    "ja": "わあ",
+    "kana": "わあ",
+    "ro": "waa",
+    "en": "Wow! / Amazing! — used when expressing excitement or admiration",
+    "examples": [
+      {
+        "en": "Wow! It’s beautiful!",
+        "ja": "わあ！きれい！",
+        "kana": "わあ！ きれい！",
+        "ro": "waa! kirei!"
+      },
+      {
+        "en": "Wow! That’s cool!",
+        "ja": "わあ！かっこいいね！",
+        "kana": "わあ！ かっこいい ね！",
+        "ro": "waa! kakkoii ne!"
+      },
+      {
+        "en": "Wow! So big!",
+        "ja": "わあ！おおきい！",
+        "kana": "わあ！ おおきい！",
+        "ro": "waa! ookii!"
+      },
+      {
+        "en": "Wow! You did it!",
+        "ja": "わあ！できたね！",
+        "kana": "わあ！ できた ね！",
+        "ro": "waa! dekita ne!"
+      },
+      {
+        "en": "Wow! I’m so happy!",
+        "ja": "わあ！うれしい！",
+        "kana": "わあ！ うれしい！",
+        "ro": "waa! ureshii!"
+      }
+    ],
+    "grammar": "Interjection / Excitement or Admiration"
+  },
+  {
+    "id": "n3-intj-012",
+    "ja": "うっそ",
+    "kana": "うっそ",
+    "ro": "usso",
+    "en": "No way! / You’re kidding! — used when surprised or doubting",
+    "examples": [
+      {
+        "en": "No way! Really?",
+        "ja": "うっそ！ほんとうに？",
+        "kana": "うっそ！ ほんとうに？",
+        "ro": "usso! hontou ni?"
+      },
+      {
+        "en": "No way! You got 100 points?",
+        "ja": "うっそ！100点とったの？",
+        "kana": "うっそ！ ひゃくてん とった の？",
+        "ro": "usso! hyakuten totta no?"
+      },
+      {
+        "en": "No way! That can’t be true!",
+        "ja": "うっそ！うそでしょ！",
+        "kana": "うっそ！ うそ でしょ！",
+        "ro": "usso! uso desho!"
+      },
+      {
+        "en": "You’re kidding! That’s amazing!",
+        "ja": "うっそ！すごいじゃん！",
+        "kana": "うっそ！ すごい じゃん！",
+        "ro": "usso! sugoi jan!"
+      },
+      {
+        "en": "No way! It’s sold out?",
+        "ja": "うっそ！売り切れ？",
+        "kana": "うっそ！ うりきれ？",
+        "ro": "usso! urikire?"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Disbelief"
+  },
+  {
+    "id": "n3-intj-013",
+    "ja": "おおっ",
+    "kana": "おおっ",
+    "ro": "oo",
+    "en": "Oh! / Wow! — used when suddenly impressed or amazed",
+    "examples": [
+      {
+        "en": "Oh! Great job!",
+        "ja": "おおっ！よくできた！",
+        "kana": "おおっ！ よく できた！",
+        "ro": "oo! yoku dekita!"
+      },
+      {
+        "en": "Wow! That’s fast!",
+        "ja": "おおっ！はやいね！",
+        "kana": "おおっ！ はやい ね！",
+        "ro": "oo! hayai ne!"
+      },
+      {
+        "en": "Oh! Beautiful!",
+        "ja": "おおっ！きれいだ！",
+        "kana": "おおっ！ きれい だ！",
+        "ro": "oo! kirei da!"
+      },
+      {
+        "en": "Wow! What a great view!",
+        "ja": "おおっ！いい景色！",
+        "kana": "おおっ！ いい けしき！",
+        "ro": "oo! ii keshiki!"
+      },
+      {
+        "en": "Oh! You surprised me!",
+        "ja": "おおっ！びっくりした！",
+        "kana": "おおっ！ びっくり した！",
+        "ro": "oo! bikkuri shita!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Admiration"
+  },
+  {
+    "id": "n3-intj-014",
+    "ja": "やったー",
+    "kana": "やったー",
+    "ro": "yattaa",
+    "en": "Yay! / I did it! — used when happy about success or victory",
+    "examples": [
+      {
+        "en": "Yay! I won!",
+        "ja": "やったー！勝った！",
+        "kana": "やったー！ かった！",
+        "ro": "yattaa! katta!"
+      },
+      {
+        "en": "I did it! I passed the test!",
+        "ja": "やったー！合格した！",
+        "kana": "やったー！ ごうかく した！",
+        "ro": "yattaa! goukaku shita!"
+      },
+      {
+        "en": "Yay! It’s payday!",
+        "ja": "やったー！給料日だ！",
+        "kana": "やったー！ きゅうりょうび だ！",
+        "ro": "yattaa! kyuuryoubi da!"
+      },
+      {
+        "en": "Yay! It’s my favorite food!",
+        "ja": "やったー！好きな料理だ！",
+        "kana": "やったー！ すきな りょうり だ！",
+        "ro": "yattaa! sukina ryouri da!"
+      },
+      {
+        "en": "Yay! We made it!",
+        "ja": "やったー！間に合った！",
+        "kana": "やったー！ まにあった！",
+        "ro": "yattaa! maniatta!"
+      }
+    ],
+    "grammar": "Interjection / Joy or Excitement"
+  },
+  {
+    "id": "n3-intj-015",
+    "ja": "しまった",
+    "kana": "しまった",
+    "ro": "shimatta",
+    "en": "Oh no! / Damn it! — used when realizing a mistake",
+    "examples": [
+      {
+        "en": "Oh no! I forgot my wallet!",
+        "ja": "しまった！財布を忘れた！",
+        "kana": "しまった！ さいふ を わすれた！",
+        "ro": "shimatta! saifu o wasureta!"
+      },
+      {
+        "en": "Damn! I missed the train!",
+        "ja": "しまった！電車に乗り遅れた！",
+        "kana": "しまった！ でんしゃ に のりおくれた！",
+        "ro": "shimatta! densha ni noriokureta!"
+      },
+      {
+        "en": "Oh no! I dropped it!",
+        "ja": "しまった！落とした！",
+        "kana": "しまった！ おとした！",
+        "ro": "shimatta! otoshita!"
+      },
+      {
+        "en": "Oh no! I made a mistake!",
+        "ja": "しまった！まちがえた！",
+        "kana": "しまった！ まちがえた！",
+        "ro": "shimatta! machigaeta!"
+      },
+      {
+        "en": "Darn! It’s too late!",
+        "ja": "しまった！もう遅い！",
+        "kana": "しまった！ もう おそい！",
+        "ro": "shimatta! mou osoi!"
+      }
+    ],
+    "grammar": "Interjection / Realization or Regret"
+  },
+  {
+    "id": "n3-intj-016",
+    "ja": "あちゃー",
+    "kana": "あちゃー",
+    "ro": "achaa",
+    "en": "Oops! / Uh-oh! — used when realizing a bad mistake",
+    "examples": [
+      {
+        "en": "Oops! I spilled it!",
+        "ja": "あちゃー、こぼしちゃった。",
+        "kana": "あちゃー、こぼしちゃった。",
+        "ro": "achaa, koboshichatta."
+      },
+      {
+        "en": "Uh-oh! I sent the wrong message!",
+        "ja": "あちゃー、まちがえて送っちゃった。",
+        "kana": "あちゃー、まちがえて おくっちゃった。",
+        "ro": "achaa, machigaete okucchatta."
+      },
+      {
+        "en": "Oops! I forgot my phone!",
+        "ja": "あちゃー、携帯を忘れた！",
+        "kana": "あちゃー、けいたい を わすれた！",
+        "ro": "achaa, keitai o wasureta!"
+      },
+      {
+        "en": "Uh-oh! I shouldn’t have said that.",
+        "ja": "あちゃー、言わなきゃよかった。",
+        "kana": "あちゃー、いわなきゃ よかった。",
+        "ro": "achaa, iwanakya yokatta."
+      },
+      {
+        "en": "Oops! My mistake again!",
+        "ja": "あちゃー、またやっちゃった！",
+        "kana": "あちゃー、また やっちゃった！",
+        "ro": "achaa, mata yacchatta!"
+      }
+    ],
+    "grammar": "Interjection / Mistake or Regret"
+  },
+  {
+    "id": "n3-intj-017",
+    "ja": "ふうん",
+    "kana": "ふうん",
+    "ro": "fuun",
+    "en": "Hmm / I see — used when listening or reacting without strong emotion",
+    "examples": [
+      {
+        "en": "Hmm, I see.",
+        "ja": "ふうん、そうなんだ。",
+        "kana": "ふうん、そう なん だ。",
+        "ro": "fuun, sou nan da."
+      },
+      {
+        "en": "Hmm, interesting.",
+        "ja": "ふうん、おもしろいね。",
+        "kana": "ふうん、おもしろい ね。",
+        "ro": "fuun, omoshiroi ne."
+      },
+      {
+        "en": "Hmm, so that’s what happened.",
+        "ja": "ふうん、そういうことか。",
+        "kana": "ふうん、そういう こと か。",
+        "ro": "fuun, sou iu koto ka."
+      },
+      {
+        "en": "Hmm, I didn’t know that.",
+        "ja": "ふうん、知らなかった。",
+        "kana": "ふうん、しらなかった。",
+        "ro": "fuun, shiranakatta."
+      },
+      {
+        "en": "Hmm, okay.",
+        "ja": "ふうん、わかったよ。",
+        "kana": "ふうん、わかった よ。",
+        "ro": "fuun, wakatta yo."
+      }
+    ],
+    "grammar": "Interjection / Mild Reaction"
+  },
+  {
+    "id": "n3-intj-018",
+    "ja": "おおっと",
+    "kana": "おおっと",
+    "ro": "ootto",
+    "en": "Oops! / Whoa! — used when suddenly startled or off-balance",
+    "examples": [
+      {
+        "en": "Whoa! I almost fell!",
+        "ja": "おおっと、転びそうだった！",
+        "kana": "おおっと、ころびそう だった！",
+        "ro": "ootto, korobisou datta!"
+      },
+      {
+        "en": "Oops! I dropped it!",
+        "ja": "おおっと、落とした！",
+        "kana": "おおっと、おとした！",
+        "ro": "ootto, otoshita!"
+      },
+      {
+        "en": "Whoa! Be careful!",
+        "ja": "おおっと、気をつけて！",
+        "kana": "おおっと、き を つけて！",
+        "ro": "ootto, ki o tsukete!"
+      },
+      {
+        "en": "Oops! I spilled water!",
+        "ja": "おおっと、水をこぼした！",
+        "kana": "おおっと、みず を こぼした！",
+        "ro": "ootto, mizu o koboshita!"
+      },
+      {
+        "en": "Whoa! That was close!",
+        "ja": "おおっと、危なかった！",
+        "kana": "おおっと、あぶなかった！",
+        "ro": "ootto, abunakatta!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Accident Reaction"
+  },
+  {
+    "id": "n3-intj-019",
+    "ja": "はあ",
+    "kana": "はあ",
+    "ro": "haa",
+    "en": "Huh / Sigh — used to express confusion, relief, or exasperation",
+    "examples": [
+      {
+        "en": "Huh? What did you say?",
+        "ja": "はあ？今なんて言った？",
+        "kana": "はあ？ いま なんて いった？",
+        "ro": "haa? ima nante itta?"
+      },
+      {
+        "en": "Sigh... I’m tired.",
+        "ja": "はあ、疲れた。",
+        "kana": "はあ、つかれた。",
+        "ro": "haa, tsukareta."
+      },
+      {
+        "en": "Huh? Really?",
+        "ja": "はあ？ほんとうに？",
+        "kana": "はあ？ ほんとうに？",
+        "ro": "haa? hontou ni?"
+      },
+      {
+        "en": "Sigh... what should I do?",
+        "ja": "はあ、どうしようかな。",
+        "kana": "はあ、どうしよう かな。",
+        "ro": "haa, doushiyou kana."
+      },
+      {
+        "en": "Huh? Are you serious?",
+        "ja": "はあ？まじで？",
+        "kana": "はあ？ まじで？",
+        "ro": "haa? majide?"
+      }
+    ],
+    "grammar": "Interjection / Confusion or Relief"
+  },
+  {
+    "id": "n3-intj-020",
+    "ja": "なるほど",
+    "kana": "なるほど",
+    "ro": "naruhodo",
+    "en": "I see / Indeed — used to show understanding or agreement",
+    "examples": [
+      {
+        "en": "I see, that makes sense.",
+        "ja": "なるほど、そういうことか。",
+        "kana": "なるほど、そういう こと か。",
+        "ro": "naruhodo, sou iu koto ka."
+      },
+      {
+        "en": "I see, I get it now.",
+        "ja": "なるほど、わかったよ。",
+        "kana": "なるほど、わかった よ。",
+        "ro": "naruhodo, wakatta yo."
+      },
+      {
+        "en": "I see, that’s why.",
+        "ja": "なるほど、だからそうなったんだ。",
+        "kana": "なるほど、だから そう なった ん だ。",
+        "ro": "naruhodo, dakara sou natta n da."
+      },
+      {
+        "en": "I see, interesting idea.",
+        "ja": "なるほど、おもしろい考えだね。",
+        "kana": "なるほど、おもしろい かんがえ だ ね。",
+        "ro": "naruhodo, omoshiroi kangae da ne."
+      },
+      {
+        "en": "I see, that explains it.",
+        "ja": "なるほど、それでわかった。",
+        "kana": "なるほど、それで わかった。",
+        "ro": "naruhodo, sorede wakatta."
+      }
+    ],
+    "grammar": "Interjection / Understanding or Agreement"
+  },
+  {
+    "id": "n3-intj-021",
+    "ja": "ほんとう",
+    "kana": "ほんとう",
+    "ro": "hontou",
+    "en": "Really? / Is that true? — used to express surprise or interest",
+    "examples": [
+      {
+        "en": "Really? That’s amazing!",
+        "ja": "ほんとう？すごいね！",
+        "kana": "ほんとう？ すごい ね！",
+        "ro": "hontou? sugoi ne!"
+      },
+      {
+        "en": "Really? You met him?",
+        "ja": "ほんとう？彼に会ったの？",
+        "kana": "ほんとう？ かれ に あった の？",
+        "ro": "hontou? kare ni atta no?"
+      },
+      {
+        "en": "Really? I didn’t know that.",
+        "ja": "ほんとう？知らなかった！",
+        "kana": "ほんとう？ しらなかった！",
+        "ro": "hontou? shiranakatta!"
+      },
+      {
+        "en": "Really? That’s great!",
+        "ja": "ほんとう？それはよかったね！",
+        "kana": "ほんとう？ それは よかった ね！",
+        "ro": "hontou? sore wa yokatta ne!"
+      },
+      {
+        "en": "Really? I can’t believe it!",
+        "ja": "ほんとう？信じられない！",
+        "kana": "ほんとう？ しんじられない！",
+        "ro": "hontou? shinjirarenai!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Curiosity"
+  },
+  {
+    "id": "n3-intj-022",
+    "ja": "へっ",
+    "kana": "へっ",
+    "ro": "he",
+    "en": "Huh? / What? — used in confusion, disbelief, or light surprise",
+    "examples": [
+      {
+        "en": "Huh? What do you mean?",
+        "ja": "へっ？どういうこと？",
+        "kana": "へっ？ どういう こと？",
+        "ro": "he? dou iu koto?"
+      },
+      {
+        "en": "What? Me?",
+        "ja": "へっ？おれのこと？",
+        "kana": "へっ？ おれ の こと？",
+        "ro": "he? ore no koto?"
+      },
+      {
+        "en": "Huh? That’s strange.",
+        "ja": "へっ？おかしいな。",
+        "kana": "へっ？ おかしい な。",
+        "ro": "he? okashii na."
+      },
+      {
+        "en": "What? You’re serious?",
+        "ja": "へっ？まじで？",
+        "kana": "へっ？ まじで？",
+        "ro": "he? majide?"
+      },
+      {
+        "en": "Huh? I didn’t hear that.",
+        "ja": "へっ？聞いてなかった！",
+        "kana": "へっ？ きいて なかった！",
+        "ro": "he? kiite nakatta!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Confusion"
+  },
+  {
+    "id": "n3-intj-023",
+    "ja": "おおお",
+    "kana": "おおお",
+    "ro": "ooo",
+    "en": "Ohhh! / Wow! — used when strongly impressed or surprised",
+    "examples": [
+      {
+        "en": "Ohhh! That’s incredible!",
+        "ja": "おおお！すごい！",
+        "kana": "おおお！ すごい！",
+        "ro": "ooo! sugoi!"
+      },
+      {
+        "en": "Wow! Beautiful scenery!",
+        "ja": "おおお！きれいな景色！",
+        "kana": "おおお！ きれいな けしき！",
+        "ro": "ooo! kireina keshiki!"
+      },
+      {
+        "en": "Ohhh! Nice work!",
+        "ja": "おおお！いい仕事だ！",
+        "kana": "おおお！ いい しごと だ！",
+        "ro": "ooo! ii shigoto da!"
+      },
+      {
+        "en": "Wow! That’s delicious!",
+        "ja": "おおお！おいしい！",
+        "kana": "おおお！ おいしい！",
+        "ro": "ooo! oishii!"
+      },
+      {
+        "en": "Ohhh! You surprised me!",
+        "ja": "おおお！びっくりした！",
+        "kana": "おおお！ びっくり した！",
+        "ro": "ooo! bikkuri shita!"
+      }
+    ],
+    "grammar": "Interjection / Admiration or Shock"
+  },
+  {
+    "id": "n3-intj-024",
+    "ja": "はっ",
+    "kana": "はっ",
+    "ro": "ha",
+    "en": "Ah! / Oh! — used when suddenly realizing something or being startled",
+    "examples": [
+      {
+        "en": "Ah! I remember now!",
+        "ja": "はっ！思い出した！",
+        "kana": "はっ！ おもいだした！",
+        "ro": "ha! omoidashta!"
+      },
+      {
+        "en": "Oh! That’s it!",
+        "ja": "はっ！そうだ！",
+        "kana": "はっ！ そう だ！",
+        "ro": "ha! sou da!"
+      },
+      {
+        "en": "Ah! I forgot my phone!",
+        "ja": "はっ！携帯を忘れた！",
+        "kana": "はっ！ けいたい を わすれた！",
+        "ro": "ha! keitai o wasureta!"
+      },
+      {
+        "en": "Ah! I see now!",
+        "ja": "はっ！なるほど！",
+        "kana": "はっ！ なるほど！",
+        "ro": "ha! naruhodo!"
+      },
+      {
+        "en": "Oh! I didn’t notice!",
+        "ja": "はっ！気づかなかった！",
+        "kana": "はっ！ きづかなかった！",
+        "ro": "ha! kizukanakatta!"
+      }
+    ],
+    "grammar": "Interjection / Realization or Startle"
+  },
+  {
+    "id": "n3-intj-025",
+    "ja": "ふーん",
+    "kana": "ふーん",
+    "ro": "fuun",
+    "en": "Hmm / I see — used when showing light interest or mild surprise",
+    "examples": [
+      {
+        "en": "Hmm, I see.",
+        "ja": "ふーん、そうなんだ。",
+        "kana": "ふーん、そう なん だ。",
+        "ro": "fuun, sou nan da."
+      },
+      {
+        "en": "Hmm, interesting.",
+        "ja": "ふーん、おもしろいね。",
+        "kana": "ふーん、おもしろい ね。",
+        "ro": "fuun, omoshiroi ne."
+      },
+      {
+        "en": "Hmm, really?",
+        "ja": "ふーん、ほんとうに？",
+        "kana": "ふーん、ほんとうに？",
+        "ro": "fuun, hontou ni?"
+      },
+      {
+        "en": "Hmm, that makes sense.",
+        "ja": "ふーん、なるほどね。",
+        "kana": "ふーん、なるほど ね。",
+        "ro": "fuun, naruhodo ne."
+      },
+      {
+        "en": "Hmm, that’s fine then.",
+        "ja": "ふーん、じゃあいいか。",
+        "kana": "ふーん、じゃあ いい か。",
+        "ro": "fuun, jaa ii ka."
+      }
+    ],
+    "grammar": "Interjection / Mild Understanding"
+  },
+  {
+    "id": "n3-intj-026",
+    "ja": "はああ",
+    "kana": "はああ",
+    "ro": "haaa",
+    "en": "What!? / Huh!? — used when very surprised or frustrated",
+    "examples": [
+      {
+        "en": "What!? You did that!?",
+        "ja": "はああ！？そんなことしたの！？",
+        "kana": "はああ！？ そんな こと した の！？",
+        "ro": "haaa!? sonna koto shita no!?"
+      },
+      {
+        "en": "What!? That’s impossible!",
+        "ja": "はああ！？ありえない！",
+        "kana": "はああ！？ ありえない！",
+        "ro": "haaa!? arienai!"
+      },
+      {
+        "en": "What!? No way!",
+        "ja": "はああ！？うそでしょ！",
+        "kana": "はああ！？ うそ でしょ！",
+        "ro": "haaa!? uso desho!"
+      },
+      {
+        "en": "What!? I don’t believe it!",
+        "ja": "はああ！？信じられない！",
+        "kana": "はああ！？ しんじられない！",
+        "ro": "haaa!? shinjirarenai!"
+      },
+      {
+        "en": "What!? Are you kidding me!?",
+        "ja": "はああ！？まじで！？",
+        "kana": "はああ！？ まじで！？",
+        "ro": "haaa!? majide!?"
+      }
+    ],
+    "grammar": "Interjection / Shock or Disbelief"
+  },
+  {
+    "id": "n3-intj-027",
+    "ja": "よっしゃ",
+    "kana": "よっしゃ",
+    "ro": "yossha",
+    "en": "All right! / Yes! — used to express victory, excitement, or readiness",
+    "examples": [
+      {
+        "en": "Yes! I did it!",
+        "ja": "よっしゃ！やった！",
+        "kana": "よっしゃ！ やった！",
+        "ro": "yossha! yatta!"
+      },
+      {
+        "en": "All right! Let’s go!",
+        "ja": "よっしゃ！行くぞ！",
+        "kana": "よっしゃ！ いく ぞ！",
+        "ro": "yossha! iku zo!"
+      },
+      {
+        "en": "Yes! We won!",
+        "ja": "よっしゃ！勝った！",
+        "kana": "よっしゃ！ かった！",
+        "ro": "yossha! katta!"
+      },
+      {
+        "en": "All right! That’s done!",
+        "ja": "よっしゃ！終わった！",
+        "kana": "よっしゃ！ おわった！",
+        "ro": "yossha! owatta!"
+      },
+      {
+        "en": "Yes! Perfect timing!",
+        "ja": "よっしゃ！ちょうどいい！",
+        "kana": "よっしゃ！ ちょうど いい！",
+        "ro": "yossha! choudo ii!"
+      }
+    ],
+    "grammar": "Interjection / Victory or Motivation"
+  },
+  {
+    "id": "n3-intj-028",
+    "ja": "えへへ",
+    "kana": "えへへ",
+    "ro": "ehehe",
+    "en": "Hehe / Ehehe — used when shy, embarrassed, or joking",
+    "examples": [
+      {
+        "en": "Hehe, sorry about that.",
+        "ja": "えへへ、ごめんね。",
+        "kana": "えへへ、ごめん ね。",
+        "ro": "ehehe, gomen ne."
+      },
+      {
+        "en": "Hehe, thank you!",
+        "ja": "えへへ、ありがとう！",
+        "kana": "えへへ、ありがとう！",
+        "ro": "ehehe, arigatou!"
+      },
+      {
+        "en": "Hehe, I did it!",
+        "ja": "えへへ、できた！",
+        "kana": "えへへ、できた！",
+        "ro": "ehehe, dekita!"
+      },
+      {
+        "en": "Hehe, it’s nothing.",
+        "ja": "えへへ、たいしたことないよ。",
+        "kana": "えへへ、たいした こと ない よ。",
+        "ro": "ehehe, taishita koto nai yo."
+      },
+      {
+        "en": "Hehe, that’s a secret!",
+        "ja": "えへへ、ひみつ！",
+        "kana": "えへへ、ひみつ！",
+        "ro": "ehehe, himitsu!"
+      }
+    ],
+    "grammar": "Interjection / Shyness or Humor"
+  },
+  {
+    "id": "n3-intj-029",
+    "ja": "へっへっへ",
+    "kana": "へっへっへ",
+    "ro": "hehhehhe",
+    "en": "Heh heh heh — used when laughing slyly or teasing",
+    "examples": [
+      {
+        "en": "Heh heh heh, I knew it.",
+        "ja": "へっへっへ、やっぱりな。",
+        "kana": "へっへっへ、やっぱり な。",
+        "ro": "hehhehhe, yappari na."
+      },
+      {
+        "en": "Heh heh heh, I got you.",
+        "ja": "へっへっへ、つかまえたぞ。",
+        "kana": "へっへっへ、つかまえた ぞ。",
+        "ro": "hehhehhe, tsukamaeta zo."
+      },
+      {
+        "en": "Heh heh heh, that’s interesting.",
+        "ja": "へっへっへ、おもしろいね。",
+        "kana": "へっへっへ、おもしろい ね。",
+        "ro": "hehhehhe, omoshiroi ne."
+      },
+      {
+        "en": "Heh heh heh, you’ll see soon.",
+        "ja": "へっへっへ、すぐわかるよ。",
+        "kana": "へっへっへ、すぐ わかる よ。",
+        "ro": "hehhehhe, sugu wakaru yo."
+      },
+      {
+        "en": "Heh heh heh, perfect plan.",
+        "ja": "へっへっへ、完璧だ。",
+        "kana": "へっへっへ、かんぺき だ。",
+        "ro": "hehhehhe, kanpeki da."
+      }
+    ],
+    "grammar": "Interjection / Mischief or Amusement"
+  },
+  {
+    "id": "n3-intj-030",
+    "ja": "おおおっ",
+    "kana": "おおおっ",
+    "ro": "ooott",
+    "en": "Wow! / Ohhh! — used when strongly impressed or surprised",
+    "examples": [
+      {
+        "en": "Wow! Incredible!",
+        "ja": "おおおっ！すごい！",
+        "kana": "おおおっ！ すごい！",
+        "ro": "ooott! sugoi!"
+      },
+      {
+        "en": "Ohhh! That’s awesome!",
+        "ja": "おおおっ！いいね！",
+        "kana": "おおおっ！ いい ね！",
+        "ro": "ooott! ii ne!"
+      },
+      {
+        "en": "Wow! So beautiful!",
+        "ja": "おおおっ！きれい！",
+        "kana": "おおおっ！ きれい！",
+        "ro": "ooott! kirei!"
+      },
+      {
+        "en": "Ohhh! Nice timing!",
+        "ja": "おおおっ！ちょうどいい！",
+        "kana": "おおおっ！ ちょうど いい！",
+        "ro": "ooott! choudo ii!"
+      },
+      {
+        "en": "Wow! That’s the best!",
+        "ja": "おおおっ！最高だ！",
+        "kana": "おおおっ！ さいこう だ！",
+        "ro": "ooott! saikou da!"
+      }
+    ],
+    "grammar": "Interjection / Admiration or Surprise"
+  },
+  {
+    "id": "n3-intj-031",
+    "ja": "うわっ",
+    "kana": "うわっ",
+    "ro": "uwa",
+    "en": "Ugh! / Whoa! / Wow! — used when startled, shocked, or grossed out",
+    "examples": [
+      {
+        "en": "Ugh! That’s dirty!",
+        "ja": "うわっ、きたない！",
+        "kana": "うわっ、きたない！",
+        "ro": "uwa, kitanai!"
+      },
+      {
+        "en": "Whoa! That scared me!",
+        "ja": "うわっ、びっくりした！",
+        "kana": "うわっ、びっくり した！",
+        "ro": "uwa, bikkuri shita!"
+      },
+      {
+        "en": "Wow! That’s huge!",
+        "ja": "うわっ、おおきい！",
+        "kana": "うわっ、おおきい！",
+        "ro": "uwa, ookii!"
+      },
+      {
+        "en": "Ugh! It smells bad!",
+        "ja": "うわっ、くさい！",
+        "kana": "うわっ、くさい！",
+        "ro": "uwa, kusai!"
+      },
+      {
+        "en": "Whoa! It’s raining a lot!",
+        "ja": "うわっ、すごい雨！",
+        "kana": "うわっ、すごい あめ！",
+        "ro": "uwa, sugoi ame!"
+      }
+    ],
+    "grammar": "Interjection / Shock or Disgust"
+  },
+  {
+    "id": "n3-intj-032",
+    "ja": "やれやれ",
+    "kana": "やれやれ",
+    "ro": "yareyare",
+    "en": "Good grief... / Oh boy... — used to express relief or mild exhaustion",
+    "examples": [
+      {
+        "en": "Oh boy... finally done.",
+        "ja": "やれやれ、やっと終わった。",
+        "kana": "やれやれ、やっと おわった。",
+        "ro": "yareyare, yatto owatta."
+      },
+      {
+        "en": "Good grief... he’s late again.",
+        "ja": "やれやれ、また遅刻か。",
+        "kana": "やれやれ、また ちこく か。",
+        "ro": "yareyare, mata chikoku ka."
+      },
+      {
+        "en": "Oh dear... what a day.",
+        "ja": "やれやれ、たいへんな日だった。",
+        "kana": "やれやれ、たいへんな ひ だった。",
+        "ro": "yareyare, taihen na hi datta."
+      },
+      {
+        "en": "Sigh... kids these days.",
+        "ja": "やれやれ、最近の子は。",
+        "kana": "やれやれ、さいきん の こ は。",
+        "ro": "yareyare, saikin no ko wa."
+      },
+      {
+        "en": "Oh well... nothing to do now.",
+        "ja": "やれやれ、もうしかたない。",
+        "kana": "やれやれ、もう しかたない。",
+        "ro": "yareyare, mou shikata nai."
+      }
+    ],
+    "grammar": "Interjection / Relief or Weariness"
+  },
+  {
+    "id": "n3-intj-035",
+    "ja": "へええ",
+    "kana": "へええ",
+    "ro": "heee",
+    "en": "Oh really? / Wow — used when surprised or impressed by new information",
+    "examples": [
+      {
+        "en": "Wow, really?",
+        "ja": "へええ、そうなんだ。",
+        "kana": "へええ、そう なん だ。",
+        "ro": "heee, sou nan da."
+      },
+      {
+        "en": "Oh, interesting!",
+        "ja": "へええ、おもしろいね。",
+        "kana": "へええ、おもしろい ね。",
+        "ro": "heee, omoshiroi ne."
+      },
+      {
+        "en": "Wow, I didn’t know that.",
+        "ja": "へええ、知らなかった！",
+        "kana": "へええ、しらなかった！",
+        "ro": "heee, shiranakatta!"
+      },
+      {
+        "en": "Oh, so that’s how it works.",
+        "ja": "へええ、そういうことか。",
+        "kana": "へええ、そういう こと か。",
+        "ro": "heee, sou iu koto ka."
+      },
+      {
+        "en": "Wow, amazing!",
+        "ja": "へええ、すごいね！",
+        "kana": "へええ、すごい ね！",
+        "ro": "heee, sugoi ne!"
+      }
+    ],
+    "grammar": "Interjection / Interest or Admiration"
+  },
+  {
+    "id": "n3-intj-036",
+    "ja": "まじで",
+    "kana": "まじで",
+    "ro": "majide",
+    "en": "Seriously? / For real? — used to express disbelief or surprise",
+    "examples": [
+      {
+        "en": "Seriously? You’re kidding!",
+        "ja": "まじで？うそでしょ！",
+        "kana": "まじで？ うそ でしょ！",
+        "ro": "majide? uso desho!"
+      },
+      {
+        "en": "For real? That’s awesome!",
+        "ja": "まじで？すごいね！",
+        "kana": "まじで？ すごい ね！",
+        "ro": "majide? sugoi ne!"
+      },
+      {
+        "en": "Seriously? You did that?",
+        "ja": "まじで？そんなことしたの？",
+        "kana": "まじで？ そんな こと した の？",
+        "ro": "majide? sonna koto shita no?"
+      },
+      {
+        "en": "Seriously? No way!",
+        "ja": "まじで？ありえない！",
+        "kana": "まじで？ ありえない！",
+        "ro": "majide? arienai!"
+      },
+      {
+        "en": "Really? That’s true?",
+        "ja": "まじで？ほんとうなの？",
+        "kana": "まじで？ ほんとう なの？",
+        "ro": "majide? hontou nano?"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Disbelief"
+  },
+  {
+    "id": "n3-intj-038",
+    "ja": "うっわ",
+    "kana": "うっわ",
+    "ro": "uwwa",
+    "en": "Whoa! / Ew! — used when reacting to shock, surprise, or disgust",
+    "examples": [
+      {
+        "en": "Whoa! That’s huge!",
+        "ja": "うっわ、でかい！",
+        "kana": "うっわ、でかい！",
+        "ro": "uwwa, dekai!"
+      },
+      {
+        "en": "Ew! That smells bad!",
+        "ja": "うっわ、くさい！",
+        "kana": "うっわ、くさい！",
+        "ro": "uwwa, kusai!"
+      },
+      {
+        "en": "Whoa! So many people!",
+        "ja": "うっわ、人が多い！",
+        "kana": "うっわ、ひと が おおい！",
+        "ro": "uwwa, hito ga ooi!"
+      },
+      {
+        "en": "Whoa! That’s expensive!",
+        "ja": "うっわ、高い！",
+        "kana": "うっわ、たかい！",
+        "ro": "uwwa, takai!"
+      },
+      {
+        "en": "Ew! Gross!",
+        "ja": "うっわ、きもい！",
+        "kana": "うっわ、きもい！",
+        "ro": "uwwa, kimoi!"
+      }
+    ],
+    "grammar": "Interjection / Shock or Disgust"
+  },
+  {
+    "id": "n3-intj-039",
+    "ja": "はあああ",
+    "kana": "はあああ",
+    "ro": "haaaa",
+    "en": "Sigh... / What!? — used for deep exasperation or strong shock",
+    "examples": [
+      {
+        "en": "Sigh... I give up.",
+        "ja": "はあああ、もういいや。",
+        "kana": "はあああ、もう いい や。",
+        "ro": "haaaa, mou ii ya."
+      },
+      {
+        "en": "What!? You did that!?",
+        "ja": "はあああ！？信じられない！",
+        "kana": "はあああ！？ しんじられない！",
+        "ro": "haaaa!? shinjirarenai!"
+      },
+      {
+        "en": "Sigh... again?",
+        "ja": "はあああ、またか。",
+        "kana": "はあああ、また か。",
+        "ro": "haaaa, mata ka."
+      },
+      {
+        "en": "Sigh... this is tough.",
+        "ja": "はあああ、たいへんだ。",
+        "kana": "はあああ、たいへん だ。",
+        "ro": "haaaa, taihen da."
+      },
+      {
+        "en": "Sigh... what a day.",
+        "ja": "はあああ、つかれたな。",
+        "kana": "はあああ、つかれた な。",
+        "ro": "haaaa, tsukareta na."
+      }
+    ],
+    "grammar": "Interjection / Shock or Exasperation"
+  },
+  {
+    "id": "n3-intj-040",
+    "ja": "あらまあ",
+    "kana": "あらまあ",
+    "ro": "arama",
+    "en": "Oh my! / Dear me! — used when surprised, concerned, or impressed",
+    "examples": [
+      {
+        "en": "Oh my! Are you okay?",
+        "ja": "あらまあ、大丈夫？",
+        "kana": "あらまあ、だいじょうぶ？",
+        "ro": "arama, daijoubu?"
+      },
+      {
+        "en": "Oh dear! What happened?",
+        "ja": "あらまあ、どうしたの？",
+        "kana": "あらまあ、どうした の？",
+        "ro": "arama, doushita no?"
+      },
+      {
+        "en": "Oh my! How beautiful!",
+        "ja": "あらまあ、なんてきれい！",
+        "kana": "あらまあ、なんて きれい！",
+        "ro": "arama, nante kirei!"
+      },
+      {
+        "en": "Oh dear! That’s terrible!",
+        "ja": "あらまあ、ひどいわね！",
+        "kana": "あらまあ、ひどい わね！",
+        "ro": "arama, hidoi wane!"
+      },
+      {
+        "en": "Oh my! You grew up so fast!",
+        "ja": "あらまあ、大きくなったわね！",
+        "kana": "あらまあ、おおきく なった わね！",
+        "ro": "arama, ookiku natta wane!"
+      }
+    ],
+    "grammar": "Interjection / Surprise or Sympathy"
+  }
+]

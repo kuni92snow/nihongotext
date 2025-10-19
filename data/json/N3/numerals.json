@@ -1,0 +1,1954 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "kanji": "一匹",
+      "kana": "いっぴき",
+      "romaji": "ippiki",
+      "en": "one (small animal)",
+      "examples": [
+        {
+          "jp": "部屋に猫が一匹います。",
+          "jpH": "へや に ねこ が いっぴき います。",
+          "ro": "heya ni neko ga ippiki imasu.",
+          "en": "There is one cat in the room."
+        },
+        {
+          "jp": "一匹の犬が公園で遊んでいます。",
+          "jpH": "いっぴき の いぬ が こうえん で あそんで います。",
+          "ro": "ippiki no inu ga kouen de asonde imasu.",
+          "en": "One dog is playing in the park."
+        },
+        {
+          "jp": "魚を一匹つかまえました。",
+          "jpH": "さかな を いっぴき つかまえました。",
+          "ro": "sakana o ippiki tsukamaemashita.",
+          "en": "I caught one fish."
+        },
+        {
+          "jp": "彼は一匹のうさぎを飼っています。",
+          "jpH": "かれ は いっぴき の うさぎ を かって います。",
+          "ro": "kare wa ippiki no usagi o katte imasu.",
+          "en": "He keeps one rabbit."
+        },
+        {
+          "jp": "庭に一匹の虫がいます。",
+          "jpH": "にわ に いっぴき の むし が います。",
+          "ro": "niwa ni ippiki no mushi ga imasu.",
+          "en": "There is one insect in the garden."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "kanji": "二人",
+      "kana": "ふたり",
+      "romaji": "futari",
+      "en": "two people",
+      "examples": [
+        {
+          "jp": "二人で映画を見ました。",
+          "jpH": "ふたり で えいが を みました。",
+          "ro": "futari de eiga o mimashita.",
+          "en": "We watched a movie together."
+        },
+        {
+          "jp": "二人の友達が来ました。",
+          "jpH": "ふたり の ともだち が きました。",
+          "ro": "futari no tomodachi ga kimashita.",
+          "en": "Two friends came."
+        },
+        {
+          "jp": "二人とも元気です。",
+          "jpH": "ふたり とも げんき です。",
+          "ro": "futari tomo genki desu.",
+          "en": "Both of them are fine."
+        },
+        {
+          "jp": "二人で食事をしました。",
+          "jpH": "ふたり で しょくじ を しました。",
+          "ro": "futari de shokuji o shimashita.",
+          "en": "We had a meal together."
+        },
+        {
+          "jp": "二人は兄弟です。",
+          "jpH": "ふたり は きょうだい です。",
+          "ro": "futari wa kyoudai desu.",
+          "en": "The two are siblings."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "kanji": "三本",
+      "kana": "さんぼん",
+      "romaji": "sanbon",
+      "en": "three (long objects)",
+      "examples": [
+        {
+          "jp": "ペンを三本持っています。",
+          "jpH": "ぺん を さんぼん もって います。",
+          "ro": "pen o sanbon motte imasu.",
+          "en": "I have three pens."
+        },
+        {
+          "jp": "三本の木を植えました。",
+          "jpH": "さんぼん の き を うえました。",
+          "ro": "sanbon no ki o uemashita.",
+          "en": "We planted three trees."
+        },
+        {
+          "jp": "三本の映画を見ました。",
+          "jpH": "さんぼん の えいが を みました。",
+          "ro": "sanbon no eiga o mimashita.",
+          "en": "I watched three movies."
+        },
+        {
+          "jp": "ジュースを三本買いました。",
+          "jpH": "じゅーす を さんぼん かいました。",
+          "ro": "juusu o sanbon kaimashita.",
+          "en": "I bought three bottles of juice."
+        },
+        {
+          "jp": "三本の橋を渡りました。",
+          "jpH": "さんぼん の はし を わたりました。",
+          "ro": "sanbon no hashi o watarimashita.",
+          "en": "I crossed three bridges."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "kanji": "四枚",
+      "kana": "よんまい",
+      "romaji": "yonmai",
+      "en": "four (flat objects)",
+      "examples": [
+        {
+          "jp": "紙を四枚ください。",
+          "jpH": "かみ を よんまい ください。",
+          "ro": "kami o yonmai kudasai.",
+          "en": "Please give me four sheets of paper."
+        },
+        {
+          "jp": "写真を四枚撮りました。",
+          "jpH": "しゃしん を よんまい とりました。",
+          "ro": "shashin o yonmai torimashita.",
+          "en": "I took four pictures."
+        },
+        {
+          "jp": "四枚の切符を買いました。",
+          "jpH": "よんまい の きっぷ を かいました。",
+          "ro": "yonmai no kippu o kaimashita.",
+          "en": "I bought four tickets."
+        },
+        {
+          "jp": "四枚の皿をテーブルに置きました。",
+          "jpH": "よんまい の さら を てーぶる に おきました。",
+          "ro": "yonmai no sara o teeburu ni okimashita.",
+          "en": "I placed four plates on the table."
+        },
+        {
+          "jp": "四枚のカードを配ります。",
+          "jpH": "よんまい の かーど を くばります。",
+          "ro": "yonmai no kaado o kubarimasu.",
+          "en": "I will hand out four cards."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "kanji": "五回",
+      "kana": "ごかい",
+      "romaji": "gokai",
+      "en": "five times",
+      "examples": [
+        {
+          "jp": "映画を五回見ました。",
+          "jpH": "えいが を ごかい みました。",
+          "ro": "eiga o gokai mimashita.",
+          "en": "I watched the movie five times."
+        },
+        {
+          "jp": "五回テストを受けました。",
+          "jpH": "ごかい てすと を うけました。",
+          "ro": "gokai tesuto o ukemashita.",
+          "en": "I took the test five times."
+        },
+        {
+          "jp": "その店に五回行ったことがあります。",
+          "jpH": "その みせ に ごかい いった こと が あります。",
+          "ro": "sono mise ni gokai itta koto ga arimasu.",
+          "en": "I’ve been to that shop five times."
+        },
+        {
+          "jp": "五回も電話をかけました。",
+          "jpH": "ごかい も でんわ を かけました。",
+          "ro": "gokai mo denwa o kakemashita.",
+          "en": "I called five times."
+        },
+        {
+          "jp": "五回の練習で上手になりました。",
+          "jpH": "ごかい の れんしゅう で じょうず に なりました。",
+          "ro": "gokai no renshuu de jouzu ni narimashita.",
+          "en": "I got better after five practices."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "kanji": "六人",
+      "kana": "ろくにん",
+      "romaji": "rokunin",
+      "en": "six people",
+      "examples": [
+        {
+          "jp": "パーティーに六人が来ました。",
+          "jpH": "ぱーてぃー に ろくにん が きました。",
+          "ro": "paatii ni rokunin ga kimashita.",
+          "en": "Six people came to the party."
+        },
+        {
+          "jp": "家族は六人です。",
+          "jpH": "かぞく は ろくにん です。",
+          "ro": "kazoku wa rokunin desu.",
+          "en": "There are six people in my family."
+        },
+        {
+          "jp": "六人で旅行しました。",
+          "jpH": "ろくにん で りょこう しました。",
+          "ro": "rokunin de ryokou shimashita.",
+          "en": "We traveled in a group of six."
+        },
+        {
+          "jp": "六人が順番に話しました。",
+          "jpH": "ろくにん が じゅんばん に はなしました。",
+          "ro": "rokunin ga junban ni hanashimashita.",
+          "en": "Six people spoke in turn."
+        },
+        {
+          "jp": "六人の学生が発表します。",
+          "jpH": "ろくにん の がくせい が はっぴょう します。",
+          "ro": "rokunin no gakusei ga happyou shimasu.",
+          "en": "Six students will present."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "kanji": "七冊",
+      "kana": "ななさつ",
+      "romaji": "nanasatsu",
+      "en": "seven (books)",
+      "examples": [
+        {
+          "jp": "本を七冊読みました。",
+          "jpH": "ほん を ななさつ よみました。",
+          "ro": "hon o nanasatsu yomimashita.",
+          "en": "I read seven books."
+        },
+        {
+          "jp": "七冊のノートを買いました。",
+          "jpH": "ななさつ の のーと を かいました。",
+          "ro": "nanasatsu no nooto o kaimashita.",
+          "en": "I bought seven notebooks."
+        },
+        {
+          "jp": "七冊の漫画があります。",
+          "jpH": "ななさつ の まんが が あります。",
+          "ro": "nanasatsu no manga ga arimasu.",
+          "en": "There are seven comic books."
+        },
+        {
+          "jp": "七冊すべてを持ってきました。",
+          "jpH": "ななさつ すべて を もってきました。",
+          "ro": "nanasatsu subete o motte kimashita.",
+          "en": "I brought all seven volumes."
+        },
+        {
+          "jp": "七冊の辞書を使っています。",
+          "jpH": "ななさつ の じしょ を つかって います。",
+          "ro": "nanasatsu no jisho o tsukatte imasu.",
+          "en": "I use seven dictionaries."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "kanji": "八個",
+      "kana": "はっこ",
+      "romaji": "hakko",
+      "en": "eight (small round objects)",
+      "examples": [
+        {
+          "jp": "りんごを八個買いました。",
+          "jpH": "りんご を はっこ かいました。",
+          "ro": "ringo o hakko kaimashita.",
+          "en": "I bought eight apples."
+        },
+        {
+          "jp": "八個の卵があります。",
+          "jpH": "はっこ の たまご が あります。",
+          "ro": "hakko no tamago ga arimasu.",
+          "en": "There are eight eggs."
+        },
+        {
+          "jp": "八個のボールが箱に入っています。",
+          "jpH": "はっこ の ぼーる が はこ に はいって います。",
+          "ro": "hakko no booru ga hako ni haitte imasu.",
+          "en": "Eight balls are in the box."
+        },
+        {
+          "jp": "八個の石を集めました。",
+          "jpH": "はっこ の いし を あつめました。",
+          "ro": "hakko no ishi o atsumemashita.",
+          "en": "I collected eight stones."
+        },
+        {
+          "jp": "八個のキャンディーを配りました。",
+          "jpH": "はっこ の きゃんでぃー を くばりました。",
+          "ro": "hakko no kyandii o kubarimashita.",
+          "en": "I handed out eight candies."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "kanji": "九階",
+      "kana": "きゅうかい",
+      "romaji": "kyuukai",
+      "en": "ninth floor",
+      "examples": [
+        {
+          "jp": "会社は九階にあります。",
+          "jpH": "かいしゃ は きゅうかい に あります。",
+          "ro": "kaisha wa kyuukai ni arimasu.",
+          "en": "The company is on the ninth floor."
+        },
+        {
+          "jp": "九階からの景色はとてもきれいです。",
+          "jpH": "きゅうかい から の けしき は とても きれい です。",
+          "ro": "kyuukai kara no keshiki wa totemo kirei desu.",
+          "en": "The view from the ninth floor is beautiful."
+        },
+        {
+          "jp": "九階に上がるエレベーターがあります。",
+          "jpH": "きゅうかい に あがる えれべーたー が あります。",
+          "ro": "kyuukai ni agaru erebeetaa ga arimasu.",
+          "en": "There is an elevator that goes to the ninth floor."
+        },
+        {
+          "jp": "九階で昼ごはんを食べました。",
+          "jpH": "きゅうかい で ひるごはん を たべました。",
+          "ro": "kyuukai de hirugohan o tabemashita.",
+          "en": "I had lunch on the ninth floor."
+        },
+        {
+          "jp": "九階は会議室です。",
+          "jpH": "きゅうかい は かいぎしつ です。",
+          "ro": "kyuukai wa kaigishitsu desu.",
+          "en": "The ninth floor is the meeting room."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "kanji": "十回",
+      "kana": "じゅっかい",
+      "romaji": "jukkai",
+      "en": "ten times",
+      "examples": [
+        {
+          "jp": "十回練習しました。",
+          "jpH": "じゅっかい れんしゅう しました。",
+          "ro": "jukkai renshuu shimashita.",
+          "en": "I practiced ten times."
+        },
+        {
+          "jp": "その映画を十回見ました。",
+          "jpH": "その えいが を じゅっかい みました。",
+          "ro": "sono eiga o jukkai mimashita.",
+          "en": "I watched that movie ten times."
+        },
+        {
+          "jp": "十回も挑戦しました。",
+          "jpH": "じゅっかい も ちょうせん しました。",
+          "ro": "jukkai mo chousen shimashita.",
+          "en": "I tried ten times."
+        },
+        {
+          "jp": "十回目で成功しました。",
+          "jpH": "じゅっかいめ で せいこう しました。",
+          "ro": "jukkai me de seikou shimashita.",
+          "en": "I succeeded on the tenth try."
+        },
+        {
+          "jp": "十回のうち八回勝ちました。",
+          "jpH": "じゅっかい の うち はっかい かちました。",
+          "ro": "jukkai no uchi hakkai kachimashita.",
+          "en": "I won eight out of ten times."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "kanji": "十一時",
+      "kana": "じゅういちじ",
+      "romaji": "juuichiji",
+      "en": "eleven o’clock",
+      "examples": [
+        {
+          "jp": "会議は十一時に始まります。",
+          "jpH": "かいぎ は じゅういちじ に はじまります。",
+          "ro": "kaigi wa juuichiji ni hajimarimasu.",
+          "en": "The meeting starts at eleven o’clock."
+        },
+        {
+          "jp": "十一時に寝ました。",
+          "jpH": "じゅういちじ に ねました。",
+          "ro": "juuichiji ni nemashita.",
+          "en": "I went to bed at eleven o’clock."
+        },
+        {
+          "jp": "十一時に電車が出ます。",
+          "jpH": "じゅういちじ に でんしゃ が でます。",
+          "ro": "juuichiji ni densha ga demasu.",
+          "en": "The train leaves at eleven o’clock."
+        },
+        {
+          "jp": "十一時に友達と会います。",
+          "jpH": "じゅういちじ に ともだち と あいます。",
+          "ro": "juuichiji ni tomodachi to aimasu.",
+          "en": "I’ll meet my friend at eleven o’clock."
+        },
+        {
+          "jp": "十一時にお店が開きます。",
+          "jpH": "じゅういちじ に おみせ が あきます。",
+          "ro": "juuichiji ni omise ga akimasu.",
+          "en": "The store opens at eleven o’clock."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "kanji": "十二ヶ月",
+      "kana": "じゅうにかげつ",
+      "romaji": "juunikagetsu",
+      "en": "twelve months",
+      "examples": [
+        {
+          "jp": "日本に来て十二ヶ月が経ちました。",
+          "jpH": "にほん に きて じゅうにかげつ が たちました。",
+          "ro": "nihon ni kite juunikagetsu ga tachimashita.",
+          "en": "It has been twelve months since I came to Japan."
+        },
+        {
+          "jp": "赤ちゃんは十二ヶ月で歩き始めました。",
+          "jpH": "あかちゃん は じゅうにかげつ で あるき はじめました。",
+          "ro": "akachan wa juunikagetsu de aruki hajimemashita.",
+          "en": "The baby started walking at twelve months old."
+        },
+        {
+          "jp": "このプロジェクトは十二ヶ月かかります。",
+          "jpH": "この ぷろじぇくと は じゅうにかげつ かかります。",
+          "ro": "kono purojekuto wa juunikagetsu kakarimasu.",
+          "en": "This project will take twelve months."
+        },
+        {
+          "jp": "十二ヶ月分のデータを整理しました。",
+          "jpH": "じゅうにかげつぶん の でーた を せいり しました。",
+          "ro": "juunikagetsubun no deeta o seiri shimashita.",
+          "en": "I organized twelve months of data."
+        },
+        {
+          "jp": "十二ヶ月の努力が実りました。",
+          "jpH": "じゅうにかげつ の どりょく が みのりました。",
+          "ro": "juunikagetsu no doryoku ga minorimashita.",
+          "en": "Twelve months of effort paid off."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "kanji": "十三日",
+      "kana": "じゅうさんにち",
+      "romaji": "juusannichi",
+      "en": "the thirteenth day",
+      "examples": [
+        {
+          "jp": "今日は十三日です。",
+          "jpH": "きょう は じゅうさんにち です。",
+          "ro": "kyou wa juusannichi desu.",
+          "en": "Today is the thirteenth."
+        },
+        {
+          "jp": "十三日に会いましょう。",
+          "jpH": "じゅうさんにち に あいましょう。",
+          "ro": "juusannichi ni aimashou.",
+          "en": "Let’s meet on the thirteenth."
+        },
+        {
+          "jp": "十三日は母の誕生日です。",
+          "jpH": "じゅうさんにち は はは の たんじょうび です。",
+          "ro": "juusannichi wa haha no tanjoubi desu.",
+          "en": "The thirteenth is my mother’s birthday."
+        },
+        {
+          "jp": "十三日に旅行に出発します。",
+          "jpH": "じゅうさんにち に りょこう に しゅっぱつ します。",
+          "ro": "juusannichi ni ryokou ni shuppatsu shimasu.",
+          "en": "We’ll leave for the trip on the thirteenth."
+        },
+        {
+          "jp": "十三日は雨が降りました。",
+          "jpH": "じゅうさんにち は あめ が ふりました。",
+          "ro": "juusannichi wa ame ga furimashita.",
+          "en": "It rained on the thirteenth."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "kanji": "十四歳",
+      "kana": "じゅうよんさい",
+      "romaji": "juuyonsai",
+      "en": "fourteen years old",
+      "examples": [
+        {
+          "jp": "妹は十四歳です。",
+          "jpH": "いもうと は じゅうよんさい です。",
+          "ro": "imouto wa juuyonsai desu.",
+          "en": "My younger sister is fourteen years old."
+        },
+        {
+          "jp": "十四歳でピアノを始めました。",
+          "jpH": "じゅうよんさい で ぴあの を はじめました。",
+          "ro": "juuyonsai de piano o hajimemashita.",
+          "en": "I started playing the piano at fourteen."
+        },
+        {
+          "jp": "十四歳の時、初めて海外に行きました。",
+          "jpH": "じゅうよんさい の とき、 はじめて かいがい に いきました。",
+          "ro": "juuyonsai no toki, hajimete kaigai ni ikimashita.",
+          "en": "I went abroad for the first time at fourteen."
+        },
+        {
+          "jp": "彼は十四歳の少年です。",
+          "jpH": "かれ は じゅうよんさい の しょうねん です。",
+          "ro": "kare wa juuyonsai no shounen desu.",
+          "en": "He is a fourteen-year-old boy."
+        },
+        {
+          "jp": "十四歳の誕生日に自転車をもらいました。",
+          "jpH": "じゅうよんさい の たんじょうび に じてんしゃ を もらいました。",
+          "ro": "juuyonsai no tanjoubi ni jitensha o moraimashita.",
+          "en": "I received a bicycle for my fourteenth birthday."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "kanji": "十五分",
+      "kana": "じゅうごふん",
+      "romaji": "juugofun",
+      "en": "fifteen minutes",
+      "examples": [
+        {
+          "jp": "駅まで十五分かかります。",
+          "jpH": "えき まで じゅうごふん かかります。",
+          "ro": "eki made juugofun kakarimasu.",
+          "en": "It takes fifteen minutes to the station."
+        },
+        {
+          "jp": "十五分休みましょう。",
+          "jpH": "じゅうごふん やすみましょう。",
+          "ro": "juugofun yasumimashou.",
+          "en": "Let’s take a fifteen-minute break."
+        },
+        {
+          "jp": "十五分後に出発します。",
+          "jpH": "じゅうごふん ご に しゅっぱつ します。",
+          "ro": "juugofun go ni shuppatsu shimasu.",
+          "en": "We will leave in fifteen minutes."
+        },
+        {
+          "jp": "十五分で宿題を終わらせました。",
+          "jpH": "じゅうごふん で しゅくだい を おわらせました。",
+          "ro": "juugofun de shukudai o owarasemashita.",
+          "en": "I finished my homework in fifteen minutes."
+        },
+        {
+          "jp": "十五分ほど歩きました。",
+          "jpH": "じゅうごふん ほど あるきました。",
+          "ro": "juugofun hodo arukimashita.",
+          "en": "I walked for about fifteen minutes."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "kanji": "十六日",
+      "kana": "じゅうろくにち",
+      "romaji": "juurokunichi",
+      "en": "the sixteenth day",
+      "examples": [
+        {
+          "jp": "今日は十六日です。",
+          "jpH": "きょう は じゅうろくにち です。",
+          "ro": "kyou wa juurokunichi desu.",
+          "en": "Today is the sixteenth."
+        },
+        {
+          "jp": "十六日に試験があります。",
+          "jpH": "じゅうろくにち に しけん が あります。",
+          "ro": "juurokunichi ni shiken ga arimasu.",
+          "en": "There is a test on the sixteenth."
+        },
+        {
+          "jp": "十六日に旅行します。",
+          "jpH": "じゅうろくにち に りょこう します。",
+          "ro": "juurokunichi ni ryokou shimasu.",
+          "en": "We will travel on the sixteenth."
+        },
+        {
+          "jp": "十六日は晴れるそうです。",
+          "jpH": "じゅうろくにち は はれる そう です。",
+          "ro": "juurokunichi wa hareru sou desu.",
+          "en": "It will be sunny on the sixteenth."
+        },
+        {
+          "jp": "十六日に友達の家に行きます。",
+          "jpH": "じゅうろくにち に ともだち の いえ に いきます。",
+          "ro": "juurokunichi ni tomodachi no ie ni ikimasu.",
+          "en": "I’ll go to my friend’s house on the sixteenth."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "kanji": "十七歳",
+      "kana": "じゅうななさい",
+      "romaji": "juunanasai",
+      "en": "seventeen years old",
+      "examples": [
+        {
+          "jp": "姉は十七歳です。",
+          "jpH": "あね は じゅうななさい です。",
+          "ro": "ane wa juunanasai desu.",
+          "en": "My older sister is seventeen years old."
+        },
+        {
+          "jp": "十七歳で高校に通っています。",
+          "jpH": "じゅうななさい で こうこう に かよって います。",
+          "ro": "juunanasai de koukou ni kayotte imasu.",
+          "en": "I go to high school at seventeen."
+        },
+        {
+          "jp": "十七歳の時にバイトを始めました。",
+          "jpH": "じゅうななさい の とき に ばいと を はじめました。",
+          "ro": "juunanasai no toki ni baito o hajimemashita.",
+          "en": "I started my first part-time job at seventeen."
+        },
+        {
+          "jp": "十七歳の弟はサッカーが得意です。",
+          "jpH": "じゅうななさい の おとうと は さっかー が とくい です。",
+          "ro": "juunanasai no otouto wa sakkaa ga tokui desu.",
+          "en": "My seventeen-year-old brother is good at soccer."
+        },
+        {
+          "jp": "彼は十七歳で車の免許を取りました。",
+          "jpH": "かれ は じゅうななさい で くるま の めんきょ を とりました。",
+          "ro": "kare wa juunanasai de kuruma no menkyo o torimashita.",
+          "en": "He got his driver’s license at seventeen."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "kanji": "十八階",
+      "kana": "じゅうはっかい",
+      "romaji": "juuhakkai",
+      "en": "eighteenth floor",
+      "examples": [
+        {
+          "jp": "事務所は十八階にあります。",
+          "jpH": "じむしょ は じゅうはっかい に あります。",
+          "ro": "jimusho wa juuhakkai ni arimasu.",
+          "en": "The office is on the eighteenth floor."
+        },
+        {
+          "jp": "十八階のレストランで食事しました。",
+          "jpH": "じゅうはっかい の れすとらん で しょくじ しました。",
+          "ro": "juuhakkai no resutoran de shokuji shimashita.",
+          "en": "We dined at the restaurant on the eighteenth floor."
+        },
+        {
+          "jp": "十八階からの眺めは最高です。",
+          "jpH": "じゅうはっかい から の ながめ は さいこう です。",
+          "ro": "juuhakkai kara no nagame wa saikou desu.",
+          "en": "The view from the eighteenth floor is great."
+        },
+        {
+          "jp": "十八階までエレベーターで行きます。",
+          "jpH": "じゅうはっかい まで えれべーたー で いきます。",
+          "ro": "juuhakkai made erebeetaa de ikimasu.",
+          "en": "I’ll take the elevator to the eighteenth floor."
+        },
+        {
+          "jp": "十八階の部屋が空いています。",
+          "jpH": "じゅうはっかい の へや が あいて います。",
+          "ro": "juuhakkai no heya ga aite imasu.",
+          "en": "The room on the eighteenth floor is available."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "kanji": "十九本",
+      "kana": "じゅうきゅうほん",
+      "romaji": "juukyuuhon",
+      "en": "nineteen (long objects)",
+      "examples": [
+        {
+          "jp": "十九本のえんぴつがあります。",
+          "jpH": "じゅうきゅうほん の えんぴつ が あります。",
+          "ro": "juukyuuhon no enpitsu ga arimasu.",
+          "en": "There are nineteen pencils."
+        },
+        {
+          "jp": "十九本の木を切りました。",
+          "jpH": "じゅうきゅうほん の き を きりました。",
+          "ro": "juukyuuhon no ki o kirimashita.",
+          "en": "We cut nineteen trees."
+        },
+        {
+          "jp": "十九本のペンを集めました。",
+          "jpH": "じゅうきゅうほん の ぺん を あつめました。",
+          "ro": "juukyuuhon no pen o atsumemashita.",
+          "en": "I collected nineteen pens."
+        },
+        {
+          "jp": "十九本の花を花瓶に入れました。",
+          "jpH": "じゅうきゅうほん の はな を かびん に いれました。",
+          "ro": "juukyuuhon no hana o kabin ni iremashita.",
+          "en": "I put nineteen flowers in a vase."
+        },
+        {
+          "jp": "十九本のろうそくを消しました。",
+          "jpH": "じゅうきゅうほん の ろうそく を けしました。",
+          "ro": "juukyuuhon no rousoku o keshimashita.",
+          "en": "I blew out nineteen candles."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "kanji": "二十個",
+      "kana": "にじゅっこ",
+      "romaji": "nijukko",
+      "en": "twenty (small round objects)",
+      "examples": [
+        {
+          "jp": "みかんを二十個買いました。",
+          "jpH": "みかん を にじゅっこ かいました。",
+          "ro": "mikan o nijukko kaimashita.",
+          "en": "I bought twenty mandarins."
+        },
+        {
+          "jp": "二十個のボールが箱にあります。",
+          "jpH": "にじゅっこ の ぼーる が はこ に あります。",
+          "ro": "nijukko no booru ga hako ni arimasu.",
+          "en": "There are twenty balls in the box."
+        },
+        {
+          "jp": "二十個の問題を解きました。",
+          "jpH": "にじゅっこ の もんだい を ときました。",
+          "ro": "nijukko no mondai o tokimashita.",
+          "en": "I solved twenty questions."
+        },
+        {
+          "jp": "二十個の星が見えました。",
+          "jpH": "にじゅっこ の ほし が みえました。",
+          "ro": "nijukko no hoshi ga miemashita.",
+          "en": "I could see twenty stars."
+        },
+        {
+          "jp": "二十個のクッキーを焼きました。",
+          "jpH": "にじゅっこ の くっきー を やきました。",
+          "ro": "nijukko no kukkii o yakimashita.",
+          "en": "I baked twenty cookies."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "kanji": "二十一人",
+      "kana": "にじゅういちにん",
+      "romaji": "nijuuichinin",
+      "en": "twenty-one people",
+      "examples": [
+        {
+          "jp": "クラスには二十一人の学生がいます。",
+          "jpH": "くらす には にじゅういちにん の がくせい が います。",
+          "ro": "kurasu ni wa nijuuichinin no gakusei ga imasu.",
+          "en": "There are twenty-one students in the class."
+        },
+        {
+          "jp": "二十一人が試合に出ました。",
+          "jpH": "にじゅういちにん が しあい に でました。",
+          "ro": "nijuuichinin ga shiai ni demashita.",
+          "en": "Twenty-one people participated in the game."
+        },
+        {
+          "jp": "二十一人のメンバーが集まりました。",
+          "jpH": "にじゅういちにん の めんばー が あつまりました。",
+          "ro": "nijuuichinin no menbaa ga atsumarimashita.",
+          "en": "Twenty-one members gathered."
+        },
+        {
+          "jp": "パーティーには二十一人が来ました。",
+          "jpH": "ぱーてぃー には にじゅういちにん が きました。",
+          "ro": "paatii ni wa nijuuichinin ga kimashita.",
+          "en": "Twenty-one people came to the party."
+        },
+        {
+          "jp": "二十一人全員が賛成しました。",
+          "jpH": "にじゅういちにん ぜんいん が さんせい しました。",
+          "ro": "nijuuichinin zen'in ga sansei shimashita.",
+          "en": "All twenty-one people agreed."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "kanji": "二十二枚",
+      "kana": "にじゅうにまい",
+      "romaji": "nijuunimai",
+      "en": "twenty-two (flat objects)",
+      "examples": [
+        {
+          "jp": "写真を二十二枚撮りました。",
+          "jpH": "しゃしん を にじゅうにまい とりました。",
+          "ro": "shashin o nijuunimai torimashita.",
+          "en": "I took twenty-two pictures."
+        },
+        {
+          "jp": "二十二枚のチケットを配りました。",
+          "jpH": "にじゅうにまい の ちけっと を くばりました。",
+          "ro": "nijuunimai no chiketto o kubarimashita.",
+          "en": "I handed out twenty-two tickets."
+        },
+        {
+          "jp": "二十二枚の皿を洗いました。",
+          "jpH": "にじゅうにまい の さら を あらいました。",
+          "ro": "nijuunimai no sara o araimashita.",
+          "en": "I washed twenty-two plates."
+        },
+        {
+          "jp": "二十二枚の紙を机に置きました。",
+          "jpH": "にじゅうにまい の かみ を つくえ に おきました。",
+          "ro": "nijuunimai no kami o tsukue ni okimashita.",
+          "en": "I put twenty-two sheets of paper on the desk."
+        },
+        {
+          "jp": "二十二枚のカードを使って遊びました。",
+          "jpH": "にじゅうにまい の かーど を つかって あそびました。",
+          "ro": "nijuunimai no kaado o tsukatte asobimashita.",
+          "en": "We played using twenty-two cards."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "kanji": "二十三本",
+      "kana": "にじゅうさんぼん",
+      "romaji": "nijuusanbon",
+      "en": "twenty-three (long objects)",
+      "examples": [
+        {
+          "jp": "花を二十三本買いました。",
+          "jpH": "はな を にじゅうさんぼん かいました。",
+          "ro": "hana o nijuusanbon kaimashita.",
+          "en": "I bought twenty-three flowers."
+        },
+        {
+          "jp": "二十三本のペンがあります。",
+          "jpH": "にじゅうさんぼん の ぺん が あります。",
+          "ro": "nijuusanbon no pen ga arimasu.",
+          "en": "There are twenty-three pens."
+        },
+        {
+          "jp": "二十三本の木を植えました。",
+          "jpH": "にじゅうさんぼん の き を うえました。",
+          "ro": "nijuusanbon no ki o uemashita.",
+          "en": "We planted twenty-three trees."
+        },
+        {
+          "jp": "二十三本のろうそくを立てました。",
+          "jpH": "にじゅうさんぼん の ろうそく を たてました。",
+          "ro": "nijuusanbon no rousoku o tatemashita.",
+          "en": "We lit twenty-three candles."
+        },
+        {
+          "jp": "二十三本のジュースを持ってきました。",
+          "jpH": "にじゅうさんぼん の じゅーす を もってきました。",
+          "ro": "nijuusanbon no juusu o motte kimashita.",
+          "en": "I brought twenty-three bottles of juice."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "kanji": "二十四時間",
+      "kana": "にじゅうよじかん",
+      "romaji": "nijuuyojikan",
+      "en": "twenty-four hours",
+      "examples": [
+        {
+          "jp": "この店は二十四時間開いています。",
+          "jpH": "この みせ は にじゅうよじかん あいて います。",
+          "ro": "kono mise wa nijuuyojikan aite imasu.",
+          "en": "This store is open twenty-four hours."
+        },
+        {
+          "jp": "二十四時間働きました。",
+          "jpH": "にじゅうよじかん はたらきました。",
+          "ro": "nijuuyojikan hatarakimashita.",
+          "en": "I worked for twenty-four hours."
+        },
+        {
+          "jp": "二十四時間テレビを見ました。",
+          "jpH": "にじゅうよじかん てれび を みました。",
+          "ro": "nijuuyojikan terebi o mimashita.",
+          "en": "I watched TV for twenty-four hours."
+        },
+        {
+          "jp": "二十四時間以内に終わらせてください。",
+          "jpH": "にじゅうよじかん いない に おわらせて ください。",
+          "ro": "nijuuyojikan inai ni owarasete kudasai.",
+          "en": "Please finish it within twenty-four hours."
+        },
+        {
+          "jp": "二十四時間いつでも注文できます。",
+          "jpH": "にじゅうよじかん いつ でも ちゅうもん できます。",
+          "ro": "nijuuyojikan itsu demo chuumon dekimasu.",
+          "en": "You can order anytime, twenty-four hours a day."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "kanji": "二十五円",
+      "kana": "にじゅうごえん",
+      "romaji": "nijuugoen",
+      "en": "twenty-five yen",
+      "examples": [
+        {
+          "jp": "りんごは二十五円です。",
+          "jpH": "りんご は にじゅうごえん です。",
+          "ro": "ringo wa nijuugoen desu.",
+          "en": "The apple costs twenty-five yen."
+        },
+        {
+          "jp": "このパンは二十五円安いです。",
+          "jpH": "この ぱん は にじゅうごえん やすい です。",
+          "ro": "kono pan wa nijuugoen yasui desu.",
+          "en": "This bread is twenty-five yen cheaper."
+        },
+        {
+          "jp": "二十五円玉を拾いました。",
+          "jpH": "にじゅうごえん だま を ひろいました。",
+          "ro": "nijuugoen dama o hiroimashita.",
+          "en": "I picked up a twenty-five yen coin."
+        },
+        {
+          "jp": "二十五円足りません。",
+          "jpH": "にじゅうごえん たりません。",
+          "ro": "nijuugoen tarimasen.",
+          "en": "I’m short twenty-five yen."
+        },
+        {
+          "jp": "二十五円の差があります。",
+          "jpH": "にじゅうごえん の さ が あります。",
+          "ro": "nijuugoen no sa ga arimasu.",
+          "en": "There is a difference of twenty-five yen."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "kanji": "二十六歳",
+      "kana": "にじゅうろくさい",
+      "romaji": "nijuurokusai",
+      "en": "twenty-six years old",
+      "examples": [
+        {
+          "jp": "兄は二十六歳です。",
+          "jpH": "あに は にじゅうろくさい です。",
+          "ro": "ani wa nijuurokusai desu.",
+          "en": "My older brother is twenty-six years old."
+        },
+        {
+          "jp": "二十六歳で結婚しました。",
+          "jpH": "にじゅうろくさい で けっこん しました。",
+          "ro": "nijuurokusai de kekkon shimashita.",
+          "en": "I got married at twenty-six."
+        },
+        {
+          "jp": "二十六歳のとき東京に引っ越しました。",
+          "jpH": "にじゅうろくさい の とき とうきょう に ひっこしました。",
+          "ro": "nijuurokusai no toki toukyou ni hikkoshimashita.",
+          "en": "I moved to Tokyo when I was twenty-six."
+        },
+        {
+          "jp": "彼は二十六歳で会社を作りました。",
+          "jpH": "かれ は にじゅうろくさい で かいしゃ を つくりました。",
+          "ro": "kare wa nijuurokusai de kaisha o tsukurimashita.",
+          "en": "He started a company at twenty-six."
+        },
+        {
+          "jp": "二十六歳の妹は教師です。",
+          "jpH": "にじゅうろくさい の いもうと は きょうし です。",
+          "ro": "nijuurokusai no imouto wa kyoushi desu.",
+          "en": "My twenty-six-year-old sister is a teacher."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "kanji": "二十七回",
+      "kana": "にじゅうななかい",
+      "romaji": "nijuunanakai",
+      "en": "twenty-seven times",
+      "examples": [
+        {
+          "jp": "その映画を二十七回見ました。",
+          "jpH": "その えいが を にじゅうななかい みました。",
+          "ro": "sono eiga o nijuunanakai mimashita.",
+          "en": "I watched that movie twenty-seven times."
+        },
+        {
+          "jp": "二十七回も挑戦しました。",
+          "jpH": "にじゅうななかい も ちょうせん しました。",
+          "ro": "nijuunanakai mo chousen shimashita.",
+          "en": "I tried twenty-seven times."
+        },
+        {
+          "jp": "二十七回目の試合で勝ちました。",
+          "jpH": "にじゅうななかいめ の しあい で かちました。",
+          "ro": "nijuunanakaime no shiai de kachimashita.",
+          "en": "I won on my twenty-seventh match."
+        },
+        {
+          "jp": "このボタンを二十七回押してください。",
+          "jpH": "この ぼたん を にじゅうななかい おしてください。",
+          "ro": "kono botan o nijuunanakai oshite kudasai.",
+          "en": "Please press this button twenty-seven times."
+        },
+        {
+          "jp": "二十七回の練習で上達しました。",
+          "jpH": "にじゅうななかい の れんしゅう で じょうたつ しました。",
+          "ro": "nijuunanakai no renshuu de joutatsu shimashita.",
+          "en": "I improved after practicing twenty-seven times."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "kanji": "二十八日",
+      "kana": "にじゅうはちにち",
+      "romaji": "nijuuhachinichi",
+      "en": "the twenty-eighth day",
+      "examples": [
+        {
+          "jp": "今日は二十八日です。",
+          "jpH": "きょう は にじゅうはちにち です。",
+          "ro": "kyou wa nijuuhachinichi desu.",
+          "en": "Today is the twenty-eighth."
+        },
+        {
+          "jp": "二十八日に会議があります。",
+          "jpH": "にじゅうはちにち に かいぎ が あります。",
+          "ro": "nijuuhachinichi ni kaigi ga arimasu.",
+          "en": "There is a meeting on the twenty-eighth."
+        },
+        {
+          "jp": "二十八日に旅行に行きます。",
+          "jpH": "にじゅうはちにち に りょこう に いきます。",
+          "ro": "nijuuhachinichi ni ryokou ni ikimasu.",
+          "en": "I will travel on the twenty-eighth."
+        },
+        {
+          "jp": "二十八日は給料日です。",
+          "jpH": "にじゅうはちにち は きゅうりょうび です。",
+          "ro": "nijuuhachinichi wa kyuuryoubi desu.",
+          "en": "The twenty-eighth is payday."
+        },
+        {
+          "jp": "二十八日にテストがあります。",
+          "jpH": "にじゅうはちにち に てすと が あります。",
+          "ro": "nijuuhachinichi ni tesuto ga arimasu.",
+          "en": "We have a test on the twenty-eighth."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "kanji": "二十九冊",
+      "kana": "にじゅうきゅうさつ",
+      "romaji": "nijuukyuusatsu",
+      "en": "twenty-nine books",
+      "examples": [
+        {
+          "jp": "本を二十九冊持っています。",
+          "jpH": "ほん を にじゅうきゅうさつ もって います。",
+          "ro": "hon o nijuukyuusatsu motte imasu.",
+          "en": "I have twenty-nine books."
+        },
+        {
+          "jp": "図書館で二十九冊借りました。",
+          "jpH": "としょかん で にじゅうきゅうさつ かりました。",
+          "ro": "toshokan de nijuukyuusatsu karimashita.",
+          "en": "I borrowed twenty-nine books from the library."
+        },
+        {
+          "jp": "二十九冊のノートを整理しました。",
+          "jpH": "にじゅうきゅうさつ の のーと を せいり しました。",
+          "ro": "nijuukyuusatsu no nooto o seiri shimashita.",
+          "en": "I organized twenty-nine notebooks."
+        },
+        {
+          "jp": "二十九冊の雑誌を処分しました。",
+          "jpH": "にじゅうきゅうさつ の ざっし を しょぶん しました。",
+          "ro": "nijuukyuusatsu no zasshi o shobun shimashita.",
+          "en": "I got rid of twenty-nine magazines."
+        },
+        {
+          "jp": "二十九冊の教科書が棚にあります。",
+          "jpH": "にじゅうきゅうさつ の きょうかしょ が たな に あります。",
+          "ro": "nijuukyuusatsu no kyoukasho ga tana ni arimasu.",
+          "en": "There are twenty-nine textbooks on the shelf."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "kanji": "三十分",
+      "kana": "さんじっぷん",
+      "romaji": "sanjippun",
+      "en": "thirty minutes",
+      "examples": [
+        {
+          "jp": "駅まで三十分かかります。",
+          "jpH": "えき まで さんじっぷん かかります。",
+          "ro": "eki made sanjippun kakarimasu.",
+          "en": "It takes thirty minutes to the station."
+        },
+        {
+          "jp": "三十分で昼ごはんを食べました。",
+          "jpH": "さんじっぷん で ひるごはん を たべました。",
+          "ro": "sanjippun de hirugohan o tabemashita.",
+          "en": "I ate lunch in thirty minutes."
+        },
+        {
+          "jp": "三十分後に戻ります。",
+          "jpH": "さんじっぷん ご に もどります。",
+          "ro": "sanjippun go ni modorimasu.",
+          "en": "I’ll be back in thirty minutes."
+        },
+        {
+          "jp": "三十分だけ休みます。",
+          "jpH": "さんじっぷん だけ やすみます。",
+          "ro": "sanjippun dake yasumimasu.",
+          "en": "I’ll rest for only thirty minutes."
+        },
+        {
+          "jp": "三十分間、音楽を聴きました。",
+          "jpH": "さんじっぷんかん おんがく を ききました。",
+          "ro": "sanjippunkan ongaku o kikimashita.",
+          "en": "I listened to music for thirty minutes."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "kanji": "三十一日",
+      "kana": "さんじゅういちにち",
+      "romaji": "sanjuuichinichi",
+      "en": "the thirty-first day",
+      "examples": [
+        {
+          "jp": "今日は三十一日です。",
+          "jpH": "きょう は さんじゅういちにち です。",
+          "ro": "kyou wa sanjuuichinichi desu.",
+          "en": "Today is the thirty-first."
+        },
+        {
+          "jp": "三十一日に友達と会います。",
+          "jpH": "さんじゅういちにち に ともだち と あいます。",
+          "ro": "sanjuuichinichi ni tomodachi to aimasu.",
+          "en": "I’ll meet my friend on the thirty-first."
+        },
+        {
+          "jp": "三十一日はパーティーがあります。",
+          "jpH": "さんじゅういちにち は ぱーてぃー が あります。",
+          "ro": "sanjuuichinichi wa paatii ga arimasu.",
+          "en": "There is a party on the thirty-first."
+        },
+        {
+          "jp": "三十一日に旅行が終わります。",
+          "jpH": "さんじゅういちにち に りょこう が おわります。",
+          "ro": "sanjuuichinichi ni ryokou ga owarimasu.",
+          "en": "The trip ends on the thirty-first."
+        },
+        {
+          "jp": "三十一日は特別な日です。",
+          "jpH": "さんじゅういちにち は とくべつ な ひ です。",
+          "ro": "sanjuuichinichi wa tokubetsu na hi desu.",
+          "en": "The thirty-first is a special day."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "kanji": "三十二歳",
+      "kana": "さんじゅうにさい",
+      "romaji": "sanjuunisai",
+      "en": "thirty-two years old",
+      "examples": [
+        {
+          "jp": "姉は三十二歳です。",
+          "jpH": "あね は さんじゅうにさい です。",
+          "ro": "ane wa sanjuunisai desu.",
+          "en": "My older sister is thirty-two years old."
+        },
+        {
+          "jp": "三十二歳で先生になりました。",
+          "jpH": "さんじゅうにさい で せんせい に なりました。",
+          "ro": "sanjuunisai de sensei ni narimashita.",
+          "en": "I became a teacher at thirty-two."
+        },
+        {
+          "jp": "彼は三十二歳の医者です。",
+          "jpH": "かれ は さんじゅうにさい の いしゃ です。",
+          "ro": "kare wa sanjuunisai no isha desu.",
+          "en": "He is a thirty-two-year-old doctor."
+        },
+        {
+          "jp": "三十二歳の時に留学しました。",
+          "jpH": "さんじゅうにさい の とき に りゅうがく しました。",
+          "ro": "sanjuunisai no toki ni ryuugaku shimashita.",
+          "en": "I studied abroad at thirty-two."
+        },
+        {
+          "jp": "三十二歳でも新しいことを始めたいです。",
+          "jpH": "さんじゅうにさい でも あたらしい こと を はじめたい です。",
+          "ro": "sanjuunisai demo atarashii koto o hajimetai desu.",
+          "en": "Even at thirty-two, I want to start something new."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "kanji": "三十三分",
+      "kana": "さんじゅうさんぷん",
+      "romaji": "sanjuusanpun",
+      "en": "thirty-three minutes",
+      "examples": [
+        {
+          "jp": "駅まで三十三分かかります。",
+          "jpH": "えき まで さんじゅうさんぷん かかります。",
+          "ro": "eki made sanjuusanpun kakarimasu.",
+          "en": "It takes thirty-three minutes to the station."
+        },
+        {
+          "jp": "三十三分後に始まります。",
+          "jpH": "さんじゅうさんぷん ご に はじまります。",
+          "ro": "sanjuusanpun go ni hajimarimasu.",
+          "en": "It starts in thirty-three minutes."
+        },
+        {
+          "jp": "三十三分で家に着きました。",
+          "jpH": "さんじゅうさんぷん で いえ に つきました。",
+          "ro": "sanjuusanpun de ie ni tsukimashita.",
+          "en": "I arrived home in thirty-three minutes."
+        },
+        {
+          "jp": "三十三分間、走りました。",
+          "jpH": "さんじゅうさんぷんかん はしりました。",
+          "ro": "sanjuusanpunkan hashirimashita.",
+          "en": "I ran for thirty-three minutes."
+        },
+        {
+          "jp": "三十三分待ちました。",
+          "jpH": "さんじゅうさんぷん まちました。",
+          "ro": "sanjuusanpun machimashita.",
+          "en": "I waited for thirty-three minutes."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "kanji": "三十四人",
+      "kana": "さんじゅうよにん",
+      "romaji": "sanjuuyonin",
+      "en": "thirty-four people",
+      "examples": [
+        {
+          "jp": "クラスには三十四人の学生がいます。",
+          "jpH": "くらす には さんじゅうよにん の がくせい が います。",
+          "ro": "kurasu ni wa sanjuuyonin no gakusei ga imasu.",
+          "en": "There are thirty-four students in the class."
+        },
+        {
+          "jp": "三十四人が参加しました。",
+          "jpH": "さんじゅうよにん が さんか しました。",
+          "ro": "sanjuuyonin ga sanka shimashita.",
+          "en": "Thirty-four people participated."
+        },
+        {
+          "jp": "三十四人全員が合格しました。",
+          "jpH": "さんじゅうよにん ぜんいん が ごうかく しました。",
+          "ro": "sanjuuyonin zen'in ga goukaku shimashita.",
+          "en": "All thirty-four people passed."
+        },
+        {
+          "jp": "三十四人で山に登りました。",
+          "jpH": "さんじゅうよにん で やま に のぼりました。",
+          "ro": "sanjuuyonin de yama ni noborimashita.",
+          "en": "Thirty-four people climbed the mountain."
+        },
+        {
+          "jp": "三十四人が同じ意見でした。",
+          "jpH": "さんじゅうよにん が おなじ いけん でした。",
+          "ro": "sanjuuyonin ga onaji iken deshita.",
+          "en": "Thirty-four people had the same opinion."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "kanji": "三十五円",
+      "kana": "さんじゅうごえん",
+      "romaji": "sanjuugoen",
+      "en": "thirty-five yen",
+      "examples": [
+        {
+          "jp": "この飴は三十五円です。",
+          "jpH": "この あめ は さんじゅうごえん です。",
+          "ro": "kono ame wa sanjuugoen desu.",
+          "en": "This candy costs thirty-five yen."
+        },
+        {
+          "jp": "三十五円の差があります。",
+          "jpH": "さんじゅうごえん の さ が あります。",
+          "ro": "sanjuugoen no sa ga arimasu.",
+          "en": "There is a difference of thirty-five yen."
+        },
+        {
+          "jp": "三十五円安くなりました。",
+          "jpH": "さんじゅうごえん やすく なりました。",
+          "ro": "sanjuugoen yasuku narimashita.",
+          "en": "It became thirty-five yen cheaper."
+        },
+        {
+          "jp": "三十五円の切手を買いました。",
+          "jpH": "さんじゅうごえん の きって を かいました。",
+          "ro": "sanjuugoen no kitte o kaimashita.",
+          "en": "I bought a thirty-five yen stamp."
+        },
+        {
+          "jp": "三十五円しか持っていません。",
+          "jpH": "さんじゅうごえん しか もって いません。",
+          "ro": "sanjuugoen shika motte imasen.",
+          "en": "I only have thirty-five yen."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "kanji": "三十六冊",
+      "kana": "さんじゅうろくさつ",
+      "romaji": "sanjuurokusatsu",
+      "en": "thirty-six books",
+      "examples": [
+        {
+          "jp": "三十六冊の本を読みました。",
+          "jpH": "さんじゅうろくさつ の ほん を よみました。",
+          "ro": "sanjuurokusatsu no hon o yomimashita.",
+          "en": "I read thirty-six books."
+        },
+        {
+          "jp": "三十六冊のノートがあります。",
+          "jpH": "さんじゅうろくさつ の のーと が あります。",
+          "ro": "sanjuurokusatsu no nooto ga arimasu.",
+          "en": "There are thirty-six notebooks."
+        },
+        {
+          "jp": "三十六冊の教科書を整理しました。",
+          "jpH": "さんじゅうろくさつ の きょうかしょ を せいり しました。",
+          "ro": "sanjuurokusatsu no kyoukasho o seiri shimashita.",
+          "en": "I organized thirty-six textbooks."
+        },
+        {
+          "jp": "三十六冊の漫画を持っています。",
+          "jpH": "さんじゅうろくさつ の まんが を もって います。",
+          "ro": "sanjuurokusatsu no manga o motte imasu.",
+          "en": "I have thirty-six manga books."
+        },
+        {
+          "jp": "三十六冊すべて読み終えました。",
+          "jpH": "さんじゅうろくさつ すべて よみおえました。",
+          "ro": "sanjuurokusatsu subete yomi oemashita.",
+          "en": "I finished reading all thirty-six books."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "kanji": "三十七回",
+      "kana": "さんじゅうななかい",
+      "romaji": "sanjuunanakai",
+      "en": "thirty-seven times",
+      "examples": [
+        {
+          "jp": "三十七回練習しました。",
+          "jpH": "さんじゅうななかい れんしゅう しました。",
+          "ro": "sanjuunanakai renshuu shimashita.",
+          "en": "I practiced thirty-seven times."
+        },
+        {
+          "jp": "その映画を三十七回見ました。",
+          "jpH": "その えいが を さんじゅうななかい みました。",
+          "ro": "sono eiga o sanjuunanakai mimashita.",
+          "en": "I watched that movie thirty-seven times."
+        },
+        {
+          "jp": "三十七回目の挑戦で成功しました。",
+          "jpH": "さんじゅうななかいめ の ちょうせん で せいこう しました。",
+          "ro": "sanjuunanakaime no chousen de seikou shimashita.",
+          "en": "I succeeded on my thirty-seventh try."
+        },
+        {
+          "jp": "三十七回ボールを投げました。",
+          "jpH": "さんじゅうななかい ぼーる を なげました。",
+          "ro": "sanjuunanakai booru o nagemashita.",
+          "en": "I threw the ball thirty-seven times."
+        },
+        {
+          "jp": "三十七回目でやっとできました。",
+          "jpH": "さんじゅうななかいめ で やっと できました。",
+          "ro": "sanjuunanakaime de yatto dekimashita.",
+          "en": "I finally managed to do it on the thirty-seventh try."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "kanji": "三十八個",
+      "kana": "さんじゅうはっこ",
+      "romaji": "sanjuuhakko",
+      "en": "thirty-eight (small round objects)",
+      "examples": [
+        {
+          "jp": "三十八個のボールがあります。",
+          "jpH": "さんじゅうはっこ の ぼーる が あります。",
+          "ro": "sanjuuhakko no booru ga arimasu.",
+          "en": "There are thirty-eight balls."
+        },
+        {
+          "jp": "三十八個の卵を使いました。",
+          "jpH": "さんじゅうはっこ の たまご を つかいました。",
+          "ro": "sanjuuhakko no tamago o tsukaimashita.",
+          "en": "I used thirty-eight eggs."
+        },
+        {
+          "jp": "三十八個の星が見えます。",
+          "jpH": "さんじゅうはっこ の ほし が みえます。",
+          "ro": "sanjuuhakko no hoshi ga miemasu.",
+          "en": "I can see thirty-eight stars."
+        },
+        {
+          "jp": "三十八個のりんごを箱に入れました。",
+          "jpH": "さんじゅうはっこ の りんご を はこ に いれました。",
+          "ro": "sanjuuhakko no ringo o hako ni iremashita.",
+          "en": "I put thirty-eight apples in the box."
+        },
+        {
+          "jp": "三十八個の飴を配りました。",
+          "jpH": "さんじゅうはっこ の あめ を くばりました。",
+          "ro": "sanjuuhakko no ame o kubarimashita.",
+          "en": "I handed out thirty-eight candies."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "kanji": "三十九階",
+      "kana": "さんじゅうきゅうかい",
+      "romaji": "sanjuukyuukai",
+      "en": "thirty-ninth floor",
+      "examples": [
+        {
+          "jp": "三十九階のレストランに行きました。",
+          "jpH": "さんじゅうきゅうかい の れすとらん に いきました。",
+          "ro": "sanjuukyuukai no resutoran ni ikimashita.",
+          "en": "I went to the restaurant on the thirty-ninth floor."
+        },
+        {
+          "jp": "三十九階からの景色は最高です。",
+          "jpH": "さんじゅうきゅうかい から の けしき は さいこう です。",
+          "ro": "sanjuukyuukai kara no keshiki wa saikou desu.",
+          "en": "The view from the thirty-ninth floor is great."
+        },
+        {
+          "jp": "三十九階までエレベーターで上がります。",
+          "jpH": "さんじゅうきゅうかい まで えれべーたー で あがります。",
+          "ro": "sanjuukyuukai made erebeetaa de agarimasu.",
+          "en": "I’ll take the elevator up to the thirty-ninth floor."
+        },
+        {
+          "jp": "三十九階にはオフィスがあります。",
+          "jpH": "さんじゅうきゅうかい には おふぃす が あります。",
+          "ro": "sanjuukyuukai ni wa ofisu ga arimasu.",
+          "en": "There is an office on the thirty-ninth floor."
+        },
+        {
+          "jp": "三十九階で会議が行われます。",
+          "jpH": "さんじゅうきゅうかい で かいぎ が おこなわれます。",
+          "ro": "sanjuukyuukai de kaigi ga okonawaremasu.",
+          "en": "The meeting will be held on the thirty-ninth floor."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "kanji": "四十時間",
+      "kana": "よんじゅうじかん",
+      "romaji": "yonjuujikan",
+      "en": "forty hours",
+      "examples": [
+        {
+          "jp": "四十時間働きました。",
+          "jpH": "よんじゅうじかん はたらきました。",
+          "ro": "yonjuujikan hatarakimashita.",
+          "en": "I worked for forty hours."
+        },
+        {
+          "jp": "四十時間の講習を受けました。",
+          "jpH": "よんじゅうじかん の こうしゅう を うけました。",
+          "ro": "yonjuujikan no koushuu o ukemashita.",
+          "en": "I took a forty-hour course."
+        },
+        {
+          "jp": "四十時間も寝ませんでした。",
+          "jpH": "よんじゅうじかん も ねませんでした。",
+          "ro": "yonjuujikan mo nemasendeshita.",
+          "en": "I didn’t sleep for forty hours."
+        },
+        {
+          "jp": "四十時間かけて旅行しました。",
+          "jpH": "よんじゅうじかん かけて りょこう しました。",
+          "ro": "yonjuujikan kakete ryokou shimashita.",
+          "en": "We traveled for forty hours."
+        },
+        {
+          "jp": "四十時間以内に終わらせます。",
+          "jpH": "よんじゅうじかん いない に おわらせます。",
+          "ro": "yonjuujikan inai ni owarasemasu.",
+          "en": "I will finish it within forty hours."
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "kanji": "四十一歳",
+      "kana": "よんじゅういっさい",
+      "romaji": "yonjuuissai",
+      "en": "forty-one years old",
+      "examples": [
+        {
+          "jp": "父は四十一歳です。",
+          "jpH": "ちち は よんじゅういっさい です。",
+          "ro": "chichi wa yonjuuissai desu.",
+          "en": "My father is forty-one years old."
+        },
+        {
+          "jp": "四十一歳で転職しました。",
+          "jpH": "よんじゅういっさい で てんしょく しました。",
+          "ro": "yonjuuissai de tenshoku shimashita.",
+          "en": "He changed jobs at forty-one."
+        },
+        {
+          "jp": "四十一歳の先生は優しいです。",
+          "jpH": "よんじゅういっさい の せんせい は やさしい です。",
+          "ro": "yonjuuissai no sensei wa yasashii desu.",
+          "en": "The forty-one-year-old teacher is kind."
+        },
+        {
+          "jp": "四十一歳で結婚しました。",
+          "jpH": "よんじゅういっさい で けっこん しました。",
+          "ro": "yonjuuissai de kekkon shimashita.",
+          "en": "I got married at forty-one."
+        },
+        {
+          "jp": "四十一歳になっても元気です。",
+          "jpH": "よんじゅういっさい に なっても げんき です。",
+          "ro": "yonjuuissai ni nattemo genki desu.",
+          "en": "I’m still healthy even at forty-one."
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "kanji": "四十二日",
+      "kana": "よんじゅうににち",
+      "romaji": "yonjuuninichi",
+      "en": "the forty-second day",
+      "examples": [
+        {
+          "jp": "今日は四十二日目です。",
+          "jpH": "きょう は よんじゅうににちめ です。",
+          "ro": "kyou wa yonjuuninichime desu.",
+          "en": "Today is the forty-second day."
+        },
+        {
+          "jp": "四十二日に退院します。",
+          "jpH": "よんじゅうににち に たいいん します。",
+          "ro": "yonjuuninichi ni taiin shimasu.",
+          "en": "I will leave the hospital on the forty-second day."
+        },
+        {
+          "jp": "四十二日間続けています。",
+          "jpH": "よんじゅうににちかん つづけて います。",
+          "ro": "yonjuuninichikan tsuzukete imasu.",
+          "en": "I’ve been continuing for forty-two days."
+        },
+        {
+          "jp": "四十二日後に戻ります。",
+          "jpH": "よんじゅうににちご に もどります。",
+          "ro": "yonjuuninichigo ni modorimasu.",
+          "en": "I’ll return in forty-two days."
+        },
+        {
+          "jp": "四十二日の練習の成果です。",
+          "jpH": "よんじゅうににち の れんしゅう の せいか です。",
+          "ro": "yonjuuninichi no renshuu no seika desu.",
+          "en": "It’s the result of forty-two days of practice."
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "kanji": "四十三円",
+      "kana": "よんじゅうさんえん",
+      "romaji": "yonjuusanen",
+      "en": "forty-three yen",
+      "examples": [
+        {
+          "jp": "四十三円です。",
+          "jpH": "よんじゅうさんえん です。",
+          "ro": "yonjuusanen desu.",
+          "en": "It’s forty-three yen."
+        },
+        {
+          "jp": "四十三円の差があります。",
+          "jpH": "よんじゅうさんえん の さ が あります。",
+          "ro": "yonjuusanen no sa ga arimasu.",
+          "en": "There’s a difference of forty-three yen."
+        },
+        {
+          "jp": "四十三円しか持っていません。",
+          "jpH": "よんじゅうさんえん しか もって いません。",
+          "ro": "yonjuusanen shika motte imasen.",
+          "en": "I only have forty-three yen."
+        },
+        {
+          "jp": "四十三円でお菓子を買いました。",
+          "jpH": "よんじゅうさんえん で おかし を かいました。",
+          "ro": "yonjuusanen de okashi o kaimashita.",
+          "en": "I bought snacks for forty-three yen."
+        },
+        {
+          "jp": "四十三円返してください。",
+          "jpH": "よんじゅうさんえん かえして ください。",
+          "ro": "yonjuusanen kaeshite kudasai.",
+          "en": "Please return forty-three yen."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "kanji": "四十四分",
+      "kana": "よんじゅうよんぷん",
+      "romaji": "yonjuuyonpun",
+      "en": "forty-four minutes",
+      "examples": [
+        {
+          "jp": "四十四分かかります。",
+          "jpH": "よんじゅうよんぷん かかります。",
+          "ro": "yonjuuyonpun kakarimasu.",
+          "en": "It takes forty-four minutes."
+        },
+        {
+          "jp": "四十四分後に出発します。",
+          "jpH": "よんじゅうよんぷん ご に しゅっぱつ します。",
+          "ro": "yonjuuyonpun go ni shuppatsu shimasu.",
+          "en": "We’ll depart in forty-four minutes."
+        },
+        {
+          "jp": "四十四分待ちました。",
+          "jpH": "よんじゅうよんぷん まちました。",
+          "ro": "yonjuuyonpun machimashita.",
+          "en": "I waited for forty-four minutes."
+        },
+        {
+          "jp": "四十四分の映画を見ました。",
+          "jpH": "よんじゅうよんぷん の えいが を みました。",
+          "ro": "yonjuuyonpun no eiga o mimashita.",
+          "en": "I watched a forty-four-minute movie."
+        },
+        {
+          "jp": "四十四分で終わりました。",
+          "jpH": "よんじゅうよんぷん で おわりました。",
+          "ro": "yonjuuyonpun de owarimashita.",
+          "en": "It finished in forty-four minutes."
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "kanji": "四十五冊",
+      "kana": "よんじゅうごさつ",
+      "romaji": "yonjuugosatsu",
+      "en": "forty-five books",
+      "examples": [
+        {
+          "jp": "四十五冊の本を持っています。",
+          "jpH": "よんじゅうごさつ の ほん を もって います。",
+          "ro": "yonjuugosatsu no hon o motte imasu.",
+          "en": "I have forty-five books."
+        },
+        {
+          "jp": "四十五冊読み終えました。",
+          "jpH": "よんじゅうごさつ よみおえました。",
+          "ro": "yonjuugosatsu yomi oemashita.",
+          "en": "I finished reading forty-five books."
+        },
+        {
+          "jp": "四十五冊のノートを買いました。",
+          "jpH": "よんじゅうごさつ の のーと を かいました。",
+          "ro": "yonjuugosatsu no nooto o kaimashita.",
+          "en": "I bought forty-five notebooks."
+        },
+        {
+          "jp": "四十五冊の漫画を読みました。",
+          "jpH": "よんじゅうごさつ の まんが を よみました。",
+          "ro": "yonjuugosatsu no manga o yomimashita.",
+          "en": "I read forty-five manga books."
+        },
+        {
+          "jp": "四十五冊の教科書を整理しました。",
+          "jpH": "よんじゅうごさつ の きょうかしょ を せいり しました。",
+          "ro": "yonjuugosatsu no kyoukasho o seiri shimashita.",
+          "en": "I organized forty-five textbooks."
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "kanji": "四十六人",
+      "kana": "よんじゅうろくにん",
+      "romaji": "yonjuurokunin",
+      "en": "forty-six people",
+      "examples": [
+        {
+          "jp": "クラスに四十六人います。",
+          "jpH": "くらす に よんじゅうろくにん います。",
+          "ro": "kurasu ni yonjuurokunin imasu.",
+          "en": "There are forty-six people in the class."
+        },
+        {
+          "jp": "四十六人が参加しました。",
+          "jpH": "よんじゅうろくにん が さんか しました。",
+          "ro": "yonjuurokunin ga sanka shimashita.",
+          "en": "Forty-six people participated."
+        },
+        {
+          "jp": "四十六人全員が合格しました。",
+          "jpH": "よんじゅうろくにん ぜんいん が ごうかく しました。",
+          "ro": "yonjuurokunin zen'in ga goukaku shimashita.",
+          "en": "All forty-six people passed."
+        },
+        {
+          "jp": "四十六人で旅行しました。",
+          "jpH": "よんじゅうろくにん で りょこう しました。",
+          "ro": "yonjuurokunin de ryokou shimashita.",
+          "en": "Forty-six people traveled together."
+        },
+        {
+          "jp": "四十六人のチームです。",
+          "jpH": "よんじゅうろくにん の ちーむ です。",
+          "ro": "yonjuurokunin no chiimu desu.",
+          "en": "It’s a team of forty-six people."
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "kanji": "四十七個",
+      "kana": "よんじゅうななこ",
+      "romaji": "yonjuunanako",
+      "en": "forty-seven (small round objects)",
+      "examples": [
+        {
+          "jp": "四十七個のボールを集めました。",
+          "jpH": "よんじゅうななこ の ぼーる を あつめました。",
+          "ro": "yonjuunanako no booru o atsumemashita.",
+          "en": "I collected forty-seven balls."
+        },
+        {
+          "jp": "四十七個のクッキーを焼きました。",
+          "jpH": "よんじゅうななこ の くっきー を やきました。",
+          "ro": "yonjuunanako no kukkii o yakimashita.",
+          "en": "I baked forty-seven cookies."
+        },
+        {
+          "jp": "四十七個の星が見えます。",
+          "jpH": "よんじゅうななこ の ほし が みえます。",
+          "ro": "yonjuunanako no hoshi ga miemasu.",
+          "en": "I can see forty-seven stars."
+        },
+        {
+          "jp": "四十七個のボタンがあります。",
+          "jpH": "よんじゅうななこ の ぼたん が あります。",
+          "ro": "yonjuunanako no botan ga arimasu.",
+          "en": "There are forty-seven buttons."
+        },
+        {
+          "jp": "四十七個の卵を使いました。",
+          "jpH": "よんじゅうななこ の たまご を つかいました。",
+          "ro": "yonjuunanako no tamago o tsukaimashita.",
+          "en": "I used forty-seven eggs."
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "kanji": "四十八時間",
+      "kana": "よんじゅうはちじかん",
+      "romaji": "yonjuuhachijikan",
+      "en": "forty-eight hours",
+      "examples": [
+        {
+          "jp": "四十八時間働きました。",
+          "jpH": "よんじゅうはちじかん はたらきました。",
+          "ro": "yonjuuhachijikan hatarakimashita.",
+          "en": "I worked for forty-eight hours."
+        },
+        {
+          "jp": "四十八時間以内に返信してください。",
+          "jpH": "よんじゅうはちじかん いない に へんしん して ください。",
+          "ro": "yonjuuhachijikan inai ni henshin shite kudasai.",
+          "en": "Please reply within forty-eight hours."
+        },
+        {
+          "jp": "四十八時間寝ませんでした。",
+          "jpH": "よんじゅうはちじかん ねませんでした。",
+          "ro": "yonjuuhachijikan nemasendeshita.",
+          "en": "I didn’t sleep for forty-eight hours."
+        },
+        {
+          "jp": "四十八時間かけて旅行しました。",
+          "jpH": "よんじゅうはちじかん かけて りょこう しました。",
+          "ro": "yonjuuhachijikan kakete ryokou shimashita.",
+          "en": "We traveled for forty-eight hours."
+        },
+        {
+          "jp": "四十八時間の映画は長すぎます。",
+          "jpH": "よんじゅうはちじかん の えいが は ながすぎます。",
+          "ro": "yonjuuhachijikan no eiga wa nagasugimasu.",
+          "en": "A forty-eight-hour movie is too long."
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "kanji": "四十九円",
+      "kana": "よんじゅうきゅうえん",
+      "romaji": "yonjuukyuuen",
+      "en": "forty-nine yen",
+      "examples": [
+        {
+          "jp": "四十九円です。",
+          "jpH": "よんじゅうきゅうえん です。",
+          "ro": "yonjuukyuuen desu.",
+          "en": "It’s forty-nine yen."
+        },
+        {
+          "jp": "四十九円の差があります。",
+          "jpH": "よんじゅうきゅうえん の さ が あります。",
+          "ro": "yonjuukyuuen no sa ga arimasu.",
+          "en": "There’s a difference of forty-nine yen."
+        },
+        {
+          "jp": "四十九円で買いました。",
+          "jpH": "よんじゅうきゅうえん で かいました。",
+          "ro": "yonjuukyuuen de kaimashita.",
+          "en": "I bought it for forty-nine yen."
+        },
+        {
+          "jp": "四十九円しかありません。",
+          "jpH": "よんじゅうきゅうえん しか ありません。",
+          "ro": "yonjuukyuuen shika arimasen.",
+          "en": "I only have forty-nine yen."
+        },
+        {
+          "jp": "四十九円返してください。",
+          "jpH": "よんじゅうきゅうえん かえして ください。",
+          "ro": "yonjuukyuuen kaeshite kudasai.",
+          "en": "Please return forty-nine yen."
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "kanji": "五十階",
+      "kana": "ごじゅっかい",
+      "romaji": "gojukkai",
+      "en": "fiftieth floor",
+      "examples": [
+        {
+          "jp": "五十階に展望台があります。",
+          "jpH": "ごじゅっかい に てんぼうだい が あります。",
+          "ro": "gojukkai ni tenboudai ga arimasu.",
+          "en": "There is an observatory on the fiftieth floor."
+        },
+        {
+          "jp": "五十階からの景色はすばらしいです。",
+          "jpH": "ごじゅっかい から の けしき は すばらしい です。",
+          "ro": "gojukkai kara no keshiki wa subarashii desu.",
+          "en": "The view from the fiftieth floor is amazing."
+        },
+        {
+          "jp": "五十階までエレベーターで行けます。",
+          "jpH": "ごじゅっかい まで えれべーたー で いけます。",
+          "ro": "gojukkai made erebeetaa de ikemasu.",
+          "en": "You can go up to the fiftieth floor by elevator."
+        },
+        {
+          "jp": "五十階に高級レストランがあります。",
+          "jpH": "ごじゅっかい に こうきゅう れすとらん が あります。",
+          "ro": "gojukkai ni koukyuu resutoran ga arimasu.",
+          "en": "There is a luxury restaurant on the fiftieth floor."
+        },
+        {
+          "jp": "五十階で会議が行われます。",
+          "jpH": "ごじゅっかい で かいぎ が おこなわれます。",
+          "ro": "gojukkai de kaigi ga okonawaremasu.",
+          "en": "The meeting will be held on the fiftieth floor."
+        }
+      ]
+    }
+  ]
+}
