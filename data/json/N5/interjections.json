@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "n5-int-001",
+    "ja": "あっ",
+    "kana": "あっ",
+    "ro": "a",
+    "en": "Ah! / Oh!",
+    "examples": [
+      {
+        "ja": "あっ、雨だ。",
+        "kana": "あっ、あめだ。",
+        "ro": "a、ameda。",
+        "en": "Ah, it’s raining."
+      },
+      {
+        "ja": "あっ、電話が鳴った。",
+        "kana": "あっ、でんわが なった。",
+        "ro": "a、denwaga natta。",
+        "en": "Oh, the phone rang."
+      },
+      {
+        "ja": "あっ、財布を忘れた。",
+        "kana": "あっ、さいふを わすれた。",
+        "ro": "a、saifuo wasureta。",
+        "en": "Oh, I forgot my wallet."
+      },
+      {
+        "ja": "あっ、バスが来た。",
+        "kana": "あっ、ばすが きた。",
+        "ro": "a、basuga kita。",
+        "en": "Ah, the bus came."
+      },
+      {
+        "ja": "あっ、間違えた。",
+        "kana": "あっ、まちがえた。",
+        "ro": "a、machigaeta。",
+        "en": "Ah, I made a mistake."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-002",
+    "ja": "えっ",
+    "kana": "えっ",
+    "ro": "e",
+    "en": "Huh? / What?",
+    "examples": [
+      {
+        "ja": "えっ、本当？",
+        "kana": "えっ、ほんとう？",
+        "ro": "e、hontou？",
+        "en": "Huh, really?"
+      },
+      {
+        "ja": "えっ、今なんて？",
+        "kana": "えっ、いま なんて？",
+        "ro": "e、ima nante？",
+        "en": "What did you say now?"
+      },
+      {
+        "ja": "えっ、もう終わり？",
+        "kana": "えっ、もう おわり？",
+        "ro": "e、mou owari？",
+        "en": "Huh, already finished?"
+      },
+      {
+        "ja": "えっ、今日休み？",
+        "kana": "えっ、きょう やすみ？",
+        "ro": "e、kyou yasumi？",
+        "en": "What, a day off today?"
+      },
+      {
+        "ja": "えっ、彼が？",
+        "kana": "えっ、かれ が？",
+        "ro": "e、kare ga？",
+        "en": "Huh, him?"
+      }
+    ]
+  },
+  {
+    "id": "n5-int-003",
+    "ja": "ええ",
+    "kana": "ええ",
+    "ro": "ee",
+    "en": "Yes (casual)",
+    "examples": [
+      {
+        "ja": "ええ、大丈夫です。",
+        "kana": "ええ、だいじょうぶ です。",
+        "ro": "ee、daijoubu desu。",
+        "en": "Yes, it’s fine."
+      },
+      {
+        "ja": "ええ、分かります。",
+        "kana": "ええ、わかります。",
+        "ro": "ee、wakarimasu。",
+        "en": "Yes, I understand."
+      },
+      {
+        "ja": "ええ、行きます。",
+        "kana": "ええ、いきます。",
+        "ro": "ee、ikimasu。",
+        "en": "Yes, I’ll go."
+      },
+      {
+        "ja": "ええ、見ました。",
+        "kana": "ええ、みました。",
+        "ro": "ee、mimashita。",
+        "en": "Yes, I saw it."
+      },
+      {
+        "ja": "ええ、ありがとう。",
+        "kana": "ええ、ありがとう。",
+        "ro": "ee、arigatou。",
+        "en": "Yes, thanks."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-004",
+    "ja": "うん",
+    "kana": "うん",
+    "ro": "un",
+    "en": "Yeah / Uh-huh",
+    "examples": [
+      {
+        "ja": "うん、行く。",
+        "kana": "うん、いく。",
+        "ro": "un、iku。",
+        "en": "Yeah, I’ll go."
+      },
+      {
+        "ja": "うん、分かった。",
+        "kana": "うん、わかった。",
+        "ro": "un、wakatta。",
+        "en": "Yeah, got it."
+      },
+      {
+        "ja": "うん、好き。",
+        "kana": "うん、すき。",
+        "ro": "un、suki。",
+        "en": "Yeah, I like it."
+      },
+      {
+        "ja": "うん、あとで。",
+        "kana": "うん、あとで。",
+        "ro": "un、atode。",
+        "en": "Yeah, later."
+      },
+      {
+        "ja": "うん、いいよ。",
+        "kana": "うん、いいよ。",
+        "ro": "un、iiyo。",
+        "en": "Yeah, sure."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-005",
+    "ja": "はい",
+    "kana": "はい",
+    "ro": "hai",
+    "en": "Yes",
+    "examples": [
+      {
+        "ja": "はい、分かりました。",
+        "kana": "はい、わかりました。",
+        "ro": "hai、wakarimashita。",
+        "en": "Yes, understood."
+      },
+      {
+        "ja": "はい、行きます。",
+        "kana": "はい、いきます。",
+        "ro": "hai、ikimasu。",
+        "en": "Yes, I’ll go."
+      },
+      {
+        "ja": "はい、あります。",
+        "kana": "はい、あります。",
+        "ro": "hai、arimasu。",
+        "en": "Yes, we have it."
+      },
+      {
+        "ja": "はい、どうぞ。",
+        "kana": "はい、どうぞ。",
+        "ro": "hai、douzo。",
+        "en": "Yes, here you are."
+      },
+      {
+        "ja": "はい、結構です。",
+        "kana": "はい、けっこうです。",
+        "ro": "hai、kekkoudesu。",
+        "en": "Yes, that’s fine."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-006",
+    "ja": "いいえ",
+    "kana": "いいえ",
+    "ro": "iie",
+    "en": "No",
+    "examples": [
+      {
+        "ja": "いいえ、違います。",
+        "kana": "いいえ、ちがいます。",
+        "ro": "iie、chigaimasu。",
+        "en": "No, that’s wrong."
+      },
+      {
+        "ja": "いいえ、行きません。",
+        "kana": "いいえ、いきません。",
+        "ro": "iie、ikimasen。",
+        "en": "No, I won’t go."
+      },
+      {
+        "ja": "いいえ、要りません。",
+        "kana": "いいえ、いりません。",
+        "ro": "iie、irimasen。",
+        "en": "No, I don’t need it."
+      },
+      {
+        "ja": "いいえ、まだです。",
+        "kana": "いいえ、まだ です。",
+        "ro": "iie、mada desu。",
+        "en": "No, not yet."
+      },
+      {
+        "ja": "いいえ、だめです。",
+        "kana": "いいえ、だめ です。",
+        "ro": "iie、dame desu。",
+        "en": "No, not allowed."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-007",
+    "ja": "へえ",
+    "kana": "へえ",
+    "ro": "hee",
+    "en": "Really! / Wow",
+    "examples": [
+      {
+        "ja": "へえ、知らなかった。",
+        "kana": "へえ、しらなかった。",
+        "ro": "hee、shiranakatta。",
+        "en": "Oh, I didn’t know."
+      },
+      {
+        "ja": "へえ、そうなんだ。",
+        "kana": "へえ、そうなんだ。",
+        "ro": "hee、sounanda。",
+        "en": "I see, is that so."
+      },
+      {
+        "ja": "へえ、すごいね。",
+        "kana": "へえ、すごい ね。",
+        "ro": "hee、sugoi ne。",
+        "en": "Wow, amazing."
+      },
+      {
+        "ja": "へえ、安い。",
+        "kana": "へえ、やすい。",
+        "ro": "hee、yasui。",
+        "en": "Oh, that’s cheap."
+      },
+      {
+        "ja": "へえ、便利だね。",
+        "kana": "へえ、べんり だね。",
+        "ro": "hee、benri dane。",
+        "en": "Oh, that’s handy."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-008",
+    "ja": "わあ",
+    "kana": "わあ",
+    "ro": "waa",
+    "en": "Wow!",
+    "examples": [
+      {
+        "ja": "わあ、きれい！",
+        "kana": "わあ、きれい！",
+        "ro": "waa、kirei！",
+        "en": "Wow, beautiful!"
+      },
+      {
+        "ja": "わあ、高い建物！",
+        "kana": "わあ、たかい たてもの！",
+        "ro": "waa、takai tatemono！",
+        "en": "Wow, a tall building!"
+      },
+      {
+        "ja": "わあ、雪だ！",
+        "kana": "わあ、ゆき だ！",
+        "ro": "waa、yuki da！",
+        "en": "Wow, it’s snow!"
+      },
+      {
+        "ja": "わあ、かわいい！",
+        "kana": "わあ、かわいい！",
+        "ro": "waa、kawaii！",
+        "en": "Wow, so cute!"
+      },
+      {
+        "ja": "わあ、広い！",
+        "kana": "わあ、ひろい！",
+        "ro": "waa、hiroi！",
+        "en": "Wow, it’s spacious!"
+      }
+    ]
+  },
+  {
+    "id": "n5-int-009",
+    "ja": "おお",
+    "kana": "おお",
+    "ro": "oo",
+    "en": "Oh!",
+    "examples": [
+      {
+        "ja": "おお、やったね。",
+        "kana": "おお、やったね。",
+        "ro": "oo、yattane。",
+        "en": "Oh, you did it."
+      },
+      {
+        "ja": "おお、すごい。",
+        "kana": "おお、すごい。",
+        "ro": "oo、sugoi。",
+        "en": "Oh, amazing."
+      },
+      {
+        "ja": "おお、でかい！",
+        "kana": "おお、でかい！",
+        "ro": "oo、dekai！",
+        "en": "Oh, huge!"
+      },
+      {
+        "ja": "おお、かっこいい。",
+        "kana": "おお、かっこいい。",
+        "ro": "oo、kakkoii。",
+        "en": "Oh, cool."
+      },
+      {
+        "ja": "おお、なるほど。",
+        "kana": "おお、なるほど。",
+        "ro": "oo、naruhodo。",
+        "en": "Oh, I see."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-010",
+    "ja": "まあ",
+    "kana": "まあ",
+    "ro": "maa",
+    "en": "Well... / I guess",
+    "examples": [
+      {
+        "ja": "まあ、いいか。",
+        "kana": "まあ、いいか。",
+        "ro": "maa、iika。",
+        "en": "Well, it’s fine."
+      },
+      {
+        "ja": "まあ、仕方ない。",
+        "kana": "まあ、しかたない。",
+        "ro": "maa、shikatanai。",
+        "en": "Well, it can’t be helped."
+      },
+      {
+        "ja": "まあ、明日にしよう。",
+        "kana": "まあ、あした に しよう。",
+        "ro": "maa、ashita ni shiyou。",
+        "en": "Well, let’s do it tomorrow."
+      },
+      {
+        "ja": "まあ、ゆっくりね。",
+        "kana": "まあ、ゆっくり ね。",
+        "ro": "maa、yukkuri ne。",
+        "en": "Well, take it easy."
+      },
+      {
+        "ja": "まあ、困ったね。",
+        "kana": "まあ、こまった ね。",
+        "ro": "maa、komatta ne。",
+        "en": "Well, that’s a problem."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-011",
+    "ja": "ほら",
+    "kana": "ほら",
+    "ro": "hora",
+    "en": "Look! / See?",
+    "examples": [
+      {
+        "ja": "ほら、見て。",
+        "kana": "ほら、みて。",
+        "ro": "hora、mite。",
+        "en": "Look, see."
+      },
+      {
+        "ja": "ほら、急いで。",
+        "kana": "ほら、いそいで。",
+        "ro": "hora、isoide。",
+        "en": "Come on, hurry."
+      },
+      {
+        "ja": "ほら、ここだよ。",
+        "kana": "ほら、ここ だよ。",
+        "ro": "hora、koko dayo。",
+        "en": "Look, it’s here."
+      },
+      {
+        "ja": "ほら、気をつけて。",
+        "kana": "ほら、きを つけて。",
+        "ro": "hora、kio tsukete。",
+        "en": "Hey, be careful."
+      },
+      {
+        "ja": "ほら、やっぱり。",
+        "kana": "ほら、やっぱり。",
+        "ro": "hora、yappari。",
+        "en": "See, I told you."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-012",
+    "ja": "ねえ",
+    "kana": "ねえ",
+    "ro": "nee",
+    "en": "Hey, ...",
+    "examples": [
+      {
+        "ja": "ねえ、今日暇？",
+        "kana": "ねえ、きょう ひま？",
+        "ro": "nee、kyou hima？",
+        "en": "Hey, are you free today?"
+      },
+      {
+        "ja": "ねえ、一緒に行こう。",
+        "kana": "ねえ、いっしょに いこう。",
+        "ro": "nee、isshoni ikou。",
+        "en": "Hey, let’s go together."
+      },
+      {
+        "ja": "ねえ、これ食べる？",
+        "kana": "ねえ、これ たべる？",
+        "ro": "nee、kore taberu？",
+        "en": "Hey, want this?"
+      },
+      {
+        "ja": "ねえ、ちょっといい？",
+        "kana": "ねえ、ちょっと いい？",
+        "ro": "nee、chotto ii？",
+        "en": "Hey, got a minute?"
+      },
+      {
+        "ja": "ねえ、聞いて。",
+        "kana": "ねえ、きいて。",
+        "ro": "nee、kiite。",
+        "en": "Hey, listen."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-013",
+    "ja": "もしもし",
+    "kana": "もしもし",
+    "ro": "moshi moshi",
+    "en": "Hello? (on phone)",
+    "examples": [
+      {
+        "ja": "もしもし、田中です。",
+        "kana": "もしもし、たなか です。",
+        "ro": "moshimoshi、tanaka desu。",
+        "en": "Hello, this is Tanaka."
+      },
+      {
+        "ja": "もしもし、聞こえますか。",
+        "kana": "もしもし、きこえますか。",
+        "ro": "moshimoshi、kikoemasuka。",
+        "en": "Hello, can you hear me?"
+      },
+      {
+        "ja": "もしもし、間違い電話です。",
+        "kana": "もしもし、まちがい でんわ です。",
+        "ro": "moshimoshi、machigai denwa desu。",
+        "en": "Hello, wrong number."
+      },
+      {
+        "ja": "もしもし、もう着きます。",
+        "kana": "もしもし、もう つきます。",
+        "ro": "moshimoshi、mou tsukimasu。",
+        "en": "Hello, I’ll arrive soon."
+      },
+      {
+        "ja": "もしもし、あとでかけます。",
+        "kana": "もしもし、あとで かけます。",
+        "ro": "moshimoshi、atode kakemasu。",
+        "en": "Hello, I’ll call later."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-014",
+    "ja": "なるほど",
+    "kana": "なるほど",
+    "ro": "naruhodo",
+    "en": "I see. / Indeed.",
+    "examples": [
+      {
+        "ja": "なるほど、そういうことか。",
+        "kana": "なるほど、そう いう こと か。",
+        "ro": "naruhodo、sou iu koto ka。",
+        "en": "I see, that’s how it is."
+      },
+      {
+        "ja": "なるほど、理由が分かった。",
+        "kana": "なるほど、りゆうが わかった。",
+        "ro": "naruhodo、riyuuga wakatta。",
+        "en": "I see, I got the reason."
+      },
+      {
+        "ja": "なるほど、確かに。",
+        "kana": "なるほど、たしかに。",
+        "ro": "naruhodo、tashikani。",
+        "en": "I see, indeed."
+      },
+      {
+        "ja": "なるほど、便利だね。",
+        "kana": "なるほど、べんり だね。",
+        "ro": "naruhodo、benri dane。",
+        "en": "I see, that’s handy."
+      },
+      {
+        "ja": "なるほど、いいアイデアだ。",
+        "kana": "なるほど、いい あいであ だ。",
+        "ro": "naruhodo、ii aidea da。",
+        "en": "I see, good idea."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-015",
+    "ja": "すごい",
+    "kana": "すごい",
+    "ro": "sugoi",
+    "en": "Amazing!",
+    "examples": [
+      {
+        "ja": "すごい、感動した。",
+        "kana": "すごい、かんどう した。",
+        "ro": "sugoi、kandou shita。",
+        "en": "Amazing, I’m moved."
+      },
+      {
+        "ja": "すごい、速い！",
+        "kana": "すごい、はやい！",
+        "ro": "sugoi、hayai！",
+        "en": "Amazing, so fast!"
+      },
+      {
+        "ja": "すごい、うまい。",
+        "kana": "すごい、うまい。",
+        "ro": "sugoi、umai。",
+        "en": "Amazing, so good."
+      },
+      {
+        "ja": "すごい、できたね。",
+        "kana": "すごい、できたね。",
+        "ro": "sugoi、dekitane。",
+        "en": "Amazing, you did it."
+      },
+      {
+        "ja": "すごい、天才だ。",
+        "kana": "すごい、てんさい だ。",
+        "ro": "sugoi、tensai da。",
+        "en": "Amazing, you’re a genius."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-016",
+    "ja": "ほんとう？",
+    "kana": "ほんとう？",
+    "ro": "hontou?",
+    "en": "Really?",
+    "examples": [
+      {
+        "ja": "本当？ 信じられない。",
+        "kana": "ほんとう？ しんじられない。",
+        "ro": "hontou？ shinjirarenai。",
+        "en": "Really? I can’t believe it."
+      },
+      {
+        "ja": "本当？ よかった。",
+        "kana": "ほんとう？ よかった。",
+        "ro": "hontou？ yokatta。",
+        "en": "Really? That’s great."
+      },
+      {
+        "ja": "本当？ いつ？",
+        "kana": "ほんとう？ いつ？",
+        "ro": "hontou？ itsu？",
+        "en": "Really? When?"
+      },
+      {
+        "ja": "本当？ どこで？",
+        "kana": "ほんとう？ どこで？",
+        "ro": "hontou？ dokode？",
+        "en": "Really? Where?"
+      },
+      {
+        "ja": "本当？ 誰が？",
+        "kana": "ほんとう？ だれが？",
+        "ro": "hontou？ darega？",
+        "en": "Really? Who?"
+      }
+    ]
+  },
+  {
+    "id": "n5-int-017",
+    "ja": "やった",
+    "kana": "やった",
+    "ro": "yatta",
+    "en": "Yay! / I did it!",
+    "examples": [
+      {
+        "ja": "やった、勝てた！",
+        "kana": "やった、かてた！",
+        "ro": "yatta、kateta！",
+        "en": "Yay, we won!"
+      },
+      {
+        "ja": "やった、受かった！",
+        "kana": "やった、うかった！",
+        "ro": "yatta、ukatta！",
+        "en": "Yay, I passed!"
+      },
+      {
+        "ja": "やった、間に合った！",
+        "kana": "やった、まにあった！",
+        "ro": "yatta、maniatta！",
+        "en": "Yay, I made it in time!"
+      },
+      {
+        "ja": "やった、できた！",
+        "kana": "やった、できた！",
+        "ro": "yatta、dekita！",
+        "en": "Yay, I did it!"
+      },
+      {
+        "ja": "やった、褒められた！",
+        "kana": "やった、ほめられた！",
+        "ro": "yatta、homerareta！",
+        "en": "Yay, I was praised!"
+      }
+    ]
+  },
+  {
+    "id": "n5-int-018",
+    "ja": "いたっ",
+    "kana": "いたっ",
+    "ro": "ita",
+    "en": "Ouch!",
+    "examples": [
+      {
+        "ja": "いたっ、ぶつかった。",
+        "kana": "いたっ、ぶつかった。",
+        "ro": "ita、butsukatta。",
+        "en": "Ouch, I bumped."
+      },
+      {
+        "ja": "いたっ、手を切った。",
+        "kana": "いたっ、てを きった。",
+        "ro": "ita、teo kitta。",
+        "en": "Ouch, I cut my hand."
+      },
+      {
+        "ja": "いたっ、こけた。",
+        "kana": "いたっ、こけた。",
+        "ro": "ita、koketa。",
+        "en": "Ouch, I fell."
+      },
+      {
+        "ja": "いたっ、腰が痛い。",
+        "kana": "いたっ、こしが いたい。",
+        "ro": "ita、koshiga itai。",
+        "en": "Ouch, my back hurts."
+      },
+      {
+        "ja": "いたっ、足をひねった。",
+        "kana": "いたっ、あしを ひねった。",
+        "ro": "ita、ashio hinetta。",
+        "en": "Ouch, I twisted my ankle."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-019",
+    "ja": "えっと",
+    "kana": "えっと",
+    "ro": "etto",
+    "en": "Uh... / Let me see...",
+    "examples": [
+      {
+        "ja": "えっと、名前は…",
+        "kana": "えっと、なまえは…",
+        "ro": "etto、namaeha…",
+        "en": "Uh, my name is..."
+      },
+      {
+        "ja": "えっと、次は何だっけ。",
+        "kana": "えっと、つぎは なんだっけ。",
+        "ro": "etto、tsugiha nandakke。",
+        "en": "Uh, what’s next again?"
+      },
+      {
+        "ja": "えっと、どこだっけ。",
+        "kana": "えっと、どこ だっけ。",
+        "ro": "etto、doko dakke。",
+        "en": "Uh, where was it?"
+      },
+      {
+        "ja": "えっと、今いい？",
+        "kana": "えっと、いま いい？",
+        "ro": "etto、ima ii？",
+        "en": "Uh, do you have a moment?"
+      },
+      {
+        "ja": "えっと、もう一度お願い。",
+        "kana": "えっと、もう いちど おねがい。",
+        "ro": "etto、mou ichido onegai。",
+        "en": "Uh, once more please."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-020",
+    "ja": "あのう",
+    "kana": "あのう",
+    "ro": "anou",
+    "en": "Um, ... / Excuse me, ...",
+    "examples": [
+      {
+        "ja": "あのう、ちょっといいですか。",
+        "kana": "あのう、ちょっと いいですか。",
+        "ro": "anou、chotto iidesuka。",
+        "en": "Um, may I?"
+      },
+      {
+        "ja": "あのう、道を教えてください。",
+        "kana": "あのう、みちを おしえて ください。",
+        "ro": "anou、michio oshiete kudasai。",
+        "en": "Um, please tell me the way."
+      },
+      {
+        "ja": "あのう、質問があります。",
+        "kana": "あのう、しつもん が あります。",
+        "ro": "anou、shitsumon ga arimasu。",
+        "en": "Um, I have a question."
+      },
+      {
+        "ja": "あのう、これはいくらですか。",
+        "kana": "あのう、これ は いくらですか。",
+        "ro": "anou、kore ha ikuradesuka。",
+        "en": "Um, how much is this?"
+      },
+      {
+        "ja": "あのう、今大丈夫ですか。",
+        "kana": "あのう、いま だいじょうぶ ですか。",
+        "ro": "anou、ima daijoubu desuka。",
+        "en": "Um, is now okay?"
+      }
+    ]
+  },
+  {
+    "id": "n5-int-021",
+    "ja": "うわ",
+    "kana": "うわ",
+    "ro": "uwa",
+    "en": "Whoa! / Yikes!",
+    "examples": [
+      {
+        "ja": "うわ、びっくりした。",
+        "kana": "うわ、びっくり した。",
+        "ro": "uwa、bikkuri shita。",
+        "en": "Whoa, that scared me."
+      },
+      {
+        "ja": "うわ、汚れた。",
+        "kana": "うわ、よごれた。",
+        "ro": "uwa、yogoreta。",
+        "en": "Yikes, it got dirty."
+      },
+      {
+        "ja": "うわ、値段が高い。",
+        "kana": "うわ、ねだん が たかい。",
+        "ro": "uwa、nedan ga takai。",
+        "en": "Whoa, the price is high."
+      },
+      {
+        "ja": "うわ、こぼれた。",
+        "kana": "うわ、こぼれた。",
+        "ro": "uwa、koboreta。",
+        "en": "Whoa, it spilled."
+      },
+      {
+        "ja": "うわ、真っ暗。",
+        "kana": "うわ、まっくら。",
+        "ro": "uwa、makkura。",
+        "en": "Whoa, it’s pitch-dark."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-022",
+    "ja": "しまった",
+    "kana": "しまった",
+    "ro": "shimatta",
+    "en": "Darn! / Shoot!",
+    "examples": [
+      {
+        "ja": "しまった、間違えた。",
+        "kana": "しまった、まちがえた。",
+        "ro": "shimatta、machigaeta。",
+        "en": "Darn, I messed up."
+      },
+      {
+        "ja": "しまった、忘れた。",
+        "kana": "しまった、わすれた。",
+        "ro": "shimatta、wasureta。",
+        "en": "Shoot, I forgot."
+      },
+      {
+        "ja": "しまった、遅刻だ。",
+        "kana": "しまった、ちこく だ。",
+        "ro": "shimatta、chikoku da。",
+        "en": "Darn, I’m late."
+      },
+      {
+        "ja": "しまった、壊した。",
+        "kana": "しまった、こわした。",
+        "ro": "shimatta、kowashita。",
+        "en": "Shoot, I broke it."
+      },
+      {
+        "ja": "しまった、電話を切り忘れた。",
+        "kana": "しまった、でんわを きりわすれた。",
+        "ro": "shimatta、denwao kiriwasureta。",
+        "en": "Darn, I forgot to hang up."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-023",
+    "ja": "よかった",
+    "kana": "よかった",
+    "ro": "yokatta",
+    "en": "Great! / Thank goodness!",
+    "examples": [
+      {
+        "ja": "よかった、雨がやんだ。",
+        "kana": "よかった、あめが やんだ。",
+        "ro": "yokatta、amega yanda。",
+        "en": "Great, the rain stopped."
+      },
+      {
+        "ja": "よかった、間に合った。",
+        "kana": "よかった、まにあった。",
+        "ro": "yokatta、maniatta。",
+        "en": "Great, I made it."
+      },
+      {
+        "ja": "よかった、見つかった。",
+        "kana": "よかった、みつかった。",
+        "ro": "yokatta、mitsukatta。",
+        "en": "Great, we found it."
+      },
+      {
+        "ja": "よかった、直った。",
+        "kana": "よかった、なおった。",
+        "ro": "yokatta、naotta。",
+        "en": "Great, it’s fixed."
+      },
+      {
+        "ja": "よかった、元気そうだ。",
+        "kana": "よかった、げんき そうだ。",
+        "ro": "yokatta、genki souda。",
+        "en": "Great, you look well."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-024",
+    "ja": "どうも",
+    "kana": "どうも",
+    "ro": "doumo",
+    "en": "Thanks / Hello / Very",
+    "examples": [
+      {
+        "ja": "どうも、ありがとう。",
+        "kana": "どうも、ありがとう。",
+        "ro": "doumo、arigatou。",
+        "en": "Thanks, thank you."
+      },
+      {
+        "ja": "どうも、すみません。",
+        "kana": "どうも、すみません。",
+        "ro": "doumo、sumimasen。",
+        "en": "Thank you, and sorry."
+      },
+      {
+        "ja": "どうも、お世話になりました。",
+        "kana": "どうも、おせわに なりました。",
+        "ro": "doumo、osewani narimashita。",
+        "en": "Thank you for your help."
+      },
+      {
+        "ja": "どうも、こんにちは。",
+        "kana": "どうも、こんにちは。",
+        "ro": "doumo、konnichiha。",
+        "en": "Hello there."
+      },
+      {
+        "ja": "どうも、難しいですね。",
+        "kana": "どうも、むずかしい ですね。",
+        "ro": "doumo、muzukashii desune。",
+        "en": "It seems quite difficult."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-025",
+    "ja": "ありがとう",
+    "kana": "ありがとう",
+    "ro": "arigatou",
+    "en": "Thank you",
+    "examples": [
+      {
+        "ja": "ありがとう、助かった。",
+        "kana": "ありがとう、たすかった。",
+        "ro": "arigatou、tasukatta。",
+        "en": "Thank you, that helped."
+      },
+      {
+        "ja": "ありがとう、うれしい。",
+        "kana": "ありがとう、うれしい。",
+        "ro": "arigatou、ureshii。",
+        "en": "Thank you, I’m happy."
+      },
+      {
+        "ja": "ありがとう、またね。",
+        "kana": "ありがとう、また ね。",
+        "ro": "arigatou、mata ne。",
+        "en": "Thanks, see you."
+      },
+      {
+        "ja": "ありがとう、本当に。",
+        "kana": "ありがとう、ほんとうに。",
+        "ro": "arigatou、hontouni。",
+        "en": "Thank you, really."
+      },
+      {
+        "ja": "ありがとう、気に入った。",
+        "kana": "ありがとう、きに いった。",
+        "ro": "arigatou、kini itta。",
+        "en": "Thank you, I like it."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-026",
+    "ja": "ごめん",
+    "kana": "ごめん",
+    "ro": "gomen",
+    "en": "Sorry (casual)",
+    "examples": [
+      {
+        "ja": "ごめん、遅刻した。",
+        "kana": "ごめん、ちこく した。",
+        "ro": "gomen、chikoku shita。",
+        "en": "Sorry, I’m late."
+      },
+      {
+        "ja": "ごめん、間違えた。",
+        "kana": "ごめん、まちがえた。",
+        "ro": "gomen、machigaeta。",
+        "en": "Sorry, I messed up."
+      },
+      {
+        "ja": "ごめん、また連絡する。",
+        "kana": "ごめん、また れんらく する。",
+        "ro": "gomen、mata renraku suru。",
+        "en": "Sorry, I’ll contact you later."
+      },
+      {
+        "ja": "ごめん、今度は気をつける。",
+        "kana": "ごめん、こんど は きを つける。",
+        "ro": "gomen、kondo ha kio tsukeru。",
+        "en": "Sorry, I’ll be careful next time."
+      },
+      {
+        "ja": "ごめん、急いでた。",
+        "kana": "ごめん、いそいで た。",
+        "ro": "gomen、isoide ta。",
+        "en": "Sorry, I was in a hurry."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-027",
+    "ja": "すみません",
+    "kana": "すみません",
+    "ro": "sumimasen",
+    "en": "Excuse me / Sorry",
+    "examples": [
+      {
+        "ja": "すみません、道を教えてください。",
+        "kana": "すみません、みちを おしえて ください。",
+        "ro": "sumimasen、michio oshiete kudasai。",
+        "en": "Excuse me, please tell me the way."
+      },
+      {
+        "ja": "すみません、今いいですか。",
+        "kana": "すみません、いま いいですか。",
+        "ro": "sumimasen、ima iidesuka。",
+        "en": "Excuse me, is now good?"
+      },
+      {
+        "ja": "すみません、これください。",
+        "kana": "すみません、これ ください。",
+        "ro": "sumimasen、kore kudasai。",
+        "en": "Excuse me, I’ll take this."
+      },
+      {
+        "ja": "すみません、またお願いします。",
+        "kana": "すみません、また おねがい します。",
+        "ro": "sumimasen、mata onegai shimasu。",
+        "en": "Sorry, I’ll ask again."
+      },
+      {
+        "ja": "すみません、ありがとうございます。",
+        "kana": "すみません、ありがとうございます。",
+        "ro": "sumimasen、arigatougozaimasu。",
+        "en": "Excuse me, thank you."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-028",
+    "ja": "おめでとう",
+    "kana": "おめでとう",
+    "ro": "omedetou",
+    "en": "Congratulations",
+    "examples": [
+      {
+        "ja": "おめでとう、誕生日！",
+        "kana": "おめでとう、たんじょうび！",
+        "ro": "omedetou、tanjoubi！",
+        "en": "Happy birthday!"
+      },
+      {
+        "ja": "おめでとう、結婚！",
+        "kana": "おめでとう、けっこん！",
+        "ro": "omedetou、kekkon！",
+        "en": "Congratulations on your marriage!"
+      },
+      {
+        "ja": "おめでとう、就職！",
+        "kana": "おめでとう、しゅうしょく！",
+        "ro": "omedetou、shuushoku！",
+        "en": "Congrats on the job!"
+      },
+      {
+        "ja": "おめでとう、合格！",
+        "kana": "おめでとう、 ごうかく！",
+        "ro": "omedetou、 goukaku！",
+        "en": "Congrats on passing!"
+      },
+      {
+        "ja": "おめでとう、赤ちゃん！",
+        "kana": "おめでとう、 あかちゃん！",
+        "ro": "omedetou、 akachan！",
+        "en": "Congrats on the baby!"
+      }
+    ]
+  },
+  {
+    "id": "n5-int-029",
+    "ja": "いらっしゃい",
+    "kana": "いらっしゃい",
+    "ro": "irasshai",
+    "en": "Welcome",
+    "examples": [
+      {
+        "ja": "いらっしゃい、どうぞ。",
+        "kana": "いらっしゃい、どうぞ。",
+        "ro": "irasshai、douzo。",
+        "en": "Welcome, please come in."
+      },
+      {
+        "ja": "いらっしゃい、こちらへ。",
+        "kana": "いらっしゃい、こちらへ。",
+        "ro": "irasshai、kochirahe。",
+        "en": "Welcome, this way."
+      },
+      {
+        "ja": "いらっしゃい、今日はお得です。",
+        "kana": "いらっしゃい、きょう は おとく です。",
+        "ro": "irasshai、kyou ha otoku desu。",
+        "en": "Welcome, it’s a good deal today."
+      },
+      {
+        "ja": "いらっしゃい、また来てね。",
+        "kana": "いらっしゃい、また きて ね。",
+        "ro": "irasshai、mata kite ne。",
+        "en": "Welcome, come again."
+      },
+      {
+        "ja": "いらっしゃい、ありがとうございます。",
+        "kana": "いらっしゃい、ありがとうございます。",
+        "ro": "irasshai、arigatougozaimasu。",
+        "en": "Welcome, thank you."
+      }
+    ]
+  },
+  {
+    "id": "n5-int-030",
+    "ja": "おはよう",
+    "kana": "おはよう",
+    "ro": "ohayou",
+    "en": "Good morning",
+    "examples": [
+      {
+        "ja": "おはよう、今日も頑張ろう。",
+        "kana": "おはよう、きょうも がんばろう。",
+        "ro": "ohayou、kyoumo ganbarou。",
+        "en": "Good morning, let’s do our best."
+      },
+      {
+        "ja": "おはよう、よく寝た？",
+        "kana": "おはよう、よく ねた？",
+        "ro": "ohayou、yoku neta？",
+        "en": "Good morning, did you sleep well?"
+      },
+      {
+        "ja": "おはよう、朝ごはん食べた？",
+        "kana": "おはよう、あさごはん たべた？",
+        "ro": "ohayou、asagohan tabeta？",
+        "en": "Good morning, did you eat breakfast?"
+      },
+      {
+        "ja": "おはよう、いってらっしゃい。",
+        "kana": "おはよう、いってらっしゃい。",
+        "ro": "ohayou、itterasshai。",
+        "en": "Good morning, have a good day."
+      },
+      {
+        "ja": "おはよう、今日は晴れだね。",
+        "kana": "おはよう、きょうは はれ だね。",
+        "ro": "ohayou、kyouha hare dane。",
+        "en": "Good morning, it’s sunny today."
+      }
+    ]
+  }
+]

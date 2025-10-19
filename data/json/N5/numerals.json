@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "n5-num-001",
+    "ja": "一",
+    "kana": "いち",
+    "ro": "ichi",
+    "en": "one",
+    "examples": [
+      {
+        "ja": "りんごを一つ食べました。",
+        "kana": "りんご を ひとつ たべました。",
+        "ro": "ringo o hitotsu tabemashita.",
+        "en": "I ate one apple."
+      },
+      {
+        "ja": "一人で公園へ行きました。",
+        "kana": "ひとり で こうえん へ いきました。",
+        "ro": "hitori de kouen e ikimashita.",
+        "en": "I went to the park alone."
+      },
+      {
+        "ja": "一回だけ質問があります。",
+        "kana": "いっかい だけ しつもん が あります。",
+        "ro": "ikkai dake shitsumon ga arimasu.",
+        "en": "I have one question."
+      },
+      {
+        "ja": "一日中雨が降りました。",
+        "kana": "いちにちじゅう あめ が ふりました。",
+        "ro": "ichinichijuu ame ga furimashita.",
+        "en": "It rained all day."
+      },
+      {
+        "ja": "一番好きな色は青です。",
+        "kana": "いちばん すき な いろ は あお です。",
+        "ro": "ichiban suki na iro wa ao desu.",
+        "en": "My favorite color is blue."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-002",
+    "ja": "二",
+    "kana": "に",
+    "ro": "ni",
+    "en": "two",
+    "examples": [
+      {
+        "ja": "猫が二匹います。",
+        "kana": "ねこ が にひき います。",
+        "ro": "neko ga nihiki imasu.",
+        "en": "There are two cats."
+      },
+      {
+        "ja": "二人で写真を撮りました。",
+        "kana": "ふたり で しゃしん を とりました。",
+        "ro": "futari de shashin o torimashita.",
+        "en": "Two of us took a photo."
+      },
+      {
+        "ja": "本を二冊買いました。",
+        "kana": "ほん を にさつ かいました。",
+        "ro": "hon o nisatsu kaimashita.",
+        "en": "I bought two books."
+      },
+      {
+        "ja": "二回テストを受けました。",
+        "kana": "にかい テスト を うけました。",
+        "ro": "nikai tesuto o ukemashita.",
+        "en": "I took the test twice."
+      },
+      {
+        "ja": "二番目の駅で降ります。",
+        "kana": "にばんめ の えき で おります。",
+        "ro": "nibanme no eki de orimasu.",
+        "en": "I get off at the second station."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-003",
+    "ja": "三",
+    "kana": "さん",
+    "ro": "san",
+    "en": "three",
+    "examples": [
+      {
+        "ja": "友達が三人います。",
+        "kana": "ともだち が さんにん います。",
+        "ro": "tomodachi ga sannin imasu.",
+        "en": "I have three friends."
+      },
+      {
+        "ja": "三つの箱を運びました。",
+        "kana": "みっつ の はこ を はこびました。",
+        "ro": "mittsu no hako o hakobimashita.",
+        "en": "I carried three boxes."
+      },
+      {
+        "ja": "三回練習しました。",
+        "kana": "さんかい れんしゅう しました。",
+        "ro": "sankai renshuu shimashita.",
+        "en": "I practiced three times."
+      },
+      {
+        "ja": "三日後に会いましょう。",
+        "kana": "みっか ご に あいましょう。",
+        "ro": "mikka go ni aimashou.",
+        "en": "Let’s meet in three days."
+      },
+      {
+        "ja": "三番目の問題は難しいです。",
+        "kana": "さんばんめ の もんだい は むずかしい です。",
+        "ro": "sanbanme no mondai wa muzukashii desu.",
+        "en": "The third question is difficult."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-004",
+    "ja": "四",
+    "kana": "よん",
+    "ro": "yon",
+    "en": "four",
+    "alt_readings": {
+      "kana": [
+        "し"
+      ],
+      "romaji": [
+        "shi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "四人家族です。",
+        "kana": "よにん かぞく です。",
+        "ro": "yonin kazoku desu.",
+        "en": "We are a family of four."
+      },
+      {
+        "ja": "四つのボタンを押します。",
+        "kana": "よっつ の ボタン を おします。",
+        "ro": "yottsu no botan o oshimasu.",
+        "en": "I press four buttons."
+      },
+      {
+        "ja": "四回目で合格しました。",
+        "kana": "よんかいめ で ごうかく しました。",
+        "ro": "yonkaime de goukaku shimashita.",
+        "en": "I passed on the fourth try."
+      },
+      {
+        "ja": "四月に花見をします。",
+        "kana": "しがつ に はなみ を します。",
+        "ro": "shigatsu ni hanami o shimasu.",
+        "en": "We go flower-viewing in April."
+      },
+      {
+        "ja": "四本のペンがあります。",
+        "kana": "よんほん の ペン が あります。",
+        "ro": "yonhon no pen ga arimasu.",
+        "en": "There are four pens."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-005",
+    "ja": "五",
+    "kana": "ご",
+    "ro": "go",
+    "en": "five",
+    "examples": [
+      {
+        "ja": "五つの星が見えます。",
+        "kana": "いつつ の ほし が みえます。",
+        "ro": "itsutsu no hoshi ga miemasu.",
+        "en": "I can see five stars."
+      },
+      {
+        "ja": "五人で昼ごはんを食べました。",
+        "kana": "ごにん で ひるごはん を たべました。",
+        "ro": "gonin de hirugohan o tabemashita.",
+        "en": "Five of us had lunch."
+      },
+      {
+        "ja": "五分休憩しましょう。",
+        "kana": "ごふん きゅうけい しましょう。",
+        "ro": "gofun kyuukei shimashou.",
+        "en": "Let’s take a five-minute break."
+      },
+      {
+        "ja": "五回練習しました。",
+        "kana": "ごかい れんしゅう しました。",
+        "ro": "gokai renshuu shimashita.",
+        "en": "I practiced five times."
+      },
+      {
+        "ja": "五番目のページを見てください。",
+        "kana": "ごばんめ の ページ を みて ください。",
+        "ro": "gobanme no peeji o mite kudasai.",
+        "en": "Please look at page five."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-006",
+    "ja": "六",
+    "kana": "ろく",
+    "ro": "roku",
+    "en": "six",
+    "examples": [
+      {
+        "ja": "六つの卵を買いました。",
+        "kana": "むっつ の たまご を かいました。",
+        "ro": "muttsu no tamago o kaimashita.",
+        "en": "I bought six eggs."
+      },
+      {
+        "ja": "六人が集まりました。",
+        "kana": "ろくにん が あつまりました。",
+        "ro": "rokunin ga atsumarimashita.",
+        "en": "Six people gathered."
+      },
+      {
+        "ja": "六時に起きます。",
+        "kana": "ろくじ に おきます。",
+        "ro": "rokuji ni okimasu.",
+        "en": "I wake up at six o’clock."
+      },
+      {
+        "ja": "六回目の試験です。",
+        "kana": "ろっかいめ の しけん です。",
+        "ro": "rokkaime no shiken desu.",
+        "en": "This is the sixth exam."
+      },
+      {
+        "ja": "六本のえんぴつがあります。",
+        "kana": "ろっぽん の えんぴつ が あります。",
+        "ro": "roppon no enpitsu ga arimasu.",
+        "en": "There are six pencils."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-007",
+    "ja": "七",
+    "kana": "なな",
+    "ro": "nana",
+    "en": "seven",
+    "alt_readings": {
+      "kana": [
+        "しち"
+      ],
+      "romaji": [
+        "shichi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "七人の学生が来ました。",
+        "kana": "しちにん の がくせい が きました。",
+        "ro": "shichinin no gakusei ga kimashita.",
+        "en": "Seven students came."
+      },
+      {
+        "ja": "七つの島があります。",
+        "kana": "ななつ の しま が あります。",
+        "ro": "nanatsu no shima ga arimasu.",
+        "en": "There are seven islands."
+      },
+      {
+        "ja": "七時に集合します。",
+        "kana": "しちじ に しゅうごう します。",
+        "ro": "shichiji ni shuugou shimasu.",
+        "en": "We meet at seven."
+      },
+      {
+        "ja": "七回目の試合です。",
+        "kana": "ななかいめ の しあい です。",
+        "ro": "nanakaime no shiai desu.",
+        "en": "It’s the seventh game."
+      },
+      {
+        "ja": "七月に海へ行きます。",
+        "kana": "しちがつ に うみ へ いきます。",
+        "ro": "shichigatsu ni umi e ikimasu.",
+        "en": "I’ll go to the sea in July."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-008",
+    "ja": "八",
+    "kana": "はち",
+    "ro": "hachi",
+    "en": "eight",
+    "examples": [
+      {
+        "ja": "八つの皿を洗いました。",
+        "kana": "やっつ の さら を あらいました。",
+        "ro": "yattsu no sara o araimashita.",
+        "en": "I washed eight plates."
+      },
+      {
+        "ja": "八人でゲームをしました。",
+        "kana": "はちにん で ゲーム を しました。",
+        "ro": "hachinin de geemu o shimashita.",
+        "en": "Eight people played a game."
+      },
+      {
+        "ja": "八時に学校へ行きます。",
+        "kana": "はちじ に がっこう へ いきます。",
+        "ro": "hachiji ni gakkou e ikimasu.",
+        "en": "I go to school at eight."
+      },
+      {
+        "ja": "八回練習しました。",
+        "kana": "はっかい れんしゅう しました。",
+        "ro": "hakkai renshuu shimashita.",
+        "en": "I practiced eight times."
+      },
+      {
+        "ja": "八月は暑いです。",
+        "kana": "はちがつ は あつい です。",
+        "ro": "hachigatsu wa atsui desu.",
+        "en": "August is hot."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-009",
+    "ja": "九",
+    "kana": "きゅう",
+    "ro": "kyuu",
+    "en": "nine",
+    "alt_readings": {
+      "kana": [
+        "く"
+      ],
+      "romaji": [
+        "ku"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "九つのボールがあります。",
+        "kana": "ここのつ の ボール が あります。",
+        "ro": "kokonotsu no booru ga arimasu.",
+        "en": "There are nine balls."
+      },
+      {
+        "ja": "九人が並んでいます。",
+        "kana": "きゅうにん が ならんで います。",
+        "ro": "kyuunin ga narande imasu.",
+        "en": "Nine people are in line."
+      },
+      {
+        "ja": "九時に会社へ行きます。",
+        "kana": "くじ に かいしゃ へ いきます。",
+        "ro": "kuji ni kaisha e ikimasu.",
+        "en": "I go to work at nine."
+      },
+      {
+        "ja": "九回目の挑戦です。",
+        "kana": "きゅうかいめ の ちょうせん です。",
+        "ro": "kyuukaime no chousen desu.",
+        "en": "It’s the ninth challenge."
+      },
+      {
+        "ja": "九月に学校が始まります。",
+        "kana": "くがつ に がっこう が はじまります。",
+        "ro": "kugatsu ni gakkou ga hajimarimasu.",
+        "en": "School starts in September."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-010",
+    "ja": "十",
+    "kana": "じゅう",
+    "ro": "juu",
+    "en": "ten",
+    "examples": [
+      {
+        "ja": "十個のりんごがあります。",
+        "kana": "じゅっこ の りんご が あります。",
+        "ro": "jukko no ringo ga arimasu.",
+        "en": "There are ten apples."
+      },
+      {
+        "ja": "十人で写真を撮りました。",
+        "kana": "じゅうにん で しゃしん を とりました。",
+        "ro": "juunin de shashin o torimashita.",
+        "en": "Ten people took a photo."
+      },
+      {
+        "ja": "会議は十時に始まります。",
+        "kana": "かいぎ は じゅうじ に はじまります。",
+        "ro": "kaigi wa juuji ni hajimarimasu.",
+        "en": "The meeting starts at ten."
+      },
+      {
+        "ja": "十回練習しました。",
+        "kana": "じゅっかい れんしゅう しました。",
+        "ro": "jukkai renshuu shimashita.",
+        "en": "I practiced ten times."
+      },
+      {
+        "ja": "十ページを読んでください。",
+        "kana": "じゅっ ページ を よんで ください。",
+        "ro": "jup-peeji o yonde kudasai.",
+        "en": "Please read page ten."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-011",
+    "ja": "十一",
+    "kana": "じゅういち",
+    "ro": "juuichi",
+    "en": "eleven",
+    "examples": [
+      {
+        "ja": "十一ページを読みました。",
+        "kana": "じゅういち ページ を よみました。",
+        "ro": "juuichi peeji o yomimashita.",
+        "en": "I read page eleven."
+      },
+      {
+        "ja": "十一人が集まりました。",
+        "kana": "じゅういち にん が あつまりました。",
+        "ro": "juuichi nin ga atsumarimashita.",
+        "en": "Eleven people gathered."
+      },
+      {
+        "ja": "電車は十一時に出ます。",
+        "kana": "でんしゃ は じゅういちじ に でます。",
+        "ro": "densha wa juuichiji ni demasu.",
+        "en": "The train leaves at eleven."
+      },
+      {
+        "ja": "十一個に分けました。",
+        "kana": "じゅういち こ に わけました。",
+        "ro": "juuichi ko ni wakemashita.",
+        "en": "We divided them into eleven."
+      },
+      {
+        "ja": "十一分待ってください。",
+        "kana": "じゅういち ふん まって ください。",
+        "ro": "juuichi fun matte kudasai.",
+        "en": "Please wait eleven minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-012",
+    "ja": "十二",
+    "kana": "じゅうに",
+    "ro": "juuni",
+    "en": "twelve",
+    "examples": [
+      {
+        "ja": "十二個のクッキーを焼きました。",
+        "kana": "じゅうに こ の クッキー を やきました。",
+        "ro": "juuni ko no kukkii o yakimashita.",
+        "en": "I baked twelve cookies."
+      },
+      {
+        "ja": "十二人のチームです。",
+        "kana": "じゅうに にん の チーム です。",
+        "ro": "juuni nin no chiimu desu.",
+        "en": "It’s a team of twelve."
+      },
+      {
+        "ja": "映画は十二時に終わります。",
+        "kana": "えいが は じゅうにじ に おわります。",
+        "ro": "eiga wa juuniji ni owarimasu.",
+        "en": "The movie ends at twelve."
+      },
+      {
+        "ja": "十二ページを開いてください。",
+        "kana": "じゅうに ページ を ひらいて ください。",
+        "ro": "juuni peeji o hiraite kudasai.",
+        "en": "Open to page twelve."
+      },
+      {
+        "ja": "十二分歩きました。",
+        "kana": "じゅうに ふん あるきました。",
+        "ro": "juuni fun arukimashita.",
+        "en": "I walked for twelve minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-013",
+    "ja": "十三",
+    "kana": "じゅうさん",
+    "ro": "juusan",
+    "en": "thirteen",
+    "examples": [
+      {
+        "ja": "十三ページを開いてください。",
+        "kana": "じゅうさん ページ を ひらいて ください。",
+        "ro": "juusan peeji o hiraite kudasai.",
+        "en": "Open to page thirteen."
+      },
+      {
+        "ja": "十三人が参加します。",
+        "kana": "じゅうさん にん が さんか します。",
+        "ro": "juusan nin ga sanka shimasu.",
+        "en": "Thirteen people will join."
+      },
+      {
+        "ja": "十三分歩きました。",
+        "kana": "じゅうさん ふん あるきました。",
+        "ro": "juusan fun arukimashita.",
+        "en": "I walked for thirteen minutes."
+      },
+      {
+        "ja": "十三個入りを買いました。",
+        "kana": "じゅうさん こいり を かいました。",
+        "ro": "juusan ko-iri o kaimashita.",
+        "en": "I bought a pack of thirteen."
+      },
+      {
+        "ja": "十三回目の挑戦です。",
+        "kana": "じゅうさん かいめ の ちょうせん です。",
+        "ro": "juusan kaime no chousen desu.",
+        "en": "It’s the thirteenth try."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-014",
+    "ja": "十四",
+    "kana": "じゅうよん",
+    "ro": "juuyon",
+    "en": "fourteen",
+    "alt_readings": {
+      "kana": [
+        "し"
+      ],
+      "romaji": [
+        "shi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "十四人のクラスです。",
+        "kana": "じゅうよん にん の クラス です。",
+        "ro": "juuyon nin no kurasu desu.",
+        "en": "It’s a class of fourteen."
+      },
+      {
+        "ja": "十四個に分けました。",
+        "kana": "じゅうよん こ に わけました。",
+        "ro": "juuyon ko ni wakemashita.",
+        "en": "We divided it into fourteen pieces."
+      },
+      {
+        "ja": "十四時に再開します。",
+        "kana": "じゅうよじ に さいかい します。",
+        "ro": "juu yoji ni saikai shimasu.",
+        "en": "We resume at 14:00."
+      },
+      {
+        "ja": "十四ページを見てください。",
+        "kana": "じゅうよん ページ を みて ください。",
+        "ro": "juuyon peeji o mite kudasai.",
+        "en": "Please see page fourteen."
+      },
+      {
+        "ja": "十四分で準備します。",
+        "kana": "じゅうよん ふん で じゅんび します。",
+        "ro": "juuyon fun de junbi shimasu.",
+        "en": "I’ll be ready in fourteen minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-015",
+    "ja": "十五",
+    "kana": "じゅうご",
+    "ro": "juugo",
+    "en": "fifteen",
+    "examples": [
+      {
+        "ja": "十五分休みます。",
+        "kana": "じゅうご ふん やすみます。",
+        "ro": "juugo fun yasumimasu.",
+        "en": "I’ll rest for fifteen minutes."
+      },
+      {
+        "ja": "十五人が列に並びました。",
+        "kana": "じゅうご にん が れつ に ならびました。",
+        "ro": "juugo nin ga retsu ni narabimashita.",
+        "en": "Fifteen people lined up."
+      },
+      {
+        "ja": "十五冊の本があります。",
+        "kana": "じゅうご さつ の ほん が あります。",
+        "ro": "juugo satsu no hon ga arimasu.",
+        "en": "There are fifteen books."
+      },
+      {
+        "ja": "十五ページまで読みました。",
+        "kana": "じゅうご ページ まで よみました。",
+        "ro": "juugo peeji made yomimashita.",
+        "en": "I read up to page fifteen."
+      },
+      {
+        "ja": "十五回目で成功しました。",
+        "kana": "じゅうご かいめ で せいこう しました。",
+        "ro": "juugo kaime de seikou shimashita.",
+        "en": "I succeeded on the fifteenth try."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-016",
+    "ja": "十六",
+    "kana": "じゅうろく",
+    "ro": "juuroku",
+    "en": "sixteen",
+    "examples": [
+      {
+        "ja": "十六ページを読んでください。",
+        "kana": "じゅうろく ページ を よんで ください。",
+        "ro": "juuroku peeji o yonde kudasai.",
+        "en": "Please read page sixteen."
+      },
+      {
+        "ja": "十六人が参加しました。",
+        "kana": "じゅうろく にん が さんか しました。",
+        "ro": "juuroku nin ga sanka shimashita.",
+        "en": "Sixteen people participated."
+      },
+      {
+        "ja": "十六時に集合します。",
+        "kana": "じゅうろくじ に しゅうごう します。",
+        "ro": "juurokuji ni shuugou shimasu.",
+        "en": "We meet at 16:00."
+      },
+      {
+        "ja": "十六個のシールを集めました。",
+        "kana": "じゅうろく こ の シール を あつめました。",
+        "ro": "juuroku ko no shiiru o atsumemashita.",
+        "en": "I collected sixteen stickers."
+      },
+      {
+        "ja": "十六分で終わります。",
+        "kana": "じゅうろく ふん で おわります。",
+        "ro": "juuroku fun de owarimasu.",
+        "en": "It finishes in sixteen minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-017",
+    "ja": "十七",
+    "kana": "じゅうなな",
+    "ro": "juunana",
+    "en": "seventeen",
+    "alt_readings": {
+      "kana": [
+        "しち"
+      ],
+      "romaji": [
+        "shichi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "十七人が教室にいます。",
+        "kana": "じゅうなな にん が きょうしつ に います。",
+        "ro": "juunana nin ga kyoushitsu ni imasu.",
+        "en": "Seventeen people are in the classroom."
+      },
+      {
+        "ja": "十七枚の紙を配りました。",
+        "kana": "じゅうなな まい の かみ を くばりました。",
+        "ro": "juunana mai no kami o kubarimashita.",
+        "en": "I handed out seventeen sheets."
+      },
+      {
+        "ja": "十七分で終わります。",
+        "kana": "じゅうなな ふん で おわります。",
+        "ro": "juunana fun de owarimasu.",
+        "en": "It finishes in seventeen minutes."
+      },
+      {
+        "ja": "十七ページを参照してください。",
+        "kana": "じゅうなな ページ を さんしょう して ください。",
+        "ro": "juunana peeji o sanshou shite kudasai.",
+        "en": "Please refer to page seventeen."
+      },
+      {
+        "ja": "十七個に分けました。",
+        "kana": "じゅうなな こ に わけました。",
+        "ro": "juunana ko ni wakemashita.",
+        "en": "We split it into seventeen pieces."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-018",
+    "ja": "十八",
+    "kana": "じゅうはち",
+    "ro": "juuhachi",
+    "en": "eighteen",
+    "examples": [
+      {
+        "ja": "十八歳です。",
+        "kana": "じゅうはっさい です。",
+        "ro": "juuhassai desu.",
+        "en": "I am eighteen years old."
+      },
+      {
+        "ja": "十八個のクッキーが残っています。",
+        "kana": "じゅうはち こ の クッキー が のこって います。",
+        "ro": "juuhachi ko no kukkii ga nokotte imasu.",
+        "en": "Eighteen cookies are left."
+      },
+      {
+        "ja": "十八時に会いましょう。",
+        "kana": "じゅうはちじ に あいましょう。",
+        "ro": "juuhachiji ni aimashou.",
+        "en": "Let’s meet at 18:00."
+      },
+      {
+        "ja": "十八分だけ休みます。",
+        "kana": "じゅうはち ふん だけ やすみます。",
+        "ro": "juuhachi fun dake yasumimasu.",
+        "en": "I’ll rest for eighteen minutes."
+      },
+      {
+        "ja": "十八ページから読みます。",
+        "kana": "じゅうはち ページ から よみます。",
+        "ro": "juuhachi peeji kara yomimasu.",
+        "en": "I’ll start from page eighteen."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-019",
+    "ja": "十九",
+    "kana": "じゅうきゅう",
+    "ro": "juukyuu",
+    "en": "nineteen",
+    "alt_readings": {
+      "kana": [
+        "く"
+      ],
+      "romaji": [
+        "ku"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "十九人がサインしました。",
+        "kana": "じゅうきゅう にん が サイン しました。",
+        "ro": "juukyuu nin ga sain shimashita.",
+        "en": "Nineteen people signed."
+      },
+      {
+        "ja": "十九ページを見てください。",
+        "kana": "じゅうきゅう ページ を みて ください。",
+        "ro": "juukyuu peeji o mite kudasai.",
+        "en": "Please see page nineteen."
+      },
+      {
+        "ja": "十九分待ちました。",
+        "kana": "じゅうきゅう ふん まちました。",
+        "ro": "juukyuu fun machimashita.",
+        "en": "I waited for nineteen minutes."
+      },
+      {
+        "ja": "十九個の箱があります。",
+        "kana": "じゅうきゅう こ の はこ が あります。",
+        "ro": "juukyuu ko no hako ga arimasu.",
+        "en": "There are nineteen boxes."
+      },
+      {
+        "ja": "十九回目の練習です。",
+        "kana": "じゅうきゅう かいめ の れんしゅう です。",
+        "ro": "juukyuu kaime no renshuu desu.",
+        "en": "It’s the nineteenth practice."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-020",
+    "ja": "二十",
+    "kana": "にじゅう",
+    "ro": "nijuu",
+    "en": "twenty",
+    "examples": [
+      {
+        "ja": "二十人のグループです。",
+        "kana": "にじゅう にん の グループ です。",
+        "ro": "nijuu nin no guruupu desu.",
+        "en": "It’s a group of twenty."
+      },
+      {
+        "ja": "二十個に分けました。",
+        "kana": "にじゅう こ に わけました。",
+        "ro": "nijuu ko ni wakemashita.",
+        "en": "We split it into twenty pieces."
+      },
+      {
+        "ja": "発表は二十時に始まります。",
+        "kana": "はっぴょう は にじゅうじ に はじまります。",
+        "ro": "happyou wa nijuuji ni hajimarimasu.",
+        "en": "The presentation starts at 20:00."
+      },
+      {
+        "ja": "二十ページまで読みました。",
+        "kana": "にじゅう ページ まで よみました。",
+        "ro": "nijuu peeji made yomimashita.",
+        "en": "I read up to page twenty."
+      },
+      {
+        "ja": "二十分で準備します。",
+        "kana": "にじゅっぷん で じゅんび します。",
+        "ro": "nijuppun de junbi shimasu.",
+        "en": "I’ll be ready in twenty minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-021",
+    "ja": "二十一",
+    "kana": "にじゅういち",
+    "ro": "nijuuichi",
+    "en": "twenty-one",
+    "examples": [
+      {
+        "ja": "二十一人が参加します。",
+        "kana": "にじゅういち にん が さんか します。",
+        "ro": "nijuuichi nin ga sanka shimasu.",
+        "en": "Twenty-one people will participate."
+      },
+      {
+        "ja": "二十一ページを読みました。",
+        "kana": "にじゅういち ページ を よみました。",
+        "ro": "nijuuichi peeji o yomimashita.",
+        "en": "I read page twenty-one."
+      },
+      {
+        "ja": "二十一分で戻ります。",
+        "kana": "にじゅういち ふん で もどります。",
+        "ro": "nijuuichi fun de modorimasu.",
+        "en": "I’ll be back in twenty-one minutes."
+      },
+      {
+        "ja": "二十一個集まりました。",
+        "kana": "にじゅういち こ あつまりました。",
+        "ro": "nijuuichi ko atsumarimashita.",
+        "en": "We collected twenty-one items."
+      },
+      {
+        "ja": "二十一回目の挑戦です。",
+        "kana": "にじゅういち かいめ の ちょうせん です。",
+        "ro": "nijuuichi kaime no chousen desu.",
+        "en": "It’s the 21st attempt."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-022",
+    "ja": "二十二",
+    "kana": "にじゅうに",
+    "ro": "nijuuni",
+    "en": "twenty-two",
+    "examples": [
+      {
+        "ja": "二十二個のボタンがあります。",
+        "kana": "にじゅうに こ の ボタン が あります。",
+        "ro": "nijuuni ko no botan ga arimasu.",
+        "en": "There are twenty-two buttons."
+      },
+      {
+        "ja": "二十二人で歌いました。",
+        "kana": "にじゅうに にん で うたいました。",
+        "ro": "nijuuni nin de utaimashita.",
+        "en": "Twenty-two people sang."
+      },
+      {
+        "ja": "二十二時に寝ます。",
+        "kana": "にじゅうにじ に ねます。",
+        "ro": "nijuuniji ni nemasu.",
+        "en": "I sleep at 22:00."
+      },
+      {
+        "ja": "二十二ページを確認します。",
+        "kana": "にじゅうに ページ を かくにん します。",
+        "ro": "nijuuni peeji o kakunin shimasu.",
+        "en": "I check page twenty-two."
+      },
+      {
+        "ja": "二十二分後に集合です。",
+        "kana": "にじゅうに ふん ご に しゅうごう です。",
+        "ro": "nijuuni fun go ni shuugou desu.",
+        "en": "We meet in twenty-two minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-023",
+    "ja": "二十三",
+    "kana": "にじゅうさん",
+    "ro": "nijuusan",
+    "en": "twenty-three",
+    "examples": [
+      {
+        "ja": "二十三人のチームです。",
+        "kana": "にじゅうさん にん の チーム です。",
+        "ro": "nijuusan nin no chiimu desu.",
+        "en": "It’s a team of twenty-three."
+      },
+      {
+        "ja": "二十三ページを開いてください。",
+        "kana": "にじゅうさん ページ を ひらいて ください。",
+        "ro": "nijuusan peeji o hiraite kudasai.",
+        "en": "Open to page twenty-three."
+      },
+      {
+        "ja": "二十三分歩きました。",
+        "kana": "にじゅうさん ふん あるきました。",
+        "ro": "nijuusan fun arukimashita.",
+        "en": "I walked for twenty-three minutes."
+      },
+      {
+        "ja": "二十三個に小分けしました。",
+        "kana": "にじゅうさん こ に こわけ しました。",
+        "ro": "nijuusan ko ni kowake shimashita.",
+        "en": "We split into twenty-three portions."
+      },
+      {
+        "ja": "二十三回目で成功しました。",
+        "kana": "にじゅうさん かいめ で せいこう しました。",
+        "ro": "nijuusan kaime de seikou shimashita.",
+        "en": "Succeeded on the 23rd try."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-024",
+    "ja": "二十四",
+    "kana": "にじゅうよん",
+    "ro": "nijuuyon",
+    "en": "twenty-four",
+    "alt_readings": {
+      "kana": [
+        "し"
+      ],
+      "romaji": [
+        "shi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "二十四時間営業です。",
+        "kana": "にじゅうよん じかん えいぎょう です。",
+        "ro": "nijuuyon jikan eigyou desu.",
+        "en": "Open 24 hours."
+      },
+      {
+        "ja": "二十四個に小分けしました。",
+        "kana": "にじゅうよん こ に こわけ しました。",
+        "ro": "nijuuyon ko ni kowake shimashita.",
+        "en": "We split into twenty-four."
+      },
+      {
+        "ja": "二十四人が出席しました。",
+        "kana": "にじゅうよん にん が しゅっせき しました。",
+        "ro": "nijuuyon nin ga shusseki shimashita.",
+        "en": "Twenty-four people attended."
+      },
+      {
+        "ja": "二十四ページを参照してください。",
+        "kana": "にじゅうよん ページ を さんしょう して ください。",
+        "ro": "nijuuyon peeji o sanshou shite kudasai.",
+        "en": "Please refer to page twenty-four."
+      },
+      {
+        "ja": "二十四分で戻ります。",
+        "kana": "にじゅうよん ふん で もどります。",
+        "ro": "nijuuyon fun de modorimasu.",
+        "en": "I’ll be back in twenty-four minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-025",
+    "ja": "二十五",
+    "kana": "にじゅうご",
+    "ro": "nijuugo",
+    "en": "twenty-five",
+    "examples": [
+      {
+        "ja": "二十五分だけ休みます。",
+        "kana": "にじゅうご ふん だけ やすみます。",
+        "ro": "nijuugo fun dake yasumimasu.",
+        "en": "I’ll rest for twenty-five minutes."
+      },
+      {
+        "ja": "二十五人で試合をしました。",
+        "kana": "にじゅうご にん で しあい を しました。",
+        "ro": "nijuugo nin de shiai o shimashita.",
+        "en": "Twenty-five people played a match."
+      },
+      {
+        "ja": "二十五ページまで読みました。",
+        "kana": "にじゅうご ページ まで よみました。",
+        "ro": "nijuugo peeji made yomimashita.",
+        "en": "I read up to page twenty-five."
+      },
+      {
+        "ja": "二十五個そろいました。",
+        "kana": "にじゅうご こ そろいました。",
+        "ro": "nijuugo ko soroimashita.",
+        "en": "We have twenty-five items in total."
+      },
+      {
+        "ja": "二十五回目の練習です。",
+        "kana": "にじゅうご かいめ の れんしゅう です。",
+        "ro": "nijuugo kaime no renshuu desu.",
+        "en": "This is the 25th practice."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-026",
+    "ja": "二十六",
+    "kana": "にじゅうろく",
+    "ro": "nijuuroku",
+    "en": "twenty-six",
+    "examples": [
+      {
+        "ja": "二十六人が列にいます。",
+        "kana": "にじゅうろく にん が れつ に います。",
+        "ro": "nijuuroku nin ga retsu ni imasu.",
+        "en": "Twenty-six people are in line."
+      },
+      {
+        "ja": "二十六個のスタンプを集めました。",
+        "kana": "にじゅうろく こ の スタンプ を あつめました。",
+        "ro": "nijuuroku ko no sutanpu o atsumemashita.",
+        "en": "I collected twenty-six stamps."
+      },
+      {
+        "ja": "二十六ページを確認してください。",
+        "kana": "にじゅうろく ページ を かくにん してください。",
+        "ro": "nijuuroku peeji o kakunin shite kudasai.",
+        "en": "Please check page twenty-six."
+      },
+      {
+        "ja": "二十六分で戻ります。",
+        "kana": "にじゅうろく ふん で もどります。",
+        "ro": "nijuuroku fun de modorimasu.",
+        "en": "I’ll be back in twenty-six minutes."
+      },
+      {
+        "ja": "会議は二十六日です。",
+        "kana": "かいぎ は にじゅうろくにち です。",
+        "ro": "kaigi wa nijuurokunichi desu.",
+        "en": "The meeting is on the 26th."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-027",
+    "ja": "二十七",
+    "kana": "にじゅうなな",
+    "ro": "nijuunana",
+    "en": "twenty-seven",
+    "alt_readings": {
+      "kana": [
+        "しち"
+      ],
+      "romaji": [
+        "shichi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "二十七分で到着します。",
+        "kana": "にじゅうなな ふん で とうちゃく します。",
+        "ro": "nijuunana fun de touchaku shimasu.",
+        "en": "I will arrive in twenty-seven minutes."
+      },
+      {
+        "ja": "二十七人が投票しました。",
+        "kana": "にじゅうなな にん が とうひょう しました。",
+        "ro": "nijuunana nin ga touhyou shimashita.",
+        "en": "Twenty-seven people voted."
+      },
+      {
+        "ja": "二十七枚のカードがあります。",
+        "kana": "にじゅうなな まい の カード が あります。",
+        "ro": "nijuunana mai no kaado ga arimasu.",
+        "en": "There are twenty-seven cards."
+      },
+      {
+        "ja": "二十七ページを読んでください。",
+        "kana": "にじゅうなな ページ を よんで ください。",
+        "ro": "nijuunana peeji o yonde kudasai.",
+        "en": "Please read page twenty-seven."
+      },
+      {
+        "ja": "宿題は二十七日までです。",
+        "kana": "しゅくだい は にじゅうなな にち まで です。",
+        "ro": "shukudai wa nijuunana nichi made desu.",
+        "en": "Homework is due by the 27th."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-028",
+    "ja": "二十八",
+    "kana": "にじゅうはち",
+    "ro": "nijuuhachi",
+    "en": "twenty-eight",
+    "examples": [
+      {
+        "ja": "二十八ページから始めます。",
+        "kana": "にじゅうはち ページ から はじめます。",
+        "ro": "nijuuhachi peeji kara hajimemasu.",
+        "en": "We start from page twenty-eight."
+      },
+      {
+        "ja": "二十八人が参加予定です。",
+        "kana": "にじゅうはち にん が さんか よてい です。",
+        "ro": "nijuuhachi nin ga sanka yotei desu.",
+        "en": "Twenty-eight people are expected."
+      },
+      {
+        "ja": "二十八個に小分けしました。",
+        "kana": "にじゅうはち こ に こわけ しました。",
+        "ro": "nijuuhachi ko ni kowake shimashita.",
+        "en": "We split it into twenty-eight pieces."
+      },
+      {
+        "ja": "二十八時にメールを送ります。",
+        "kana": "にじゅうはちじ に メール を おくります。",
+        "ro": "nijuuhachiji ni meeru o okurimasu.",
+        "en": "I’ll send an email at 28:00 (2 a.m.)."
+      },
+      {
+        "ja": "提出日は二十八日です。",
+        "kana": "ていしゅつび は にじゅうはちにち です。",
+        "ro": "teishutsubi wa nijuuhachinichi desu.",
+        "en": "The due date is the 28th."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-029",
+    "ja": "二十九",
+    "kana": "にじゅうきゅう",
+    "ro": "nijuukyuu",
+    "en": "twenty-nine",
+    "alt_readings": {
+      "kana": [
+        "く"
+      ],
+      "romaji": [
+        "ku"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "二十九人が観客席にいます。",
+        "kana": "にじゅうきゅう にん が かんきゃくせき に います。",
+        "ro": "nijuukyuu nin ga kankyaku seki ni imasu.",
+        "en": "Twenty-nine people are in the audience."
+      },
+      {
+        "ja": "二十九ページを復習しました。",
+        "kana": "にじゅうきゅう ページ を ふくしゅう しました。",
+        "ro": "nijuukyuu peeji o fukushuu shimashita.",
+        "en": "I reviewed page twenty-nine."
+      },
+      {
+        "ja": "二十九分間走りました。",
+        "kana": "にじゅうきゅう ふんかん はしりました。",
+        "ro": "nijuukyuu funkan hashirimashita.",
+        "en": "I ran for twenty-nine minutes."
+      },
+      {
+        "ja": "二十九個のサンプルがあります。",
+        "kana": "にじゅうきゅう こ の サンプル が あります。",
+        "ro": "nijuukyuu ko no sanpuru ga arimasu.",
+        "en": "There are twenty-nine samples."
+      },
+      {
+        "ja": "締切は二十九日です。",
+        "kana": "しめきり は にじゅうきゅうにち です。",
+        "ro": "shimekiri wa nijuukyuu nichi desu.",
+        "en": "The deadline is the 29th."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-030",
+    "ja": "三十",
+    "kana": "さんじゅう",
+    "ro": "sanjuu",
+    "en": "thirty",
+    "examples": [
+      {
+        "ja": "三十人が参加しています。",
+        "kana": "さんじゅう にん が さんか しています。",
+        "ro": "sanjuu nin ga sanka shiteimasu.",
+        "en": "Thirty people are participating."
+      },
+      {
+        "ja": "三十分休みました。",
+        "kana": "さんじゅっぷん やすみました。",
+        "ro": "sanjuppun yasumimashita.",
+        "en": "I rested for thirty minutes."
+      },
+      {
+        "ja": "三十個の風船があります。",
+        "kana": "さんじゅっこ の ふうせん が あります。",
+        "ro": "sanjukko no fuusen ga arimasu.",
+        "en": "There are thirty balloons."
+      },
+      {
+        "ja": "三十ページを読みます。",
+        "kana": "さんじゅう ページ を よみます。",
+        "ro": "sanjuu peeji o yomimasu.",
+        "en": "I will read page thirty."
+      },
+      {
+        "ja": "三十回目の発表です。",
+        "kana": "さんじゅっかいめ の はっぴょう です。",
+        "ro": "sanjukkaime no happyou desu.",
+        "en": "This is the 30th presentation."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-031",
+    "ja": "三十一",
+    "kana": "さんじゅういち",
+    "ro": "sanjuuichi",
+    "en": "thirty-one",
+    "examples": [
+      {
+        "ja": "三十一ページを読んでください。",
+        "kana": "さんじゅういち ページ を よんで ください。",
+        "ro": "sanjuuichi peeji o yonde kudasai.",
+        "en": "Please read page thirty-one."
+      },
+      {
+        "ja": "三十一人が集会に来ました。",
+        "kana": "さんじゅういち にん が しゅうかい に きました。",
+        "ro": "sanjuuichi nin ga shuukai ni kimashita.",
+        "en": "Thirty-one people came to the meeting."
+      },
+      {
+        "ja": "三十一分で到着しました。",
+        "kana": "さんじゅういち ふん で とうちゃく しました。",
+        "ro": "sanjuuichi fun de touchaku shimashita.",
+        "en": "I arrived in thirty-one minutes."
+      },
+      {
+        "ja": "提出日は三十一日です。",
+        "kana": "ていしゅつび は さんじゅういちにち です。",
+        "ro": "teishutsubi wa sanjuuichinichi desu.",
+        "en": "The submission date is the 31st."
+      },
+      {
+        "ja": "ノートは三十一行あります。",
+        "kana": "ノート は さんじゅういち ぎょう あります。",
+        "ro": "nooto wa sanjuuichi gyou arimasu.",
+        "en": "The notebook has 31 lines."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-032",
+    "ja": "三十二",
+    "kana": "さんじゅうに",
+    "ro": "sanjuuni",
+    "en": "thirty-two",
+    "examples": [
+      {
+        "ja": "三十二人のクラスです。",
+        "kana": "さんじゅうに にん の クラス です。",
+        "ro": "sanjuuni nin no kurasu desu.",
+        "en": "It’s a class of thirty-two."
+      },
+      {
+        "ja": "三十二ページを復習します。",
+        "kana": "さんじゅうに ページ を ふくしゅう します。",
+        "ro": "sanjuuni peeji o fukushuu shimasu.",
+        "en": "I review page thirty-two."
+      },
+      {
+        "ja": "三十二分待ってください。",
+        "kana": "さんじゅうに ふん まって ください。",
+        "ro": "sanjuuni fun matte kudasai.",
+        "en": "Please wait thirty-two minutes."
+      },
+      {
+        "ja": "三十二個集めました。",
+        "kana": "さんじゅうに こ あつめました。",
+        "ro": "sanjuuni ko atsumemashita.",
+        "en": "I collected thirty-two items."
+      },
+      {
+        "ja": "三十二回目の練習です。",
+        "kana": "さんじゅうに かいめ の れんしゅう です。",
+        "ro": "sanjuuni kaime no renshuu desu.",
+        "en": "It’s the 32nd practice."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-033",
+    "ja": "三十三",
+    "kana": "さんじゅうさん",
+    "ro": "sanjuusan",
+    "en": "thirty-three",
+    "examples": [
+      {
+        "ja": "三十三人がバスに乗りました。",
+        "kana": "さんじゅうさん にん が バス に のりました。",
+        "ro": "sanjuusan nin ga basu ni norimashita.",
+        "en": "Thirty-three people got on the bus."
+      },
+      {
+        "ja": "三十三ページを開きます。",
+        "kana": "さんじゅうさん ページ を ひらきます。",
+        "ro": "sanjuusan peeji o hirakimasu.",
+        "en": "Open page thirty-three."
+      },
+      {
+        "ja": "三十三分で終わります。",
+        "kana": "さんじゅうさん ふん で おわります。",
+        "ro": "sanjuusan fun de owarimasu.",
+        "en": "It finishes in thirty-three minutes."
+      },
+      {
+        "ja": "三十三個の箱があります。",
+        "kana": "さんじゅうさん こ の はこ が あります。",
+        "ro": "sanjuusan ko no hako ga arimasu.",
+        "en": "There are thirty-three boxes."
+      },
+      {
+        "ja": "三十三回目の試合です。",
+        "kana": "さんじゅうさん かいめ の しあい です。",
+        "ro": "sanjuusan kaime no shiai desu.",
+        "en": "It’s the 33rd game."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-034",
+    "ja": "三十四",
+    "kana": "さんじゅうよん",
+    "ro": "sanjuuyon",
+    "en": "thirty-four",
+    "alt_readings": {
+      "kana": [
+        "し"
+      ],
+      "romaji": [
+        "shi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "三十四人が応募しました。",
+        "kana": "さんじゅうよん にん が おうぼ しました。",
+        "ro": "sanjuuyon nin ga oubo shimashita.",
+        "en": "Thirty-four people applied."
+      },
+      {
+        "ja": "三十四ページを見てください。",
+        "kana": "さんじゅうよん ページ を みて ください。",
+        "ro": "sanjuuyon peeji o mite kudasai.",
+        "en": "Please look at page thirty-four."
+      },
+      {
+        "ja": "三十四分休憩します。",
+        "kana": "さんじゅうよん ふん きゅうけい します。",
+        "ro": "sanjuuyon fun kyuukei shimasu.",
+        "en": "We’ll break for thirty-four minutes."
+      },
+      {
+        "ja": "三十四個に分けました。",
+        "kana": "さんじゅうよん こ に わけました。",
+        "ro": "sanjuuyon ko ni wakemashita.",
+        "en": "We divided into thirty-four."
+      },
+      {
+        "ja": "三十四回目の発表です。",
+        "kana": "さんじゅうよん かいめ の はっぴょう です。",
+        "ro": "sanjuuyon kaime no happyou desu.",
+        "en": "It’s the 34th presentation."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-035",
+    "ja": "三十五",
+    "kana": "さんじゅうご",
+    "ro": "sanjuugo",
+    "en": "thirty-five",
+    "examples": [
+      {
+        "ja": "三十五人が登録しました。",
+        "kana": "さんじゅうご にん が とうろく しました。",
+        "ro": "sanjuugo nin ga touroku shimashita.",
+        "en": "Thirty-five people registered."
+      },
+      {
+        "ja": "三十五ページまで読みました。",
+        "kana": "さんじゅうご ページ まで よみました。",
+        "ro": "sanjuugo peeji made yomimashita.",
+        "en": "I read up to page thirty-five."
+      },
+      {
+        "ja": "三十五分走りました。",
+        "kana": "さんじゅうご ふん はしりました。",
+        "ro": "sanjuugo fun hashirimashita.",
+        "en": "I ran for thirty-five minutes."
+      },
+      {
+        "ja": "三十五個の袋を用意しました。",
+        "kana": "さんじゅうご こ の ふくろ を ようい しました。",
+        "ro": "sanjuugo ko no hukuro o youi shimashita.",
+        "en": "I prepared thirty-five bags."
+      },
+      {
+        "ja": "三十五回目の挑戦です。",
+        "kana": "さんじゅうご かいめ の ちょうせん です。",
+        "ro": "sanjuugo kaime no chousen desu.",
+        "en": "This is the 35th attempt."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-036",
+    "ja": "三十六",
+    "kana": "さんじゅうろく",
+    "ro": "sanjuuroku",
+    "en": "thirty-six",
+    "examples": [
+      {
+        "ja": "三十六人の参加があります。",
+        "kana": "さんじゅうろく にん の さんか が あります。",
+        "ro": "sanjuuroku nin no sanka ga arimasu.",
+        "en": "There are thirty-six participants."
+      },
+      {
+        "ja": "三十六ページを配りました。",
+        "kana": "さんじゅうろく ページ を くばりました。",
+        "ro": "sanjuuroku peeji o kubarimashita.",
+        "en": "I handed out page thirty-six."
+      },
+      {
+        "ja": "三十六分後に戻ります。",
+        "kana": "さんじゅうろく ふん ご に もどります。",
+        "ro": "sanjuuroku fun go ni modorimasu.",
+        "en": "I’ll be back in thirty-six minutes."
+      },
+      {
+        "ja": "三十六個のボールがあります。",
+        "kana": "さんじゅうろく こ の ボール が あります。",
+        "ro": "sanjuuroku ko no booru ga arimasu.",
+        "en": "There are thirty-six balls."
+      },
+      {
+        "ja": "三十六回目の試験です。",
+        "kana": "さんじゅうろく かいめ の しけん です。",
+        "ro": "sanjuuroku kaime no shiken desu.",
+        "en": "It’s the 36th test."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-037",
+    "ja": "三十七",
+    "kana": "さんじゅうなな",
+    "ro": "sanjuunana",
+    "en": "thirty-seven",
+    "alt_readings": {
+      "kana": [
+        "しち"
+      ],
+      "romaji": [
+        "shichi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "三十七人が教室にいます。",
+        "kana": "さんじゅうなな にん が きょうしつ に います。",
+        "ro": "sanjuunana nin ga kyoushitsu ni imasu.",
+        "en": "Thirty-seven people are in the classroom."
+      },
+      {
+        "ja": "三十七ページを参照してください。",
+        "kana": "さんじゅうなな ページ を さんしょう して ください。",
+        "ro": "sanjuunana peeji o sanshou shite kudasai.",
+        "en": "Please refer to page thirty-seven."
+      },
+      {
+        "ja": "三十七分で終了します。",
+        "kana": "さんじゅうなな ふん で しゅうりょう します。",
+        "ro": "sanjuunana fun de shuuryou shimasu.",
+        "en": "It ends in thirty-seven minutes."
+      },
+      {
+        "ja": "三十七個のシールを貼りました。",
+        "kana": "さんじゅうなな こ の シール を はりました。",
+        "ro": "sanjuunana ko no shiiru o harimashita.",
+        "en": "I put on thirty-seven stickers."
+      },
+      {
+        "ja": "三十七回目の更新です。",
+        "kana": "さんじゅうなな かいめ の こうしん です。",
+        "ro": "sanjuunana kaime no koushin desu.",
+        "en": "This is the 37th update."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-038",
+    "ja": "三十八",
+    "kana": "さんじゅうはち",
+    "ro": "sanjuuhachi",
+    "en": "thirty-eight",
+    "examples": [
+      {
+        "ja": "三十八人がアンケートに答えました。",
+        "kana": "さんじゅうはち にん が アンケート に こたえました。",
+        "ro": "sanjuuhachi nin ga ankeeto ni kotaemashita.",
+        "en": "Thirty-eight people answered the survey."
+      },
+      {
+        "ja": "三十八ページをコピーしました。",
+        "kana": "さんじゅうはち ページ を コピー しました。",
+        "ro": "sanjuuhachi peeji o kopii shimashita.",
+        "en": "I copied page thirty-eight."
+      },
+      {
+        "ja": "三十八分で準備します。",
+        "kana": "さんじゅうはち ふん で じゅんび します。",
+        "ro": "sanjuuhachi fun de junbi shimasu.",
+        "en": "I will prepare in thirty-eight minutes."
+      },
+      {
+        "ja": "三十八個のサンプルを確認しました。",
+        "kana": "さんじゅうはち こ の サンプル を かくにん しました。",
+        "ro": "sanjuuhachi ko no sanpuru o kakunin shimashita.",
+        "en": "I checked thirty-eight samples."
+      },
+      {
+        "ja": "三十八回目のレッスンです。",
+        "kana": "さんじゅうはち かいめ の レッスン です。",
+        "ro": "sanjuuhachi kaime no ressun desu.",
+        "en": "This is the 38th lesson."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-039",
+    "ja": "三十九",
+    "kana": "さんじゅうきゅう",
+    "ro": "sanjuukyuu",
+    "en": "thirty-nine",
+    "alt_readings": {
+      "kana": [
+        "く"
+      ],
+      "romaji": [
+        "ku"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "三十九人が登録済みです。",
+        "kana": "さんじゅうきゅう にん が とうろくずみ です。",
+        "ro": "sanjuukyuu nin ga touroku zumi desu.",
+        "en": "Thirty-nine people are registered."
+      },
+      {
+        "ja": "三十九ページを提出しました。",
+        "kana": "さんじゅうきゅう ページ を ていしゅつ しました。",
+        "ro": "sanjuukyuu peeji o teishutsu shimashita.",
+        "en": "I submitted page thirty-nine."
+      },
+      {
+        "ja": "三十九分間勉強しました。",
+        "kana": "さんじゅうきゅう ふんかん べんきょう しました。",
+        "ro": "sanjuukyuu funkan benkyou shimashita.",
+        "en": "I studied for thirty-nine minutes."
+      },
+      {
+        "ja": "三十九個のコインを見つけました。",
+        "kana": "さんじゅうきゅう こ の コイン を みつけました。",
+        "ro": "sanjuukyuu ko no koin o mitsukemashita.",
+        "en": "I found thirty-nine coins."
+      },
+      {
+        "ja": "三十九回目のテストです。",
+        "kana": "さんじゅうきゅう かいめ の テスト です。",
+        "ro": "sanjuukyuu kaime no tesuto desu.",
+        "en": "It’s the 39th test."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-040",
+    "ja": "四十",
+    "kana": "よんじゅう",
+    "ro": "yonjuu",
+    "en": "forty",
+    "examples": [
+      {
+        "ja": "四十人の参加があります。",
+        "kana": "よんじゅう にん の さんか が あります。",
+        "ro": "yonjuu nin no sanka ga arimasu.",
+        "en": "There are forty participants."
+      },
+      {
+        "ja": "四十ページから始めます。",
+        "kana": "よんじゅう ページ から はじめます。",
+        "ro": "yonjuu peeji kara hajimemasu.",
+        "en": "We start from page forty."
+      },
+      {
+        "ja": "四十分で終わります。",
+        "kana": "よんじゅっぷん で おわります。",
+        "ro": "yonjuppun de owarimasu.",
+        "en": "It ends in forty minutes."
+      },
+      {
+        "ja": "四十個の箱があります。",
+        "kana": "よんじゅっこ の はこ が あります。",
+        "ro": "yonjukko no hako ga arimasu.",
+        "en": "There are forty boxes."
+      },
+      {
+        "ja": "四十回目の会議です。",
+        "kana": "よんじゅう かいめ の かいぎ です。",
+        "ro": "yonjuu kaime no kaigi desu.",
+        "en": "It’s the 40th meeting."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-041",
+    "ja": "四十一",
+    "kana": "よんじゅういち",
+    "ro": "yonjuuichi",
+    "en": "forty-one",
+    "examples": [
+      {
+        "ja": "四十一人が並びました。",
+        "kana": "よんじゅういち にん が ならびました。",
+        "ro": "yonjuuichi nin ga narabimashita.",
+        "en": "Forty-one people lined up."
+      },
+      {
+        "ja": "四十一ページを参照してください。",
+        "kana": "よんじゅういち ページ を さんしょう して ください。",
+        "ro": "yonjuuichi peeji o sanshou shite kudasai.",
+        "en": "Please refer to page forty-one."
+      },
+      {
+        "ja": "四十一分だけ待ってください。",
+        "kana": "よんじゅういち ふん だけ まって ください。",
+        "ro": "yonjuuichi fun dake matte kudasai.",
+        "en": "Please wait forty-one minutes."
+      },
+      {
+        "ja": "四十一個そろいました。",
+        "kana": "よんじゅういち こ そろいました。",
+        "ro": "yonjuuichi ko soroimashita.",
+        "en": "We have forty-one items."
+      },
+      {
+        "ja": "四十一回目の更新です。",
+        "kana": "よんじゅういち かいめ の こうしん です。",
+        "ro": "yonjuuichi kaime no koushin desu.",
+        "en": "This is the 41st update."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-042",
+    "ja": "四十二",
+    "kana": "よんじゅうに",
+    "ro": "yonjuuni",
+    "en": "forty-two",
+    "examples": [
+      {
+        "ja": "四十二人が会場にいます。",
+        "kana": "よんじゅうに にん が かいじょう に います。",
+        "ro": "yonjuuni nin ga kaijou ni imasu.",
+        "en": "Forty-two people are at the venue."
+      },
+      {
+        "ja": "四十二ページを印刷しました。",
+        "kana": "よんじゅうに ページ を いんさつ しました。",
+        "ro": "yonjuuni peeji o insatsu shimashita.",
+        "en": "I printed page forty-two."
+      },
+      {
+        "ja": "四十二分走りました。",
+        "kana": "よんじゅうに ふん はしりました。",
+        "ro": "yonjuuni fun hashirimashita.",
+        "en": "I ran for forty-two minutes."
+      },
+      {
+        "ja": "四十二個のボタンがあります。",
+        "kana": "よんじゅうに こ の ボタン が あります。",
+        "ro": "yonjuuni ko no botan ga arimasu.",
+        "en": "There are forty-two buttons."
+      },
+      {
+        "ja": "四十二回目の発表です。",
+        "kana": "よんじゅうに かいめ の はっぴょう です。",
+        "ro": "yonjuuni kaime no happyou desu.",
+        "en": "This is the 42nd presentation."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-043",
+    "ja": "四十三",
+    "kana": "よんじゅうさん",
+    "ro": "yonjuusan",
+    "en": "forty-three",
+    "examples": [
+      {
+        "ja": "四十三人が見学しました。",
+        "kana": "よんじゅうさん にん が けんがく しました。",
+        "ro": "yonjuusan nin ga kengaku shimashita.",
+        "en": "Forty-three people toured."
+      },
+      {
+        "ja": "四十三ページを折りました。",
+        "kana": "よんじゅうさん ページ を おりました。",
+        "ro": "yonjuusan peeji o orimashita.",
+        "en": "I folded page forty-three."
+      },
+      {
+        "ja": "四十三分後に出発します。",
+        "kana": "よんじゅうさん ふん ご に しゅっぱつ します。",
+        "ro": "yonjuusan fun go ni shuppatsu shimasu.",
+        "en": "We leave in forty-three minutes."
+      },
+      {
+        "ja": "四十三個のサンプルを提出しました。",
+        "kana": "よんじゅうさん こ の サンプル を ていしゅつ しました。",
+        "ro": "yonjuusan ko no sanpuru o teishutsu shimashita.",
+        "en": "I submitted forty-three samples."
+      },
+      {
+        "ja": "四十三回目の授業です。",
+        "kana": "よんじゅうさん かいめ の じゅぎょう です。",
+        "ro": "yonjuusan kaime no jugyou desu.",
+        "en": "It’s the 43rd class."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-044",
+    "ja": "四十四",
+    "kana": "よんじゅうよん",
+    "ro": "yonjuuyon",
+    "en": "forty-four",
+    "alt_readings": {
+      "kana": [
+        "し"
+      ],
+      "romaji": [
+        "shi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "四十四人が登録しています。",
+        "kana": "よんじゅうよん にん が とうろく しています。",
+        "ro": "yonjuuyon nin ga touroku shiteimasu.",
+        "en": "Forty-four people are registered."
+      },
+      {
+        "ja": "四十四ページを参照します。",
+        "kana": "よんじゅうよん ページ を さんしょう します。",
+        "ro": "yonjuuyon peeji o sanshou shimasu.",
+        "en": "I refer to page forty-four."
+      },
+      {
+        "ja": "四十四分で作業します。",
+        "kana": "よんじゅうよん ふん で さぎょう します。",
+        "ro": "yonjuuyon fun de sagyou shimasu.",
+        "en": "I will work for forty-four minutes."
+      },
+      {
+        "ja": "四十四個そろえました。",
+        "kana": "よんじゅうよん こ そろえました。",
+        "ro": "yonjuuyon ko soroemashita.",
+        "en": "I prepared forty-four items."
+      },
+      {
+        "ja": "四十四回目の確認です。",
+        "kana": "よんじゅうよん かいめ の かくにん です。",
+        "ro": "yonjuuyon kaime no kakunin desu.",
+        "en": "This is the 44th check."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-045",
+    "ja": "四十五",
+    "kana": "よんじゅうご",
+    "ro": "yonjuugo",
+    "en": "forty-five",
+    "examples": [
+      {
+        "ja": "四十五人が出席しました。",
+        "kana": "よんじゅうご にん が しゅっせき しました。",
+        "ro": "yonjuugo nin ga shusseki shimashita.",
+        "en": "Forty-five people attended."
+      },
+      {
+        "ja": "四十五ページまで読みました。",
+        "kana": "よんじゅうご ページ まで よみました。",
+        "ro": "yonjuugo peeji made yomimashita.",
+        "en": "I read up to page forty-five."
+      },
+      {
+        "ja": "四十五分間勉強します。",
+        "kana": "よんじゅうご ふんかん べんきょう します。",
+        "ro": "yonjuugo funkan benkyou shimasu.",
+        "en": "I will study for forty-five minutes."
+      },
+      {
+        "ja": "四十五個に分けました。",
+        "kana": "よんじゅうご こ に わけました。",
+        "ro": "yonjuugo ko ni wakemashita.",
+        "en": "We divided into forty-five."
+      },
+      {
+        "ja": "四十五回目の発注です。",
+        "kana": "よんじゅうご かいめ の はっちゅう です。",
+        "ro": "yonjuugo kaime no hacchuu desu.",
+        "en": "This is the 45th order."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-046",
+    "ja": "四十六",
+    "kana": "よんじゅうろく",
+    "ro": "yonjuuroku",
+    "en": "forty-six",
+    "examples": [
+      {
+        "ja": "四十六人が受付を通りました。",
+        "kana": "よんじゅうろく にん が うけつけ を とおりました。",
+        "ro": "yonjuuroku nin ga uketsuke o toorimashita.",
+        "en": "Forty-six people passed reception."
+      },
+      {
+        "ja": "四十六ページをチェックします。",
+        "kana": "よんじゅうろく ページ を チェック します。",
+        "ro": "yonjuuroku peeji o chekku shimasu.",
+        "en": "I check page forty-six."
+      },
+      {
+        "ja": "四十六分で準備ができます。",
+        "kana": "よんじゅうろく ふん で じゅんび が できます。",
+        "ro": "yonjuuroku fun de junbi ga dekimasu.",
+        "en": "I’ll be ready in forty-six minutes."
+      },
+      {
+        "ja": "四十六個のシールがあります。",
+        "kana": "よんじゅうろく こ の シール が あります。",
+        "ro": "yonjuuroku ko no shiiru ga arimasu.",
+        "en": "There are forty-six stickers."
+      },
+      {
+        "ja": "四十六回目の提出です。",
+        "kana": "よんじゅうろく かいめ の ていしゅつ です。",
+        "ro": "yonjuuroku kaime no teishutsu desu.",
+        "en": "This is the 46th submission."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-047",
+    "ja": "四十七",
+    "kana": "よんじゅうなな",
+    "ro": "yonjuunana",
+    "en": "forty-seven",
+    "alt_readings": {
+      "kana": [
+        "しち"
+      ],
+      "romaji": [
+        "shichi"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "四十七人がフォームを提出しました。",
+        "kana": "よんじゅうなな にん が フォーム を ていしゅつ しました。",
+        "ro": "yonjuunana nin ga foomu o teishutsu shimashita.",
+        "en": "Forty-seven people submitted the form."
+      },
+      {
+        "ja": "四十七ページを印刷します。",
+        "kana": "よんじゅうなな ページ を いんさつ します。",
+        "ro": "yonjuunana peeji o insatsu shimasu.",
+        "en": "I print page forty-seven."
+      },
+      {
+        "ja": "四十七分で集合してください。",
+        "kana": "よんじゅうなな ふん で しゅうごう して ください。",
+        "ro": "yonjuunana fun de shuugou shite kudasai.",
+        "en": "Please meet in forty-seven minutes."
+      },
+      {
+        "ja": "四十七個のファイルを確認しました。",
+        "kana": "よんじゅうなな こ の ファイル を かくにん しました。",
+        "ro": "yonjuunana ko no fairu o kakunin shimashita.",
+        "en": "I checked forty-seven files."
+      },
+      {
+        "ja": "四十七回目の更新です。",
+        "kana": "よんじゅうなな かいめ の こうしん です。",
+        "ro": "yonjuunana kaime no koushin desu.",
+        "en": "This is the 47th update."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-048",
+    "ja": "四十八",
+    "kana": "よんじゅうはち",
+    "ro": "yonjuuhachi",
+    "en": "forty-eight",
+    "examples": [
+      {
+        "ja": "四十八人が講義を受けました。",
+        "kana": "よんじゅうはち にん が こうぎ を うけました。",
+        "ro": "yonjuuhachi nin ga kougi o ukemashita.",
+        "en": "Forty-eight people attended the lecture."
+      },
+      {
+        "ja": "四十八ページから課題を始めます。",
+        "kana": "よんじゅうはち ページ から かだい を はじめます。",
+        "ro": "yonjuuhachi peeji kara kadai o hajimemasu.",
+        "en": "We start the assignment from page forty-eight."
+      },
+      {
+        "ja": "四十八分で片づけます。",
+        "kana": "よんじゅうはち ふん で かたづけます。",
+        "ro": "yonjuuhachi fun de katazukemasu.",
+        "en": "I’ll clean up in forty-eight minutes."
+      },
+      {
+        "ja": "四十八個のメモを整理しました。",
+        "kana": "よんじゅうはち こ の メモ を せいり しました。",
+        "ro": "yonjuuhachi ko no memo o seiri shimashita.",
+        "en": "I organized forty-eight notes."
+      },
+      {
+        "ja": "四十八回目の会議です。",
+        "kana": "よんじゅうはち かいめ の かいぎ です。",
+        "ro": "yonjuuhachi kaime no kaigi desu.",
+        "en": "This is the 48th meeting."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-049",
+    "ja": "四十九",
+    "kana": "よんじゅうきゅう",
+    "ro": "yonjuukyuu",
+    "en": "forty-nine",
+    "alt_readings": {
+      "kana": [
+        "く"
+      ],
+      "romaji": [
+        "ku"
+      ]
+    },
+    "examples": [
+      {
+        "ja": "四十九人が予約しました。",
+        "kana": "よんじゅうきゅう にん が よやく しました。",
+        "ro": "yonjuukyuu nin ga yoyaku shimashita.",
+        "en": "Forty-nine people made reservations."
+      },
+      {
+        "ja": "四十九ページを確認します。",
+        "kana": "よんじゅうきゅう ページ を かくにん します。",
+        "ro": "yonjuukyuu peeji o kakunin shimasu.",
+        "en": "I check page forty-nine."
+      },
+      {
+        "ja": "四十九分で着きます。",
+        "kana": "よんじゅうきゅう ふん で つきます。",
+        "ro": "yonjuukyuu fun de tsukimasu.",
+        "en": "I’ll arrive in forty-nine minutes."
+      },
+      {
+        "ja": "四十九個のデータを保存しました。",
+        "kana": "よんじゅうきゅう こ の データ を ほぞん しました。",
+        "ro": "yonjuukyuu ko no deeta o hozon shimashita.",
+        "en": "I saved forty-nine data items."
+      },
+      {
+        "ja": "四十九回目のチェックです。",
+        "kana": "よんじゅうきゅう かいめ の チェック です。",
+        "ro": "yonjuukyuu kaime no chekku desu.",
+        "en": "This is the 49th check."
+      }
+    ]
+  },
+  {
+    "id": "n5-num-050",
+    "ja": "五十",
+    "kana": "ごじゅう",
+    "ro": "gojuu",
+    "en": "fifty",
+    "examples": [
+      {
+        "ja": "五十人のイベントです。",
+        "kana": "ごじゅう にん の イベント です。",
+        "ro": "gojuu nin no ibento desu.",
+        "en": "It’s an event of fifty people."
+      },
+      {
+        "ja": "五十ページを読み終えました。",
+        "kana": "ごじゅう ページ を よみおえました。",
+        "ro": "gojuu peeji o yomioemashita.",
+        "en": "I finished reading page fifty."
+      },
+      {
+        "ja": "五十分で会議が終わります。",
+        "kana": "ごじゅっぷん で かいぎ が おわります。",
+        "ro": "gojuppun de kaigi ga owarimasu.",
+        "en": "The meeting ends in fifty minutes."
+      },
+      {
+        "ja": "五十個の資料を準備しました。",
+        "kana": "ごじゅっこ の しりょう を じゅんび しました。",
+        "ro": "gojukko no shiryou o junbi shimashita.",
+        "en": "I prepared fifty handouts."
+      },
+      {
+        "ja": "五十回目の発表です。",
+        "kana": "ごじゅっかいめ の はっぴょう です。",
+        "ro": "gojukkaime no happyou desu.",
+        "en": "This is the 50th presentation."
+      }
+    ]
+  }
+]

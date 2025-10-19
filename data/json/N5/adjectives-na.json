@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "n5-nadj-001",
+    "ja": "きれい",
+    "kana": "きれい",
+    "ro": "kirei",
+    "en": "beautiful / clean",
+    "examples": [
+      {
+        "ja": "この部屋はきれいです。",
+        "kana": "この へや は きれい です。",
+        "ro": "kono heya wa kirei desu.",
+        "en": "This room is clean."
+      },
+      {
+        "ja": "公園の花はきれいです。",
+        "kana": "こうえん の はな は きれい です。",
+        "ro": "kouen no hana wa kirei desu.",
+        "en": "The flowers in the park are beautiful."
+      },
+      {
+        "ja": "あなたの髪がきれいです。",
+        "kana": "あなた の かみ が きれい です。",
+        "ro": "anata no kami ga kirei desu.",
+        "en": "Your hair is beautiful."
+      },
+      {
+        "ja": "水がとてもきれいです。",
+        "kana": "みず が とても きれい です。",
+        "ro": "mizu ga totemo kirei desu.",
+        "en": "The water is very clean."
+      },
+      {
+        "ja": "窓を掃除してきれいにしました。",
+        "kana": "まど を そうじして きれい に しました。",
+        "ro": "mado o souji shite kirei ni shimashita.",
+        "en": "I cleaned the window to make it clean."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-002",
+    "ja": "静か",
+    "kana": "しずか",
+    "ro": "shizuka",
+    "en": "quiet",
+    "examples": [
+      {
+        "ja": "この部屋は静かです。",
+        "kana": "この へや は しずか です。",
+        "ro": "kono heya wa shizuka desu.",
+        "en": "This room is quiet."
+      },
+      {
+        "ja": "図書館はとても静かです。",
+        "kana": "としょかん は とても しずか です。",
+        "ro": "toshokan wa totemo shizuka desu.",
+        "en": "The library is very quiet."
+      },
+      {
+        "ja": "夜の町は静かです。",
+        "kana": "よる の まち は しずか です。",
+        "ro": "yoru no machi wa shizuka desu.",
+        "en": "The town is quiet at night."
+      },
+      {
+        "ja": "子どもたちが寝ていて静かです。",
+        "kana": "こどもたち が ねて いて しずか です。",
+        "ro": "kodomotachi ga nete ite shizuka desu.",
+        "en": "It’s quiet because the children are sleeping."
+      },
+      {
+        "ja": "静かな場所が好きです。",
+        "kana": "しずか な ばしょ が すき です。",
+        "ro": "shizuka na basho ga suki desu.",
+        "en": "I like quiet places."
+      },
+      {
+        "ja": "図書館は静かです。",
+        "kana": "としょかん は しずか です。",
+        "ro": "toshokan wa shizuka desu.",
+        "en": "The library is quiet."
+      },
+      {
+        "ja": "夜はとても静かです。",
+        "kana": "よる は とても しずか です。",
+        "ro": "yoru wa totemo shizuka desu.",
+        "en": "It’s very quiet at night."
+      },
+      {
+        "ja": "静かな公園が好きです。",
+        "kana": "しずか な こうえん が すき です。",
+        "ro": "shizuka na kouen ga suki desu.",
+        "en": "I like quiet parks."
+      },
+      {
+        "ja": "静かな部屋で勉強します。",
+        "kana": "しずか な へや で べんきょう します。",
+        "ro": "shizuka na heya de benkyou shimasu.",
+        "en": "I study in a quiet room."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-003",
+    "ja": "有名",
+    "kana": "ゆうめい",
+    "ro": "yuumei",
+    "en": "famous",
+    "examples": [
+      {
+        "ja": "この店は有名です。",
+        "kana": "この みせ は ゆうめい です。",
+        "ro": "kono mise wa yuumei desu.",
+        "en": "This shop is famous."
+      },
+      {
+        "ja": "あの山は有名です。",
+        "kana": "あの やま は ゆうめい です。",
+        "ro": "ano yama wa yuumei desu.",
+        "en": "That mountain is famous."
+      },
+      {
+        "ja": "彼女は有名な歌手です。",
+        "kana": "かのじょ は ゆうめい な かしゅ です。",
+        "ro": "kanojo wa yuumei na kashu desu.",
+        "en": "She is a famous singer."
+      },
+      {
+        "ja": "この映画は有名です。",
+        "kana": "この えいが は ゆうめい です。",
+        "ro": "kono eiga wa yuumei desu.",
+        "en": "This movie is famous."
+      },
+      {
+        "ja": "有名な町に住んでいます。",
+        "kana": "ゆうめい な まち に すんで います。",
+        "ro": "yuumei na machi ni sunde imasu.",
+        "en": "I live in a famous city."
+      },
+      {
+        "ja": "この町は有名です。",
+        "kana": "この まち は ゆうめい です。",
+        "ro": "kono machi wa yuumei desu.",
+        "en": "This town is famous."
+      },
+      {
+        "ja": "彼は有名な俳優です。",
+        "kana": "かれ は ゆうめい な はいゆう です。",
+        "ro": "kare wa yuumei na haiyuu desu.",
+        "en": "He is a famous actor."
+      },
+      {
+        "ja": "京都は有名な観光地です。",
+        "kana": "きょうと は ゆうめい な かんこうち です。",
+        "ro": "kyouto wa yuumei na kankouchi desu.",
+        "en": "Kyoto is a famous sightseeing spot."
+      },
+      {
+        "ja": "このレストランは有名です。",
+        "kana": "この れすとらん は ゆうめい です。",
+        "ro": "kono resutoran wa yuumei desu.",
+        "en": "This restaurant is famous."
+      },
+      {
+        "ja": "彼女は有名な作家です。",
+        "kana": "かのじょ は ゆうめい な さっか です。",
+        "ro": "kanojo wa yuumei na sakka desu.",
+        "en": "She is a famous writer."
+      },
+      {
+        "ja": "東京は有名な都市です。",
+        "kana": "とうきょう は ゆうめい な とし です。",
+        "ro": "toukyou wa yuumei na toshi desu.",
+        "en": "Tokyo is a famous city."
+      },
+      {
+        "ja": "彼は有名な歌手です。",
+        "kana": "かれ は ゆうめい な かしゅ です。",
+        "ro": "kare wa yuumei na kashu desu.",
+        "en": "He is a famous singer."
+      },
+      {
+        "ja": "京都は有名な観光地です。",
+        "kana": "きょうと は ゆうめい な かんこうち です。",
+        "ro": "kyouto wa yuumei na kankouchi desu.",
+        "en": "Kyoto is a famous tourist spot."
+      },
+      {
+        "ja": "その映画は有名です。",
+        "kana": "その えいが は ゆうめい です。",
+        "ro": "sono eiga wa yuumei desu.",
+        "en": "That movie is famous."
+      },
+      {
+        "ja": "そのレストランはとても有名です。",
+        "kana": "その れすとらん は とても ゆうめい です。",
+        "ro": "sono resutoran wa totemo yuumei desu.",
+        "en": "That restaurant is very famous."
+      },
+      {
+        "ja": "富士山は日本で有名です。",
+        "kana": "ふじさん は にほん で ゆうめい です。",
+        "ro": "fujisan wa nihon de yuumei desu.",
+        "en": "Mount Fuji is famous in Japan."
+      },
+      {
+        "ja": "この公園は桜で有名です。",
+        "kana": "この こうえん は さくら で ゆうめい です。",
+        "ro": "kono kouen wa sakura de yuumei desu.",
+        "en": "This park is famous for its cherry blossoms."
+      },
+      {
+        "ja": "彼女は世界で有名です。",
+        "kana": "かのじょ は せかい で ゆうめい です。",
+        "ro": "kanojo wa sekai de yuumei desu.",
+        "en": "She is famous around the world."
+      },
+      {
+        "ja": "有名な絵を見ました。",
+        "kana": "ゆうめい な え を みました。",
+        "ro": "yuumei na e o mimashita.",
+        "en": "I saw a famous painting."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-004",
+    "ja": "便利",
+    "kana": "べんり",
+    "ro": "benri",
+    "en": "convenient",
+    "examples": [
+      {
+        "ja": "このアプリは便利です。",
+        "kana": "この あぷり は べんり です。",
+        "ro": "kono apuri wa benri desu.",
+        "en": "This app is convenient."
+      },
+      {
+        "ja": "この場所は便利です。",
+        "kana": "この ばしょ は べんり です。",
+        "ro": "kono basho wa benri desu.",
+        "en": "This place is convenient."
+      },
+      {
+        "ja": "駅の近くは便利です。",
+        "kana": "えき の ちかく は べんり です。",
+        "ro": "eki no chikaku wa benri desu.",
+        "en": "It’s convenient near the station."
+      },
+      {
+        "ja": "スマホはとても便利です。",
+        "kana": "すまほ は とても べんり です。",
+        "ro": "sumaho wa totemo benri desu.",
+        "en": "Smartphones are very convenient."
+      },
+      {
+        "ja": "便利な生活をしたいです。",
+        "kana": "べんり な せいかつ を したい です。",
+        "ro": "benri na seikatsu o shitai desu.",
+        "en": "I want to live a convenient life."
+      },
+      {
+        "ja": "この駅は便利です。",
+        "kana": "この えき は べんり です。",
+        "ro": "kono eki wa benri desu.",
+        "en": "This station is convenient."
+      },
+      {
+        "ja": "自転車は便利な乗り物です。",
+        "kana": "じてんしゃ は べんり な のりもの です。",
+        "ro": "jitensha wa benri na norimono desu.",
+        "en": "Bicycles are a convenient means of transport."
+      },
+      {
+        "ja": "スマホは本当に便利です。",
+        "kana": "すまほ は ほんとう に べんり です。",
+        "ro": "sumaho wa hontou ni benri desu.",
+        "en": "Smartphones are really convenient."
+      },
+      {
+        "ja": "このアプリは便利ですね。",
+        "kana": "この あぷり は べんり です ね。",
+        "ro": "kono apuri wa benri desu ne.",
+        "en": "This app is convenient, isn’t it?"
+      },
+      {
+        "ja": "駅の近くに住むと便利です。",
+        "kana": "えき の ちかく に すむ と べんり です。",
+        "ro": "eki no chikaku ni sumu to benri desu.",
+        "en": "It’s convenient to live near the station."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-005",
+    "ja": "不便",
+    "kana": "ふべん",
+    "ro": "fuben",
+    "en": "inconvenient",
+    "examples": [
+      {
+        "ja": "この町は不便です。",
+        "kana": "この まち は ふべん です。",
+        "ro": "kono machi wa fuben desu.",
+        "en": "This town is inconvenient."
+      },
+      {
+        "ja": "駅から遠くて不便です。",
+        "kana": "えき から とおくて ふべん です。",
+        "ro": "eki kara tookute fuben desu.",
+        "en": "It’s inconvenient because it’s far from the station."
+      },
+      {
+        "ja": "バスがなくて不便です。",
+        "kana": "ばす が なくて ふべん です。",
+        "ro": "basu ga nakute fuben desu.",
+        "en": "It’s inconvenient because there’s no bus."
+      },
+      {
+        "ja": "田舎は少し不便です。",
+        "kana": "いなか は すこし ふべん です。",
+        "ro": "inaka wa sukoshi fuben desu.",
+        "en": "The countryside is a bit inconvenient."
+      },
+      {
+        "ja": "不便な場所に住んでいます。",
+        "kana": "ふべん な ばしょ に すんで います。",
+        "ro": "fuben na basho ni sunde imasu.",
+        "en": "I live in an inconvenient place."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-006",
+    "ja": "大切",
+    "kana": "たいせつ",
+    "ro": "taisetsu",
+    "en": "important / precious",
+    "examples": [
+      {
+        "ja": "家族はとても大切です。",
+        "kana": "かぞく は とても たいせつ です。",
+        "ro": "kazoku wa totemo taisetsu desu.",
+        "en": "Family is very important."
+      },
+      {
+        "ja": "友だちは大切にしてください。",
+        "kana": "ともだち は たいせつ に して ください。",
+        "ro": "tomodachi wa taisetsu ni shite kudasai.",
+        "en": "Please treasure your friends."
+      },
+      {
+        "ja": "健康は大切です。",
+        "kana": "けんこう は たいせつ です。",
+        "ro": "kenkou wa taisetsu desu.",
+        "en": "Health is important."
+      },
+      {
+        "ja": "時間を大切に使います。",
+        "kana": "じかん を たいせつ に つかいます。",
+        "ro": "jikan o taisetsu ni tsukaimasu.",
+        "en": "I use my time carefully."
+      },
+      {
+        "ja": "これは大切な思い出です。",
+        "kana": "これ は たいせつ な おもいで です。",
+        "ro": "kore wa taisetsu na omoide desu.",
+        "en": "This is a precious memory."
+      },
+      {
+        "ja": "健康が大切です。",
+        "kana": "けんこう が たいせつ です。",
+        "ro": "kenkou ga taisetsu desu.",
+        "en": "Health is important."
+      },
+      {
+        "ja": "これは大切な本です。",
+        "kana": "これ は たいせつ な ほん です。",
+        "ro": "kore wa taisetsu na hon desu.",
+        "en": "This is an important book."
+      },
+      {
+        "ja": "時間を大切にしましょう。",
+        "kana": "じかん を たいせつ に しましょう。",
+        "ro": "jikan o taisetsu ni shimashou.",
+        "en": "Let’s value our time."
+      },
+      {
+        "ja": "友だちを大切にしています。",
+        "kana": "ともだち を たいせつ に して います。",
+        "ro": "tomodachi o taisetsu ni shite imasu.",
+        "en": "I treasure my friends."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-007",
+    "ja": "元気",
+    "kana": "げんき",
+    "ro": "genki",
+    "en": "healthy / energetic",
+    "examples": [
+      {
+        "ja": "母はとても元気です。",
+        "kana": "はは は とても げんき です。",
+        "ro": "haha wa totemo genki desu.",
+        "en": "My mother is very healthy."
+      },
+      {
+        "ja": "子どもたちは元気に遊んでいます。",
+        "kana": "こどもたち は げんき に あそんで います。",
+        "ro": "kodomotachi wa genki ni asonde imasu.",
+        "en": "The children are playing energetically."
+      },
+      {
+        "ja": "今日は元気がありません。",
+        "kana": "きょう は げんき が ありません。",
+        "ro": "kyou wa genki ga arimasen.",
+        "en": "I don’t feel well today."
+      },
+      {
+        "ja": "友だちはいつも元気です。",
+        "kana": "ともだち は いつも げんき です。",
+        "ro": "tomodachi wa itsumo genki desu.",
+        "en": "My friend is always cheerful."
+      },
+      {
+        "ja": "元気な犬ですね。",
+        "kana": "げんき な いぬ です ね。",
+        "ro": "genki na inu desu ne.",
+        "en": "That’s an energetic dog."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-008",
+    "ja": "上手",
+    "kana": "じょうず",
+    "ro": "jouzu",
+    "en": "skillful / good at",
+    "examples": [
+      {
+        "ja": "彼は歌が上手です。",
+        "kana": "かれ は うた が じょうず です。",
+        "ro": "kare wa uta ga jouzu desu.",
+        "en": "He is good at singing."
+      },
+      {
+        "ja": "妹は料理が上手です。",
+        "kana": "いもうと は りょうり が じょうず です。",
+        "ro": "imouto wa ryouri ga jouzu desu.",
+        "en": "My sister is good at cooking."
+      },
+      {
+        "ja": "あなたは日本語が上手ですね。",
+        "kana": "あなた は にほんご が じょうず です ね。",
+        "ro": "anata wa nihongo ga jouzu desu ne.",
+        "en": "You’re good at Japanese."
+      },
+      {
+        "ja": "彼はピアノが上手です。",
+        "kana": "かれ は ぴあの が じょうず です。",
+        "ro": "kare wa piano ga jouzu desu.",
+        "en": "He is good at playing the piano."
+      },
+      {
+        "ja": "上手な話し方を学びたいです。",
+        "kana": "じょうず な はなしかた を まなびたい です。",
+        "ro": "jouzu na hanashikata o manabitai desu.",
+        "en": "I want to learn how to speak well."
+      },
+      {
+        "ja": "妹はピアノが上手です。",
+        "kana": "いもうと は ぴあの が じょうず です。",
+        "ro": "imouto wa piano ga jouzu desu.",
+        "en": "My sister is good at piano."
+      },
+      {
+        "ja": "彼はサッカーが上手です。",
+        "kana": "かれ は さっかー が じょうず です。",
+        "ro": "kare wa sakkaa ga jouzu desu.",
+        "en": "He is good at soccer."
+      },
+      {
+        "ja": "母は料理がとても上手です。",
+        "kana": "はは は りょうり が とても じょうず です。",
+        "ro": "haha wa ryouri ga totemo jouzu desu.",
+        "en": "My mother is very good at cooking."
+      },
+      {
+        "ja": "上手に話せるようになりたいです。",
+        "kana": "じょうず に はなせる よう に なりたい です。",
+        "ro": "jouzu ni hanaseru you ni naritai desu.",
+        "en": "I want to be able to speak well."
+      },
+      {
+        "ja": "彼女は絵が上手です。",
+        "kana": "かのじょ は え が じょうず です。",
+        "ro": "kanojo wa e ga jouzu desu.",
+        "en": "She is good at drawing."
+      },
+      {
+        "ja": "母は料理が上手です。",
+        "kana": "はは は りょうり が じょうず です。",
+        "ro": "haha wa ryouri ga jouzu desu.",
+        "en": "My mother is good at cooking."
+      },
+      {
+        "ja": "上手に話せます。",
+        "kana": "じょうず に はなせます。",
+        "ro": "jouzu ni hanasemasu.",
+        "en": "I can speak well."
+      },
+      {
+        "ja": "彼はピアノが上手ですね。",
+        "kana": "かれ は ぴあの が じょうず です ね。",
+        "ro": "kare wa piano ga jouzu desu ne.",
+        "en": "He’s good at piano, isn’t he?"
+      },
+      {
+        "ja": "上手な人を見ました。",
+        "kana": "じょうず な ひと を みました。",
+        "ro": "jouzu na hito o mimashita.",
+        "en": "I saw a skillful person."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-009",
+    "ja": "下手",
+    "kana": "へた",
+    "ro": "heta",
+    "en": "poor at / unskillful",
+    "examples": [
+      {
+        "ja": "私は歌が下手です。",
+        "kana": "わたし は うた が へた です。",
+        "ro": "watashi wa uta ga heta desu.",
+        "en": "I’m poor at singing."
+      },
+      {
+        "ja": "兄は料理が下手です。",
+        "kana": "あに は りょうり が へた です。",
+        "ro": "ani wa ryouri ga heta desu.",
+        "en": "My older brother is bad at cooking."
+      },
+      {
+        "ja": "彼はダンスが下手です。",
+        "kana": "かれ は だんす が へた です。",
+        "ro": "kare wa dansu ga heta desu.",
+        "en": "He’s bad at dancing."
+      },
+      {
+        "ja": "私は運転が下手です。",
+        "kana": "わたし は うんてん が へた です。",
+        "ro": "watashi wa unten ga heta desu.",
+        "en": "I’m bad at driving."
+      },
+      {
+        "ja": "下手でも頑張ります。",
+        "kana": "へた でも がんばります。",
+        "ro": "heta demo ganbarimasu.",
+        "en": "I’ll do my best even if I’m not good at it."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-010",
+    "ja": "親切",
+    "kana": "しんせつ",
+    "ro": "shinsetsu",
+    "en": "kind",
+    "examples": [
+      {
+        "ja": "先生はとても親切です。",
+        "kana": "せんせい は とても しんせつ です。",
+        "ro": "sensei wa totemo shinsetsu desu.",
+        "en": "The teacher is very kind."
+      },
+      {
+        "ja": "あの人は親切な人です。",
+        "kana": "あの ひと は しんせつ な ひと です。",
+        "ro": "ano hito wa shinsetsu na hito desu.",
+        "en": "That person is kind."
+      },
+      {
+        "ja": "友だちはいつも親切です。",
+        "kana": "ともだち は いつも しんせつ です。",
+        "ro": "tomodachi wa itsumo shinsetsu desu.",
+        "en": "My friend is always kind."
+      },
+      {
+        "ja": "店員が親切に教えてくれました。",
+        "kana": "てんいん が しんせつ に おしえて くれました。",
+        "ro": "tenin ga shinsetsu ni oshiete kuremashita.",
+        "en": "The clerk kindly explained it."
+      },
+      {
+        "ja": "親切な言葉をありがとう。",
+        "kana": "しんせつ な ことば を ありがとう。",
+        "ro": "shinsetsu na kotoba o arigatou.",
+        "en": "Thank you for your kind words."
+      },
+      {
+        "ja": "店員が親切に説明してくれました。",
+        "kana": "てんいん が しんせつ に せつめい して くれました。",
+        "ro": "tenin ga shinsetsu ni setsumei shite kuremashita.",
+        "en": "The clerk kindly explained it."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-011",
+    "ja": "嫌い",
+    "kana": "きらい",
+    "ro": "kirai",
+    "en": "dislike / hate",
+    "examples": [
+      {
+        "ja": "私は納豆が嫌いです。",
+        "kana": "わたし は なっとう が きらい です。",
+        "ro": "watashi wa nattou ga kirai desu.",
+        "en": "I dislike natto."
+      },
+      {
+        "ja": "彼は勉強が嫌いです。",
+        "kana": "かれ は べんきょう が きらい です。",
+        "ro": "kare wa benkyou ga kirai desu.",
+        "en": "He hates studying."
+      },
+      {
+        "ja": "虫が嫌いです。",
+        "kana": "むし が きらい です。",
+        "ro": "mushi ga kirai desu.",
+        "en": "I hate insects."
+      },
+      {
+        "ja": "彼女は寒い日が嫌いです。",
+        "kana": "かのじょ は さむい ひ が きらい です。",
+        "ro": "kanojo wa samui hi ga kirai desu.",
+        "en": "She dislikes cold days."
+      },
+      {
+        "ja": "嫌いな食べ物はありますか。",
+        "kana": "きらい な たべもの は あります か。",
+        "ro": "kirai na tabemono wa arimasu ka.",
+        "en": "Do you have any food you dislike?"
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-012",
+    "ja": "好き",
+    "kana": "すき",
+    "ro": "suki",
+    "en": "like / fond of",
+    "examples": [
+      {
+        "ja": "私は音楽が好きです。",
+        "kana": "わたし は おんがく が すき です。",
+        "ro": "watashi wa ongaku ga suki desu.",
+        "en": "I like music."
+      },
+      {
+        "ja": "彼女は猫が好きです。",
+        "kana": "かのじょ は ねこ が すき です。",
+        "ro": "kanojo wa neko ga suki desu.",
+        "en": "She likes cats."
+      },
+      {
+        "ja": "旅行が好きです。",
+        "kana": "りょこう が すき です。",
+        "ro": "ryokou ga suki desu.",
+        "en": "I like traveling."
+      },
+      {
+        "ja": "私は日本の映画が好きです。",
+        "kana": "わたし は にほん の えいが が すき です。",
+        "ro": "watashi wa nihon no eiga ga suki desu.",
+        "en": "I like Japanese movies."
+      },
+      {
+        "ja": "好きな色は青です。",
+        "kana": "すき な いろ は あお です。",
+        "ro": "suki na iro wa ao desu.",
+        "en": "My favorite color is blue."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-013",
+    "ja": "大丈夫",
+    "kana": "だいじょうぶ",
+    "ro": "daijoubu",
+    "en": "okay / all right / safe",
+    "examples": [
+      {
+        "ja": "心配しないでください。大丈夫です。",
+        "kana": "しんぱい しないで ください。だいじょうぶ です。",
+        "ro": "shinpai shinaide kudasai. daijoubu desu.",
+        "en": "Don’t worry. It’s okay."
+      },
+      {
+        "ja": "怪我は大丈夫ですか。",
+        "kana": "けが は だいじょうぶ です か。",
+        "ro": "kega wa daijoubu desu ka.",
+        "en": "Is your injury okay?"
+      },
+      {
+        "ja": "私は大丈夫です。",
+        "kana": "わたし は だいじょうぶ です。",
+        "ro": "watashi wa daijoubu desu.",
+        "en": "I’m fine."
+      },
+      {
+        "ja": "雨でも大丈夫です。",
+        "kana": "あめ でも だいじょうぶ です。",
+        "ro": "ame demo daijoubu desu.",
+        "en": "It’s okay even if it rains."
+      },
+      {
+        "ja": "大丈夫、ゆっくりでいいですよ。",
+        "kana": "だいじょうぶ、ゆっくり で いい です よ。",
+        "ro": "daijoubu, yukkuri de ii desu yo.",
+        "en": "It’s okay, take your time."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-014",
+    "ja": "簡単",
+    "kana": "かんたん",
+    "ro": "kantan",
+    "en": "simple / easy",
+    "examples": [
+      {
+        "ja": "この問題は簡単です。",
+        "kana": "この もんだい は かんたん です。",
+        "ro": "kono mondai wa kantan desu.",
+        "en": "This question is easy."
+      },
+      {
+        "ja": "作り方は簡単です。",
+        "kana": "つくりかた は かんたん です。",
+        "ro": "tsukurikata wa kantan desu.",
+        "en": "The way to make it is simple."
+      },
+      {
+        "ja": "これは簡単な仕事です。",
+        "kana": "これ は かんたん な しごと です。",
+        "ro": "kore wa kantan na shigoto desu.",
+        "en": "This is an easy job."
+      },
+      {
+        "ja": "テストは簡単でした。",
+        "kana": "てすと は かんたん でした。",
+        "ro": "tesuto wa kantan deshita.",
+        "en": "The test was easy."
+      },
+      {
+        "ja": "簡単に作れますよ。",
+        "kana": "かんたん に つくれます よ。",
+        "ro": "kantan ni tsukuremasu yo.",
+        "en": "You can make it easily."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-015",
+    "ja": "大変",
+    "kana": "たいへん",
+    "ro": "taihen",
+    "en": "hard / tough / terrible",
+    "examples": [
+      {
+        "ja": "仕事が大変です。",
+        "kana": "しごと が たいへん です。",
+        "ro": "shigoto ga taihen desu.",
+        "en": "Work is tough."
+      },
+      {
+        "ja": "今日は大変な一日でした。",
+        "kana": "きょう は たいへん な いちにち でした。",
+        "ro": "kyou wa taihen na ichinichi deshita.",
+        "en": "Today was a hard day."
+      },
+      {
+        "ja": "引っ越しは大変です。",
+        "kana": "ひっこし は たいへん です。",
+        "ro": "hikkoshi wa taihen desu.",
+        "en": "Moving is hard."
+      },
+      {
+        "ja": "大変でしたね。",
+        "kana": "たいへん でした ね。",
+        "ro": "taihen deshita ne.",
+        "en": "That must have been hard."
+      },
+      {
+        "ja": "大変なことがありました。",
+        "kana": "たいへん な こと が ありました。",
+        "ro": "taihen na koto ga arimashita.",
+        "en": "Something serious happened."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-016",
+    "ja": "自由",
+    "kana": "じゆう",
+    "ro": "jiyuu",
+    "en": "free / freedom",
+    "examples": [
+      {
+        "ja": "私は自由な時間が少ないです。",
+        "kana": "わたし は じゆう な じかん が すくない です。",
+        "ro": "watashi wa jiyuu na jikan ga sukunai desu.",
+        "en": "I don’t have much free time."
+      },
+      {
+        "ja": "学生は服が自由です。",
+        "kana": "がくせい は ふく が じゆう です。",
+        "ro": "gakusei wa fuku ga jiyuu desu.",
+        "en": "Students can wear whatever they want."
+      },
+      {
+        "ja": "今日は自由に使っていいです。",
+        "kana": "きょう は じゆう に つかって いい です。",
+        "ro": "kyou wa jiyuu ni tsukatte ii desu.",
+        "en": "You can use it freely today."
+      },
+      {
+        "ja": "自由な考え方が大切です。",
+        "kana": "じゆう な かんがえかた が たいせつ です。",
+        "ro": "jiyuu na kangaekata ga taisetsu desu.",
+        "en": "Free thinking is important."
+      },
+      {
+        "ja": "ここでは自由に話せます。",
+        "kana": "ここ では じゆう に はなせます。",
+        "ro": "koko de wa jiyuu ni hanasemasu.",
+        "en": "You can speak freely here."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-017",
+    "ja": "丁寧",
+    "kana": "ていねい",
+    "ro": "teinei",
+    "en": "polite / careful",
+    "examples": [
+      {
+        "ja": "先生はとても丁寧です。",
+        "kana": "せんせい は とても ていねい です。",
+        "ro": "sensei wa totemo teinei desu.",
+        "en": "The teacher is very polite."
+      },
+      {
+        "ja": "丁寧な言葉を使ってください。",
+        "kana": "ていねい な ことば を つかって ください。",
+        "ro": "teinei na kotoba o tsukatte kudasai.",
+        "en": "Please use polite words."
+      },
+      {
+        "ja": "彼は丁寧に説明しました。",
+        "kana": "かれ は ていねい に せつめい しました。",
+        "ro": "kare wa teinei ni setsumei shimashita.",
+        "en": "He explained carefully."
+      },
+      {
+        "ja": "店員の対応が丁寧です。",
+        "kana": "てんいん の たいおう が ていねい です。",
+        "ro": "tenin no taiou ga teinei desu.",
+        "en": "The clerk’s service is polite."
+      },
+      {
+        "ja": "丁寧な人が好きです。",
+        "kana": "ていねい な ひと が すき です。",
+        "ro": "teinei na hito ga suki desu.",
+        "en": "I like polite people."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-018",
+    "ja": "平気",
+    "kana": "へいき",
+    "ro": "heiki",
+    "en": "calm / okay / unaffected",
+    "examples": [
+      {
+        "ja": "私は雨でも平気です。",
+        "kana": "わたし は あめ でも へいき です。",
+        "ro": "watashi wa ame demo heiki desu.",
+        "en": "I’m fine even if it rains."
+      },
+      {
+        "ja": "暑くても平気です。",
+        "kana": "あつくて も へいき です。",
+        "ro": "atsukute mo heiki desu.",
+        "en": "I’m okay even when it’s hot."
+      },
+      {
+        "ja": "彼は一人でも平気です。",
+        "kana": "かれ は ひとり でも へいき です。",
+        "ro": "kare wa hitori demo heiki desu.",
+        "en": "He’s fine being alone."
+      },
+      {
+        "ja": "痛くないので平気です。",
+        "kana": "いたく ない ので へいき です。",
+        "ro": "itaku nai node heiki desu.",
+        "en": "It doesn’t hurt, so I’m okay."
+      },
+      {
+        "ja": "彼女はいつも平気な顔をしています。",
+        "kana": "かのじょ は いつも へいき な かお を して います。",
+        "ro": "kanojo wa itsumo heiki na kao o shite imasu.",
+        "en": "She always looks calm."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-019",
+    "ja": "色々",
+    "kana": "いろいろ",
+    "ro": "iroiro",
+    "en": "various / many kinds",
+    "examples": [
+      {
+        "ja": "色々な本を読みます。",
+        "kana": "いろいろ な ほん を よみます。",
+        "ro": "iroiro na hon o yomimasu.",
+        "en": "I read various books."
+      },
+      {
+        "ja": "日本には色々な食べ物があります。",
+        "kana": "にほん に は いろいろ な たべもの が あります。",
+        "ro": "nihon ni wa iroiro na tabemono ga arimasu.",
+        "en": "There are many kinds of food in Japan."
+      },
+      {
+        "ja": "色々な人に会いました。",
+        "kana": "いろいろ な ひと に あいました。",
+        "ro": "iroiro na hito ni aimashita.",
+        "en": "I met many different people."
+      },
+      {
+        "ja": "この店では色々な物が売っています。",
+        "kana": "この みせ では いろいろ な もの が うって います。",
+        "ro": "kono mise de wa iroiro na mono ga utte imasu.",
+        "en": "This shop sells various things."
+      },
+      {
+        "ja": "色々な経験をしました。",
+        "kana": "いろいろ な けいけん を しました。",
+        "ro": "iroiro na keiken o shimashita.",
+        "en": "I had many experiences."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-020",
+    "ja": "大事",
+    "kana": "だいじ",
+    "ro": "daiji",
+    "en": "important / valuable",
+    "examples": [
+      {
+        "ja": "家族は大事です。",
+        "kana": "かぞく は だいじ です。",
+        "ro": "kazoku wa daiji desu.",
+        "en": "Family is important."
+      },
+      {
+        "ja": "健康が大事です。",
+        "kana": "けんこう が だいじ です。",
+        "ro": "kenkou ga daiji desu.",
+        "en": "Health is important."
+      },
+      {
+        "ja": "これは大事な書類です。",
+        "kana": "これ は だいじ な しょるい です。",
+        "ro": "kore wa daiji na shorui desu.",
+        "en": "This is an important document."
+      },
+      {
+        "ja": "友だちを大事にしています。",
+        "kana": "ともだち を だいじ に して います。",
+        "ro": "tomodachi o daiji ni shite imasu.",
+        "en": "I cherish my friends."
+      },
+      {
+        "ja": "時間を大事にしましょう。",
+        "kana": "じかん を だいじ に しましょう。",
+        "ro": "jikan o daiji ni shimashou.",
+        "en": "Let’s value our time."
+      },
+      {
+        "ja": "健康が一番大事です。",
+        "kana": "けんこう が いちばん だいじ です。",
+        "ro": "kenkou ga ichiban daiji desu.",
+        "en": "Health is the most important."
+      },
+      {
+        "ja": "これは大事な手紙です。",
+        "kana": "これ は だいじ な てがみ です。",
+        "ro": "kore wa daiji na tegami desu.",
+        "en": "This is an important letter."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-021",
+    "ja": "真面目",
+    "kana": "まじめ",
+    "ro": "majime",
+    "en": "serious / earnest",
+    "examples": [
+      {
+        "ja": "彼はとても真面目です。",
+        "kana": "かれ は とても まじめ です。",
+        "ro": "kare wa totemo majime desu.",
+        "en": "He is very serious."
+      },
+      {
+        "ja": "真面目な学生ですね。",
+        "kana": "まじめ な がくせい です ね。",
+        "ro": "majime na gakusei desu ne.",
+        "en": "He’s a diligent student."
+      },
+      {
+        "ja": "彼女は真面目に働きます。",
+        "kana": "かのじょ は まじめ に はたらきます。",
+        "ro": "kanojo wa majime ni hatarakimasu.",
+        "en": "She works earnestly."
+      },
+      {
+        "ja": "真面目な話をしましょう。",
+        "kana": "まじめ な はなし を しましょう。",
+        "ro": "majime na hanashi o shimashou.",
+        "en": "Let’s have a serious talk."
+      },
+      {
+        "ja": "真面目な人が好きです。",
+        "kana": "まじめ な ひと が すき です。",
+        "ro": "majime na hito ga suki desu.",
+        "en": "I like serious people."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-022",
+    "ja": "安全",
+    "kana": "あんぜん",
+    "ro": "anzen",
+    "en": "safe / secure",
+    "examples": [
+      {
+        "ja": "この道は安全です。",
+        "kana": "この みち は あんぜん です。",
+        "ro": "kono michi wa anzen desu.",
+        "en": "This road is safe."
+      },
+      {
+        "ja": "安全な場所に行きましょう。",
+        "kana": "あんぜん な ばしょ に いきましょう。",
+        "ro": "anzen na basho ni ikimashou.",
+        "en": "Let’s go to a safe place."
+      },
+      {
+        "ja": "車の運転は安全にしてください。",
+        "kana": "くるま の うんてん は あんぜん に して ください。",
+        "ro": "kuruma no unten wa anzen ni shite kudasai.",
+        "en": "Please drive safely."
+      },
+      {
+        "ja": "ここは夜でも安全です。",
+        "kana": "ここ は よる でも あんぜん です。",
+        "ro": "koko wa yoru demo anzen desu.",
+        "en": "It’s safe here even at night."
+      },
+      {
+        "ja": "安全な国に住みたいです。",
+        "kana": "あんぜん な くに に すみたい です。",
+        "ro": "anzen na kuni ni sumitai desu.",
+        "en": "I want to live in a safe country."
+      },
+      {
+        "ja": "夜でもこの公園は安全です。",
+        "kana": "よる でも この こうえん は あんぜん です。",
+        "ro": "yoru demo kono kouen wa anzen desu.",
+        "en": "This park is safe even at night."
+      },
+      {
+        "ja": "安全な道を通ってください。",
+        "kana": "あんぜん な みち を とおって ください。",
+        "ro": "anzen na michi o tootte kudasai.",
+        "en": "Please take a safe road."
+      },
+      {
+        "ja": "安全第一です。",
+        "kana": "あんぜん だいいち です。",
+        "ro": "anzen daiichi desu.",
+        "en": "Safety comes first."
+      },
+      {
+        "ja": "この車は安全です。",
+        "kana": "この くるま は あんぜん です。",
+        "ro": "kono kuruma wa anzen desu.",
+        "en": "This car is safe."
+      },
+      {
+        "ja": "子どもたちは安全な場所にいます。",
+        "kana": "こどもたち は あんぜん な ばしょ に います。",
+        "ro": "kodomotachi wa anzen na basho ni imasu.",
+        "en": "The children are in a safe place."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-023",
+    "ja": "大好き",
+    "kana": "だいすき",
+    "ro": "daisuki",
+    "en": "love / like very much",
+    "examples": [
+      {
+        "ja": "私は犬が大好きです。",
+        "kana": "わたし は いぬ が だいすき です。",
+        "ro": "watashi wa inu ga daisuki desu.",
+        "en": "I love dogs."
+      },
+      {
+        "ja": "母の料理が大好きです。",
+        "kana": "はは の りょうり が だいすき です。",
+        "ro": "haha no ryouri ga daisuki desu.",
+        "en": "I love my mother’s cooking."
+      },
+      {
+        "ja": "映画を見るのが大好きです。",
+        "kana": "えいが を みる の が だいすき です。",
+        "ro": "eiga o miru no ga daisuki desu.",
+        "en": "I love watching movies."
+      },
+      {
+        "ja": "この曲が大好きです。",
+        "kana": "この きょく が だいすき です。",
+        "ro": "kono kyoku ga daisuki desu.",
+        "en": "I really like this song."
+      },
+      {
+        "ja": "家族と過ごす時間が大好きです。",
+        "kana": "かぞく と すごす じかん が だいすき です。",
+        "ro": "kazoku to sugosu jikan ga daisuki desu.",
+        "en": "I love spending time with my family."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-026",
+    "ja": "心配",
+    "kana": "しんぱい",
+    "ro": "shinpai",
+    "en": "worry / anxious",
+    "examples": [
+      {
+        "ja": "明日の天気が心配です。",
+        "kana": "あした の てんき が しんぱい です。",
+        "ro": "ashita no tenki ga shinpai desu.",
+        "en": "I’m worried about tomorrow’s weather."
+      },
+      {
+        "ja": "母はいつも私を心配します。",
+        "kana": "はは は いつも わたし を しんぱい します。",
+        "ro": "haha wa itsumo watashi o shinpai shimasu.",
+        "en": "My mother always worries about me."
+      },
+      {
+        "ja": "心配しないでください。",
+        "kana": "しんぱい しないで ください。",
+        "ro": "shinpai shinaide kudasai.",
+        "en": "Please don’t worry."
+      },
+      {
+        "ja": "少し心配なニュースです。",
+        "kana": "すこし しんぱい な にゅーす です。",
+        "ro": "sukoshi shinpai na nyuusu desu.",
+        "en": "It’s a bit worrying news."
+      },
+      {
+        "ja": "友だちのことが心配です。",
+        "kana": "ともだち の こと が しんぱい です。",
+        "ro": "tomodachi no koto ga shinpai desu.",
+        "en": "I’m worried about my friend."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-027",
+    "ja": "真剣",
+    "kana": "しんけん",
+    "ro": "shinken",
+    "en": "serious / earnest",
+    "examples": [
+      {
+        "ja": "彼は真剣な顔をしています。",
+        "kana": "かれ は しんけん な かお を して います。",
+        "ro": "kare wa shinken na kao o shite imasu.",
+        "en": "He has a serious look on his face."
+      },
+      {
+        "ja": "真剣に考えてください。",
+        "kana": "しんけん に かんがえて ください。",
+        "ro": "shinken ni kangaete kudasai.",
+        "en": "Please think seriously."
+      },
+      {
+        "ja": "二人は真剣に話しています。",
+        "kana": "ふたり は しんけん に はなして います。",
+        "ro": "futari wa shinken ni hanashite imasu.",
+        "en": "The two are talking seriously."
+      },
+      {
+        "ja": "彼女は真剣な学生です。",
+        "kana": "かのじょ は しんけん な がくせい です。",
+        "ro": "kanojo wa shinken na gakusei desu.",
+        "en": "She is a serious student."
+      },
+      {
+        "ja": "真剣に勉強しています。",
+        "kana": "しんけん に べんきょう して います。",
+        "ro": "shinken ni benkyou shite imasu.",
+        "en": "I’m studying earnestly."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-028",
+    "ja": "素敵",
+    "kana": "すてき",
+    "ro": "suteki",
+    "en": "nice / lovely / wonderful",
+    "examples": [
+      {
+        "ja": "あなたの服は素敵です。",
+        "kana": "あなた の ふく は すてき です。",
+        "ro": "anata no fuku wa suteki desu.",
+        "en": "Your clothes are lovely."
+      },
+      {
+        "ja": "素敵なプレゼントをもらいました。",
+        "kana": "すてき な ぷれぜんと を もらいました。",
+        "ro": "suteki na purezento o moraimashita.",
+        "en": "I received a wonderful present."
+      },
+      {
+        "ja": "その笑顔は素敵ですね。",
+        "kana": "その えがお は すてき です ね。",
+        "ro": "sono egao wa suteki desu ne.",
+        "en": "That smile is beautiful, isn’t it?"
+      },
+      {
+        "ja": "昨日の映画は素敵でした。",
+        "kana": "きのう の えいが は すてき でした。",
+        "ro": "kinou no eiga wa suteki deshita.",
+        "en": "The movie yesterday was wonderful."
+      },
+      {
+        "ja": "彼は素敵な人です。",
+        "kana": "かれ は すてき な ひと です。",
+        "ro": "kare wa suteki na hito desu.",
+        "en": "He is a nice person."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-029",
+    "ja": "賑やか",
+    "kana": "にぎやか",
+    "ro": "nigiyaka",
+    "en": "lively / busy",
+    "examples": [
+      {
+        "ja": "この通りは賑やかです。",
+        "kana": "この とおり は にぎやか です。",
+        "ro": "kono toori wa nigiyaka desu.",
+        "en": "This street is lively."
+      },
+      {
+        "ja": "昨日のパーティーは賑やかでした。",
+        "kana": "きのう の ぱーてぃー は にぎやか でした。",
+        "ro": "kinou no paatii wa nigiyaka deshita.",
+        "en": "The party yesterday was lively."
+      },
+      {
+        "ja": "渋谷はいつも賑やかです。",
+        "kana": "しぶや は いつも にぎやか です。",
+        "ro": "shibuya wa itsumo nigiyaka desu.",
+        "en": "Shibuya is always busy."
+      },
+      {
+        "ja": "賑やかな場所が好きです。",
+        "kana": "にぎやか な ばしょ が すき です。",
+        "ro": "nigiyaka na basho ga suki desu.",
+        "en": "I like lively places."
+      },
+      {
+        "ja": "祭りで町が賑やかです。",
+        "kana": "まつり で まち が にぎやか です。",
+        "ro": "matsuri de machi ga nigiyaka desu.",
+        "en": "The town is lively with the festival."
+      }
+    ]
+  },
+  {
+    "id": "n5-nadj-032",
+    "ja": "特別",
+    "kana": "とくべつ",
+    "ro": "tokubetsu",
+    "en": "special",
+    "examples": [
+      {
+        "ja": "今日は特別な日です。",
+        "kana": "きょう は とくべつ な ひ です。",
+        "ro": "kyou wa tokubetsu na hi desu.",
+        "en": "Today is a special day."
+      },
+      {
+        "ja": "特別な理由はありません。",
+        "kana": "とくべつ な りゆう は ありません。",
+        "ro": "tokubetsu na riyuu wa arimasen.",
+        "en": "There’s no special reason."
+      },
+      {
+        "ja": "彼は特別な人です。",
+        "kana": "かれ は とくべつ な ひと です。",
+        "ro": "kare wa tokubetsu na hito desu.",
+        "en": "He is a special person."
+      },
+      {
+        "ja": "特別な料理を作りました。",
+        "kana": "とくべつ な りょうり を つくりました。",
+        "ro": "tokubetsu na ryouri o tsukurimashita.",
+        "en": "I made a special dish."
+      },
+      {
+        "ja": "それは特別な意味があります。",
+        "kana": "それ は とくべつ な いみ が あります。",
+        "ro": "sore wa tokubetsu na imi ga arimasu.",
+        "en": "It has a special meaning."
+      }
+    ]
+  }
+]

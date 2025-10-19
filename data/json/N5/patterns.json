@@ -1,0 +1,1541 @@
+[
+  {
+    "id": "1",
+    "ja": "〜です",
+    "kana": "〜です",
+    "ro": "desu",
+    "en": "to be / is",
+    "examples": [
+      {
+        "ja": "これはペンです。",
+        "kana": "これは ぺん です。",
+        "ro": "Kore wa pen desu.",
+        "en": "This is a pen."
+      },
+      {
+        "ja": "あの人は先生です。",
+        "kana": "あの ひとは せんせい です。",
+        "ro": "Ano hito wa sensei desu.",
+        "en": "That person is a teacher."
+      },
+      {
+        "ja": "これは日本の本です。",
+        "kana": "これは にほん の ほん です。",
+        "ro": "Kore wa Nihon no hon desu.",
+        "en": "This is a Japanese book."
+      },
+      {
+        "ja": "私は学生です。",
+        "kana": "わたし は がくせい です。",
+        "ro": "Watashi wa gakusei desu.",
+        "en": "I am a student."
+      },
+      {
+        "ja": "今日はいい天気です。",
+        "kana": "きょう は いい てんき です。",
+        "ro": "Kyou wa ii tenki desu.",
+        "en": "It is nice weather today."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "ja": "〜ます",
+    "kana": "〜ます",
+    "ro": "masu",
+    "en": "polite present tense verb ending",
+    "examples": [
+      {
+        "ja": "毎日コーヒーを飲みます。",
+        "kana": "まいにち こーひー を のみます。",
+        "ro": "Mainichi koohii o nomimasu.",
+        "en": "I drink coffee every day."
+      },
+      {
+        "ja": "日本語を勉強します。",
+        "kana": "にほんご を べんきょう します。",
+        "ro": "Nihongo o benkyou shimasu.",
+        "en": "I study Japanese."
+      },
+      {
+        "ja": "毎朝走ります。",
+        "kana": "まいあさ はしります。",
+        "ro": "Maiasa hashirimasu.",
+        "en": "I run every morning."
+      },
+      {
+        "ja": "よく音楽を聞きます。",
+        "kana": "よく おんがく を ききます。",
+        "ro": "Yoku ongaku o kikimasu.",
+        "en": "I often listen to music."
+      },
+      {
+        "ja": "夜に映画を見ます。",
+        "kana": "よる に えいが を みます。",
+        "ro": "Yoru ni eiga o mimasu.",
+        "en": "I watch movies at night."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "ja": "〜ました",
+    "kana": "〜ました",
+    "ro": "mashita",
+    "en": "polite past tense verb ending",
+    "examples": [
+      {
+        "ja": "昨日映画を見ました。",
+        "kana": "きのう えいが を みました。",
+        "ro": "Kinou eiga o mimashita.",
+        "en": "I watched a movie yesterday."
+      },
+      {
+        "ja": "朝ごはんを食べました。",
+        "kana": "あさごはん を たべました。",
+        "ro": "Asagohan o tabemashita.",
+        "en": "I ate breakfast."
+      },
+      {
+        "ja": "友達に会いました。",
+        "kana": "ともだち に あいました。",
+        "ro": "Tomodachi ni aimashita.",
+        "en": "I met a friend."
+      },
+      {
+        "ja": "駅まで歩きました。",
+        "kana": "えき まで あるきました。",
+        "ro": "Eki made arukimashita.",
+        "en": "I walked to the station."
+      },
+      {
+        "ja": "本を読みました。",
+        "kana": "ほん を よみました。",
+        "ro": "Hon o yomimashita.",
+        "en": "I read a book."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "ja": "〜ません",
+    "kana": "〜ません",
+    "ro": "masen",
+    "en": "negative polite present tense",
+    "examples": [
+      {
+        "ja": "今日は行きません。",
+        "kana": "きょう は いきません。",
+        "ro": "Kyou wa ikimasen.",
+        "en": "I’m not going today."
+      },
+      {
+        "ja": "コーヒーは飲みません。",
+        "kana": "こーひー は のみません。",
+        "ro": "Koohii wa nomimasen.",
+        "en": "I don’t drink coffee."
+      },
+      {
+        "ja": "テレビを見ません。",
+        "kana": "てれび を みません。",
+        "ro": "Terebi o mimasen.",
+        "en": "I don’t watch TV."
+      },
+      {
+        "ja": "お金を使いません。",
+        "kana": "おかね を つかいません。",
+        "ro": "Okane o tsukaimasen.",
+        "en": "I don’t spend money."
+      },
+      {
+        "ja": "朝は食べません。",
+        "kana": "あさ は たべません。",
+        "ro": "Asa wa tabemasen.",
+        "en": "I don’t eat in the morning."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "ja": "〜ましたか",
+    "kana": "〜ましたか",
+    "ro": "mashitaka",
+    "en": "polite past question form",
+    "examples": [
+      {
+        "ja": "昨日映画を見ましたか。",
+        "kana": "きのう えいが を みましたか。",
+        "ro": "Kinou eiga o mimashita ka.",
+        "en": "Did you watch a movie yesterday?"
+      },
+      {
+        "ja": "朝ごはんを食べましたか。",
+        "kana": "あさごはん を たべましたか。",
+        "ro": "Asagohan o tabemashita ka.",
+        "en": "Did you eat breakfast?"
+      },
+      {
+        "ja": "友達に会いましたか。",
+        "kana": "ともだち に あいましたか。",
+        "ro": "Tomodachi ni aimashita ka.",
+        "en": "Did you meet your friend?"
+      },
+      {
+        "ja": "テストを受けましたか。",
+        "kana": "てすと を うけましたか。",
+        "ro": "Tesuto o ukemashita ka.",
+        "en": "Did you take the test?"
+      },
+      {
+        "ja": "昨日勉強しましたか。",
+        "kana": "きのう べんきょう しましたか。",
+        "ro": "Kinou benkyou shimashita ka.",
+        "en": "Did you study yesterday?"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "ja": "〜ましょう",
+    "kana": "〜ましょう",
+    "ro": "mashou",
+    "en": "let’s (polite suggestion)",
+    "examples": [
+      {
+        "ja": "一緒に行きましょう。",
+        "kana": "いっしょに いきましょう。",
+        "ro": "Issho ni ikimashou.",
+        "en": "Let’s go together."
+      },
+      {
+        "ja": "ご飯を食べましょう。",
+        "kana": "ごはん を たべましょう。",
+        "ro": "Gohan o tabemashou.",
+        "en": "Let’s eat a meal."
+      },
+      {
+        "ja": "映画を見ましょう。",
+        "kana": "えいが を みましょう。",
+        "ro": "Eiga o mimashou.",
+        "en": "Let’s watch a movie."
+      },
+      {
+        "ja": "早く寝ましょう。",
+        "kana": "はやく ねましょう。",
+        "ro": "Hayaku nemashou.",
+        "en": "Let’s go to bed early."
+      },
+      {
+        "ja": "勉強を始めましょう。",
+        "kana": "べんきょう を はじめましょう。",
+        "ro": "Benkyou o hajimemashou.",
+        "en": "Let’s start studying."
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "ja": "〜たいです",
+    "kana": "〜たいです",
+    "ro": "tai desu",
+    "en": "want to (do something)",
+    "examples": [
+      {
+        "ja": "日本へ行きたいです。",
+        "kana": "にほん へ いきたい です。",
+        "ro": "Nihon e ikitai desu.",
+        "en": "I want to go to Japan."
+      },
+      {
+        "ja": "寿司を食べたいです。",
+        "kana": "すし を たべたい です。",
+        "ro": "Sushi o tabetai desu.",
+        "en": "I want to eat sushi."
+      },
+      {
+        "ja": "友達に会いたいです。",
+        "kana": "ともだち に あいたい です。",
+        "ro": "Tomodachi ni aitai desu.",
+        "en": "I want to meet my friend."
+      },
+      {
+        "ja": "新しい服を買いたいです。",
+        "kana": "あたらしい ふく を かいたい です。",
+        "ro": "Atarashii fuku o kaitai desu.",
+        "en": "I want to buy new clothes."
+      },
+      {
+        "ja": "海で泳ぎたいです。",
+        "kana": "うみ で およぎたい です。",
+        "ro": "Umi de oyogitai desu.",
+        "en": "I want to swim in the sea."
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "ja": "〜ています",
+    "kana": "〜ています",
+    "ro": "te imasu",
+    "en": "progressive / continuous action",
+    "examples": [
+      {
+        "ja": "今ご飯を食べています。",
+        "kana": "いま ごはん を たべています。",
+        "ro": "Ima gohan o tabete imasu.",
+        "en": "I’m eating now."
+      },
+      {
+        "ja": "映画を見ています。",
+        "kana": "えいが を みています。",
+        "ro": "Eiga o mite imasu.",
+        "en": "I’m watching a movie."
+      },
+      {
+        "ja": "日本語を勉強しています。",
+        "kana": "にほんご を べんきょう しています。",
+        "ro": "Nihongo o benkyou shite imasu.",
+        "en": "I’m studying Japanese."
+      },
+      {
+        "ja": "手紙を書いています。",
+        "kana": "てがみ を かいています。",
+        "ro": "Tegami o kaite imasu.",
+        "en": "I’m writing a letter."
+      },
+      {
+        "ja": "友達と話しています。",
+        "kana": "ともだち と はなしています。",
+        "ro": "Tomodachi to hanashite imasu.",
+        "en": "I’m talking with a friend."
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "ja": "〜に行きます",
+    "kana": "〜にいきます",
+    "ro": "ni ikimasu",
+    "en": "to go to (do something)",
+    "examples": [
+      {
+        "ja": "図書館に勉強しに行きます。",
+        "kana": "としょかん に べんきょう しに いきます。",
+        "ro": "Toshokan ni benkyou shi ni ikimasu.",
+        "en": "I go to the library to study."
+      },
+      {
+        "ja": "スーパーに買い物に行きます。",
+        "kana": "すーぱー に かいもの に いきます。",
+        "ro": "Suupaa ni kaimono ni ikimasu.",
+        "en": "I go shopping at the supermarket."
+      },
+      {
+        "ja": "友達の家に遊びに行きます。",
+        "kana": "ともだち の いえ に あそび に いきます。",
+        "ro": "Tomodachi no ie ni asobi ni ikimasu.",
+        "en": "I go to my friend’s house to hang out."
+      },
+      {
+        "ja": "公園に走りに行きます。",
+        "kana": "こうえん に はしり に いきます。",
+        "ro": "Kouen ni hashiri ni ikimasu.",
+        "en": "I go to the park to run."
+      },
+      {
+        "ja": "駅に迎えに行きます。",
+        "kana": "えき に むかえ に いきます。",
+        "ro": "Eki ni mukae ni ikimasu.",
+        "en": "I go to the station to pick someone up."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "ja": "〜まえに",
+    "kana": "〜まえに",
+    "ro": "mae ni",
+    "en": "before doing something",
+    "examples": [
+      {
+        "ja": "寝るまえに本を読みます。",
+        "kana": "ねる まえ に ほん を よみます。",
+        "ro": "Neru mae ni hon o yomimasu.",
+        "en": "I read a book before sleeping."
+      },
+      {
+        "ja": "食べるまえに手を洗います。",
+        "kana": "たべる まえ に て を あらいます。",
+        "ro": "Taberu mae ni te o araimasu.",
+        "en": "I wash my hands before eating."
+      },
+      {
+        "ja": "学校に行くまえに朝ごはんを食べます。",
+        "kana": "がっこう に いく まえ に あさごはん を たべます。",
+        "ro": "Gakkou ni iku mae ni asagohan o tabemasu.",
+        "en": "I eat breakfast before going to school."
+      },
+      {
+        "ja": "仕事をするまえにコーヒーを飲みます。",
+        "kana": "しごと を する まえ に こーひー を のみます。",
+        "ro": "Shigoto o suru mae ni koohii o nomimasu.",
+        "en": "I drink coffee before working."
+      },
+      {
+        "ja": "出かけるまえに天気をチェックします。",
+        "kana": "でかける まえ に てんき を ちぇっく します。",
+        "ro": "Dekakeru mae ni tenki o chekku shimasu.",
+        "en": "I check the weather before going out."
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "ja": "〜あとで",
+    "kana": "〜あとで",
+    "ro": "ato de",
+    "en": "after doing something",
+    "examples": [
+      {
+        "ja": "仕事のあとで映画を見ます。",
+        "kana": "しごと の あとで えいが を みます。",
+        "ro": "Shigoto no ato de eiga o mimasu.",
+        "en": "I watch a movie after work."
+      },
+      {
+        "ja": "ご飯を食べたあとで散歩します。",
+        "kana": "ごはん を たべた あとで さんぽ します。",
+        "ro": "Gohan o tabeta ato de sanpo shimasu.",
+        "en": "I take a walk after eating."
+      },
+      {
+        "ja": "授業のあとで先生に質問します。",
+        "kana": "じゅぎょう の あとで せんせい に しつもん します。",
+        "ro": "Jugyou no ato de sensei ni shitsumon shimasu.",
+        "en": "I ask the teacher a question after class."
+      },
+      {
+        "ja": "宿題のあとでテレビを見ます。",
+        "kana": "しゅくだい の あとで てれび を みます。",
+        "ro": "Shukudai no ato de terebi o mimasu.",
+        "en": "I watch TV after doing homework."
+      },
+      {
+        "ja": "仕事のあとで友達に会います。",
+        "kana": "しごと の あとで ともだち に あいます。",
+        "ro": "Shigoto no ato de tomodachi ni aimasu.",
+        "en": "I meet my friend after work."
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "ja": "〜から",
+    "kana": "〜から",
+    "ro": "kara",
+    "en": "because / since",
+    "examples": [
+      {
+        "ja": "雨が降っているから出かけません。",
+        "kana": "あめ が ふっている から でかけません。",
+        "ro": "Ame ga futteiru kara dekakemasen.",
+        "en": "I won’t go out because it’s raining."
+      },
+      {
+        "ja": "忙しいから行けません。",
+        "kana": "いそがしい から いけません。",
+        "ro": "Isogashii kara ikemasen.",
+        "en": "I can’t go because I’m busy."
+      },
+      {
+        "ja": "寒いからコートを着ます。",
+        "kana": "さむい から こーと を きます。",
+        "ro": "Samui kara kooto o kimasu.",
+        "en": "I wear a coat because it’s cold."
+      },
+      {
+        "ja": "お金がないから買いません。",
+        "kana": "おかね が ない から かいません。",
+        "ro": "Okane ga nai kara kaimasen.",
+        "en": "I won’t buy it because I have no money."
+      },
+      {
+        "ja": "疲れたから休みます。",
+        "kana": "つかれた から やすみます。",
+        "ro": "Tsukareta kara yasumimasu.",
+        "en": "I’ll rest because I’m tired."
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "ja": "〜ので",
+    "kana": "〜ので",
+    "ro": "node",
+    "en": "because / since (polite)",
+    "examples": [
+      {
+        "ja": "雨なので外に行きません。",
+        "kana": "あめ なので そと に いきません。",
+        "ro": "Ame na node soto ni ikimasen.",
+        "en": "I don’t go outside because it’s raining."
+      },
+      {
+        "ja": "時間がないので急ぎます。",
+        "kana": "じかん が ない ので いそぎます。",
+        "ro": "Jikan ga nai node isogimasu.",
+        "en": "I hurry because I have no time."
+      },
+      {
+        "ja": "風邪なので休みます。",
+        "kana": "かぜ なので やすみます。",
+        "ro": "Kaze na node yasumimasu.",
+        "en": "I rest because I have a cold."
+      },
+      {
+        "ja": "雨なので傘を持って行きます。",
+        "kana": "あめ なので かさ を もって いきます。",
+        "ro": "Ame na node kasa o motte ikimasu.",
+        "en": "I bring an umbrella because it’s raining."
+      },
+      {
+        "ja": "今日は忙しいので行けません。",
+        "kana": "きょう は いそがしい ので いけません。",
+        "ro": "Kyou wa isogashii node ikemasen.",
+        "en": "I can’t go today because I’m busy."
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "ja": "〜とき",
+    "kana": "〜とき",
+    "ro": "toki",
+    "en": "when / at the time of",
+    "examples": [
+      {
+        "ja": "学校に行くとき友達に会いました。",
+        "kana": "がっこう に いく とき ともだち に あいました。",
+        "ro": "Gakkou ni iku toki tomodachi ni aimashita.",
+        "en": "I met my friend when I went to school."
+      },
+      {
+        "ja": "暇なとき映画を見ます。",
+        "kana": "ひま な とき えいが を みます。",
+        "ro": "Hima na toki eiga o mimasu.",
+        "en": "I watch movies when I’m free."
+      },
+      {
+        "ja": "子どものときよく公園で遊びました。",
+        "kana": "こども の とき よく こうえん で あそびました。",
+        "ro": "Kodomo no toki yoku kouen de asobimashita.",
+        "en": "I often played in the park when I was a child."
+      },
+      {
+        "ja": "家に帰るときパンを買いました。",
+        "kana": "いえ に かえる とき ぱん を かいました。",
+        "ro": "Ie ni kaeru toki pan o kaimashita.",
+        "en": "I bought bread when I went home."
+      },
+      {
+        "ja": "寒いときコートを着ます。",
+        "kana": "さむい とき こーと を きます。",
+        "ro": "Samui toki kooto o kimasu.",
+        "en": "I wear a coat when it’s cold."
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "ja": "〜ながら",
+    "kana": "〜ながら",
+    "ro": "nagara",
+    "en": "while doing something",
+    "examples": [
+      {
+        "ja": "音楽を聞きながら勉強します。",
+        "kana": "おんがく を ききながら べんきょう します。",
+        "ro": "Ongaku o kikinagara benkyou shimasu.",
+        "en": "I study while listening to music."
+      },
+      {
+        "ja": "テレビを見ながらご飯を食べます。",
+        "kana": "てれび を みながら ごはん を たべます。",
+        "ro": "Terebi o minagara gohan o tabemasu.",
+        "en": "I eat while watching TV."
+      },
+      {
+        "ja": "歩きながら話しました。",
+        "kana": "あるきながら はなしました。",
+        "ro": "Arukinagara hanashimashita.",
+        "en": "We talked while walking."
+      },
+      {
+        "ja": "歌いながら掃除します。",
+        "kana": "うたいながら そうじ します。",
+        "ro": "Utai nagara souji shimasu.",
+        "en": "I clean while singing."
+      },
+      {
+        "ja": "コーヒーを飲みながら新聞を読みます。",
+        "kana": "こーひー を のみながら しんぶん を よみます。",
+        "ro": "Koohii o nominagara shinbun o yomimasu.",
+        "en": "I read the newspaper while drinking coffee."
+      },
+      {
+        "ja": "音楽を聞きながら歩きます。",
+        "kana": "おんがく を ききながら あるきます。",
+        "ro": "Ongaku o kikinagara arukimasu.",
+        "en": "I walk while listening to music."
+      },
+      {
+        "ja": "話しながらコーヒーを飲みます。",
+        "kana": "はなしながら こーひー を のみます。",
+        "ro": "Hanishinagara koohii o nomimasu.",
+        "en": "I drink coffee while talking."
+      },
+      {
+        "ja": "歩きながら電話します。",
+        "kana": "あるきながら でんわ します。",
+        "ro": "Arukinagara denwa shimasu.",
+        "en": "I talk on the phone while walking."
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "ja": "〜と",
+    "kana": "〜と",
+    "ro": "to",
+    "en": "when / if (something happens as a result)",
+    "examples": [
+      {
+        "ja": "春になると花が咲きます。",
+        "kana": "はる に なる と はな が さきます。",
+        "ro": "Haru ni naru to hana ga sakimasu.",
+        "en": "When spring comes, flowers bloom."
+      },
+      {
+        "ja": "ボタンを押すと音が出ます。",
+        "kana": "ぼたん を おす と おと が でます。",
+        "ro": "Botan o osu to oto ga demasu.",
+        "en": "If you press the button, a sound comes out."
+      },
+      {
+        "ja": "朝起きるとコーヒーを飲みます。",
+        "kana": "あさ おきる と こーひー を のみます。",
+        "ro": "Asa okiru to koohii o nomimasu.",
+        "en": "When I wake up in the morning, I drink coffee."
+      },
+      {
+        "ja": "右に曲がると駅があります。",
+        "kana": "みぎ に まがる と えき が あります。",
+        "ro": "Migi ni magaru to eki ga arimasu.",
+        "en": "If you turn right, there is a station."
+      },
+      {
+        "ja": "寒いと風邪をひきます。",
+        "kana": "さむい と かぜ を ひきます。",
+        "ro": "Samui to kaze o hikimasu.",
+        "en": "If it’s cold, I catch a cold."
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "ja": "〜たり〜たりします",
+    "kana": "〜たり〜たりします",
+    "ro": "tari tari shimasu",
+    "en": "do things like A and B",
+    "examples": [
+      {
+        "ja": "休日は映画を見たり本を読んだりします。",
+        "kana": "きゅうじつ は えいが を みたり ほん を よんだり します。",
+        "ro": "Kyuujitsu wa eiga o mitari hon o yondari shimasu.",
+        "en": "On holidays I watch movies and read books."
+      },
+      {
+        "ja": "週末は掃除したり料理したりします。",
+        "kana": "しゅうまつ は そうじ したり りょうり したり します。",
+        "ro": "Shuumatsu wa souji shitari ryouri shitari shimasu.",
+        "en": "I clean and cook on weekends."
+      },
+      {
+        "ja": "友達と歌ったり踊ったりしました。",
+        "kana": "ともだち と うたったり おどったり しました。",
+        "ro": "Tomodachi to utattari odottari shimashita.",
+        "en": "I sang and danced with my friends."
+      },
+      {
+        "ja": "夏は泳いだり旅行したりします。",
+        "kana": "なつ は およいだり りょこう したり します。",
+        "ro": "Natsu wa oyoidari ryokou shitari shimasu.",
+        "en": "In summer, I swim and travel."
+      },
+      {
+        "ja": "日曜日は買い物したり昼寝したりします。",
+        "kana": "にちようび は かいもの したり ひるね したり します。",
+        "ro": "Nichiyoubi wa kaimono shitari hirune shitari shimasu.",
+        "en": "On Sundays, I go shopping and take naps."
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "ja": "〜ことがあります",
+    "kana": "〜ことがあります",
+    "ro": "koto ga arimasu",
+    "en": "there are times when / have done something",
+    "examples": [
+      {
+        "ja": "日本に行ったことがあります。",
+        "kana": "にほん に いった こと が あります。",
+        "ro": "Nihon ni itta koto ga arimasu.",
+        "en": "I have been to Japan."
+      },
+      {
+        "ja": "寿司を食べたことがあります。",
+        "kana": "すし を たべた こと が あります。",
+        "ro": "Sushi o tabeta koto ga arimasu.",
+        "en": "I have eaten sushi."
+      },
+      {
+        "ja": "富士山を見たことがあります。",
+        "kana": "ふじさん を みた こと が あります。",
+        "ro": "Fujisan o mita koto ga arimasu.",
+        "en": "I have seen Mt. Fuji."
+      },
+      {
+        "ja": "彼に会ったことがあります。",
+        "kana": "かれ に あった こと が あります。",
+        "ro": "Kare ni atta koto ga arimasu.",
+        "en": "I have met him."
+      },
+      {
+        "ja": "この映画を見たことがあります。",
+        "kana": "この えいが を みた こと が あります。",
+        "ro": "Kono eiga o mita koto ga arimasu.",
+        "en": "I have seen this movie."
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "ja": "〜ほうがいいです",
+    "kana": "〜ほうがいいです",
+    "ro": "hou ga ii desu",
+    "en": "had better / should",
+    "examples": [
+      {
+        "ja": "早く寝たほうがいいです。",
+        "kana": "はやく ねた ほう が いい です。",
+        "ro": "Hayaku neta hou ga ii desu.",
+        "en": "You should go to bed early."
+      },
+      {
+        "ja": "薬を飲んだほうがいいです。",
+        "kana": "くすり を のんだ ほう が いい です。",
+        "ro": "Kusuri o nonda hou ga ii desu.",
+        "en": "You should take medicine."
+      },
+      {
+        "ja": "たくさん勉強したほうがいいです。",
+        "kana": "たくさん べんきょう した ほう が いい です。",
+        "ro": "Takusan benkyou shita hou ga ii desu.",
+        "en": "You should study a lot."
+      },
+      {
+        "ja": "もっと休んだほうがいいです。",
+        "kana": "もっと やすんだ ほう が いい です。",
+        "ro": "Motto yasunda hou ga ii desu.",
+        "en": "You should rest more."
+      },
+      {
+        "ja": "その店に行かないほうがいいです。",
+        "kana": "その みせ に いかない ほう が いい です。",
+        "ro": "Sono mise ni ikanai hou ga ii desu.",
+        "en": "You’d better not go to that store."
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "ja": "〜すぎます",
+    "kana": "〜すぎます",
+    "ro": "sugimasu",
+    "en": "too much / excessively",
+    "examples": [
+      {
+        "ja": "食べすぎました。",
+        "kana": "たべすぎました。",
+        "ro": "Tabesugimashita.",
+        "en": "I ate too much."
+      },
+      {
+        "ja": "飲みすぎないでください。",
+        "kana": "のみすぎないで ください。",
+        "ro": "Nomisuginai de kudasai.",
+        "en": "Please don’t drink too much."
+      },
+      {
+        "ja": "寝すぎて頭が痛いです。",
+        "kana": "ねすぎて あたま が いたい です。",
+        "ro": "Nesugite atama ga itai desu.",
+        "en": "I slept too much and my head hurts."
+      },
+      {
+        "ja": "この服は高すぎます。",
+        "kana": "この ふく は たかすぎます。",
+        "ro": "Kono fuku wa takasugimasu.",
+        "en": "These clothes are too expensive."
+      },
+      {
+        "ja": "テレビを見すぎました。",
+        "kana": "てれび を みすぎました。",
+        "ro": "Terebi o misugimashita.",
+        "en": "I watched too much TV."
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "ja": "〜ないでください",
+    "kana": "〜ないでください",
+    "ro": "naide kudasai",
+    "en": "please don’t do (something)",
+    "examples": [
+      {
+        "ja": "ここで写真を撮らないでください。",
+        "kana": "ここ で しゃしん を とらないで ください。",
+        "ro": "Koko de shashin o toranaide kudasai.",
+        "en": "Please don’t take pictures here."
+      },
+      {
+        "ja": "大きな声で話さないでください。",
+        "kana": "おおきな こえ で はなさないで ください。",
+        "ro": "Ookina koe de hanasanaide kudasai.",
+        "en": "Please don’t speak loudly."
+      },
+      {
+        "ja": "ドアを開けないでください。",
+        "kana": "どあ を あけないで ください。",
+        "ro": "Doa o akenaide kudasai.",
+        "en": "Please don’t open the door."
+      },
+      {
+        "ja": "走らないでください。",
+        "kana": "はしらないで ください。",
+        "ro": "Hashiranaide kudasai.",
+        "en": "Please don’t run."
+      },
+      {
+        "ja": "携帯電話を使わないでください。",
+        "kana": "けいたい でんわ を つかわないで ください。",
+        "ro": "Keitai denwa o tsukawanaide kudasai.",
+        "en": "Please don’t use your cellphone."
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "ja": "〜なければなりません",
+    "kana": "〜なければなりません",
+    "ro": "nakereba narimasen",
+    "en": "must / have to",
+    "examples": [
+      {
+        "ja": "明日学校に行かなければなりません。",
+        "kana": "あした がっこう に いかなければ なりません。",
+        "ro": "Ashita gakkou ni ikanakereba narimasen.",
+        "en": "I must go to school tomorrow."
+      },
+      {
+        "ja": "薬を飲まなければなりません。",
+        "kana": "くすり を のまなければ なりません。",
+        "ro": "Kusuri o nomanakereba narimasen.",
+        "en": "I have to take medicine."
+      },
+      {
+        "ja": "宿題をしなければなりません。",
+        "kana": "しゅくだい を しなければ なりません。",
+        "ro": "Shukudai o shinakereba narimasen.",
+        "en": "I must do my homework."
+      },
+      {
+        "ja": "早く寝なければなりません。",
+        "kana": "はやく ねなければ なりません。",
+        "ro": "Hayaku nenakereba narimasen.",
+        "en": "I have to go to bed early."
+      },
+      {
+        "ja": "図書館で静かにしなければなりません。",
+        "kana": "としょかん で しずか に しなければ なりません。",
+        "ro": "Toshokan de shizuka ni shinakereba narimasen.",
+        "en": "You must be quiet in the library."
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "ja": "〜なくてもいいです",
+    "kana": "〜なくてもいいです",
+    "ro": "nakutemo ii desu",
+    "en": "don’t have to / it’s okay not to",
+    "examples": [
+      {
+        "ja": "明日来なくてもいいです。",
+        "kana": "あした こなくても いい です。",
+        "ro": "Ashita konakutemo ii desu.",
+        "en": "You don’t have to come tomorrow."
+      },
+      {
+        "ja": "全部食べなくてもいいです。",
+        "kana": "ぜんぶ たべなくても いい です。",
+        "ro": "Zenbu tabenakutemo ii desu.",
+        "en": "You don’t have to eat everything."
+      },
+      {
+        "ja": "靴を脱がなくてもいいです。",
+        "kana": "くつ を ぬがなくても いい です。",
+        "ro": "Kutsu o nuganakutemo ii desu.",
+        "en": "You don’t have to take off your shoes."
+      },
+      {
+        "ja": "無理に行かなくてもいいです。",
+        "kana": "むり に いかなくても いい です。",
+        "ro": "Muri ni ikanakutemo ii desu.",
+        "en": "You don’t have to go if it’s hard."
+      },
+      {
+        "ja": "返事は今しなくてもいいです。",
+        "kana": "へんじ は いま しなくても いい です。",
+        "ro": "Henji wa ima shinakutemo ii desu.",
+        "en": "You don’t have to reply now."
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "ja": "〜と思います",
+    "kana": "〜とおもいます",
+    "ro": "to omoimasu",
+    "en": "I think that...",
+    "examples": [
+      {
+        "ja": "明日は雨だと思います。",
+        "kana": "あした は あめ だ と おもいます。",
+        "ro": "Ashita wa ame da to omoimasu.",
+        "en": "I think it will rain tomorrow."
+      },
+      {
+        "ja": "この映画は面白いと思います。",
+        "kana": "この えいが は おもしろい と おもいます。",
+        "ro": "Kono eiga wa omoshiroi to omoimasu.",
+        "en": "I think this movie is interesting."
+      },
+      {
+        "ja": "日本の食べ物はおいしいと思います。",
+        "kana": "にほん の たべもの は おいしい と おもいます。",
+        "ro": "Nihon no tabemono wa oishii to omoimasu.",
+        "en": "I think Japanese food is delicious."
+      },
+      {
+        "ja": "彼は親切だと思います。",
+        "kana": "かれ は しんせつ だ と おもいます。",
+        "ro": "Kare wa shinsetsu da to omoimasu.",
+        "en": "I think he is kind."
+      },
+      {
+        "ja": "この問題は難しいと思います。",
+        "kana": "この もんだい は むずかしい と おもいます。",
+        "ro": "Kono mondai wa muzukashii to omoimasu.",
+        "en": "I think this question is difficult."
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "ja": "〜と言います",
+    "kana": "〜といいます",
+    "ro": "to iimasu",
+    "en": "to say / to be called",
+    "examples": [
+      {
+        "ja": "私は山田と言います。",
+        "kana": "わたし は やまだ と いいます。",
+        "ro": "Watashi wa Yamada to iimasu.",
+        "en": "My name is Yamada."
+      },
+      {
+        "ja": "これは何と言いますか。",
+        "kana": "これは なん と いいます か。",
+        "ro": "Kore wa nan to iimasu ka.",
+        "en": "What do you call this?"
+      },
+      {
+        "ja": "先生は「静かに」と言いました。",
+        "kana": "せんせい は 「しずかに」 と いいました。",
+        "ro": "Sensei wa 'shizuka ni' to iimashita.",
+        "en": "The teacher said 'Be quiet.'"
+      },
+      {
+        "ja": "この花は桜と言います。",
+        "kana": "この はな は さくら と いいます。",
+        "ro": "Kono hana wa sakura to iimasu.",
+        "en": "This flower is called sakura."
+      },
+      {
+        "ja": "日本語で「ありがとう」と言います。",
+        "kana": "にほんご で 「ありがとう」 と いいます。",
+        "ro": "Nihongo de 'arigatou' to iimasu.",
+        "en": "In Japanese, we say 'arigatou'."
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "ja": "〜でしょう",
+    "kana": "〜でしょう",
+    "ro": "deshou",
+    "en": "probably / I guess / right?",
+    "examples": [
+      {
+        "ja": "明日は雨が降るでしょう。",
+        "kana": "あした は あめ が ふる でしょう。",
+        "ro": "Ashita wa ame ga furu deshou.",
+        "en": "It will probably rain tomorrow."
+      },
+      {
+        "ja": "彼は来るでしょう。",
+        "kana": "かれ は くる でしょう。",
+        "ro": "Kare wa kuru deshou.",
+        "en": "He will probably come."
+      },
+      {
+        "ja": "この店は安いでしょう。",
+        "kana": "この みせ は やすい でしょう。",
+        "ro": "Kono mise wa yasui deshou.",
+        "en": "This shop is probably cheap."
+      },
+      {
+        "ja": "今日は忙しいでしょうね。",
+        "kana": "きょう は いそがしい でしょう ね。",
+        "ro": "Kyou wa isogashii deshou ne.",
+        "en": "You’re probably busy today, right?"
+      },
+      {
+        "ja": "その映画は面白いでしょう。",
+        "kana": "その えいが は おもしろい でしょう。",
+        "ro": "Sono eiga wa omoshiroi deshou.",
+        "en": "That movie is probably interesting."
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "ja": "〜かもしれません",
+    "kana": "〜かもしれません",
+    "ro": "kamoshiremasen",
+    "en": "might / may / perhaps",
+    "examples": [
+      {
+        "ja": "明日は雪が降るかもしれません。",
+        "kana": "あした は ゆき が ふる かもしれません。",
+        "ro": "Ashita wa yuki ga furu kamoshiremasen.",
+        "en": "It might snow tomorrow."
+      },
+      {
+        "ja": "彼は来ないかもしれません。",
+        "kana": "かれ は こない かもしれません。",
+        "ro": "Kare wa konai kamoshiremasen.",
+        "en": "He might not come."
+      },
+      {
+        "ja": "この本は難しいかもしれません。",
+        "kana": "この ほん は むずかしい かもしれません。",
+        "ro": "Kono hon wa muzukashii kamoshiremasen.",
+        "en": "This book might be difficult."
+      },
+      {
+        "ja": "駅は近いかもしれません。",
+        "kana": "えき は ちかい かもしれません。",
+        "ro": "Eki wa chikai kamoshiremasen.",
+        "en": "The station might be nearby."
+      },
+      {
+        "ja": "明日は休みかもしれません。",
+        "kana": "あした は やすみ かもしれません。",
+        "ro": "Ashita wa yasumi kamoshiremasen.",
+        "en": "Tomorrow might be a holiday."
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "ja": "〜たことがありません",
+    "kana": "〜たことがありません",
+    "ro": "ta koto ga arimasen",
+    "en": "have never done (something)",
+    "examples": [
+      {
+        "ja": "私は韓国に行ったことがありません。",
+        "kana": "わたし は かんこく に いった こと が ありません。",
+        "ro": "Watashi wa Kankoku ni itta koto ga arimasen.",
+        "en": "I have never been to Korea."
+      },
+      {
+        "ja": "この映画を見たことがありません。",
+        "kana": "この えいが を みた こと が ありません。",
+        "ro": "Kono eiga o mita koto ga arimasen.",
+        "en": "I’ve never seen this movie."
+      },
+      {
+        "ja": "寿司を食べたことがありません。",
+        "kana": "すし を たべた こと が ありません。",
+        "ro": "Sushi o tabeta koto ga arimasen.",
+        "en": "I’ve never eaten sushi."
+      },
+      {
+        "ja": "日本語で話したことがありません。",
+        "kana": "にほんご で はなした こと が ありません。",
+        "ro": "Nihongo de hanashita koto ga arimasen.",
+        "en": "I’ve never spoken in Japanese."
+      },
+      {
+        "ja": "一人で旅行したことがありません。",
+        "kana": "ひとり で りょこう した こと が ありません。",
+        "ro": "Hitori de ryokou shita koto ga arimasen.",
+        "en": "I’ve never traveled alone."
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "ja": "〜すぎて",
+    "kana": "〜すぎて",
+    "ro": "sugite",
+    "en": "too... / so... that...",
+    "examples": [
+      {
+        "ja": "食べすぎて気分が悪いです。",
+        "kana": "たべすぎて きぶん が わるい です。",
+        "ro": "Tabesugite kibun ga warui desu.",
+        "en": "I ate too much and feel sick."
+      },
+      {
+        "ja": "眠すぎて起きられません。",
+        "kana": "ねむすぎて おきられません。",
+        "ro": "Nemusugite okiraremasen.",
+        "en": "I’m too sleepy to wake up."
+      },
+      {
+        "ja": "忙しすぎて休めません。",
+        "kana": "いそがしすぎて やすめません。",
+        "ro": "Isogashisugite yasumemasen.",
+        "en": "I’m too busy to rest."
+      },
+      {
+        "ja": "高すぎて買えませんでした。",
+        "kana": "たかすぎて かえません でした。",
+        "ro": "Takasugite kaemasen deshita.",
+        "en": "It was too expensive to buy."
+      },
+      {
+        "ja": "寒すぎて外に出られません。",
+        "kana": "さむすぎて そと に でられません。",
+        "ro": "Samusugite soto ni deraremasen.",
+        "en": "It’s too cold to go outside."
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "ja": "〜ながらも",
+    "kana": "〜ながらも",
+    "ro": "nagara mo",
+    "en": "even though / while (contrasting)",
+    "examples": [
+      {
+        "ja": "疲れながらも勉強しました。",
+        "kana": "つかれ ながらも べんきょう しました。",
+        "ro": "Tsukare nagaramo benkyou shimashita.",
+        "en": "Even though I was tired, I studied."
+      },
+      {
+        "ja": "忙しいながらも手伝いました。",
+        "kana": "いそがしい ながらも てつだいました。",
+        "ro": "Isogashii nagaramo tetsudaimashita.",
+        "en": "Even though I was busy, I helped."
+      },
+      {
+        "ja": "寒いながらも外で遊びました。",
+        "kana": "さむい ながらも そと で あそびました。",
+        "ro": "Samui nagaramo soto de asobimashita.",
+        "en": "Even though it was cold, we played outside."
+      },
+      {
+        "ja": "雨ながらも出かけました。",
+        "kana": "あめ ながらも でかけました。",
+        "ro": "Ame nagaramo dekakemashita.",
+        "en": "Even though it was raining, I went out."
+      },
+      {
+        "ja": "緊張しながらも話しました。",
+        "kana": "きんちょう しながらも はなしました。",
+        "ro": "Kinchou shinagaramo hanashimashita.",
+        "en": "Even though I was nervous, I spoke."
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "ja": "〜てから",
+    "kana": "〜てから",
+    "ro": "te kara",
+    "en": "after doing something / since",
+    "examples": [
+      {
+        "ja": "ご飯を食べてから勉強します。",
+        "kana": "ごはん を たべてから べんきょう します。",
+        "ro": "Gohan o tabete kara benkyou shimasu.",
+        "en": "I study after eating."
+      },
+      {
+        "ja": "映画を見てから寝ました。",
+        "kana": "えいが を みてから ねました。",
+        "ro": "Eiga o mite kara nemashita.",
+        "en": "I went to sleep after watching a movie."
+      },
+      {
+        "ja": "仕事をしてから帰ります。",
+        "kana": "しごと を してから かえります。",
+        "ro": "Shigoto o shite kara kaerimasu.",
+        "en": "I go home after finishing work."
+      },
+      {
+        "ja": "シャワーを浴びてから出かけます。",
+        "kana": "しゃわー を あびてから でかけます。",
+        "ro": "Shawaa o abite kara dekakemasu.",
+        "en": "I go out after taking a shower."
+      },
+      {
+        "ja": "友達に電話してから行きます。",
+        "kana": "ともだち に でんわ してから いきます。",
+        "ro": "Tomodachi ni denwa shite kara ikimasu.",
+        "en": "I will go after calling my friend."
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "ja": "〜たあとで",
+    "kana": "〜たあとで",
+    "ro": "ta ato de",
+    "en": "after doing something",
+    "examples": [
+      {
+        "ja": "勉強したあとでテレビを見ます。",
+        "kana": "べんきょう した あとで てれび を みます。",
+        "ro": "Benkyou shita ato de terebi o mimasu.",
+        "en": "I watch TV after studying."
+      },
+      {
+        "ja": "買い物したあとでカフェに行きます。",
+        "kana": "かいもの した あとで かふぇ に いきます。",
+        "ro": "Kaimono shita ato de kafe ni ikimasu.",
+        "en": "I go to a café after shopping."
+      },
+      {
+        "ja": "運動したあとで水を飲みます。",
+        "kana": "うんどう した あとで みず を のみます。",
+        "ro": "Undou shita ato de mizu o nomimasu.",
+        "en": "I drink water after exercising."
+      },
+      {
+        "ja": "仕事が終わったあとで帰ります。",
+        "kana": "しごと が おわった あとで かえります。",
+        "ro": "Shigoto ga owatta ato de kaerimasu.",
+        "en": "I go home after work ends."
+      },
+      {
+        "ja": "ご飯を食べたあとで歯を磨きます。",
+        "kana": "ごはん を たべた あとで は を みがきます。",
+        "ro": "Gohan o tabeta ato de ha o migakimasu.",
+        "en": "I brush my teeth after eating."
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "ja": "〜てもいいです",
+    "kana": "〜てもいいです",
+    "ro": "temo ii desu",
+    "en": "it’s okay to / you may",
+    "examples": [
+      {
+        "ja": "ここで写真を撮ってもいいです。",
+        "kana": "ここ で しゃしん を とっても いい です。",
+        "ro": "Koko de shashin o tottemo ii desu.",
+        "en": "You may take pictures here."
+      },
+      {
+        "ja": "水を飲んでもいいです。",
+        "kana": "みず を のんでも いい です。",
+        "ro": "Mizu o nondemo ii desu.",
+        "en": "You can drink water."
+      },
+      {
+        "ja": "窓を開けてもいいですか。",
+        "kana": "まど を あけても いい です か。",
+        "ro": "Mado o aketemo ii desu ka.",
+        "en": "May I open the window?"
+      },
+      {
+        "ja": "ここに座ってもいいですか。",
+        "kana": "ここ に すわっても いい です か。",
+        "ro": "Koko ni suwatte mo ii desu ka.",
+        "en": "May I sit here?"
+      },
+      {
+        "ja": "少し休んでもいいです。",
+        "kana": "すこし やすんでも いい です。",
+        "ro": "Sukoshi yasundemo ii desu.",
+        "en": "It’s okay to take a short break."
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "ja": "〜てはいけません",
+    "kana": "〜てはいけません",
+    "ro": "te wa ikemasen",
+    "en": "must not / not allowed to",
+    "examples": [
+      {
+        "ja": "ここでタバコを吸ってはいけません。",
+        "kana": "ここ で たばこ を すっては いけません。",
+        "ro": "Koko de tabako o sutte wa ikemasen.",
+        "en": "You must not smoke here."
+      },
+      {
+        "ja": "このボタンを押してはいけません。",
+        "kana": "この ぼたん を おしては いけません。",
+        "ro": "Kono botan o oshite wa ikemasen.",
+        "en": "You must not press this button."
+      },
+      {
+        "ja": "図書館で騒いではいけません。",
+        "kana": "としょかん で さわいでは いけません。",
+        "ro": "Toshokan de sawaide wa ikemasen.",
+        "en": "You must not make noise in the library."
+      },
+      {
+        "ja": "ここに入ってはいけません。",
+        "kana": "ここ に はいっては いけません。",
+        "ro": "Koko ni haitte wa ikemasen.",
+        "en": "You must not enter here."
+      },
+      {
+        "ja": "夜遅くまで起きてはいけません。",
+        "kana": "よる おそく まで おきては いけません。",
+        "ro": "Yoru osoku made okite wa ikemasen.",
+        "en": "You must not stay up late."
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "ja": "〜てみます",
+    "kana": "〜てみます",
+    "ro": "te mimasu",
+    "en": "try doing something",
+    "examples": [
+      {
+        "ja": "新しい料理を作ってみます。",
+        "kana": "あたらしい りょうり を つくって みます。",
+        "ro": "Atarashii ryouri o tsukutte mimasu.",
+        "en": "I’ll try making a new dish."
+      },
+      {
+        "ja": "その店に行ってみます。",
+        "kana": "その みせ に いって みます。",
+        "ro": "Sono mise ni itte mimasu.",
+        "en": "I’ll try going to that store."
+      },
+      {
+        "ja": "この服を着てみます。",
+        "kana": "この ふく を きて みます。",
+        "ro": "Kono fuku o kite mimasu.",
+        "en": "I’ll try on these clothes."
+      },
+      {
+        "ja": "日本語で話してみます。",
+        "kana": "にほんご で はなして みます。",
+        "ro": "Nihongo de hanashite mimasu.",
+        "en": "I’ll try speaking in Japanese."
+      },
+      {
+        "ja": "写真を撮ってみます。",
+        "kana": "しゃしん を とって みます。",
+        "ro": "Shashin o totte mimasu.",
+        "en": "I’ll try taking a picture."
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "ja": "〜ておきます",
+    "kana": "〜ておきます",
+    "ro": "te okimasu",
+    "en": "do something in advance / prepare",
+    "examples": [
+      {
+        "ja": "明日の会議の資料を作っておきます。",
+        "kana": "あした の かいぎ の しりょう を つくって おきます。",
+        "ro": "Ashita no kaigi no shiryou o tsukutte okimasu.",
+        "en": "I’ll prepare the materials for tomorrow’s meeting."
+      },
+      {
+        "ja": "晩ごはんを作っておきます。",
+        "kana": "ばんごはん を つくって おきます。",
+        "ro": "Bangohan o tsukutte okimasu.",
+        "en": "I’ll make dinner in advance."
+      },
+      {
+        "ja": "切符を買っておきます。",
+        "kana": "きっぷ を かって おきます。",
+        "ro": "Kippu o katte okimasu.",
+        "en": "I’ll buy the ticket beforehand."
+      },
+      {
+        "ja": "部屋を掃除しておきます。",
+        "kana": "へや を そうじ して おきます。",
+        "ro": "Heya o souji shite okimasu.",
+        "en": "I’ll clean the room in advance."
+      },
+      {
+        "ja": "明日の準備をしておきます。",
+        "kana": "あした の じゅんび を して おきます。",
+        "ro": "Ashita no junbi o shite okimasu.",
+        "en": "I’ll get ready for tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "ja": "〜てあげます",
+    "kana": "〜てあげます",
+    "ro": "te agemasu",
+    "en": "do something for someone",
+    "examples": [
+      {
+        "ja": "友達にプレゼントを買ってあげます。",
+        "kana": "ともだち に ぷれぜんと を かって あげます。",
+        "ro": "Tomodachi ni purezento o katte agemasu.",
+        "en": "I’ll buy a present for my friend."
+      },
+      {
+        "ja": "妹に手伝ってあげます。",
+        "kana": "いもうと に てつだって あげます。",
+        "ro": "Imouto ni tetsudatte agemasu.",
+        "en": "I’ll help my younger sister."
+      },
+      {
+        "ja": "子どもに本を読んであげます。",
+        "kana": "こども に ほん を よんで あげます。",
+        "ro": "Kodomo ni hon o yonde agemasu.",
+        "en": "I’ll read a book to my child."
+      },
+      {
+        "ja": "友達にケーキを作ってあげます。",
+        "kana": "ともだち に けーき を つくって あげます。",
+        "ro": "Tomodachi ni keeki o tsukutte agemasu.",
+        "en": "I’ll make a cake for my friend."
+      },
+      {
+        "ja": "先生に道を教えてあげました。",
+        "kana": "せんせい に みち を おしえて あげました。",
+        "ro": "Sensei ni michi o oshiete agemashita.",
+        "en": "I told the teacher the way."
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "ja": "〜てもらいます",
+    "kana": "〜てもらいます",
+    "ro": "te moraimasu",
+    "en": "get someone to do something",
+    "examples": [
+      {
+        "ja": "先生に教えてもらいました。",
+        "kana": "せんせい に おしえて もらいました。",
+        "ro": "Sensei ni oshiete moraimashita.",
+        "en": "I was taught by my teacher."
+      },
+      {
+        "ja": "友達に手伝ってもらいました。",
+        "kana": "ともだち に てつだって もらいました。",
+        "ro": "Tomodachi ni tetsudatte moraimashita.",
+        "en": "I got help from my friend."
+      },
+      {
+        "ja": "母にお弁当を作ってもらいました。",
+        "kana": "はは に おべんとう を つくって もらいました。",
+        "ro": "Haha ni obentou o tsukutte moraimashita.",
+        "en": "My mother made me a lunch box."
+      },
+      {
+        "ja": "兄に宿題を見てもらいました。",
+        "kana": "あに に しゅくだい を みて もらいました。",
+        "ro": "Ani ni shukudai o mite moraimashita.",
+        "en": "My older brother checked my homework."
+      },
+      {
+        "ja": "医者に薬を出してもらいました。",
+        "kana": "いしゃ に くすり を だして もらいました。",
+        "ro": "Isha ni kusuri o dashite moraimashita.",
+        "en": "The doctor gave me medicine."
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "ja": "〜てくれます",
+    "kana": "〜てくれます",
+    "ro": "te kuremasu",
+    "en": "someone does something for me",
+    "examples": [
+      {
+        "ja": "友達が宿題を手伝ってくれました。",
+        "kana": "ともだち が しゅくだい を てつだって くれました。",
+        "ro": "Tomodachi ga shukudai o tetsudatte kuremashita.",
+        "en": "My friend helped me with my homework."
+      },
+      {
+        "ja": "母がケーキを作ってくれました。",
+        "kana": "はは が けーき を つくって くれました。",
+        "ro": "Haha ga keeki o tsukutte kuremashita.",
+        "en": "My mother made a cake for me."
+      },
+      {
+        "ja": "先生が日本語を教えてくれました。",
+        "kana": "せんせい が にほんご を おしえて くれました。",
+        "ro": "Sensei ga nihongo o oshiete kuremashita.",
+        "en": "The teacher taught me Japanese."
+      },
+      {
+        "ja": "兄が駅まで送ってくれました。",
+        "kana": "あに が えき まで おくって くれました。",
+        "ro": "Ani ga eki made okutte kuremashita.",
+        "en": "My older brother took me to the station."
+      },
+      {
+        "ja": "友達が写真を撮ってくれました。",
+        "kana": "ともだち が しゃしん を とって くれました。",
+        "ro": "Tomodachi ga shashin o totte kuremashita.",
+        "en": "My friend took a picture for me."
+      }
+    ]
+  }
+]

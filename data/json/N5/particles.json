@@ -1,0 +1,366 @@
+[
+  {
+    "id": "n5-particle-001",
+    "ja": "は",
+    "kana": "は",
+    "ro": "wa",
+    "en": "topic marker (as for / regarding)",
+    "examples": [
+      {"ja": "私は学生です。", "kana": "わたし は がくせい です。", "ro": "Watashi wa gakusei desu.", "en": "I am a student."},
+      {"ja": "今日は暑いです。", "kana": "きょう は あつい です。", "ro": "Kyou wa atsui desu.", "en": "It is hot today."},
+      {"ja": "日本語は難しいです。", "kana": "にほんご は むずかしい です。", "ro": "Nihongo wa muzukashii desu.", "en": "Japanese is difficult."},
+      {"ja": "この本は面白いです。", "kana": "この ほん は おもしろい です。", "ro": "Kono hon wa omoshiroi desu.", "en": "This book is interesting."},
+      {"ja": "彼は先生です。", "kana": "かれ は せんせい です。", "ro": "Kare wa sensei desu.", "en": "He is a teacher."}
+    ]
+  },
+  {
+    "id": "n5-particle-002",
+    "ja": "が",
+    "kana": "が",
+    "ro": "ga",
+    "en": "subject marker / but",
+    "examples": [
+      {"ja": "雨が降っています。", "kana": "あめ が ふって います。", "ro": "Ame ga futte imasu.", "en": "It’s raining."},
+      {"ja": "猫が好きです。", "kana": "ねこ が すき です。", "ro": "Neko ga suki desu.", "en": "I like cats."},
+      {"ja": "日本語が上手ですね。", "kana": "にほんご が じょうず です ね。", "ro": "Nihongo ga jouzu desu ne.", "en": "You are good at Japanese, aren’t you?"},
+      {"ja": "問題があります。", "kana": "もんだい が あります。", "ro": "Mondai ga arimasu.", "en": "There is a problem."},
+      {"ja": "彼が来ました。", "kana": "かれ が きました。", "ro": "Kare ga kimashita.", "en": "He came."}
+    ]
+  },
+  {
+    "id": "n5-particle-003",
+    "ja": "を",
+    "kana": "を",
+    "ro": "o",
+    "en": "object marker (indicates direct object)",
+    "examples": [
+      {"ja": "ご飯を食べます。", "kana": "ごはん を たべます。", "ro": "Gohan o tabemasu.", "en": "I eat rice."},
+      {"ja": "映画を見ました。", "kana": "えいが を みました。", "ro": "Eiga o mimashita.", "en": "I watched a movie."},
+      {"ja": "手紙を書きます。", "kana": "てがみ を かきます。", "ro": "Tegami o kakimasu.", "en": "I write a letter."},
+      {"ja": "水を飲みました。", "kana": "みず を のみました。", "ro": "Mizu o nomimashita.", "en": "I drank water."},
+      {"ja": "道を歩きます。", "kana": "みち を あるきます。", "ro": "Michi o arukimasu.", "en": "I walk along the road."}
+    ]
+  },
+  {
+    "id": "n5-particle-004",
+    "ja": "に",
+    "kana": "に",
+    "ro": "ni",
+    "en": "to / at / in / for (indicates direction, time, or purpose)",
+    "examples": [
+      {"ja": "学校に行きます。", "kana": "がっこう に いきます。", "ro": "Gakkou ni ikimasu.", "en": "I go to school."},
+      {"ja": "七時に起きます。", "kana": "しちじ に おきます。", "ro": "Shichiji ni okimasu.", "en": "I get up at seven o’clock."},
+      {"ja": "友達に会います。", "kana": "ともだち に あいます。", "ro": "Tomodachi ni aimasu.", "en": "I meet my friend."},
+      {"ja": "日本に住んでいます。", "kana": "にほん に すんで います。", "ro": "Nihon ni sunde imasu.", "en": "I live in Japan."},
+      {"ja": "先生に聞きました。", "kana": "せんせい に ききました。", "ro": "Sensei ni kikimashita.", "en": "I asked the teacher."}
+    ]
+  },
+  {
+    "id": "n5-particle-005",
+    "ja": "で",
+    "kana": "で",
+    "ro": "de",
+    "en": "at / in / by (indicates place, means, or method)",
+    "examples": [
+      {"ja": "学校で勉強します。", "kana": "がっこう で べんきょう します。", "ro": "Gakkou de benkyou shimasu.", "en": "I study at school."},
+      {"ja": "バスで行きます。", "kana": "ばす で いきます。", "ro": "Basu de ikimasu.", "en": "I go by bus."},
+      {"ja": "日本語で話します。", "kana": "にほんご で はなします。", "ro": "Nihongo de hanashimasu.", "en": "I speak in Japanese."},
+      {"ja": "家でテレビを見ます。", "kana": "いえ で てれび を みます。", "ro": "Ie de terebi o mimasu.", "en": "I watch TV at home."},
+      {"ja": "車で会社へ行きます。", "kana": "くるま で かいしゃ へ いきます。", "ro": "Kuruma de kaisha e ikimasu.", "en": "I go to the office by car."}
+    ]
+  },
+  {
+    "id": "n5-particle-006",
+    "ja": "の",
+    "kana": "の",
+    "ro": "no",
+    "en": "of / 's (possessive, descriptive particle)",
+    "examples": [
+      {"ja": "私の本です。", "kana": "わたし の ほん です。", "ro": "Watashi no hon desu.", "en": "It’s my book."},
+      {"ja": "日本の文化が好きです。", "kana": "にほん の ぶんか が すき です。", "ro": "Nihon no bunka ga suki desu.", "en": "I like Japanese culture."},
+      {"ja": "先生の車です。", "kana": "せんせい の くるま です。", "ro": "Sensei no kuruma desu.", "en": "It’s the teacher’s car."},
+      {"ja": "友達の家に行きます。", "kana": "ともだち の いえ に いきます。", "ro": "Tomodachi no ie ni ikimasu.", "en": "I go to my friend’s house."},
+      {"ja": "これは私のペンです。", "kana": "これ は わたし の ぺん です。", "ro": "Kore wa watashi no pen desu.", "en": "This is my pen."}
+    ]
+  },
+  {
+    "id": "n5-particle-007",
+    "ja": "も",
+    "kana": "も",
+    "ro": "mo",
+    "en": "also / too / even",
+    "examples": [
+      {"ja": "私も行きます。", "kana": "わたし も いきます。", "ro": "Watashi mo ikimasu.", "en": "I’ll go too."},
+      {"ja": "彼も学生です。", "kana": "かれ も がくせい です。", "ro": "Kare mo gakusei desu.", "en": "He is also a student."},
+      {"ja": "りんごもバナナも好きです。", "kana": "りんご も ばなな も すき です。", "ro": "Ringo mo banana mo suki desu.", "en": "I like both apples and bananas."},
+      {"ja": "犬も猫もかわいいです。", "kana": "いぬ も ねこ も かわいい です。", "ro": "Inu mo neko mo kawaii desu.", "en": "Dogs and cats are both cute."},
+      {"ja": "私もそれを知っています。", "kana": "わたし も それ を しって います。", "ro": "Watashi mo sore o shitte imasu.", "en": "I know that too."}
+    ]
+  },
+  {
+    "id": "n5-particle-008",
+    "ja": "と",
+    "kana": "と",
+    "ro": "to",
+    "en": "and / with / when",
+    "examples": [
+      {"ja": "友達と話します。", "kana": "ともだち と はなします。", "ro": "Tomodachi to hanashimasu.", "en": "I talk with my friend."},
+      {"ja": "りんごとバナナを食べました。", "kana": "りんご と ばなな を たべました。", "ro": "Ringo to banana o tabemashita.", "en": "I ate apples and bananas."},
+      {"ja": "母と買い物に行きました。", "kana": "はは と かいもの に いきました。", "ro": "Haha to kaimono ni ikimashita.", "en": "I went shopping with my mother."},
+      {"ja": "先生と話したとき緊張しました。", "kana": "せんせい と はなした とき きんちょう しました。", "ro": "Sensei to hanashita toki kinchou shimashita.", "en": "I was nervous when I talked to the teacher."},
+      {"ja": "彼と一緒に行きました。", "kana": "かれ と いっしょ に いきました。", "ro": "Kare to issho ni ikimashita.", "en": "I went together with him."}
+    ]
+  },
+  {
+    "id": "n5-particle-009",
+    "ja": "か",
+    "kana": "か",
+    "ro": "ka",
+    "en": "question marker / or",
+    "examples": [
+      {"ja": "これは何ですか。", "kana": "これ は なん です か。", "ro": "Kore wa nan desu ka.", "en": "What is this?"},
+      {"ja": "行きますか。", "kana": "いきます か。", "ro": "Ikimasu ka.", "en": "Are you going?"},
+      {"ja": "明日か明後日に行きます。", "kana": "あした か あさって に いきます。", "ro": "Ashita ka asatte ni ikimasu.", "en": "I’ll go tomorrow or the day after."},
+      {"ja": "紅茶かコーヒーをどうぞ。", "kana": "こうちゃ か こーひー を どうぞ。", "ro": "Koucha ka koohii o douzo.", "en": "Tea or coffee, please."},
+      {"ja": "どこへ行きますか。", "kana": "どこ へ いきます か。", "ro": "Doko e ikimasu ka.", "en": "Where are you going?"}
+    ]
+  },
+  {
+    "id": "n5-particle-010",
+    "ja": "へ",
+    "kana": "へ",
+    "ro": "e",
+    "en": "to / toward (directional particle)",
+    "examples": [
+      {"ja": "学校へ行きます。", "kana": "がっこう へ いきます。", "ro": "Gakkou e ikimasu.", "en": "I go to school."},
+      {"ja": "日本へ来ました。", "kana": "にほん へ きました。", "ro": "Nihon e kimashita.", "en": "I came to Japan."},
+      {"ja": "公園へ行きましょう。", "kana": "こうえん へ いきましょう。", "ro": "Kouen e ikimashou.", "en": "Let’s go to the park."},
+      {"ja": "友達へ手紙を書きました。", "kana": "ともだち へ てがみ を かきました。", "ro": "Tomodachi e tegami o kakimashita.", "en": "I wrote a letter to my friend."},
+      {"ja": "駅へ急ぎました。", "kana": "えき へ いそぎました。", "ro": "Eki e isogimashita.", "en": "I hurried toward the station."}
+    ]
+  },
+  {
+    "id": "n5-particle-011",
+    "ja": "や",
+    "kana": "や",
+    "ro": "ya",
+    "en": "and / or (used for listing) / such as",
+    "examples": [
+      {"ja": "りんごやみかんがあります。", "kana": "りんご や みかん が あります。", "ro": "Ringo ya mikan ga arimasu.", "en": "There are apples and oranges."},
+      {"ja": "日本や韓国に行きました。", "kana": "にほん や かんこく に いきました。", "ro": "Nihon ya Kankoku ni ikimashita.", "en": "I went to Japan and Korea."},
+      {"ja": "鉛筆やペンを使います。", "kana": "えんぴつ や ぺん を つかいます。", "ro": "Enpitsu ya pen o tsukaimasu.", "en": "I use pencils and pens."},
+      {"ja": "映画や音楽が好きです。", "kana": "えいが や おんがく が すき です。", "ro": "Eiga ya ongaku ga suki desu.", "en": "I like movies and music."},
+      {"ja": "日本語や英語を勉強しています。", "kana": "にほんご や えいご を べんきょう して います。", "ro": "Nihongo ya eigo o benkyou shite imasu.", "en": "I study Japanese and English."}
+    ]
+  },
+  {
+    "id": "n5-particle-012",
+    "ja": "より",
+    "kana": "より",
+    "ro": "yori",
+    "en": "than / from / by",
+    "examples": [
+      {"ja": "東京より大阪のほうが大きいです。", "kana": "とうきょう より おおさか の ほう が おおきい です。", "ro": "Toukyou yori Oosaka no hou ga ookii desu.", "en": "Osaka is bigger than Tokyo."},
+      {"ja": "昨日より元気です。", "kana": "きのう より げんき です。", "ro": "Kinou yori genki desu.", "en": "I feel better than yesterday."},
+      {"ja": "前より日本語が上手になりました。", "kana": "まえ より にほんご が じょうず に なりました。", "ro": "Mae yori nihongo ga jouzu ni narimashita.", "en": "My Japanese has improved compared to before."},
+      {"ja": "メールより電話のほうが早いです。", "kana": "めーる より でんわ の ほう が はやい です。", "ro": "Meeru yori denwa no hou ga hayai desu.", "en": "A phone call is faster than an email."},
+      {"ja": "先生より大きな声で話しました。", "kana": "せんせい より おおきな こえ で はなしました。", "ro": "Sensei yori ookina koe de hanashimashita.", "en": "I spoke louder than the teacher."}
+    ]
+  },
+  {
+    "id": "n5-particle-013",
+    "ja": "だけ",
+    "kana": "だけ",
+    "ro": "dake",
+    "en": "only / just / as much as",
+    "examples": [
+      {"ja": "一つだけください。", "kana": "ひとつ だけ ください。", "ro": "Hitotsu dake kudasai.", "en": "Please give me just one."},
+      {"ja": "見るだけです。", "kana": "みる だけ です。", "ro": "Miru dake desu.", "en": "I’m just looking."},
+      {"ja": "少しだけ食べました。", "kana": "すこし だけ たべました。", "ro": "Sukoshi dake tabemashita.", "en": "I ate only a little."},
+      {"ja": "彼だけ知っています。", "kana": "かれ だけ しって います。", "ro": "Kare dake shitte imasu.", "en": "Only he knows."},
+      {"ja": "お金だけ持って行きます。", "kana": "おかね だけ もって いきます。", "ro": "Okane dake motte ikimasu.", "en": "I’ll take only money."}
+    ]
+  },
+  {
+    "id": "n5-particle-014",
+    "ja": "よ",
+    "kana": "よ",
+    "ro": "yo",
+    "en": "(sentence-ending particle for emphasis or assertion)",
+    "examples": [
+      {"ja": "本当ですよ。", "kana": "ほんとう です よ。", "ro": "Hontou desu yo.", "en": "It’s true, you know."},
+      {"ja": "これは美味しいですよ。", "kana": "これ は おいしい です よ。", "ro": "Kore wa oishii desu yo.", "en": "This is delicious!"},
+      {"ja": "明日行きますよ。", "kana": "あした いきます よ。", "ro": "Ashita ikimasu yo.", "en": "I’ll go tomorrow, okay?"},
+      {"ja": "危ないですよ。", "kana": "あぶない です よ。", "ro": "Abunai desu yo.", "en": "It’s dangerous, you know."},
+      {"ja": "これが答えですよ。", "kana": "これ が こたえ です よ。", "ro": "Kore ga kotae desu yo.", "en": "This is the answer, you know."}
+    ]
+  },
+  {
+    "id": "n5-particle-015",
+    "ja": "ね",
+    "kana": "ね",
+    "ro": "ne",
+    "en": "(sentence-ending particle for confirmation / agreement)",
+    "examples": [
+      {"ja": "きれいですね。", "kana": "きれい です ね。", "ro": "Kirei desu ne.", "en": "It’s beautiful, isn’t it?"},
+      {"ja": "寒いですね。", "kana": "さむい です ね。", "ro": "Samui desu ne.", "en": "It’s cold, isn’t it?"},
+      {"ja": "また会いましょうね。", "kana": "また あいましょう ね。", "ro": "Mata aimashou ne.", "en": "Let’s meet again, okay?"},
+      {"ja": "美味しいですね。", "kana": "おいしい です ね。", "ro": "Oishii desu ne.", "en": "It’s delicious, isn’t it?"},
+      {"ja": "楽しかったですね。", "kana": "たのしかった です ね。", "ro": "Tanoshikatta desu ne.", "en": "It was fun, wasn’t it?"}
+    ]
+  },
+  {
+    "id": "n5-particle-016",
+    "ja": "から",
+    "kana": "から",
+    "ro": "kara",
+    "en": "from / because / since",
+    "examples": [
+      {"ja": "駅から歩きました。", "kana": "えき から あるきました。", "ro": "Eki kara arukimashita.", "en": "I walked from the station."},
+      {"ja": "今から勉強します。", "kana": "いま から べんきょう します。", "ro": "Ima kara benkyou shimasu.", "en": "I’ll study from now."},
+      {"ja": "日本から来ました。", "kana": "にほん から きました。", "ro": "Nihon kara kimashita.", "en": "I came from Japan."},
+      {"ja": "忙しいから行けません。", "kana": "いそがしい から いけません。", "ro": "Isogashii kara ikemasen.", "en": "I can’t go because I’m busy."},
+      {"ja": "雨だから外に出ません。", "kana": "あめ だから そと に でません。", "ro": "Ame dakara soto ni demasen.", "en": "I won’t go outside because it’s raining."}
+    ]
+  },
+  {
+    "id": "n5-particle-017",
+    "ja": "まで",
+    "kana": "まで",
+    "ro": "made",
+    "en": "until / to / as far as",
+    "examples": [
+      {"ja": "駅まで歩きました。", "kana": "えき まで あるきました。", "ro": "Eki made arukimashita.", "en": "I walked to the station."},
+      {"ja": "午後5時まで勉強します。", "kana": "ごご ごじ まで べんきょう します。", "ro": "Gogo goji made benkyou shimasu.", "en": "I study until 5 p.m."},
+      {"ja": "東京まで行きます。", "kana": "とうきょう まで いきます。", "ro": "Toukyou made ikimasu.", "en": "I will go to Tokyo."},
+      {"ja": "来週までに宿題を出してください。", "kana": "らいしゅう まで に しゅくだい を だして ください。", "ro": "Raishuu made ni shukudai o dashite kudasai.", "en": "Please submit your homework by next week."},
+      {"ja": "夜まで働きます。", "kana": "よる まで はたらきます。", "ro": "Yoru made hatarakimasu.", "en": "I work until night."}
+    ]
+  },
+  {
+    "id": "n5-particle-018",
+    "ja": "も",
+    "kana": "も",
+    "ro": "mo",
+    "en": "also / too / even",
+    "examples": [
+      {"ja": "私も行きます。", "kana": "わたし も いきます。", "ro": "Watashi mo ikimasu.", "en": "I’ll go too."},
+      {"ja": "彼も学生です。", "kana": "かれ も がくせい です。", "ro": "Kare mo gakusei desu.", "en": "He is also a student."},
+      {"ja": "りんごもバナナも好きです。", "kana": "りんご も ばなな も すき です。", "ro": "Ringo mo banana mo suki desu.", "en": "I like both apples and bananas."},
+      {"ja": "私もそれを知っています。", "kana": "わたし も それ を しって います。", "ro": "Watashi mo sore o shitte imasu.", "en": "I know that too."},
+      {"ja": "犬も猫もかわいいです。", "kana": "いぬ も ねこ も かわいい です。", "ro": "Inu mo neko mo kawaii desu.", "en": "Dogs and cats are both cute."}
+    ]
+  },
+  {
+    "id": "n5-particle-019",
+    "ja": "へ",
+    "kana": "へ",
+    "ro": "e",
+    "en": "to / toward (directional particle)",
+    "examples": [
+      {"ja": "学校へ行きます。", "kana": "がっこう へ いきます。", "ro": "Gakkou e ikimasu.", "en": "I go to school."},
+      {"ja": "日本へ来ました。", "kana": "にほん へ きました。", "ro": "Nihon e kimashita.", "en": "I came to Japan."},
+      {"ja": "公園へ行きましょう。", "kana": "こうえん へ いきましょう。", "ro": "Kouen e ikimashou.", "en": "Let’s go to the park."},
+      {"ja": "友達へ手紙を書きました。", "kana": "ともだち へ てがみ を かきました。", "ro": "Tomodachi e tegami o kakimashita.", "en": "I wrote a letter to my friend."},
+      {"ja": "駅へ急ぎました。", "kana": "えき へ いそぎました。", "ro": "Eki e isogimashita.", "en": "I hurried toward the station."}
+    ]
+  },
+  {
+    "id": "n5-particle-020",
+    "ja": "ね",
+    "kana": "ね",
+    "ro": "ne",
+    "en": "(sentence-ending particle for confirmation / agreement)",
+    "examples": [
+      {"ja": "きれいですね。", "kana": "きれい です ね。", "ro": "Kirei desu ne.", "en": "It’s beautiful, isn’t it?"},
+      {"ja": "寒いですね。", "kana": "さむい です ね。", "ro": "Samui desu ne.", "en": "It’s cold, isn’t it?"},
+      {"ja": "また会いましょうね。", "kana": "また あいましょう ね。", "ro": "Mata aimashou ne.", "en": "Let’s meet again, okay?"},
+      {"ja": "美味しいですね。", "kana": "おいしい です ね。", "ro": "Oishii desu ne.", "en": "It’s delicious, isn’t it?"},
+      {"ja": "楽しかったですね。", "kana": "たのしかった です ね。", "ro": "Tanoshikatta desu ne.", "en": "It was fun, wasn’t it?"}
+    ]
+  },
+  {
+    "id": "n5-particle-021",
+    "ja": "から",
+    "kana": "から",
+    "ro": "kara",
+    "en": "from / because / since",
+    "examples": [
+      {"ja": "駅から歩きました。", "kana": "えき から あるきました。", "ro": "Eki kara arukimashita.", "en": "I walked from the station."},
+      {"ja": "今から勉強します。", "kana": "いま から べんきょう します。", "ro": "Ima kara benkyou shimasu.", "en": "I’ll study from now."},
+      {"ja": "日本から来ました。", "kana": "にほん から きました。", "ro": "Nihon kara kimashita.", "en": "I came from Japan."},
+      {"ja": "忙しいから行けません。", "kana": "いそがしい から いけません。", "ro": "Isogashii kara ikemasen.", "en": "I can’t go because I’m busy."},
+      {"ja": "雨だから外に出ません。", "kana": "あめ だから そと に でません。", "ro": "Ame dakara soto ni demasen.", "en": "I won’t go outside because it’s raining."}
+    ]
+  },
+  {
+    "id": "n5-particle-022",
+    "ja": "まで",
+    "kana": "まで",
+    "ro": "made",
+    "en": "until / to / as far as",
+    "examples": [
+      {"ja": "駅まで歩きました。", "kana": "えき まで あるきました。", "ro": "Eki made arukimashita.", "en": "I walked to the station."},
+      {"ja": "午後5時まで勉強します。", "kana": "ごご ごじ まで べんきょう します。", "ro": "Gogo goji made benkyou shimasu.", "en": "I study until 5 p.m."},
+      {"ja": "東京まで行きます。", "kana": "とうきょう まで いきます。", "ro": "Toukyou made ikimasu.", "en": "I will go to Tokyo."},
+      {"ja": "来週までに宿題を出してください。", "kana": "らいしゅう まで に しゅくだい を だして ください。", "ro": "Raishuu made ni shukudai o dashite kudasai.", "en": "Please submit your homework by next week."},
+      {"ja": "夜まで働きます。", "kana": "よる まで はたらきます。", "ro": "Yoru made hatarakimasu.", "en": "I work until night."}
+    ]
+  },
+  {
+    "id": "n5-particle-023",
+    "ja": "へ",
+    "kana": "へ",
+    "ro": "e",
+    "en": "to / toward (directional particle)",
+    "examples": [
+      {"ja": "学校へ行きます。", "kana": "がっこう へ いきます。", "ro": "Gakkou e ikimasu.", "en": "I go to school."},
+      {"ja": "日本へ来ました。", "kana": "にほん へ きました。", "ro": "Nihon e kimashita.", "en": "I came to Japan."},
+      {"ja": "公園へ行きましょう。", "kana": "こうえん へ いきましょう。", "ro": "Kouen e ikimashou.", "en": "Let’s go to the park."},
+      {"ja": "友達へ手紙を書きました。", "kana": "ともだち へ てがみ を かきました。", "ro": "Tomodachi e tegami o kakimashita.", "en": "I wrote a letter to my friend."},
+      {"ja": "駅へ急ぎました。", "kana": "えき へ いそぎました。", "ro": "Eki e isogimashita.", "en": "I hurried toward the station."}
+    ]
+  },
+  {
+    "id": "n5-particle-024",
+    "ja": "と",
+    "kana": "と",
+    "ro": "to",
+    "en": "and / with / when",
+    "examples": [
+      {"ja": "友達と話します。", "kana": "ともだち と はなします。", "ro": "Tomodachi to hanashimasu.", "en": "I talk with my friend."},
+      {"ja": "りんごとバナナを食べました。", "kana": "りんご と ばなな を たべました。", "ro": "Ringo to banana o tabemashita.", "en": "I ate apples and bananas."},
+      {"ja": "母と買い物に行きました。", "kana": "はは と かいもの に いきました。", "ro": "Haha to kaimono ni ikimashita.", "en": "I went shopping with my mother."},
+      {"ja": "先生と話したとき、緊張しました。", "kana": "せんせい と はなした とき、 きんちょう しました。", "ro": "Sensei to hanashita toki, kinchou shimashita.", "en": "I was nervous when I talked to the teacher."},
+      {"ja": "彼と一緒に行きました。", "kana": "かれ と いっしょ に いきました。", "ro": "Kare to issho ni ikimashita.", "en": "I went together with him."}
+    ]
+  },
+  {
+    "id": "n5-particle-025",
+    "ja": "も",
+    "kana": "も",
+    "ro": "mo",
+    "en": "also / too / even",
+    "examples": [
+      {"ja": "私も行きます。", "kana": "わたし も いきます。", "ro": "Watashi mo ikimasu.", "en": "I’ll go too."},
+      {"ja": "彼も学生です。", "kana": "かれ も がくせい です。", "ro": "Kare mo gakusei desu.", "en": "He is also a student."},
+      {"ja": "りんごもバナナも好きです。", "kana": "りんご も ばなな も すき です。", "ro": "Ringo mo banana mo suki desu.", "en": "I like both apples and bananas."},
+      {"ja": "私もそれを知っています。", "kana": "わたし も それ を しって います。", "ro": "Watashi mo sore o shitte imasu.", "en": "I know that too."},
+      {"ja": "犬も猫もかわいいです。", "kana": "いぬ も ねこ も かわいい です。", "ro": "Inu mo neko mo kawaii desu.", "en": "Dogs and cats are both cute."}
+    ]
+  },
+  {
+    "id": "n5-particle-026",
+    "ja": "やっぱり",
+    "kana": "やっぱり",
+    "ro": "yappari",
+    "en": "as expected / after all / still",
+    "examples": [
+      {"ja": "やっぱり彼が来ました。", "kana": "やっぱり かれ が きました。", "ro": "Yappari kare ga kimashita.", "en": "As expected, he came."},
+      {"ja": "やっぱり日本の食べ物が好きです。", "kana": "やっぱり にほん の たべもの が すき です。", "ro": "Yappari nihon no tabemono ga suki desu.", "en": "After all, I like Japanese food."},
+      {"ja": "やっぱりこの映画は面白いです。", "kana": "やっぱり この えいが は おもしろい です。", "ro": "Yappari kono eiga wa omoshiroi desu.", "en": "This movie is interesting after all."},
+      {"ja": "やっぱり雨が降りました。", "kana": "やっぱり あめ が ふりました。", "ro": "Yappari ame ga furimashita.", "en": "As expected, it rained."},
+      {"ja": "やっぱり先生の言うとおりでした。", "kana": "やっぱり せんせい の いう とおり でした。", "ro": "Yappari sensei no iu toori deshita.", "en": "After all, the teacher was right."}
+    ]
+  }
+]

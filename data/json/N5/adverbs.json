@@ -1,0 +1,562 @@
+[
+  {
+    "id": "n5-adv-001",
+    "ja": "いつも",
+    "kana": "いつも",
+    "ro": "itsumo",
+    "en": "always / usually",
+    "examples": [
+      {"ja": "私はいつも朝ごはんを食べます。", "kana": "わたし は いつも あさごはん を たべます。", "ro": "Watashi wa itsumo asagohan o tabemasu.", "en": "I always eat breakfast."},
+      {"ja": "彼はいつも元気です。", "kana": "かれ は いつも げんき です。", "ro": "Kare wa itsumo genki desu.", "en": "He is always cheerful."},
+      {"ja": "私はいつも早く寝ます。", "kana": "わたし は いつも はやく ねます。", "ro": "Watashi wa itsumo hayaku nemasu.", "en": "I always go to bed early."},
+      {"ja": "彼女はいつも笑っています。", "kana": "かのじょ は いつも わらって います。", "ro": "Kanojo wa itsumo waratte imasu.", "en": "She is always smiling."},
+      {"ja": "私はいつも水を持っています。", "kana": "わたし は いつも みず を もって います。", "ro": "Watashi wa itsumo mizu o motte imasu.", "en": "I always carry water."}
+    ]
+  },
+  {
+    "id": "n5-adv-002",
+    "ja": "とても",
+    "kana": "とても",
+    "ro": "totemo",
+    "en": "very / extremely",
+    "examples": [
+      {"ja": "この映画はとても面白いです。", "kana": "この えいが は とても おもしろい です。", "ro": "Kono eiga wa totemo omoshiroi desu.", "en": "This movie is very interesting."},
+      {"ja": "今日はとても寒いです。", "kana": "きょう は とても さむい です。", "ro": "Kyou wa totemo samui desu.", "en": "It is very cold today."},
+      {"ja": "あなたの日本語はとても上手です。", "kana": "あなた の にほんご は とても じょうず です。", "ro": "Anata no nihongo wa totemo jouzu desu.", "en": "Your Japanese is very good."},
+      {"ja": "この料理はとてもおいしいです。", "kana": "この りょうり は とても おいしい です。", "ro": "Kono ryouri wa totemo oishii desu.", "en": "This dish is very delicious."},
+      {"ja": "この店はとてもきれいです。", "kana": "この みせ は とても きれい です。", "ro": "Kono mise wa totemo kirei desu.", "en": "This shop is very clean."}
+    ]
+  },
+  {
+    "id": "n5-adv-003",
+    "ja": "すぐ",
+    "kana": "すぐ",
+    "ro": "sugu",
+    "en": "immediately / right away",
+    "examples": [
+      {"ja": "すぐ行きます。", "kana": "すぐ いきます。", "ro": "Sugu ikimasu.", "en": "I’ll go right away."},
+      {"ja": "彼はすぐ帰りました。", "kana": "かれ は すぐ かえりました。", "ro": "Kare wa sugu kaerimashita.", "en": "He went home immediately."},
+      {"ja": "すぐにわかりました。", "kana": "すぐ に わかりました。", "ro": "Sugu ni wakarimashita.", "en": "I understood right away."},
+      {"ja": "すぐに電話します。", "kana": "すぐ に でんわ します。", "ro": "Sugu ni denwa shimasu.", "en": "I’ll call immediately."},
+      {"ja": "すぐに準備してください。", "kana": "すぐ に じゅんび して ください。", "ro": "Sugu ni junbi shite kudasai.", "en": "Please get ready right away."}
+    ]
+  },
+  {
+    "id": "n5-adv-004",
+    "ja": "たくさん",
+    "kana": "たくさん",
+    "ro": "takusan",
+    "en": "many / a lot",
+    "examples": [
+      {"ja": "たくさんの本を読みました。", "kana": "たくさん の ほん を よみました。", "ro": "Takusan no hon o yomimashita.", "en": "I read a lot of books."},
+      {"ja": "部屋にたくさんの人がいます。", "kana": "へや に たくさん の ひと が います。", "ro": "Heya ni takusan no hito ga imasu.", "en": "There are many people in the room."},
+      {"ja": "たくさん食べました。", "kana": "たくさん たべました。", "ro": "Takusan tabemashita.", "en": "I ate a lot."},
+      {"ja": "彼はたくさん友達がいます。", "kana": "かれ は たくさん ともだち が います。", "ro": "Kare wa takusan tomodachi ga imasu.", "en": "He has many friends."},
+      {"ja": "私はたくさん写真を撮りました。", "kana": "わたし は たくさん しゃしん を とりました。", "ro": "Watashi wa takusan shashin o torimashita.", "en": "I took many photos."}
+    ]
+  },
+  {
+    "id": "n5-adv-005",
+    "ja": "よく",
+    "kana": "よく",
+    "ro": "yoku",
+    "en": "often / well",
+    "examples": [
+      {"ja": "彼はよく図書館に行きます。", "kana": "かれ は よく としょかん に いきます。", "ro": "Kare wa yoku toshokan ni ikimasu.", "en": "He often goes to the library."},
+      {"ja": "よくできました。", "kana": "よく できました。", "ro": "Yoku dekimashita.", "en": "Well done!"},
+      {"ja": "彼はよくテレビを見ます。", "kana": "かれ は よく てれび を みます。", "ro": "Kare wa yoku terebi o mimasu.", "en": "He often watches TV."},
+      {"ja": "私はよく散歩します。", "kana": "わたし は よく さんぽ します。", "ro": "Watashi wa yoku sanpo shimasu.", "en": "I often take a walk."},
+      {"ja": "彼女はよく笑います。", "kana": "かのじょ は よく わらいます。", "ro": "Kanojo wa yoku waraimasu.", "en": "She laughs often."}
+    ]
+  },
+  {
+    "id": "n5-adv-006",
+    "ja": "たぶん",
+    "kana": "たぶん",
+    "ro": "tabun",
+    "en": "probably / maybe",
+    "examples": [
+      {"ja": "たぶん雨が降ります。", "kana": "たぶん あめ が ふります。", "ro": "Tabun ame ga furimasu.", "en": "It will probably rain."},
+      {"ja": "彼はたぶん来ないでしょう。", "kana": "かれ は たぶん こない でしょう。", "ro": "Kare wa tabun konai deshou.", "en": "He probably won’t come."},
+      {"ja": "たぶん明日は休みです。", "kana": "たぶん あした は やすみ です。", "ro": "Tabun ashita wa yasumi desu.", "en": "Maybe tomorrow is a holiday."},
+      {"ja": "彼女はたぶん先生です。", "kana": "かのじょ は たぶん せんせい です。", "ro": "Kanojo wa tabun sensei desu.", "en": "She is probably a teacher."},
+      {"ja": "これはたぶん彼のペンです。", "kana": "これは たぶん かれ の ぺん です。", "ro": "Kore wa tabun kare no pen desu.", "en": "This is probably his pen."}
+    ]
+  },
+  {
+    "id": "n5-adv-007",
+    "ja": "ぜったいに",
+    "kana": "ぜったいに",
+    "ro": "zettai ni",
+    "en": "absolutely / definitely",
+    "examples": [
+      {"ja": "これはぜったいに秘密です。", "kana": "これは ぜったいに ひみつ です。", "ro": "Kore wa zettai ni himitsu desu.", "en": "This is absolutely a secret."},
+      {"ja": "ぜったいに負けない。", "kana": "ぜったいに まけない。", "ro": "Zettai ni makenai.", "en": "I will never lose."},
+      {"ja": "ぜったいに忘れないでください。", "kana": "ぜったいに わすれないで ください。", "ro": "Zettai ni wasurenaide kudasai.", "en": "Please don’t forget, absolutely."},
+      {"ja": "ぜったいに遅刻しないで。", "kana": "ぜったいに ちこく しないで。", "ro": "Zettai ni chikoku shinaide.", "en": "Don’t be late, no matter what."},
+      {"ja": "これはぜったいに正しいです。", "kana": "これは ぜったいに ただしい です。", "ro": "Kore wa zettai ni tadashii desu.", "en": "This is absolutely correct."}
+    ]
+  },
+  {
+    "id": "n5-adv-008",
+    "ja": "すこし",
+    "kana": "すこし",
+    "ro": "sukoshi",
+    "en": "a little / a bit",
+    "examples": [
+      {"ja": "すこし待ってください。", "kana": "すこし まって ください。", "ro": "Sukoshi matte kudasai.", "en": "Please wait a little."},
+      {"ja": "今日はすこし寒いです。", "kana": "きょう は すこし さむい です。", "ro": "Kyou wa sukoshi samui desu.", "en": "It is a bit cold today."},
+      {"ja": "すこし休みましょう。", "kana": "すこし やすみましょう。", "ro": "Sukoshi yasumimashou.", "en": "Let's rest a little."},
+      {"ja": "すこし静かにしてください。", "kana": "すこし しずか に して ください。", "ro": "Sukoshi shizuka ni shite kudasai.", "en": "Please be a little quiet."},
+      {"ja": "すこし日本語が話せます。", "kana": "すこし にほんご が はなせます。", "ro": "Sukoshi nihongo ga hanasemasu.", "en": "I can speak a little Japanese."}
+    ]
+  },
+  {
+    "id": "n5-adv-009",
+    "ja": "また",
+    "kana": "また",
+    "ro": "mata",
+    "en": "again / also / moreover",
+    "examples": [
+      {"ja": "また会いましょう。", "kana": "また あいましょう。", "ro": "Mata aimashou.", "en": "Let's meet again."},
+      {"ja": "明日また来てください。", "kana": "あした また きて ください。", "ro": "Ashita mata kite kudasai.", "en": "Please come again tomorrow."},
+      {"ja": "また新しい本を買いました。", "kana": "また あたらしい ほん を かいました。", "ro": "Mata atarashii hon o kaimashita.", "en": "I bought another new book."},
+      {"ja": "また映画を見たいです。", "kana": "また えいが を みたい です。", "ro": "Mata eiga o mitai desu.", "en": "I want to watch the movie again."},
+      {"ja": "彼はまた遅刻しました。", "kana": "かれ は また ちこく しました。", "ro": "Kare wa mata chikoku shimashita.", "en": "He was late again."}
+    ]
+  },
+  {
+    "id": "n5-adv-010",
+    "ja": "ゆっくり",
+    "kana": "ゆっくり",
+    "ro": "yukkuri",
+    "en": "slowly / leisurely / take your time",
+    "examples": [
+      {"ja": "ゆっくり話してください。", "kana": "ゆっくり はなして ください。", "ro": "Yukkuri hanashite kudasai.", "en": "Please speak slowly."},
+      {"ja": "今日はゆっくり休みます。", "kana": "きょう は ゆっくり やすみます。", "ro": "Kyou wa yukkuri yasumimasu.", "en": "I will rest slowly today."},
+      {"ja": "ゆっくり食べてください。", "kana": "ゆっくり たべて ください。", "ro": "Yukkuri tabete kudasai.", "en": "Please eat slowly."},
+      {"ja": "休日はゆっくり過ごします。", "kana": "きゅうじつ は ゆっくり すごします。", "ro": "Kyuujitsu wa yukkuri sugoshimasu.", "en": "I spend holidays leisurely."},
+      {"ja": "ゆっくり歩きましょう。", "kana": "ゆっくり あるきましょう。", "ro": "Yukkuri arukimashou.", "en": "Let’s walk slowly."}
+    ]
+  },
+  {
+    "id": "n5-adv-011",
+    "ja": "もう",
+    "kana": "もう",
+    "ro": "mou",
+    "en": "already / soon / again",
+    "examples": [
+      {"ja": "もう食べました。", "kana": "もう たべました。", "ro": "Mou tabemashita.", "en": "I have already eaten."},
+      {"ja": "もうすぐ春です。", "kana": "もうすぐ はる です。", "ro": "Mou sugu haru desu.", "en": "It will be spring soon."},
+      {"ja": "もう一度言ってください。", "kana": "もう いちど いって ください。", "ro": "Mou ichido itte kudasai.", "en": "Please say it one more time."},
+      {"ja": "もう終わりましたか。", "kana": "もう おわりました か。", "ro": "Mou owarimashita ka.", "en": "Are you done already?"},
+      {"ja": "もう寝る時間です。", "kana": "もう ねる じかん です。", "ro": "Mou neru jikan desu.", "en": "It’s time to go to bed already."}
+    ]
+  },
+  {
+    "id": "n5-adv-012",
+    "ja": "まだ",
+    "kana": "まだ",
+    "ro": "mada",
+    "en": "still / not yet / yet",
+    "examples": [
+      {"ja": "まだ終わっていません。", "kana": "まだ おわって いません。", "ro": "Mada owatte imasen.", "en": "It’s not finished yet."},
+      {"ja": "彼はまだ来ていません。", "kana": "かれ は まだ きて いません。", "ro": "Kare wa mada kite imasen.", "en": "He hasn’t come yet."},
+      {"ja": "まだ時間があります。", "kana": "まだ じかん が あります。", "ro": "Mada jikan ga arimasu.", "en": "There is still time."},
+      {"ja": "まだ寒いです。", "kana": "まだ さむい です。", "ro": "Mada samui desu.", "en": "It’s still cold."},
+      {"ja": "まだ宿題をしていません。", "kana": "まだ しゅくだい を して いません。", "ro": "Mada shukudai o shite imasen.", "en": "I haven’t done my homework yet."}
+    ]
+  },
+  {
+    "id": "n5-adv-013",
+    "ja": "はじめて",
+    "kana": "はじめて",
+    "ro": "hajimete",
+    "en": "for the first time",
+    "examples": [
+      {"ja": "日本へはじめて行きました。", "kana": "にほん へ はじめて いきました。", "ro": "Nihon e hajimete ikimashita.", "en": "I went to Japan for the first time."},
+      {"ja": "はじめて寿司を食べました。", "kana": "はじめて すし を たべました。", "ro": "Hajimete sushi o tabemashita.", "en": "I ate sushi for the first time."},
+      {"ja": "これははじめて見る映画です。", "kana": "これは はじめて みる えいが です。", "ro": "Kore wa hajimete miru eiga desu.", "en": "This is the first movie I’ve seen."},
+      {"ja": "彼に会うのははじめてです。", "kana": "かれ に あう の は はじめて です。", "ro": "Kare ni au no wa hajimete desu.", "en": "It’s my first time meeting him."},
+      {"ja": "日本語を勉強するのははじめてです。", "kana": "にほんご を べんきょう する の は はじめて です。", "ro": "Nihongo o benkyou suru no wa hajimete desu.", "en": "It’s my first time studying Japanese."}
+    ]
+  },
+  {
+    "id": "n5-adv-014",
+    "ja": "いっしょに",
+    "kana": "いっしょに",
+    "ro": "issho ni",
+    "en": "together / with",
+    "examples": [
+      {"ja": "いっしょに行きましょう。", "kana": "いっしょに いきましょう。", "ro": "Issho ni ikimashou.", "en": "Let's go together."},
+      {"ja": "友達といっしょに勉強します。", "kana": "ともだち と いっしょに べんきょう します。", "ro": "Tomodachi to issho ni benkyou shimasu.", "en": "I study together with my friend."},
+      {"ja": "家族といっしょにご飯を食べます。", "kana": "かぞく と いっしょに ごはん を たべます。", "ro": "Kazoku to issho ni gohan o tabemasu.", "en": "I eat with my family."},
+      {"ja": "いっしょに写真を撮りましょう。", "kana": "いっしょに しゃしん を とりましょう。", "ro": "Issho ni shashin o torimashou.", "en": "Let’s take a picture together."},
+      {"ja": "いっしょに映画を見ました。", "kana": "いっしょに えいが を みました。", "ro": "Issho ni eiga o mimashita.", "en": "We watched a movie together."}
+    ]
+  },
+  {
+    "id": "n5-adv-015",
+    "ja": "けっこう",
+    "kana": "けっこう",
+    "ro": "kekkou",
+    "en": "quite / fairly / enough",
+    "examples": [
+      {"ja": "このケーキはけっこう甘いです。", "kana": "この けーき は けっこう あまい です。", "ro": "Kono keeki wa kekkou amai desu.", "en": "This cake is quite sweet."},
+      {"ja": "けっこうおもしろい映画でした。", "kana": "けっこう おもしろい えいが でした。", "ro": "Kekkou omoshiroi eiga deshita.", "en": "It was a rather interesting movie."},
+      {"ja": "けっこう時間がかかりました。", "kana": "けっこう じかん が かかりました。", "ro": "Kekkou jikan ga kakarimashita.", "en": "It took quite some time."},
+      {"ja": "けっこう疲れました。", "kana": "けっこう つかれました。", "ro": "Kekkou tsukaremashita.", "en": "I’m quite tired."},
+      {"ja": "けっこう高かったです。", "kana": "けっこう たかかった です。", "ro": "Kekkou takakatta desu.", "en": "It was quite expensive."}
+    ]
+  },
+  {
+    "id": "n5-adv-016",
+    "ja": "だいたい",
+    "kana": "だいたい",
+    "ro": "daitai",
+    "en": "mostly / approximately / roughly",
+    "examples": [
+      {"ja": "だいたいわかりました。", "kana": "だいたい わかりました。", "ro": "Daitai wakarimashita.", "en": "I understood most of it."},
+      {"ja": "だいたい三時間かかります。", "kana": "だいたい さんじかん かかります。", "ro": "Daitai sanjikan kakarimasu.", "en": "It takes about three hours."},
+      {"ja": "だいたい終わりました。", "kana": "だいたい おわりました。", "ro": "Daitai owarimashita.", "en": "I’m mostly done."},
+      {"ja": "だいたい十人います。", "kana": "だいたい じゅうにん います。", "ro": "Daitai juunin imasu.", "en": "There are about ten people."},
+      {"ja": "だいたいこのくらいの大きさです。", "kana": "だいたい このくらい の おおきさ です。", "ro": "Daitai kono kurai no ookisa desu.", "en": "It’s about this size."}
+    ]
+  },
+  {
+    "id": "n5-adv-017",
+    "ja": "たいてい",
+    "kana": "たいてい",
+    "ro": "taitei",
+    "en": "usually / generally / mostly",
+    "examples": [
+      {"ja": "たいてい朝コーヒーを飲みます。", "kana": "たいてい あさ こーひー を のみます。", "ro": "Taitei asa koohii o nomimasu.", "en": "I usually drink coffee in the morning."},
+      {"ja": "彼はたいてい早く起きます。", "kana": "かれ は たいてい はやく おきます。", "ro": "Kare wa taitei hayaku okimasu.", "en": "He usually wakes up early."},
+      {"ja": "たいてい日曜日は家にいます。", "kana": "たいてい にちようび は いえ に います。", "ro": "Taitei nichiyoubi wa ie ni imasu.", "en": "I’m usually home on Sundays."},
+      {"ja": "たいてい夜は勉強します。", "kana": "たいてい よる は べんきょう します。", "ro": "Taitei yoru wa benkyou shimasu.", "en": "I usually study at night."},
+      {"ja": "たいてい夏は暑いです。", "kana": "たいてい なつ は あつい です。", "ro": "Taitei natsu wa atsui desu.", "en": "It’s generally hot in summer."}
+    ]
+  },
+  {
+    "id": "n5-adv-018",
+    "ja": "あまり",
+    "kana": "あまり",
+    "ro": "amari",
+    "en": "not very / not much (used with negative)",
+    "examples": [
+      {"ja": "あまり食べません。", "kana": "あまり たべません。", "ro": "Amari tabemasen.", "en": "I don’t eat much."},
+      {"ja": "あまり暑くないです。", "kana": "あまり あつく ない です。", "ro": "Amari atsuku nai desu.", "en": "It’s not very hot."},
+      {"ja": "あまりテレビを見ません。", "kana": "あまり てれび を みません。", "ro": "Amari terebi o mimasen.", "en": "I don’t watch much TV."},
+      {"ja": "あまりお金がありません。", "kana": "あまり おかね が ありません。", "ro": "Amari okane ga arimasen.", "en": "I don’t have much money."},
+      {"ja": "あまり好きじゃありません。", "kana": "あまり すき じゃ ありません。", "ro": "Amari suki ja arimasen.", "en": "I don’t like it very much."}
+    ]
+  },
+  {
+    "id": "n5-adv-019",
+    "ja": "きっと",
+    "kana": "きっと",
+    "ro": "kitto",
+    "en": "surely / definitely / for sure",
+    "examples": [
+      {"ja": "きっと成功します。", "kana": "きっと せいこう します。", "ro": "Kitto seikou shimasu.", "en": "You will surely succeed."},
+      {"ja": "きっと雨が降ります。", "kana": "きっと あめ が ふります。", "ro": "Kitto ame ga furimasu.", "en": "It will definitely rain."},
+      {"ja": "きっと彼は来ます。", "kana": "きっと かれ は きます。", "ro": "Kitto kare wa kimasu.", "en": "He will surely come."},
+      {"ja": "きっと大丈夫です。", "kana": "きっと だいじょうぶ です。", "ro": "Kitto daijoubu desu.", "en": "It will surely be okay."},
+      {"ja": "きっとうまくいきます。", "kana": "きっと うまく いきます。", "ro": "Kitto umaku ikimasu.", "en": "It will surely go well."}
+    ]
+  },
+  {
+    "id": "n5-adv-020",
+    "ja": "ぜんぜん",
+    "kana": "ぜんぜん",
+    "ro": "zenzen",
+    "en": "not at all (used with negatives)",
+    "examples": [
+      {"ja": "ぜんぜん分かりません。", "kana": "ぜんぜん わかりません。", "ro": "Zenzen wakarimasen.", "en": "I don’t understand at all."},
+      {"ja": "ぜんぜん見えません。", "kana": "ぜんぜん みえません。", "ro": "Zenzen miemasen.", "en": "I can’t see at all."},
+      {"ja": "ぜんぜん眠くありません。", "kana": "ぜんぜん ねむく ありません。", "ro": "Zenzen nemuku arimasen.", "en": "I’m not sleepy at all."},
+      {"ja": "ぜんぜん難しくないです。", "kana": "ぜんぜん むずかしく ない です。", "ro": "Zenzen muzukashiku nai desu.", "en": "It’s not difficult at all."},
+      {"ja": "ぜんぜん面白くなかったです。", "kana": "ぜんぜん おもしろく なかった です。", "ro": "Zenzen omoshiroku nakatta desu.", "en": "It wasn’t interesting at all."}
+    ]
+  },
+  {
+    "id": "n5-adv-021",
+    "ja": "すぐに",
+    "kana": "すぐに",
+    "ro": "sugu ni",
+    "en": "immediately / right away",
+    "examples": [
+      {"ja": "すぐに来てください。", "kana": "すぐに きて ください。", "ro": "Sugu ni kite kudasai.", "en": "Please come right away."},
+      {"ja": "すぐに始めましょう。", "kana": "すぐに はじめましょう。", "ro": "Sugu ni hajimemashou.", "en": "Let’s start immediately."},
+      {"ja": "すぐに帰ります。", "kana": "すぐに かえります。", "ro": "Sugu ni kaerimasu.", "en": "I will go home right away."},
+      {"ja": "すぐに電話します。", "kana": "すぐに でんわ します。", "ro": "Sugu ni denwa shimasu.", "en": "I’ll call immediately."},
+      {"ja": "すぐに分かりました。", "kana": "すぐに わかりました。", "ro": "Sugu ni wakarimashita.", "en": "I understood right away."}
+    ]
+  },
+  {
+    "id": "n5-adv-022",
+    "ja": "ちょっと",
+    "kana": "ちょっと",
+    "ro": "chotto",
+    "en": "a little / a bit / just a moment",
+    "examples": [
+      {"ja": "ちょっと待ってください。", "kana": "ちょっと まって ください。", "ro": "Chotto matte kudasai.", "en": "Please wait a moment."},
+      {"ja": "ちょっと疲れました。", "kana": "ちょっと つかれました。", "ro": "Chotto tsukaremashita.", "en": "I’m a little tired."},
+      {"ja": "ちょっと見せてください。", "kana": "ちょっと みせて ください。", "ro": "Chotto misete kudasai.", "en": "Please show me for a moment."},
+      {"ja": "ちょっと静かにしてください。", "kana": "ちょっと しずか に して ください。", "ro": "Chotto shizuka ni shite kudasai.", "en": "Please be a little quiet."},
+      {"ja": "ちょっと手伝ってもらえますか。", "kana": "ちょっと てつだって もらえます か。", "ro": "Chotto tetsudatte moraemasu ka.", "en": "Could you help me a little?"}
+    ]
+  },
+  {
+    "id": "n5-adv-023",
+    "ja": "どのくらい",
+    "kana": "どのくらい",
+    "ro": "dono kurai",
+    "en": "how long / how much",
+    "examples": [
+      {"ja": "東京までどのくらいかかりますか。", "kana": "とうきょう まで どのくらい かかります か。", "ro": "Toukyou made dono kurai kakarimasu ka.", "en": "How long does it take to Tokyo?"},
+      {"ja": "日本語をどのくらい勉強しましたか。", "kana": "にほんご を どのくらい べんきょう しました か。", "ro": "Nihongo o dono kurai benkyou shimashita ka.", "en": "How long have you studied Japanese?"},
+      {"ja": "どのくらいお金がかかりますか。", "kana": "どのくらい おかね が かかります か。", "ro": "Dono kurai okane ga kakarimasu ka.", "en": "How much will it cost?"},
+      {"ja": "家から学校までどのくらいですか。", "kana": "いえ から がっこう まで どのくらい です か。", "ro": "Ie kara gakkou made dono kurai desu ka.", "en": "How far is it from your house to school?"},
+      {"ja": "どのくらい待てばいいですか。", "kana": "どのくらい まてば いい です か。", "ro": "Dono kurai mateba ii desu ka.", "en": "How long should I wait?"}
+    ]
+  },
+  {
+    "id": "n5-adv-024",
+    "ja": "すっかり",
+    "kana": "すっかり",
+    "ro": "sukkari",
+    "en": "completely / entirely",
+    "examples": [
+      {"ja": "風邪がすっかり治りました。", "kana": "かぜ が すっかり なおりました。", "ro": "Kaze ga sukkari naorimashita.", "en": "My cold has completely healed."},
+      {"ja": "彼のことをすっかり忘れました。", "kana": "かれ の こと を すっかり わすれました。", "ro": "Kare no koto o sukkari wasuremashita.", "en": "I completely forgot about him."},
+      {"ja": "部屋がすっかりきれいになりました。", "kana": "へや が すっかり きれい に なりました。", "ro": "Heya ga sukkari kirei ni narimashita.", "en": "The room became completely clean."},
+      {"ja": "雪がすっかり溶けました。", "kana": "ゆき が すっかり とけました。", "ro": "Yuki ga sukkari tokemashita.", "en": "The snow has completely melted."},
+      {"ja": "忘年会のことをすっかり忘れていました。", "kana": "ぼうねんかい の こと を すっかり わすれて いました。", "ro": "Bounenkai no koto o sukkari wasurete imashita.", "en": "I had completely forgotten about the year-end party."}
+    ]
+  },
+  {
+    "id": "n5-adv-025",
+    "ja": "たまに",
+    "kana": "たまに",
+    "ro": "tamani",
+    "en": "occasionally / once in a while",
+    "examples": [
+      {"ja": "たまに映画を見ます。", "kana": "たまに えいが を みます。", "ro": "Tamani eiga o mimasu.", "en": "I watch movies occasionally."},
+      {"ja": "たまに外食します。", "kana": "たまに がいしょく します。", "ro": "Tamani gaishoku shimasu.", "en": "I eat out once in a while."},
+      {"ja": "たまに友達に会います。", "kana": "たまに ともだち に あいます。", "ro": "Tamani tomodachi ni aimasu.", "en": "I meet my friends occasionally."},
+      {"ja": "たまにジョギングをします。", "kana": "たまに じょぎんぐ を します。", "ro": "Tamani jogingu o shimasu.", "en": "I go jogging once in a while."},
+      {"ja": "たまに旅行したいです。", "kana": "たまに りょこう したい です。", "ro": "Tamani ryokou shitai desu.", "en": "I want to travel occasionally."}
+    ]
+  },
+  {
+    "id": "n5-adv-026",
+    "ja": "だんだん",
+    "kana": "だんだん",
+    "ro": "dandan",
+    "en": "gradually / little by little",
+    "examples": [
+      {"ja": "だんだん寒くなります。", "kana": "だんだん さむく なります。", "ro": "Dandan samuku narimasu.", "en": "It’s getting colder little by little."},
+      {"ja": "日本語がだんだん上手になっています。", "kana": "にほんご が だんだん じょうず に なって います。", "ro": "Nihongo ga dandan jouzu ni natte imasu.", "en": "My Japanese is gradually improving."},
+      {"ja": "空がだんだん暗くなってきました。", "kana": "そら が だんだん くらく なって きました。", "ro": "Sora ga dandan kuraku natte kimashita.", "en": "The sky has gradually become dark."},
+      {"ja": "だんだん分かってきました。", "kana": "だんだん わかって きました。", "ro": "Dandan wakatte kimashita.", "en": "I’ve gradually come to understand."},
+      {"ja": "だんだん春らしくなってきました。", "kana": "だんだん はるらしく なって きました。", "ro": "Dandan harurashiku natte kimashita.", "en": "It’s gradually becoming spring-like."}
+    ]
+  },
+  {
+    "id": "n5-adv-027",
+    "ja": "まっすぐ",
+    "kana": "まっすぐ",
+    "ro": "massugu",
+    "en": "straight / directly / upright",
+    "examples": [
+      {"ja": "まっすぐ行ってください。", "kana": "まっすぐ いって ください。", "ro": "Massugu itte kudasai.", "en": "Please go straight."},
+      {"ja": "まっすぐ歩きます。", "kana": "まっすぐ あるきます。", "ro": "Massugu arukimasu.", "en": "I walk straight."},
+      {"ja": "まっすぐ座ってください。", "kana": "まっすぐ すわって ください。", "ro": "Massugu suwatte kudasai.", "en": "Sit up straight, please."},
+      {"ja": "まっすぐ帰ります。", "kana": "まっすぐ かえります。", "ro": "Massugu kaerimasu.", "en": "I go home directly."},
+      {"ja": "まっすぐな道を歩いています。", "kana": "まっすぐ な みち を あるいて います。", "ro": "Massugu na michi o aruite imasu.", "en": "I am walking on a straight road."}
+    ]
+  },
+  {
+    "id": "n5-adv-028",
+    "ja": "ゆっくりと",
+    "kana": "ゆっくりと",
+    "ro": "yukkuri to",
+    "en": "slowly / gently",
+    "examples": [
+      {"ja": "ゆっくりと話しました。", "kana": "ゆっくりと はなしました。", "ro": "Yukkuri to hanashimashita.", "en": "I spoke slowly."},
+      {"ja": "ゆっくりと歩きましょう。", "kana": "ゆっくりと あるきましょう。", "ro": "Yukkuri to arukimashou.", "en": "Let’s walk slowly."},
+      {"ja": "ゆっくりとお茶を飲みました。", "kana": "ゆっくりと おちゃ を のみました。", "ro": "Yukkuri to ocha o nomimashita.", "en": "I drank tea slowly."},
+      {"ja": "ゆっくりと座りました。", "kana": "ゆっくりと すわりました。", "ro": "Yukkuri to suwarimashita.", "en": "I sat down gently."},
+      {"ja": "ゆっくりと話すことが大切です。", "kana": "ゆっくりと はなす こと が たいせつ です。", "ro": "Yukkuri to hanasu koto ga taisetsu desu.", "en": "It’s important to speak slowly."}
+    ]
+  },
+  {
+    "id": "n5-adv-029",
+    "ja": "もうすぐ",
+    "kana": "もうすぐ",
+    "ro": "mou sugu",
+    "en": "soon / in a moment",
+    "examples": [
+      {"ja": "もうすぐ春が来ます。", "kana": "もうすぐ はる が きます。", "ro": "Mou sugu haru ga kimasu.", "en": "Spring will come soon."},
+      {"ja": "もうすぐテストです。", "kana": "もうすぐ てすと です。", "ro": "Mou sugu tesuto desu.", "en": "The test is soon."},
+      {"ja": "もうすぐ夏休みです。", "kana": "もうすぐ なつやすみ です。", "ro": "Mou sugu natsuyasumi desu.", "en": "It’s almost summer vacation."},
+      {"ja": "もうすぐ雨が降りそうです。", "kana": "もうすぐ あめ が ふりそう です。", "ro": "Mou sugu ame ga furisou desu.", "en": "It looks like it’s going to rain soon."},
+      {"ja": "もうすぐ彼が来ます。", "kana": "もうすぐ かれ が きます。", "ro": "Mou sugu kare ga kimasu.", "en": "He’ll be here soon."}
+    ]
+  },
+  {
+    "id": "n5-adv-030",
+    "ja": "やっと",
+    "kana": "やっと",
+    "ro": "yatto",
+    "en": "finally / at last",
+    "examples": [
+      {"ja": "やっと終わりました。", "kana": "やっと おわりました。", "ro": "Yatto owarimashita.", "en": "It finally finished."},
+      {"ja": "やっと会えましたね。", "kana": "やっと あえました ね。", "ro": "Yatto aemashita ne.", "en": "We finally met."},
+      {"ja": "やっと宿題が終わった。", "kana": "やっと しゅくだい が おわった。", "ro": "Yatto shukudai ga owatta.", "en": "I finally finished my homework."},
+      {"ja": "やっと春が来ました。", "kana": "やっと はる が きました。", "ro": "Yatto haru ga kimashita.", "en": "Spring has finally come."},
+      {"ja": "やっと問題が解けました。", "kana": "やっと もんだい が とけました。", "ro": "Yatto mondai ga tokemashita.", "en": "I finally solved the problem."}
+    ]
+  },
+  {
+    "id": "n5-adv-031",
+    "ja": "いちばん",
+    "kana": "いちばん",
+    "ro": "ichiban",
+    "en": "the most / number one / best",
+    "examples": [
+      {"ja": "彼がいちばん背が高いです。", "kana": "かれ が いちばん せ が たかい です。", "ro": "Kare ga ichiban se ga takai desu.", "en": "He is the tallest."},
+      {"ja": "いちばん好きな色は青です。", "kana": "いちばん すき な いろ は あお です。", "ro": "Ichiban suki na iro wa ao desu.", "en": "My favorite color is blue."},
+      {"ja": "この料理がいちばんおいしいです。", "kana": "この りょうり が いちばん おいしい です。", "ro": "Kono ryouri ga ichiban oishii desu.", "en": "This dish is the most delicious."},
+      {"ja": "彼女はいちばん早く来ました。", "kana": "かのじょ は いちばん はやく きました。", "ro": "Kanojo wa ichiban hayaku kimashita.", "en": "She came the earliest."},
+      {"ja": "いちばん近い駅はどこですか。", "kana": "いちばん ちかい えき は どこ です か。", "ro": "Ichiban chikai eki wa doko desu ka.", "en": "Which is the nearest station?"}
+    ]
+  },
+  {
+    "id": "n5-adv-032",
+    "ja": "きのう",
+    "kana": "きのう",
+    "ro": "kinou",
+    "en": "yesterday",
+    "examples": [
+      {"ja": "きのう映画を見ました。", "kana": "きのう えいが を みました。", "ro": "Kinou eiga o mimashita.", "en": "I watched a movie yesterday."},
+      {"ja": "きのうは雨でした。", "kana": "きのう は あめ でした。", "ro": "Kinou wa ame deshita.", "en": "It rained yesterday."},
+      {"ja": "きのう友達に会いました。", "kana": "きのう ともだち に あいました。", "ro": "Kinou tomodachi ni aimashita.", "en": "I met a friend yesterday."},
+      {"ja": "きのうはとても寒かったです。", "kana": "きのう は とても さむかった です。", "ro": "Kinou wa totemo samukatta desu.", "en": "It was very cold yesterday."},
+      {"ja": "きのうは忙しかったです。", "kana": "きのう は いそがしかった です。", "ro": "Kinou wa isogashikatta desu.", "en": "I was busy yesterday."}
+    ]
+  },
+  {
+    "id": "n5-adv-033",
+    "ja": "あした",
+    "kana": "あした",
+    "ro": "ashita",
+    "en": "tomorrow",
+    "examples": [
+      {"ja": "あした会いましょう。", "kana": "あした あいましょう。", "ro": "Ashita aimashou.", "en": "Let’s meet tomorrow."},
+      {"ja": "あしたは休みです。", "kana": "あした は やすみ です。", "ro": "Ashita wa yasumi desu.", "en": "Tomorrow is a holiday."},
+      {"ja": "あした雨が降るかもしれません。", "kana": "あした あめ が ふる かも しれません。", "ro": "Ashita ame ga furu kamo shiremasen.", "en": "It might rain tomorrow."},
+      {"ja": "あしたは早く起きます。", "kana": "あした は はやく おきます。", "ro": "Ashita wa hayaku okimasu.", "en": "I will get up early tomorrow."},
+      {"ja": "あしたテストがあります。", "kana": "あした てすと が あります。", "ro": "Ashita tesuto ga arimasu.", "en": "There is a test tomorrow."}
+    ]
+  },
+  {
+    "id": "n5-adv-034",
+    "ja": "おととい",
+    "kana": "おととい",
+    "ro": "ototoi",
+    "en": "the day before yesterday",
+    "examples": [
+      {"ja": "おととい映画を見ました。", "kana": "おととい えいが を みました。", "ro": "Ototoi eiga o mimashita.", "en": "I watched a movie the day before yesterday."},
+      {"ja": "おととい雨が降りました。", "kana": "おととい あめ が ふりました。", "ro": "Ototoi ame ga furimashita.", "en": "It rained the day before yesterday."},
+      {"ja": "おとといは忙しかったです。", "kana": "おととい は いそがしかった です。", "ro": "Ototoi wa isogashikatta desu.", "en": "I was busy the day before yesterday."},
+      {"ja": "おととい友達とご飯を食べました。", "kana": "おととい ともだち と ごはん を たべました。", "ro": "Ototoi tomodachi to gohan o tabemashita.", "en": "I ate with a friend the day before yesterday."},
+      {"ja": "おととい新しい本を買いました。", "kana": "おととい あたらしい ほん を かいました。", "ro": "Ototoi atarashii hon o kaimashita.", "en": "I bought a new book the day before yesterday."}
+    ]
+  },
+  {
+    "id": "n5-adv-035",
+    "ja": "あさって",
+    "kana": "あさって",
+    "ro": "asatte",
+    "en": "the day after tomorrow",
+    "examples": [
+      {"ja": "あさって旅行に行きます。", "kana": "あさって りょこう に いきます。", "ro": "Asatte ryokou ni ikimasu.", "en": "I will go on a trip the day after tomorrow."},
+      {"ja": "あさっては休みです。", "kana": "あさって は やすみ です。", "ro": "Asatte wa yasumi desu.", "en": "It’s a day off the day after tomorrow."},
+      {"ja": "あさって友達に会います。", "kana": "あさって ともだち に あいます。", "ro": "Asatte tomodachi ni aimasu.", "en": "I’ll meet my friend the day after tomorrow."},
+      {"ja": "あさって試験があります。", "kana": "あさって しけん が あります。", "ro": "Asatte shiken ga arimasu.", "en": "There’s an exam the day after tomorrow."},
+      {"ja": "あさって映画を見に行きます。", "kana": "あさって えいが を みに いきます。", "ro": "Asatte eiga o mini ikimasu.", "en": "I will go watch a movie the day after tomorrow."}
+    ]
+  },
+  {
+    "id": "n5-adv-036",
+    "ja": "このごろ",
+    "kana": "このごろ",
+    "ro": "konogoro",
+    "en": "these days / recently",
+    "examples": [
+      {"ja": "このごろ忙しいです。", "kana": "このごろ いそがしい です。", "ro": "Konogoro isogashii desu.", "en": "I’m busy these days."},
+      {"ja": "このごろ寒くなってきました。", "kana": "このごろ さむく なって きました。", "ro": "Konogoro samuku natte kimashita.", "en": "It’s gotten colder recently."},
+      {"ja": "このごろ日本語を勉強しています。", "kana": "このごろ にほんご を べんきょう して います。", "ro": "Konogoro nihongo o benkyou shite imasu.", "en": "I’ve been studying Japanese recently."},
+      {"ja": "このごろよく雨が降ります。", "kana": "このごろ よく あめ が ふります。", "ro": "Konogoro yoku ame ga furimasu.", "en": "It rains often these days."},
+      {"ja": "このごろ疲れやすいです。", "kana": "このごろ つかれやすい です。", "ro": "Konogoro tsukareyasui desu.", "en": "I get tired easily these days."}
+    ]
+  },
+  {
+    "id": "n5-adv-037",
+    "ja": "さっき",
+    "kana": "さっき",
+    "ro": "sakki",
+    "en": "a little while ago / just now",
+    "examples": [
+      {"ja": "さっき駅で彼に会いました。", "kana": "さっき えき で かれ に あいました。", "ro": "Sakki eki de kare ni aimashita.", "en": "I met him at the station a little while ago."},
+      {"ja": "さっき昼ごはんを食べました。", "kana": "さっき ひるごはん を たべました。", "ro": "Sakki hirugohan o tabemashita.", "en": "I ate lunch a while ago."},
+      {"ja": "さっき先生が来ました。", "kana": "さっき せんせい が きました。", "ro": "Sakki sensei ga kimashita.", "en": "The teacher came just now."},
+      {"ja": "さっき電話がありました。", "kana": "さっき でんわ が ありました。", "ro": "Sakki denwa ga arimashita.", "en": "There was a call a little while ago."},
+      {"ja": "さっきまで雨が降っていました。", "kana": "さっき まで あめ が ふって いました。", "ro": "Sakki made ame ga futte imashita.", "en": "It was raining just a while ago."}
+    ]
+  },
+  {
+    "id": "n5-adv-038",
+    "ja": "すぐあとで",
+    "kana": "すぐあとで",
+    "ro": "sugu ato de",
+    "en": "right after / soon after",
+    "examples": [
+      {"ja": "授業のすぐあとで帰りました。", "kana": "じゅぎょう の すぐ あとで かえりました。", "ro": "Jugyou no sugu ato de kaerimashita.", "en": "I went home right after class."},
+      {"ja": "昼ごはんのすぐあとで出かけました。", "kana": "ひるごはん の すぐ あとで でかけました。", "ro": "Hirugohan no sugu ato de dekakemashita.", "en": "I went out right after lunch."},
+      {"ja": "すぐあとで雨が降り始めました。", "kana": "すぐ あとで あめ が ふり はじめました。", "ro": "Sugu ato de ame ga furi hajimemashita.", "en": "It started raining right after that."},
+      {"ja": "すぐあとで彼に電話します。", "kana": "すぐ あとで かれ に でんわ します。", "ro": "Sugu ato de kare ni denwa shimasu.", "en": "I’ll call him right after that."},
+      {"ja": "仕事のすぐあとで映画を見ました。", "kana": "しごと の すぐ あとで えいが を みました。", "ro": "Shigoto no sugu ato de eiga o mimashita.", "en": "I watched a movie right after work."}
+    ]
+  },
+  {
+    "id": "n5-adv-039",
+    "ja": "やはり",
+    "kana": "やはり",
+    "ro": "yahari",
+    "en": "as expected / still / after all",
+    "examples": [
+      {"ja": "やはり彼が来ました。", "kana": "やはり かれ が きました。", "ro": "Yahari kare ga kimashita.", "en": "As expected, he came."},
+      {"ja": "やはり難しいですね。", "kana": "やはり むずかしい です ね。", "ro": "Yahari muzukashii desu ne.", "en": "It’s difficult after all."},
+      {"ja": "やはりこの本が一番です。", "kana": "やはり この ほん が いちばん です。", "ro": "Yahari kono hon ga ichiban desu.", "en": "After all, this book is the best."},
+      {"ja": "やはり日本が好きです。", "kana": "やはり にほん が すき です。", "ro": "Yahari nihon ga suki desu.", "en": "I still love Japan."},
+      {"ja": "やはり雨が降りました。", "kana": "やはり あめ が ふりました。", "ro": "Yahari ame ga furimashita.", "en": "As expected, it rained."}
+    ]
+  },
+  {
+    "id": "n5-adv-040",
+    "ja": "ぜひ",
+    "kana": "ぜひ",
+    "ro": "zehi",
+    "en": "by all means / definitely / please do",
+    "examples": [
+      {"ja": "ぜひ来てください。", "kana": "ぜひ きて ください。", "ro": "Zehi kite kudasai.", "en": "Please come by all means."},
+      {"ja": "日本に来たらぜひ連絡してください。", "kana": "にほん に きたら ぜひ れんらく して ください。", "ro": "Nihon ni kitara zehi renraku shite kudasai.", "en": "Please contact me if you come to Japan."},
+      {"ja": "この映画をぜひ見てください。", "kana": "この えいが を ぜひ みて ください。", "ro": "Kono eiga o zehi mite kudasai.", "en": "You should definitely watch this movie."},
+      {"ja": "次のイベントにぜひ参加してください。", "kana": "つぎ の いべんと に ぜひ さんか して ください。", "ro": "Tsugi no ibento ni zehi sanka shite kudasai.", "en": "Please join the next event by all means."},
+      {"ja": "ぜひ日本へ遊びに来てください。", "kana": "ぜひ にほん へ あそび に きて ください。", "ro": "Zehi nihon e asobi ni kite kudasai.", "en": "Please come visit Japan."}
+    ]
+  }
+] 

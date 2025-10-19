@@ -1,0 +1,784 @@
+{
+  "entries": [
+    {
+      "id": "n5-conj-001-soshite",
+      "ja": "そして",
+      "kana": "そして",
+      "ro": "soshite",
+      "en": "and; and then",
+      "examples": [
+        {
+          "ja": "朝ごはんを食べました。そして仕事に行きました。",
+          "kana": "あさ ごはんを たべました。 そして しごとに いきました。",
+          "ro": "asa gohano tabemashita。 soshite shigotoni ikimashita。",
+          "en": "I ate breakfast, and then went to work."
+        },
+        {
+          "ja": "勉強しました。そして寝ました。",
+          "kana": "べんきょうしました。 そして ねました。",
+          "ro": "benkyoushimashita。 soshite nemashita。",
+          "en": "I studied, and then went to sleep."
+        },
+        {
+          "ja": "手紙を書きました。そして出しました。",
+          "kana": "てがみを かきました。 そして だしました。",
+          "ro": "tegamio kakimashita。 soshite dashimashita。",
+          "en": "I wrote a letter, and then sent it."
+        },
+        {
+          "ja": "散歩をしました。そして写真を撮りました。",
+          "kana": "さんぽを しました。 そして しゃしんを とりました。",
+          "ro": "sanpoo shimashita。 soshite shashino torimashita。",
+          "en": "I took a walk, and then took photos."
+        },
+        {
+          "ja": "料理をしました。そしてみんなで食べました。",
+          "kana": "りょうりを しました。 そして みんなで たべました。",
+          "ro": "ryourio shimashita。 soshite minnade tabemashita。",
+          "en": "I cooked, and then everyone ate."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-002-demo",
+      "ja": "でも",
+      "kana": "でも",
+      "ro": "demo",
+      "en": "but; however",
+      "examples": [
+        {
+          "ja": "行きたいです。でも忙しいです。",
+          "kana": "いきたいです。 でも いそがしいです。",
+          "ro": "ikitaidesu。 demo isogashiidesu。",
+          "en": "I want to go, but I’m busy."
+        },
+        {
+          "ja": "休みです。でも出かけません。",
+          "kana": "やすみです。 でも でかけません。",
+          "ro": "yasumidesu。 demo dekakemasen。",
+          "en": "It’s my day off, but I won’t go out."
+        },
+        {
+          "ja": "野菜は好きです。でも苦手な物もあります。",
+          "kana": "やさいは すきです。 でも にがてな ものも あります。",
+          "ro": "yasaiha sukidesu。 demo nigatena monomo arimasu。",
+          "en": "I like vegetables, but there are some I dislike."
+        },
+        {
+          "ja": "簡単です。でも気をつけてください。",
+          "kana": "かんたんです。 でも きを つけて ください。",
+          "ro": "kantandesu。 demo kio tsukete kudasai。",
+          "en": "It’s easy, but please be careful."
+        },
+        {
+          "ja": "行きます。でも少し遅れます。",
+          "kana": "いきます。 でも すこし おくれます。",
+          "ro": "ikimasu。 demo sukoshi okuremasu。",
+          "en": "I’ll go, but I’ll be a little late."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-003-sorekara",
+      "ja": "それから",
+      "kana": "それから",
+      "ro": "sorekara",
+      "en": "and then; after that",
+      "examples": [
+        {
+          "ja": "仕事を終わりました。それから家に帰りました。",
+          "kana": "しごとを おわりました。 それから うちに かえりました。",
+          "ro": "shigotoo owarimashita。 sorekara uchini kaerimashita。",
+          "en": "I finished work, and after that went home."
+        },
+        {
+          "ja": "朝シャワーを浴びます。それから朝ごはんを食べます。",
+          "kana": "あさ しゃわーを あびます。 それから あさごはんを たべます。",
+          "ro": "asa shawaーo abimasu。 sorekara asagohano tabemasu。",
+          "en": "I take a shower, and then eat breakfast."
+        },
+        {
+          "ja": "勉強しました。それから寝ました。",
+          "kana": "べんきょうしました。 それから ねました。",
+          "ro": "benkyoushimashita。 sorekara nemashita。",
+          "en": "I studied, and then slept."
+        },
+        {
+          "ja": "銀行に行きました。それから買い物をしました。",
+          "kana": "ぎんこうに いきました。 それから かいものを しました。",
+          "ro": "ginkouni ikimashita。 sorekara kaimonoo shimashita。",
+          "en": "I went to the bank, and then shopped."
+        },
+        {
+          "ja": "電話をしました。それから出かけました。",
+          "kana": "でんわを しました。 それから でかけました。",
+          "ro": "denwao shimashita。 sorekara dekakemashita。",
+          "en": "I made a phone call, and then went out."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-004-soreni",
+      "ja": "それに",
+      "kana": "それに",
+      "ro": "soreni",
+      "en": "in addition; moreover",
+      "examples": [
+        {
+          "ja": "この店は安いです。それに品も良いです。",
+          "kana": "この みせは やすいです。 それに しなも よいです。",
+          "ro": "kono miseha yasuidesu。 soreni shinamo yoidesu。",
+          "en": "This shop is cheap, and in addition the goods are good."
+        },
+        {
+          "ja": "今日は暖かいです。それに風も弱いです。",
+          "kana": "きょうは あたたかいです。 それに かぜも よわいです。",
+          "ro": "kyouha atatakaidesu。 soreni kazemo yowaidesu。",
+          "en": "It’s warm today; moreover, the wind is weak."
+        },
+        {
+          "ja": "この本は優しいです。それに面白いです。",
+          "kana": "この ほんは やさしいです。 それに おもしろいです。",
+          "ro": "kono honha yasashiidesu。 soreni omoshiroidesu。",
+          "en": "This book is easy and also interesting."
+        },
+        {
+          "ja": "映画は長いです。それに人が多いです。",
+          "kana": "えいがは ながいです。 それに ひとが おおいです。",
+          "ro": "eigaha nagaidesu。 soreni hitoga ooidesu。",
+          "en": "The movie is long, and there are many people."
+        },
+        {
+          "ja": "この料理は辛いです。それに熱いです。",
+          "kana": "この りょうりは からいです。 それに あついです。",
+          "ro": "kono ryouriha karaidesu。 soreni atsuidesu。",
+          "en": "This dish is spicy, and also hot."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-005-dakara",
+      "ja": "だから",
+      "kana": "だから",
+      "ro": "dakara",
+      "en": "so; therefore",
+      "examples": [
+        {
+          "ja": "雨です。だから傘を持って行きます。",
+          "kana": "あめです。 だから かさを もって いきます。",
+          "ro": "amedesu。 dakara kasao motte ikimasu。",
+          "en": "It’s raining, so I’ll bring an umbrella."
+        },
+        {
+          "ja": "疲れました。だから早く寝ます。",
+          "kana": "つかれました。 だから はやく ねます。",
+          "ro": "tsukaremashita。 dakara hayaku nemasu。",
+          "en": "I’m tired, so I’ll sleep early."
+        },
+        {
+          "ja": "お腹が空きました。だから食べます。",
+          "kana": "おなかが すきました。 だから たべます。",
+          "ro": "onakaga sukimashita。 dakara tabemasu。",
+          "en": "I’m hungry, so I’ll eat."
+        },
+        {
+          "ja": "暇です。だから散歩します。",
+          "kana": "ひまです。 だから さんぽ します。",
+          "ro": "himadesu。 dakara sanpo shimasu。",
+          "en": "I’m free, so I’ll take a walk."
+        },
+        {
+          "ja": "熱があります。だから今日は行きません。",
+          "kana": "ねつが あります。 だから きょうは いきません。",
+          "ro": "netsuga arimasu。 dakara kyouha ikimasen。",
+          "en": "I have a fever, so I won’t go today."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-006-shikashi",
+      "ja": "しかし",
+      "kana": "しかし",
+      "ro": "shikashi",
+      "en": "however; nevertheless",
+      "examples": [
+        {
+          "ja": "雨です。しかし出かけます。",
+          "kana": "あめです。 しかし でかけます。",
+          "ro": "amedesu。 shikashi dekakemasu。",
+          "en": "It’s raining; however, I’ll go out."
+        },
+        {
+          "ja": "優しい質問です。しかし答えは難しいです。",
+          "kana": "やさしい しつもん です。 しかし こたえは むずかしいです。",
+          "ro": "yasashii shitsumon desu。 shikashi kotaeha muzukashiidesu。",
+          "en": "The question is easy; however, the answer is hard."
+        },
+        {
+          "ja": "早く行きました。しかし間に合いませんでした。",
+          "kana": "はやく いきました。 しかし まにあいませんでした。",
+          "ro": "hayaku ikimashita。 shikashi maniaimasendeshita。",
+          "en": "I went early; however, I didn’t make it."
+        },
+        {
+          "ja": "たくさん勉強しました。しかし忘れました。",
+          "kana": "たくさん べんきょうしました。 しかし わすれました。",
+          "ro": "takusan benkyoushimashita。 shikashi wasuremashita。",
+          "en": "I studied a lot; however, I forgot."
+        },
+        {
+          "ja": "安いです。しかし品は良くありません。",
+          "kana": "やすいです。 しかし しなは よく ありません。",
+          "ro": "yasuidesu。 shikashi shinaha yoku arimasen。",
+          "en": "It’s cheap; however, the quality isn’t good."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-007-soredemo",
+      "ja": "それでも",
+      "kana": "それでも",
+      "ro": "soredemo",
+      "en": "even so; nevertheless",
+      "examples": [
+        {
+          "ja": "雨です。それでも走ります。",
+          "kana": "あめです。 それでも はしります。",
+          "ro": "amedesu。 soredemo hashirimasu。",
+          "en": "It’s raining, but even so I’ll run."
+        },
+        {
+          "ja": "疲れました。それでも仕事を続けます。",
+          "kana": "つかれました。 それでも しごとを つづけます。",
+          "ro": "tsukaremashita。 soredemo shigotoo tsuzukemasu。",
+          "en": "I’m tired; even so, I’ll keep working."
+        },
+        {
+          "ja": "熱があります。それでも学校へ行きます。",
+          "kana": "ねつが あります。 それでも がっこうへ いきます。",
+          "ro": "netsuga arimasu。 soredemo gakkouhe ikimasu。",
+          "en": "I have a fever; even so, I’ll go to school."
+        },
+        {
+          "ja": "痛いです。それでも練習します。",
+          "kana": "いたいです。 それでも れんしゅう します。",
+          "ro": "itaidesu。 soredemo renshuu shimasu。",
+          "en": "It hurts; even so, I’ll practice."
+        },
+        {
+          "ja": "忙しいです。それでも手伝います。",
+          "kana": "いそがしいです。 それでも てつだいます。",
+          "ro": "isogashiidesu。 soredemo tetsudaimasu。",
+          "en": "I’m busy; even so, I’ll help."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-008-soretomo",
+      "ja": "それとも",
+      "kana": "それとも",
+      "ro": "soretomo",
+      "en": "or (in questions)",
+      "examples": [
+        {
+          "ja": "紅茶にしますか。それともコーヒーにしますか。",
+          "kana": "こうちゃに しますか。 それとも こーひーに しますか。",
+          "ro": "kouchani shimasuka。 soretomo koーhiーni shimasuka。",
+          "en": "Will you have tea, or coffee?"
+        },
+        {
+          "ja": "電車で行きますか。それとも歩いて行きますか。",
+          "kana": "でんしゃで いきますか。 それとも あるいて いきますか。",
+          "ro": "denshade ikimasuka。 soretomo aruite ikimasuka。",
+          "en": "Go by train, or on foot?"
+        },
+        {
+          "ja": "今日行きますか。それとも明日ですか。",
+          "kana": "きょう いきますか。 それとも あした ですか。",
+          "ro": "kyou ikimasuka。 soretomo ashita desuka。",
+          "en": "Will you go today, or tomorrow?"
+        },
+        {
+          "ja": "家で食べますか。それとも外で食べますか。",
+          "kana": "うちで たべますか。 それとも そとで たべますか。",
+          "ro": "uchide tabemasuka。 soretomo sotode tabemasuka。",
+          "en": "Eat at home, or outside?"
+        },
+        {
+          "ja": "勉強しますか。それとも寝ますか。",
+          "kana": "べんきょう しますか。 それとも ねますか。",
+          "ro": "benkyou shimasuka。 soretomo nemasuka。",
+          "en": "Study, or sleep?"
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-009-sorede",
+      "ja": "それで",
+      "kana": "それで",
+      "ro": "sorede",
+      "en": "so; and so; because of that",
+      "examples": [
+        {
+          "ja": "電車が遅れました。それで遅くなりました。",
+          "kana": "でんしゃが おくれました。 それで おそく なりました。",
+          "ro": "denshaga okuremashita。 sorede osoku narimashita。",
+          "en": "The train was late, so I was late."
+        },
+        {
+          "ja": "雨でした。それで遠足は中止です。",
+          "kana": "あめでした。 それで えんそくは ちゅうし です。",
+          "ro": "amedeshita。 sorede ensokuha chuushi desu。",
+          "en": "It rained, so the excursion was canceled."
+        },
+        {
+          "ja": "熱がありました。それで休みました。",
+          "kana": "ねつが ありました。 それで やすみました。",
+          "ro": "netsuga arimashita。 sorede yasumimashita。",
+          "en": "I had a fever, so I took a day off."
+        },
+        {
+          "ja": "道が混んでいました。それで間に合いませんでした。",
+          "kana": "みちが こんで いました。 それで まにあいませんでした。",
+          "ro": "michiga konde imashita。 sorede maniaimasendeshita。",
+          "en": "The road was crowded, so I didn’t make it."
+        },
+        {
+          "ja": "電話を忘れました。それで帰りました。",
+          "kana": "でんわを わすれました。 それで かえりました。",
+          "ro": "denwao wasuremashita。 sorede kaerimashita。",
+          "en": "I forgot my phone, so I went home."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-010-nazenara",
+      "ja": "なぜなら",
+      "kana": "なぜなら",
+      "ro": "nazenara",
+      "en": "because; the reason is",
+      "examples": [
+        {
+          "ja": "行きません。なぜならお金がないからです。",
+          "kana": "いきません。 なぜなら おかねが ない からです。",
+          "ro": "ikimasen。 nazenara okanega nai karadesu。",
+          "en": "I won’t go, because I have no money."
+        },
+        {
+          "ja": "寝ます。なぜなら疲れているからです。",
+          "kana": "ねます。 なぜなら つかれて いる からです。",
+          "ro": "nemasu。 nazenara tsukarete iru karadesu。",
+          "en": "I’ll sleep, because I’m tired."
+        },
+        {
+          "ja": "出かけません。なぜなら雨だからです。",
+          "kana": "でかけません。 なぜなら あめ だからです。",
+          "ro": "dekakemasen。 nazenara ame dakaradesu。",
+          "en": "I won’t go out, because it’s raining."
+        },
+        {
+          "ja": "勉強します。なぜならテストがあるからです。",
+          "kana": "べんきょう します。 なぜなら てすとが ある からです。",
+          "ro": "benkyou shimasu。 nazenara tesutoga aru karadesu。",
+          "en": "I’ll study, because there’s a test."
+        },
+        {
+          "ja": "急ぎます。なぜなら時間がないからです。",
+          "kana": "いそぎます。 なぜなら じかんが ない からです。",
+          "ro": "isogimasu。 nazenara jikanga nai karadesu。",
+          "en": "I’ll hurry, because there’s no time."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-011-dewa",
+      "ja": "では",
+      "kana": "では",
+      "ro": "dewa",
+      "en": "well then; in that case",
+      "examples": [
+        {
+          "ja": "では、始めましょう。",
+          "kana": "では、 はじめましょう。",
+          "ro": "deha、 hajimemashou。",
+          "en": "Well then, let’s begin."
+        },
+        {
+          "ja": "では、また明日。",
+          "kana": "では、 また あした。",
+          "ro": "deha、 mata ashita。",
+          "en": "Well then, see you tomorrow."
+        },
+        {
+          "ja": "では、失礼します。",
+          "kana": "では、 しつれい します。",
+          "ro": "deha、 shitsurei shimasu。",
+          "en": "Well then, excuse me."
+        },
+        {
+          "ja": "では、出発します。",
+          "kana": "では、 しゅっぱつ します。",
+          "ro": "deha、 shuppatsu shimasu。",
+          "en": "Well then, we’ll depart."
+        },
+        {
+          "ja": "では、そうしましょう。",
+          "kana": "では、 そうしましょう。",
+          "ro": "deha、 soushimashou。",
+          "en": "Well then, let’s do that."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-012-tokorode",
+      "ja": "ところで",
+      "kana": "ところで",
+      "ro": "tokorode",
+      "en": "by the way",
+      "examples": [
+        {
+          "ja": "ところで、今日は暇ですか。",
+          "kana": "ところで、 きょうは ひま ですか。",
+          "ro": "tokorode、 kyouha hima desuka。",
+          "en": "By the way, are you free today?"
+        },
+        {
+          "ja": "ところで、あの本はどうでしたか。",
+          "kana": "ところで、 あの ほんは どう でしたか。",
+          "ro": "tokorode、 ano honha dou deshitaka。",
+          "en": "By the way, how was that book?"
+        },
+        {
+          "ja": "ところで、準備はできましたか。",
+          "kana": "ところで、 じゅんびは できましたか。",
+          "ro": "tokorode、 junbiha dekimashitaka。",
+          "en": "By the way, are you ready?"
+        },
+        {
+          "ja": "ところで、値段はいくらですか。",
+          "kana": "ところで、 ねだんは いくら ですか。",
+          "ro": "tokorode、 nedanha ikura desuka。",
+          "en": "By the way, how much is it?"
+        },
+        {
+          "ja": "ところで、明日行きますか。",
+          "kana": "ところで、 あした いきますか。",
+          "ro": "tokorode、 ashita ikimasuka。",
+          "en": "By the way, are you going tomorrow?"
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-013-mazu",
+      "ja": "まず",
+      "kana": "まず",
+      "ro": "mazu",
+      "en": "first; to begin with",
+      "examples": [
+        {
+          "ja": "まず掃除をします。",
+          "kana": "まず そうじを します。",
+          "ro": "mazu soujio shimasu。",
+          "en": "First, I’ll clean."
+        },
+        {
+          "ja": "まず手を洗ってください。",
+          "kana": "まず てを あらって ください。",
+          "ro": "mazu teo aratte kudasai。",
+          "en": "First, please wash your hands."
+        },
+        {
+          "ja": "まず料理の準備をします。",
+          "kana": "まず りょうりの じゅんびを します。",
+          "ro": "mazu ryourino junbio shimasu。",
+          "en": "First, I’ll prepare the cooking."
+        },
+        {
+          "ja": "まず一度試してみます。",
+          "kana": "まず いちど ためして みます。",
+          "ro": "mazu ichido tameshite mimasu。",
+          "en": "First, I’ll try once."
+        },
+        {
+          "ja": "まず電話をします。",
+          "kana": "まず でんわを します。",
+          "ro": "mazu denwao shimasu。",
+          "en": "First, I’ll make a phone call."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-014-soredewa",
+      "ja": "それでは",
+      "kana": "それでは",
+      "ro": "soredewa",
+      "en": "well then; if so",
+      "examples": [
+        {
+          "ja": "それでは、会議を始めます。",
+          "kana": "それでは、 かいぎを はじめます。",
+          "ro": "soredeha、 kaigio hajimemasu。",
+          "en": "Well then, we will start the meeting."
+        },
+        {
+          "ja": "それでは、ここで終わります。",
+          "kana": "それでは、 ここで おわります。",
+          "ro": "soredeha、 kokode owarimasu。",
+          "en": "Well then, we’ll finish here."
+        },
+        {
+          "ja": "それでは、お気をつけて。",
+          "kana": "それでは、 おきを つけて。",
+          "ro": "soredeha、 okio tsukete。",
+          "en": "Well then, take care."
+        },
+        {
+          "ja": "それでは、準備してください。",
+          "kana": "それでは、 じゅんび してください。",
+          "ro": "soredeha、 junbi shitekudasai。",
+          "en": "Well then, please get ready."
+        },
+        {
+          "ja": "それでは、また会いましょう。",
+          "kana": "それでは、 また あいましょう。",
+          "ro": "soredeha、 mata aimashou。",
+          "en": "Well then, let’s meet again."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-015-sonoato",
+      "ja": "そのあと",
+      "kana": "そのあと",
+      "ro": "sono ato",
+      "en": "after that; afterwards",
+      "examples": [
+        {
+          "ja": "学校に行きました。そのあと図書館へ行きました。",
+          "kana": "がっこうに いきました。 そのあと としょかんへ いきました。",
+          "ro": "gakkouni ikimashita。 sonoato toshokanhe ikimashita。",
+          "en": "I went to school; after that, to the library."
+        },
+        {
+          "ja": "ご飯を食べました。そのあと勉強しました。",
+          "kana": "ごはんを たべました。 そのあと べんきょう しました。",
+          "ro": "gohano tabemashita。 sonoato benkyou shimashita。",
+          "en": "I ate, and after that studied."
+        },
+        {
+          "ja": "仕事をしました。そのあと買い物しました。",
+          "kana": "しごとを しました。 そのあと かいもの しました。",
+          "ro": "shigotoo shimashita。 sonoato kaimono shimashita。",
+          "en": "I worked, and after that shopped."
+        },
+        {
+          "ja": "映画を見ました。そのあと帰りました。",
+          "kana": "えいがを みました。 そのあと かえりました。",
+          "ro": "eigao mimashita。 sonoato kaerimashita。",
+          "en": "I watched a movie; after that went home."
+        },
+        {
+          "ja": "掃除をしました。そのあと少し休みました。",
+          "kana": "そうじを しました。 そのあと すこし やすみました。",
+          "ro": "soujio shimashita。 sonoato sukoshi yasumimashita。",
+          "en": "I cleaned, and then rested a little."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-016-sonotoki",
+      "ja": "そのとき",
+      "kana": "そのとき",
+      "ro": "sono toki",
+      "en": "at that time; then",
+      "examples": [
+        {
+          "ja": "バスが来ました。そのとき雨が降りました。",
+          "kana": "ばすが きました。 そのとき あめが ふり ました。",
+          "ro": "basuga kimashita。 sonotoki amega furi mashita。",
+          "en": "The bus came; at that time, it started raining."
+        },
+        {
+          "ja": "電話が鳴りました。そのとき出かけるところでした。",
+          "kana": "でんわが なりました。 そのとき でかける ところ でした。",
+          "ro": "denwaga narimashita。 sonotoki dekakeru tokoro deshita。",
+          "en": "The phone rang; at that time, I was about to go out."
+        },
+        {
+          "ja": "犬が鳴いた。そのとき子どもは寝ていました。",
+          "kana": "いぬが ないた。 そのとき こどもは ねて いました。",
+          "ro": "inuga naita。 sonotoki kodomoha nete imashita。",
+          "en": "A dog barked; at that time, the child was sleeping."
+        },
+        {
+          "ja": "地震があった。そのとき家にいました。",
+          "kana": "じしんが あった。 そのとき いえ に いました。",
+          "ro": "jishinga atta。 sonotoki ie ni imashita。",
+          "en": "There was an earthquake; at that time, I was home."
+        },
+        {
+          "ja": "試験が始まった。そのとき緊張しました。",
+          "kana": "しけんが はじまった。 そのとき きんちょう しました。",
+          "ro": "shikenga hajimatta。 sonotoki kinchou shimashita。",
+          "en": "The exam started; at that time, I got nervous."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-017-tsumari",
+      "ja": "つまり",
+      "kana": "つまり",
+      "ro": "tsumari",
+      "en": "in short; that is",
+      "examples": [
+        {
+          "ja": "あの人は忙しい。つまり今は会えません。",
+          "kana": "あの ひとは いそがしい。 つまり いまは あえません。",
+          "ro": "ano hitoha isogashii。 tsumari imaha aemasen。",
+          "en": "He is busy; in short, we can’t meet now."
+        },
+        {
+          "ja": "金がない。つまり買えません。",
+          "kana": "かねが ない。 つまり かえません。",
+          "ro": "kanega nai。 tsumari kaemasen。",
+          "en": "I have no money; in short, I can’t buy it."
+        },
+        {
+          "ja": "熱がある。つまり今日は休みます。",
+          "kana": "ねつが ある。 つまり きょうは やすみ ます。",
+          "ro": "netsuga aru。 tsumari kyouha yasumi masu。",
+          "en": "I have a fever; in short, I’ll rest today."
+        },
+        {
+          "ja": "ここは危険。つまり近寄らないで。",
+          "kana": "ここは きけん。 つまり ちかよらないで。",
+          "ro": "kokoha kiken。 tsumari chikayoranaide。",
+          "en": "This place is dangerous; in short, don’t come close."
+        },
+        {
+          "ja": "電気がつかない。つまり故障です。",
+          "kana": "でんきが つかない。 つまり こしょう です。",
+          "ro": "denkiga tsukanai。 tsumari koshou desu。",
+          "en": "The light won’t turn on; in short, it’s broken."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-018-keredomo",
+      "ja": "けれども",
+      "kana": "けれども",
+      "ro": "keredomo",
+      "en": "but; although",
+      "examples": [
+        {
+          "ja": "行きたいけれども忙しいです。",
+          "kana": "いきたい けれども いそがしい です。",
+          "ro": "ikitai keredomo isogashii desu。",
+          "en": "I want to go, but I’m busy."
+        },
+        {
+          "ja": "優しいけれども退屈です。",
+          "kana": "やさしい けれども たいくつ です。",
+          "ro": "yasashii keredomo taikutsu desu。",
+          "en": "It’s easy, but boring."
+        },
+        {
+          "ja": "好きけれども買えません。",
+          "kana": "すき けれども かえません。",
+          "ro": "suki keredomo kaemasen。",
+          "en": "I like it, but I can’t buy it."
+        },
+        {
+          "ja": "便利けれども高いです。",
+          "kana": "べんり けれども たかい です。",
+          "ro": "benri keredomo takai desu。",
+          "en": "It’s convenient, but expensive."
+        },
+        {
+          "ja": "雨けれども出かけます。",
+          "kana": "あめ けれども でかけます。",
+          "ro": "ame keredomo dekakemasu。",
+          "en": "It’s raining, but I’ll go out."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-019-moshi",
+      "ja": "もし",
+      "kana": "もし",
+      "ro": "moshi",
+      "en": "if; in case",
+      "examples": [
+        {
+          "ja": "もし雨なら家にいます。",
+          "kana": "もし あめなら うちに います。",
+          "ro": "moshi amenara uchini imasu。",
+          "en": "If it rains, I’ll stay home."
+        },
+        {
+          "ja": "もし暇なら手伝ってください。",
+          "kana": "もし ひまなら てつだって ください。",
+          "ro": "moshi himanara tetsudatte kudasai。",
+          "en": "If you’re free, please help."
+        },
+        {
+          "ja": "もし熱があれば休みます。",
+          "kana": "もし ねつが あれば やすみます。",
+          "ro": "moshi netsuga areba yasumimasu。",
+          "en": "If I have a fever, I’ll rest."
+        },
+        {
+          "ja": "もし時間があれば行きます。",
+          "kana": "もし じかんが あれば いきます。",
+          "ro": "moshi jikanga areba ikimasu。",
+          "en": "If I have time, I’ll go."
+        },
+        {
+          "ja": "もし電話があれば教えてください。",
+          "kana": "もし でんわが あれば おしえて ください。",
+          "ro": "moshi denwaga areba oshiete kudasai。",
+          "en": "If there’s a phone call, please tell me."
+        }
+      ]
+    },
+    {
+      "id": "n5-conj-020-tatoeba",
+      "ja": "たとえば",
+      "kana": "たとえば",
+      "ro": "tatoeba",
+      "en": "for example",
+      "examples": [
+        {
+          "ja": "たとえば寿司や天ぷらが好きです。",
+          "kana": "たとえば すしや てんぷらが すきです。",
+          "ro": "tatoeba sushiya tenpuraga sukidesu。",
+          "en": "For example, I like sushi and tempura."
+        },
+        {
+          "ja": "たとえば日本ではお茶を飲みます。",
+          "kana": "たとえば にほんでは おちゃを のみます。",
+          "ro": "tatoeba nihondeha ochao nomimasu。",
+          "en": "For example, in Japan people drink tea."
+        },
+        {
+          "ja": "たとえば犬や猫がいます。",
+          "kana": "たとえば いぬや ねこが います。",
+          "ro": "tatoeba inuya nekoga imasu。",
+          "en": "For example, there are dogs and cats."
+        },
+        {
+          "ja": "たとえば公園で遊びます。",
+          "kana": "たとえば こうえんで あそびます。",
+          "ro": "tatoeba kouende asobimasu。",
+          "en": "For example, we play in the park."
+        },
+        {
+          "ja": "たとえば勉強の後で散歩します。",
+          "kana": "たとえば べんきょうの あとで さんぽ します。",
+          "ro": "tatoeba benkyouno atode sanpo shimasu。",
+          "en": "For example, I take a walk after studying."
+        }
+      ]
+    }
+  ]
+}

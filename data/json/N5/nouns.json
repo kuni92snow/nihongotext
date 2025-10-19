@@ -1,0 +1,4676 @@
+[
+  {
+    "id": "n5-noun-001",
+    "ja": "学校",
+    "kana": "がっこう",
+    "ro": "gakkou",
+    "en": "school",
+    "examples": [
+      {
+        "ja": "私は毎日学校へ行きます。",
+        "kana": "わたし は まいにち がっこう へ いきます。",
+        "ro": "watashi wa mainichi gakkou e ikimasu.",
+        "en": "I go to school every day."
+      },
+      {
+        "ja": "学校は八時に始まります。",
+        "kana": "がっこう は はちじ に はじまります。",
+        "ro": "gakkou wa hachiji ni hajimarimasu.",
+        "en": "School starts at eight o’clock."
+      },
+      {
+        "ja": "学校で友達と遊びます。",
+        "kana": "がっこう で ともだち と あそびます。",
+        "ro": "gakkou de tomodachi to asobimasu.",
+        "en": "I play with my friends at school."
+      },
+      {
+        "ja": "学校の先生はやさしいです。",
+        "kana": "がっこう の せんせい は やさしい です。",
+        "ro": "gakkou no sensei wa yasashii desu.",
+        "en": "The teacher at school is kind."
+      },
+      {
+        "ja": "今日は学校が休みです。",
+        "kana": "きょう は がっこう が やすみ です。",
+        "ro": "kyou wa gakkou ga yasumi desu.",
+        "en": "School is closed today."
+      },
+      {
+        "ja": "毎日学校へ行きます。",
+        "kana": "まいにち がっこう へ いきます。",
+        "ro": "mainichi gakkou e ikimasu.",
+        "en": "I go to school every day."
+      },
+      {
+        "ja": "友達と学校で話しました。",
+        "kana": "ともだち と がっこう で はなしました。",
+        "ro": "tomodachi to gakkou de hanashimashita.",
+        "en": "I talked with my friend at school."
+      },
+      {
+        "ja": "学校の近くに公園があります。",
+        "kana": "がっこう の ちかく に こうえん が あります。",
+        "ro": "gakkou no chikaku ni kouen ga arimasu.",
+        "en": "There is a park near the school."
+      },
+      {
+        "ja": "今日は学校を休みました。",
+        "kana": "きょう は がっこう を やすみました。",
+        "ro": "kyou wa gakkou o yasumimashita.",
+        "en": "I was absent from school today."
+      },
+      {
+        "ja": "学校で友達と遊びました。",
+        "kana": "がっこう で ともだち と あそびました。",
+        "ro": "gakkou de tomodachi to asobimashita.",
+        "en": "I played with my friends at school."
+      },
+      {
+        "ja": "学校の先生は親切です。",
+        "kana": "がっこう の せんせい は しんせつ です。",
+        "ro": "gakkou no sensei wa shinsetsu desu.",
+        "en": "The teachers at school are kind."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-002",
+    "ja": "会社",
+    "kana": "かいしゃ",
+    "ro": "kaisha",
+    "en": "company",
+    "examples": [
+      {
+        "ja": "兄は大きい会社で働いています。",
+        "kana": "あに は おおきい かいしゃ で はたらいて います。",
+        "ro": "ani wa ookii kaisha de hataraite imasu.",
+        "en": "My older brother works at a big company."
+      },
+      {
+        "ja": "会社は駅の近くにあります。",
+        "kana": "かいしゃ は えき の ちかく に あります。",
+        "ro": "kaisha wa eki no chikaku ni arimasu.",
+        "en": "The company is near the station."
+      },
+      {
+        "ja": "今日は会社を休みます。",
+        "kana": "きょう は かいしゃ を やすみます。",
+        "ro": "kyou wa kaisha o yasumimasu.",
+        "en": "I will take a day off from work today."
+      },
+      {
+        "ja": "会社の人と昼ご飯を食べました。",
+        "kana": "かいしゃ の ひと と ひるごはん を たべました。",
+        "ro": "kaisha no hito to hirugohan o tabemashita.",
+        "en": "I had lunch with my coworkers."
+      },
+      {
+        "ja": "会社でミーティングがあります。",
+        "kana": "かいしゃ で みーてぃんぐ が あります。",
+        "ro": "kaisha de miitingu ga arimasu.",
+        "en": "There is a meeting at the company."
+      },
+      {
+        "ja": "父は会社で働いています。",
+        "kana": "ちち は かいしゃ で はたらいて います。",
+        "ro": "chichi wa kaisha de hataraite imasu.",
+        "en": "My father works at a company."
+      },
+      {
+        "ja": "会社は九時に始まります。",
+        "kana": "かいしゃ は くじ に はじまります。",
+        "ro": "kaisha wa kuji ni hajimarimasu.",
+        "en": "The company starts work at nine o’clock."
+      },
+      {
+        "ja": "会社の同僚と昼ごはんを食べました。",
+        "kana": "かいしゃ の どうりょう と ひるごはん を たべました。",
+        "ro": "kaisha no douryou to hirugohan o tabemashita.",
+        "en": "I had lunch with a coworker from the company."
+      },
+      {
+        "ja": "新しい会社に入りました。",
+        "kana": "あたらしい かいしゃ に はいりました。",
+        "ro": "atarashii kaisha ni hairimashita.",
+        "en": "I joined a new company."
+      },
+      {
+        "ja": "会社の前でバスを待ちます。",
+        "kana": "かいしゃ の まえ で ばす を まちます。",
+        "ro": "kaisha no mae de basu o machimasu.",
+        "en": "I wait for the bus in front of the company."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-003",
+    "ja": "先生",
+    "kana": "せんせい",
+    "ro": "sensei",
+    "en": "teacher",
+    "examples": [
+      {
+        "ja": "先生はやさしいです。",
+        "kana": "せんせい は やさしい です。",
+        "ro": "sensei wa yasashii desu.",
+        "en": "The teacher is kind."
+      },
+      {
+        "ja": "新しい先生が来ました。",
+        "kana": "あたらしい せんせい が きました。",
+        "ro": "atarashii sensei ga kimashita.",
+        "en": "A new teacher arrived."
+      },
+      {
+        "ja": "先生に質問しました。",
+        "kana": "せんせい に しつもん しました。",
+        "ro": "sensei ni shitsumon shimashita.",
+        "en": "I asked the teacher a question."
+      },
+      {
+        "ja": "先生は英語も話します。",
+        "kana": "せんせい は えいご も はなします。",
+        "ro": "sensei wa eigo mo hanashimasu.",
+        "en": "The teacher also speaks English."
+      },
+      {
+        "ja": "先生の授業は楽しいです。",
+        "kana": "せんせい の じゅぎょう は たのしい です。",
+        "ro": "sensei no jugyou wa tanoshii desu.",
+        "en": "The teacher’s class is fun."
+      },
+      {
+        "ja": "先生はとても親切です。",
+        "kana": "せんせい は とても しんせつ です。",
+        "ro": "sensei wa totemo shinsetsu desu.",
+        "en": "The teacher is very kind."
+      },
+      {
+        "ja": "先生に日本語を習います。",
+        "kana": "せんせい に にほんご を ならいます。",
+        "ro": "sensei ni nihongo o naraimasu.",
+        "en": "I learn Japanese from my teacher."
+      },
+      {
+        "ja": "先生はクラスで話しています。",
+        "kana": "せんせい は くらす で はなして います。",
+        "ro": "sensei wa kurasu de hanashite imasu.",
+        "en": "The teacher is talking in the classroom."
+      },
+      {
+        "ja": "明日先生に会います。",
+        "kana": "あした せんせい に あいます。",
+        "ro": "ashita sensei ni aimasu.",
+        "en": "I will meet the teacher tomorrow."
+      },
+      {
+        "ja": "先生の話をよく聞いてください。",
+        "kana": "せんせい の はなし を よく きいて ください。",
+        "ro": "sensei no hanashi o yoku kiite kudasai.",
+        "en": "Please listen carefully to the teacher’s talk."
+      },
+      {
+        "ja": "先生は日本語を教えます。",
+        "kana": "せんせい は にほんご を おしえます。",
+        "ro": "sensei wa nihongo o oshiemasu.",
+        "en": "The teacher teaches Japanese."
+      },
+      {
+        "ja": "先生の話を聞いてください。",
+        "kana": "せんせい の はなし を きいて ください。",
+        "ro": "sensei no hanashi o kiite kudasai.",
+        "en": "Please listen to the teacher’s talk."
+      },
+      {
+        "ja": "先生はとても元気です。",
+        "kana": "せんせい は とても げんき です。",
+        "ro": "sensei wa totemo genki desu.",
+        "en": "The teacher is very energetic."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-004",
+    "ja": "友達",
+    "kana": "ともだち",
+    "ro": "tomodachi",
+    "en": "friend",
+    "examples": [
+      {
+        "ja": "友達と映画を見ます。",
+        "kana": "ともだち と えいが を みます。",
+        "ro": "tomodachi to eiga o mimasu.",
+        "en": "I watch a movie with my friend."
+      },
+      {
+        "ja": "友達の家へ行きました。",
+        "kana": "ともだち の いえ へ いきました。",
+        "ro": "tomodachi no ie e ikimashita.",
+        "en": "I went to my friend’s house."
+      },
+      {
+        "ja": "友達から電話がありました。",
+        "kana": "ともだち から でんわ が ありました。",
+        "ro": "tomodachi kara denwa ga arimashita.",
+        "en": "I got a call from my friend."
+      },
+      {
+        "ja": "友達と買い物をします。",
+        "kana": "ともだち と かいもの を します。",
+        "ro": "tomodachi to kaimono o shimasu.",
+        "en": "I go shopping with my friend."
+      },
+      {
+        "ja": "友達は日本人です。",
+        "kana": "ともだち は にほんじん です。",
+        "ro": "tomodachi wa nihonjin desu.",
+        "en": "My friend is Japanese."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-005",
+    "ja": "日本",
+    "kana": "にほん",
+    "ro": "nihon",
+    "en": "Japan",
+    "examples": [
+      {
+        "ja": "日本へ旅行したいです。",
+        "kana": "にほん へ りょこう したい です。",
+        "ro": "nihon e ryokou shitai desu.",
+        "en": "I want to travel to Japan."
+      },
+      {
+        "ja": "日本の文化を勉強しています。",
+        "kana": "にほん の ぶんか を べんきょう して います。",
+        "ro": "nihon no bunka o benkyou shite imasu.",
+        "en": "I study Japanese culture."
+      },
+      {
+        "ja": "日本の料理が好きです。",
+        "kana": "にほん の りょうり が すき です。",
+        "ro": "nihon no ryouri ga suki desu.",
+        "en": "I like Japanese food."
+      },
+      {
+        "ja": "日本の映画を見ました。",
+        "kana": "にほん の えいが を みました。",
+        "ro": "nihon no eiga o mimashita.",
+        "en": "I watched a Japanese movie."
+      },
+      {
+        "ja": "日本はとても美しい国です。",
+        "kana": "にほん は とても うつくしい くに です。",
+        "ro": "nihon wa totemo utsukushii kuni desu.",
+        "en": "Japan is a very beautiful country."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-006",
+    "ja": "本",
+    "kana": "ほん",
+    "ro": "hon",
+    "en": "book",
+    "examples": [
+      {
+        "ja": "この本はとてもおもしろいです。",
+        "kana": "この ほん は とても おもしろい です。",
+        "ro": "kono hon wa totemo omoshiroi desu.",
+        "en": "This book is very interesting."
+      },
+      {
+        "ja": "私は毎晩本を読みます。",
+        "kana": "わたし は まいばん ほん を よみます。",
+        "ro": "watashi wa maiban hon o yomimasu.",
+        "en": "I read a book every night."
+      },
+      {
+        "ja": "図書館で本を借りました。",
+        "kana": "としょかん で ほん を かりました。",
+        "ro": "toshokan de hon o karimashita.",
+        "en": "I borrowed a book from the library."
+      },
+      {
+        "ja": "友達に本を貸しました。",
+        "kana": "ともだち に ほん を かしました。",
+        "ro": "tomodachi ni hon o kashimashita.",
+        "en": "I lent a book to my friend."
+      },
+      {
+        "ja": "机の上に本があります。",
+        "kana": "つくえ の うえ に ほん が あります。",
+        "ro": "tsukue no ue ni hon ga arimasu.",
+        "en": "There is a book on the desk."
+      },
+      {
+        "ja": "日本語の本を読みます。",
+        "kana": "にほんご の ほん を よみます。",
+        "ro": "nihongo no hon o yomimasu.",
+        "en": "I read a Japanese book."
+      },
+      {
+        "ja": "この本はとても面白いです。",
+        "kana": "この ほん は とても おもしろい です。",
+        "ro": "kono hon wa totemo omoshiroi desu.",
+        "en": "This book is very interesting."
+      },
+      {
+        "ja": "本を図書館で借りました。",
+        "kana": "ほん を としょかん で かりました。",
+        "ro": "hon o toshokan de karimashita.",
+        "en": "I borrowed a book from the library."
+      },
+      {
+        "ja": "本を机の上に置きました。",
+        "kana": "ほん を つくえ の うえ に おきました。",
+        "ro": "hon o tsukue no ue ni okimashita.",
+        "en": "I put the book on the desk."
+      },
+      {
+        "ja": "この本をもう一度読みたいです。",
+        "kana": "この ほん を もう いちど よみたい です。",
+        "ro": "kono hon o mou ichido yomitai desu.",
+        "en": "I want to read this book again."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-007",
+    "ja": "車",
+    "kana": "くるま",
+    "ro": "kuruma",
+    "en": "car",
+    "examples": [
+      {
+        "ja": "父は車を運転します。",
+        "kana": "ちち は くるま を うんてん します。",
+        "ro": "chichi wa kuruma o unten shimasu.",
+        "en": "My father drives a car."
+      },
+      {
+        "ja": "新しい車を買いました。",
+        "kana": "あたらしい くるま を かいました。",
+        "ro": "atarashii kuruma o kaimashita.",
+        "en": "I bought a new car."
+      },
+      {
+        "ja": "車で会社へ行きます。",
+        "kana": "くるま で かいしゃ へ いきます。",
+        "ro": "kuruma de kaisha e ikimasu.",
+        "en": "I go to work by car."
+      },
+      {
+        "ja": "この車は青いです。",
+        "kana": "この くるま は あおい です。",
+        "ro": "kono kuruma wa aoi desu.",
+        "en": "This car is blue."
+      },
+      {
+        "ja": "車の中に財布があります。",
+        "kana": "くるま の なか に さいふ が あります。",
+        "ro": "kuruma no naka ni saifu ga arimasu.",
+        "en": "My wallet is in the car."
+      },
+      {
+        "ja": "車を洗いました。",
+        "kana": "くるま を あらいました。",
+        "ro": "kuruma o araimashita.",
+        "en": "I washed the car."
+      },
+      {
+        "ja": "この車は新しいです。",
+        "kana": "この くるま は あたらしい です。",
+        "ro": "kono kuruma wa atarashii desu.",
+        "en": "This car is new."
+      },
+      {
+        "ja": "車の中で音楽を聞きます。",
+        "kana": "くるま の なか で おんがく を ききます。",
+        "ro": "kuruma no naka de ongaku o kikimasu.",
+        "en": "I listen to music in the car."
+      },
+      {
+        "ja": "車が道を走っています。",
+        "kana": "くるま が みち を はしって います。",
+        "ro": "kuruma ga michi o hashitte imasu.",
+        "en": "Cars are driving on the road."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-008",
+    "ja": "犬",
+    "kana": "いぬ",
+    "ro": "inu",
+    "en": "dog",
+    "examples": [
+      {
+        "ja": "犬が庭で遊んでいます。",
+        "kana": "いぬ が にわ で あそんで います。",
+        "ro": "inu ga niwa de asonde imasu.",
+        "en": "The dog is playing in the yard."
+      },
+      {
+        "ja": "私は犬が好きです。",
+        "kana": "わたし は いぬ が すき です。",
+        "ro": "watashi wa inu ga suki desu.",
+        "en": "I like dogs."
+      },
+      {
+        "ja": "この犬はとてもかわいいです。",
+        "kana": "この いぬ は とても かわいい です。",
+        "ro": "kono inu wa totemo kawaii desu.",
+        "en": "This dog is very cute."
+      },
+      {
+        "ja": "犬と散歩に行きます。",
+        "kana": "いぬ と さんぽ に いきます。",
+        "ro": "inu to sanpo ni ikimasu.",
+        "en": "I go for a walk with my dog."
+      },
+      {
+        "ja": "犬は家の前にいます。",
+        "kana": "いぬ は いえ の まえ に います。",
+        "ro": "inu wa ie no mae ni imasu.",
+        "en": "The dog is in front of the house."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-009",
+    "ja": "時計",
+    "kana": "とけい",
+    "ro": "tokei",
+    "en": "clock / watch",
+    "examples": [
+      {
+        "ja": "時計を見てください。",
+        "kana": "とけい を みて ください。",
+        "ro": "tokei o mite kudasai.",
+        "en": "Please look at the clock."
+      },
+      {
+        "ja": "新しい時計を買いました。",
+        "kana": "あたらしい とけい を かいました。",
+        "ro": "atarashii tokei o kaimashita.",
+        "en": "I bought a new watch."
+      },
+      {
+        "ja": "時計が止まりました。",
+        "kana": "とけい が とまりました。",
+        "ro": "tokei ga tomarimashita.",
+        "en": "The clock stopped."
+      },
+      {
+        "ja": "時計はテーブルの上にあります。",
+        "kana": "とけい は てーぶる の うえ に あります。",
+        "ro": "tokei wa teeburu no ue ni arimasu.",
+        "en": "The clock is on the table."
+      },
+      {
+        "ja": "この時計は高かったです。",
+        "kana": "この とけい は たかかった です。",
+        "ro": "kono tokei wa takakatta desu.",
+        "en": "This watch was expensive."
+      },
+      {
+        "ja": "時計が止まりました。",
+        "kana": "とけい が とまりました。",
+        "ro": "tokei ga tomarimashita.",
+        "en": "The clock has stopped."
+      },
+      {
+        "ja": "時計を机の上に置きました。",
+        "kana": "とけい を つくえ の うえ に おきました。",
+        "ro": "tokei o tsukue no ue ni okimashita.",
+        "en": "I put the clock on the desk."
+      },
+      {
+        "ja": "この時計はとても高いです。",
+        "kana": "この とけい は とても たかい です。",
+        "ro": "kono tokei wa totemo takai desu.",
+        "en": "This watch is very expensive."
+      },
+      {
+        "ja": "時計を見ました。",
+        "kana": "とけい を みました。",
+        "ro": "tokei o mimashita.",
+        "en": "I looked at the clock."
+      },
+      {
+        "ja": "この時計は古いです。",
+        "kana": "この とけい は ふるい です。",
+        "ro": "kono tokei wa furui desu.",
+        "en": "This clock is old."
+      },
+      {
+        "ja": "時計を直してください。",
+        "kana": "とけい を なおして ください。",
+        "ro": "tokei o naoshite kudasai.",
+        "en": "Please fix the clock."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-010",
+    "ja": "家",
+    "kana": "いえ",
+    "ro": "ie",
+    "en": "house / home",
+    "examples": [
+      {
+        "ja": "私の家は東京にあります。",
+        "kana": "わたし の いえ は とうきょう に あります。",
+        "ro": "watashi no ie wa toukyou ni arimasu.",
+        "en": "My house is in Tokyo."
+      },
+      {
+        "ja": "家で宿題をします。",
+        "kana": "いえ で しゅくだい を します。",
+        "ro": "ie de shukudai o shimasu.",
+        "en": "I do my homework at home."
+      },
+      {
+        "ja": "家族と一緒に家にいます。",
+        "kana": "かぞく と いっしょ に いえ に います。",
+        "ro": "kazoku to issho ni ie ni imasu.",
+        "en": "I’m at home with my family."
+      },
+      {
+        "ja": "新しい家を建てました。",
+        "kana": "あたらしい いえ を たてました。",
+        "ro": "atarashii ie o tatemashita.",
+        "en": "We built a new house."
+      },
+      {
+        "ja": "友達の家へ行きました。",
+        "kana": "ともだち の いえ へ いきました。",
+        "ro": "tomodachi no ie e ikimashita.",
+        "en": "I went to my friend’s house."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-011",
+    "ja": "猫",
+    "kana": "ねこ",
+    "ro": "neko",
+    "en": "cat",
+    "examples": [
+      {
+        "ja": "猫が窓のそばで寝ています。",
+        "kana": "ねこ が まど の そば で ねて います。",
+        "ro": "neko ga mado no soba de nete imasu.",
+        "en": "The cat is sleeping by the window."
+      },
+      {
+        "ja": "この猫は人になれています。",
+        "kana": "この ねこ は ひと に なれて います。",
+        "ro": "kono neko wa hito ni narete imasu.",
+        "en": "This cat is friendly with people."
+      },
+      {
+        "ja": "猫にえさをあげました。",
+        "kana": "ねこ に えさ を あげました。",
+        "ro": "neko ni esa o agemashita.",
+        "en": "I fed the cat."
+      },
+      {
+        "ja": "猫の写真をたくさん撮ります。",
+        "kana": "ねこ の しゃしん を たくさん とります。",
+        "ro": "neko no shashin o takusan torimasu.",
+        "en": "I take many photos of my cat."
+      },
+      {
+        "ja": "猫はソファの上にいます。",
+        "kana": "ねこ は そふぁ の うえ に います。",
+        "ro": "neko wa sofa no ue ni imasu.",
+        "en": "The cat is on the sofa."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-012",
+    "ja": "駅",
+    "kana": "えき",
+    "ro": "eki",
+    "en": "station",
+    "examples": [
+      {
+        "ja": "駅で友達と待ち合わせします。",
+        "kana": "えき で ともだち と まちあわせ します。",
+        "ro": "eki de tomodachi to machiawase shimasu.",
+        "en": "I meet my friend at the station."
+      },
+      {
+        "ja": "駅はこの道をまっすぐです。",
+        "kana": "えき は この みち を まっすぐ です。",
+        "ro": "eki wa kono michi o massugu desu.",
+        "en": "The station is straight down this road."
+      },
+      {
+        "ja": "駅の近くにカフェがあります。",
+        "kana": "えき の ちかく に かふぇ が あります。",
+        "ro": "eki no chikaku ni kafe ga arimasu.",
+        "en": "There’s a café near the station."
+      },
+      {
+        "ja": "駅で切符を買いました。",
+        "kana": "えき で きっぷ を かいました。",
+        "ro": "eki de kippu o kaimashita.",
+        "en": "I bought a ticket at the station."
+      },
+      {
+        "ja": "駅の出口は三つあります。",
+        "kana": "えき の でぐち は みっつ あります。",
+        "ro": "eki no deguchi wa mittsu arimasu.",
+        "en": "The station has three exits."
+      },
+      {
+        "ja": "駅で友達に会いました。",
+        "kana": "えき で ともだち に あいました。",
+        "ro": "eki de tomodachi ni aimashita.",
+        "en": "I met my friend at the station."
+      },
+      {
+        "ja": "駅の前にコンビニがあります。",
+        "kana": "えき の まえ に こんびに が あります。",
+        "ro": "eki no mae ni konbini ga arimasu.",
+        "en": "There is a convenience store in front of the station."
+      },
+      {
+        "ja": "駅まで歩きました。",
+        "kana": "えき まで あるきました。",
+        "ro": "eki made arukimashita.",
+        "en": "I walked to the station."
+      },
+      {
+        "ja": "駅の中で切符を買いました。",
+        "kana": "えき の なか で きっぷ を かいました。",
+        "ro": "eki no naka de kippu o kaimashita.",
+        "en": "I bought a ticket inside the station."
+      },
+      {
+        "ja": "この駅はいつも人が多いです。",
+        "kana": "この えき は いつも ひと が おおい です。",
+        "ro": "kono eki wa itsumo hito ga ooi desu.",
+        "en": "This station is always crowded."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-013",
+    "ja": "病院",
+    "kana": "びょういん",
+    "ro": "byouin",
+    "en": "hospital",
+    "examples": [
+      {
+        "ja": "熱があるので病院へ行きます。",
+        "kana": "ねつ が ある ので びょういん へ いきます。",
+        "ro": "netsu ga aru node byouin e ikimasu.",
+        "en": "I have a fever, so I’m going to the hospital."
+      },
+      {
+        "ja": "病院で先生に見てもらいました。",
+        "kana": "びょういん で せんせい に みて もらいました。",
+        "ro": "byouin de sensei ni mite moraimashita.",
+        "en": "A doctor examined me at the hospital."
+      },
+      {
+        "ja": "病院は駅から遠くありません。",
+        "kana": "びょういん は えき から とおく ありません。",
+        "ro": "byouin wa eki kara tooku arimasen.",
+        "en": "The hospital isn’t far from the station."
+      },
+      {
+        "ja": "病院の受付は二階です。",
+        "kana": "びょういん の うけつけ は にかい です。",
+        "ro": "byouin no uketsuke wa nikai desu.",
+        "en": "The reception desk is on the second floor."
+      },
+      {
+        "ja": "来週また病院に行きます。",
+        "kana": "らいしゅう また びょういん に いきます。",
+        "ro": "raishuu mata byouin ni ikimasu.",
+        "en": "I’ll go to the hospital again next week."
+      },
+      {
+        "ja": "病院へ行きます。",
+        "kana": "びょういん へ いきます。",
+        "ro": "byouin e ikimasu.",
+        "en": "I am going to the hospital."
+      },
+      {
+        "ja": "母は病院で働いています。",
+        "kana": "はは は びょういん で はたらいて います。",
+        "ro": "haha wa byouin de hataraite imasu.",
+        "en": "My mother works at a hospital."
+      },
+      {
+        "ja": "病院の前にバス停があります。",
+        "kana": "びょういん の まえ に ばすてい が あります。",
+        "ro": "byouin no mae ni basutei ga arimasu.",
+        "en": "There is a bus stop in front of the hospital."
+      },
+      {
+        "ja": "昨日病院に行きました。",
+        "kana": "きのう びょういん に いきました。",
+        "ro": "kinou byouin ni ikimashita.",
+        "en": "I went to the hospital yesterday."
+      },
+      {
+        "ja": "先生は病院にいます。",
+        "kana": "せんせい は びょういん に います。",
+        "ro": "sensei wa byouin ni imasu.",
+        "en": "The doctor is in the hospital."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-014",
+    "ja": "店",
+    "kana": "みせ",
+    "ro": "mise",
+    "en": "shop / store",
+    "examples": [
+      {
+        "ja": "この店は安いです。",
+        "kana": "この みせ は やすい です。",
+        "ro": "kono mise wa yasui desu.",
+        "en": "This shop is cheap."
+      },
+      {
+        "ja": "駅前の店でパンを買いました。",
+        "kana": "えきまえ の みせ で ぱん を かいました。",
+        "ro": "ekimae no mise de pan o kaimashita.",
+        "en": "I bought bread at the shop in front of the station."
+      },
+      {
+        "ja": "店は九時に開きます。",
+        "kana": "みせ は くじ に あきます。",
+        "ro": "mise wa kuji ni akimasu.",
+        "en": "The shop opens at nine."
+      },
+      {
+        "ja": "この店のカレーが好きです。",
+        "kana": "この みせ の かれー が すき です。",
+        "ro": "kono mise no karee ga suki desu.",
+        "en": "I like the curry at this shop."
+      },
+      {
+        "ja": "店で友達に会いました。",
+        "kana": "みせ で ともだち に あいました。",
+        "ro": "mise de tomodachi ni aimashita.",
+        "en": "I met a friend at the shop."
+      },
+      {
+        "ja": "この店でパンを買います。",
+        "kana": "この みせ で ぱん を かいます。",
+        "ro": "kono mise de pan o kaimasu.",
+        "en": "I buy bread at this shop."
+      },
+      {
+        "ja": "店の人がやさしいです。",
+        "kana": "みせ の ひと が やさしい です。",
+        "ro": "mise no hito ga yasashii desu.",
+        "en": "The shop clerk is kind."
+      },
+      {
+        "ja": "新しい店ができました。",
+        "kana": "あたらしい みせ が できました。",
+        "ro": "atarashii mise ga dekimashita.",
+        "en": "A new store has opened."
+      },
+      {
+        "ja": "店の前に車があります。",
+        "kana": "みせ の まえ に くるま が あります。",
+        "ro": "mise no mae ni kuruma ga arimasu.",
+        "en": "There is a car in front of the store."
+      },
+      {
+        "ja": "この店は人気があります。",
+        "kana": "この みせ は にんき が あります。",
+        "ro": "kono mise wa ninki ga arimasu.",
+        "en": "This shop is popular."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-015",
+    "ja": "部屋",
+    "kana": "へや",
+    "ro": "heya",
+    "en": "room",
+    "examples": [
+      {
+        "ja": "部屋を掃除します。",
+        "kana": "へや を そうじ します。",
+        "ro": "heya o souji shimasu.",
+        "en": "I clean my room."
+      },
+      {
+        "ja": "部屋は明るくて広いです。",
+        "kana": "へや は あかるくて ひろい です。",
+        "ro": "heya wa akarukute hiroi desu.",
+        "en": "The room is bright and spacious."
+      },
+      {
+        "ja": "部屋の窓を開けてください。",
+        "kana": "へや の まど を あけて ください。",
+        "ro": "heya no mado o akete kudasai.",
+        "en": "Please open the window of the room."
+      },
+      {
+        "ja": "部屋で音楽を聞きます。",
+        "kana": "へや で おんがく を ききます。",
+        "ro": "heya de ongaku o kikimasu.",
+        "en": "I listen to music in my room."
+      },
+      {
+        "ja": "部屋の鍵をなくしました。",
+        "kana": "へや の かぎ を なくしました。",
+        "ro": "heya no kagi o nakushimashita.",
+        "en": "I lost the key to my room."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-016",
+    "ja": "電車",
+    "kana": "でんしゃ",
+    "ro": "densha",
+    "en": "train",
+    "examples": [
+      {
+        "ja": "電車で学校へ行きます。",
+        "kana": "でんしゃ で がっこう へ いきます。",
+        "ro": "densha de gakkou e ikimasu.",
+        "en": "I go to school by train."
+      },
+      {
+        "ja": "この電車は速いです。",
+        "kana": "この でんしゃ は はやい です。",
+        "ro": "kono densha wa hayai desu.",
+        "en": "This train is fast."
+      },
+      {
+        "ja": "朝は電車が混みます。",
+        "kana": "あさ は でんしゃ が こみます。",
+        "ro": "asa wa densha ga komimasu.",
+        "en": "Trains get crowded in the morning."
+      },
+      {
+        "ja": "電車の中で本を読みました。",
+        "kana": "でんしゃ の なか で ほん を よみました。",
+        "ro": "densha no naka de hon o yomimashita.",
+        "en": "I read a book on the train."
+      },
+      {
+        "ja": "次の電車は十分後に来ます。",
+        "kana": "つぎ の でんしゃ は じゅっぷん ご に きます。",
+        "ro": "tsugi no densha wa juppun go ni kimasu.",
+        "en": "The next train comes in ten minutes."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-017",
+    "ja": "自転車",
+    "kana": "じてんしゃ",
+    "ro": "jitensha",
+    "en": "bicycle",
+    "examples": [
+      {
+        "ja": "自転車で駅まで行きます。",
+        "kana": "じてんしゃ で えき まで いきます。",
+        "ro": "jitensha de eki made ikimasu.",
+        "en": "I go to the station by bicycle."
+      },
+      {
+        "ja": "新しい自転車を買いました。",
+        "kana": "あたらしい じてんしゃ を かいました。",
+        "ro": "atarashii jitensha o kaimashita.",
+        "en": "I bought a new bicycle."
+      },
+      {
+        "ja": "自転車の鍵をなくしました。",
+        "kana": "じてんしゃ の かぎ を なくしました。",
+        "ro": "jitensha no kagi o nakushimashita.",
+        "en": "I lost my bicycle key."
+      },
+      {
+        "ja": "週末に自転車で公園を走ります。",
+        "kana": "しゅうまつ に じてんしゃ で こうえん を はしります。",
+        "ro": "shuumatsu ni jitensha de kouen o hashirimasu.",
+        "en": "I ride my bike in the park on weekends."
+      },
+      {
+        "ja": "自転車を直してもらいました。",
+        "kana": "じてんしゃ を なおして もらいました。",
+        "ro": "jitensha o naoshite moraimashita.",
+        "en": "I had my bicycle repaired."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-018",
+    "ja": "水",
+    "kana": "みず",
+    "ro": "mizu",
+    "en": "water",
+    "examples": [
+      {
+        "ja": "水を一杯ください。",
+        "kana": "みず を いっぱい ください。",
+        "ro": "mizu o ippai kudasai.",
+        "en": "A glass of water, please."
+      },
+      {
+        "ja": "運動のあとに水を飲みます。",
+        "kana": "うんどう の あと に みず を のみます。",
+        "ro": "undou no ato ni mizu o nomimasu.",
+        "en": "I drink water after exercising."
+      },
+      {
+        "ja": "水はとても冷たいです。",
+        "kana": "みず は とても つめたい です。",
+        "ro": "mizu wa totemo tsumetai desu.",
+        "en": "The water is very cold."
+      },
+      {
+        "ja": "テーブルに水を置きました。",
+        "kana": "てーぶる に みず を おきました。",
+        "ro": "teeburu ni mizu o okimashita.",
+        "en": "I put water on the table."
+      },
+      {
+        "ja": "毎日たくさん水を飲みます。",
+        "kana": "まいにち たくさん みず を のみます。",
+        "ro": "mainichi takusan mizu o nomimasu.",
+        "en": "I drink a lot of water every day."
+      },
+      {
+        "ja": "水を飲みました。",
+        "kana": "みず を のみました。",
+        "ro": "mizu o nomimashita.",
+        "en": "I drank water."
+      },
+      {
+        "ja": "水が冷たいです。",
+        "kana": "みず が つめたい です。",
+        "ro": "mizu ga tsumetai desu.",
+        "en": "The water is cold."
+      },
+      {
+        "ja": "コップに水を入れました。",
+        "kana": "こっぷ に みず を いれました。",
+        "ro": "koppu ni mizu o iremashita.",
+        "en": "I poured water into a cup."
+      },
+      {
+        "ja": "水をください。",
+        "kana": "みず を ください。",
+        "ro": "mizu o kudasai.",
+        "en": "Water, please."
+      },
+      {
+        "ja": "水をたくさん飲んでください。",
+        "kana": "みず を たくさん のんで ください。",
+        "ro": "mizu o takusan nonde kudasai.",
+        "en": "Please drink plenty of water."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-019",
+    "ja": "お茶",
+    "kana": "おちゃ",
+    "ro": "ocha",
+    "en": "tea",
+    "examples": [
+      {
+        "ja": "食後にお茶を飲みます。",
+        "kana": "しょくご に おちゃ を のみます。",
+        "ro": "shokugo ni ocha o nomimasu.",
+        "en": "I drink tea after meals."
+      },
+      {
+        "ja": "温かいお茶をください。",
+        "kana": "あたたかい おちゃ を ください。",
+        "ro": "atatakai ocha o kudasai.",
+        "en": "Hot tea, please."
+      },
+      {
+        "ja": "お茶はこの国で有名です。",
+        "kana": "おちゃ は この くに で ゆうめい です。",
+        "ro": "ocha wa kono kuni de yuumei desu.",
+        "en": "Tea is famous in this country."
+      },
+      {
+        "ja": "友達の家でお茶をいただきました。",
+        "kana": "ともだち の いえ で おちゃ を いただきました。",
+        "ro": "tomodachi no ie de ocha o itadakimashita.",
+        "en": "I had tea at my friend’s house."
+      },
+      {
+        "ja": "お茶にはいろいろな種類があります。",
+        "kana": "おちゃ に は いろいろ な しゅるい が あります。",
+        "ro": "ocha ni wa iroiro na shurui ga arimasu.",
+        "en": "There are many kinds of tea."
+      },
+      {
+        "ja": "お茶を飲みます。",
+        "kana": "おちゃ を のみます。",
+        "ro": "ocha o nomimasu.",
+        "en": "I drink tea."
+      },
+      {
+        "ja": "お茶を入れましょうか。",
+        "kana": "おちゃ を いれましょう か。",
+        "ro": "ocha o iremashou ka.",
+        "en": "Shall I make some tea?"
+      },
+      {
+        "ja": "お茶が冷めました。",
+        "kana": "おちゃ が さめました。",
+        "ro": "ocha ga samemashita.",
+        "en": "The tea got cold."
+      },
+      {
+        "ja": "友達とお茶を飲みました。",
+        "kana": "ともだち と おちゃ を のみました。",
+        "ro": "tomodachi to ocha o nomimashita.",
+        "en": "I drank tea with my friend."
+      },
+      {
+        "ja": "お茶は日本の文化です。",
+        "kana": "おちゃ は にほん の ぶんか です。",
+        "ro": "ocha wa nihon no bunka desu.",
+        "en": "Tea is a part of Japanese culture."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-020",
+    "ja": "コーヒー",
+    "kana": "こーひー",
+    "ro": "koohii",
+    "en": "coffee",
+    "examples": [
+      {
+        "ja": "毎朝コーヒーを飲みます。",
+        "kana": "まいあさ こーひー を のみます。",
+        "ro": "maiasa koohii o nomimasu.",
+        "en": "I drink coffee every morning."
+      },
+      {
+        "ja": "コーヒーは少し苦いです。",
+        "kana": "こーひー は すこし にがい です。",
+        "ro": "koohii wa sukoshi nigai desu.",
+        "en": "Coffee is a little bitter."
+      },
+      {
+        "ja": "砂糖なしのコーヒーが好きです。",
+        "kana": "さとう なし の こーひー が すき です。",
+        "ro": "satou nashi no koohii ga suki desu.",
+        "en": "I like coffee without sugar."
+      },
+      {
+        "ja": "午後にコーヒーをもう一杯飲みました。",
+        "kana": "ごご に こーひー を もう いっぱい のみました。",
+        "ro": "gogo ni koohii o mou ippai nomimashita.",
+        "en": "I had another cup of coffee in the afternoon."
+      },
+      {
+        "ja": "この店のコーヒーはおいしいです。",
+        "kana": "この みせ の こーひー は おいしい です。",
+        "ro": "kono mise no koohii wa oishii desu.",
+        "en": "The coffee at this shop is good."
+      },
+      {
+        "ja": "このコーヒーは苦いです。",
+        "kana": "この こーひー は にがい です。",
+        "ro": "kono koohii wa nigai desu.",
+        "en": "This coffee is bitter."
+      },
+      {
+        "ja": "友達とカフェでコーヒーを飲みました。",
+        "kana": "ともだち と かふぇ で こーひー を のみました。",
+        "ro": "tomodachi to kafe de koohii o nomimashita.",
+        "en": "I drank coffee with my friend at a café."
+      },
+      {
+        "ja": "コーヒーに砂糖を入れます。",
+        "kana": "こーひー に さとう を いれます。",
+        "ro": "koohii ni satou o iremasu.",
+        "en": "I add sugar to my coffee."
+      },
+      {
+        "ja": "コーヒーの香りが好きです。",
+        "kana": "こーひー の かおり が すき です。",
+        "ro": "koohii no kaori ga suki desu.",
+        "en": "I like the smell of coffee."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-021",
+    "ja": "ご飯",
+    "kana": "ごはん",
+    "ro": "gohan",
+    "en": "meal / cooked rice",
+    "examples": [
+      {
+        "ja": "朝ご飯を食べましたか。",
+        "kana": "あさごはん を たべました か。",
+        "ro": "asagohan o tabemashita ka.",
+        "en": "Did you eat breakfast?"
+      },
+      {
+        "ja": "昼ご飯はカレーでした。",
+        "kana": "ひるごはん は かれー でした。",
+        "ro": "hirugohan wa karee deshita.",
+        "en": "Lunch was curry."
+      },
+      {
+        "ja": "母がご飯を作っています。",
+        "kana": "はは が ごはん を つくって います。",
+        "ro": "haha ga gohan o tsukutte imasu.",
+        "en": "My mother is cooking a meal."
+      },
+      {
+        "ja": "友達と一緒にご飯を食べました。",
+        "kana": "ともだち と いっしょ に ごはん を たべました。",
+        "ro": "tomodachi to issho ni gohan o tabemashita.",
+        "en": "I ate a meal with my friend."
+      },
+      {
+        "ja": "今日は家でご飯を食べます。",
+        "kana": "きょう は いえ で ごはん を たべます。",
+        "ro": "kyou wa ie de gohan o tabemasu.",
+        "en": "I will eat at home today."
+      },
+      {
+        "ja": "ご飯を食べました。",
+        "kana": "ごはん を たべました。",
+        "ro": "gohan o tabemashita.",
+        "en": "I ate a meal."
+      },
+      {
+        "ja": "朝ご飯を作ります。",
+        "kana": "あさごはん を つくります。",
+        "ro": "asagohan o tsukurimasu.",
+        "en": "I make breakfast."
+      },
+      {
+        "ja": "ご飯がおいしいです。",
+        "kana": "ごはん が おいしい です。",
+        "ro": "gohan ga oishii desu.",
+        "en": "The rice is delicious."
+      },
+      {
+        "ja": "昼ご飯を一緒に食べましょう。",
+        "kana": "ひるごはん を いっしょ に たべましょう。",
+        "ro": "hirugohan o issho ni tabemashou.",
+        "en": "Let’s have lunch together."
+      },
+      {
+        "ja": "ご飯を炊いています。",
+        "kana": "ごはん を たいて います。",
+        "ro": "gohan o taite imasu.",
+        "en": "I’m cooking rice."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-022",
+    "ja": "卵",
+    "kana": "たまご",
+    "ro": "tamago",
+    "en": "egg",
+    "examples": [
+      {
+        "ja": "朝ご飯に卵を食べました。",
+        "kana": "あさごはん に たまご を たべました。",
+        "ro": "asagohan ni tamago o tabemashita.",
+        "en": "I ate eggs for breakfast."
+      },
+      {
+        "ja": "卵を二つください。",
+        "kana": "たまご を ふたつ ください。",
+        "ro": "tamago o futatsu kudasai.",
+        "en": "Please give me two eggs."
+      },
+      {
+        "ja": "卵を冷蔵庫に入れてください。",
+        "kana": "たまご を れいぞうこ に いれて ください。",
+        "ro": "tamago o reizouko ni irete kudasai.",
+        "en": "Please put the eggs in the refrigerator."
+      },
+      {
+        "ja": "この卵は新鮮です。",
+        "kana": "この たまご は しんせん です。",
+        "ro": "kono tamago wa shinsen desu.",
+        "en": "These eggs are fresh."
+      },
+      {
+        "ja": "卵でオムレツを作りました。",
+        "kana": "たまご で おむれつ を つくりました。",
+        "ro": "tamago de omuretsu o tsukurimashita.",
+        "en": "I made an omelet with eggs."
+      },
+      {
+        "ja": "卵を二つ買いました。",
+        "kana": "たまご を ふたつ かいました。",
+        "ro": "tamago o futatsu kaimashita.",
+        "en": "I bought two eggs."
+      },
+      {
+        "ja": "卵を割ってください。",
+        "kana": "たまご を わって ください。",
+        "ro": "tamago o watte kudasai.",
+        "en": "Please crack the egg."
+      },
+      {
+        "ja": "卵焼きを作りました。",
+        "kana": "たまごやき を つくりました。",
+        "ro": "tamagoyaki o tsukurimashita.",
+        "en": "I made a rolled omelet."
+      },
+      {
+        "ja": "卵は冷蔵庫にあります。",
+        "kana": "たまご は れいぞうこ に あります。",
+        "ro": "tamago wa reizouko ni arimasu.",
+        "en": "The eggs are in the refrigerator."
+      },
+      {
+        "ja": "卵を混ぜてください。",
+        "kana": "たまご を まぜて ください。",
+        "ro": "tamago o mazete kudasai.",
+        "en": "Please mix the eggs."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-023",
+    "ja": "魚",
+    "kana": "さかな",
+    "ro": "sakana",
+    "en": "fish",
+    "examples": [
+      {
+        "ja": "夕ご飯に魚を食べました。",
+        "kana": "ゆうごはん に さかな を たべました。",
+        "ro": "yuugohan ni sakana o tabemashita.",
+        "en": "I ate fish for dinner."
+      },
+      {
+        "ja": "魚は体にいいです。",
+        "kana": "さかな は からだ に いい です。",
+        "ro": "sakana wa karada ni ii desu.",
+        "en": "Fish is good for your health."
+      },
+      {
+        "ja": "市場で新しい魚を買いました。",
+        "kana": "いちば で あたらしい さかな を かいました。",
+        "ro": "ichiba de atarashii sakana o kaimashita.",
+        "en": "I bought fresh fish at the market."
+      },
+      {
+        "ja": "魚を焼いてください。",
+        "kana": "さかな を やいて ください。",
+        "ro": "sakana o yaite kudasai.",
+        "en": "Please grill the fish."
+      },
+      {
+        "ja": "水族館でいろいろな魚を見ました。",
+        "kana": "すいぞくかん で いろいろ な さかな を みました。",
+        "ro": "suizokukan de iroiro na sakana o mimashita.",
+        "en": "I saw many kinds of fish at the aquarium."
+      },
+      {
+        "ja": "魚を食べるのが好きです。",
+        "kana": "さかな を たべる の が すき です。",
+        "ro": "sakana o taberu no ga suki desu.",
+        "en": "I like eating fish."
+      },
+      {
+        "ja": "新鮮な魚を買いました。",
+        "kana": "しんせんな さかな を かいました。",
+        "ro": "shinsenna sakana o kaimashita.",
+        "en": "I bought fresh fish."
+      },
+      {
+        "ja": "魚が泳いでいます。",
+        "kana": "さかな が およいで います。",
+        "ro": "sakana ga oyoide imasu.",
+        "en": "Fish are swimming."
+      },
+      {
+        "ja": "この魚はおいしいです。",
+        "kana": "この さかな は おいしい です。",
+        "ro": "kono sakana wa oishii desu.",
+        "en": "This fish is delicious."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-024",
+    "ja": "肉",
+    "kana": "にく",
+    "ro": "niku",
+    "en": "meat",
+    "examples": [
+      {
+        "ja": "私は肉が好きです。",
+        "kana": "わたし は にく が すき です。",
+        "ro": "watashi wa niku ga suki desu.",
+        "en": "I like meat."
+      },
+      {
+        "ja": "肉を焼いて食べます。",
+        "kana": "にく を やいて たべます。",
+        "ro": "niku o yaite tabemasu.",
+        "en": "I grill and eat meat."
+      },
+      {
+        "ja": "スーパーで牛肉を買いました。",
+        "kana": "すーぱー で ぎゅうにく を かいました。",
+        "ro": "suupaa de gyuuniku o kaimashita.",
+        "en": "I bought beef at the supermarket."
+      },
+      {
+        "ja": "この料理は肉を使いません。",
+        "kana": "この りょうり は にく を つかいません。",
+        "ro": "kono ryouri wa niku o tsukaimasen.",
+        "en": "This dish does not use meat."
+      },
+      {
+        "ja": "昨日は肉料理を作りました。",
+        "kana": "きのう は にく りょうり を つくりました。",
+        "ro": "kinou wa niku ryouri o tsukurimashita.",
+        "en": "I cooked a meat dish yesterday."
+      },
+      {
+        "ja": "この肉はやわらかいです。",
+        "kana": "この にく は やわらかい です。",
+        "ro": "kono niku wa yawarakai desu.",
+        "en": "This meat is tender."
+      },
+      {
+        "ja": "肉を焼いて食べました。",
+        "kana": "にく を やいて たべました。",
+        "ro": "niku o yaite tabemashita.",
+        "en": "I grilled and ate the meat."
+      },
+      {
+        "ja": "父は肉より魚が好きです。",
+        "kana": "ちち は にく より さかな が すき です。",
+        "ro": "chichi wa niku yori sakana ga suki desu.",
+        "en": "My father likes fish more than meat."
+      },
+      {
+        "ja": "スーパーで肉を買いました。",
+        "kana": "すーぱー で にく を かいました。",
+        "ro": "suupaa de niku o kaimashita.",
+        "en": "I bought meat at the supermarket."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-025",
+    "ja": "野菜",
+    "kana": "やさい",
+    "ro": "yasai",
+    "en": "vegetable",
+    "examples": [
+      {
+        "ja": "毎日野菜を食べます。",
+        "kana": "まいにち やさい を たべます。",
+        "ro": "mainichi yasai o tabemasu.",
+        "en": "I eat vegetables every day."
+      },
+      {
+        "ja": "この野菜はとても新鮮です。",
+        "kana": "この やさい は とても しんせん です。",
+        "ro": "kono yasai wa totemo shinsen desu.",
+        "en": "These vegetables are very fresh."
+      },
+      {
+        "ja": "野菜スープを作りました。",
+        "kana": "やさい すーぷ を つくりました。",
+        "ro": "yasai suupu o tsukurimashita.",
+        "en": "I made vegetable soup."
+      },
+      {
+        "ja": "スーパーで野菜を買いました。",
+        "kana": "すーぱー で やさい を かいました。",
+        "ro": "suupaa de yasai o kaimashita.",
+        "en": "I bought vegetables at the supermarket."
+      },
+      {
+        "ja": "子どもに野菜を食べさせました。",
+        "kana": "こども に やさい を たべさせました。",
+        "ro": "kodomo ni yasai o tabesasemashita.",
+        "en": "I made my child eat vegetables."
+      },
+      {
+        "ja": "野菜をたくさん食べます。",
+        "kana": "やさい を たくさん たべます。",
+        "ro": "yasai o takusan tabemasu.",
+        "en": "I eat a lot of vegetables."
+      },
+      {
+        "ja": "新鮮な野菜が好きです。",
+        "kana": "しんせんな やさい が すき です。",
+        "ro": "shinsenna yasai ga suki desu.",
+        "en": "I like fresh vegetables."
+      },
+      {
+        "ja": "野菜を切ってください。",
+        "kana": "やさい を きって ください。",
+        "ro": "yasai o kitte kudasai.",
+        "en": "Please cut the vegetables."
+      },
+      {
+        "ja": "野菜を炒めました。",
+        "kana": "やさい を いためました。",
+        "ro": "yasai o itamemashita.",
+        "en": "I stir-fried the vegetables."
+      },
+      {
+        "ja": "野菜は体にいいです。",
+        "kana": "やさい は からだ に いい です。",
+        "ro": "yasai wa karada ni ii desu.",
+        "en": "Vegetables are good for your health."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-026",
+    "ja": "果物",
+    "kana": "くだもの",
+    "ro": "kudamono",
+    "en": "fruit",
+    "examples": [
+      {
+        "ja": "果物が好きです。",
+        "kana": "くだもの が すき です。",
+        "ro": "kudamono ga suki desu.",
+        "en": "I like fruit."
+      },
+      {
+        "ja": "朝に果物を食べます。",
+        "kana": "あさ に くだもの を たべます。",
+        "ro": "asa ni kudamono o tabemasu.",
+        "en": "I eat fruit in the morning."
+      },
+      {
+        "ja": "この果物は甘いです。",
+        "kana": "この くだもの は あまい です。",
+        "ro": "kono kudamono wa amai desu.",
+        "en": "This fruit is sweet."
+      },
+      {
+        "ja": "果物を冷やして食べました。",
+        "kana": "くだもの を ひやして たべました。",
+        "ro": "kudamono o hiyashite tabemashita.",
+        "en": "I chilled the fruit before eating it."
+      },
+      {
+        "ja": "果物屋でリンゴを買いました。",
+        "kana": "くだものや で りんご を かいました。",
+        "ro": "kudamonoya de ringo o kaimashita.",
+        "en": "I bought apples at the fruit shop."
+      },
+      {
+        "ja": "果物が大好きです。",
+        "kana": "くだもの が だいすき です。",
+        "ro": "kudamono ga daisuki desu.",
+        "en": "I love fruits."
+      },
+      {
+        "ja": "毎朝果物を食べます。",
+        "kana": "まいあさ くだもの を たべます。",
+        "ro": "maiasa kudamono o tabemasu.",
+        "en": "I eat fruit every morning."
+      },
+      {
+        "ja": "果物の中でりんごが一番好きです。",
+        "kana": "くだもの の なか で りんご が いちばん すき です。",
+        "ro": "kudamono no naka de ringo ga ichiban suki desu.",
+        "en": "Among fruits, I like apples the best."
+      },
+      {
+        "ja": "果物をスーパーで買いました。",
+        "kana": "くだもの を すーぱー で かいました。",
+        "ro": "kudamono o suupaa de kaimashita.",
+        "en": "I bought fruit at the supermarket."
+      },
+      {
+        "ja": "この果物はとても甘いです。",
+        "kana": "この くだもの は とても あまい です。",
+        "ro": "kono kudamono wa totemo amai desu.",
+        "en": "This fruit is very sweet."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-027",
+    "ja": "雨",
+    "kana": "あめ",
+    "ro": "ame",
+    "en": "rain",
+    "examples": [
+      {
+        "ja": "今日は雨が降っています。",
+        "kana": "きょう は あめ が ふって います。",
+        "ro": "kyou wa ame ga futte imasu.",
+        "en": "It’s raining today."
+      },
+      {
+        "ja": "雨の日は外に出ません。",
+        "kana": "あめ の ひ は そと に でません。",
+        "ro": "ame no hi wa soto ni demasen.",
+        "en": "I don’t go outside on rainy days."
+      },
+      {
+        "ja": "明日は雨かもしれません。",
+        "kana": "あした は あめ かも しれません。",
+        "ro": "ashita wa ame kamo shiremasen.",
+        "en": "It might rain tomorrow."
+      },
+      {
+        "ja": "雨の音が好きです。",
+        "kana": "あめ の おと が すき です。",
+        "ro": "ame no oto ga suki desu.",
+        "en": "I like the sound of rain."
+      },
+      {
+        "ja": "雨がやんだら出かけましょう。",
+        "kana": "あめ が やんだら でかけましょう。",
+        "ro": "ame ga yandara dekakemashou.",
+        "en": "Let’s go out when the rain stops."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-028",
+    "ja": "雪",
+    "kana": "ゆき",
+    "ro": "yuki",
+    "en": "snow",
+    "examples": [
+      {
+        "ja": "昨日は雪が降りました。",
+        "kana": "きのう は ゆき が ふりました。",
+        "ro": "kinou wa yuki ga furimashita.",
+        "en": "It snowed yesterday."
+      },
+      {
+        "ja": "雪で道が白くなりました。",
+        "kana": "ゆき で みち が しろく なりました。",
+        "ro": "yuki de michi ga shiroku narimashita.",
+        "en": "The roads turned white with snow."
+      },
+      {
+        "ja": "雪がきれいですね。",
+        "kana": "ゆき が きれい です ね。",
+        "ro": "yuki ga kirei desu ne.",
+        "en": "The snow is beautiful, isn’t it?"
+      },
+      {
+        "ja": "子どもたちが雪で遊んでいます。",
+        "kana": "こどもたち が ゆき で あそんで います。",
+        "ro": "kodomotachi ga yuki de asonde imasu.",
+        "en": "Children are playing in the snow."
+      },
+      {
+        "ja": "雪の写真を撮りました。",
+        "kana": "ゆき の しゃしん を とりました。",
+        "ro": "yuki no shashin o torimashita.",
+        "en": "I took a picture of the snow."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-029",
+    "ja": "風",
+    "kana": "かぜ",
+    "ro": "kaze",
+    "en": "wind",
+    "examples": [
+      {
+        "ja": "今日は風が強いです。",
+        "kana": "きょう は かぜ が つよい です。",
+        "ro": "kyou wa kaze ga tsuyoi desu.",
+        "en": "It’s windy today."
+      },
+      {
+        "ja": "風が気持ちいいです。",
+        "kana": "かぜ が きもちいい です。",
+        "ro": "kaze ga kimochi ii desu.",
+        "en": "The wind feels nice."
+      },
+      {
+        "ja": "海から風が吹いています。",
+        "kana": "うみ から かぜ が ふいて います。",
+        "ro": "umi kara kaze ga fuite imasu.",
+        "en": "The wind is blowing from the sea."
+      },
+      {
+        "ja": "強い風で木がゆれています。",
+        "kana": "つよい かぜ で き が ゆれて います。",
+        "ro": "tsuyoi kaze de ki ga yurete imasu.",
+        "en": "The trees are shaking in the strong wind."
+      },
+      {
+        "ja": "風がやんだら窓を開けます。",
+        "kana": "かぜ が やんだら まど を あけます。",
+        "ro": "kaze ga yandara mado o akemasu.",
+        "en": "I’ll open the window when the wind stops."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-030",
+    "ja": "空",
+    "kana": "そら",
+    "ro": "sora",
+    "en": "sky",
+    "examples": [
+      {
+        "ja": "空が青いです。",
+        "kana": "そら が あおい です。",
+        "ro": "sora ga aoi desu.",
+        "en": "The sky is blue."
+      },
+      {
+        "ja": "夕方の空がきれいです。",
+        "kana": "ゆうがた の そら が きれい です。",
+        "ro": "yuugata no sora ga kirei desu.",
+        "en": "The evening sky is beautiful."
+      },
+      {
+        "ja": "空に雲がありません。",
+        "kana": "そら に くも が ありません。",
+        "ro": "sora ni kumo ga arimasen.",
+        "en": "There are no clouds in the sky."
+      },
+      {
+        "ja": "鳥が空を飛んでいます。",
+        "kana": "とり が そら を とんで います。",
+        "ro": "tori ga sora o tonde imasu.",
+        "en": "A bird is flying in the sky."
+      },
+      {
+        "ja": "夜の空には星が見えます。",
+        "kana": "よる の そら に は ほし が みえます。",
+        "ro": "yoru no sora ni wa hoshi ga miemasu.",
+        "en": "You can see stars in the night sky."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-031",
+    "ja": "星",
+    "kana": "ほし",
+    "ro": "hoshi",
+    "en": "star",
+    "examples": [
+      {
+        "ja": "夜空にたくさんの星が見えます。",
+        "kana": "よぞら に たくさん の ほし が みえます。",
+        "ro": "yozora ni takusan no hoshi ga miemasu.",
+        "en": "Many stars can be seen in the night sky."
+      },
+      {
+        "ja": "星がとてもきれいです。",
+        "kana": "ほし が とても きれい です。",
+        "ro": "hoshi ga totemo kirei desu.",
+        "en": "The stars are very beautiful."
+      },
+      {
+        "ja": "流れ星を見ました。",
+        "kana": "ながれぼし を みました。",
+        "ro": "nagareboshi o mimashita.",
+        "en": "I saw a shooting star."
+      },
+      {
+        "ja": "星の写真を撮りました。",
+        "kana": "ほし の しゃしん を とりました。",
+        "ro": "hoshi no shashin o torimashita.",
+        "en": "I took a picture of the stars."
+      },
+      {
+        "ja": "今夜は星がよく見えます。",
+        "kana": "こんや は ほし が よく みえます。",
+        "ro": "konya wa hoshi ga yoku miemasu.",
+        "en": "The stars are clearly visible tonight."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-032",
+    "ja": "山",
+    "kana": "やま",
+    "ro": "yama",
+    "en": "mountain",
+    "examples": [
+      {
+        "ja": "山に登りました。",
+        "kana": "やま に のぼりました。",
+        "ro": "yama ni noborimashita.",
+        "en": "I climbed a mountain."
+      },
+      {
+        "ja": "この山は高いです。",
+        "kana": "この やま は たかい です。",
+        "ro": "kono yama wa takai desu.",
+        "en": "This mountain is high."
+      },
+      {
+        "ja": "山の空気はきれいです。",
+        "kana": "やま の くうき は きれい です。",
+        "ro": "yama no kuuki wa kirei desu.",
+        "en": "The air in the mountains is clean."
+      },
+      {
+        "ja": "山の上で写真を撮りました。",
+        "kana": "やま の うえ で しゃしん を とりました。",
+        "ro": "yama no ue de shashin o torimashita.",
+        "en": "I took a photo on top of the mountain."
+      },
+      {
+        "ja": "山の近くに小さな村があります。",
+        "kana": "やま の ちかく に ちいさな むら が あります。",
+        "ro": "yama no chikaku ni chiisana mura ga arimasu.",
+        "en": "There is a small village near the mountain."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-033",
+    "ja": "川",
+    "kana": "かわ",
+    "ro": "kawa",
+    "en": "river",
+    "examples": [
+      {
+        "ja": "川で魚を見ました。",
+        "kana": "かわ で さかな を みました。",
+        "ro": "kawa de sakana o mimashita.",
+        "en": "I saw fish in the river."
+      },
+      {
+        "ja": "川の水はきれいです。",
+        "kana": "かわ の みず は きれい です。",
+        "ro": "kawa no mizu wa kirei desu.",
+        "en": "The river water is clean."
+      },
+      {
+        "ja": "子どもたちが川で遊んでいます。",
+        "kana": "こどもたち が かわ で あそんで います。",
+        "ro": "kodomotachi ga kawa de asonde imasu.",
+        "en": "Children are playing in the river."
+      },
+      {
+        "ja": "川の近くに大きな木があります。",
+        "kana": "かわ の ちかく に おおきな き が あります。",
+        "ro": "kawa no chikaku ni ookina ki ga arimasu.",
+        "en": "There is a big tree near the river."
+      },
+      {
+        "ja": "川を渡って学校へ行きます。",
+        "kana": "かわ を わたって がっこう へ いきます。",
+        "ro": "kawa o watatte gakkou e ikimasu.",
+        "en": "I cross the river to go to school."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-034",
+    "ja": "海",
+    "kana": "うみ",
+    "ro": "umi",
+    "en": "sea",
+    "examples": [
+      {
+        "ja": "夏に海へ行きました。",
+        "kana": "なつ に うみ へ いきました。",
+        "ro": "natsu ni umi e ikimashita.",
+        "en": "I went to the sea in summer."
+      },
+      {
+        "ja": "海の水は青いです。",
+        "kana": "うみ の みず は あおい です。",
+        "ro": "umi no mizu wa aoi desu.",
+        "en": "The sea water is blue."
+      },
+      {
+        "ja": "海で泳ぎました。",
+        "kana": "うみ で およぎました。",
+        "ro": "umi de oyogimashita.",
+        "en": "I swam in the sea."
+      },
+      {
+        "ja": "海の近くで写真を撮りました。",
+        "kana": "うみ の ちかく で しゃしん を とりました。",
+        "ro": "umi no chikaku de shashin o torimashita.",
+        "en": "I took photos near the sea."
+      },
+      {
+        "ja": "海の音が好きです。",
+        "kana": "うみ の おと が すき です。",
+        "ro": "umi no oto ga suki desu.",
+        "en": "I like the sound of the sea."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-035",
+    "ja": "道",
+    "kana": "みち",
+    "ro": "michi",
+    "en": "road / street",
+    "examples": [
+      {
+        "ja": "この道をまっすぐ行きます。",
+        "kana": "この みち を まっすぐ いきます。",
+        "ro": "kono michi o massugu ikimasu.",
+        "en": "Go straight along this road."
+      },
+      {
+        "ja": "道に花がたくさん咲いています。",
+        "kana": "みち に はな が たくさん さいて います。",
+        "ro": "michi ni hana ga takusan saite imasu.",
+        "en": "Many flowers are blooming along the road."
+      },
+      {
+        "ja": "道が広くなりました。",
+        "kana": "みち が ひろく なりました。",
+        "ro": "michi ga hiroku narimashita.",
+        "en": "The road has become wider."
+      },
+      {
+        "ja": "この道は駅へ続いています。",
+        "kana": "この みち は えき へ つづいて います。",
+        "ro": "kono michi wa eki e tsuzuite imasu.",
+        "en": "This road leads to the station."
+      },
+      {
+        "ja": "道に迷いました。",
+        "kana": "みち に まよいました。",
+        "ro": "michi ni mayoimashita.",
+        "en": "I got lost on the road."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-036",
+    "ja": "橋",
+    "kana": "はし",
+    "ro": "hashi",
+    "en": "bridge",
+    "examples": [
+      {
+        "ja": "川に橋があります。",
+        "kana": "かわ に はし が あります。",
+        "ro": "kawa ni hashi ga arimasu.",
+        "en": "There is a bridge over the river."
+      },
+      {
+        "ja": "橋を渡って学校へ行きます。",
+        "kana": "はし を わたって がっこう へ いきます。",
+        "ro": "hashi o watatte gakkou e ikimasu.",
+        "en": "I cross the bridge to go to school."
+      },
+      {
+        "ja": "この橋は古いです。",
+        "kana": "この はし は ふるい です。",
+        "ro": "kono hashi wa furui desu.",
+        "en": "This bridge is old."
+      },
+      {
+        "ja": "橋の下に魚がいます。",
+        "kana": "はし の した に さかな が います。",
+        "ro": "hashi no shita ni sakana ga imasu.",
+        "en": "There are fish under the bridge."
+      },
+      {
+        "ja": "新しい橋を作っています。",
+        "kana": "あたらしい はし を つくって います。",
+        "ro": "atarashii hashi o tsukutte imasu.",
+        "en": "They are building a new bridge."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-038",
+    "ja": "バス",
+    "kana": "ばす",
+    "ro": "basu",
+    "en": "bus",
+    "examples": [
+      {
+        "ja": "駅までバスで行きます。",
+        "kana": "えき まで ばす で いきます。",
+        "ro": "eki made basu de ikimasu.",
+        "en": "I go to the station by bus."
+      },
+      {
+        "ja": "バスが遅れています。",
+        "kana": "ばす が おくれて います。",
+        "ro": "basu ga okurete imasu.",
+        "en": "The bus is delayed."
+      },
+      {
+        "ja": "次のバスは十分後に来ます。",
+        "kana": "つぎ の ばす は じゅっぷん ご に きます。",
+        "ro": "tsugi no basu wa juppun go ni kimasu.",
+        "en": "The next bus comes in ten minutes."
+      },
+      {
+        "ja": "バスの中は混んでいます。",
+        "kana": "ばす の なか は こんで います。",
+        "ro": "basu no naka wa konde imasu.",
+        "en": "The bus is crowded."
+      },
+      {
+        "ja": "バスの運転手がやさしいです。",
+        "kana": "ばす の うんてんしゅ が やさしい です。",
+        "ro": "basu no untenshu ga yasashii desu.",
+        "en": "The bus driver is kind."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-039",
+    "ja": "電気",
+    "kana": "でんき",
+    "ro": "denki",
+    "en": "electricity / light",
+    "examples": [
+      {
+        "ja": "電気をつけてください。",
+        "kana": "でんき を つけて ください。",
+        "ro": "denki o tsukete kudasai.",
+        "en": "Please turn on the light."
+      },
+      {
+        "ja": "夜は電気を消します。",
+        "kana": "よる は でんき を けします。",
+        "ro": "yoru wa denki o keshimasu.",
+        "en": "I turn off the light at night."
+      },
+      {
+        "ja": "この部屋の電気は明るいです。",
+        "kana": "この へや の でんき は あかるい です。",
+        "ro": "kono heya no denki wa akarui desu.",
+        "en": "The light in this room is bright."
+      },
+      {
+        "ja": "停電で電気が消えました。",
+        "kana": "ていでん で でんき が きえました。",
+        "ro": "teiden de denki ga kiemashita.",
+        "en": "The electricity went out due to a blackout."
+      },
+      {
+        "ja": "電気を大切に使いましょう。",
+        "kana": "でんき を たいせつ に つかいましょう。",
+        "ro": "denki o taisetsu ni tsukaimashou.",
+        "en": "Let’s use electricity wisely."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-040",
+    "ja": "電話",
+    "kana": "でんわ",
+    "ro": "denwa",
+    "en": "telephone / call",
+    "examples": [
+      {
+        "ja": "友達に電話をかけました。",
+        "kana": "ともだち に でんわ を かけました。",
+        "ro": "tomodachi ni denwa o kakemashita.",
+        "en": "I called my friend."
+      },
+      {
+        "ja": "母から電話がありました。",
+        "kana": "はは から でんわ が ありました。",
+        "ro": "haha kara denwa ga arimashita.",
+        "en": "I got a phone call from my mother."
+      },
+      {
+        "ja": "電話の番号を知っていますか。",
+        "kana": "でんわ の ばんごう を しっています か。",
+        "ro": "denwa no bangou o shitte imasu ka.",
+        "en": "Do you know the phone number?"
+      },
+      {
+        "ja": "会社に電話をしました。",
+        "kana": "かいしゃ に でんわ を しました。",
+        "ro": "kaisha ni denwa o shimashita.",
+        "en": "I called the company."
+      },
+      {
+        "ja": "電話が鳴っています。",
+        "kana": "でんわ が なって います。",
+        "ro": "denwa ga natte imasu.",
+        "en": "The phone is ringing."
+      },
+      {
+        "ja": "電話が鳴っています。",
+        "kana": "でんわ が なっています。",
+        "ro": "denwa ga natte imasu.",
+        "en": "The phone is ringing."
+      },
+      {
+        "ja": "電話番号を教えてください。",
+        "kana": "でんわ ばんごう を おしえて ください。",
+        "ro": "denwa bangou o oshiete kudasai.",
+        "en": "Please tell me your phone number."
+      },
+      {
+        "ja": "母と電話で話しました。",
+        "kana": "はは と でんわ で はなしました。",
+        "ro": "haha to denwa de hanashimashita.",
+        "en": "I talked with my mother on the phone."
+      },
+      {
+        "ja": "今は電話に出られません。",
+        "kana": "いま は でんわ に でられません。",
+        "ro": "ima wa denwa ni deraremasen.",
+        "en": "I can’t answer the phone right now."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-041",
+    "ja": "手紙",
+    "kana": "てがみ",
+    "ro": "tegami",
+    "en": "letter",
+    "examples": [
+      {
+        "ja": "昨日友達から手紙をもらいました。",
+        "kana": "きのう ともだち から てがみ を もらいました。",
+        "ro": "kinou tomodachi kara tegami o moraimashita.",
+        "en": "I received a letter from my friend yesterday."
+      },
+      {
+        "ja": "母に手紙を書きました。",
+        "kana": "はは に てがみ を かきました。",
+        "ro": "haha ni tegami o kakimashita.",
+        "en": "I wrote a letter to my mother."
+      },
+      {
+        "ja": "手紙をポストに入れました。",
+        "kana": "てがみ を ぽすと に いれました。",
+        "ro": "tegami o posuto ni iremashita.",
+        "en": "I put the letter in the mailbox."
+      },
+      {
+        "ja": "きれいな紙で手紙を書きます。",
+        "kana": "きれい な かみ で てがみ を かきます。",
+        "ro": "kirei na kami de tegami o kakimasu.",
+        "en": "I write letters on beautiful paper."
+      },
+      {
+        "ja": "手紙を読むのが好きです。",
+        "kana": "てがみ を よむ の が すき です。",
+        "ro": "tegami o yomu no ga suki desu.",
+        "en": "I like reading letters."
+      },
+      {
+        "ja": "友達に手紙を書きました。",
+        "kana": "ともだち に てがみ を かきました。",
+        "ro": "tomodachi ni tegami o kakimashita.",
+        "en": "I wrote a letter to my friend."
+      },
+      {
+        "ja": "手紙をもらってうれしいです。",
+        "kana": "てがみ を もらって うれしい です。",
+        "ro": "tegami o moratte ureshii desu.",
+        "en": "I’m happy to receive a letter."
+      },
+      {
+        "ja": "母から手紙が届きました。",
+        "kana": "はは から てがみ が とどきました。",
+        "ro": "haha kara tegami ga todokimashita.",
+        "en": "A letter arrived from my mother."
+      },
+      {
+        "ja": "毎月手紙を送ります。",
+        "kana": "まいつき てがみ を おくります。",
+        "ro": "maitsuki tegami o okurimasu.",
+        "en": "I send a letter every month."
+      },
+      {
+        "ja": "長い手紙を読みました。",
+        "kana": "ながい てがみ を よみました。",
+        "ro": "nagai tegami o yomimashita.",
+        "en": "I read a long letter."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-042",
+    "ja": "新聞",
+    "kana": "しんぶん",
+    "ro": "shinbun",
+    "en": "newspaper",
+    "examples": [
+      {
+        "ja": "毎朝新聞を読みます。",
+        "kana": "まいあさ しんぶん を よみます。",
+        "ro": "maiasa shinbun o yomimasu.",
+        "en": "I read the newspaper every morning."
+      },
+      {
+        "ja": "新聞の記事が面白いです。",
+        "kana": "しんぶん の きじ が おもしろい です。",
+        "ro": "shinbun no kiji ga omoshiroi desu.",
+        "en": "The newspaper article is interesting."
+      },
+      {
+        "ja": "父は新聞を取っています。",
+        "kana": "ちち は しんぶん を とっています。",
+        "ro": "chichi wa shinbun o totte imasu.",
+        "en": "My father subscribes to the newspaper."
+      },
+      {
+        "ja": "新聞を机の上に置きました。",
+        "kana": "しんぶん を つくえ の うえ に おきました。",
+        "ro": "shinbun o tsukue no ue ni okimashita.",
+        "en": "I put the newspaper on the desk."
+      },
+      {
+        "ja": "新聞で天気を調べます。",
+        "kana": "しんぶん で てんき を しらべます。",
+        "ro": "shinbun de tenki o shirabemasu.",
+        "en": "I check the weather in the newspaper."
+      },
+      {
+        "ja": "新聞を買いました。",
+        "kana": "しんぶん を かいました。",
+        "ro": "shinbun o kaimashita.",
+        "en": "I bought a newspaper."
+      },
+      {
+        "ja": "新聞の記事を読みました。",
+        "kana": "しんぶん の きじ を よみました。",
+        "ro": "shinbun no kiji o yomimashita.",
+        "en": "I read an article in the newspaper."
+      },
+      {
+        "ja": "父は新聞を毎日読みます。",
+        "kana": "ちち は しんぶん を まいにち よみます。",
+        "ro": "chichi wa shinbun o mainichi yomimasu.",
+        "en": "My father reads the newspaper every day."
+      },
+      {
+        "ja": "新聞がテーブルの上にあります。",
+        "kana": "しんぶん が てーぶる の うえ に あります。",
+        "ro": "shinbun ga teeburu no ue ni arimasu.",
+        "en": "The newspaper is on the table."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-043",
+    "ja": "雑誌",
+    "kana": "ざっし",
+    "ro": "zasshi",
+    "en": "magazine",
+    "examples": [
+      {
+        "ja": "新しい雑誌を買いました。",
+        "kana": "あたらしい ざっし を かいました。",
+        "ro": "atarashii zasshi o kaimashita.",
+        "en": "I bought a new magazine."
+      },
+      {
+        "ja": "雑誌をカフェで読みます。",
+        "kana": "ざっし を かふぇ で よみます。",
+        "ro": "zasshi o kafe de yomimasu.",
+        "en": "I read magazines at the café."
+      },
+      {
+        "ja": "この雑誌は人気があります。",
+        "kana": "この ざっし は にんき が あります。",
+        "ro": "kono zasshi wa ninki ga arimasu.",
+        "en": "This magazine is popular."
+      },
+      {
+        "ja": "雑誌の写真がきれいです。",
+        "kana": "ざっし の しゃしん が きれい です。",
+        "ro": "zasshi no shashin ga kirei desu.",
+        "en": "The pictures in the magazine are beautiful."
+      },
+      {
+        "ja": "友達に雑誌を貸しました。",
+        "kana": "ともだち に ざっし を かしました。",
+        "ro": "tomodachi ni zasshi o kashimashita.",
+        "en": "I lent a magazine to my friend."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-044",
+    "ja": "写真",
+    "kana": "しゃしん",
+    "ro": "shashin",
+    "en": "photo / picture",
+    "examples": [
+      {
+        "ja": "旅行の写真を撮りました。",
+        "kana": "りょこう の しゃしん を とりました。",
+        "ro": "ryokou no shashin o torimashita.",
+        "en": "I took pictures from my trip."
+      },
+      {
+        "ja": "きれいな写真ですね。",
+        "kana": "きれい な しゃしん です ね。",
+        "ro": "kirei na shashin desu ne.",
+        "en": "That’s a beautiful photo."
+      },
+      {
+        "ja": "家族の写真を見せてください。",
+        "kana": "かぞく の しゃしん を みせて ください。",
+        "ro": "kazoku no shashin o misete kudasai.",
+        "en": "Please show me your family photos."
+      },
+      {
+        "ja": "写真をアルバムに入れます。",
+        "kana": "しゃしん を あるばむ に いれます。",
+        "ro": "shashin o arubamu ni iremasu.",
+        "en": "I put the photos in an album."
+      },
+      {
+        "ja": "古い写真を見つけました。",
+        "kana": "ふるい しゃしん を みつけました。",
+        "ro": "furui shashin o mitsukemashita.",
+        "en": "I found an old photo."
+      },
+      {
+        "ja": "写真を撮りました。",
+        "kana": "しゃしん を とりました。",
+        "ro": "shashin o torimashita.",
+        "en": "I took a photo."
+      },
+      {
+        "ja": "きれいな写真ですね。",
+        "kana": "きれいな しゃしん ですね。",
+        "ro": "kireina shashin desu ne.",
+        "en": "That’s a beautiful photo."
+      },
+      {
+        "ja": "家族の写真を見せてください。",
+        "kana": "かぞく の しゃしん を みせて ください。",
+        "ro": "kazoku no shashin o misete kudasai.",
+        "en": "Please show me your family photo."
+      },
+      {
+        "ja": "旅行でたくさん写真を撮りました。",
+        "kana": "りょこう で たくさん しゃしん を とりました。",
+        "ro": "ryokou de takusan shashin o torimashita.",
+        "en": "I took many photos on my trip."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-045",
+    "ja": "映画",
+    "kana": "えいが",
+    "ro": "eiga",
+    "en": "movie",
+    "examples": [
+      {
+        "ja": "昨日映画を見ました。",
+        "kana": "きのう えいが を みました。",
+        "ro": "kinou eiga o mimashita.",
+        "en": "I watched a movie yesterday."
+      },
+      {
+        "ja": "この映画はとても面白いです。",
+        "kana": "この えいが は とても おもしろい です。",
+        "ro": "kono eiga wa totemo omoshiroi desu.",
+        "en": "This movie is very interesting."
+      },
+      {
+        "ja": "友達と映画館に行きました。",
+        "kana": "ともだち と えいがかん に いきました。",
+        "ro": "tomodachi to eigakan ni ikimashita.",
+        "en": "I went to the cinema with my friend."
+      },
+      {
+        "ja": "映画のチケットを買いました。",
+        "kana": "えいが の ちけっと を かいました。",
+        "ro": "eiga no chiketto o kaimashita.",
+        "en": "I bought a movie ticket."
+      },
+      {
+        "ja": "週末に新しい映画を見たいです。",
+        "kana": "しゅうまつ に あたらしい えいが を みたい です。",
+        "ro": "shuumatsu ni atarashii eiga o mitai desu.",
+        "en": "I want to see a new movie this weekend."
+      },
+      {
+        "ja": "この映画はとても有名です。",
+        "kana": "この えいが は とても ゆうめい です。",
+        "ro": "kono eiga wa totemo yuumei desu.",
+        "en": "This movie is very famous."
+      },
+      {
+        "ja": "映画館へ行きました。",
+        "kana": "えいがかん へ いきました。",
+        "ro": "eigakan e ikimashita.",
+        "en": "I went to the movie theater."
+      },
+      {
+        "ja": "楽しい映画でした。",
+        "kana": "たのしい えいが でした。",
+        "ro": "tanoshii eiga deshita.",
+        "en": "It was an enjoyable movie."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-046",
+    "ja": "音楽",
+    "kana": "おんがく",
+    "ro": "ongaku",
+    "en": "music",
+    "examples": [
+      {
+        "ja": "毎日音楽を聞きます。",
+        "kana": "まいにち おんがく を ききます。",
+        "ro": "mainichi ongaku o kikimasu.",
+        "en": "I listen to music every day."
+      },
+      {
+        "ja": "静かな音楽が好きです。",
+        "kana": "しずかな おんがく が すき です。",
+        "ro": "shizukana ongaku ga suki desu.",
+        "en": "I like quiet music."
+      },
+      {
+        "ja": "友達が音楽を作っています。",
+        "kana": "ともだち が おんがく を つくって います。",
+        "ro": "tomodachi ga ongaku o tsukutte imasu.",
+        "en": "My friend makes music."
+      },
+      {
+        "ja": "音楽を聞きながら勉強します。",
+        "kana": "おんがく を ききながら べんきょう します。",
+        "ro": "ongaku o kikinagara benkyou shimasu.",
+        "en": "I study while listening to music."
+      },
+      {
+        "ja": "この音楽は有名です。",
+        "kana": "この おんがく は ゆうめい です。",
+        "ro": "kono ongaku wa yuumei desu.",
+        "en": "This music is famous."
+      },
+      {
+        "ja": "音楽を聞くのが好きです。",
+        "kana": "おんがく を きく の が すき です。",
+        "ro": "ongaku o kiku no ga suki desu.",
+        "en": "I like listening to music."
+      },
+      {
+        "ja": "この音楽はとても静かです。",
+        "kana": "この おんがく は とても しずか です。",
+        "ro": "kono ongaku wa totemo shizuka desu.",
+        "en": "This music is very calm."
+      },
+      {
+        "ja": "音楽の先生になりたいです。",
+        "kana": "おんがく の せんせい に なりたい です。",
+        "ro": "ongaku no sensei ni naritai desu.",
+        "en": "I want to become a music teacher."
+      },
+      {
+        "ja": "友達と音楽を作りました。",
+        "kana": "ともだち と おんがく を つくりました。",
+        "ro": "tomodachi to ongaku o tsukurimashita.",
+        "en": "I made music with my friend."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-047",
+    "ja": "テレビ",
+    "kana": "てれび",
+    "ro": "terebi",
+    "en": "television",
+    "examples": [
+      {
+        "ja": "夜にテレビを見ます。",
+        "kana": "よる に てれび を みます。",
+        "ro": "yoru ni terebi o mimasu.",
+        "en": "I watch TV at night."
+      },
+      {
+        "ja": "新しいテレビを買いました。",
+        "kana": "あたらしい てれび を かいました。",
+        "ro": "atarashii terebi o kaimashita.",
+        "en": "I bought a new TV."
+      },
+      {
+        "ja": "テレビの音を小さくしてください。",
+        "kana": "てれび の おと を ちいさく して ください。",
+        "ro": "terebi no oto o chiisaku shite kudasai.",
+        "en": "Please turn down the TV volume."
+      },
+      {
+        "ja": "ニュースをテレビで見ました。",
+        "kana": "にゅーす を てれび で みました。",
+        "ro": "nyuusu o terebi de mimashita.",
+        "en": "I watched the news on TV."
+      },
+      {
+        "ja": "子どもがテレビを見ています。",
+        "kana": "こども が てれび を みて います。",
+        "ro": "kodomo ga terebi o mite imasu.",
+        "en": "The child is watching TV."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-048",
+    "ja": "ラジオ",
+    "kana": "らじお",
+    "ro": "rajio",
+    "en": "radio",
+    "examples": [
+      {
+        "ja": "朝にラジオを聞きます。",
+        "kana": "あさ に らじお を ききます。",
+        "ro": "asa ni rajio o kikimasu.",
+        "en": "I listen to the radio in the morning."
+      },
+      {
+        "ja": "ラジオで天気を聞きました。",
+        "kana": "らじお で てんき を ききました。",
+        "ro": "rajio de tenki o kikimashita.",
+        "en": "I heard the weather on the radio."
+      },
+      {
+        "ja": "古いラジオを持っています。",
+        "kana": "ふるい らじお を もって います。",
+        "ro": "furui rajio o motte imasu.",
+        "en": "I have an old radio."
+      },
+      {
+        "ja": "ラジオをつけてください。",
+        "kana": "らじお を つけて ください。",
+        "ro": "rajio o tsukete kudasai.",
+        "en": "Please turn on the radio."
+      },
+      {
+        "ja": "毎朝同じラジオ番組を聞きます。",
+        "kana": "まいあさ おなじ らじお ばんぐみ を ききます。",
+        "ro": "maiasa onaji rajio bangumi o kikimasu.",
+        "en": "I listen to the same radio program every morning."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-050",
+    "ja": "カメラ",
+    "kana": "かめら",
+    "ro": "kamera",
+    "en": "camera",
+    "examples": [
+      {
+        "ja": "カメラで写真を撮ります。",
+        "kana": "かめら で しゃしん を とります。",
+        "ro": "kamera de shashin o torimasu.",
+        "en": "I take pictures with a camera."
+      },
+      {
+        "ja": "新しいカメラを買いました。",
+        "kana": "あたらしい かめら を かいました。",
+        "ro": "atarashii kamera o kaimashita.",
+        "en": "I bought a new camera."
+      },
+      {
+        "ja": "カメラの使い方を教えてください。",
+        "kana": "かめら の つかいかた を おしえて ください。",
+        "ro": "kamera no tsukaikata o oshiete kudasai.",
+        "en": "Please tell me how to use the camera."
+      },
+      {
+        "ja": "父はカメラが好きです。",
+        "kana": "ちち は かめら が すき です。",
+        "ro": "chichi wa kamera ga suki desu.",
+        "en": "My father likes cameras."
+      },
+      {
+        "ja": "カメラを持って旅行しました。",
+        "kana": "かめら を もって りょこう しました。",
+        "ro": "kamera o motte ryokou shimashita.",
+        "en": "I traveled with my camera."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-053",
+    "ja": "学生",
+    "kana": "がくせい",
+    "ro": "gakusei",
+    "en": "student",
+    "examples": [
+      {
+        "ja": "私は日本語の学生です。",
+        "kana": "わたし は にほんご の がくせい です。",
+        "ro": "watashi wa nihongo no gakusei desu.",
+        "en": "I am a Japanese language student."
+      },
+      {
+        "ja": "学生が図書館で勉強しています。",
+        "kana": "がくせい が としょかん で べんきょう して います。",
+        "ro": "gakusei ga toshokan de benkyou shite imasu.",
+        "en": "Students are studying in the library."
+      },
+      {
+        "ja": "外国の学生と友達になりました。",
+        "kana": "がいこく の がくせい と ともだち に なりました。",
+        "ro": "gaikoku no gakusei to tomodachi ni narimashita.",
+        "en": "I became friends with a foreign student."
+      },
+      {
+        "ja": "学生はテストを受けます。",
+        "kana": "がくせい は てすと を うけます。",
+        "ro": "gakusei wa tesuto o ukemasu.",
+        "en": "Students take a test."
+      },
+      {
+        "ja": "学生の生活は楽しいです。",
+        "kana": "がくせい の せいかつ は たのしい です。",
+        "ro": "gakusei no seikatsu wa tanoshii desu.",
+        "en": "Student life is fun."
+      },
+      {
+        "ja": "私は学生です。",
+        "kana": "わたし は がくせい です。",
+        "ro": "watashi wa gakusei desu.",
+        "en": "I am a student."
+      },
+      {
+        "ja": "学生は毎日勉強します。",
+        "kana": "がくせい は まいにち べんきょう します。",
+        "ro": "gakusei wa mainichi benkyou shimasu.",
+        "en": "Students study every day."
+      },
+      {
+        "ja": "学生がたくさんいます。",
+        "kana": "がくせい が たくさん います。",
+        "ro": "gakusei ga takusan imasu.",
+        "en": "There are many students."
+      },
+      {
+        "ja": "彼は大学の学生です。",
+        "kana": "かれ は だいがく の がくせい です。",
+        "ro": "kare wa daigaku no gakusei desu.",
+        "en": "He is a university student."
+      },
+      {
+        "ja": "学生カードを見せてください。",
+        "kana": "がくせい かーど を みせて ください。",
+        "ro": "gakusei kaado o misete kudasai.",
+        "en": "Please show your student card."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-054",
+    "ja": "教室",
+    "kana": "きょうしつ",
+    "ro": "kyoushitsu",
+    "en": "classroom",
+    "examples": [
+      {
+        "ja": "教室で日本語を勉強します。",
+        "kana": "きょうしつ で にほんご を べんきょう します。",
+        "ro": "kyoushitsu de nihongo o benkyou shimasu.",
+        "en": "I study Japanese in the classroom."
+      },
+      {
+        "ja": "教室のドアを開けました。",
+        "kana": "きょうしつ の どあ を あけました。",
+        "ro": "kyoushitsu no doa o akemashita.",
+        "en": "I opened the classroom door."
+      },
+      {
+        "ja": "教室に先生がいます。",
+        "kana": "きょうしつ に せんせい が います。",
+        "ro": "kyoushitsu ni sensei ga imasu.",
+        "en": "The teacher is in the classroom."
+      },
+      {
+        "ja": "教室は広くて明るいです。",
+        "kana": "きょうしつ は ひろくて あかるい です。",
+        "ro": "kyoushitsu wa hirokute akarui desu.",
+        "en": "The classroom is wide and bright."
+      },
+      {
+        "ja": "新しい教室ができました。",
+        "kana": "あたらしい きょうしつ が できました。",
+        "ro": "atarashii kyoushitsu ga dekimashita.",
+        "en": "A new classroom has been built."
+      },
+      {
+        "ja": "教室に先生がいます。",
+        "kana": "きょうしつ に せんせい が います。",
+        "ro": "kyoushitsu ni sensei ga imasu.",
+        "en": "There is a teacher in the classroom."
+      },
+      {
+        "ja": "教室は二階にあります。",
+        "kana": "きょうしつ は にかい に あります。",
+        "ro": "kyoushitsu wa nikai ni arimasu.",
+        "en": "The classroom is on the second floor."
+      },
+      {
+        "ja": "教室で勉強します。",
+        "kana": "きょうしつ で べんきょう します。",
+        "ro": "kyoushitsu de benkyou shimasu.",
+        "en": "I study in the classroom."
+      },
+      {
+        "ja": "教室の窓を開けました。",
+        "kana": "きょうしつ の まど を あけました。",
+        "ro": "kyoushitsu no mado o akemashita.",
+        "en": "I opened the classroom window."
+      },
+      {
+        "ja": "教室は広いです。",
+        "kana": "きょうしつ は ひろい です。",
+        "ro": "kyoushitsu wa hiroi desu.",
+        "en": "The classroom is spacious."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-055",
+    "ja": "図書館",
+    "kana": "としょかん",
+    "ro": "toshokan",
+    "en": "library",
+    "examples": [
+      {
+        "ja": "図書館で本を読みます。",
+        "kana": "としょかん で ほん を よみます。",
+        "ro": "toshokan de hon o yomimasu.",
+        "en": "I read books at the library."
+      },
+      {
+        "ja": "図書館は静かです。",
+        "kana": "としょかん は しずか です。",
+        "ro": "toshokan wa shizuka desu.",
+        "en": "The library is quiet."
+      },
+      {
+        "ja": "図書館の前で友達に会いました。",
+        "kana": "としょかん の まえ で ともだち に あいました。",
+        "ro": "toshokan no mae de tomodachi ni aimashita.",
+        "en": "I met my friend in front of the library."
+      },
+      {
+        "ja": "図書館の本を借りました。",
+        "kana": "としょかん の ほん を かりました。",
+        "ro": "toshokan no hon o karimashita.",
+        "en": "I borrowed a book from the library."
+      },
+      {
+        "ja": "図書館で宿題をします。",
+        "kana": "としょかん で しゅくだい を します。",
+        "ro": "toshokan de shukudai o shimasu.",
+        "en": "I do my homework at the library."
+      },
+      {
+        "ja": "図書館で本を借りました。",
+        "kana": "としょかん で ほん を かりました。",
+        "ro": "toshokan de hon o karimashita.",
+        "en": "I borrowed a book from the library."
+      },
+      {
+        "ja": "図書館へ行って勉強します。",
+        "kana": "としょかん へ いって べんきょう します。",
+        "ro": "toshokan e itte benkyou shimasu.",
+        "en": "I go to the library to study."
+      },
+      {
+        "ja": "図書館はどこですか。",
+        "kana": "としょかん は どこ です か。",
+        "ro": "toshokan wa doko desu ka.",
+        "en": "Where is the library?"
+      },
+      {
+        "ja": "図書館で新聞を読みました。",
+        "kana": "としょかん で しんぶん を よみました。",
+        "ro": "toshokan de shinbun o yomimashita.",
+        "en": "I read the newspaper at the library."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-057",
+    "ja": "銀行",
+    "kana": "ぎんこう",
+    "ro": "ginkou",
+    "en": "bank",
+    "examples": [
+      {
+        "ja": "銀行でお金をおろしました。",
+        "kana": "ぎんこう で おかね を おろしました。",
+        "ro": "ginkou de okane o oroshimashita.",
+        "en": "I withdrew money at the bank."
+      },
+      {
+        "ja": "銀行は駅の近くにあります。",
+        "kana": "ぎんこう は えき の ちかく に あります。",
+        "ro": "ginkou wa eki no chikaku ni arimasu.",
+        "en": "The bank is near the station."
+      },
+      {
+        "ja": "銀行で働いています。",
+        "kana": "ぎんこう で はたらいて います。",
+        "ro": "ginkou de hataraite imasu.",
+        "en": "I work at a bank."
+      },
+      {
+        "ja": "銀行のカードをなくしました。",
+        "kana": "ぎんこう の かーど を なくしました。",
+        "ro": "ginkou no kaado o nakushimashita.",
+        "en": "I lost my bank card."
+      },
+      {
+        "ja": "父は銀行員です。",
+        "kana": "ちち は ぎんこういん です。",
+        "ro": "chichi wa ginkouin desu.",
+        "en": "My father is a banker."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-060",
+    "ja": "郵便局",
+    "kana": "ゆうびんきょく",
+    "ro": "yuubinkyoku",
+    "en": "post office",
+    "examples": [
+      {
+        "ja": "郵便局へ行って手紙を出しました。",
+        "kana": "ゆうびんきょく へ いって てがみ を だしました。",
+        "ro": "yuubinkyoku e itte tegami o dashimashita.",
+        "en": "I went to the post office and sent a letter."
+      },
+      {
+        "ja": "郵便局は銀行の隣にあります。",
+        "kana": "ゆうびんきょく は ぎんこう の となり に あります。",
+        "ro": "yuubinkyoku wa ginkou no tonari ni arimasu.",
+        "en": "The post office is next to the bank."
+      },
+      {
+        "ja": "郵便局で荷物を送りました。",
+        "kana": "ゆうびんきょく で にもつ を おくりました。",
+        "ro": "yuubinkyoku de nimotsu o okurimashita.",
+        "en": "I sent a package at the post office."
+      },
+      {
+        "ja": "郵便局で切手を買いました。",
+        "kana": "ゆうびんきょく で きって を かいました。",
+        "ro": "yuubinkyoku de kitte o kaimashita.",
+        "en": "I bought stamps at the post office."
+      },
+      {
+        "ja": "郵便局の前で友達に会いました。",
+        "kana": "ゆうびんきょく の まえ で ともだち に あいました。",
+        "ro": "yuubinkyoku no mae de tomodachi ni aimashita.",
+        "en": "I met my friend in front of the post office."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-061",
+    "ja": "店員",
+    "kana": "てんいん",
+    "ro": "ten’in",
+    "en": "shop clerk / store staff",
+    "examples": [
+      {
+        "ja": "店員が笑顔で話しました。",
+        "kana": "てんいん が えがお で はなしました。",
+        "ro": "ten’in ga egao de hanashimashita.",
+        "en": "The shop clerk spoke with a smile."
+      },
+      {
+        "ja": "店員にサイズを聞きました。",
+        "kana": "てんいん に さいず を ききました。",
+        "ro": "ten’in ni saizu o kikimashita.",
+        "en": "I asked the store clerk about the size."
+      },
+      {
+        "ja": "親切な店員がいました。",
+        "kana": "しんせつ な てんいん が いました。",
+        "ro": "shinsetsu na ten’in ga imashita.",
+        "en": "There was a kind store clerk."
+      },
+      {
+        "ja": "店員におすすめを聞きました。",
+        "kana": "てんいん に おすすめ を ききました。",
+        "ro": "ten’in ni osusume o kikimashita.",
+        "en": "I asked the clerk for a recommendation."
+      },
+      {
+        "ja": "店員が商品を包んでくれました。",
+        "kana": "てんいん が しょうひん を つつんで くれました。",
+        "ro": "ten’in ga shouhin o tsutsunde kuremashita.",
+        "en": "The clerk wrapped the item for me."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-063",
+    "ja": "地下鉄",
+    "kana": "ちかてつ",
+    "ro": "chikatetsu",
+    "en": "subway / metro",
+    "examples": [
+      {
+        "ja": "地下鉄で会社へ行きます。",
+        "kana": "ちかてつ で かいしゃ へ いきます。",
+        "ro": "chikatetsu de kaisha e ikimasu.",
+        "en": "I go to work by subway."
+      },
+      {
+        "ja": "地下鉄はとても速いです。",
+        "kana": "ちかてつ は とても はやい です。",
+        "ro": "chikatetsu wa totemo hayai desu.",
+        "en": "The subway is very fast."
+      },
+      {
+        "ja": "地下鉄の駅はここです。",
+        "kana": "ちかてつ の えき は ここ です。",
+        "ro": "chikatetsu no eki wa koko desu.",
+        "en": "The subway station is here."
+      },
+      {
+        "ja": "地下鉄に乗る前に切符を買います。",
+        "kana": "ちかてつ に のる まえ に きっぷ を かいます。",
+        "ro": "chikatetsu ni noru mae ni kippu o kaimasu.",
+        "en": "I buy a ticket before taking the subway."
+      },
+      {
+        "ja": "地下鉄の中は静かでした。",
+        "kana": "ちかてつ の なか は しずか でした。",
+        "ro": "chikatetsu no naka wa shizuka deshita.",
+        "en": "It was quiet inside the subway."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-064",
+    "ja": "飛行機",
+    "kana": "ひこうき",
+    "ro": "hikouki",
+    "en": "airplane",
+    "examples": [
+      {
+        "ja": "飛行機で大阪へ行きました。",
+        "kana": "ひこうき で おおさか へ いきました。",
+        "ro": "hikouki de oosaka e ikimashita.",
+        "en": "I went to Osaka by airplane."
+      },
+      {
+        "ja": "飛行機のチケットを買いました。",
+        "kana": "ひこうき の ちけっと を かいました。",
+        "ro": "hikouki no chiketto o kaimashita.",
+        "en": "I bought a plane ticket."
+      },
+      {
+        "ja": "飛行機が空を飛んでいます。",
+        "kana": "ひこうき が そら を とんで います。",
+        "ro": "hikouki ga sora o tonde imasu.",
+        "en": "An airplane is flying in the sky."
+      },
+      {
+        "ja": "初めて飛行機に乗りました。",
+        "kana": "はじめて ひこうき に のりました。",
+        "ro": "hajimete hikouki ni norimashita.",
+        "en": "I took a flight for the first time."
+      },
+      {
+        "ja": "飛行機の中で映画を見ました。",
+        "kana": "ひこうき の なか で えいが を みました。",
+        "ro": "hikouki no naka de eiga o mimashita.",
+        "en": "I watched a movie on the plane."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-065",
+    "ja": "空港",
+    "kana": "くうこう",
+    "ro": "kuukou",
+    "en": "airport",
+    "examples": [
+      {
+        "ja": "空港で家族を待ちました。",
+        "kana": "くうこう で かぞく を まちました。",
+        "ro": "kuukou de kazoku o machimashita.",
+        "en": "I waited for my family at the airport."
+      },
+      {
+        "ja": "空港はとても広いです。",
+        "kana": "くうこう は とても ひろい です。",
+        "ro": "kuukou wa totemo hiroi desu.",
+        "en": "The airport is very large."
+      },
+      {
+        "ja": "空港までタクシーで行きました。",
+        "kana": "くうこう まで たくしー で いきました。",
+        "ro": "kuukou made takushii de ikimashita.",
+        "en": "I went to the airport by taxi."
+      },
+      {
+        "ja": "空港の中にお店があります。",
+        "kana": "くうこう の なか に おみせ が あります。",
+        "ro": "kuukou no naka ni omise ga arimasu.",
+        "en": "There are shops inside the airport."
+      },
+      {
+        "ja": "空港で荷物を預けました。",
+        "kana": "くうこう で にもつ を あずけました。",
+        "ro": "kuukou de nimotsu o azukemashita.",
+        "en": "I checked my luggage at the airport."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-066",
+    "ja": "切符",
+    "kana": "きっぷ",
+    "ro": "kippu",
+    "en": "ticket",
+    "examples": [
+      {
+        "ja": "電車の切符を買いました。",
+        "kana": "でんしゃ の きっぷ を かいました。",
+        "ro": "densha no kippu o kaimashita.",
+        "en": "I bought a train ticket."
+      },
+      {
+        "ja": "切符をなくしました。",
+        "kana": "きっぷ を なくしました。",
+        "ro": "kippu o nakushimashita.",
+        "en": "I lost my ticket."
+      },
+      {
+        "ja": "この切符は一日使えます。",
+        "kana": "この きっぷ は いちにち つかえます。",
+        "ro": "kono kippu wa ichinichi tsukaemasu.",
+        "en": "This ticket is valid for one day."
+      },
+      {
+        "ja": "切符を見せてください。",
+        "kana": "きっぷ を みせて ください。",
+        "ro": "kippu o misete kudasai.",
+        "en": "Please show your ticket."
+      },
+      {
+        "ja": "切符売り場はあそこです。",
+        "kana": "きっぷ うりば は あそこ です。",
+        "ro": "kippu uriba wa asoko desu.",
+        "en": "The ticket counter is over there."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-067",
+    "ja": "荷物",
+    "kana": "にもつ",
+    "ro": "nimotsu",
+    "en": "luggage / baggage",
+    "examples": [
+      {
+        "ja": "荷物を持ちましょうか。",
+        "kana": "にもつ を もちましょう か。",
+        "ro": "nimotsu o mochimashou ka.",
+        "en": "Shall I carry your luggage?"
+      },
+      {
+        "ja": "荷物が重いです。",
+        "kana": "にもつ が おもい です。",
+        "ro": "nimotsu ga omoi desu.",
+        "en": "The luggage is heavy."
+      },
+      {
+        "ja": "空港で荷物を預けました。",
+        "kana": "くうこう で にもつ を あずけました。",
+        "ro": "kuukou de nimotsu o azukemashita.",
+        "en": "I checked my luggage at the airport."
+      },
+      {
+        "ja": "荷物がたくさんあります。",
+        "kana": "にもつ が たくさん あります。",
+        "ro": "nimotsu ga takusan arimasu.",
+        "en": "There are a lot of bags."
+      },
+      {
+        "ja": "荷物を電車に忘れました。",
+        "kana": "にもつ を でんしゃ に わすれました。",
+        "ro": "nimotsu o densha ni wasuremashita.",
+        "en": "I forgot my luggage on the train."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-068",
+    "ja": "旅行",
+    "kana": "りょこう",
+    "ro": "ryokou",
+    "en": "trip / travel",
+    "examples": [
+      {
+        "ja": "家族と旅行に行きました。",
+        "kana": "かぞく と りょこう に いきました。",
+        "ro": "kazoku to ryokou ni ikimashita.",
+        "en": "I went on a trip with my family."
+      },
+      {
+        "ja": "旅行の写真を見ました。",
+        "kana": "りょこう の しゃしん を みました。",
+        "ro": "ryokou no shashin o mimashita.",
+        "en": "I looked at travel photos."
+      },
+      {
+        "ja": "来月旅行をします。",
+        "kana": "らいげつ りょこう を します。",
+        "ro": "raigetsu ryokou o shimasu.",
+        "en": "I will travel next month."
+      },
+      {
+        "ja": "旅行の準備をしています。",
+        "kana": "りょこう の じゅんび を して います。",
+        "ro": "ryokou no junbi o shite imasu.",
+        "en": "I am preparing for the trip."
+      },
+      {
+        "ja": "旅行はとても楽しかったです。",
+        "kana": "りょこう は とても たのしかった です。",
+        "ro": "ryokou wa totemo tanoshikatta desu.",
+        "en": "The trip was very fun."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-069",
+    "ja": "ホテル",
+    "kana": "ほてる",
+    "ro": "hoteru",
+    "en": "hotel",
+    "examples": [
+      {
+        "ja": "旅行でホテルに泊まりました。",
+        "kana": "りょこう で ほてる に とまりました。",
+        "ro": "ryokou de hoteru ni tomarimashita.",
+        "en": "I stayed at a hotel during my trip."
+      },
+      {
+        "ja": "ホテルの部屋はきれいでした。",
+        "kana": "ほてる の へや は きれい でした。",
+        "ro": "hoteru no heya wa kirei deshita.",
+        "en": "The hotel room was clean."
+      },
+      {
+        "ja": "ホテルの前でタクシーを呼びました。",
+        "kana": "ほてる の まえ で たくしー を よびました。",
+        "ro": "hoteru no mae de takushii o yobimashita.",
+        "en": "I called a taxi in front of the hotel."
+      },
+      {
+        "ja": "ホテルの朝ごはんがおいしかったです。",
+        "kana": "ほてる の あさごはん が おいしかった です。",
+        "ro": "hoteru no asagohan ga oishikatta desu.",
+        "en": "The hotel breakfast was delicious."
+      },
+      {
+        "ja": "ホテルの人はとても親切です。",
+        "kana": "ほてる の ひと は とても しんせつ です。",
+        "ro": "hoteru no hito wa totemo shinsetsu desu.",
+        "en": "The hotel staff are very kind."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-070",
+    "ja": "レストラン",
+    "kana": "れすとらん",
+    "ro": "resutoran",
+    "en": "restaurant",
+    "examples": [
+      {
+        "ja": "駅の近くにレストランがあります。",
+        "kana": "えき の ちかく に れすとらん が あります。",
+        "ro": "eki no chikaku ni resutoran ga arimasu.",
+        "en": "There is a restaurant near the station."
+      },
+      {
+        "ja": "このレストランは有名です。",
+        "kana": "この れすとらん は ゆうめい です。",
+        "ro": "kono resutoran wa yuumei desu.",
+        "en": "This restaurant is famous."
+      },
+      {
+        "ja": "レストランで昼ごはんを食べました。",
+        "kana": "れすとらん で ひるごはん を たべました。",
+        "ro": "resutoran de hirugohan o tabemashita.",
+        "en": "I ate lunch at a restaurant."
+      },
+      {
+        "ja": "レストランの料理はおいしいです。",
+        "kana": "れすとらん の りょうり は おいしい です。",
+        "ro": "resutoran no ryouri wa oishii desu.",
+        "en": "The food at the restaurant is delicious."
+      },
+      {
+        "ja": "友達とレストランで会いました。",
+        "kana": "ともだち と れすとらん で あいました。",
+        "ro": "tomodachi to resutoran de aimashita.",
+        "en": "I met my friend at a restaurant."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-071",
+    "ja": "食べ物",
+    "kana": "たべもの",
+    "ro": "tabemono",
+    "en": "food",
+    "examples": [
+      {
+        "ja": "日本の食べ物が好きです。",
+        "kana": "にほん の たべもの が すき です。",
+        "ro": "nihon no tabemono ga suki desu.",
+        "en": "I like Japanese food."
+      },
+      {
+        "ja": "この食べ物は辛いです。",
+        "kana": "この たべもの は からい です。",
+        "ro": "kono tabemono wa karai desu.",
+        "en": "This food is spicy."
+      },
+      {
+        "ja": "母の作った食べ物はおいしいです。",
+        "kana": "はは の つくった たべもの は おいしい です。",
+        "ro": "haha no tsukutta tabemono wa oishii desu.",
+        "en": "The food my mother made is delicious."
+      },
+      {
+        "ja": "食べ物を冷蔵庫に入れました。",
+        "kana": "たべもの を れいぞうこ に いれました。",
+        "ro": "tabemono o reizouko ni iremashita.",
+        "en": "I put the food in the refrigerator."
+      },
+      {
+        "ja": "新しい食べ物を試してみたいです。",
+        "kana": "あたらしい たべもの を ためして みたい です。",
+        "ro": "atarashii tabemono o tameshite mitai desu.",
+        "en": "I want to try new foods."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-072",
+    "ja": "飲み物",
+    "kana": "のみもの",
+    "ro": "nomimono",
+    "en": "drink / beverage",
+    "examples": [
+      {
+        "ja": "冷たい飲み物がほしいです。",
+        "kana": "つめたい のみもの が ほしい です。",
+        "ro": "tsumetai nomimono ga hoshii desu.",
+        "en": "I want a cold drink."
+      },
+      {
+        "ja": "この飲み物は甘いです。",
+        "kana": "この のみもの は あまい です。",
+        "ro": "kono nomimono wa amai desu.",
+        "en": "This drink is sweet."
+      },
+      {
+        "ja": "飲み物を買ってきます。",
+        "kana": "のみもの を かって きます。",
+        "ro": "nomimono o katte kimasu.",
+        "en": "I’ll go buy a drink."
+      },
+      {
+        "ja": "食べ物と飲み物を用意しました。",
+        "kana": "たべもの と のみもの を ようい しました。",
+        "ro": "tabemono to nomimono o youi shimashita.",
+        "en": "I prepared food and drinks."
+      },
+      {
+        "ja": "飲み物は冷蔵庫にあります。",
+        "kana": "のみもの は れいぞうこ に あります。",
+        "ro": "nomimono wa reizouko ni arimasu.",
+        "en": "The drinks are in the refrigerator."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-077",
+    "ja": "パン",
+    "kana": "ぱん",
+    "ro": "pan",
+    "en": "bread",
+    "examples": [
+      {
+        "ja": "朝ごはんにパンを食べました。",
+        "kana": "あさごはん に ぱん を たべました。",
+        "ro": "asagohan ni pan o tabemashita.",
+        "en": "I ate bread for breakfast."
+      },
+      {
+        "ja": "パン屋でパンを買いました。",
+        "kana": "ぱんや で ぱん を かいました。",
+        "ro": "panya de pan o kaimashita.",
+        "en": "I bought bread at the bakery."
+      },
+      {
+        "ja": "このパンは甘いです。",
+        "kana": "この ぱん は あまい です。",
+        "ro": "kono pan wa amai desu.",
+        "en": "This bread is sweet."
+      },
+      {
+        "ja": "パンをトースターで焼きます。",
+        "kana": "ぱん を とーすたー で やきます。",
+        "ro": "pan o toosutaa de yakimasu.",
+        "en": "I toast bread in the toaster."
+      },
+      {
+        "ja": "パンとコーヒーをください。",
+        "kana": "ぱん と こーひー を ください。",
+        "ro": "pan to koohii o kudasai.",
+        "en": "Bread and coffee, please."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-082",
+    "ja": "牛乳",
+    "kana": "ぎゅうにゅう",
+    "ro": "gyuunyuu",
+    "en": "milk",
+    "examples": [
+      {
+        "ja": "朝ごはんに牛乳を飲みます。",
+        "kana": "あさごはん に ぎゅうにゅう を のみます。",
+        "ro": "asagohan ni gyuunyuu o nomimasu.",
+        "en": "I drink milk for breakfast."
+      },
+      {
+        "ja": "冷たい牛乳が好きです。",
+        "kana": "つめたい ぎゅうにゅう が すき です。",
+        "ro": "tsumetai gyuunyuu ga suki desu.",
+        "en": "I like cold milk."
+      },
+      {
+        "ja": "牛乳をコップに入れました。",
+        "kana": "ぎゅうにゅう を こっぷ に いれました。",
+        "ro": "gyuunyuu o koppu ni iremashita.",
+        "en": "I poured milk into a cup."
+      },
+      {
+        "ja": "牛乳を買いに行きました。",
+        "kana": "ぎゅうにゅう を かい に いきました。",
+        "ro": "gyuunyuu o kai ni ikimashita.",
+        "en": "I went to buy milk."
+      },
+      {
+        "ja": "牛乳が冷蔵庫にあります。",
+        "kana": "ぎゅうにゅう が れいぞうこ に あります。",
+        "ro": "gyuunyuu ga reizouko ni arimasu.",
+        "en": "There is milk in the refrigerator."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-084",
+    "ja": "砂糖",
+    "kana": "さとう",
+    "ro": "satou",
+    "en": "sugar",
+    "examples": [
+      {
+        "ja": "コーヒーに砂糖を入れます。",
+        "kana": "こーひー に さとう を いれます。",
+        "ro": "koohii ni satou o iremasu.",
+        "en": "I add sugar to coffee."
+      },
+      {
+        "ja": "砂糖を少しください。",
+        "kana": "さとう を すこし ください。",
+        "ro": "satou o sukoshi kudasai.",
+        "en": "Please give me a little sugar."
+      },
+      {
+        "ja": "砂糖は甘いです。",
+        "kana": "さとう は あまい です。",
+        "ro": "satou wa amai desu.",
+        "en": "Sugar is sweet."
+      },
+      {
+        "ja": "砂糖をたくさん入れすぎました。",
+        "kana": "さとう を たくさん いれすぎました。",
+        "ro": "satou o takusan iresugimashita.",
+        "en": "I added too much sugar."
+      },
+      {
+        "ja": "砂糖はどこにありますか。",
+        "kana": "さとう は どこ に あります か。",
+        "ro": "satou wa doko ni arimasu ka.",
+        "en": "Where is the sugar?"
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-085",
+    "ja": "塩",
+    "kana": "しお",
+    "ro": "shio",
+    "en": "salt",
+    "examples": [
+      {
+        "ja": "スープに塩を入れました。",
+        "kana": "すーぷ に しお を いれました。",
+        "ro": "suupu ni shio o iremashita.",
+        "en": "I added salt to the soup."
+      },
+      {
+        "ja": "塩を取りました。",
+        "kana": "しお を とりました。",
+        "ro": "shio o torimashita.",
+        "en": "I picked up the salt."
+      },
+      {
+        "ja": "塩と砂糖を間違えました。",
+        "kana": "しお と さとう を まちがえました。",
+        "ro": "shio to satou o machigaemashita.",
+        "en": "I mistook salt for sugar."
+      },
+      {
+        "ja": "塩は少しだけ使ってください。",
+        "kana": "しお は すこし だけ つかって ください。",
+        "ro": "shio wa sukoshi dake tsukatte kudasai.",
+        "en": "Please use only a little salt."
+      },
+      {
+        "ja": "塩が足りません。",
+        "kana": "しお が たりません。",
+        "ro": "shio ga tarimasen.",
+        "en": "There isn’t enough salt."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-086",
+    "ja": "皿",
+    "kana": "さら",
+    "ro": "sara",
+    "en": "plate / dish",
+    "examples": [
+      {
+        "ja": "皿を洗いました。",
+        "kana": "さら を あらいました。",
+        "ro": "sara o araimashita.",
+        "en": "I washed the dishes."
+      },
+      {
+        "ja": "きれいな皿を使ってください。",
+        "kana": "きれいな さら を つかって ください。",
+        "ro": "kireina sara o tsukatte kudasai.",
+        "en": "Please use a clean plate."
+      },
+      {
+        "ja": "皿の上にケーキがあります。",
+        "kana": "さら の うえ に けーき が あります。",
+        "ro": "sara no ue ni keeki ga arimasu.",
+        "en": "There is a cake on the plate."
+      },
+      {
+        "ja": "皿を二枚出してください。",
+        "kana": "さら を にまい だして ください。",
+        "ro": "sara o nimai dashite kudasai.",
+        "en": "Please take out two plates."
+      },
+      {
+        "ja": "皿を棚に戻しました。",
+        "kana": "さら を たな に もどしました。",
+        "ro": "sara o tana ni modoshimashita.",
+        "en": "I put the plates back on the shelf."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-087",
+    "ja": "スプーン",
+    "kana": "すぷーん",
+    "ro": "supuun",
+    "en": "spoon",
+    "examples": [
+      {
+        "ja": "スプーンでカレーを食べます。",
+        "kana": "すぷーん で かれー を たべます。",
+        "ro": "supuun de karee o tabemasu.",
+        "en": "I eat curry with a spoon."
+      },
+      {
+        "ja": "スプーンを落としました。",
+        "kana": "すぷーん を おとしました。",
+        "ro": "supuun o otoshimashita.",
+        "en": "I dropped the spoon."
+      },
+      {
+        "ja": "スプーンを貸してください。",
+        "kana": "すぷーん を かして ください。",
+        "ro": "supuun o kashite kudasai.",
+        "en": "Please lend me a spoon."
+      },
+      {
+        "ja": "スプーンはテーブルの上にあります。",
+        "kana": "すぷーん は てーぶる の うえ に あります。",
+        "ro": "supuun wa teeburu no ue ni arimasu.",
+        "en": "The spoon is on the table."
+      },
+      {
+        "ja": "スプーンを使ってください。",
+        "kana": "すぷーん を つかって ください。",
+        "ro": "supuun o tsukatte kudasai.",
+        "en": "Please use a spoon."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-088",
+    "ja": "フォーク",
+    "kana": "ふぉーく",
+    "ro": "fooku",
+    "en": "fork",
+    "examples": [
+      {
+        "ja": "フォークでサラダを食べました。",
+        "kana": "ふぉーく で さらだ を たべました。",
+        "ro": "fooku de sarada o tabemashita.",
+        "en": "I ate salad with a fork."
+      },
+      {
+        "ja": "フォークを落としました。",
+        "kana": "ふぉーく を おとしました。",
+        "ro": "fooku o otoshimashita.",
+        "en": "I dropped the fork."
+      },
+      {
+        "ja": "フォークを洗ってください。",
+        "kana": "ふぉーく を あらって ください。",
+        "ro": "fooku o aratte kudasai.",
+        "en": "Please wash the fork."
+      },
+      {
+        "ja": "フォークが足りません。",
+        "kana": "ふぉーく が たりません。",
+        "ro": "fooku ga tarimasen.",
+        "en": "There aren’t enough forks."
+      },
+      {
+        "ja": "フォークを使ってケーキを食べます。",
+        "kana": "ふぉーく を つかって けーき を たべます。",
+        "ro": "fooku o tsukatte keeki o tabemasu.",
+        "en": "I eat cake with a fork."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-089",
+    "ja": "ナイフ",
+    "kana": "ないふ",
+    "ro": "naifu",
+    "en": "knife",
+    "examples": [
+      {
+        "ja": "ナイフでパンを切りました。",
+        "kana": "ないふ で ぱん を きりました。",
+        "ro": "naifu de pan o kirimashita.",
+        "en": "I cut the bread with a knife."
+      },
+      {
+        "ja": "ナイフを使って肉を切ります。",
+        "kana": "ないふ を つかって にく を きります。",
+        "ro": "naifu o tsukatte niku o kirimasu.",
+        "en": "I use a knife to cut the meat."
+      },
+      {
+        "ja": "ナイフを洗いました。",
+        "kana": "ないふ を あらいました。",
+        "ro": "naifu o araimashita.",
+        "en": "I washed the knife."
+      },
+      {
+        "ja": "ナイフを貸してください。",
+        "kana": "ないふ を かして ください。",
+        "ro": "naifu o kashite kudasai.",
+        "en": "Please lend me a knife."
+      },
+      {
+        "ja": "ナイフが机の上にあります。",
+        "kana": "ないふ が つくえ の うえ に あります。",
+        "ro": "naifu ga tsukue no ue ni arimasu.",
+        "en": "The knife is on the desk."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-090",
+    "ja": "コップ",
+    "kana": "こっぷ",
+    "ro": "koppu",
+    "en": "cup / glass",
+    "examples": [
+      {
+        "ja": "コップに水を入れました。",
+        "kana": "こっぷ に みず を いれました。",
+        "ro": "koppu ni mizu o iremashita.",
+        "en": "I poured water into a cup."
+      },
+      {
+        "ja": "コップを落として割りました。",
+        "kana": "こっぷ を おとして わりました。",
+        "ro": "koppu o otoshite warimashita.",
+        "en": "I dropped and broke the cup."
+      },
+      {
+        "ja": "コップが棚の上にあります。",
+        "kana": "こっぷ が たな の うえ に あります。",
+        "ro": "koppu ga tana no ue ni arimasu.",
+        "en": "The cup is on the shelf."
+      },
+      {
+        "ja": "新しいコップを買いました。",
+        "kana": "あたらしい こっぷ を かいました。",
+        "ro": "atarashii koppu o kaimashita.",
+        "en": "I bought a new cup."
+      },
+      {
+        "ja": "コップにジュースを入れてください。",
+        "kana": "こっぷ に じゅーす を いれて ください。",
+        "ro": "koppu ni juusu o irete kudasai.",
+        "en": "Please pour juice into the cup."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-091",
+    "ja": "机",
+    "kana": "つくえ",
+    "ro": "tsukue",
+    "en": "desk / table",
+    "examples": [
+      {
+        "ja": "机の上に本があります。",
+        "kana": "つくえ の うえ に ほん が あります。",
+        "ro": "tsukue no ue ni hon ga arimasu.",
+        "en": "There is a book on the desk."
+      },
+      {
+        "ja": "新しい机を買いました。",
+        "kana": "あたらしい つくえ を かいました。",
+        "ro": "atarashii tsukue o kaimashita.",
+        "en": "I bought a new desk."
+      },
+      {
+        "ja": "机の下にかばんがあります。",
+        "kana": "つくえ の した に かばん が あります。",
+        "ro": "tsukue no shita ni kaban ga arimasu.",
+        "en": "There is a bag under the desk."
+      },
+      {
+        "ja": "机を動かしてください。",
+        "kana": "つくえ を うごかして ください。",
+        "ro": "tsukue o ugokashite kudasai.",
+        "en": "Please move the desk."
+      },
+      {
+        "ja": "机の上をきれいにしました。",
+        "kana": "つくえ の うえ を きれい に しました。",
+        "ro": "tsukue no ue o kirei ni shimashita.",
+        "en": "I cleaned the top of the desk."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-092",
+    "ja": "いす",
+    "kana": "いす",
+    "ro": "isu",
+    "en": "chair",
+    "examples": [
+      {
+        "ja": "いすに座ってください。",
+        "kana": "いす に すわって ください。",
+        "ro": "isu ni suwatte kudasai.",
+        "en": "Please sit on the chair."
+      },
+      {
+        "ja": "新しいいすを買いました。",
+        "kana": "あたらしい いす を かいました。",
+        "ro": "atarashii isu o kaimashita.",
+        "en": "I bought a new chair."
+      },
+      {
+        "ja": "このいすはとても高いです。",
+        "kana": "この いす は とても たかい です。",
+        "ro": "kono isu wa totemo takai desu.",
+        "en": "This chair is very expensive."
+      },
+      {
+        "ja": "いすを机の下に置きました。",
+        "kana": "いす を つくえ の した に おきました。",
+        "ro": "isu o tsukue no shita ni okimashita.",
+        "en": "I put the chair under the desk."
+      },
+      {
+        "ja": "いすが三つあります。",
+        "kana": "いす が みっつ あります。",
+        "ro": "isu ga mittsu arimasu.",
+        "en": "There are three chairs."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-094",
+    "ja": "ノート",
+    "kana": "のーと",
+    "ro": "nooto",
+    "en": "notebook",
+    "examples": [
+      {
+        "ja": "ノートに名前を書いてください。",
+        "kana": "のーと に なまえ を かいて ください。",
+        "ro": "nooto ni namae o kaite kudasai.",
+        "en": "Please write your name in the notebook."
+      },
+      {
+        "ja": "このノートは新しいです。",
+        "kana": "この のーと は あたらしい です。",
+        "ro": "kono nooto wa atarashii desu.",
+        "en": "This notebook is new."
+      },
+      {
+        "ja": "ノートを学校に持っていきます。",
+        "kana": "のーと を がっこう に もって いきます。",
+        "ro": "nooto o gakkou ni motte ikimasu.",
+        "en": "I take my notebook to school."
+      },
+      {
+        "ja": "ノートを忘れました。",
+        "kana": "のーと を わすれました。",
+        "ro": "nooto o wasuremashita.",
+        "en": "I forgot my notebook."
+      },
+      {
+        "ja": "ノートにメモを取りました。",
+        "kana": "のーと に めも を とりました。",
+        "ro": "nooto ni memo o torimashita.",
+        "en": "I took notes in the notebook."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-095",
+    "ja": "えんぴつ",
+    "kana": "えんぴつ",
+    "ro": "enpitsu",
+    "en": "pencil",
+    "examples": [
+      {
+        "ja": "えんぴつで書きます。",
+        "kana": "えんぴつ で かきます。",
+        "ro": "enpitsu de kakimasu.",
+        "en": "I write with a pencil."
+      },
+      {
+        "ja": "新しいえんぴつを買いました。",
+        "kana": "あたらしい えんぴつ を かいました。",
+        "ro": "atarashii enpitsu o kaimashita.",
+        "en": "I bought a new pencil."
+      },
+      {
+        "ja": "えんぴつが机の上にあります。",
+        "kana": "えんぴつ が つくえ の うえ に あります。",
+        "ro": "enpitsu ga tsukue no ue ni arimasu.",
+        "en": "The pencil is on the desk."
+      },
+      {
+        "ja": "えんぴつを削ってください。",
+        "kana": "えんぴつ を けずって ください。",
+        "ro": "enpitsu o kezutte kudasai.",
+        "en": "Please sharpen the pencil."
+      },
+      {
+        "ja": "えんぴつを落としました。",
+        "kana": "えんぴつ を おとしました。",
+        "ro": "enpitsu o otoshimashita.",
+        "en": "I dropped my pencil."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-096",
+    "ja": "ペン",
+    "kana": "ぺん",
+    "ro": "pen",
+    "en": "pen",
+    "examples": [
+      {
+        "ja": "ペンでサインをしました。",
+        "kana": "ぺん で さいん を しました。",
+        "ro": "pen de sain o shimashita.",
+        "en": "I signed with a pen."
+      },
+      {
+        "ja": "赤いペンを使ってください。",
+        "kana": "あかい ぺん を つかって ください。",
+        "ro": "akai pen o tsukatte kudasai.",
+        "en": "Please use a red pen."
+      },
+      {
+        "ja": "ペンが見つかりません。",
+        "kana": "ぺん が みつかりません。",
+        "ro": "pen ga mitsukarimasen.",
+        "en": "I can’t find my pen."
+      },
+      {
+        "ja": "ペンを貸してください。",
+        "kana": "ぺん を かして ください。",
+        "ro": "pen o kashite kudasai.",
+        "en": "Please lend me a pen."
+      },
+      {
+        "ja": "新しいペンを買いました。",
+        "kana": "あたらしい ぺん を かいました。",
+        "ro": "atarashii pen o kaimashita.",
+        "en": "I bought a new pen."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-097",
+    "ja": "かばん",
+    "kana": "かばん",
+    "ro": "kaban",
+    "en": "bag",
+    "examples": [
+      {
+        "ja": "かばんを持っています。",
+        "kana": "かばん を もっています。",
+        "ro": "kaban o motte imasu.",
+        "en": "I have a bag."
+      },
+      {
+        "ja": "かばんの中に財布があります。",
+        "kana": "かばん の なか に さいふ が あります。",
+        "ro": "kaban no naka ni saifu ga arimasu.",
+        "en": "There is a wallet in the bag."
+      },
+      {
+        "ja": "新しいかばんを買いました。",
+        "kana": "あたらしい かばん を かいました。",
+        "ro": "atarashii kaban o kaimashita.",
+        "en": "I bought a new bag."
+      },
+      {
+        "ja": "かばんを机の下に置きました。",
+        "kana": "かばん を つくえ の した に おきました。",
+        "ro": "kaban o tsukue no shita ni okimashita.",
+        "en": "I put the bag under the desk."
+      },
+      {
+        "ja": "かばんを忘れました。",
+        "kana": "かばん を わすれました。",
+        "ro": "kaban o wasuremashita.",
+        "en": "I forgot my bag."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-098",
+    "ja": "財布",
+    "kana": "さいふ",
+    "ro": "saifu",
+    "en": "wallet",
+    "examples": [
+      {
+        "ja": "財布を落としました。",
+        "kana": "さいふ を おとしました。",
+        "ro": "saifu o otoshimashita.",
+        "en": "I dropped my wallet."
+      },
+      {
+        "ja": "財布の中にお金があります。",
+        "kana": "さいふ の なか に おかね が あります。",
+        "ro": "saifu no naka ni okane ga arimasu.",
+        "en": "There is money in the wallet."
+      },
+      {
+        "ja": "新しい財布を買いました。",
+        "kana": "あたらしい さいふ を かいました。",
+        "ro": "atarashii saifu o kaimashita.",
+        "en": "I bought a new wallet."
+      },
+      {
+        "ja": "財布をかばんに入れました。",
+        "kana": "さいふ を かばん に いれました。",
+        "ro": "saifu o kaban ni iremashita.",
+        "en": "I put the wallet in the bag."
+      },
+      {
+        "ja": "財布をなくしてしまいました。",
+        "kana": "さいふ を なくして しまいました。",
+        "ro": "saifu o nakushite shimaimashita.",
+        "en": "I lost my wallet."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-100",
+    "ja": "めがね",
+    "kana": "めがね",
+    "ro": "megane",
+    "en": "glasses",
+    "examples": [
+      {
+        "ja": "めがねをかけています。",
+        "kana": "めがね を かけています。",
+        "ro": "megane o kakete imasu.",
+        "en": "I am wearing glasses."
+      },
+      {
+        "ja": "新しいめがねを買いました。",
+        "kana": "あたらしい めがね を かいました。",
+        "ro": "atarashii megane o kaimashita.",
+        "en": "I bought new glasses."
+      },
+      {
+        "ja": "めがねをなくしました。",
+        "kana": "めがね を なくしました。",
+        "ro": "megane o nakushimashita.",
+        "en": "I lost my glasses."
+      },
+      {
+        "ja": "めがねを机の上に置きました。",
+        "kana": "めがね を つくえ の うえ に おきました。",
+        "ro": "megane o tsukue no ue ni okimashita.",
+        "en": "I put my glasses on the desk."
+      },
+      {
+        "ja": "めがねをかけないと見えません。",
+        "kana": "めがね を かけない と みえません。",
+        "ro": "megane o kakenai to miemasen.",
+        "en": "I can’t see without my glasses."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-107",
+    "ja": "歌",
+    "kana": "うた",
+    "ro": "uta",
+    "en": "song",
+    "examples": [
+      {
+        "ja": "この歌が好きです。",
+        "kana": "この うた が すき です。",
+        "ro": "kono uta ga suki desu.",
+        "en": "I like this song."
+      },
+      {
+        "ja": "日本の歌を聞きます。",
+        "kana": "にほん の うた を ききます。",
+        "ro": "nihon no uta o kikimasu.",
+        "en": "I listen to Japanese songs."
+      },
+      {
+        "ja": "彼は歌が上手です。",
+        "kana": "かれ は うた が じょうず です。",
+        "ro": "kare wa uta ga jouzu desu.",
+        "en": "He is good at singing."
+      },
+      {
+        "ja": "みんなで歌を歌いました。",
+        "kana": "みんな で うた を うたいました。",
+        "ro": "minna de uta o utaimashita.",
+        "en": "We sang songs together."
+      },
+      {
+        "ja": "この歌はとても有名です。",
+        "kana": "この うた は とても ゆうめい です。",
+        "ro": "kono uta wa totemo yuumei desu.",
+        "en": "This song is very famous."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-108",
+    "ja": "絵",
+    "kana": "え",
+    "ro": "e",
+    "en": "picture / drawing",
+    "examples": [
+      {
+        "ja": "絵を描くのが好きです。",
+        "kana": "え を かく の が すき です。",
+        "ro": "e o kaku no ga suki desu.",
+        "en": "I like drawing pictures."
+      },
+      {
+        "ja": "きれいな絵ですね。",
+        "kana": "きれいな え ですね。",
+        "ro": "kireina e desu ne.",
+        "en": "That’s a beautiful picture."
+      },
+      {
+        "ja": "子どもの絵を見ました。",
+        "kana": "こども の え を みました。",
+        "ro": "kodomo no e o mimashita.",
+        "en": "I saw a child’s drawing."
+      },
+      {
+        "ja": "絵をかざりました。",
+        "kana": "え を かざりました。",
+        "ro": "e o kazari mashita.",
+        "en": "I decorated the room with a picture."
+      },
+      {
+        "ja": "友達の絵をもらいました。",
+        "kana": "ともだち の え を もらいました。",
+        "ro": "tomodachi no e o moraimashita.",
+        "en": "I received a drawing from my friend."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-109",
+    "ja": "映画館",
+    "kana": "えいがかん",
+    "ro": "eigakan",
+    "en": "movie theater / cinema",
+    "examples": [
+      {
+        "ja": "映画館へ行きました。",
+        "kana": "えいがかん へ いきました。",
+        "ro": "eigakan e ikimashita.",
+        "en": "I went to the movie theater."
+      },
+      {
+        "ja": "映画館は駅の近くにあります。",
+        "kana": "えいがかん は えき の ちかく に あります。",
+        "ro": "eigakan wa eki no chikaku ni arimasu.",
+        "en": "The movie theater is near the station."
+      },
+      {
+        "ja": "映画館で新しい映画を見ました。",
+        "kana": "えいがかん で あたらしい えいが を みました。",
+        "ro": "eigakan de atarashii eiga o mimashita.",
+        "en": "I watched a new movie at the theater."
+      },
+      {
+        "ja": "映画館はとても大きいです。",
+        "kana": "えいがかん は とても おおきい です。",
+        "ro": "eigakan wa totemo ookii desu.",
+        "en": "The cinema is very large."
+      },
+      {
+        "ja": "友達と映画館で会いました。",
+        "kana": "ともだち と えいがかん で あいました。",
+        "ro": "tomodachi to eigakan de aimashita.",
+        "en": "I met my friend at the movie theater."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-115",
+    "ja": "大学",
+    "kana": "だいがく",
+    "ro": "daigaku",
+    "en": "university / college",
+    "examples": [
+      {
+        "ja": "私は大学に通っています。",
+        "kana": "わたし は だいがく に かよっています。",
+        "ro": "watashi wa daigaku ni kayotte imasu.",
+        "en": "I go to university."
+      },
+      {
+        "ja": "大学で日本語を勉強しています。",
+        "kana": "だいがく で にほんご を べんきょう しています。",
+        "ro": "daigaku de nihongo o benkyou shite imasu.",
+        "en": "I study Japanese at university."
+      },
+      {
+        "ja": "大学はとても広いです。",
+        "kana": "だいがく は とても ひろい です。",
+        "ro": "daigaku wa totemo hiroi desu.",
+        "en": "The university is very large."
+      },
+      {
+        "ja": "大学の図書館で勉強しました。",
+        "kana": "だいがく の としょかん で べんきょう しました。",
+        "ro": "daigaku no toshokan de benkyou shimashita.",
+        "en": "I studied at the university library."
+      },
+      {
+        "ja": "大学の先生は親切です。",
+        "kana": "だいがく の せんせい は しんせつ です。",
+        "ro": "daigaku no sensei wa shinsetsu desu.",
+        "en": "The professors at the university are kind."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-116",
+    "ja": "高校",
+    "kana": "こうこう",
+    "ro": "koukou",
+    "en": "high school",
+    "examples": [
+      {
+        "ja": "私は高校生です。",
+        "kana": "わたし は こうこうせい です。",
+        "ro": "watashi wa koukousei desu.",
+        "en": "I am a high school student."
+      },
+      {
+        "ja": "高校は家の近くにあります。",
+        "kana": "こうこう は いえ の ちかく に あります。",
+        "ro": "koukou wa ie no chikaku ni arimasu.",
+        "en": "The high school is near my house."
+      },
+      {
+        "ja": "高校で英語を勉強しました。",
+        "kana": "こうこう で えいご を べんきょう しました。",
+        "ro": "koukou de eigo o benkyou shimashita.",
+        "en": "I studied English in high school."
+      },
+      {
+        "ja": "高校の友達に会いました。",
+        "kana": "こうこう の ともだち に あいました。",
+        "ro": "koukou no tomodachi ni aimashita.",
+        "en": "I met my high school friend."
+      },
+      {
+        "ja": "高校生活はとても楽しかったです。",
+        "kana": "こうこう せいかつ は とても たのしかった です。",
+        "ro": "koukou seikatsu wa totemo tanoshikatta desu.",
+        "en": "My high school life was very fun."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-117",
+    "ja": "先生の部屋",
+    "kana": "せんせい の へや",
+    "ro": "sensei no heya",
+    "en": "teacher’s room / office",
+    "examples": [
+      {
+        "ja": "先生の部屋に行きました。",
+        "kana": "せんせい の へや に いきました。",
+        "ro": "sensei no heya ni ikimashita.",
+        "en": "I went to the teacher’s room."
+      },
+      {
+        "ja": "先生の部屋は三階にあります。",
+        "kana": "せんせい の へや は さんがい に あります。",
+        "ro": "sensei no heya wa sangai ni arimasu.",
+        "en": "The teacher’s room is on the third floor."
+      },
+      {
+        "ja": "先生の部屋で話しました。",
+        "kana": "せんせい の へや で はなしました。",
+        "ro": "sensei no heya de hanashimashita.",
+        "en": "I talked in the teacher’s office."
+      },
+      {
+        "ja": "先生の部屋のドアをノックしました。",
+        "kana": "せんせい の へや の どあ を のっく しました。",
+        "ro": "sensei no heya no doa o nokku shimashita.",
+        "en": "I knocked on the teacher’s room door."
+      },
+      {
+        "ja": "先生の部屋には本がたくさんあります。",
+        "kana": "せんせい の へや には ほん が たくさん あります。",
+        "ro": "sensei no heya ni wa hon ga takusan arimasu.",
+        "en": "There are many books in the teacher’s room."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-118",
+    "ja": "試験",
+    "kana": "しけん",
+    "ro": "shiken",
+    "en": "exam / test",
+    "examples": [
+      {
+        "ja": "明日試験があります。",
+        "kana": "あした しけん が あります。",
+        "ro": "ashita shiken ga arimasu.",
+        "en": "There is an exam tomorrow."
+      },
+      {
+        "ja": "試験の勉強をしています。",
+        "kana": "しけん の べんきょう を しています。",
+        "ro": "shiken no benkyou o shite imasu.",
+        "en": "I am studying for the exam."
+      },
+      {
+        "ja": "試験は難しかったです。",
+        "kana": "しけん は むずかしかった です。",
+        "ro": "shiken wa muzukashikatta desu.",
+        "en": "The exam was difficult."
+      },
+      {
+        "ja": "試験が終わってうれしいです。",
+        "kana": "しけん が おわって うれしい です。",
+        "ro": "shiken ga owatte ureshii desu.",
+        "en": "I’m happy that the exam is over."
+      },
+      {
+        "ja": "試験の結果はどうでしたか。",
+        "kana": "しけん の けっか は どう でした か。",
+        "ro": "shiken no kekka wa dou deshita ka.",
+        "en": "How was your exam result?"
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-119",
+    "ja": "宿題",
+    "kana": "しゅくだい",
+    "ro": "shukudai",
+    "en": "homework",
+    "examples": [
+      {
+        "ja": "毎日宿題をします。",
+        "kana": "まいにち しゅくだい を します。",
+        "ro": "mainichi shukudai o shimasu.",
+        "en": "I do my homework every day."
+      },
+      {
+        "ja": "宿題を忘れました。",
+        "kana": "しゅくだい を わすれました。",
+        "ro": "shukudai o wasuremashita.",
+        "en": "I forgot my homework."
+      },
+      {
+        "ja": "宿題は簡単でした。",
+        "kana": "しゅくだい は かんたん でした。",
+        "ro": "shukudai wa kantan deshita.",
+        "en": "The homework was easy."
+      },
+      {
+        "ja": "宿題を先生に出しました。",
+        "kana": "しゅくだい を せんせい に だしました。",
+        "ro": "shukudai o sensei ni dashimashita.",
+        "en": "I submitted my homework to the teacher."
+      },
+      {
+        "ja": "宿題を手伝ってください。",
+        "kana": "しゅくだい を てつだって ください。",
+        "ro": "shukudai o tetsudatte kudasai.",
+        "en": "Please help me with my homework."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-120",
+    "ja": "教科書",
+    "kana": "きょうかしょ",
+    "ro": "kyoukasho",
+    "en": "textbook",
+    "examples": [
+      {
+        "ja": "教科書を読んでください。",
+        "kana": "きょうかしょ を よんで ください。",
+        "ro": "kyoukasho o yonde kudasai.",
+        "en": "Please read the textbook."
+      },
+      {
+        "ja": "教科書を忘れました。",
+        "kana": "きょうかしょ を わすれました。",
+        "ro": "kyoukasho o wasuremashita.",
+        "en": "I forgot my textbook."
+      },
+      {
+        "ja": "教科書を開いてください。",
+        "kana": "きょうかしょ を ひらいて ください。",
+        "ro": "kyoukasho o hiraite kudasai.",
+        "en": "Please open your textbook."
+      },
+      {
+        "ja": "教科書は机の上にあります。",
+        "kana": "きょうかしょ は つくえ の うえ に あります。",
+        "ro": "kyoukasho wa tsukue no ue ni arimasu.",
+        "en": "The textbook is on the desk."
+      },
+      {
+        "ja": "教科書を毎日使います。",
+        "kana": "きょうかしょ を まいにち つかいます。",
+        "ro": "kyoukasho o mainichi tsukaimasu.",
+        "en": "I use the textbook every day."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-121",
+    "ja": "鉛筆けずり",
+    "kana": "えんぴつけずり",
+    "ro": "enpitsu kezuri",
+    "en": "pencil sharpener",
+    "examples": [
+      {
+        "ja": "鉛筆けずりを使いました。",
+        "kana": "えんぴつけずり を つかいました。",
+        "ro": "enpitsu kezuri o tsukaimashita.",
+        "en": "I used a pencil sharpener."
+      },
+      {
+        "ja": "新しい鉛筆けずりを買いました。",
+        "kana": "あたらしい えんぴつけずり を かいました。",
+        "ro": "atarashii enpitsu kezuri o kaimashita.",
+        "en": "I bought a new pencil sharpener."
+      },
+      {
+        "ja": "鉛筆けずりが机の上にあります。",
+        "kana": "えんぴつけずり が つくえ の うえ に あります。",
+        "ro": "enpitsu kezuri ga tsukue no ue ni arimasu.",
+        "en": "The pencil sharpener is on the desk."
+      },
+      {
+        "ja": "鉛筆けずりを貸してください。",
+        "kana": "えんぴつけずり を かして ください。",
+        "ro": "enpitsu kezuri o kashite kudasai.",
+        "en": "Please lend me your pencil sharpener."
+      },
+      {
+        "ja": "鉛筆けずりが壊れました。",
+        "kana": "えんぴつけずり が こわれました。",
+        "ro": "enpitsu kezuri ga kowaremashita.",
+        "en": "The pencil sharpener broke."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-122",
+    "ja": "黒板",
+    "kana": "こくばん",
+    "ro": "kokuban",
+    "en": "blackboard",
+    "examples": [
+      {
+        "ja": "先生が黒板に書きました。",
+        "kana": "せんせい が こくばん に かきました。",
+        "ro": "sensei ga kokuban ni kakimashita.",
+        "en": "The teacher wrote on the blackboard."
+      },
+      {
+        "ja": "黒板をきれいにしました。",
+        "kana": "こくばん を きれい に しました。",
+        "ro": "kokuban o kirei ni shimashita.",
+        "en": "I cleaned the blackboard."
+      },
+      {
+        "ja": "黒板に字が書いてあります。",
+        "kana": "こくばん に じ が かいて あります。",
+        "ro": "kokuban ni ji ga kaite arimasu.",
+        "en": "There are words written on the blackboard."
+      },
+      {
+        "ja": "黒板の前に立ってください。",
+        "kana": "こくばん の まえ に たって ください。",
+        "ro": "kokuban no mae ni tatte kudasai.",
+        "en": "Please stand in front of the blackboard."
+      },
+      {
+        "ja": "黒板の字が読めません。",
+        "kana": "こくばん の じ が よめません。",
+        "ro": "kokuban no ji ga yomemasen.",
+        "en": "I can’t read the writing on the blackboard."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-123",
+    "ja": "消しゴム",
+    "kana": "けしごむ",
+    "ro": "keshigomu",
+    "en": "eraser",
+    "examples": [
+      {
+        "ja": "消しゴムを使いました。",
+        "kana": "けしごむ を つかいました。",
+        "ro": "keshigomu o tsukaimashita.",
+        "en": "I used an eraser."
+      },
+      {
+        "ja": "新しい消しゴムを買いました。",
+        "kana": "あたらしい けしごむ を かいました。",
+        "ro": "atarashii keshigomu o kaimashita.",
+        "en": "I bought a new eraser."
+      },
+      {
+        "ja": "消しゴムを貸してください。",
+        "kana": "けしごむ を かして ください。",
+        "ro": "keshigomu o kashite kudasai.",
+        "en": "Please lend me an eraser."
+      },
+      {
+        "ja": "消しゴムが机の下にあります。",
+        "kana": "けしごむ が つくえ の した に あります。",
+        "ro": "keshigomu ga tsukue no shita ni arimasu.",
+        "en": "The eraser is under the desk."
+      },
+      {
+        "ja": "消しゴムを落としました。",
+        "kana": "けしごむ を おとしました。",
+        "ro": "keshigomu o otoshimashita.",
+        "en": "I dropped my eraser."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-124",
+    "ja": "教室の窓",
+    "kana": "きょうしつ の まど",
+    "ro": "kyoushitsu no mado",
+    "en": "classroom window",
+    "examples": [
+      {
+        "ja": "教室の窓を開けました。",
+        "kana": "きょうしつ の まど を あけました。",
+        "ro": "kyoushitsu no mado o akemashita.",
+        "en": "I opened the classroom window."
+      },
+      {
+        "ja": "教室の窓から外が見えます。",
+        "kana": "きょうしつ の まど から そと が みえます。",
+        "ro": "kyoushitsu no mado kara soto ga miemasu.",
+        "en": "You can see outside from the classroom window."
+      },
+      {
+        "ja": "教室の窓を閉めてください。",
+        "kana": "きょうしつ の まど を しめて ください。",
+        "ro": "kyoushitsu no mado o shimete kudasai.",
+        "en": "Please close the classroom window."
+      },
+      {
+        "ja": "教室の窓が大きいです。",
+        "kana": "きょうしつ の まど が おおきい です。",
+        "ro": "kyoushitsu no mado ga ookii desu.",
+        "en": "The classroom window is large."
+      },
+      {
+        "ja": "教室の窓を掃除しました。",
+        "kana": "きょうしつ の まど を そうじ しました。",
+        "ro": "kyoushitsu no mado o souji shimashita.",
+        "en": "I cleaned the classroom window."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-125",
+    "ja": "休み",
+    "kana": "やすみ",
+    "ro": "yasumi",
+    "en": "holiday / break",
+    "examples": [
+      {
+        "ja": "今日は休みです。",
+        "kana": "きょう は やすみ です。",
+        "ro": "kyou wa yasumi desu.",
+        "en": "Today is a holiday."
+      },
+      {
+        "ja": "休みの日に映画を見ました。",
+        "kana": "やすみ の ひ に えいが を みました。",
+        "ro": "yasumi no hi ni eiga o mimashita.",
+        "en": "I watched a movie on my day off."
+      },
+      {
+        "ja": "夏休みが楽しみです。",
+        "kana": "なつやすみ が たのしみ です。",
+        "ro": "natsuyasumi ga tanoshimi desu.",
+        "en": "I’m looking forward to summer vacation."
+      },
+      {
+        "ja": "休みは何をしますか。",
+        "kana": "やすみ は なに を します か。",
+        "ro": "yasumi wa nani o shimasu ka.",
+        "en": "What will you do during your break?"
+      },
+      {
+        "ja": "明日は学校が休みです。",
+        "kana": "あした は がっこう が やすみ です。",
+        "ro": "ashita wa gakkou ga yasumi desu.",
+        "en": "School is closed tomorrow."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-126",
+    "ja": "教え方",
+    "kana": "おしえかた",
+    "ro": "oshiekata",
+    "en": "way of teaching",
+    "examples": [
+      {
+        "ja": "先生の教え方が上手です。",
+        "kana": "せんせい の おしえかた が じょうず です。",
+        "ro": "sensei no oshiekata ga jouzu desu.",
+        "en": "The teacher’s way of teaching is good."
+      },
+      {
+        "ja": "教え方を変えました。",
+        "kana": "おしえかた を かえました。",
+        "ro": "oshiekata o kaemashita.",
+        "en": "I changed my way of teaching."
+      },
+      {
+        "ja": "その教え方は分かりやすいです。",
+        "kana": "その おしえかた は わかりやすい です。",
+        "ro": "sono oshiekata wa wakariyasui desu.",
+        "en": "That teaching method is easy to understand."
+      },
+      {
+        "ja": "新しい教え方を学びました。",
+        "kana": "あたらしい おしえかた を まなびました。",
+        "ro": "atarashii oshiekata o manabimashita.",
+        "en": "I learned a new way of teaching."
+      },
+      {
+        "ja": "先生の教え方が丁寧です。",
+        "kana": "せんせい の おしえかた が ていねい です。",
+        "ro": "sensei no oshiekata ga teinei desu.",
+        "en": "The teacher’s way of teaching is polite."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-127",
+    "ja": "勉強",
+    "kana": "べんきょう",
+    "ro": "benkyou",
+    "en": "study",
+    "examples": [
+      {
+        "ja": "毎日日本語を勉強します。",
+        "kana": "まいにち にほんご を べんきょう します。",
+        "ro": "mainichi nihongo o benkyou shimasu.",
+        "en": "I study Japanese every day."
+      },
+      {
+        "ja": "勉強が楽しいです。",
+        "kana": "べんきょう が たのしい です。",
+        "ro": "benkyou ga tanoshii desu.",
+        "en": "Studying is fun."
+      },
+      {
+        "ja": "図書館で勉強します。",
+        "kana": "としょかん で べんきょう します。",
+        "ro": "toshokan de benkyou shimasu.",
+        "en": "I study at the library."
+      },
+      {
+        "ja": "もっと勉強したいです。",
+        "kana": "もっと べんきょう したい です。",
+        "ro": "motto benkyou shitai desu.",
+        "en": "I want to study more."
+      },
+      {
+        "ja": "勉強を始めましょう。",
+        "kana": "べんきょう を はじめましょう。",
+        "ro": "benkyou o hajimemashou.",
+        "en": "Let’s start studying."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-128",
+    "ja": "授業",
+    "kana": "じゅぎょう",
+    "ro": "jugyou",
+    "en": "class / lesson",
+    "examples": [
+      {
+        "ja": "授業は九時に始まります。",
+        "kana": "じゅぎょう は くじ に はじまります。",
+        "ro": "jugyou wa kuji ni hajimarimasu.",
+        "en": "The class starts at nine."
+      },
+      {
+        "ja": "今日の授業は楽しかったです。",
+        "kana": "きょう の じゅぎょう は たのしかった です。",
+        "ro": "kyou no jugyou wa tanoshikatta desu.",
+        "en": "Today’s lesson was fun."
+      },
+      {
+        "ja": "授業で新しい文法を習いました。",
+        "kana": "じゅぎょう で あたらしい ぶんぽう を ならいました。",
+        "ro": "jugyou de atarashii bunpou o naraimashita.",
+        "en": "I learned new grammar in class."
+      },
+      {
+        "ja": "授業の後で先生に質問しました。",
+        "kana": "じゅぎょう の あと で せんせい に しつもん しました。",
+        "ro": "jugyou no ato de sensei ni shitsumon shimashita.",
+        "en": "I asked the teacher a question after class."
+      },
+      {
+        "ja": "授業が終わりました。",
+        "kana": "じゅぎょう が おわりました。",
+        "ro": "jugyou ga owarimashita.",
+        "en": "The class has finished."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-129",
+    "ja": "体育",
+    "kana": "たいいく",
+    "ro": "taiiku",
+    "en": "physical education / PE",
+    "examples": [
+      {
+        "ja": "体育の時間に走りました。",
+        "kana": "たいいく の じかん に はしりました。",
+        "ro": "taiiku no jikan ni hashirimashita.",
+        "en": "We ran during PE class."
+      },
+      {
+        "ja": "体育の先生は元気です。",
+        "kana": "たいいく の せんせい は げんき です。",
+        "ro": "taiiku no sensei wa genki desu.",
+        "en": "The PE teacher is energetic."
+      },
+      {
+        "ja": "体育館でバスケットをしました。",
+        "kana": "たいいくかん で ばすけっと を しました。",
+        "ro": "taiikukan de basuketto o shimashita.",
+        "en": "We played basketball in the gym."
+      },
+      {
+        "ja": "体育の授業が好きです。",
+        "kana": "たいいく の じゅぎょう が すき です。",
+        "ro": "taiiku no jugyou ga suki desu.",
+        "en": "I like PE class."
+      },
+      {
+        "ja": "体育の後で水を飲みました。",
+        "kana": "たいいく の あと で みず を のみました。",
+        "ro": "taiiku no ato de mizu o nomimashita.",
+        "en": "I drank water after PE."
+      }
+    ]
+  },
+  {
+    "id": "n5-noun-130",
+    "ja": "学校生活",
+    "kana": "がっこうせいかつ",
+    "ro": "gakkou seikatsu",
+    "en": "school life",
+    "examples": [
+      {
+        "ja": "学校生活は楽しいです。",
+        "kana": "がっこうせいかつ は たのしい です。",
+        "ro": "gakkou seikatsu wa tanoshii desu.",
+        "en": "School life is fun."
+      },
+      {
+        "ja": "学校生活にもう慣れました。",
+        "kana": "がっこうせいかつ に もう なれました。",
+        "ro": "gakkou seikatsu ni mou naremashita.",
+        "en": "I have already gotten used to school life."
+      },
+      {
+        "ja": "学校生活で友達がたくさんできました。",
+        "kana": "がっこうせいかつ で ともだち が たくさん できました。",
+        "ro": "gakkou seikatsu de tomodachi ga takusan dekimashita.",
+        "en": "I made many friends during school life."
+      },
+      {
+        "ja": "学校生活の思い出がたくさんあります。",
+        "kana": "がっこうせいかつ の おもいで が たくさん あります。",
+        "ro": "gakkou seikatsu no omoide ga takusan arimasu.",
+        "en": "I have many memories of school life."
+      },
+      {
+        "ja": "学校生活はとても忙しいです。",
+        "kana": "がっこうせいかつ は とても いそがしい です。",
+        "ro": "gakkou seikatsu wa totemo isogashii desu.",
+        "en": "School life is very busy."
+      }
+    ]
+  }
+]
