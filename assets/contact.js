@@ -1,82 +1,70 @@
-// assets/contact.js
-(function(){
-  function $(sel){ return document.querySelector(sel); }
-  async function getRecaptchaToken(sitekey){
-    if(!sitekey) return "";
-    try{
-      if(!window.grecaptcha){
-        await new Promise((res,rej)=>{
-          const s=document.createElement('script');
-          s.src="https://www.google.com/recaptcha/api.js?render="+encodeURIComponent(sitekey);
-          s.async=true; s.onload=res; s.onerror=rej; document.head.appendChild(s);
-        });
-      }
-      return await grecaptcha.execute(sitekey, {action:"contact"});
-    }catch(e){ return ""; }
+// contact.js  (Cloudflare Pages + GAS対応 / CORSプリフライト回避)
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.querySelector("#contactForm");
+  const modal = document.querySelector("#contactModal");
+  const closeBtn = document.querySelector("#contactClose");
+  const sendBtn = document.querySelector("#contactSend");
+
+  // ←★ GASのURL（/exec）を設定してください
+  const endpoint = "https://script.google.com/macros/s/AKfycbzyHV_NSyJU-hPwvJU5JJMMuPAa7V3vhmRuq6Clq7WBIErCx6A2xHgG1SXtSlfmR42OHw/exec";
+
+  // モーダルを閉じる
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.setAttribute("aria-hidden", "true");
+    });
   }
 
-  // 公開API
-  window.initContactModal = function(opts){
-    const endpoint = opts?.endpoint || "";
-    const sitekey  = opts?.sitekey  || ""; // reCAPTCHA v3 site key（あれば）
-    const openers  = [ "#openContact", "#openContactF" ];
-    const chat = $("#contactChat");
-    const overlay = $("#ccOverlay");
-    const closeBtn = $("#ccClose");
-    const form = $("#ccForm");
-    const nameEl = $("#ccName");
-    const emailEl = $("#ccEmail");
-    const msgEl = $("#ccInput");
-    const sendBtn = $("#ccSend");
-    const status = $("#ccStatus");
-
-    function open(){ chat?.setAttribute("data-open","1"); }
-    function close(){ chat?.removeAttribute("data-open"); }
-
-    openers.forEach(sel=>{
-      const el = $(sel);
-      if(el) el.addEventListener("click", (e)=>{ e.preventDefault(); open(); });
-    });
-    overlay?.addEventListener("click", close);
-    closeBtn?.addEventListener("click", close);
-    document.addEventListener("keydown", (e)=>{ if(e.key==="Escape") close(); });
-
-    form?.addEventListener("submit", async (e)=>{
+  // 送信処理
+  if (sendBtn && form) {
+    sendBtn.addEventListener("click", async (e) => {
       e.preventDefault();
-      if(!endpoint){ alert("送信先が未設定です（endpoint）。"); return; }
-      sendBtn.disabled = true;
-      status.textContent = "送信しています… / Sending…";
+
+      const name = form.querySelector("[name='cName']").value.trim();
+      const email = form.querySelector("[name='cEmail']").value.trim();
+      const message = form.querySelector("[name='cInput']").value.trim();
+
+      if (!name || !email || !message) {
+        alert("未入力の項目があります。");
+        return;
+      }
 
       const payload = {
-        name:  nameEl?.value?.trim() || "",
-        email: emailEl?.value?.trim() || "",
-        message: msgEl?.value?.trim() || "",
-        lang: document.documentElement.lang || "ja",
-        path: location.pathname,
-        ua: navigator.userAgent,
-        token: await getRecaptchaToken(sitekey)
+        name,
+        email,
+        message,
+        path: location.pathname
       };
 
-      try{
+      sendBtn.disabled = true;
+      sendBtn.textContent = "送信中…";
+
+      try {
         const res = await fetch(endpoint, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
+          // ←★ プリフライト(OPTIONS)を回避
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload),
         });
-        const data = await res.json().catch(()=>({}));
-        if(res.ok && (data.ok===undefined || data.ok===true)){
-          status.textContent = "送信しました。 / Sent. ご連絡ありがとうございます。";
-          msgEl.value = "";
-          setTimeout(close, 1200);
-        }else{
-          throw new Error(data.error || ("HTTP "+res.status));
+
+        const result = await res.json();
+        if (result.ok) {
+          sendBtn.textContent = "送信しました ✅";
+          form.reset();
+        } else {
+          sendBtn.textContent = "送信失敗";
         }
-      }catch(err){
-        console.error(err);
-        status.textContent = "送信に失敗しました。しばらくしてからお試しください。";
-      }finally{
-        sendBtn.disabled = false;
+      } catch (err) {
+        console.error("送信エラー:", err);
+        sendBtn.textContent = "送信失敗";
       }
+
+      setTimeout(() => {
+        sendBtn.disabled = false;
+        sendBtn.textContent = "送信 / Send";
+      }, 2000);
     });
-  };
-})();
+  }
+});
