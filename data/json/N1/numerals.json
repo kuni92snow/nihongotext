@@ -1,0 +1,3512 @@
+[
+  {
+    "id": 1,
+    "kanji": "一軒",
+    "kana": "いっけん",
+    "romaji": "ikken",
+    "en": "one house / one building",
+    "examples": [
+      {
+        "ro": "kono toori ni ikken dake furui ie ga arimasu.",
+        "en": "There is only one old house on this street.",
+        "ja": "この通りに一軒だけ古い家があります。",
+        "kana": "この とおり に いっけん だけ ふるい いえ が あります。"
+      },
+      {
+        "ro": "yama no naka ni ikken no ryokan ga arimasu.",
+        "en": "There is one inn in the mountains.",
+        "ja": "山の中に一軒の旅館があります。",
+        "kana": "やま の なか に いっけん の りょかん が あります。"
+      },
+      {
+        "ro": "ikkenme no mise de shokuji o shimashita.",
+        "en": "We had a meal at the first restaurant.",
+        "ja": "一軒目の店で食事をしました。",
+        "kana": "いっけんめ の みせ で しょくじ を しました。"
+      },
+      {
+        "ro": "chichi wa ikkenya o tatemashita.",
+        "en": "My father built a detached house.",
+        "ja": "父は一軒家を建てました。",
+        "kana": "ちち は いっけんや を たてました。"
+      },
+      {
+        "ro": "kono machi ni wa ikken mo konbini ga arimasen.",
+        "en": "There isn’t even one convenience store in this town.",
+        "ja": "この町には一軒もコンビニがありません。",
+        "kana": "この まち に は いっけん も こんびに が ありません。"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "kanji": "二杯",
+    "kana": "にはい",
+    "romaji": "nihai",
+    "en": "two cups / two bowls",
+    "examples": [
+      {
+        "ro": "gohan o nihai tabemashita.",
+        "en": "I ate two bowls of rice.",
+        "ja": "ご飯を二杯食べました。",
+        "kana": "ごはん を にはい たべました。"
+      },
+      {
+        "ro": "mizu o nihai kudasai.",
+        "en": "Please give me two glasses of water.",
+        "ja": "水を二杯ください。",
+        "kana": "みず を にはい ください。"
+      },
+      {
+        "ro": "kare wa biiru o nihai nomimashita.",
+        "en": "He drank two beers.",
+        "ja": "彼はビールを二杯飲みました。",
+        "kana": "かれ は びーる を にはい のみました。"
+      },
+      {
+        "ro": "nihaime no koohii o chuumon shimashita.",
+        "en": "I ordered my second cup of coffee.",
+        "ja": "二杯目のコーヒーを注文しました。",
+        "kana": "にはいめ の こーひー を ちゅうもん しました。"
+      },
+      {
+        "ro": "nihaibun no suupu o tsukurimashita.",
+        "en": "I made soup for two servings.",
+        "ja": "二杯分のスープを作りました。",
+        "kana": "にはいぶん の すーぷ を つくりました。"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "kanji": "三本",
+    "kana": "さんぼん",
+    "romaji": "sanbon",
+    "en": "three long objects",
+    "examples": [
+      {
+        "ro": "pen o sanbon kaimashita.",
+        "en": "I bought three pens.",
+        "ja": "ペンを三本買いました。",
+        "kana": "ぺん を さんぼん かいました。"
+      },
+      {
+        "ro": "sanbon no ki ga narande imasu.",
+        "en": "Three trees are lined up.",
+        "ja": "三本の木が並んでいます。",
+        "kana": "さんぼん の き が ならんで います。"
+      },
+      {
+        "ro": "sanbon no eiga o mimashita.",
+        "en": "I watched three movies.",
+        "ja": "三本の映画を見ました。",
+        "kana": "さんぼん の えいが を みました。"
+      },
+      {
+        "ro": "sanbon no keeburu o tsunagimashita.",
+        "en": "I connected three cables.",
+        "ja": "三本のケーブルをつなぎました。",
+        "kana": "さんぼん の けーぶる を つなぎました。"
+      },
+      {
+        "ro": "sanbon no hana o kabin ni iremashita.",
+        "en": "I put three flowers in the vase.",
+        "ja": "三本の花を花瓶に入れました。",
+        "kana": "さんぼん の はな を かびん に いれました。"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "kanji": "四匹",
+    "kana": "よんひき",
+    "romaji": "yonhiki",
+    "en": "four small animals",
+    "examples": [
+      {
+        "ro": "neko ga yonhiki imasu.",
+        "en": "There are four cats.",
+        "ja": "猫が四匹います。",
+        "kana": "ねこ が よんひき います。"
+      },
+      {
+        "ro": "yonhiki no inu o katteimasu.",
+        "en": "I have four dogs.",
+        "ja": "四匹の犬を飼っています。",
+        "kana": "よんひき の いぬ を かっています。"
+      },
+      {
+        "ro": "sakana o yonhiki tsurimashita.",
+        "en": "I caught four fish.",
+        "ja": "魚を四匹釣りました。",
+        "kana": "さかな を よんひき つりました。"
+      },
+      {
+        "ro": "yonhiki no usagi ga hanete imasu.",
+        "en": "Four rabbits are hopping.",
+        "ja": "四匹のうさぎが跳ねています。",
+        "kana": "よんひき の うさぎ が はねて います。"
+      },
+      {
+        "ro": "yonhiki no nezumi o mimashita.",
+        "en": "I saw four mice.",
+        "ja": "四匹のネズミを見ました。",
+        "kana": "よんひき の ねずみ を みました。"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "kanji": "五枚",
+    "kana": "ごまい",
+    "romaji": "gomai",
+    "en": "five flat objects",
+    "examples": [
+      {
+        "ro": "kami o gomai kudasai.",
+        "en": "Please give me five sheets of paper.",
+        "ja": "紙を五枚ください。",
+        "kana": "かみ を ごまい ください。"
+      },
+      {
+        "ro": "gomai no shashin o torimashita.",
+        "en": "I took five photos.",
+        "ja": "五枚の写真を撮りました。",
+        "kana": "ごまい の しゃしん を とりました。"
+      },
+      {
+        "ro": "gomai no sara o araimashita.",
+        "en": "I washed five plates.",
+        "ja": "五枚の皿を洗いました。",
+        "kana": "ごまい の さら を あらいました。"
+      },
+      {
+        "ro": "gomai no posutaa o harimashita.",
+        "en": "I put up five posters.",
+        "ja": "五枚のポスターを貼りました。",
+        "kana": "ごまい の ぽすたー を はりました。"
+      },
+      {
+        "ro": "gomai no chiketto o moraimashita.",
+        "en": "I received five tickets.",
+        "ja": "五枚のチケットをもらいました。",
+        "kana": "ごまい の ちけっと を もらいました。"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "kanji": "六皿",
+    "kana": "ろくさら",
+    "romaji": "rokusara",
+    "en": "six plates / dishes",
+    "examples": [
+      {
+        "ro": "teeburu ni rokusara no ryouri ga arimasu.",
+        "en": "There are six dishes on the table.",
+        "ja": "テーブルに六皿の料理があります。",
+        "kana": "てーぶる に ろくさら の りょうり が あります。"
+      },
+      {
+        "ro": "rokusarabun no karee o tsukurimashita.",
+        "en": "I made curry for six plates.",
+        "ja": "六皿分のカレーを作りました。",
+        "kana": "ろくさらぶん の かれー を つくりました。"
+      },
+      {
+        "ro": "rokusara no dezaato ga demashita.",
+        "en": "Six desserts were served.",
+        "ja": "六皿のデザートが出ました。",
+        "kana": "ろくさら の でざーと が でました。"
+      },
+      {
+        "ro": "rokusara no sushi o chuumon shimashita.",
+        "en": "I ordered six plates of sushi.",
+        "ja": "六皿の寿司を注文しました。",
+        "kana": "ろくさら の すし を ちゅうもん しました。"
+      },
+      {
+        "ro": "rokusara no ryouri o wakemashita.",
+        "en": "We divided six plates of food.",
+        "ja": "六皿の料理を分けました。",
+        "kana": "ろくさら の りょうり を わけました。"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "kanji": "七回",
+    "kana": "ななかい",
+    "romaji": "nanakai",
+    "en": "seven times",
+    "examples": [
+      {
+        "ro": "kono eiga o nanakai mimashita.",
+        "en": "I watched this movie seven times.",
+        "ja": "この映画を七回見ました。",
+        "kana": "この えいが を ななかい みました。"
+      },
+      {
+        "ro": "nanakaime no chousen de seikou shimashita.",
+        "en": "I succeeded on my seventh try.",
+        "ja": "七回目の挑戦で成功しました。",
+        "kana": "ななかいめ の ちょうせん で せいこう しました。"
+      },
+      {
+        "ro": "nanakai kaigi ga arimashita.",
+        "en": "We had seven meetings.",
+        "ja": "七回会議がありました。",
+        "kana": "ななかい かいぎ が ありました。"
+      },
+      {
+        "ro": "nanakai janpu shimashita.",
+        "en": "I jumped seven times.",
+        "ja": "七回ジャンプしました。",
+        "kana": "ななかい じゃんぷ しました。"
+      },
+      {
+        "ro": "nanakai renshuu shimashita.",
+        "en": "I practiced seven times.",
+        "ja": "七回練習しました。",
+        "kana": "ななかい れんしゅう しました。"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "kanji": "八枚",
+    "kana": "はちまい",
+    "romaji": "hachimai",
+    "en": "eight flat objects",
+    "examples": [
+      {
+        "ro": "shashin o hachimai torimashita.",
+        "en": "I took eight photos.",
+        "ja": "写真を八枚撮りました。",
+        "kana": "しゃしん を はちまい とりました。"
+      },
+      {
+        "ro": "hachimai no sara o narabemashita.",
+        "en": "I arranged eight plates.",
+        "ja": "八枚の皿を並べました。",
+        "kana": "はちまい の さら を ならべました。"
+      },
+      {
+        "ro": "hachimai no chiketto o kaimashita.",
+        "en": "I bought eight tickets.",
+        "ja": "八枚のチケットを買いました。",
+        "kana": "はちまい の ちけっと を かいました。"
+      },
+      {
+        "ro": "hachimai no kami o kopii shimashita.",
+        "en": "I copied eight sheets of paper.",
+        "ja": "八枚の紙をコピーしました。",
+        "kana": "はちまい の かみ を こぴー しました。"
+      },
+      {
+        "ro": "hachimai no shiidii o motte imasu.",
+        "en": "I have eight CDs.",
+        "ja": "八枚のCDを持っています。",
+        "kana": "はちまい の しーでぃー を もって います。"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "kanji": "九人",
+    "kana": "きゅうにん",
+    "romaji": "kyuunin",
+    "en": "nine people",
+    "examples": [
+      {
+        "ro": "kyuunin no gakusei ga kimashita.",
+        "en": "Nine students came.",
+        "ja": "九人の学生が来ました。",
+        "kana": "きゅうにん の がくせい が きました。"
+      },
+      {
+        "ro": "kyuunin kazoku desu.",
+        "en": "We are a family of nine.",
+        "ja": "九人家族です。",
+        "kana": "きゅうにん かぞく です。"
+      },
+      {
+        "ro": "kyuunin no shain ga shucchou shiteimasu.",
+        "en": "Nine employees are on a business trip.",
+        "ja": "九人の社員が出張しています。",
+        "kana": "きゅうにん の しゃいん が しゅっちょう しています。"
+      },
+      {
+        "ro": "kyuunin no tomodachi to asobimashita.",
+        "en": "I hung out with nine friends.",
+        "ja": "九人の友達と遊びました。",
+        "kana": "きゅうにん の ともだち と あそびました。"
+      },
+      {
+        "ro": "kyuunin no senshu ga shiai ni demashita.",
+        "en": "Nine players participated in the game.",
+        "ja": "九人の選手が試合に出ました。",
+        "kana": "きゅうにん の せんしゅ が しあい に でました。"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "kanji": "十皿",
+    "kana": "じゅっさら",
+    "romaji": "jussara",
+    "en": "ten plates / dishes",
+    "examples": [
+      {
+        "ro": "teeburu ni jussara no ryouri ga narande imasu.",
+        "en": "Ten plates of food are arranged on the table.",
+        "ja": "テーブルに十皿の料理が並んでいます。",
+        "kana": "てーぶる に じゅっさら の りょうり が ならんで います。"
+      },
+      {
+        "ro": "sushi o jussara tabemashita.",
+        "en": "I ate ten plates of sushi.",
+        "ja": "寿司を十皿食べました。",
+        "kana": "すし を じゅっさら たべました。"
+      },
+      {
+        "ro": "jussara no dezaato o junbi shimashita.",
+        "en": "I prepared ten plates of desserts.",
+        "ja": "十皿のデザートを準備しました。",
+        "kana": "じゅっさら の でざーと を じゅんび しました。"
+      },
+      {
+        "ro": "jussara no uchi sansara wa sarada desu.",
+        "en": "Three out of ten plates are salads.",
+        "ja": "十皿のうち三皿はサラダです。",
+        "kana": "じゅっさら の うち さんさら は さらだ です。"
+      },
+      {
+        "ro": "jussarabun no ryouri o chuumon shimashita.",
+        "en": "We ordered enough food for ten plates.",
+        "ja": "十皿分の料理を注文しました。",
+        "kana": "じゅっさらぶん の りょうり を ちゅうもん しました。"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "kanji": "十一枚",
+    "kana": "じゅういちまい",
+    "romaji": "juuichimai",
+    "en": "eleven flat objects",
+    "examples": [
+      {
+        "ro": "juuichimai no shashin o genzou shimashita.",
+        "en": "I developed eleven photos.",
+        "ja": "十一枚の写真を現像しました。",
+        "kana": "じゅういちまい の しゃしん を げんぞう しました。"
+      },
+      {
+        "ro": "juuichimai no shorui o kopii shimashita.",
+        "en": "I copied eleven documents.",
+        "ja": "十一枚の書類をコピーしました。",
+        "kana": "じゅういちまい の しょるい を こぴー しました。"
+      },
+      {
+        "ro": "juuichimai no kami o tsukue ni okimashita.",
+        "en": "I placed eleven sheets of paper on the desk.",
+        "ja": "十一枚の紙を机に置きました。",
+        "kana": "じゅういちまい の かみ を つくえ に おきました。"
+      },
+      {
+        "ro": "juuichimai no kippu o kaimashita.",
+        "en": "I bought eleven tickets.",
+        "ja": "十一枚の切符を買いました。",
+        "kana": "じゅういちまい の きっぷ を かいました。"
+      },
+      {
+        "ro": "juuichimai no kaado o kubarimashita.",
+        "en": "I handed out eleven cards.",
+        "ja": "十一枚のカードを配りました。",
+        "kana": "じゅういちまい の かーど を くばりました。"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "kanji": "十二匹",
+    "kana": "じゅうにひき",
+    "romaji": "juunihiki",
+    "en": "twelve small animals",
+    "examples": [
+      {
+        "ro": "juunihiki no neko o hogo shimashita.",
+        "en": "I rescued twelve cats.",
+        "ja": "十二匹の猫を保護しました。",
+        "kana": "じゅうにひき の ねこ を ほご しました。"
+      },
+      {
+        "ro": "juunihiki no sakana ga oyoide imasu.",
+        "en": "Twelve fish are swimming.",
+        "ja": "十二匹の魚が泳いでいます。",
+        "kana": "じゅうにひき の さかな が およいで います。"
+      },
+      {
+        "ro": "juunihiki no inu o sewa shiteimasu.",
+        "en": "I’m taking care of twelve dogs.",
+        "ja": "十二匹の犬を世話しています。",
+        "kana": "じゅうにひき の いぬ を せわ しています。"
+      },
+      {
+        "ro": "juunihiki no usagi ga imasu.",
+        "en": "There are twelve rabbits.",
+        "ja": "十二匹のうさぎがいます。",
+        "kana": "じゅうにひき の うさぎ が います。"
+      },
+      {
+        "ro": "juunihiki no mushi o mitsukemashita.",
+        "en": "I found twelve insects.",
+        "ja": "十二匹の虫を見つけました。",
+        "kana": "じゅうにひき の むし を みつけました。"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "kanji": "十三階",
+    "kana": "じゅうさんかい",
+    "romaji": "juusankai",
+    "en": "thirteenth floor",
+    "examples": [
+      {
+        "ro": "tomodachi ga juusankai ni sunde imasu.",
+        "en": "My friend lives on the thirteenth floor.",
+        "ja": "友達が十三階に住んでいます。",
+        "kana": "ともだち が じゅうさんかい に すんで います。"
+      },
+      {
+        "ro": "juusankai no resutoran de shokuji shimashita.",
+        "en": "We had a meal at the restaurant on the thirteenth floor.",
+        "ja": "十三階のレストランで食事しました。",
+        "kana": "じゅうさんかい の れすとらん で しょくじ しました。"
+      },
+      {
+        "ro": "kono tatemono wa juusankaidate desu.",
+        "en": "This building has thirteen floors.",
+        "ja": "この建物は十三階建てです。",
+        "kana": "この たてもの は じゅうさんかいだて です。"
+      },
+      {
+        "ro": "juusankai kara no nagame wa kirei desu.",
+        "en": "The view from the thirteenth floor is beautiful.",
+        "ja": "十三階からの眺めはきれいです。",
+        "kana": "じゅうさんかい から の ながめ は きれい です。"
+      },
+      {
+        "ro": "juusankai ni kaigishitsu ga arimasu.",
+        "en": "There is a meeting room on the thirteenth floor.",
+        "ja": "十三階に会議室があります。",
+        "kana": "じゅうさんかい に かいぎしつ が あります。"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "kanji": "十四回",
+    "kana": "じゅうよんかい",
+    "romaji": "juuyonkai",
+    "en": "fourteen times",
+    "examples": [
+      {
+        "ro": "kare wa juuyonkai mo shiken o ukemashita.",
+        "en": "He took the exam fourteen times.",
+        "ja": "彼は十四回も試験を受けました。",
+        "kana": "かれ は じゅうよんかい も しけん を うけました。"
+      },
+      {
+        "ro": "juuyonkaime no chousen de seikou shimashita.",
+        "en": "I succeeded on the fourteenth try.",
+        "ja": "十四回目の挑戦で成功しました。",
+        "kana": "じゅうよんかいめ の ちょうせん で せいこう しました。"
+      },
+      {
+        "ro": "juuyonkai renzoku de kachimashita.",
+        "en": "We won fourteen times in a row.",
+        "ja": "十四回連続で勝ちました。",
+        "kana": "じゅうよんかい れんぞく で かちました。"
+      },
+      {
+        "ro": "juuyonkai doa o nokku shimashita.",
+        "en": "I knocked on the door fourteen times.",
+        "ja": "十四回ドアをノックしました。",
+        "kana": "じゅうよんかい どあ を のっく しました。"
+      },
+      {
+        "ro": "juuyonkai mo denwa o kakemashita.",
+        "en": "I called fourteen times.",
+        "ja": "十四回も電話をかけました。",
+        "kana": "じゅうよんかい も でんわ を かけました。"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "kanji": "十五冊",
+    "kana": "じゅうごさつ",
+    "romaji": "juugosatsu",
+    "en": "fifteen books / volumes",
+    "examples": [
+      {
+        "ro": "juugosatsu no hon o yomimashita.",
+        "en": "I read fifteen books.",
+        "ja": "十五冊の本を読みました。",
+        "kana": "じゅうごさつ の ほん を よみました。"
+      },
+      {
+        "ro": "juugosatsu no nooto o kaimashita.",
+        "en": "I bought fifteen notebooks.",
+        "ja": "十五冊のノートを買いました。",
+        "kana": "じゅうごさつ の のーと を かいました。"
+      },
+      {
+        "ro": "juugosatsu no manga o motte imasu.",
+        "en": "I have fifteen manga books.",
+        "ja": "十五冊の漫画を持っています。",
+        "kana": "じゅうごさつ の まんが を もって います。"
+      },
+      {
+        "ro": "juugosatsu no shiryou o kubarimashita.",
+        "en": "I distributed fifteen documents.",
+        "ja": "十五冊の資料を配りました。",
+        "kana": "じゅうごさつ の しりょう を くばりました。"
+      },
+      {
+        "ro": "juugosatsu no jisho o toshokan ni kaeshimashita.",
+        "en": "I returned fifteen dictionaries to the library.",
+        "ja": "十五冊の辞書を図書館に返しました。",
+        "kana": "じゅうごさつ の じしょ を としょかん に かえしました。"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "kanji": "十六枚",
+    "kana": "じゅうろくまい",
+    "romaji": "juurokumai",
+    "en": "sixteen flat objects",
+    "examples": [
+      {
+        "ro": "juurokumai no shashin o insatsu shimashita.",
+        "en": "I printed sixteen photos.",
+        "ja": "十六枚の写真を印刷しました。",
+        "kana": "じゅうろくまい の しゃしん を いんさつ しました。"
+      },
+      {
+        "ro": "juurokumai no kaado o atsumemashita.",
+        "en": "I collected sixteen cards.",
+        "ja": "十六枚のカードを集めました。",
+        "kana": "じゅうろくまい の かーど を あつめました。"
+      },
+      {
+        "ro": "juurokumai no posutaa o harimashita.",
+        "en": "I put up sixteen posters.",
+        "ja": "十六枚のポスターを貼りました。",
+        "kana": "じゅうろくまい の ぽすたー を はりました。"
+      },
+      {
+        "ro": "juurokumai no chiketto o chuumon shimashita.",
+        "en": "I ordered sixteen tickets.",
+        "ja": "十六枚のチケットを注文しました。",
+        "kana": "じゅうろくまい の ちけっと を ちゅうもん しました。"
+      },
+      {
+        "ro": "juurokumai no sara o araimashita.",
+        "en": "I washed sixteen plates.",
+        "ja": "十六枚の皿を洗いました。",
+        "kana": "じゅうろくまい の さら を あらいました。"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "kanji": "十七人",
+    "kana": "じゅうしちにん",
+    "romaji": "juushichinin",
+    "en": "seventeen people",
+    "examples": [
+      {
+        "ro": "juushichinin no gakusei ga sanka shimashita.",
+        "en": "Seventeen students participated.",
+        "ja": "十七人の学生が参加しました。",
+        "kana": "じゅうしちにん の がくせい が さんか しました。"
+      },
+      {
+        "ro": "juushichinin no menbaa ga atsumarimashita.",
+        "en": "Seventeen members gathered.",
+        "ja": "十七人のメンバーが集まりました。",
+        "kana": "じゅうしちにん の めんばー が あつまりました。"
+      },
+      {
+        "ro": "juushichinin no sensei ga shusseki shimashita.",
+        "en": "Seventeen teachers attended.",
+        "ja": "十七人の先生が出席しました。",
+        "kana": "じゅうしちにん の せんせい が しゅっせき しました。"
+      },
+      {
+        "ro": "juushichinin no shain ga kenshuu ni ikimashita.",
+        "en": "Seventeen employees went to training.",
+        "ja": "十七人の社員が研修に行きました。",
+        "kana": "じゅうしちにん の しゃいん が けんしゅう に いきました。"
+      },
+      {
+        "ro": "juushichinin no tomodachi to ryokou shimashita.",
+        "en": "I traveled with seventeen friends.",
+        "ja": "十七人の友達と旅行しました。",
+        "kana": "じゅうしちにん の ともだち と りょこう しました。"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "kanji": "十八回",
+    "kana": "じゅうはっかい",
+    "romaji": "juuhakkai",
+    "en": "eighteen times",
+    "examples": [
+      {
+        "ro": "juuhakkai mo shiken o ukemashita.",
+        "en": "I took the exam eighteen times.",
+        "ja": "十八回も試験を受けました。",
+        "kana": "じゅうはっかい も しけん を うけました。"
+      },
+      {
+        "ro": "juuhakkai no renshuu de joutatsu shimashita.",
+        "en": "I improved after eighteen practices.",
+        "ja": "十八回の練習で上達しました。",
+        "kana": "じゅうはっかい の れんしゅう で じょうたつ しました。"
+      },
+      {
+        "ro": "juuhakkai janpu shimashita.",
+        "en": "I jumped eighteen times.",
+        "ja": "十八回ジャンプしました。",
+        "kana": "じゅうはっかい じゃんぷ しました。"
+      },
+      {
+        "ro": "juuhakkai doa o nokku shimashita.",
+        "en": "I knocked on the door eighteen times.",
+        "ja": "十八回ドアをノックしました。",
+        "kana": "じゅうはっかい どあ を のっく しました。"
+      },
+      {
+        "ro": "juuhakkai kaigi o okonaimashita.",
+        "en": "We held eighteen meetings.",
+        "ja": "十八回会議を行いました。",
+        "kana": "じゅうはっかい かいぎ を おこないました。"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "kanji": "十九冊",
+    "kana": "じゅうきゅうさつ",
+    "romaji": "juukyuusatsu",
+    "en": "nineteen books",
+    "examples": [
+      {
+        "ro": "juukyuusatsu no hon o kifu shimashita.",
+        "en": "I donated nineteen books.",
+        "ja": "十九冊の本を寄付しました。",
+        "kana": "じゅうきゅうさつ の ほん を きふ しました。"
+      },
+      {
+        "ro": "juukyuusatsu no manga o yomimashita.",
+        "en": "I read nineteen manga books.",
+        "ja": "十九冊の漫画を読みました。",
+        "kana": "じゅうきゅうさつ の まんが を よみました。"
+      },
+      {
+        "ro": "juukyuusatsu no nooto o seiri shimashita.",
+        "en": "I organized nineteen notebooks.",
+        "ja": "十九冊のノートを整理しました。",
+        "kana": "じゅうきゅうさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "juukyuusatsu no shiryou o kopii shimashita.",
+        "en": "I copied nineteen documents.",
+        "ja": "十九冊の資料をコピーしました。",
+        "kana": "じゅうきゅうさつ の しりょう を こぴー しました。"
+      },
+      {
+        "ro": "juukyuusatsu no jisho o motte imasu.",
+        "en": "I have nineteen dictionaries.",
+        "ja": "十九冊の辞書を持っています。",
+        "kana": "じゅうきゅうさつ の じしょ を もって います。"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "kanji": "二十軒",
+    "kana": "にじゅっけん",
+    "romaji": "nijikken",
+    "en": "twenty houses",
+    "examples": [
+      {
+        "ro": "kono toori ni wa nijukken no ie ga arimasu.",
+        "en": "There are twenty houses on this street.",
+        "ja": "この通りには二十軒の家があります。",
+        "kana": "この とおり に は にじゅっけん の いえ が あります。"
+      },
+      {
+        "ro": "nijukken no mise o shirabemashita.",
+        "en": "I checked twenty stores.",
+        "ja": "二十軒の店を調べました。",
+        "kana": "にじゅっけん の みせ を しらべました。"
+      },
+      {
+        "ro": "nijukken no resutoran o otozuremashita.",
+        "en": "I visited twenty restaurants.",
+        "ja": "二十軒のレストランを訪れました。",
+        "kana": "にじゅっけん の れすとらん を おとずれました。"
+      },
+      {
+        "ro": "nijukken no ie ni chirashi o kubarimashita.",
+        "en": "I delivered flyers to twenty houses.",
+        "ja": "二十軒の家にチラシを配りました。",
+        "kana": "にじゅっけん の いえ に ちらし を くばりました。"
+      },
+      {
+        "ro": "nijukken no hoteru o hikaku shimashita.",
+        "en": "I compared twenty hotels.",
+        "ja": "二十軒のホテルを比較しました。",
+        "kana": "にじゅっけん の ほてる を ひかく しました。"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "kanji": "二十一個",
+    "kana": "にじゅういっこ",
+    "romaji": "nijuuikko",
+    "en": "twenty-one small items",
+    "examples": [
+      {
+        "ro": "nijuuikko no ringo o kaimashita.",
+        "en": "I bought twenty-one apples.",
+        "ja": "二十一個のリンゴを買いました。",
+        "kana": "にじゅういっこ の りんご を かいました。"
+      },
+      {
+        "ro": "nijuuikko no booru ga hako ni haitte imasu.",
+        "en": "Twenty-one balls are in the box.",
+        "ja": "二十一個のボールが箱に入っています。",
+        "kana": "にじゅういっこ の ぼーる が はこ に はいって います。"
+      },
+      {
+        "ro": "nijuuikko no keeki o tsukurimashita.",
+        "en": "I made twenty-one cakes.",
+        "ja": "二十一個のケーキを作りました。",
+        "kana": "にじゅういっこ の けーき を つくりました。"
+      },
+      {
+        "ro": "nijuuikko no ame o moraimashita.",
+        "en": "I received twenty-one candies.",
+        "ja": "二十一個の飴をもらいました。",
+        "kana": "にじゅういっこ の あめ を もらいました。"
+      },
+      {
+        "ro": "nijuuikko no ishi o kazoemashita.",
+        "en": "I counted twenty-one stones.",
+        "ja": "二十一個の石を数えました。",
+        "kana": "にじゅういっこ の いし を かぞえました。"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "kanji": "二十二階",
+    "kana": "にじゅうにかい",
+    "romaji": "nijuunikai",
+    "en": "twenty-second floor",
+    "examples": [
+      {
+        "ro": "ofisu wa nijuunikai ni arimasu.",
+        "en": "The office is on the twenty-second floor.",
+        "ja": "オフィスは二十二階にあります。",
+        "kana": "おふぃす は にじゅうにかい に あります。"
+      },
+      {
+        "ro": "nijuunikai kara no nagame wa subarashii desu.",
+        "en": "The view from the twenty-second floor is wonderful.",
+        "ja": "二十二階からの眺めは素晴らしいです。",
+        "kana": "にじゅうにかい から の ながめ は すばらしい です。"
+      },
+      {
+        "ro": "nijuunikai ni resutoran ga arimasu.",
+        "en": "There is a restaurant on the twenty-second floor.",
+        "ja": "二十二階にレストランがあります。",
+        "kana": "にじゅうにかい に れすとらん が あります。"
+      },
+      {
+        "ro": "tomodachi ga nijuunikai ni sunde imasu.",
+        "en": "My friend lives on the twenty-second floor.",
+        "ja": "友達が二十二階に住んでいます。",
+        "kana": "ともだち が にじゅうにかい に すんで います。"
+      },
+      {
+        "ro": "nijuunikai de kasai kunren o shimashita.",
+        "en": "We had a fire drill on the twenty-second floor.",
+        "ja": "二十二階で火災訓練をしました。",
+        "kana": "にじゅうにかい で かさい くんれん を しました。"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "kanji": "二十三台",
+    "kana": "にじゅうさんだい",
+    "romaji": "nijuusandai",
+    "en": "twenty-three machines / vehicles",
+    "examples": [
+      {
+        "ro": "nijuusandai no kuruma ga chuushajou ni arimasu.",
+        "en": "There are twenty-three cars in the parking lot.",
+        "ja": "二十三台の車が駐車場にあります。",
+        "kana": "にじゅうさんだい の くるま が ちゅうしゃじょう に あります。"
+      },
+      {
+        "ro": "nijuusandai no pasokon o kounyuu shimashita.",
+        "en": "We bought twenty-three computers.",
+        "ja": "二十三台のパソコンを購入しました。",
+        "kana": "にじゅうさんだい の ぱそこん を こうにゅう しました。"
+      },
+      {
+        "ro": "nijuusandai no jitensha ga narande imasu.",
+        "en": "Twenty-three bicycles are lined up.",
+        "ja": "二十三台の自転車が並んでいます。",
+        "kana": "にじゅうさんだい の じてんしゃ が ならんで います。"
+      },
+      {
+        "ro": "nijuusandai no torakku ga shuppatsu shimashita.",
+        "en": "Twenty-three trucks departed.",
+        "ja": "二十三台のトラックが出発しました。",
+        "kana": "にじゅうさんだい の とらっく が しゅっぱつ しました。"
+      },
+      {
+        "ro": "nijuusandai no eakon o shuuri shimashita.",
+        "en": "I repaired twenty-three air conditioners.",
+        "ja": "二十三台のエアコンを修理しました。",
+        "kana": "にじゅうさんだい の えあこん を しゅうり しました。"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "kanji": "二十四時間",
+    "kana": "にじゅうよじかん",
+    "romaji": "nijuuyojikan",
+    "en": "twenty-four hours",
+    "examples": [
+      {
+        "ro": "kono mise wa nijuuyojikan eigyou shiteimasu.",
+        "en": "This store is open twenty-four hours.",
+        "ja": "この店は二十四時間営業しています。",
+        "kana": "この みせ は にじゅうよじかん えいぎょう しています。"
+      },
+      {
+        "ro": "nijuuyojikan hatarakimashita.",
+        "en": "I worked for twenty-four hours.",
+        "ja": "二十四時間働きました。",
+        "kana": "にじゅうよじかん はたらきました。"
+      },
+      {
+        "ro": "nijuuyojikan terebi o mimashita.",
+        "en": "I watched the 24-hour TV show.",
+        "ja": "二十四時間テレビを見ました。",
+        "kana": "にじゅうよじかん てれび を みました。"
+      },
+      {
+        "ro": "nijuuyojikan inai ni henshin shite kudasai.",
+        "en": "Please reply within twenty-four hours.",
+        "ja": "二十四時間以内に返信してください。",
+        "kana": "にじゅうよじかん いない に へんしん して ください。"
+      },
+      {
+        "ro": "kono byouin wa nijuuyojikan aite imasu.",
+        "en": "This hospital is open twenty-four hours.",
+        "ja": "この病院は二十四時間開いています。",
+        "kana": "この びょういん は にじゅうよじかん あいて います。"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "kanji": "二十五本",
+    "kana": "にじゅうごほん",
+    "romaji": "nijuugobon",
+    "en": "twenty-five long objects",
+    "examples": [
+      {
+        "ro": "nijuugobon no ki o uemashita.",
+        "en": "I planted twenty-five trees.",
+        "ja": "二十五本の木を植えました。",
+        "kana": "にじゅうごほん の き を うえました。"
+      },
+      {
+        "ro": "nijuugobon no pen o atsumemashita.",
+        "en": "I collected twenty-five pens.",
+        "ja": "二十五本のペンを集めました。",
+        "kana": "にじゅうごほん の ぺん を あつめました。"
+      },
+      {
+        "ro": "nijuugobon no eiga o mimashita.",
+        "en": "I watched twenty-five movies.",
+        "ja": "二十五本の映画を見ました。",
+        "kana": "にじゅうごほん の えいが を みました。"
+      },
+      {
+        "ro": "nijuugobon no keeburu o setsuzoku shimashita.",
+        "en": "I connected twenty-five cables.",
+        "ja": "二十五本のケーブルを接続しました。",
+        "kana": "にじゅうごほん の けーぶる を せつぞく しました。"
+      },
+      {
+        "ro": "nijuugobon no hana o kabin ni iremashita.",
+        "en": "I put twenty-five flowers in a vase.",
+        "ja": "二十五本の花を花瓶に入れました。",
+        "kana": "にじゅうごほん の はな を かびん に いれました。"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "kanji": "二十六個",
+    "kana": "にじゅうろっこ",
+    "romaji": "nijuurokko",
+    "en": "twenty-six small objects",
+    "examples": [
+      {
+        "ro": "nijuurokko no ringo o kaimashita.",
+        "en": "I bought twenty-six apples.",
+        "ja": "二十六個のリンゴを買いました。",
+        "kana": "にじゅうろっこ の りんご を かいました。"
+      },
+      {
+        "ro": "nijuurokko no booru o atsumemashita.",
+        "en": "I collected twenty-six balls.",
+        "ja": "二十六個のボールを集めました。",
+        "kana": "にじゅうろっこ の ぼーる を あつめました。"
+      },
+      {
+        "ro": "nijuurokko no keeki o tsukurimashita.",
+        "en": "I made twenty-six cakes.",
+        "ja": "二十六個のケーキを作りました。",
+        "kana": "にじゅうろっこ の けーき を つくりました。"
+      },
+      {
+        "ro": "nijuurokko no hako o kazoemashita.",
+        "en": "I counted twenty-six boxes.",
+        "ja": "二十六個の箱を数えました。",
+        "kana": "にじゅうろっこ の はこ を かぞえました。"
+      },
+      {
+        "ro": "nijuurokko no botan o nuitsukemashita.",
+        "en": "I sewed on twenty-six buttons.",
+        "ja": "二十六個のボタンを縫い付けました。",
+        "kana": "にじゅうろっこ の ぼたん を ぬいつけました。"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "kanji": "二十七枚",
+    "kana": "にじゅうななまい",
+    "romaji": "nijuunanamai",
+    "en": "twenty-seven flat objects",
+    "examples": [
+      {
+        "ro": "nijuunanamai no kami o kopii shimashita.",
+        "en": "I copied twenty-seven sheets of paper.",
+        "ja": "二十七枚の紙をコピーしました。",
+        "kana": "にじゅうななまい の かみ を こぴー しました。"
+      },
+      {
+        "ro": "nijuunanamai no sara o araimashita.",
+        "en": "I washed twenty-seven plates.",
+        "ja": "二十七枚の皿を洗いました。",
+        "kana": "にじゅうななまい の さら を あらいました。"
+      },
+      {
+        "ro": "nijuunanamai no posutaa o harimashita.",
+        "en": "I put up twenty-seven posters.",
+        "ja": "二十七枚のポスターを貼りました。",
+        "kana": "にじゅうななまい の ぽすたー を はりました。"
+      },
+      {
+        "ro": "nijuunanamai no shashin o seiri shimashita.",
+        "en": "I organized twenty-seven photos.",
+        "ja": "二十七枚の写真を整理しました。",
+        "kana": "にじゅうななまい の しゃしん を せいり しました。"
+      },
+      {
+        "ro": "nijuunanamai no kaado o kubarimashita.",
+        "en": "I handed out twenty-seven cards.",
+        "ja": "二十七枚のカードを配りました。",
+        "kana": "にじゅうななまい の かーど を くばりました。"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "kanji": "二十八回",
+    "kana": "にじゅうはちかい",
+    "romaji": "nijuuhakkai",
+    "en": "twenty-eight times",
+    "examples": [
+      {
+        "ro": "nijuuhakkaime no chousen de seikou shimashita.",
+        "en": "I succeeded on the twenty-eighth try.",
+        "ja": "二十八回目の挑戦で成功しました。",
+        "kana": "にじゅうはちかいめ の ちょうせん で せいこう しました。"
+      },
+      {
+        "ro": "nijuuhakkai renshuu shimashita.",
+        "en": "I practiced twenty-eight times.",
+        "ja": "二十八回練習しました。",
+        "kana": "にじゅうはちかい れんしゅう しました。"
+      },
+      {
+        "ro": "nijuuhakkai kaigi ga arimashita.",
+        "en": "We had twenty-eight meetings.",
+        "ja": "二十八回会議がありました。",
+        "kana": "にじゅうはちかい かいぎ が ありました。"
+      },
+      {
+        "ro": "nijuuhakkai mo denwa o shimashita.",
+        "en": "I called twenty-eight times.",
+        "ja": "二十八回も電話をしました。",
+        "kana": "にじゅうはちかい も でんわ を しました。"
+      },
+      {
+        "ro": "nijuuhakkai no tesuto o ukemashita.",
+        "en": "I took twenty-eight tests.",
+        "ja": "二十八回のテストを受けました。",
+        "kana": "にじゅうはちかい の てすと を うけました。"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "kanji": "二十九匹",
+    "kana": "にじゅうきゅうひき",
+    "romaji": "nijuukyuuhiki",
+    "en": "twenty-nine small animals",
+    "examples": [
+      {
+        "ro": "nijuukyuuhiki no neko ga imasu.",
+        "en": "There are twenty-nine cats.",
+        "ja": "二十九匹の猫がいます。",
+        "kana": "にじゅうきゅうひき の ねこ が います。"
+      },
+      {
+        "ro": "nijuukyuuhiki no sakana o tsurimashita.",
+        "en": "I caught twenty-nine fish.",
+        "ja": "二十九匹の魚を釣りました。",
+        "kana": "にじゅうきゅうひき の さかな を つりました。"
+      },
+      {
+        "ro": "nijuukyuuhiki no inu o hogo shimashita.",
+        "en": "I rescued twenty-nine dogs.",
+        "ja": "二十九匹の犬を保護しました。",
+        "kana": "にじゅうきゅうひき の いぬ を ほご しました。"
+      },
+      {
+        "ro": "nijuukyuuhiki no usagi ga hanete imasu.",
+        "en": "Twenty-nine rabbits are hopping.",
+        "ja": "二十九匹のうさぎが跳ねています。",
+        "kana": "にじゅうきゅうひき の うさぎ が はねて います。"
+      },
+      {
+        "ro": "nijuukyuuhiki no nezumi o mimashita.",
+        "en": "I saw twenty-nine mice.",
+        "ja": "二十九匹のネズミを見ました。",
+        "kana": "にじゅうきゅうひき の ねずみ を みました。"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "kanji": "三十人",
+    "kana": "さんじゅうにん",
+    "romaji": "sanjuunin",
+    "en": "thirty people",
+    "examples": [
+      {
+        "ro": "sanjuunin no gakusei ga jugyou o ukete imasu.",
+        "en": "Thirty students are taking the class.",
+        "ja": "三十人の学生が授業を受けています。",
+        "kana": "さんじゅうにん の がくせい が じゅぎょう を うけて います。"
+      },
+      {
+        "ro": "sanjuunin no shain ga shukkin shimashita.",
+        "en": "Thirty employees came to work.",
+        "ja": "三十人の社員が出勤しました。",
+        "kana": "さんじゅうにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "sanjuunin no kodomo ga kouen de asonde imasu.",
+        "en": "Thirty children are playing in the park.",
+        "ja": "三十人の子どもが公園で遊んでいます。",
+        "kana": "さんじゅうにん の こども が こうえん で あそんで います。"
+      },
+      {
+        "ro": "sanjuunin no sankasha ga kaijou ni imasu.",
+        "en": "Thirty participants are at the venue.",
+        "ja": "三十人の参加者が会場にいます。",
+        "kana": "さんじゅうにん の さんかしゃ が かいじょう に います。"
+      },
+      {
+        "ro": "sanjuunin no tomodachi ga atsumarimashita.",
+        "en": "Thirty friends gathered together.",
+        "ja": "三十人の友達が集まりました。",
+        "kana": "さんじゅうにん の ともだち が あつまりました。"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "kanji": "三十一台",
+    "kana": "さんじゅういちだい",
+    "romaji": "sanjuuichidai",
+    "en": "thirty-one machines or vehicles",
+    "examples": [
+      {
+        "ro": "sanjuuichidai no kuruma ga chuushajou ni narande imasu.",
+        "en": "Thirty-one cars are lined up in the parking lot.",
+        "ja": "三十一台の車が駐車場に並んでいます。",
+        "kana": "さんじゅういちだい の くるま が ちゅうしゃじょう に ならんで います。"
+      },
+      {
+        "ro": "sanjuuichidai no pasokon o setchi shimashita.",
+        "en": "We installed thirty-one computers.",
+        "ja": "三十一台のパソコンを設置しました。",
+        "kana": "さんじゅういちだい の ぱそこん を せっち しました。"
+      },
+      {
+        "ro": "sanjuuichidai no basu ga shuppatsu shimashita.",
+        "en": "Thirty-one buses departed.",
+        "ja": "三十一台のバスが出発しました。",
+        "kana": "さんじゅういちだい の ばす が しゅっぱつ しました。"
+      },
+      {
+        "ro": "sanjuuichidai no eakon o tenken shimashita.",
+        "en": "I inspected thirty-one air conditioners.",
+        "ja": "三十一台のエアコンを点検しました。",
+        "kana": "さんじゅういちだい の えあこん を てんけん しました。"
+      },
+      {
+        "ro": "sanjuuichidai no torakku ga souko ni hairimashita.",
+        "en": "Thirty-one trucks entered the warehouse.",
+        "ja": "三十一台のトラックが倉庫に入りました。",
+        "kana": "さんじゅういちだい の とらっく が そうこ に はいりました。"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "kanji": "三十二冊",
+    "kana": "さんじゅうにさつ",
+    "romaji": "sanjuunisatsu",
+    "en": "thirty-two books",
+    "examples": [
+      {
+        "ro": "sanjuunisatsu no hon o yomimashita.",
+        "en": "I read thirty-two books.",
+        "ja": "三十二冊の本を読みました。",
+        "kana": "さんじゅうにさつ の ほん を よみました。"
+      },
+      {
+        "ro": "sanjuunisatsu no nooto o seiri shimashita.",
+        "en": "I organized thirty-two notebooks.",
+        "ja": "三十二冊のノートを整理しました。",
+        "kana": "さんじゅうにさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "sanjuunisatsu no manga o kaimashita.",
+        "en": "I bought thirty-two manga books.",
+        "ja": "三十二冊の漫画を買いました。",
+        "kana": "さんじゅうにさつ の まんが を かいました。"
+      },
+      {
+        "ro": "sanjuunisatsu no jisho o gakkou ni kifu shimashita.",
+        "en": "I donated thirty-two dictionaries to the school.",
+        "ja": "三十二冊の辞書を学校に寄付しました。",
+        "kana": "さんじゅうにさつ の じしょ を がっこう に きふ しました。"
+      },
+      {
+        "ro": "sanjuunisatsu no shiryou o insatsu shimashita.",
+        "en": "I printed thirty-two documents.",
+        "ja": "三十二冊の資料を印刷しました。",
+        "kana": "さんじゅうにさつ の しりょう を いんさつ しました。"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "kanji": "三十三回",
+    "kana": "さんじゅうさんかい",
+    "romaji": "sanjuusankai",
+    "en": "thirty-three times",
+    "examples": [
+      {
+        "ro": "sanjuusankai renshuu shite yatto dekimashita.",
+        "en": "After practicing thirty-three times, I finally did it.",
+        "ja": "三十三回練習してやっとできました。",
+        "kana": "さんじゅうさんかい れんしゅう して やっと できました。"
+      },
+      {
+        "ro": "sanjuusankai kaigi ga hirakaremashita.",
+        "en": "Thirty-three meetings were held.",
+        "ja": "三十三回会議が開かれました。",
+        "kana": "さんじゅうさんかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "sanjuusankai janpu shimashita.",
+        "en": "I jumped thirty-three times.",
+        "ja": "三十三回ジャンプしました。",
+        "kana": "さんじゅうさんかい じゃんぷ しました。"
+      },
+      {
+        "ro": "sanjuusankai mo tesuto o ukemashita.",
+        "en": "I took the test thirty-three times.",
+        "ja": "三十三回もテストを受けました。",
+        "kana": "さんじゅうさんかい も てすと を うけました。"
+      },
+      {
+        "ro": "sanjuusankai chousen shimashita ga shippai shimashita.",
+        "en": "I tried thirty-three times but failed.",
+        "ja": "三十三回挑戦しましたが失敗しました。",
+        "kana": "さんじゅうさんかい ちょうせん しました が しっぱい しました。"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "kanji": "三十四軒",
+    "kana": "さんじゅうよんけん",
+    "romaji": "sanjuuyonken",
+    "en": "thirty-four houses or shops",
+    "examples": [
+      {
+        "ro": "sanjuuyonken no mise o shirabemashita.",
+        "en": "I checked thirty-four shops.",
+        "ja": "三十四軒の店を調べました。",
+        "kana": "さんじゅうよんけん の みせ を しらべました。"
+      },
+      {
+        "ro": "sanjuuyonken no resutoran o tazunemashita.",
+        "en": "I visited thirty-four restaurants.",
+        "ja": "三十四軒のレストランを訪ねました。",
+        "kana": "さんじゅうよんけん の れすとらん を たずねました。"
+      },
+      {
+        "ro": "sanjuuyonken no ie ni chirashi o kubarimashita.",
+        "en": "I delivered flyers to thirty-four houses.",
+        "ja": "三十四軒の家にチラシを配りました。",
+        "kana": "さんじゅうよんけん の いえ に ちらし を くばりました。"
+      },
+      {
+        "ro": "sanjuuyonken no hoteru o hikaku shimashita.",
+        "en": "I compared thirty-four hotels.",
+        "ja": "三十四軒のホテルを比較しました。",
+        "kana": "さんじゅうよんけん の ほてる を ひかく しました。"
+      },
+      {
+        "ro": "sanjuuyonken no minka ga narande imasu.",
+        "en": "Thirty-four houses are lined up.",
+        "ja": "三十四軒の民家が並んでいます。",
+        "kana": "さんじゅうよんけん の みんか が ならんで います。"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "kanji": "三十五枚",
+    "kana": "さんじゅうごまい",
+    "romaji": "sanjuugomai",
+    "en": "thirty-five flat objects",
+    "examples": [
+      {
+        "ro": "sanjuugomai no shashin o torimashita.",
+        "en": "I took thirty-five photos.",
+        "ja": "三十五枚の写真を撮りました。",
+        "kana": "さんじゅうごまい の しゃしん を とりました。"
+      },
+      {
+        "ro": "sanjuugomai no chiketto o kubarimashita.",
+        "en": "I handed out thirty-five tickets.",
+        "ja": "三十五枚のチケットを配りました。",
+        "kana": "さんじゅうごまい の ちけっと を くばりました。"
+      },
+      {
+        "ro": "sanjuugomai no sara o araimashita.",
+        "en": "I washed thirty-five plates.",
+        "ja": "三十五枚の皿を洗いました。",
+        "kana": "さんじゅうごまい の さら を あらいました。"
+      },
+      {
+        "ro": "sanjuugomai no shorui o teishutsu shimashita.",
+        "en": "I submitted thirty-five documents.",
+        "ja": "三十五枚の書類を提出しました。",
+        "kana": "さんじゅうごまい の しょるい を ていしゅつ しました。"
+      },
+      {
+        "ro": "sanjuugomai no kaado o kazoemashita.",
+        "en": "I counted thirty-five cards.",
+        "ja": "三十五枚のカードを数えました。",
+        "kana": "さんじゅうごまい の かーど を かぞえました。"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "kanji": "三十六人",
+    "kana": "さんじゅうろくにん",
+    "romaji": "sanjuurokunin",
+    "en": "thirty-six people",
+    "examples": [
+      {
+        "ro": "sanjuurokunin no gakusei ga sanka shimashita.",
+        "en": "Thirty-six students participated.",
+        "ja": "三十六人の学生が参加しました。",
+        "kana": "さんじゅうろくにん の がくせい が さんか しました。"
+      },
+      {
+        "ro": "sanjuurokunin no shain ga shucchou shiteimasu.",
+        "en": "Thirty-six employees are on a business trip.",
+        "ja": "三十六人の社員が出張しています。",
+        "kana": "さんじゅうろくにん の しゃいん が しゅっちょう しています。"
+      },
+      {
+        "ro": "sanjuurokunin no tomodachi to atsumarimashita.",
+        "en": "I gathered with thirty-six friends.",
+        "ja": "三十六人の友達と集まりました。",
+        "kana": "さんじゅうろくにん の ともだち と あつまりました。"
+      },
+      {
+        "ro": "sanjuurokunin no joukyaku ga hikouki ni norimashita.",
+        "en": "Thirty-six passengers boarded the plane.",
+        "ja": "三十六人の乗客が飛行機に乗りました。",
+        "kana": "さんじゅうろくにん の じょうきゃく が ひこうき に のりました。"
+      },
+      {
+        "ro": "sanjuurokunin no sensei ga kaigi ni shusseki shimashita.",
+        "en": "Thirty-six teachers attended the meeting.",
+        "ja": "三十六人の先生が会議に出席しました。",
+        "kana": "さんじゅうろくにん の せんせい が かいぎ に しゅっせき しました。"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "kanji": "三十七本",
+    "kana": "さんじゅうななほん",
+    "romaji": "sanjuunanahon",
+    "en": "thirty-seven long objects",
+    "examples": [
+      {
+        "ro": "sanjuunanahon no pen o hako ni iremashita.",
+        "en": "I put thirty-seven pens in a box.",
+        "ja": "三十七本のペンを箱に入れました。",
+        "kana": "さんじゅうななほん の ぺん を はこ に いれました。"
+      },
+      {
+        "ro": "sanjuunanahon no ki ga narande imasu.",
+        "en": "Thirty-seven trees are lined up.",
+        "ja": "三十七本の木が並んでいます。",
+        "kana": "さんじゅうななほん の き が ならんで います。"
+      },
+      {
+        "ro": "sanjuunanahon no keeburu o setsuzoku shimashita.",
+        "en": "I connected thirty-seven cables.",
+        "ja": "三十七本のケーブルを接続しました。",
+        "kana": "さんじゅうななほん の けーぶる を せつぞく しました。"
+      },
+      {
+        "ro": "sanjuunanahon no eiga o mimashita.",
+        "en": "I watched thirty-seven movies.",
+        "ja": "三十七本の映画を見ました。",
+        "kana": "さんじゅうななほん の えいが を みました。"
+      },
+      {
+        "ro": "sanjuunanahon no hana o kabin ni iremashita.",
+        "en": "I put thirty-seven flowers in a vase.",
+        "ja": "三十七本の花を花瓶に入れました。",
+        "kana": "さんじゅうななほん の はな を かびん に いれました。"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "kanji": "三十八匹",
+    "kana": "さんじゅうはっぴき",
+    "romaji": "sanjuuhappiki",
+    "en": "thirty-eight small animals",
+    "examples": [
+      {
+        "ro": "sanjuuhappiki no neko ga hogo saremashita.",
+        "en": "Thirty-eight cats were rescued.",
+        "ja": "三十八匹の猫が保護されました。",
+        "kana": "さんじゅうはっぴき の ねこ が ほご されました。"
+      },
+      {
+        "ro": "sanjuuhappiki no sakana o tsurimashita.",
+        "en": "I caught thirty-eight fish.",
+        "ja": "三十八匹の魚を釣りました。",
+        "kana": "さんじゅうはっぴき の さかな を つりました。"
+      },
+      {
+        "ro": "sanjuuhappiki no inu o sanpo sasemashita.",
+        "en": "I walked thirty-eight dogs.",
+        "ja": "三十八匹の犬を散歩させました。",
+        "kana": "さんじゅうはっぴき の いぬ を さんぽ させました。"
+      },
+      {
+        "ro": "sanjuuhappiki no tori o mimashita.",
+        "en": "I saw thirty-eight birds.",
+        "ja": "三十八匹の鳥を見ました。",
+        "kana": "さんじゅうはっぴき の とり を みました。"
+      },
+      {
+        "ro": "sanjuuhappiki no mushi o tsukamaemashita.",
+        "en": "I caught thirty-eight insects.",
+        "ja": "三十八匹の虫を捕まえました。",
+        "kana": "さんじゅうはっぴき の むし を つかまえました。"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "kanji": "三十九回",
+    "kana": "さんじゅうきゅうかい",
+    "romaji": "sanjuukyuukai",
+    "en": "thirty-nine times",
+    "examples": [
+      {
+        "ro": "sanjuukyuukai mo chousen shimashita.",
+        "en": "I tried thirty-nine times.",
+        "ja": "三十九回も挑戦しました。",
+        "kana": "さんじゅうきゅうかい も ちょうせん しました。"
+      },
+      {
+        "ro": "sanjuukyuukai kaigi ga okonawaremashita.",
+        "en": "Thirty-nine meetings were held.",
+        "ja": "三十九回会議が行われました。",
+        "kana": "さんじゅうきゅうかい かいぎ が おこなわれました。"
+      },
+      {
+        "ro": "sanjuukyuukai renshuu shimashita.",
+        "en": "I practiced thirty-nine times.",
+        "ja": "三十九回練習しました。",
+        "kana": "さんじゅうきゅうかい れんしゅう しました。"
+      },
+      {
+        "ro": "sanjuukyuukai doa o nokku shimashita.",
+        "en": "I knocked on the door thirty-nine times.",
+        "ja": "三十九回ドアをノックしました。",
+        "kana": "さんじゅうきゅうかい どあ を のっく しました。"
+      },
+      {
+        "ro": "sanjuukyuukaime no kouen ga owarimashita.",
+        "en": "The thirty-ninth performance has ended.",
+        "ja": "三十九回目の公演が終わりました。",
+        "kana": "さんじゅうきゅうかいめ の こうえん が おわりました。"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "kanji": "四十個",
+    "kana": "よんじゅっこ",
+    "romaji": "yonjukko",
+    "en": "forty small objects",
+    "examples": [
+      {
+        "ro": "yonjukko no ringo o hako ni iremashita.",
+        "en": "I put forty apples in a box.",
+        "ja": "四十個のリンゴを箱に入れました。",
+        "kana": "よんじゅっこ の りんご を はこ に いれました。"
+      },
+      {
+        "ro": "yonjukko no tamago o kaimashita.",
+        "en": "I bought forty eggs.",
+        "ja": "四十個の卵を買いました。",
+        "kana": "よんじゅっこ の たまご を かいました。"
+      },
+      {
+        "ro": "yonjukko no purezento o youi shimashita.",
+        "en": "I prepared forty presents.",
+        "ja": "四十個のプレゼントを用意しました。",
+        "kana": "よんじゅっこ の ぷれぜんと を ようい しました。"
+      },
+      {
+        "ro": "yonjukko no botan o nuitsukemashita.",
+        "en": "I sewed on forty buttons.",
+        "ja": "四十個のボタンを縫い付けました。",
+        "kana": "よんじゅっこ の ぼたん を ぬいつけました。"
+      },
+      {
+        "ro": "yonjukko no keeki o tsukurimashita.",
+        "en": "I made forty cakes.",
+        "ja": "四十個のケーキを作りました。",
+        "kana": "よんじゅっこ の けーき を つくりました。"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "kanji": "四十一人",
+    "kana": "よんじゅういちにん",
+    "romaji": "yonjuuichinin",
+    "en": "forty-one people",
+    "examples": [
+      {
+        "ro": "yonjuuichinin no gakusei ga jugyou ni demashita.",
+        "en": "Forty-one students attended the class.",
+        "ja": "四十一人の学生が授業に出ました。",
+        "kana": "よんじゅういちにん の がくせい が じゅぎょう に でました。"
+      },
+      {
+        "ro": "yonjuuichinin no shain ga shukkin shimashita.",
+        "en": "Forty-one employees came to work.",
+        "ja": "四十一人の社員が出勤しました。",
+        "kana": "よんじゅういちにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "yonjuuichinin no kodomo ga sanka shimashita.",
+        "en": "Forty-one children participated.",
+        "ja": "四十一人の子どもが参加しました。",
+        "kana": "よんじゅういちにん の こども が さんか しました。"
+      },
+      {
+        "ro": "yonjuuichinin no kankyaku ga hakushu shimashita.",
+        "en": "Forty-one audience members applauded.",
+        "ja": "四十一人の観客が拍手しました。",
+        "kana": "よんじゅういちにん の かんきゃく が はくしゅ しました。"
+      },
+      {
+        "ro": "yonjuuichinin no senshu ga taikai ni shutsujou shimashita.",
+        "en": "Forty-one players joined the tournament.",
+        "ja": "四十一人の選手が大会に出場しました。",
+        "kana": "よんじゅういちにん の せんしゅ が たいかい に しゅつじょう しました。"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "kanji": "四十二冊",
+    "kana": "よんじゅうにさつ",
+    "romaji": "yonjuunisatsu",
+    "en": "forty-two books",
+    "examples": [
+      {
+        "ro": "yonjuunisatsu no hon o yomi oemashita.",
+        "en": "I finished reading forty-two books.",
+        "ja": "四十二冊の本を読み終えました。",
+        "kana": "よんじゅうにさつ の ほん を よみおえました。"
+      },
+      {
+        "ro": "yonjuunisatsu no nooto o seiri shimashita.",
+        "en": "I organized forty-two notebooks.",
+        "ja": "四十二冊のノートを整理しました。",
+        "kana": "よんじゅうにさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "yonjuunisatsu no manga o kaimashita.",
+        "en": "I bought forty-two manga books.",
+        "ja": "四十二冊の漫画を買いました。",
+        "kana": "よんじゅうにさつ の まんが を かいました。"
+      },
+      {
+        "ro": "yonjuunisatsu no shiryou o teishutsu shimashita.",
+        "en": "I submitted forty-two documents.",
+        "ja": "四十二冊の資料を提出しました。",
+        "kana": "よんじゅうにさつ の しりょう を ていしゅつ しました。"
+      },
+      {
+        "ro": "yonjuunisatsu no hon o tana ni narabemashita.",
+        "en": "I arranged forty-two books on the shelf.",
+        "ja": "四十二冊の本を棚に並べました。",
+        "kana": "よんじゅうにさつ の ほん を たな に ならべました。"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "kanji": "四十三回",
+    "kana": "よんじゅうさんかい",
+    "romaji": "yonjuusankai",
+    "en": "forty-three times",
+    "examples": [
+      {
+        "ro": "yonjuusankaime no shiai de kachimashita.",
+        "en": "I won on the forty-third match.",
+        "ja": "四十三回目の試合で勝ちました。",
+        "kana": "よんじゅうさんかいめ の しあい で かちました。"
+      },
+      {
+        "ro": "yonjuusankai mo denwa o shimashita.",
+        "en": "I called forty-three times.",
+        "ja": "四十三回も電話をしました。",
+        "kana": "よんじゅうさんかい も でんわ を しました。"
+      },
+      {
+        "ro": "yonjuusankai renshuu shimashita.",
+        "en": "I practiced forty-three times.",
+        "ja": "四十三回練習しました。",
+        "kana": "よんじゅうさんかい れんしゅう しました。"
+      },
+      {
+        "ro": "yonjuusankaime no jugyou ga owarimashita.",
+        "en": "The forty-third class has ended.",
+        "ja": "四十三回目の授業が終わりました。",
+        "kana": "よんじゅうさんかいめ の じゅぎょう が おわりました。"
+      },
+      {
+        "ro": "yonjuusankai kaigi ga hirakaremashita.",
+        "en": "Forty-three meetings were held.",
+        "ja": "四十三回会議が開かれました。",
+        "kana": "よんじゅうさんかい かいぎ が ひらかれました。"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "kanji": "四十四台",
+    "kana": "よんじゅうよんだい",
+    "romaji": "yonjuuyondai",
+    "en": "forty-four machines or vehicles",
+    "examples": [
+      {
+        "ro": "yonjuuyondai no kuruma ga narande imasu.",
+        "en": "Forty-four cars are lined up.",
+        "ja": "四十四台の車が並んでいます。",
+        "kana": "よんじゅうよんだい の くるま が ならんで います。"
+      },
+      {
+        "ro": "yonjuuyondai no eakon o setchi shimashita.",
+        "en": "We installed forty-four air conditioners.",
+        "ja": "四十四台のエアコンを設置しました。",
+        "kana": "よんじゅうよんだい の えあこん を せっち しました。"
+      },
+      {
+        "ro": "yonjuuyondai no pasokon o kounyuu shimashita.",
+        "en": "We purchased forty-four computers.",
+        "ja": "四十四台のパソコンを購入しました。",
+        "kana": "よんじゅうよんだい の ぱそこん を こうにゅう しました。"
+      },
+      {
+        "ro": "yonjuuyondai no basu ga shuppatsu shimashita.",
+        "en": "Forty-four buses departed.",
+        "ja": "四十四台のバスが出発しました。",
+        "kana": "よんじゅうよんだい の ばす が しゅっぱつ しました。"
+      },
+      {
+        "ro": "yonjuuyondai no torakku ga touchaku shimashita.",
+        "en": "Forty-four trucks arrived.",
+        "ja": "四十四台のトラックが到着しました。",
+        "kana": "よんじゅうよんだい の とらっく が とうちゃく しました。"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "kanji": "四十五本",
+    "kana": "よんじゅうごほん",
+    "romaji": "yonjuugohon",
+    "en": "forty-five long objects",
+    "examples": [
+      {
+        "ro": "yonjuugohon no ki o uemashita.",
+        "en": "I planted forty-five trees.",
+        "ja": "四十五本の木を植えました。",
+        "kana": "よんじゅうごほん の き を うえました。"
+      },
+      {
+        "ro": "yonjuugohon no pen o atsumemashita.",
+        "en": "I collected forty-five pens.",
+        "ja": "四十五本のペンを集めました。",
+        "kana": "よんじゅうごほん の ぺん を あつめました。"
+      },
+      {
+        "ro": "yonjuugohon no keeburu o setsuzoku shimashita.",
+        "en": "I connected forty-five cables.",
+        "ja": "四十五本のケーブルを接続しました。",
+        "kana": "よんじゅうごほん の けーぶる を せつぞく しました。"
+      },
+      {
+        "ro": "yonjuugohon no eiga o mimashita.",
+        "en": "I watched forty-five movies.",
+        "ja": "四十五本の映画を見ました。",
+        "kana": "よんじゅうごほん の えいが を みました。"
+      },
+      {
+        "ro": "yonjuugohon no hana o kabin ni iremashita.",
+        "en": "I put forty-five flowers in a vase.",
+        "ja": "四十五本の花を花瓶に入れました。",
+        "kana": "よんじゅうごほん の はな を かびん に いれました。"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "kanji": "四十六匹",
+    "kana": "よんじゅうろっぴき",
+    "romaji": "yonjuuroppiki",
+    "en": "forty-six small animals",
+    "examples": [
+      {
+        "ro": "yonjuuroppiki no neko ga imasu.",
+        "en": "There are forty-six cats.",
+        "ja": "四十六匹の猫がいます。",
+        "kana": "よんじゅうろっぴき の ねこ が います。"
+      },
+      {
+        "ro": "yonjuuroppiki no inu o hogo shimashita.",
+        "en": "I rescued forty-six dogs.",
+        "ja": "四十六匹の犬を保護しました。",
+        "kana": "よんじゅうろっぴき の いぬ を ほご しました。"
+      },
+      {
+        "ro": "yonjuuroppiki no sakana o tsurimashita.",
+        "en": "I caught forty-six fish.",
+        "ja": "四十六匹の魚を釣りました。",
+        "kana": "よんじゅうろっぴき の さかな を つりました。"
+      },
+      {
+        "ro": "yonjuuroppiki no nezumi o mimashita.",
+        "en": "I saw forty-six mice.",
+        "ja": "四十六匹のネズミを見ました。",
+        "kana": "よんじゅうろっぴき の ねずみ を みました。"
+      },
+      {
+        "ro": "yonjuuroppiki no tori ga tonde imasu.",
+        "en": "Forty-six birds are flying.",
+        "ja": "四十六匹の鳥が飛んでいます。",
+        "kana": "よんじゅうろっぴき の とり が とんで います。"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "kanji": "四十七人",
+    "kana": "よんじゅうしちにん",
+    "romaji": "yonjuushichinin",
+    "en": "forty-seven people",
+    "examples": [
+      {
+        "ro": "yonjuushichinin no sankasha ga atsumarimashita.",
+        "en": "Forty-seven participants gathered.",
+        "ja": "四十七人の参加者が集まりました。",
+        "kana": "よんじゅうしちにん の さんかしゃ が あつまりました。"
+      },
+      {
+        "ro": "yonjuushichinin no gakusei ga sotsugyou shimashita.",
+        "en": "Forty-seven students graduated.",
+        "ja": "四十七人の学生が卒業しました。",
+        "kana": "よんじゅうしちにん の がくせい が そつぎょう しました。"
+      },
+      {
+        "ro": "yonjuushichinin no shain ga ryokou ni ikimashita.",
+        "en": "Forty-seven employees went on a trip.",
+        "ja": "四十七人の社員が旅行に行きました。",
+        "kana": "よんじゅうしちにん の しゃいん が りょこう に いきました。"
+      },
+      {
+        "ro": "yonjuushichinin no senshu ga shutsujou shimashita.",
+        "en": "Forty-seven players participated.",
+        "ja": "四十七人の選手が出場しました。",
+        "kana": "よんじゅうしちにん の せんしゅ が しゅつじょう しました。"
+      },
+      {
+        "ro": "yonjuushichinin no sensei ga kaigi ni shusseki shimashita.",
+        "en": "Forty-seven teachers attended the meeting.",
+        "ja": "四十七人の先生が会議に出席しました。",
+        "kana": "よんじゅうしちにん の せんせい が かいぎ に しゅっせき しました。"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "kanji": "四十八回",
+    "kana": "よんじゅうはちかい",
+    "romaji": "yonjuuhakkai",
+    "en": "forty-eight times",
+    "examples": [
+      {
+        "ro": "yonjuuhakkai chousen shite seikou shimashita.",
+        "en": "I succeeded after forty-eight attempts.",
+        "ja": "四十八回挑戦して成功しました。",
+        "kana": "よんじゅうはちかい ちょうせん して せいこう しました。"
+      },
+      {
+        "ro": "yonjuuhakkai kaigi ga hirakaremashita.",
+        "en": "Forty-eight meetings were held.",
+        "ja": "四十八回会議が開かれました。",
+        "kana": "よんじゅうはちかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "yonjuuhakkai renshuu shimashita.",
+        "en": "I practiced forty-eight times.",
+        "ja": "四十八回練習しました。",
+        "kana": "よんじゅうはちかい れんしゅう しました。"
+      },
+      {
+        "ro": "yonjuuhakkaime no shiken o ukemashita.",
+        "en": "I took the exam for the forty-eighth time.",
+        "ja": "四十八回目の試験を受けました。",
+        "kana": "よんじゅうはちかいめ の しけん を うけました。"
+      },
+      {
+        "ro": "yonjuuhakkaime no kouen ga owarimashita.",
+        "en": "The forty-eighth performance has ended.",
+        "ja": "四十八回目の公演が終わりました。",
+        "kana": "よんじゅうはちかいめ の こうえん が おわりました。"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "kanji": "四十九冊",
+    "kana": "よんじゅうきゅうさつ",
+    "romaji": "yonjuukyuusatsu",
+    "en": "forty-nine books",
+    "examples": [
+      {
+        "ro": "yonjuukyuusatsu no hon o yomimashita.",
+        "en": "I read forty-nine books.",
+        "ja": "四十九冊の本を読みました。",
+        "kana": "よんじゅうきゅうさつ の ほん を よみました。"
+      },
+      {
+        "ro": "yonjuukyuusatsu no nooto o seiri shimashita.",
+        "en": "I organized forty-nine notebooks.",
+        "ja": "四十九冊のノートを整理しました。",
+        "kana": "よんじゅうきゅうさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "yonjuukyuusatsu no manga o atsumemashita.",
+        "en": "I collected forty-nine manga books.",
+        "ja": "四十九冊の漫画を集めました。",
+        "kana": "よんじゅうきゅうさつ の まんが を あつめました。"
+      },
+      {
+        "ro": "yonjuukyuusatsu no shiryou o insatsu shimashita.",
+        "en": "I printed forty-nine documents.",
+        "ja": "四十九冊の資料を印刷しました。",
+        "kana": "よんじゅうきゅうさつ の しりょう を いんさつ しました。"
+      },
+      {
+        "ro": "yonjuukyuusatsu no kyoukasho o gakkou ni kifu shimashita.",
+        "en": "I donated forty-nine textbooks to the school.",
+        "ja": "四十九冊の教科書を学校に寄付しました。",
+        "kana": "よんじゅうきゅうさつ の きょうかしょ を がっこう に きふ しました。"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "kanji": "五十人",
+    "kana": "ごじゅうにん",
+    "romaji": "gojuunin",
+    "en": "fifty people",
+    "examples": [
+      {
+        "ro": "gojuunin no gakusei ga atsumarimashita.",
+        "en": "Fifty students gathered.",
+        "ja": "五十人の学生が集まりました。",
+        "kana": "ごじゅうにん の がくせい が あつまりました。"
+      },
+      {
+        "ro": "gojuunin no shain ga shukkin shimashita.",
+        "en": "Fifty employees came to work.",
+        "ja": "五十人の社員が出勤しました。",
+        "kana": "ごじゅうにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "gojuunin no kankyaku ga kaijou ni imashita.",
+        "en": "Fifty audience members were in the hall.",
+        "ja": "五十人の観客が会場にいました。",
+        "kana": "ごじゅうにん の かんきゃく が かいじょう に いました。"
+      },
+      {
+        "ro": "gojuunin no senshu ga taikai ni sanka shimashita.",
+        "en": "Fifty players participated in the tournament.",
+        "ja": "五十人の選手が大会に参加しました。",
+        "kana": "ごじゅうにん の せんしゅ が たいかい に さんか しました。"
+      },
+      {
+        "ro": "gojuunin no tomodachi ga atsumatte paatii o shimashita.",
+        "en": "Fifty friends gathered for a party.",
+        "ja": "五十人の友達が集まってパーティーをしました。",
+        "kana": "ごじゅうにん の ともだち が あつまって ぱーてぃー を しました。"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "kanji": "五十一個",
+    "kana": "ごじゅういっこ",
+    "romaji": "gojuuikko",
+    "en": "fifty-one small objects",
+    "examples": [
+      {
+        "ro": "gojuuikko no booru o atsumemashita.",
+        "en": "I collected fifty-one balls.",
+        "ja": "五十一個のボールを集めました。",
+        "kana": "ごじゅういっこ の ぼーる を あつめました。"
+      },
+      {
+        "ro": "gojuuikko no ringo o kaimashita.",
+        "en": "I bought fifty-one apples.",
+        "ja": "五十一個のリンゴを買いました。",
+        "kana": "ごじゅういっこ の りんご を かいました。"
+      },
+      {
+        "ro": "gojuuikko no purezento o youi shimashita.",
+        "en": "I prepared fifty-one presents.",
+        "ja": "五十一個のプレゼントを用意しました。",
+        "kana": "ごじゅういっこ の ぷれぜんと を ようい しました。"
+      },
+      {
+        "ro": "gojuuikko no botan o nuimashita.",
+        "en": "I sewed fifty-one buttons.",
+        "ja": "五十一個のボタンを縫いました。",
+        "kana": "ごじゅういっこ の ぼたん を ぬいました。"
+      },
+      {
+        "ro": "gojuuikko no kukkii o yakimashita.",
+        "en": "I baked fifty-one cookies.",
+        "ja": "五十一個のクッキーを焼きました。",
+        "kana": "ごじゅういっこ の くっきー を やきました。"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "kanji": "五十二枚",
+    "kana": "ごじゅうにまい",
+    "romaji": "gojuunimai",
+    "en": "fifty-two flat objects",
+    "examples": [
+      {
+        "ro": "gojuunimai no shashin o torimashita.",
+        "en": "I took fifty-two photos.",
+        "ja": "五十二枚の写真を撮りました。",
+        "kana": "ごじゅうにまい の しゃしん を とりました。"
+      },
+      {
+        "ro": "gojuunimai no sara o araimashita.",
+        "en": "I washed fifty-two plates.",
+        "ja": "五十二枚の皿を洗いました。",
+        "kana": "ごじゅうにまい の さら を あらいました。"
+      },
+      {
+        "ro": "gojuunimai no posutaa o harimashita.",
+        "en": "I put up fifty-two posters.",
+        "ja": "五十二枚のポスターを貼りました。",
+        "kana": "ごじゅうにまい の ぽすたー を はりました。"
+      },
+      {
+        "ro": "gojuunimai no shorui o teishutsu shimashita.",
+        "en": "I submitted fifty-two documents.",
+        "ja": "五十二枚の書類を提出しました。",
+        "kana": "ごじゅうにまい の しょるい を ていしゅつ しました。"
+      },
+      {
+        "ro": "gojuunimai no kaado o kubarimashita.",
+        "en": "I distributed fifty-two cards.",
+        "ja": "五十二枚のカードを配りました。",
+        "kana": "ごじゅうにまい の かーど を くばりました。"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "kanji": "五十三回",
+    "kana": "ごじゅうさんかい",
+    "romaji": "gojuusankai",
+    "en": "fifty-three times",
+    "examples": [
+      {
+        "ro": "gojuusankai chousen shimashita.",
+        "en": "I tried fifty-three times.",
+        "ja": "五十三回挑戦しました。",
+        "kana": "ごじゅうさんかい ちょうせん しました。"
+      },
+      {
+        "ro": "gojuusankai kaigi ga hirakaremashita.",
+        "en": "Fifty-three meetings were held.",
+        "ja": "五十三回会議が開かれました。",
+        "kana": "ごじゅうさんかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "gojuusankai renshuu shimashita.",
+        "en": "I practiced fifty-three times.",
+        "ja": "五十三回練習しました。",
+        "kana": "ごじゅうさんかい れんしゅう しました。"
+      },
+      {
+        "ro": "gojuusankai tesuto o ukemashita.",
+        "en": "I took fifty-three tests.",
+        "ja": "五十三回テストを受けました。",
+        "kana": "ごじゅうさんかい てすと を うけました。"
+      },
+      {
+        "ro": "gojuusankai no ryokou o keikaku shimashita.",
+        "en": "I planned fifty-three trips.",
+        "ja": "五十三回の旅行を計画しました。",
+        "kana": "ごじゅうさんかい の りょこう を けいかく しました。"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "kanji": "五十四軒",
+    "kana": "ごじゅうよんけん",
+    "romaji": "gojuuyonken",
+    "en": "fifty-four houses or shops",
+    "examples": [
+      {
+        "ro": "gojuuyonken no ie o tazunemashita.",
+        "en": "I visited fifty-four houses.",
+        "ja": "五十四軒の家を訪ねました。",
+        "kana": "ごじゅうよんけん の いえ を たずねました。"
+      },
+      {
+        "ro": "gojuuyonken no resutoran o shirabemashita.",
+        "en": "I researched fifty-four restaurants.",
+        "ja": "五十四軒のレストランを調べました。",
+        "kana": "ごじゅうよんけん の れすとらん を しらべました。"
+      },
+      {
+        "ro": "gojuuyonken no mise o aruite mawarimashita.",
+        "en": "I walked around fifty-four shops.",
+        "ja": "五十四軒の店を歩いて回りました。",
+        "kana": "ごじゅうよんけん の みせ を あるいて まわりました。"
+      },
+      {
+        "ro": "gojuuyonken no hoteru o hikaku shimashita.",
+        "en": "I compared fifty-four hotels.",
+        "ja": "五十四軒のホテルを比較しました。",
+        "kana": "ごじゅうよんけん の ほてる を ひかく しました。"
+      },
+      {
+        "ro": "gojuuyonken no minka ga narande imasu.",
+        "en": "Fifty-four houses are lined up.",
+        "ja": "五十四軒の民家が並んでいます。",
+        "kana": "ごじゅうよんけん の みんか が ならんで います。"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "kanji": "五十五匹",
+    "kana": "ごじゅうごひき",
+    "romaji": "gojuugohiki",
+    "en": "fifty-five small animals",
+    "examples": [
+      {
+        "ro": "gojuugohiki no sakana o tsurimashita.",
+        "en": "I caught fifty-five fish.",
+        "ja": "五十五匹の魚を釣りました。",
+        "kana": "ごじゅうごひき の さかな を つりました。"
+      },
+      {
+        "ro": "gojuugohiki no neko o sewa shiteimasu.",
+        "en": "I am taking care of fifty-five cats.",
+        "ja": "五十五匹の猫を世話しています。",
+        "kana": "ごじゅうごひき の ねこ を せわ しています。"
+      },
+      {
+        "ro": "gojuugohiki no inu ga hashitte imasu.",
+        "en": "Fifty-five dogs are running.",
+        "ja": "五十五匹の犬が走っています。",
+        "kana": "ごじゅうごひき の いぬ が はしって います。"
+      },
+      {
+        "ro": "gojuugohiki no mushi o kansatsu shimashita.",
+        "en": "I observed fifty-five insects.",
+        "ja": "五十五匹の虫を観察しました。",
+        "kana": "ごじゅうごひき の むし を かんさつ しました。"
+      },
+      {
+        "ro": "gojuugohiki no tori ga sora o tonde imasu.",
+        "en": "Fifty-five birds are flying in the sky.",
+        "ja": "五十五匹の鳥が空を飛んでいます。",
+        "kana": "ごじゅうごひき の とり が そら を とんで います。"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "kanji": "五十六人",
+    "kana": "ごじゅうろくにん",
+    "romaji": "gojuurokunin",
+    "en": "fifty-six people",
+    "examples": [
+      {
+        "ro": "gojuurokunin no gakusei ga sanka shimashita.",
+        "en": "Fifty-six students participated.",
+        "ja": "五十六人の学生が参加しました。",
+        "kana": "ごじゅうろくにん の がくせい が さんか しました。"
+      },
+      {
+        "ro": "gojuurokunin no shain ga shukkin shimashita.",
+        "en": "Fifty-six employees came to work.",
+        "ja": "五十六人の社員が出勤しました。",
+        "kana": "ごじゅうろくにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "gojuurokunin no kankyaku ga suteeji o mimashita.",
+        "en": "Fifty-six spectators watched the stage.",
+        "ja": "五十六人の観客がステージを見ました。",
+        "kana": "ごじゅうろくにん の かんきゃく が すてーじ を みました。"
+      },
+      {
+        "ro": "gojuurokunin no tomodachi ga atsumarimashita.",
+        "en": "Fifty-six friends gathered.",
+        "ja": "五十六人の友達が集まりました。",
+        "kana": "ごじゅうろくにん の ともだち が あつまりました。"
+      },
+      {
+        "ro": "gojuurokunin no sensei ga kaigi ni shusseki shimashita.",
+        "en": "Fifty-six teachers attended the meeting.",
+        "ja": "五十六人の先生が会議に出席しました。",
+        "kana": "ごじゅうろくにん の せんせい が かいぎ に しゅっせき しました。"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "kanji": "五十七回",
+    "kana": "ごじゅうななかい",
+    "romaji": "gojuunanakai",
+    "en": "fifty-seven times",
+    "examples": [
+      {
+        "ro": "gojuunanakai mo renshuu shimashita.",
+        "en": "I practiced fifty-seven times.",
+        "ja": "五十七回も練習しました。",
+        "kana": "ごじゅうななかい も れんしゅう しました。"
+      },
+      {
+        "ro": "gojuunanakai kaigi ga okonawaremashita.",
+        "en": "Fifty-seven meetings were held.",
+        "ja": "五十七回会議が行われました。",
+        "kana": "ごじゅうななかい かいぎ が おこなわれました。"
+      },
+      {
+        "ro": "gojuunanakai chousen shimashita.",
+        "en": "I tried fifty-seven times.",
+        "ja": "五十七回挑戦しました。",
+        "kana": "ごじゅうななかい ちょうせん しました。"
+      },
+      {
+        "ro": "gojuunanakai tesuto o ukemashita.",
+        "en": "I took fifty-seven tests.",
+        "ja": "五十七回テストを受けました。",
+        "kana": "ごじゅうななかい てすと を うけました。"
+      },
+      {
+        "ro": "gojuunanakaime no shiai ga owarimashita.",
+        "en": "The fifty-seventh match has ended.",
+        "ja": "五十七回目の試合が終わりました。",
+        "kana": "ごじゅうななかいめ の しあい が おわりました。"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "kanji": "五十八本",
+    "kana": "ごじゅうはっぽん",
+    "romaji": "gojuuhappon",
+    "en": "fifty-eight long objects",
+    "examples": [
+      {
+        "ro": "gojuuhappon no ki o uemashita.",
+        "en": "I planted fifty-eight trees.",
+        "ja": "五十八本の木を植えました。",
+        "kana": "ごじゅうはっぽん の き を うえました。"
+      },
+      {
+        "ro": "gojuuhappon no pen o atsumemashita.",
+        "en": "I collected fifty-eight pens.",
+        "ja": "五十八本のペンを集めました。",
+        "kana": "ごじゅうはっぽん の ぺん を あつめました。"
+      },
+      {
+        "ro": "gojuuhappon no keeburu o seiri shimashita.",
+        "en": "I organized fifty-eight cables.",
+        "ja": "五十八本のケーブルを整理しました。",
+        "kana": "ごじゅうはっぽん の けーぶる を せいり しました。"
+      },
+      {
+        "ro": "gojuuhappon no hana o kazari mashita.",
+        "en": "I decorated with fifty-eight flowers.",
+        "ja": "五十八本の花を飾りました。",
+        "kana": "ごじゅうはっぽん の はな を かざりました。"
+      },
+      {
+        "ro": "gojuuhappon no eiga o mimashita.",
+        "en": "I watched fifty-eight movies.",
+        "ja": "五十八本の映画を見ました。",
+        "kana": "ごじゅうはっぽん の えいが を みました。"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "kanji": "五十九匹",
+    "kana": "ごじゅうきゅうひき",
+    "romaji": "gojuukyuuhiki",
+    "en": "fifty-nine small animals",
+    "examples": [
+      {
+        "ro": "gojuukyuuhiki no neko o hogo shimashita.",
+        "en": "I rescued fifty-nine cats.",
+        "ja": "五十九匹の猫を保護しました。",
+        "kana": "ごじゅうきゅうひき の ねこ を ほご しました。"
+      },
+      {
+        "ro": "gojuukyuuhiki no sakana o tsurimashita.",
+        "en": "I caught fifty-nine fish.",
+        "ja": "五十九匹の魚を釣りました。",
+        "kana": "ごじゅうきゅうひき の さかな を つりました。"
+      },
+      {
+        "ro": "gojuukyuuhiki no inu ga hashitte imasu.",
+        "en": "Fifty-nine dogs are running.",
+        "ja": "五十九匹の犬が走っています。",
+        "kana": "ごじゅうきゅうひき の いぬ が はしって います。"
+      },
+      {
+        "ro": "gojuukyuuhiki no mushi o kansatsu shimashita.",
+        "en": "I observed fifty-nine insects.",
+        "ja": "五十九匹の虫を観察しました。",
+        "kana": "ごじゅうきゅうひき の むし を かんさつ しました。"
+      },
+      {
+        "ro": "gojuukyuuhiki no tori ga sora o tonde imasu.",
+        "en": "Fifty-nine birds are flying in the sky.",
+        "ja": "五十九匹の鳥が空を飛んでいます。",
+        "kana": "ごじゅうきゅうひき の とり が そら を とんで います。"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "kanji": "六十個",
+    "kana": "ろくじゅっこ",
+    "romaji": "rokujukko",
+    "en": "sixty small objects",
+    "examples": [
+      {
+        "ro": "rokujukko no ringo o hako ni iremashita.",
+        "en": "I put sixty apples in a box.",
+        "ja": "六十個のリンゴを箱に入れました。",
+        "kana": "ろくじゅっこ の りんご を はこ に いれました。"
+      },
+      {
+        "ro": "rokujukko no tamago o kaimashita.",
+        "en": "I bought sixty eggs.",
+        "ja": "六十個の卵を買いました。",
+        "kana": "ろくじゅっこ の たまご を かいました。"
+      },
+      {
+        "ro": "rokujukko no purezento o youi shimashita.",
+        "en": "I prepared sixty presents.",
+        "ja": "六十個のプレゼントを用意しました。",
+        "kana": "ろくじゅっこ の ぷれぜんと を ようい しました。"
+      },
+      {
+        "ro": "rokujukko no keeki o tsukurimashita.",
+        "en": "I made sixty cakes.",
+        "ja": "六十個のケーキを作りました。",
+        "kana": "ろくじゅっこ の けーき を つくりました。"
+      },
+      {
+        "ro": "rokujukko no botan o nuimashita.",
+        "en": "I sewed sixty buttons.",
+        "ja": "六十個のボタンを縫いました。",
+        "kana": "ろくじゅっこ の ぼたん を ぬいました。"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "kanji": "六十一人",
+    "kana": "ろくじゅういちにん",
+    "romaji": "rokujuuichinin",
+    "en": "sixty-one people",
+    "examples": [
+      {
+        "ro": "rokujuuichinin no gakusei ga jugyou ni demashita.",
+        "en": "Sixty-one students attended the class.",
+        "ja": "六十一人の学生が授業に出ました。",
+        "kana": "ろくじゅういちにん の がくせい が じゅぎょう に でました。"
+      },
+      {
+        "ro": "rokujuuichinin no shain ga shukkin shimashita.",
+        "en": "Sixty-one employees came to work.",
+        "ja": "六十一人の社員が出勤しました。",
+        "kana": "ろくじゅういちにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "rokujuuichinin no tomodachi ga atsumarimashita.",
+        "en": "Sixty-one friends gathered.",
+        "ja": "六十一人の友達が集まりました。",
+        "kana": "ろくじゅういちにん の ともだち が あつまりました。"
+      },
+      {
+        "ro": "rokujuuichinin no kankyaku ga hakushu shimashita.",
+        "en": "Sixty-one spectators applauded.",
+        "ja": "六十一人の観客が拍手しました。",
+        "kana": "ろくじゅういちにん の かんきゃく が はくしゅ しました。"
+      },
+      {
+        "ro": "rokujuuichinin no senshu ga taikai ni shutsujou shimashita.",
+        "en": "Sixty-one players joined the tournament.",
+        "ja": "六十一人の選手が大会に出場しました。",
+        "kana": "ろくじゅういちにん の せんしゅ が たいかい に しゅつじょう しました。"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "kanji": "六十二冊",
+    "kana": "ろくじゅうにさつ",
+    "romaji": "rokujuunisatsu",
+    "en": "sixty-two books",
+    "examples": [
+      {
+        "ro": "rokujuunisatsu no hon o yomi oemashita.",
+        "en": "I finished reading sixty-two books.",
+        "ja": "六十二冊の本を読み終えました。",
+        "kana": "ろくじゅうにさつ の ほん を よみおえました。"
+      },
+      {
+        "ro": "rokujuunisatsu no nooto o seiri shimashita.",
+        "en": "I organized sixty-two notebooks.",
+        "ja": "六十二冊のノートを整理しました。",
+        "kana": "ろくじゅうにさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "rokujuunisatsu no manga o kaimashita.",
+        "en": "I bought sixty-two manga books.",
+        "ja": "六十二冊の漫画を買いました。",
+        "kana": "ろくじゅうにさつ の まんが を かいました。"
+      },
+      {
+        "ro": "rokujuunisatsu no shiryou o insatsu shimashita.",
+        "en": "I printed sixty-two documents.",
+        "ja": "六十二冊の資料を印刷しました。",
+        "kana": "ろくじゅうにさつ の しりょう を いんさつ しました。"
+      },
+      {
+        "ro": "rokujuunisatsu no jisho o toshokan ni kifu shimashita.",
+        "en": "I donated sixty-two dictionaries to the library.",
+        "ja": "六十二冊の辞書を図書館に寄付しました。",
+        "kana": "ろくじゅうにさつ の じしょ を としょかん に きふ しました。"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "kanji": "六十三回",
+    "kana": "ろくじゅうさんかい",
+    "romaji": "rokujuusankai",
+    "en": "sixty-three times",
+    "examples": [
+      {
+        "ro": "rokujuusankai chousen shimashita.",
+        "en": "I tried sixty-three times.",
+        "ja": "六十三回挑戦しました。",
+        "kana": "ろくじゅうさんかい ちょうせん しました。"
+      },
+      {
+        "ro": "rokujuusankai kaigi ga hirakaremashita.",
+        "en": "Sixty-three meetings were held.",
+        "ja": "六十三回会議が開かれました。",
+        "kana": "ろくじゅうさんかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "rokujuusankai renshuu shimashita.",
+        "en": "I practiced sixty-three times.",
+        "ja": "六十三回練習しました。",
+        "kana": "ろくじゅうさんかい れんしゅう しました。"
+      },
+      {
+        "ro": "rokujuusankaime no jugyou ga owarimashita.",
+        "en": "The sixty-third class has ended.",
+        "ja": "六十三回目の授業が終わりました。",
+        "kana": "ろくじゅうさんかいめ の じゅぎょう が おわりました。"
+      },
+      {
+        "ro": "rokujuusankaime no shiai de kachimashita.",
+        "en": "I won on the sixty-third match.",
+        "ja": "六十三回目の試合で勝ちました。",
+        "kana": "ろくじゅうさんかいめ の しあい で かちました。"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "kanji": "六十四台",
+    "kana": "ろくじゅうよんだい",
+    "romaji": "rokujuuyondai",
+    "en": "sixty-four machines or vehicles",
+    "examples": [
+      {
+        "ro": "rokujuuyondai no kuruma ga chuushajou ni arimasu.",
+        "en": "There are sixty-four cars in the parking lot.",
+        "ja": "六十四台の車が駐車場にあります。",
+        "kana": "ろくじゅうよんだい の くるま が ちゅうしゃじょう に あります。"
+      },
+      {
+        "ro": "rokujuuyondai no basu ga shuppatsu shimashita.",
+        "en": "Sixty-four buses departed.",
+        "ja": "六十四台のバスが出発しました。",
+        "kana": "ろくじゅうよんだい の ばす が しゅっぱつ しました。"
+      },
+      {
+        "ro": "rokujuuyondai no pasokon o setchi shimashita.",
+        "en": "We installed sixty-four computers.",
+        "ja": "六十四台のパソコンを設置しました。",
+        "kana": "ろくじゅうよんだい の ぱそこん を せっち しました。"
+      },
+      {
+        "ro": "rokujuuyondai no eakon o koukan shimashita.",
+        "en": "We replaced sixty-four air conditioners.",
+        "ja": "六十四台のエアコンを交換しました。",
+        "kana": "ろくじゅうよんだい の えあこん を こうかん しました。"
+      },
+      {
+        "ro": "rokujuuyondai no torakku ga nimotsu o hakobimashita.",
+        "en": "Sixty-four trucks carried the cargo.",
+        "ja": "六十四台のトラックが荷物を運びました。",
+        "kana": "ろくじゅうよんだい の とらっく が にもつ を はこびました。"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "kanji": "六十五枚",
+    "kana": "ろくじゅうごまい",
+    "romaji": "rokujuugomai",
+    "en": "sixty-five flat objects",
+    "examples": [
+      {
+        "ro": "rokujuugomai no shashin o torimashita.",
+        "en": "I took sixty-five photos.",
+        "ja": "六十五枚の写真を撮りました。",
+        "kana": "ろくじゅうごまい の しゃしん を とりました。"
+      },
+      {
+        "ro": "rokujuugomai no sara o araimashita.",
+        "en": "I washed sixty-five plates.",
+        "ja": "六十五枚の皿を洗いました。",
+        "kana": "ろくじゅうごまい の さら を あらいました。"
+      },
+      {
+        "ro": "rokujuugomai no chiketto o kubarimashita.",
+        "en": "I handed out sixty-five tickets.",
+        "ja": "六十五枚のチケットを配りました。",
+        "kana": "ろくじゅうごまい の ちけっと を くばりました。"
+      },
+      {
+        "ro": "rokujuugomai no shorui o teishutsu shimashita.",
+        "en": "I submitted sixty-five documents.",
+        "ja": "六十五枚の書類を提出しました。",
+        "kana": "ろくじゅうごまい の しょるい を ていしゅつ しました。"
+      },
+      {
+        "ro": "rokujuugomai no kaado o kazoemashita.",
+        "en": "I counted sixty-five cards.",
+        "ja": "六十五枚のカードを数えました。",
+        "kana": "ろくじゅうごまい の かーど を かぞえました。"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "kanji": "六十六回",
+    "kana": "ろくじゅうろっかい",
+    "romaji": "rokujuurokkai",
+    "en": "sixty-six times",
+    "examples": [
+      {
+        "ro": "rokujuurokkai chousen shimashita.",
+        "en": "I tried sixty-six times.",
+        "ja": "六十六回挑戦しました。",
+        "kana": "ろくじゅうろっかい ちょうせん しました。"
+      },
+      {
+        "ro": "rokujuurokkai kaigi ga hirakaremashita.",
+        "en": "Sixty-six meetings were held.",
+        "ja": "六十六回会議が開かれました。",
+        "kana": "ろくじゅうろっかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "rokujuurokkai renshuu shimashita.",
+        "en": "I practiced sixty-six times.",
+        "ja": "六十六回練習しました。",
+        "kana": "ろくじゅうろっかい れんしゅう しました。"
+      },
+      {
+        "ro": "rokujuurokkai tesuto o ukemashita.",
+        "en": "I took sixty-six tests.",
+        "ja": "六十六回テストを受けました。",
+        "kana": "ろくじゅうろっかい てすと を うけました。"
+      },
+      {
+        "ro": "rokujuurokkaime no jugyou ga owarimashita.",
+        "en": "The sixty-sixth class has ended.",
+        "ja": "六十六回目の授業が終わりました。",
+        "kana": "ろくじゅうろっかいめ の じゅぎょう が おわりました。"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "kanji": "六十七匹",
+    "kana": "ろくじゅうななひき",
+    "romaji": "rokujuunanahiki",
+    "en": "sixty-seven small animals",
+    "examples": [
+      {
+        "ro": "rokujuunanahiki no neko ga hogo saremashita.",
+        "en": "Sixty-seven cats were rescued.",
+        "ja": "六十七匹の猫が保護されました。",
+        "kana": "ろくじゅうななひき の ねこ が ほご されました。"
+      },
+      {
+        "ro": "rokujuunanahiki no inu ga hashitte imasu.",
+        "en": "Sixty-seven dogs are running.",
+        "ja": "六十七匹の犬が走っています。",
+        "kana": "ろくじゅうななひき の いぬ が はしって います。"
+      },
+      {
+        "ro": "rokujuunanahiki no sakana o tsurimashita.",
+        "en": "I caught sixty-seven fish.",
+        "ja": "六十七匹の魚を釣りました。",
+        "kana": "ろくじゅうななひき の さかな を つりました。"
+      },
+      {
+        "ro": "rokujuunanahiki no tori o kansatsu shimashita.",
+        "en": "I observed sixty-seven birds.",
+        "ja": "六十七匹の鳥を観察しました。",
+        "kana": "ろくじゅうななひき の とり を かんさつ しました。"
+      },
+      {
+        "ro": "rokujuunanahiki no mushi o tsukamaemashita.",
+        "en": "I caught sixty-seven insects.",
+        "ja": "六十七匹の虫を捕まえました。",
+        "kana": "ろくじゅうななひき の むし を つかまえました。"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "kanji": "六十八人",
+    "kana": "ろくじゅうはちにん",
+    "romaji": "rokujuuhachinin",
+    "en": "sixty-eight people",
+    "examples": [
+      {
+        "ro": "rokujuuhachinin no gakusei ga sanka shimashita.",
+        "en": "Sixty-eight students participated.",
+        "ja": "六十八人の学生が参加しました。",
+        "kana": "ろくじゅうはちにん の がくせい が さんか しました。"
+      },
+      {
+        "ro": "rokujuuhachinin no shain ga shukkin shimashita.",
+        "en": "Sixty-eight employees came to work.",
+        "ja": "六十八人の社員が出勤しました。",
+        "kana": "ろくじゅうはちにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "rokujuuhachinin no kankyaku ga hakushu shimashita.",
+        "en": "Sixty-eight spectators applauded.",
+        "ja": "六十八人の観客が拍手しました。",
+        "kana": "ろくじゅうはちにん の かんきゃく が はくしゅ しました。"
+      },
+      {
+        "ro": "rokujuuhachinin no senshu ga taikai ni shutsujou shimashita.",
+        "en": "Sixty-eight players joined the tournament.",
+        "ja": "六十八人の選手が大会に出場しました。",
+        "kana": "ろくじゅうはちにん の せんしゅ が たいかい に しゅつじょう しました。"
+      },
+      {
+        "ro": "rokujuuhachinin no sensei ga kaigi ni shusseki shimashita.",
+        "en": "Sixty-eight teachers attended the meeting.",
+        "ja": "六十八人の先生が会議に出席しました。",
+        "kana": "ろくじゅうはちにん の せんせい が かいぎ に しゅっせき しました。"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "kanji": "六十九回",
+    "kana": "ろくじゅうきゅうかい",
+    "romaji": "rokujuukyuukai",
+    "en": "sixty-nine times",
+    "examples": [
+      {
+        "ro": "rokujuukyuukai chousen shimashita.",
+        "en": "I tried sixty-nine times.",
+        "ja": "六十九回挑戦しました。",
+        "kana": "ろくじゅうきゅうかい ちょうせん しました。"
+      },
+      {
+        "ro": "rokujuukyuukai kaigi ga hirakaremashita.",
+        "en": "Sixty-nine meetings were held.",
+        "ja": "六十九回会議が開かれました。",
+        "kana": "ろくじゅうきゅうかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "rokujuukyuukai renshuu shimashita.",
+        "en": "I practiced sixty-nine times.",
+        "ja": "六十九回練習しました。",
+        "kana": "ろくじゅうきゅうかい れんしゅう しました。"
+      },
+      {
+        "ro": "rokujuukyuukai tesuto o ukemashita.",
+        "en": "I took sixty-nine tests.",
+        "ja": "六十九回テストを受けました。",
+        "kana": "ろくじゅうきゅうかい てすと を うけました。"
+      },
+      {
+        "ro": "rokujuukyuukaime no jugyou ga owarimashita.",
+        "en": "The sixty-ninth class has ended.",
+        "ja": "六十九回目の授業が終わりました。",
+        "kana": "ろくじゅうきゅうかいめ の じゅぎょう が おわりました。"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "kanji": "七十個",
+    "kana": "ななじゅっこ",
+    "romaji": "nanajukko",
+    "en": "seventy small objects",
+    "examples": [
+      {
+        "ro": "nanajukko no ringo o hako ni iremashita.",
+        "en": "I put seventy apples in a box.",
+        "ja": "七十個のりんごを箱に入れました。",
+        "kana": "ななじゅっこ の りんご を はこ に いれました。"
+      },
+      {
+        "ro": "nanajukko no tamago o kaimashita.",
+        "en": "I bought seventy eggs.",
+        "ja": "七十個の卵を買いました。",
+        "kana": "ななじゅっこ の たまご を かいました。"
+      },
+      {
+        "ro": "nanajukko no purezento o youi shimashita.",
+        "en": "I prepared seventy presents.",
+        "ja": "七十個のプレゼントを用意しました。",
+        "kana": "ななじゅっこ の ぷれぜんと を ようい しました。"
+      },
+      {
+        "ro": "nanajukko no keeki o tsukurimashita.",
+        "en": "I made seventy cakes.",
+        "ja": "七十個のケーキを作りました。",
+        "kana": "ななじゅっこ の けーき を つくりました。"
+      },
+      {
+        "ro": "nanajukko no botan o nuimashita.",
+        "en": "I sewed seventy buttons.",
+        "ja": "七十個のボタンを縫いました。",
+        "kana": "ななじゅっこ の ぼたん を ぬいました。"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "kanji": "七十一人",
+    "kana": "ななじゅういちにん",
+    "romaji": "nanajuuichinin",
+    "en": "seventy-one people",
+    "examples": [
+      {
+        "ro": "nanajuuichinin no gakusei ga atsumarimashita.",
+        "en": "Seventy-one students gathered.",
+        "ja": "七十一人の学生が集まりました。",
+        "kana": "ななじゅういちにん の がくせい が あつまりました。"
+      },
+      {
+        "ro": "nanajuuichinin no shain ga shukkin shimashita.",
+        "en": "Seventy-one employees came to work.",
+        "ja": "七十一人の社員が出勤しました。",
+        "kana": "ななじゅういちにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "nanajuuichinin no kankyaku ga hakushu shimashita.",
+        "en": "Seventy-one spectators applauded.",
+        "ja": "七十一人の観客が拍手しました。",
+        "kana": "ななじゅういちにん の かんきゃく が はくしゅ しました。"
+      },
+      {
+        "ro": "nanajuuichinin no sensei ga kaigi ni shusseki shimashita.",
+        "en": "Seventy-one teachers attended the meeting.",
+        "ja": "七十一人の先生が会議に出席しました。",
+        "kana": "ななじゅういちにん の せんせい が かいぎ に しゅっせき しました。"
+      },
+      {
+        "ro": "nanajuuichinin no senshu ga taikai ni shutsujou shimashita.",
+        "en": "Seventy-one players participated in the tournament.",
+        "ja": "七十一人の選手が大会に出場しました。",
+        "kana": "ななじゅういちにん の せんしゅ が たいかい に しゅつじょう しました。"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "kanji": "七十二冊",
+    "kana": "ななじゅうにさつ",
+    "romaji": "nanajuunisatsu",
+    "en": "seventy-two books",
+    "examples": [
+      {
+        "ro": "nanajuunisatsu no hon o yomimashita.",
+        "en": "I read seventy-two books.",
+        "ja": "七十二冊の本を読みました。",
+        "kana": "ななじゅうにさつ の ほん を よみました。"
+      },
+      {
+        "ro": "nanajuunisatsu no nooto o seiri shimashita.",
+        "en": "I organized seventy-two notebooks.",
+        "ja": "七十二冊のノートを整理しました。",
+        "kana": "ななじゅうにさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "nanajuunisatsu no shiryou o teishutsu shimashita.",
+        "en": "I submitted seventy-two documents.",
+        "ja": "七十二冊の資料を提出しました。",
+        "kana": "ななじゅうにさつ の しりょう を ていしゅつ しました。"
+      },
+      {
+        "ro": "nanajuunisatsu no manga o kaimashita.",
+        "en": "I bought seventy-two manga books.",
+        "ja": "七十二冊の漫画を買いました。",
+        "kana": "ななじゅうにさつ の まんが を かいました。"
+      },
+      {
+        "ro": "nanajuunisatsu no jisho o kifu shimashita.",
+        "en": "I donated seventy-two dictionaries.",
+        "ja": "七十二冊の辞書を寄付しました。",
+        "kana": "ななじゅうにさつ の じしょ を きふ しました。"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "kanji": "七十三回",
+    "kana": "ななじゅうさんかい",
+    "romaji": "nanajuusankai",
+    "en": "seventy-three times",
+    "examples": [
+      {
+        "ro": "nanajuusankai chousen shimashita.",
+        "en": "I tried seventy-three times.",
+        "ja": "七十三回挑戦しました。",
+        "kana": "ななじゅうさんかい ちょうせん しました。"
+      },
+      {
+        "ro": "nanajuusankai kaigi ga hirakaremashita.",
+        "en": "Seventy-three meetings were held.",
+        "ja": "七十三回会議が開かれました。",
+        "kana": "ななじゅうさんかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "nanajuusankai renshuu shimashita.",
+        "en": "I practiced seventy-three times.",
+        "ja": "七十三回練習しました。",
+        "kana": "ななじゅうさんかい れんしゅう しました。"
+      },
+      {
+        "ro": "nanajuusankai tesuto o ukemashita.",
+        "en": "I took seventy-three tests.",
+        "ja": "七十三回テストを受けました。",
+        "kana": "ななじゅうさんかい てすと を うけました。"
+      },
+      {
+        "ro": "nanajuusankaime no jugyou ga owarimashita.",
+        "en": "The seventy-third class has ended.",
+        "ja": "七十三回目の授業が終わりました。",
+        "kana": "ななじゅうさんかいめ の じゅぎょう が おわりました。"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "kanji": "七十四台",
+    "kana": "ななじゅうよんだい",
+    "romaji": "nanajuuyondai",
+    "en": "seventy-four machines or vehicles",
+    "examples": [
+      {
+        "ro": "nanajuuyondai no kuruma ga chuusha sarete imasu.",
+        "en": "Seventy-four cars are parked.",
+        "ja": "七十四台の車が駐車されています。",
+        "kana": "ななじゅうよんだい の くるま が ちゅうしゃ されています。"
+      },
+      {
+        "ro": "nanajuuyondai no basu ga shuppatsu shimashita.",
+        "en": "Seventy-four buses departed.",
+        "ja": "七十四台のバスが出発しました。",
+        "kana": "ななじゅうよんだい の ばす が しゅっぱつ しました。"
+      },
+      {
+        "ro": "nanajuuyondai no pasokon o setchi shimashita.",
+        "en": "We installed seventy-four computers.",
+        "ja": "七十四台のパソコンを設置しました。",
+        "kana": "ななじゅうよんだい の ぱそこん を せっち しました。"
+      },
+      {
+        "ro": "nanajuuyondai no eakon o koukan shimashita.",
+        "en": "We replaced seventy-four air conditioners.",
+        "ja": "七十四台のエアコンを交換しました。",
+        "kana": "ななじゅうよんだい の えあこん を こうかん しました。"
+      },
+      {
+        "ro": "nanajuuyondai no torakku ga nimotsu o hakobimashita.",
+        "en": "Seventy-four trucks carried the cargo.",
+        "ja": "七十四台のトラックが荷物を運びました。",
+        "kana": "ななじゅうよんだい の とらっく が にもつ を はこびました。"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "kanji": "七十五枚",
+    "kana": "ななじゅうごまい",
+    "romaji": "nanajuugomai",
+    "en": "seventy-five flat objects",
+    "examples": [
+      {
+        "ro": "nanajuugomai no shashin o torimashita.",
+        "en": "I took seventy-five photos.",
+        "ja": "七十五枚の写真を撮りました。",
+        "kana": "ななじゅうごまい の しゃしん を とりました。"
+      },
+      {
+        "ro": "nanajuugomai no sara o araimashita.",
+        "en": "I washed seventy-five plates.",
+        "ja": "七十五枚の皿を洗いました。",
+        "kana": "ななじゅうごまい の さら を あらいました。"
+      },
+      {
+        "ro": "nanajuugomai no shorui o teishutsu shimashita.",
+        "en": "I submitted seventy-five documents.",
+        "ja": "七十五枚の書類を提出しました。",
+        "kana": "ななじゅうごまい の しょるい を ていしゅつ しました。"
+      },
+      {
+        "ro": "nanajuugomai no chiketto o kubarimashita.",
+        "en": "I handed out seventy-five tickets.",
+        "ja": "七十五枚のチケットを配りました。",
+        "kana": "ななじゅうごまい の ちけっと を くばりました。"
+      },
+      {
+        "ro": "nanajuugomai no kaado o kazoemashita.",
+        "en": "I counted seventy-five cards.",
+        "ja": "七十五枚のカードを数えました。",
+        "kana": "ななじゅうごまい の かーど を かぞえました。"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "kanji": "七十六回",
+    "kana": "ななじゅうろっかい",
+    "romaji": "nanajuurokkai",
+    "en": "seventy-six times",
+    "examples": [
+      {
+        "ro": "nanajuurokkai chousen shimashita.",
+        "en": "I tried seventy-six times.",
+        "ja": "七十六回挑戦しました。",
+        "kana": "ななじゅうろっかい ちょうせん しました。"
+      },
+      {
+        "ro": "nanajuurokkaime no kaigi ga hirakaremashita.",
+        "en": "The seventy-sixth meeting was held.",
+        "ja": "七十六回目の会議が開かれました。",
+        "kana": "ななじゅうろっかいめ の かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "nanajuurokkai renshuu shimashita.",
+        "en": "I practiced seventy-six times.",
+        "ja": "七十六回練習しました。",
+        "kana": "ななじゅうろっかい れんしゅう しました。"
+      },
+      {
+        "ro": "nanajuurokkaime no jugyou ga owarimashita.",
+        "en": "The seventy-sixth class has finished.",
+        "ja": "七十六回目の授業が終わりました。",
+        "kana": "ななじゅうろっかいめ の じゅぎょう が おわりました。"
+      },
+      {
+        "ro": "nanajuurokkai touhyou ga okonawaremashita.",
+        "en": "Voting was held seventy-six times.",
+        "ja": "七十六回投票が行われました。",
+        "kana": "ななじゅうろっかい とうひょう が おこなわれました。"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "kanji": "七十七匹",
+    "kana": "ななじゅうななひき",
+    "romaji": "nanajuunanahiki",
+    "en": "seventy-seven small animals",
+    "examples": [
+      {
+        "ro": "nanajuunanahiki no neko ga hogo saremashita.",
+        "en": "Seventy-seven cats were rescued.",
+        "ja": "七十七匹の猫が保護されました。",
+        "kana": "ななじゅうななひき の ねこ が ほご されました。"
+      },
+      {
+        "ro": "nanajuunanahiki no inu ga hashitte imasu.",
+        "en": "Seventy-seven dogs are running.",
+        "ja": "七十七匹の犬が走っています。",
+        "kana": "ななじゅうななひき の いぬ が はしって います。"
+      },
+      {
+        "ro": "nanajuunanahiki no sakana o tsurimashita.",
+        "en": "I caught seventy-seven fish.",
+        "ja": "七十七匹の魚を釣りました。",
+        "kana": "ななじゅうななひき の さかな を つりました。"
+      },
+      {
+        "ro": "nanajuunanahiki no mushi o tsukamaemashita.",
+        "en": "I caught seventy-seven insects.",
+        "ja": "七十七匹の虫を捕まえました。",
+        "kana": "ななじゅうななひき の むし を つかまえました。"
+      },
+      {
+        "ro": "nanajuunanahiki no tori o kansatsu shimashita.",
+        "en": "I observed seventy-seven birds.",
+        "ja": "七十七匹の鳥を観察しました。",
+        "kana": "ななじゅうななひき の とり を かんさつ しました。"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "kanji": "七十八人",
+    "kana": "ななじゅうはちにん",
+    "romaji": "nanajuuhachinin",
+    "en": "seventy-eight people",
+    "examples": [
+      {
+        "ro": "nanajuuhachinin no gakusei ga atsumarimashita.",
+        "en": "Seventy-eight students gathered.",
+        "ja": "七十八人の学生が集まりました。",
+        "kana": "ななじゅうはちにん の がくせい が あつまりました。"
+      },
+      {
+        "ro": "nanajuuhachinin no shain ga kaigi ni shusseki shimashita.",
+        "en": "Seventy-eight employees attended the meeting.",
+        "ja": "七十八人の社員が会議に出席しました。",
+        "kana": "ななじゅうはちにん の しゃいん が かいぎ に しゅっせき しました。"
+      },
+      {
+        "ro": "nanajuuhachinin no kankyaku ga hakushu shimashita.",
+        "en": "Seventy-eight spectators applauded.",
+        "ja": "七十八人の観客が拍手しました。",
+        "kana": "ななじゅうはちにん の かんきゃく が はくしゅ しました。"
+      },
+      {
+        "ro": "nanajuuhachinin no senshu ga taikai ni shutsujou shimashita.",
+        "en": "Seventy-eight athletes participated in the tournament.",
+        "ja": "七十八人の選手が大会に出場しました。",
+        "kana": "ななじゅうはちにん の せんしゅ が たいかい に しゅつじょう しました。"
+      },
+      {
+        "ro": "nanajuuhachinin no sensei ga kouen shimashita.",
+        "en": "Seventy-eight teachers gave lectures.",
+        "ja": "七十八人の先生が講演しました。",
+        "kana": "ななじゅうはちにん の せんせい が こうえん しました。"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "kanji": "七十九個",
+    "kana": "ななじゅうきゅうこ",
+    "romaji": "nanajuukyuuko",
+    "en": "seventy-nine small objects",
+    "examples": [
+      {
+        "ro": "nanajuukyuuko no ringo o hako ni iremashita.",
+        "en": "I put seventy-nine apples in a box.",
+        "ja": "七十九個のりんごを箱に入れました。",
+        "kana": "ななじゅうきゅうこ の りんご を はこ に いれました。"
+      },
+      {
+        "ro": "nanajuukyuuko no purezento o kubarimashita.",
+        "en": "I distributed seventy-nine presents.",
+        "ja": "七十九個のプレゼントを配りました。",
+        "kana": "ななじゅうきゅうこ の ぷれぜんと を くばりました。"
+      },
+      {
+        "ro": "nanajuukyuuko no botan o nuimashita.",
+        "en": "I sewed seventy-nine buttons.",
+        "ja": "七十九個のボタンを縫いました。",
+        "kana": "ななじゅうきゅうこ の ぼたん を ぬいました。"
+      },
+      {
+        "ro": "nanajuukyuuko no keeki o tsukurimashita.",
+        "en": "I made seventy-nine cakes.",
+        "ja": "七十九個のケーキを作りました。",
+        "kana": "ななじゅうきゅうこ の けーき を つくりました。"
+      },
+      {
+        "ro": "nanajuukyuuko no fuusen ga sora ni tobimashita.",
+        "en": "Seventy-nine balloons flew into the sky.",
+        "ja": "七十九個の風船が空に飛びました。",
+        "kana": "ななじゅうきゅうこ の ふうせん が そら に とびました。"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "kanji": "八十回",
+    "kana": "はちじゅっかい",
+    "romaji": "hachijukkai",
+    "en": "eighty times",
+    "examples": [
+      {
+        "ro": "hachijukkai chousen shimashita.",
+        "en": "I tried eighty times.",
+        "ja": "八十回挑戦しました。",
+        "kana": "はちじゅっかい ちょうせん しました。"
+      },
+      {
+        "ro": "hachijukkaime no jugyou ga owarimashita.",
+        "en": "The eightieth class has finished.",
+        "ja": "八十回目の授業が終わりました。",
+        "kana": "はちじゅっかいめ の じゅぎょう が おわりました。"
+      },
+      {
+        "ro": "hachijukkai kaigi ga hirakaremashita.",
+        "en": "Eighty meetings were held.",
+        "ja": "八十回会議が開かれました。",
+        "kana": "はちじゅっかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "hachijukkai renshuu shimashita.",
+        "en": "I practiced eighty times.",
+        "ja": "八十回練習しました。",
+        "kana": "はちじゅっかい れんしゅう しました。"
+      },
+      {
+        "ro": "hachijukkaime no touhyou ga okonawaremashita.",
+        "en": "The eightieth vote was conducted.",
+        "ja": "八十回目の投票が行われました。",
+        "kana": "はちじゅっかいめ の とうひょう が おこなわれました。"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "kanji": "八十一軒",
+    "kana": "はちじゅういっけん",
+    "romaji": "hachijuuikken",
+    "en": "eighty-one houses/shops",
+    "examples": [
+      {
+        "ro": "hachijuuikken no ie o chousa shimashita.",
+        "en": "I surveyed eighty-one houses.",
+        "ja": "八十一軒の家を調査しました。",
+        "kana": "はちじゅういっけん の いえ を ちょうさ しました。"
+      },
+      {
+        "ro": "hachijuuikken no mise o aruite mawarimashita.",
+        "en": "I walked around eighty-one shops.",
+        "ja": "八十一軒の店を歩いて回りました。",
+        "kana": "はちじゅういっけん の みせ を あるいて まわりました。"
+      },
+      {
+        "ro": "hachijuuikken no resutoran o hikaku shimashita.",
+        "en": "I compared eighty-one restaurants.",
+        "ja": "八十一軒のレストランを比較しました。",
+        "kana": "はちじゅういっけん の れすとらん を ひかく しました。"
+      },
+      {
+        "ro": "hachijuuikken no ie ni chirashi o kubarimashita.",
+        "en": "I delivered flyers to eighty-one houses.",
+        "ja": "八十一軒の家にチラシを配りました。",
+        "kana": "はちじゅういっけん の いえ に ちらし を くばりました。"
+      },
+      {
+        "ro": "kono toori ni wa hachijuuikken no tatemono ga arimasu.",
+        "en": "There are eighty-one buildings on this street.",
+        "ja": "この通りには八十一軒の建物があります。",
+        "kana": "この とおり に は はちじゅういっけん の たてもの が あります。"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "kanji": "八十二枚",
+    "kana": "はちじゅうにまい",
+    "romaji": "hachijuunimai",
+    "en": "eighty-two flat objects",
+    "examples": [
+      {
+        "ro": "hachijuunimai no shashin o insatsu shimashita.",
+        "en": "I printed eighty-two photos.",
+        "ja": "八十二枚の写真を印刷しました。",
+        "kana": "はちじゅうにまい の しゃしん を いんさつ しました。"
+      },
+      {
+        "ro": "hachijuunimai no sara o youi shimashita.",
+        "en": "I prepared eighty-two plates.",
+        "ja": "八十二枚の皿を用意しました。",
+        "kana": "はちじゅうにまい の さら を ようい しました。"
+      },
+      {
+        "ro": "hachijuunimai no shorui o teishutsu shimashita.",
+        "en": "I submitted eighty-two documents.",
+        "ja": "八十二枚の書類を提出しました。",
+        "kana": "はちじゅうにまい の しょるい を ていしゅつ しました。"
+      },
+      {
+        "ro": "hachijuunimai no chiketto o kubarimashita.",
+        "en": "I handed out eighty-two tickets.",
+        "ja": "八十二枚のチケットを配りました。",
+        "kana": "はちじゅうにまい の ちけっと を くばりました。"
+      },
+      {
+        "ro": "hachijuunimai no kami o saidan shimashita.",
+        "en": "I cut eighty-two sheets of paper.",
+        "ja": "八十二枚の紙を裁断しました。",
+        "kana": "はちじゅうにまい の かみ を さいだん しました。"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "kanji": "八十三匹",
+    "kana": "はちじゅうさんびき",
+    "romaji": "hachijuusanbiki",
+    "en": "eighty-three small animals",
+    "examples": [
+      {
+        "ro": "hachijuusanbiki no sakana o houryuu shimashita.",
+        "en": "I released eighty-three fish.",
+        "ja": "八十三匹の魚を放流しました。",
+        "kana": "はちじゅうさんびき の さかな を ほうりゅう しました。"
+      },
+      {
+        "ro": "hachijuusanbiki no neko ga hogo saremashita.",
+        "en": "Eighty-three cats were rescued.",
+        "ja": "八十三匹の猫が保護されました。",
+        "kana": "はちじゅうさんびき の ねこ が ほご されました。"
+      },
+      {
+        "ro": "hachijuusanbiki no inu ga hashitte imasu.",
+        "en": "Eighty-three dogs are running.",
+        "ja": "八十三匹の犬が走っています。",
+        "kana": "はちじゅうさんびき の いぬ が はしって います。"
+      },
+      {
+        "ro": "hachijuusanbiki no mushi o kansatsu shimashita.",
+        "en": "I observed eighty-three insects.",
+        "ja": "八十三匹の虫を観察しました。",
+        "kana": "はちじゅうさんびき の むし を かんさつ しました。"
+      },
+      {
+        "ro": "hachijuusanbiki no tori ga sora o tonde imasu.",
+        "en": "Eighty-three birds are flying in the sky.",
+        "ja": "八十三匹の鳥が空を飛んでいます。",
+        "kana": "はちじゅうさんびき の とり が そら を とんで います。"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "kanji": "八十四人",
+    "kana": "はちじゅうよにん",
+    "romaji": "hachijuuyonin",
+    "en": "eighty-four people",
+    "examples": [
+      {
+        "ro": "hachijuuyonin no gakusei ga sanka shimashita.",
+        "en": "Eighty-four students participated.",
+        "ja": "八十四人の学生が参加しました。",
+        "kana": "はちじゅうよにん の がくせい が さんか しました。"
+      },
+      {
+        "ro": "hachijuuyonin no shain ga shukkin shimashita.",
+        "en": "Eighty-four employees came to work.",
+        "ja": "八十四人の社員が出勤しました。",
+        "kana": "はちじゅうよにん の しゃいん が しゅっきん しました。"
+      },
+      {
+        "ro": "hachijuuyonin no kankyaku ga hakushu shimashita.",
+        "en": "Eighty-four spectators applauded.",
+        "ja": "八十四人の観客が拍手しました。",
+        "kana": "はちじゅうよにん の かんきゃく が はくしゅ しました。"
+      },
+      {
+        "ro": "hachijuuyonin no senshu ga taikai ni shutsujou shimashita.",
+        "en": "Eighty-four players joined the tournament.",
+        "ja": "八十四人の選手が大会に出場しました。",
+        "kana": "はちじゅうよにん の せんしゅ が たいかい に しゅつじょう しました。"
+      },
+      {
+        "ro": "hachijuuyonin no sensei ga kaigi ni shusseki shimashita.",
+        "en": "Eighty-four teachers attended the meeting.",
+        "ja": "八十四人の先生が会議に出席しました。",
+        "kana": "はちじゅうよにん の せんせい が かいぎ に しゅっせき しました。"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "kanji": "八十五冊",
+    "kana": "はちじゅうごさつ",
+    "romaji": "hachijuugosatsu",
+    "en": "eighty-five books",
+    "examples": [
+      {
+        "ro": "hachijuugosatsu no hon o kifu shimashita.",
+        "en": "I donated eighty-five books.",
+        "ja": "八十五冊の本を寄付しました。",
+        "kana": "はちじゅうごさつ の ほん を きふ しました。"
+      },
+      {
+        "ro": "hachijuugosatsu no manga o yomimashita.",
+        "en": "I read eighty-five manga books.",
+        "ja": "八十五冊の漫画を読みました。",
+        "kana": "はちじゅうごさつ の まんが を よみました。"
+      },
+      {
+        "ro": "hachijuugosatsu no nooto o seiri shimashita.",
+        "en": "I organized eighty-five notebooks.",
+        "ja": "八十五冊のノートを整理しました。",
+        "kana": "はちじゅうごさつ の のーと を せいり しました。"
+      },
+      {
+        "ro": "hachijuugosatsu no shiryou o insatsu shimashita.",
+        "en": "I printed eighty-five documents.",
+        "ja": "八十五冊の資料を印刷しました。",
+        "kana": "はちじゅうごさつ の しりょう を いんさつ しました。"
+      },
+      {
+        "ro": "hachijuugosatsu no jisho o tana ni narabemashita.",
+        "en": "I arranged eighty-five dictionaries on the shelf.",
+        "ja": "八十五冊の辞書を棚に並べました。",
+        "kana": "はちじゅうごさつ の じしょ を たな に ならべました。"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "kanji": "八十六回",
+    "kana": "はちじゅうろっかい",
+    "romaji": "hachijuurokkai",
+    "en": "eighty-six times",
+    "examples": [
+      {
+        "ro": "hachijuurokkai chousen shimashita.",
+        "en": "I tried eighty-six times.",
+        "ja": "八十六回挑戦しました。",
+        "kana": "はちじゅうろっかい ちょうせん しました。"
+      },
+      {
+        "ro": "hachijuurokkaime no kaigi ga owarimashita.",
+        "en": "The eighty-sixth meeting has ended.",
+        "ja": "八十六回目の会議が終わりました。",
+        "kana": "はちじゅうろっかいめ の かいぎ が おわりました。"
+      },
+      {
+        "ro": "hachijuurokkai renshuu shimashita.",
+        "en": "I practiced eighty-six times.",
+        "ja": "八十六回練習しました。",
+        "kana": "はちじゅうろっかい れんしゅう しました。"
+      },
+      {
+        "ro": "hachijuurokkai tesuto o ukemashita.",
+        "en": "I took eighty-six tests.",
+        "ja": "八十六回テストを受けました。",
+        "kana": "はちじゅうろっかい てすと を うけました。"
+      },
+      {
+        "ro": "hachijuurokkaime no jugyou ga okonawaremashita.",
+        "en": "The eighty-sixth class was held.",
+        "ja": "八十六回目の授業が行われました。",
+        "kana": "はちじゅうろっかいめ の じゅぎょう が おこなわれました。"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "kanji": "八十七台",
+    "kana": "はちじゅうななだい",
+    "romaji": "hachijuunanadai",
+    "en": "eighty-seven machines or vehicles",
+    "examples": [
+      {
+        "ro": "hachijuunanadai no kuruma ga chuusha sarete imasu.",
+        "en": "Eighty-seven cars are parked.",
+        "ja": "八十七台の車が駐車されています。",
+        "kana": "はちじゅうななだい の くるま が ちゅうしゃ されています。"
+      },
+      {
+        "ro": "hachijuunanadai no basu ga shuppatsu shimashita.",
+        "en": "Eighty-seven buses departed.",
+        "ja": "八十七台のバスが出発しました。",
+        "kana": "はちじゅうななだい の ばす が しゅっぱつ しました。"
+      },
+      {
+        "ro": "hachijuunanadai no pasokon o setchi shimashita.",
+        "en": "We installed eighty-seven computers.",
+        "ja": "八十七台のパソコンを設置しました。",
+        "kana": "はちじゅうななだい の ぱそこん を せっち しました。"
+      },
+      {
+        "ro": "hachijuunanadai no eakon o koukan shimashita.",
+        "en": "We replaced eighty-seven air conditioners.",
+        "ja": "八十七台のエアコンを交換しました。",
+        "kana": "はちじゅうななだい の えあこん を こうかん しました。"
+      },
+      {
+        "ro": "hachijuunanadai no torakku ga nimotsu o hakobimashita.",
+        "en": "Eighty-seven trucks carried the cargo.",
+        "ja": "八十七台のトラックが荷物を運びました。",
+        "kana": "はちじゅうななだい の とらっく が にもつ を はこびました。"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "kanji": "八十八本",
+    "kana": "はちじゅうはっぽん",
+    "romaji": "hachijuuhappon",
+    "en": "eighty-eight long objects",
+    "examples": [
+      {
+        "ro": "hachijuuhappon no ki o uemashita.",
+        "en": "I planted eighty-eight trees.",
+        "ja": "八十八本の木を植えました。",
+        "kana": "はちじゅうはっぽん の き を うえました。"
+      },
+      {
+        "ro": "hachijuuhappon no pen o atsumemashita.",
+        "en": "I collected eighty-eight pens.",
+        "ja": "八十八本のペンを集めました。",
+        "kana": "はちじゅうはっぽん の ぺん を あつめました。"
+      },
+      {
+        "ro": "hachijuuhappon no keeburu o seiri shimashita.",
+        "en": "I organized eighty-eight cables.",
+        "ja": "八十八本のケーブルを整理しました。",
+        "kana": "はちじゅうはっぽん の けーぶる を せいり しました。"
+      },
+      {
+        "ro": "hachijuuhappon no eiga o mimashita.",
+        "en": "I watched eighty-eight movies.",
+        "ja": "八十八本の映画を見ました。",
+        "kana": "はちじゅうはっぽん の えいが を みました。"
+      },
+      {
+        "ro": "hachijuuhappon no hana o kazarimashita.",
+        "en": "I decorated with eighty-eight flowers.",
+        "ja": "八十八本の花を飾りました。",
+        "kana": "はちじゅうはっぽん の はな を かざりました。"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "kanji": "八十九個",
+    "kana": "はちじゅうきゅうこ",
+    "romaji": "hachijuukyuuko",
+    "en": "eighty-nine small objects",
+    "examples": [
+      {
+        "ro": "hachijuukyuuko no ringo o hako ni iremashita.",
+        "en": "I put eighty-nine apples in a box.",
+        "ja": "八十九個のりんごを箱に入れました。",
+        "kana": "はちじゅうきゅうこ の りんご を はこ に いれました。"
+      },
+      {
+        "ro": "hachijuukyuuko no botan o nuimashita.",
+        "en": "I sewed eighty-nine buttons.",
+        "ja": "八十九個のボタンを縫いました。",
+        "kana": "はちじゅうきゅうこ の ぼたん を ぬいました。"
+      },
+      {
+        "ro": "hachijuukyuuko no purezento o youi shimashita.",
+        "en": "I prepared eighty-nine presents.",
+        "ja": "八十九個のプレゼントを用意しました。",
+        "kana": "はちじゅうきゅうこ の ぷれぜんと を ようい しました。"
+      },
+      {
+        "ro": "hachijuukyuuko no keeki o tsukurimashita.",
+        "en": "I made eighty-nine cakes.",
+        "ja": "八十九個のケーキを作りました。",
+        "kana": "はちじゅうきゅうこ の けーき を つくりました。"
+      },
+      {
+        "ro": "hachijuukyuuko no ishi o kazoemashita.",
+        "en": "I counted eighty-nine stones.",
+        "ja": "八十九個の石を数えました。",
+        "kana": "はちじゅうきゅうこ の いし を かぞえました。"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "kanji": "九十回",
+    "kana": "きゅうじゅっかい",
+    "romaji": "kyuujuukkai",
+    "en": "ninety times",
+    "examples": [
+      {
+        "ro": "kyuujuukkai chousen shimashita.",
+        "en": "I tried ninety times.",
+        "ja": "九十回挑戦しました。",
+        "kana": "きゅうじゅっかい ちょうせん しました。"
+      },
+      {
+        "ro": "kyuujuukkaime no jugyou ga owarimashita.",
+        "en": "The ninetieth class has finished.",
+        "ja": "九十回目の授業が終わりました。",
+        "kana": "きゅうじゅっかいめ の じゅぎょう が おわりました。"
+      },
+      {
+        "ro": "kyuujuukkai kaigi ga hirakaremashita.",
+        "en": "Ninety meetings were held.",
+        "ja": "九十回会議が開かれました。",
+        "kana": "きゅうじゅっかい かいぎ が ひらかれました。"
+      },
+      {
+        "ro": "kyuujuukkai renshuu shimashita.",
+        "en": "I practiced ninety times.",
+        "ja": "九十回練習しました。",
+        "kana": "きゅうじゅっかい れんしゅう しました。"
+      },
+      {
+        "ro": "kyuujuukkaime no touhyou ga okonawaremashita.",
+        "en": "The ninetieth vote was conducted.",
+        "ja": "九十回目の投票が行われました。",
+        "kana": "きゅうじゅっかいめ の とうひょう が おこなわれました。"
+      }
+    ]
+  }
+]

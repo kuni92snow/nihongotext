@@ -1,0 +1,4162 @@
+[
+  {
+    "id": "n1-grammar-001",
+    "ja": "〜に至っては",
+    "kana": "〜にいたっては",
+    "ro": "ni itatte wa",
+    "en": "as for / when it comes to (used to emphasize an extreme example or situation)",
+    "examples": [
+      {
+        "en": "Sales dropped, and as for profits, they even went negative.",
+        "ja": "売上が落ち、利益に至っては赤字になった。",
+        "kana": "うりあげ が おち、りえき に いたっては あかじ に なった。",
+        "ro": "uriage ga ochi, rieki ni itatte wa akaji ni natta."
+      },
+      {
+        "en": "Everyone was tired, and as for Tom, he couldn’t move at all.",
+        "ja": "みんな疲れていたが、トムに至ってはまったく動けなかった。",
+        "kana": "みんな つかれて いた が、とむ に いたっては まったく うごけなかった。",
+        "ro": "minna tsukarete ita ga, Tomu ni itatte wa mattaku ugokenakatta."
+      },
+      {
+        "en": "Many shops were closed, and as for that one, it’s gone out of business.",
+        "ja": "多くの店が閉店し、あの店に至っては倒産した。",
+        "kana": "おおく の みせ が へいてん し、あの みせ に いたっては とうさん した。",
+        "ro": "ooku no mise ga heiten shi, ano mise ni itatte wa tousan shita."
+      },
+      {
+        "en": "Some students were late, and as for Ken, he didn’t even show up.",
+        "ja": "遅刻した学生もいたが、ケンに至っては来なかった。",
+        "kana": "ちこく した がくせい も いた が、けん に いたっては こなかった。",
+        "ro": "chikoku shita gakusei mo ita ga, Ken ni itatte wa konakatta."
+      },
+      {
+        "en": "The project was delayed, and as for the final stage, it hasn’t even started.",
+        "ja": "プロジェクトは遅れており、最終段階に至ってはまだ始まっていない。",
+        "kana": "ぷろじぇくと は おくれて おり、さいしゅう だんかい に いたっては まだ はじまって いない。",
+        "ro": "purojekuto wa okurete ori, saishuu dankai ni itatte wa mada hajimatte inai."
+      }
+    ],
+    "grammar": "Noun + に至っては"
+  },
+  {
+    "id": "n1-grammar-002",
+    "ja": "〜にもほどがある",
+    "kana": "〜にもほどがある",
+    "ro": "nimo hodo ga aru",
+    "en": "there is a limit to... / to go too far / extremely (used to criticize behavior)",
+    "examples": [
+      {
+        "en": "There’s a limit to being rude!",
+        "ja": "失礼にもほどがある！",
+        "kana": "しつれい にも ほど が ある！",
+        "ro": "shitsurei nimo hodo ga aru!"
+      },
+      {
+        "en": "You’re being too selfish!",
+        "ja": "わがままにもほどがある！",
+        "kana": "わがまま にも ほど が ある！",
+        "ro": "wagamama nimo hodo ga aru!"
+      },
+      {
+        "en": "That joke is too cruel.",
+        "ja": "その冗談はひどすぎるにもほどがある。",
+        "kana": "その じょうだん は ひどすぎる にも ほど が ある。",
+        "ro": "sono joudan wa hidosugiru nimo hodo ga aru."
+      },
+      {
+        "en": "It’s too cold to go outside!",
+        "ja": "外は寒すぎるにもほどがある！",
+        "kana": "そと は さむすぎる にも ほど が ある！",
+        "ro": "soto wa samusugiru nimo hodo ga aru!"
+      },
+      {
+        "en": "You’ve gone too far with that comment.",
+        "ja": "その発言は失礼にもほどがある。",
+        "kana": "その はつげん は しつれい にも ほど が ある。",
+        "ro": "sono hatsugen wa shitsurei nimo hodo ga aru."
+      }
+    ],
+    "grammar": "Verb / Adjective / Noun + にもほどがある"
+  },
+  {
+    "id": "n1-grammar-003",
+    "ja": "〜までもない",
+    "kana": "〜までもない",
+    "ro": "made mo nai",
+    "en": "no need to... / unnecessary to go so far as to...",
+    "examples": [
+      {
+        "en": "There’s no need to explain it again.",
+        "ja": "もう一度説明するまでもない。",
+        "kana": "もう いちど せつめい する までもない。",
+        "ro": "mou ichido setsumei suru made mo nai."
+      },
+      {
+        "en": "It’s so simple that no explanation is needed.",
+        "ja": "簡単すぎて説明するまでもない。",
+        "kana": "かんたん すぎて せつめい する までもない。",
+        "ro": "kantan sugite setsumei suru made mo nai."
+      },
+      {
+        "en": "There’s no need to say that everyone knows it.",
+        "ja": "みんな知っているから言うまでもない。",
+        "kana": "みんな しっている から いう までもない。",
+        "ro": "minna shitteiru kara iu made mo nai."
+      },
+      {
+        "en": "You don’t need to apologize for that.",
+        "ja": "そんなことを謝るまでもない。",
+        "kana": "そんな こと を あやまる までもない。",
+        "ro": "sonna koto o ayamaru made mo nai."
+      },
+      {
+        "en": "You don’t need to be afraid of such a thing.",
+        "ja": "そんなことを怖がるまでもない。",
+        "kana": "そんな こと を こわがる までもない。",
+        "ro": "sonna koto o kowagaru made mo nai."
+      }
+    ],
+    "grammar": "Verb (dictionary form) + までもない"
+  },
+  {
+    "id": "n1-grammar-004",
+    "ja": "〜あっての",
+    "kana": "〜あっての",
+    "ro": "atte no",
+    "en": "only possible because of / owes its existence to",
+    "examples": [
+      {
+        "en": "A company exists because of its customers.",
+        "ja": "会社はお客様あってのものです。",
+        "kana": "かいしゃ は おきゃくさま あっての もの です。",
+        "ro": "kaisha wa okyakusama atte no mono desu."
+      },
+      {
+        "en": "Success is possible because of effort.",
+        "ja": "成功は努力あっての結果だ。",
+        "kana": "せいこう は どりょく あっての けっか だ。",
+        "ro": "seikou wa doryoku atte no kekka da."
+      },
+      {
+        "en": "Happiness exists because of health.",
+        "ja": "幸せは健康あってのものだ。",
+        "kana": "しあわせ は けんこう あっての もの だ。",
+        "ro": "shiawase wa kenkou atte no mono da."
+      },
+      {
+        "en": "Peace is possible because of cooperation.",
+        "ja": "平和は協力あってのものだ。",
+        "kana": "へいわ は きょうりょく あっての もの だ。",
+        "ro": "heiwa wa kyouryoku atte no mono da."
+      },
+      {
+        "en": "A good team exists because of its members.",
+        "ja": "よいチームはメンバーあってのものだ。",
+        "kana": "よい ちーむ は めんばー あっての もの だ。",
+        "ro": "yoi chiimu wa menbaa atte no mono da."
+      }
+    ],
+    "grammar": "Noun + あっての + Noun"
+  },
+  {
+    "id": "n1-grammar-005",
+    "ja": "〜べくして",
+    "kana": "〜べくして",
+    "ro": "beku shite",
+    "en": "as expected / inevitably / bound to happen",
+    "examples": [
+      {
+        "en": "The team lost, as expected.",
+        "ja": "そのチームは負けるべくして負けた。",
+        "kana": "その ちーむ は まける べくして まけた。",
+        "ro": "sono chiimu wa makeru beku shite maketa."
+      },
+      {
+        "en": "It happened as it was bound to happen.",
+        "ja": "起こるべくして起こった。",
+        "kana": "おこる べくして おこった。",
+        "ro": "okoru beku shite okotta."
+      },
+      {
+        "en": "They failed as they were destined to.",
+        "ja": "失敗するべくして失敗した。",
+        "kana": "しっぱい する べくして しっぱい した。",
+        "ro": "shippai suru beku shite shippai shita."
+      },
+      {
+        "en": "The accident happened inevitably.",
+        "ja": "事故は起こるべくして起こった。",
+        "kana": "じこ は おこる べくして おこった。",
+        "ro": "jiko wa okoru beku shite okotta."
+      },
+      {
+        "en": "He became famous as expected from his talent.",
+        "ja": "彼は才能があるだけに有名になるべくしてなった。",
+        "kana": "かれ は さいのう が ある だけ に ゆうめい に なる べくして なった。",
+        "ro": "kare wa sainou ga aru dake ni yuumei ni naru beku shite natta."
+      }
+    ],
+    "grammar": "Verb (dictionary form) + べくして"
+  },
+  {
+    "id": "n1-grammar-006",
+    "ja": "〜とはいえ",
+    "kana": "〜とはいえ",
+    "ro": "to wa ie",
+    "en": "although / though it is true that / even though",
+    "examples": [
+      {
+        "en": "It’s summer, but it’s still cool today.",
+        "ja": "夏とはいえ、今日は涼しい。",
+        "kana": "なつ とはいえ、きょう は すずしい。",
+        "ro": "natsu to wa ie, kyou wa suzushii."
+      },
+      {
+        "en": "He’s a beginner, but he plays quite well.",
+        "ja": "初心者とはいえ、かなり上手に弾く。",
+        "kana": "しょしんしゃ とはいえ、かなり じょうず に ひく。",
+        "ro": "shoshinsha to wa ie, kanari jouzu ni hiku."
+      },
+      {
+        "en": "It’s small, but it’s very comfortable.",
+        "ja": "小さい家とはいえ、とても快適だ。",
+        "kana": "ちいさい いえ とはいえ、とても かいてき だ。",
+        "ro": "chiisai ie to wa ie, totemo kaiteki da."
+      },
+      {
+        "en": "He’s young, but very responsible.",
+        "ja": "若いとはいえ、責任感が強い。",
+        "kana": "わかい とはいえ、せきにんかん が つよい。",
+        "ro": "wakai to wa ie, sekininkan ga tsuyoi."
+      },
+      {
+        "en": "It’s an old building, but still beautiful.",
+        "ja": "古い建物とはいえ、今も美しい。",
+        "kana": "ふるい たてもの とはいえ、いま も うつくしい。",
+        "ro": "furui tatemono to wa ie, ima mo utsukushii."
+      }
+    ],
+    "grammar": "Verb / Adjective / Noun + とはいえ"
+  },
+  {
+    "id": "n1-grammar-007",
+    "ja": "〜にかたくない",
+    "kana": "〜にかたくない",
+    "ro": "ni katakunai",
+    "en": "not hard to... / easy to imagine / possible to guess",
+    "examples": [
+      {
+        "en": "It’s not hard to imagine his sadness.",
+        "ja": "彼の悲しみは想像にかたくない。",
+        "kana": "かれ の かなしみ は そうぞう に かたくない。",
+        "ro": "kare no kanashimi wa souzou ni katakunai."
+      },
+      {
+        "en": "It’s not difficult to understand her feelings.",
+        "ja": "彼女の気持ちは理解にかたくない。",
+        "kana": "かのじょ の きもち は りかい に かたくない。",
+        "ro": "kanojo no kimochi wa rikai ni katakunai."
+      },
+      {
+        "en": "It’s easy to guess that he was disappointed.",
+        "ja": "彼が失望したことは想像にかたくない。",
+        "kana": "かれ が しつぼう した こと は そうぞう に かたくない。",
+        "ro": "kare ga shitsubou shita koto wa souzou ni katakunai."
+      },
+      {
+        "en": "It’s not difficult to imagine the results.",
+        "ja": "結果は予想にかたくない。",
+        "kana": "けっか は よそう に かたくない。",
+        "ro": "kekka wa yosou ni katakunai."
+      },
+      {
+        "en": "It’s easy to imagine how hard she worked.",
+        "ja": "彼女がどれほど努力したか想像にかたくない。",
+        "kana": "かのじょ が どれほど どりょく した か そうぞう に かたくない。",
+        "ro": "kanojo ga dorehodo doryoku shita ka souzou ni katakunai."
+      }
+    ],
+    "grammar": "Noun + にかたくない"
+  },
+  {
+    "id": "n1-grammar-009",
+    "ja": "〜をものともせず（に）",
+    "kana": "〜をものともせず（に）",
+    "ro": "o mono to mo sezu (ni)",
+    "en": "in defiance of / despite / without being affected by",
+    "examples": [
+      {
+        "en": "He continued working despite the pain.",
+        "ja": "彼は痛みをものともせず働き続けた。",
+        "kana": "かれ は いたみ を ものともせず はたらきつづけた。",
+        "ro": "kare wa itami o mono to mo sezu hatarakitsuzuketa."
+      },
+      {
+        "en": "She kept running despite the heavy rain.",
+        "ja": "彼女は大雨をものともせず走った。",
+        "kana": "かのじょ は おおあめ を ものともせず はしった。",
+        "ro": "kanojo wa ooame o mono to mo sezu hashitta."
+      },
+      {
+        "en": "They went on with the event despite the typhoon.",
+        "ja": "台風をものともせずイベントを開催した。",
+        "kana": "たいふう を ものともせず いべんと を かいさい した。",
+        "ro": "taifuu o mono to mo sezu ibento o kaisai shita."
+      },
+      {
+        "en": "He climbed the mountain despite his old age.",
+        "ja": "彼は老体をものともせず山に登った。",
+        "kana": "かれ は ろうたい を ものともせず やま に のぼった。",
+        "ro": "kare wa routai o mono to mo sezu yama ni nobotta."
+      },
+      {
+        "en": "She continued smiling despite the difficulties.",
+        "ja": "彼女は困難をものともせず笑顔でいた。",
+        "kana": "かのじょ は こんなん を ものともせず えがお で いた。",
+        "ro": "kanojo wa konnan o mono to mo sezu egao de ita."
+      }
+    ],
+    "grammar": "Noun + をものともせず（に）"
+  },
+  {
+    "id": "n1-grammar-010",
+    "ja": "〜にして",
+    "kana": "〜にして",
+    "ro": "ni shite",
+    "en": "only at / only after / even (used to express surprise or extremity)",
+    "examples": [
+      {
+        "en": "He became a father at the age of 50.",
+        "ja": "彼は50歳にして父親になった。",
+        "kana": "かれ は ごじゅっさい にして ちちおや に なった。",
+        "ro": "kare wa gojussai ni shite chichioya ni natta."
+      },
+      {
+        "en": "Even a genius like him can make mistakes.",
+        "ja": "彼にしてミスをすることがある。",
+        "kana": "かれ にして みす を する こと が ある。",
+        "ro": "kare ni shite misu o suru koto ga aru."
+      },
+      {
+        "en": "This result is surprising even for experts.",
+        "ja": "専門家にしてこの結果は驚きだ。",
+        "kana": "せんもんか にして この けっか は おどろき だ。",
+        "ro": "senmonka ni shite kono kekka wa odoroki da."
+      },
+      {
+        "en": "It was after ten years that he finally succeeded.",
+        "ja": "彼は十年にしてようやく成功した。",
+        "kana": "かれ は じゅうねん にして ようやく せいこう した。",
+        "ro": "kare wa juunen ni shite youyaku seikou shita."
+      },
+      {
+        "en": "At this stage, we can finally see results.",
+        "ja": "この段階にしてようやく結果が見えてきた。",
+        "kana": "この だんかい にして ようやく けっか が みえてきた。",
+        "ro": "kono dankai ni shite youyaku kekka ga mietekita."
+      }
+    ],
+    "grammar": "Noun + にして"
+  },
+  {
+    "id": "n1-grammar-011",
+    "ja": "〜そばから",
+    "kana": "〜そばから",
+    "ro": "soba kara",
+    "en": "as soon as / right after (something happens repeatedly after another)",
+    "examples": [
+      {
+        "en": "I clean up, but it gets messy again right after.",
+        "ja": "片付けるそばからすぐに散らかる。",
+        "kana": "かたづける そばから すぐ に ちらかる。",
+        "ro": "katazukeru soba kara sugu ni chirakaru."
+      },
+      {
+        "en": "As soon as I memorize, I forget.",
+        "ja": "覚えるそばから忘れてしまう。",
+        "kana": "おぼえる そばから わすれて しまう。",
+        "ro": "oboeru soba kara wasurete shimau."
+      },
+      {
+        "en": "I wash the dishes, but they pile up again right away.",
+        "ja": "皿を洗うそばからまたたまる。",
+        "kana": "さら を あらう そばから また たまる。",
+        "ro": "sara o arau soba kara mata tamaru."
+      },
+      {
+        "en": "As soon as I fix it, it breaks again.",
+        "ja": "直すそばから壊れる。",
+        "kana": "なおす そばから こわれる。",
+        "ro": "naosu soba kara kowareru."
+      },
+      {
+        "en": "I finish one job, but another comes right away.",
+        "ja": "仕事を終えるそばから次が来る。",
+        "kana": "しごと を おえる そばから つぎ が くる。",
+        "ro": "shigoto o oeru soba kara tsugi ga kuru."
+      }
+    ],
+    "grammar": "Verb (dictionary form) + そばから"
+  },
+  {
+    "id": "n1-grammar-012",
+    "ja": "〜たりとも〜ない",
+    "kana": "〜たりとも〜ない",
+    "ro": "tari tomo nai",
+    "en": "not even (one); not at all (emphasizing zero quantity or degree)",
+    "examples": [
+      {
+        "en": "Don’t waste even one yen.",
+        "ja": "一円たりとも無駄にしてはいけない。",
+        "kana": "いちえん たりとも むだ に して は いけない。",
+        "ro": "ichien tari tomo muda ni shite wa ikenai."
+      },
+      {
+        "en": "Not even a day goes by without thinking of you.",
+        "ja": "一日たりともあなたのことを忘れたことがない。",
+        "kana": "いちにち たりとも あなた の こと を わすれた こと が ない。",
+        "ro": "ichinichi tari tomo anata no koto o wasureta koto ga nai."
+      },
+      {
+        "en": "Don’t relax even for a moment.",
+        "ja": "一瞬たりとも気を抜くな。",
+        "kana": "いっしゅん たりとも き を ぬく な。",
+        "ro": "isshun tari tomo ki o nuku na."
+      },
+      {
+        "en": "Not even one person agreed.",
+        "ja": "一人たりとも賛成しなかった。",
+        "kana": "ひとり たりとも さんせい しなかった。",
+        "ro": "hitori tari tomo sansei shinakatta."
+      },
+      {
+        "en": "Don’t miss even a single chance.",
+        "ja": "一回たりともチャンスを逃すな。",
+        "kana": "いっかい たりとも ちゃんす を のがす な。",
+        "ro": "ikkai tari tomo chansu o nogasu na."
+      }
+    ],
+    "grammar": "Noun (quantity) + たりとも + Verb (negative form)"
+  },
+  {
+    "id": "n1-grammar-013",
+    "ja": "〜んばかりに／〜んばかりの／〜んばかりだ",
+    "kana": "〜んばかりに／〜んばかりの／〜んばかりだ",
+    "ro": "n bakari ni / n bakari no / n bakari da",
+    "en": "as if about to / almost (to the extent that...)",
+    "examples": [
+      {
+        "en": "He bowed deeply as if his head would touch the ground.",
+        "ja": "頭が地面につくんばかりに深くお辞儀した。",
+        "kana": "あたま が じめん に つく んばかり に ふかく おじぎ した。",
+        "ro": "atama ga jimen ni tsuku n bakari ni fukaku ojigi shita."
+      },
+      {
+        "en": "She looked as if she was about to cry.",
+        "ja": "泣かんばかりの顔をしていた。",
+        "kana": "なかんばかり の かお を していた。",
+        "ro": "nakan bakari no kao o shiteita."
+      },
+      {
+        "en": "He cheered as if to break the ceiling.",
+        "ja": "天井が壊れんばかりに歓声を上げた。",
+        "kana": "てんじょう が こわれんばかり に かんせい を あげた。",
+        "ro": "tenjou ga kowaren bakari ni kansei o ageta."
+      },
+      {
+        "en": "She clapped as if her hands would fall off.",
+        "ja": "手が痛くなるんばかりに拍手した。",
+        "kana": "て が いたく なる んばかり に はくしゅ した。",
+        "ro": "te ga itaku naru n bakari ni hakushu shita."
+      },
+      {
+        "en": "He nodded as if his neck would break.",
+        "ja": "首が折れんばかりにうなずいた。",
+        "kana": "くび が おれんばかり に うなずいた。",
+        "ro": "kubi ga oren bakari ni unazuita."
+      }
+    ],
+    "grammar": "Verb (negative stem) + んばかりに／の／だ"
+  },
+  {
+    "id": "n1-grammar-014",
+    "ja": "〜とあって",
+    "kana": "〜とあって",
+    "ro": "to atte",
+    "en": "because (special situation); due to (a unique circumstance)",
+    "examples": [
+      {
+        "en": "It was Sunday, so the park was crowded.",
+        "ja": "日曜日とあって公園は混雑していた。",
+        "kana": "にちようび とあって こうえん は こんざつ していた。",
+        "ro": "nichiyoubi to atte kouen wa konzatsu shiteita."
+      },
+      {
+        "en": "The famous actor appeared, so everyone got excited.",
+        "ja": "有名な俳優が登場したとあって会場は大盛り上がりだった。",
+        "kana": "ゆうめい な はいゆう が とうじょう した とあって かいじょう は おおもりあがり だった。",
+        "ro": "yuumei na haiyuu ga toujou shita to atte kaijou wa oomoriagari datta."
+      },
+      {
+        "en": "It was a special sale, so people lined up early.",
+        "ja": "特売日とあって朝から行列ができた。",
+        "kana": "とくばいび とあって あさ から ぎょうれつ が できた。",
+        "ro": "tokubaibi to atte asa kara gyouretsu ga dekita."
+      },
+      {
+        "en": "It’s a festival today, so the streets are noisy.",
+        "ja": "今日は祭りとあって街がにぎやかだ。",
+        "kana": "きょう は まつり とあって まち が にぎやか だ。",
+        "ro": "kyou wa matsuri to atte machi ga nigiyaka da."
+      },
+      {
+        "en": "It’s his first day at work, so he looks nervous.",
+        "ja": "初出勤とあって彼は緊張している。",
+        "kana": "はつしゅっきん とあって かれ は きんちょう している。",
+        "ro": "hatsushukkin to atte kare wa kinchou shiteiru."
+      }
+    ],
+    "grammar": "Noun / Phrase + とあって"
+  },
+  {
+    "id": "n1-grammar-015",
+    "ja": "〜に足る",
+    "kana": "〜にたる",
+    "ro": "ni taru",
+    "en": "worthy of / sufficient to / deserving of",
+    "examples": [
+      {
+        "en": "He’s a person worthy of trust.",
+        "ja": "彼は信頼に足る人物だ。",
+        "kana": "かれ は しんらい に たる じんぶつ だ。",
+        "ro": "kare wa shinrai ni taru jinbutsu da."
+      },
+      {
+        "en": "That theory is worth consideration.",
+        "ja": "その理論は検討に足る。",
+        "kana": "その りろん は けんとう に たる。",
+        "ro": "sono riron wa kentou ni taru."
+      },
+      {
+        "en": "It’s a story worth reading.",
+        "ja": "読むに足る話だ。",
+        "kana": "よむ に たる はなし だ。",
+        "ro": "yomu ni taru hanashi da."
+      },
+      {
+        "en": "This is a problem worth solving.",
+        "ja": "解決に足る問題だ。",
+        "kana": "かいけつ に たる もんだい だ。",
+        "ro": "kaiketsu ni taru mondai da."
+      },
+      {
+        "en": "He made a decision worthy of respect.",
+        "ja": "彼は尊敬に足る決断をした。",
+        "kana": "かれ は そんけい に たる けつだん を した。",
+        "ro": "kare wa sonkei ni taru ketsudan o shita."
+      }
+    ],
+    "grammar": "Noun + に足る"
+  },
+  {
+    "id": "n1-grammar-016",
+    "ja": "〜を禁じ得ない",
+    "kana": "〜をきんじえない",
+    "ro": "o kinji enai",
+    "en": "cannot help but feel / unable to suppress (an emotion)",
+    "examples": [
+      {
+        "en": "I couldn’t help but feel impressed by his courage.",
+        "ja": "彼の勇気に感嘆を禁じ得ない。",
+        "kana": "かれ の ゆうき に かんたん を きんじえない。",
+        "ro": "kare no yuuki ni kantan o kinji enai."
+      },
+      {
+        "en": "I couldn’t hold back my tears at that scene.",
+        "ja": "その場面に涙を禁じ得なかった。",
+        "kana": "その ばめん に なみだ を きんじえなかった。",
+        "ro": "sono bamen ni namida o kinji enakatta."
+      },
+      {
+        "en": "We couldn’t help but feel sympathy for the victims.",
+        "ja": "被害者に同情を禁じ得ない。",
+        "kana": "ひがいしゃ に どうじょう を きんじえない。",
+        "ro": "higaisha ni doujou o kinji enai."
+      },
+      {
+        "en": "Hearing the sad news, I couldn’t help but feel sorrow.",
+        "ja": "悲しい知らせを聞き、悲嘆を禁じ得なかった。",
+        "kana": "かなしい しらせ を きき、ひたん を きんじえなかった。",
+        "ro": "kanashii shirase o kiki, hitan o kinji enakatta."
+      },
+      {
+        "en": "I couldn’t help but admire his determination.",
+        "ja": "彼の決意に感服を禁じ得ない。",
+        "kana": "かれ の けつい に かんぷく を きんじえない。",
+        "ro": "kare no ketsui ni kanpuku o kinji enai."
+      }
+    ],
+    "grammar": "Noun + を禁じ得ない"
+  },
+  {
+    "id": "n1-grammar-017",
+    "ja": "〜といえども",
+    "kana": "〜といえども",
+    "ro": "to iedomo",
+    "en": "even though / even if (formal expression showing concession)",
+    "examples": [
+      {
+        "en": "Even children can understand this.",
+        "ja": "子どもといえどもこれくらいは理解できる。",
+        "kana": "こども といえども これくらい は りかい できる。",
+        "ro": "kodomo to iedomo korekurai wa rikai dekiru."
+      },
+      {
+        "en": "Even a genius can make mistakes.",
+        "ja": "天才といえども間違えることがある。",
+        "kana": "てんさい といえども まちがえる こと が ある。",
+        "ro": "tensai to iedomo machigaeru koto ga aru."
+      },
+      {
+        "en": "Even the president cannot break the law.",
+        "ja": "大統領といえども法律を破ることは許されない。",
+        "kana": "だいとうりょう といえども ほうりつ を やぶる こと は ゆるされない。",
+        "ro": "daitouryou to iedomo houritsu o yaburu koto wa yurusarenai."
+      },
+      {
+        "en": "Even a student must follow the rules.",
+        "ja": "学生といえども規則を守らなければならない。",
+        "kana": "がくせい といえども きそく を まもらなければ ならない。",
+        "ro": "gakusei to iedomo kisoku o mamoranakereba naranai."
+      },
+      {
+        "en": "Even in peacetime, preparation is necessary.",
+        "ja": "平和な時代といえども備えは必要だ。",
+        "kana": "へいわ な じだい といえども そなえ は ひつよう だ。",
+        "ro": "heiwa na jidai to iedomo sonae wa hitsuyou da."
+      }
+    ],
+    "grammar": "Noun / Verb / Adjective + といえども"
+  },
+  {
+    "id": "n1-grammar-018",
+    "ja": "〜を余儀なくさせる",
+    "kana": "〜をよぎなくさせる",
+    "ro": "o yogi naku saseru",
+    "en": "to force someone to do / make someone do (formal)",
+    "examples": [
+      {
+        "en": "The accident forced the company to change its policy.",
+        "ja": "その事故が会社に方針の変更を余儀なくさせた。",
+        "kana": "その じこ が かいしゃ に ほうしん の へんこう を よぎなくさせた。",
+        "ro": "sono jiko ga kaisha ni houshin no henkou o yogi naku saseta."
+      },
+      {
+        "en": "The typhoon forced them to cancel the event.",
+        "ja": "台風がイベントの中止を余儀なくさせた。",
+        "kana": "たいふう が いべんと の ちゅうし を よぎなくさせた。",
+        "ro": "taifuu ga ibento no chuushi o yogi naku saseta."
+      },
+      {
+        "en": "The incident forced the government to respond.",
+        "ja": "事件が政府に対応を余儀なくさせた。",
+        "kana": "じけん が せいふ に たいおう を よぎなくさせた。",
+        "ro": "jiken ga seifu ni taiou o yogi naku saseta."
+      },
+      {
+        "en": "The situation forced him to make a difficult decision.",
+        "ja": "状況が彼に困難な決断を余儀なくさせた。",
+        "kana": "じょうきょう が かれ に こんなん な けつだん を よぎなくさせた。",
+        "ro": "joukyou ga kare ni konnan na ketsudan o yogi naku saseta."
+      },
+      {
+        "en": "The economic crisis forced companies to restructure.",
+        "ja": "経済危機が企業の再編を余儀なくさせた。",
+        "kana": "けいざい きき が きぎょう の さいへん を よぎなくさせた。",
+        "ro": "keizai kiki ga kigyou no saihen o yogi naku saseta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくさせる"
+  },
+  {
+    "id": "n1-grammar-019",
+    "ja": "〜の至り",
+    "kana": "〜のいたり",
+    "ro": "no itari",
+    "en": "the height of / the utmost of (formal; used to express extreme feeling)",
+    "examples": [
+      {
+        "en": "It’s the height of happiness.",
+        "ja": "喜びの至りです。",
+        "kana": "よろこび の いたり です。",
+        "ro": "yorokobi no itari desu."
+      },
+      {
+        "en": "Meeting you is the height of honor.",
+        "ja": "お会いできて光栄の至りです。",
+        "kana": "おあい できて こうえい の いたり です。",
+        "ro": "oai dekite kouei no itari desu."
+      },
+      {
+        "en": "It’s the height of embarrassment.",
+        "ja": "恥の至りです。",
+        "kana": "はじ の いたり です。",
+        "ro": "haji no itari desu."
+      },
+      {
+        "en": "It’s the utmost of gratitude.",
+        "ja": "感謝の至りです。",
+        "kana": "かんしゃ の いたり です。",
+        "ro": "kansha no itari desu."
+      },
+      {
+        "en": "It’s the height of delight to receive such an award.",
+        "ja": "このような賞をいただき、感激の至りです。",
+        "kana": "この よう な しょう を いただき、かんげき の いたり です。",
+        "ro": "kono you na shou o itadaki, kangeki no itari desu."
+      }
+    ],
+    "grammar": "Noun + の至り"
+  },
+  {
+    "id": "n1-grammar-020",
+    "ja": "〜てやまない",
+    "kana": "〜てやまない",
+    "ro": "te yamanai",
+    "en": "always / sincerely / never stop (doing or feeling)",
+    "examples": [
+      {
+        "en": "We sincerely wish for your happiness.",
+        "ja": "あなたの幸せを願ってやみません。",
+        "kana": "あなた の しあわせ を ねがって やみません。",
+        "ro": "anata no shiawase o negatte yami masen."
+      },
+      {
+        "en": "I always respect my teacher.",
+        "ja": "先生を尊敬してやまない。",
+        "kana": "せんせい を そんけい して やまない。",
+        "ro": "sensei o sonkei shite yamanai."
+      },
+      {
+        "en": "We deeply love peace.",
+        "ja": "私たちは平和を愛してやまない。",
+        "kana": "わたしたち は へいわ を あいして やまない。",
+        "ro": "watashitachi wa heiwa o aishite yamanai."
+      },
+      {
+        "en": "I sincerely hope for your success.",
+        "ja": "あなたの成功を願ってやまない。",
+        "kana": "あなた の せいこう を ねがって やまない。",
+        "ro": "anata no seikou o negatte yamanai."
+      },
+      {
+        "en": "I will never stop missing her.",
+        "ja": "彼女を思ってやまない。",
+        "kana": "かのじょ を おもって やまない。",
+        "ro": "kanojo o omotte yamanai."
+      }
+    ],
+    "grammar": "Verb (te-form) + やまない"
+  },
+  {
+    "id": "n1-grammar-021",
+    "ja": "〜を皮切りに",
+    "kana": "〜をかわきりに",
+    "ro": "o kawakiri ni",
+    "en": "starting with / beginning with (used to show the first in a series of events)",
+    "examples": [
+      {
+        "en": "The concert tour started in Tokyo.",
+        "ja": "東京を皮切りにコンサートツアーが始まった。",
+        "kana": "とうきょう を かわきり に こんさーとつあー が はじまった。",
+        "ro": "toukyou o kawakiri ni konsaato tsuaa ga hajimatta."
+      },
+      {
+        "en": "The campaign began with Hokkaido.",
+        "ja": "北海道を皮切りにキャンペーンが展開された。",
+        "kana": "ほっかいどう を かわきり に きゃんぺーん が てんかい された。",
+        "ro": "hokkaidou o kawakiri ni kyanpeen ga tenkai sareta."
+      },
+      {
+        "en": "Starting with that project, the company grew rapidly.",
+        "ja": "そのプロジェクトを皮切りに会社は急成長した。",
+        "kana": "その ぷろじぇくと を かわきり に かいしゃ は きゅうせいちょう した。",
+        "ro": "sono purojekuto o kawakiri ni kaisha wa kyuuseichou shita."
+      },
+      {
+        "en": "The collaboration began with a small event.",
+        "ja": "小さなイベントを皮切りに協力関係が始まった。",
+        "kana": "ちいさな いべんと を かわきり に きょうりょく かんけい が はじまった。",
+        "ro": "chiisana ibento o kawakiri ni kyouryoku kankei ga hajimatta."
+      },
+      {
+        "en": "The product launch started with Japan and expanded overseas.",
+        "ja": "日本を皮切りに商品が海外へ展開された。",
+        "kana": "にほん を かわきり に しょうひん が かいがい へ てんかい された。",
+        "ro": "nihon o kawakiri ni shouhin ga kaigai e tenkai sareta."
+      }
+    ],
+    "grammar": "Noun + を皮切りに"
+  },
+  {
+    "id": "n1-grammar-022",
+    "ja": "〜にかこつけて",
+    "kana": "〜にかこつけて",
+    "ro": "ni kakotsukete",
+    "en": "under the pretext of / on the excuse of",
+    "examples": [
+      {
+        "en": "He invited her out under the pretext of a meeting.",
+        "ja": "会議にかこつけて彼女を誘った。",
+        "kana": "かいぎ に かこつけて かのじょ を さそった。",
+        "ro": "kaigi ni kakotsukete kanojo o sasotta."
+      },
+      {
+        "en": "He visited often under the excuse of work.",
+        "ja": "仕事にかこつけて頻繁に訪れた。",
+        "kana": "しごと に かこつけて ひんぱん に おとずれた。",
+        "ro": "shigoto ni kakotsukete hinpan ni otozureta."
+      },
+      {
+        "en": "He bought an expensive watch under the pretext of a reward.",
+        "ja": "ご褒美にかこつけて高い時計を買った。",
+        "kana": "ごほうび に かこつけて たかい とけい を かった。",
+        "ro": "gohoubi ni kakotsukete takai tokei o katta."
+      },
+      {
+        "en": "He skipped work under the pretext of illness.",
+        "ja": "病気にかこつけて仕事を休んだ。",
+        "kana": "びょうき に かこつけて しごと を やすんだ。",
+        "ro": "byouki ni kakotsukete shigoto o yasunda."
+      },
+      {
+        "en": "He got close to her under the excuse of helping.",
+        "ja": "手伝うことにかこつけて彼女に近づいた。",
+        "kana": "てつだう こと に かこつけて かのじょ に ちかづいた。",
+        "ro": "tetsudau koto ni kakotsukete kanojo ni chikazuita."
+      }
+    ],
+    "grammar": "Noun + にかこつけて"
+  },
+  {
+    "id": "n1-grammar-023",
+    "ja": "〜を押して",
+    "kana": "〜をおして",
+    "ro": "o oshite",
+    "en": "despite / in spite of (used when proceeding despite difficulties or opposition)",
+    "examples": [
+      {
+        "en": "He attended the meeting despite his illness.",
+        "ja": "病気を押して会議に出席した。",
+        "kana": "びょうき を おして かいぎ に しゅっせき した。",
+        "ro": "byouki o oshite kaigi ni shusseki shita."
+      },
+      {
+        "en": "She continued working despite the pain.",
+        "ja": "痛みを押して働き続けた。",
+        "kana": "いたみ を おして はたらきつづけた。",
+        "ro": "itami o oshite hatarakitsuzuketa."
+      },
+      {
+        "en": "He participated in the race despite his injury.",
+        "ja": "けがを押してレースに出た。",
+        "kana": "けが を おして れーす に でた。",
+        "ro": "kega o oshite reesu ni deta."
+      },
+      {
+        "en": "They held the event despite the typhoon.",
+        "ja": "台風を押してイベントを開催した。",
+        "kana": "たいふう を おして いべんと を かいさい した。",
+        "ro": "taifuu o oshite ibento o kaisai shita."
+      },
+      {
+        "en": "He went to work despite the fever.",
+        "ja": "熱を押して出勤した。",
+        "kana": "ねつ を おして しゅっきん した。",
+        "ro": "netsu o oshite shukkin shita."
+      }
+    ],
+    "grammar": "Noun + を押して"
+  },
+  {
+    "id": "n1-grammar-025",
+    "ja": "〜とは比べものにならない",
+    "kana": "〜とはくらべものにならない",
+    "ro": "to wa kurabe mono ni naranai",
+    "en": "cannot be compared to / far superior or inferior",
+    "examples": [
+      {
+        "en": "This car can’t be compared to the old one.",
+        "ja": "この車は昔のものとは比べものにならない。",
+        "kana": "この くるま は むかし の もの とは くらべもの に ならない。",
+        "ro": "kono kuruma wa mukashi no mono to wa kurabe mono ni naranai."
+      },
+      {
+        "en": "His cooking is nothing compared to his teacher’s.",
+        "ja": "彼の料理は師匠のものとは比べものにならない。",
+        "kana": "かれ の りょうり は ししょう の もの とは くらべもの に ならない。",
+        "ro": "kare no ryouri wa shishou no mono to wa kurabe mono ni naranai."
+      },
+      {
+        "en": "Today’s technology can’t be compared with that of the past.",
+        "ja": "今の技術は昔とは比べものにならない。",
+        "kana": "いま の ぎじゅつ は むかし とは くらべもの に ならない。",
+        "ro": "ima no gijutsu wa mukashi to wa kurabe mono ni naranai."
+      },
+      {
+        "en": "The comfort here is far better than before.",
+        "ja": "ここの快適さは以前とは比べものにならない。",
+        "kana": "ここ の かいてきさ は いぜん とは くらべもの に ならない。",
+        "ro": "koko no kaitekisa wa izen to wa kurabe mono ni naranai."
+      },
+      {
+        "en": "This movie can’t be compared to the original.",
+        "ja": "この映画は原作とは比べものにならない。",
+        "kana": "この えいが は げんさく とは くらべもの に ならない。",
+        "ro": "kono eiga wa gensaku to wa kurabe mono ni naranai."
+      }
+    ],
+    "grammar": "Noun + とは比べものにならない"
+  },
+{
+  "id": "n1-grammar-028",
+  "ja": "〜ないではすまない",
+  "kana": "〜ないではすまない",
+  "ro": "nai dewa sumanai",
+  "en": "cannot avoid doing / must do (because of a situation or responsibility)",
+  "examples": [
+    {
+      "en": "After causing such trouble, I must apologize.",
+      "ja": "あんなに迷惑をかけたのだから、謝らないではすまない。",
+      "kana": "あんなに めいわく を かけた の だから、あやまらない では すまない。",
+      "ro": "annani meiwaku o kaketa no dakara, ayamaranaide wa sumanai."
+    },
+    {
+      "en": "We cannot ignore this serious problem.",
+      "ja": "この深刻な問題を無視しないではすまない。",
+      "kana": "この しんこく な もんだい を むし しない では すまない。",
+      "ro": "kono shinkoku na mondai o mushi shinaide wa sumanai."
+    },
+    {
+      "en": "If I see someone in trouble, I can’t just stand by.",
+      "ja": "困っている人を見たら、助けないではすまない。",
+      "kana": "こまっている ひと を みたら、たすけない では すまない。",
+      "ro": "komatteiru hito o mitara, tasukenaide wa sumanai."
+    },
+    {
+      "en": "Given his mistake, he must take responsibility.",
+      "ja": "彼のミスだから、責任を取らないではすまない。",
+      "kana": "かれ の みす だから、せきにん を とらない では すまない。",
+      "ro": "kare no misu dakara, sekinin o toranaide wa sumanai."
+    },
+    {
+      "en": "Since she helped me so much, I can’t not return the favor.",
+      "ja": "あんなに助けてもらったのだから、お礼を言わないではすまない。",
+      "kana": "あんなに たすけて もらった の だから、おれい を いわない では すまない。",
+      "ro": "annani tasukete moratta no dakara, orei o iwanaide wa sumanai."
+    }
+  ],
+  "grammar": "Verb (negative form) + ないではすまない"
+},
+  {
+    "id": "n1-grammar-029",
+    "ja": "〜ではあるまいし",
+    "kana": "〜ではあるまいし",
+    "ro": "de wa aru maishi",
+    "en": "it's not like / since it’s not (used to deny or reason against something)",
+    "examples": [
+      {
+        "en": "You’re not a child, so stop crying.",
+        "ja": "子どもではあるまいし、泣くのはやめなさい。",
+        "kana": "こども では あるまいし、なく の は やめなさい。",
+        "ro": "kodomo de wa aru maishi, naku no wa yamenasai."
+      },
+      {
+        "en": "You’re not new here, so you should know that.",
+        "ja": "新人ではあるまいし、そんなことくらい知っているでしょう。",
+        "kana": "しんじん では あるまいし、そんな こと くらい しっている でしょう。",
+        "ro": "shinjin de wa aru maishi, sonna koto kurai shitteiru deshou."
+      },
+      {
+        "en": "You’re not a machine, so take a break.",
+        "ja": "機械ではあるまいし、休まなければ倒れるよ。",
+        "kana": "きかい では あるまいし、やすまなければ たおれる よ。",
+        "ro": "kikai de wa aru maishi, yasumanakereba taoreru yo."
+      },
+      {
+        "en": "You’re not a child anymore, so behave like an adult.",
+        "ja": "もう子どもではあるまいし、大人らしくしなさい。",
+        "kana": "もう こども では あるまいし、おとな らしく しなさい。",
+        "ro": "mou kodomo de wa aru maishi, otona rashiku shinasai."
+      },
+      {
+        "en": "It’s not a festival, so don’t make so much noise.",
+        "ja": "祭りではあるまいし、そんなに騒がないでください。",
+        "kana": "まつり では あるまいし、そんな に さわがないで ください。",
+        "ro": "matsuri de wa aru maishi, sonna ni sawaganaide kudasai."
+      }
+    ],
+    "grammar": "Noun / Verb (plain form) + ではあるまいし"
+  },
+{
+  "id": "n1-grammar-032",
+  "ja": "〜ことから",
+  "kana": "〜ことから",
+  "ro": "koto kara",
+  "en": "because / since (indicating reason or origin of a situation)",
+  "examples": [
+    {
+      "en": "Because she was often late, people thought she was lazy.",
+      "ja": "彼女がよく遅刻することから、怠け者だと思われていた。",
+      "kana": "かのじょ が よく ちこく する ことから、なまけもの だ と おもわれていた。",
+      "ro": "kanojo ga yoku chikoku suru koto kara, namakemono da to omowareteita."
+    },
+    {
+      "en": "Since this road is narrow, large cars cannot pass.",
+      "ja": "この道が狭いことから、大きな車は通れません。",
+      "kana": "この みち が せまい ことから、おおきな くるま は とおれません。",
+      "ro": "kono michi ga semai koto kara, ookina kuruma wa tooremasen."
+    },
+    {
+      "en": "Because they have the same hobby, they became close.",
+      "ja": "趣味が同じことから、仲良くなった。",
+      "kana": "しゅみ が おなじ ことから、なかよく なった。",
+      "ro": "shumi ga onaji koto kara, nakayoku natta."
+    },
+    {
+      "en": "Since he lived abroad for many years, he speaks English fluently.",
+      "ja": "長年海外に住んでいたことから、英語が流暢だ。",
+      "kana": "ながねん かいがい に すんでいた ことから、えいご が りゅうちょう だ。",
+      "ro": "naganen kaigai ni sundeita koto kara, eigo ga ryuuchou da."
+    },
+    {
+      "en": "Because the weather was bad, the event was canceled.",
+      "ja": "天候が悪かったことから、イベントは中止になった。",
+      "kana": "てんこう が わるかった ことから、いべんと は ちゅうし に なった。",
+      "ro": "tenkou ga warukatta koto kara, ibento wa chuushi ni natta."
+    }
+  ],
+  "grammar": "Verb (plain) / い-adjective + ことから、Noun + であることから"
+},
+  {
+    "id": "n1-grammar-033",
+    "ja": "〜をよそに",
+    "kana": "〜をよそに",
+    "ro": "o yoso ni",
+    "en": "ignoring / despite (used to show disregard for others’ opinions or situations)",
+    "examples": [
+      {
+        "en": "He went out ignoring his parents’ worries.",
+        "ja": "両親の心配をよそに外出した。",
+        "kana": "りょうしん の しんぱい を よそに がいしゅつ した。",
+        "ro": "ryoushin no shinpai o yoso ni gaishutsu shita."
+      },
+      {
+        "en": "She continued to laugh despite the serious atmosphere.",
+        "ja": "真剣な雰囲気をよそに笑い続けた。",
+        "kana": "しんけんな ふんいき を よそに わらい つづけた。",
+        "ro": "shinken na fun’iki o yoso ni warai tsuzuketa."
+      },
+      {
+        "en": "He ignored the teacher’s warning and kept talking.",
+        "ja": "先生の注意をよそに話し続けた。",
+        "kana": "せんせい の ちゅうい を よそに はなし つづけた。",
+        "ro": "sensei no chuui o yoso ni hanashi tsuzuketa."
+      },
+      {
+        "en": "The team continued their match, ignoring the rain.",
+        "ja": "雨をよそに試合を続けた。",
+        "kana": "あめ を よそに しあい を つづけた。",
+        "ro": "ame o yoso ni shiai o tsuzuketa."
+      },
+      {
+        "en": "He kept working hard despite criticism.",
+        "ja": "批判をよそに努力を続けた。",
+        "kana": "ひはん を よそに どりょく を つづけた。",
+        "ro": "hihan o yoso ni doryoku o tsuzuketa."
+      }
+    ],
+    "grammar": "Noun + をよそに"
+  },
+  {
+    "id": "n1-grammar-034",
+    "ja": "〜にあって",
+    "kana": "〜にあって",
+    "ro": "ni atte",
+    "en": "in (a certain situation or time) / during (formal; often used in writing)",
+    "examples": [
+      {
+        "en": "In this era of globalization, English is essential.",
+        "ja": "グローバル化の時代にあって、英語は欠かせない。",
+        "kana": "ぐろーばるか の じだい にあって、えいご は かかせない。",
+        "ro": "guroobaruka no jidai ni atte, eigo wa kakasenai."
+      },
+      {
+        "en": "Even in adversity, he remained calm.",
+        "ja": "逆境にあっても、彼は冷静だった。",
+        "kana": "ぎゃっきょう にあっても、かれ は れいせい だった。",
+        "ro": "gyakkyou ni atte mo, kare wa reisei datta."
+      },
+      {
+        "en": "In such a difficult situation, cooperation is important.",
+        "ja": "このような困難な状況にあっては、協力が大切だ。",
+        "kana": "この よう な こんなん な じょうきょう にあっては、きょうりょく が たいせつ だ。",
+        "ro": "kono you na konnan na joukyou ni atte wa, kyouryoku ga taisetsu da."
+      },
+      {
+        "en": "In an age of rapid change, flexibility is required.",
+        "ja": "変化の激しい時代にあっては、柔軟性が求められる。",
+        "kana": "へんか の はげしい じだい にあっては、じゅうなんせい が もとめられる。",
+        "ro": "henka no hageshii jidai ni atte wa, juunansei ga motomerareru."
+      },
+      {
+        "en": "In this position, you must make calm judgments.",
+        "ja": "この立場にあっては、冷静な判断が必要だ。",
+        "kana": "この たちば にあっては、れいせい な はんだん が ひつよう だ。",
+        "ro": "kono tachiba ni atte wa, reisei na handan ga hitsuyou da."
+      }
+    ],
+    "grammar": "Noun + にあって"
+  },
+  {
+    "id": "n1-grammar-035",
+    "ja": "〜べく",
+    "kana": "〜べく",
+    "ro": "beku",
+    "en": "in order to / for the purpose of (formal and written)",
+    "examples": [
+      {
+        "en": "He studied hard in order to pass the exam.",
+        "ja": "試験に合格すべく一生懸命勉強した。",
+        "kana": "しけん に ごうかく すべく いっしょうけんめい べんきょう した。",
+        "ro": "shiken ni goukaku beku isshoukenmei benkyou shita."
+      },
+      {
+        "en": "He ran as fast as he could to save the child.",
+        "ja": "子どもを救うべく全力で走った。",
+        "kana": "こども を すくう べく ぜんりょく で はしった。",
+        "ro": "kodomo o sukuu beku zenryoku de hashitta."
+      },
+      {
+        "en": "He made efforts to realize his dream.",
+        "ja": "夢を実現すべく努力した。",
+        "kana": "ゆめ を じつげん すべく どりょく した。",
+        "ro": "yume o jitsugen beku doryoku shita."
+      },
+      {
+        "en": "He left early to catch the first train.",
+        "ja": "始発に乗るべく早めに家を出た。",
+        "kana": "しはつ に のる べく はやめ に いえ を でた。",
+        "ro": "shihatsu ni noru beku hayame ni ie o deta."
+      },
+      {
+        "en": "He spoke with passion to inspire the audience.",
+        "ja": "聴衆を感動させるべく熱心に話した。",
+        "kana": "ちょうしゅう を かんどう させる べく ねっしん に はなした。",
+        "ro": "choushuu o kandou saseru beku nesshin ni hanashita."
+      }
+    ],
+    "grammar": "Verb (dictionary form) + べく"
+  },
+  {
+    "id": "n1-grammar-036",
+    "ja": "〜んばかりに",
+    "kana": "〜んばかりに",
+    "ro": "n bakari ni",
+    "en": "as if about to / as though (something is on the verge of happening)",
+    "examples": [
+      {
+        "en": "He looked as if he was about to cry.",
+        "ja": "泣かんばかりの顔をしていた。",
+        "kana": "なかんばかり の かお を していた。",
+        "ro": "nakan bakari no kao o shiteita."
+      },
+      {
+        "en": "She bowed deeply as if to touch the ground.",
+        "ja": "地面に頭がつくんばかりにお辞儀をした。",
+        "kana": "じめん に あたま が つく んばかり に おじぎ を した。",
+        "ro": "jimen ni atama ga tsuku n bakari ni ojigi o shita."
+      },
+      {
+        "en": "He shouted as if the world were ending.",
+        "ja": "世界が終わるんばかりに叫んだ。",
+        "kana": "せかい が おわる んばかり に さけんだ。",
+        "ro": "sekai ga owaru n bakari ni sakenda."
+      },
+      {
+        "en": "The fans applauded as if their hands might break.",
+        "ja": "手が痛くなるんばかりに拍手をした。",
+        "kana": "て が いたく なる んばかり に はくしゅ を した。",
+        "ro": "te ga itaku naru n bakari ni hakushu o shita."
+      },
+      {
+        "en": "He bowed as if his head would hit the floor.",
+        "ja": "床に頭がつくんばかりに頭を下げた。",
+        "kana": "ゆか に あたま が つく んばかり に あたま を さげた。",
+        "ro": "yuka ni atama ga tsuku n bakari ni atama o sageta."
+      }
+    ],
+    "grammar": "Verb (ない form) + んばかりに"
+  },
+  {
+    "id": "n1-grammar-037",
+    "ja": "〜を余儀なくされる",
+    "kana": "〜をよぎなくされる",
+    "ro": "o yogi naku sareru",
+    "en": "be forced to / be obliged to (formal written expression)",
+    "examples": [
+      {
+        "en": "The company was forced to close due to financial problems.",
+        "ja": "会社は資金難のため閉鎖を余儀なくされた。",
+        "kana": "かいしゃ は しきんなん の ため へいさ を よぎなく された。",
+        "ro": "kaisha wa shikinnan no tame heisa o yogi naku sareta."
+      },
+      {
+        "en": "He was forced to resign because of the scandal.",
+        "ja": "彼はスキャンダルで辞職を余儀なくされた。",
+        "kana": "かれ は すきゃんだる で じしょく を よぎなく された。",
+        "ro": "kare wa sukyandaru de jishoku o yogi naku sareta."
+      },
+      {
+        "en": "The bad weather forced us to cancel the trip.",
+        "ja": "悪天候により旅行の中止を余儀なくされた。",
+        "kana": "あくてんこう により りょこう の ちゅうし を よぎなく された。",
+        "ro": "akutenkou ni yori ryokou no chuushi o yogi naku sareta."
+      },
+      {
+        "en": "The situation forced the government to take action.",
+        "ja": "その状況が政府に対応を余儀なくさせた。",
+        "kana": "その じょうきょう が せいふ に たいおう を よぎなく させた。",
+        "ro": "sono joukyou ga seifu ni taiou o yogi naku saseta."
+      },
+      {
+        "en": "He was forced to move because of the disaster.",
+        "ja": "災害のため避難を余儀なくされた。",
+        "kana": "さいがい の ため ひなん を よぎなく された。",
+        "ro": "saigai no tame hinan o yogi naku sareta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくされる"
+  },
+  {
+    "id": "n1-grammar-038",
+    "ja": "〜に至るまで",
+    "kana": "〜にいたるまで",
+    "ro": "ni itaru made",
+    "en": "up to / as far as / even (indicates an extreme example)",
+    "examples": [
+      {
+        "en": "He handled everything, from planning to cleaning.",
+        "ja": "企画から掃除に至るまで、彼が担当した。",
+        "kana": "きかく から そうじ に いたるまで、かれ が たんとう した。",
+        "ro": "kikaku kara souji ni itaru made, kare ga tantou shita."
+      },
+      {
+        "en": "He controls everything, from details to overall management.",
+        "ja": "細部から全体の管理に至るまで、彼が指揮している。",
+        "kana": "さいぶ から ぜんたい の かんり に いたるまで、かれ が しき している。",
+        "ro": "saibu kara zentai no kanri ni itaru made, kare ga shiki shiteiru."
+      },
+      {
+        "en": "He was polite in everything, down to his emails.",
+        "ja": "メールの文面に至るまで丁寧だった。",
+        "kana": "めーる の ぶんめん に いたるまで ていねい だった。",
+        "ro": "meeru no bunmen ni itaru made teinei datta."
+      },
+      {
+        "en": "His knowledge covers everything from science to art.",
+        "ja": "科学から芸術に至るまで、彼は知識が豊富だ。",
+        "kana": "かがく から げいじゅつ に いたるまで、かれ は ちしき が ほうふ だ。",
+        "ro": "kagaku kara geijutsu ni itaru made, kare wa chishiki ga houfu da."
+      },
+      {
+        "en": "From daily work to special events, she does everything perfectly.",
+        "ja": "日常業務から特別行事に至るまで、彼女は完璧だ。",
+        "kana": "にちじょう ぎょうむ から とくべつ ぎょうじ に いたるまで、かのじょ は かんぺき だ。",
+        "ro": "nichijou gyoumu kara tokubetsu gyouji ni itaru made, kanojo wa kanpeki da."
+      }
+    ],
+    "grammar": "Noun + に至るまで"
+  },
+  {
+    "id": "n1-grammar-039",
+    "ja": "〜にひきかえ",
+    "kana": "〜にひきかえ",
+    "ro": "ni hikikae",
+    "en": "in contrast to / unlike (used to compare two opposing things)",
+    "examples": [
+      {
+        "en": "In contrast to his brother, he is very calm.",
+        "ja": "兄にひきかえ、弟はとても落ち着いている。",
+        "kana": "あに に ひきかえ、おとうと は とても おちついている。",
+        "ro": "ani ni hikikae, otouto wa totemo ochitsuiteiru."
+      },
+      {
+        "en": "In contrast to last year, this summer is quite cool.",
+        "ja": "去年にひきかえ、今年の夏はずいぶん涼しい。",
+        "kana": "きょねん に ひきかえ、ことし の なつ は ずいぶん すずしい。",
+        "ro": "kyonen ni hikikae, kotoshi no natsu wa zuibun suzushii."
+      },
+      {
+        "en": "In contrast to her shy sister, she is very outgoing.",
+        "ja": "内気な姉にひきかえ、妹は社交的だ。",
+        "kana": "うちき な あね に ひきかえ、いもうと は しゃこうてき だ。",
+        "ro": "uchiki na ane ni hikikae, imouto wa shakouteki da."
+      },
+      {
+        "en": "Unlike his cheerful friends, he is always gloomy.",
+        "ja": "明るい友人たちにひきかえ、彼はいつも暗い。",
+        "kana": "あかるい ゆうじんたち に ひきかえ、かれ は いつも くらい。",
+        "ro": "akarui yuujintachi ni hikikae, kare wa itsumo kurai."
+      },
+      {
+        "en": "In contrast to that hotel, this one is very clean.",
+        "ja": "あのホテルにひきかえ、このホテルはとても清潔だ。",
+        "kana": "あの ほてる に ひきかえ、この ほてる は とても せいけつ だ。",
+        "ro": "ano hoteru ni hikikae, kono hoteru wa totemo seiketsu da."
+      }
+    ],
+    "grammar": "Noun + にひきかえ"
+  },
+  {
+    "id": "n1-grammar-040",
+    "ja": "〜を踏まえて",
+    "kana": "〜をふまえて",
+    "ro": "o fumaete",
+    "en": "based on / in light of (used when making a judgment or decision)",
+    "examples": [
+      {
+        "en": "Based on the data, we made a new plan.",
+        "ja": "データを踏まえて新しい計画を立てた。",
+        "kana": "でーた を ふまえて あたらしい けいかく を たてた。",
+        "ro": "deeta o fumaete atarashii keikaku o tateta."
+      },
+      {
+        "en": "He made a speech based on his experience.",
+        "ja": "経験を踏まえてスピーチをした。",
+        "kana": "けいけん を ふまえて すぴーち を した。",
+        "ro": "keiken o fumaete supiichi o shita."
+      },
+      {
+        "en": "We made a decision in light of the results.",
+        "ja": "結果を踏まえて決定した。",
+        "kana": "けっか を ふまえて けってい した。",
+        "ro": "kekka o fumaete kettei shita."
+      },
+      {
+        "en": "Please make your judgment based on the facts.",
+        "ja": "事実を踏まえて判断してください。",
+        "kana": "じじつ を ふまえて はんだん して ください。",
+        "ro": "jijitsu o fumaete handan shite kudasai."
+      },
+      {
+        "en": "The policy was revised based on recent trends.",
+        "ja": "最近の傾向を踏まえて方針を改めた。",
+        "kana": "さいきん の けいこう を ふまえて ほうしん を あらためた。",
+        "ro": "saikin no keikou o fumaete houshin o aratameta."
+      }
+    ],
+    "grammar": "Noun + を踏まえて"
+  },
+  {
+    "id": "n1-grammar-041",
+    "ja": "〜に即して",
+    "kana": "〜にそくして",
+    "ro": "ni sokushite",
+    "en": "in accordance with / based on / according to",
+    "examples": [
+      {
+        "en": "We made a plan in accordance with the company policy.",
+        "ja": "会社の方針に即して計画を立てた。",
+        "kana": "かいしゃ の ほうしん に そくして けいかく を たてた。",
+        "ro": "kaisha no houshin ni sokushite keikaku o tateta."
+      },
+      {
+        "en": "Please act according to the rules.",
+        "ja": "規則に即して行動してください。",
+        "kana": "きそく に そくして こうどう して ください。",
+        "ro": "kisoku ni sokushite koudou shite kudasai."
+      },
+      {
+        "en": "We judged the case based on the facts.",
+        "ja": "事実に即して判断した。",
+        "kana": "じじつ に そくして はんだん した。",
+        "ro": "jijitsu ni sokushite handan shita."
+      },
+      {
+        "en": "This measure was taken in line with reality.",
+        "ja": "現実に即してこの対策を取った。",
+        "kana": "げんじつ に そくして この たいさく を とった。",
+        "ro": "genjitsu ni sokushite kono taisaku o totta."
+      },
+      {
+        "en": "Education should be conducted according to the students’ level.",
+        "ja": "教育は生徒のレベルに即して行うべきだ。",
+        "kana": "きょういく は せいと の れべる に そくして おこなう べき だ。",
+        "ro": "kyouiku wa seito no reberu ni sokushite okonau beki da."
+      }
+    ],
+    "grammar": "Noun + に即して"
+  },
+  {
+    "id": "n1-grammar-042",
+    "ja": "〜をもって",
+    "kana": "〜をもって",
+    "ro": "o motte",
+    "en": "by means of / with / as of (formal and versatile expression)",
+    "examples": [
+      {
+        "en": "We express our gratitude with all our hearts.",
+        "ja": "心をもって感謝申し上げます。",
+        "kana": "こころ を もって かんしゃ もうしあげます。",
+        "ro": "kokoro o motte kansha moushiagemasu."
+      },
+      {
+        "en": "This announcement marks the end of the event.",
+        "ja": "この発表をもってイベントを終了します。",
+        "kana": "この はっぴょう を もって いべんと を しゅうりょう します。",
+        "ro": "kono happyou o motte ibento o shuuryou shimasu."
+      },
+      {
+        "en": "We judge people by their actions, not by words.",
+        "ja": "人は言葉ではなく行動をもって判断される。",
+        "kana": "ひと は ことば では なく こうどう を もって はんだん される。",
+        "ro": "hito wa kotoba de wa naku koudou o motte handan sareru."
+      },
+      {
+        "en": "The report was submitted with great sincerity.",
+        "ja": "誠意をもって報告書を提出した。",
+        "kana": "せいぎ を もって ほうこくしょ を ていしゅつ した。",
+        "ro": "seigi o motte houkokusho o teishutsu shita."
+      },
+      {
+        "en": "This letter serves as official notification.",
+        "ja": "本書をもって正式な通知といたします。",
+        "kana": "ほんしょ を もって せいしき な つうち と いたします。",
+        "ro": "honsho o motte seishiki na tsuuchi to itashimasu."
+      }
+    ],
+    "grammar": "Noun + をもって"
+  },
+  {
+    "id": "n1-grammar-043",
+    "ja": "〜とあって",
+    "kana": "〜とあって",
+    "ro": "to atte",
+    "en": "because / due to (a special situation or reason)",
+    "examples": [
+      {
+        "en": "Because it’s a holiday, the park is crowded.",
+        "ja": "休日とあって、公園は人でいっぱいだ。",
+        "kana": "きゅうじつ とあって、こうえん は ひと で いっぱい だ。",
+        "ro": "kyuujitsu to atte, kouen wa hito de ippai da."
+      },
+      {
+        "en": "Since it was his first day, he looked nervous.",
+        "ja": "初日とあって、彼は緊張していた。",
+        "kana": "しょにち とあって、かれ は きんちょう していた。",
+        "ro": "shonichi to atte, kare wa kinchou shiteita."
+      },
+      {
+        "en": "Because it was a big sale, the store was full of people.",
+        "ja": "大セールとあって、店は大混雑だった。",
+        "kana": "だいせーる とあって、みせ は だいこんざつ だった。",
+        "ro": "dai seeru to atte, mise wa daikonzatsu datta."
+      },
+      {
+        "en": "As it was a special event, the atmosphere was lively.",
+        "ja": "特別な行事とあって、会場はにぎやかだった。",
+        "kana": "とくべつ な ぎょうじ とあって、かいじょう は にぎやか だった。",
+        "ro": "tokubetsu na gyouji to atte, kaijou wa nigiyaka datta."
+      },
+      {
+        "en": "Because he’s a famous actor, everyone gathered to see him.",
+        "ja": "有名な俳優とあって、多くの人が集まった。",
+        "kana": "ゆうめい な はいゆう とあって、おおく の ひと が あつまった。",
+        "ro": "yuumei na haiyuu to atte, ooku no hito ga atsumatta."
+      }
+    ],
+    "grammar": "Noun / Verb / Adjective + とあって"
+  },
+  {
+    "id": "n1-grammar-044",
+    "ja": "〜といえども",
+    "kana": "〜といえども",
+    "ro": "to iedomo",
+    "en": "even though / no matter how (formal concessive expression)",
+    "examples": [
+      {
+        "en": "Even a master makes mistakes sometimes.",
+        "ja": "名人といえども間違えることがある。",
+        "kana": "めいじん といえども まちがえる こと が ある。",
+        "ro": "meijin to iedomo machigaeru koto ga aru."
+      },
+      {
+        "en": "Even the president cannot change the law alone.",
+        "ja": "大統領といえども一人で法律を変えられない。",
+        "kana": "だいとうりょう といえども ひとり で ほうりつ を かえられない。",
+        "ro": "daitouryou to iedomo hitori de houritsu o kaerarenai."
+      },
+      {
+        "en": "Even a child has his own opinion.",
+        "ja": "子どもといえども意見を持っている。",
+        "kana": "こども といえども いけん を もっている。",
+        "ro": "kodomo to iedomo iken o motteiru."
+      },
+      {
+        "en": "Even in difficult times, one must not give up.",
+        "ja": "困難な時といえどもあきらめてはいけない。",
+        "kana": "こんなん な とき といえども あきらめて は いけない。",
+        "ro": "konnan na toki to iedomo akiramete wa ikenai."
+      },
+      {
+        "en": "Even a genius cannot succeed without effort.",
+        "ja": "天才といえども努力なしでは成功しない。",
+        "kana": "てんさい といえども どりょく なし では せいこう しない。",
+        "ro": "tensai to iedomo doryoku nashi de wa seikou shinai."
+      }
+    ],
+    "grammar": "Noun / Verb / Adjective + といえども"
+  },
+  {
+    "id": "n1-grammar-045",
+    "ja": "〜を禁じ得ない",
+    "kana": "〜をきんじえない",
+    "ro": "o kinjienai",
+    "en": "cannot help but / unable to suppress (strong emotional reaction)",
+    "examples": [
+      {
+        "en": "I couldn’t help but feel admiration for his courage.",
+        "ja": "彼の勇気に感嘆を禁じ得ない。",
+        "kana": "かれ の ゆうき に かんたん を きんじえない。",
+        "ro": "kare no yuuki ni kantan o kinjienai."
+      },
+      {
+        "en": "I can’t help feeling anger at such injustice.",
+        "ja": "そのような不正に怒りを禁じ得ない。",
+        "kana": "その よう な ふせい に いかり を きんじえない。",
+        "ro": "sono you na fusei ni ikari o kinjienai."
+      },
+      {
+        "en": "One cannot suppress tears when watching this movie.",
+        "ja": "この映画を見ると涙を禁じ得ない。",
+        "kana": "この えいが を みる と なみだ を きんじえない。",
+        "ro": "kono eiga o miru to namida o kinjienai."
+      },
+      {
+        "en": "We couldn’t help but laugh at his joke.",
+        "ja": "彼の冗談に笑いを禁じ得なかった。",
+        "kana": "かれ の じょうだん に わらい を きんじえなかった。",
+        "ro": "kare no joudan ni warai o kinjienakatta."
+      },
+      {
+        "en": "I couldn’t help but respect his sense of responsibility.",
+        "ja": "彼の責任感に尊敬を禁じ得ない。",
+        "kana": "かれ の せきにんかん に そんけい を きんじえない。",
+        "ro": "kare no sekininkan ni sonkei o kinjienai."
+      }
+    ],
+    "grammar": "Noun + を禁じ得ない"
+  },
+  {
+    "id": "n1-grammar-046",
+    "ja": "〜にかたくない",
+    "kana": "〜にかたくない",
+    "ro": "ni katakunai",
+    "en": "not hard to / easy to (imagine, understand, etc.)",
+    "examples": [
+      {
+        "en": "It’s not hard to imagine his surprise.",
+        "ja": "彼の驚きを想像するにかたくない。",
+        "kana": "かれ の おどろき を そうぞう する に かたくない。",
+        "ro": "kare no odoroki o souzou suru ni katakunai."
+      },
+      {
+        "en": "It’s easy to understand how painful it must have been.",
+        "ja": "どれほどつらかったか想像にかたくない。",
+        "kana": "どれほど つらかった か そうぞう に かたくない。",
+        "ro": "dorehodo tsurakatta ka souzou ni katakunai."
+      },
+      {
+        "en": "It’s not hard to guess the reason for his anger.",
+        "ja": "彼が怒った理由は察するにかたくない。",
+        "kana": "かれ が おこった りゆう は さっする に かたくない。",
+        "ro": "kare ga okotta riyuu wa sassuru ni katakunai."
+      },
+      {
+        "en": "It’s not difficult to understand her feelings.",
+        "ja": "彼女の気持ちは理解するにかたくない。",
+        "kana": "かのじょ の きもち は りかい する に かたくない。",
+        "ro": "kanojo no kimochi wa rikai suru ni katakunai."
+      },
+      {
+        "en": "It’s not hard to imagine their joy.",
+        "ja": "彼らの喜びは想像するにかたくない。",
+        "kana": "かれら の よろこび は そうぞう する に かたくない。",
+        "ro": "karera no yorokobi wa souzou suru ni katakunai."
+      }
+    ],
+    "grammar": "Verb (dictionary form) + にかたくない"
+  },
+  {
+    "id": "n1-grammar-047",
+    "ja": "〜を皮切りに",
+    "kana": "〜をかわきりに",
+    "ro": "o kawakiri ni",
+    "en": "starting with / beginning with (used for the first in a series of events)",
+    "examples": [
+      {
+        "en": "The tour started in Tokyo and went nationwide.",
+        "ja": "東京を皮切りに全国を回った。",
+        "kana": "とうきょう を かわきり に ぜんこく を まわった。",
+        "ro": "toukyou o kawakiri ni zenkoku o mawatta."
+      },
+      {
+        "en": "The company expanded overseas, starting with Asia.",
+        "ja": "アジアを皮切りに海外進出を進めた。",
+        "kana": "あじあ を かわきり に かいがい しんしゅつ を すすめた。",
+        "ro": "ajia o kawakiri ni kaigai shinshutsu o susumeta."
+      },
+      {
+        "en": "The event began with the president’s speech.",
+        "ja": "社長の挨拶を皮切りに式が始まった。",
+        "kana": "しゃちょう の あいさつ を かわきり に しき が はじまった。",
+        "ro": "shachou no aisatsu o kawakiri ni shiki ga hajimatta."
+      },
+      {
+        "en": "Their success began with this project.",
+        "ja": "このプロジェクトを皮切りに彼らの成功が始まった。",
+        "kana": "この ぷろじぇくと を かわきり に かれら の せいこう が はじまった。",
+        "ro": "kono purojekuto o kawakiri ni karera no seikou ga hajimatta."
+      },
+      {
+        "en": "Starting with this year, the event will be held annually.",
+        "ja": "今年を皮切りに毎年イベントを開催する。",
+        "kana": "ことし を かわきり に まいとし いべんと を かいさい する。",
+        "ro": "kotoshi o kawakiri ni maitoshi ibento o kaisai suru."
+      }
+    ],
+    "grammar": "Noun + を皮切りに"
+  },
+  {
+    "id": "n1-grammar-048",
+    "ja": "〜をよぎなくされる",
+    "kana": "〜をよぎなくされる",
+    "ro": "o yogi naku sareru",
+    "en": "be forced to (formal written expression; unavoidable action)",
+    "examples": [
+      {
+        "en": "The company was forced to close due to the recession.",
+        "ja": "不況のため会社は閉鎖を余儀なくされた。",
+        "kana": "ふきょう の ため かいしゃ は へいさ を よぎなく された。",
+        "ro": "fukyou no tame kaisha wa heisa o yogi naku sareta."
+      },
+      {
+        "en": "He was forced to resign because of the scandal.",
+        "ja": "スキャンダルで辞職を余儀なくされた。",
+        "kana": "すきゃんだる で じしょく を よぎなく された。",
+        "ro": "sukyandaru de jishoku o yogi naku sareta."
+      },
+      {
+        "en": "The disaster forced residents to evacuate.",
+        "ja": "災害で住民は避難を余儀なくされた。",
+        "kana": "さいがい で じゅうみん は ひなん を よぎなく された。",
+        "ro": "saigai de juumin wa hinan o yogi naku sareta."
+      },
+      {
+        "en": "The situation forced him to make a decision.",
+        "ja": "その状況が彼に決断を余儀なくさせた。",
+        "kana": "その じょうきょう が かれ に けつだん を よぎなく させた。",
+        "ro": "sono joukyou ga kare ni ketsudan o yogi naku saseta."
+      },
+      {
+        "en": "The accident forced us to change our plans.",
+        "ja": "事故のため予定変更を余儀なくされた。",
+        "kana": "じこ の ため よてい へんこう を よぎなく された。",
+        "ro": "jiko no tame yotei henkou o yogi naku sareta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくされる"
+  },
+  {
+    "id": "n1-grammar-049",
+    "ja": "〜をものともせず",
+    "kana": "〜をものともせず",
+    "ro": "o mono to mo sezu",
+    "en": "in defiance of / regardless of (used to describe overcoming hardship)",
+    "examples": [
+      {
+        "en": "He continued his work in spite of injuries.",
+        "ja": "けがをものともせずに仕事を続けた。",
+        "kana": "けが を ものともせず に しごと を つづけた。",
+        "ro": "kega o mono to mo sezu ni shigoto o tsuzuketa."
+      },
+      {
+        "en": "She climbed the mountain in spite of the storm.",
+        "ja": "嵐をものともせず山を登った。",
+        "kana": "あらし を ものともせず やま を のぼった。",
+        "ro": "arashi o mono to mo sezu yama o nobotta."
+      },
+      {
+        "en": "He achieved success despite criticism.",
+        "ja": "批判をものともせず成功を収めた。",
+        "kana": "ひはん を ものともせず せいこう を おさめた。",
+        "ro": "hihan o mono to mo sezu seikou o osameta."
+      },
+      {
+        "en": "He fought bravely despite his wounds.",
+        "ja": "傷をものともせず勇敢に戦った。",
+        "kana": "きず を ものともせず ゆうかん に たたかった。",
+        "ro": "kizu o mono to mo sezu yuukan ni tatakatta."
+      },
+      {
+        "en": "They went on despite many obstacles.",
+        "ja": "多くの困難をものともせず進んだ。",
+        "kana": "おおく の こんなん を ものともせず すすんだ。",
+        "ro": "ooku no konnan o mono to mo sezu susunda."
+      }
+    ],
+    "grammar": "Noun + をものともせず"
+  },
+  {
+    "id": "n1-grammar-050",
+    "ja": "〜を余儀なくさせる",
+    "kana": "〜をよぎなくさせる",
+    "ro": "o yogi naku saseru",
+    "en": "to force (someone to do something); to compel (formal written expression)",
+    "examples": [
+      {
+        "en": "The economic crisis forced the company to restructure.",
+        "ja": "経済危機が会社に再編を余儀なくさせた。",
+        "kana": "けいざい きき が かいしゃ に さいへん を よぎなく させた。",
+        "ro": "keizai kiki ga kaisha ni saihen o yogi naku saseta."
+      },
+      {
+        "en": "The situation forced him to make a decision.",
+        "ja": "状況が彼に決断を余儀なくさせた。",
+        "kana": "じょうきょう が かれ に けつだん を よぎなく させた。",
+        "ro": "joukyou ga kare ni ketsudan o yogi naku saseta."
+      },
+      {
+        "en": "The storm forced us to cancel the trip.",
+        "ja": "嵐が旅行の中止を余儀なくさせた。",
+        "kana": "あらし が りょこう の ちゅうし を よぎなく させた。",
+        "ro": "arashi ga ryokou no chuushi o yogi naku saseta."
+      },
+      {
+        "en": "The incident forced the government to act quickly.",
+        "ja": "事件が政府に迅速な対応を余儀なくさせた。",
+        "kana": "じけん が せいふ に じんそく な たいおう を よぎなく させた。",
+        "ro": "jiken ga seifu ni jinsoku na taiou o yogi naku saseta."
+      },
+      {
+        "en": "The decline in population forced the town to merge.",
+        "ja": "人口減少が町の合併を余儀なくさせた。",
+        "kana": "じんこう げんしょう が まち の がっぺい を よぎなく させた。",
+        "ro": "jinkou genshou ga machi no gappei o yogi naku saseta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくさせる"
+  },
+  {
+    "id": "n1-grammar-051",
+    "ja": "〜てはばからない",
+    "kana": "〜てはばからない",
+    "ro": "te wa habakaranai",
+    "en": "to dare to / to do (something) boldly without hesitation (often negative nuance)",
+    "examples": [
+      {
+        "en": "He dares to criticize the government openly.",
+        "ja": "彼は公然と政府を批判してはばからない。",
+        "kana": "かれ は こうぜん と せいふ を ひはん して はばからない。",
+        "ro": "kare wa kouzen to seifu o hihan shite wa habakaranai."
+      },
+      {
+        "en": "She boldly lies to people without shame.",
+        "ja": "彼女は平気でうそをついてはばからない。",
+        "kana": "かのじょ は へいき で うそ を ついて はばからない。",
+        "ro": "kanojo wa heiki de uso o tsuite wa habakaranai."
+      },
+      {
+        "en": "He openly claims to be the best.",
+        "ja": "彼は自分が最高だと言ってはばからない。",
+        "kana": "かれ は じぶん が さいこう だ と いって はばからない。",
+        "ro": "kare wa jibun ga saikou da to itte wa habakaranai."
+      },
+      {
+        "en": "They shamelessly deny their responsibility.",
+        "ja": "彼らは自分の責任を否定してはばからない。",
+        "kana": "かれら は じぶん の せきにん を ひてい して はばからない。",
+        "ro": "karera wa jibun no sekinin o hitei shite wa habakaranai."
+      },
+      {
+        "en": "He dares to insult others in public.",
+        "ja": "彼は人を公の場で侮辱してはばからない。",
+        "kana": "かれ は ひと を おおやけ の ば で ぶじょく して はばからない。",
+        "ro": "kare wa hito o ooyake no ba de bujoku shite wa habakaranai."
+      }
+    ],
+    "grammar": "Verb（て-form）+ はばからない"
+  },
+  {
+    "id": "n1-grammar-052",
+    "ja": "〜にたえる",
+    "kana": "〜にたえる",
+    "ro": "ni taeru",
+    "en": "worthy of / capable of (usually used in written expressions)",
+    "examples": [
+      {
+        "en": "This novel is worth reading.",
+        "ja": "この小説は読むにたえる。",
+        "kana": "この しょうせつ は よむ に たえる。",
+        "ro": "kono shousetsu wa yomu ni taeru."
+      },
+      {
+        "en": "Her work is worth appreciation.",
+        "ja": "彼女の作品は鑑賞にたえる。",
+        "kana": "かのじょ の さくひん は かんしょう に たえる。",
+        "ro": "kanojo no sakuhin wa kanshou ni taeru."
+      },
+      {
+        "en": "It’s a movie worth seeing.",
+        "ja": "見るにたえる映画だ。",
+        "kana": "みる に たえる えいが だ。",
+        "ro": "miru ni taeru eiga da."
+      },
+      {
+        "en": "This painting is worth being displayed in a museum.",
+        "ja": "この絵は美術館に展示するにたえる。",
+        "kana": "この え は びじゅつかん に てんじ する に たえる。",
+        "ro": "kono e wa bijutsukan ni tenji suru ni taeru."
+      },
+      {
+        "en": "His speech was worth listening to.",
+        "ja": "彼の演説は聞くにたえるものだった。",
+        "kana": "かれ の えんぜつ は きく に たえる もの だった。",
+        "ro": "kare no enzetsu wa kiku ni taeru mono datta."
+      }
+    ],
+    "grammar": "Verb（dictionary form）/ Noun + にたえる"
+  },
+  {
+    "id": "n1-grammar-053",
+    "ja": "〜にたえない",
+    "kana": "〜にたえない",
+    "ro": "ni taenai",
+    "en": "cannot bear / extremely (used for strong emotion or feeling)",
+    "examples": [
+      {
+        "en": "I can’t bear the sadness of parting.",
+        "ja": "別れの悲しみにたえない。",
+        "kana": "わかれ の かなしみ に たえない。",
+        "ro": "wakare no kanashimi ni taenai."
+      },
+      {
+        "en": "I can’t bear hearing such cruel stories.",
+        "ja": "そのような残酷な話を聞くにたえない。",
+        "kana": "その よう な ざんこく な はなし を きく に たえない。",
+        "ro": "sono you na zankoku na hanashi o kiku ni taenai."
+      },
+      {
+        "en": "It’s unbearable to see the destruction of nature.",
+        "ja": "自然の破壊を見るにたえない。",
+        "kana": "しぜん の はかい を みる に たえない。",
+        "ro": "shizen no hakai o miru ni taenai."
+      },
+      {
+        "en": "We are deeply grateful for your kindness.",
+        "ja": "皆様のご厚意に感謝の念にたえません。",
+        "kana": "みなさま の ごこうい に かんしゃ の ねん に たえません。",
+        "ro": "minasama no gokoui ni kansha no nen ni taemasen."
+      },
+      {
+        "en": "I can’t stand the noise anymore.",
+        "ja": "これ以上の騒音にはたえない。",
+        "kana": "これ いじょう の そうおん には たえない。",
+        "ro": "kore ijou no souon ni wa taenai."
+      }
+    ],
+    "grammar": "Verb（dictionary form）/ Noun + にたえない"
+  },
+  {
+    "id": "n1-grammar-054",
+    "ja": "〜ないまでも",
+    "kana": "〜ないまでも",
+    "ro": "nai made mo",
+    "en": "even if not / even though not to the extent of",
+    "examples": [
+      {
+        "en": "Even if I can’t win, I want to do my best.",
+        "ja": "勝てないまでも全力を尽くしたい。",
+        "kana": "かてない までも ぜんりょく を つくしたい。",
+        "ro": "katenai made mo zenryoku o tsukushitai."
+      },
+      {
+        "en": "Even if I can’t agree completely, I understand your opinion.",
+        "ja": "賛成しないまでも意見は理解できる。",
+        "kana": "さんせい しない までも いけん は りかい できる。",
+        "ro": "sansei shinai made mo iken wa rikai dekiru."
+      },
+      {
+        "en": "Even if I can’t go abroad, I want to study languages.",
+        "ja": "海外に行けないまでも語学の勉強はしたい。",
+        "kana": "かいがい に いけない までも ごがく の べんきょう は したい。",
+        "ro": "kaigai ni ikenai made mo gogaku no benkyou wa shitai."
+      },
+      {
+        "en": "Even if I can’t solve everything, I’ll try to help.",
+        "ja": "すべてを解決できないまでも手伝いたい。",
+        "kana": "すべて を かいけつ できない までも てつだいたい。",
+        "ro": "subete o kaiketsu dekinai made mo tetsudaitai."
+      },
+      {
+        "en": "Even if we can’t be friends, I want to make peace.",
+        "ja": "友達になれないまでも仲直りはしたい。",
+        "kana": "ともだち に なれない までも なかなおり は したい。",
+        "ro": "tomodachi ni narenai made mo nakanaori wa shitai."
+      }
+    ],
+    "grammar": "Verb（ない-form）+ までも"
+  },
+  {
+    "id": "n1-grammar-055",
+    "ja": "〜にひきかえ",
+    "kana": "〜にひきかえ",
+    "ro": "ni hikikae",
+    "en": "in contrast to / unlike (comparison showing difference)",
+    "examples": [
+      {
+        "en": "In contrast to his brother, he is quiet.",
+        "ja": "兄にひきかえ弟はおとなしい。",
+        "kana": "あに に ひきかえ おとうと は おとなしい。",
+        "ro": "ani ni hikikae otouto wa otonashii."
+      },
+      {
+        "en": "In contrast to last year, this winter is warm.",
+        "ja": "去年にひきかえ今年の冬は暖かい。",
+        "kana": "きょねん に ひきかえ ことし の ふゆ は あたたかい。",
+        "ro": "kyonen ni hikikae kotoshi no fuyu wa atatakai."
+      },
+      {
+        "en": "In contrast to his cheerful wife, he is gloomy.",
+        "ja": "明るい妻にひきかえ夫は暗い。",
+        "kana": "あかるい つま に ひきかえ おっと は くらい。",
+        "ro": "akarui tsuma ni hikikae otto wa kurai."
+      },
+      {
+        "en": "Unlike her mother, she is very talkative.",
+        "ja": "母にひきかえ娘はとてもおしゃべりだ。",
+        "kana": "はは に ひきかえ むすめ は とても おしゃべり だ。",
+        "ro": "haha ni hikikae musume wa totemo oshaberi da."
+      },
+      {
+        "en": "In contrast to the city, the countryside is peaceful.",
+        "ja": "都会にひきかえ田舎はのんびりしている。",
+        "kana": "とかい に ひきかえ いなか は のんびり している。",
+        "ro": "tokai ni hikikae inaka wa nonbiri shiteiru."
+      }
+    ],
+    "grammar": "Noun + にひきかえ"
+  },
+  {
+    "id": "n1-grammar-056",
+    "ja": "〜にもほどがある",
+    "kana": "〜にもほどがある",
+    "ro": "nimo hodo ga aru",
+    "en": "too much / there’s a limit to (used to criticize excessive behavior or situation)",
+    "examples": [
+      {
+        "en": "You’re too rude! There’s a limit to rudeness.",
+        "ja": "失礼にもほどがある！",
+        "kana": "しつれい にも ほど が ある！",
+        "ro": "shitsurei nimo hodo ga aru!"
+      },
+      {
+        "en": "He’s too lazy; there’s a limit to being idle.",
+        "ja": "彼は怠け者にもほどがある。",
+        "kana": "かれ は なまけもの にも ほど が ある。",
+        "ro": "kare wa namakemono nimo hodo ga aru."
+      },
+      {
+        "en": "That’s too much of a joke.",
+        "ja": "冗談にもほどがあるよ。",
+        "kana": "じょうだん にも ほど が ある よ。",
+        "ro": "joudan nimo hodo ga aru yo."
+      },
+      {
+        "en": "You’re too careless; there’s a limit to carelessness.",
+        "ja": "不注意にもほどがある。",
+        "kana": "ふちゅうい にも ほど が ある。",
+        "ro": "fuchuui nimo hodo ga aru."
+      },
+      {
+        "en": "That’s too selfish!",
+        "ja": "わがままにもほどがある！",
+        "kana": "わがまま にも ほど が ある！",
+        "ro": "wagamama nimo hodo ga aru!"
+      }
+    ],
+    "grammar": "Verb / Adjective / Noun + にもほどがある"
+  },
+  {
+    "id": "n1-grammar-057",
+    "ja": "〜までもない",
+    "kana": "〜までもない",
+    "ro": "made mo nai",
+    "en": "no need to / not necessary to",
+    "examples": [
+      {
+        "en": "There’s no need to explain such a simple thing.",
+        "ja": "そんな簡単なことを説明するまでもない。",
+        "kana": "そんな かんたん な こと を せつめい する までもない。",
+        "ro": "sonna kantan na koto o setsumei suru made mo nai."
+      },
+      {
+        "en": "There’s no need to panic.",
+        "ja": "慌てるまでもない。",
+        "kana": "あわてる までもない。",
+        "ro": "awateru made mo nai."
+      },
+      {
+        "en": "It’s so obvious that it doesn’t need to be said.",
+        "ja": "言うまでもないことだ。",
+        "kana": "いう までもない こと だ。",
+        "ro": "iu made mo nai koto da."
+      },
+      {
+        "en": "There’s no need to worry about it.",
+        "ja": "それを心配するまでもない。",
+        "kana": "それ を しんぱい する までもない。",
+        "ro": "sore o shinpai suru made mo nai."
+      },
+      {
+        "en": "There’s no need to apologize.",
+        "ja": "謝るまでもない。",
+        "kana": "あやまる までもない。",
+        "ro": "ayamaru made mo nai."
+      }
+    ],
+    "grammar": "Verb（dictionary form）+ までもない"
+  },
+  {
+    "id": "n1-grammar-058",
+    "ja": "〜ずじまい",
+    "kana": "〜ずじまい",
+    "ro": "zu jimai",
+    "en": "ended up not doing / never got around to doing",
+    "examples": [
+      {
+        "en": "I wanted to see that movie, but I never got the chance.",
+        "ja": "あの映画を見ずじまいだった。",
+        "kana": "あの えいが を みず じまい だった。",
+        "ro": "ano eiga o mizu jimai datta."
+      },
+      {
+        "en": "I meant to tell her, but I didn’t.",
+        "ja": "彼女に言わずじまいだった。",
+        "kana": "かのじょ に いわず じまい だった。",
+        "ro": "kanojo ni iwazu jimai datta."
+      },
+      {
+        "en": "We planned to travel abroad, but couldn’t go.",
+        "ja": "海外旅行に行かずじまいだった。",
+        "kana": "かいがい りょこう に いかず じまい だった。",
+        "ro": "kaigai ryokou ni ikazu jimai datta."
+      },
+      {
+        "en": "I wanted to apologize, but I never did.",
+        "ja": "謝らずじまいで終わった。",
+        "kana": "あやまらず じまい で おわった。",
+        "ro": "ayamarazu jimai de owatta."
+      },
+      {
+        "en": "He lived his life without fulfilling his dream.",
+        "ja": "彼は夢を果たさずじまいだった。",
+        "kana": "かれ は ゆめ を はたさず じまい だった。",
+        "ro": "kare wa yume o hatasazu jimai datta."
+      }
+    ],
+    "grammar": "Verb（ない-form）+ ずじまい"
+  },
+  {
+    "id": "n1-grammar-059",
+    "ja": "〜ながらに",
+    "kana": "〜ながらに",
+    "ro": "nagara ni",
+    "en": "while being / in the state of (used with verbs like ‘live’, ‘cry’, ‘know’)",
+    "examples": [
+      {
+        "en": "She lives in poverty but with dignity.",
+        "ja": "貧しさながらに気品がある。",
+        "kana": "まずしさ ながら に きひん が ある。",
+        "ro": "mazushisa nagara ni kihinn ga aru."
+      },
+      {
+        "en": "He retained his kindness even as a leader.",
+        "ja": "彼はリーダーでありながらに優しさを失わなかった。",
+        "kana": "かれ は りーだー で あり ながら に やさしさ を うしなわなかった。",
+        "ro": "kare wa riidaa de ari nagara ni yasashisa o ushinawanakatta."
+      },
+      {
+        "en": "She lived her life as an artist.",
+        "ja": "彼女は芸術家ながらに生きた。",
+        "kana": "かのじょ は げいじゅつか ながら に いきた。",
+        "ro": "kanojo wa geijutsuka nagara ni ikita."
+      },
+      {
+        "en": "He wept as he spoke.",
+        "ja": "語りながらに涙を流した。",
+        "kana": "かたり ながら に なみだ を ながした。",
+        "ro": "katari nagara ni namida o nagashita."
+      },
+      {
+        "en": "Even as a child, he understood adults’ feelings.",
+        "ja": "子どもながらに大人の気持ちを理解していた。",
+        "kana": "こども ながら に おとな の きもち を りかい していた。",
+        "ro": "kodomo nagara ni otona no kimochi o rikai shiteita."
+      }
+    ],
+    "grammar": "Noun / Verb（ます-stem）+ ながらに"
+  },
+  {
+    "id": "n1-grammar-060",
+    "ja": "〜にあって",
+    "kana": "〜にあって",
+    "ro": "ni atte",
+    "en": "in the situation of / under (formal, used in written contexts)",
+    "examples": [
+      {
+        "en": "In this difficult situation, cooperation is essential.",
+        "ja": "この困難な状況にあって協力が不可欠だ。",
+        "kana": "この こんなん な じょうきょう にあって きょうりょく が ふかけつ だ。",
+        "ro": "kono konnan na joukyou ni atte kyouryoku ga fukaketsu da."
+      },
+      {
+        "en": "He showed calm judgment even in crisis.",
+        "ja": "危機にあっても冷静な判断を下した。",
+        "kana": "きき にあっても れいせい な はんだん を くだした。",
+        "ro": "kiki ni atte mo reisei na handan o kudashita."
+      },
+      {
+        "en": "In an era of change, flexibility is needed.",
+        "ja": "変化の時代にあって柔軟性が求められる。",
+        "kana": "へんか の じだい にあって じゅうなんせい が もとめられる。",
+        "ro": "henka no jidai ni atte juunansei ga motomerareru."
+      },
+      {
+        "en": "Even in adversity, he kept his faith.",
+        "ja": "逆境にあっても信念を貫いた。",
+        "kana": "ぎゃっきょう にあっても しんねん を つらぬいた。",
+        "ro": "gyakkyou ni atte mo shinnen o tsuranuita."
+      },
+      {
+        "en": "During the war, people endured severe hardships.",
+        "ja": "戦時にあって人々は厳しい苦労に耐えた。",
+        "kana": "せんじ にあって ひとびと は きびしい くろう に たえた。",
+        "ro": "senji ni atte hitobito wa kibishii kurou ni taeta."
+      }
+    ],
+    "grammar": "Noun + にあって"
+  },
+  {
+    "id": "n1-grammar-056",
+    "ja": "〜にもほどがある",
+    "kana": "〜にもほどがある",
+    "ro": "nimo hodo ga aru",
+    "en": "too much / there’s a limit to (used to criticize excessive behavior or situation)",
+    "examples": [
+      {
+        "en": "You’re too rude! There’s a limit to rudeness.",
+        "ja": "失礼にもほどがある！",
+        "kana": "しつれい にも ほど が ある！",
+        "ro": "shitsurei nimo hodo ga aru!"
+      },
+      {
+        "en": "He’s too lazy; there’s a limit to being idle.",
+        "ja": "彼は怠け者にもほどがある。",
+        "kana": "かれ は なまけもの にも ほど が ある。",
+        "ro": "kare wa namakemono nimo hodo ga aru."
+      },
+      {
+        "en": "That’s too much of a joke.",
+        "ja": "冗談にもほどがあるよ。",
+        "kana": "じょうだん にも ほど が ある よ。",
+        "ro": "joudan nimo hodo ga aru yo."
+      },
+      {
+        "en": "You’re too careless; there’s a limit to carelessness.",
+        "ja": "不注意にもほどがある。",
+        "kana": "ふちゅうい にも ほど が ある。",
+        "ro": "fuchuui nimo hodo ga aru."
+      },
+      {
+        "en": "That’s too selfish!",
+        "ja": "わがままにもほどがある！",
+        "kana": "わがまま にも ほど が ある！",
+        "ro": "wagamama nimo hodo ga aru!"
+      }
+    ],
+    "grammar": "Verb / Adjective / Noun + にもほどがある"
+  },
+  {
+    "id": "n1-grammar-057",
+    "ja": "〜までもない",
+    "kana": "〜までもない",
+    "ro": "made mo nai",
+    "en": "no need to / not necessary to",
+    "examples": [
+      {
+        "en": "There’s no need to explain such a simple thing.",
+        "ja": "そんな簡単なことを説明するまでもない。",
+        "kana": "そんな かんたん な こと を せつめい する までもない。",
+        "ro": "sonna kantan na koto o setsumei suru made mo nai."
+      },
+      {
+        "en": "There’s no need to panic.",
+        "ja": "慌てるまでもない。",
+        "kana": "あわてる までもない。",
+        "ro": "awateru made mo nai."
+      },
+      {
+        "en": "It’s so obvious that it doesn’t need to be said.",
+        "ja": "言うまでもないことだ。",
+        "kana": "いう までもない こと だ。",
+        "ro": "iu made mo nai koto da."
+      },
+      {
+        "en": "There’s no need to worry about it.",
+        "ja": "それを心配するまでもない。",
+        "kana": "それ を しんぱい する までもない。",
+        "ro": "sore o shinpai suru made mo nai."
+      },
+      {
+        "en": "There’s no need to apologize.",
+        "ja": "謝るまでもない。",
+        "kana": "あやまる までもない。",
+        "ro": "ayamaru made mo nai."
+      }
+    ],
+    "grammar": "Verb（dictionary form）+ までもない"
+  },
+  {
+    "id": "n1-grammar-058",
+    "ja": "〜ずじまい",
+    "kana": "〜ずじまい",
+    "ro": "zu jimai",
+    "en": "ended up not doing / never got around to doing",
+    "examples": [
+      {
+        "en": "I wanted to see that movie, but I never got the chance.",
+        "ja": "あの映画を見ずじまいだった。",
+        "kana": "あの えいが を みず じまい だった。",
+        "ro": "ano eiga o mizu jimai datta."
+      },
+      {
+        "en": "I meant to tell her, but I didn’t.",
+        "ja": "彼女に言わずじまいだった。",
+        "kana": "かのじょ に いわず じまい だった。",
+        "ro": "kanojo ni iwazu jimai datta."
+      },
+      {
+        "en": "We planned to travel abroad, but couldn’t go.",
+        "ja": "海外旅行に行かずじまいだった。",
+        "kana": "かいがい りょこう に いかず じまい だった。",
+        "ro": "kaigai ryokou ni ikazu jimai datta."
+      },
+      {
+        "en": "I wanted to apologize, but I never did.",
+        "ja": "謝らずじまいで終わった。",
+        "kana": "あやまらず じまい で おわった。",
+        "ro": "ayamarazu jimai de owatta."
+      },
+      {
+        "en": "He lived his life without fulfilling his dream.",
+        "ja": "彼は夢を果たさずじまいだった。",
+        "kana": "かれ は ゆめ を はたさず じまい だった。",
+        "ro": "kare wa yume o hatasazu jimai datta."
+      }
+    ],
+    "grammar": "Verb（ない-form）+ ずじまい"
+  },
+  {
+    "id": "n1-grammar-059",
+    "ja": "〜ながらに",
+    "kana": "〜ながらに",
+    "ro": "nagara ni",
+    "en": "while being / in the state of (used with verbs like ‘live’, ‘cry’, ‘know’)",
+    "examples": [
+      {
+        "en": "She lives in poverty but with dignity.",
+        "ja": "貧しさながらに気品がある。",
+        "kana": "まずしさ ながら に きひん が ある。",
+        "ro": "mazushisa nagara ni kihinn ga aru."
+      },
+      {
+        "en": "He retained his kindness even as a leader.",
+        "ja": "彼はリーダーでありながらに優しさを失わなかった。",
+        "kana": "かれ は りーだー で あり ながら に やさしさ を うしなわなかった。",
+        "ro": "kare wa riidaa de ari nagara ni yasashisa o ushinawanakatta."
+      },
+      {
+        "en": "She lived her life as an artist.",
+        "ja": "彼女は芸術家ながらに生きた。",
+        "kana": "かのじょ は げいじゅつか ながら に いきた。",
+        "ro": "kanojo wa geijutsuka nagara ni ikita."
+      },
+      {
+        "en": "He wept as he spoke.",
+        "ja": "語りながらに涙を流した。",
+        "kana": "かたり ながら に なみだ を ながした。",
+        "ro": "katari nagara ni namida o nagashita."
+      },
+      {
+        "en": "Even as a child, he understood adults’ feelings.",
+        "ja": "子どもながらに大人の気持ちを理解していた。",
+        "kana": "こども ながら に おとな の きもち を りかい していた。",
+        "ro": "kodomo nagara ni otona no kimochi o rikai shiteita."
+      }
+    ],
+    "grammar": "Noun / Verb（ます-stem）+ ながらに"
+  },
+  {
+    "id": "n1-grammar-060",
+    "ja": "〜にあって",
+    "kana": "〜にあって",
+    "ro": "ni atte",
+    "en": "in the situation of / under (formal, used in written contexts)",
+    "examples": [
+      {
+        "en": "In this difficult situation, cooperation is essential.",
+        "ja": "この困難な状況にあって協力が不可欠だ。",
+        "kana": "この こんなん な じょうきょう にあって きょうりょく が ふかけつ だ。",
+        "ro": "kono konnan na joukyou ni atte kyouryoku ga fukaketsu da."
+      },
+      {
+        "en": "He showed calm judgment even in crisis.",
+        "ja": "危機にあっても冷静な判断を下した。",
+        "kana": "きき にあっても れいせい な はんだん を くだした。",
+        "ro": "kiki ni atte mo reisei na handan o kudashita."
+      },
+      {
+        "en": "In an era of change, flexibility is needed.",
+        "ja": "変化の時代にあって柔軟性が求められる。",
+        "kana": "へんか の じだい にあって じゅうなんせい が もとめられる。",
+        "ro": "henka no jidai ni atte juunansei ga motomerareru."
+      },
+      {
+        "en": "Even in adversity, he kept his faith.",
+        "ja": "逆境にあっても信念を貫いた。",
+        "kana": "ぎゃっきょう にあっても しんねん を つらぬいた。",
+        "ro": "gyakkyou ni atte mo shinnen o tsuranuita."
+      },
+      {
+        "en": "During the war, people endured severe hardships.",
+        "ja": "戦時にあって人々は厳しい苦労に耐えた。",
+        "kana": "せんじ にあって ひとびと は きびしい くろう に たえた。",
+        "ro": "senji ni atte hitobito wa kibishii kurou ni taeta."
+      }
+    ],
+    "grammar": "Noun + にあって"
+  },
+  {
+    "id": "n1-grammar-061",
+    "ja": "〜に至って",
+    "kana": "〜にいたって",
+    "ro": "ni itatte",
+    "en": "after reaching / when it came to (used to indicate a stage or turning point)",
+    "examples": [
+      {
+        "en": "He finally admitted the truth when things became serious.",
+        "ja": "事態が深刻になるに至って彼は事実を認めた。",
+        "kana": "じたい が しんこく に なる に いたって かれ は じじつ を みとめた。",
+        "ro": "jitai ga shinkoku ni naru ni itatte kare wa jijitsu o mitometa."
+      },
+      {
+        "en": "The project was canceled after many problems.",
+        "ja": "多くの問題を経て中止に至った。",
+        "kana": "おおく の もんだい を へて ちゅうし に いたった。",
+        "ro": "ooku no mondai o hete chuushi ni itatta."
+      },
+      {
+        "en": "He became famous after years of hard work.",
+        "ja": "長年の努力の末、成功に至った。",
+        "kana": "ながねん の どりょく の すえ、せいこう に いたった。",
+        "ro": "naganen no doryoku no sue, seikou ni itatta."
+      },
+      {
+        "en": "We finally reached an agreement.",
+        "ja": "ついに合意に至った。",
+        "kana": "ついに ごうい に いたった。",
+        "ro": "tsuini goui ni itatta."
+      },
+      {
+        "en": "After much consideration, I came to this decision.",
+        "ja": "よく考えた末、この結論に至った。",
+        "kana": "よく かんがえた すえ、この けつろん に いたった。",
+        "ro": "yoku kangaeta sue, kono ketsuron ni itatta."
+      }
+    ],
+    "grammar": "Noun + に至って / Verb（dictionary form）+ に至って"
+  },
+  {
+    "id": "n1-grammar-062",
+    "ja": "〜に至るまで",
+    "kana": "〜にいたるまで",
+    "ro": "ni itaru made",
+    "en": "up to / even to (used to emphasize the extent or range of something)",
+    "examples": [
+      {
+        "en": "The infection spread to the whole country.",
+        "ja": "感染は全国に至るまで広がった。",
+        "kana": "かんせん は ぜんこく に いたる まで ひろがった。",
+        "ro": "kansen wa zenkoku ni itaru made hirogatta."
+      },
+      {
+        "en": "The plan covers everything from design to delivery.",
+        "ja": "計画は設計から納品に至るまでを含む。",
+        "kana": "けいかく は せっけい から のうひん に いたる まで を ふくむ。",
+        "ro": "keikaku wa sekkei kara nouhin ni itaru made o fukumu."
+      },
+      {
+        "en": "From children to the elderly, everyone participated.",
+        "ja": "子どもからお年寄りに至るまで参加した。",
+        "kana": "こども から おとしより に いたる まで さんか した。",
+        "ro": "kodomo kara otoshiyori ni itaru made sanka shita."
+      },
+      {
+        "en": "Everything was destroyed, even the smallest villages.",
+        "ja": "小さな村に至るまで、すべて破壊された。",
+        "kana": "ちいさな むら に いたる まで、すべて はかい された。",
+        "ro": "chiisana mura ni itaru made, subete hakai sareta."
+      },
+      {
+        "en": "His fame spread even to foreign countries.",
+        "ja": "彼の名声は海外に至るまで広がった。",
+        "kana": "かれ の めいせい は かいがい に いたる まで ひろがった。",
+        "ro": "kare no meisei wa kaigai ni itaru made hirogatta."
+      }
+    ],
+    "grammar": "Noun + に至るまで"
+  },
+  {
+    "id": "n1-grammar-063",
+    "ja": "〜にかかわる",
+    "kana": "〜にかかわる",
+    "ro": "ni kakawaru",
+    "en": "related to / concerning / affecting (often used for serious matters like life or reputation)",
+    "examples": [
+      {
+        "en": "This is a matter related to life and death.",
+        "ja": "これは命にかかわる問題だ。",
+        "kana": "これは いのち に かかわる もんだい だ。",
+        "ro": "kore wa inochi ni kakawaru mondai da."
+      },
+      {
+        "en": "It’s a matter that affects the company’s reputation.",
+        "ja": "会社の信用にかかわることだ。",
+        "kana": "かいしゃ の しんよう に かかわる こと だ。",
+        "ro": "kaisha no shinyou ni kakawaru koto da."
+      },
+      {
+        "en": "This work is related to national security.",
+        "ja": "この仕事は国家の安全にかかわる。",
+        "kana": "この しごと は こっか の あんぜん に かかわる。",
+        "ro": "kono shigoto wa kokka no anzen ni kakawaru."
+      },
+      {
+        "en": "It’s an issue that affects human rights.",
+        "ja": "人権にかかわる問題だ。",
+        "kana": "じんけん に かかわる もんだい だ。",
+        "ro": "jinken ni kakawaru mondai da."
+      },
+      {
+        "en": "It’s a matter that could affect your future.",
+        "ja": "将来にかかわる大事な選択だ。",
+        "kana": "しょうらい に かかわる だいじ な せんたく だ。",
+        "ro": "shourai ni kakawaru daiji na sentaku da."
+      }
+    ],
+    "grammar": "Noun + にかかわる"
+  },
+  {
+    "id": "n1-grammar-064",
+    "ja": "〜にたる",
+    "kana": "〜にたる",
+    "ro": "ni taru",
+    "en": "worthy of / sufficient to (used in formal writing)",
+    "examples": [
+      {
+        "en": "He is a leader worthy of trust.",
+        "ja": "彼は信頼にたる指導者だ。",
+        "kana": "かれ は しんらい に たる しどうしゃ だ。",
+        "ro": "kare wa shinrai ni taru shidousha da."
+      },
+      {
+        "en": "It’s a topic worth discussing.",
+        "ja": "議論にたる問題だ。",
+        "kana": "ぎろん に たる もんだい だ。",
+        "ro": "giron ni taru mondai da."
+      },
+      {
+        "en": "This book is worth reading.",
+        "ja": "読むにたる本だ。",
+        "kana": "よむ に たる ほん だ。",
+        "ro": "yomu ni taru hon da."
+      },
+      {
+        "en": "It’s an example worth mentioning.",
+        "ja": "言及にたる例だ。",
+        "kana": "げんきゅう に たる れい だ。",
+        "ro": "genkyuu ni taru rei da."
+      },
+      {
+        "en": "She is a person worthy of respect.",
+        "ja": "尊敬にたる人物だ。",
+        "kana": "そんけい に たる じんぶつ だ。",
+        "ro": "sonkei ni taru jinbutsu da."
+      }
+    ],
+    "grammar": "Verb（dictionary form）/ Noun + にたる"
+  },
+  {
+    "id": "n1-grammar-065",
+    "ja": "〜にひとしい",
+    "kana": "〜にひとしい",
+    "ro": "ni hitoshii",
+    "en": "equivalent to / equal to / practically the same as",
+    "examples": [
+      {
+        "en": "His absence is almost the same as giving up.",
+        "ja": "彼の欠席はあきらめに等しい。",
+        "kana": "かれ の けっせき は あきらめ に ひとしい。",
+        "ro": "kare no kesseki wa akirame ni hitoshii."
+      },
+      {
+        "en": "Failing to report this is equivalent to lying.",
+        "ja": "これを報告しないのはうそをつくに等しい。",
+        "kana": "これ を ほうこく しない の は うそ を つく に ひとしい。",
+        "ro": "kore o houkoku shinai no wa uso o tsuku ni hitoshii."
+      },
+      {
+        "en": "It’s almost the same as a declaration of war.",
+        "ja": "それは宣戦布告に等しい。",
+        "kana": "それ は せんせん ふこく に ひとしい。",
+        "ro": "sore wa sensen fukoku ni hitoshii."
+      },
+      {
+        "en": "His action was equal to betrayal.",
+        "ja": "彼の行動は裏切りに等しい。",
+        "kana": "かれ の こうどう は うらぎり に ひとしい。",
+        "ro": "kare no koudou wa uragiri ni hitoshii."
+      },
+      {
+        "en": "That amount of damage is equivalent to a total loss.",
+        "ja": "その損害は全損に等しい。",
+        "kana": "その そんがい は ぜんそん に ひとしい。",
+        "ro": "sono songai wa zenson ni hitoshii."
+      }
+    ],
+    "grammar": "Noun + にひとしい"
+  },
+  {
+    "id": "n1-grammar-066",
+    "ja": "〜にもかかわらず",
+    "kana": "〜にもかかわらず",
+    "ro": "nimo kakawarazu",
+    "en": "despite / in spite of / although",
+    "examples": [
+      {
+        "en": "He went out despite the rain.",
+        "ja": "雨にもかかわらず出かけた。",
+        "kana": "あめ にも かかわらず でかけた。",
+        "ro": "ame nimo kakawarazu dekaketa."
+      },
+      {
+        "en": "She continued working despite her illness.",
+        "ja": "病気にもかかわらず働き続けた。",
+        "kana": "びょうき にも かかわらず はたらき つづけた。",
+        "ro": "byouki nimo kakawarazu hataraki tsuzuketa."
+      },
+      {
+        "en": "Despite being young, he speaks like an adult.",
+        "ja": "若いにもかかわらず、大人のように話す。",
+        "kana": "わかい にも かかわらず、おとな の よう に はなす。",
+        "ro": "wakai nimo kakawarazu, otona no you ni hanasu."
+      },
+      {
+        "en": "Despite his efforts, the plan failed.",
+        "ja": "彼の努力にもかかわらず、計画は失敗した。",
+        "kana": "かれ の どりょく にも かかわらず、けいかく は しっぱい した。",
+        "ro": "kare no doryoku nimo kakawarazu, keikaku wa shippai shita."
+      },
+      {
+        "en": "The event was held despite the storm.",
+        "ja": "嵐にもかかわらずイベントは行われた。",
+        "kana": "あらし にも かかわらず いべんと は おこなわれた。",
+        "ro": "arashi nimo kakawarazu ibento wa okonawareta."
+      }
+    ],
+    "grammar": "Noun / Verb（plain form）/ Adjective + にもかかわらず"
+  },
+  {
+    "id": "n1-grammar-067",
+    "ja": "〜ぬく",
+    "kana": "〜ぬく",
+    "ro": "nuku",
+    "en": "to do something through to the end / to persist / to overcome",
+    "examples": [
+      {
+        "en": "She endured hardships and achieved success.",
+        "ja": "彼女は苦労を乗り越え、やりぬいた。",
+        "kana": "かのじょ は くろう を のりこえ、やりぬいた。",
+        "ro": "kanojo wa kurou o norikoe, yarinuita."
+      },
+      {
+        "en": "He survived the harsh winter.",
+        "ja": "彼は厳しい冬を生きぬいた。",
+        "kana": "かれ は きびしい ふゆ を いきぬいた。",
+        "ro": "kare wa kibishii fuyu o ikinuita."
+      },
+      {
+        "en": "They fought bravely until the end.",
+        "ja": "彼らは最後まで戦いぬいた。",
+        "kana": "かれら は さいご まで たたかいぬいた。",
+        "ro": "karera wa saigo made tatakainuita."
+      },
+      {
+        "en": "I studied hard and passed the exam.",
+        "ja": "一生懸命勉強して合格しぬいた。",
+        "kana": "いっしょうけんめい べんきょう して ごうかく しぬいた。",
+        "ro": "isshoukenmei benkyou shite goukaku shinuita."
+      },
+      {
+        "en": "He kept believing in his dream and achieved it.",
+        "ja": "彼は夢を信じぬいて実現させた。",
+        "kana": "かれ は ゆめ を しんじぬいて じつげん させた。",
+        "ro": "kare wa yume o shinjinuite jitsugen saseta."
+      }
+    ],
+    "grammar": "Verb（ます-stem）+ ぬく"
+  },
+  {
+    "id": "n1-grammar-068",
+    "ja": "〜の至り",
+    "kana": "〜のいたり",
+    "ro": "no itari",
+    "en": "the height of / the peak of (used in formal expressions of emotion)",
+    "examples": [
+      {
+        "en": "It was the height of joy to meet you.",
+        "ja": "お会いできて光栄の至りです。",
+        "kana": "おあい できて こうえい の いたり です。",
+        "ro": "oai dekite kouei no itari desu."
+      },
+      {
+        "en": "It’s the height of happiness to receive this award.",
+        "ja": "この賞をいただき、感激の至りです。",
+        "kana": "この しょう を いただき、かんげき の いたり です。",
+        "ro": "kono shou o itadaki, kangeki no itari desu."
+      },
+      {
+        "en": "It was the peak of shame for me.",
+        "ja": "私にとって恥の至りでした。",
+        "kana": "わたし に とって はじ の いたり でした。",
+        "ro": "watashi ni totte haji no itari deshita."
+      },
+      {
+        "en": "It’s the height of youth’s innocence.",
+        "ja": "若気の至りで失敗しました。",
+        "kana": "わかげ の いたり で しっぱい しました。",
+        "ro": "wakage no itari de shippai shimashita."
+      },
+      {
+        "en": "It’s the height of delight to see your success.",
+        "ja": "あなたの成功を見て喜びの至りです。",
+        "kana": "あなた の せいこう を みて よろこび の いたり です。",
+        "ro": "anata no seikou o mite yorokobi no itari desu."
+      }
+    ],
+    "grammar": "Noun + の至り"
+  },
+  {
+    "id": "n1-grammar-069",
+    "ja": "〜をおして",
+    "kana": "〜をおして",
+    "ro": "o oshite",
+    "en": "despite / in spite of (used when doing something despite difficulty or risk)",
+    "examples": [
+      {
+        "en": "He went to work despite his illness.",
+        "ja": "病気をおして出勤した。",
+        "kana": "びょうき を おして しゅっきん した。",
+        "ro": "byouki o oshite shukkin shita."
+      },
+      {
+        "en": "She attended the event despite the heavy rain.",
+        "ja": "大雨をおして式に出た。",
+        "kana": "おおあめ を おして しき に でた。",
+        "ro": "ooame o oshite shiki ni deta."
+      },
+      {
+        "en": "He continued the speech despite exhaustion.",
+        "ja": "疲労をおして演説を続けた。",
+        "kana": "ひろう を おして えんぜつ を つづけた。",
+        "ro": "hirou o oshite enzetsu o tsuzuketa."
+      },
+      {
+        "en": "They proceeded with the plan despite opposition.",
+        "ja": "反対をおして計画を進めた。",
+        "kana": "はんたい を おして けいかく を すすめた。",
+        "ro": "hantai o oshite keikaku o susumeta."
+      },
+      {
+        "en": "He climbed the mountain despite the storm.",
+        "ja": "嵐をおして山に登った。",
+        "kana": "あらし を おして やま に のぼった。",
+        "ro": "arashi o oshite yama ni nobotta."
+      }
+    ],
+    "grammar": "Noun + をおして"
+  },
+  {
+    "id": "n1-grammar-070",
+    "ja": "〜をもって",
+    "kana": "〜をもって",
+    "ro": "o motte",
+    "en": "with / by means of / as of (used in formal written Japanese)",
+    "examples": [
+      {
+        "en": "We will end the meeting as of today.",
+        "ja": "本日をもって会議を終了します。",
+        "kana": "ほんじつ を もって かいぎ を しゅうりょう します。",
+        "ro": "honjitsu o motte kaigi o shuuryou shimasu."
+      },
+      {
+        "en": "He expressed his gratitude with words.",
+        "ja": "彼は言葉をもって感謝を表した。",
+        "kana": "かれ は ことば を もって かんしゃ を あらわした。",
+        "ro": "kare wa kotoba o motte kansha o arawashita."
+      },
+      {
+        "en": "We hereby declare the contest closed.",
+        "ja": "これをもって大会を閉会とする。",
+        "kana": "これ を もって たいかい を へいかい と する。",
+        "ro": "kore o motte taikai o heikai to suru."
+      },
+      {
+        "en": "He solved the problem by wisdom and courage.",
+        "ja": "知恵と勇気をもって問題を解決した。",
+        "kana": "ちえ と ゆうき を もって もんだい を かいけつ した。",
+        "ro": "chie to yuuki o motte mondai o kaiketsu shita."
+      },
+      {
+        "en": "This will be my last job with this company.",
+        "ja": "今回の仕事をもって退職いたします。",
+        "kana": "こんかい の しごと を もって たいしょく いたします。",
+        "ro": "konkai no shigoto o motte taishoku itashimasu."
+      }
+    ],
+    "grammar": "Noun + をもって"
+  },
+  {
+    "id": "n1-grammar-071",
+    "ja": "〜を皮切りに",
+    "kana": "〜をかわきりに",
+    "ro": "o kawakiri ni",
+    "en": "starting with / beginning with (used to describe the first in a series of events)",
+    "examples": [
+      {
+        "en": "The tour began in Tokyo and continued across Japan.",
+        "ja": "東京を皮切りに、日本全国を巡るツアーが始まった。",
+        "kana": "とうきょう を かわきり に、にほん ぜんこく を めぐる つあー が はじまった。",
+        "ro": "toukyou o kawakiri ni, nihon zenkoku o meguru tsuaa ga hajimatta."
+      },
+      {
+        "en": "He published a series of essays starting with this book.",
+        "ja": "この書籍を皮切りに、彼は一連の論文を発表した。",
+        "kana": "この しょせき を かわきり に、かれ は いちれん の ろんぶん を はっぴょう した。",
+        "ro": "kono shoseki o kawakiri ni, kare wa ichiren no ronbun o happyou shita."
+      },
+      {
+        "en": "The company launched its global expansion starting from Asia.",
+        "ja": "アジア市場を皮切りに、世界展開を進めている。",
+        "kana": "あじあ しじょう を かわきり に、せかい てんかい を すすめている。",
+        "ro": "ajia shijou o kawakiri ni, sekai tenkai o susumete iru."
+      },
+      {
+        "en": "The new project started with the construction of the main building.",
+        "ja": "本館の建設を皮切りに、新プロジェクトが始動した。",
+        "kana": "ほんかん の けんせつ を かわきり に、しん ぷろじぇくと が しどう した。",
+        "ro": "honkan no kensetsu o kawakiri ni, shin purojekuto ga shidou shita."
+      },
+      {
+        "en": "The speech competition began with the students' presentations.",
+        "ja": "学生の発表を皮切りに、スピーチ大会が開幕した。",
+        "kana": "がくせい の はっぴょう を かわきり に、すぴーち たいかい が かいまく した。",
+        "ro": "gakusei no happyou o kawakiri ni, supiichi taikai ga kaimaku shita."
+      }
+    ],
+    "grammar": "Noun + を皮切りに（して）"
+  },
+  {
+    "id": "n1-grammar-072",
+    "ja": "〜を踏まえて",
+    "kana": "〜をふまえて",
+    "ro": "o fumaete",
+    "en": "based on / taking into account",
+    "examples": [
+      {
+        "en": "We made a decision based on the results of the survey.",
+        "ja": "調査結果を踏まえて、方針を決定した。",
+        "kana": "ちょうさ けっか を ふまえて、ほうしん を けってい した。",
+        "ro": "chousa kekka o fumaete, houshin o kettei shita."
+      },
+      {
+        "en": "The policy was revised based on the new data.",
+        "ja": "新しいデータを踏まえて、政策が改定された。",
+        "kana": "あたらしい でーた を ふまえて、せいさく が かいてい された。",
+        "ro": "atarashii deeta o fumaete, seisaku ga kaitei sareta."
+      },
+      {
+        "en": "Please give your opinion taking the current situation into account.",
+        "ja": "現状を踏まえて、ご意見をお聞かせください。",
+        "kana": "げんじょう を ふまえて、ごいけん を おきかせ ください。",
+        "ro": "genjou o fumaete, goiken o okikase kudasai."
+      },
+      {
+        "en": "The discussion proceeded based on the teacher’s comments.",
+        "ja": "先生の指摘を踏まえて議論が進められた。",
+        "kana": "せんせい の してき を ふまえて ぎろん が すすめられた。",
+        "ro": "sensei no shiteki o fumaete giron ga susumerareta."
+      },
+      {
+        "en": "He made a plan based on his past experience.",
+        "ja": "過去の経験を踏まえて、今後の計画を立てた。",
+        "kana": "かこ の けいけん を ふまえて、こんご の けいかく を たてた。",
+        "ro": "kako no keiken o fumaete, kongo no keikaku o tateta."
+      }
+    ],
+    "grammar": "Noun + を踏まえて"
+  },
+  {
+    "id": "n1-grammar-073",
+    "ja": "〜をめぐって",
+    "kana": "〜をめぐって",
+    "ro": "o megutte",
+    "en": "concerning / regarding / over (used for disputes, discussions, etc.)",
+    "examples": [
+      {
+        "en": "A fierce debate arose over the new policy.",
+        "ja": "新政策をめぐって激しい議論が起こった。",
+        "kana": "しんせいさく を めぐって はげしい ぎろん が おこった。",
+        "ro": "shinseisaku o megutte hageshii giron ga okotta."
+      },
+      {
+        "en": "The two countries are in conflict over the border issue.",
+        "ja": "国境問題をめぐって、両国の対立が続いている。",
+        "kana": "こっきょう もんだい を めぐって、りょうこく の たいりつ が つづいている。",
+        "ro": "kokkyou mondai o megutte, ryoukoku no tairitsu ga tsuzuite iru."
+      },
+      {
+        "en": "There was a dispute among the members regarding the budget.",
+        "ja": "予算をめぐって、委員の間で対立が生じた。",
+        "kana": "よさん を めぐって、いいん の あいだ で たいりつ が しょうじた。",
+        "ro": "yosan o megutte, iin no aida de tairitsu ga shoujita."
+      },
+      {
+        "en": "Discussions arose over the interpretation of the law.",
+        "ja": "法律の解釈をめぐって議論が交わされた。",
+        "kana": "ほうりつ の かいしゃく を めぐって ぎろん が かわされた。",
+        "ro": "houritsu no kaishaku o megutte giron ga kawasareta."
+      },
+      {
+        "en": "Conflicts continue over the company's management rights.",
+        "ja": "経営権をめぐって争いが続いている。",
+        "kana": "けいえいけん を めぐって あらそい が つづいている。",
+        "ro": "keieiken o megutte arasoi ga tsuzuite iru."
+      }
+    ],
+    "grammar": "Noun + をめぐって"
+  },
+  {
+    "id": "n1-grammar-074",
+    "ja": "〜を余儀なくされる",
+    "kana": "〜をよぎなくされる",
+    "ro": "o yogi naku sareru",
+    "en": "to be forced to / to be compelled to (used in formal writing)",
+    "examples": [
+      {
+        "en": "Due to the typhoon, the event was forced to be canceled.",
+        "ja": "台風の影響で、イベントの中止を余儀なくされた。",
+        "kana": "たいふう の えいきょう で、いべんと の ちゅうし を よぎなく された。",
+        "ro": "taifuu no eikyou de, ibento no chuushi o yogi naku sareta."
+      },
+      {
+        "en": "He was forced to resign due to the scandal.",
+        "ja": "不祥事により辞任を余儀なくされた。",
+        "kana": "ふしょうじ に より じにん を よぎなく された。",
+        "ro": "fushouji ni yori jinin o yogi naku sareta."
+      },
+      {
+        "en": "They were forced to evacuate because of the earthquake.",
+        "ja": "地震のため避難を余儀なくされた。",
+        "kana": "じしん の ため ひなん を よぎなく された。",
+        "ro": "jishin no tame hinan o yogi naku sareta."
+      },
+      {
+        "en": "The company was forced to restructure due to losses.",
+        "ja": "損失により会社は再編成を余儀なくされた。",
+        "kana": "そんしつ に より かいしゃ は さいへんせい を よぎなく された。",
+        "ro": "sonshitsu ni yori kaisha wa saihensei o yogi naku sareta."
+      },
+      {
+        "en": "The leader was forced to make a difficult decision.",
+        "ja": "指導者は困難な決断を余儀なくされた。",
+        "kana": "しどうしゃ は こんなん な けつだん を よぎなく された。",
+        "ro": "shidousha wa konnan na ketsudan o yogi naku sareta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくされる"
+  },
+  {
+    "id": "n1-grammar-075",
+    "ja": "〜を前提として",
+    "kana": "〜をぜんていとして",
+    "ro": "o zentei to shite",
+    "en": "on the assumption that / premised on",
+    "examples": [
+      {
+        "en": "The discussion proceeded on the assumption of equality.",
+        "ja": "平等を前提として議論が行われた。",
+        "kana": "びょうどう を ぜんてい として ぎろん が おこなわれた。",
+        "ro": "byoudou o zentei to shite giron ga okonawareta."
+      },
+      {
+        "en": "This system operates on the assumption of trust.",
+        "ja": "この制度は信頼を前提として成り立っている。",
+        "kana": "この せいど は しんらい を ぜんてい として なりたっている。",
+        "ro": "kono seido wa shinrai o zentei to shite naritatte iru."
+      },
+      {
+        "en": "The agreement was made on the premise that both parties cooperate.",
+        "ja": "双方の協力を前提として契約が締結された。",
+        "kana": "そうほう の きょうりょく を ぜんてい として けいやく が ていけつ された。",
+        "ro": "souhou no kyouryoku o zentei to shite keiyaku ga teiketsu sareta."
+      },
+      {
+        "en": "The proposal assumes the continuation of current conditions.",
+        "ja": "提案は現状維持を前提としている。",
+        "kana": "ていあん は げんじょう いじ を ぜんてい としている。",
+        "ro": "teian wa genjou iji o zentei to shite iru."
+      },
+      {
+        "en": "This plan is designed on the assumption of safety.",
+        "ja": "この計画は安全を前提として設計されている。",
+        "kana": "この けいかく は あんぜん を ぜんてい として せっけい されている。",
+        "ro": "kono keikaku wa anzen o zentei to shite sekkei sarete iru."
+      }
+    ],
+    "grammar": "Noun + を前提として"
+  },
+  {
+    "id": "n1-grammar-076",
+    "ja": "〜をもってすれば",
+    "kana": "〜をもってすれば",
+    "ro": "o motte sureba",
+    "en": "with / by means of (used to emphasize ability or means, often implying admiration)",
+    "examples": [
+      {
+        "en": "With his talent, even the most difficult problems can be solved.",
+        "ja": "彼の才能をもってすれば、どんな難題でも解決できる。",
+        "kana": "かれ の さいのう を もって すれば、どんな なんだい でも かいけつ できる。",
+        "ro": "kare no sainou o motte sureba, donna nandai demo kaiketsu dekiru."
+      },
+      {
+        "en": "With your experience, this task is nothing.",
+        "ja": "あなたの経験をもってすれば、この仕事は容易い。",
+        "kana": "あなた の けいけん を もって すれば、この しごと は たやすい。",
+        "ro": "anata no keiken o motte sureba, kono shigoto wa tayasui."
+      },
+      {
+        "en": "With scientific knowledge, the cause can be clarified.",
+        "ja": "科学的知識をもってすれば、原因を明らかにできる。",
+        "kana": "かがくてき ちしき を もって すれば、げんいん を あきらか に できる。",
+        "ro": "kagakuteki chishiki o motte sureba, gen'in o akiraka ni dekiru."
+      },
+      {
+        "en": "With his determination, he can overcome any obstacle.",
+        "ja": "彼の決意をもってすれば、どんな障害も乗り越えられる。",
+        "kana": "かれ の けつい を もって すれば、どんな しょうがい も のりこえられる。",
+        "ro": "kare no ketsui o motte sureba, donna shougai mo norikoerareru."
+      },
+      {
+        "en": "With advanced technology, such a dream could be realized.",
+        "ja": "高度な技術をもってすれば、その夢も実現可能だ。",
+        "kana": "こうど な ぎじゅつ を もって すれば、その ゆめ も じつげん かのう だ。",
+        "ro": "koudo na gijutsu o motte sureba, sono yume mo jitsugen kanou da."
+      }
+    ],
+    "grammar": "Noun + をもってすれば"
+  },
+  {
+    "id": "n1-grammar-077",
+    "ja": "〜を余所に",
+    "kana": "〜をよそに",
+    "ro": "o yoso ni",
+    "en": "ignoring / disregarding (used when someone acts ignoring others’ situation or feelings)",
+    "examples": [
+      {
+        "en": "He continued sleeping, ignoring his mother’s scolding.",
+        "ja": "母の叱責を余所に、彼は眠り続けた。",
+        "kana": "はは の しっせき を よそ に、かれ は ねむり つづけた。",
+        "ro": "haha no shisseki o yoso ni, kare wa nemuri tsuzuketa."
+      },
+      {
+        "en": "He enjoyed himself, ignoring the team's failure.",
+        "ja": "チームの敗北を余所に、彼は楽しそうに笑っていた。",
+        "kana": "ちーむ の はいぼく を よそ に、かれ は たのしそう に わらっていた。",
+        "ro": "chiimu no haiboku o yoso ni, kare wa tanoshisou ni waratte ita."
+      },
+      {
+        "en": "He kept studying hard, ignoring the noise around him.",
+        "ja": "周囲の騒音を余所に、彼は勉学に励んでいた。",
+        "kana": "しゅうい の そうおん を よそ に、かれ は べんがく に はげんでいた。",
+        "ro": "shuui no souon o yoso ni, kare wa bengaku ni hagende ita."
+      },
+      {
+        "en": "She pursued her dream, disregarding her parents’ opposition.",
+        "ja": "両親の反対を余所に、彼女は夢を追い続けた。",
+        "kana": "りょうしん の はんたい を よそ に、かのじょ は ゆめ を おいつづけた。",
+        "ro": "ryoushin no hantai o yoso ni, kanojo wa yume o oitsuzuketa."
+      },
+      {
+        "en": "He made his speech, ignoring the audience’s disinterest.",
+        "ja": "聴衆の無関心を余所に、彼は熱弁を振るった。",
+        "kana": "ちょうしゅう の むかんしん を よそ に、かれ は ねつべん を ふるった。",
+        "ro": "choushuu no mukanshin o yoso ni, kare wa netsuben o furutta."
+      }
+    ],
+    "grammar": "Noun + を余所に"
+  },
+  {
+    "id": "n1-grammar-078",
+    "ja": "〜を控えて",
+    "kana": "〜をひかえて",
+    "ro": "o hikaete",
+    "en": "with ... approaching / before ... (used when something is about to happen soon)",
+    "examples": [
+      {
+        "en": "With the exam approaching, students are studying hard.",
+        "ja": "試験を控えて、学生たちは熱心に勉強している。",
+        "kana": "しけん を ひかえて、がくせいたち は ねっしん に べんきょう している。",
+        "ro": "shiken o hikaete, gakuseitachi wa nesshin ni benkyou shite iru."
+      },
+      {
+        "en": "With the event approaching, preparations are in the final stage.",
+        "ja": "イベントを控えて、準備は最終段階に入った。",
+        "kana": "いべんと を ひかえて、じゅんび は さいしゅう だんかい に はいった。",
+        "ro": "ibento o hikaete, junbi wa saishuu dankai ni haitta."
+      },
+      {
+        "en": "With his departure approaching, everyone felt sad.",
+        "ja": "彼の出発を控えて、皆が寂しそうだった。",
+        "kana": "かれ の しゅっぱつ を ひかえて、みな が さびしそう だった。",
+        "ro": "kare no shuppatsu o hikaete, mina ga sabishisou datta."
+      },
+      {
+        "en": "With the meeting ahead, he reviewed his notes again.",
+        "ja": "会議を控えて、彼は再度資料を確認した。",
+        "kana": "かいぎ を ひかえて、かれ は さいど しりょう を かくにん した。",
+        "ro": "kaigi o hikaete, kare wa saido shiryou o kakunin shita."
+      },
+      {
+        "en": "With the deadline approaching, tension is increasing in the office.",
+        "ja": "締め切りを控えて、社内の緊張感が高まっている。",
+        "kana": "しめきり を ひかえて、しゃない の きんちょうかん が たかまっている。",
+        "ro": "shimekiri o hikaete, shanai no kinchoukan ga takamatte iru."
+      }
+    ],
+    "grammar": "Noun + を控えて"
+  },
+  {
+    "id": "n1-grammar-079",
+    "ja": "〜を経て",
+    "kana": "〜をへて",
+    "ro": "o hete",
+    "en": "through / after (indicating a process or passage of time or experience)",
+    "examples": [
+      {
+        "en": "After years of research, the new medicine was developed.",
+        "ja": "長年の研究を経て、新薬が開発された。",
+        "kana": "ながねん の けんきゅう を へて、しんやく が かいはつ された。",
+        "ro": "naganen no kenkyuu o hete, shinyaku ga kaihatsu sareta."
+      },
+      {
+        "en": "He was promoted after years of effort.",
+        "ja": "長い努力を経て、彼は昇進した。",
+        "kana": "ながい どりょく を へて、かれ は しょうしん した。",
+        "ro": "nagai doryoku o hete, kare wa shoushin shita."
+      },
+      {
+        "en": "The country was rebuilt after many hardships.",
+        "ja": "多くの困難を経て、国は再建された。",
+        "kana": "おおく の こんなん を へて、くに は さいけん された。",
+        "ro": "ooku no konnan o hete, kuni wa saiken sareta."
+      },
+      {
+        "en": "She gained confidence through experience.",
+        "ja": "経験を経て、自信を身につけた。",
+        "kana": "けいけん を へて、じしん を み に つけた。",
+        "ro": "keiken o hete, jishin o mi ni tsuketa."
+      },
+      {
+        "en": "He became a professional after a long apprenticeship.",
+        "ja": "長い修業を経て、彼は職人となった。",
+        "kana": "ながい しゅぎょう を へて、かれ は しょくにん と なった。",
+        "ro": "nagai shugyou o hete, kare wa shokunin to natta."
+      }
+    ],
+    "grammar": "Noun + を経て"
+  },
+  {
+    "id": "n1-grammar-080",
+    "ja": "〜を境に",
+    "kana": "〜をさかいに",
+    "ro": "o sakai ni",
+    "en": "marking a turning point / since / from (used to indicate a boundary or change)",
+    "examples": [
+      {
+        "en": "After the accident, his attitude completely changed.",
+        "ja": "事故を境に、彼の態度は一変した。",
+        "kana": "じこ を さかい に、かれ の たいど は いっぺん した。",
+        "ro": "jiko o sakai ni, kare no taido wa ippen shita."
+      },
+      {
+        "en": "The era changed completely after the war.",
+        "ja": "戦争を境に、時代は大きく変わった。",
+        "kana": "せんそう を さかい に、じだい は おおきく かわった。",
+        "ro": "sensou o sakai ni, jidai wa ookiku kawatta."
+      },
+      {
+        "en": "After that incident, our relationship deteriorated.",
+        "ja": "あの事件を境に、私たちの関係は悪化した。",
+        "kana": "あの じけん を さかい に、わたしたち の かんけい は あっか した。",
+        "ro": "ano jiken o sakai ni, watashitachi no kankei wa akka shita."
+      },
+      {
+        "en": "After his father’s death, he became more mature.",
+        "ja": "父の死を境に、彼は急に大人びた。",
+        "kana": "ちち の し を さかい に、かれ は きゅう に おとなびた。",
+        "ro": "chichi no shi o sakai ni, kare wa kyuu ni otonabita."
+      },
+      {
+        "en": "After entering university, her life took a new direction.",
+        "ja": "大学入学を境に、彼女の人生は新しい方向へ進んだ。",
+        "kana": "だいがく にゅうがく を さかい に、かのじょ の じんせい は あたらしい ほうこう へ すすんだ。",
+        "ro": "daigaku nyuugaku o sakai ni, kanojo no jinsei wa atarashii houkou e susunda."
+      }
+    ],
+    "grammar": "Noun + を境に（して）"
+  },
+  {
+    "id": "n1-grammar-076",
+    "ja": "〜をもってすれば",
+    "kana": "〜をもってすれば",
+    "ro": "o motte sureba",
+    "en": "with / by means of (used to emphasize ability or means, often implying admiration)",
+    "examples": [
+      {
+        "en": "With his talent, even the most difficult problems can be solved.",
+        "ja": "彼の才能をもってすれば、どんな難題でも解決できる。",
+        "kana": "かれ の さいのう を もって すれば、どんな なんだい でも かいけつ できる。",
+        "ro": "kare no sainou o motte sureba, donna nandai demo kaiketsu dekiru."
+      },
+      {
+        "en": "With your experience, this task is nothing.",
+        "ja": "あなたの経験をもってすれば、この仕事は容易い。",
+        "kana": "あなた の けいけん を もって すれば、この しごと は たやすい。",
+        "ro": "anata no keiken o motte sureba, kono shigoto wa tayasui."
+      },
+      {
+        "en": "With scientific knowledge, the cause can be clarified.",
+        "ja": "科学的知識をもってすれば、原因を明らかにできる。",
+        "kana": "かがくてき ちしき を もって すれば、げんいん を あきらか に できる。",
+        "ro": "kagakuteki chishiki o motte sureba, gen'in o akiraka ni dekiru."
+      },
+      {
+        "en": "With his determination, he can overcome any obstacle.",
+        "ja": "彼の決意をもってすれば、どんな障害も乗り越えられる。",
+        "kana": "かれ の けつい を もって すれば、どんな しょうがい も のりこえられる。",
+        "ro": "kare no ketsui o motte sureba, donna shougai mo norikoerareru."
+      },
+      {
+        "en": "With advanced technology, such a dream could be realized.",
+        "ja": "高度な技術をもってすれば、その夢も実現可能だ。",
+        "kana": "こうど な ぎじゅつ を もって すれば、その ゆめ も じつげん かのう だ。",
+        "ro": "koudo na gijutsu o motte sureba, sono yume mo jitsugen kanou da."
+      }
+    ],
+    "grammar": "Noun + をもってすれば"
+  },
+  {
+    "id": "n1-grammar-077",
+    "ja": "〜を余所に",
+    "kana": "〜をよそに",
+    "ro": "o yoso ni",
+    "en": "ignoring / disregarding (used when someone acts ignoring others’ situation or feelings)",
+    "examples": [
+      {
+        "en": "He continued sleeping, ignoring his mother’s scolding.",
+        "ja": "母の叱責を余所に、彼は眠り続けた。",
+        "kana": "はは の しっせき を よそ に、かれ は ねむり つづけた。",
+        "ro": "haha no shisseki o yoso ni, kare wa nemuri tsuzuketa."
+      },
+      {
+        "en": "He enjoyed himself, ignoring the team's failure.",
+        "ja": "チームの敗北を余所に、彼は楽しそうに笑っていた。",
+        "kana": "ちーむ の はいぼく を よそ に、かれ は たのしそう に わらっていた。",
+        "ro": "chiimu no haiboku o yoso ni, kare wa tanoshisou ni waratte ita."
+      },
+      {
+        "en": "He kept studying hard, ignoring the noise around him.",
+        "ja": "周囲の騒音を余所に、彼は勉学に励んでいた。",
+        "kana": "しゅうい の そうおん を よそ に、かれ は べんがく に はげんでいた。",
+        "ro": "shuui no souon o yoso ni, kare wa bengaku ni hagende ita."
+      },
+      {
+        "en": "She pursued her dream, disregarding her parents’ opposition.",
+        "ja": "両親の反対を余所に、彼女は夢を追い続けた。",
+        "kana": "りょうしん の はんたい を よそ に、かのじょ は ゆめ を おいつづけた。",
+        "ro": "ryoushin no hantai o yoso ni, kanojo wa yume o oitsuzuketa."
+      },
+      {
+        "en": "He made his speech, ignoring the audience’s disinterest.",
+        "ja": "聴衆の無関心を余所に、彼は熱弁を振るった。",
+        "kana": "ちょうしゅう の むかんしん を よそ に、かれ は ねつべん を ふるった。",
+        "ro": "choushuu no mukanshin o yoso ni, kare wa netsuben o furutta."
+      }
+    ],
+    "grammar": "Noun + を余所に"
+  },
+  {
+    "id": "n1-grammar-078",
+    "ja": "〜を控えて",
+    "kana": "〜をひかえて",
+    "ro": "o hikaete",
+    "en": "with ... approaching / before ... (used when something is about to happen soon)",
+    "examples": [
+      {
+        "en": "With the exam approaching, students are studying hard.",
+        "ja": "試験を控えて、学生たちは熱心に勉強している。",
+        "kana": "しけん を ひかえて、がくせいたち は ねっしん に べんきょう している。",
+        "ro": "shiken o hikaete, gakuseitachi wa nesshin ni benkyou shite iru."
+      },
+      {
+        "en": "With the event approaching, preparations are in the final stage.",
+        "ja": "イベントを控えて、準備は最終段階に入った。",
+        "kana": "いべんと を ひかえて、じゅんび は さいしゅう だんかい に はいった。",
+        "ro": "ibento o hikaete, junbi wa saishuu dankai ni haitta."
+      },
+      {
+        "en": "With his departure approaching, everyone felt sad.",
+        "ja": "彼の出発を控えて、皆が寂しそうだった。",
+        "kana": "かれ の しゅっぱつ を ひかえて、みな が さびしそう だった。",
+        "ro": "kare no shuppatsu o hikaete, mina ga sabishisou datta."
+      },
+      {
+        "en": "With the meeting ahead, he reviewed his notes again.",
+        "ja": "会議を控えて、彼は再度資料を確認した。",
+        "kana": "かいぎ を ひかえて、かれ は さいど しりょう を かくにん した。",
+        "ro": "kaigi o hikaete, kare wa saido shiryou o kakunin shita."
+      },
+      {
+        "en": "With the deadline approaching, tension is increasing in the office.",
+        "ja": "締め切りを控えて、社内の緊張感が高まっている。",
+        "kana": "しめきり を ひかえて、しゃない の きんちょうかん が たかまっている。",
+        "ro": "shimekiri o hikaete, shanai no kinchoukan ga takamatte iru."
+      }
+    ],
+    "grammar": "Noun + を控えて"
+  },
+  {
+    "id": "n1-grammar-079",
+    "ja": "〜を経て",
+    "kana": "〜をへて",
+    "ro": "o hete",
+    "en": "through / after (indicating a process or passage of time or experience)",
+    "examples": [
+      {
+        "en": "After years of research, the new medicine was developed.",
+        "ja": "長年の研究を経て、新薬が開発された。",
+        "kana": "ながねん の けんきゅう を へて、しんやく が かいはつ された。",
+        "ro": "naganen no kenkyuu o hete, shinyaku ga kaihatsu sareta."
+      },
+      {
+        "en": "He was promoted after years of effort.",
+        "ja": "長い努力を経て、彼は昇進した。",
+        "kana": "ながい どりょく を へて、かれ は しょうしん した。",
+        "ro": "nagai doryoku o hete, kare wa shoushin shita."
+      },
+      {
+        "en": "The country was rebuilt after many hardships.",
+        "ja": "多くの困難を経て、国は再建された。",
+        "kana": "おおく の こんなん を へて、くに は さいけん された。",
+        "ro": "ooku no konnan o hete, kuni wa saiken sareta."
+      },
+      {
+        "en": "She gained confidence through experience.",
+        "ja": "経験を経て、自信を身につけた。",
+        "kana": "けいけん を へて、じしん を み に つけた。",
+        "ro": "keiken o hete, jishin o mi ni tsuketa."
+      },
+      {
+        "en": "He became a professional after a long apprenticeship.",
+        "ja": "長い修業を経て、彼は職人となった。",
+        "kana": "ながい しゅぎょう を へて、かれ は しょくにん と なった。",
+        "ro": "nagai shugyou o hete, kare wa shokunin to natta."
+      }
+    ],
+    "grammar": "Noun + を経て"
+  },
+  {
+    "id": "n1-grammar-080",
+    "ja": "〜を境に",
+    "kana": "〜をさかいに",
+    "ro": "o sakai ni",
+    "en": "marking a turning point / since / from (used to indicate a boundary or change)",
+    "examples": [
+      {
+        "en": "After the accident, his attitude completely changed.",
+        "ja": "事故を境に、彼の態度は一変した。",
+        "kana": "じこ を さかい に、かれ の たいど は いっぺん した。",
+        "ro": "jiko o sakai ni, kare no taido wa ippen shita."
+      },
+      {
+        "en": "The era changed completely after the war.",
+        "ja": "戦争を境に、時代は大きく変わった。",
+        "kana": "せんそう を さかい に、じだい は おおきく かわった。",
+        "ro": "sensou o sakai ni, jidai wa ookiku kawatta."
+      },
+      {
+        "en": "After that incident, our relationship deteriorated.",
+        "ja": "あの事件を境に、私たちの関係は悪化した。",
+        "kana": "あの じけん を さかい に、わたしたち の かんけい は あっか した。",
+        "ro": "ano jiken o sakai ni, watashitachi no kankei wa akka shita."
+      },
+      {
+        "en": "After his father’s death, he became more mature.",
+        "ja": "父の死を境に、彼は急に大人びた。",
+        "kana": "ちち の し を さかい に、かれ は きゅう に おとなびた。",
+        "ro": "chichi no shi o sakai ni, kare wa kyuu ni otonabita."
+      },
+      {
+        "en": "After entering university, her life took a new direction.",
+        "ja": "大学入学を境に、彼女の人生は新しい方向へ進んだ。",
+        "kana": "だいがく にゅうがく を さかい に、かのじょ の じんせい は あたらしい ほうこう へ すすんだ。",
+        "ro": "daigaku nyuugaku o sakai ni, kanojo no jinsei wa atarashii houkou e susunda."
+      }
+    ],
+    "grammar": "Noun + を境に（して）"
+  },
+  {
+    "id": "n1-grammar-081",
+    "ja": "〜を機に",
+    "kana": "〜をきに",
+    "ro": "o ki ni",
+    "en": "taking this opportunity / on the occasion of (used when something triggers change or action)",
+    "examples": [
+      {
+        "en": "He decided to quit smoking on the occasion of his child’s birth.",
+        "ja": "子どもの誕生を機に、彼は禁煙を決意した。",
+        "kana": "こども の たんじょう を き に、かれ は きんえん を けつい した。",
+        "ro": "kodomo no tanjou o ki ni, kare wa kinen o ketsui shita."
+      },
+      {
+        "en": "I started exercising regularly after changing jobs.",
+        "ja": "転職を機に、定期的に運動を始めた。",
+        "kana": "てんしょく を き に、ていきてき に うんどう を はじめた。",
+        "ro": "tenshoku o ki ni, teikiteki ni undou o hajimeta."
+      },
+      {
+        "en": "She took the opportunity of moving to start a new life.",
+        "ja": "引っ越しを機に、新しい生活を始めた。",
+        "kana": "ひっこし を き に、あたらしい せいかつ を はじめた。",
+        "ro": "hikkoshi o ki ni, atarashii seikatsu o hajimeta."
+      },
+      {
+        "en": "He reconsidered his career on the occasion of his illness.",
+        "ja": "病気を機に、自分の仕事を見直した。",
+        "kana": "びょうき を き に、じぶん の しごと を みなおした。",
+        "ro": "byouki o ki ni, jibun no shigoto o minaoshita."
+      },
+      {
+        "en": "The company renewed its system on the occasion of its 50th anniversary.",
+        "ja": "創立50周年を機に、会社はシステムを刷新した。",
+        "kana": "そうりつ ごじゅっしゅうねん を き に、かいしゃ は しすてむ を さっしん した。",
+        "ro": "souritsu gojuusshuunen o ki ni, kaisha wa shisutemu o sasshin shita."
+      }
+    ],
+    "grammar": "Noun + を機に（して）"
+  },
+  {
+    "id": "n1-grammar-082",
+    "ja": "〜を限りに",
+    "kana": "〜をかぎりに",
+    "ro": "o kagiri ni",
+    "en": "as of / with ... as the last / starting or ending from (used to mark a limit in time or quantity)",
+    "examples": [
+      {
+        "en": "I will quit this club as of today.",
+        "ja": "今日を限りに、このクラブを辞めます。",
+        "kana": "きょう を かぎり に、この くらぶ を やめます。",
+        "ro": "kyou o kagiri ni, kono kurabu o yamemasu."
+      },
+      {
+        "en": "Smoking is prohibited here from tomorrow.",
+        "ja": "明日を限りに、ここでの喫煙は禁止される。",
+        "kana": "あした を かぎり に、ここ で の きつえん は きんし される。",
+        "ro": "ashita o kagiri ni, koko de no kitsuen wa kinshi sareru."
+      },
+      {
+        "en": "He said goodbye to his bad habits as of the new year.",
+        "ja": "新年を限りに、悪い習慣を断ち切った。",
+        "kana": "しんねん を かぎり に、わるい しゅうかん を たちきった。",
+        "ro": "shinnen o kagiri ni, warui shuukan o tachikitta."
+      },
+      {
+        "en": "The shop will close as of the end of this month.",
+        "ja": "今月末を限りに、この店は閉店する。",
+        "kana": "こんげつ まつ を かぎり に、この みせ は へいてん する。",
+        "ro": "kongetsu matsu o kagiri ni, kono mise wa heiten suru."
+      },
+      {
+        "en": "We will stop the campaign as of today.",
+        "ja": "本日を限りに、キャンペーンを終了いたします。",
+        "kana": "ほんじつ を かぎり に、きゃんぺーん を しゅうりょう いたします。",
+        "ro": "honjitsu o kagiri ni, kyanpeen o shuuryou itashimasu."
+      }
+    ],
+    "grammar": "Noun + を限りに"
+  },
+  {
+    "id": "n1-grammar-083",
+    "ja": "〜をよそにして",
+    "kana": "〜をよそにして",
+    "ro": "o yoso ni shite",
+    "en": "without regard for / disregarding / ignoring (slightly formal, similar to 〜を余所に)",
+    "examples": [
+      {
+        "en": "He laughed happily, ignoring the tense atmosphere.",
+        "ja": "張り詰めた空気をよそにして、彼は楽しげに笑っていた。",
+        "kana": "はりつめた くうき を よそ に して、かれ は たのしげ に わらっていた。",
+        "ro": "haritsumeta kuuki o yoso ni shite, kare wa tanoshige ni waratte ita."
+      },
+      {
+        "en": "She continued her research, ignoring criticism from others.",
+        "ja": "周囲の批判をよそにして、彼女は研究を続けた。",
+        "kana": "しゅうい の ひはん を よそ に して、かのじょ は けんきゅう を つづけた。",
+        "ro": "shuui no hihan o yoso ni shite, kanojo wa kenkyuu o tsuzuketa."
+      },
+      {
+        "en": "He spoke confidently, ignoring the audience’s confusion.",
+        "ja": "聴衆の困惑をよそにして、彼は堂々と話した。",
+        "kana": "ちょうしゅう の こんわく を よそ に して、かれ は どうどう と はなした。",
+        "ro": "choushuu no konwaku o yoso ni shite, kare wa doudou to hanashita."
+      },
+      {
+        "en": "The children were playing, ignoring their parents’ warnings.",
+        "ja": "親の注意をよそにして、子どもたちは遊び続けた。",
+        "kana": "おや の ちゅうい を よそ に して、こどもたち は あそび つづけた。",
+        "ro": "oya no chuui o yoso ni shite, kodomotachi wa asobi tsuzuketa."
+      },
+      {
+        "en": "He left, ignoring everyone’s attempt to stop him.",
+        "ja": "皆の制止をよそにして、彼は立ち去った。",
+        "kana": "みな の せいし を よそ に して、かれ は たちさった。",
+        "ro": "mina no seishi o yoso ni shite, kare wa tachisatta."
+      }
+    ],
+    "grammar": "Noun + をよそにして"
+  },
+  {
+    "id": "n1-grammar-084",
+    "ja": "〜を顧みず",
+    "kana": "〜をかえりみず",
+    "ro": "o kaerimizu",
+    "en": "without regard for / ignoring / disregarding (formal, expresses courage or recklessness)",
+    "examples": [
+      {
+        "en": "He saved the child without regard for his own life.",
+        "ja": "彼は自らの危険を顧みず、子どもを救助した。",
+        "kana": "かれ は みずから の きけん を かえりみず、こども を きゅうじょ した。",
+        "ro": "kare wa mizukara no kiken o kaerimizu, kodomo o kyuujyo shita."
+      },
+      {
+        "en": "She worked tirelessly, ignoring her own fatigue.",
+        "ja": "自分の疲労を顧みず、彼女は働き続けた。",
+        "kana": "じぶん の ひろう を かえりみず、かのじょ は はたらき つづけた。",
+        "ro": "jibun no hirou o kaerimizu, kanojo wa hataraki tsuzuketa."
+      },
+      {
+        "en": "The journalist investigated, ignoring danger.",
+        "ja": "記者は危険を顧みず、真実を追及した。",
+        "kana": "きしゃ は きけん を かえりみず、しんじつ を ついきゅう した。",
+        "ro": "kisha wa kiken o kaerimizu, shinjitsu o tsuikyuu shita."
+      },
+      {
+        "en": "He continued the protest, ignoring criticism from society.",
+        "ja": "世間の非難を顧みず、彼は抗議を続けた。",
+        "kana": "せけん の ひなん を かえりみず、かれ は こうぎ を つづけた。",
+        "ro": "seken no hinan o kaerimizu, kare wa kougi o tsuzuketa."
+      },
+      {
+        "en": "He protected his friend, disregarding his own safety.",
+        "ja": "自らの安全を顧みず、友人を守った。",
+        "kana": "みずから の あんぜん を かえりみず、ゆうじん を まもった。",
+        "ro": "mizukara no anzen o kaerimizu, yuujin o mamotta."
+      }
+    ],
+    "grammar": "Noun + を顧みず"
+  },
+  {
+    "id": "n1-grammar-085",
+    "ja": "〜を押してでも",
+    "kana": "〜をおしてでも",
+    "ro": "o oshite demo",
+    "en": "even if forced / even at the cost of (strong determination to act despite difficulty)",
+    "examples": [
+      {
+        "en": "He attended the ceremony even though he was ill.",
+        "ja": "病を押してでも、彼は式に出席した。",
+        "kana": "やまい を おして でも、かれ は しき に しゅっせき した。",
+        "ro": "yamai o oshite demo, kare wa shiki ni shusseki shita."
+      },
+      {
+        "en": "She went to work even though she had a fever.",
+        "ja": "熱を押してでも、彼女は出勤した。",
+        "kana": "ねつ を おして でも、かのじょ は しゅっきん した。",
+        "ro": "netsu o oshite demo, kanojo wa shukkin shita."
+      },
+      {
+        "en": "He went to help his friend even at great risk.",
+        "ja": "危険を押してでも、友人を助けに行った。",
+        "kana": "きけん を おして でも、ゆうじん を たすけ に いった。",
+        "ro": "kiken o oshite demo, yuujin o tasuke ni itta."
+      },
+      {
+        "en": "They decided to carry out the plan despite all objections.",
+        "ja": "反対を押してでも、計画を実行することにした。",
+        "kana": "はんたい を おして でも、けいかく を じっこう する こと に した。",
+        "ro": "hantai o oshite demo, keikaku o jikkou suru koto ni shita."
+      },
+      {
+        "en": "He will make it to the meeting, even if he has to force himself.",
+        "ja": "無理を押してでも、彼は会議に出るつもりだ。",
+        "kana": "むり を おして でも、かれ は かいぎ に でる つもり だ。",
+        "ro": "muri o oshite demo, kare wa kaigi ni deru tsumori da."
+      }
+    ],
+    "grammar": "Noun + を押してでも"
+  },
+  {
+    "id": "n1-grammar-086",
+    "ja": "〜を前提にして",
+    "kana": "〜をぜんていにして",
+    "ro": "o zentei ni shite",
+    "en": "on the assumption that / based on the premise that",
+    "examples": [
+      {
+        "en": "The contract was made on the assumption that both sides would cooperate.",
+        "ja": "双方の協力を前提にして、契約が締結された。",
+        "kana": "そうほう の きょうりょく を ぜんてい に して、けいやく が ていけつ された。",
+        "ro": "souhou no kyouryoku o zentei ni shite, keiyaku ga teiketsu sareta."
+      },
+      {
+        "en": "This plan is designed on the premise of economic stability.",
+        "ja": "この計画は経済の安定を前提にして設計されている。",
+        "kana": "この けいかく は けいざい の あんてい を ぜんてい に して せっけい されている。",
+        "ro": "kono keikaku wa keizai no antei o zentei ni shite sekkei sarete iru."
+      },
+      {
+        "en": "The policy discussion was held on the premise of equality.",
+        "ja": "平等を前提にして政策の議論が行われた。",
+        "kana": "びょうどう を ぜんてい に して せいさく の ぎろん が おこなわれた。",
+        "ro": "byoudou o zentei ni shite seisaku no giron ga okonawareta."
+      },
+      {
+        "en": "The experiment was conducted on the assumption that temperature remained constant.",
+        "ja": "温度が一定であることを前提にして実験が行われた。",
+        "kana": "おんど が いってい で ある こと を ぜんてい に して じっけん が おこなわれた。",
+        "ro": "ondo ga ittei de aru koto o zentei ni shite jikken ga okonawareta."
+      },
+      {
+        "en": "Negotiations were carried out on the assumption of mutual trust.",
+        "ja": "相互の信頼を前提にして交渉が進められた。",
+        "kana": "そうご の しんらい を ぜんてい に して こうしょう が すすめられた。",
+        "ro": "sougo no shinrai o zentei ni shite koushou ga susumerareta."
+      }
+    ],
+    "grammar": "Noun + を前提にして"
+  },
+  {
+    "id": "n1-grammar-087",
+    "ja": "〜をもって",
+    "kana": "〜をもって",
+    "ro": "o motte",
+    "en": "by means of / with / as of (formal expression for time, means, or judgment)",
+    "examples": [
+      {
+        "en": "We will conclude the application process as of today.",
+        "ja": "本日をもって、応募の受付を終了いたします。",
+        "kana": "ほんじつ を もって、おうぼ の うけつけ を しゅうりょう いたします。",
+        "ro": "honjitsu o motte, oubo no uketsuke o shuuryou itashimasu."
+      },
+      {
+        "en": "The ceremony will be closed with this speech.",
+        "ja": "この挨拶をもって、式を閉会といたします。",
+        "kana": "この あいさつ を もって、しき を へいかい と いたします。",
+        "ro": "kono aisatsu o motte, shiki o heikai to itashimasu."
+      },
+      {
+        "en": "The matter will be considered resolved with this report.",
+        "ja": "本報告書をもって、この件は解決とする。",
+        "kana": "ほん ほうこくしょ を もって、この けん は かいけつ と する。",
+        "ro": "hon houkokusho o motte, kono ken wa kaiketsu to suru."
+      },
+      {
+        "en": "The company was dissolved as of March 31.",
+        "ja": "3月31日をもって、会社は解散した。",
+        "kana": "さんがつ さんじゅういちにち を もって、かいしゃ は かいさん した。",
+        "ro": "sangatsu sanjuuichinichi o motte, kaisha wa kaisan shita."
+      },
+      {
+        "en": "We express our gratitude with this letter.",
+        "ja": "この書面をもって、感謝の意を表します。",
+        "kana": "この しょめん を もって、かんしゃ の い を あらわします。",
+        "ro": "kono shomen o motte, kansha no i o arawashimasu."
+      }
+    ],
+    "grammar": "Noun + をもって"
+  },
+  {
+    "id": "n1-grammar-088",
+    "ja": "〜を最後に",
+    "kana": "〜をさいごに",
+    "ro": "o saigo ni",
+    "en": "with ... as the last / after ... no longer (used to indicate the end of a recurring action or event)",
+    "examples": [
+      {
+        "en": "He disappeared from the public eye after his last concert.",
+        "ja": "最後のコンサートを最後に、彼は表舞台から姿を消した。",
+        "kana": "さいご の こんさーと を さいご に、かれ は おもてぶたい から すがた を けした。",
+        "ro": "saigo no konsaato o saigo ni, kare wa omotebutai kara sugata o keshita."
+      },
+      {
+        "en": "I haven’t seen him since that day.",
+        "ja": "あの日を最後に、彼とは一度も会っていない。",
+        "kana": "あの ひ を さいご に、かれ とは いちど も あっていない。",
+        "ro": "ano hi o saigo ni, kare to wa ichido mo atte inai."
+      },
+      {
+        "en": "After graduating, I haven’t returned to that school.",
+        "ja": "卒業を最後に、その学校には戻っていない。",
+        "kana": "そつぎょう を さいご に、その がっこう に は もどっていない。",
+        "ro": "sotsugyou o saigo ni, sono gakkou ni wa modotte inai."
+      },
+      {
+        "en": "She stopped sending letters after that one.",
+        "ja": "あの手紙を最後に、彼女からの便りは途絶えた。",
+        "kana": "あの てがみ を さいご に、かのじょ から の たより は とだえた。",
+        "ro": "ano tegami o saigo ni, kanojo kara no tayori wa todaeta."
+      },
+      {
+        "en": "We haven’t met since the farewell party.",
+        "ja": "送別会を最後に、私たちは会っていない。",
+        "kana": "そうべつかい を さいご に、わたしたち は あっていない。",
+        "ro": "soubetsukai o saigo ni, watashitachi wa atte inai."
+      }
+    ],
+    "grammar": "Noun + を最後に"
+  },
+  {
+    "id": "n1-grammar-089",
+    "ja": "〜をきっかけとして",
+    "kana": "〜をきっかけとして",
+    "ro": "o kikkake to shite",
+    "en": "triggered by / taking ... as a start / as a result of",
+    "examples": [
+      {
+        "en": "He started studying Japanese after watching an anime.",
+        "ja": "アニメをきっかけとして、日本語の勉強を始めた。",
+        "kana": "あにめ を きっかけ と して、にほんご の べんきょう を はじめた。",
+        "ro": "anime o kikkake to shite, nihongo no benkyou o hajimeta."
+      },
+      {
+        "en": "She started volunteering because of the earthquake.",
+        "ja": "地震をきっかけとして、彼女はボランティア活動を始めた。",
+        "kana": "じしん を きっかけ と して、かのじょ は ぼらんてぃあ かつどう を はじめた。",
+        "ro": "jishin o kikkake to shite, kanojo wa borantia katsudou o hajimeta."
+      },
+      {
+        "en": "He changed his career after meeting his mentor.",
+        "ja": "恩師との出会いをきっかけとして、彼は転職を決意した。",
+        "kana": "おんし との であい を きっかけ と して、かれ は てんしょく を けつい した。",
+        "ro": "onshi to no deai o kikkake to shite, kare wa tenshoku o ketsui shita."
+      },
+      {
+        "en": "He became interested in history because of a TV documentary.",
+        "ja": "テレビのドキュメンタリーをきっかけとして、彼は歴史に興味を持った。",
+        "kana": "てれび の どきゅめんたりー を きっかけ と して、かれ は れきし に きょうみ を もった。",
+        "ro": "terebi no dokyumentarii o kikkake to shite, kare wa rekishi ni kyoumi o motta."
+      },
+      {
+        "en": "He began to value his health after being hospitalized.",
+        "ja": "入院をきっかけとして、健康の大切さを実感した。",
+        "kana": "にゅういん を きっかけ と して、けんこう の たいせつさ を じっかん した。",
+        "ro": "nyuuin o kikkake to shite, kenkou no taisetsusa o jikkan shita."
+      }
+    ],
+    "grammar": "Noun + をきっかけとして"
+  },
+  {
+    "id": "n1-grammar-090",
+    "ja": "〜を通じて",
+    "kana": "〜をつうじて",
+    "ro": "o tsuujite",
+    "en": "through / throughout (indicates means or duration)",
+    "examples": [
+      {
+        "en": "I learned a lot about Japan through studying abroad.",
+        "ja": "留学を通じて、日本について多くを学んだ。",
+        "kana": "りゅうがく を つうじて、にほん に ついて おおく を まなんだ。",
+        "ro": "ryuugaku o tsuujite, nihon ni tsuite ooku o mananda."
+      },
+      {
+        "en": "He gained confidence through hard work.",
+        "ja": "努力を通じて、自信を得た。",
+        "kana": "どりょく を つうじて、じしん を えた。",
+        "ro": "doryoku o tsuujite, jishin o eta."
+      },
+      {
+        "en": "They developed friendship through the project.",
+        "ja": "プロジェクトを通じて、彼らは友情を深めた。",
+        "kana": "ぷろじぇくと を つうじて、かれら は ゆうじょう を ふかめた。",
+        "ro": "purojekuto o tsuujite, karera wa yuujou o fukameta."
+      },
+      {
+        "en": "We stayed in contact through social media.",
+        "ja": "SNSを通じて、連絡を取り続けた。",
+        "kana": "えすえぬえす を つうじて、れんらく を とりつづけた。",
+        "ro": "esu-enuesu o tsuujite, renraku o toritsuzuketa."
+      },
+      {
+        "en": "Throughout the year, the town holds various events.",
+        "ja": "一年を通じて、この町では様々な行事が行われる。",
+        "kana": "いちねん を つうじて、この まち では さまざま な ぎょうじ が おこなわれる。",
+        "ro": "ichinen o tsuujite, kono machi de wa samazama na gyouji ga okonawareru."
+      }
+    ],
+    "grammar": "Noun + を通じて／を通して"
+  },
+  {
+    "id": "n1-grammar-091",
+    "ja": "〜を踏まえて",
+    "kana": "〜をふまえて",
+    "ro": "o fumaete",
+    "en": "based on / taking into account / in light of",
+    "examples": [
+      {
+        "en": "We made a decision based on the results of the survey.",
+        "ja": "調査の結果を踏まえて、方針を決定した。",
+        "kana": "ちょうさ の けっか を ふまえて、ほうしん を けってい した。",
+        "ro": "chousa no kekka o fumaete, houshin o kettei shita."
+      },
+      {
+        "en": "Please give your opinion based on today’s discussion.",
+        "ja": "本日の議論を踏まえて、意見を述べてください。",
+        "kana": "ほんじつ の ぎろん を ふまえて、いけん を のべて ください。",
+        "ro": "honjitsu no giron o fumaete, iken o nobete kudasai."
+      },
+      {
+        "en": "The new policy was formulated in light of previous problems.",
+        "ja": "これまでの問題点を踏まえて、新しい方針が策定された。",
+        "kana": "これまで の もんだいてん を ふまえて、あたらしい ほうしん が さくてい された。",
+        "ro": "koremade no mondaiten o fumaete, atarashii houshin ga sakutei sareta."
+      },
+      {
+        "en": "The speech was prepared considering the current situation.",
+        "ja": "現状を踏まえて、スピーチが準備された。",
+        "kana": "げんじょう を ふまえて、すぴーち が じゅんび された。",
+        "ro": "genjou o fumaete, supiichi ga junbi sareta."
+      },
+      {
+        "en": "Please make an appropriate decision based on the facts.",
+        "ja": "事実を踏まえて、適切な判断をしてください。",
+        "kana": "じじつ を ふまえて、てきせつ な はんだん を して ください。",
+        "ro": "jijitsu o fumaete, tekisetsu na handan o shite kudasai."
+      }
+    ],
+    "grammar": "Noun + を踏まえて"
+  },
+  {
+    "id": "n1-grammar-092",
+    "ja": "〜を境として",
+    "kana": "〜をさかいとして",
+    "ro": "o sakai to shite",
+    "en": "marking a boundary / as a turning point",
+    "examples": [
+      {
+        "en": "The country changed greatly after the war.",
+        "ja": "戦争を境として、国は大きく変わった。",
+        "kana": "せんそう を さかい と して、くに は おおきく かわった。",
+        "ro": "sensou o sakai to shite, kuni wa ookiku kawatta."
+      },
+      {
+        "en": "After that incident, their relationship cooled down.",
+        "ja": "あの事件を境として、二人の関係は冷え込んだ。",
+        "kana": "あの じけん を さかい と して、ふたり の かんけい は ひえこんだ。",
+        "ro": "ano jiken o sakai to shite, futari no kankei wa hiekonda."
+      },
+      {
+        "en": "After his father’s death, he changed completely.",
+        "ja": "父の死を境として、彼は人が変わったようになった。",
+        "kana": "ちち の し を さかい と して、かれ は ひと が かわった よう に なった。",
+        "ro": "chichi no shi o sakai to shite, kare wa hito ga kawatta you ni natta."
+      },
+      {
+        "en": "After entering high school, her lifestyle changed.",
+        "ja": "高校入学を境として、彼女の生活は大きく変わった。",
+        "kana": "こうこう にゅうがく を さかい と して、かのじょ の せいかつ は おおきく かわった。",
+        "ro": "koukou nyuugaku o sakai to shite, kanojo no seikatsu wa ookiku kawatta."
+      },
+      {
+        "en": "After that victory, the team’s confidence grew.",
+        "ja": "あの勝利を境として、チームの自信が増した。",
+        "kana": "あの しょうり を さかい と して、ちーむ の じしん が ました。",
+        "ro": "ano shouri o sakai to shite, chiimu no jishin ga mashita."
+      }
+    ],
+    "grammar": "Noun + を境として"
+  },
+  {
+    "id": "n1-grammar-093",
+    "ja": "〜をおいて他にない",
+    "kana": "〜をおいてほかにない",
+    "ro": "o oite hoka ni nai",
+    "en": "none other than / nothing else but / only",
+    "examples": [
+      {
+        "en": "There is no one other than him who can handle this task.",
+        "ja": "この仕事を任せられるのは、彼をおいて他にない。",
+        "kana": "この しごと を まかせられる の は、かれ を おいて ほか に ない。",
+        "ro": "kono shigoto o makaserareru no wa, kare o oite hoka ni nai."
+      },
+      {
+        "en": "There’s no place better than Kyoto to experience Japanese tradition.",
+        "ja": "日本の伝統を感じるには、京都をおいて他にない。",
+        "kana": "にほん の でんとう を かんじる に は、きょうと を おいて ほか に ない。",
+        "ro": "nihon no dentou o kanjiru ni wa, Kyoto o oite hoka ni nai."
+      },
+      {
+        "en": "There’s no one else as suitable for this role as you.",
+        "ja": "この役にふさわしいのは、あなたをおいて他にいない。",
+        "kana": "この やく に ふさわしい の は、あなた を おいて ほか に いない。",
+        "ro": "kono yaku ni fusawashii no wa, anata o oite hoka ni inai."
+      },
+      {
+        "en": "No other solution is as effective as this one.",
+        "ja": "この方法をおいて、他に有効な手段はない。",
+        "kana": "この ほうほう を おいて、ほか に ゆうこう な しゅだん は ない。",
+        "ro": "kono houhou o oite, hoka ni yuukou na shudan wa nai."
+      },
+      {
+        "en": "She is the only person who understands me.",
+        "ja": "私を理解してくれるのは、彼女をおいて他にいない。",
+        "kana": "わたし を りかい して くれる の は、かのじょ を おいて ほか に いない。",
+        "ro": "watashi o rikai shite kureru no wa, kanojo o oite hoka ni inai."
+      }
+    ],
+    "grammar": "Noun + をおいて他に（は）ない"
+  },
+  {
+    "id": "n1-grammar-094",
+    "ja": "〜を皮切りに",
+    "kana": "〜をかわきりに",
+    "ro": "o kawakiri ni",
+    "en": "starting with / beginning with (used for a sequence of events or actions)",
+    "examples": [
+      {
+        "en": "The concert tour began in Tokyo.",
+        "ja": "東京を皮切りに、全国ツアーが始まった。",
+        "kana": "とうきょう を かわきり に、ぜんこく つあー が はじまった。",
+        "ro": "Tokyo o kawakiri ni, zenkoku tsuaa ga hajimatta."
+      },
+      {
+        "en": "The campaign started with the release of the new product.",
+        "ja": "新商品の発売を皮切りに、キャンペーンが展開された。",
+        "kana": "しんしょうひん の はつばい を かわきり に、きゃんぺーん が てんかい された。",
+        "ro": "shinshouhin no hatsubai o kawakiri ni, kyanpeen ga tenkai sareta."
+      },
+      {
+        "en": "The company expanded into Asia, beginning with Singapore.",
+        "ja": "シンガポールを皮切りに、アジア各国へ進出した。",
+        "kana": "しんがぽーる を かわきり に、あじあ かっこく へ しんしゅつ した。",
+        "ro": "Shingapooru o kawakiri ni, Ajia kakkoku e shinshutsu shita."
+      },
+      {
+        "en": "The festival season began with the parade.",
+        "ja": "パレードを皮切りに、祭りが本格的に始まった。",
+        "kana": "ぱれーど を かわきり に、まつり が ほんかくてき に はじまった。",
+        "ro": "pareedo o kawakiri ni, matsuri ga honkakuteki ni hajimatta."
+      },
+      {
+        "en": "The new project started with this small experiment.",
+        "ja": "この小さな実験を皮切りに、新しいプロジェクトが動き出した。",
+        "kana": "この ちいさな じっけん を かわきり に、あたらしい ぷろじぇくと が うごきだした。",
+        "ro": "kono chiisana jikken o kawakiri ni, atarashii purojekuto ga ugokidashita."
+      }
+    ],
+    "grammar": "Noun + を皮切りに（して）"
+  },
+  {
+    "id": "n1-grammar-095",
+    "ja": "〜を余儀なくされる",
+    "kana": "〜をよぎなくされる",
+    "ro": "o yogi naku sareru",
+    "en": "be forced to / have no choice but to (formal and literary expression)",
+    "examples": [
+      {
+        "en": "The company was forced to suspend operations due to the earthquake.",
+        "ja": "地震の影響で、会社は操業停止を余儀なくされた。",
+        "kana": "じしん の えいきょう で、かいしゃ は そうぎょう ていし を よぎなく された。",
+        "ro": "jishin no eikyou de, kaisha wa sougyou teishi o yogi naku sareta."
+      },
+      {
+        "en": "He was forced to retire due to illness.",
+        "ja": "病気のため、彼は引退を余儀なくされた。",
+        "kana": "びょうき の ため、かれ は いんたい を よぎなく された。",
+        "ro": "byouki no tame, kare wa intai o yogi naku sareta."
+      },
+      {
+        "en": "The accident forced him to change his plans.",
+        "ja": "事故により、彼は計画の変更を余儀なくされた。",
+        "kana": "じこ に より、かれ は けいかく の へんこう を よぎなく された。",
+        "ro": "jiko ni yori, kare wa keikaku no henkou o yogi naku sareta."
+      },
+      {
+        "en": "Due to financial difficulties, the project was canceled.",
+        "ja": "資金難のため、プロジェクトは中止を余儀なくされた。",
+        "kana": "しきんなん の ため、ぷろじぇくと は ちゅうし を よぎなく された。",
+        "ro": "shikinnan no tame, purojekuto wa chuushi o yogi naku sareta."
+      },
+      {
+        "en": "He was forced to apologize publicly after the scandal.",
+        "ja": "不祥事により、彼は公の場で謝罪を余儀なくされた。",
+        "kana": "ふしょうじ に より、かれ は おおやけ の ば で しゃざい を よぎなく された。",
+        "ro": "fushouji ni yori, kare wa ooyake no ba de shazai o yogi naku sareta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくされる"
+  },
+  {
+    "id": "n1-grammar-096",
+    "ja": "〜を前提として",
+    "kana": "〜をぜんていとして",
+    "ro": "o zentei to shite",
+    "en": "on the assumption that / with ... as a premise",
+    "examples": [
+      {
+        "en": "This plan is based on the assumption that the economy will recover.",
+        "ja": "この計画は景気の回復を前提として立てられた。",
+        "kana": "この けいかく は けいき の かいふく を ぜんてい と して たてられた。",
+        "ro": "kono keikaku wa keiki no kaifuku o zentei to shite taterareta."
+      },
+      {
+        "en": "The proposal was made assuming mutual understanding.",
+        "ja": "相互理解を前提として、提案がなされた。",
+        "kana": "そうご りかい を ぜんてい と して、ていあん が なされた。",
+        "ro": "sougo rikai o zentei to shite, teian ga nasareta."
+      },
+      {
+        "en": "The project proceeds on the premise of sufficient funding.",
+        "ja": "十分な資金を前提として、プロジェクトが進められている。",
+        "kana": "じゅうぶん な しきん を ぜんてい と して、ぷろじぇくと が すすめられている。",
+        "ro": "juubun na shikin o zentei to shite, purojekuto ga susumerareteiru."
+      },
+      {
+        "en": "Negotiations are based on the assumption of trust between both sides.",
+        "ja": "双方の信頼を前提として、交渉が行われた。",
+        "kana": "そうほう の しんらい を ぜんてい と して、こうしょう が おこなわれた。",
+        "ro": "souhou no shinrai o zentei to shite, koushou ga okonawareta."
+      },
+      {
+        "en": "We are developing the system assuming long-term use.",
+        "ja": "長期使用を前提として、システムを開発している。",
+        "kana": "ちょうき しよう を ぜんてい と して、しすてむ を かいはつ している。",
+        "ro": "chouki shiyou o zentei to shite, shisutemu o kaihatsu shiteiru."
+      }
+    ],
+    "grammar": "Noun + を前提として"
+  },
+  {
+    "id": "n1-grammar-097",
+    "ja": "〜を余所に",
+    "kana": "〜をよそに",
+    "ro": "o yoso ni",
+    "en": "in disregard of / ignoring / without caring about",
+    "examples": [
+      {
+        "en": "She continued her speech, ignoring the noise.",
+        "ja": "騒音を余所に、彼女は演説を続けた。",
+        "kana": "そうおん を よそ に、かのじょ は えんぜつ を つづけた。",
+        "ro": "souon o yoso ni, kanojo wa enzetsu o tsuzuketa."
+      },
+      {
+        "en": "He kept running, ignoring the heavy rain.",
+        "ja": "激しい雨を余所に、彼は走り続けた。",
+        "kana": "はげしい あめ を よそ に、かれ は はしり つづけた。",
+        "ro": "hageshii ame o yoso ni, kare wa hashiri tsuzuketa."
+      },
+      {
+        "en": "The children were playing, ignoring their parents’ warnings.",
+        "ja": "親の注意を余所に、子どもたちは遊び回っていた。",
+        "kana": "おや の ちゅうい を よそ に、こどもたち は あそび まわっていた。",
+        "ro": "oya no chuui o yoso ni, kodomotachi wa asobi mawatte ita."
+      },
+      {
+        "en": "He continued his research, disregarding the criticism.",
+        "ja": "批判を余所に、彼は研究を続けた。",
+        "kana": "ひはん を よそ に、かれ は けんきゅう を つづけた。",
+        "ro": "hihan o yoso ni, kare wa kenkyuu o tsuzuketa."
+      },
+      {
+        "en": "The festival was held as planned, despite the storm.",
+        "ja": "嵐を余所に、祭りは予定通り行われた。",
+        "kana": "あらし を よそ に、まつり は よていどおり おこなわれた。",
+        "ro": "arashi o yoso ni, matsuri wa yotei doori okonawareta."
+      }
+    ],
+    "grammar": "Noun + を余所に"
+  },
+  {
+    "id": "n1-grammar-098",
+    "ja": "〜をものともせずに",
+    "kana": "〜をものともせずに",
+    "ro": "o mono to mo sezu ni",
+    "en": "in defiance of / despite / undaunted by",
+    "examples": [
+      {
+        "en": "He completed the climb despite the harsh weather.",
+        "ja": "悪天候をものともせずに、彼は登頂を果たした。",
+        "kana": "あくてんこう を ものともせずに、かれ は とうちょう を はたした。",
+        "ro": "akutenkou o mono to mo sezu ni, kare wa touchou o hatashita."
+      },
+      {
+        "en": "She continued studying despite her illness.",
+        "ja": "病気をものともせずに、彼女は勉強を続けた。",
+        "kana": "びょうき を ものともせずに、かのじょ は べんきょう を つづけた。",
+        "ro": "byouki o mono to mo sezu ni, kanojo wa benkyou o tsuzuketa."
+      },
+      {
+        "en": "He fought bravely despite being injured.",
+        "ja": "けがをものともせずに、彼は戦い続けた。",
+        "kana": "けが を ものともせずに、かれ は たたかい つづけた。",
+        "ro": "kega o mono to mo sezu ni, kare wa tatakai tsuzuketa."
+      },
+      {
+        "en": "The runner finished the race despite the pain.",
+        "ja": "痛みをものともせずに、ランナーは完走した。",
+        "kana": "いたみ を ものともせずに、らんなー は かんそう した。",
+        "ro": "itami o mono to mo sezu ni, rannaa wa kansou shita."
+      },
+      {
+        "en": "He faced the challenge fearlessly.",
+        "ja": "困難をものともせずに、彼は挑戦した。",
+        "kana": "こんなん を ものともせずに、かれ は ちょうせん した。",
+        "ro": "konnan o mono to mo sezu ni, kare wa chousen shita."
+      }
+    ],
+    "grammar": "Noun + をものともせずに"
+  },
+  {
+    "id": "n1-grammar-099",
+    "ja": "〜を経て",
+    "kana": "〜をへて",
+    "ro": "o hete",
+    "en": "through / after / via (indicates process or passage of time)",
+    "examples": [
+      {
+        "en": "He became a manager after many years of effort.",
+        "ja": "長年の努力を経て、彼は部長になった。",
+        "kana": "ながねん の どりょく を へて、かれ は ぶちょう に なった。",
+        "ro": "naganen no doryoku o hete, kare wa buchou ni natta."
+      },
+      {
+        "en": "The product was completed after several stages of testing.",
+        "ja": "いくつもの試験を経て、その製品が完成した。",
+        "kana": "いくつ も の しけん を へて、その せいひん が かんせい した。",
+        "ro": "ikutsu mo no shiken o hete, sono seihin ga kansei shita."
+      },
+      {
+        "en": "They got married after a long relationship.",
+        "ja": "長い交際を経て、二人は結婚した。",
+        "kana": "ながい こうさい を へて、ふたり は けっこん した。",
+        "ro": "nagai kousai o hete, futari wa kekkon shita."
+      },
+      {
+        "en": "The agreement was reached after intense negotiations.",
+        "ja": "激しい交渉を経て、合意に至った。",
+        "kana": "はげしい こうしょう を へて、ごうい に いたった。",
+        "ro": "hageshii koushou o hete, goui ni itatta."
+      },
+      {
+        "en": "The law was enacted after long debate in the parliament.",
+        "ja": "長い国会審議を経て、その法律は成立した。",
+        "kana": "ながい こっかい しんぎ を へて、その ほうりつ は せいりつ した。",
+        "ro": "nagai kokkai shingi o hete, sono houritsu wa seiritsu shita."
+      }
+    ],
+    "grammar": "Noun + を経て"
+  },
+  {
+    "id": "n1-grammar-100",
+    "ja": "〜を余儀なくさせる",
+    "kana": "〜をよぎなくさせる",
+    "ro": "o yogi naku saseru",
+    "en": "to compel someone to do something / to force (formal passive-related structure)",
+    "examples": [
+      {
+        "en": "The incident forced the company to apologize.",
+        "ja": "その事件が会社に謝罪を余儀なくさせた。",
+        "kana": "その じけん が かいしゃ に しゃざい を よぎなく させた。",
+        "ro": "sono jiken ga kaisha ni shazai o yogi naku saseta."
+      },
+      {
+        "en": "The situation forced the government to take action.",
+        "ja": "その状況が政府に対応を余儀なくさせた。",
+        "kana": "その じょうきょう が せいふ に たいおう を よぎなく させた。",
+        "ro": "sono joukyou ga seifu ni taiou o yogi naku saseta."
+      },
+      {
+        "en": "The scandal forced the minister to resign.",
+        "ja": "不祥事が大臣に辞任を余儀なくさせた。",
+        "kana": "ふしょうじ が だいじん に じにん を よぎなく させた。",
+        "ro": "fushouji ga daijin ni jinin o yogi naku saseta."
+      },
+      {
+        "en": "The accident forced the airline to cancel all flights.",
+        "ja": "事故が航空会社に全便の欠航を余儀なくさせた。",
+        "kana": "じこ が こうくう がいしゃ に ぜんびん の けっこう を よぎなく させた。",
+        "ro": "jiko ga koukuu gaisha ni zenbin no kekkou o yogi naku saseta."
+      },
+      {
+        "en": "Economic recession forced many companies to downsize.",
+        "ja": "不況が多くの企業に人員削減を余儀なくさせた。",
+        "kana": "ふきょう が おおく の きぎょう に じんいん さくげん を よぎなく させた。",
+        "ro": "fukyou ga ooku no kigyou ni jin'in sakugen o yogi naku saseta."
+      }
+    ],
+    "grammar": "Noun + を余儀なくさせる"
+  }
+]

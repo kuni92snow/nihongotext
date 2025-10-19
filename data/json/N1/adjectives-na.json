@@ -1,0 +1,3398 @@
+{
+  "entries": [
+    {
+      "id": "n1-naadj-001",
+      "ja": "巧妙",
+      "kana": "こうみょう",
+      "ro": "koumyou",
+      "en": "ingenious / clever / skillful; ingenious / skillful / artful",
+      "examples": [
+        {
+          "en": "He made a clever plan.",
+          "ja": "彼は巧妙な計画を立てた。",
+          "kana": "かれ は こうみょう な けいかく を たてた。",
+          "ro": "kare wa koumyou na keikaku o tateta."
+        },
+        {
+          "en": "It was a skillful trick.",
+          "ja": "それは巧妙な仕掛けだった。",
+          "kana": "それ は こうみょう な しかけ だった。",
+          "ro": "sore wa koumyou na shikake datta."
+        },
+        {
+          "en": "She spoke in a clever way.",
+          "ja": "彼女は巧妙に話した。",
+          "kana": "かのじょ は こうみょう に はなした。",
+          "ro": "kanojo wa koumyou ni hanashita."
+        },
+        {
+          "en": "The design is cleverly made.",
+          "ja": "そのデザインは巧妙に作られている。",
+          "kana": "その でざいん は こうみょう に つくられて いる。",
+          "ro": "sono dezain wa koumyou ni tsukurarete iru."
+        },
+        {
+          "en": "It was a clever way to avoid the problem.",
+          "ja": "それは問題を避ける巧妙な方法だった。",
+          "kana": "それ は もんだい を さける こうみょう な ほうほう だった。",
+          "ro": "sore wa mondai o sakeru koumyou na houhou datta."
+        },
+        {
+          "en": "The trick was very clever.",
+          "ja": "その仕掛けは非常に巧妙だった。",
+          "kana": "その しかけ は ひじょう に こうみょう だった。",
+          "ro": "sono shikake wa hijou ni koumyou datta."
+        },
+        {
+          "en": "He created a skillful design.",
+          "ja": "彼は巧妙なデザインを作った。",
+          "kana": "かれ は こうみょう な でざいん を つくった。",
+          "ro": "kare wa koumyou na dezain o tsukutta."
+        },
+        {
+          "en": "The plan was cleverly hidden.",
+          "ja": "その計画は巧妙に隠されていた。",
+          "kana": "その けいかく は こうみょう に かくされて いた。",
+          "ro": "sono keikaku wa koumyou ni kakusarete ita."
+        },
+        {
+          "en": "It’s an ingenious solution.",
+          "ja": "それは巧妙な解決策だ。",
+          "kana": "それ は こうみょう な かいけつさく だ。",
+          "ro": "sore wa koumyou na kaiketsusaku da."
+        },
+        {
+          "en": "He made a clever excuse.",
+          "ja": "彼は巧妙な言い訳をした。",
+          "kana": "かれ は こうみょう な いいわけ を した。",
+          "ro": "kare wa koumyou na iiwake o shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "koumyou"
+    },
+    {
+      "id": "n1-naadj-002",
+      "ja": "厳密",
+      "kana": "げんみつ",
+      "ro": "genmitsu",
+      "en": "strict / precise / rigorous",
+      "examples": [
+        {
+          "en": "We need a precise definition.",
+          "ja": "厳密な定義が必要だ。",
+          "kana": "げんみつ な ていぎ が ひつよう だ。",
+          "ro": "genmitsu na teigi ga hitsuyou da."
+        },
+        {
+          "en": "He follows the rules strictly.",
+          "ja": "彼は厳密に規則を守る。",
+          "kana": "かれ は げんみつ に きそく を まもる。",
+          "ro": "kare wa genmitsu ni kisoku o mamoru."
+        },
+        {
+          "en": "This is a rigorous test.",
+          "ja": "これは厳密な試験だ。",
+          "kana": "これ は げんみつ な しけん だ。",
+          "ro": "kore wa genmitsu na shiken da."
+        },
+        {
+          "en": "The law is strictly applied.",
+          "ja": "法律は厳密に適用される。",
+          "kana": "ほうりつ は げんみつ に てきよう される。",
+          "ro": "houritsu wa genmitsu ni tekiyou sareru."
+        },
+        {
+          "en": "He made a precise calculation.",
+          "ja": "彼は厳密な計算をした。",
+          "kana": "かれ は げんみつ な けいさん を した。",
+          "ro": "kare wa genmitsu na keisan o shita."
+        },
+        {
+          "en": "This rule must be applied strictly.",
+          "ja": "この規則は厳密に適用しなければならない。",
+          "kana": "この きそく は げんみつ に てきよう しなければ ならない。",
+          "ro": "kono kisoku wa genmitsu ni tekiyou shinakereba naranai."
+        },
+        {
+          "en": "He made a precise calculation.",
+          "ja": "彼は厳密な計算を行った。",
+          "kana": "かれ は げんみつ な けいさん を おこなった。",
+          "ro": "kare wa genmitsu na keisan o okonatta."
+        },
+        {
+          "en": "The experiment was conducted rigorously.",
+          "ja": "実験は厳密に行われた。",
+          "kana": "じっけん は げんみつ に おこなわれた。",
+          "ro": "jikken wa genmitsu ni okonawareta."
+        },
+        {
+          "en": "We need a strict interpretation of the law.",
+          "ja": "法律の厳密な解釈が必要だ。",
+          "kana": "ほうりつ の げんみつ な かいしゃく が ひつよう だ。",
+          "ro": "houritsu no genmitsu na kaishaku ga hitsuyou da."
+        },
+        {
+          "en": "He checked the data precisely.",
+          "ja": "彼はデータを厳密に確認した。",
+          "kana": "かれ は でーた を げんみつ に かくにん した。",
+          "ro": "kare wa deeta o genmitsu ni kakunin shita."
+        },
+        {
+          "en": "The experiment requires strict conditions.",
+          "ja": "この実験には厳密な条件が必要だ。",
+          "kana": "この じっけん には げんみつ な じょうけん が ひつよう だ。",
+          "ro": "kono jikken ni wa genmitsu na jouken ga hitsuyou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "genmitsu"
+    },
+    {
+      "id": "n1-naadj-003",
+      "ja": "壮大",
+      "kana": "そうだい",
+      "ro": "soudai",
+      "en": "grand / magnificent / majestic; magnificent / grand / majestic",
+      "examples": [
+        {
+          "en": "They built a grand building.",
+          "ja": "彼らは壮大な建物を建てた。",
+          "kana": "かれら は そうだい な たてもの を たてた。",
+          "ro": "karera wa soudai na tatemono o tateta."
+        },
+        {
+          "en": "It was a magnificent view.",
+          "ja": "それは壮大な景色だった。",
+          "kana": "それ は そうだい な けしき だった。",
+          "ro": "sore wa soudai na keshiki datta."
+        },
+        {
+          "en": "He has a grand dream.",
+          "ja": "彼は壮大な夢を持っている。",
+          "kana": "かれ は そうだい な ゆめ を もって いる。",
+          "ro": "kare wa soudai na yume o motte iru."
+        },
+        {
+          "en": "The project is large-scale.",
+          "ja": "そのプロジェクトは壮大だ。",
+          "kana": "その ぷろじぇくと は そうだい だ。",
+          "ro": "sono purojekuto wa soudai da."
+        },
+        {
+          "en": "We were moved by the grand music.",
+          "ja": "私たちは壮大な音楽に感動した。",
+          "kana": "わたしたち は そうだい な おんがく に かんどう した。",
+          "ro": "watashitachi wa soudai na ongaku ni kandou shita."
+        },
+        {
+          "en": "It’s a magnificent view.",
+          "ja": "それは壮大な景色だ。",
+          "kana": "それ は そうだい な けしき だ。",
+          "ro": "sore wa soudai na keshiki da."
+        },
+        {
+          "en": "They planned a grand event.",
+          "ja": "彼らは壮大なイベントを計画した。",
+          "kana": "かれら は そうだい な いべんと を けいかく した。",
+          "ro": "karera wa soudai na ibento o keikaku shita."
+        },
+        {
+          "en": "The movie was grand in scale and emotion.",
+          "ja": "その映画は規模も感動も壮大だった。",
+          "kana": "その えいが は きぼ も かんどう も そうだい だった。",
+          "ro": "sono eiga wa kibo mo kandou mo soudai datta."
+        },
+        {
+          "en": "We admired the grand view of the mountains.",
+          "ja": "山々の壮大な景色に感動した。",
+          "kana": "やまやま の そうだい な けしき に かんどう した。",
+          "ro": "yamayama no soudai na keshiki ni kandou shita."
+        },
+        {
+          "en": "It’s a magnificent project.",
+          "ja": "それは壮大なプロジェクトだ。",
+          "kana": "それ は そうだい な ぷろじぇくと だ。",
+          "ro": "sore wa soudai na purojekuto da."
+        },
+        {
+          "en": "The plan has a grand scale.",
+          "ja": "計画の規模は壮大だ。",
+          "kana": "けいかく の きぼ は そうだい だ。",
+          "ro": "keikaku no kibo wa soudai da."
+        },
+        {
+          "en": "The castle stood magnificently in the distance.",
+          "ja": "遠くに壮大な城がそびえていた。",
+          "kana": "とおく に そうだい な しろ が そびえて いた。",
+          "ro": "tooku ni soudai na shiro ga sobiete ita."
+        },
+        {
+          "en": "It was a grand plan.",
+          "ja": "それは壮大な計画だった。",
+          "kana": "それ は そうだい な けいかく だった。",
+          "ro": "sore wa soudai na keikaku datta."
+        },
+        {
+          "en": "The view was magnificent.",
+          "ja": "景色は壮大だった。",
+          "kana": "けしき は そうだい だった。",
+          "ro": "keshiki wa soudai datta."
+        },
+        {
+          "en": "He dreamed of a grand future.",
+          "ja": "彼は壮大な未来を夢見ていた。",
+          "kana": "かれ は そうだい な みらい を ゆめみて いた。",
+          "ro": "kare wa soudai na mirai o yumemite ita."
+        },
+        {
+          "en": "They built a majestic castle.",
+          "ja": "彼らは壮大な城を建てた。",
+          "kana": "かれら は そうだい な しろ を たてた。",
+          "ro": "karera wa soudai na shiro o tateta."
+        },
+        {
+          "en": "The movie has a grand scale.",
+          "ja": "その映画は壮大なスケールを持っている。",
+          "kana": "その えいが は そうだい な すけーる を もって いる。",
+          "ro": "sono eiga wa soudai na sukeeru o motte iru."
+        },
+        {
+          "en": "They made a grand plan.",
+          "ja": "彼らは壮大な計画を立てた。",
+          "kana": "かれら は そうだい な けいかく を たてた。",
+          "ro": "karera wa soudai na keikaku o tateta."
+        },
+        {
+          "en": "The view from the mountain is magnificent.",
+          "ja": "山からの眺めは壮大だ。",
+          "kana": "やま から の ながめ は そうだい だ。",
+          "ro": "yama kara no nagame wa soudai da."
+        },
+        {
+          "en": "The story has a grand theme.",
+          "ja": "その物語は壮大なテーマを持っている。",
+          "kana": "その ものがたり は そうだい な てーま を もって いる。",
+          "ro": "sono monogatari wa soudai na teema o motte iru."
+        },
+        {
+          "en": "It was a magnificent ceremony.",
+          "ja": "それは壮大な式典だった。",
+          "kana": "それ は そうだい な しきてん だった。",
+          "ro": "sore wa soudai na shikiten datta."
+        },
+        {
+          "en": "We were moved by the majestic scenery.",
+          "ja": "私たちは壮大な景色に感動した。",
+          "kana": "わたしたち は そうだい な けしき に かんどう した。",
+          "ro": "watashitachi wa soudai na keshiki ni kandou shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "soudai"
+    },
+    {
+      "id": "n1-naadj-004",
+      "ja": "冷静",
+      "kana": "れいせい",
+      "ro": "reisei",
+      "en": "calm / cool-headed / composed; calm / composed / cool-headed",
+      "examples": [
+        {
+          "en": "He remained calm in an emergency.",
+          "ja": "彼は緊急時でも冷静だった。",
+          "kana": "かれ は きんきゅうじ でも れいせい だった。",
+          "ro": "kare wa kinkyuuji demo reisei datta."
+        },
+        {
+          "en": "Please make a calm decision.",
+          "ja": "冷静な判断をしてください。",
+          "kana": "れいせい な はんだん を して ください。",
+          "ro": "reisei na handan o shite kudasai."
+        },
+        {
+          "en": "She answered calmly.",
+          "ja": "彼女は冷静に答えた。",
+          "kana": "かのじょ は れいせい に こたえた。",
+          "ro": "kanojo wa reisei ni kotaeta."
+        },
+        {
+          "en": "He spoke in a composed tone.",
+          "ja": "彼は冷静な口調で話した。",
+          "kana": "かれ は れいせい な くちょう で はなした。",
+          "ro": "kare wa reisei na kuchou de hanashita."
+        },
+        {
+          "en": "Stay calm under pressure.",
+          "ja": "プレッシャーの中でも冷静でいなさい。",
+          "kana": "ぷれっしゃー の なか でも れいせい で いなさい。",
+          "ro": "puresshaa no naka demo reisei de inasai."
+        },
+        {
+          "en": "He stayed calm in the meeting.",
+          "ja": "彼は会議で冷静だった。",
+          "kana": "かれ は かいぎ で れいせい だった。",
+          "ro": "kare wa kaigi de reisei datta."
+        },
+        {
+          "en": "She gave a calm explanation.",
+          "ja": "彼女は冷静に説明した。",
+          "kana": "かのじょ は れいせい に せつめい した。",
+          "ro": "kanojo wa reisei ni setsumei shita."
+        },
+        {
+          "en": "Stay calm and think carefully.",
+          "ja": "冷静に考えてください。",
+          "kana": "れいせい に かんがえて ください。",
+          "ro": "reisei ni kangaete kudasai."
+        },
+        {
+          "en": "He made a cool-headed decision.",
+          "ja": "彼は冷静な判断をした。",
+          "kana": "かれ は れいせい な はんだん を した。",
+          "ro": "kare wa reisei na handan o shita."
+        },
+        {
+          "en": "It’s important to stay calm.",
+          "ja": "冷静でいることが大切です。",
+          "kana": "れいせい で いる こと が たいせつ です。",
+          "ro": "reisei de iru koto ga taisetsu desu."
+        },
+        {
+          "en": "He remained calm during the accident.",
+          "ja": "彼は事故のときも冷静だった。",
+          "kana": "かれ は じこ の とき も れいせい だった。",
+          "ro": "kare wa jiko no toki mo reisei datta."
+        },
+        {
+          "en": "She made a calm decision.",
+          "ja": "彼女は冷静な判断をした。",
+          "kana": "かのじょ は れいせい な はんだん を した。",
+          "ro": "kanojo wa reisei na handan o shita."
+        },
+        {
+          "en": "He spoke in a calm voice.",
+          "ja": "彼は冷静な声で話した。",
+          "kana": "かれ は れいせい な こえ で はなした。",
+          "ro": "kare wa reisei na koe de hanashita."
+        },
+        {
+          "en": "She is always composed even under pressure.",
+          "ja": "彼女はどんなときも冷静だ。",
+          "kana": "かのじょ は どんな とき も れいせい だ。",
+          "ro": "kanojo wa donna toki mo reisei da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "reisei"
+    },
+    {
+      "id": "n1-naadj-005",
+      "ja": "穏健",
+      "kana": "おんけん",
+      "ro": "onken",
+      "en": "moderate / gentle / mild",
+      "examples": [
+        {
+          "en": "He has a moderate opinion.",
+          "ja": "彼は穏健な意見を持っている。",
+          "kana": "かれ は おんけん な いけん を もって いる。",
+          "ro": "kare wa onken na iken o motte iru."
+        },
+        {
+          "en": "The policy is rather mild.",
+          "ja": "その政策はかなり穏健だ。",
+          "kana": "その せいさく は かなり おんけん だ。",
+          "ro": "sono seisaku wa kanari onken da."
+        },
+        {
+          "en": "He prefers a moderate approach.",
+          "ja": "彼は穏健な方法を好む。",
+          "kana": "かれ は おんけん な ほうほう を このむ。",
+          "ro": "kare wa onken na houhou o konomu."
+        },
+        {
+          "en": "His tone was calm and gentle.",
+          "ja": "彼の口調は穏健だった。",
+          "kana": "かれ の くちょう は おんけん だった。",
+          "ro": "kare no kuchou wa onken datta."
+        },
+        {
+          "en": "She is known for her moderate personality.",
+          "ja": "彼女は穏健な性格で知られている。",
+          "kana": "かのじょ は おんけん な せいかく で しられて いる。",
+          "ro": "kanojo wa onken na seikaku de shirarete iru."
+        },
+        {
+          "en": "He holds moderate political views.",
+          "ja": "彼は穏健な政治的考えを持っている。",
+          "kana": "かれ は おんけん な せいじてき かんがえ を もって いる。",
+          "ro": "kare wa onken na seijiteki kangae o motte iru."
+        },
+        {
+          "en": "Her opinion was calm and reasonable.",
+          "ja": "彼女の意見は穏健だった。",
+          "kana": "かのじょ の いけん は おんけん だった。",
+          "ro": "kanojo no iken wa onken datta."
+        },
+        {
+          "en": "The speech was balanced and moderate.",
+          "ja": "演説は穏健な内容だった。",
+          "kana": "えんぜつ は おんけん な ないよう だった。",
+          "ro": "enzetsu wa onken na naiyou datta."
+        },
+        {
+          "en": "He always takes a moderate stance.",
+          "ja": "彼は常に穏健な立場を取る。",
+          "kana": "かれ は つね に おんけん な たちば を とる。",
+          "ro": "kare wa tsune ni onken na tachiba o toru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "onken"
+    },
+    {
+      "id": "n1-naadj-006",
+      "ja": "明白",
+      "kana": "めいはく",
+      "ro": "meihaku",
+      "en": "obvious / clear / evident",
+      "examples": [
+        {
+          "en": "It is obvious that he is lying.",
+          "ja": "彼が嘘をついているのは明白だ。",
+          "kana": "かれ が うそ を ついて いる の は めいはく だ。",
+          "ro": "kare ga uso o tsuite iru no wa meihaku da."
+        },
+        {
+          "en": "That was a clear mistake.",
+          "ja": "それは明白な間違いだった。",
+          "kana": "それ は めいはく な まちがい だった。",
+          "ro": "sore wa meihaku na machigai datta."
+        },
+        {
+          "en": "The cause is evident.",
+          "ja": "原因は明白だ。",
+          "kana": "げんいん は めいはく だ。",
+          "ro": "gen’in wa meihaku da."
+        },
+        {
+          "en": "His guilt became obvious.",
+          "ja": "彼の罪は明白になった。",
+          "kana": "かれ の つみ は めいはく に なった。",
+          "ro": "kare no tsumi wa meihaku ni natta."
+        },
+        {
+          "en": "It is clear that this plan will fail.",
+          "ja": "この計画が失敗するのは明白だ。",
+          "kana": "この けいかく が しっぱい する の は めいはく だ。",
+          "ro": "kono keikaku ga shippai suru no wa meihaku da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "meihaku"
+    },
+    {
+      "id": "n1-naadj-007",
+      "ja": "壮絶",
+      "kana": "そうぜつ",
+      "ro": "souzetsu",
+      "en": "heroic / fierce / grand and tragic; fierce / intense / heroic; fierce / heroic / magnificent (in struggle)",
+      "examples": [
+        {
+          "en": "It was a fierce battle.",
+          "ja": "それは壮絶な戦いだった。",
+          "kana": "それ は そうぜつ な たたかい だった。",
+          "ro": "sore wa souzetsu na tatakai datta."
+        },
+        {
+          "en": "He lived a heroic life.",
+          "ja": "彼は壮絶な人生を送った。",
+          "kana": "かれ は そうぜつ な じんせい を おくった。",
+          "ro": "kare wa souzetsu na jinsei o okutta."
+        },
+        {
+          "en": "The scene was tragic and grand.",
+          "ja": "その場面は壮絶だった。",
+          "kana": "その ばめん は そうぜつ だった。",
+          "ro": "sono bamen wa souzetsu datta."
+        },
+        {
+          "en": "It was a fierce struggle for survival.",
+          "ja": "それは壮絶な生存競争だった。",
+          "kana": "それ は そうぜつ な せいぞん きょうそう だった。",
+          "ro": "sore wa souzetsu na seizon kyousou datta."
+        },
+        {
+          "en": "Her courage was truly heroic.",
+          "ja": "彼女の勇気は壮絶だった。",
+          "kana": "かのじょ の ゆうき は そうぜつ だった。",
+          "ro": "kanojo no yuuki wa souzetsu datta."
+        },
+        {
+          "en": "They fought with great intensity.",
+          "ja": "彼らは壮絶に戦った。",
+          "kana": "かれら は そうぜつ に たたかった。",
+          "ro": "karera wa souzetsu ni tatakatta."
+        },
+        {
+          "en": "It was a battle of life and death.",
+          "ja": "それは壮絶な死闘だった。",
+          "kana": "それ は そうぜつ な しとう だった。",
+          "ro": "sore wa souzetsu na shitou datta."
+        },
+        {
+          "en": "He showed a heroic spirit.",
+          "ja": "彼は壮絶な闘志を見せた。",
+          "kana": "かれ は そうぜつ な とうし を みせた。",
+          "ro": "kare wa souzetsu na toushi o miseta."
+        },
+        {
+          "en": "The accident was tragic and intense.",
+          "ja": "その事故は壮絶だった。",
+          "kana": "その じこ は そうぜつ だった。",
+          "ro": "sono jiko wa souzetsu datta."
+        },
+        {
+          "en": "The final scene of the movie was magnificent.",
+          "ja": "映画の最後の場面は壮絶だった。",
+          "kana": "えいが の さいご の ばめん は そうぜつ だった。",
+          "ro": "eiga no saigo no bamen wa souzetsu datta."
+        },
+        {
+          "en": "They lived a life of fierce struggle.",
+          "ja": "彼らは壮絶な人生を送った。",
+          "kana": "かれら は そうぜつ な じんせい を おくった。",
+          "ro": "karera wa souzetsu na jinsei o okutta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "souzetsu"
+    },
+    {
+      "id": "n1-naadj-008",
+      "ja": "壮麗",
+      "kana": "そうれい",
+      "ro": "soure",
+      "en": "magnificent / splendid / grand; magnificent / splendid / glorious",
+      "examples": [
+        {
+          "en": "The palace was magnificent.",
+          "ja": "その宮殿は壮麗だった。",
+          "kana": "その きゅうでん は そうれい だった。",
+          "ro": "sono kyuuden wa sourei datta."
+        },
+        {
+          "en": "It was a splendid ceremony.",
+          "ja": "それは壮麗な式典だった。",
+          "kana": "それ は そうれい な しきてん だった。",
+          "ro": "sore wa sourei na shikiten datta."
+        },
+        {
+          "en": "He entered the grand hall.",
+          "ja": "彼は壮麗なホールに入った。",
+          "kana": "かれ は そうれい な ほーる に はいった。",
+          "ro": "kare wa sourei na hooru ni haitta."
+        },
+        {
+          "en": "We were impressed by the splendid scenery.",
+          "ja": "私たちは壮麗な景色に感動した。",
+          "kana": "わたしたち は そうれい な けしき に かんどう した。",
+          "ro": "watashitachi wa sourei na keshiki ni kandou shita."
+        },
+        {
+          "en": "The decoration was gorgeous.",
+          "ja": "装飾は壮麗だった。",
+          "kana": "そうしょく は そうれい だった。",
+          "ro": "soushoku wa sourei datta."
+        },
+        {
+          "en": "The palace is magnificent.",
+          "ja": "その宮殿は壮麗だ。",
+          "kana": "その きゅうでん は そうれい だ。",
+          "ro": "sono kyuuden wa sourei da."
+        },
+        {
+          "en": "They admired the splendid ceremony.",
+          "ja": "彼らは壮麗な式典に感動した。",
+          "kana": "かれら は そうれい な しきてん に かんどう した。",
+          "ro": "karera wa sourei na shikiten ni kandou shita."
+        },
+        {
+          "en": "The hall is decorated magnificently.",
+          "ja": "ホールは壮麗に飾られている。",
+          "kana": "ほーる は そうれい に かざられて いる。",
+          "ro": "hooru wa sourei ni kazararete iru."
+        },
+        {
+          "en": "The temple has a grand atmosphere.",
+          "ja": "その寺は壮麗な雰囲気を持っている。",
+          "kana": "その てら は そうれい な ふんいき を もって いる。",
+          "ro": "sono tera wa sourei na fun’iki o motte iru."
+        },
+        {
+          "en": "It was a magnificent festival.",
+          "ja": "それは壮麗な祭典だった。",
+          "kana": "それ は そうれい な さいてん だった。",
+          "ro": "sore wa sourei na saiten datta."
+        },
+        {
+          "en": "The castle is magnificent.",
+          "ja": "その城は壮麗だ。",
+          "kana": "その しろ は そうれい だ。",
+          "ro": "sono shiro wa sourei da."
+        },
+        {
+          "en": "The ceremony was splendid.",
+          "ja": "式典は壮麗に行われた。",
+          "kana": "しきてん は そうれい に おこなわれた。",
+          "ro": "shikiten wa sourei ni okonawareta."
+        },
+        {
+          "en": "It was a glorious scene.",
+          "ja": "それは壮麗な光景だった。",
+          "kana": "それ は そうれい な こうけい だった。",
+          "ro": "sore wa sourei na koukei datta."
+        },
+        {
+          "en": "They admired the splendid decoration.",
+          "ja": "彼らは壮麗な装飾に見とれた。",
+          "kana": "かれら は そうれい な そうしょく に みとれた。",
+          "ro": "karera wa sourei na soushoku ni mitoreta."
+        },
+        {
+          "en": "The palace was beautifully illuminated.",
+          "ja": "宮殿は壮麗に照らされていた。",
+          "kana": "きゅうでん は そうれい に てらされて いた。",
+          "ro": "kyuuden wa sourei ni terasarete ita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "soure"
+    },
+    {
+      "id": "n1-naadj-009",
+      "ja": "厳粛",
+      "kana": "げんしゅく",
+      "ro": "genshuku",
+      "en": "solemn / serious / grave; solemn / serious / dignified",
+      "examples": [
+        {
+          "en": "The ceremony was solemn.",
+          "ja": "式典は厳粛に行われた。",
+          "kana": "しきてん は げんしゅく に おこなわれた。",
+          "ro": "shikiten wa genshuku ni okonawareta."
+        },
+        {
+          "en": "He spoke with a serious tone.",
+          "ja": "彼は厳粛な口調で話した。",
+          "kana": "かれ は げんしゅく な くちょう で はなした。",
+          "ro": "kare wa genshuku na kuchou de hanashita."
+        },
+        {
+          "en": "The atmosphere was solemn and calm.",
+          "ja": "雰囲気は厳粛で静かだった。",
+          "kana": "ふんいき は げんしゅく で しずか だった。",
+          "ro": "fun’iki wa genshuku de shizuka datta."
+        },
+        {
+          "en": "He made a solemn promise.",
+          "ja": "彼は厳粛な約束をした。",
+          "kana": "かれ は げんしゅく な やくそく を した。",
+          "ro": "kare wa genshuku na yakusoku o shita."
+        },
+        {
+          "en": "It was a grave moment.",
+          "ja": "それは厳粛な瞬間だった。",
+          "kana": "それ は げんしゅく な しゅんかん だった。",
+          "ro": "sore wa genshuku na shunkan datta."
+        },
+        {
+          "en": "He gave a serious speech.",
+          "ja": "彼は厳粛な演説をした。",
+          "kana": "かれ は げんしゅく な えんぜつ を した。",
+          "ro": "kare wa genshuku na enzetsu o shita."
+        },
+        {
+          "en": "The atmosphere in the hall was solemn.",
+          "ja": "会場の雰囲気は厳粛だった。",
+          "kana": "かいじょう の ふんいき は げんしゅく だった。",
+          "ro": "kaijou no fun’iki wa genshuku datta."
+        },
+        {
+          "en": "The atmosphere was serious and respectful.",
+          "ja": "その場は厳粛な空気に包まれていた。",
+          "kana": "その ば は げんしゅく な くうき に つつまれて いた。",
+          "ro": "sono ba wa genshuku na kuuki ni tsutsumarete ita."
+        },
+        {
+          "en": "The ceremony was solemn.",
+          "ja": "式は厳粛に行われた。",
+          "kana": "しき は げんしゅく に おこなわれた。",
+          "ro": "shiki wa genshuku ni okonawareta."
+        },
+        {
+          "en": "The atmosphere was dignified.",
+          "ja": "会場は厳粛な雰囲気に包まれていた。",
+          "kana": "かいじょう は げんしゅく な ふんいき に つつまれて いた。",
+          "ro": "kaijou wa genshuku na fun’iki ni tsutsumarete ita."
+        },
+        {
+          "en": "It was a solemn event.",
+          "ja": "それは厳粛な行事だった。",
+          "kana": "それ は げんしゅく な ぎょうじ だった。",
+          "ro": "sore wa genshuku na gyouji datta."
+        },
+        {
+          "en": "He made a solemn vow.",
+          "ja": "彼は厳粛な誓いを立てた。",
+          "kana": "かれ は げんしゅく な ちかい を たてた。",
+          "ro": "kare wa genshuku na chikai o tateta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "genshuku"
+    },
+    {
+      "id": "n1-naadj-010",
+      "ja": "精巧",
+      "kana": "せいこう",
+      "ro": "seikou",
+      "en": "elaborate / delicate / finely made; elaborate / delicate / sophisticated; elaborate / delicate / exquisite; elaborate / delicate / intricate",
+      "examples": [
+        {
+          "en": "This watch is very elaborate.",
+          "ja": "この時計はとても精巧だ。",
+          "kana": "この とけい は とても せいこう だ。",
+          "ro": "kono tokei wa totemo seikou da."
+        },
+        {
+          "en": "It’s a finely made machine.",
+          "ja": "それは精巧な機械だ。",
+          "kana": "それ は せいこう な きかい だ。",
+          "ro": "sore wa seikou na kikai da."
+        },
+        {
+          "en": "The structure is finely designed.",
+          "ja": "構造は精巧に作られている。",
+          "kana": "こうぞう は せいこう に つくられて いる。",
+          "ro": "kouzou wa seikou ni tsukurarete iru."
+        },
+        {
+          "en": "He created an elaborate model.",
+          "ja": "彼は精巧な模型を作った。",
+          "kana": "かれ は せいこう な もけい を つくった。",
+          "ro": "kare wa seikou na mokei o tsukutta."
+        },
+        {
+          "en": "This is a delicate piece of craftsmanship.",
+          "ja": "これは精巧な工芸品だ。",
+          "kana": "これ は せいこう な こうげいひん だ。",
+          "ro": "kore wa seikou na kougeihin da."
+        },
+        {
+          "en": "This is an elaborate model.",
+          "ja": "これは精巧な模型だ。",
+          "kana": "これ は せいこう な もけい だ。",
+          "ro": "kore wa seikou na mokei da."
+        },
+        {
+          "en": "The mechanism is highly sophisticated.",
+          "ja": "機構は非常に精巧だ。",
+          "kana": "きこう は ひじょう に せいこう だ。",
+          "ro": "kikou wa hijou ni seikou da."
+        },
+        {
+          "en": "He crafted a delicate clock.",
+          "ja": "彼は精巧な時計を作った。",
+          "kana": "かれ は せいこう な とけい を つくった。",
+          "ro": "kare wa seikou na tokei o tsukutta."
+        },
+        {
+          "en": "This work shows precise technique.",
+          "ja": "この作品は精巧な技術を示している。",
+          "kana": "この さくひん は せいこう な ぎじゅつ を しめして いる。",
+          "ro": "kono sakuhin wa seikou na gijutsu o shimeshite iru."
+        },
+        {
+          "en": "It was a sophisticated piece of art.",
+          "ja": "それは精巧な芸術品だった。",
+          "kana": "それ は せいこう な げいじゅつひん だった。",
+          "ro": "sore wa seikou na geijutsuhin datta."
+        },
+        {
+          "en": "This watch has an elaborate design.",
+          "ja": "この時計は精巧なデザインだ。",
+          "kana": "この とけい は せいこう な でざいん だ。",
+          "ro": "kono tokei wa seikou na dezain da."
+        },
+        {
+          "en": "It’s a finely made model.",
+          "ja": "それは精巧に作られた模型だ。",
+          "kana": "それ は せいこう に つくられた もけい だ。",
+          "ro": "sore wa seikou ni tsukurareta mokei da."
+        },
+        {
+          "en": "The jewelry is exquisitely crafted.",
+          "ja": "その宝石は精巧な細工が施されている。",
+          "kana": "その ほうせき は せいこう な さいく が ほどこされて いる。",
+          "ro": "sono houseki wa seikou na saiku ga hodokosarete iru."
+        },
+        {
+          "en": "He admired the fine craftsmanship.",
+          "ja": "彼はその精巧な職人技に感心した。",
+          "kana": "かれ は その せいこう な しょくにんわざ に かんしん した。",
+          "ro": "kare wa sono seikou na shokuninwaza ni kanshin shita."
+        },
+        {
+          "en": "The mechanism of this machine is intricate.",
+          "ja": "この機械の仕組みは精巧だ。",
+          "kana": "この きかい の しくみ は せいこう だ。",
+          "ro": "kono kikai no shikumi wa seikou da."
+        },
+        {
+          "en": "This sculpture is delicately made.",
+          "ja": "この彫刻は精巧に作られている。",
+          "kana": "この ちょうこく は せいこう に つくられて いる。",
+          "ro": "kono choukoku wa seikou ni tsukurarete iru."
+        },
+        {
+          "en": "He is skilled at making intricate designs.",
+          "ja": "彼は精巧なデザインを得意としている。",
+          "kana": "かれ は せいこう な でざいん を とくい と して いる。",
+          "ro": "kare wa seikou na dezain o tokui to shite iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "seikou"
+    },
+    {
+      "id": "n1-naadj-011",
+      "ja": "強力",
+      "kana": "きょうりょく",
+      "ro": "kyouryoku",
+      "en": "powerful / strong / forceful",
+      "examples": [
+        {
+          "en": "The temple was majestic.",
+          "ja": "その寺院は荘厳だった。",
+          "kana": "その じいん は そうごん だった。",
+          "ro": "sono jiin wa sougon datta."
+        },
+        {
+          "en": "It was a solemn ceremony.",
+          "ja": "それは荘厳な儀式だった。",
+          "kana": "それ は そうごん な ぎしき だった。",
+          "ro": "sore wa sougon na gishiki datta."
+        },
+        {
+          "en": "The music had a majestic tone.",
+          "ja": "音楽は荘厳な響きを持っていた。",
+          "kana": "おんがく は そうごん な ひびき を もって いた。",
+          "ro": "ongaku wa sougon na hibiki o motte ita."
+        },
+        {
+          "en": "We were moved by the grand atmosphere.",
+          "ja": "私たちは荘厳な雰囲気に感動した。",
+          "kana": "わたしたち は そうごん な ふんいき に かんどう した。",
+          "ro": "watashitachi wa sougon na fun’iki ni kandou shita."
+        },
+        {
+          "en": "The hall looked solemn and majestic.",
+          "ja": "そのホールは荘厳な雰囲気だった。",
+          "kana": "その ほーる は そうごん な ふんいき だった。",
+          "ro": "sono hooru wa sougon na fun’iki datta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "sougonn"
+    },
+    {
+      "id": "n1-naadj-012",
+      "ja": "健康",
+      "kana": "けんこう",
+      "ro": "kenkou",
+      "en": "healthy / well / in good health",
+      "examples": [
+        {
+          "en": "He is very healthy.",
+          "ja": "彼はとても健康だ。",
+          "kana": "かれ は とても けんこう だ。",
+          "ro": "kare wa totemo kenkou da."
+        },
+        {
+          "en": "She looks healthy and energetic.",
+          "ja": "彼女は健康そうに見える。",
+          "kana": "かのじょ は けんこう そう に みえる。",
+          "ro": "kanojo wa kenkou sou ni mieru."
+        },
+        {
+          "en": "I want to live a healthy life.",
+          "ja": "健康な生活を送りたい。",
+          "kana": "けんこう な せいかつ を おくりたい。",
+          "ro": "kenkou na seikatsu o okuritai."
+        },
+        {
+          "en": "He is careful about his health.",
+          "ja": "彼は健康に気をつけている。",
+          "kana": "かれ は けんこう に き を つけて いる。",
+          "ro": "kare wa kenkou ni ki o tsukete iru."
+        },
+        {
+          "en": "Being healthy is the most important thing.",
+          "ja": "健康であることが一番大切です。",
+          "kana": "けんこう で ある こと が いちばん たいせつ です。",
+          "ro": "kenkou de aru koto ga ichiban taisetsu desu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kenkou"
+    },
+    {
+      "id": "n1-naadj-013",
+      "ja": "穏やか",
+      "kana": "おだやか",
+      "ro": "odayaka",
+      "en": "calm / gentle / mild",
+      "examples": [
+        {
+          "en": "He has a cheerful personality.",
+          "ja": "彼は明朗な性格だ。",
+          "kana": "かれ は めいろう な せいかく だ。",
+          "ro": "kare wa meirou na seikaku da."
+        },
+        {
+          "en": "Her voice is bright and clear.",
+          "ja": "彼女の声は明朗だ。",
+          "kana": "かのじょ の こえ は めいろう だ。",
+          "ro": "kanojo no koe wa meirou da."
+        },
+        {
+          "en": "He gave a clear explanation.",
+          "ja": "彼は明朗な説明をした。",
+          "kana": "かれ は めいろう な せつめい を した。",
+          "ro": "kare wa meirou na setsumei o shita."
+        },
+        {
+          "en": "The atmosphere is cheerful.",
+          "ja": "雰囲気が明朗だ。",
+          "kana": "ふんいき が めいろう だ。",
+          "ro": "fun’iki ga meirou da."
+        },
+        {
+          "en": "She greeted us with a bright smile.",
+          "ja": "彼女は明朗な笑顔で挨拶した。",
+          "kana": "かのじょ は めいろう な えがお で あいさつ した。",
+          "ro": "kanojo wa meirou na egao de aisatsu shita."
+        },
+        {
+          "en": "She has a bright personality.",
+          "ja": "彼女は明朗な性格だ。",
+          "kana": "かのじょ は めいろう な せいかく だ。",
+          "ro": "kanojo wa meirou na seikaku da."
+        },
+        {
+          "en": "He gave a clear and pleasant speech.",
+          "ja": "彼は明朗なスピーチをした。",
+          "kana": "かれ は めいろう な すぴーち を した。",
+          "ro": "kare wa meirou na supiichi o shita."
+        },
+        {
+          "en": "She always greets people cheerfully.",
+          "ja": "彼女はいつも明朗にあいさつする。",
+          "kana": "かのじょ は いつも めいろう に あいさつ する。",
+          "ro": "kanojo wa itsumo meirou ni aisatsu suru."
+        },
+        {
+          "en": "He is honest and open-minded.",
+          "ja": "彼は明朗で正直な人だ。",
+          "kana": "かれ は めいろう で しょうじき な ひと だ。",
+          "ro": "kare wa meirou de shoujiki na hito da."
+        },
+        {
+          "en": "Her laughter is bright and refreshing.",
+          "ja": "彼女の笑い声は明朗でさわやかだ。",
+          "kana": "かのじょ の わらいごえ は めいろう で さわやか だ。",
+          "ro": "kanojo no waraigoe wa meirou de sawayaka da."
+        },
+        {
+          "en": "She has a cheerful personality.",
+          "ja": "彼女は明朗な性格です。",
+          "kana": "かのじょ は めいろう な せいかく です。",
+          "ro": "kanojo wa meirou na seikaku desu."
+        },
+        {
+          "en": "She greeted everyone brightly.",
+          "ja": "彼女は明朗にあいさつした。",
+          "kana": "かのじょ は めいろう に あいさつ した。",
+          "ro": "kanojo wa meirou ni aisatsu shita."
+        },
+        {
+          "en": "He is known for his cheerful disposition.",
+          "ja": "彼は明朗な気質で知られている。",
+          "kana": "かれ は めいろう な きしつ で しられて いる。",
+          "ro": "kare wa meirou na kishitsu de shirarete iru."
+        },
+        {
+          "en": "The atmosphere in the office is bright and pleasant.",
+          "ja": "職場の雰囲気は明朗だ。",
+          "kana": "しょくば の ふんいき は めいろう だ。",
+          "ro": "shokuba no fun’iki wa meirou da."
+        },
+        {
+          "en": "The atmosphere in the room is bright.",
+          "ja": "部屋の雰囲気は明朗だ。",
+          "kana": "へや の ふんいき は めいろう だ。",
+          "ro": "heya no fun’iki wa meirou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "meirou"
+    },
+    {
+      "id": "n1-naadj-014",
+      "ja": "健康",
+      "kana": "けんこう",
+      "ro": "kenkou",
+      "en": "healthy / sound / well",
+      "examples": [
+        {
+          "en": "The fireworks were spectacular.",
+          "ja": "花火は壮観だった。",
+          "kana": "はなび は そうかん だった。",
+          "ro": "hanabi wa soukan datta."
+        },
+        {
+          "en": "The view from the mountain was magnificent.",
+          "ja": "山からの眺めは壮観だった。",
+          "kana": "やま から の ながめ は そうかん だった。",
+          "ro": "yama kara no nagame wa soukan datta."
+        },
+        {
+          "en": "It was a grand scene.",
+          "ja": "それは壮観な光景だった。",
+          "kana": "それ は そうかん な こうけい だった。",
+          "ro": "sore wa soukan na koukei datta."
+        },
+        {
+          "en": "The parade was truly magnificent.",
+          "ja": "パレードは本当に壮観だった。",
+          "kana": "ぱれーど は ほんとう に そうかん だった。",
+          "ro": "pareedo wa hontou ni soukan datta."
+        },
+        {
+          "en": "We were moved by the grand spectacle.",
+          "ja": "私たちは壮観な景色に感動した。",
+          "kana": "わたしたち は そうかん な けしき に かんどう した。",
+          "ro": "watashitachi wa soukan na keshiki ni kandou shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "soukan"
+    },
+    {
+      "id": "n1-naadj-015",
+      "ja": "厳然",
+      "kana": "げんぜん",
+      "ro": "genzen",
+      "en": "dignified / solemn / firm; dignified / stern / undeniable",
+      "examples": [
+        {
+          "en": "He stood there with dignity.",
+          "ja": "彼は厳然と立っていた。",
+          "kana": "かれ は げんぜん と たって いた。",
+          "ro": "kare wa genzen to tatte ita."
+        },
+        {
+          "en": "The law exists firmly.",
+          "ja": "法律は厳然と存在する。",
+          "kana": "ほうりつ は げんぜん と そんざい する。",
+          "ro": "houritsu wa genzen to sonzai suru."
+        },
+        {
+          "en": "He declared his position solemnly.",
+          "ja": "彼は厳然たる態度を示した。",
+          "kana": "かれ は げんぜん たる たいど を しめした。",
+          "ro": "kare wa genzen taru taido o shimeshita."
+        },
+        {
+          "en": "There is a clear difference between right and wrong.",
+          "ja": "善悪の区別は厳然としている。",
+          "kana": "ぜんあく の くべつ は げんぜん と して いる。",
+          "ro": "zen’aku no kubetsu wa genzen to shite iru."
+        },
+        {
+          "en": "He faced the truth firmly.",
+          "ja": "彼は厳然と真実に向き合った。",
+          "kana": "かれ は げんぜん と しんじつ に むきあった。",
+          "ro": "kare wa genzen to shinjitsu ni mukiatta."
+        },
+        {
+          "en": "The truth remains undeniable.",
+          "ja": "事実は厳然として存在する。",
+          "kana": "じじつ は げんぜん として そんざい する。",
+          "ro": "jijitsu wa genzen toshite sonzai suru."
+        },
+        {
+          "en": "He expressed his stern will.",
+          "ja": "彼は厳然たる意志を示した。",
+          "kana": "かれ は げんぜん たる いし を しめした。",
+          "ro": "kare wa genzen taru ishi o shimeshita."
+        },
+        {
+          "en": "The authority of the law is undeniable.",
+          "ja": "法律の権威は厳然としている。",
+          "kana": "ほうりつ の けんい は げんぜん として いる。",
+          "ro": "houritsu no ken’i wa genzen toshite iru."
+        },
+        {
+          "en": "The flag stood sternly in the wind.",
+          "ja": "旗は風の中に厳然と立っていた。",
+          "kana": "はた は かぜ の なか に げんぜん と たって いた。",
+          "ro": "hata wa kaze no naka ni genzen to tatte ita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "genzen"
+    },
+    {
+      "id": "n1-naadj-016",
+      "ja": "精密",
+      "kana": "せいみつ",
+      "ro": "seimitsu",
+      "en": "precise / detailed / accurate; precise / delicate / accurate",
+      "examples": [
+        {
+          "en": "This is a precise machine.",
+          "ja": "これは精密な機械だ。",
+          "kana": "これ は せいみつ な きかい だ。",
+          "ro": "kore wa seimitsu na kikai da."
+        },
+        {
+          "en": "He did a detailed analysis.",
+          "ja": "彼は精密な分析を行った。",
+          "kana": "かれ は せいみつ な ぶんせき を おこなった。",
+          "ro": "kare wa seimitsu na bunseki o okonatta."
+        },
+        {
+          "en": "The model is made with great precision.",
+          "ja": "模型は精密に作られている。",
+          "kana": "もけい は せいみつ に つくられて いる。",
+          "ro": "mokei wa seimitsu ni tsukurarete iru."
+        },
+        {
+          "en": "We need an accurate measurement.",
+          "ja": "精密な測定が必要だ。",
+          "kana": "せいみつ な そくてい が ひつよう だ。",
+          "ro": "seimitsu na sokutei ga hitsuyou da."
+        },
+        {
+          "en": "He is known for his meticulous work.",
+          "ja": "彼は精密な仕事で知られている。",
+          "kana": "かれ は せいみつ な しごと で しられて いる。",
+          "ro": "kare wa seimitsu na shigoto de shirarete iru."
+        },
+        {
+          "en": "This machine is very precise.",
+          "ja": "この機械は非常に精密だ。",
+          "kana": "この きかい は ひじょう に せいみつ だ。",
+          "ro": "kono kikai wa hijou ni seimitsu da."
+        },
+        {
+          "en": "He made an accurate calculation.",
+          "ja": "彼は精密な計算を行った。",
+          "kana": "かれ は せいみつ な けいさん を おこなった。",
+          "ro": "kare wa seimitsu na keisan o okonatta."
+        },
+        {
+          "en": "This work requires delicate skill.",
+          "ja": "この作業には精密な技術が必要だ。",
+          "kana": "この さぎょう には せいみつ な ぎじゅつ が ひつよう だ。",
+          "ro": "kono sagyou ni wa seimitsu na gijutsu ga hitsuyou da."
+        },
+        {
+          "en": "The clock is made with great precision.",
+          "ja": "その時計は精密に作られている。",
+          "kana": "その とけい は せいみつ に つくられて いる。",
+          "ro": "sono tokei wa seimitsu ni tsukurarete iru."
+        },
+        {
+          "en": "He conducted a detailed investigation.",
+          "ja": "彼は精密な調査を行った。",
+          "kana": "かれ は せいみつ な ちょうさ を おこなった。",
+          "ro": "kare wa seimitsu na chousa o okonatta."
+        },
+        {
+          "en": "He has accurate data analysis skills.",
+          "ja": "彼は精密なデータ分析の能力がある。",
+          "kana": "かれ は せいみつ な でーた ぶんせき の のうりょく が ある。",
+          "ro": "kare wa seimitsu na deeta bunseki no nouryoku ga aru."
+        },
+        {
+          "en": "A precise calculation is required.",
+          "ja": "精密な計算が必要だ。",
+          "kana": "せいみつ な けいさん が ひつよう だ。",
+          "ro": "seimitsu na keisan ga hitsuyou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "seimitsu"
+    },
+    {
+      "id": "n1-naadj-017",
+      "ja": "精密",
+      "kana": "せいみつ",
+      "ro": "seimitsu",
+      "en": "precise / accurate / detailed",
+      "examples": [
+        {
+          "en": "He has a sturdy body.",
+          "ja": "彼は頑健な体をしている。",
+          "kana": "かれ は がんけん な からだ を して いる。",
+          "ro": "kare wa ganken na karada o shite iru."
+        },
+        {
+          "en": "It’s a tough building.",
+          "ja": "それは頑健な建物だ。",
+          "kana": "それ は がんけん な たてもの だ。",
+          "ro": "sore wa ganken na tatemono da."
+        },
+        {
+          "en": "He is mentally strong.",
+          "ja": "彼は頑健な精神を持っている。",
+          "kana": "かれ は がんけん な せいしん を もって いる。",
+          "ro": "kare wa ganken na seishin o motte iru."
+        },
+        {
+          "en": "The bridge’s structure is tough.",
+          "ja": "橋の構造は頑健だ。",
+          "kana": "はし の こうぞう は がんけん だ。",
+          "ro": "hashi no kouzou wa ganken da."
+        },
+        {
+          "en": "He lived a strong and healthy life.",
+          "ja": "彼は頑健な人生を送った。",
+          "kana": "かれ は がんけん な じんせい を おくった。",
+          "ro": "kare wa ganken na jinsei o okutta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "ganken"
+    },
+    {
+      "id": "n1-naadj-018",
+      "ja": "緻密",
+      "kana": "ちみつ",
+      "ro": "chimitsu",
+      "en": "meticulous / precise / detailed; detailed / minute / elaborate; meticulous / detailed / elaborate; detailed / minute / precise",
+      "examples": [
+        {
+          "en": "He made a meticulous plan.",
+          "ja": "彼は緻密な計画を立てた。",
+          "kana": "かれ は ちみつ な けいかく を たてた。",
+          "ro": "kare wa chimitsu na keikaku o tateta."
+        },
+        {
+          "en": "It was a precise analysis.",
+          "ja": "それは緻密な分析だった。",
+          "kana": "それ は ちみつ な ぶんせき だった。",
+          "ro": "sore wa chimitsu na bunseki datta."
+        },
+        {
+          "en": "He works with meticulous care.",
+          "ja": "彼は緻密に仕事をする。",
+          "kana": "かれ は ちみつ に しごと を する。",
+          "ro": "kare wa chimitsu ni shigoto o suru."
+        },
+        {
+          "en": "This novel has a detailed structure.",
+          "ja": "この小説は緻密な構成を持っている。",
+          "kana": "この しょうせつ は ちみつ な こうせい を もって いる。",
+          "ro": "kono shousetsu wa chimitsu na kousei o motte iru."
+        },
+        {
+          "en": "She explained everything precisely.",
+          "ja": "彼女は緻密にすべてを説明した。",
+          "kana": "かのじょ は ちみつ に すべて を せつめい した。",
+          "ro": "kanojo wa chimitsu ni subete o setsumei shita."
+        },
+        {
+          "en": "The plan is detailed and realistic.",
+          "ja": "その計画は緻密で現実的だ。",
+          "kana": "その けいかく は ちみつ で げんじつてき だ。",
+          "ro": "sono keikaku wa chimitsu de genjitsuteki da."
+        },
+        {
+          "en": "He made a very careful calculation.",
+          "ja": "彼は非常に緻密な計算をした。",
+          "kana": "かれ は ひじょう に ちみつ な けいさん を した。",
+          "ro": "kare wa hijou ni chimitsu na keisan o shita."
+        },
+        {
+          "en": "The novel is full of elaborate descriptions.",
+          "ja": "その小説は緻密な描写にあふれている。",
+          "kana": "その しょうせつ は ちみつ な びょうしゃ に あふれて いる。",
+          "ro": "sono shousetsu wa chimitsu na byousha ni afurete iru."
+        },
+        {
+          "en": "We need a more precise strategy.",
+          "ja": "もっと緻密な戦略が必要だ。",
+          "kana": "もっと ちみつ な せんりゃく が ひつよう だ。",
+          "ro": "motto chimitsu na senryaku ga hitsuyou da."
+        },
+        {
+          "en": "He is known for his detailed work.",
+          "ja": "彼は緻密な仕事ぶりで知られている。",
+          "kana": "かれ は ちみつ な しごとぶり で しられて いる。",
+          "ro": "kare wa chimitsu na shigotoburi de shirarete iru."
+        },
+        {
+          "en": "Her handwriting is very detailed.",
+          "ja": "彼女の字は緻密だ。",
+          "kana": "かのじょ の じ は ちみつ だ。",
+          "ro": "kanojo no ji wa chimitsu da."
+        },
+        {
+          "en": "This watch has an elaborate mechanism.",
+          "ja": "この時計は緻密な構造をしている。",
+          "kana": "この とけい は ちみつ な こうぞう を して いる。",
+          "ro": "kono tokei wa chimitsu na kouzou o shite iru."
+        },
+        {
+          "en": "His calculations are extremely precise.",
+          "ja": "彼の計算は非常に緻密だ。",
+          "kana": "かれ の けいさん は ひじょう に ちみつ だ。",
+          "ro": "kare no keisan wa hijou ni chimitsu da."
+        },
+        {
+          "en": "The plan was executed with meticulous precision.",
+          "ja": "計画は緻密に実行された。",
+          "kana": "けいかく は ちみつ に じっこう された。",
+          "ro": "keikaku wa chimitsu ni jikkou sareta."
+        },
+        {
+          "en": "His design is extremely detailed.",
+          "ja": "彼のデザインは非常に緻密だ。",
+          "kana": "かれ の でざいん は ひじょう に ちみつ だ。",
+          "ro": "kare no dezain wa hijou ni chimitsu da."
+        },
+        {
+          "en": "She made a precise analysis.",
+          "ja": "彼女は緻密な分析を行った。",
+          "kana": "かのじょ は ちみつ な ぶんせき を おこなった。",
+          "ro": "kanojo wa chimitsu na bunseki o okonatta."
+        },
+        {
+          "en": "We need a detailed plan.",
+          "ja": "緻密な計画が必要だ。",
+          "kana": "ちみつ な けいかく が ひつよう だ。",
+          "ro": "chimitu na keikaku ga hitsuyou da."
+        },
+        {
+          "en": "The artist drew with minute detail.",
+          "ja": "その画家は緻密に描いた。",
+          "kana": "その がか は ちみつ に えがいた。",
+          "ro": "sono gaka wa chimitsu ni egaita."
+        },
+        {
+          "en": "It’s a work that shows meticulous effort.",
+          "ja": "それは緻密な努力の結晶だ。",
+          "kana": "それ は ちみつ な どりょく の けっしょう だ。",
+          "ro": "sore wa chimitsu na doryoku no kesshou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "chimitsu"
+    },
+    {
+      "id": "n1-naadj-019",
+      "ja": "柔軟",
+      "kana": "じゅうなん",
+      "ro": "juunan",
+      "en": "flexible / adaptable / pliable",
+      "examples": [
+        {
+          "en": "He remains in good health.",
+          "ja": "彼は今も壮健だ。",
+          "kana": "かれ は いま も そうけん だ。",
+          "ro": "kare wa ima mo souken da."
+        },
+        {
+          "en": "She looks healthy and active.",
+          "ja": "彼女は壮健に見える。",
+          "kana": "かのじょ は そうけん に みえる。",
+          "ro": "kanojo wa souken ni mieru."
+        },
+        {
+          "en": "He has a vigorous spirit.",
+          "ja": "彼は壮健な精神を持っている。",
+          "kana": "かれ は そうけん な せいしん を もって いる。",
+          "ro": "kare wa souken na seishin o motte iru."
+        },
+        {
+          "en": "His father is still in good condition.",
+          "ja": "父は今でも壮健である。",
+          "kana": "ちち は いま でも そうけん で ある。",
+          "ro": "chichi wa ima demo souken de aru."
+        },
+        {
+          "en": "I hope you stay healthy forever.",
+          "ja": "いつまでも壮健でいてください。",
+          "kana": "いつまでも そうけん で いて ください。",
+          "ro": "itsumademo souken de ite kudasai."
+        },
+        {
+          "en": "He is still in good health despite his age.",
+          "ja": "彼は年齢の割に壮健だ。",
+          "kana": "かれ は ねんれい の わり に そうけん だ。",
+          "ro": "kare wa nenrei no wari ni souken da."
+        },
+        {
+          "en": "She looks healthy and strong.",
+          "ja": "彼女は壮健な体をしている。",
+          "kana": "かのじょ は そうけん な からだ を して いる。",
+          "ro": "kanojo wa souken na karada o shite iru."
+        },
+        {
+          "en": "He sent a letter to show his good health.",
+          "ja": "彼は壮健を知らせる手紙を送った。",
+          "kana": "かれ は そうけん を しらせる てがみ を おくった。",
+          "ro": "kare wa souken o shiraseru tegami o okutta."
+        },
+        {
+          "en": "The old man is surprisingly robust.",
+          "ja": "その老人は驚くほど壮健だ。",
+          "kana": "その ろうじん は おどろくほど そうけん だ。",
+          "ro": "sono roujin wa odorokuhodo souken da."
+        },
+        {
+          "en": "He has lived a long and healthy life.",
+          "ja": "彼は長寿で壮健な人生を送っている。",
+          "kana": "かれ は ちょうじゅ で そうけん な じんせい を おくって いる。",
+          "ro": "kare wa chouju de souken na jinsei o okutte iru."
+        },
+        {
+          "en": "He is in good health.",
+          "ja": "彼は壮健だ。",
+          "kana": "かれ は そうけん だ。",
+          "ro": "kare wa souken da."
+        },
+        {
+          "en": "She remains healthy even at 80.",
+          "ja": "彼女は80歳でも壮健だ。",
+          "kana": "かのじょ は はちじゅっさい でも そうけん だ。",
+          "ro": "kanojo wa hachijussai demo souken da."
+        },
+        {
+          "en": "He maintains a vigorous lifestyle.",
+          "ja": "彼は壮健な生活を送っている。",
+          "kana": "かれ は そうけん な せいかつ を おくって いる。",
+          "ro": "kare wa souken na seikatsu o okutte iru."
+        },
+        {
+          "en": "His father is still very robust.",
+          "ja": "彼の父は今も壮健だ。",
+          "kana": "かれ の ちち は いま も そうけん だ。",
+          "ro": "kare no chichi wa ima mo souken da."
+        },
+        {
+          "en": "She lives a healthy and active life.",
+          "ja": "彼女は壮健で活動的な人生を送っている。",
+          "kana": "かのじょ は そうけん で かつどうてき な じんせい を おくって いる。",
+          "ro": "kanojo wa souken de katsudouteki na jinsei o okutte iru."
+        },
+        {
+          "en": "He remains healthy even in old age.",
+          "ja": "彼は老年でも壮健だ。",
+          "kana": "かれ は ろうねん でも そうけん だ。",
+          "ro": "kare wa rounen demo souken da."
+        },
+        {
+          "en": "She looks robust and strong.",
+          "ja": "彼女は壮健そうに見える。",
+          "kana": "かのじょ は そうけん そう に みえる。",
+          "ro": "kanojo wa souken sou ni mieru."
+        },
+        {
+          "en": "My grandfather is still vigorous.",
+          "ja": "祖父は今も壮健だ。",
+          "kana": "そふ は いま も そうけん だ。",
+          "ro": "sofu wa ima mo souken da."
+        },
+        {
+          "en": "They wished for each other’s good health.",
+          "ja": "互いの壮健を祈った。",
+          "kana": "たがい の そうけん を いのった。",
+          "ro": "tagai no souken o inotta."
+        },
+        {
+          "en": "My father is still very strong.",
+          "ja": "父は今も壮健だ。",
+          "kana": "ちち は いま も そうけん だ。",
+          "ro": "chichi wa ima mo souken da."
+        },
+        {
+          "en": "She maintains her health well.",
+          "ja": "彼女は壮健で健康管理を欠かさない。",
+          "kana": "かのじょ は そうけん で けんこう かんり を かかさない。",
+          "ro": "kanojo wa souken de kenkou kanri o kakasanai."
+        },
+        {
+          "en": "She lives a vigorous life.",
+          "ja": "彼女は壮健な生活を送っている。",
+          "kana": "かのじょ は そうけん な せいかつ を おくって いる。",
+          "ro": "kanojo wa souken na seikatsu o okutte iru."
+        },
+        {
+          "en": "He looks robust and energetic.",
+          "ja": "彼は壮健そうに見える。",
+          "kana": "かれ は そうけん そう に みえる。",
+          "ro": "kare wa souken sou ni mieru."
+        },
+        {
+          "en": "The athlete is in excellent health.",
+          "ja": "その選手は壮健だ。",
+          "kana": "その せんしゅ は そうけん だ。",
+          "ro": "sono senshu wa souken da."
+        },
+        {
+          "en": "He always greets people energetically.",
+          "ja": "彼は壮健な挨拶をする。",
+          "kana": "かれ は そうけん な あいさつ を する。",
+          "ro": "kare wa souken na aisatsu o suru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "souken"
+    },
+    {
+      "id": "n1-naadj-020",
+      "ja": "端的",
+      "kana": "たんてき",
+      "ro": "tanteki",
+      "en": "direct / straightforward / concise; concise / straightforward / direct",
+      "examples": [
+        {
+          "en": "He gave a straightforward answer.",
+          "ja": "彼は端的な答えをした。",
+          "kana": "かれ は たんてき な こたえ を した。",
+          "ro": "kare wa tanteki na kotae o shita."
+        },
+        {
+          "en": "Please explain it concisely.",
+          "ja": "端的に説明してください。",
+          "kana": "たんてき に せつめい して ください。",
+          "ro": "tanteki ni setsumei shite kudasai."
+        },
+        {
+          "en": "Her words were clear and direct.",
+          "ja": "彼女の言葉は端的だった。",
+          "kana": "かのじょ の ことば は たんてき だった。",
+          "ro": "kanojo no kotoba wa tanteki datta."
+        },
+        {
+          "en": "He summarized it briefly.",
+          "ja": "彼は端的にまとめた。",
+          "kana": "かれ は たんてき に まとめた。",
+          "ro": "kare wa tanteki ni matometa."
+        },
+        {
+          "en": "It was a concise explanation.",
+          "ja": "それは端的な説明だった。",
+          "kana": "それ は たんてき な せつめい だった。",
+          "ro": "sore wa tanteki na setsumei datta."
+        },
+        {
+          "en": "Please express it in a straightforward manner.",
+          "ja": "端的に表現してください。",
+          "kana": "たんてき に ひょうげん して ください。",
+          "ro": "tanteki ni hyougen shite kudasai."
+        },
+        {
+          "en": "Her explanation was direct and easy to understand.",
+          "ja": "彼女の説明は端的でわかりやすかった。",
+          "kana": "かのじょ の せつめい は たんてき で わかりやすかった。",
+          "ro": "kanojo no setsumei wa tanteki de wakariyasukatta."
+        },
+        {
+          "en": "He summarized the point concisely.",
+          "ja": "彼は要点を端的にまとめた。",
+          "kana": "かれ は ようてん を たんてき に まとめた。",
+          "ro": "kare wa youten o tanteki ni matometa."
+        },
+        {
+          "en": "Her comment was very straightforward.",
+          "ja": "彼女のコメントは非常に端的だった。",
+          "kana": "かのじょ の こめんと は ひじょう に たんてき だった。",
+          "ro": "kanojo no komento wa hijou ni tanteki datta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "tanteki"
+    },
+    {
+      "id": "n1-naadj-021",
+      "ja": "悠然",
+      "kana": "ゆうぜん",
+      "ro": "yuzen",
+      "en": "composed / calm / leisurely",
+      "examples": [
+        {
+          "en": "He walked calmly through the park.",
+          "ja": "彼は悠然と公園を歩いた。",
+          "kana": "かれ は ゆうぜん と こうえん を あるいた。",
+          "ro": "kare wa yuzen to kouen o aruita."
+        },
+        {
+          "en": "She smiled calmly.",
+          "ja": "彼女は悠然と笑った。",
+          "kana": "かのじょ は ゆうぜん と わらった。",
+          "ro": "kanojo wa yuzen to waratta."
+        },
+        {
+          "en": "He remained composed even under pressure.",
+          "ja": "彼は圧力の中でも悠然としていた。",
+          "kana": "かれ は あつりょく の なか でも ゆうぜん と して いた。",
+          "ro": "kare wa atsuryoku no naka demo yuzen to shite ita."
+        },
+        {
+          "en": "She waved her hand leisurely.",
+          "ja": "彼女は悠然と手を振った。",
+          "kana": "かのじょ は ゆうぜん と て を ふった。",
+          "ro": "kanojo wa yuzen to te o futta."
+        },
+        {
+          "en": "The mountain stood calm and dignified.",
+          "ja": "山は悠然とそびえていた。",
+          "kana": "やま は ゆうぜん と そびえて いた。",
+          "ro": "yama wa yuzen to sobiete ita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "yuzen"
+    },
+    {
+      "id": "n1-naadj-022",
+      "ja": "優雅",
+      "kana": "ゆうが",
+      "ro": "yuuga",
+      "en": "elegant / graceful / refined",
+      "examples": [
+        {
+          "en": "She has an elegant posture.",
+          "ja": "彼女は優雅な姿勢をしている。",
+          "kana": "かのじょ は ゆうが な しせい を して いる。",
+          "ro": "kanojo wa yuuga na shisei o shite iru."
+        },
+        {
+          "en": "Her dance was graceful.",
+          "ja": "彼女の踊りは優雅だった。",
+          "kana": "かのじょ の おどり は ゆうが だった。",
+          "ro": "kanojo no odori wa yuuga datta."
+        },
+        {
+          "en": "He lives an elegant life.",
+          "ja": "彼は優雅な生活を送っている。",
+          "kana": "かれ は ゆうが な せいかつ を おくって いる。",
+          "ro": "kare wa yuuga na seikatsu o okutte iru."
+        },
+        {
+          "en": "The atmosphere was calm and refined.",
+          "ja": "雰囲気は優雅で落ち着いていた。",
+          "kana": "ふんいき は ゆうが で おちついて いた。",
+          "ro": "fun’iki wa yuuga de ochitsuite ita."
+        },
+        {
+          "en": "She spoke in an elegant manner.",
+          "ja": "彼女は優雅な口調で話した。",
+          "kana": "かのじょ は ゆうが な くちょう で はなした。",
+          "ro": "kanojo wa yuuga na kuchou de hanashita."
+        },
+        {
+          "en": "She walked in an elegant manner.",
+          "ja": "彼女は優雅に歩いた。",
+          "kana": "かのじょ は ゆうが に あるいた。",
+          "ro": "kanojo wa yuuga ni aruita."
+        },
+        {
+          "en": "The piano performance was graceful.",
+          "ja": "ピアノの演奏は優雅だった。",
+          "kana": "ぴあの の えんそう は ゆうが だった。",
+          "ro": "piano no ensou wa yuuga datta."
+        },
+        {
+          "en": "She has elegant manners.",
+          "ja": "彼女は優雅な立ち振る舞いをする。",
+          "kana": "かのじょ は ゆうが な たちふるまい を する。",
+          "ro": "kanojo wa yuuga na tachifurumai o suru."
+        },
+        {
+          "en": "The garden has a refined atmosphere.",
+          "ja": "その庭は優雅な雰囲気を持っている。",
+          "kana": "その にわ は ゆうが な ふんいき を もって いる。",
+          "ro": "sono niwa wa yuuga na fun’iki o motte iru."
+        },
+        {
+          "en": "She smiled elegantly.",
+          "ja": "彼女は優雅に微笑んだ。",
+          "kana": "かのじょ は ゆうが に ほほえんだ。",
+          "ro": "kanojo wa yuuga ni hohoenda."
+        },
+        {
+          "en": "Her movements were elegant.",
+          "ja": "彼女の動きは優雅だった。",
+          "kana": "かのじょ の うごき は ゆうが だった。",
+          "ro": "kanojo no ugoki wa yuuga datta."
+        },
+        {
+          "en": "This hall has an elegant design.",
+          "ja": "このホールは優雅なデザインだ。",
+          "kana": "この ほーる は ゆうが な でざいん だ。",
+          "ro": "kono hooru wa yuuga na dezain da."
+        },
+        {
+          "en": "Her voice is calm and elegant.",
+          "ja": "彼女の声は優雅で落ち着いている。",
+          "kana": "かのじょ の こえ は ゆうが で おちついて いる。",
+          "ro": "kanojo no koe wa yuuga de ochitsuite iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "yuuga"
+    },
+    {
+      "id": "n1-naadj-023",
+      "ja": "緩慢",
+      "kana": "かんまん",
+      "ro": "kanman",
+      "en": "slow / sluggish / inactive; slow / sluggish / lethargic",
+      "examples": [
+        {
+          "en": "The progress is slow.",
+          "ja": "進行が緩慢だ。",
+          "kana": "しんこう が かんまん だ。",
+          "ro": "shinkou ga kanman da."
+        },
+        {
+          "en": "His reaction was sluggish.",
+          "ja": "彼の反応は緩慢だった。",
+          "kana": "かれ の はんのう は かんまん だった。",
+          "ro": "kare no hannou wa kanman datta."
+        },
+        {
+          "en": "The company’s response was slow.",
+          "ja": "会社の対応は緩慢だった。",
+          "kana": "かいしゃ の たいおう は かんまん だった。",
+          "ro": "kaisha no taiou wa kanman datta."
+        },
+        {
+          "en": "He spoke in a sluggish manner.",
+          "ja": "彼は緩慢な口調で話した。",
+          "kana": "かれ は かんまん な くちょう で はなした。",
+          "ro": "kare wa kanman na kuchou de hanashita."
+        },
+        {
+          "en": "The recovery was slow but steady.",
+          "ja": "回復は緩慢だが着実だった。",
+          "kana": "かいふく は かんまん だ が ちゃくじつ だった。",
+          "ro": "kaifuku wa kanman da ga chakujitsu datta."
+        },
+        {
+          "en": "Economic recovery has been slow.",
+          "ja": "経済の回復は緩慢だ。",
+          "kana": "けいざい の かいふく は かんまん だ。",
+          "ro": "keizai no kaifuku wa kanman da."
+        },
+        {
+          "en": "The progress of the project is slow.",
+          "ja": "プロジェクトの進行が緩慢だ。",
+          "kana": "ぷろじぇくと の しんこう が かんまん だ。",
+          "ro": "purojekuto no shinkou ga kanman da."
+        },
+        {
+          "en": "The recovery of demand is still sluggish.",
+          "ja": "需要の回復は依然として緩慢だ。",
+          "kana": "じゅよう の かいふく は いぜん として かんまん だ。",
+          "ro": "juyou no kaifuku wa izen toshite kanman da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kanman"
+    },
+    {
+      "id": "n1-naadj-024",
+      "ja": "明瞭",
+      "kana": "めいりょう",
+      "ro": "meiryou",
+      "en": "clear / distinct / lucid; clear / distinct / articulate",
+      "examples": [
+        {
+          "en": "He spoke with a clear voice.",
+          "ja": "彼は明瞭な声で話した。",
+          "kana": "かれ は めいりょう な こえ で はなした。",
+          "ro": "kare wa meiryou na koe de hanashita."
+        },
+        {
+          "en": "The explanation was easy to understand.",
+          "ja": "説明は明瞭だった。",
+          "kana": "せつめい は めいりょう だった。",
+          "ro": "setsumei wa meiryou datta."
+        },
+        {
+          "en": "His intention is clear.",
+          "ja": "彼の意図は明瞭だ。",
+          "kana": "かれ の いと は めいりょう だ。",
+          "ro": "kare no ito wa meiryou da."
+        },
+        {
+          "en": "Please write in clear letters.",
+          "ja": "明瞭な文字で書いてください。",
+          "kana": "めいりょう な もじ で かいて ください。",
+          "ro": "meiryou na moji de kaite kudasai."
+        },
+        {
+          "en": "Her pronunciation is very clear.",
+          "ja": "彼女の発音はとても明瞭だ。",
+          "kana": "かのじょ の はつおん は とても めいりょう だ。",
+          "ro": "kanojo no hatsuon wa totemo meiryou da."
+        },
+        {
+          "en": "His speech was clear and easy to understand.",
+          "ja": "彼のスピーチは明瞭でわかりやすかった。",
+          "kana": "かれ の すぴーち は めいりょう で わかりやすかった。",
+          "ro": "kare no supiichi wa meiryou de wakariyasukatta."
+        },
+        {
+          "en": "She gave a clear explanation.",
+          "ja": "彼女は明瞭な説明をした。",
+          "kana": "かのじょ は めいりょう な せつめい を した。",
+          "ro": "kanojo wa meiryou na setsumei o shita."
+        },
+        {
+          "en": "The meaning is not clear.",
+          "ja": "意味が明瞭ではない。",
+          "kana": "いみ が めいりょう で は ない。",
+          "ro": "imi ga meiryou de wa nai."
+        },
+        {
+          "en": "He spoke with clear pronunciation.",
+          "ja": "彼は明瞭な発音で話した。",
+          "kana": "かれ は めいりょう な はつおん で はなした。",
+          "ro": "kare wa meiryou na hatsuon de hanashita."
+        },
+        {
+          "en": "The distinction between the two is clear.",
+          "ja": "二つの違いは明瞭だ。",
+          "kana": "ふたつ の ちがい は めいりょう だ。",
+          "ro": "futatsu no chigai wa meiryou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "meiryou"
+    },
+    {
+      "id": "n1-naadj-025",
+      "ja": "円滑",
+      "kana": "えんかつ",
+      "ro": "enkatsu",
+      "en": "smooth / harmonious / trouble-free",
+      "examples": [
+        {
+          "en": "The meeting went smoothly.",
+          "ja": "会議は円滑に進んだ。",
+          "kana": "かいぎ は えんかつ に すすんだ。",
+          "ro": "kaigi wa enkatsu ni susunda."
+        },
+        {
+          "en": "He managed the project smoothly.",
+          "ja": "彼は円滑にプロジェクトを管理した。",
+          "kana": "かれ は えんかつ に ぷろじぇくと を かんり した。",
+          "ro": "kare wa enkatsu ni purojekuto o kanri shita."
+        },
+        {
+          "en": "Communication is smooth between us.",
+          "ja": "私たちの間のコミュニケーションは円滑だ。",
+          "kana": "わたしたち の あいだ の こみゅにけーしょん は えんかつ だ。",
+          "ro": "watashitachi no aida no komyunikeeshon wa enkatsu da."
+        },
+        {
+          "en": "The plan is progressing harmoniously.",
+          "ja": "計画は円滑に進行している。",
+          "kana": "けいかく は えんかつ に しんこう して いる。",
+          "ro": "keikaku wa enkatsu ni shinkou shite iru."
+        },
+        {
+          "en": "We hope for smooth cooperation.",
+          "ja": "円滑な協力を願っています。",
+          "kana": "えんかつ な きょうりょく を ねがって います。",
+          "ro": "enkatsu na kyouryoku o negatte imasu."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "enkatsu"
+    },
+    {
+      "id": "n1-naadj-026",
+      "ja": "華麗",
+      "kana": "かれい",
+      "ro": "karei",
+      "en": "splendid / brilliant / glamorous",
+      "examples": [
+        {
+          "en": "She wore a splendid dress.",
+          "ja": "彼女は華麗なドレスを着ていた。",
+          "kana": "かのじょ は かれい な どれす を きて いた。",
+          "ro": "kanojo wa karei na doresu o kite ita."
+        },
+        {
+          "en": "It was a glamorous performance.",
+          "ja": "それは華麗なパフォーマンスだった。",
+          "kana": "それ は かれい な ぱふぉーまんす だった。",
+          "ro": "sore wa karei na pafomansu datta."
+        },
+        {
+          "en": "He showed brilliant skill.",
+          "ja": "彼は華麗な技を見せた。",
+          "kana": "かれ は かれい な わざ を みせた。",
+          "ro": "kare wa karei na waza o miseta."
+        },
+        {
+          "en": "The stage was colorful and gorgeous.",
+          "ja": "舞台は華麗で色鮮やかだった。",
+          "kana": "ぶたい は かれい で いろあざやか だった。",
+          "ro": "butai wa karei de iroazayaka datta."
+        },
+        {
+          "en": "She made a brilliant entrance.",
+          "ja": "彼女は華麗に登場した。",
+          "kana": "かのじょ は かれい に とうじょう した。",
+          "ro": "kanojo wa karei ni toujou shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "karei"
+    },
+    {
+      "id": "n1-naadj-027",
+      "ja": "明確",
+      "kana": "めいかく",
+      "ro": "meikaku",
+      "en": "clear / definite / distinct; clear / definite / explicit",
+      "examples": [
+        {
+          "en": "He gave a clear answer.",
+          "ja": "彼は明確な答えをした。",
+          "kana": "かれ は めいかく な こたえ を した。",
+          "ro": "kare wa meikaku na kotae o shita."
+        },
+        {
+          "en": "The rule is clear.",
+          "ja": "規則は明確だ。",
+          "kana": "きそく は めいかく だ。",
+          "ro": "kisoku wa meikaku da."
+        },
+        {
+          "en": "She stated her opinion clearly.",
+          "ja": "彼女は意見を明確に述べた。",
+          "kana": "かのじょ は いけん を めいかく に のべた。",
+          "ro": "kanojo wa iken o meikaku ni nobeta."
+        },
+        {
+          "en": "The goal is clearly defined.",
+          "ja": "目標は明確に定められている。",
+          "kana": "もくひょう は めいかく に さだめられて いる。",
+          "ro": "mokuhyou wa meikaku ni sadamerarete iru."
+        },
+        {
+          "en": "His position on this issue is definite.",
+          "ja": "この問題に対する彼の立場は明確だ。",
+          "kana": "この もんだい に たいする かれ の たちば は めいかく だ。",
+          "ro": "kono mondai ni taisuru kare no tachiba wa meikaku da."
+        },
+        {
+          "en": "He gave a clear answer.",
+          "ja": "彼は明確な答えを出した。",
+          "kana": "かれ は めいかく な こたえ を だした。",
+          "ro": "kare wa meikaku na kotae o dashita."
+        },
+        {
+          "en": "She stated her opinion explicitly.",
+          "ja": "彼女は自分の意見を明確に述べた。",
+          "kana": "かのじょ は じぶん の いけん を めいかく に のべた。",
+          "ro": "kanojo wa jibun no iken o meikaku ni nobeta."
+        },
+        {
+          "en": "There is a clear difference between the two.",
+          "ja": "二つの間には明確な違いがある。",
+          "kana": "ふたつ の あいだ には めいかく な ちがい が ある。",
+          "ro": "futatsu no aida ni wa meikaku na chigai ga aru."
+        },
+        {
+          "en": "We need a clear goal.",
+          "ja": "明確な目標が必要だ。",
+          "kana": "めいかく な もくひょう が ひつよう だ。",
+          "ro": "meikaku na mokuhyou ga hitsuyou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "meikaku"
+    },
+    {
+      "id": "n1-naadj-028",
+      "ja": "的確",
+      "kana": "てきかく",
+      "ro": "tekikaku",
+      "en": "accurate / appropriate / precise",
+      "examples": [
+        {
+          "en": "He gave an accurate answer.",
+          "ja": "彼は的確な答えをした。",
+          "kana": "かれ は てきかく な こたえ を した。",
+          "ro": "kare wa tekikaku na kotae o shita."
+        },
+        {
+          "en": "She made a precise observation.",
+          "ja": "彼女は的確な観察をした。",
+          "kana": "かのじょ は てきかく な かんさつ を した。",
+          "ro": "kanojo wa tekikaku na kansatsu o shita."
+        },
+        {
+          "en": "His advice is always on point.",
+          "ja": "彼の助言はいつも的確だ。",
+          "kana": "かれ の じょげん は いつも てきかく だ。",
+          "ro": "kare no jogen wa itsumo tekikaku da."
+        },
+        {
+          "en": "That was a precise instruction.",
+          "ja": "それは的確な指示だった。",
+          "kana": "それ は てきかく な しじ だった。",
+          "ro": "sore wa tekikaku na shiji datta."
+        },
+        {
+          "en": "She accurately pointed out the issue.",
+          "ja": "彼女は問題を的確に指摘した。",
+          "kana": "かのじょ は もんだい を てきかく に してき した。",
+          "ro": "kanojo wa mondai o tekikaku ni shiteki shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "tekikaku"
+    },
+    {
+      "id": "n1-naadj-029",
+      "ja": "健全",
+      "kana": "けんぜん",
+      "ro": "kenzen",
+      "en": "sound / healthy / wholesome",
+      "examples": [
+        {
+          "en": "He lives a sound and balanced life.",
+          "ja": "彼は健全でバランスの取れた生活を送っている。",
+          "kana": "かれ は けんぜん で ばらんす の とれた せいかつ を おくって いる。",
+          "ro": "kare wa kenzen de baransu no toreta seikatsu o okutte iru."
+        },
+        {
+          "en": "This company has a healthy management system.",
+          "ja": "この会社は健全な経営体制を持っている。",
+          "kana": "この かいしゃ は けんぜん な けいえい たいせい を もって いる。",
+          "ro": "kono kaisha wa kenzen na keiei taisei o motte iru."
+        },
+        {
+          "en": "Children’s healthy growth is important.",
+          "ja": "子どもの健全な成長が大切だ。",
+          "kana": "こども の けんぜん な せいちょう が たいせつ だ。",
+          "ro": "kodomo no kenzen na seichou ga taisetsu da."
+        },
+        {
+          "en": "He has a sound sense of judgment.",
+          "ja": "彼は健全な判断力を持っている。",
+          "kana": "かれ は けんぜん な はんだんりょく を もって いる。",
+          "ro": "kare wa kenzen na handanryoku o motte iru."
+        },
+        {
+          "en": "We need a healthy debate culture.",
+          "ja": "健全な議論の文化が必要だ。",
+          "kana": "けんぜん な ぎろん の ぶんか が ひつよう だ。",
+          "ro": "kenzen na giron no bunka ga hitsuyou da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kenzen"
+    },
+    {
+      "id": "n1-naadj-030",
+      "ja": "冷淡",
+      "kana": "れいたん",
+      "ro": "reitan",
+      "en": "cold / indifferent / unfeeling",
+      "examples": [
+        {
+          "en": "He gave me a cold response.",
+          "ja": "彼は私に冷淡な返事をした。",
+          "kana": "かれ は わたし に れいたん な へんじ を した。",
+          "ro": "kare wa watashi ni reitan na henji o shita."
+        },
+        {
+          "en": "She was indifferent to the news.",
+          "ja": "彼女はそのニュースに冷淡だった。",
+          "kana": "かのじょ は その にゅーす に れいたん だった。",
+          "ro": "kanojo wa sono nyuusu ni reitan datta."
+        },
+        {
+          "en": "He looked at me coldly.",
+          "ja": "彼は冷淡な目で私を見た。",
+          "kana": "かれ は れいたん な め で わたし を みた。",
+          "ro": "kare wa reitan na me de watashi o mita."
+        },
+        {
+          "en": "The company took an indifferent stance.",
+          "ja": "会社は冷淡な態度を取った。",
+          "kana": "かいしゃ は れいたん な たいど を とった。",
+          "ro": "kaisha wa reitan na taido o totta."
+        },
+        {
+          "en": "She spoke in a cold tone.",
+          "ja": "彼女は冷淡な口調で話した。",
+          "kana": "かのじょ は れいたん な くちょう で はなした。",
+          "ro": "kanojo wa reitan na kuchou de hanashita."
+        },
+        {
+          "en": "He gave a cold response.",
+          "ja": "彼は冷淡な返事をした。",
+          "kana": "かれ は れいたん な へんじ を した。",
+          "ro": "kare wa reitan na henji o shita."
+        },
+        {
+          "en": "She looked at me indifferently.",
+          "ja": "彼女は冷淡に私を見た。",
+          "kana": "かのじょ は れいたん に わたし を みた。",
+          "ro": "kanojo wa reitan ni watashi o mita."
+        },
+        {
+          "en": "He is indifferent to others’ suffering.",
+          "ja": "彼は他人の苦しみに冷淡だ。",
+          "kana": "かれ は たにん の くるしみ に れいたん だ。",
+          "ro": "kare wa tanin no kurushimi ni reitan da."
+        },
+        {
+          "en": "The teacher’s attitude was unfeeling.",
+          "ja": "先生の態度は冷淡だった。",
+          "kana": "せんせい の たいど は れいたん だった。",
+          "ro": "sensei no taido wa reitan datta."
+        },
+        {
+          "en": "He treated her coldly.",
+          "ja": "彼は彼女に冷淡に接した。",
+          "kana": "かれ は かのじょ に れいたん に せっした。",
+          "ro": "kare wa kanojo ni reitan ni sesshita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "reitan"
+    },
+    {
+      "id": "n1-naadj-031",
+      "ja": "明晰",
+      "kana": "めいせき",
+      "ro": "meiseki",
+      "en": "clear / lucid / intelligent; clear / lucid / articulate",
+      "examples": [
+        {
+          "en": "He has a clear and sharp mind.",
+          "ja": "彼は明晰な頭脳を持っている。",
+          "kana": "かれ は めいせき な ずのう を もって いる。",
+          "ro": "kare wa meiseki na zunou o motte iru."
+        },
+        {
+          "en": "Her explanation was very clear.",
+          "ja": "彼女の説明は非常に明晰だった。",
+          "kana": "かのじょ の せつめい は ひじょう に めいせき だった。",
+          "ro": "kanojo no setsumei wa hijou ni meiseki datta."
+        },
+        {
+          "en": "He answered with clear logic.",
+          "ja": "彼は明晰な論理で答えた。",
+          "kana": "かれ は めいせき な ろんり で こたえた。",
+          "ro": "kare wa meiseki na ronri de kotaeta."
+        },
+        {
+          "en": "She expressed her thoughts lucidly.",
+          "ja": "彼女は考えを明晰に述べた。",
+          "kana": "かのじょ は かんがえ を めいせき に のべた。",
+          "ro": "kanojo wa kangae o meiseki ni nobeta."
+        },
+        {
+          "en": "He is known for his intelligent analysis.",
+          "ja": "彼は明晰な分析で知られている。",
+          "kana": "かれ は めいせき な ぶんせき で しられて いる。",
+          "ro": "kare wa meiseki na bunseki de shirarete iru."
+        },
+        {
+          "en": "He gave a lucid explanation.",
+          "ja": "彼は明晰な説明をした。",
+          "kana": "かれ は めいせき な せつめい を した。",
+          "ro": "kare wa meiseki na setsumei o shita."
+        },
+        {
+          "en": "Her mind is very clear.",
+          "ja": "彼女の頭脳は明晰だ。",
+          "kana": "かのじょ の ずのう は めいせき だ。",
+          "ro": "kanojo no zunou wa meiseki da."
+        },
+        {
+          "en": "He has clear reasoning ability.",
+          "ja": "彼は明晰な論理力を持っている。",
+          "kana": "かれ は めいせき な ろんりりょく を もって いる。",
+          "ro": "kare wa meiseki na ronriryoku o motte iru."
+        },
+        {
+          "en": "The report was clear and easy to read.",
+          "ja": "その報告書は明晰だった。",
+          "kana": "その ほうこくしょ は めいせき だった。",
+          "ro": "sono houkokusho wa meiseki datta."
+        },
+        {
+          "en": "He explained the concept clearly.",
+          "ja": "彼は概念を明晰に説明した。",
+          "kana": "かれ は がいねん を めいせき に せつめい した。",
+          "ro": "kare wa gainen o meiseki ni setsumei shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "meiseki"
+    },
+    {
+      "id": "n1-naadj-032",
+      "ja": "大胆",
+      "kana": "だいたん",
+      "ro": "daitan",
+      "en": "bold / daring / fearless",
+      "examples": [
+        {
+          "en": "She made a bold decision.",
+          "ja": "彼女は大胆な決断をした。",
+          "kana": "かのじょ は だいたん な けつだん を した。",
+          "ro": "kanojo wa daitan na ketsudan o shita."
+        },
+        {
+          "en": "His idea is very daring.",
+          "ja": "彼の発想はとても大胆だ。",
+          "kana": "かれ の はっそう は とても だいたん だ。",
+          "ro": "kare no hassou wa totemo daitan da."
+        },
+        {
+          "en": "He made a bold move in business.",
+          "ja": "彼はビジネスで大胆な行動を取った。",
+          "kana": "かれ は びじねす で だいたん な こうどう を とった。",
+          "ro": "kare wa bijinesu de daitan na koudou o totta."
+        },
+        {
+          "en": "She boldly expressed her opinion.",
+          "ja": "彼女は大胆に意見を述べた。",
+          "kana": "かのじょ は だいたん に いけん を のべた。",
+          "ro": "kanojo wa daitan ni iken o nobeta."
+        },
+        {
+          "en": "The painting uses bold colors.",
+          "ja": "その絵は大胆な色使いをしている。",
+          "kana": "その え は だいたん な いろづかい を して いる。",
+          "ro": "sono e wa daitan na irozukai o shite iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "daitan"
+    },
+    {
+      "id": "n1-naadj-033",
+      "ja": "堅実",
+      "kana": "けんじつ",
+      "ro": "kenjitsu",
+      "en": "steady / reliable / solid; steady / reliable / sound",
+      "examples": [
+        {
+          "en": "He is a steady and trustworthy person.",
+          "ja": "彼は堅実で信頼できる人だ。",
+          "kana": "かれ は けんじつ で しんらい できる ひと だ。",
+          "ro": "kare wa kenjitsu de shinrai dekiru hito da."
+        },
+        {
+          "en": "She prefers a stable job.",
+          "ja": "彼女は堅実な仕事を好む。",
+          "kana": "かのじょ は けんじつ な しごと を このむ。",
+          "ro": "kanojo wa kenjitsu na shigoto o konomu."
+        },
+        {
+          "en": "This plan is realistic and steady.",
+          "ja": "この計画は堅実だ。",
+          "kana": "この けいかく は けんじつ だ。",
+          "ro": "kono keikaku wa kenjitsu da."
+        },
+        {
+          "en": "He lives a solid and modest life.",
+          "ja": "彼は堅実な生活をしている。",
+          "kana": "かれ は けんじつ な せいかつ を して いる。",
+          "ro": "kare wa kenjitsu na seikatsu o shite iru."
+        },
+        {
+          "en": "The company has a solid financial base.",
+          "ja": "その会社は堅実な財政基盤を持っている。",
+          "kana": "その かいしゃ は けんじつ な ざいせい きばん を もって いる。",
+          "ro": "sono kaisha wa kenjitsu na zaisei kiban o motte iru."
+        },
+        {
+          "en": "He takes a steady approach to work.",
+          "ja": "彼は堅実な仕事ぶりだ。",
+          "kana": "かれ は けんじつ な しごとぶり だ。",
+          "ro": "kare wa kenjitsu na shigotoburi da."
+        },
+        {
+          "en": "She is a reliable person.",
+          "ja": "彼女は堅実な人だ。",
+          "kana": "かのじょ は けんじつ な ひと だ。",
+          "ro": "kanojo wa kenjitsu na hito da."
+        },
+        {
+          "en": "He invests his money soundly.",
+          "ja": "彼は堅実にお金を運用している。",
+          "kana": "かれ は けんじつ に おかね を うんよう して いる。",
+          "ro": "kare wa kenjitsu ni okane o unyou shite iru."
+        },
+        {
+          "en": "This company has a solid business foundation.",
+          "ja": "この会社は堅実な経営をしている。",
+          "kana": "この かいしゃ は けんじつ な けいえい を して いる。",
+          "ro": "kono kaisha wa kenjitsu na keiei o shite iru."
+        },
+        {
+          "en": "He chose a stable career path.",
+          "ja": "彼は堅実な進路を選んだ。",
+          "kana": "かれ は けんじつ な しんろ を えらんだ。",
+          "ro": "kare wa kenjitsu na shinro o eranda."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kenjitsu"
+    },
+    {
+      "id": "n1-naadj-034",
+      "ja": "悠然",
+      "kana": "ゆうぜん",
+      "ro": "yuuzen",
+      "en": "calm / composed / unhurried",
+      "examples": [
+        {
+          "en": "He walked calmly through the park.",
+          "ja": "彼は悠然と公園を歩いた。",
+          "kana": "かれ は ゆうぜん と こうえん を あるいた。",
+          "ro": "kare wa yuuzen to kouen o aruita."
+        },
+        {
+          "en": "She answered in a calm manner.",
+          "ja": "彼女は悠然と答えた。",
+          "kana": "かのじょ は ゆうぜん と こたえた。",
+          "ro": "kanojo wa yuuzen to kotaeta."
+        },
+        {
+          "en": "The mountains stood calmly in the distance.",
+          "ja": "山々は悠然とそびえていた。",
+          "kana": "やまやま は ゆうぜん と そびえて いた。",
+          "ro": "yamayama wa yuuzen to sobiete ita."
+        },
+        {
+          "en": "He smiled calmly despite the chaos.",
+          "ja": "混乱の中でも彼は悠然と笑った。",
+          "kana": "こんらん の なか でも かれ は ゆうぜん と わらった。",
+          "ro": "konran no naka demo kare wa yuuzen to waratta."
+        },
+        {
+          "en": "She moved in a graceful, unhurried way.",
+          "ja": "彼女は悠然とした動きを見せた。",
+          "kana": "かのじょ は ゆうぜん と した うごき を みせた。",
+          "ro": "kanojo wa yuuzen to shita ugoki o miseta."
+        },
+        {
+          "en": "He faced the crisis calmly.",
+          "ja": "彼は危機に悠然と立ち向かった。",
+          "kana": "かれ は きき に ゆうぜん と たちむかった。",
+          "ro": "kare wa kiki ni yuuzen to tachimukatta."
+        },
+        {
+          "en": "The eagle soared calmly in the sky.",
+          "ja": "鷲は空を悠然と舞った。",
+          "kana": "わし は そら を ゆうぜん と まった。",
+          "ro": "washi wa sora o yuuzen to matta."
+        },
+        {
+          "en": "He smiled with calm dignity.",
+          "ja": "彼は悠然とほほえんだ。",
+          "kana": "かれ は ゆうぜん と ほほえんだ。",
+          "ro": "kare wa yuuzen to hohoenda."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "yuuzen"
+    },
+    {
+      "id": "n1-naadj-035",
+      "ja": "厳格",
+      "kana": "げんかく",
+      "ro": "genkaku",
+      "en": "strict / rigid / severe",
+      "examples": [
+        {
+          "en": "The teacher is very strict.",
+          "ja": "その先生はとても厳格だ。",
+          "kana": "その せんせい は とても げんかく だ。",
+          "ro": "sono sensei wa totemo genkaku da."
+        },
+        {
+          "en": "He follows the rules strictly.",
+          "ja": "彼は厳格に規則を守る。",
+          "kana": "かれ は げんかく に きそく を まもる。",
+          "ro": "kare wa genkaku ni kisoku o mamoru."
+        },
+        {
+          "en": "My parents were strict when I was a child.",
+          "ja": "子どものころ、両親は厳格だった。",
+          "kana": "こども の ころ りょうしん は げんかく だった。",
+          "ro": "kodomo no koro ryoushin wa genkaku datta."
+        },
+        {
+          "en": "He is a man of strict principles.",
+          "ja": "彼は厳格な信念を持つ人だ。",
+          "kana": "かれ は げんかく な しんねん を もつ ひと だ。",
+          "ro": "kare wa genkaku na shinnen o motsu hito da."
+        },
+        {
+          "en": "The law must be enforced rigidly.",
+          "ja": "法律は厳格に適用されるべきだ。",
+          "kana": "ほうりつ は げんかく に てきよう される べき だ。",
+          "ro": "houritsu wa genkaku ni tekiyou sareru beki da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "genkaku"
+    },
+    {
+      "id": "n1-naadj-036",
+      "ja": "頑丈",
+      "kana": "がんじょう",
+      "ro": "ganjou",
+      "en": "strong / sturdy / solid; solid / sturdy / robust",
+      "examples": [
+        {
+          "en": "This table is very sturdy.",
+          "ja": "このテーブルはとても頑丈だ。",
+          "kana": "この てーぶる は とても がんじょう だ。",
+          "ro": "kono teeburu wa totemo ganjou da."
+        },
+        {
+          "en": "He has a strong body.",
+          "ja": "彼は頑丈な体をしている。",
+          "kana": "かれ は がんじょう な からだ を して いる。",
+          "ro": "kare wa ganjou na karada o shite iru."
+        },
+        {
+          "en": "This house is built solidly.",
+          "ja": "この家は頑丈に建てられている。",
+          "kana": "この いえ は がんじょう に たてられて いる。",
+          "ro": "kono ie wa ganjou ni taterarete iru."
+        },
+        {
+          "en": "He is mentally tough as well.",
+          "ja": "彼は精神的にも頑丈だ。",
+          "kana": "かれ は せいしんてき に も がんじょう だ。",
+          "ro": "kare wa seishinteki ni mo ganjou da."
+        },
+        {
+          "en": "The bridge has a solid structure.",
+          "ja": "その橋は頑丈な構造をしている。",
+          "kana": "その はし は がんじょう な こうぞう を して いる。",
+          "ro": "sono hashi wa ganjou na kouzou o shite iru."
+        },
+        {
+          "en": "This building is solidly built.",
+          "ja": "この建物は頑丈に造られている。",
+          "kana": "この たてもの は がんじょう に つくられて いる。",
+          "ro": "kono tatemono wa ganjou ni tsukurarete iru."
+        },
+        {
+          "en": "These shoes are made of durable material.",
+          "ja": "この靴は頑丈な素材でできている。",
+          "kana": "この くつ は がんじょう な そざい で できて いる。",
+          "ro": "kono kutsu wa ganjou na sozai de dekite iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "ganjou"
+    },
+    {
+      "id": "n1-naadj-037",
+      "ja": "寛大",
+      "kana": "かんだい",
+      "ro": "kandai",
+      "en": "generous / tolerant / broad-minded",
+      "examples": [
+        {
+          "en": "He is generous with his friends.",
+          "ja": "彼は友人に対して寛大だ。",
+          "kana": "かれ は ゆうじん に たいして かんだい だ。",
+          "ro": "kare wa yuujin ni taishite kandai da."
+        },
+        {
+          "en": "She forgave him with a tolerant heart.",
+          "ja": "彼女は寛大な心で彼を許した。",
+          "kana": "かのじょ は かんだい な こころ で かれ を ゆるした。",
+          "ro": "kanojo wa kandai na kokoro de kare o yurushita."
+        },
+        {
+          "en": "We should take a broad-minded view.",
+          "ja": "もっと寛大な見方をすべきだ。",
+          "kana": "もっと かんだい な みかた を すべき だ。",
+          "ro": "motto kandai na mikata o subeki da."
+        },
+        {
+          "en": "He accepted the mistake generously.",
+          "ja": "彼はその失敗を寛大に受け入れた。",
+          "kana": "かれ は その しっぱい を かんだい に うけいれた。",
+          "ro": "kare wa sono shippai o kandai ni ukeireta."
+        },
+        {
+          "en": "The teacher has a generous personality.",
+          "ja": "先生は寛大な性格だ。",
+          "kana": "せんせい は かんだい な せいかく だ。",
+          "ro": "sensei wa kandai na seikaku da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kandai"
+    },
+    {
+      "id": "n1-naadj-038",
+      "ja": "優秀",
+      "kana": "ゆうしゅう",
+      "ro": "yuushuu",
+      "en": "excellent / outstanding / superior",
+      "examples": [
+        {
+          "en": "She is an excellent student.",
+          "ja": "彼女は優秀な学生だ。",
+          "kana": "かのじょ は ゆうしゅう な がくせい だ。",
+          "ro": "kanojo wa yuushuu na gakusei da."
+        },
+        {
+          "en": "He showed outstanding performance.",
+          "ja": "彼は優秀な成果を上げた。",
+          "kana": "かれ は ゆうしゅう な せいか を あげた。",
+          "ro": "kare wa yuushuu na seika o ageta."
+        },
+        {
+          "en": "This team consists of skilled members.",
+          "ja": "このチームは優秀なメンバーで構成されている。",
+          "kana": "この ちーむ は ゆうしゅう な めんばー で こうせい されて いる。",
+          "ro": "kono chiimu wa yuushuu na menbaa de kousei sarete iru."
+        },
+        {
+          "en": "He is a talented engineer.",
+          "ja": "彼は優秀なエンジニアだ。",
+          "kana": "かれ は ゆうしゅう な えんじにあ だ。",
+          "ro": "kare wa yuushuu na enjinia da."
+        },
+        {
+          "en": "Her skills are truly superior.",
+          "ja": "彼女のスキルは本当に優秀だ。",
+          "kana": "かのじょ の すきる は ほんとう に ゆうしゅう だ。",
+          "ro": "kanojo no sukiru wa hontou ni yuushuu da."
+        },
+        {
+          "en": "He is an excellent student.",
+          "ja": "彼は優秀な学生だ。",
+          "kana": "かれ は ゆうしゅう な がくせい だ。",
+          "ro": "kare wa yuushuu na gakusei da."
+        },
+        {
+          "en": "She is outstanding in her field.",
+          "ja": "彼女はその分野で優秀だ。",
+          "kana": "かのじょ は その ぶんや で ゆうしゅう だ。",
+          "ro": "kanojo wa sono bun’ya de yuushuu da."
+        },
+        {
+          "en": "He received an award for his excellence.",
+          "ja": "彼は優秀な成績で表彰された。",
+          "kana": "かれ は ゆうしゅう な せいせき で ひょうしょう された。",
+          "ro": "kare wa yuushuu na seiseki de hyoushou sareta."
+        },
+        {
+          "en": "The team has many talented members.",
+          "ja": "チームには優秀なメンバーが多い。",
+          "kana": "ちーむ には ゆうしゅう な めんばー が おおい。",
+          "ro": "chiimu ni wa yuushuu na menbaa ga ooi."
+        },
+        {
+          "en": "She is an excellent employee.",
+          "ja": "彼女は優秀な社員だ。",
+          "kana": "かのじょ は ゆうしゅう な しゃいん だ。",
+          "ro": "kanojo wa yuushuu na shain da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "yuushuu"
+    },
+    {
+      "id": "n1-naadj-039",
+      "ja": "厳重",
+      "kana": "げんじゅう",
+      "ro": "genjuu",
+      "en": "strict / severe / tight (security)",
+      "examples": [
+        {
+          "en": "Security was very strict.",
+          "ja": "警備は非常に厳重だった。",
+          "kana": "けいび は ひじょう に げんじゅう だった。",
+          "ro": "keibi wa hijou ni genjuu datta."
+        },
+        {
+          "en": "The package was carefully sealed.",
+          "ja": "荷物は厳重に封をされていた。",
+          "kana": "にもつ は げんじゅう に ふう を されて いた。",
+          "ro": "nimotsu wa genjuu ni fuu o sarete ita."
+        },
+        {
+          "en": "The rules are strictly enforced.",
+          "ja": "規則は厳重に守られている。",
+          "kana": "きそく は げんじゅう に まもられて いる。",
+          "ro": "kisoku wa genjuu ni mamorarete iru."
+        },
+        {
+          "en": "The security check was severe.",
+          "ja": "セキュリティチェックは厳重だった。",
+          "kana": "せきゅりてぃ ちぇっく は げんじゅう だった。",
+          "ro": "sekyuriti chekku wa genjuu datta."
+        },
+        {
+          "en": "The president is under tight protection.",
+          "ja": "大統領は厳重な警護のもとにいる。",
+          "kana": "だいとうりょう は げんじゅう な けいご の もと に いる。",
+          "ro": "daitouryou wa genjuu na keigo no moto ni iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "genjuu"
+    },
+    {
+      "id": "n1-naadj-040",
+      "ja": "緩和",
+      "kana": "かんわ",
+      "ro": "kanwa",
+      "en": "relaxed / alleviated / eased",
+      "examples": [
+        {
+          "en": "The restrictions were eased.",
+          "ja": "制限が緩和された。",
+          "kana": "せいげん が かんわ された。",
+          "ro": "seigen ga kanwa sareta."
+        },
+        {
+          "en": "The pain was alleviated by medicine.",
+          "ja": "薬で痛みが緩和された。",
+          "kana": "くすり で いたみ が かんわ された。",
+          "ro": "kusuri de itami ga kanwa sareta."
+        },
+        {
+          "en": "The rules have become less strict.",
+          "ja": "規則が以前より緩和された。",
+          "kana": "きそく が いぜん より かんわ された。",
+          "ro": "kisoku ga izen yori kanwa sareta."
+        },
+        {
+          "en": "The new policy relaxed the burden on workers.",
+          "ja": "新しい方針は労働者の負担を緩和した。",
+          "kana": "あたらしい ほうしん は ろうどうしゃ の ふたん を かんわ した。",
+          "ro": "atarashii houshin wa roudousha no futan o kanwa shita."
+        },
+        {
+          "en": "The government is discussing tax relaxation.",
+          "ja": "政府は税の緩和を検討している。",
+          "kana": "せいふ は ぜい の かんわ を けんとう して いる。",
+          "ro": "seifu wa zei no kanwa o kentou shite iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kanwa"
+    },
+    {
+      "id": "n1-naadj-041",
+      "ja": "豪華",
+      "kana": "ごうか",
+      "ro": "gouka",
+      "en": "luxurious / gorgeous / splendid",
+      "examples": [
+        {
+          "en": "They stayed at a luxurious hotel.",
+          "ja": "彼らは豪華なホテルに泊まった。",
+          "kana": "かれら は ごうか な ほてる に とまった。",
+          "ro": "karera wa gouka na hoteru ni tomatta."
+        },
+        {
+          "en": "She wore a gorgeous dress.",
+          "ja": "彼女は豪華なドレスを着ていた。",
+          "kana": "かのじょ は ごうか な どれす を きて いた。",
+          "ro": "kanojo wa gouka na doresu o kite ita."
+        },
+        {
+          "en": "The dinner was splendid.",
+          "ja": "夕食は豪華だった。",
+          "kana": "ゆうしょく は ごうか だった。",
+          "ro": "yuushoku wa gouka datta."
+        },
+        {
+          "en": "The party was held in a luxurious hall.",
+          "ja": "パーティーは豪華な会場で行われた。",
+          "kana": "ぱーてぃー は ごうか な かいじょう で おこなわれた。",
+          "ro": "paatii wa gouka na kaijou de okonawareta."
+        },
+        {
+          "en": "They live a splendid lifestyle.",
+          "ja": "彼らは豪華な生活を送っている。",
+          "kana": "かれら は ごうか な せいかつ を おくって いる。",
+          "ro": "karera wa gouka na seikatsu o okutte iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "gouka"
+    },
+    {
+      "id": "n1-naadj-042",
+      "ja": "堅固",
+      "kana": "けんご",
+      "ro": "kengo",
+      "en": "solid / firm / strong",
+      "examples": [
+        {
+          "en": "The building has a solid structure.",
+          "ja": "その建物は堅固な構造をしている。",
+          "kana": "その たてもの は けんご な こうぞう を して いる。",
+          "ro": "sono tatemono wa kengo na kouzou o shite iru."
+        },
+        {
+          "en": "He has firm beliefs.",
+          "ja": "彼は堅固な信念を持っている。",
+          "kana": "かれ は けんご な しんねん を もって いる。",
+          "ro": "kare wa kengo na shinnen o motte iru."
+        },
+        {
+          "en": "Their friendship is strong and lasting.",
+          "ja": "彼らの友情は堅固だ。",
+          "kana": "かれら の ゆうじょう は けんご だ。",
+          "ro": "karera no yuujou wa kengo da."
+        },
+        {
+          "en": "He has a solid will.",
+          "ja": "彼は堅固な意志を持つ人だ。",
+          "kana": "かれ は けんご な いし を もつ ひと だ。",
+          "ro": "kare wa kengo na ishi o motsu hito da."
+        },
+        {
+          "en": "The castle walls were extremely solid.",
+          "ja": "城の壁は非常に堅固だった。",
+          "kana": "しろ の かべ は ひじょう に けんご だった。",
+          "ro": "shiro no kabe wa hijou ni kengo datta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kengo"
+    },
+    {
+      "id": "n1-naadj-043",
+      "ja": "勤勉",
+      "kana": "きんべん",
+      "ro": "kinben",
+      "en": "diligent / hardworking / industrious",
+      "examples": [
+        {
+          "en": "He is a diligent student.",
+          "ja": "彼は勤勉な学生だ。",
+          "kana": "かれ は きんべん な がくせい だ。",
+          "ro": "kare wa kinben na gakusei da."
+        },
+        {
+          "en": "She works diligently every day.",
+          "ja": "彼女は毎日勤勉に働いている。",
+          "kana": "かのじょ は まいにち きんべん に はたらいて いる。",
+          "ro": "kanojo wa mainichi kinben ni hataraite iru."
+        },
+        {
+          "en": "Diligent effort brings success.",
+          "ja": "勤勉な努力が成功をもたらす。",
+          "kana": "きんべん な どりょく が せいこう を もたらす。",
+          "ro": "kinben na doryoku ga seikou o motarasu."
+        },
+        {
+          "en": "He is known for his hardworking nature.",
+          "ja": "彼は勤勉な性格で知られている。",
+          "kana": "かれ は きんべん な せいかく で しられて いる。",
+          "ro": "kare wa kinben na seikaku de shirarete iru."
+        },
+        {
+          "en": "Japan is often described as a hardworking nation.",
+          "ja": "日本は勤勉な国だと言われる。",
+          "kana": "にほん は きんべん な くに だ と いわれる。",
+          "ro": "nihon wa kinben na kuni da to iwareru."
+        },
+        {
+          "en": "She works hard every day.",
+          "ja": "彼女は毎日勤勉に働く。",
+          "kana": "かのじょ は まいにち きんべん に はたらく。",
+          "ro": "kanojo wa mainichi kinben ni hataraku."
+        },
+        {
+          "en": "Diligent effort brings success.",
+          "ja": "勤勉な努力が成功を生む。",
+          "kana": "きんべん な どりょく が せいこう を うむ。",
+          "ro": "kinben na doryoku ga seikou o umu."
+        },
+        {
+          "en": "She is admired for her industrious nature.",
+          "ja": "彼女は勤勉な姿勢で尊敬されている。",
+          "kana": "かのじょ は きんべん な しせい で そんけい されて いる。",
+          "ro": "kanojo wa kinben na shisei de sonkei sarete iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kinben"
+    },
+    {
+      "id": "n1-naadj-044",
+      "ja": "潔白",
+      "kana": "けっぱく",
+      "ro": "keppaku",
+      "en": "innocent / pure / clean",
+      "examples": [
+        {
+          "en": "He proved his innocence.",
+          "ja": "彼は潔白を証明した。",
+          "kana": "かれ は けっぱく を しょうめい した。",
+          "ro": "kare wa keppaku o shoumei shita."
+        },
+        {
+          "en": "She lives a pure life.",
+          "ja": "彼女は潔白な生活を送っている。",
+          "kana": "かのじょ は けっぱく な せいかつ を おくって いる。",
+          "ro": "kanojo wa keppaku na seikatsu o okutte iru."
+        },
+        {
+          "en": "The accused insisted on his purity.",
+          "ja": "被告は自分の潔白を主張した。",
+          "kana": "ひこく は じぶん の けっぱく を しゅちょう した。",
+          "ro": "hikoku wa jibun no keppaku o shuchou shita."
+        },
+        {
+          "en": "His heart is clean and honest.",
+          "ja": "彼の心は潔白だ。",
+          "kana": "かれ の こころ は けっぱく だ。",
+          "ro": "kare no kokoro wa keppaku da."
+        },
+        {
+          "en": "He fought to prove his innocence.",
+          "ja": "彼は潔白を証明するために戦った。",
+          "kana": "かれ は けっぱく を しょうめい する ため に たたかった。",
+          "ro": "kare wa keppaku o shoumei suru tame ni tatakatta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "keppaku"
+    },
+    {
+      "id": "n1-naadj-045",
+      "ja": "冷厳",
+      "kana": "れいげん",
+      "ro": "reigen",
+      "en": "harsh / stern / cold and severe",
+      "examples": [
+        {
+          "en": "He faced the harsh reality.",
+          "ja": "彼は冷厳な現実に直面した。",
+          "kana": "かれ は れいげん な げんじつ に ちょくめん した。",
+          "ro": "kare wa reigen na genjitsu ni chokumen shita."
+        },
+        {
+          "en": "The teacher was strict and cold.",
+          "ja": "先生は冷厳だった。",
+          "kana": "せんせい は れいげん だった。",
+          "ro": "sensei wa reigen datta."
+        },
+        {
+          "en": "His tone was cold and stern.",
+          "ja": "彼の口調は冷厳だった。",
+          "kana": "かれ の くちょう は れいげん だった。",
+          "ro": "kare no kuchou wa reigen datta."
+        },
+        {
+          "en": "We must accept the cold facts.",
+          "ja": "私たちは冷厳な事実を受け入れなければならない。",
+          "kana": "わたしたち は れいげん な じじつ を うけいれなければ ならない。",
+          "ro": "watashitachi wa reigen na jijitsu o ukeirenakereba naranai."
+        },
+        {
+          "en": "The reality of business is often harsh.",
+          "ja": "ビジネスの現実は冷厳だ。",
+          "kana": "びじねす の げんじつ は れいげん だ。",
+          "ro": "bijinesu no genjitsu wa reigen da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "reigen"
+    },
+    {
+      "id": "n1-naadj-046",
+      "ja": "典雅",
+      "kana": "てんが",
+      "ro": "tenga",
+      "en": "elegant / refined / graceful",
+      "examples": [
+        {
+          "en": "She spoke in an elegant tone.",
+          "ja": "彼女は典雅な口調で話した。",
+          "kana": "かのじょ は てんが な くちょう で はなした。",
+          "ro": "kanojo wa tenga na kuchou de hanashita."
+        },
+        {
+          "en": "The design of the kimono is refined.",
+          "ja": "その着物のデザインは典雅だ。",
+          "kana": "その きもの の でざいん は てんが だ。",
+          "ro": "sono kimono no dezain wa tenga da."
+        },
+        {
+          "en": "He admires her graceful manner.",
+          "ja": "彼は彼女の典雅な所作に感心した。",
+          "kana": "かれ は かのじょ の てんが な しょさ に かんしん した。",
+          "ro": "kare wa kanojo no tenga na shosa ni kanshin shita."
+        },
+        {
+          "en": "The hall had a refined atmosphere.",
+          "ja": "そのホールは典雅な雰囲気を持っていた。",
+          "kana": "その ほーる は てんが な ふんいき を もって いた。",
+          "ro": "sono hooru wa tenga na fun’iki o motte ita."
+        },
+        {
+          "en": "Her writing style is elegant and classical.",
+          "ja": "彼女の文体は典雅で古風だ。",
+          "kana": "かのじょ の ぶんたい は てんが で こふう だ。",
+          "ro": "kanojo no buntai wa tenga de kofuu da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "tenga"
+    },
+    {
+      "id": "n1-naadj-047",
+      "ja": "無難",
+      "kana": "ぶなん",
+      "ro": "bunan",
+      "en": "safe / acceptable / decent",
+      "examples": [
+        {
+          "en": "His speech was safe and uncontroversial.",
+          "ja": "彼のスピーチは無難だった。",
+          "kana": "かれ の すぴーち は ぶなん だった。",
+          "ro": "kare no supiichi wa bunan datta."
+        },
+        {
+          "en": "She chose a safe color for the dress.",
+          "ja": "彼女は無難な色のドレスを選んだ。",
+          "kana": "かのじょ は ぶなん な いろ の どれす を えらんだ。",
+          "ro": "kanojo wa bunan na iro no doresu o eranda."
+        },
+        {
+          "en": "It’s a decent option for beginners.",
+          "ja": "初心者には無難な選択だ。",
+          "kana": "しょしんしゃ には ぶなん な せんたく だ。",
+          "ro": "shoshinsha ni wa bunan na sentaku da."
+        },
+        {
+          "en": "He made a safe remark.",
+          "ja": "彼は無難な発言をした。",
+          "kana": "かれ は ぶなん な はつげん を した。",
+          "ro": "kare wa bunan na hatsugen o shita."
+        },
+        {
+          "en": "Her design is stylish yet safe.",
+          "ja": "彼女のデザインはおしゃれだが無難だ。",
+          "kana": "かのじょ の でざいん は おしゃれ だ が ぶなん だ。",
+          "ro": "kanojo no dezain wa oshare da ga bunan da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "bunan"
+    },
+    {
+      "id": "n1-naadj-048",
+      "ja": "寛容",
+      "kana": "かんよう",
+      "ro": "kan’yō",
+      "en": "tolerant / open-minded / forgiving",
+      "examples": [
+        {
+          "en": "He has a tolerant personality.",
+          "ja": "彼は寛容な性格だ。",
+          "kana": "かれ は かんよう な せいかく だ。",
+          "ro": "kare wa kanyou na seikaku da."
+        },
+        {
+          "en": "She is forgiving of others’ mistakes.",
+          "ja": "彼女は他人の失敗に寛容だ。",
+          "kana": "かのじょ は たにん の しっぱい に かんよう だ。",
+          "ro": "kanojo wa tanin no shippai ni kanyou da."
+        },
+        {
+          "en": "A tolerant society accepts diversity.",
+          "ja": "寛容な社会は多様性を受け入れる。",
+          "kana": "かんよう な しゃかい は たようせい を うけいれる。",
+          "ro": "kanyou na shakai wa tayousei o ukeireru."
+        },
+        {
+          "en": "He responded to criticism with tolerance.",
+          "ja": "彼は批判に寛容に対応した。",
+          "kana": "かれ は ひはん に かんよう に たいおう した。",
+          "ro": "kare wa hihan ni kanyou ni taiou shita."
+        },
+        {
+          "en": "Parents should be tolerant of their children’s choices.",
+          "ja": "親は子どもの選択に寛容であるべきだ。",
+          "kana": "おや は こども の せんたく に かんよう で ある べき だ。",
+          "ro": "oya wa kodomo no sentaku ni kanyou de aru beki da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kan’yō"
+    },
+    {
+      "id": "n1-naadj-049",
+      "ja": "繊細",
+      "kana": "せんさい",
+      "ro": "sensai",
+      "en": "delicate / sensitive / fine",
+      "examples": [
+        {
+          "en": "She has a delicate sense of beauty.",
+          "ja": "彼女は繊細な美的感覚を持っている。",
+          "kana": "かのじょ は せんさい な びてき かんかく を もって いる。",
+          "ro": "kanojo wa sensai na biteki kankaku o motte iru."
+        },
+        {
+          "en": "This fabric is very delicate.",
+          "ja": "この布はとても繊細だ。",
+          "kana": "この ぬの は とても せんさい だ。",
+          "ro": "kono nuno wa totemo sensai da."
+        },
+        {
+          "en": "He has a sensitive personality.",
+          "ja": "彼は繊細な性格をしている。",
+          "kana": "かれ は せんさい な せいかく を して いる。",
+          "ro": "kare wa sensai na seikaku o shite iru."
+        },
+        {
+          "en": "Please handle it carefully; it’s fragile.",
+          "ja": "これは繊細なものなので注意して扱ってください。",
+          "kana": "これは せんさい な もの なので ちゅうい して あつかって ください。",
+          "ro": "kore wa sensai na mono nanode chuui shite atsukatte kudasai."
+        },
+        {
+          "en": "He expressed emotions in a delicate way.",
+          "ja": "彼は繊細に感情を表現した。",
+          "kana": "かれ は せんさい に かんじょう を ひょうげん した。",
+          "ro": "kare wa sensai ni kanjou o hyougen shita."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "sensai"
+    },
+    {
+      "id": "n1-naadj-050",
+      "ja": "温厚",
+      "kana": "おんこう",
+      "ro": "onkou",
+      "en": "gentle / mild / kind",
+      "examples": [
+        {
+          "en": "He is a gentle person.",
+          "ja": "彼は温厚な人だ。",
+          "kana": "かれ は おんこう な ひと だ。",
+          "ro": "kare wa onkou na hito da."
+        },
+        {
+          "en": "She has a mild personality.",
+          "ja": "彼女は温厚な性格をしている。",
+          "kana": "かのじょ は おんこう な せいかく を して いる。",
+          "ro": "kanojo wa onkou na seikaku o shite iru."
+        },
+        {
+          "en": "He speaks in a calm and gentle tone.",
+          "ja": "彼は温厚な口調で話す。",
+          "kana": "かれ は おんこう な くちょう で はなす。",
+          "ro": "kare wa onkou na kuchou de hanasu."
+        },
+        {
+          "en": "Her calmness makes others comfortable.",
+          "ja": "彼女の温厚さが周りを安心させる。",
+          "kana": "かのじょ の おんこうさ が まわり を あんしん させる。",
+          "ro": "kanojo no onkousa ga mawari o anshin saseru."
+        },
+        {
+          "en": "He is mild and rarely gets angry.",
+          "ja": "彼は温厚で滅多に怒らない。",
+          "kana": "かれ は おんこう で めった に おこらない。",
+          "ro": "kare wa onkou de metta ni okoranai."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "onkou"
+    },
+    {
+      "id": "n1-naadj-051",
+      "ja": "強靭",
+      "kana": "きょうじん",
+      "ro": "kyoujin",
+      "en": "tough / strong / resilient",
+      "examples": [
+        {
+          "en": "He has a tough spirit.",
+          "ja": "彼は強靭な精神を持っている。",
+          "kana": "かれ は きょうじん な せいしん を もって いる。",
+          "ro": "kare wa kyoujin na seishin o motte iru."
+        },
+        {
+          "en": "This material is very strong.",
+          "ja": "この素材は非常に強靭だ。",
+          "kana": "この そざい は ひじょう に きょうじん だ。",
+          "ro": "kono sozai wa hijou ni kyoujin da."
+        },
+        {
+          "en": "He overcame difficulties with resilience.",
+          "ja": "彼は強靭な意志で困難を乗り越えた。",
+          "kana": "かれ は きょうじん な いし で こんなん を のりこえた。",
+          "ro": "kare wa kyoujin na ishi de konnan o norikoeta."
+        },
+        {
+          "en": "The bridge structure is strong.",
+          "ja": "その橋の構造は強靭だ。",
+          "kana": "その はし の こうぞう は きょうじん だ。",
+          "ro": "sono hashi no kouzou wa kyoujin da."
+        },
+        {
+          "en": "He has a resilient body.",
+          "ja": "彼は強靭な体をしている。",
+          "kana": "かれ は きょうじん な からだ を して いる。",
+          "ro": "kare wa kyoujin na karada o shite iru."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "kyoujin"
+    },
+    {
+      "id": "n1-naadj-052",
+      "ja": "明朗快活",
+      "kana": "めいろうかいかつ",
+      "ro": "meirou kaikatsu",
+      "en": "cheerful and lively / bright-spirited",
+      "examples": [
+        {
+          "en": "She is cheerful and lively.",
+          "ja": "彼女は明朗快活な性格だ。",
+          "kana": "かのじょ は めいろう かいかつ な せいかく だ。",
+          "ro": "kanojo wa meirou kaikatsu na seikaku da."
+        },
+        {
+          "en": "He always greets people cheerfully.",
+          "ja": "彼はいつも明朗快活にあいさつする。",
+          "kana": "かれ は いつも めいろう かいかつ に あいさつ する。",
+          "ro": "kare wa itsumo meirou kaikatsu ni aisatsu suru."
+        },
+        {
+          "en": "Her smile is bright and pleasant.",
+          "ja": "彼女の笑顔は明朗快活だ。",
+          "kana": "かのじょ の えがお は めいろう かいかつ だ。",
+          "ro": "kanojo no egao wa meirou kaikatsu da."
+        },
+        {
+          "en": "He is a bright and sociable person.",
+          "ja": "彼は明朗快活な人柄で知られている。",
+          "kana": "かれ は めいろう かいかつ な ひとがら で しられて いる。",
+          "ro": "kare wa meirou kaikatsu na hitogara de shirarete iru."
+        },
+        {
+          "en": "The workplace atmosphere is cheerful.",
+          "ja": "職場の雰囲気は明朗快活だ。",
+          "kana": "しょくば の ふんいき は めいろう かいかつ だ。",
+          "ro": "shokuba no fun’iki wa meirou kaikatsu da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "meirou kaikatsu"
+    },
+    {
+      "id": "n1-naadj-053",
+      "ja": "円満",
+      "kana": "えんまん",
+      "ro": "enman",
+      "en": "harmonious / peaceful / smooth",
+      "examples": [
+        {
+          "en": "They have a harmonious relationship.",
+          "ja": "彼らは円満な関係を築いている。",
+          "kana": "かれら は えんまん な かんけい を きずいて いる。",
+          "ro": "karera wa enman na kankei o kizu ite iru."
+        },
+        {
+          "en": "The couple lives peacefully.",
+          "ja": "夫婦は円満に暮らしている。",
+          "kana": "ふうふ は えんまん に くらして いる。",
+          "ro": "fuufu wa enman ni kurashite iru."
+        },
+        {
+          "en": "He solved the problem smoothly.",
+          "ja": "彼は問題を円満に解決した。",
+          "kana": "かれ は もんだい を えんまん に かいけつ した。",
+          "ro": "kare wa mondai o enman ni kaiketsu shita."
+        },
+        {
+          "en": "They separated on good terms.",
+          "ja": "彼らは円満に別れた。",
+          "kana": "かれら は えんまん に わかれた。",
+          "ro": "karera wa enman ni wakareta."
+        },
+        {
+          "en": "The negotiation ended peacefully.",
+          "ja": "交渉は円満に終わった。",
+          "kana": "こうしょう は えんまん に おわった。",
+          "ro": "koushou wa enman ni owatta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "enman"
+    },
+    {
+      "id": "n1-naadj-054",
+      "ja": "誠実",
+      "kana": "せいじつ",
+      "ro": "seijitsu",
+      "en": "sincere / honest / faithful",
+      "examples": [
+        {
+          "en": "He is a sincere person.",
+          "ja": "彼は誠実な人だ。",
+          "kana": "かれ は せいじつ な ひと だ。",
+          "ro": "kare wa seijitsu na hito da."
+        },
+        {
+          "en": "She answered sincerely.",
+          "ja": "彼女は誠実に答えた。",
+          "kana": "かのじょ は せいじつ に こたえた。",
+          "ro": "kanojo wa seijitsu ni kotaeta."
+        },
+        {
+          "en": "His attitude is always honest.",
+          "ja": "彼の態度はいつも誠実だ。",
+          "kana": "かれ の たいど は いつも せいじつ だ。",
+          "ro": "kare no taido wa itsumo seijitsu da."
+        },
+        {
+          "en": "He is trusted for his sincerity.",
+          "ja": "彼は誠実さで信頼されている。",
+          "kana": "かれ は せいじつ さ で しんらい されて いる。",
+          "ro": "kare wa seijitsu sa de shinrai sarete iru."
+        },
+        {
+          "en": "We should act with sincerity.",
+          "ja": "私たちは誠実に行動すべきだ。",
+          "kana": "わたしたち は せいじつ に こうどう すべき だ。",
+          "ro": "watashitachi wa seijitsu ni koudou subeki da."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "seijitsu"
+    },
+    {
+      "id": "n1-naadj-055",
+      "ja": "優美",
+      "kana": "ゆうび",
+      "ro": "yuubi",
+      "en": "graceful / elegant / refined",
+      "examples": [
+        {
+          "en": "Her gestures are graceful.",
+          "ja": "彼女のしぐさは優美だ。",
+          "kana": "かのじょ の しぐさ は ゆうび だ。",
+          "ro": "kanojo no shigusa wa yuubi da."
+        },
+        {
+          "en": "The performance was elegant and moving.",
+          "ja": "その演奏は優美で感動的だった。",
+          "kana": "その えんそう は ゆうび で かんどうてき だった。",
+          "ro": "sono ensou wa yuubi de kandouteki datta."
+        },
+        {
+          "en": "She wore a graceful dress.",
+          "ja": "彼女は優美なドレスを着ていた。",
+          "kana": "かのじょ は ゆうび な どれす を きて いた。",
+          "ro": "kanojo wa yuubi na doresu o kite ita."
+        },
+        {
+          "en": "This building has an elegant design.",
+          "ja": "この建物は優美なデザインだ。",
+          "kana": "この たてもの は ゆうび な でざいん だ。",
+          "ro": "kono tatemono wa yuubi na dezain da."
+        },
+        {
+          "en": "Her dance was graceful and beautiful.",
+          "ja": "彼女の踊りは優美だった。",
+          "kana": "かのじょ の おどり は ゆうび だった。",
+          "ro": "kanojo no odori wa yuubi datta."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "yuubi"
+    },
+    {
+      "id": "n1-naadj-056",
+      "ja": "清楚",
+      "kana": "せいそ",
+      "ro": "seiso",
+      "en": "neat / tidy / graceful (modest)",
+      "examples": [
+        {
+          "en": "She has a neat appearance.",
+          "ja": "彼女は清楚な印象を与える。",
+          "kana": "かのじょ は せいそ な いんしょう を あたえる。",
+          "ro": "kanojo wa seiso na inshou o ataeru."
+        },
+        {
+          "en": "Her clothes are always neat.",
+          "ja": "彼女の服装はいつも清楚だ。",
+          "kana": "かのじょ の ふくそう は いつも せいそ だ。",
+          "ro": "kanojo no fukusou wa itsumo seiso da."
+        },
+        {
+          "en": "She looks modest and elegant.",
+          "ja": "彼女は清楚な雰囲気を持っている。",
+          "kana": "かのじょ は せいそ な ふんいき を もって いる。",
+          "ro": "kanojo wa seiso na fun’iki o motte iru."
+        },
+        {
+          "en": "Her hairstyle gives a neat impression.",
+          "ja": "彼女の髪型は清楚だ。",
+          "kana": "かのじょ の かみがた は せいそ だ。",
+          "ro": "kanojo no kamigata wa seiso da."
+        },
+        {
+          "en": "She behaves modestly and politely.",
+          "ja": "彼女は清楚に振る舞う。",
+          "kana": "かのじょ は せいそ に ふるまう。",
+          "ro": "kanojo wa seiso ni furumau."
+        }
+      ],
+      "grammar": "Noun / は / な-Adjective / Copula",
+      "romaji": "seiso"
+    }
+  ]
+}

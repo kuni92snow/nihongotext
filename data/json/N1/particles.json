@@ -1,0 +1,1332 @@
+[
+  {
+    "id": 1,
+    "kanji": "を中心に",
+    "kana": "をちゅうしんに",
+    "romaji": "wo chuushin ni",
+    "en": "centering on; mainly around",
+    "examples": [
+      {
+        "jp": "駅を中心に祭りが行われた。",
+        "jpH": "えき を ちゅうしんに まつり が おこなわれた。",
+        "ro": "eki wo chuushin ni matsuri ga okonawareta.",
+        "en": "The festival was held mainly around the station."
+      },
+      {
+        "jp": "日本を中心にアジアで人気がある。",
+        "jpH": "にほん を ちゅうしんに あじあ で にんき が ある。",
+        "ro": "nihon wo chuushin ni ajia de ninki ga aru.",
+        "en": "It’s popular in Asia, mainly centered on Japan."
+      },
+      {
+        "jp": "若者を中心にSNSが広がっている。",
+        "jpH": "わかもの を ちゅうしんに えすえぬえす が ひろがって いる。",
+        "ro": "wakamono wo chuushin ni esu-en-esu ga hirogatte iru.",
+        "en": "Social media is spreading mainly among young people."
+      },
+      {
+        "jp": "東京を中心に地震が起きた。",
+        "jpH": "とうきょう を ちゅうしんに じしん が おきた。",
+        "ro": "toukyou wo chuushin ni jishin ga okita.",
+        "en": "An earthquake occurred mainly around Tokyo."
+      },
+      {
+        "jp": "この会社は技術開発を中心に活動している。",
+        "jpH": "この かいしゃ は ぎじゅつ かいはつ を ちゅうしんに かつどう して いる。",
+        "ro": "kono kaisha wa gijutsu kaihatsu wo chuushin ni katsudou shite iru.",
+        "en": "This company focuses its activities on technological development."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "kanji": "を通じて",
+    "kana": "をつうじて",
+    "romaji": "wo tsuujite",
+    "en": "through; throughout; via; through; throughout; by means of (formal and continuous sense)",
+    "examples": [
+      {
+        "jp": "一年を通じて温暖な気候です。",
+        "jpH": "いちねん を つうじて おんだん な きこう です。",
+        "ro": "ichinen wo tsuujite ondan na kikou desu.",
+        "en": "The climate is mild throughout the year."
+      },
+      {
+        "jp": "彼を通じて知り合いました。",
+        "jpH": "かれ を つうじて しりあいました。",
+        "ro": "kare wo tsuujite shiriaimashita.",
+        "en": "I met them through him."
+      },
+      {
+        "jp": "テレビを通じて多くの情報を得る。",
+        "jpH": "てれび を つうじて おおく の じょうほう を える。",
+        "ro": "terebi wo tsuujite ooku no jouhou wo eru.",
+        "en": "We get a lot of information through television."
+      },
+      {
+        "jp": "このプロジェクトを通じて多くを学んだ。",
+        "jpH": "この ぷろじぇくと を つうじて おおく を まなんだ。",
+        "ro": "kono purojekuto wo tsuujite ooku wo mananda.",
+        "en": "I learned a lot through this project."
+      },
+      {
+        "jp": "インターネットを通じて世界中とつながる。",
+        "jpH": "いんたーねっと を つうじて せかいじゅう と つながる。",
+        "ro": "intaanetto wo tsuujite sekaijuu to tsunagaru.",
+        "en": "The internet connects us to the world."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "kanji": "をめぐって",
+    "kana": "をめぐって",
+    "romaji": "wo megutte",
+    "en": "concerning; over; regarding; concerning; over; about (same as をめぐって in N2, but used more formally)",
+    "examples": [
+      {
+        "jp": "環境問題をめぐって議論が行われた。",
+        "jpH": "かんきょう もんだい を めぐって ぎろん が おこなわれた。",
+        "ro": "kankyou mondai wo megutte giron ga okonawareta.",
+        "en": "A discussion was held over environmental issues."
+      },
+      {
+        "jp": "その事件をめぐって意見が分かれた。",
+        "jpH": "その じけん を めぐって いけん が わかれた。",
+        "ro": "sono jiken wo megutte iken ga wakareta.",
+        "en": "Opinions were divided over the incident."
+      },
+      {
+        "jp": "土地の権利をめぐって争いが起きた。",
+        "jpH": "とち の けんり を めぐって あらそい が おきた。",
+        "ro": "tochi no kenri wo megutte arasoi ga okita.",
+        "en": "A dispute arose over land rights."
+      },
+      {
+        "jp": "契約内容をめぐってトラブルになった。",
+        "jpH": "けいやく ないよう を めぐって とらぶる に なった。",
+        "ro": "keiyaku naiyou wo megutte toraburu ni natta.",
+        "en": "Trouble occurred regarding the contract details."
+      },
+      {
+        "jp": "親子をめぐって裁判が行われた。",
+        "jpH": "おやこ を めぐって さいばん が おこなわれた。",
+        "ro": "oyako wo megutte saiban ga okonawareta.",
+        "en": "A trial was held over custody between the parent and child."
+      }
+    ],
+    "alt_kanji": [
+      "をめぐって",
+      "を巡って"
+    ]
+  },
+  {
+    "id": 4,
+    "kanji": "をきっかけに",
+    "kana": "をきっかけに",
+    "romaji": "wo kikkake ni",
+    "en": "taking advantage of; prompted by; as a start",
+    "examples": [
+      {
+        "jp": "留学をきっかけに英語が上達した。",
+        "jpH": "りゅうがく を きっかけに えいご が じょうたつ した。",
+        "ro": "ryuugaku wo kikkake ni eigo ga joutatsu shita.",
+        "en": "Studying abroad helped me improve my English."
+      },
+      {
+        "jp": "事故をきっかけに安全意識が高まった。",
+        "jpH": "じこ を きっかけに あんぜん いしき が たかまった。",
+        "ro": "jiko wo kikkake ni anzen ishiki ga takamatta.",
+        "en": "The accident raised safety awareness."
+      },
+      {
+        "jp": "本を読んだのをきっかけに歴史に興味を持った。",
+        "jpH": "ほん を よんだ の を きっかけに れきし に きょうみ を もった。",
+        "ro": "hon wo yonda no wo kikkake ni rekishi ni kyoumi wo motta.",
+        "en": "Reading a book got me interested in history."
+      },
+      {
+        "jp": "結婚をきっかけに地方に引っ越した。",
+        "jpH": "けっこん を きっかけに ちほう に ひっこした。",
+        "ro": "kekkon wo kikkake ni chihou ni hikkoshita.",
+        "en": "Marriage prompted us to move to the countryside."
+      },
+      {
+        "jp": "病気をきっかけに生活を見直した。",
+        "jpH": "びょうき を きっかけに せいかつ を みなおした。",
+        "ro": "byouki wo kikkake ni seikatsu wo minaoshita.",
+        "en": "Illness made me reconsider my lifestyle."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "kanji": "を通して",
+    "kana": "をとおして",
+    "romaji": "wo tooshite",
+    "en": "through; via; throughout",
+    "examples": [
+      {
+        "jp": "先生を通して知り合いました。",
+        "jpH": "せんせい を とおして しりあいました。",
+        "ro": "sensei wo tooshite shiriaimashita.",
+        "en": "I met them through the teacher."
+      },
+      {
+        "jp": "この経験を通して多くを学んだ。",
+        "jpH": "この けいけん を とおして おおく を まなんだ。",
+        "ro": "kono keiken wo tooshite ooku wo mananda.",
+        "en": "I learned a lot through this experience."
+      },
+      {
+        "jp": "メディアを通して情報を得る。",
+        "jpH": "めでぃあ を とおして じょうほう を える。",
+        "ro": "media wo tooshite jouhou wo eru.",
+        "en": "We get information through the media."
+      },
+      {
+        "jp": "活動を通して地域の人と交流した。",
+        "jpH": "かつどう を とおして ちいき の ひと と こうりゅう した。",
+        "ro": "katsudou wo tooshite chiiki no hito to kouryuu shita.",
+        "en": "I interacted with local people through the activity."
+      },
+      {
+        "jp": "音楽を通して世界とつながる。",
+        "jpH": "おんがく を とおして せかい と つながる。",
+        "ro": "ongaku wo tooshite sekai to tsunagaru.",
+        "en": "We connect with the world through music."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "kanji": "を問わず",
+    "kana": "をとわず",
+    "romaji": "wo towazu",
+    "en": "regardless of; without regard to; regardless of; irrespective of",
+    "examples": [
+      {
+        "jp": "年齢を問わず参加できます。",
+        "jpH": "ねんれい を とわず さんか できます。",
+        "ro": "nenrei wo towazu sanka dekimasu.",
+        "en": "You can participate regardless of age."
+      },
+      {
+        "jp": "性別を問わず応募可能です。",
+        "jpH": "せいべつ を とわず おうぼ かのう です。",
+        "ro": "seibetsu wo towazu oubo kanou desu.",
+        "en": "Applications are open regardless of gender."
+      },
+      {
+        "jp": "経験を問わず誰でも挑戦できる。",
+        "jpH": "けいけん を とわず だれ でも ちょうせん できる。",
+        "ro": "keiken wo towazu dare demo chousen dekiru.",
+        "en": "Anyone can try, regardless of experience."
+      },
+      {
+        "jp": "天候を問わず試合を行います。",
+        "jpH": "てんこう を とわず しあい を おこないます。",
+        "ro": "tenkou wo towazu shiai wo okonaimasu.",
+        "en": "The match will be held regardless of the weather."
+      },
+      {
+        "jp": "国籍を問わず採用します。",
+        "jpH": "こくせき を とわず さいよう します。",
+        "ro": "kokuseki wo towazu saiyou shimasu.",
+        "en": "We hire people regardless of nationality."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "kanji": "をはじめ",
+    "kana": "をはじめ",
+    "romaji": "wo hajime",
+    "en": "starting with; including; for example",
+    "examples": [
+      {
+        "jp": "社長をはじめ全員が出席した。",
+        "jpH": "しゃちょう を はじめ ぜんいん が しゅっせき した。",
+        "ro": "shachou wo hajime zen'in ga shusseki shita.",
+        "en": "Everyone, including the president, attended."
+      },
+      {
+        "jp": "日本をはじめ多くの国が参加した。",
+        "jpH": "にほん を はじめ おおく の くに が さんか した。",
+        "ro": "nihon wo hajime ooku no kuni ga sanka shita.",
+        "en": "Many countries, including Japan, participated."
+      },
+      {
+        "jp": "先生をはじめ学生たちも協力した。",
+        "jpH": "せんせい を はじめ がくせいたち も きょうりょく した。",
+        "ro": "sensei wo hajime gakuseitachi mo kyouryoku shita.",
+        "en": "The students, as well as the teacher, cooperated."
+      },
+      {
+        "jp": "この店では寿司をはじめ多くの和食がある。",
+        "jpH": "この みせ では すし を はじめ おおく の わしょく が ある。",
+        "ro": "kono mise de wa sushi wo hajime ooku no washoku ga aru.",
+        "en": "This restaurant serves many Japanese dishes, including sushi."
+      },
+      {
+        "jp": "環境問題をはじめ様々なテーマを扱う。",
+        "jpH": "かんきょう もんだい を はじめ さまざま な てーま を あつかう。",
+        "ro": "kankyou mondai wo hajime samazama na teema wo atsukau.",
+        "en": "It deals with various themes, including environmental issues."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "kanji": "を除いて",
+    "kana": "をのぞいて",
+    "romaji": "wo nozoite",
+    "en": "except for; excluding; aside from",
+    "examples": [
+      {
+        "jp": "彼を除いて全員が来た。",
+        "jpH": "かれ を のぞいて ぜんいん が きた。",
+        "ro": "kare wo nozoite zen'in ga kita.",
+        "en": "Everyone came except him."
+      },
+      {
+        "jp": "日曜日を除いて毎日営業しています。",
+        "jpH": "にちようび を のぞいて まいにち えいぎょう して います。",
+        "ro": "nichiyoubi wo nozoite mainichi eigyou shiteimasu.",
+        "en": "We’re open every day except Sunday."
+      },
+      {
+        "jp": "私を除いて全員が賛成した。",
+        "jpH": "わたし を のぞいて ぜんいん が さんせい した。",
+        "ro": "watashi wo nozoite zen'in ga sansei shita.",
+        "en": "Everyone agreed except me."
+      },
+      {
+        "jp": "彼女を除いて誰も知らなかった。",
+        "jpH": "かのじょ を のぞいて だれ も しらなかった。",
+        "ro": "kanojo wo nozoite dare mo shiranakatta.",
+        "en": "No one knew except her."
+      },
+      {
+        "jp": "祝日を除いて学校は開いています。",
+        "jpH": "しゅくじつ を のぞいて がっこう は あいて います。",
+        "ro": "shukujitsu wo nozoite gakkou wa aiteimasu.",
+        "en": "The school is open except on holidays."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "kanji": "をめざして",
+    "kana": "をめざして",
+    "romaji": "wo mezashite",
+    "en": "aiming for; striving toward",
+    "examples": [
+      {
+        "jp": "優勝をめざして練習している。",
+        "jpH": "ゆうしょう を めざして れんしゅう して いる。",
+        "ro": "yuushou wo mezashite renshuu shite iru.",
+        "en": "We are practicing aiming for victory."
+      },
+      {
+        "jp": "成功をめざして努力する。",
+        "jpH": "せいこう を めざして どりょく する。",
+        "ro": "seikou wo mezashite doryoku suru.",
+        "en": "We strive for success."
+      },
+      {
+        "jp": "医者をめざして勉強している。",
+        "jpH": "いしゃ を めざして べんきょう して いる。",
+        "ro": "isha wo mezashite benkyou shite iru.",
+        "en": "He’s studying to become a doctor."
+      },
+      {
+        "jp": "平和をめざして行動する。",
+        "jpH": "へいわ を めざして こうどう する。",
+        "ro": "heiwa wo mezashite koudou suru.",
+        "en": "We act toward achieving peace."
+      },
+      {
+        "jp": "夢をめざして頑張っています。",
+        "jpH": "ゆめ を めざして がんばって います。",
+        "ro": "yume wo mezashite ganbatteimasu.",
+        "en": "I’m working hard toward my dream."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "kanji": "をもとに",
+    "kana": "をもとに",
+    "romaji": "wo moto ni",
+    "en": "based on; on the basis of",
+    "examples": [
+      {
+        "jp": "この映画は実話をもとに作られた。",
+        "jpH": "この えいが は じつわ を もとに つくられた。",
+        "ro": "kono eiga wa jitsuwa wo moto ni tsukurareta.",
+        "en": "This movie was made based on a true story."
+      },
+      {
+        "jp": "データをもとに報告書をまとめた。",
+        "jpH": "でーた を もとに ほうこくしょ を まとめた。",
+        "ro": "deeta wo moto ni houkokusho wo matometa.",
+        "en": "The report was compiled based on the data."
+      },
+      {
+        "jp": "アンケート結果をもとに改善を行った。",
+        "jpH": "あんけーと けっか を もとに かいぜん を おこなった。",
+        "ro": "ankeeto kekka wo moto ni kaizen wo okonatta.",
+        "en": "Improvements were made based on the survey results."
+      },
+      {
+        "jp": "この物語は歴史をもとに書かれた。",
+        "jpH": "この ものがたり は れきし を もとに かかれた。",
+        "ro": "kono monogatari wa rekishi wo moto ni kakareta.",
+        "en": "This story was written based on history."
+      },
+      {
+        "jp": "先生の指導をもとに練習を続けた。",
+        "jpH": "せんせい の しどう を もとに れんしゅう を つづけた。",
+        "ro": "sensei no shidou wo moto ni renshuu wo tsuzuketa.",
+        "en": "I continued practicing based on my teacher’s guidance."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "kanji": "を契機に",
+    "kana": "をけいきに",
+    "romaji": "wo keiki ni",
+    "en": "taking advantage of; as an opportunity",
+    "examples": [
+      {
+        "jp": "結婚を契機に生活を変えた。",
+        "jpH": "けっこん を けいきに せいかつ を かえた。",
+        "ro": "kekkon wo keiki ni seikatsu wo kaeta.",
+        "en": "I changed my lifestyle on the occasion of marriage."
+      },
+      {
+        "jp": "転職を契機に新しい挑戦を始めた。",
+        "jpH": "てんしょく を けいきに あたらしい ちょうせん を はじめた。",
+        "ro": "tenshoku wo keiki ni atarashii chousen wo hajimeta.",
+        "en": "Changing jobs became an opportunity to start new challenges."
+      },
+      {
+        "jp": "地震を契機に防災意識が高まった。",
+        "jpH": "じしん を けいきに ぼうさい いしき が たかまった。",
+        "ro": "jishin wo keiki ni bousai ishiki ga takamatta.",
+        "en": "The earthquake increased awareness of disaster prevention."
+      },
+      {
+        "jp": "入社を契機に上京した。",
+        "jpH": "にゅうしゃ を けいきに じょうきょう した。",
+        "ro": "nyuusha wo keiki ni joukyou shita.",
+        "en": "I moved to Tokyo when I joined the company."
+      },
+      {
+        "jp": "出産を契機に会社を辞めた。",
+        "jpH": "しゅっさん を けいきに かいしゃ を やめた。",
+        "ro": "shussan wo keiki ni kaisha wo yameta.",
+        "en": "I quit my job after giving birth."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "kanji": "を皮切りに",
+    "kana": "をかわきりに",
+    "romaji": "wo kawakiri ni",
+    "en": "starting with; beginning with",
+    "examples": [
+      {
+        "jp": "東京公演を皮切りに全国ツアーが始まった。",
+        "jpH": "とうきょう こうえん を かわきりに ぜんこく つあー が はじまった。",
+        "ro": "toukyou kouen wo kawakiri ni zenkoku tsuaa ga hajimatta.",
+        "en": "The national tour started with the Tokyo performance."
+      },
+      {
+        "jp": "春祭りを皮切りにイベントが続く。",
+        "jpH": "はる まつり を かわきりに いべんと が つづく。",
+        "ro": "haru matsuri wo kawakiri ni ibento ga tsuzuku.",
+        "en": "Events continue starting with the spring festival."
+      },
+      {
+        "jp": "この企画を皮切りに新しい事業が展開する。",
+        "jpH": "この きかく を かわきりに あたらしい じぎょう が てんかい する。",
+        "ro": "kono kikaku wo kawakiri ni atarashii jigyou ga tenkai suru.",
+        "en": "New projects will unfold starting with this plan."
+      },
+      {
+        "jp": "映画公開を皮切りに話題が広がった。",
+        "jpH": "えいが こうかい を かわきりに わだい が ひろがった。",
+        "ro": "eiga koukai wo kawakiri ni wadai ga hirogatta.",
+        "en": "The topic spread after the movie’s release."
+      },
+      {
+        "jp": "展示会を皮切りに販売が始まる。",
+        "jpH": "てんじかい を かわきりに はんばい が はじまる。",
+        "ro": "tenjikai wo kawakiri ni hanbai ga hajimaru.",
+        "en": "Sales start with the exhibition."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "kanji": "を前提に",
+    "kana": "をぜんていに",
+    "romaji": "wo zentei ni",
+    "en": "on the assumption of; premised on",
+    "examples": [
+      {
+        "jp": "信頼を前提に取引が成り立つ。",
+        "jpH": "しんらい を ぜんていに とりひき が なりたつ。",
+        "ro": "shinrai wo zentei ni torihiki ga naritatsu.",
+        "en": "Business is built on the assumption of trust."
+      },
+      {
+        "jp": "相互理解を前提に話し合いを進める。",
+        "jpH": "そうご りかい を ぜんていに はなしあい を すすめる。",
+        "ro": "sougo rikai wo zentei ni hanashiai wo susumeru.",
+        "en": "We continue discussions based on mutual understanding."
+      },
+      {
+        "jp": "協力を前提にプロジェクトを進める。",
+        "jpH": "きょうりょく を ぜんていに ぷろじぇくと を すすめる。",
+        "ro": "kyouryoku wo zentei ni purojekuto wo susumeru.",
+        "en": "The project moves forward on the premise of cooperation."
+      },
+      {
+        "jp": "契約を前提に交渉を始めた。",
+        "jpH": "けいやく を ぜんていに こうしょう を はじめた。",
+        "ro": "keiyaku wo zentei ni koushou wo hajimeta.",
+        "en": "Negotiations began on the assumption of a contract."
+      },
+      {
+        "jp": "平等を前提に制度が作られた。",
+        "jpH": "びょうどう を ぜんていに せいど が つくられた。",
+        "ro": "byoudou wo zentei ni seido ga tsukurareta.",
+        "en": "The system was created based on equality."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "kanji": "を頼りに",
+    "kana": "をたよりに",
+    "romaji": "wo tayori ni",
+    "en": "relying on; depending on; based on",
+    "examples": [
+      {
+        "jp": "地図を頼りに山に登った。",
+        "jpH": "ちず を たよりに やま に のぼった。",
+        "ro": "chizu wo tayori ni yama ni nobotta.",
+        "en": "We climbed the mountain relying on the map."
+      },
+      {
+        "jp": "友人を頼りに就職した。",
+        "jpH": "ゆうじん を たよりに しゅうしょく した。",
+        "ro": "yuujin wo tayori ni shuushoku shita.",
+        "en": "I found a job with the help of a friend."
+      },
+      {
+        "jp": "思い出を頼りに道を探した。",
+        "jpH": "おもいで を たよりに みち を さがした。",
+        "ro": "omoide wo tayori ni michi wo sagashita.",
+        "en": "I searched for the road based on my memory."
+      },
+      {
+        "jp": "杖を頼りに歩く。",
+        "jpH": "つえ を たよりに あるく。",
+        "ro": "tsue wo tayori ni aruku.",
+        "en": "He walks leaning on a cane."
+      },
+      {
+        "jp": "経験を頼りに判断する。",
+        "jpH": "けいけん を たよりに はんだん する。",
+        "ro": "keiken wo tayori ni handan suru.",
+        "en": "He makes decisions based on experience."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "kanji": "を背景に",
+    "kana": "をはいけいに",
+    "romaji": "wo haikei ni",
+    "en": "against the background of; amid",
+    "examples": [
+      {
+        "jp": "経済成長を背景に都市が発展した。",
+        "jpH": "けいざい せいちょう を はいけいに とし が はってん した。",
+        "ro": "keizai seichou wo haikei ni toshi ga hatten shita.",
+        "en": "Cities developed against the background of economic growth."
+      },
+      {
+        "jp": "戦争を背景にした映画が公開された。",
+        "jpH": "せんそう を はいけいに した えいが が こうかい された。",
+        "ro": "sensou wo haikei ni shita eiga ga koukai sareta.",
+        "en": "A movie set against the backdrop of war was released."
+      },
+      {
+        "jp": "時代の変化を背景に新しい文化が生まれた。",
+        "jpH": "じだい の へんか を はいけいに あたらしい ぶんか が うまれた。",
+        "ro": "jidai no henka wo haikei ni atarashii bunka ga umareta.",
+        "en": "New culture emerged amid the changing times."
+      },
+      {
+        "jp": "不況を背景に企業の倒産が増えた。",
+        "jpH": "ふきょう を はいけいに きぎょう の とうさん が ふえた。",
+        "ro": "fukyou wo haikei ni kigyou no tousan ga fueta.",
+        "en": "Company bankruptcies increased amid the recession."
+      },
+      {
+        "jp": "人口減少を背景に政策が見直された。",
+        "jpH": "じんこう げんしょう を はいけいに せいさく が みなおされた。",
+        "ro": "jinkou genshou wo haikei ni seisaku ga minaosareta.",
+        "en": "Policies were reviewed in light of population decline."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "kanji": "を経て",
+    "kana": "をへて",
+    "romaji": "wo hete",
+    "en": "through; after; via",
+    "examples": [
+      {
+        "jp": "長い訓練を経て選手になった。",
+        "jpH": "ながい くんれん を へて せんしゅ に なった。",
+        "ro": "nagai kunren wo hete senshu ni natta.",
+        "en": "He became an athlete after long training."
+      },
+      {
+        "jp": "多くの経験を経て成長した。",
+        "jpH": "おおく の けいけん を へて せいちょう した。",
+        "ro": "ooku no keiken wo hete seichou shita.",
+        "en": "I grew through many experiences."
+      },
+      {
+        "jp": "数年を経て再会した。",
+        "jpH": "すうねん を へて さいかい した。",
+        "ro": "suunen wo hete saikai shita.",
+        "en": "We met again after several years."
+      },
+      {
+        "jp": "厳しい審査を経て合格した。",
+        "jpH": "きびしい しんさ を へて ごうかく した。",
+        "ro": "kibishii shinsa wo hete goukaku shita.",
+        "en": "I passed after going through a strict review."
+      },
+      {
+        "jp": "交渉を経て契約が成立した。",
+        "jpH": "こうしょう を へて けいやく が せいりつ した。",
+        "ro": "koushou wo hete keiyaku ga seiritsu shita.",
+        "en": "The contract was finalized after negotiations."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "kanji": "を限りに",
+    "kana": "をかぎりに",
+    "romaji": "wo kagiri ni",
+    "en": "starting with; as of; with this as the last; as of; effective from; to the limit of (formal expression)",
+    "examples": [
+      {
+        "jp": "今日を限りにタバコをやめます。",
+        "jpH": "きょう を かぎりに たばこ を やめます。",
+        "ro": "kyou wo kagiri ni tabako wo yamemasu.",
+        "en": "I’ll quit smoking as of today."
+      },
+      {
+        "jp": "今シーズンを限りに引退する。",
+        "jpH": "こん しーずん を かぎりに いんたい する。",
+        "ro": "kon shiizun wo kagiri ni intai suru.",
+        "en": "He will retire after this season."
+      },
+      {
+        "jp": "このサービスは今月を限りに終了します。",
+        "jpH": "この さーびす は こんげつ を かぎりに しゅうりょう します。",
+        "ro": "kono saabisu wa kongetsu wo kagiri ni shuuryou shimasu.",
+        "en": "This service will end after this month."
+      },
+      {
+        "jp": "彼とは今日を限りに別れる。",
+        "jpH": "かれ とは きょう を かぎりに わかれる。",
+        "ro": "kare to wa kyou wo kagiri ni wakareru.",
+        "en": "I’ll break up with him as of today."
+      },
+      {
+        "jp": "この試合を限りに引退表明をする。",
+        "jpH": "この しあい を かぎりに いんたい ひょうめい を する。",
+        "ro": "kono shiai wo kagiri ni intai hyoumei wo suru.",
+        "en": "He will announce retirement after this match."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "kanji": "を踏まえて",
+    "kana": "をふまえて",
+    "romaji": "wo fumaete",
+    "en": "based on; taking into account",
+    "examples": [
+      {
+        "jp": "事実を踏まえて判断する。",
+        "jpH": "じじつ を ふまえて はんだん する。",
+        "ro": "jijitsu wo fumaete handan suru.",
+        "en": "Make a decision based on facts."
+      },
+      {
+        "jp": "結果を踏まえて次の計画を立てる。",
+        "jpH": "けっか を ふまえて つぎ の けいかく を たてる。",
+        "ro": "kekka wo fumaete tsugi no keikaku wo tateru.",
+        "en": "Plan the next steps based on the results."
+      },
+      {
+        "jp": "現状を踏まえて意見を述べる。",
+        "jpH": "げんじょう を ふまえて いけん を のべる。",
+        "ro": "genjou wo fumaete iken wo noberu.",
+        "en": "Express an opinion considering the current situation."
+      },
+      {
+        "jp": "データを踏まえて分析する。",
+        "jpH": "でーた を ふまえて ぶんせき する。",
+        "ro": "deeta wo fumaete bunseki suru.",
+        "en": "Analyze based on the data."
+      },
+      {
+        "jp": "経験を踏まえて助言した。",
+        "jpH": "けいけん を ふまえて じょげん した。",
+        "ro": "keiken wo fumaete jogen shita.",
+        "en": "I gave advice based on my experience."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "kanji": "を控えて",
+    "kana": "をひかえて",
+    "romaji": "wo hikaete",
+    "en": "with ~ approaching; before (an event)",
+    "examples": [
+      {
+        "jp": "試験を控えて勉強に集中する。",
+        "jpH": "しけん を ひかえて べんきょう に しゅうちゅう する。",
+        "ro": "shiken wo hikaete benkyou ni shuuchuu suru.",
+        "en": "I’m focusing on studying before the exam."
+      },
+      {
+        "jp": "大会を控えて選手たちは練習を強化している。",
+        "jpH": "たいかい を ひかえて せんしゅたち は れんしゅう を きょうか して いる。",
+        "ro": "taikai wo hikaete senshutachi wa renshuu wo kyouka shite iru.",
+        "en": "The players are intensifying their training before the competition."
+      },
+      {
+        "jp": "卒業式を控えて忙しい毎日だ。",
+        "jpH": "そつぎょうしき を ひかえて いそがしい まいにち だ。",
+        "ro": "sotsugyoushiki wo hikaete isogashii mainichi da.",
+        "en": "I’m busy every day before the graduation ceremony."
+      },
+      {
+        "jp": "出発を控えて準備を進めている。",
+        "jpH": "しゅっぱつ を ひかえて じゅんび を すすめて いる。",
+        "ro": "shuppatsu wo hikaete junbi wo susumete iru.",
+        "en": "We’re preparing as the departure approaches."
+      },
+      {
+        "jp": "入試を控えて緊張している。",
+        "jpH": "にゅうし を ひかえて きんちょう して いる。",
+        "ro": "nyuushi wo hikaete kinchou shite iru.",
+        "en": "I’m nervous with the entrance exam coming up."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "kanji": "を通じ",
+    "kana": "をつうじ",
+    "romaji": "wo tsuuji",
+    "en": "through; by means of (formal)",
+    "examples": [
+      {
+        "jp": "国際交流を通じ多くを学んだ。",
+        "jpH": "こくさい こうりゅう を つうじ おおく を まなんだ。",
+        "ro": "kokusai kouryuu wo tsuuji ooku wo mananda.",
+        "en": "I learned a lot through international exchange."
+      },
+      {
+        "jp": "仕事を通じ社会の仕組みを知った。",
+        "jpH": "しごと を つうじ しゃかい の しくみ を しった。",
+        "ro": "shigoto wo tsuuji shakai no shikumi wo shitta.",
+        "en": "I learned how society works through my job."
+      },
+      {
+        "jp": "活動を通じ多くの人と出会った。",
+        "jpH": "かつどう を つうじ おおく の ひと と であった。",
+        "ro": "katsudou wo tsuuji ooku no hito to deatta.",
+        "en": "I met many people through my activities."
+      },
+      {
+        "jp": "音楽を通じ感情を表現する。",
+        "jpH": "おんがく を つうじ かんじょう を ひょうげん する。",
+        "ro": "ongaku wo tsuuji kanjou wo hyougen suru.",
+        "en": "I express emotions through music."
+      },
+      {
+        "jp": "経験を通じ自信を得た。",
+        "jpH": "けいけん を つうじ じしん を えた。",
+        "ro": "keiken wo tsuuji jishin wo eta.",
+        "en": "I gained confidence through experience."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "kanji": "を契機として",
+    "kana": "をけいきとして",
+    "romaji": "wo keiki to shite",
+    "en": "taking ~ as an opportunity",
+    "examples": [
+      {
+        "jp": "転勤を契機として新しい生活を始めた。",
+        "jpH": "てんきん を けいきとして あたらしい せいかつ を はじめた。",
+        "ro": "tenkin wo keiki to shite atarashii seikatsu wo hajimeta.",
+        "en": "I started a new life as a result of my transfer."
+      },
+      {
+        "jp": "事故を契機として安全対策が強化された。",
+        "jpH": "じこ を けいきとして あんぜん たいさく が きょうか された。",
+        "ro": "jiko wo keiki to shite anzen taisaku ga kyouka sareta.",
+        "en": "Safety measures were strengthened after the accident."
+      },
+      {
+        "jp": "結婚を契機として引っ越した。",
+        "jpH": "けっこん を けいきとして ひっこした。",
+        "ro": "kekkon wo keiki to shite hikkoshita.",
+        "en": "I moved after getting married."
+      },
+      {
+        "jp": "留学を契機として価値観が変わった。",
+        "jpH": "りゅうがく を けいきとして かちかん が かわった。",
+        "ro": "ryuugaku wo keiki to shite kachikan ga kawatta.",
+        "en": "Studying abroad changed my values."
+      },
+      {
+        "jp": "災害を契機として法律が改正された。",
+        "jpH": "さいがい を けいきとして ほうりつ が かいせい された。",
+        "ro": "saigai wo keiki to shite houritsu ga kaisei sareta.",
+        "en": "The law was revised after the disaster."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "kanji": "を通じての",
+    "kana": "をつうじての",
+    "romaji": "wo tsuujite no",
+    "en": "through; via; across (used as a modifier)",
+    "examples": [
+      {
+        "jp": "彼を通じての紹介でした。",
+        "jpH": "かれ を つうじての しょうかい でした。",
+        "ro": "kare wo tsuujite no shoukai deshita.",
+        "en": "It was an introduction through him."
+      },
+      {
+        "jp": "旅行を通じての出会いが多い。",
+        "jpH": "りょこう を つうじての であい が おおい。",
+        "ro": "ryokou wo tsuujite no deai ga ooi.",
+        "en": "There are many encounters through travel."
+      },
+      {
+        "jp": "勉強を通じての成果を感じた。",
+        "jpH": "べんきょう を つうじての せいか を かんじた。",
+        "ro": "benkyou wo tsuujite no seika wo kanjita.",
+        "en": "I felt the results achieved through study."
+      },
+      {
+        "jp": "活動を通じての友情が生まれた。",
+        "jpH": "かつどう を つうじての ゆうじょう が うまれた。",
+        "ro": "katsudou wo tsuujite no yuujou ga umareta.",
+        "en": "Friendship was born through activities."
+      },
+      {
+        "jp": "仕事を通じての経験は貴重だ。",
+        "jpH": "しごと を つうじての けいけん は きちょう だ。",
+        "ro": "shigoto wo tsuujite no keiken wa kichou da.",
+        "en": "Experience gained through work is valuable."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "kanji": "を通しての",
+    "kana": "をとおしての",
+    "romaji": "wo tooshite no",
+    "en": "through; by means of (used attributively)",
+    "examples": [
+      {
+        "jp": "先生を通しての連絡があった。",
+        "jpH": "せんせい を とおしての れんらく が あった。",
+        "ro": "sensei wo tooshite no renraku ga atta.",
+        "en": "There was a message through the teacher."
+      },
+      {
+        "jp": "講義を通しての学びが多い。",
+        "jpH": "こうぎ を とおしての まなび が おおい。",
+        "ro": "kougi wo tooshite no manabi ga ooi.",
+        "en": "I learned a lot through the lectures."
+      },
+      {
+        "jp": "旅行を通しての体験は貴重だ。",
+        "jpH": "りょこう を とおしての たいけん は きちょう だ。",
+        "ro": "ryokou wo tooshite no taiken wa kichou da.",
+        "en": "Experiences gained through travel are valuable."
+      },
+      {
+        "jp": "ボランティアを通しての成長を感じた。",
+        "jpH": "ぼらんてぃあ を とおしての せいちょう を かんじた。",
+        "ro": "borantia wo tooshite no seichou wo kanjita.",
+        "en": "I felt personal growth through volunteering."
+      },
+      {
+        "jp": "音楽を通しての出会いが素晴らしい。",
+        "jpH": "おんがく を とおしての であい が すばらしい。",
+        "ro": "ongaku wo tooshite no deai ga subarashii.",
+        "en": "The encounters made through music are wonderful."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "kanji": "をはじめとして",
+    "kana": "をはじめとして",
+    "romaji": "wo hajime to shite",
+    "en": "starting with; including; beginning with (formal)",
+    "examples": [
+      {
+        "jp": "社長をはじめとして全社員が出席した。",
+        "jpH": "しゃちょう を はじめとして ぜんしゃいん が しゅっせき した。",
+        "ro": "shachou wo hajime to shite zenshain ga shusseki shita.",
+        "en": "All employees, starting with the president, attended."
+      },
+      {
+        "jp": "日本をはじめとして多くの国が参加した。",
+        "jpH": "にほん を はじめとして おおく の くに が さんか した。",
+        "ro": "nihon wo hajime to shite ooku no kuni ga sanka shita.",
+        "en": "Many countries, including Japan, participated."
+      },
+      {
+        "jp": "先生をはじめとして多くの人に感謝しています。",
+        "jpH": "せんせい を はじめとして おおく の ひと に かんしゃ して います。",
+        "ro": "sensei wo hajime to shite ooku no hito ni kansha shiteimasu.",
+        "en": "I’m grateful to many people, starting with my teacher."
+      },
+      {
+        "jp": "この町では市長をはじめとして環境活動が進められている。",
+        "jpH": "この まち では しちょう を はじめとして かんきょう かつどう が すすめられて いる。",
+        "ro": "kono machi de wa shichou wo hajime to shite kankyou katsudou ga susumerarete iru.",
+        "en": "In this town, environmental activities are promoted starting with the mayor."
+      },
+      {
+        "jp": "この展示会は学生をはじめとして多くの人に人気がある。",
+        "jpH": "この てんじかい は がくせい を はじめとして おおく の ひと に にんき が ある。",
+        "ro": "kono tenjikai wa gakusei wo hajime to shite ooku no hito ni ninki ga aru.",
+        "en": "This exhibition is popular among many people, including students."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "kanji": "を余儀なくされる",
+    "kana": "をよぎなくされる",
+    "romaji": "wo yogi naku sareru",
+    "en": "be forced to; be compelled to",
+    "examples": [
+      {
+        "jp": "悪天候で出発の延期を余儀なくされた。",
+        "jpH": "あくてんこう で しゅっぱつ の えんき を よぎなく された。",
+        "ro": "akutenkou de shuppatsu no enki wo yogi naku sareta.",
+        "en": "We were forced to postpone departure due to bad weather."
+      },
+      {
+        "jp": "経営不振で会社は閉鎖を余儀なくされた。",
+        "jpH": "けいえい ふしん で かいしゃ は へいさ を よぎなく された。",
+        "ro": "keiei fushin de kaisha wa heisa wo yogi naku sareta.",
+        "en": "The company was forced to close due to poor management."
+      },
+      {
+        "jp": "事故のためバスは停車を余儀なくされた。",
+        "jpH": "じこ の ため ばす は ていしゃ を よぎなく された。",
+        "ro": "jiko no tame basu wa teisha wo yogi naku sareta.",
+        "en": "The bus was forced to stop due to an accident."
+      },
+      {
+        "jp": "健康上の理由で引退を余儀なくされた。",
+        "jpH": "けんこうじょう の りゆう で いんたい を よぎなく された。",
+        "ro": "kenkoujou no riyuu de intai wo yogi naku sareta.",
+        "en": "He was forced to retire for health reasons."
+      },
+      {
+        "jp": "不況により計画の変更を余儀なくされた。",
+        "jpH": "ふきょう に より けいかく の へんこう を よぎなく された。",
+        "ro": "fukyou ni yori keikaku no henkou wo yogi naku sareta.",
+        "en": "We were forced to change our plans due to the recession."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "kanji": "を余儀なくさせる",
+    "kana": "をよぎなくさせる",
+    "romaji": "wo yogi naku saseru",
+    "en": "to force someone to; to compel someone to (cause)",
+    "examples": [
+      {
+        "jp": "大雨が試合の中止を余儀なくさせた。",
+        "jpH": "おおあめ が しあい の ちゅうし を よぎなく させた。",
+        "ro": "ooame ga shiai no chuushi wo yogi naku saseta.",
+        "en": "The heavy rain forced the cancellation of the match."
+      },
+      {
+        "jp": "地震が避難を余儀なくさせた。",
+        "jpH": "じしん が ひなん を よぎなく させた。",
+        "ro": "jishin ga hinan wo yogi naku saseta.",
+        "en": "The earthquake forced people to evacuate."
+      },
+      {
+        "jp": "経済危機が改革を余儀なくさせた。",
+        "jpH": "けいざい きき が かいかく を よぎなく させた。",
+        "ro": "keizai kiki ga kaikaku wo yogi naku saseta.",
+        "en": "The economic crisis forced reforms."
+      },
+      {
+        "jp": "社会の変化が企業の対応を余儀なくさせた。",
+        "jpH": "しゃかい の へんか が きぎょう の たいおう を よぎなく させた。",
+        "ro": "shakai no henka ga kigyou no taiou wo yogi naku saseta.",
+        "en": "Social changes forced companies to adapt."
+      },
+      {
+        "jp": "政府の方針が計画の見直しを余儀なくさせた。",
+        "jpH": "せいふ の ほうしん が けいかく の みなおし を よぎなく させた。",
+        "ro": "seifu no houshin ga keikaku no minaoshi wo yogi naku saseta.",
+        "en": "The government’s policy forced a review of the plan."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "kanji": "をもって",
+    "kana": "をもって",
+    "romaji": "wo motte",
+    "en": "with; by means of; as of (formal)",
+    "examples": [
+      {
+        "jp": "本日をもって退職いたします。",
+        "jpH": "ほんじつ を もって たいしょく いたします。",
+        "ro": "honjitsu wo motte taishoku itashimasu.",
+        "en": "As of today, I will resign."
+      },
+      {
+        "jp": "努力をもって成功をつかむ。",
+        "jpH": "どりょく を もって せいこう を つかむ。",
+        "ro": "doryoku wo motte seikou wo tsukamu.",
+        "en": "Achieve success through effort."
+      },
+      {
+        "jp": "熱意をもって仕事に取り組む。",
+        "jpH": "ねつい を もって しごと に とりくむ。",
+        "ro": "netsui wo motte shigoto ni torikumu.",
+        "en": "Work with enthusiasm."
+      },
+      {
+        "jp": "これをもって会議を終了します。",
+        "jpH": "これ を もって かいぎ を しゅうりょう します。",
+        "ro": "kore wo motte kaigi wo shuuryou shimasu.",
+        "en": "This concludes the meeting."
+      },
+      {
+        "jp": "感謝の意をもってお礼を申し上げます。",
+        "jpH": "かんしゃ の い を もって おれい を もうしあげます。",
+        "ro": "kansha no i wo motte orei wo moushiagemasu.",
+        "en": "I express my gratitude with heartfelt thanks."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "kanji": "を前提として",
+    "kana": "をぜんていとして",
+    "romaji": "wo zentei to shite",
+    "en": "on the premise of; assuming that",
+    "examples": [
+      {
+        "jp": "信頼関係を前提として話を進める。",
+        "jpH": "しんらい かんけい を ぜんていとして はなし を すすめる。",
+        "ro": "shinrai kankei wo zentei to shite hanashi wo susumeru.",
+        "en": "We proceed on the assumption of mutual trust."
+      },
+      {
+        "jp": "独立を前提として計画を立てた。",
+        "jpH": "どくりつ を ぜんていとして けいかく を たてた。",
+        "ro": "dokuritsu wo zentei to shite keikaku wo tateta.",
+        "en": "We planned on the premise of independence."
+      },
+      {
+        "jp": "協力を前提として進めましょう。",
+        "jpH": "きょうりょく を ぜんていとして すすめましょう。",
+        "ro": "kyouryoku wo zentei to shite susumemashou.",
+        "en": "Let’s proceed on the basis of cooperation."
+      },
+      {
+        "jp": "この制度は平等を前提としている。",
+        "jpH": "この せいど は びょうどう を ぜんていとして いる。",
+        "ro": "kono seido wa byoudou wo zentei to shite iru.",
+        "en": "This system is based on equality."
+      },
+      {
+        "jp": "安全を前提として設計された。",
+        "jpH": "あんぜん を ぜんていとして せっけい された。",
+        "ro": "anzen wo zentei to shite sekkei sareta.",
+        "en": "It was designed with safety as a prerequisite."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "kanji": "を経に",
+    "kana": "をへに",
+    "romaji": "wo he ni",
+    "en": "through; via (classical/formal expression of を経て)",
+    "examples": [
+      {
+        "jp": "数々の困難を経に成功した。",
+        "jpH": "かずかず の こんなん を へに せいこう した。",
+        "ro": "kazukazu no konnan wo he ni seikou shita.",
+        "en": "He succeeded after going through many hardships."
+      },
+      {
+        "jp": "長い年月を経に完成した作品。",
+        "jpH": "ながい ねんげつ を へに かんせい した さくひん。",
+        "ro": "nagai nengetsu wo he ni kansei shita sakuhin.",
+        "en": "A work completed after many years."
+      },
+      {
+        "jp": "試行錯誤を経に成長した。",
+        "jpH": "しこう さくご を へに せいちょう した。",
+        "ro": "shikou sakugo wo he ni seichou shita.",
+        "en": "I grew through trial and error."
+      },
+      {
+        "jp": "幾多の経験を経に得た知恵。",
+        "jpH": "いくた の けいけん を へに えた ちえ。",
+        "ro": "ikuta no keiken wo he ni eta chie.",
+        "en": "Wisdom gained through countless experiences."
+      },
+      {
+        "jp": "努力を経に目標を達成した。",
+        "jpH": "どりょく を へに もくひょう を たっせい した。",
+        "ro": "doryoku wo he ni mokuhyou wo tassei shita.",
+        "en": "He achieved his goal through hard work."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "kanji": "を境に",
+    "kana": "をさかいに",
+    "romaji": "wo sakai ni",
+    "en": "turning point; as a boundary; marking the change",
+    "examples": [
+      {
+        "jp": "事故を境に彼は性格が変わった。",
+        "jpH": "じこ を さかいに かれ は せいかく が かわった。",
+        "ro": "jiko wo sakai ni kare wa seikaku ga kawatta.",
+        "en": "His personality changed after the accident."
+      },
+      {
+        "jp": "結婚を境に生活が一変した。",
+        "jpH": "けっこん を さかいに せいかつ が いっぺん した。",
+        "ro": "kekkon wo sakai ni seikatsu ga ippen shita.",
+        "en": "Life completely changed after marriage."
+      },
+      {
+        "jp": "この川を境に県が分かれている。",
+        "jpH": "この かわ を さかいに けん が わかれて いる。",
+        "ro": "kono kawa wo sakai ni ken ga wakarete iru.",
+        "en": "This river marks the border between prefectures."
+      },
+      {
+        "jp": "事故を境に安全意識が高まった。",
+        "jpH": "じこ を さかいに あんぜん いしき が たかまった。",
+        "ro": "jiko wo sakai ni anzen ishiki ga takamatta.",
+        "en": "Awareness of safety increased after the accident."
+      },
+      {
+        "jp": "引退を境に彼の人生が変化した。",
+        "jpH": "いんたい を さかいに かれ の じんせい が へんか した。",
+        "ro": "intai wo sakai ni kare no jinsei ga henka shita.",
+        "en": "His life changed after retirement."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "kanji": "をもってしても",
+    "kana": "をもってしても",
+    "romaji": "wo motte shitemo",
+    "en": "even with; despite (one’s efforts or means)",
+    "examples": [
+      {
+        "jp": "彼の実力をもってしても勝てなかった。",
+        "jpH": "かれ の じつりょく を もってしても かてなかった。",
+        "ro": "kare no jitsuryoku wo motte shitemo katenakatta.",
+        "en": "Even with his skill, he couldn’t win."
+      },
+      {
+        "jp": "最新技術をもってしても解決できない。",
+        "jpH": "さいしん ぎじゅつ を もってしても かいけつ できない。",
+        "ro": "saishin gijutsu wo motte shitemo kaiketsu dekinai.",
+        "en": "Even with the latest technology, it cannot be solved."
+      },
+      {
+        "jp": "彼の努力をもってしても合格できなかった。",
+        "jpH": "かれ の どりょく を もってしても ごうかく できなかった。",
+        "ro": "kare no doryoku wo motte shitemo goukaku dekinakatta.",
+        "en": "Even with his efforts, he couldn’t pass."
+      },
+      {
+        "jp": "天才をもってしても理解不能だ。",
+        "jpH": "てんさい を もってしても りかい ふのう だ。",
+        "ro": "tensai wo motte shitemo rikai funou da.",
+        "en": "Even a genius can’t understand it."
+      },
+      {
+        "jp": "専門家をもってしても答えが出ない。",
+        "jpH": "せんもんか を もってしても こたえ が でない。",
+        "ro": "senmonka wo motte shitemo kotae ga denai.",
+        "en": "Even experts can’t find an answer."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "kanji": "をも上回る",
+    "kana": "をもうわまわる",
+    "romaji": "wo mo uwamawaru",
+    "en": "to exceed; to surpass (set phrase)",
+    "examples": [
+      {
+        "jp": "予想をも上回る成果を出した。",
+        "jpH": "よそう を も うわまわる せいか を だした。",
+        "ro": "yosou wo mo uwamawaru seika wo dashita.",
+        "en": "We achieved results that exceeded expectations."
+      },
+      {
+        "jp": "昨年をも上回る売上を記録した。",
+        "jpH": "さくねん を も うわまわる うりあげ を きろく した。",
+        "ro": "sakunen wo mo uwamawaru uriage wo kiroku shita.",
+        "en": "We recorded sales surpassing last year."
+      },
+      {
+        "jp": "目標をも上回る速さで完成した。",
+        "jpH": "もくひょう を も うわまわる はやさ で かんせい した。",
+        "ro": "mokuhyou wo mo uwamawaru hayasa de kansei shita.",
+        "en": "It was completed faster than our goal."
+      },
+      {
+        "jp": "期待をも上回る反応があった。",
+        "jpH": "きたい を も うわまわる はんのう が あった。",
+        "ro": "kitai wo mo uwamawaru hannou ga atta.",
+        "en": "The response exceeded expectations."
+      },
+      {
+        "jp": "彼の才能は想像をも上回る。",
+        "jpH": "かれ の さいのう は そうぞう を も うわまわる。",
+        "ro": "kare no sainou wa souzou wo mo uwamawaru.",
+        "en": "His talent surpasses imagination."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "kanji": "をおいて",
+    "kana": "をおいて",
+    "romaji": "wo oite",
+    "en": "apart from; other than; without (formal)",
+    "examples": [
+      {
+        "jp": "彼をおいて他に適任者はいない。",
+        "jpH": "かれ を おいて ほか に てきにんしゃ は いない。",
+        "ro": "kare wo oite hoka ni tekininsha wa inai.",
+        "en": "There’s no one more suitable than him."
+      },
+      {
+        "jp": "この問題をおいては語れない。",
+        "jpH": "この もんだい を おいて は かたれない。",
+        "ro": "kono mondai wo oite wa katarenai.",
+        "en": "We can’t discuss it without addressing this issue."
+      },
+      {
+        "jp": "彼女をおいて右に出る者はいない。",
+        "jpH": "かのじょ を おいて みぎ に でる もの は いない。",
+        "ro": "kanojo wo oite migi ni deru mono wa inai.",
+        "en": "No one can surpass her."
+      },
+      {
+        "jp": "家族をおいて大切なものはない。",
+        "jpH": "かぞく を おいて たいせつ な もの は ない。",
+        "ro": "kazoku wo oite taisetsu na mono wa nai.",
+        "en": "Nothing is more important than family."
+      },
+      {
+        "jp": "彼をおいてリーダーは考えられない。",
+        "jpH": "かれ を おいて りーだー は かんがえられない。",
+        "ro": "kare wo oite riidaa wa kangaerarenai.",
+        "en": "He’s the only one who could be the leader."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "kanji": "をもっての",
+    "kana": "をもっての",
+    "romaji": "wo motte no",
+    "en": "using; with; expressing (attributive use of をもって)",
+    "examples": [
+      {
+        "jp": "努力をもっての成功だ。",
+        "jpH": "どりょく を もっての せいこう だ。",
+        "ro": "doryoku wo motte no seikou da.",
+        "en": "It’s success achieved through effort."
+      },
+      {
+        "jp": "感謝をもっての言葉を伝えた。",
+        "jpH": "かんしゃ を もっての ことば を つたえた。",
+        "ro": "kansha wo motte no kotoba wo tsutaeta.",
+        "en": "I conveyed words of gratitude."
+      },
+      {
+        "jp": "誠意をもっての対応が必要だ。",
+        "jpH": "せいい を もっての たいおう が ひつよう だ。",
+        "ro": "seii wo motte no taiou ga hitsuyou da.",
+        "en": "A sincere response is required."
+      },
+      {
+        "jp": "勇気をもっての決断を評価する。",
+        "jpH": "ゆうき を もっての けつだん を ひょうか する。",
+        "ro": "yuuki wo motte no ketsudan wo hyouka suru.",
+        "en": "I respect the decision made with courage."
+      },
+      {
+        "jp": "友情をもっての協力に感謝します。",
+        "jpH": "ゆうじょう を もっての きょうりょく に かんしゃ します。",
+        "ro": "yuujou wo motte no kyouryoku ni kansha shimasu.",
+        "en": "I appreciate the cooperation born from friendship."
+      }
+    ]
+  }
+]
