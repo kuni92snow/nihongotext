@@ -1,0 +1,704 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "kanji": "につれて",
+      "kana": "につれて",
+      "romaji": "ni tsurete",
+      "en": "as; in proportion to",
+      "examples": [
+        {"jp": "年を取るにつれて健康が大事になります。", "jpH": "とし を とる につれて けんこう が だいじ に なります。", "ro": "toshi o toru ni tsurete kenkou ga daiji ni narimasu.", "en": "As we get older, health becomes more important."},
+        {"jp": "気温が下がるにつれて雪が増えます。", "jpH": "きおん が さがる につれて ゆき が ふえます。", "ro": "kion ga sagaru ni tsurete yuki ga fuemasu.", "en": "As the temperature drops, the snow increases."},
+        {"jp": "技術が進むにつれて生活が便利になります。", "jpH": "ぎじゅつ が すすむ につれて せいかつ が べんり に なります。", "ro": "gijutsu ga susumu ni tsurete seikatsu ga benri ni narimasu.", "en": "As technology advances, life becomes more convenient."},
+        {"jp": "時間が経つにつれて悲しみは薄れます。", "jpH": "じかん が たつ につれて かなしみ は うすれます。", "ro": "jikan ga tatsu ni tsurete kanashimi wa usuremasu.", "en": "As time passes, the sadness fades."},
+        {"jp": "子供が成長するにつれて親の心配も増えます。", "jpH": "こども が せいちょう する につれて おや の しんぱい も ふえます。", "ro": "kodomo ga seichou suru ni tsurete oya no shinpai mo fuemasu.", "en": "As children grow up, parents' worries increase."}
+      ]
+    },
+    {
+      "id": 2,
+      "kanji": "にしたがって",
+      "kana": "にしたがって",
+      "romaji": "ni shitagatte",
+      "en": "according to; following; as",
+      "examples": [
+        {"jp": "先生の指示にしたがって行動してください。", "jpH": "せんせい の しじ に したがって こうどう してください。", "ro": "sensei no shiji ni shitagatte koudou shite kudasai.", "en": "Please act according to the teacher’s instructions."},
+        {"jp": "ルールにしたがって試合を行います。", "jpH": "るーる に したがって しあい を おこないます。", "ro": "ruuru ni shitagatte shiai o okonaimasu.", "en": "The game will be played according to the rules."},
+        {"jp": "法律にしたがって罰せられます。", "jpH": "ほうりつ に したがって ばっせられます。", "ro": "houritsu ni shitagatte basseraremasu.", "en": "It will be punished according to the law."},
+        {"jp": "計画にしたがって進めましょう。", "jpH": "けいかく に したがって すすめましょう。", "ro": "keikaku ni shitagatte susumemashou.", "en": "Let’s proceed according to the plan."},
+        {"jp": "気温が上がるにしたがって桜が咲きます。", "jpH": "きおん が あがる に したがって さくら が さきます。", "ro": "kion ga agaru ni shitagatte sakura ga sakimasu.", "en": "As the temperature rises, the cherry blossoms bloom."}
+      ]
+    },
+    {
+      "id": 3,
+      "kanji": "において",
+      "kana": "において",
+      "romaji": "ni oite",
+      "en": "in; at; on (formal)",
+      "examples": [
+        {"jp": "東京において会議が行われます。", "jpH": "とうきょう に おいて かいぎ が おこなわれます。", "ro": "toukyou ni oite kaigi ga okonawaremasu.", "en": "The meeting will be held in Tokyo."},
+        {"jp": "日本において教育は重要な問題です。", "jpH": "にほん に おいて きょういく は じゅうよう な もんだい です。", "ro": "nihon ni oite kyouiku wa juuyou na mondai desu.", "en": "Education is an important issue in Japan."},
+        {"jp": "この分野において彼は専門家です。", "jpH": "この ぶんや に おいて かれ は せんもんか です。", "ro": "kono bunya ni oite kare wa senmonka desu.", "en": "He is an expert in this field."},
+        {"jp": "歴史において彼の名前は有名です。", "jpH": "れきし に おいて かれ の なまえ は ゆうめい です。", "ro": "rekishi ni oite kare no namae wa yuumei desu.", "en": "His name is famous in history."},
+        {"jp": "ビジネスにおいて信頼は大切です。", "jpH": "びじねす に おいて しんらい は たいせつ です。", "ro": "bijinesu ni oite shinrai wa taisetsu desu.", "en": "Trust is important in business."}
+      ]
+    },
+    {
+      "id": 4,
+      "kanji": "に応じて",
+      "kana": "におうじて",
+      "romaji": "ni oujite",
+      "en": "according to; depending on",
+      "examples": [
+        {"jp": "状況に応じて対応を変えます。", "jpH": "じょうきょう に おうじて たいおう を かえます。", "ro": "joukyou ni oujite taiou o kaemasu.", "en": "We’ll change our response according to the situation."},
+        {"jp": "能力に応じて給料が決まります。", "jpH": "のうりょく に おうじて きゅうりょう が きまります。", "ro": "nouryoku ni oujite kyuuryou ga kimarimasu.", "en": "The salary is decided according to ability."},
+        {"jp": "天気に応じて服を選んでください。", "jpH": "てんき に おうじて ふく を えらんで ください。", "ro": "tenki ni oujite fuku o erande kudasai.", "en": "Choose clothes according to the weather."},
+        {"jp": "年齢に応じて運動の内容を変えます。", "jpH": "ねんれい に おうじて うんどう の ないよう を かえます。", "ro": "nenrei ni oujite undou no naiyou o kaemasu.", "en": "Exercise contents are adjusted according to age."},
+        {"jp": "結果に応じて次のステップを決めます。", "jpH": "けっか に おうじて つぎ の すてっぷ を きめます。", "ro": "kekka ni oujite tsugi no suteppu o kimemasu.", "en": "We’ll decide the next step according to the result."}
+      ]
+    },
+    {
+      "id": 5,
+      "kanji": "に代わって",
+      "kana": "にかわって",
+      "romaji": "ni kawatte",
+      "en": "instead of; on behalf of",
+      "examples": [
+        {"jp": "父に代わって出席しました。", "jpH": "ちち に かわって しゅっせき しました。", "ro": "chichi ni kawatte shusseki shimashita.", "en": "I attended in place of my father."},
+        {"jp": "先生に代わって説明します。", "jpH": "せんせい に かわって せつめい します。", "ro": "sensei ni kawatte setsumei shimasu.", "en": "I will explain on behalf of the teacher."},
+        {"jp": "母に代わって料理を作りました。", "jpH": "はは に かわって りょうり を つくりました。", "ro": "haha ni kawatte ryouri o tsukurimashita.", "en": "I cooked instead of my mother."},
+        {"jp": "彼に代わって感謝の言葉を述べます。", "jpH": "かれ に かわって かんしゃ の ことば を のべます。", "ro": "kare ni kawatte kansha no kotoba o nobemasu.", "en": "I express gratitude on his behalf."},
+        {"jp": "上司に代わって報告しました。", "jpH": "じょうし に かわって ほうこく しました。", "ro": "joushi ni kawatte houkoku shimashita.", "en": "I reported instead of my boss."}
+      ]
+    },
+    {
+      "id": 6,
+      "kanji": "にかかわらず",
+      "kana": "にかかわらず",
+      "romaji": "ni kakawarazu",
+      "en": "regardless of; despite",
+      "examples": [
+        {"jp": "天気にかかわらず試合を行います。", "jpH": "てんき に かかわらず しあい を おこないます。", "ro": "tenki ni kakawarazu shiai o okonaimasu.", "en": "The match will be held regardless of the weather."},
+        {"jp": "性別にかかわらず応募できます。", "jpH": "せいべつ に かかわらず おうぼ できます。", "ro": "seibetsu ni kakawarazu oubo dekimasu.", "en": "You can apply regardless of gender."},
+        {"jp": "年齢にかかわらず参加可能です。", "jpH": "ねんれい に かかわらず さんか かのう です。", "ro": "nenrei ni kakawarazu sanka kanou desu.", "en": "Participation is possible regardless of age."},
+        {"jp": "経験にかかわらず挑戦してみましょう。", "jpH": "けいけん に かかわらず ちょうせん して みましょう。", "ro": "keiken ni kakawarazu chousen shite mimashou.", "en": "Let’s try regardless of experience."},
+        {"jp": "出身にかかわらず歓迎します。", "jpH": "しゅっしん に かかわらず かんげい します。", "ro": "shusshin ni kakawarazu kangei shimasu.", "en": "Everyone is welcome regardless of origin."}
+      ]
+    },
+    {
+      "id": 7,
+      "kanji": "に比べて",
+      "kana": "にくらべて",
+      "romaji": "ni kurabete",
+      "en": "compared with; in comparison to",
+      "examples": [
+        {"jp": "去年に比べて売上が伸びました。", "jpH": "きょねん に くらべて うりあげ が のびました。", "ro": "kyonen ni kurabete uriage ga nobimashita.", "en": "Sales increased compared to last year."},
+        {"jp": "東京は大阪に比べて物価が高いです。", "jpH": "とうきょう は おおさか に くらべて ぶっか が たかい です。", "ro": "toukyou wa oosaka ni kurabete bukka ga takai desu.", "en": "Tokyo is more expensive than Osaka."},
+        {"jp": "今月は先月に比べて忙しいです。", "jpH": "こんげつ は せんげつ に くらべて いそがしい です。", "ro": "kongetsu wa sengetsu ni kurabete isogashii desu.", "en": "This month is busier than last month."},
+        {"jp": "昔に比べて生活が便利になりました。", "jpH": "むかし に くらべて せいかつ が べんり に なりました。", "ro": "mukashi ni kurabete seikatsu ga benri ni narimashita.", "en": "Life has become more convenient than before."},
+        {"jp": "兄に比べて私は背が低いです。", "jpH": "あに に くらべて わたし は せ が ひくい です。", "ro": "ani ni kurabete watashi wa se ga hikui desu.", "en": "I’m shorter than my older brother."}
+      ]
+    },
+    {
+      "id": 8,
+      "kanji": "に加えて",
+      "kana": "にくわえて",
+      "romaji": "ni kuwaete",
+      "en": "in addition to; besides",
+      "examples": [
+        {"jp": "英語に加えて日本語も話せます。", "jpH": "えいご に くわえて にほんご も はなせます。", "ro": "eigo ni kuwaete nihongo mo hanasemasu.", "en": "In addition to English, I can also speak Japanese."},
+        {"jp": "雨に加えて風も強くなりました。", "jpH": "あめ に くわえて かぜ も つよく なりました。", "ro": "ame ni kuwaete kaze mo tsuyoku narimashita.", "en": "In addition to the rain, the wind also became strong."},
+        {"jp": "仕事に加えて勉強もしなければなりません。", "jpH": "しごと に くわえて べんきょう も しなければ なりません。", "ro": "shigoto ni kuwaete benkyou mo shinakereba narimasen.", "en": "I have to study as well as work."},
+        {"jp": "給料に加えてボーナスも支給されます。", "jpH": "きゅうりょう に くわえて ぼーなす も しきゅう されます。", "ro": "kyuuryou ni kuwaete boonas mo shikyuu saremasu.", "en": "A bonus is paid in addition to the salary."},
+        {"jp": "体力に加えて根気も必要です。", "jpH": "たいりょく に くわえて こんき も ひつよう です。", "ro": "tairyoku ni kuwaete konki mo hitsuyou desu.", "en": "In addition to physical strength, perseverance is also necessary."}
+      ]
+    },
+    {
+      "id": 9,
+      "kanji": "に反して",
+      "kana": "にはんして",
+      "romaji": "ni hanshite",
+      "en": "contrary to; against",
+      "examples": [
+        {"jp": "予想に反して試験は簡単でした。", "jpH": "よそう に はんして しけん は かんたん でした。", "ro": "yosou ni hanshite shiken wa kantan deshita.", "en": "Contrary to expectations, the exam was easy."},
+        {"jp": "ルールに反してプレーしました。", "jpH": "るーる に はんして ぷれー しました。", "ro": "ruuru ni hanshite puree shimashita.", "en": "He played against the rules."},
+        {"jp": "期待に反して結果が悪かった。", "jpH": "きたい に はんして けっか が わるかった。", "ro": "kitai ni hanshite kekka ga warukatta.", "en": "The result was bad, contrary to expectations."},
+        {"jp": "親の意見に反して留学を決めました。", "jpH": "おや の いけん に はんして りゅうがく を きめました。", "ro": "oya no iken ni hanshite ryuugaku o kimemashita.", "en": "I decided to study abroad against my parents’ opinion."},
+        {"jp": "会社の方針に反して行動しました。", "jpH": "かいしゃ の ほうしん に はんして こうどう しました。", "ro": "kaisha no houshin ni hanshite koudou shimashita.", "en": "I acted against the company policy."}
+      ]
+    },
+    {
+      "id": 10,
+      "kanji": "に基づいて",
+      "kana": "にもとづいて",
+      "romaji": "ni motozuite",
+      "en": "based on; according to",
+      "examples": [
+        {"jp": "データに基づいて結論を出しました。", "jpH": "でーた に もとづいて けつろん を だしました。", "ro": "deeta ni motozuite ketsuron o dashimashita.", "en": "We drew a conclusion based on the data."},
+        {"jp": "法律に基づいて判断されます。", "jpH": "ほうりつ に もとづいて はんだん されます。", "ro": "houritsu ni motozuite handan saremasu.", "en": "It will be judged based on the law."},
+        {"jp": "調査に基づいて改善を行いました。", "jpH": "ちょうさ に もとづいて かいぜん を おこないました。", "ro": "chousa ni motozuite kaizen o okonaimashita.", "en": "Improvements were made based on the survey."},
+        {"jp": "事実に基づいて記事が書かれています。", "jpH": "じじつ に もとづいて きじ が かかれています。", "ro": "jijitsu ni motozuite kiji ga kakareteimasu.", "en": "The article is written based on facts."},
+        {"jp": "経験に基づいてアドバイスをしました。", "jpH": "けいけん に もとづいて あどばいす を しました。", "ro": "keiken ni motozuite adobaisu o shimashita.", "en": "I gave advice based on my experience."}
+      ]
+    },
+{
+  "id": 11,
+  "kanji": "に際して",
+  "kana": "にさいして",
+  "romaji": "ni saishite",
+  "en": "on the occasion of; at the time of (formal)",
+  "examples": [
+    {"jp": "入学に際して多くの書類を提出しました。", "jpH": "にゅうがく に さいして おおく の しょるい を ていしゅつ しました。", "ro": "nyuugaku ni saishite ooku no shorui o teishutsu shimashita.", "en": "I submitted many documents at the time of enrollment."},
+    {"jp": "結婚に際して両親に感謝の言葉を述べました。", "jpH": "けっこん に さいして りょうしん に かんしゃ の ことば を のべました。", "ro": "kekkon ni saishite ryoushin ni kansha no kotoba o nobemashita.", "en": "I expressed gratitude to my parents on the occasion of my marriage."},
+    {"jp": "海外赴任に際して注意すべきことが多いです。", "jpH": "かいがい ふにん に さいして ちゅうい すべき こと が おおい です。", "ro": "kaigai funin ni saishite chuui subeki koto ga ooi desu.", "en": "There are many things to be careful about when going on an overseas assignment."},
+    {"jp": "契約に際して細かい内容を確認しました。", "jpH": "けいやく に さいして こまかい ないよう を かくにん しました。", "ro": "keiyaku ni saishite komakai naiyou o kakunin shimashita.", "en": "We confirmed the details at the time of the contract."},
+    {"jp": "出発に際して家族に見送られました。", "jpH": "しゅっぱつ に さいして かぞく に みおくられました。", "ro": "shuppatsu ni saishite kazoku ni miokuraremashita.", "en": "I was seen off by my family at the time of departure."}
+  ]
+},
+{
+  "id": 12,
+  "kanji": "に先立って",
+  "kana": "にさきだって",
+  "romaji": "ni sakidatte",
+  "en": "prior to; before (doing something important)",
+  "examples": [
+    {"jp": "開会に先立って社長の挨拶があります。", "jpH": "かいかい に さきだって しゃちょう の あいさつ が あります。", "ro": "kaikai ni sakidatte shachou no aisatsu ga arimasu.", "en": "Before the opening ceremony, there will be a greeting from the president."},
+    {"jp": "試験に先立って説明が行われました。", "jpH": "しけん に さきだって せつめい が おこなわれました。", "ro": "shiken ni sakidatte setsumei ga okonawaremashita.", "en": "An explanation was given prior to the exam."},
+    {"jp": "旅行に先立ってパスポートを確認しました。", "jpH": "りょこう に さきだって ぱすぽーと を かくにん しました。", "ro": "ryokou ni sakidatte pasupooto o kakunin shimashita.", "en": "I checked my passport before traveling."},
+    {"jp": "講演に先立って音響テストを行いました。", "jpH": "こうえん に さきだって おんきょう てすと を おこないました。", "ro": "kouen ni sakidatte onkyou tesuto o okonaimashita.", "en": "We conducted a sound test before the lecture."},
+    {"jp": "会議に先立って資料を配布しました。", "jpH": "かいぎ に さきだって しりょう を はいふ しました。", "ro": "kaigi ni sakidatte shiryou o haifu shimashita.", "en": "Materials were distributed before the meeting."}
+  ]
+},
+{
+  "id": 13,
+  "kanji": "にわたって",
+  "kana": "にわたって",
+  "romaji": "ni watatte",
+  "en": "throughout; over (a span of time or area)",
+  "examples": [
+    {"jp": "三日にわたってイベントが開催されました。", "jpH": "みっか に わたって いべんと が かいさい されました。", "ro": "mikka ni watatte ibento ga kaisai saremashita.", "en": "The event was held over three days."},
+    {"jp": "調査は全国にわたって行われました。", "jpH": "ちょうさ は ぜんこく に わたって おこなわれました。", "ro": "chousa wa zenkoku ni watatte okonawaremashita.", "en": "The survey was conducted throughout the country."},
+    {"jp": "長年にわたって研究を続けています。", "jpH": "ながねん に わたって けんきゅう を つづけて います。", "ro": "naganen ni watatte kenkyuu o tsudzukete imasu.", "en": "I have been conducting research over many years."},
+    {"jp": "彼の人気は世代にわたって続いています。", "jpH": "かれ の にんき は せだい に わたって つづいて います。", "ro": "kare no ninki wa sedai ni watatte tsuzuite imasu.", "en": "His popularity continues across generations."},
+    {"jp": "その被害は広い地域にわたって起きました。", "jpH": "その ひがい は ひろい ちいき に わたって おきました。", "ro": "sono higai wa hiroi chiiki ni watatte okimashita.", "en": "The damage occurred over a wide area."}
+  ]
+},
+{
+  "id": 14,
+  "kanji": "にほかならない",
+  "kana": "にほかならない",
+  "romaji": "ni hoka naranai",
+  "en": "nothing but; simply; none other than",
+  "examples": [
+    {"jp": "彼の成功は努力の結果にほかならない。", "jpH": "かれ の せいこう は どりょく の けっか に ほかならない。", "ro": "kare no seikou wa doryoku no kekka ni hoka naranai.", "en": "His success is nothing but the result of effort."},
+    {"jp": "この問題の原因は不注意にほかならない。", "jpH": "この もんだい の げんいん は ふちゅうい に ほかならない。", "ro": "kono mondai no gen’in wa fuchuui ni hoka naranai.", "en": "The cause of this problem is simply carelessness."},
+    {"jp": "彼女の行動は愛情にほかならない。", "jpH": "かのじょ の こうどう は あいじょう に ほかならない。", "ro": "kanojo no koudou wa aijou ni hoka naranai.", "en": "Her actions are nothing but love."},
+    {"jp": "この発見は偶然の結果にほかならない。", "jpH": "この はっけん は ぐうぜん の けっか に ほかならない。", "ro": "kono hakken wa guuzen no kekka ni hoka naranai.", "en": "This discovery is merely the result of chance."},
+    {"jp": "成功とは努力の積み重ねにほかならない。", "jpH": "せいこう とは どりょく の つみかさね に ほかならない。", "ro": "seikou to wa doryoku no tsumikasane ni hoka naranai.", "en": "Success is nothing but the accumulation of effort."}
+  ]
+},
+{
+  "id": 15,
+  "kanji": "にしたら",
+  "kana": "にしたら",
+  "romaji": "ni shitara",
+  "en": "from the point of view of; for (someone)",
+  "examples": [
+    {"jp": "子供にしたらそれは大きな問題です。", "jpH": "こども に したら それ は おおきな もんだい です。", "ro": "kodomo ni shitara sore wa ookina mondai desu.", "en": "From a child’s perspective, that is a big problem."},
+    {"jp": "親にしたら心配でしょう。", "jpH": "おや に したら しんぱい でしょう。", "ro": "oya ni shitara shinpai deshou.", "en": "It must be worrying for the parents."},
+    {"jp": "学生にしたらこの課題は難しいです。", "jpH": "がくせい に したら この かだい は むずかしい です。", "ro": "gakusei ni shitara kono kadai wa muzukashii desu.", "en": "For students, this assignment is difficult."},
+    {"jp": "彼にしたら冗談のつもりだった。", "jpH": "かれ に したら じょうだん の つもり だった。", "ro": "kare ni shitara joudan no tsumori datta.", "en": "From his point of view, it was just a joke."},
+    {"jp": "私にしたらその考えは理解できません。", "jpH": "わたし に したら その かんがえ は りかい できません。", "ro": "watashi ni shitara sono kangae wa rikai dekimasen.", "en": "From my point of view, I can’t understand that idea."}
+  ]
+},
+{
+  "id": 16,
+  "kanji": "にしたがい",
+  "kana": "にしたがい",
+  "romaji": "ni shitagai",
+  "en": "following; in accordance with (formal)",
+  "examples": [
+    {"jp": "ルールにしたがい行動してください。", "jpH": "るーる に したがい こうどう してください。", "ro": "ruuru ni shitagai koudou shite kudasai.", "en": "Please act according to the rules."},
+    {"jp": "指示にしたがい作業を進めます。", "jpH": "しじ に したがい さぎょう を すすめます。", "ro": "shiji ni shitagai sagyou o susumemasu.", "en": "Proceed with the work in accordance with the instructions."},
+    {"jp": "法律にしたがい判断されます。", "jpH": "ほうりつ に したがい はんだん されます。", "ro": "houritsu ni shitagai handan saremasu.", "en": "It will be judged according to the law."},
+    {"jp": "説明書にしたがい設定してください。", "jpH": "せつめいしょ に したがい せってい してください。", "ro": "setsumeisho ni shitagai settei shite kudasai.", "en": "Please set it up according to the manual."},
+    {"jp": "先生の教えにしたがい努力しました。", "jpH": "せんせい の おしえ に したがい どりょく しました。", "ro": "sensei no oshie ni shitagai doryoku shimashita.", "en": "I worked hard following my teacher’s guidance."}
+  ]
+},
+{
+  "id": 17,
+  "kanji": "に限って",
+  "kana": "にかぎって",
+  "romaji": "ni kagitte",
+  "en": "only; particularly when; especially",
+  "examples": [
+    {"jp": "今日に限って雨が降りました。", "jpH": "きょう に かぎって あめ が ふりました。", "ro": "kyou ni kagitte ame ga furimashita.", "en": "It rained only today."},
+    {"jp": "忙しい日に限ってトラブルが起こります。", "jpH": "いそがしい ひ に かぎって とらぶる が おこります。", "ro": "isogashii hi ni kagitte toraburu ga okorimasu.", "en": "Trouble happens particularly on busy days."},
+    {"jp": "彼に限ってそんなことはしません。", "jpH": "かれ に かぎって そんな こと は しません。", "ro": "kare ni kagitte sonna koto wa shimasen.", "en": "He would never do such a thing."},
+    {"jp": "この映画に限って割引があります。", "jpH": "この えいが に かぎって わりびき が あります。", "ro": "kono eiga ni kagitte waribiki ga arimasu.", "en": "Only this movie has a discount."},
+    {"jp": "子供に限ってうそをつくことはない。", "jpH": "こども に かぎって うそ を つく こと は ない。", "ro": "kodomo ni kagitte uso o tsuku koto wa nai.", "en": "My child, of all people, would never lie."}
+  ]
+},
+{
+  "id": 18,
+  "kanji": "に限らず",
+  "kana": "にかぎらず",
+  "romaji": "ni kagirazu",
+  "en": "not only; not limited to",
+  "examples": [
+    {"jp": "学生に限らず社会人も参加できます。", "jpH": "がくせい に かぎらず しゃかいじん も さんか できます。", "ro": "gakusei ni kagirazu shakaijin mo sanka dekimasu.", "en": "Not only students but also workers can participate."},
+    {"jp": "日本に限らず世界中で人気があります。", "jpH": "にほん に かぎらず せかいじゅう で にんき が あります。", "ro": "nihon ni kagirazu sekaijuu de ninki ga arimasu.", "en": "It’s popular not only in Japan but all over the world."},
+    {"jp": "男性に限らず女性も活躍しています。", "jpH": "だんせい に かぎらず じょせい も かつやく しています。", "ro": "dansei ni kagirazu josei mo katsuyaku shiteimasu.", "en": "Not only men but also women are active."},
+    {"jp": "若者に限らず多くの人が使っています。", "jpH": "わかもの に かぎらず おおく の ひと が つかっています。", "ro": "wakamono ni kagirazu ooku no hito ga tsukatteimasu.", "en": "Many people, not just young ones, use it."},
+    {"jp": "このイベントは会員に限らず誰でも参加できます。", "jpH": "この いべんと は かいいん に かぎらず だれ でも さんか できます。", "ro": "kono ibento wa kaiin ni kagirazu dare demo sanka dekimasu.", "en": "This event is open to everyone, not only members."}
+  ]
+},
+{
+  "id": 19,
+  "kanji": "にほれて",
+  "kana": "にほれて",
+  "romaji": "ni horete",
+  "en": "to fall in love with; be fascinated by",
+  "examples": [
+    {"jp": "彼女の笑顔にほれました。", "jpH": "かのじょ の えがお に ほれました。", "ro": "kanojo no egao ni horemashita.", "en": "I fell in love with her smile."},
+    {"jp": "その景色にほれて移住しました。", "jpH": "その けしき に ほれて いじゅう しました。", "ro": "sono keshiki ni horete ijuu shimashita.", "en": "I was captivated by the scenery and moved there."},
+    {"jp": "彼の性格にほれました。", "jpH": "かれ の せいかく に ほれました。", "ro": "kare no seikaku ni horemashita.", "en": "I fell in love with his personality."},
+    {"jp": "日本文化にほれて留学を決めました。", "jpH": "にほん ぶんか に ほれて りゅうがく を きめました。", "ro": "nihon bunka ni horete ryuugaku o kimemashita.", "en": "I fell in love with Japanese culture and decided to study abroad."},
+    {"jp": "その音楽にほれて毎日聴いています。", "jpH": "その おんがく に ほれて まいにち きいて います。", "ro": "sono ongaku ni horete mainichi kiite imasu.", "en": "I’m in love with that music and listen to it every day."}
+  ]
+},
+    {
+      "id": 20,
+      "kanji": "にすぎない",
+      "kana": "にすぎない",
+      "romaji": "ni suginai",
+      "en": "nothing more than; merely; only",
+      "examples": [
+        {"jp": "これは噂にすぎません。", "jpH": "これ は うわさ に すぎません。", "ro": "kore wa uwasa ni sugimasen.", "en": "This is nothing more than a rumor."},
+        {"jp": "私は普通の会社員にすぎません。", "jpH": "わたし は ふつう の かいしゃいん に すぎません。", "ro": "watashi wa futsuu no kaishain ni sugimasen.", "en": "I’m just an ordinary office worker."},
+        {"jp": "彼の言葉は冗談にすぎない。", "jpH": "かれ の ことば は じょうだん に すぎない。", "ro": "kare no kotoba wa joudan ni suginai.", "en": "His words are merely a joke."},
+        {"jp": "これは偶然の一致にすぎない。", "jpH": "これ は ぐうぜん の いっち に すぎない。", "ro": "kore wa guuzen no icchi ni suginai.", "en": "This is nothing but a coincidence."},
+        {"jp": "私たちは小さな力にすぎないが、協力すれば大きなことができる。", "jpH": "わたしたち は ちいさな ちから に すぎない が、きょうりょく すれば おおきな こと が できる。", "ro": "watashitachi wa chiisana chikara ni suginai ga, kyouryoku sureba ookina koto ga dekiru.", "en": "We’re only small forces, but together we can achieve great things."}
+      ]
+    },
+    {
+      "id": 21,
+      "kanji": "において",
+      "kana": "において",
+      "romaji": "ni oite",
+      "en": "in; at; on; regarding (formal)",
+      "examples": [
+        {"jp": "東京において会議が行われます。", "jpH": "とうきょう に おいて かいぎ が おこなわれます。", "ro": "toukyou ni oite kaigi ga okonawaremasu.", "en": "The meeting will be held in Tokyo."},
+        {"jp": "この点においてあなたの考えに賛成です。", "jpH": "この てん に おいて あなた の かんがえ に さんせい です。", "ro": "kono ten ni oite anata no kangae ni sansei desu.", "en": "I agree with your opinion on this point."},
+        {"jp": "歴史において重要な時代です。", "jpH": "れきし に おいて じゅうよう な じだい です。", "ro": "rekishi ni oite juuyou na jidai desu.", "en": "It is an important period in history."},
+        {"jp": "教育において親の役割は大きいです。", "jpH": "きょういく に おいて おや の やくわり は おおきい です。", "ro": "kyouiku ni oite oya no yakuwari wa ookii desu.", "en": "Parents play a major role in education."},
+        {"jp": "現代社会においてスマホは欠かせません。", "jpH": "げんだい しゃかい に おいて すまほ は かかせません。", "ro": "gendai shakai ni oite sumaho wa kakasemasen.", "en": "In modern society, smartphones are indispensable."}
+      ]
+    },
+    {
+      "id": 22,
+      "kanji": "にしたがって",
+      "kana": "にしたがって",
+      "romaji": "ni shitagatte",
+      "en": "as; in accordance with; following",
+      "examples": [
+        {"jp": "年を取るにしたがって体力が落ちます。", "jpH": "とし を とる に したがって たいりょく が おちます。", "ro": "toshi o toru ni shitagatte tairyoku ga ochimasu.", "en": "As we get older, our physical strength declines."},
+        {"jp": "時間が経つにしたがって悲しみは薄れました。", "jpH": "じかん が たつ に したがって かなしみ は うすれました。", "ro": "jikan ga tatsu ni shitagatte kanashimi wa usuremashita.", "en": "As time passed, the sadness faded."},
+        {"jp": "人口が増えるにしたがって環境問題が深刻になっています。", "jpH": "じんこう が ふえる に したがって かんきょう もんだい が しんこく に なって います。", "ro": "jinkou ga fueru ni shitagatte kankyou mondai ga shinkoku ni natteimasu.", "en": "As the population increases, environmental issues are becoming serious."},
+        {"jp": "技術が進むにしたがって生活が便利になりました。", "jpH": "ぎじゅつ が すすむ に したがって せいかつ が べんり に なりました。", "ro": "gijutsu ga susumu ni shitagatte seikatsu ga benri ni narimashita.", "en": "As technology advances, life has become more convenient."},
+        {"jp": "天気が悪くなるにしたがって風が強くなりました。", "jpH": "てんき が わるく なる に したがって かぜ が つよく なりました。", "ro": "tenki ga waruku naru ni shitagatte kaze ga tsuyoku narimashita.", "en": "As the weather worsened, the wind became stronger."}
+      ]
+    },
+    {
+      "id": 23,
+      "kanji": "にすれば",
+      "kana": "にすれば",
+      "romaji": "ni sureba",
+      "en": "if viewed from; for (someone’s perspective)",
+      "examples": [
+        {"jp": "彼にすればそれが最善の方法です。", "jpH": "かれ に すれば それ が さいぜん の ほうほう です。", "ro": "kare ni sureba sore ga saizen no houhou desu.", "en": "From his point of view, that’s the best method."},
+        {"jp": "親にすれば子供の幸せが一番です。", "jpH": "おや に すれば こども の しあわせ が いちばん です。", "ro": "oya ni sureba kodomo no shiawase ga ichiban desu.", "en": "For parents, their child’s happiness comes first."},
+        {"jp": "学生にすれば試験は大きなプレッシャーです。", "jpH": "がくせい に すれば しけん は おおきな ぷれっしゃー です。", "ro": "gakusei ni sureba shiken wa ookina puresshaa desu.", "en": "For students, exams are a big pressure."},
+        {"jp": "あなたにすれば些細なことかもしれません。", "jpH": "あなた に すれば ささい な こと かもしれません。", "ro": "anata ni sureba sasai na koto kamoshiremasen.", "en": "It might be trivial from your point of view."},
+        {"jp": "会社にすればそれは大きな損失です。", "jpH": "かいしゃ に すれば それ は おおきな そんしつ です。", "ro": "kaisha ni sureba sore wa ookina sonshitsu desu.", "en": "For the company, that’s a huge loss."}
+      ]
+    },
+    {
+      "id": 24,
+      "kanji": "にしては",
+      "kana": "にしては",
+      "romaji": "ni shite wa",
+      "en": "for; considering; despite",
+      "examples": [
+        {"jp": "子供にしてはよく知っていますね。", "jpH": "こども に しては よく しっています ね。", "ro": "kodomo ni shite wa yoku shitteimasu ne.", "en": "He knows a lot for a child."},
+        {"jp": "初心者にしては上手ですね。", "jpH": "しょしんしゃ に しては じょうず ですね。", "ro": "shoshinsha ni shite wa jouzu desu ne.", "en": "You’re good for a beginner."},
+        {"jp": "この値段にしては品質がいいです。", "jpH": "この ねだん に しては ひんしつ が いい です。", "ro": "kono nedan ni shite wa hinshitsu ga ii desu.", "en": "The quality is good for this price."},
+        {"jp": "彼は年齢にしては若く見えます。", "jpH": "かれ は ねんれい に しては わかく みえます。", "ro": "kare wa nenrei ni shite wa wakaku miemasu.", "en": "He looks young for his age."},
+        {"jp": "外国人にしては日本語がとても上手です。", "jpH": "がいこくじん に しては にほんご が とても じょうず です。", "ro": "gaikokujin ni shite wa nihongo ga totemo jouzu desu.", "en": "He speaks Japanese very well for a foreigner."}
+      ]
+    },
+    {
+      "id": 25,
+      "kanji": "にしても",
+      "kana": "にしても",
+      "romaji": "ni shitemo",
+      "en": "even if; even though; granted that",
+      "examples": [
+        {"jp": "忙しいにしても連絡ぐらいはできます。", "jpH": "いそがしい に しても れんらく ぐらい は できます。", "ro": "isogashii ni shitemo renraku gurai wa dekimasu.", "en": "Even if you’re busy, you can at least contact me."},
+        {"jp": "失敗するにしても挑戦したいです。", "jpH": "しっぱい する に しても ちょうせん したい です。", "ro": "shippai suru ni shitemo chousen shitai desu.", "en": "Even if I fail, I want to try."},
+        {"jp": "行かないにしても一言知らせてください。", "jpH": "いかない に しても ひとこと しらせて ください。", "ro": "ikanai ni shitemo hitokoto shirasete kudasai.", "en": "Even if you don’t go, please let me know."},
+        {"jp": "高いにしても買う価値があります。", "jpH": "たかい に しても かう かち が あります。", "ro": "takai ni shitemo kau kachi ga arimasu.", "en": "Even though it’s expensive, it’s worth buying."},
+        {"jp": "冗談にしても言いすぎです。", "jpH": "じょうだん に しても いいすぎ です。", "ro": "joudan ni shitemo iisugi desu.", "en": "Even as a joke, that’s too much."}
+      ]
+    },
+{
+  "id": 26,
+  "kanji": "にあたって",
+  "kana": "にあたって",
+  "romaji": "ni atatte",
+  "en": "on the occasion of; at the time of (doing something important)",
+  "examples": [
+    {"jp": "出発にあたって注意事項を確認してください。", "jpH": "しゅっぱつ に あたって ちゅうい じこう を かくにん して ください。", "ro": "shuppatsu ni atatte chuui jikou o kakunin shite kudasai.", "en": "Please check the precautions on the occasion of departure."},
+    {"jp": "新店舗の開業にあたって式典が行われました。", "jpH": "しんてんぽ の かいぎょう に あたって しきてん が おこなわれました。", "ro": "shintenpo no kaigyou ni atatte shikiten ga okonawaremashita.", "en": "A ceremony was held at the opening of the new store."},
+    {"jp": "契約更新にあたって条件を見直します。", "jpH": "けいやく こうしん に あたって じょうけん を みなおします。", "ro": "keiyaku koushin ni atatte jouken o minaoshimasu.", "en": "We will review the terms when renewing the contract."},
+    {"jp": "転職にあたって家族と相談しました。", "jpH": "てんしょく に あたって かぞく と そうだん しました。", "ro": "tenshoku ni atatte kazoku to soudan shimashita.", "en": "I consulted my family when changing jobs."},
+    {"jp": "研究発表にあたって資料を準備しています。", "jpH": "けんきゅう はっぴょう に あたって しりょう を じゅんび しています。", "ro": "kenkyuu happyou ni atatte shiryou o junbi shiteimasu.", "en": "I’m preparing materials for my research presentation."}
+  ]
+},
+{
+  "id": 27,
+  "kanji": "にあって",
+  "kana": "にあって",
+  "romaji": "ni atte",
+  "en": "in; under; amid (a certain situation/condition) [formal]",
+  "examples": [
+    {"jp": "非常時にあっても冷静さを失ってはいけない。", "jpH": "ひじょうじ に あって も れいせいさ を うしなって は いけない。", "ro": "hijouji ni atte mo reiseisa o ushinatte wa ikenai.", "en": "Even in an emergency, you must not lose your calm."},
+    {"jp": "不況下にあっても新事業に挑戦する。", "jpH": "ふきょうか に あって も しんじぎょう に ちょうせん する。", "ro": "fukyouka ni atte mo shinjigyou ni chousen suru.", "en": "Even under recession, we will try new businesses."},
+    {"jp": "国際化の時代にあって多言語能力が求められる。", "jpH": "こくさいか の じだい に あって たげんご のうりょく が もとめられる。", "ro": "kokusai-ka no jidai ni atte tagengo nouryoku ga motomerareru.", "en": "In this age of globalization, multilingual ability is required."},
+    {"jp": "情報過多の社会にあって正確さが重要だ。", "jpH": "じょうほう かた の しゃかい に あって せいかくさ が じゅうよう だ。", "ro": "jouhou kata no shakai ni atte seikakusa ga juuyou da.", "en": "In an information-overloaded society, accuracy is crucial."},
+    {"jp": "競争が激しい市場にあって独自性が鍵となる。", "jpH": "きょうそう が はげしい しじょう に あって どくじせい が かぎ と なる。", "ro": "kyousou ga hageshii shijou ni atte dokujisei ga kagi to naru.", "en": "In a highly competitive market, uniqueness is the key."}
+  ]
+},
+{
+  "id": 28,
+  "kanji": "にかけて（は）",
+  "kana": "にかけて（は）",
+  "romaji": "ni kakete (wa)",
+  "en": "when it comes to; in the area of; over (time/area)",
+  "examples": [
+    {"jp": "料理にかけては彼の右に出る者はいない。", "jpH": "りょうり に かけて は かれ の みぎ に でる もの は いない。", "ro": "ryouri ni kakete wa kare no migi ni deru mono wa inai.", "en": "When it comes to cooking, no one beats him."},
+    {"jp": "数学にかけては自信があります。", "jpH": "すうがく に かけて は じしん が あります。", "ro": "suugaku ni kakete wa jishin ga arimasu.", "en": "I’m confident when it comes to math."},
+    {"jp": "この道路は朝から夕方にかけて混む。", "jpH": "この どうろ は あさ から ゆうがた に かけて こむ。", "ro": "kono douro wa asa kara yuugata ni kakete komu.", "en": "This road is crowded from morning through evening."},
+    {"jp": "北海道から東北にかけて雪が降る見込みです。", "jpH": "ほっかいどう から とうほく に かけて ゆき が ふる みこみ です。", "ro": "Hokkaidou kara Touhoku ni kakete yuki ga furu mikomi desu.", "en": "Snow is expected from Hokkaido through Tohoku."},
+    {"jp": "交渉術にかけては彼女が一枚上手だ。", "jpH": "こうしょうじゅつ に かけて は かのじょ が いちまい うわて だ。", "ro": "koushoujutsu ni kakete wa kanojo ga ichimai uwate da.", "en": "She’s a cut above when it comes to negotiation skills."}
+  ]
+},
+{
+  "id": 29,
+  "kanji": "によって",
+  "kana": "によって",
+  "romaji": "ni yotte",
+  "en": "by; due to; depending on; according to",
+  "examples": [
+    {"jp": "台風によって多くの被害が出た。", "jpH": "たいふう に よって おおく の ひがい が でた。", "ro": "taifuu ni yotte ooku no higai ga deta.", "en": "A lot of damage was caused by the typhoon."},
+    {"jp": "人によって考え方は違う。", "jpH": "ひと に よって かんがえかた は ちがう。", "ro": "hito ni yotte kangaekata wa chigau.", "en": "Ways of thinking differ depending on the person."},
+    {"jp": "投票によって代表が選ばれる。", "jpH": "とうひょう に よって だいひょう が えらばれる。", "ro": "touhyou ni yotte daihyou ga erabareru.", "en": "Representatives are chosen by voting."},
+    {"jp": "国によって文化が異なる。", "jpH": "くに に よって ぶんか が ことなる。", "ro": "kuni ni yotte bunka ga kotonaru.", "en": "Cultures differ by country."},
+    {"jp": "場合によっては計画を中止する。", "jpH": "ばあい に よって は けいかく を ちゅうし する。", "ro": "baai ni yotte wa keikaku o chuushi suru.", "en": "In some cases we will cancel the plan."}
+  ]
+},
+{
+  "id": 30,
+  "kanji": "による",
+  "kana": "による",
+  "romaji": "ni yoru",
+  "en": "due to; by means of; according to",
+  "examples": [
+    {"jp": "渋滞による遅刻です。", "jpH": "じゅうたい に よる ちこく です。", "ro": "juutai ni yoru chikoku desu.", "en": "The tardiness is due to traffic jams."},
+    {"jp": "努力による成果だ。", "jpH": "どりょく に よる せいか だ。", "ro": "doryoku ni yoru seika da.", "en": "It’s an achievement brought about by effort."},
+    {"jp": "規則によると提出期限は明日です。", "jpH": "きそく に よる と ていしゅつ きげん は あした です。", "ro": "kisoku ni yoru to teishutsu kigen wa ashita desu.", "en": "According to the rules, the deadline is tomorrow."},
+    {"jp": "新技術によるコスト削減が進んでいる。", "jpH": "しんぎじゅつ に よる こすと さくげん が すすんで いる。", "ro": "shingijutsu ni yoru kosuto sakugen ga susunde iru.", "en": "Cost reduction by new technology is progressing."},
+    {"jp": "地域による差が大きい。", "jpH": "ちいき に よる さ が おおきい。", "ro": "chiiki ni yoru sa ga ookii.", "en": "The differences by region are large."}
+  ]
+},
+    {
+      "id": 31,
+      "kanji": "に対して",
+      "kana": "にたいして",
+      "romaji": "ni taishite",
+      "en": "toward; against; in contrast to",
+      "examples": [
+        {"jp": "先生に対して敬語を使います。", "jpH": "せんせい に たいして けいご を つかいます。", "ro": "sensei ni taishite keigo o tsukaimasu.", "en": "We use polite language toward teachers."},
+        {"jp": "質問に対して丁寧に答えました。", "jpH": "しつもん に たいして ていねい に こたえました。", "ro": "shitsumon ni taishite teinei ni kotaemashita.", "en": "I answered the question politely."},
+        {"jp": "彼は批判に対して冷静に対応した。", "jpH": "かれ は ひはん に たいして れいせい に たいおう した。", "ro": "kare wa hihan ni taishite reisei ni taiou shita.", "en": "He responded calmly to the criticism."},
+        {"jp": "両親に対して感謝しています。", "jpH": "りょうしん に たいして かんしゃ して います。", "ro": "ryoushin ni taishite kansha shiteimasu.", "en": "I’m grateful toward my parents."},
+        {"jp": "男性に対して女性が少ないです。", "jpH": "だんせい に たいして じょせい が すくない です。", "ro": "dansei ni taishite josei ga sukunai desu.", "en": "There are fewer women compared to men."}
+      ]
+    },
+    {
+      "id": 32,
+      "kanji": "にかわって",
+      "kana": "にかわって",
+      "romaji": "ni kawatte",
+      "en": "in place of; on behalf of",
+      "examples": [
+        {"jp": "部長にかわって私が説明します。", "jpH": "ぶちょう に かわって わたし が せつめい します。", "ro": "buchou ni kawatte watashi ga setsumei shimasu.", "en": "I will explain on behalf of the manager."},
+        {"jp": "母にかわって買い物に行きました。", "jpH": "はは に かわって かいもの に いきました。", "ro": "haha ni kawatte kaimono ni ikimashita.", "en": "I went shopping in place of my mother."},
+        {"jp": "先生にかわって挨拶します。", "jpH": "せんせい に かわって あいさつ します。", "ro": "sensei ni kawatte aisatsu shimasu.", "en": "I will give a greeting on behalf of the teacher."},
+        {"jp": "社長にかわってお礼を申し上げます。", "jpH": "しゃちょう に かわって おれい を もうしあげます。", "ro": "shachou ni kawatte orei o moushiagemasu.", "en": "I’d like to express thanks on behalf of the president."},
+        {"jp": "兄にかわって犬の世話をしました。", "jpH": "あに に かわって いぬ の せわ を しました。", "ro": "ani ni kawatte inu no sewa o shimashita.", "en": "I took care of the dog in place of my brother."}
+      ]
+    },
+    {
+      "id": 33,
+      "kanji": "に反して",
+      "kana": "にはんして",
+      "romaji": "ni hanshite",
+      "en": "contrary to; against",
+      "examples": [
+        {"jp": "期待に反して結果は悪かった。", "jpH": "きたい に はんして けっか は わるかった。", "ro": "kitai ni hanshite kekka wa warukatta.", "en": "Contrary to expectations, the result was bad."},
+        {"jp": "予想に反して彼が勝ちました。", "jpH": "よそう に はんして かれ が かちました。", "ro": "yosou ni hanshite kare ga kachimashita.", "en": "Contrary to prediction, he won."},
+        {"jp": "先生の意見に反して行動しました。", "jpH": "せんせい の いけん に はんして こうどう しました。", "ro": "sensei no iken ni hanshite koudou shimashita.", "en": "I acted against my teacher’s opinion."},
+        {"jp": "ルールに反して試合が中止された。", "jpH": "るーる に はんして しあい が ちゅうし された。", "ro": "ruuru ni hanshite shiai ga chuushi sareta.", "en": "The match was canceled contrary to the rules."},
+        {"jp": "期待に反して彼は冷たかった。", "jpH": "きたい に はんして かれ は つめたかった。", "ro": "kitai ni hanshite kare wa tsumetakatta.", "en": "He was cold, contrary to my expectations."}
+      ]
+    },
+    {
+      "id": 34,
+      "kanji": "に比べて",
+      "kana": "にくらべて",
+      "romaji": "ni kurabete",
+      "en": "compared with; in comparison to",
+      "examples": [
+        {"jp": "去年に比べて寒いです。", "jpH": "きょねん に くらべて さむい です。", "ro": "kyonen ni kurabete samui desu.", "en": "It’s colder compared to last year."},
+        {"jp": "東京に比べて大阪は物価が安いです。", "jpH": "とうきょう に くらべて おおさか は ぶっか が やすい です。", "ro": "toukyou ni kurabete oosaka wa bukka ga yasui desu.", "en": "Prices are cheaper in Osaka compared to Tokyo."},
+        {"jp": "兄に比べて私は背が低いです。", "jpH": "あに に くらべて わたし は せ が ひくい です。", "ro": "ani ni kurabete watashi wa se ga hikui desu.", "en": "I’m shorter compared to my brother."},
+        {"jp": "先週に比べて忙しくなりました。", "jpH": "せんしゅう に くらべて いそがしく なりました。", "ro": "senshuu ni kurabete isogashiku narimashita.", "en": "I’ve gotten busier compared to last week."},
+        {"jp": "春に比べて冬は日が短いです。", "jpH": "はる に くらべて ふゆ は ひ が みじかい です。", "ro": "haru ni kurabete fuyu wa hi ga mijikai desu.", "en": "The days are shorter in winter compared to spring."}
+      ]
+    },
+    {
+      "id": 35,
+      "kanji": "にかけて",
+      "kana": "にかけて",
+      "romaji": "ni kakete",
+      "en": "through; over (a period or range); regarding",
+      "examples": [
+        {"jp": "朝から昼にかけて雨が降りました。", "jpH": "あさ から ひる に かけて あめ が ふりました。", "ro": "asa kara hiru ni kakete ame ga furimashita.", "en": "It rained from morning to noon."},
+        {"jp": "関東から東北にかけて地震がありました。", "jpH": "かんとう から とうほく に かけて じしん が ありました。", "ro": "kantou kara touhoku ni kakete jishin ga arimashita.", "en": "An earthquake occurred from the Kanto to Tohoku regions."},
+        {"jp": "彼は数学にかけては誰にも負けません。", "jpH": "かれ は すうがく に かけて は だれ にも まけません。", "ro": "kare wa suugaku ni kakete wa dare ni mo makemasen.", "en": "When it comes to math, he’s second to none."},
+        {"jp": "春から夏にかけて花が咲きます。", "jpH": "はる から なつ に かけて はな が さきます。", "ro": "haru kara natsu ni kakete hana ga sakimasu.", "en": "Flowers bloom from spring to summer."},
+        {"jp": "彼は料理にかけてはプロです。", "jpH": "かれ は りょうり に かけて は ぷろ です。", "ro": "kare wa ryouri ni kakete wa puro desu.", "en": "When it comes to cooking, he’s a pro."}
+      ]
+    },
+    {
+      "id": 36,
+      "kanji": "に関して",
+      "kana": "にかんして",
+      "romaji": "ni kanshite",
+      "en": "regarding; concerning; about",
+      "examples": [
+        {"jp": "この問題に関して質問があります。", "jpH": "この もんだい に かんして しつもん が あります。", "ro": "kono mondai ni kanshite shitsumon ga arimasu.", "en": "I have a question regarding this problem."},
+        {"jp": "その事件に関して警察が調べています。", "jpH": "その じけん に かんして けいさつ が しらべて います。", "ro": "sono jiken ni kanshite keisatsu ga shirabeteimasu.", "en": "The police are investigating the incident."},
+        {"jp": "環境問題に関して多くの議論があります。", "jpH": "かんきょう もんだい に かんして おおく の ぎろん が あります。", "ro": "kankyou mondai ni kanshite ooku no giron ga arimasu.", "en": "There are many discussions concerning environmental issues."},
+        {"jp": "契約内容に関しては弁護士に相談してください。", "jpH": "けいやく ないよう に かんして は べんごし に そうだん してください。", "ro": "keiyaku naiyou ni kanshite wa bengoshi ni soudan shite kudasai.", "en": "Please consult a lawyer regarding the contract details."},
+        {"jp": "商品の価格に関しては後で連絡します。", "jpH": "しょうひん の かかく に かんして は あとで れんらく します。", "ro": "shouhin no kakaku ni kanshite wa atode renraku shimasu.", "en": "We’ll contact you later about the product price."}
+      ]
+    },
+    {
+      "id": 37,
+      "kanji": "に限って",
+      "kana": "にかぎって",
+      "romaji": "ni kagitte",
+      "en": "only; particularly; just when",
+      "examples": [
+        {"jp": "今日に限って雨が降るなんて。", "jpH": "きょう に かぎって あめ が ふる なんて。", "ro": "kyou ni kagitte ame ga furu nante.", "en": "It just had to rain today of all days."},
+        {"jp": "彼に限ってそんなことはしない。", "jpH": "かれ に かぎって そんな こと は しない。", "ro": "kare ni kagitte sonna koto wa shinai.", "en": "He, of all people, would never do such a thing."},
+        {"jp": "休みに限って電話が多いです。", "jpH": "やすみ に かぎって でんわ が おおい です。", "ro": "yasumi ni kagitte denwa ga ooi desu.", "en": "I get a lot of calls only on my days off."},
+        {"jp": "この店に限ってセールをしています。", "jpH": "この みせ に かぎって せーる を しています。", "ro": "kono mise ni kagitte seeru o shiteimasu.", "en": "Only this shop is having a sale."},
+        {"jp": "この時間に限って電車が遅れています。", "jpH": "この じかん に かぎって でんしゃ が おくれて います。", "ro": "kono jikan ni kagitte densha ga okureteimasu.", "en": "The train is delayed just at this time."}
+      ]
+    },
+    {
+      "id": 38,
+      "kanji": "に先立って",
+      "kana": "にさきだって",
+      "romaji": "ni sakidatte",
+      "en": "before; prior to (formal)",
+      "examples": [
+        {"jp": "開会に先立って挨拶がありました。", "jpH": "かいかい に さきだって あいさつ が ありました。", "ro": "kaikai ni sakidatte aisatsu ga arimashita.", "en": "There was a greeting before the opening ceremony."},
+        {"jp": "出発に先立って準備を整えました。", "jpH": "しゅっぱつ に さきだって じゅんび を ととのえました。", "ro": "shuppatsu ni sakidatte junbi o totonoemashita.", "en": "We made preparations prior to departure."},
+        {"jp": "結婚式に先立って写真を撮りました。", "jpH": "けっこんしき に さきだって しゃしん を とりました。", "ro": "kekkonshiki ni sakidatte shashin o torimashita.", "en": "We took photos before the wedding ceremony."},
+        {"jp": "試験に先立って説明を行います。", "jpH": "しけん に さきだって せつめい を おこないます。", "ro": "shiken ni sakidatte setsumei o okonaimasu.", "en": "An explanation will be given prior to the exam."},
+        {"jp": "イベントに先立って会場を確認しました。", "jpH": "いべんと に さきだって かいじょう を かくにん しました。", "ro": "ibento ni sakidatte kaijou o kakunin shimashita.", "en": "We checked the venue before the event."}
+      ]
+    },
+    {
+      "id": 39,
+      "kanji": "にしたがい",
+      "kana": "にしたがい",
+      "romaji": "ni shitagai",
+      "en": "in accordance with; following; as (something happens)",
+      "examples": [
+        {"jp": "ルールにしたがい行動してください。", "jpH": "るーる に したがい こうどう してください。", "ro": "ruuru ni shitagai koudou shite kudasai.", "en": "Please act in accordance with the rules."},
+        {"jp": "計画にしたがい作業を進めます。", "jpH": "けいかく に したがい さぎょう を すすめます。", "ro": "keikaku ni shitagai sagyou o susumemasu.", "en": "We will proceed with the work according to the plan."},
+        {"jp": "年を取るにしたがい体力が落ちてきます。", "jpH": "とし を とる に したがい たいりょく が おちて きます。", "ro": "toshi o toru ni shitagai tairyoku ga ochite kimasu.", "en": "As we age, our physical strength declines."},
+        {"jp": "気温が上がるにしたがい雪が溶けました。", "jpH": "きおん が あがる に したがい ゆき が とけました。", "ro": "kion ga agaru ni shitagai yuki ga tokemashita.", "en": "As the temperature rose, the snow melted."},
+        {"jp": "時代の変化にしたがい生活も変わります。", "jpH": "じだい の へんか に したがい せいかつ も かわります。", "ro": "jidai no henka ni shitagai seikatsu mo kawarimasu.", "en": "Life changes along with the times."}
+      ]
+    },
+    {
+      "id": 40,
+      "kanji": "に際して",
+      "kana": "にさいして",
+      "romaji": "ni saishite",
+      "en": "on the occasion of; at the time of (formal)",
+      "examples": [
+        {"jp": "入学に際してお祝いの言葉を述べました。", "jpH": "にゅうがく に さいして おいわい の ことば を のべました。", "ro": "nyuugaku ni saishite oiwai no kotoba o nobemashita.", "en": "I gave congratulatory words on the occasion of entering school."},
+        {"jp": "出発に際して注意事項を確認しました。", "jpH": "しゅっぱつ に さいして ちゅうい じこう を かくにん しました。", "ro": "shuppatsu ni saishite chuui jikou o kakunin shimashita.", "en": "We checked precautions at the time of departure."},
+        {"jp": "結婚に際して両親に感謝の手紙を渡しました。", "jpH": "けっこん に さいして りょうしん に かんしゃ の てがみ を わたしました。", "ro": "kekkon ni saishite ryoushin ni kansha no tegami o watashimashita.", "en": "I gave a thank-you letter to my parents at my wedding."},
+        {"jp": "開店に際して特別セールを行いました。", "jpH": "かいてん に さいして とくべつ せーる を おこないました。", "ro": "kaiten ni saishite tokubetsu seeru o okonaimashita.", "en": "We held a special sale for the store opening."},
+        {"jp": "契約に際して署名をお願いします。", "jpH": "けいやく に さいして しょめい を おねがいします。", "ro": "keiyaku ni saishite shomei o onegaishimasu.", "en": "Please sign at the time of the contract."}
+      ]
+    },
+{
+  "id": 41,
+  "kanji": "に沿って",
+  "kana": "にそって",
+  "romaji": "ni sotte",
+  "en": "along; in line with; according to",
+  "examples": [
+    {"jp": "川に沿って歩きました。", "jpH": "かわ に そって あるきました。", "ro": "kawa ni sotte arukimashita.", "en": "We walked along the river."},
+    {"jp": "計画に沿って進めてください。", "jpH": "けいかく に そって すすめて ください。", "ro": "keikaku ni sotte susumete kudasai.", "en": "Please proceed in line with the plan."},
+    {"jp": "指示に沿ってレポートを作成します。", "jpH": "しじ に そって れぽーと を さくせい します。", "ro": "shiji ni sotte repooto o sakusei shimasu.", "en": "I’ll prepare the report according to the instructions."},
+    {"jp": "道路に沿って桜が植えられている。", "jpH": "どうろ に そって さくら が うえられて いる。", "ro": "douro ni sotte sakura ga uerarete iru.", "en": "Cherry trees are planted along the road."},
+    {"jp": "法律に沿って対応します。", "jpH": "ほうりつ に そって たいおう します。", "ro": "houritsu ni sotte taiou shimasu.", "en": "We will respond in accordance with the law."}
+  ]
+},
+{
+  "id": 42,
+  "kanji": "に即して",
+  "kana": "にそくして",
+  "romaji": "ni sokushite",
+  "en": "in line with; in accordance with (real conditions/rules)",
+  "examples": [
+    {"jp": "現実に即して対策を立てる。", "jpH": "げんじつ に そくして たいさく を たてる。", "ro": "genjitsu ni sokushite taisaku o tateru.", "en": "We make measures in line with reality."},
+    {"jp": "規定に即して処理してください。", "jpH": "きてい に そくして しょり して ください。", "ro": "kitei ni sokushite shori shite kudasai.", "en": "Please handle it in accordance with the rules."},
+    {"jp": "地域の実情に即して計画を修正した。", "jpH": "ちいき の じつじょう に そくして けいかく を しゅうせい した。", "ro": "chiiki no jitsujou ni sokushite keikaku o shuusei shita.", "en": "We revised the plan in line with local conditions."},
+    {"jp": "データに即して説明します。", "jpH": "でーた に そくして せつめい します。", "ro": "deeta ni sokushite setsumei shimasu.", "en": "I’ll explain based on the data."},
+    {"jp": "目的に即して手段を選ぶべきだ。", "jpH": "もくてき に そくして しゅだん を えらぶ べき だ。", "ro": "mokuteki ni sokushite shudan o erabu beki da.", "en": "Means should be chosen according to the purpose."}
+  ]
+},
+{
+  "id": 43,
+  "kanji": "に伴って",
+  "kana": "にともなって",
+  "romaji": "ni tomonatte",
+  "en": "as; along with; accompanied by",
+  "examples": [
+    {"jp": "人口増加に伴って交通量が増えた。", "jpH": "じんこう ぞうか に ともなって こうつうりょう が ふえた。", "ro": "jinkou zouka ni tomonatte koutsuuryou ga fueta.", "en": "Traffic increased as the population grew."},
+    {"jp": "景気の悪化に伴って失業率が上がった。", "jpH": "けいき の あっか に ともなって しつぎょうりつ が あがった。", "ro": "keiki no akka ni tomonatte shitsugyouritsu ga agatta.", "en": "Unemployment rose along with the economic downturn."},
+    {"jp": "規模拡大に伴って組織を再編した。", "jpH": "きぼ かくだい に ともなって そしき を さいへん した。", "ro": "kibo kakudai ni tomonatte soshiki o saihen shita.", "en": "We reorganized the company with the expansion."},
+    {"jp": "年齢の上昇に伴って体力が低下する。", "jpH": "ねんれい の じょうしょう に ともなって たいりょく が ていか する。", "ro": "nenrei no joushou ni tomonatte tairyoku ga teika suru.", "en": "Physical strength declines with age."},
+    {"jp": "引っ越しに伴って住所が変わります。", "jpH": "ひっこし に ともなって じゅうしょ が かわります。", "ro": "hikkoshi ni tomonatte juusho ga kawarimasu.", "en": "Your address will change with the move."}
+  ]
+},
+{
+  "id": 44,
+  "kanji": "に伴い",
+  "kana": "にともない",
+  "romaji": "ni tomonai",
+  "en": "as; along with (formal written style of に伴って)",
+  "examples": [
+    {"jp": "価格改定に伴い、表示を変更します。", "jpH": "かかく かいてい に ともない、ひょうじ を へんこう します。", "ro": "kakaku kaitei ni tomonai, hyouji o henkou shimasu.", "en": "With the price revision, we will change the display."},
+    {"jp": "異動に伴い担当が変わりました。", "jpH": "いどう に ともない たんとう が かわりました。", "ro": "idou ni tomonai tantou ga kawarimashita.", "en": "Due to the transfer, the person in charge changed."},
+    {"jp": "制度変更に伴い申請方法が変わる。", "jpH": "せいど へんこう に ともない しんせい ほうほう が かわる。", "ro": "seido henkou ni tomonai shinsei houhou ga kawaru.", "en": "Application methods will change with the system revision."},
+    {"jp": "老朽化に伴い建物を建て替えます。", "jpH": "ろうきゅうか に ともない たてもの を たてかえます。", "ro": "roukyuuka ni tomonai tatemono o tatekaemasu.", "en": "The building will be rebuilt due to aging."},
+    {"jp": "台風接近に伴い、学校は休校となる。", "jpH": "たいふう せっきん に ともない、がっこう は きゅうこう と なる。", "ro": "taifuu sekkin ni tomonai, gakkou wa kyuukou to naru.", "en": "As a typhoon approaches, the school will close."}
+  ]
+},
+{
+  "id": 45,
+  "kanji": "につき",
+  "kana": "につき",
+  "romaji": "ni tsuki",
+  "en": "per; due to; regarding (notice style)",
+  "examples": [
+    {"jp": "一人につき入場券一枚です。", "jpH": "ひとり に つき にゅうじょうけん いちまい です。", "ro": "hitori ni tsuki nyuujouken ichimai desu.", "en": "One ticket per person."},
+    {"jp": "工事中につき通行止め。", "jpH": "こうじちゅう に つき つうこうどめ。", "ro": "koujichuu ni tsuki tsuukoudome.", "en": "Road closed due to construction."},
+    {"jp": "本日休業につきご迷惑をおかけします。", "jpH": "ほんじつ きゅうぎょう に つき ごめいわく を おかけ します。", "ro": "honjitsu kyuugyou ni tsuki gomeiwaku o okake shimasu.", "en": "Closed today; sorry for the inconvenience."},
+    {"jp": "一週間につき三回練習する。", "jpH": "いっしゅうかん に つき さんかい れんしゅう する。", "ro": "isshuukan ni tsuki sankai renshuu suru.", "en": "Practice three times per week."},
+    {"jp": "詳細につきましては担当まで。", "jpH": "しょうさい に つきまして は たんとう まで。", "ro": "shousai ni tsukimashite wa tantou made.", "en": "For details, please contact the person in charge."}
+  ]
+},
+{
+  "id": 46,
+  "kanji": "に応えて",
+  "kana": "にこたえて",
+  "romaji": "ni kotaete",
+  "en": "in response to; to meet (demands/expectations)",
+  "examples": [
+    {"jp": "期待に応えて優勝した。", "jpH": "きたい に こたえて ゆうしょう した。", "ro": "kitai ni kotaete yuushou shita.", "en": "We won the championship in response to expectations."},
+    {"jp": "要望に応えて営業時間を延長します。", "jpH": "ようぼう に こたえて えいぎょうじかん を えんちょう します。", "ro": "youbou ni kotaete eigyou jikan o enchou shimasu.", "en": "We will extend business hours to meet requests."},
+    {"jp": "声援に応えて手を振った。", "jpH": "せいえん に こたえて て を ふった。", "ro": "seien ni kotaete te o futta.", "en": "He waved in response to the cheers."},
+    {"jp": "需要に応えて増産する。", "jpH": "じゅよう に こたえて ぞうさん する。", "ro": "juyou ni kotaete zousan suru.", "en": "We will increase production to meet demand."},
+    {"jp": "質問に応えて詳しく説明した。", "jpH": "しつもん に こたえて くわしく せつめい した。", "ro": "shitsumon ni kotaete kuwashiku setsumei shita.", "en": "I explained in detail in response to the question."}
+  ]
+},
+{
+  "id": 47,
+  "kanji": "に基づき",
+  "kana": "にもとづき",
+  "romaji": "ni motozuki",
+  "en": "based on; on the basis of (formal conjunctive)",
+  "examples": [
+    {"jp": "規則に基づき処分します。", "jpH": "きそく に もとづき しょぶん します。", "ro": "kisoku ni motozuki shobun shimasu.", "en": "We will take action based on the rules."},
+    {"jp": "データに基づき分析した。", "jpH": "でーた に もとづき ぶんせき した。", "ro": "deeta ni motozuki bunseki shita.", "en": "We analyzed based on the data."},
+    {"jp": "法律に基づき手続きを行う。", "jpH": "ほうりつ に もとづき てつづき を おこなう。", "ro": "houritsu ni motozuki tetsuzuki o okonau.", "en": "We proceed with the procedure according to the law."},
+    {"jp": "事実に基づき記事を書く。", "jpH": "じじつ に もとづき きじ を かく。", "ro": "jijitsu ni motozuki kiji o kaku.", "en": "Write the article based on facts."},
+    {"jp": "調査に基づき改善案を出した。", "jpH": "ちょうさ に もとづき かいぜんあん を だした。", "ro": "chousa ni motozuki kaizen-an o dashita.", "en": "We proposed improvements based on the survey."}
+  ]
+},
+{
+  "id": 48,
+  "kanji": "に至って",
+  "kana": "にいたって",
+  "romaji": "ni itatte",
+  "en": "after reaching/coming to; (only) when it has come to",
+  "examples": [
+    {"jp": "被害が拡大するに至って非常事態が宣言された。", "jpH": "ひがい が かくだい する に いたって ひじょうじたい が せんげん された。", "ro": "higai ga kakudai suru ni itatte hijoujitai ga sengen sareta.", "en": "A state of emergency was declared when the damage spread."},
+    {"jp": "最終段階に至って方針が決まった。", "jpH": "さいしゅう だんかい に いたって ほうしん が きまった。", "ro": "saishuu dankai ni itatte houshin ga kimatta.", "en": "The policy was decided after reaching the final stage."},
+    {"jp": "ここに至っては後戻りできない。", "jpH": "ここ に いたって は あともどり できない。", "ro": "koko ni itatte wa atomodori dekinai.", "en": "At this point, there’s no turning back."},
+    {"jp": "死亡者が出るに至って対策が強化された。", "jpH": "しぼうしゃ が でる に いたって たいさく が きょうか された。", "ro": "shibousha ga deru ni itatte taisaku ga kyouka sareta.", "en": "Measures were strengthened once fatalities occurred."},
+    {"jp": "交渉決裂に至って新案が提示された。", "jpH": "こうしょう けつれつ に いたって しんあん が ていじ された。", "ro": "koushou ketsuretsu ni itatte shinan ga teiji sareta.", "en": "A new proposal was presented after talks broke down."}
+  ]
+},
+{
+  "id": 49,
+  "kanji": "に至っては",
+  "kana": "にいたっては",
+  "romaji": "ni itatte wa",
+  "en": "as for; when it comes to (extreme example/emphasis)",
+  "examples": [
+    {"jp": "都会の家賃は高い。東京に至っては言うまでもない。", "jpH": "とかい の やちん は たかい。とうきょう に いたって は いう までも ない。", "ro": "tokai no yachin wa takai. Toukyou ni itatte wa iu made mo nai.", "en": "Urban rent is high—Tokyo, needless to say."},
+    {"jp": "彼は忙しい。期末に至っては寝る時間もない。", "jpH": "かれ は いそがしい。きまつ に いたって は ねる じかん も ない。", "ro": "kare wa isogashii. kimatsu ni itatte wa neru jikan mo nai.", "en": "He’s busy; during finals he barely sleeps."},
+    {"jp": "この道路は混む。連休に至っては大渋滞だ。", "jpH": "この どうろ は こむ。れんきゅう に いたって は だいじゅうたい だ。", "ro": "kono douro wa komu. renkyuu ni itatte wa daijuutai da.", "en": "This road gets crowded; during long holidays it’s a massive jam."},
+    {"jp": "暑い。真夏に至っては外出したくない。", "jpH": "あつい。まなつ に いたって は がいしゅつ したく ない。", "ro": "atsui. manatsu ni itatte wa gaishutsu shitaku nai.", "en": "It’s hot; in midsummer, I don’t even want to go out."},
+    {"jp": "彼の収集癖はすごい。レア物に至っては家宝級だ。", "jpH": "かれ の しゅうしゅうへき は すごい。れあもの に いたって は かほうきゅう だ。", "ro": "kare no shuushuuheki wa sugoi. reamono ni itatte wa kahoukyuu da.", "en": "His collecting habit is intense; as for rare items, they’re heirloom-level."}
+  ]
+},
+{
+  "id": 50,
+  "kanji": "にかかわる",
+  "kana": "にかかわる",
+  "romaji": "ni kakawaru",
+  "en": "to affect; to be related/connected to; concerning",
+  "examples": [
+    {"jp": "命にかかわる問題です。", "jpH": "いのち に かかわる もんだい です。", "ro": "inochi ni kakawaru mondai desu.", "en": "It’s a matter that affects life."},
+    {"jp": "評判にかかわるので丁寧に対応する。", "jpH": "ひょうばん に かかわる ので ていねい に たいおう する。", "ro": "hyouban ni kakawaru node teinei ni taiou suru.", "en": "We’ll respond carefully since it affects our reputation."},
+    {"jp": "健康にかかわる情報を提供する。", "jpH": "けんこう に かかわる じょうほう を ていきょう する。", "ro": "kenkou ni kakawaru jouhou o teikyou suru.", "en": "We provide information concerning health."},
+    {"jp": "重大な権利にかかわる案件だ。", "jpH": "じゅうだい な けんり に かかわる あんけん だ。", "ro": "juudai na kenri ni kakawaru anken da.", "en": "This case concerns important rights."},
+    {"jp": "個人情報にかかわる書類を厳重に保管する。", "jpH": "こじんじょうほう に かかわる しょるい を げんじゅう に ほかん する。", "ro": "kojin jouhou ni kakawaru shorui o genjuu ni hokan suru.", "en": "Store documents related to personal data securely."}
+  ]
+}
+  ]
+} 

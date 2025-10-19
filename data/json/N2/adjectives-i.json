@@ -1,0 +1,3004 @@
+{
+  "entries": [
+{
+  "id": "n2-iadj-001",
+  "ja": "鋭い",
+  "kana": "するどい",
+  "ro": "surudoi",
+  "en": "sharp / keen / perceptive",
+  "examples": [
+    {"en": "He has sharp eyes.", "ja": "彼は鋭い目をしている。", "kana": "かれ は するどい め を して いる。", "ro": "kare wa surudoi me o shite iru."},
+    {"en": "She made a sharp observation.", "ja": "彼女は鋭い観察をした。", "kana": "かのじょ は するどい かんさつ を した。", "ro": "kanojo wa surudoi kansatsu o shita."},
+    {"en": "He gave a keen remark.", "ja": "彼は鋭い意見を述べた。", "kana": "かれ は するどい いけん を のべた。", "ro": "kare wa surudoi iken o nobeta."},
+    {"en": "The knife is very sharp.", "ja": "このナイフはとても鋭い。", "kana": "この ないふ は とても するどい。", "ro": "kono naifu wa totemo surudoi."},
+    {"en": "She has a sharp sense of smell.", "ja": "彼女は嗅覚が鋭い。", "kana": "かのじょ は きゅうかく が するどい。", "ro": "kanojo wa kyuukaku ga surudoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-002",
+  "ja": "鈍い",
+  "kana": "にぶい",
+  "ro": "nibui",
+  "en": "dull / slow / blunt",
+  "examples": [
+    {"en": "This knife is dull.", "ja": "このナイフは鈍い。", "kana": "この ないふ は にぶい。", "ro": "kono naifu wa nibui."},
+    {"en": "He is slow to react.", "ja": "彼は反応が鈍い。", "kana": "かれ は はんのう が にぶい。", "ro": "kare wa hannou ga nibui."},
+    {"en": "The sound is dull.", "ja": "音が鈍い。", "kana": "おと が にぶい。", "ro": "oto ga nibui."},
+    {"en": "She is slow to understand jokes.", "ja": "彼女は冗談に鈍い。", "kana": "かのじょ は じょうだん に にぶい。", "ro": "kanojo wa joudan ni nibui."},
+    {"en": "He has a dull pain in his back.", "ja": "彼は背中に鈍い痛みを感じている。", "kana": "かれ は せなか に にぶい いたみ を かんじて いる。", "ro": "kare wa senaka ni nibui itami o kanjite iru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-003",
+  "ja": "詳しい",
+  "kana": "くわしい",
+  "ro": "kuwashii",
+  "en": "detailed / well-informed",
+  "examples": [
+    {"en": "He is very knowledgeable about history.", "ja": "彼は歴史に詳しい。", "kana": "かれ は れきし に くわしい。", "ro": "kare wa rekishi ni kuwashii."},
+    {"en": "Please give me detailed information.", "ja": "詳しい情報を教えてください。", "kana": "くわしい じょうほう を おしえて ください。", "ro": "kuwashii jouhou o oshiete kudasai."},
+    {"en": "She gave a detailed explanation.", "ja": "彼女は詳しい説明をした。", "kana": "かのじょ は くわしい せつめい を した。", "ro": "kanojo wa kuwashii setsumei o shita."},
+    {"en": "He wrote a detailed report.", "ja": "彼は詳しい報告書を書いた。", "kana": "かれ は くわしい ほうこくしょ を かいた。", "ro": "kare wa kuwashii houkokusho o kaita."},
+    {"en": "I don’t know the details yet.", "ja": "まだ詳しいことは分かりません。", "kana": "まだ くわしい こと は わかりません。", "ro": "mada kuwashii koto wa wakarimasen."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-004",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "intense / violent / fierce",
+  "examples": [
+    {"en": "A fierce battle took place.", "ja": "激しい戦いが行われた。", "kana": "はげしい たたかい が おこなわれた。", "ro": "hageshii tatakai ga okonawareta."},
+    {"en": "The wind is strong today.", "ja": "今日は風が激しい。", "kana": "きょう は かぜ が はげしい。", "ro": "kyou wa kaze ga hageshii."},
+    {"en": "He has a passionate personality.", "ja": "彼は激しい性格だ。", "kana": "かれ は はげしい せいかく だ。", "ro": "kare wa hageshii seikaku da."},
+    {"en": "They had an intense argument.", "ja": "彼らは激しく口論した。", "kana": "かれら は はげしく こうろん した。", "ro": "karera wa hageshiku kouron shita."},
+    {"en": "It rained heavily last night.", "ja": "昨夜は激しい雨が降った。", "kana": "さくや は はげしい あめ が ふった。", "ro": "sakuya wa hageshii ame ga futta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-005",
+  "ja": "恐ろしい",
+  "kana": "おそろしい",
+  "ro": "osoroshii",
+  "en": "terrible / frightening / dreadful",
+  "examples": [
+    {"en": "It was a terrible accident.", "ja": "恐ろしい事故が起きた。", "kana": "おそろしい じこ が おきた。", "ro": "osoroshii jiko ga okita."},
+    {"en": "He has a frightening face.", "ja": "彼は恐ろしい顔をしている。", "kana": "かれ は おそろしい かお を して いる。", "ro": "kare wa osoroshii kao o shite iru."},
+    {"en": "That movie was very scary.", "ja": "あの映画はとても恐ろしかった。", "kana": "あの えいが は とても おそろしかった。", "ro": "ano eiga wa totemo osoroshikatta."},
+    {"en": "She saw something terrifying.", "ja": "彼女は恐ろしいものを見た。", "kana": "かのじょ は おそろしい もの を みた。", "ro": "kanojo wa osoroshii mono o mita."},
+    {"en": "The power of nature is dreadful.", "ja": "自然の力は恐ろしい。", "kana": "しぜん の ちから は おそろしい。", "ro": "shizen no chikara wa osoroshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-006",
+  "ja": "乏しい",
+  "kana": "とぼしい",
+  "ro": "toboshii",
+  "en": "scarce / lacking / poor",
+  "examples": [
+    {"en": "This area is poor in water.", "ja": "この地域は水が乏しい。", "kana": "この ちいき は みず が とぼしい。", "ro": "kono chiiki wa mizu ga toboshi."},
+    {"en": "He has little experience.", "ja": "彼は経験が乏しい。", "kana": "かれ は けいけん が とぼしい。", "ro": "kare wa keiken ga toboshi."},
+    {"en": "The country is lacking in resources.", "ja": "その国は資源が乏しい。", "kana": "その くに は しげん が とぼしい。", "ro": "sono kuni wa shigen ga toboshi."},
+    {"en": "Her memory is poor.", "ja": "彼女は記憶が乏しい。", "kana": "かのじょ は きおく が とぼしい。", "ro": "kanojo wa kioku ga toboshi."},
+    {"en": "He grew up in a poor family.", "ja": "彼は乏しい家庭環境で育った。", "kana": "かれ は とぼしい かてい かんきょう で そだった。", "ro": "kare wa toboshi katei kankyou de sodatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-007",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "fierce / intense / violent",
+  "examples": [
+    {"en": "A fierce storm hit the city.", "ja": "激しい嵐が町を襲った。", "kana": "はげしい あらし が まち を おそった。", "ro": "hageshii arashi ga machi o osotta."},
+    {"en": "The discussion became intense.", "ja": "議論が激しくなった。", "kana": "ぎろん が はげしく なった。", "ro": "giron ga hageshiku natta."},
+    {"en": "He has an intense passion.", "ja": "彼は激しい情熱を持っている。", "kana": "かれ は はげしい じょうねつ を もって いる。", "ro": "kare wa hageshii jounetsu o motte iru."},
+    {"en": "She cried intensely.", "ja": "彼女は激しく泣いた。", "kana": "かのじょ は はげしく ないた。", "ro": "kanojo wa hageshiku naita."},
+    {"en": "It rained heavily all day.", "ja": "一日中激しい雨が降った。", "kana": "いちにちじゅう はげしい あめ が ふった。", "ro": "ichinichijuu hageshii ame ga futta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-008",
+  "ja": "憎い",
+  "kana": "にくい",
+  "ro": "nikui",
+  "en": "hateful / detestable / annoying",
+  "examples": [
+    {"en": "He is a hateful enemy.", "ja": "彼は憎い敵だ。", "kana": "かれ は にくい てき だ。", "ro": "kare wa nikui teki da."},
+    {"en": "She made a hateful remark.", "ja": "彼女は憎い発言をした。", "kana": "かのじょ は にくい はつげん を した。", "ro": "kanojo wa nikui hatsugen o shita."},
+    {"en": "That smile is so annoying.", "ja": "あの笑顔が憎い。", "kana": "あの えがお が にくい。", "ro": "ano egao ga nikui."},
+    {"en": "He did something unforgivable.", "ja": "彼は憎いことをした。", "kana": "かれ は にくい こと を した。", "ro": "kare wa nikui koto o shita."},
+    {"en": "I can’t hate her even if I try.", "ja": "彼女のことを憎いと思えない。", "kana": "かのじょ の こと を にくい と おもえない。", "ro": "kanojo no koto o nikui to omo enai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-009",
+  "ja": "惜しい",
+  "kana": "おしい",
+  "ro": "oshii",
+  "en": "regrettable / disappointing / almost (but not quite)",
+  "examples": [
+    {"en": "It’s a shame you missed the train.", "ja": "電車に乗れなくて惜しい。", "kana": "でんしゃ に のれなくて おしい。", "ro": "densha ni norenakute oshii."},
+    {"en": "That was an unfortunate mistake.", "ja": "それは惜しい間違いだった。", "kana": "それ は おしい まちがい だった。", "ro": "sore wa oshii machigai datta."},
+    {"en": "He almost won the game.", "ja": "彼はもう少しで勝つところだった。惜しい！", "kana": "かれ は もうすこし で かつ ところ だった。おしい！", "ro": "kare wa mousukoshi de katsu tokoro datta. oshii!"},
+    {"en": "It’s a pity that she can’t come.", "ja": "彼女が来られないのは惜しい。", "kana": "かのじょ が こられない の は おしい。", "ro": "kanojo ga korarenai no wa oshii."},
+    {"en": "It’s a waste to throw this away.", "ja": "これを捨てるのは惜しい。", "kana": "これ を すてる の は おしい。", "ro": "kore o suteru no wa oshii."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-010",
+  "ja": "恐れ多い",
+  "kana": "おそれおおい",
+  "ro": "osoreooi",
+  "en": "honored / awe-inspiring / too gracious",
+  "examples": [
+    {"en": "It’s an honor to meet you.", "ja": "お会いできて恐れ多いです。", "kana": "おあい できて おそれおおい です。", "ro": "oai dekite osoreooi desu."},
+    {"en": "I’m deeply honored to receive this award.", "ja": "この賞をいただくのは恐れ多いです。", "kana": "この しょう を いただく の は おそれおおい です。", "ro": "kono shou o itadaku no wa osoreooi desu."},
+    {"en": "I feel it’s too great of an honor.", "ja": "そんな言葉をいただくなんて恐れ多いです。", "kana": "そんな ことば を いただく なんて おそれおおい です。", "ro": "sonna kotoba o itadaku nante osoreooi desu."},
+    {"en": "It’s too much of an honor for me.", "ja": "私には恐れ多いことです。", "kana": "わたし には おそれおおい こと です。", "ro": "watashi ni wa osoreooi koto desu."},
+    {"en": "Receiving such praise is overwhelming.", "ja": "そのような賞賛を受けるのは恐れ多いです。", "kana": "その ような しょうさん を うける の は おそれおおい です。", "ro": "sono youna shousan o ukeru no wa osoreooi desu."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-011",
+  "ja": "賢い",
+  "kana": "かしこい",
+  "ro": "kashikoi",
+  "en": "wise / clever / intelligent",
+  "examples": [
+    {"en": "She is a very clever student.", "ja": "彼女はとても賢い学生だ。", "kana": "かのじょ は とても かしこい がくせい だ。", "ro": "kanojo wa totemo kashikoi gakusei da."},
+    {"en": "He made a wise decision.", "ja": "彼は賢い判断をした。", "kana": "かれ は かしこい はんだん を した。", "ro": "kare wa kashikoi handan o shita."},
+    {"en": "The dog is smart and obedient.", "ja": "その犬は賢くて従順だ。", "kana": "その いぬ は かしこくて じゅうじゅん だ。", "ro": "sono inu wa kashikokute juujun da."},
+    {"en": "She gave a clever answer.", "ja": "彼女は賢い答えをした。", "kana": "かのじょ は かしこい こたえ を した。", "ro": "kanojo wa kashikoi kotae o shita."},
+    {"en": "It’s wise to save money.", "ja": "お金を貯めるのは賢いことだ。", "kana": "おかね を ためる の は かしこい こと だ。", "ro": "okane o tameru no wa kashikoi koto da."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-012",
+  "ja": "厚い",
+  "kana": "あつい",
+  "ro": "atsui",
+  "en": "thick / deep (relationship or emotion)",
+  "examples": [
+    {"en": "This book is very thick.", "ja": "この本はとても厚い。", "kana": "この ほん は とても あつい。", "ro": "kono hon wa totemo atsui."},
+    {"en": "They have a deep friendship.", "ja": "彼らは友情が厚い。", "kana": "かれら は ゆうじょう が あつい。", "ro": "karera wa yuujou ga atsui."},
+    {"en": "The wall is thick.", "ja": "壁が厚い。", "kana": "かべ が あつい。", "ro": "kabe ga atsui."},
+    {"en": "She has strong trust in him.", "ja": "彼女は彼への信頼が厚い。", "kana": "かのじょ は かれ への しんらい が あつい。", "ro": "kanojo wa kare e no shinrai ga atsui."},
+    {"en": "He is well respected by people.", "ja": "彼は人望が厚い。", "kana": "かれ は じんぼう が あつい。", "ro": "kare wa jinbou ga atsui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-013",
+  "ja": "荒い",
+  "kana": "あらい",
+  "ro": "arai",
+  "en": "rough / wild / coarse",
+  "examples": [
+    {"en": "The sea is rough today.", "ja": "今日は海が荒い。", "kana": "きょう は うみ が あらい。", "ro": "kyou wa umi ga arai."},
+    {"en": "His language is rough.", "ja": "彼の言葉遣いは荒い。", "kana": "かれ の ことばづかい は あらい。", "ro": "kare no kotobazukai wa arai."},
+    {"en": "The driver drives wildly.", "ja": "その運転手は運転が荒い。", "kana": "その うんてんしゅ は うんてん が あらい。", "ro": "sono untenshu wa unten ga arai."},
+    {"en": "He has a rough personality.", "ja": "彼は性格が荒い。", "kana": "かれ は せいかく が あらい。", "ro": "kare wa seikaku ga arai."},
+    {"en": "The waves are rough and high.", "ja": "波が荒く高い。", "kana": "なみ が あらく たかい。", "ro": "nami ga araku takai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-014",
+  "ja": "しつこい",
+  "kana": "しつこい",
+  "ro": "shitsukoi",
+  "en": "persistent / annoying / greasy (taste)",
+  "examples": [
+    {"en": "He is persistent in his questions.", "ja": "彼は質問がしつこい。", "kana": "かれ は しつもん が しつこい。", "ro": "kare wa shitsumon ga shitsukoi."},
+    {"en": "That salesman is too pushy.", "ja": "あのセールスマンはしつこい。", "kana": "あの せーるすまん は しつこい。", "ro": "ano seerusuman wa shitsukoi."},
+    {"en": "This food is too greasy.", "ja": "この料理はしつこい味だ。", "kana": "この りょうり は しつこい あじ だ。", "ro": "kono ryouri wa shitsukoi aji da."},
+    {"en": "He kept asking the same thing.", "ja": "彼は同じことをしつこく聞いた。", "kana": "かれ は おなじ こと を しつこく きいた。", "ro": "kare wa onaji koto o shitsukoku kiita."},
+    {"en": "Her perfume is too strong.", "ja": "彼女の香水はしつこい。", "kana": "かのじょ の こうすい は しつこい。", "ro": "kanojo no kousui wa shitsukoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-015",
+  "ja": "やかましい",
+  "kana": "やかましい",
+  "ro": "yakamashii",
+  "en": "noisy / fussy / strict",
+  "examples": [
+    {"en": "The children are noisy.", "ja": "子どもたちはやかましい。", "kana": "こどもたち は やかましい。", "ro": "kodomotachi wa yakamashii."},
+    {"en": "He is fussy about details.", "ja": "彼は細かいことにやかましい。", "kana": "かれ は こまかい こと に やかましい。", "ro": "kare wa komakai koto ni yakamashii."},
+    {"en": "This street is very noisy.", "ja": "この通りはやかましい。", "kana": "この とおり は やかましい。", "ro": "kono toori wa yakamashii."},
+    {"en": "My boss is strict about rules.", "ja": "上司は規則にやかましい。", "kana": "じょうし は きそく に やかましい。", "ro": "joushi wa kisoku ni yakamashii."},
+    {"en": "She’s particular about food.", "ja": "彼女は食べ物にやかましい。", "kana": "かのじょ は たべもの に やかましい。", "ro": "kanojo wa tabemono ni yakamashii."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-016",
+  "ja": "頼もしい",
+  "kana": "たのもしい",
+  "ro": "tanomoshii",
+  "en": "reliable / dependable / encouraging",
+  "examples": [
+    {"en": "He is a reliable person.", "ja": "彼は頼もしい人だ。", "kana": "かれ は たのもしい ひと だ。", "ro": "kare wa tanomoshii hito da."},
+    {"en": "Her words were encouraging.", "ja": "彼女の言葉は頼もしかった。", "kana": "かのじょ の ことば は たのもしかった。", "ro": "kanojo no kotoba wa tanomoshikatta."},
+    {"en": "He’s a dependable leader.", "ja": "彼は頼もしいリーダーだ。", "kana": "かれ は たのもしい りーだー だ。", "ro": "kare wa tanomoshii riidaa da."},
+    {"en": "It’s encouraging to hear that.", "ja": "それを聞くと頼もしい。", "kana": "それ を きく と たのもしい。", "ro": "sore o kiku to tanomoshii."},
+    {"en": "Her presence is reassuring.", "ja": "彼女がいると頼もしい。", "kana": "かのじょ が いる と たのもしい。", "ro": "kanojo ga iru to tanomoshii."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-017",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "violent / intense / fierce",
+  "examples": [
+    {"en": "A violent storm hit the island.", "ja": "激しい嵐が島を襲った。", "kana": "はげしい あらし が しま を おそった。", "ro": "hageshii arashi ga shima o osotta."},
+    {"en": "He has an intense temper.", "ja": "彼は気性が激しい。", "kana": "かれ は きしょう が はげしい。", "ro": "kare wa kishou ga hageshii."},
+    {"en": "They had a fierce argument.", "ja": "彼らは激しく言い争った。", "kana": "かれら は はげしく いいあらそった。", "ro": "karera wa hageshiku iiarasotta."},
+    {"en": "There was intense competition.", "ja": "激しい競争があった。", "kana": "はげしい きょうそう が あった。", "ro": "hageshii kyousou ga atta."},
+    {"en": "Her emotions are intense.", "ja": "彼女の感情は激しい。", "kana": "かのじょ の かんじょう は はげしい。", "ro": "kanojo no kanjou wa hageshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-018",
+  "ja": "苦しい",
+  "kana": "くるしい",
+  "ro": "kurushii",
+  "en": "painful / difficult / distressing",
+  "examples": [
+    {"en": "He is having a hard time breathing.", "ja": "彼は息が苦しい。", "kana": "かれ は いき が くるしい。", "ro": "kare wa iki ga kurushii."},
+    {"en": "Life was hard in those days.", "ja": "昔の生活は苦しかった。", "kana": "むかし の せいかつ は くるしかった。", "ro": "mukashi no seikatsu wa kurushikatta."},
+    {"en": "It was a painful experience.", "ja": "それは苦しい経験だった。", "kana": "それ は くるしい けいけん だった。", "ro": "sore wa kurushii keiken datta."},
+    {"en": "He is in financial difficulty.", "ja": "彼は経済的に苦しい。", "kana": "かれ は けいざいてき に くるしい。", "ro": "kare wa keizaiteki ni kurushii."},
+    {"en": "I feel sorry for her painful situation.", "ja": "彼女の苦しい立場がかわいそうだ。", "kana": "かのじょ の くるしい たちば が かわいそう だ。", "ro": "kanojo no kurushii tachiba ga kawaisou da."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-019",
+  "ja": "怪しい",
+  "kana": "あやしい",
+  "ro": "ayashii",
+  "en": "suspicious / doubtful / shady",
+  "examples": [
+    {"en": "That man looks suspicious.", "ja": "あの男は怪しい。", "kana": "あの おとこ は あやしい。", "ro": "ano otoko wa ayashii."},
+    {"en": "This story sounds suspicious.", "ja": "この話は怪しい。", "kana": "この はなし は あやしい。", "ro": "kono hanashi wa ayashii."},
+    {"en": "He gave me a suspicious look.", "ja": "彼は怪しい目で見た。", "kana": "かれ は あやしい め で みた。", "ro": "kare wa ayashii me de mita."},
+    {"en": "The document seems fake.", "ja": "その書類は怪しい。", "kana": "その しょるい は あやしい。", "ro": "sono shorui wa ayashii."},
+    {"en": "I heard a suspicious sound.", "ja": "怪しい音が聞こえた。", "kana": "あやしい おと が きこえた。", "ro": "ayashii oto ga kikoeta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-020",
+  "ja": "鋭い",
+  "kana": "するどい",
+  "ro": "surudoi",
+  "en": "sharp / keen / perceptive",
+  "examples": [
+    {"en": "He has sharp hearing.", "ja": "彼は耳が鋭い。", "kana": "かれ は みみ が するどい。", "ro": "kare wa mimi ga surudoi."},
+    {"en": "The knife’s edge is sharp.", "ja": "ナイフの刃が鋭い。", "kana": "ないふ の は が するどい。", "ro": "naifu no ha ga surudoi."},
+    {"en": "She has a keen sense of smell.", "ja": "彼女は嗅覚が鋭い。", "kana": "かのじょ は きゅうかく が するどい。", "ro": "kanojo wa kyuukaku ga surudoi."},
+    {"en": "He has a sharp mind.", "ja": "彼は頭の回転が鋭い。", "kana": "かれ は あたま の かいてん が するどい。", "ro": "kare wa atama no kaiten ga surudoi."},
+    {"en": "The cat’s claws are sharp.", "ja": "猫の爪が鋭い。", "kana": "ねこ の つめ が するどい。", "ro": "neko no tsume ga surudoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-021",
+  "ja": "緩い",
+  "kana": "ゆるい",
+  "ro": "yurui",
+  "en": "loose / lenient / gentle",
+  "examples": [
+    {"en": "This screw is loose.", "ja": "このネジが緩い。", "kana": "この ねじ が ゆるい。", "ro": "kono neji ga yurui."},
+    {"en": "The slope is gentle.", "ja": "坂が緩い。", "kana": "さか が ゆるい。", "ro": "saka ga yurui."},
+    {"en": "The rules are lenient.", "ja": "規則が緩い。", "kana": "きそく が ゆるい。", "ro": "kisoku ga yurui."},
+    {"en": "The lid is not tight enough.", "ja": "ふたが緩い。", "kana": "ふた が ゆるい。", "ro": "futa ga yurui."},
+    {"en": "He has a relaxed attitude.", "ja": "彼は性格が緩い。", "kana": "かれ は せいかく が ゆるい。", "ro": "kare wa seikaku ga yurui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-022",
+  "ja": "薄い",
+  "kana": "うすい",
+  "ro": "usui",
+  "en": "thin / weak / light",
+  "examples": [
+    {"en": "This book is thin.", "ja": "この本は薄い。", "kana": "この ほん は うすい。", "ro": "kono hon wa usui."},
+    {"en": "The soup tastes weak.", "ja": "スープの味が薄い。", "kana": "すーぷ の あじ が うすい。", "ro": "suupu no aji ga usui."},
+    {"en": "The wall is thin.", "ja": "壁が薄い。", "kana": "かべ が うすい。", "ro": "kabe ga usui."},
+    {"en": "He has light eyebrows.", "ja": "彼は眉が薄い。", "kana": "かれ は まゆ が うすい。", "ro": "kare wa mayu ga usui."},
+    {"en": "The fog is thin this morning.", "ja": "今朝は霧が薄い。", "kana": "けさ は きり が うすい。", "ro": "kesa wa kiri ga usui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-023",
+  "ja": "厚かましい",
+  "kana": "あつかましい",
+  "ro": "atsukamashii",
+  "en": "shameless / impudent / bold",
+  "examples": [
+    {"en": "He asked a shameless question.", "ja": "彼は厚かましい質問をした。", "kana": "かれ は あつかましい しつもん を した。", "ro": "kare wa atsukamashii shitsumon o shita."},
+    {"en": "She has a shameless attitude.", "ja": "彼女は厚かましい態度だ。", "kana": "かのじょ は あつかましい たいど だ。", "ro": "kanojo wa atsukamashii taido da."},
+    {"en": "He is bold to ask for more money.", "ja": "彼はさらにお金を要求するとは厚かましい。", "kana": "かれ は さらに おかね を ようきゅう する とは あつかましい。", "ro": "kare wa sarani okane o youkyuu suru to wa atsukamashii."},
+    {"en": "That’s quite a shameless behavior.", "ja": "それはずいぶん厚かましい行動だ。", "kana": "それ は ずいぶん あつかましい こうどう だ。", "ro": "sore wa zuibun atsukamashii koudou da."},
+    {"en": "He spoke shamelessly.", "ja": "彼は厚かましく話した。", "kana": "かれ は あつかましく はなした。", "ro": "kare wa atsukamashiku hanashita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-024",
+  "ja": "憎らしい",
+  "kana": "にくらしい",
+  "ro": "nikurashii",
+  "en": "hateful / detestable / annoying (but sometimes endearing)",
+  "examples": [
+    {"en": "He is hateful when he wins.", "ja": "彼は勝つと憎らしい。", "kana": "かれ は かつ と にくらしい。", "ro": "kare wa katsu to nikurashii."},
+    {"en": "That child is annoyingly cute.", "ja": "あの子は憎らしいほどかわいい。", "kana": "あの こ は にくらしい ほど かわいい。", "ro": "ano ko wa nikurashii hodo kawaii."},
+    {"en": "She smiled in a hateful way.", "ja": "彼女は憎らしい笑い方をした。", "kana": "かのじょ は にくらしい わらいかた を した。", "ro": "kanojo wa nikurashii waraikata o shita."},
+    {"en": "He said it with a teasing tone.", "ja": "彼は憎らしい口調で言った。", "kana": "かれ は にくらしい くちょう で いった。", "ro": "kare wa nikurashii kuchou de itta."},
+    {"en": "Even though he’s annoying, I can’t hate him.", "ja": "彼は憎らしいけど嫌いになれない。", "kana": "かれ は にくらしい けど きらい に なれない。", "ro": "kare wa nikurashii kedo kirai ni narenai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-025",
+  "ja": "渋い",
+  "kana": "しぶい",
+  "ro": "shibui",
+  "en": "bitter / subdued / refined / cool",
+  "examples": [
+    {"en": "This tea tastes bitter.", "ja": "このお茶は渋い。", "kana": "この おちゃ は しぶい。", "ro": "kono ocha wa shibui."},
+    {"en": "He has a refined taste.", "ja": "彼は渋い趣味を持っている。", "kana": "かれ は しぶい しゅみ を もって いる。", "ro": "kare wa shibui shumi o motte iru."},
+    {"en": "That actor has a cool style.", "ja": "あの俳優は渋いね。", "kana": "あの はいゆう は しぶい ね。", "ro": "ano haiyuu wa shibui ne."},
+    {"en": "He gave a bitter smile.", "ja": "彼は渋い顔をした。", "kana": "かれ は しぶい かお を した。", "ro": "kare wa shibui kao o shita."},
+    {"en": "The color of this room is subdued.", "ja": "この部屋の色は渋い。", "kana": "この へや の いろ は しぶい。", "ro": "kono heya no iro wa shibui."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-026",
+  "ja": "慌ただしい",
+  "kana": "あわただしい",
+  "ro": "awatadashii",
+  "en": "busy / hurried / hectic",
+  "examples": [
+    {"en": "I had a busy morning.", "ja": "朝は慌ただしかった。", "kana": "あさ は あわただしかった。", "ro": "asa wa awatadashikatta."},
+    {"en": "He left in a hurry.", "ja": "彼は慌ただしく出かけた。", "kana": "かれ は あわただしく でかけた。", "ro": "kare wa awatadashiku dekaketa."},
+    {"en": "It was a hectic day.", "ja": "慌ただしい一日だった。", "kana": "あわただしい いちにち だった。", "ro": "awatadashii ichinichi datta."},
+    {"en": "The atmosphere was busy and tense.", "ja": "会場は慌ただしい雰囲気だった。", "kana": "かいじょう は あわただしい ふんいき だった。", "ro": "kaijou wa awatadashii fun’iki datta."},
+    {"en": "He walked away hurriedly.", "ja": "彼は慌ただしく歩き去った。", "kana": "かれ は あわただしく あるきさった。", "ro": "kare wa awatadashiku arukisatta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-027",
+  "ja": "惜しい",
+  "kana": "おしい",
+  "ro": "oshii",
+  "en": "regrettable / unfortunate / almost",
+  "examples": [
+    {"en": "It’s a pity he didn’t win.", "ja": "彼が勝てなかったのは惜しい。", "kana": "かれ が かてなかった の は おしい。", "ro": "kare ga katenakatta no wa oshii."},
+    {"en": "That was an unfortunate mistake.", "ja": "それは惜しい間違いだ。", "kana": "それ は おしい まちがい だ。", "ro": "sore wa oshii machigai da."},
+    {"en": "It’s almost perfect.", "ja": "ほとんど完璧だが、少し惜しい。", "kana": "ほとんど かんぺき だ が、すこし おしい。", "ro": "hotondo kanpeki da ga, sukoshi oshii."},
+    {"en": "I regret not going there.", "ja": "あそこに行かなかったのは惜しい。", "kana": "あそこ に いかなかった の は おしい。", "ro": "asoko ni ikanakatta no wa oshii."},
+    {"en": "It’s too good to waste.", "ja": "捨てるのは惜しい。", "kana": "すてる の は おしい。", "ro": "suteru no wa oshii."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-028",
+  "ja": "憎い",
+  "kana": "にくい",
+  "ro": "nikui",
+  "en": "hateful / detestable / annoying",
+  "examples": [
+    {"en": "He is a hateful rival.", "ja": "彼は憎いライバルだ。", "kana": "かれ は にくい らいばる だ。", "ro": "kare wa nikui raibaru da."},
+    {"en": "That attitude is detestable.", "ja": "その態度は憎い。", "kana": "その たいど は にくい。", "ro": "sono taido wa nikui."},
+    {"en": "He smiled in a hateful way.", "ja": "彼は憎い笑顔を見せた。", "kana": "かれ は にくい えがお を みせた。", "ro": "kare wa nikui egao o miseta."},
+    {"en": "It’s annoying that he’s always right.", "ja": "彼がいつも正しいのが憎い。", "kana": "かれ が いつも ただしい の が にくい。", "ro": "kare ga itsumo tadashii no ga nikui."},
+    {"en": "That child is annoyingly cute.", "ja": "あの子は憎いほどかわいい。", "kana": "あの こ は にくい ほど かわいい。", "ro": "ano ko wa nikui hodo kawaii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-029",
+  "ja": "羨ましい",
+  "kana": "うらやましい",
+  "ro": "urayamashii",
+  "en": "envious / jealous",
+  "examples": [
+    {"en": "I’m jealous of your success.", "ja": "あなたの成功が羨ましい。", "kana": "あなた の せいこう が うらやましい。", "ro": "anata no seikou ga urayamashii."},
+    {"en": "She has a life I envy.", "ja": "彼女の生活は羨ましい。", "kana": "かのじょ の せいかつ は うらやましい。", "ro": "kanojo no seikatsu wa urayamashii."},
+    {"en": "I envy people who can travel often.", "ja": "よく旅行できる人が羨ましい。", "kana": "よく りょこう できる ひと が うらやましい。", "ro": "yoku ryokou dekiru hito ga urayamashii."},
+    {"en": "I envy your courage.", "ja": "君の勇気が羨ましい。", "kana": "きみ の ゆうき が うらやましい。", "ro": "kimi no yuuki ga urayamashii."},
+    {"en": "She said she was jealous of my job.", "ja": "彼女は私の仕事を羨ましいと言った。", "kana": "かのじょ は わたし の しごと を うらやましい と いった。", "ro": "kanojo wa watashi no shigoto o urayamashii to itta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-030",
+  "ja": "恋しい",
+  "kana": "こいしい",
+  "ro": "koishii",
+  "en": "missed / dear / beloved",
+  "examples": [
+    {"en": "I miss my hometown.", "ja": "故郷が恋しい。", "kana": "こきょう が こいしい。", "ro": "kokyou ga koishii."},
+    {"en": "I miss my family.", "ja": "家族が恋しい。", "kana": "かぞく が こいしい。", "ro": "kazoku ga koishii."},
+    {"en": "I miss those days.", "ja": "あの日々が恋しい。", "kana": "あの ひび が こいしい。", "ro": "ano hibi ga koishii."},
+    {"en": "He misses her smile.", "ja": "彼は彼女の笑顔が恋しい。", "kana": "かれ は かのじょ の えがお が こいしい。", "ro": "kare wa kanojo no egao ga koishii."},
+    {"en": "I long for the sea breeze.", "ja": "海の風が恋しい。", "kana": "うみ の かぜ が こいしい。", "ro": "umi no kaze ga koishii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-031",
+  "ja": "憎らしい",
+  "kana": "にくらしい",
+  "ro": "nikurashii",
+  "en": "hateful / detestable / annoying but lovable",
+  "examples": [
+    {"en": "He is hateful but talented.", "ja": "彼は憎らしいが才能がある。", "kana": "かれ は にくらしい が さいのう が ある。", "ro": "kare wa nikurashii ga sainou ga aru."},
+    {"en": "That smile is annoying.", "ja": "あの笑顔が憎らしい。", "kana": "あの えがお が にくらしい。", "ro": "ano egao ga nikurashii."},
+    {"en": "She said it teasingly.", "ja": "彼女は憎らしい口調で言った。", "kana": "かのじょ は にくらしい くちょう で いった。", "ro": "kanojo wa nikurashii kuchou de itta."},
+    {"en": "He is annoyingly perfect.", "ja": "彼は憎らしいほど完璧だ。", "kana": "かれ は にくらしい ほど かんぺき だ。", "ro": "kare wa nikurashii hodo kanpeki da."},
+    {"en": "That child is cute but cheeky.", "ja": "あの子は憎らしいほどかわいい。", "kana": "あの こ は にくらしい ほど かわいい。", "ro": "ano ko wa nikurashii hodo kawaii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-032",
+  "ja": "憎い",
+  "kana": "にくい",
+  "ro": "nikui",
+  "en": "hateful / detestable / annoying",
+  "examples": [
+    {"en": "I hate him for what he did.", "ja": "彼のしたことが憎い。", "kana": "かれ の した こと が にくい。", "ro": "kare no shita koto ga nikui."},
+    {"en": "She smiled hatefully.", "ja": "彼女は憎い笑顔を見せた。", "kana": "かのじょ は にくい えがお を みせた。", "ro": "kanojo wa nikui egao o miseta."},
+    {"en": "He is my hateful rival.", "ja": "彼は憎いライバルだ。", "kana": "かれ は にくい らいばる だ。", "ro": "kare wa nikui raibaru da."},
+    {"en": "That’s an unforgivable action.", "ja": "それは憎い行為だ。", "kana": "それ は にくい こうい だ。", "ro": "sore wa nikui koui da."},
+    {"en": "Even though he’s hateful, I can’t hate him.", "ja": "彼は憎いけど嫌いになれない。", "kana": "かれ は にくい けど きらい に なれない。", "ro": "kare wa nikui kedo kirai ni narenai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-033",
+  "ja": "詳しい",
+  "kana": "くわしい",
+  "ro": "kuwashii",
+  "en": "detailed / knowledgeable / well-informed",
+  "examples": [
+    {"en": "He is knowledgeable about computers.", "ja": "彼はコンピューターに詳しい。", "kana": "かれ は こんぴゅーたー に くわしい。", "ro": "kare wa konpyuutaa ni kuwashii."},
+    {"en": "Please explain in detail.", "ja": "詳しく説明してください。", "kana": "くわしく せつめい して ください。", "ro": "kuwashiku setsumei shite kudasai."},
+    {"en": "She is well-informed about history.", "ja": "彼女は歴史に詳しい。", "kana": "かのじょ は れきし に くわしい。", "ro": "kanojo wa rekishi ni kuwashii."},
+    {"en": "He gave me detailed instructions.", "ja": "彼は詳しい指示をくれた。", "kana": "かれ は くわしい しじ を くれた。", "ro": "kare wa kuwashii shiji o kureta."},
+    {"en": "I’m not very familiar with that topic.", "ja": "その話にはあまり詳しくない。", "kana": "その はなし に は あまり くわしく ない。", "ro": "sono hanashi ni wa amari kuwashiku nai."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-034",
+  "ja": "乏しい",
+  "kana": "とぼしい",
+  "ro": "toboshii",
+  "en": "scarce / lacking / poor (in resources or quality)",
+  "examples": [
+    {"en": "This region is poor in resources.", "ja": "この地域は資源が乏しい。", "kana": "この ちいき は しげん が とぼしい。", "ro": "kono chiiki wa shigen ga toboshi."},
+    {"en": "He has little experience.", "ja": "彼は経験が乏しい。", "kana": "かれ は けいけん が とぼしい。", "ro": "kare wa keiken ga toboshi."},
+    {"en": "That area has little rainfall.", "ja": "その地域は雨が乏しい。", "kana": "その ちいき は あめ が とぼしい。", "ro": "sono chiiki wa ame ga toboshi."},
+    {"en": "He has poor imagination.", "ja": "彼は想像力が乏しい。", "kana": "かれ は そうぞうりょく が とぼしい。", "ro": "kare wa souzouryoku ga toboshi."},
+    {"en": "The land is poor in nutrients.", "ja": "この土地は養分が乏しい。", "kana": "この とち は ようぶん が とぼしい。", "ro": "kono tochi wa youbun ga toboshi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-035",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "violent / intense / fierce",
+  "examples": [
+    {"en": "A fierce wind is blowing.", "ja": "激しい風が吹いている。", "kana": "はげしい かぜ が ふいて いる。", "ro": "hageshii kaze ga fuite iru."},
+    {"en": "He has a fierce personality.", "ja": "彼は性格が激しい。", "kana": "かれ は せいかく が はげしい。", "ro": "kare wa seikaku ga hageshii."},
+    {"en": "They had a heated argument.", "ja": "彼らは激しく言い争った。", "kana": "かれら は はげしく いいあらそった。", "ro": "karera wa hageshiku iiarasotta."},
+    {"en": "It was an intense battle.", "ja": "激しい戦いだった。", "kana": "はげしい たたかい だった。", "ro": "hageshii tatakai datta."},
+    {"en": "His emotions are intense.", "ja": "彼の感情は激しい。", "kana": "かれ の かんじょう は はげしい。", "ro": "kare no kanjou wa hageshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-036",
+  "ja": "貧しい",
+  "kana": "まずしい",
+  "ro": "mazushii",
+  "en": "poor / lacking / impoverished",
+  "examples": [
+    {"en": "He grew up in a poor family.", "ja": "彼は貧しい家庭で育った。", "kana": "かれ は まずしい かてい で そだった。", "ro": "kare wa mazushii katei de sodatta."},
+    {"en": "This country is still poor.", "ja": "この国はまだ貧しい。", "kana": "この くに は まだ まずしい。", "ro": "kono kuni wa mada mazushii."},
+    {"en": "He has a poor imagination.", "ja": "彼は想像力が貧しい。", "kana": "かれ は そうぞうりょく が まずしい。", "ro": "kare wa souzouryoku ga mazushii."},
+    {"en": "Their lives were materially poor.", "ja": "彼らの生活は物質的に貧しかった。", "kana": "かれら の せいかつ は ぶっしつてき に まずしかった。", "ro": "karera no seikatsu wa busshitsuteki ni mazushikatta."},
+    {"en": "He has a poor vocabulary.", "ja": "彼は語彙が貧しい。", "kana": "かれ は ごい が まずしい。", "ro": "kare wa goi ga mazushii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-037",
+  "ja": "鋭い",
+  "kana": "するどい",
+  "ro": "surudoi",
+  "en": "sharp / keen / acute",
+  "examples": [
+    {"en": "The knife’s blade is sharp.", "ja": "ナイフの刃が鋭い。", "kana": "ないふ の は が するどい。", "ro": "naifu no ha ga surudoi."},
+    {"en": "He has sharp insight.", "ja": "彼は洞察力が鋭い。", "kana": "かれ は どうさつりょく が するどい。", "ro": "kare wa dousatsuryoku ga surudoi."},
+    {"en": "Her eyes are keen.", "ja": "彼女の目は鋭い。", "kana": "かのじょ の め は するどい。", "ro": "kanojo no me wa surudoi."},
+    {"en": "He asked a sharp question.", "ja": "彼は鋭い質問をした。", "kana": "かれ は するどい しつもん を した。", "ro": "kare wa surudoi shitsumon o shita."},
+    {"en": "The pain was sharp and sudden.", "ja": "痛みは鋭く突然だった。", "kana": "いたみ は するどく とつぜん だった。", "ro": "itami wa surudoku totsuzen datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-038",
+  "ja": "尊い",
+  "kana": "とうとい",
+  "ro": "toutoi",
+  "en": "precious / noble / valuable",
+  "examples": [
+    {"en": "Life is precious.", "ja": "命は尊い。", "kana": "いのち は とうとい。", "ro": "inochi wa toutoi."},
+    {"en": "He devoted his life to a noble cause.", "ja": "彼は尊い目的のために生きた。", "kana": "かれ は とうとい もくてき の ため に いきた。", "ro": "kare wa toutoi mokuteki no tame ni ikita."},
+    {"en": "It was a valuable lesson.", "ja": "それは尊い教訓だった。", "kana": "それ は とうとい きょうくん だった。", "ro": "sore wa toutoi kyoukun datta."},
+    {"en": "He gave his life for others.", "ja": "彼は人のために尊い命を捧げた。", "kana": "かれ は ひと の ため に とうとい いのち を ささげた。", "ro": "kare wa hito no tame ni toutoi inochi o sasageta."},
+    {"en": "Her effort is admirable.", "ja": "彼女の努力は尊い。", "kana": "かのじょ の どりょく は とうとい。", "ro": "kanojo no doryoku wa toutoi."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-039",
+  "ja": "貴い",
+  "kana": "たっとい",
+  "ro": "tattoi",
+  "en": "precious / revered / valuable",
+  "examples": [
+    {"en": "This is a precious experience.", "ja": "これは貴い経験だ。", "kana": "これ は たっとい けいけん だ。", "ro": "kore wa tattoi keiken da."},
+    {"en": "He is a person of noble character.", "ja": "彼は貴い人格の持ち主だ。", "kana": "かれ は たっとい じんかく の もちぬし だ。", "ro": "kare wa tattoi jinkaku no mochinushi da."},
+    {"en": "This temple has a revered history.", "ja": "この寺には貴い歴史がある。", "kana": "この てら に は たっとい れきし が ある。", "ro": "kono tera ni wa tattoi rekishi ga aru."},
+    {"en": "He devoted his life to a noble cause.", "ja": "彼は貴い使命のために生きた。", "kana": "かれ は たっとい しめい の ため に いきた。", "ro": "kare wa tattoi shimei no tame ni ikita."},
+    {"en": "That act is truly admirable.", "ja": "その行いは実に貴い。", "kana": "その おこない は じつに たっとい。", "ro": "sono okonai wa jitsuni tattoi."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-040",
+  "ja": "醜い",
+  "kana": "みにくい",
+  "ro": "minikui",
+  "en": "ugly / unpleasant / disgraceful",
+  "examples": [
+    {"en": "That’s an ugly rumor.", "ja": "それは醜い噂だ。", "kana": "それ は みにくい うわさ だ。", "ro": "sore wa minikui uwasa da."},
+    {"en": "He behaved disgracefully.", "ja": "彼は醜い行動をした。", "kana": "かれ は みにくい こうどう を した。", "ro": "kare wa minikui koudou o shita."},
+    {"en": "It was an ugly fight.", "ja": "醜い争いだった。", "kana": "みにくい あらそい だった。", "ro": "minikui arasoi datta."},
+    {"en": "That was an unpleasant sight.", "ja": "醜い光景を見た。", "kana": "みにくい こうけい を みた。", "ro": "minikui koukei o mita."},
+    {"en": "It was a disgraceful argument.", "ja": "醜い言い争いをしてしまった。", "kana": "みにくい いいあらそい を して しまった。", "ro": "minikui iiarasoi o shite shimatta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-041",
+  "ja": "騒がしい",
+  "kana": "さわがしい",
+  "ro": "sawagashii",
+  "en": "noisy / boisterous / turbulent",
+  "examples": [
+    {"en": "The classroom is noisy.", "ja": "教室が騒がしい。", "kana": "きょうしつ が さわがしい。", "ro": "kyoushitsu ga sawagashii."},
+    {"en": "It was a noisy festival.", "ja": "騒がしい祭りだった。", "kana": "さわがしい まつり だった。", "ro": "sawagashii matsuri datta."},
+    {"en": "He doesn’t like noisy places.", "ja": "彼は騒がしい場所が苦手だ。", "kana": "かれ は さわがしい ばしょ が にがて だ。", "ro": "kare wa sawagashii basho ga nigate da."},
+    {"en": "The media has been noisy about the issue.", "ja": "メディアがその問題で騒がしい。", "kana": "めでぃあ が その もんだい で さわがしい。", "ro": "media ga sono mondai de sawagashii."},
+    {"en": "The city is always boisterous at night.", "ja": "夜の街はいつも騒がしい。", "kana": "よる の まち は いつも さわがしい。", "ro": "yoru no machi wa itsumo sawagashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-042",
+  "ja": "憎たらしい",
+  "kana": "にくたらしい",
+  "ro": "nikutarashii",
+  "en": "hateful / detestable / annoying (but often affectionately)",
+  "examples": [
+    {"en": "He is annoyingly good at everything.", "ja": "彼は何をやっても憎たらしいほど上手だ。", "kana": "かれ は なに を やっても にくたらしい ほど じょうず だ。", "ro": "kare wa nani o yattemo nikutarashii hodo jouzu da."},
+    {"en": "That smile is so annoying.", "ja": "あの笑顔が憎たらしい。", "kana": "あの えがお が にくたらしい。", "ro": "ano egao ga nikutarashii."},
+    {"en": "He said it in an irritating way.", "ja": "彼は憎たらしい言い方をした。", "kana": "かれ は にくたらしい いいかた を した。", "ro": "kare wa nikutarashii iikata o shita."},
+    {"en": "He’s annoyingly perfect.", "ja": "彼は憎たらしいほど完璧だ。", "kana": "かれ は にくたらしい ほど かんぺき だ。", "ro": "kare wa nikutarashii hodo kanpeki da."},
+    {"en": "That child is cheeky but cute.", "ja": "あの子は憎たらしいけどかわいい。", "kana": "あの こ は にくたらしい けど かわいい。", "ro": "ano ko wa nikutarashii kedo kawaii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-043",
+  "ja": "煩わしい",
+  "kana": "わずらわしい",
+  "ro": "wazurawashii",
+  "en": "troublesome / annoying / complicated",
+  "examples": [
+    {"en": "Filling out forms is troublesome.", "ja": "書類を書くのは煩わしい。", "kana": "しょるい を かく の は わずらわしい。", "ro": "shorui o kaku no wa wazurawashii."},
+    {"en": "Human relationships can be complicated.", "ja": "人間関係は煩わしいことが多い。", "kana": "にんげん かんけい は わずらわしい こと が おおい。", "ro": "ningen kankei wa wazurawashii koto ga ooi."},
+    {"en": "He finds social events annoying.", "ja": "彼は付き合いを煩わしいと思っている。", "kana": "かれ は つきあい を わずらわしい と おもって いる。", "ro": "kare wa tsukiai o wazurawashii to omotte iru."},
+    {"en": "This procedure is too cumbersome.", "ja": "この手続きは煩わしすぎる。", "kana": "この てつづき は わずらわしすぎる。", "ro": "kono tetsuzuki wa wazurawashisugiru."},
+    {"en": "I want to avoid troublesome things.", "ja": "煩わしいことは避けたい。", "kana": "わずらわしい こと は さけたい。", "ro": "wazurawashii koto wa saketai."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-044",
+  "ja": "悔しい",
+  "kana": "くやしい",
+  "ro": "kuyashii",
+  "en": "regrettable / frustrating / vexing",
+  "examples": [
+    {"en": "I’m frustrated that I lost.", "ja": "負けて悔しい。", "kana": "まけて くやしい。", "ro": "makete kuyashii."},
+    {"en": "It’s frustrating to fail.", "ja": "失敗するのは悔しい。", "kana": "しっぱい する の は くやしい。", "ro": "shippai suru no wa kuyashii."},
+    {"en": "She was frustrated by the result.", "ja": "彼女は結果に悔しがっていた。", "kana": "かのじょ は けっか に くやしがって いた。", "ro": "kanojo wa kekka ni kuyashigatte ita."},
+    {"en": "It’s frustrating to be defeated.", "ja": "負かされるのは本当に悔しい。", "kana": "まかされる の は ほんとうに くやしい。", "ro": "makasareru no wa hontou ni kuyashii."},
+    {"en": "He bit his lip in frustration.", "ja": "彼は悔しそうに唇をかんだ。", "kana": "かれ は くやしそう に くちびる を かんだ。", "ro": "kare wa kuyashisou ni kuchibiru o kanda."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-045",
+  "ja": "眩しい",
+  "kana": "まぶしい",
+  "ro": "mabushii",
+  "en": "bright / dazzling / radiant",
+  "examples": [
+    {"en": "The sunlight is dazzling.", "ja": "太陽の光が眩しい。", "kana": "たいよう の ひかり が まぶしい。", "ro": "taiyou no hikari ga mabushii."},
+    {"en": "Her smile is dazzling.", "ja": "彼女の笑顔が眩しい。", "kana": "かのじょ の えがお が まぶしい。", "ro": "kanojo no egao ga mabushii."},
+    {"en": "The beach was bright and beautiful.", "ja": "浜辺は眩しいほど美しかった。", "kana": "はまべ は まぶしい ほど うつくしかった。", "ro": "hamabe wa mabushii hodo utsukushikatta."},
+    {"en": "The lights were too bright.", "ja": "ライトが眩しすぎた。", "kana": "らいと が まぶしすぎた。", "ro": "raito ga mabushisugita."},
+    {"en": "She looked radiant in her dress.", "ja": "彼女はドレス姿が眩しかった。", "kana": "かのじょ は どれす すがた が まぶしかった。", "ro": "kanojo wa doresu sugata ga mabushikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-046",
+  "ja": "鋭敏",
+  "kana": "えいびん",
+  "ro": "eibin",
+  "en": "sensitive / sharp / keen (mind or senses)",
+  "examples": [
+    {"en": "He has a keen sense of smell.", "ja": "彼は嗅覚が鋭敏だ。", "kana": "かれ は きゅうかく が えいびん だ。", "ro": "kare wa kyuukaku ga eibin da."},
+    {"en": "She has a sensitive heart.", "ja": "彼女は感受性が鋭敏だ。", "kana": "かのじょ は かんじゅせい が えいびん だ。", "ro": "kanojo wa kanjusei ga eibin da."},
+    {"en": "Dogs have keen hearing.", "ja": "犬は聴覚が鋭敏だ。", "kana": "いぬ は ちょうかく が えいびん だ。", "ro": "inu wa choukaku ga eibin da."},
+    {"en": "He is quick to react to changes.", "ja": "彼は変化に対して鋭敏だ。", "kana": "かれ は へんか に たいして えいびん だ。", "ro": "kare wa henka ni taishite eibin da."},
+    {"en": "His analytical ability is sharp.", "ja": "彼の分析力は鋭敏だ。", "kana": "かれ の ぶんせきりょく は えいびん だ。", "ro": "kare no bunsekiryoku wa eibin da."}
+  ],
+  "grammar": "Noun / が / な-Adjective"
+},
+{
+  "id": "n2-iadj-047",
+  "ja": "乏しい",
+  "kana": "とぼしい",
+  "ro": "toboshii",
+  "en": "scarce / lacking / poor",
+  "examples": [
+    {"en": "He is poor in experience.", "ja": "彼は経験が乏しい。", "kana": "かれ は けいけん が とぼしい。", "ro": "kare wa keiken ga toboshi."},
+    {"en": "The area has little water.", "ja": "その地域は水が乏しい。", "kana": "その ちいき は みず が とぼしい。", "ro": "sono chiiki wa mizu ga toboshi."},
+    {"en": "He has poor imagination.", "ja": "彼は想像力が乏しい。", "kana": "かれ は そうぞうりょく が とぼしい。", "ro": "kare wa souzouryoku ga toboshi."},
+    {"en": "This country is poor in natural resources.", "ja": "この国は天然資源が乏しい。", "kana": "この くに は てんねん しげん が とぼしい。", "ro": "kono kuni wa tennen shigen ga toboshi."},
+    {"en": "He has little knowledge about politics.", "ja": "彼は政治についての知識が乏しい。", "kana": "かれ は せいじ に ついて の ちしき が とぼしい。", "ro": "kare wa seiji ni tsuite no chishiki ga toboshi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-048",
+  "ja": "心強い",
+  "kana": "こころづよい",
+  "ro": "kokorozuyoi",
+  "en": "reassuring / encouraging / heartening",
+  "examples": [
+    {"en": "Your words are reassuring.", "ja": "あなたの言葉は心強い。", "kana": "あなた の ことば は こころづよい。", "ro": "anata no kotoba wa kokorozuyoi."},
+    {"en": "It’s encouraging to have you with me.", "ja": "あなたが一緒にいてくれると心強い。", "kana": "あなた が いっしょ に いて くれる と こころづよい。", "ro": "anata ga issho ni ite kureru to kokorozuyoi."},
+    {"en": "His presence was heartening.", "ja": "彼の存在はとても心強かった。", "kana": "かれ の そんざい は とても こころづよかった。", "ro": "kare no sonzai wa totemo kokorozuyokatta."},
+    {"en": "Her smile made me feel reassured.", "ja": "彼女の笑顔を見ると心強い。", "kana": "かのじょ の えがお を みる と こころづよい。", "ro": "kanojo no egao o miru to kokorozuyoi."},
+    {"en": "It’s reassuring to know I’m not alone.", "ja": "一人じゃないと思うと心強い。", "kana": "ひとり じゃ ない と おもう と こころづよい。", "ro": "hitori ja nai to omou to kokorozuyoi."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-049",
+  "ja": "情けない",
+  "kana": "なさけない",
+  "ro": "nasakenai",
+  "en": "pitiful / shameful / miserable",
+  "examples": [
+    {"en": "I feel pathetic about my mistake.", "ja": "自分のミスが情けない。", "kana": "じぶん の みす が なさけない。", "ro": "jibun no misu ga nasakenai."},
+    {"en": "He said something shameful.", "ja": "彼は情けないことを言った。", "kana": "かれ は なさけない こと を いった。", "ro": "kare wa nasakenai koto o itta."},
+    {"en": "It’s miserable to give up so easily.", "ja": "すぐにあきらめるなんて情けない。", "kana": "すぐ に あきらめる なんて なさけない。", "ro": "sugu ni akirameru nante nasakenai."},
+    {"en": "I feel sorry for that poor man.", "ja": "あの人が情けない。", "kana": "あの ひと が なさけない。", "ro": "ano hito ga nasakenai."},
+    {"en": "He looked pitiful standing there alone.", "ja": "一人で立っている姿が情けなかった。", "kana": "ひとり で たって いる すがた が なさけなかった。", "ro": "hitori de tatte iru sugata ga nasakenakatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-050",
+  "ja": "名高い",
+  "kana": "なだかい",
+  "ro": "nadakai",
+  "en": "famous / renowned / well-known",
+  "examples": [
+    {"en": "He is a famous artist.", "ja": "彼は名高い芸術家だ。", "kana": "かれ は なだかい げいじゅつか だ。", "ro": "kare wa nadakai geijutsuka da."},
+    {"en": "This mountain is well-known.", "ja": "この山は名高い。", "kana": "この やま は なだかい。", "ro": "kono yama wa nadakai."},
+    {"en": "She comes from a famous family.", "ja": "彼女は名高い家の出身だ。", "kana": "かのじょ は なだかい いえ の しゅっしん だ。", "ro": "kanojo wa nadakai ie no shusshin da."},
+    {"en": "It’s a restaurant famous for its sushi.", "ja": "寿司で名高い店だ。", "kana": "すし で なだかい みせ だ。", "ro": "sushi de nadakai mise da."},
+    {"en": "That city is well-known for its history.", "ja": "その町は歴史で名高い。", "kana": "その まち は れきし で なだかい。", "ro": "sono machi wa rekishi de nadakai."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-051",
+  "ja": "馬鹿らしい",
+  "kana": "ばからしい",
+  "ro": "bakarashii",
+  "en": "ridiculous / absurd / foolish",
+  "examples": [
+    {"en": "That’s a ridiculous story.", "ja": "それは馬鹿らしい話だ。", "kana": "それ は ばからしい はなし だ。", "ro": "sore wa bakarashii hanashi da."},
+    {"en": "It’s foolish to argue about such a thing.", "ja": "そんなことで争うのは馬鹿らしい。", "kana": "そんな ことで あらそう の は ばからしい。", "ro": "sonna koto de arasou no wa bakarashii."},
+    {"en": "His excuse is absurd.", "ja": "彼の言い訳は馬鹿らしい。", "kana": "かれ の いいわけ は ばからしい。", "ro": "kare no iiwake wa bakarashii."},
+    {"en": "I wasted time on something so stupid.", "ja": "そんな馬鹿らしいことに時間を使った。", "kana": "そんな ばからしい こと に じかん を つかった。", "ro": "sonna bakarashii koto ni jikan o tsukatta."},
+    {"en": "It’s too silly to take seriously.", "ja": "真面目に考えるのが馬鹿らしい。", "kana": "まじめ に かんがえる の が ばからしい。", "ro": "majime ni kangaeru no ga bakarashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-052",
+  "ja": "卑しい",
+  "kana": "いやしい",
+  "ro": "iyashii",
+  "en": "vulgar / greedy / mean",
+  "examples": [
+    {"en": "He is greedy for money.", "ja": "彼は金に卑しい。", "kana": "かれ は かね に いやしい。", "ro": "kare wa kane ni iyashii."},
+    {"en": "That was a mean act.", "ja": "それは卑しい行為だ。", "kana": "それ は いやしい こうい だ。", "ro": "sore wa iyashii koui da."},
+    {"en": "He used vulgar language.", "ja": "彼は卑しい言葉を使った。", "kana": "かれ は いやしい ことば を つかった。", "ro": "kare wa iyashii kotoba o tsukatta."},
+    {"en": "He has a greedy look.", "ja": "彼は卑しい顔をしている。", "kana": "かれ は いやしい かお を して いる。", "ro": "kare wa iyashii kao o shite iru."},
+    {"en": "It was a vulgar attitude.", "ja": "彼の態度は卑しかった。", "kana": "かれ の たいど は いやしかった。", "ro": "kare no taido wa iyashikatta."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-053",
+  "ja": "苦しい",
+  "kana": "くるしい",
+  "ro": "kurushii",
+  "en": "painful / difficult / distressing",
+  "examples": [
+    {"en": "My chest hurts.", "ja": "胸が苦しい。", "kana": "むね が くるしい。", "ro": "mune ga kurushii."},
+    {"en": "He lives a hard life.", "ja": "彼は苦しい生活をしている。", "kana": "かれ は くるしい せいかつ を して いる。", "ro": "kare wa kurushii seikatsu o shite iru."},
+    {"en": "It was painful to see that scene.", "ja": "あの光景を見るのは苦しかった。", "kana": "あの こうけい を みる の は くるしかった。", "ro": "ano koukei o miru no wa kurushikatta."},
+    {"en": "He made a difficult decision.", "ja": "彼は苦しい決断をした。", "kana": "かれ は くるしい けつだん を した。", "ro": "kare wa kurushii ketsudan o shita."},
+    {"en": "The competition was very tough.", "ja": "競争はとても苦しかった。", "kana": "きょうそう は とても くるしかった。", "ro": "kyousou wa totemo kurushikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-054",
+  "ja": "まちがいない",
+  "kana": "まちがいない",
+  "ro": "machigainai",
+  "en": "certain / without a doubt / sure",
+  "examples": [
+    {"en": "He will come for sure.", "ja": "彼はまちがいなく来る。", "kana": "かれ は まちがいなく くる。", "ro": "kare wa machigainaku kuru."},
+    {"en": "It’s definitely true.", "ja": "それはまちがいない。", "kana": "それ は まちがいない。", "ro": "sore wa machigainai."},
+    {"en": "He is without a doubt a genius.", "ja": "彼はまちがいなく天才だ。", "kana": "かれ は まちがいなく てんさい だ。", "ro": "kare wa machigainaku tensai da."},
+    {"en": "This restaurant is definitely good.", "ja": "このレストランはまちがいなくおいしい。", "kana": "この れすとらん は まちがいなく おいしい。", "ro": "kono resutoran wa machigainaku oishii."},
+    {"en": "There’s no mistake in that.", "ja": "それにまちがいはない。", "kana": "それ に まちがい は ない。", "ro": "sore ni machigai wa nai."}
+  ],
+  "grammar": "Adverb / Predicate / い-Adjective-like expression"
+},
+{
+  "id": "n2-iadj-055",
+  "ja": "まがまがしい",
+  "kana": "まがまがしい",
+  "ro": "magamagashii",
+  "en": "ominous / sinister / unlucky",
+  "examples": [
+    {"en": "Dark clouds filled the sky ominously.", "ja": "空にまがまがしい雲が広がった。", "kana": "そら に まがまがしい くも が ひろがった。", "ro": "sora ni magamagashii kumo ga hirogatta."},
+    {"en": "He gave me a sinister smile.", "ja": "彼はまがまがしい笑みを浮かべた。", "kana": "かれ は まがまがしい えみ を うかべた。", "ro": "kare wa magamagashii emi o ukabeta."},
+    {"en": "An ominous sound echoed.", "ja": "まがまがしい音が響いた。", "kana": "まがまがしい おと が ひびいた。", "ro": "magamagashii oto ga hibiita."},
+    {"en": "The scene looked eerie.", "ja": "その光景はまがまがしかった。", "kana": "その こうけい は まがまがしかった。", "ro": "sono koukei wa magamagashikatta."},
+    {"en": "He felt an ominous presence.", "ja": "まがまがしい気配を感じた。", "kana": "まがまがしい けはい を かんじた。", "ro": "magamagashii kehai o kanjita."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-056",
+  "ja": "まがりくねった",
+  "kana": "まがりくねった",
+  "ro": "magarikunetta",
+  "en": "winding / twisted / complicated",
+  "examples": [
+    {"en": "We walked along a winding path.", "ja": "まがりくねった道を歩いた。", "kana": "まがりくねった みち を あるいた。", "ro": "magarikunetta michi o aruita."},
+    {"en": "It’s a winding river.", "ja": "まがりくねった川だ。", "kana": "まがりくねった かわ だ。", "ro": "magarikunetta kawa da."},
+    {"en": "He told a long and winding story.", "ja": "彼はまがりくねった話をした。", "kana": "かれ は まがりくねった はなし を した。", "ro": "kare wa magarikunetta hanashi o shita."},
+    {"en": "We drove through a winding road.", "ja": "まがりくねった道を車で通った。", "kana": "まがりくねった みち を くるま で とおった。", "ro": "magarikunetta michi o kuruma de tootta."},
+    {"en": "The truth had a twisted background.", "ja": "真実にはまがりくねった背景があった。", "kana": "しんじつ に は まがりくねった はいけい が あった。", "ro": "shinjitsu ni wa magarikunetta haikei ga atta."}
+  ],
+  "grammar": "Noun / を / Verb-like い-Adjective"
+},
+{
+  "id": "n2-iadj-057",
+  "ja": "頼もしい",
+  "kana": "たのもしい",
+  "ro": "tanomoshii",
+  "en": "reliable / dependable / encouraging",
+  "examples": [
+    {"en": "He is a reliable friend.", "ja": "彼は頼もしい友人だ。", "kana": "かれ は たのもしい ゆうじん だ。", "ro": "kare wa tanomoshii yuujin da."},
+    {"en": "It’s encouraging to have you with me.", "ja": "あなたが一緒にいてくれると頼もしい。", "kana": "あなた が いっしょ に いて くれる と たのもしい。", "ro": "anata ga issho ni ite kureru to tanomoshii."},
+    {"en": "She became a dependable leader.", "ja": "彼女は頼もしいリーダーになった。", "kana": "かのじょ は たのもしい りーだー に なった。", "ro": "kanojo wa tanomoshii riidaa ni natta."},
+    {"en": "He gave a reliable impression.", "ja": "彼は頼もしい印象を与えた。", "kana": "かれ は たのもしい いんしょう を あたえた。", "ro": "kare wa tanomoshii inshou o ataeta."},
+    {"en": "It’s reassuring to have such a team.", "ja": "こんなチームがいて頼もしい。", "kana": "こんな ちーむ が いて たのもしい。", "ro": "konna chiimu ga ite tanomoshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-058",
+  "ja": "心細い",
+  "kana": "こころぼそい",
+  "ro": "kokorobosoi",
+  "en": "lonely / uneasy / helpless",
+  "examples": [
+    {"en": "I feel lonely being alone.", "ja": "一人でいると心細い。", "kana": "ひとり で いる と こころぼそい。", "ro": "hitori de iru to kokorobosoi."},
+    {"en": "It’s uneasy to be in a dark place.", "ja": "暗い場所に一人でいるのは心細い。", "kana": "くらい ばしょ に ひとり で いる の は こころぼそい。", "ro": "kurai basho ni hitori de iru no wa kokorobosoi."},
+    {"en": "I feel uneasy without my phone.", "ja": "携帯がないと心細い。", "kana": "けいたい が ない と こころぼそい。", "ro": "keitai ga nai to kokorobosoi."},
+    {"en": "She looked lonely in the crowd.", "ja": "彼女は人混みの中で心細そうだった。", "kana": "かのじょ は ひとごみ の なか で こころぼそそう だった。", "ro": "kanojo wa hitogomi no naka de kokorobosousou datta."},
+    {"en": "I feel helpless in a foreign country.", "ja": "外国では心細い気持ちになる。", "kana": "がいこく で は こころぼそい きもち に なる。", "ro": "gaikoku de wa kokorobosoi kimochi ni naru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-059",
+  "ja": "慎ましい",
+  "kana": "つつましい",
+  "ro": "tsutsumashii",
+  "en": "modest / humble / reserved",
+  "examples": [
+    {"en": "She lives a modest life.", "ja": "彼女は慎ましい生活をしている。", "kana": "かのじょ は つつましい せいかつ を して いる。", "ro": "kanojo wa tsutsumashii seikatsu o shite iru."},
+    {"en": "He has a humble personality.", "ja": "彼は慎ましい性格だ。", "kana": "かれ は つつましい せいかく だ。", "ro": "kare wa tsutsumashii seikaku da."},
+    {"en": "They live in a small but modest home.", "ja": "彼らは小さな慎ましい家に住んでいる。", "kana": "かれら は ちいさな つつましい いえ に すんで いる。", "ro": "karera wa chiisana tsutsumashii ie ni sunde iru."},
+    {"en": "She bowed modestly.", "ja": "彼女は慎ましくおじぎをした。", "kana": "かのじょ は つつましく おじぎ を した。", "ro": "kanojo wa tsutsumashiku ojigi o shita."},
+    {"en": "His words were modest but sincere.", "ja": "彼の言葉は慎ましいが誠実だった。", "kana": "かれ の ことば は つつましい が せいじつ だった。", "ro": "kare no kotoba wa tsutsumashii ga seijitsu datta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-060",
+  "ja": "著しい",
+  "kana": "いちじるしい",
+  "ro": "ichijirushii",
+  "en": "remarkable / striking / noticeable",
+  "examples": [
+    {"en": "There has been remarkable progress.", "ja": "著しい進歩があった。", "kana": "いちじるしい しんぽ が あった。", "ro": "ichijirushii shinpo ga atta."},
+    {"en": "The difference is striking.", "ja": "違いが著しい。", "kana": "ちがい が いちじるしい。", "ro": "chigai ga ichijirushii."},
+    {"en": "He showed remarkable improvement.", "ja": "彼は著しい上達を見せた。", "kana": "かれ は いちじるしい じょうたつ を みせた。", "ro": "kare wa ichijirushii joutatsu o miseta."},
+    {"en": "The growth of the city is remarkable.", "ja": "その都市の成長は著しい。", "kana": "その とし の せいちょう は いちじるしい。", "ro": "sono toshi no seichou wa ichijirushii."},
+    {"en": "The temperature difference is significant.", "ja": "温度の差が著しい。", "kana": "おんど の さ が いちじるしい。", "ro": "ondo no sa ga ichijirushii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-061",
+  "ja": "疑わしい",
+  "kana": "うたがわしい",
+  "ro": "utagawashii",
+  "en": "doubtful / suspicious / questionable",
+  "examples": [
+    {"en": "His story sounds doubtful.", "ja": "彼の話は疑わしい。", "kana": "かれ の はなし は うたがわしい。", "ro": "kare no hanashi wa utagawashii."},
+    {"en": "It’s doubtful whether he will come.", "ja": "彼が来るかどうか疑わしい。", "kana": "かれ が くる か どうか うたがわしい。", "ro": "kare ga kuru ka douka utagawashii."},
+    {"en": "He was arrested for suspicious behavior.", "ja": "彼は疑わしい行動で逮捕された。", "kana": "かれ は うたがわしい こうどう で たいほ された。", "ro": "kare wa utagawashii koudou de taiho sareta."},
+    {"en": "The data is unreliable.", "ja": "そのデータは信頼性が疑わしい。", "kana": "その でーた は しんらいせい が うたがわしい。", "ro": "sono deeta wa shinraisei ga utagawashii."},
+    {"en": "He gave me a doubtful look.", "ja": "彼は疑わしい目つきをした。", "kana": "かれ は うたがわしい めつき を した。", "ro": "kare wa utagawashii metsuki o shita."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-062",
+  "ja": "望ましい",
+  "kana": "のぞましい",
+  "ro": "nozomashii",
+  "en": "desirable / preferable / ideal",
+  "examples": [
+    {"en": "Regular exercise is desirable.", "ja": "定期的な運動が望ましい。", "kana": "ていきてき な うんどう が のぞましい。", "ro": "teikiteki na undou ga nozomashii."},
+    {"en": "It’s desirable to maintain good health.", "ja": "健康を維持することが望ましい。", "kana": "けんこう を いじ する こと が のぞましい。", "ro": "kenkou o iji suru koto ga nozomashii."},
+    {"en": "A calm response is preferable.", "ja": "冷静な対応が望ましい。", "kana": "れいせい な たいおう が のぞましい。", "ro": "reisei na taiou ga nozomashii."},
+    {"en": "Early arrival is desirable.", "ja": "早めの到着が望ましい。", "kana": "はやめ の とうちゃく が のぞましい。", "ro": "hayame no touchaku ga nozomashii."},
+    {"en": "A flexible attitude is ideal.", "ja": "柔軟な姿勢が望ましい。", "kana": "じゅうなん な しせい が のぞましい。", "ro": "juunan na shisei ga nozomashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-063",
+  "ja": "恥ずかしい",
+  "kana": "はずかしい",
+  "ro": "hazukashii",
+  "en": "embarrassing / shy / ashamed",
+  "examples": [
+    {"en": "I was embarrassed by my mistake.", "ja": "自分のミスが恥ずかしかった。", "kana": "じぶん の みす が はずかしかった。", "ro": "jibun no misu ga hazukashikatta."},
+    {"en": "He is shy in front of strangers.", "ja": "彼は人前では恥ずかしがり屋だ。", "kana": "かれ は ひとまえ では はずかしがりや だ。", "ro": "kare wa hitomae de wa hazukashigariya da."},
+    {"en": "It’s embarrassing to talk about it.", "ja": "それについて話すのは恥ずかしい。", "kana": "それ について はなす の は はずかしい。", "ro": "sore ni tsuite hanasu no wa hazukashii."},
+    {"en": "She blushed with embarrassment.", "ja": "彼女は恥ずかしそうに顔を赤らめた。", "kana": "かのじょ は はずかしそう に かお を あからめた。", "ro": "kanojo wa hazukashisou ni kao o akarame ta."},
+    {"en": "I was ashamed of my behavior.", "ja": "自分の行動が恥ずかしかった。", "kana": "じぶん の こうどう が はずかしかった。", "ro": "jibun no koudou ga hazukashikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-064",
+  "ja": "惜しい",
+  "kana": "おしい",
+  "ro": "oshii",
+  "en": "regrettable / close / precious",
+  "examples": [
+    {"en": "That was a close miss.", "ja": "惜しかったね。", "kana": "おしかった ね。", "ro": "oshikatta ne."},
+    {"en": "It’s a pity to throw it away.", "ja": "それを捨てるのは惜しい。", "kana": "それ を すてる の は おしい。", "ro": "sore o suteru no wa oshii."},
+    {"en": "He narrowly missed winning.", "ja": "彼は優勝を逃して惜しかった。", "kana": "かれ は ゆうしょう を のがして おしかった。", "ro": "kare wa yuushou o nogashite oshikatta."},
+    {"en": "It’s too good to end here.", "ja": "ここで終わるのは惜しい。", "kana": "ここ で おわる の は おしい。", "ro": "koko de owaru no wa oshii."},
+    {"en": "Her talent is too precious to waste.", "ja": "彼女の才能を失うのは惜しい。", "kana": "かのじょ の さいのう を うしなう の は おしい。", "ro": "kanojo no sainou o ushinau no wa oshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-065",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "intense / violent / fierce",
+  "examples": [
+    {"en": "There was a heavy rain last night.", "ja": "昨夜は激しい雨が降った。", "kana": "さくや は はげしい あめ が ふった。", "ro": "sakuya wa hageshii ame ga futta."},
+    {"en": "They had a fierce argument.", "ja": "彼らは激しい口論をした。", "kana": "かれら は はげしい こうろん を した。", "ro": "karera wa hageshii kouron o shita."},
+    {"en": "He felt intense pain in his leg.", "ja": "彼は足に激しい痛みを感じた。", "kana": "かれ は あし に はげしい いたみ を かんじた。", "ro": "kare wa ashi ni hageshii itami o kanjita."},
+    {"en": "The competition was fierce.", "ja": "競争が激しかった。", "kana": "きょうそう が はげしかった。", "ro": "kyousou ga hageshikatta."},
+    {"en": "She spoke with intense emotion.", "ja": "彼女は激しい感情で話した。", "kana": "かのじょ は はげしい かんじょう で はなした。", "ro": "kanojo wa hageshii kanjou de hanashita."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-066",
+  "ja": "鋭い",
+  "kana": "するどい",
+  "ro": "surudoi",
+  "en": "sharp / keen / acute",
+  "examples": [
+    {"en": "He has a sharp sense of smell.", "ja": "彼は嗅覚が鋭い。", "kana": "かれ は きゅうかく が するどい。", "ro": "kare wa kyuukaku ga surudoi."},
+    {"en": "The knife is very sharp.", "ja": "そのナイフはとても鋭い。", "kana": "その ないふ は とても するどい。", "ro": "sono naifu wa totemo surudoi."},
+    {"en": "He made a keen observation.", "ja": "彼は鋭い観察をした。", "kana": "かれ は するどい かんさつ を した。", "ro": "kare wa surudoi kansatsu o shita."},
+    {"en": "Her eyes are sharp and intelligent.", "ja": "彼女の目は鋭くて知的だ。", "kana": "かのじょ の め は するどくて ちてき だ。", "ro": "kanojo no me wa surudokute chiteki da."},
+    {"en": "He has sharp insight.", "ja": "彼は鋭い洞察力を持っている。", "kana": "かれ は するどい どうさつりょく を もって いる。", "ro": "kare wa surudoi dousatsuryoku o motte iru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-067",
+  "ja": "鈍い",
+  "kana": "にぶい",
+  "ro": "nibui",
+  "en": "dull / slow / blunt",
+  "examples": [
+    {"en": "The knife is dull.", "ja": "ナイフの切れ味が鈍い。", "kana": "ないふ の きれあじ が にぶい。", "ro": "naifu no kireaji ga nibui."},
+    {"en": "He is slow to notice changes.", "ja": "彼は変化に鈍い。", "kana": "かれ は へんか に にぶい。", "ro": "kare wa henka ni nibui."},
+    {"en": "He has a dull sense of pain.", "ja": "彼は痛みに鈍い。", "kana": "かれ は いたみ に にぶい。", "ro": "kare wa itami ni nibui."},
+    {"en": "He gave a dull response.", "ja": "彼は鈍い反応をした。", "kana": "かれ は にぶい はんのう を した。", "ro": "kare wa nibui hannou o shita."},
+    {"en": "He is slow in making decisions.", "ja": "彼は決断が鈍い。", "kana": "かれ は けつだん が にぶい。", "ro": "kare wa ketsudan ga nibui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-068",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "violent / intense / fierce",
+  "examples": [
+    {"en": "There was a fierce wind.", "ja": "激しい風が吹いた。", "kana": "はげしい かぜ が ふいた。", "ro": "hageshii kaze ga fuita."},
+    {"en": "He had a fierce argument.", "ja": "彼は激しい口論をした。", "kana": "かれ は はげしい こうろん を した。", "ro": "kare wa hageshii kouron o shita."},
+    {"en": "The rain was intense.", "ja": "雨が激しかった。", "kana": "あめ が はげしかった。", "ro": "ame ga hageshikatta."},
+    {"en": "She felt intense anger.", "ja": "彼女は激しい怒りを感じた。", "kana": "かのじょ は はげしい いかり を かんじた。", "ro": "kanojo wa hageshii ikari o kanjita."},
+    {"en": "The fight was fierce.", "ja": "戦いが激しかった。", "kana": "たたかい が はげしかった。", "ro": "tatakai ga hageshikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-069",
+  "ja": "荒い",
+  "kana": "あらい",
+  "ro": "arai",
+  "en": "rough / wild / rude",
+  "examples": [
+    {"en": "The sea is rough today.", "ja": "今日は海が荒い。", "kana": "きょう は うみ が あらい。", "ro": "kyou wa umi ga arai."},
+    {"en": "He speaks in a rough tone.", "ja": "彼は口調が荒い。", "kana": "かれ は くちょう が あらい。", "ro": "kare wa kuchou ga arai."},
+    {"en": "He has a rough personality.", "ja": "彼は性格が荒い。", "kana": "かれ は せいかく が あらい。", "ro": "kare wa seikaku ga arai."},
+    {"en": "The waves are rough and high.", "ja": "波が荒く高い。", "kana": "なみ が あらく たかい。", "ro": "nami ga araku takai."},
+    {"en": "He drove roughly.", "ja": "彼は運転が荒い。", "kana": "かれ は うんてん が あらい。", "ro": "kare wa unten ga arai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-070",
+  "ja": "鋭利",
+  "kana": "えいり",
+  "ro": "eiri",
+  "en": "sharp / keen / acute (mental or physical)",
+  "examples": [
+    {"en": "He has a sharp knife.", "ja": "彼は鋭利なナイフを持っている。", "kana": "かれ は えいり な ないふ を もって いる。", "ro": "kare wa eiri na naifu o motte iru."},
+    {"en": "Her analysis was sharp.", "ja": "彼女の分析は鋭利だ。", "kana": "かのじょ の ぶんせき は えいり だ。", "ro": "kanojo no bunseki wa eiri da."},
+    {"en": "Be careful, the edge is sharp.", "ja": "刃先が鋭利なので注意してください。", "kana": "はさき が えいり なので ちゅうい して ください。", "ro": "hasaki ga eiri nanode chuui shite kudasai."},
+    {"en": "He has a keen mind.", "ja": "彼は鋭利な頭脳を持っている。", "kana": "かれ は えいり な ずのう を もって いる。", "ro": "kare wa eiri na zunou o motte iru."},
+    {"en": "The blade is extremely sharp.", "ja": "その刃物は非常に鋭利だ。", "kana": "その はもの は ひじょうに えいり だ。", "ro": "sono hamono wa hijou ni eiri da."}
+  ],
+  "grammar": "Noun / は / な-Adjective"
+},
+{
+  "id": "n2-iadj-071",
+  "ja": "厳しい",
+  "kana": "きびしい",
+  "ro": "kibishii",
+  "en": "strict / severe / harsh",
+  "examples": [
+    {"en": "My teacher is strict.", "ja": "先生は厳しい。", "kana": "せんせい は きびしい。", "ro": "sensei wa kibishii."},
+    {"en": "Rules in this school are strict.", "ja": "この学校の規則は厳しい。", "kana": "この がっこう の きそく は きびしい。", "ro": "kono gakkou no kisoku wa kibishii."},
+    {"en": "He has a harsh expression.", "ja": "彼は厳しい表情をしている。", "kana": "かれ は きびしい ひょうじょう を して いる。", "ro": "kare wa kibishii hyoujou o shite iru."},
+    {"en": "The competition was severe.", "ja": "競争が厳しかった。", "kana": "きょうそう が きびしかった。", "ro": "kyousou ga kibishikatta."},
+    {"en": "Her parents are strict about manners.", "ja": "両親は礼儀に厳しい。", "kana": "りょうしん は れいぎ に きびしい。", "ro": "ryoushin wa reigi ni kibishii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-072",
+  "ja": "寂しい",
+  "kana": "さびしい",
+  "ro": "sabishii",
+  "en": "lonely / desolate / sad",
+  "examples": [
+    {"en": "I feel lonely when I’m alone.", "ja": "一人でいると寂しい。", "kana": "ひとり で いる と さびしい。", "ro": "hitori de iru to sabishii."},
+    {"en": "This town feels lonely at night.", "ja": "夜のこの町は寂しい。", "kana": "よる の この まち は さびしい。", "ro": "yoru no kono machi wa sabishii."},
+    {"en": "I feel lonely without you.", "ja": "あなたがいなくて寂しい。", "kana": "あなた が いなくて さびしい。", "ro": "anata ga inakute sabishii."},
+    {"en": "It’s lonely after a festival ends.", "ja": "祭りが終わると寂しい気持ちになる。", "kana": "まつり が おわる と さびしい きもち に なる。", "ro": "matsuri ga owaru to sabishii kimochi ni naru."},
+    {"en": "The sound of the wind feels lonely.", "ja": "風の音が寂しく聞こえる。", "kana": "かぜ の おと が さびしく きこえる。", "ro": "kaze no oto ga sabishiku kikoeru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-073",
+  "ja": "うらやましい",
+  "kana": "うらやましい",
+  "ro": "urayamashii",
+  "en": "envious / jealous",
+  "examples": [
+    {"en": "I envy your success.", "ja": "あなたの成功がうらやましい。", "kana": "あなた の せいこう が うらやましい。", "ro": "anata no seikou ga urayamashii."},
+    {"en": "He seems to envy his friend’s job.", "ja": "彼は友達の仕事をうらやましがっている。", "kana": "かれ は ともだち の しごと を うらやましがって いる。", "ro": "kare wa tomodachi no shigoto o urayamashigatte iru."},
+    {"en": "I’m jealous of her talent.", "ja": "彼女の才能がうらやましい。", "kana": "かのじょ の さいのう が うらやましい。", "ro": "kanojo no sainou ga urayamashii."},
+    {"en": "He looked at me with envious eyes.", "ja": "彼はうらやましそうに私を見た。", "kana": "かれ は うらやましそう に わたし を みた。", "ro": "kare wa urayamashisou ni watashi o mita."},
+    {"en": "Having such a family must be enviable.", "ja": "そんな家族がいてうらやましい。", "kana": "そんな かぞく が いて うらやましい。", "ro": "sonna kazoku ga ite urayamashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-074",
+  "ja": "なつかしい",
+  "kana": "なつかしい",
+  "ro": "natsukashii",
+  "en": "nostalgic / fondly remembered",
+  "examples": [
+    {"en": "This song is nostalgic.", "ja": "この歌はなつかしい。", "kana": "この うた は なつかしい。", "ro": "kono uta wa natsukashii."},
+    {"en": "I feel nostalgic about my hometown.", "ja": "故郷がなつかしい。", "kana": "こきょう が なつかしい。", "ro": "kokyou ga natsukashii."},
+    {"en": "Those old memories are dear to me.", "ja": "昔の思い出がなつかしい。", "kana": "むかし の おもいで が なつかしい。", "ro": "mukashi no omoide ga natsukashii."},
+    {"en": "This smell reminds me of my childhood.", "ja": "このにおいは子どもの頃を思い出してなつかしい。", "kana": "この におい は こども の ころ を おもいだして なつかしい。", "ro": "kono nioi wa kodomo no koro o omoidashite natsukashii."},
+    {"en": "It’s nice to see my old friends again.", "ja": "昔の友達に会えてなつかしい。", "kana": "むかし の ともだち に あえて なつかしい。", "ro": "mukashi no tomodachi ni aete natsukashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-075",
+  "ja": "まぶしい",
+  "kana": "まぶしい",
+  "ro": "mabushii",
+  "en": "bright / dazzling / radiant",
+  "examples": [
+    {"en": "The sun is dazzling today.", "ja": "今日は太陽がまぶしい。", "kana": "きょう は たいよう が まぶしい。", "ro": "kyou wa taiyou ga mabushii."},
+    {"en": "Her smile was bright and beautiful.", "ja": "彼女の笑顔がまぶしかった。", "kana": "かのじょ の えがお が まぶしかった。", "ro": "kanojo no egao ga mabushikatta."},
+    {"en": "The light was too bright to see.", "ja": "光がまぶしくて目を開けられなかった。", "kana": "ひかり が まぶしくて め を あけられなかった。", "ro": "hikari ga mabushikute me o akerarenakatta."},
+    {"en": "He has a dazzling future ahead.", "ja": "彼にはまぶしい未来がある。", "kana": "かれ に は まぶしい みらい が ある。", "ro": "kare ni wa mabushii mirai ga aru."},
+    {"en": "The white snow is dazzling under the sun.", "ja": "太陽の下で白い雪がまぶしい。", "kana": "たいよう の した で しろい ゆき が まぶしい。", "ro": "taiyou no shita de shiroi yuki ga mabushii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-076",
+  "ja": "やかましい",
+  "kana": "やかましい",
+  "ro": "yakamashii",
+  "en": "noisy / fussy / strict",
+  "examples": [
+    {"en": "The construction site is noisy.", "ja": "工事現場がやかましい。", "kana": "こうじ げんば が やかましい。", "ro": "kouji genba ga yakamashii."},
+    {"en": "He’s very fussy about details.", "ja": "彼は細かいことにやかましい。", "kana": "かれ は こまかい こと に やかましい。", "ro": "kare wa komakai koto ni yakamashii."},
+    {"en": "The teacher is strict about manners.", "ja": "先生は礼儀にやかましい。", "kana": "せんせい は れいぎ に やかましい。", "ro": "sensei wa reigi ni yakamashii."},
+    {"en": "This neighborhood is noisy at night.", "ja": "この近所は夜になるとやかましい。", "kana": "この きんじょ は よる に なる と やかましい。", "ro": "kono kinjo wa yoru ni naru to yakamashii."},
+    {"en": "Don’t be so loud!", "ja": "そんなにやかましくしないで！", "kana": "そんなに やかましく しないで！", "ro": "sonna ni yakamashiku shinaide!"}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-077",
+  "ja": "激しい",
+  "kana": "はげしい",
+  "ro": "hageshii",
+  "en": "violent / fierce / intense",
+  "examples": [
+    {"en": "There was a fierce storm.", "ja": "激しい嵐があった。", "kana": "はげしい あらし が あった。", "ro": "hageshii arashi ga atta."},
+    {"en": "He has a violent temper.", "ja": "彼は気性が激しい。", "kana": "かれ は きしょう が はげしい。", "ro": "kare wa kishou ga hageshii."},
+    {"en": "The rain poured heavily.", "ja": "激しく雨が降った。", "kana": "はげしく あめ が ふった。", "ro": "hageshiku ame ga futta."},
+    {"en": "They had a fierce argument.", "ja": "彼らは激しく言い争った。", "kana": "かれら は はげしく いいあらそった。", "ro": "karera wa hageshiku iiarasotta."},
+    {"en": "The competition was fierce.", "ja": "競争が激しかった。", "kana": "きょうそう が はげしかった。", "ro": "kyousou ga hageshikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-078",
+  "ja": "うるさい",
+  "kana": "うるさい",
+  "ro": "urusai",
+  "en": "noisy / annoying / fussy",
+  "examples": [
+    {"en": "This place is too noisy.", "ja": "ここはうるさい。", "kana": "ここ は うるさい。", "ro": "koko wa urusai."},
+    {"en": "He talks too much.", "ja": "彼は話がうるさい。", "kana": "かれ は はなし が うるさい。", "ro": "kare wa hanashi ga urusai."},
+    {"en": "My neighbors are noisy at night.", "ja": "隣の人が夜うるさい。", "kana": "となり の ひと が よる うるさい。", "ro": "tonari no hito ga yoru urusai."},
+    {"en": "He’s fussy about his clothes.", "ja": "彼は服装にうるさい。", "kana": "かれ は ふくそう に うるさい。", "ro": "kare wa fukusou ni urusai."},
+    {"en": "Don’t be so noisy!", "ja": "そんなにうるさくしないで！", "kana": "そんなに うるさく しないで！", "ro": "sonna ni urusaku shinaide!"}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-079",
+  "ja": "もったいない",
+  "kana": "もったいない",
+  "ro": "mottainai",
+  "en": "wasteful / too good / regrettable",
+  "examples": [
+    {"en": "It’s a waste to throw this away.", "ja": "これを捨てるのはもったいない。", "kana": "これ を すてる の は もったいない。", "ro": "kore o suteru no wa mottainai."},
+    {"en": "It’s too good for me.", "ja": "私にはもったいないくらいだ。", "kana": "わたし に は もったいない くらい だ。", "ro": "watashi ni wa mottainai kurai da."},
+    {"en": "Wasting food is shameful.", "ja": "食べ物を残すのはもったいない。", "kana": "たべもの を のこす の は もったいない。", "ro": "tabemono o nokosu no wa mottainai."},
+    {"en": "It’s a pity that he quit his job.", "ja": "彼が仕事を辞めたのはもったいない。", "kana": "かれ が しごと を やめた の は もったいない。", "ro": "kare ga shigoto o yameta no wa mottainai."},
+    {"en": "It’s too nice to use every day.", "ja": "毎日使うにはもったいないほどいい物だ。", "kana": "まいにち つかう に は もったいない ほど いい もの だ。", "ro": "mainichi tsukau ni wa mottainai hodo ii mono da."}
+  ],
+  "grammar": "Noun / は / い-Adjective-like expression"
+},
+{
+  "id": "n2-iadj-080",
+  "ja": "こまかい",
+  "kana": "こまかい",
+  "ro": "komakai",
+  "en": "fine / detailed / small",
+  "examples": [
+    {"en": "He explained in detail.", "ja": "彼はこまかく説明した。", "kana": "かれ は こまかく せつめい した。", "ro": "kare wa komakaku setsumei shita."},
+    {"en": "There are many fine scratches.", "ja": "細かい傷がたくさんある。", "kana": "こまかい きず が たくさん ある。", "ro": "komakai kizu ga takusan aru."},
+    {"en": "She’s very particular about things.", "ja": "彼女は細かいことにうるさい。", "kana": "かのじょ は こまかい こと に うるさい。", "ro": "kanojo wa komakai koto ni urusai."},
+    {"en": "He divided the work into small parts.", "ja": "仕事を細かく分けた。", "kana": "しごと を こまかく わけた。", "ro": "shigoto o komakaku waketa."},
+    {"en": "Please give me small change.", "ja": "細かいお金をください。", "kana": "こまかい おかね を ください。", "ro": "komakai okane o kudasai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-081",
+  "ja": "くどい",
+  "kana": "くどい",
+  "ro": "kudoi",
+  "en": "verbose / repetitive / heavy (taste)",
+  "examples": [
+    {"en": "His explanation is too long-winded.", "ja": "彼の説明はくどい。", "kana": "かれ の せつめい は くどい。", "ro": "kare no setsumei wa kudoi."},
+    {"en": "This sauce tastes too strong.", "ja": "このソースは味がくどい。", "kana": "この そーす は あじ が くどい。", "ro": "kono soosu wa aji ga kudoi."},
+    {"en": "He keeps saying the same thing.", "ja": "彼は同じことを何度も言ってくどい。", "kana": "かれ は おなじ こと を なんども いって くどい。", "ro": "kare wa onaji koto o nando mo itte kudoi."},
+    {"en": "The conversation was too detailed and dull.", "ja": "話がくどくて退屈だった。", "kana": "はなし が くどくて たいくつ だった。", "ro": "hanashi ga kudokute taikutsu datta."},
+    {"en": "This dish is too rich for me.", "ja": "この料理は私にはくどい。", "kana": "この りょうり は わたし に は くどい。", "ro": "kono ryouri wa watashi ni wa kudoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-082",
+  "ja": "あやしい",
+  "kana": "あやしい",
+  "ro": "ayashii",
+  "en": "suspicious / doubtful / shady",
+  "examples": [
+    {"en": "That man looks suspicious.", "ja": "あの男はあやしい。", "kana": "あの おとこ は あやしい。", "ro": "ano otoko wa ayashii."},
+    {"en": "The rumor sounds doubtful.", "ja": "そのうわさはあやしい。", "kana": "その うわさ は あやしい。", "ro": "sono uwasa wa ayashii."},
+    {"en": "He gave me a suspicious smile.", "ja": "彼はあやしい笑みを浮かべた。", "kana": "かれ は あやしい えみ を うかべた。", "ro": "kare wa ayashii emi o ukabeta."},
+    {"en": "It’s a shady company.", "ja": "あやしい会社だ。", "kana": "あやしい かいしゃ だ。", "ro": "ayashii kaisha da."},
+    {"en": "There’s something fishy about his story.", "ja": "彼の話はどこかあやしい。", "kana": "かれ の はなし は どこか あやしい。", "ro": "kare no hanashi wa dokoka ayashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-083",
+  "ja": "たのもしい",
+  "kana": "たのもしい",
+  "ro": "tanomoshii",
+  "en": "reliable / dependable / encouraging",
+  "examples": [
+    {"en": "He’s a reliable friend.", "ja": "彼はたのもしい友人だ。", "kana": "かれ は たのもしい ゆうじん だ。", "ro": "kare wa tanomoshii yuujin da."},
+    {"en": "It’s encouraging to have you with me.", "ja": "あなたがいてたのもしい。", "kana": "あなた が いて たのもしい。", "ro": "anata ga ite tanomoshii."},
+    {"en": "She’s a dependable coworker.", "ja": "彼女はたのもしい同僚だ。", "kana": "かのじょ は たのもしい どうりょう だ。", "ro": "kanojo wa tanomoshii douryou da."},
+    {"en": "He’s a very reliable leader.", "ja": "彼はとてもたのもしいリーダーだ。", "kana": "かれ は とても たのもしい りーだー だ。", "ro": "kare wa totemo tanomoshii riidaa da."},
+    {"en": "Having such a person is reassuring.", "ja": "こんな人がいるとたのもしい。", "kana": "こんな ひと が いる と たのもしい。", "ro": "konna hito ga iru to tanomoshii."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-084",
+  "ja": "あわただしい",
+  "kana": "あわただしい",
+  "ro": "awatadashii",
+  "en": "busy / hurried / restless",
+  "examples": [
+    {"en": "I had a busy day.", "ja": "あわただしい一日だった。", "kana": "あわただしい いちにち だった。", "ro": "awatadashii ichinichi datta."},
+    {"en": "She left in a hurry.", "ja": "彼女はあわただしく出ていった。", "kana": "かのじょ は あわただしく でて いった。", "ro": "kanojo wa awatadashiku dete itta."},
+    {"en": "The office is always busy.", "ja": "職場はいつもあわただしい。", "kana": "しょくば は いつも あわただしい。", "ro": "shokuba wa itsumo awatadashii."},
+    {"en": "He has a hectic schedule.", "ja": "彼はあわただしい日程をこなしている。", "kana": "かれ は あわただしい にってい を こなして いる。", "ro": "kare wa awatadashii nittei o konashite iru."},
+    {"en": "It’s been a restless morning.", "ja": "あわただしい朝だった。", "kana": "あわただしい あさ だった。", "ro": "awatadashii asa datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-085",
+  "ja": "おそろしい",
+  "kana": "おそろしい",
+  "ro": "osoroshii",
+  "en": "terrible / frightening / dreadful",
+  "examples": [
+    {"en": "That was a terrible accident.", "ja": "おそろしい事故だった。", "kana": "おそろしい じこ だった。", "ro": "osoroshii jiko datta."},
+    {"en": "He told a scary story.", "ja": "彼はおそろしい話をした。", "kana": "かれ は おそろしい はなし を した。", "ro": "kare wa osoroshii hanashi o shita."},
+    {"en": "It’s frightening to think about.", "ja": "考えるだけでおそろしい。", "kana": "かんがえる だけ で おそろしい。", "ro": "kangaeru dake de osoroshii."},
+    {"en": "He has a terrible temper.", "ja": "彼はおそろしい気性をしている。", "kana": "かれ は おそろしい きしょう を して いる。", "ro": "kare wa osoroshii kishou o shite iru."},
+    {"en": "It was a dreadful experience.", "ja": "おそろしい経験だった。", "kana": "おそろしい けいけん だった。", "ro": "osoroshii keiken datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-086",
+  "ja": "こころよい",
+  "kana": "こころよい",
+  "ro": "kokoroyoi",
+  "en": "pleasant / agreeable / willing",
+  "examples": [
+    {"en": "I had a pleasant sleep.", "ja": "こころよい眠りだった。", "kana": "こころよい ねむり だった。", "ro": "kokoroyoi nemuri datta."},
+    {"en": "She gave a pleasant smile.", "ja": "彼女はこころよい笑顔を見せた。", "kana": "かのじょ は こころよい えがお を みせた。", "ro": "kanojo wa kokoroyoi egao o miseta."},
+    {"en": "The breeze feels pleasant.", "ja": "風がこころよい。", "kana": "かぜ が こころよい。", "ro": "kaze ga kokoroyoi."},
+    {"en": "He accepted the request willingly.", "ja": "彼はこころよく依頼を引き受けた。", "kana": "かれ は こころよく いらい を ひきうけた。", "ro": "kare wa kokoroyoku irai o hikiuketa."},
+    {"en": "It was a comfortable environment.", "ja": "こころよい環境だった。", "kana": "こころよい かんきょう だった。", "ro": "kokoroyoi kankyou datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-087",
+  "ja": "こいしい",
+  "kana": "こいしい",
+  "ro": "koishii",
+  "en": "dear / beloved / missed",
+  "examples": [
+    {"en": "I miss my family.", "ja": "家族がこいしい。", "kana": "かぞく が こいしい。", "ro": "kazoku ga koishii."},
+    {"en": "I long for my hometown.", "ja": "故郷がこいしい。", "kana": "こきょう が こいしい。", "ro": "kokyou ga koishii."},
+    {"en": "She misses her boyfriend.", "ja": "彼女は恋人がこいしい。", "kana": "かのじょ は こいびと が こいしい。", "ro": "kanojo wa koibito ga koishii."},
+    {"en": "I miss the old days.", "ja": "昔がこいしい。", "kana": "むかし が こいしい。", "ro": "mukashi ga koishii."},
+    {"en": "I miss that warm feeling.", "ja": "あの温かい気持ちがこいしい。", "kana": "あの あたたかい きもち が こいしい。", "ro": "ano atatakai kimochi ga koishii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-088",
+  "ja": "したしい",
+  "kana": "したしい",
+  "ro": "shitashii",
+  "en": "intimate / close / familiar",
+  "examples": [
+    {"en": "We are close friends.", "ja": "私たちは親しい友人です。", "kana": "わたしたち は したしい ゆうじん です。", "ro": "watashitachi wa shitashii yuujin desu."},
+    {"en": "He’s close with his boss.", "ja": "彼は上司と親しい。", "kana": "かれ は じょうし と したしい。", "ro": "kare wa joushi to shitashii."},
+    {"en": "She has a close relationship with her neighbors.", "ja": "彼女は近所の人と親しい関係だ。", "kana": "かのじょ は きんじょ の ひと と したしい かんけい だ。", "ro": "kanojo wa kinjo no hito to shitashii kankei da."},
+    {"en": "They have been close since childhood.", "ja": "彼らは子どもの頃から親しい。", "kana": "かれら は こども の ころ から したしい。", "ro": "karera wa kodomo no koro kara shitashii."},
+    {"en": "She’s familiar with Japanese culture.", "ja": "彼女は日本文化に親しい。", "kana": "かのじょ は にほん ぶんか に したしい。", "ro": "kanojo wa nihon bunka ni shitashii."}
+  ],
+  "grammar": "Noun / と / い-Adjective"
+},
+{
+  "id": "n2-iadj-089",
+  "ja": "にくい",
+  "kana": "にくい",
+  "ro": "nikui",
+  "en": "hateful / detestable / hard to (do)",
+  "examples": [
+    {"en": "He is a hateful man.", "ja": "彼はにくい男だ。", "kana": "かれ は にくい おとこ だ。", "ro": "kare wa nikui otoko da."},
+    {"en": "She gave me a hateful look.", "ja": "彼女はにくい目で私を見た。", "kana": "かのじょ は にくい め で わたし を みた。", "ro": "kanojo wa nikui me de watashi o mita."},
+    {"en": "This word is hard to remember.", "ja": "この言葉は覚えにくい。", "kana": "この ことば は おぼえ にくい。", "ro": "kono kotoba wa oboe nikui."},
+    {"en": "He’s hard to deal with.", "ja": "彼は付き合いにくい人だ。", "kana": "かれ は つきあい にくい ひと だ。", "ro": "kare wa tsukiai nikui hito da."},
+    {"en": "This machine is difficult to use.", "ja": "この機械は使いにくい。", "kana": "この きかい は つかい にくい。", "ro": "kono kikai wa tsukai nikui."}
+  ],
+  "grammar": "Verb stem + にくい (hard to do)"
+},
+{
+  "id": "n2-iadj-090",
+  "ja": "うすぐらい",
+  "kana": "うすぐらい",
+  "ro": "usugurai",
+  "en": "dim / gloomy / dusky",
+  "examples": [
+    {"en": "It’s dim in this room.", "ja": "この部屋はうすぐらい。", "kana": "この へや は うすぐらい。", "ro": "kono heya wa usugurai."},
+    {"en": "The street was dark at night.", "ja": "夜の道はうすぐらかった。", "kana": "よる の みち は うすぐらかった。", "ro": "yoru no michi wa usugurakatta."},
+    {"en": "The cave was dimly lit.", "ja": "洞窟の中はうすぐらかった。", "kana": "どうくつ の なか は うすぐらかった。", "ro": "doukutsu no naka wa usugurakatta."},
+    {"en": "It’s a gloomy atmosphere here.", "ja": "ここはうすぐらい雰囲気だ。", "kana": "ここ は うすぐらい ふんいき だ。", "ro": "koko wa usugurai fun'iki da."},
+    {"en": "The light is dim in the hallway.", "ja": "廊下の明かりがうすぐらい。", "kana": "ろうか の あかり が うすぐらい。", "ro": "rouka no akari ga usugurai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-091",
+  "ja": "こころづよい",
+  "kana": "こころづよい",
+  "ro": "kokorozuyoi",
+  "en": "reassuring / heartening / encouraging",
+  "examples": [
+    {"en": "Your words were very encouraging.", "ja": "あなたの言葉がこころづよかった。", "kana": "あなた の ことば が こころづよかった。", "ro": "anata no kotoba ga kokorozuyokatta."},
+    {"en": "Having you here is reassuring.", "ja": "あなたがいるとこころづよい。", "kana": "あなた が いる と こころづよい。", "ro": "anata ga iru to kokorozuyoi."},
+    {"en": "Her support is heartening.", "ja": "彼女の支えがこころづよい。", "kana": "かのじょ の ささえ が こころづよい。", "ro": "kanojo no sasae ga kokorozuyoi."},
+    {"en": "It’s comforting to have a friend like you.", "ja": "あなたのような友人がいてこころづよい。", "kana": "あなた の ような ゆうじん が いて こころづよい。", "ro": "anata no youna yuujin ga ite kokorozuyoi."},
+    {"en": "Your presence makes me feel secure.", "ja": "あなたの存在がこころづよい。", "kana": "あなた の そんざい が こころづよい。", "ro": "anata no sonzai ga kokorozuyoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-092",
+  "ja": "あやうい",
+  "kana": "あやうい",
+  "ro": "ayaui",
+  "en": "dangerous / critical / risky",
+  "examples": [
+    {"en": "It was a dangerous situation.", "ja": "あやうい状況だった。", "kana": "あやうい じょうきょう だった。", "ro": "ayaui joukyou datta."},
+    {"en": "He was in a critical state.", "ja": "彼はあやうい状態にあった。", "kana": "かれ は あやうい じょうたい に あった。", "ro": "kare wa ayaui joutai ni atta."},
+    {"en": "It was a close call.", "ja": "危うく事故になるところだった。", "kana": "あやうく じこ に なる ところ だった。", "ro": "ayauku jiko ni naru tokoro datta."},
+    {"en": "His life was in danger.", "ja": "彼の命があやうかった。", "kana": "かれ の いのち が あやうかった。", "ro": "kare no inochi ga ayaukatta."},
+    {"en": "The company is in a risky position.", "ja": "会社はあやうい立場にある。", "kana": "かいしゃ は あやうい たちば に ある。", "ro": "kaisha wa ayaui tachiba ni aru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-093",
+  "ja": "きびしい",
+  "kana": "きびしい",
+  "ro": "kibishii",
+  "en": "strict / severe / harsh",
+  "examples": [
+    {"en": "My father is strict.", "ja": "父はきびしい。", "kana": "ちち は きびしい。", "ro": "chichi wa kibishii."},
+    {"en": "The teacher was strict with students.", "ja": "先生は生徒にきびしかった。", "kana": "せんせい は せいと に きびしかった。", "ro": "sensei wa seito ni kibishikatta."},
+    {"en": "He faced severe criticism.", "ja": "彼はきびしい批判を受けた。", "kana": "かれ は きびしい ひはん を うけた。", "ro": "kare wa kibishii hihan o uketa."},
+    {"en": "The competition is harsh.", "ja": "競争がきびしい。", "kana": "きょうそう が きびしい。", "ro": "kyousou ga kibishii."},
+    {"en": "It was a harsh winter.", "ja": "きびしい冬だった。", "kana": "きびしい ふゆ だった。", "ro": "kibishii fuyu datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-094",
+  "ja": "ありがたい",
+  "kana": "ありがたい",
+  "ro": "arigatai",
+  "en": "grateful / thankful / welcome",
+  "examples": [
+    {"en": "I’m grateful for your help.", "ja": "助けてくれてありがたい。", "kana": "たすけて くれて ありがたい。", "ro": "tasukete kurete arigatai."},
+    {"en": "Your kindness is appreciated.", "ja": "あなたの親切がありがたい。", "kana": "あなた の しんせつ が ありがたい。", "ro": "anata no shinsetsu ga arigatai."},
+    {"en": "It’s a great blessing to have good health.", "ja": "健康でいられるのはありがたいことだ。", "kana": "けんこう で いられる の は ありがたい こと だ。", "ro": "kenkou de irareru no wa arigatai koto da."},
+    {"en": "I’m thankful for this opportunity.", "ja": "この機会をいただけてありがたい。", "kana": "この きかい を いただけて ありがたい。", "ro": "kono kikai o itadakete arigatai."},
+    {"en": "It’s nice to have you here.", "ja": "あなたがいてくれてありがたい。", "kana": "あなた が いて くれて ありがたい。", "ro": "anata ga ite kurete arigatai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-095",
+  "ja": "くやしい",
+  "kana": "くやしい",
+  "ro": "kuyashii",
+  "en": "regretful / frustrating / vexing",
+  "examples": [
+    {"en": "I’m so frustrated I lost.", "ja": "負けてくやしい。", "kana": "まけて くやしい。", "ro": "makete kuyashii."},
+    {"en": "It was a regretful mistake.", "ja": "くやしい間違いだった。", "kana": "くやしい まちがい だった。", "ro": "kuyashii machigai datta."},
+    {"en": "He looked frustrated.", "ja": "彼はくやしそうな顔をしていた。", "kana": "かれ は くやしそう な かお を して いた。", "ro": "kare wa kuyashisou na kao o shite ita."},
+    {"en": "I still feel frustrated about that game.", "ja": "あの試合はいまだにくやしい。", "kana": "あの しあい は いまだに くやしい。", "ro": "ano shiai wa imadani kuyashii."},
+    {"en": "It’s frustrating to fail after trying so hard.", "ja": "あんなに頑張ったのに失敗してくやしい。", "kana": "あんなに がんばった のに しっぱい して くやしい。", "ro": "annani ganbatta noni shippai shite kuyashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-096",
+  "ja": "くるしい",
+  "kana": "くるしい",
+  "ro": "kurushii",
+  "en": "painful / difficult / distressing",
+  "examples": [
+    {"en": "My stomach hurts.", "ja": "おなかがくるしい。", "kana": "おなか が くるしい。", "ro": "onaka ga kurushii."},
+    {"en": "It was a difficult decision.", "ja": "くるしい決断だった。", "kana": "くるしい けつだん だった。", "ro": "kurushii ketsudan datta."},
+    {"en": "He has a painful expression.", "ja": "彼はくるしそうな顔をしている。", "kana": "かれ は くるしそう な かお を して いる。", "ro": "kare wa kurushisou na kao o shite iru."},
+    {"en": "I went through hard times.", "ja": "くるしい時期を乗り越えた。", "kana": "くるしい じき を のりこえた。", "ro": "kurushii jiki o norikoeta."},
+    {"en": "It’s painful to remember.", "ja": "思い出すのもくるしい。", "kana": "おもいだす のも くるしい。", "ro": "omoidasu nomo kurushii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-097",
+  "ja": "まずい",
+  "kana": "まずい",
+  "ro": "mazui",
+  "en": "bad (taste) / awkward / unpleasant",
+  "examples": [
+    {"en": "This food tastes bad.", "ja": "この食べ物はまずい。", "kana": "この たべもの は まずい。", "ro": "kono tabemono wa mazui."},
+    {"en": "He made a bad mistake.", "ja": "彼はまずいミスをした。", "kana": "かれ は まずい みす を した。", "ro": "kare wa mazui misu o shita."},
+    {"en": "The situation is bad.", "ja": "状況がまずい。", "kana": "じょうきょう が まずい。", "ro": "joukyou ga mazui."},
+    {"en": "That joke was in bad taste.", "ja": "その冗談はまずかった。", "kana": "その じょうだん は まずかった。", "ro": "sono joudan wa mazukatta."},
+    {"en": "It would be bad if this leaked out.", "ja": "これがばれたらまずい。", "kana": "これ が ばれたら まずい。", "ro": "kore ga baretara mazui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-098",
+  "ja": "すごい",
+  "kana": "すごい",
+  "ro": "sugoi",
+  "en": "amazing / great / terrible (intense)",
+  "examples": [
+    {"en": "That movie was amazing.", "ja": "あの映画はすごかった。", "kana": "あの えいが は すごかった。", "ro": "ano eiga wa sugo katta."},
+    {"en": "He has great talent.", "ja": "彼はすごい才能を持っている。", "kana": "かれ は すごい さいのう を もって いる。", "ro": "kare wa sugoi sainou o motte iru."},
+    {"en": "There was a huge crowd.", "ja": "すごい人ごみだった。", "kana": "すごい ひとごみ だった。", "ro": "sugoi hitogomi datta."},
+    {"en": "The wind is really strong today.", "ja": "今日はすごい風だ。", "kana": "きょう は すごい かぜ だ。", "ro": "kyou wa sugoi kaze da."},
+    {"en": "He worked incredibly hard.", "ja": "彼はすごくがんばった。", "kana": "かれ は すごく がんばった。", "ro": "kare wa sugoku ganbatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-099",
+  "ja": "にぶい",
+  "kana": "にぶい",
+  "ro": "nibui",
+  "en": "dull / slow / blunt",
+  "examples": [
+    {"en": "This knife is dull.", "ja": "このナイフはにぶい。", "kana": "この ないふ は にぶい。", "ro": "kono naifu wa nibui."},
+    {"en": "He’s slow to react.", "ja": "彼は反応がにぶい。", "kana": "かれ は はんのう が にぶい。", "ro": "kare wa hannou ga nibui."},
+    {"en": "Her sense of smell is dull.", "ja": "彼女はにおいににぶい。", "kana": "かのじょ は におい に にぶい。", "ro": "kanojo wa nioi ni nibui."},
+    {"en": "He’s not very sensitive.", "ja": "彼は感情ににぶい。", "kana": "かれ は かんじょう に にぶい。", "ro": "kare wa kanjou ni nibui."},
+    {"en": "The pain became dull.", "ja": "痛みがにぶくなった。", "kana": "いたみ が にぶく なった。", "ro": "itami ga nibuku natta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-100",
+  "ja": "おとなしい",
+  "kana": "おとなしい",
+  "ro": "otonashii",
+  "en": "quiet / gentle / obedient",
+  "examples": [
+    {"en": "She is a quiet person.", "ja": "彼女はおとなしい人だ。", "kana": "かのじょ は おとなしい ひと だ。", "ro": "kanojo wa otonashii hito da."},
+    {"en": "The child is very obedient.", "ja": "その子はとてもおとなしい。", "kana": "その こ は とても おとなしい。", "ro": "sono ko wa totemo otonashii."},
+    {"en": "He’s behaving quietly today.", "ja": "今日はおとなしくしている。", "kana": "きょう は おとなしく して いる。", "ro": "kyou wa otonashiku shite iru."},
+    {"en": "She looks quiet but strong-willed.", "ja": "彼女はおとなしく見えるが意志が強い。", "kana": "かのじょ は おとなしく みえる が いし が つよい。", "ro": "kanojo wa otonashiku mieru ga ishi ga tsuyoi."},
+    {"en": "The students were calm during the class.", "ja": "授業中、学生たちはおとなしかった。", "kana": "じゅぎょう ちゅう がくせいたち は おとなしかった。", "ro": "jugyou chuu gakuseitachi wa otonashikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-101",
+  "ja": "けわしい",
+  "kana": "けわしい",
+  "ro": "kewashii",
+  "en": "steep / severe / grim",
+  "examples": [
+    {"en": "This mountain path is steep.", "ja": "この山道はけわしい。", "kana": "この やまみち は けわしい。", "ro": "kono yamamichi wa kewashii."},
+    {"en": "She looked at me with a stern expression.", "ja": "彼女はけわしい表情で私を見た。", "kana": "かのじょ は けわしい ひょうじょう で わたし を みた。", "ro": "kanojo wa kewashii hyoujou de watashi o mita."},
+    {"en": "The situation is severe.", "ja": "状況はけわしい。", "kana": "じょうきょう は けわしい。", "ro": "joukyou wa kewashii."},
+    {"en": "The path to success is steep.", "ja": "成功までの道はけわしい。", "kana": "せいこう まで の みち は けわしい。", "ro": "seikou made no michi wa kewashii."},
+    {"en": "The weather turned harsh in the mountains.", "ja": "山の天気がけわしくなった。", "kana": "やま の てんき が けわしく なった。", "ro": "yama no tenki ga kewashiku natta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-102",
+  "ja": "なまぬるい",
+  "kana": "なまぬるい",
+  "ro": "namanurui",
+  "en": "lukewarm / halfhearted / lenient",
+  "examples": [
+    {"en": "This tea is lukewarm.", "ja": "このお茶はなまぬるい。", "kana": "この おちゃ は なまぬるい。", "ro": "kono ocha wa namanurui."},
+    {"en": "His attitude is halfhearted.", "ja": "彼の態度はなまぬるい。", "kana": "かれ の たいど は なまぬるい。", "ro": "kare no taido wa namanurui."},
+    {"en": "The bathwater is lukewarm.", "ja": "風呂のお湯がなまぬるい。", "kana": "ふろ の おゆ が なまぬるい。", "ro": "furo no oyu ga namanurui."},
+    {"en": "His words were too soft.", "ja": "彼の言葉はなまぬるかった。", "kana": "かれ の ことば は なまぬるかった。", "ro": "kare no kotoba wa namanurukatta."},
+    {"en": "The policy is too lenient.", "ja": "この方針はなまぬるい。", "kana": "この ほうしん は なまぬるい。", "ro": "kono houshin wa namanurui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-103",
+  "ja": "うらめしい",
+  "kana": "うらめしい",
+  "ro": "urameshii",
+  "en": "resentful / bitter / envious",
+  "examples": [
+    {"en": "He looked at me with resentful eyes.", "ja": "彼はうらめしい目で私を見た。", "kana": "かれ は うらめしい め で わたし を みた。", "ro": "kare wa urameshii me de watashi o mita."},
+    {"en": "I feel bitter about my failure.", "ja": "自分の失敗がうらめしい。", "kana": "じぶん の しっぱい が うらめしい。", "ro": "jibun no shippai ga urameshii."},
+    {"en": "Her success makes me feel envious.", "ja": "彼女の成功がうらめしい。", "kana": "かのじょ の せいこう が うらめしい。", "ro": "kanojo no seikou ga urameshii."},
+    {"en": "He spoke in a resentful tone.", "ja": "彼はうらめしそうな口調で話した。", "kana": "かれ は うらめしそう な くちょう で はなした。", "ro": "kare wa urameshisou na kuchou de hanashita."},
+    {"en": "The way he ignored me was bitter.", "ja": "彼に無視されたのがうらめしい。", "kana": "かれ に むし された の が うらめしい。", "ro": "kare ni mushi sareta no ga urameshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-104",
+  "ja": "なつっこい",
+  "kana": "なつっこい",
+  "ro": "natsukkoi",
+  "en": "affectionate / friendly / sociable",
+  "examples": [
+    {"en": "That dog is friendly.", "ja": "あの犬はなつっこい。", "kana": "あの いぬ は なつっこい。", "ro": "ano inu wa natsukkoi."},
+    {"en": "She’s an affectionate child.", "ja": "彼女はなつっこい子どもだ。", "kana": "かのじょ は なつっこい こども だ。", "ro": "kanojo wa natsukkoi kodomo da."},
+    {"en": "Cats are not always sociable.", "ja": "猫はあまりなつっこくない。", "kana": "ねこ は あまり なつっこく ない。", "ro": "neko wa amari natsukkokunai."},
+    {"en": "He’s friendly with everyone.", "ja": "彼は誰にでもなつっこい。", "kana": "かれ は だれ に でも なつっこい。", "ro": "kare wa dare ni demo natsukkoi."},
+    {"en": "This puppy is very affectionate.", "ja": "この子犬はとてもなつっこい。", "kana": "この こいぬ は とても なつっこい。", "ro": "kono koinu wa totemo natsukkoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-105",
+  "ja": "けがらわしい",
+  "kana": "けがらわしい",
+  "ro": "kegarawashii",
+  "en": "filthy / disgusting / indecent",
+  "examples": [
+    {"en": "He made a disgusting remark.", "ja": "彼はけがらわしい発言をした。", "kana": "かれ は けがらわしい はつげん を した。", "ro": "kare wa kegarawashii hatsugen o shita."},
+    {"en": "That scandal was filthy.", "ja": "そのスキャンダルはけがらわしかった。", "kana": "その すきゃんだる は けがらわしかった。", "ro": "sono sukyandaru wa kegarawashikatta."},
+    {"en": "The sight was unpleasant.", "ja": "その光景はけがらわしかった。", "kana": "その こうけい は けがらわしかった。", "ro": "sono koukei wa kegarawashikatta."},
+    {"en": "I don’t want to touch such indecent things.", "ja": "そんなけがらわしいものに触れたくない。", "kana": "そんな けがらわしい もの に ふれたく ない。", "ro": "sonna kegarawashii mono ni furetakunai."},
+    {"en": "His behavior was disgusting.", "ja": "彼の行動はけがらわしい。", "kana": "かれ の こうどう は けがらわしい。", "ro": "kare no koudou wa kegarawashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-106",
+  "ja": "こころぼそい",
+  "kana": "こころぼそい",
+  "ro": "kokorobosoi",
+  "en": "lonely / helpless / uneasy",
+  "examples": [
+    {"en": "I feel lonely living alone.", "ja": "一人暮らしはこころぼそい。", "kana": "ひとりぐらし は こころぼそい。", "ro": "hitorigurashi wa kokorobosoi."},
+    {"en": "I felt uneasy walking at night.", "ja": "夜道を歩くのはこころぼそかった。", "kana": "よみち を あるく の は こころぼそかった。", "ro": "yomichi o aruku no wa kokorobosokatta."},
+    {"en": "Without you, I feel helpless.", "ja": "あなたがいないとこころぼそい。", "kana": "あなた が いない と こころぼそい。", "ro": "anata ga inai to kokorobosoi."},
+    {"en": "The room felt lonely and empty.", "ja": "部屋が静かでこころぼそかった。", "kana": "へや が しずか で こころぼそかった。", "ro": "heya ga shizuka de kokorobosokatta."},
+    {"en": "I feel uneasy about the future.", "ja": "将来がこころぼそい。", "kana": "しょうらい が こころぼそい。", "ro": "shourai ga kokorobosoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-107",
+  "ja": "なつかしい",
+  "kana": "なつかしい",
+  "ro": "natsukashii",
+  "en": "nostalgic / dear / fondly remembered",
+  "examples": [
+    {"en": "I miss those old days.", "ja": "昔がなつかしい。", "kana": "むかし が なつかしい。", "ro": "mukashi ga natsukashii."},
+    {"en": "That song is nostalgic.", "ja": "その歌はなつかしい。", "kana": "その うた は なつかしい。", "ro": "sono uta wa natsukashii."},
+    {"en": "I met an old friend after a long time.", "ja": "久しぶりに友人に会ってなつかしかった。", "kana": "ひさしぶり に ゆうじん に あって なつかしかった。", "ro": "hisashiburi ni yuujin ni atte natsukashikatta."},
+    {"en": "This smell reminds me of my childhood.", "ja": "このにおいは子どものころを思い出してなつかしい。", "kana": "この におい は こども の ころ を おもいだして なつかしい。", "ro": "kono nioi wa kodomo no koro o omoidasite natsukashii."},
+    {"en": "Old photos are always nostalgic.", "ja": "古い写真はいつもなつかしい。", "kana": "ふるい しゃしん は いつも なつかしい。", "ro": "furui shashin wa itsumo natsukashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-108",
+  "ja": "こころづよい",
+  "kana": "こころづよい",
+  "ro": "kokorozuyoi",
+  "en": "reassuring / heartening / dependable",
+  "examples": [
+    {"en": "Your presence is reassuring.", "ja": "あなたがいてこころづよい。", "kana": "あなた が いて こころづよい。", "ro": "anata ga ite kokorozuyoi."},
+    {"en": "His words were comforting.", "ja": "彼の言葉がこころづよかった。", "kana": "かれ の ことば が こころづよかった。", "ro": "kare no kotoba ga kokorozuyokatta."},
+    {"en": "It’s heartening to have such friends.", "ja": "こんな友人がいてこころづよい。", "kana": "こんな ゆうじん が いて こころづよい。", "ro": "konna yuujin ga ite kokorozuyoi."},
+    {"en": "His advice was very encouraging.", "ja": "彼のアドバイスはとてもこころづよかった。", "kana": "かれ の あどばいす は とても こころづよかった。", "ro": "kare no adobaisu wa totemo kokorozuyokatta."},
+    {"en": "Having family nearby is comforting.", "ja": "家族がそばにいるとこころづよい。", "kana": "かぞく が そば に いる と こころづよい。", "ro": "kazoku ga soba ni iru to kokorozuyoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-109",
+  "ja": "やかましい",
+  "kana": "やかましい",
+  "ro": "yakamashii",
+  "en": "noisy / fussy / strict",
+  "examples": [
+    {"en": "This street is noisy.", "ja": "この通りはやかましい。", "kana": "この とおり は やかましい。", "ro": "kono toori wa yakamashii."},
+    {"en": "He’s fussy about food.", "ja": "彼は食べ物にやかましい。", "kana": "かれ は たべもの に やかましい。", "ro": "kare wa tabemono ni yakamashii."},
+    {"en": "She’s very particular about manners.", "ja": "彼女はマナーにやかましい。", "kana": "かのじょ は まなー に やかましい。", "ro": "kanojo wa manaa ni yakamashii."},
+    {"en": "My parents are strict about studying.", "ja": "両親は勉強にやかましい。", "kana": "りょうしん は べんきょう に やかましい。", "ro": "ryoushin wa benkyou ni yakamashii."},
+    {"en": "It’s too noisy to talk here.", "ja": "ここはやかましくて話せない。", "kana": "ここ は やかましくて はなせない。", "ro": "koko wa yakamashikute hanasenai."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-110",
+  "ja": "まぎらわしい",
+  "kana": "まぎらわしい",
+  "ro": "magirawashii",
+  "en": "confusing / misleading / ambiguous",
+  "examples": [
+    {"en": "These two words are confusing.", "ja": "この二つの言葉はまぎらわしい。", "kana": "この ふたつ の ことば は まぎらわしい。", "ro": "kono futatsu no kotoba wa magirawashii."},
+    {"en": "His explanation was misleading.", "ja": "彼の説明はまぎらわしかった。", "kana": "かれ の せつめい は まぎらわしかった。", "ro": "kare no setsumei wa magirawashikatta."},
+    {"en": "This sign is confusing.", "ja": "この標識はまぎらわしい。", "kana": "この ひょうしき は まぎらわしい。", "ro": "kono hyoushiki wa magirawashii."},
+    {"en": "The names are similar and confusing.", "ja": "名前が似ていてまぎらわしい。", "kana": "なまえ が にて いて まぎらわしい。", "ro": "namae ga nite ite magirawashii."},
+    {"en": "It’s easy to misunderstand this sentence.", "ja": "この文はまぎらわしい表現だ。", "kana": "この ぶん は まぎらわしい ひょうげん だ。", "ro": "kono bun wa magirawashii hyougen da."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-111",
+  "ja": "こころづよい",
+  "kana": "こころづよい",
+  "ro": "kokorozuyoi",
+  "en": "reassuring / encouraging / comforting",
+  "examples": [
+    {"en": "Your words made me feel encouraged.", "ja": "あなたの言葉でこころづよくなった。", "kana": "あなた の ことば で こころづよく なった。", "ro": "anata no kotoba de kokorozuyoku natta."},
+    {"en": "He’s a reliable friend.", "ja": "彼はこころづよい友人だ。", "kana": "かれ は こころづよい ゆうじん だ。", "ro": "kare wa kokorozuyoi yuujin da."},
+    {"en": "Having you by my side is reassuring.", "ja": "あなたがそばにいるとこころづよい。", "kana": "あなた が そば に いる と こころづよい。", "ro": "anata ga soba ni iru to kokorozuyoi."},
+    {"en": "Your support was really helpful.", "ja": "あなたの支えがこころづよかった。", "kana": "あなた の ささえ が こころづよかった。", "ro": "anata no sasae ga kokorozuyokatta."},
+    {"en": "His presence makes me feel at ease.", "ja": "彼がいるとこころづよい。", "kana": "かれ が いる と こころづよい。", "ro": "kare ga iru to kokorozuyoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-112",
+  "ja": "まちどおしい",
+  "kana": "まちどおしい",
+  "ro": "machidooshii",
+  "en": "long-awaited / eagerly awaited",
+  "examples": [
+    {"en": "I can’t wait for the weekend.", "ja": "週末がまちどおしい。", "kana": "しゅうまつ が まちどおしい。", "ro": "shuumatsu ga machidooshii."},
+    {"en": "I’m looking forward to seeing you.", "ja": "あなたに会うのがまちどおしい。", "kana": "あなた に あう の が まちどおしい。", "ro": "anata ni au no ga machidooshii."},
+    {"en": "The festival is long-awaited.", "ja": "祭りの日がまちどおしい。", "kana": "まつり の ひ が まちどおしい。", "ro": "matsuri no hi ga machidooshii."},
+    {"en": "The release of the movie is eagerly awaited.", "ja": "映画の公開がまちどおしい。", "kana": "えいが の こうかい が まちどおしい。", "ro": "eiga no koukai ga machidooshii."},
+    {"en": "I’m excited for spring to come.", "ja": "春の訪れがまちどおしい。", "kana": "はる の おとずれ が まちどおしい。", "ro": "haru no otozure ga machidooshii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-113",
+  "ja": "うすぐらい",
+  "kana": "うすぐらい",
+  "ro": "usugurai",
+  "en": "dim / gloomy / dusky",
+  "examples": [
+    {"en": "The room was dim.", "ja": "部屋はうすぐらかった。", "kana": "へや は うすぐらかった。", "ro": "heya wa usugurakatta."},
+    {"en": "It’s getting dark outside.", "ja": "外がうすぐらくなってきた。", "kana": "そと が うすぐらく なって きた。", "ro": "soto ga usuguraku natte kita."},
+    {"en": "The hallway was gloomy.", "ja": "廊下がうすぐらい。", "kana": "ろうか が うすぐらい。", "ro": "rouka ga usugurai."},
+    {"en": "I don’t like dim places.", "ja": "うすぐらい場所は苦手です。", "kana": "うすぐらい ばしょ は にがて です。", "ro": "usugurai basho wa nigate desu."},
+    {"en": "The forest was dark and quiet.", "ja": "森はうすぐらくて静かだった。", "kana": "もり は うすぐらくて しずか だった。", "ro": "mori wa usugurakute shizuka datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-114",
+  "ja": "まぶしい",
+  "kana": "まぶしい",
+  "ro": "mabushii",
+  "en": "bright / dazzling / radiant",
+  "examples": [
+    {"en": "The sun is too bright.", "ja": "太陽がまぶしい。", "kana": "たいよう が まぶしい。", "ro": "taiyou ga mabushii."},
+    {"en": "Her smile was dazzling.", "ja": "彼女の笑顔はまぶしかった。", "kana": "かのじょ の えがお は まぶしかった。", "ro": "kanojo no egao wa mabushikatta."},
+    {"en": "The light is too strong.", "ja": "光がまぶしすぎる。", "kana": "ひかり が まぶしすぎる。", "ro": "hikari ga mabushisugiru."},
+    {"en": "He looked at the dazzling sea.", "ja": "彼はまぶしい海を見つめた。", "kana": "かれ は まぶしい うみ を みつめた。", "ro": "kare wa mabushii umi o mitsumeta."},
+    {"en": "It was a bright and sunny day.", "ja": "まぶしい日差しの一日だった。", "kana": "まぶしい ひざし の いちにち だった。", "ro": "mabushii hizashi no ichinichi datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-115",
+  "ja": "まちがいない",
+  "kana": "まちがいない",
+  "ro": "machigainai",
+  "en": "certain / sure / no doubt",
+  "examples": [
+    {"en": "It’s certain that he’ll come.", "ja": "彼が来るのはまちがいない。", "kana": "かれ が くる の は まちがいない。", "ro": "kare ga kuru no wa machigainai."},
+    {"en": "There’s no doubt about it.", "ja": "それはまちがいない。", "kana": "それ は まちがいない。", "ro": "sore wa machigainai."},
+    {"en": "This is the right way.", "ja": "この道でまちがいない。", "kana": "この みち で まちがいない。", "ro": "kono michi de machigainai."},
+    {"en": "She’s definitely the best candidate.", "ja": "彼女が最適な候補でまちがいない。", "kana": "かのじょ が さいてき な こうほ で まちがいない。", "ro": "kanojo ga saiteki na kouho de machigainai."},
+    {"en": "It’s definitely going to rain.", "ja": "雨が降るのはまちがいない。", "kana": "あめ が ふる の は まちがいない。", "ro": "ame ga furu no wa machigainai."}
+  ],
+  "grammar": "Noun / が / い-Adjective（fixed expression）"
+},
+{
+  "id": "n2-iadj-116",
+  "ja": "みすぼらしい",
+  "kana": "みすぼらしい",
+  "ro": "misuborashii",
+  "en": "shabby / shabby-looking / poor-looking",
+  "examples": [
+    {"en": "He wore shabby clothes.", "ja": "彼はみすぼらしい服を着ていた。", "kana": "かれ は みすぼらしい ふく を きて いた。", "ro": "kare wa misuborashii fuku o kite ita."},
+    {"en": "The building looked shabby.", "ja": "その建物はみすぼらしかった。", "kana": "その たてもの は みすぼらしかった。", "ro": "sono tatemono wa misuborashikatta."},
+    {"en": "I saw a poor-looking man on the street.", "ja": "通りでみすぼらしい男を見た。", "kana": "とおり で みすぼらしい おとこ を みた。", "ro": "toori de misuborashii otoko o mita."},
+    {"en": "Don’t judge someone by their shabby clothes.", "ja": "みすぼらしい服で人を判断するな。", "kana": "みすぼらしい ふく で ひと を はんだん する な。", "ro": "misuborashii fuku de hito o handan suru na."},
+    {"en": "The house looked poor and old.", "ja": "その家はみすぼらしく見えた。", "kana": "その いえ は みすぼらしく みえた。", "ro": "sono ie wa misuborashiku mieta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-117",
+  "ja": "まがりくねった",
+  "kana": "まがりくねった",
+  "ro": "magarikunetta",
+  "en": "winding / meandering / crooked",
+  "examples": [
+    {"en": "The road was winding.", "ja": "道はまがりくねっていた。", "kana": "みち は まがりくねって いた。", "ro": "michi wa magarikunette ita."},
+    {"en": "It’s a winding mountain path.", "ja": "まがりくねった山道だ。", "kana": "まがりくねった やまみち だ。", "ro": "magarikunetta yamamichi da."},
+    {"en": "The river meanders through the valley.", "ja": "川が谷をまがりくねって流れている。", "kana": "かわ が たに を まがりくねって ながれて いる。", "ro": "kawa ga tani o magarikunette nagarete iru."},
+    {"en": "It was a long and winding road.", "ja": "長くまがりくねった道だった。", "kana": "ながく まがりくねった みち だった。", "ro": "nagaku magarikunetta michi datta."},
+    {"en": "The trail was narrow and winding.", "ja": "その小道は細くてまがりくねっていた。", "kana": "その こみち は ほそくて まがりくねって いた。", "ro": "sono komichi wa hosokute magarikunette ita."}
+  ],
+  "grammar": "Noun / が / Verb（used adjectivally）"
+},
+{
+  "id": "n2-iadj-118",
+  "ja": "なやましい",
+  "kana": "なやましい",
+  "ro": "nayamashii",
+  "en": "seductive / troubling / distressing",
+  "examples": [
+    {"en": "She gave a seductive look.", "ja": "彼女はなやましい視線を送った。", "kana": "かのじょ は なやましい しせん を おくった。", "ro": "kanojo wa nayamashii shisen o okutta."},
+    {"en": "He has troubling worries.", "ja": "彼はなやましい悩みを抱えている。", "kana": "かれ は なやましい なやみ を かかえて いる。", "ro": "kare wa nayamashii nayami o kakaete iru."},
+    {"en": "It’s a difficult and distressing problem.", "ja": "それはなやましい問題だ。", "kana": "それ は なやましい もんだい だ。", "ro": "sore wa nayamashii mondai da."},
+    {"en": "The atmosphere was strangely seductive.", "ja": "なやましい雰囲気が漂っていた。", "kana": "なやましい ふんいき が ただよって いた。", "ro": "nayamashii fun’iki ga tadayotte ita."},
+    {"en": "He’s in a troubling situation.", "ja": "彼はなやましい立場にいる。", "kana": "かれ は なやましい たちば に いる。", "ro": "kare wa nayamashii tachiba ni iru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-119",
+  "ja": "まがまがしい",
+  "kana": "まがまがしい",
+  "ro": "magamagashii",
+  "en": "ominous / sinister / evil-looking",
+  "examples": [
+    {"en": "An ominous shadow appeared.", "ja": "まがまがしい影が現れた。", "kana": "まがまがしい かげ が あらわれた。", "ro": "magamagashii kage ga arawareta."},
+    {"en": "It was an evil-looking object.", "ja": "それはまがまがしい物体だった。", "kana": "それ は まがまがしい ぶったい だった。", "ro": "sore wa magamagashii buttai datta."},
+    {"en": "He heard a sinister voice.", "ja": "まがまがしい声が聞こえた。", "kana": "まがまがしい こえ が きこえた。", "ro": "magamagashii koe ga kikoeta."},
+    {"en": "An ominous feeling filled the air.", "ja": "まがまがしい気配が漂っていた。", "kana": "まがまがしい けはい が ただよって いた。", "ro": "magamagashii kehai ga tadayotte ita."},
+    {"en": "The painting has a dark, sinister tone.", "ja": "その絵はまがまがしい雰囲気を持っている。", "kana": "その え は まがまがしい ふんいき を もって いる。", "ro": "sono e wa magamagashii fun’iki o motte iru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-120",
+  "ja": "あやうい",
+  "kana": "あやうい",
+  "ro": "ayaui",
+  "en": "dangerous / risky / critical",
+  "examples": [
+    {"en": "It was a dangerous situation.", "ja": "あやうい状況だった。", "kana": "あやうい じょうきょう だった。", "ro": "ayaui joukyou datta."},
+    {"en": "The car almost hit the wall.", "ja": "車が壁にぶつかりそうであやうかった。", "kana": "くるま が かべ に ぶつかりそう で あやうかった。", "ro": "kuruma ga kabe ni butsukarisou de ayaukata."},
+    {"en": "His life was in danger.", "ja": "彼の命はあやうかった。", "kana": "かれ の いのち は あやうかった。", "ro": "kare no inochi wa ayaukata."},
+    {"en": "We avoided a risky decision.", "ja": "あやうい判断を避けた。", "kana": "あやうい はんだん を さけた。", "ro": "ayaui handan o saketa."},
+    {"en": "It was a close call.", "ja": "あやういところで助かった。", "kana": "あやうい ところ で たすかった。", "ro": "ayaui tokoro de tasukatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-121",
+  "ja": "あやしい",
+  "kana": "あやしい",
+  "ro": "ayashii",
+  "en": "suspicious / doubtful / shady",
+  "examples": [
+    {"en": "There’s a suspicious man outside.", "ja": "外にあやしい男がいる。", "kana": "そと に あやしい おとこ が いる。", "ro": "soto ni ayashii otoko ga iru."},
+    {"en": "His story sounds suspicious.", "ja": "彼の話はあやしい。", "kana": "かれ の はなし は あやしい。", "ro": "kare no hanashi wa ayashii."},
+    {"en": "This website looks shady.", "ja": "このウェブサイトはあやしい。", "kana": "この うぇぶさいと は あやしい。", "ro": "kono webusaito wa ayashii."},
+    {"en": "He made a doubtful claim.", "ja": "彼はあやしい主張をした。", "kana": "かれ は あやしい しゅちょう を した。", "ro": "kare wa ayashii shuchou o shita."},
+    {"en": "That’s a suspicious smell.", "ja": "あやしいにおいがする。", "kana": "あやしい におい が する。", "ro": "ayashii nioi ga suru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-122",
+  "ja": "おそろしい",
+  "kana": "おそろしい",
+  "ro": "osoroshii",
+  "en": "terrible / dreadful / fearful",
+  "examples": [
+    {"en": "It was a terrible accident.", "ja": "おそろしい事故だった。", "kana": "おそろしい じこ だった。", "ro": "osoroshii jiko datta."},
+    {"en": "He has an awful temper.", "ja": "彼はおそろしい性格をしている。", "kana": "かれ は おそろしい せいかく を して いる。", "ro": "kare wa osoroshii seikaku o shite iru."},
+    {"en": "That was a terrifying experience.", "ja": "それはおそろしい体験だった。", "kana": "それ は おそろしい たいけん だった。", "ro": "sore wa osoroshii taiken datta."},
+    {"en": "An awful storm is coming.", "ja": "おそろしい嵐が近づいている。", "kana": "おそろしい あらし が ちかづいて いる。", "ro": "osoroshii arashi ga chikazuite iru."},
+    {"en": "The movie was frightening.", "ja": "その映画はおそろしかった。", "kana": "その えいが は おそろしかった。", "ro": "sono eiga wa osoroshikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-123",
+  "ja": "うとい",
+  "kana": "うとい",
+  "ro": "utoi",
+  "en": "ignorant / unfamiliar with / estranged",
+  "examples": [
+    {"en": "I’m unfamiliar with computers.", "ja": "私はコンピューターにうとい。", "kana": "わたし は こんぴゅーたー に うとい。", "ro": "watashi wa konpyuutaa ni utoi."},
+    {"en": "He’s ignorant about politics.", "ja": "彼は政治にうとい。", "kana": "かれ は せいじ に うとい。", "ro": "kare wa seiji ni utoi."},
+    {"en": "She’s not familiar with current trends.", "ja": "彼女は最近の流行にうとい。", "kana": "かのじょ は さいきん の りゅうこう に うとい。", "ro": "kanojo wa saikin no ryuukou ni utoi."},
+    {"en": "He is estranged from his relatives.", "ja": "彼は親戚にうとくなった。", "kana": "かれ は しんせき に うとく なった。", "ro": "kare wa shinseki ni utoku natta."},
+    {"en": "I’m not good at socializing.", "ja": "私は人付き合いにうとい。", "kana": "わたし は ひとづきあい に うとい。", "ro": "watashi wa hitozukiai ni utoi."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-124",
+  "ja": "くどい",
+  "kana": "くどい",
+  "ro": "kudoi",
+  "en": "verbose / heavy (taste) / persistent",
+  "examples": [
+    {"en": "His explanation was too long-winded.", "ja": "彼の説明はくどい。", "kana": "かれ の せつめい は くどい。", "ro": "kare no setsumei wa kudoi."},
+    {"en": "This sauce is too rich.", "ja": "このソースはくどい味だ。", "kana": "この そーす は くどい あじ だ。", "ro": "kono soosu wa kudoi aji da."},
+    {"en": "He’s being too persistent.", "ja": "彼はくどく頼んできた。", "kana": "かれ は くどく たのんで きた。", "ro": "kare wa kudoku tanonde kita."},
+    {"en": "I got tired of his long speech.", "ja": "彼の長い話にくどさを感じた。", "kana": "かれ の ながい はなし に くどさ を かんじた。", "ro": "kare no nagai hanashi ni kudosa o kanjita."},
+    {"en": "Her perfume is too strong.", "ja": "彼女の香水はくどい。", "kana": "かのじょ の こうすい は くどい。", "ro": "kanojo no kousui wa kudoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-125",
+  "ja": "けわしい",
+  "kana": "けわしい",
+  "ro": "kewashii",
+  "en": "steep / rugged / severe / grim",
+  "examples": [
+    {"en": "The mountain path was steep.", "ja": "山道はけわしかった。", "kana": "やまみち は けわしかった。", "ro": "yamamichi wa kewashikatta."},
+    {"en": "He gave me a stern look.", "ja": "彼はけわしい表情をした。", "kana": "かれ は けわしい ひょうじょう を した。", "ro": "kare wa kewashii hyoujou o shita."},
+    {"en": "The competition is fierce.", "ja": "競争がけわしい。", "kana": "きょうそう が けわしい。", "ro": "kyousou ga kewashii."},
+    {"en": "The climb was steep and difficult.", "ja": "登山道はけわしくて危険だった。", "kana": "とざんどう は けわしくて きけん だった。", "ro": "tozandou wa kewashikute kiken datta."},
+    {"en": "He has a grim expression.", "ja": "彼の顔はけわしい。", "kana": "かれ の かお は けわしい。", "ro": "kare no kao wa kewashii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-126",
+  "ja": "すばやい",
+  "kana": "すばやい",
+  "ro": "subayai",
+  "en": "quick / prompt / agile",
+  "examples": [
+    {"en": "He made a quick decision.", "ja": "彼はすばやい決断をした。", "kana": "かれ は すばやい けつだん を した。", "ro": "kare wa subayai ketsudan o shita."},
+    {"en": "The response was prompt.", "ja": "対応がすばやかった。", "kana": "たいおう が すばやかった。", "ro": "taiou ga subayakatta."},
+    {"en": "She moves very quickly.", "ja": "彼女は動きがすばやい。", "kana": "かのじょ は うごき が すばやい。", "ro": "kanojo wa ugoki ga subayai."},
+    {"en": "He quickly avoided the obstacle.", "ja": "彼はすばやく障害をよけた。", "kana": "かれ は すばやく しょうがい を よけた。", "ro": "kare wa subayaku shougai o yoketa."},
+    {"en": "I admire her quick thinking.", "ja": "彼女のすばやい判断を尊敬する。", "kana": "かのじょ の すばやい はんだん を そんけい する。", "ro": "kanojo no subayai handan o sonkei suru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-127",
+  "ja": "なつっこい",
+  "kana": "なつっこい",
+  "ro": "natsukkoi",
+  "en": "friendly / affectionate / sociable",
+  "examples": [
+    {"en": "That dog is very friendly.", "ja": "その犬はなつっこい。", "kana": "その いぬ は なつっこい。", "ro": "sono inu wa natsukkoi."},
+    {"en": "She’s a sociable person.", "ja": "彼女はなつっこい性格だ。", "kana": "かのじょ は なつっこい せいかく だ。", "ro": "kanojo wa natsukkoi seikaku da."},
+    {"en": "The child smiled in a friendly way.", "ja": "その子はなつっこく笑った。", "kana": "その こ は なつっこく わらった。", "ro": "sono ko wa natsukkoku waratta."},
+    {"en": "The cat quickly got attached to me.", "ja": "猫はすぐになつっこくなった。", "kana": "ねこ は すぐ に なつっこく なった。", "ro": "neko wa sugu ni natsukkoku natta."},
+    {"en": "He’s friendly to everyone.", "ja": "彼は誰にでもなつっこい。", "kana": "かれ は だれ に でも なつっこい。", "ro": "kare wa dare ni demo natsukkoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-128",
+  "ja": "しつこい",
+  "kana": "しつこい",
+  "ro": "shitsukoi",
+  "en": "persistent / insistent / rich (flavor)",
+  "examples": [
+    {"en": "He’s too persistent.", "ja": "彼はしつこい。", "kana": "かれ は しつこい。", "ro": "kare wa shitsukoi."},
+    {"en": "That salesman was really insistent.", "ja": "そのセールスマンはしつこかった。", "kana": "その せーるすまん は しつこかった。", "ro": "sono seerusuman wa shitsukokatta."},
+    {"en": "This food is too rich for me.", "ja": "この料理はしつこい味だ。", "kana": "この りょうり は しつこい あじ だ。", "ro": "kono ryouri wa shitsukoi aji da."},
+    {"en": "He kept asking the same question.", "ja": "彼は同じ質問をしつこく聞いた。", "kana": "かれ は おなじ しつもん を しつこく きいた。", "ro": "kare wa onaji shitsumon o shitsukoku kiita."},
+    {"en": "She’s persistent but in a good way.", "ja": "彼女はいい意味でしつこい。", "kana": "かのじょ は いい いみ で しつこい。", "ro": "kanojo wa ii imi de shitsukoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-129",
+  "ja": "すがすがしい",
+  "kana": "すがすがしい",
+  "ro": "sugasugashii",
+  "en": "refreshing / clear / brisk",
+  "examples": [
+    {"en": "The morning air feels refreshing.", "ja": "朝の空気がすがすがしい。", "kana": "あさ の くうき が すがすがしい。", "ro": "asa no kuuki ga sugasugashii."},
+    {"en": "She greeted me with a refreshing smile.", "ja": "彼女はすがすがしい笑顔であいさつした。", "kana": "かのじょ は すがすがしい えがお で あいさつ した。", "ro": "kanojo wa sugasugashii egao de aisatsu shita."},
+    {"en": "After the rain, the air was refreshing.", "ja": "雨のあと、空気がすがすがしかった。", "kana": "あめ の あと、 くうき が すがすがしかった。", "ro": "ame no ato, kuuki ga sugasugashikatta."},
+    {"en": "The speech gave a refreshing impression.", "ja": "そのスピーチはすがすがしい印象を与えた。", "kana": "その すぴーち は すがすがしい いんしょう を あたえた。", "ro": "sono supiichi wa sugasugashii inshou o ataeta."},
+    {"en": "His attitude was honest and refreshing.", "ja": "彼の態度は正直ですがすがしかった。", "kana": "かれ の たいど は しょうじき で すがすがしかった。", "ro": "kare no taido wa shoujiki de sugasugashikatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-130",
+  "ja": "そそっかしい",
+  "kana": "そそっかしい",
+  "ro": "sosokkashii",
+  "en": "careless / hasty / scatterbrained",
+  "examples": [
+    {"en": "He’s a bit careless.", "ja": "彼はそそっかしい人です。", "kana": "かれ は そそっかしい ひと です。", "ro": "kare wa sosokkashii hito desu."},
+    {"en": "She made a careless mistake.", "ja": "彼女はそそっかしい間違いをした。", "kana": "かのじょ は そそっかしい まちがい を した。", "ro": "kanojo wa sosokkashii machigai o shita."},
+    {"en": "Don’t be so hasty.", "ja": "そんなにそそっかしくしないでください。", "kana": "そんな に そそっかしく しないで ください。", "ro": "sonna ni sosokkashiku shinaide kudasai."},
+    {"en": "He tends to drop things.", "ja": "彼はそそっかしくて物をよく落とす。", "kana": "かれ は そそっかしくて もの を よく おとす。", "ro": "kare wa sosokkashikute mono o yoku otosu."},
+    {"en": "I’m clumsy sometimes.", "ja": "私は時々そそっかしいです。", "kana": "わたし は ときどき そそっかしい です。", "ro": "watashi wa tokidoki sosokkashii desu."}
+  ],
+  "grammar": "Noun / は / い-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-131",
+  "ja": "やかましい",
+  "kana": "やかましい",
+  "ro": "yakamashii",
+  "en": "noisy / fussy / strict",
+  "examples": [
+    {"en": "This street is noisy.", "ja": "この通りはやかましい。", "kana": "この とおり は やかましい。", "ro": "kono toori wa yakamashii."},
+    {"en": "My boss is strict about rules.", "ja": "上司は規則にやかましい。", "kana": "じょうし は きそく に やかましい。", "ro": "joushi wa kisoku ni yakamashii."},
+    {"en": "The neighbors are fussy.", "ja": "近所の人はやかましい。", "kana": "きんじょ の ひと は やかましい。", "ro": "kinjo no hito wa yakamashii."},
+    {"en": "The teacher is strict with homework.", "ja": "先生は宿題にやかましい。", "kana": "せんせい は しゅくだい に やかましい。", "ro": "sensei wa shukudai ni yakamashii."},
+    {"en": "The children were noisy during class.", "ja": "授業中に子どもたちがやかましかった。", "kana": "じゅぎょうちゅう に こどもたち が やかましかった。", "ro": "jugyouchuu ni kodomotachi ga yakamashikatta."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-132",
+  "ja": "なまぬるい",
+  "kana": "なまぬるい",
+  "ro": "namanurui",
+  "en": "lukewarm / half-hearted",
+  "examples": [
+    {"en": "This soup is lukewarm.", "ja": "このスープはなまぬるい。", "kana": "この すーぷ は なまぬるい。", "ro": "kono suupu wa namanurui."},
+    {"en": "The water was lukewarm.", "ja": "水がなまぬるかった。", "kana": "みず が なまぬるかった。", "ro": "mizu ga namanurukatta."},
+    {"en": "He has a half-hearted attitude.", "ja": "彼はなまぬるい態度をとった。", "kana": "かれ は なまぬるい たいど を とった。", "ro": "kare wa namanurui taido o totta."},
+    {"en": "The bath felt lukewarm.", "ja": "お風呂がなまぬるく感じた。", "kana": "おふろ が なまぬるく かんじた。", "ro": "ofuro ga namanuruku kanjita."},
+    {"en": "His efforts are lukewarm.", "ja": "彼の努力はなまぬるい。", "kana": "かれ の どりょく は なまぬるい。", "ro": "kare no doryoku wa namanurui."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-133",
+  "ja": "なつかしい",
+  "kana": "なつかしい",
+  "ro": "natsukashii",
+  "en": "nostalgic / dear / fond",
+  "examples": [
+    {"en": "This song is nostalgic.", "ja": "この歌はなつかしい。", "kana": "この うた は なつかしい。", "ro": "kono uta wa natsukashii."},
+    {"en": "I remember those days fondly.", "ja": "あの頃がなつかしい。", "kana": "あの ころ が なつかしい。", "ro": "ano koro ga natsukashii."},
+    {"en": "I met an old friend from school.", "ja": "学校の友達に会ってなつかしかった。", "kana": "がっこう の ともだち に あって なつかしかった。", "ro": "gakkou no tomodachi ni atte natsukashikatta."},
+    {"en": "That smell is familiar and nostalgic.", "ja": "なつかしいにおいがする。", "kana": "なつかしい におい が する。", "ro": "natsukashii nioi ga suru."},
+    {"en": "It reminds me of my hometown.", "ja": "ふるさとを思い出してなつかしい気持ちになる。", "kana": "ふるさと を おもいだして なつかしい きもち に なる。", "ro": "furusato o omoidashite natsukashii kimochi ni naru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-134",
+  "ja": "こころづよい",
+  "kana": "こころづよい",
+  "ro": "kokorozuyoi",
+  "en": "reassuring / heartening / encouraging",
+  "examples": [
+    {"en": "Your words are reassuring.", "ja": "あなたの言葉はこころづよい。", "kana": "あなた の ことば は こころづよい。", "ro": "anata no kotoba wa kokorozuyoi."},
+    {"en": "Having a friend like you is reassuring.", "ja": "あなたのような友達がいてこころづよい。", "kana": "あなた の ような ともだち が いて こころづよい。", "ro": "anata no youna tomodachi ga ite kokorozuyoi."},
+    {"en": "It’s encouraging to have support.", "ja": "支えてくれる人がいるのはこころづよい。", "kana": "ささえて くれる ひと が いる の は こころづよい。", "ro": "sasaete kureru hito ga iru no wa kokorozuyoi."},
+    {"en": "His words made me feel encouraged.", "ja": "彼の言葉を聞いてこころづよくなった。", "kana": "かれ の ことば を きいて こころづよく なった。", "ro": "kare no kotoba o kiite kokorozuyoku natta."},
+    {"en": "It was heartening to see him smile.", "ja": "彼の笑顔を見てこころづよかった。", "kana": "かれ の えがお を みて こころづよかった。", "ro": "kare no egao o mite kokorozuyokatta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-135",
+  "ja": "こころぼそい",
+  "kana": "こころぼそい",
+  "ro": "kokorobosoi",
+  "en": "lonely / helpless / uneasy",
+  "examples": [
+    {"en": "I feel lonely at night.", "ja": "夜になるとこころぼそい。", "kana": "よる に なる と こころぼそい。", "ro": "yoru ni naru to kokorobosoi."},
+    {"en": "I felt uneasy walking alone.", "ja": "一人で歩くのはこころぼそかった。", "kana": "ひとり で あるく の は こころぼそかった。", "ro": "hitori de aruku no wa kokorobosokatta."},
+    {"en": "I felt helpless after moving away.", "ja": "引っ越してからこころぼそく感じた。", "kana": "ひっこして から こころぼそく かんじた。", "ro": "hikkoshite kara kokorobosoku kanjita."},
+    {"en": "He looked lonely after the meeting.", "ja": "会議のあと、彼はこころぼそそうだった。", "kana": "かいぎ の あと、 かれ は こころぼそそう だった。", "ro": "kaigi no ato, kare wa kokorobosou datta."},
+    {"en": "I feel uneasy when I’m alone.", "ja": "一人になるとこころぼそい気持ちになる。", "kana": "ひとり に なる と こころぼそい きもち に なる。", "ro": "hitori ni naru to kokorobosoi kimochi ni naru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-136",
+  "ja": "こころよい",
+  "kana": "こころよい",
+  "ro": "kokoroyoi",
+  "en": "pleasant / agreeable / willing",
+  "examples": [
+    {"en": "He gave a pleasant reply.", "ja": "彼はこころよく返事をした。", "kana": "かれ は こころよく へんじ を した。", "ro": "kare wa kokoroyoku henji o shita."},
+    {"en": "She accepted it willingly.", "ja": "彼女はこころよく受け入れた。", "kana": "かのじょ は こころよく うけいれた。", "ro": "kanojo wa kokoroyoku ukeireta."},
+    {"en": "The wind felt pleasant.", "ja": "風がこころよい。", "kana": "かぜ が こころよい。", "ro": "kaze ga kokoroyoi."},
+    {"en": "It was a pleasant morning.", "ja": "こころよい朝だった。", "kana": "こころよい あさ だった。", "ro": "kokoroyoi asa datta."},
+    {"en": "He agreed with a pleasant smile.", "ja": "彼はこころよい笑顔で同意した。", "kana": "かれ は こころよい えがお で どうい した。", "ro": "kare wa kokoroyoi egao de doui shita."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-137",
+  "ja": "ありがたい",
+  "kana": "ありがたい",
+  "ro": "arigatai",
+  "en": "grateful / thankful / appreciated",
+  "examples": [
+    {"en": "I’m very grateful for your help.", "ja": "あなたの助けがありがたいです。", "kana": "あなた の たすけ が ありがたい です。", "ro": "anata no tasuke ga arigatai desu."},
+    {"en": "It’s kind of you to say so.", "ja": "そう言ってくれてありがたいです。", "kana": "そう いって くれて ありがたい です。", "ro": "sou itte kurete arigatai desu."},
+    {"en": "I would appreciate your understanding.", "ja": "ご理解いただけるとありがたいです。", "kana": "ごりかい いただける と ありがたい です。", "ro": "gorikai itadakeru to arigatai desu."},
+    {"en": "I’m thankful for your support.", "ja": "あなたの支援にありがたく思います。", "kana": "あなた の しえん に ありがたく おもいます。", "ro": "anata no shien ni arigataku omoimasu."},
+    {"en": "I’m grateful to be healthy.", "ja": "健康でいられることがありがたいです。", "kana": "けんこう で いられる こと が ありがたい です。", "ro": "kenkou de irareru koto ga arigatai desu."}
+  ],
+  "grammar": "Noun / が / い-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-138",
+  "ja": "あわただしい",
+  "kana": "あわただしい",
+  "ro": "awatadashii",
+  "en": "busy / hurried / hectic",
+  "examples": [
+    {"en": "I had a busy morning.", "ja": "今朝はあわただしかった。", "kana": "けさ は あわただしかった。", "ro": "kesa wa awatadashikatta."},
+    {"en": "The store was very busy.", "ja": "店はあわただしい様子だった。", "kana": "みせ は あわただしい ようす だった。", "ro": "mise wa awatadashii yousu datta."},
+    {"en": "He left in a hurry.", "ja": "彼はあわただしく出て行った。", "kana": "かれ は あわただしく でて いった。", "ro": "kare wa awatadashiku dete itta."},
+    {"en": "I spent a hectic day.", "ja": "あわただしい一日を過ごした。", "kana": "あわただしい いちにち を すごした。", "ro": "awatadashii ichinichi o sugoshita."},
+    {"en": "My life has been very hectic lately.", "ja": "最近はあわただしい生活が続いている。", "kana": "さいきん は あわただしい せいかつ が つづいて いる。", "ro": "saikin wa awatadashii seikatsu ga tsuzuite iru."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-139",
+  "ja": "いさましい",
+  "kana": "いさましい",
+  "ro": "isamashii",
+  "en": "brave / gallant / manly",
+  "examples": [
+    {"en": "He is a brave man.", "ja": "彼はいさましい人です。", "kana": "かれ は いさましい ひと です。", "ro": "kare wa isamashii hito desu."},
+    {"en": "The firefighter’s actions were brave.", "ja": "消防士の行動はいさましかった。", "kana": "しょうぼうし の こうどう は いさましかった。", "ro": "shouboushi no koudou wa isamashikatta."},
+    {"en": "She looked gallant in uniform.", "ja": "彼女は制服姿がいさましい。", "kana": "かのじょ は せいふく すがた が いさましい。", "ro": "kanojo wa seifuku sugata ga isamashii."},
+    {"en": "The soldier stood bravely.", "ja": "兵士はいさましく立っていた。", "kana": "へいし は いさましく たって いた。", "ro": "heishi wa isamashiku tatte ita."},
+    {"en": "He has a gallant attitude.", "ja": "彼はいさましい態度を見せた。", "kana": "かれ は いさましい たいど を みせた。", "ro": "kare wa isamashii taido o miseta."}
+  ],
+  "grammar": "Noun / は / い-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-140",
+  "ja": "うたがわしい",
+  "kana": "うたがわしい",
+  "ro": "utagawashii",
+  "en": "doubtful / suspicious / questionable",
+  "examples": [
+    {"en": "His statement is doubtful.", "ja": "彼の発言はうたがわしい。", "kana": "かれ の はつげん は うたがわしい。", "ro": "kare no hatsugen wa utagawashii."},
+    {"en": "It’s a suspicious deal.", "ja": "それはうたがわしい取引だ。", "kana": "それ は うたがわしい とりひき だ。", "ro": "sore wa utagawashii torihiki da."},
+    {"en": "His excuse sounds questionable.", "ja": "彼の言い訳はうたがわしい。", "kana": "かれ の いいわけ は うたがわしい。", "ro": "kare no ii wake wa utagawashii."},
+    {"en": "The evidence is doubtful.", "ja": "その証拠はうたがわしい。", "kana": "その しょうこ は うたがわしい。", "ro": "sono shouko wa utagawashii."},
+    {"en": "His identity is suspicious.", "ja": "彼の身元はうたがわしい。", "kana": "かれ の みもと は うたがわしい。", "ro": "kare no mimoto wa utagawashii."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-141",
+  "ja": "きよい",
+  "kana": "きよい",
+  "ro": "kiyoi",
+  "en": "pure / clean / clear",
+  "examples": [
+    {"en": "He has a pure heart.", "ja": "彼はきよい心を持っている。", "kana": "かれ は きよい こころ を もって いる。", "ro": "kare wa kiyoi kokoro o motte iru."},
+    {"en": "The water of the lake is clear.", "ja": "湖の水はきよい。", "kana": "みずうみ の みず は きよい。", "ro": "mizuumii no mizu wa kiyoi."},
+    {"en": "She lives a clean and honest life.", "ja": "彼女はきよい生活をしている。", "kana": "かのじょ は きよい せいかつ を して いる。", "ro": "kanojo wa kiyoi seikatsu o shite iru."},
+    {"en": "The air in the mountains is clean.", "ja": "山の空気はきよい。", "kana": "やま の くうき は きよい。", "ro": "yama no kuuki wa kiyoi."},
+    {"en": "She prayed with a pure heart.", "ja": "彼女はきよい心で祈った。", "kana": "かのじょ は きよい こころ で いのった。", "ro": "kanojo wa kiyoi kokoro de inotta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-142",
+  "ja": "おびただしい",
+  "kana": "おびただしい",
+  "ro": "obitadasii",
+  "en": "enormous / vast / countless",
+  "examples": [
+    {"en": "There was an enormous amount of blood.", "ja": "おびただしい血が流れていた。", "kana": "おびただしい ち が ながれて いた。", "ro": "obitadasii chi ga nagarete ita."},
+    {"en": "The city has countless lights.", "ja": "街にはおびただしい数の灯りがあった。", "kana": "まち には おびただしい かず の あかり が あった。", "ro": "machi ni wa obitadasii kazu no akari ga atta."},
+    {"en": "He made an enormous profit.", "ja": "彼はおびただしい利益を得た。", "kana": "かれ は おびただしい りえき を えた。", "ro": "kare wa obitadasii rieki o eta."},
+    {"en": "There were countless stars in the sky.", "ja": "空にはおびただしい星が輝いていた。", "kana": "そら には おびただしい ほし が かがやいて いた。", "ro": "sora ni wa obitadasii hoshi ga kagayaite ita."},
+    {"en": "He received an enormous amount of data.", "ja": "彼はおびただしい量のデータを受け取った。", "kana": "かれ は おびただしい りょう の でーた を うけとった。", "ro": "kare wa obitadasii ryou no deeta o uketotta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-143",
+  "ja": "おもいがけない",
+  "kana": "おもいがけない",
+  "ro": "omoigakenai",
+  "en": "unexpected / surprising / accidental",
+  "examples": [
+    {"en": "We met in an unexpected place.", "ja": "おもいがけない場所で会った。", "kana": "おもいがけない ばしょ で あった。", "ro": "omoigakenai basho de atta."},
+    {"en": "It was an unexpected result.", "ja": "おもいがけない結果になった。", "kana": "おもいがけない けっか に なった。", "ro": "omoigakenai kekka ni natta."},
+    {"en": "I received an unexpected gift.", "ja": "おもいがけないプレゼントをもらった。", "kana": "おもいがけない ぷれぜんと を もらった。", "ro": "omoigakenai purezento o moratta."},
+    {"en": "That was an unexpected incident.", "ja": "それはおもいがけない出来事だった。", "kana": "それ は おもいがけない できごと だった。", "ro": "sore wa omoigakenai dekigoto datta."},
+    {"en": "We had an unexpected visitor.", "ja": "おもいがけない客が来た。", "kana": "おもいがけない きゃく が きた。", "ro": "omoigakenai kyaku ga kita."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-144",
+  "ja": "おもたい",
+  "kana": "おもたい",
+  "ro": "omotai",
+  "en": "heavy / serious / slow",
+  "examples": [
+    {"en": "This box is heavy.", "ja": "この箱はおもたい。", "kana": "この はこ は おもたい。", "ro": "kono hako wa omotai."},
+    {"en": "My legs feel heavy.", "ja": "足がとてもおもたい。", "kana": "あし が とても おもたい。", "ro": "ashi ga totemo omotai."},
+    {"en": "He gave me a heavy look.", "ja": "彼はおもたい表情をしていた。", "kana": "かれ は おもたい ひょうじょう を して いた。", "ro": "kare wa omotai hyoujou o shite ita."},
+    {"en": "The atmosphere was heavy.", "ja": "会議の雰囲気がおもたかった。", "kana": "かいぎ の ふんいき が おもたかった。", "ro": "kaigi no fun'iki ga omotakatta."},
+    {"en": "His words carried a heavy meaning.", "ja": "彼の言葉はおもたい意味を持っていた。", "kana": "かれ の ことば は おもたい いみ を もって いた。", "ro": "kare no kotoba wa omotai imi o motte ita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-145",
+  "ja": "かしこい",
+  "kana": "かしこい",
+  "ro": "kashikoi",
+  "en": "wise / clever / smart",
+  "examples": [
+    {"en": "He is a wise person.", "ja": "彼はかしこい人です。", "kana": "かれ は かしこい ひと です。", "ro": "kare wa kashikoi hito desu."},
+    {"en": "Dogs are very smart animals.", "ja": "犬はとてもかしこい動物です。", "kana": "いぬ は とても かしこい どうぶつ です。", "ro": "inu wa totemo kashikoi doubutsu desu."},
+    {"en": "She gave a clever answer.", "ja": "彼女はかしこい答えをした。", "kana": "かのじょ は かしこい こたえ を した。", "ro": "kanojo wa kashikoi kotae o shita."},
+    {"en": "Children can be surprisingly smart.", "ja": "子どもは思ったよりかしこい。", "kana": "こども は おもった より かしこい。", "ro": "kodomo wa omotta yori kashikoi."},
+    {"en": "He made a wise decision.", "ja": "彼はかしこい判断をした。", "kana": "かれ は かしこい はんだん を した。", "ro": "kare wa kashikoi handan o shita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-146",
+  "ja": "かたい",
+  "kana": "かたい",
+  "ro": "katai",
+  "en": "hard / firm / stiff / formal",
+  "examples": [
+    {"en": "This bread is hard.", "ja": "このパンはかたい。", "kana": "この ぱん は かたい。", "ro": "kono pan wa katai."},
+    {"en": "He has a stiff expression.", "ja": "彼はかたい表情をしている。", "kana": "かれ は かたい ひょうじょう を して いる。", "ro": "kare wa katai hyoujou o shite iru."},
+    {"en": "The ground is hard.", "ja": "地面がかたい。", "kana": "じめん が かたい。", "ro": "jimen ga katai."},
+    {"en": "He used formal language.", "ja": "彼はかたい言葉を使った。", "kana": "かれ は かたい ことば を つかった。", "ro": "kare wa katai kotoba o tsukatta."},
+    {"en": "The chair is made of hard wood.", "ja": "いすはかたい木でできている。", "kana": "いす は かたい き で できて いる。", "ro": "isu wa katai ki de dekite iru."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-147",
+  "ja": "かなしい",
+  "kana": "かなしい",
+  "ro": "kanashii",
+  "en": "sad / sorrowful",
+  "examples": [
+    {"en": "It’s a sad story.", "ja": "それはかなしい話です。", "kana": "それ は かなしい はなし です。", "ro": "sore wa kanashii hanashi desu."},
+    {"en": "I feel sad today.", "ja": "今日はかなしい気分です。", "kana": "きょう は かなしい きぶん です。", "ro": "kyou wa kanashii kibun desu."},
+    {"en": "He looked sad.", "ja": "彼はかなしい顔をしていた。", "kana": "かれ は かなしい かお を して いた。", "ro": "kare wa kanashii kao o shite ita."},
+    {"en": "It was sad to say goodbye.", "ja": "別れるのはかなしかった。", "kana": "わかれる の は かなしかった。", "ro": "wakareru no wa kanashikatta."},
+    {"en": "She cried with a sad voice.", "ja": "彼女はかなしい声で泣いた。", "kana": "かのじょ は かなしい こえ で ないた。", "ro": "kanojo wa kanashii koe de naita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-148",
+  "ja": "かしこまりない",
+  "kana": "かしこまりない",
+  "ro": "kashikomaranai",
+  "en": "informal / not strict / casual (polite)",
+  "examples": [
+    {"en": "Please feel free to speak casually.", "ja": "かしこまりないで話してください。", "kana": "かしこまりないで はなして ください。", "ro": "kashikomaranai de hanashite kudasai."},
+    {"en": "This is a casual meeting.", "ja": "これはかしこまりない会です。", "kana": "これ は かしこまりない かい です。", "ro": "kore wa kashikomaranai kai desu."},
+    {"en": "You don’t have to be formal.", "ja": "そんなにかしこまらなくていいですよ。", "kana": "そんな に かしこまらなくて いい です よ。", "ro": "sonna ni kashikomaranakute ii desu yo."},
+    {"en": "He spoke casually.", "ja": "彼はかしこまらずに話した。", "kana": "かれ は かしこまらず に はなした。", "ro": "kare wa kashikomarazu ni hanashita."},
+    {"en": "It was a relaxed conversation.", "ja": "かしこまりない会話でした。", "kana": "かしこまりない かいわ でした。", "ro": "kashikomaranai kaiwa deshita."}
+  ],
+  "grammar": "Verb / ない-form / polite expression"
+},
+{
+  "id": "n2-iadj-149",
+  "ja": "かゆい",
+  "kana": "かゆい",
+  "ro": "kayui",
+  "en": "itchy",
+  "examples": [
+    {"en": "My arm is itchy.", "ja": "腕がかゆい。", "kana": "うで が かゆい。", "ro": "ude ga kayui."},
+    {"en": "I scratched my itchy leg.", "ja": "かゆい足をかいた。", "kana": "かゆい あし を かいた。", "ro": "kayui ashi o kaita."},
+    {"en": "My back itches.", "ja": "背中がかゆい。", "kana": "せなか が かゆい。", "ro": "senaka ga kayui."},
+    {"en": "Mosquito bites are itchy.", "ja": "蚊に刺されてかゆい。", "kana": "か に さされて かゆい。", "ro": "ka ni sasarete kayui."},
+    {"en": "It’s itchy under my sweater.", "ja": "セーターの中がかゆい。", "kana": "せーたー の なか が かゆい。", "ro": "seetaa no naka ga kayui."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-150",
+  "ja": "かるい",
+  "kana": "かるい",
+  "ro": "karui",
+  "en": "light / easy / minor",
+  "examples": [
+    {"en": "This bag is light.", "ja": "このかばんはかるい。", "kana": "この かばん は かるい。", "ro": "kono kaban wa karui."},
+    {"en": "He has a light injury.", "ja": "彼はかるいけがをした。", "kana": "かれ は かるい けが を した。", "ro": "kare wa karui kega o shita."},
+    {"en": "I caught a mild cold.", "ja": "かるい風邪をひいた。", "kana": "かるい かぜ を ひいた。", "ro": "karui kaze o hiita."},
+    {"en": "Her voice is light and cheerful.", "ja": "彼女の声はかるい。", "kana": "かのじょ の こえ は かるい。", "ro": "kanojo no koe wa karui."},
+    {"en": "He speaks lightly of serious things.", "ja": "彼は重大なことをかるく言う。", "kana": "かれ は じゅうだい な こと を かるく いう。", "ro": "kare wa juudai na koto o karuku iu."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-151",
+  "ja": "きよらか",
+  "kana": "きよらか",
+  "ro": "kiyoraka",
+  "en": "pure / serene / immaculate",
+  "examples": [
+    {"en": "She has a pure heart.", "ja": "彼女はきよらかな心を持っている。", "kana": "かのじょ は きよらか な こころ を もって いる。", "ro": "kanojo wa kiyoraka na kokoro o motte iru."},
+    {"en": "The river water is clear.", "ja": "川の水がきよらかだ。", "kana": "かわ の みず が きよらか だ。", "ro": "kawa no mizu ga kiyoraka da."},
+    {"en": "It’s a serene morning.", "ja": "きよらかな朝を迎えた。", "kana": "きよらか な あさ を むかえた。", "ro": "kiyoraka na asa o mukaeta."},
+    {"en": "Her smile was pure and gentle.", "ja": "彼女の笑顔はきよらかだった。", "kana": "かのじょ の えがお は きよらか だった。", "ro": "kanojo no egao wa kiyoraka datta."},
+    {"en": "The temple atmosphere was serene.", "ja": "寺の雰囲気がきよらかだった。", "kana": "てら の ふんいき が きよらか だった。", "ro": "tera no fun’iki ga kiyoraka datta."}
+  ],
+  "grammar": "Noun / が / な-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-152",
+  "ja": "きよらしい",
+  "kana": "きよらしい",
+  "ro": "kiyorashii",
+  "en": "beautiful / graceful / pure (poetic)",
+  "examples": [
+    {"en": "She has a graceful appearance.", "ja": "彼女はきよらしい姿をしている。", "kana": "かのじょ は きよらしい すがた を して いる。", "ro": "kanojo wa kiyorashii sugata o shite iru."},
+    {"en": "Her smile is pure and beautiful.", "ja": "彼女の笑顔はきよらしい。", "kana": "かのじょ の えがお は きよらしい。", "ro": "kanojo no egao wa kiyorashii."},
+    {"en": "The landscape is beautiful.", "ja": "その風景はきよらしい。", "kana": "その ふうけい は きよらしい。", "ro": "sono fuukei wa kiyorashii."},
+    {"en": "Her manners are graceful.", "ja": "彼女の所作がきよらしい。", "kana": "かのじょ の しょさ が きよらしい。", "ro": "kanojo no shosa ga kiyorashii."},
+    {"en": "It’s a poem about pure beauty.", "ja": "これはきよらしい美しさを詠んだ詩だ。", "kana": "これ は きよらしい うつくしさ を よんだ し だ。", "ro": "kore wa kiyorashii utsukushisa o yonda shi da."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-153",
+  "ja": "くどい",
+  "kana": "くどい",
+  "ro": "kudoi",
+  "en": "verbose / heavy (taste) / persistent",
+  "examples": [
+    {"en": "His explanation is too long-winded.", "ja": "彼の説明はくどい。", "kana": "かれ の せつめい は くどい。", "ro": "kare no setsumei wa kudoi."},
+    {"en": "This sauce has a heavy taste.", "ja": "このソースは味がくどい。", "kana": "この そーす は あじ が くどい。", "ro": "kono soosu wa aji ga kudoi."},
+    {"en": "He’s persistent in asking questions.", "ja": "彼は質問がくどい。", "kana": "かれ は しつもん が くどい。", "ro": "kare wa shitsumon ga kudoi."},
+    {"en": "That perfume’s scent is too strong.", "ja": "あの香水は匂いがくどい。", "kana": "あの こうすい は におい が くどい。", "ro": "ano kousui wa nioi ga kudoi."},
+    {"en": "Don’t be so repetitive.", "ja": "そんなにくどく言わないで。", "kana": "そんな に くどく いわないで。", "ro": "sonna ni kudoku iwanaide."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-154",
+  "ja": "けわしい",
+  "kana": "けわしい",
+  "ro": "kewashii",
+  "en": "steep / severe / harsh",
+  "examples": [
+    {"en": "The mountain path is steep.", "ja": "山道はけわしい。", "kana": "やまみち は けわしい。", "ro": "yamamichi wa kewashii."},
+    {"en": "She has a stern look.", "ja": "彼女はけわしい表情をしている。", "kana": "かのじょ は けわしい ひょうじょう を して いる。", "ro": "kanojo wa kewashii hyoujou o shite iru."},
+    {"en": "The situation is difficult.", "ja": "状況はけわしい。", "kana": "じょうきょう は けわしい。", "ro": "joukyou wa kewashii."},
+    {"en": "We faced a harsh climb.", "ja": "けわしい登山だった。", "kana": "けわしい とざん だった。", "ro": "kewashii tozan datta."},
+    {"en": "He spoke with a strict tone.", "ja": "彼はけわしい口調で話した。", "kana": "かれ は けわしい くちょう で はなした。", "ro": "kare wa kewashii kuchou de hanashita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-155",
+  "ja": "こころづよい",
+  "kana": "こころづよい",
+  "ro": "kokorozuyoi",
+  "en": "reassuring / encouraging",
+  "examples": [
+    {"en": "Your words were reassuring.", "ja": "あなたの言葉がこころづよかった。", "kana": "あなた の ことば が こころづよかった。", "ro": "anata no kotoba ga kokorozuyokatta."},
+    {"en": "It’s reassuring to have you here.", "ja": "あなたがいてくれてこころづよい。", "kana": "あなた が いて くれて こころづよい。", "ro": "anata ga ite kurete kokorozuyoi."},
+    {"en": "Her presence is encouraging.", "ja": "彼女の存在はこころづよい。", "kana": "かのじょ の そんざい は こころづよい。", "ro": "kanojo no sonzai wa kokorozuyoi."},
+    {"en": "Having support is very reassuring.", "ja": "支えがあるのはこころづよい。", "kana": "ささえ が ある の は こころづよい。", "ro": "sasae ga aru no wa kokorozuyoi."},
+    {"en": "I feel encouraged by your smile.", "ja": "あなたの笑顔にこころづよくなった。", "kana": "あなた の えがお に こころづよく なった。", "ro": "anata no egao ni kokorozuyoku natta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-156",
+  "ja": "こころぼそい",
+  "kana": "こころぼそい",
+  "ro": "kokorobosoi",
+  "en": "lonely / helpless / uneasy",
+  "examples": [
+    {"en": "I feel lonely without you.", "ja": "あなたがいなくてこころぼそい。", "kana": "あなた が いなくて こころぼそい。", "ro": "anata ga inakute kokorobosoi."},
+    {"en": "Walking alone at night is scary.", "ja": "夜道を一人で歩くのはこころぼそい。", "kana": "よみち を ひとり で あるく の は こころぼそい。", "ro": "yomichi o hitori de aruku no wa kokorobosoi."},
+    {"en": "She looked uneasy.", "ja": "彼女はこころぼそい様子をしていた。", "kana": "かのじょ は こころぼそい ようす を して いた。", "ro": "kanojo wa kokorobosoi yousu o shite ita."},
+    {"en": "It’s lonely when no one understands you.", "ja": "誰にも理解されないのはこころぼそい。", "kana": "だれ にも りかい されない の は こころぼそい。", "ro": "dare ni mo rikai sarenai no wa kokorobosoi."},
+    {"en": "I feel uneasy in this dark place.", "ja": "この暗い場所にいるとこころぼそい。", "kana": "この くらい ばしょ に いる と こころぼそい。", "ro": "kono kurai basho ni iru to kokorobosoi."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-157",
+  "ja": "こまかい",
+  "kana": "こまかい",
+  "ro": "komakai",
+  "en": "detailed / fine / small",
+  "examples": [
+    {"en": "He pays attention to details.", "ja": "彼はこまかいところに気がつく。", "kana": "かれ は こまかい ところ に き が つく。", "ro": "kare wa komakai tokoro ni ki ga tsuku."},
+    {"en": "Please explain in detail.", "ja": "こまかく説明してください。", "kana": "こまかく せつめい して ください。", "ro": "komakaku setsumei shite kudasai."},
+    {"en": "This fabric has a fine pattern.", "ja": "この布はこまかい模様がある。", "kana": "この ぬの は こまかい もよう が ある。", "ro": "kono nuno wa komakai moyou ga aru."},
+    {"en": "He’s a person who’s picky about things.", "ja": "彼はこまかい性格だ。", "kana": "かれ は こまかい せいかく だ。", "ro": "kare wa komakai seikaku da."},
+    {"en": "There are fine scratches on the glass.", "ja": "ガラスにこまかい傷がある。", "kana": "がらす に こまかい きず が ある。", "ro": "garasu ni komakai kizu ga aru."}
+  ],
+  "grammar": "Noun / に / い-Adjective"
+},
+{
+  "id": "n2-iadj-158",
+  "ja": "こまやか",
+  "kana": "こまやか",
+  "ro": "komayaka",
+  "en": "tender / detailed / attentive",
+  "examples": [
+    {"en": "She has a tender heart.", "ja": "彼女はこまやかな心を持っている。", "kana": "かのじょ は こまやか な こころ を もって いる。", "ro": "kanojo wa komayaka na kokoro o motte iru."},
+    {"en": "He gives detailed attention.", "ja": "彼はこまやかな気配りをする。", "kana": "かれ は こまやか な きくばり を する。", "ro": "kare wa komayaka na kikubari o suru."},
+    {"en": "Her expression is full of subtle emotions.", "ja": "彼女の表情はこまやかだ。", "kana": "かのじょ の ひょうじょう は こまやか だ。", "ro": "kanojo no hyoujou wa komayaka da."},
+    {"en": "He expressed his gratitude in a delicate way.", "ja": "彼はこまやかに感謝を伝えた。", "kana": "かれ は こまやか に かんしゃ を つたえた。", "ro": "kare wa komayaka ni kansha o tsutaeta."},
+    {"en": "It’s a delicately drawn painting.", "ja": "それはこまやかに描かれた絵だ。", "kana": "それ は こまやか に えがかれた え だ。", "ro": "sore wa komayaka ni egakareta e da."}
+  ],
+  "grammar": "Noun / は / な-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-159",
+  "ja": "こわい",
+  "kana": "こわい",
+  "ro": "kowai",
+  "en": "scary / frightening / afraid",
+  "examples": [
+    {"en": "That movie is scary.", "ja": "あの映画はこわい。", "kana": "あの えいが は こわい。", "ro": "ano eiga wa kowai."},
+    {"en": "I’m afraid of ghosts.", "ja": "おばけがこわい。", "kana": "おばけ が こわい。", "ro": "obake ga kowai."},
+    {"en": "She looked scared.", "ja": "彼女はこわい顔をしていた。", "kana": "かのじょ は こわい かお を して いた。", "ro": "kanojo wa kowai kao o shite ita."},
+    {"en": "It was a frightening experience.", "ja": "こわい経験をした。", "kana": "こわい けいけん を した。", "ro": "kowai keiken o shita."},
+    {"en": "I’m scared of flying.", "ja": "飛行機に乗るのがこわい。", "kana": "ひこうき に のる の が こわい。", "ro": "hikouki ni noru no ga kowai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-160",
+  "ja": "こわもて",
+  "kana": "こわもて",
+  "ro": "kowamote",
+  "en": "stern-looking / tough-looking (expression)",
+  "examples": [
+    {"en": "He has a stern face.", "ja": "彼はこわもてだ。", "kana": "かれ は こわもて だ。", "ro": "kare wa kowamote da."},
+    {"en": "Despite his tough look, he’s kind.", "ja": "こわもてだが優しい人だ。", "kana": "こわもて だ が やさしい ひと だ。", "ro": "kowamote da ga yasashii hito da."},
+    {"en": "The boss looks strict.", "ja": "上司はこわもての印象だ。", "kana": "じょうし は こわもて の いんしょう だ。", "ro": "joushi wa kowamote no inshou da."},
+    {"en": "He spoke gently despite his stern look.", "ja": "こわもてなのに優しく話した。", "kana": "こわもて なのに やさしく はなした。", "ro": "kowamote nanoni yasashiku hanashita."},
+    {"en": "The man with a stern face entered the room.", "ja": "こわもての男が部屋に入った。", "kana": "こわもて の おとこ が へや に はいった。", "ro": "kowamote no otoko ga heya ni haitta."}
+  ],
+  "grammar": "Noun / は / な-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-161",
+  "ja": "さわがしい",
+  "kana": "さわがしい",
+  "ro": "sawagashii",
+  "en": "noisy / boisterous / turbulent",
+  "examples": [
+    {"en": "The classroom is noisy.", "ja": "教室がさわがしい。", "kana": "きょうしつ が さわがしい。", "ro": "kyoushitsu ga sawagashii."},
+    {"en": "The city was lively and noisy.", "ja": "町はさわがしくにぎやかだった。", "kana": "まち は さわがしく にぎやか だった。", "ro": "machi wa sawagashiku nigiyaka datta."},
+    {"en": "The media became noisy about the scandal.", "ja": "スキャンダルで世間がさわがしい。", "kana": "すきゃんだる で せけん が さわがしい。", "ro": "sukyandaru de seken ga sawagashii."},
+    {"en": "The festival was very lively.", "ja": "祭りの日はさわがしかった。", "kana": "まつり の ひ は さわがしかった。", "ro": "matsuri no hi wa sawagashikatta."},
+    {"en": "I can’t study because it’s too noisy.", "ja": "さわがしくて勉強できない。", "kana": "さわがしくて べんきょう できない。", "ro": "sawagashikute benkyou dekinai."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-162",
+  "ja": "しつこい",
+  "kana": "しつこい",
+  "ro": "shitsukoi",
+  "en": "persistent / insistent / rich (taste)",
+  "examples": [
+    {"en": "He keeps asking the same thing. He's persistent.", "ja": "彼は同じことを何度も聞いてしつこい。", "kana": "かれ は おなじ こと を なんども きいて しつこい。", "ro": "kare wa onaji koto o nando mo kiite shitsukoi."},
+    {"en": "This sauce has a strong taste.", "ja": "このソースは味がしつこい。", "kana": "この そーす は あじ が しつこい。", "ro": "kono soosu wa aji ga shitsukoi."},
+    {"en": "He’s being too insistent.", "ja": "しつこく頼まれて困った。", "kana": "しつこく たのまれて こまった。", "ro": "shitsukoku tanomarete komatta."},
+    {"en": "She’s a persistent salesperson.", "ja": "彼女はしつこい営業だった。", "kana": "かのじょ は しつこい えいぎょう だった。", "ro": "kanojo wa shitsukoi eigyou datta."},
+    {"en": "The smell is too strong and persistent.", "ja": "匂いがしつこすぎる。", "kana": "におい が しつこすぎる。", "ro": "nioi ga shitsukosugiru."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-163",
+  "ja": "しぶい",
+  "kana": "しぶい",
+  "ro": "shibui",
+  "en": "bitter / subdued / refined",
+  "examples": [
+    {"en": "This tea is bitter.", "ja": "このお茶はしぶい。", "kana": "この おちゃ は しぶい。", "ro": "kono ocha wa shibui."},
+    {"en": "He has a refined fashion sense.", "ja": "彼はしぶい服を着ている。", "kana": "かれ は しぶい ふく を きて いる。", "ro": "kare wa shibui fuku o kite iru."},
+    {"en": "That actor has a mature charm.", "ja": "あの俳優はしぶい魅力がある。", "kana": "あの はいゆう は しぶい みりょく が ある。", "ro": "ano haiyuu wa shibui miryoku ga aru."},
+    {"en": "He gave a subdued smile.", "ja": "彼はしぶい笑みを浮かべた。", "kana": "かれ は しぶい えみ を うかべた。", "ro": "kare wa shibui emi o ukabeta."},
+    {"en": "That’s a refined color choice.", "ja": "それはしぶい色の選択だ。", "kana": "それ は しぶい いろ の せんたく だ。", "ro": "sore wa shibui iro no sentaku da."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-164",
+  "ja": "すばやい",
+  "kana": "すばやい",
+  "ro": "subayai",
+  "en": "quick / agile / prompt",
+  "examples": [
+    {"en": "He made a quick decision.", "ja": "彼はすばやい判断をした。", "kana": "かれ は すばやい はんだん を した。", "ro": "kare wa subayai handan o shita."},
+    {"en": "The cat moved quickly.", "ja": "猫がすばやく動いた。", "kana": "ねこ が すばやく うごいた。", "ro": "neko ga subayaku ugoita."},
+    {"en": "She gave a quick response.", "ja": "彼女はすばやい返事をした。", "kana": "かのじょ は すばやい へんじ を した。", "ro": "kanojo wa subayai henji o shita."},
+    {"en": "He reacted promptly.", "ja": "彼はすばやく反応した。", "kana": "かれ は すばやく はんのう した。", "ro": "kare wa subayaku hannou shita."},
+    {"en": "I admire his quick thinking.", "ja": "彼のすばやい判断力に感心した。", "kana": "かれ の すばやい はんだんりょく に かんしん した。", "ro": "kare no subayai handanryoku ni kanshin shita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-165",
+  "ja": "ずうずうしい",
+  "kana": "ずうずうしい",
+  "ro": "zuuzuushii",
+  "en": "impudent / shameless / bold",
+  "examples": [
+    {"en": "He is shamelessly asking for more.", "ja": "彼はずうずうしくもっと要求している。", "kana": "かれ は ずうずうしく もっと ようきゅう して いる。", "ro": "kare wa zuuzuushiku motto youkyuu shite iru."},
+    {"en": "What a rude person!", "ja": "なんてずうずうしい人だ！", "kana": "なんて ずうずうしい ひと だ！", "ro": "nante zuuzuushii hito da!"},
+    {"en": "He shamelessly entered without permission.", "ja": "ずうずうしく無断で入った。", "kana": "ずうずうしく むだん で はいった。", "ro": "zuuzuushiku mudan de haitta."},
+    {"en": "It’s bold to say something like that.", "ja": "そんなことを言うなんてずうずうしい。", "kana": "そんな こと を いう なんて ずうずうしい。", "ro": "sonna koto o iu nante zuuzuushii."},
+    {"en": "He looked at me boldly.", "ja": "彼はずうずうしく私を見た。", "kana": "かれ は ずうずうしく わたし を みた。", "ro": "kare wa zuuzuushiku watashi o mita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-166",
+  "ja": "すがすがしい",
+  "kana": "すがすがしい",
+  "ro": "sugasugashii",
+  "en": "refreshing / brisk / clear (feeling)",
+  "examples": [
+    {"en": "It’s a refreshing morning.", "ja": "すがすがしい朝だ。", "kana": "すがすがしい あさ だ。", "ro": "sugasugashii asa da."},
+    {"en": "I feel refreshed after the walk.", "ja": "散歩してすがすがしい気分だ。", "kana": "さんぽ して すがすがしい きぶん だ。", "ro": "sanpo shite sugasugashii kibun da."},
+    {"en": "Her smile is refreshing.", "ja": "彼女の笑顔はすがすがしい。", "kana": "かのじょ の えがお は すがすがしい。", "ro": "kanojo no egao wa sugasugashii."},
+    {"en": "The air in the mountains is refreshing.", "ja": "山の空気はすがすがしい。", "kana": "やま の くうき は すがすがしい。", "ro": "yama no kuuki wa sugasugashii."},
+    {"en": "I felt a sense of clarity after the talk.", "ja": "話をしてすがすがしい気持ちになった。", "kana": "はなし を して すがすがしい きもち に なった。", "ro": "hanashi o shite sugasugashii kimochi ni natta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-167",
+  "ja": "すなお",
+  "kana": "すなお",
+  "ro": "sunao",
+  "en": "obedient / honest / straightforward",
+  "examples": [
+    {"en": "He’s an honest person.", "ja": "彼はすなおな人だ。", "kana": "かれ は すなお な ひと だ。", "ro": "kare wa sunao na hito da."},
+    {"en": "She obediently followed the instructions.", "ja": "彼女はすなおに指示に従った。", "kana": "かのじょ は すなお に しじ に したがった。", "ro": "kanojo wa sunao ni shiji ni shitagatta."},
+    {"en": "Children should be honest.", "ja": "子どもはすなおであるべきだ。", "kana": "こども は すなお で ある べき だ。", "ro": "kodomo wa sunao de aru beki da."},
+    {"en": "He apologized honestly.", "ja": "彼はすなおに謝った。", "kana": "かれ は すなお に あやまった。", "ro": "kare wa sunao ni ayamatta."},
+    {"en": "It’s best to accept it straightforwardly.", "ja": "すなおに受け入れるのが一番だ。", "kana": "すなお に うけいれる の が いちばん だ。", "ro": "sunao ni ukeireru no ga ichiban da."}
+  ],
+  "grammar": "Noun / は / な-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-168",
+  "ja": "すばらしい",
+  "kana": "すばらしい",
+  "ro": "subarashii",
+  "en": "wonderful / splendid / excellent",
+  "examples": [
+    {"en": "That’s a wonderful idea.", "ja": "それはすばらしいアイデアだ。", "kana": "それ は すばらしい あいであ だ。", "ro": "sore wa subarashii aidea da."},
+    {"en": "You did a great job.", "ja": "あなたはすばらしい仕事をした。", "kana": "あなた は すばらしい しごと を した。", "ro": "anata wa subarashii shigoto o shita."},
+    {"en": "What a beautiful view!", "ja": "なんてすばらしい景色だ！", "kana": "なんて すばらしい けしき だ！", "ro": "nante subarashii keshiki da!"},
+    {"en": "It was a wonderful concert.", "ja": "すばらしいコンサートだった。", "kana": "すばらしい こんさーと だった。", "ro": "subarashii konsaato datta."},
+    {"en": "He is a wonderful teacher.", "ja": "彼はすばらしい先生だ。", "kana": "かれ は すばらしい せんせい だ。", "ro": "kare wa subarashii sensei da."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-169",
+  "ja": "すずしい",
+  "kana": "すずしい",
+  "ro": "suzushii",
+  "en": "cool / refreshing",
+  "examples": [
+    {"en": "It’s cool this morning.", "ja": "今朝はすずしい。", "kana": "けさ は すずしい。", "ro": "kesa wa suzushii."},
+    {"en": "The wind feels cool.", "ja": "風がすずしい。", "kana": "かぜ が すずしい。", "ro": "kaze ga suzushii."},
+    {"en": "It’s a cool and comfortable day.", "ja": "すずしくて気持ちがいい日だ。", "kana": "すずしくて きもち が いい ひ だ。", "ro": "suzushikute kimochi ga ii hi da."},
+    {"en": "The air in the forest is cool.", "ja": "森の空気はすずしい。", "kana": "もり の くうき は すずしい。", "ro": "mori no kuuki wa suzushii."},
+    {"en": "The evening breeze feels nice and cool.", "ja": "夕方の風がすずしい。", "kana": "ゆうがた の かぜ が すずしい。", "ro": "yuugata no kaze ga suzushii."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-170",
+  "ja": "すばしっこい",
+  "kana": "すばしっこい",
+  "ro": "subashikkoi",
+  "en": "nimble / quick / agile",
+  "examples": [
+    {"en": "The cat is nimble.", "ja": "猫はすばしっこい。", "kana": "ねこ は すばしっこい。", "ro": "neko wa subashikkoi."},
+    {"en": "He moved quickly to catch the ball.", "ja": "彼はすばしっこくボールを取った。", "kana": "かれ は すばしっこく ぼーる を とった。", "ro": "kare wa subashikkoku booru o totta."},
+    {"en": "Children are quick and lively.", "ja": "子どもたちはすばしっこい。", "kana": "こどもたち は すばしっこい。", "ro": "kodomotachi wa subashikkoi."},
+    {"en": "He is quick to act.", "ja": "彼は行動がすばしっこい。", "kana": "かれ は こうどう が すばしっこい。", "ro": "kare wa koudou ga subashikkoi."},
+    {"en": "That monkey is very nimble.", "ja": "あの猿はとてもすばしっこい。", "kana": "あの さる は とても すばしっこい。", "ro": "ano saru wa totemo subashikkoi."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-171",
+  "ja": "すっぱい",
+  "kana": "すっぱい",
+  "ro": "suppai",
+  "en": "sour / acidic",
+  "examples": [
+    {"en": "This lemon is sour.", "ja": "このレモンはすっぱい。", "kana": "この れもん は すっぱい。", "ro": "kono remon wa suppai."},
+    {"en": "Vinegar has a sour smell.", "ja": "酢はすっぱい匂いがする。", "kana": "す は すっぱい におい が する。", "ro": "su wa suppai nioi ga suru."},
+    {"en": "I don’t like sour things.", "ja": "すっぱいものは苦手です。", "kana": "すっぱい もの は にがて です。", "ro": "suppai mono wa nigate desu."},
+    {"en": "This fruit tastes sour.", "ja": "この果物はすっぱい味がする。", "kana": "この くだもの は すっぱい あじ が する。", "ro": "kono kudamono wa suppai aji ga suru."},
+    {"en": "Her face turned sour after tasting it.", "ja": "味見をして顔をすっぱい顔にした。", "kana": "あじみ を して かお を すっぱい かお に した。", "ro": "ajimi o shite kao o suppai kao ni shita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-172",
+  "ja": "すごい",
+  "kana": "すごい",
+  "ro": "sugoi",
+  "en": "amazing / great / terrible (in intensity)",
+  "examples": [
+    {"en": "That’s an amazing performance!", "ja": "すごい演技だ！", "kana": "すごい えんぎ だ！", "ro": "sugoi engi da!"},
+    {"en": "He has great strength.", "ja": "彼はすごい力を持っている。", "kana": "かれ は すごい ちから を もって いる。", "ro": "kare wa sugoi chikara o motte iru."},
+    {"en": "The wind was incredibly strong.", "ja": "風がすごかった。", "kana": "かぜ が すごかった。", "ro": "kaze ga sugokatta."},
+    {"en": "That’s a great idea!", "ja": "それはすごいアイデアだ！", "kana": "それ は すごい あいであ だ！", "ro": "sore wa sugoi aidea da!"},
+    {"en": "The storm was terrible.", "ja": "嵐の勢いがすごい。", "kana": "あらし の いきおい が すごい。", "ro": "arashi no ikioi ga sugoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-173",
+  "ja": "すなおらしい",
+  "kana": "すなおらしい",
+  "ro": "sunaorashii",
+  "en": "innocent-looking / honest-looking",
+  "examples": [
+    {"en": "She has an honest-looking face.", "ja": "彼女はすなおらしい顔をしている。", "kana": "かのじょ は すなおらしい かお を して いる。", "ro": "kanojo wa sunaorashii kao o shite iru."},
+    {"en": "He gave an innocent smile.", "ja": "彼はすなおらしい笑顔を見せた。", "kana": "かれ は すなおらしい えがお を みせた。", "ro": "kare wa sunaorashii egao o miseta."},
+    {"en": "Her behavior is honest-looking.", "ja": "彼女の態度はすなおらしい。", "kana": "かのじょ の たいど は すなおらしい。", "ro": "kanojo no taido wa sunaorashii."},
+    {"en": "He looks like an honest student.", "ja": "彼はすなおらしい学生だ。", "kana": "かれ は すなおらしい がくせい だ。", "ro": "kare wa sunaorashii gakusei da."},
+    {"en": "That child looks very innocent.", "ja": "あの子はすなおらしい目をしている。", "kana": "あの こ は すなおらしい め を して いる。", "ro": "ano ko wa sunaorashii me o shite iru."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-174",
+  "ja": "すばしらしい",
+  "kana": "すばしらしい",
+  "ro": "subashirashii",
+  "en": "splendid / remarkable / magnificent (variant poetic)",
+  "examples": [
+    {"en": "It’s a remarkable performance.", "ja": "それはすばしらしい演奏だった。", "kana": "それ は すばしらしい えんそう だった。", "ro": "sore wa subashirashii ensou datta."},
+    {"en": "He did a splendid job.", "ja": "彼はすばしらしい仕事をした。", "kana": "かれ は すばしらしい しごと を した。", "ro": "kare wa subashirashii shigoto o shita."},
+    {"en": "This is a magnificent view.", "ja": "これはすばしらしい景色だ。", "kana": "これ は すばしらしい けしき だ。", "ro": "kore wa subashirashii keshiki da."},
+    {"en": "Her speech was truly wonderful.", "ja": "彼女のスピーチはすばしらしかった。", "kana": "かのじょ の すぴーち は すばしらしかった。", "ro": "kanojo no supiichi wa subashirashikatta."},
+    {"en": "It was a remarkable day.", "ja": "すばしらしい一日だった。", "kana": "すばしらしい いちにち だった。", "ro": "subashirashii ichinichi datta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-175",
+  "ja": "すみやか",
+  "kana": "すみやか",
+  "ro": "sumiyaka",
+  "en": "prompt / speedy / quick",
+  "examples": [
+    {"en": "Please take prompt action.", "ja": "すみやかに対応してください。", "kana": "すみやか に たいおう して ください。", "ro": "sumiyaka ni taiou shite kudasai."},
+    {"en": "We made a quick decision.", "ja": "すみやかに決定した。", "kana": "すみやか に けってい した。", "ro": "sumiyaka ni kettei shita."},
+    {"en": "He gave a swift reply.", "ja": "彼はすみやかな返事をした。", "kana": "かれ は すみやか な へんじ を した。", "ro": "kare wa sumiyaka na henji o shita."},
+    {"en": "The government responded quickly.", "ja": "政府はすみやかに対応した。", "kana": "せいふ は すみやか に たいおう した。", "ro": "seifu wa sumiyaka ni taiou shita."},
+    {"en": "He took quick action to solve the problem.", "ja": "問題をすみやかに解決した。", "kana": "もんだい を すみやか に かいけつ した。", "ro": "mondai o sumiyaka ni kaiketsu shita."}
+  ],
+  "grammar": "Noun / に / な-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-176",
+  "ja": "すめしい",
+  "kana": "すめしい",
+  "ro": "sumeshii",
+  "en": "dignified / noble / composed (archaic poetic form)",
+  "examples": [
+    {"en": "She has a dignified appearance.", "ja": "彼女はすめしい姿をしている。", "kana": "かのじょ は すめしい すがた を して いる。", "ro": "kanojo wa sumeshii sugata o shite iru."},
+    {"en": "His attitude is calm and noble.", "ja": "彼の態度はすめしい。", "kana": "かれ の たいど は すめしい。", "ro": "kare no taido wa sumeshii."},
+    {"en": "That temple has a dignified atmosphere.", "ja": "その寺にはすめしい雰囲気がある。", "kana": "その てら に は すめしい ふんいき が ある。", "ro": "sono tera ni wa sumeshii fun’iki ga aru."},
+    {"en": "She smiled with calm dignity.", "ja": "彼女はすめしい笑みを浮かべた。", "kana": "かのじょ は すめしい えみ を うかべた。", "ro": "kanojo wa sumeshii emi o ukabeta."},
+    {"en": "It was a dignified ceremony.", "ja": "すめしい式だった。", "kana": "すめしい しき だった。", "ro": "sumeshii shiki datta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-177",
+  "ja": "すめた",
+  "kana": "すめた",
+  "ro": "sumeta",
+  "en": "cold / indifferent / composed",
+  "examples": [
+    {"en": "He gave me a cold look.", "ja": "彼はすめた目で私を見た。", "kana": "かれ は すめた め で わたし を みた。", "ro": "kare wa sumeta me de watashi o mita."},
+    {"en": "She spoke in a calm, cool voice.", "ja": "彼女はすめた声で話した。", "kana": "かのじょ は すめた こえ で はなした。", "ro": "kanojo wa sumeta koe de hanashita."},
+    {"en": "His attitude was indifferent.", "ja": "彼の態度はすめたものだった。", "kana": "かれ の たいど は すめた もの だった。", "ro": "kare no taido wa sumeta mono datta."},
+    {"en": "She looked at him with cold eyes.", "ja": "彼女はすめた目つきで彼を見た。", "kana": "かのじょ は すめた めつき で かれ を みた。", "ro": "kanojo wa sumeta metsuki de kare o mita."},
+    {"en": "He gave a calm but distant smile.", "ja": "彼はすめた笑みを浮かべた。", "kana": "かれ は すめた えみ を うかべた。", "ro": "kare wa sumeta emi o ukabeta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-178",
+  "ja": "せまい",
+  "kana": "せまい",
+  "ro": "semai",
+  "en": "narrow / small / confined",
+  "examples": [
+    {"en": "This room is small.", "ja": "この部屋はせまい。", "kana": "この へや は せまい。", "ro": "kono heya wa semai."},
+    {"en": "The road is narrow.", "ja": "道がせまい。", "kana": "みち が せまい。", "ro": "michi ga semai."},
+    {"en": "His thinking is narrow-minded.", "ja": "彼の考え方はせまい。", "kana": "かれ の かんがえかた は せまい。", "ro": "kare no kangaekata wa semai."},
+    {"en": "The entrance is too small to fit through.", "ja": "入り口がせますぎて通れない。", "kana": "いりぐち が せますぎて とおれない。", "ro": "iriguchi ga semasugite toorenai."},
+    {"en": "It’s a narrow and crowded street.", "ja": "せまい通りに人が多い。", "kana": "せまい とおり に ひと が おおい。", "ro": "semai toori ni hito ga ooi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-179",
+  "ja": "たくましい",
+  "kana": "たくましい",
+  "ro": "takumashii",
+  "en": "strong / robust / powerful",
+  "examples": [
+    {"en": "He has a strong body.", "ja": "彼はたくましい体をしている。", "kana": "かれ は たくましい からだ を して いる。", "ro": "kare wa takumashii karada o shite iru."},
+    {"en": "Children grow up strong.", "ja": "子どもたちはたくましく育つ。", "kana": "こどもたち は たくましく そだつ。", "ro": "kodomotachi wa takumashiku sodatsu."},
+    {"en": "He’s a tough and reliable person.", "ja": "彼はたくましい人だ。", "kana": "かれ は たくましい ひと だ。", "ro": "kare wa takumashii hito da."},
+    {"en": "She has a strong will.", "ja": "彼女はたくましい意志を持っている。", "kana": "かのじょ は たくましい いし を もって いる。", "ro": "kanojo wa takumashii ishi o motte iru."},
+    {"en": "The plants are growing vigorously.", "ja": "植物がたくましく育っている。", "kana": "しょくぶつ が たくましく そだって いる。", "ro": "shokubutsu ga takumashiku sodatte iru."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-180",
+  "ja": "たのもしい",
+  "kana": "たのもしい",
+  "ro": "tanomoshii",
+  "en": "reliable / dependable / promising",
+  "examples": [
+    {"en": "He’s a reliable person.", "ja": "彼はたのもしい人だ。", "kana": "かれ は たのもしい ひと だ。", "ro": "kare wa tanomoshii hito da."},
+    {"en": "You look dependable today.", "ja": "今日はたのもしく見える。", "kana": "きょう は たのもしく みえる。", "ro": "kyou wa tanomoshiku mieru."},
+    {"en": "She’s a reliable leader.", "ja": "彼女はたのもしいリーダーだ。", "kana": "かのじょ は たのもしい りーだー だ。", "ro": "kanojo wa tanomoshii riidaa da."},
+    {"en": "It’s a promising start.", "ja": "たのもしいスタートだ。", "kana": "たのもしい すたーと だ。", "ro": "tanomoshii sutaato da."},
+    {"en": "He gave a reassuring speech.", "ja": "彼のスピーチはたのもしかった。", "kana": "かれ の すぴーち は たのもしかった。", "ro": "kare no supiichi wa tanomoshikatta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-181",
+  "ja": "たわいない",
+  "kana": "たわいない",
+  "ro": "tawainai",
+  "en": "trivial / silly / innocent",
+  "examples": [
+    {"en": "It was a silly conversation.", "ja": "たわいない会話だった。", "kana": "たわいない かいわ だった。", "ro": "tawainai kaiwa datta."},
+    {"en": "We had a trivial argument.", "ja": "たわいないことでけんかした。", "kana": "たわいない こと で けんか した。", "ro": "tawainai koto de kenka shita."},
+    {"en": "She smiled at the silly joke.", "ja": "たわいない冗談に笑った。", "kana": "たわいない じょうだん に わらった。", "ro": "tawainai joudan ni waratta."},
+    {"en": "It’s a harmless lie.", "ja": "たわいない嘘だ。", "kana": "たわいない うそ だ。", "ro": "tawainai uso da."},
+    {"en": "They talked about something trivial.", "ja": "たわいない話をしていた。", "kana": "たわいない はなし を して いた。", "ro": "tawainai hanashi o shite ita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-182",
+  "ja": "たのしい",
+  "kana": "たのしい",
+  "ro": "tanoshii",
+  "en": "fun / enjoyable / pleasant",
+  "examples": [
+    {"en": "It was a fun party.", "ja": "たのしいパーティーだった。", "kana": "たのしい ぱーてぃー だった。", "ro": "tanoshii paatii datta."},
+    {"en": "We had an enjoyable trip.", "ja": "たのしい旅行をした。", "kana": "たのしい りょこう を した。", "ro": "tanoshii ryokou o shita."},
+    {"en": "I’m having a fun time.", "ja": "今はたのしい時間を過ごしている。", "kana": "いま は たのしい じかん を すごして いる。", "ro": "ima wa tanoshii jikan o sugoshite iru."},
+    {"en": "That was a pleasant experience.", "ja": "それはたのしい経験だった。", "kana": "それ は たのしい けいけん だった。", "ro": "sore wa tanoshii keiken datta."},
+    {"en": "It’s fun to talk with friends.", "ja": "友達と話すのはたのしい。", "kana": "ともだち と はなす の は たのしい。", "ro": "tomodachi to hanasu no wa tanoshii."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-183",
+  "ja": "たのしげ",
+  "kana": "たのしげ",
+  "ro": "tanoshige",
+  "en": "joyful-looking / cheerful-looking",
+  "examples": [
+    {"en": "She looked happy.", "ja": "彼女はたのしげに笑っていた。", "kana": "かのじょ は たのしげ に わらって いた。", "ro": "kanojo wa tanoshige ni waratte ita."},
+    {"en": "He talked in a cheerful way.", "ja": "彼はたのしげに話した。", "kana": "かれ は たのしげ に はなした。", "ro": "kare wa tanoshige ni hanashita."},
+    {"en": "Everyone looked happy.", "ja": "みんな たのしげな表情をしていた。", "kana": "みんな たのしげ な ひょうじょう を して いた。", "ro": "minna tanoshige na hyoujou o shite ita."},
+    {"en": "She has a cheerful aura.", "ja": "彼女はたのしげな雰囲気を持っている。", "kana": "かのじょ は たのしげ な ふんいき を もって いる。", "ro": "kanojo wa tanoshige na fun'iki o motte iru."},
+    {"en": "He smiled joyfully.", "ja": "彼はたのしげに微笑んだ。", "kana": "かれ は たのしげ に ほほえんだ。", "ro": "kare wa tanoshige ni hohoenda."}
+  ],
+  "grammar": "Noun / は / な-Adjective / Copula"
+},
+{
+  "id": "n2-iadj-184",
+  "ja": "たるい",
+  "kana": "たるい",
+  "ro": "tarui",
+  "en": "sluggish / tired / dull",
+  "examples": [
+    {"en": "I feel sluggish today.", "ja": "今日は体がたるい。", "kana": "きょう は からだ が たるい。", "ro": "kyou wa karada ga tarui."},
+    {"en": "My legs feel heavy.", "ja": "足がたるい。", "kana": "あし が たるい。", "ro": "ashi ga tarui."},
+    {"en": "I’m feeling a bit lazy.", "ja": "なんだかたるい気分だ。", "kana": "なんだか たるい きぶん だ。", "ro": "nandaka tarui kibun da."},
+    {"en": "It’s tiring to work long hours.", "ja": "長時間働くのはたるい。", "kana": "ちょうじかん はたらく の は たるい。", "ro": "choujikan hataraku no wa tarui."},
+    {"en": "He looked tired during the meeting.", "ja": "会議中にたるそうにしていた。", "kana": "かいぎちゅう に たるそう に して いた。", "ro": "kaigichuu ni tarusou ni shite ita."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-185",
+  "ja": "だるい",
+  "kana": "だるい",
+  "ro": "darui",
+  "en": "tired / sluggish / weary",
+  "examples": [
+    {"en": "I feel tired today.", "ja": "今日は体がだるい。", "kana": "きょう は からだ が だるい。", "ro": "kyou wa karada ga darui."},
+    {"en": "My eyes feel heavy.", "ja": "目がだるい。", "kana": "め が だるい。", "ro": "me ga darui."},
+    {"en": "I’m feeling too tired to move.", "ja": "疲れて動くのもだるい。", "kana": "つかれて うごく の も だるい。", "ro": "tsukarete ugoku no mo darui."},
+    {"en": "Long meetings make me tired.", "ja": "長い会議はだるい。", "kana": "ながい かいぎ は だるい。", "ro": "nagai kaigi wa darui."},
+    {"en": "He looks tired this morning.", "ja": "今朝の彼はだるそうだった。", "kana": "けさ の かれ は だるそう だった。", "ro": "kesa no kare wa darusou datta."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-186",
+  "ja": "ちいさい",
+  "kana": "ちいさい",
+  "ro": "chiisai",
+  "en": "small / little / minor",
+  "examples": [
+    {"en": "This box is small.", "ja": "この箱はちいさい。", "kana": "この はこ は ちいさい。", "ro": "kono hako wa chiisai."},
+    {"en": "He has small hands.", "ja": "彼の手はちいさい。", "kana": "かれ の て は ちいさい。", "ro": "kare no te wa chiisai."},
+    {"en": "It’s just a small problem.", "ja": "それはちいさい問題だ。", "kana": "それ は ちいさい もんだい だ。", "ro": "sore wa chiisai mondai da."},
+    {"en": "Her voice is quiet and small.", "ja": "彼女の声はちいさい。", "kana": "かのじょ の こえ は ちいさい。", "ro": "kanojo no koe wa chiisai."},
+    {"en": "He runs a small shop.", "ja": "彼はちいさい店を経営している。", "kana": "かれ は ちいさい みせ を けいえい して いる。", "ro": "kare wa chiisai mise o keiei shite iru."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-187",
+  "ja": "ちからづよい",
+  "kana": "ちからづよい",
+  "ro": "chikarazuyoi",
+  "en": "powerful / encouraging / strong",
+  "examples": [
+    {"en": "His words were encouraging.", "ja": "彼の言葉はちからづよかった。", "kana": "かれ の ことば は ちからづよかった。", "ro": "kare no kotoba wa chikarazuyokatta."},
+    {"en": "She gave a powerful performance.", "ja": "彼女はちからづよい演奏をした。", "kana": "かのじょ は ちからづよい えんそう を した。", "ro": "kanojo wa chikarazuyoi ensou o shita."},
+    {"en": "He spoke in a strong voice.", "ja": "彼はちからづよい声で話した。", "kana": "かれ は ちからづよい こえ で はなした。", "ro": "kare wa chikarazuyoi koe de hanashita."},
+    {"en": "Her handshake was firm and strong.", "ja": "彼女の握手はちからづよかった。", "kana": "かのじょ の あくしゅ は ちからづよかった。", "ro": "kanojo no akushu wa chikarazuyokatta."},
+    {"en": "That speech was very inspiring.", "ja": "そのスピーチはちからづよかった。", "kana": "その すぴーち は ちからづよかった。", "ro": "sono supiichi wa chikarazuyokatta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-188",
+  "ja": "ちかい",
+  "kana": "ちかい",
+  "ro": "chikai",
+  "en": "close / near / intimate",
+  "examples": [
+    {"en": "The station is close.", "ja": "駅はちかい。", "kana": "えき は ちかい。", "ro": "eki wa chikai."},
+    {"en": "My house is close to the park.", "ja": "家は公園にちかい。", "kana": "いえ は こうえん に ちかい。", "ro": "ie wa kouen ni chikai."},
+    {"en": "We live near each other.", "ja": "私たちはちかくに住んでいる。", "kana": "わたしたち は ちかく に すんで いる。", "ro": "watashitachi wa chikaku ni sunde iru."},
+    {"en": "He’s a close friend of mine.", "ja": "彼は私のちかい友人です。", "kana": "かれ は わたし の ちかい ゆうじん です。", "ro": "kare wa watashi no chikai yuujin desu."},
+    {"en": "Our houses are close together.", "ja": "家と家がちかい。", "kana": "いえ と いえ が ちかい。", "ro": "ie to ie ga chikai."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-189",
+  "ja": "ちょろい",
+  "kana": "ちょろい",
+  "ro": "choroi",
+  "en": "easy / simple / gullible",
+  "examples": [
+    {"en": "That test was easy.", "ja": "そのテストはちょろい。", "kana": "その てすと は ちょろい。", "ro": "sono tesuto wa choroi."},
+    {"en": "He’s easy to fool.", "ja": "彼はちょろい相手だ。", "kana": "かれ は ちょろい あいて だ。", "ro": "kare wa choroi aite da."},
+    {"en": "It was a simple job.", "ja": "ちょろい仕事だった。", "kana": "ちょろい しごと だった。", "ro": "choroi shigoto datta."},
+    {"en": "That question was too easy.", "ja": "その質問はちょろすぎた。", "kana": "その しつもん は ちょろすぎた。", "ro": "sono shitsumon wa chorosugita."},
+    {"en": "He got tricked easily.", "ja": "彼はちょろくだまされた。", "kana": "かれ は ちょろく だまされた。", "ro": "kare wa choroku damasareta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-190",
+  "ja": "ちょろまかしい",
+  "kana": "ちょろまかしい",
+  "ro": "choromakashii",
+  "en": "sneaky / tricky / deceitful",
+  "examples": [
+    {"en": "He’s a sneaky person.", "ja": "彼はちょろまかしい人だ。", "kana": "かれ は ちょろまかしい ひと だ。", "ro": "kare wa choromakashii hito da."},
+    {"en": "She used a sneaky way to win.", "ja": "彼女はちょろまかしい方法で勝った。", "kana": "かのじょ は ちょろまかしい ほうほう で かった。", "ro": "kanojo wa choromakashii houhou de katta."},
+    {"en": "That trick was deceitful.", "ja": "その手口はちょろまかしかった。", "kana": "その てぐち は ちょろまかしかった。", "ro": "sono teguchi wa choromakashikatta."},
+    {"en": "He tried to act cleverly.", "ja": "彼はちょろまかしく動いた。", "kana": "かれ は ちょろまかしく うごいた。", "ro": "kare wa choromakashiku ugoita."},
+    {"en": "It’s a sneaky way of avoiding responsibility.", "ja": "責任をちょろまかしい形で逃れた。", "kana": "せきにん を ちょろまかしい かたち で のがれた。", "ro": "sekinin o choromakashii katachi de nogareta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-191",
+  "ja": "ちょっぴり",
+  "kana": "ちょっぴり",
+  "ro": "choppiri",
+  "en": "a little / slightly / just a bit",
+  "examples": [
+    {"en": "I feel a little lonely.", "ja": "ちょっぴりさびしい。", "kana": "ちょっぴり さびしい。", "ro": "choppiri sabishii."},
+    {"en": "He looks a bit tired.", "ja": "彼はちょっぴりつかれている。", "kana": "かれ は ちょっぴり つかれて いる。", "ro": "kare wa choppiri tsukarete iru."},
+    {"en": "It’s a little spicy.", "ja": "ちょっぴりからい。", "kana": "ちょっぴり からい。", "ro": "choppiri karai."},
+    {"en": "I saved a little money.", "ja": "ちょっぴりお金を貯めた。", "kana": "ちょっぴり おかね を ためた。", "ro": "choppiri okane o tameta."},
+    {"en": "I’m a little sleepy.", "ja": "ちょっぴりねむい。", "kana": "ちょっぴり ねむい。", "ro": "choppiri nemui."}
+  ],
+  "grammar": "Adverb / modifies / い-Adjective"
+},
+{
+  "id": "n2-iadj-192",
+  "ja": "つよい",
+  "kana": "つよい",
+  "ro": "tsuyoi",
+  "en": "strong / powerful / tough",
+  "examples": [
+    {"en": "He’s physically strong.", "ja": "彼は体がつよい。", "kana": "かれ は からだ が つよい。", "ro": "kare wa karada ga tsuyoi."},
+    {"en": "The wind is strong today.", "ja": "今日は風がつよい。", "kana": "きょう は かぜ が つよい。", "ro": "kyou wa kaze ga tsuyoi."},
+    {"en": "She has a strong heart.", "ja": "彼女は心がつよい。", "kana": "かのじょ は こころ が つよい。", "ro": "kanojo wa kokoro ga tsuyoi."},
+    {"en": "This coffee has a strong flavor.", "ja": "このコーヒーは味がつよい。", "kana": "この こーひー は あじ が つよい。", "ro": "kono koohii wa aji ga tsuyoi."},
+    {"en": "He’s strong against stress.", "ja": "彼はストレスにつよい。", "kana": "かれ は すとれす に つよい。", "ro": "kare wa sutoresu ni tsuyoi."}
+  ],
+  "grammar": "Noun / が / い-Adjective"
+},
+{
+  "id": "n2-iadj-193",
+  "ja": "つまらない",
+  "kana": "つまらない",
+  "ro": "tsumaranai",
+  "en": "boring / trivial / worthless",
+  "examples": [
+    {"en": "This movie is boring.", "ja": "この映画はつまらない。", "kana": "この えいが は つまらない。", "ro": "kono eiga wa tsumaranai."},
+    {"en": "It was a boring meeting.", "ja": "退屈な会議でつまらなかった。", "kana": "たいくつ な かいぎ で つまらなかった。", "ro": "taikutsu na kaigi de tsumaranakatta."},
+    {"en": "That’s a trivial reason.", "ja": "それはつまらない理由だ。", "kana": "それ は つまらない りゆう だ。", "ro": "sore wa tsumaranai riyuu da."},
+    {"en": "He got angry over something silly.", "ja": "つまらないことで怒った。", "kana": "つまらない こと で おこった。", "ro": "tsumaranai koto de okotta."},
+    {"en": "I don’t want to waste time on such things.", "ja": "そんなつまらないことに時間を使いたくない。", "kana": "そんな つまらない こと に じかん を つかいたくない。", "ro": "sonna tsumaranai koto ni jikan o tsukaitakunai."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-194",
+  "ja": "つらい",
+  "kana": "つらい",
+  "ro": "tsurai",
+  "en": "painful / tough / hard (emotionally or physically)",
+  "examples": [
+    {"en": "It’s hard to say goodbye.", "ja": "別れるのはつらい。", "kana": "わかれる の は つらい。", "ro": "wakareru no wa tsurai."},
+    {"en": "He’s going through a hard time.", "ja": "彼はつらい時期を過ごしている。", "kana": "かれ は つらい じき を すごして いる。", "ro": "kare wa tsurai jiki o sugoshite iru."},
+    {"en": "It was a painful memory.", "ja": "それはつらい思い出だった。", "kana": "それ は つらい おもいで だった。", "ro": "sore wa tsurai omoide datta."},
+    {"en": "Studying every night is hard.", "ja": "毎晩勉強するのはつらい。", "kana": "まいばん べんきょう する の は つらい。", "ro": "maiban benkyou suru no wa tsurai."},
+    {"en": "He looked like he was in pain.", "ja": "彼はつらそうな顔をしていた。", "kana": "かれ は つらそう な かお を して いた。", "ro": "kare wa tsurasou na kao o shite ita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-195",
+  "ja": "つよがり",
+  "kana": "つよがり",
+  "ro": "tsuyogari",
+  "en": "pretending to be strong / bluffing",
+  "examples": [
+    {"en": "He’s just pretending to be strong.", "ja": "彼はつよがっているだけだ。", "kana": "かれ は つよがって いる だけ だ。", "ro": "kare wa tsuyogatte iru dake da."},
+    {"en": "Her words sounded like a bluff.", "ja": "彼女の言葉はつよがりに聞こえた。", "kana": "かのじょ の ことば は つよがり に きこえた。", "ro": "kanojo no kotoba wa tsuyogari ni kikoeta."},
+    {"en": "He smiled to hide his weakness.", "ja": "彼はつよがりの笑顔を見せた。", "kana": "かれ は つよがり の えがお を みせた。", "ro": "kare wa tsuyogari no egao o miseta."},
+    {"en": "That’s just his bluffing side.", "ja": "それは彼のつよがりな面だ。", "kana": "それ は かれ の つよがり な めん だ。", "ro": "sore wa kare no tsuyogari na men da."},
+    {"en": "She’s acting strong to cover her pain.", "ja": "彼女はつよがって悲しみを隠している。", "kana": "かのじょ は つよがって かなしみ を かくして いる。", "ro": "kanojo wa tsuyogatte kanashimi o kakushite iru."}
+  ],
+  "grammar": "Verb / る + / Noun / な-Adjective use"
+},
+{
+  "id": "n2-iadj-196",
+  "ja": "つめたい",
+  "kana": "つめたい",
+  "ro": "tsumetai",
+  "en": "cold (to the touch) / unfriendly",
+  "examples": [
+    {"en": "This water is cold.", "ja": "この水はつめたい。", "kana": "この みず は つめたい。", "ro": "kono mizu wa tsumetai."},
+    {"en": "Her hands are cold.", "ja": "彼女の手はつめたい。", "kana": "かのじょ の て は つめたい。", "ro": "kanojo no te wa tsumetai."},
+    {"en": "He gave me a cold answer.", "ja": "彼はつめたい返事をした。", "kana": "かれ は つめたい へんじ を した。", "ro": "kare wa tsumetai henji o shita."},
+    {"en": "The air is cold today.", "ja": "今日は空気がつめたい。", "kana": "きょう は くうき が つめたい。", "ro": "kyou wa kuuki ga tsumetai."},
+    {"en": "She looked at me coldly.", "ja": "彼女はつめたい目で見た。", "kana": "かのじょ は つめたい め で みた。", "ro": "kanojo wa tsumetai me de mita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-197",
+  "ja": "つよまる",
+  "kana": "つよまる",
+  "ro": "tsuyomaru",
+  "en": "to become stronger / to intensify",
+  "examples": [
+    {"en": "The wind is getting stronger.", "ja": "風がつよまってきた。", "kana": "かぜ が つよまって きた。", "ro": "kaze ga tsuyomatte kita."},
+    {"en": "Her feelings grew stronger.", "ja": "彼女の気持ちがつよまった。", "kana": "かのじょ の きもち が つよまった。", "ro": "kanojo no kimochi ga tsuyomatta."},
+    {"en": "The team’s unity strengthened.", "ja": "チームの団結がつよまった。", "kana": "ちーむ の だんけつ が つよまった。", "ro": "chiimu no danketsu ga tsuyomatta."},
+    {"en": "The rain is getting heavier.", "ja": "雨がつよまっている。", "kana": "あめ が つよまって いる。", "ro": "ame ga tsuyomatte iru."},
+    {"en": "The impression of him grew stronger.", "ja": "彼の印象がつよまった。", "kana": "かれ の いんしょう が つよまった。", "ro": "kare no inshou ga tsuyomatta."}
+  ],
+  "grammar": "Verb / intransitive / derived from い-Adjective"
+},
+{
+  "id": "n2-iadj-198",
+  "ja": "てごわい",
+  "kana": "てごわい",
+  "ro": "tegowai",
+  "en": "tough / formidable / hard to deal with",
+  "examples": [
+    {"en": "He’s a tough opponent.", "ja": "彼はてごわい相手だ。", "kana": "かれ は てごわい あいて だ。", "ro": "kare wa tegowai aite da."},
+    {"en": "It was a difficult problem.", "ja": "てごわい問題だった。", "kana": "てごわい もんだい だった。", "ro": "tegowai mondai datta."},
+    {"en": "The team faced a strong rival.", "ja": "チームはてごわいライバルと戦った。", "kana": "ちーむ は てごわい らいばる と たたかった。", "ro": "chiimu wa tegowai raibaru to tatakatta."},
+    {"en": "He’s a tough negotiator.", "ja": "彼はてごわい交渉相手だ。", "kana": "かれ は てごわい こうしょう あいて だ。", "ro": "kare wa tegowai koushou aite da."},
+    {"en": "That test was tough.", "ja": "あの試験はてごわかった。", "kana": "あの しけん は てごわかった。", "ro": "ano shiken wa tegowakatta."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-199",
+  "ja": "とおい",
+  "kana": "とおい",
+  "ro": "tooi",
+  "en": "far / distant / remote",
+  "examples": [
+    {"en": "The station is far.", "ja": "駅はとおい。", "kana": "えき は とおい。", "ro": "eki wa tooi."},
+    {"en": "He lives far from here.", "ja": "彼はここからとおい所に住んでいる。", "kana": "かれ は ここ から とおい ところ に すんで いる。", "ro": "kare wa koko kara tooi tokoro ni sunde iru."},
+    {"en": "The mountain looks far away.", "ja": "山がとおくに見える。", "kana": "やま が とおく に みえる。", "ro": "yama ga tooku ni mieru."},
+    {"en": "That day feels far in the past.", "ja": "あの日はとおい昔のことのようだ。", "kana": "あの ひ は とおい むかし の こと の よう だ。", "ro": "ano hi wa tooi mukashi no koto no you da."},
+    {"en": "It’s far to go on foot.", "ja": "歩いて行くにはとおい。", "kana": "あるいて いく には とおい。", "ro": "aruite iku ni wa tooi."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+},
+{
+  "id": "n2-iadj-200",
+  "ja": "とんでもない",
+  "kana": "とんでもない",
+  "ro": "tondemonai",
+  "en": "outrageous / unthinkable / not at all (when denying)",
+  "examples": [
+    {"en": "That’s an outrageous idea!", "ja": "とんでもない考えだ！", "kana": "とんでもない かんがえ だ！", "ro": "tondemonai kangae da!"},
+    {"en": "No way! That’s impossible.", "ja": "とんでもない！そんなことありえない。", "kana": "とんでもない！ そんな こと ありえない。", "ro": "tondemonai! sonna koto arienai."},
+    {"en": "Oh, not at all!", "ja": "とんでもないです！", "kana": "とんでもない です！", "ro": "tondemonai desu!"},
+    {"en": "That was a terrible mistake.", "ja": "とんでもない間違いをした。", "kana": "とんでもない まちがい を した。", "ro": "tondemonai machigai o shita."},
+    {"en": "He did something unbelievable.", "ja": "彼はとんでもないことをした。", "kana": "かれ は とんでもない こと を した。", "ro": "kare wa tondemonai koto o shita."}
+  ],
+  "grammar": "Noun / は / い-Adjective"
+}
+ ]
+}

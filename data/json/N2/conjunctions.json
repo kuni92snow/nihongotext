@@ -1,0 +1,604 @@
+{
+  "entries": [
+    {
+      "id": "n2-conj-001",
+      "ja": "それでも",
+      "kana": "それでも",
+      "ro": "soredemo",
+      "en": "nevertheless / even so",
+      "examples": [
+        {"en": "It was raining, but he went jogging nevertheless.", "kana": "あめ が ふっていた。 それでも かれ は じょぎんぐ に いった。", "ja": "雨 が 降っていた。 それでも 彼 は ジョギング に 行った。", "ro": "ame ga futte ita. soredemo kare wa jogingu ni itta."},
+        {"en": "She was tired. Even so, she kept working.", "kana": "かのじょ は つかれていた。 それでも はたらきつづけた。", "ja": "彼女 は 疲れていた。 それでも 働き続けた。", "ro": "kanojo wa tsukarete ita. soredemo hatarakitsuzuketa."},
+        {"en": "It was cold. Even so, he swam in the sea.", "kana": "さむかった。 それでも かれ は うみ で およいだ。", "ja": "寒かった。 それでも 彼 は 海 で 泳いだ。", "ro": "samukatta. soredemo kare wa umi de oyoida."},
+        {"en": "He failed many times. Even so, he didn’t give up.", "kana": "なんども しっぱい した。 それでも あきらめなかった。", "ja": "何度も 失敗 した。 それでも 諦めなかった。", "ro": "nandomo shippai shita. soredemo akiramenakatta."},
+        {"en": "It was raining heavily. Even so, we went hiking.", "kana": "つよい あめ が ふっていた。 それでも わたしたち は はいきんぐ に いった。", "ja": "強い 雨 が 降っていた。 それでも 私たち は ハイキング に 行った。", "ro": "tsuyoi ame ga futte ita. soredemo watashitachi wa haikingu ni itta."}
+      ],
+      "grammar": "Clause A + それでも + Clause B (contradiction)"
+    },
+    {
+      "id": "n2-conj-002",
+      "ja": "そのため",
+      "kana": "そのため",
+      "ro": "sono tame",
+      "en": "therefore / for that reason",
+      "examples": [
+        {"en": "He was sick. Therefore, he didn't attend the meeting.", "kana": "かれ は びょうき だった。 そのため かいぎ に さんか しなかった。", "ja": "彼 は 病気 だった。 そのため 会議 に 参加 しなかった。", "ro": "kare wa byouki datta. sono tame kaigi ni sanka shinakatta."},
+        {"en": "It was snowing. Therefore, the train stopped.", "kana": "ゆき が ふっていた。 そのため でんしゃ が とまった。", "ja": "雪 が 降っていた。 そのため 電車 が 止まった。", "ro": "yuki ga futte ita. sono tame densha ga tomatta."},
+        {"en": "I was late. Therefore, I missed the bus.", "kana": "おくれた。 そのため ばす に のれなかった。", "ja": "遅れた。 そのため バス に 乗れなかった。", "ro": "okureta. sono tame basu ni norenakatta."},
+        {"en": "He studied hard. Therefore, he passed the exam.", "kana": "かれ は いっしょうけんめい べんきょう した。 そのため ごうかく した。", "ja": "彼 は 一生懸命 勉強 した。 そのため 合格 した。", "ro": "kare wa isshoukenmei benkyou shita. sono tame goukaku shita."},
+        {"en": "It rained all day. Therefore, the event was canceled.", "kana": "いちにちじゅう あめ が ふった。 そのため いべんと は ちゅうし された。", "ja": "一日中 雨 が 降った。 そのため イベント は 中止 された。", "ro": "ichinichijuu ame ga futta. sono tame ibento wa chuushi sareta."}
+      ],
+      "grammar": "Reason/Cause + そのため + Result"
+    },
+    {
+      "id": "n2-conj-003",
+      "ja": "それに",
+      "kana": "それに",
+      "ro": "soreni",
+      "en": "moreover / in addition",
+      "examples": [
+        {"en": "This restaurant is cheap. Moreover, it's delicious.", "kana": "この れすとらん は やすい。 それに おいしい。", "ja": "この レストラン は 安い。 それに 美味しい。", "ro": "kono resutoran wa yasui. soreni oishii."},
+        {"en": "He is smart. Moreover, he is kind.", "kana": "かれ は あたま が いい。 それに やさしい。", "ja": "彼 は 頭 が いい。 それに 優しい。", "ro": "kare wa atama ga ii. soreni yasashii."},
+        {"en": "This hotel is clean. Moreover, it’s close to the station.", "kana": "この ほてる は きれい です。 それに えき に ちかい です。", "ja": "この ホテル は 綺麗 です。 それに 駅 に 近い です。", "ro": "kono hoteru wa kirei desu. soreni eki ni chikai desu."},
+        {"en": "He’s rich. Moreover, he’s humble.", "kana": "かれ は おかねもち です。 それに けんそん です。", "ja": "彼 は お金持ち です。 それに 謙遜 です。", "ro": "kare wa okanemochi desu. soreni kenson desu."},
+        {"en": "She’s young. Moreover, she’s talented.", "kana": "かのじょ は わかい。 それに さいのう が ある。", "ja": "彼女 は 若い。 それに 才能 が ある。", "ro": "kanojo wa wakai. soreni sainou ga aru."}
+      ],
+      "grammar": "Statement A + それに + Statement B (addition)"
+    },
+    {
+      "id": "n2-conj-004",
+      "ja": "それとも",
+      "kana": "それとも",
+      "ro": "soretomo",
+      "en": "or (used in questions)",
+      "examples": [
+        {"en": "Do you want tea or coffee?", "kana": "おちゃ が いい ですか。 それとも こーひー が いい ですか。", "ja": "お茶 が いい ですか。 それとも コーヒー が いい ですか。", "ro": "ocha ga ii desu ka. soretomo koohii ga ii desu ka."},
+        {"en": "Do you go by train or by bus?", "kana": "でんしゃ で いきますか。 それとも ばす で いきますか。", "ja": "電車 で 行きますか。 それとも バス で 行きますか。", "ro": "densha de ikimasu ka. soretomo basu de ikimasu ka."},
+        {"en": "Will you eat here or take out?", "kana": "ここ で たべますか。 それとも もちかえり ですか。", "ja": "ここ で 食べますか。 それとも 持ち帰り ですか。", "ro": "koko de tabemasu ka. soretomo mochikaeri desu ka."},
+        {"en": "Do you like dogs or cats?", "kana": "いぬ が すき ですか。 それとも ねこ が すき ですか。", "ja": "犬 が 好き ですか。 それとも 猫 が 好き ですか。", "ro": "inu ga suki desu ka. soretomo neko ga suki desu ka."},
+        {"en": "Shall we meet in the morning or in the afternoon?", "kana": "あさ に あいますか。 それとも ごご に あいますか。", "ja": "朝 に 会いますか。 それとも 午後 に 会いますか。", "ro": "asa ni aimasu ka. soretomo gogo ni aimasu ka."}
+      ],
+      "grammar": "Question A + それとも + Question B"
+    },
+    {
+      "id": "n2-conj-005",
+      "ja": "それどころか",
+      "kana": "それどころか",
+      "ro": "soredokoroka",
+      "en": "far from it / on the contrary",
+      "examples": [
+        {"en": "He didn’t get angry. On the contrary, he laughed.", "kana": "かれ は おこらなかった。 それどころか わらった。", "ja": "彼 は 怒らなかった。 それどころか 笑った。", "ro": "kare wa okoranakatta. soredokoroka waratta."},
+        {"en": "He wasn’t tired. On the contrary, he was full of energy.", "kana": "かれ は つかれていなかった。 それどころか げんき だった。", "ja": "彼 は 疲れていなかった。 それどころか 元気 だった。", "ro": "kare wa tsukarete inakatta. soredokoroka genki datta."},
+        {"en": "It didn’t get worse. On the contrary, it improved.", "kana": "わるく ならなかった。 それどころか よく なった。", "ja": "悪く ならなかった。 それどころか 良く なった。", "ro": "waruku naranakatta. soredokoroka yoku natta."},
+        {"en": "He didn’t hate her. On the contrary, he loved her.", "kana": "かれ は かのじょ を きらわなかった。 それどころか あいしていた。", "ja": "彼 は 彼女 を 嫌わなかった。 それどころか 愛していた。", "ro": "kare wa kanojo o kirawanakatta. soredokoroka aishite ita."},
+        {"en": "He didn’t lose motivation. On the contrary, he became more eager.", "kana": "やるき を なくさなかった。 それどころか もっと やるき が でた。", "ja": "やる気 を なくさなかった。 それどころか もっと やる気 が 出た。", "ro": "yaruki o nakusanakatta. soredokoroka motto yaruki ga deta."}
+      ],
+      "grammar": "Statement A + それどころか + Opposite/Contrary Statement B"
+    },
+    {
+      "id": "n2-conj-006",
+      "ja": "したがって",
+      "kana": "したがって",
+      "ro": "shitagatte",
+      "en": "therefore / accordingly — used to express a logical result or conclusion",
+      "examples": [
+        {"en": "He studied hard. Therefore, he passed the exam.", "kana": "かれ は いっしょうけんめい べんきょう した。 したがって、しけん に ごうかく した。", "ja": "彼 は 一生懸命 勉強 した。 したがって、試験 に 合格 した。", "ro": "kare wa isshoukenmei benkyou shita. shitagatte, shiken ni goukaku shita."},
+        {"en": "It was snowing heavily. Therefore, the flight was canceled.", "kana": "ゆき が たくさん ふっていた。 したがって、ひこうき は ちゅうし された。", "ja": "雪 が たくさん 降っていた。 したがって、飛行機 は 中止 された。", "ro": "yuki ga takusan futte ita. shitagatte, hikouki wa chuushi sareta."},
+        {"en": "He was late every day. Therefore, the teacher got angry.", "kana": "かれ は まいにち おくれた。 したがって、せんせい は おこった。", "ja": "彼 は 毎日 遅れた。 したがって、先生 は 怒った。", "ro": "kare wa mainichi okureta. shitagatte, sensei wa okotta."},
+        {"en": "The shop was closed. Therefore, I went to another one.", "kana": "みせ は しまっていた。 したがって、べつ の みせ に いった。", "ja": "店 は 閉まっていた。 したがって、別 の 店 に 行った。", "ro": "mise wa shimatte ita. shitagatte, betsu no mise ni itta."},
+        {"en": "He didn’t prepare. Therefore, he failed.", "kana": "かれ は じゅんび しなかった。 したがって、しっぱい した。", "ja": "彼 は 準備 しなかった。 したがって、失敗 した。", "ro": "kare wa junbi shinakatta. shitagatte, shippai shita."}
+      ],
+      "grammar": "Reason/Cause + したがって + Result (formal)"
+    },
+    {
+      "id": "n2-conj-007",
+      "ja": "その上",
+      "kana": "そのうえ",
+      "ro": "sono ue",
+      "en": "moreover / in addition — used to add an extra supporting point",
+      "examples": [
+        {"en": "This restaurant is cheap. Moreover, the food is delicious.", "kana": "この れすとらん は やすい。 そのうえ、りょうり が おいしい。", "ja": "この レストラン は 安い。 その上、料理 が 美味しい。", "ro": "kono resutoran wa yasui. sono ue, ryouri ga oishii."},
+        {"en": "He is smart. Moreover, he is kind.", "kana": "かれ は あたま が いい。 そのうえ、やさしい。", "ja": "彼 は 頭 が いい。 その上、優しい。", "ro": "kare wa atama ga ii. sono ue, yasashii."},
+        {"en": "The hotel is clean. Moreover, it’s close to the station.", "kana": "この ほてる は きれい。 そのうえ、えき に ちかい。", "ja": "この ホテル は 綺麗。 その上、駅 に 近い。", "ro": "kono hoteru wa kirei. sono ue, eki ni chikai."},
+        {"en": "She is talented. Moreover, she works hard.", "kana": "かのじょ は さいのう が ある。 そのうえ、よく はたらく。", "ja": "彼女 は 才能 が ある。 その上、よく 働く。", "ro": "kanojo wa sainou ga aru. sono ue, yoku hataraku."},
+        {"en": "The teacher is kind. Moreover, his class is fun.", "kana": "せんせい は やさしい。 そのうえ、じゅぎょう が たのしい。", "ja": "先生 は 優しい。 その上、授業 が 楽しい。", "ro": "sensei wa yasashii. sono ue, jugyou ga tanoshii."}
+      ],
+      "grammar": "Statement A + その上 + Statement B (emphasizing addition)"
+    },
+    {
+      "id": "n2-conj-008",
+      "ja": "そこで",
+      "kana": "そこで",
+      "ro": "soko de",
+      "en": "so / therefore (used when one takes an action based on a situation)",
+      "examples": [
+        {"en": "My car broke down. So, I called a taxi.", "kana": "くるま が こしょう した。 そこで、たくしー を よんだ。", "ja": "車 が 故障 した。 そこで、タクシー を 呼んだ。", "ro": "kuruma ga koshou shita. soko de, takushii o yonda."},
+        {"en": "It started to rain. So, we went home.", "kana": "あめ が ふりはじめた。 そこで、いえ に かえった。", "ja": "雨 が 降り始めた。 そこで、家 に 帰った。", "ro": "ame ga furihajimeta. soko de, ie ni kaetta."},
+        {"en": "He was hungry. So, he went to a restaurant.", "kana": "かれ は おなか が すいた。 そこで、れすとらん に いった。", "ja": "彼 は お腹 が すいた。 そこで、レストラン に 行った。", "ro": "kare wa onaka ga suita. soko de, resutoran ni itta."},
+        {"en": "The teacher was absent. So, we studied by ourselves.", "kana": "せんせい が いなかった。 そこで、じぶんたち で べんきょう した。", "ja": "先生 が いなかった。 そこで、自分たち で 勉強 した。", "ro": "sensei ga inakatta. soko de, jibuntachi de benkyou shita."},
+        {"en": "The meeting ended early. So, I went shopping.", "kana": "かいぎ が はやく おわった。 そこで、かいもの に いった。", "ja": "会議 が 早く 終わった。 そこで、買い物 に 行った。", "ro": "kaigi ga hayaku owatta. soko de, kaimono ni itta."}
+      ],
+      "grammar": "Situation + そこで + Action (used for problem-solving or consequence)"
+    },
+    {
+      "id": "n2-conj-009",
+      "ja": "つまり",
+      "kana": "つまり",
+      "ro": "tsumari",
+      "en": "in other words / that is to say",
+      "examples": [
+        {"en": "He is a doctor, in other words, a medical expert.", "kana": "かれ は いしゃ です。 つまり、いがく の せんもんか です。", "ja": "彼 は 医者 です。 つまり、医学 の 専門家 です。", "ro": "kare wa isha desu. tsumari, igaku no senmonka desu."},
+        {"en": "She is his sister, in other words, his family.", "kana": "かのじょ は かれ の いもうと です。 つまり、かぞく です。", "ja": "彼女 は 彼 の 妹 です。 つまり、家族 です。", "ro": "kanojo wa kare no imouto desu. tsumari, kazoku desu."},
+        {"en": "He was absent, in other words, he didn’t come.", "kana": "かれ は けっせき でした。 つまり、こなかった です。", "ja": "彼 は 欠席 でした。 つまり、来なかった です。", "ro": "kare wa kesseki deshita. tsumari, konakatta desu."},
+        {"en": "It’s difficult, in other words, not easy.", "kana": "むずかしい。 つまり、かんたん じゃ ない。", "ja": "難しい。 つまり、簡単 じゃ ない。", "ro": "muzukashii. tsumari, kantan ja nai."},
+        {"en": "He is honest. In other words, he never lies.", "kana": "かれ は しょうじき です。 つまり、うそ を つかない。", "ja": "彼 は 正直 です。 つまり、嘘 を つかない。", "ro": "kare wa shoujiki desu. tsumari, uso o tsukanai."}
+      ],
+      "grammar": "Statement A + つまり + Rephrased Statement B"
+    },
+    {
+      "id": "n2-conj-010",
+      "ja": "なお",
+      "kana": "なお",
+      "ro": "nao",
+      "en": "furthermore / in addition / still — used to add extra or formal information",
+      "examples": [
+        {"en": "Please bring your ID. Furthermore, come on time.", "kana": "みほんしょう を もってきて ください。 なお、じかん どおり に きて ください。", "ja": "身分証 を 持ってきて ください。 なお、時間 通り に 来て ください。", "ro": "mibunshou o motte kite kudasai. nao, jikan doori ni kite kudasai."},
+        {"en": "Applications close today. Furthermore, late ones won’t be accepted.", "kana": "もうしこみ は きょう で しめきり です。 なお、おくれた もの は うけつけません。", "ja": "申し込み は 今日 で 締め切り です。 なお、遅れた もの は 受け付けません。", "ro": "moushikomi wa kyou de shimekiri desu. nao, okureta mono wa uketsukemasen."},
+        {"en": "This rule applies to all members. Furthermore, no exceptions.", "kana": "この きそく は すべて の かいいん に てきよう されます。 なお、れいがい は ありません。", "ja": "この 規則 は すべて の 会員 に 適用 されます。 なお、例外 は ありません。", "ro": "kono kisoku wa subete no kaiin ni tekiyou saremasu. nao, reigai wa arimasen."},
+        {"en": "The meeting is tomorrow. Furthermore, please prepare materials.", "kana": "かいぎ は あした です。 なお、しりょう を じゅんび して ください。", "ja": "会議 は 明日 です。 なお、資料 を 準備 して ください。", "ro": "kaigi wa ashita desu. nao, shiryou o junbi shite kudasai."},
+        {"en": "This document is confidential. Furthermore, do not copy it.", "kana": "この しょるい は ひみつ です。 なお、コピー しないで ください。", "ja": "この 書類 は 秘密 です。 なお、コピー しないで ください。", "ro": "kono shorui wa himitsu desu. nao, kopii shinaide kudasai."}
+      ],
+      "grammar": "Statement A + なお + Statement B (formal addition)"
+    },
+    {
+      "id": "n2-conj-011",
+      "ja": "すると",
+      "kana": "すると",
+      "ro": "suruto",
+      "en": "then / thereupon — used when one action is immediately followed by another or causes a result",
+      "examples": [
+        {"en": "I opened the window. Then, a cold wind came in.", "kana": "まど を あけた。 すると、つめたい かぜ が はいって きた。", "ja": "窓 を 開けた。 すると、冷たい 風 が 入って きた。", "ro": "mado o aketa. suruto, tsumetai kaze ga haitte kita."},
+        {"en": "I called his name. Then, he turned around.", "kana": "なまえ を よんだ。 すると、かれ は ふりむいた。", "ja": "名前 を 呼んだ。 すると、彼 は 振り向いた。", "ro": "namae o yonda. suruto, kare wa furimuita."},
+        {"en": "I pressed the button. Then, the light turned on.", "kana": "ぼたん を おした。 すると、でんき が ついた。", "ja": "ボタン を 押した。 すると、電気 が ついた。", "ro": "botan o oshita. suruto, denki ga tsuita."},
+        {"en": "He said that. Then, everyone laughed.", "kana": "かれ が それ を いった。 すると、みんな が わらった。", "ja": "彼 が それ を 言った。 すると、みんな が 笑った。", "ro": "kare ga sore o itta. suruto, minna ga waratta."},
+        {"en": "I opened the door. Then, a cat ran out.", "kana": "ドア を あけた。 すると、ねこ が とびだした。", "ja": "ドア を 開けた。 すると、猫 が 飛び出した。", "ro": "doa o aketa. suruto, neko ga tobidashita."}
+      ],
+      "grammar": "Action A + すると + Immediate Result B"
+    },
+    {
+      "id": "n2-conj-012",
+      "ja": "するとともに",
+      "kana": "するとともに",
+      "ro": "suru to tomo ni",
+      "en": "at the same time as / together with — expresses simultaneous actions or coexistence",
+      "examples": [
+        {"en": "He entered the room together with the teacher.", "kana": "かれ は せんせい と いっしょ に へや に はいる とともに あいさつ した。", "ja": "彼 は 先生 と 一緒 に 部屋 に 入る とともに 挨拶 した。", "ro": "kare wa sensei to issho ni heya ni hairu to tomo ni aisatsu shita."},
+        {"en": "The rain stopped, and at the same time the sun came out.", "kana": "あめ が やむ とともに たいよう が でた。", "ja": "雨 が 止む とともに 太陽 が 出た。", "ro": "ame ga yamu to tomo ni taiyou ga deta."},
+        {"en": "He started his new job and, at the same time, moved to Tokyo.", "kana": "しんしょく を はじめる とともに とうきょう に ひっこした。", "ja": "新職 を 始める とともに 東京 に 引っ越した。", "ro": "shinshoku o hajimeru to tomo ni toukyou ni hikkoshita."},
+        {"en": "The population increased together with economic growth.", "kana": "けいざい の せいちょう とともに じんこう も ふえた。", "ja": "経済 の 成長 とともに 人口 も 増えた。", "ro": "keizai no seichou to tomo ni jinkou mo fueta."},
+        {"en": "Technology develops together with society.", "kana": "ぎじゅつ は しゃかい とともに はってん する。", "ja": "技術 は 社会 とともに 発展 する。", "ro": "gijutsu wa shakai to tomo ni hatten suru."}
+      ],
+      "grammar": "Action A / Noun + とともに + Action B (simultaneous or parallel)"
+    },
+    {
+      "id": "n2-conj-013",
+      "ja": "それに対して",
+      "kana": "それにたいして",
+      "ro": "sore ni taishite",
+      "en": "in contrast to / whereas / on the other hand — used to show comparison or opposition",
+      "examples": [
+        {"en": "He is quiet. In contrast, his brother is very talkative.", "kana": "かれ は おとなしい。 それ に たいして、あに は とても よく はなす。", "ja": "彼 は 大人しい。 それ に 対して、兄 は とても よく 話す。", "ro": "kare wa otonashii. sore ni taishite, ani wa totemo yoku hanasu."},
+        {"en": "Japan has four seasons. In contrast, Singapore is always hot.", "kana": "にほん は よっつ の きせつ が ある。 それ に たいして、しんがぽーる は いつも あつい。", "ja": "日本 は 四つ の 季節 が ある。 それ に 対して、シンガポール は いつも 暑い。", "ro": "nihon wa yottsu no kisetsu ga aru. sore ni taishite, shingapooru wa itsumo atsui."},
+        {"en": "He is kind. In contrast, his friend is a bit cold.", "kana": "かれ は やさしい。 それ に たいして、ともだち は すこし つめたい。", "ja": "彼 は 優しい。 それ に 対して、友達 は 少し 冷たい。", "ro": "kare wa yasashii. sore ni taishite, tomodachi wa sukoshi tsumetai."},
+        {"en": "My father likes sports. On the other hand, my mother likes reading.", "kana": "ちち は すぽーつ が すき です。 それ に たいして、はは は どくしょ が すき です。", "ja": "父 は スポーツ が 好き です。 それ に 対して、母 は 読書 が 好き です。", "ro": "chichi wa supootsu ga suki desu. sore ni taishite, haha wa dokusho ga suki desu."},
+        {"en": "This town is quiet. On the other hand, Tokyo is very busy.", "kana": "この まち は しずか です。 それ に たいして、とうきょう は とても にぎやか です。", "ja": "この 町 は 静か です。 それ に 対して、東京 は とても 賑やか です。", "ro": "kono machi wa shizuka desu. sore ni taishite, toukyou wa totemo nigiyaka desu."}
+      ],
+      "grammar": "Statement A + それに対して + Contrasting Statement B"
+    },
+    {
+      "id": "n2-conj-014",
+      "ja": "それにもかかわらず",
+      "kana": "それにもかかわらず",
+      "ro": "sore ni mo kakawarazu",
+      "en": "nevertheless / despite that — used to express unexpected result",
+      "examples": [
+        {"en": "It was raining. Nevertheless, he went jogging.", "kana": "あめ が ふっていた。 それ にも かかわらず、かれ は じょぎんぐ に いった。", "ja": "雨 が 降っていた。 それ にも かかわらず、彼 は ジョギング に 行った。", "ro": "ame ga futte ita. sore ni mo kakawarazu, kare wa jogingu ni itta."},
+        {"en": "He was sick. Nevertheless, he went to work.", "kana": "かれ は びょうき だった。 それ にも かかわらず、しごと に いった。", "ja": "彼 は 病気 だった。 それ にも かかわらず、仕事 に 行った。", "ro": "kare wa byouki datta. sore ni mo kakawarazu, shigoto ni itta."},
+        {"en": "She was tired. Nevertheless, she studied all night.", "kana": "かのじょ は つかれていた。 それ にも かかわらず、よるじゅう べんきょう した。", "ja": "彼女 は 疲れていた。 それ にも かかわらず、夜中 ずっと 勉強 した。", "ro": "kanojo wa tsukarete ita. sore ni mo kakawarazu, yonaka zutto benkyou shita."},
+        {"en": "He lost many times. Nevertheless, he didn’t give up.", "kana": "なんども まけた。 それ にも かかわらず、あきらめなかった。", "ja": "何度も 負けた。 それ にも かかわらず、諦めなかった。", "ro": "nandomo maketa. sore ni mo kakawarazu, akiramenakatta."},
+        {"en": "It was dangerous. Nevertheless, they entered the cave.", "kana": "きけん だった。 それ にも かかわらず、かれら は どうくつ に はいった。", "ja": "危険 だった。 それ にも かかわらず、彼ら は 洞窟 に 入った。", "ro": "kiken datta. sore ni mo kakawarazu, karera wa doukutsu ni haitta."}
+      ],
+      "grammar": "Statement A + それにもかかわらず + Unexpected Result B"
+    },
+    {
+      "id": "n2-conj-015",
+      "ja": "それゆえ",
+      "kana": "それゆえ",
+      "ro": "sore yue",
+      "en": "therefore / for that reason — formal expression of cause and result",
+      "examples": [
+        {"en": "He studied hard. Therefore, he passed the test.", "kana": "かれ は いっしょうけんめい べんきょう した。 それゆえ、しけん に ごうかく した。", "ja": "彼 は 一生懸命 勉強 した。 それゆえ、試験 に 合格 した。", "ro": "kare wa isshoukenmei benkyou shita. sore yue, shiken ni goukaku shita."},
+        {"en": "He was careless. Therefore, he made a mistake.", "kana": "かれ は ちゅういぶかく なかった。 それゆえ、まちがい を した。", "ja": "彼 は 注意深く なかった。 それゆえ、間違い を した。", "ro": "kare wa chuuibukaku nakatta. sore yue, machigai o shita."},
+        {"en": "She is kind. Therefore, many people like her.", "kana": "かのじょ は やさしい。 それゆえ、たくさん の ひと に すかれている。", "ja": "彼女 は 優しい。 それゆえ、たくさん の 人 に 好かれている。", "ro": "kanojo wa yasashii. sore yue, takusan no hito ni sukarete iru."},
+        {"en": "He is talented. Therefore, he was promoted quickly.", "kana": "かれ は さいのう が ある。 それゆえ、はやく しょうしん した。", "ja": "彼 は 才能 が ある。 それゆえ、早く 昇進 した。", "ro": "kare wa sainou ga aru. sore yue, hayaku shoushin shita."},
+        {"en": "It was dangerous. Therefore, they stopped immediately.", "kana": "きけん だった。 それゆえ、すぐ に やめた。", "ja": "危険 だった。 それゆえ、すぐ に やめた。", "ro": "kiken datta. sore yue, sugu ni yameta."}
+      ],
+      "grammar": "Cause + それゆえ + Result (formal/written style)"
+    },
+    {
+      "id": "n2-conj-016",
+      "ja": "その結果",
+      "kana": "そのけっか",
+      "ro": "sono kekka",
+      "en": "as a result / consequently — shows a clear outcome caused by a previous action or situation",
+      "examples": [
+        {"en": "He studied hard. As a result, he passed the exam.", "kana": "かれ は いっしょうけんめい べんきょう した。 そのけっか、しけん に ごうかく した。", "ja": "彼 は 一生懸命 勉強 した。 その結果、試験 に 合格 した。", "ro": "kare wa isshoukenmei benkyou shita. sono kekka, shiken ni goukaku shita."},
+        {"en": "It rained heavily. As a result, the park was flooded.", "kana": "つよい あめ が ふった。 そのけっか、こうえん が みずびたし に なった。", "ja": "強い 雨 が 降った。 その結果、公園 が 水浸し に なった。", "ro": "tsuyoi ame ga futta. sono kekka, kouen ga mizubitashi ni natta."},
+        {"en": "He didn’t sleep well. As a result, he was sleepy all day.", "kana": "よく ねられなかった。 そのけっか、いちにちじゅう ねむかった。", "ja": "よく 寝られなかった。 その結果、一日中 眠かった。", "ro": "yoku nerarenakatta. sono kekka, ichinichijuu nemukatta."},
+        {"en": "She worked too much. As a result, she got sick.", "kana": "かのじょ は はたらきすぎた。 そのけっか、びょうき に なった。", "ja": "彼女 は 働きすぎた。 その結果、病気 に なった。", "ro": "kanojo wa hatarakisugita. sono kekka, byouki ni natta."},
+        {"en": "The company cut costs. As a result, profits increased.", "kana": "かいしゃ は けいひ を へらした。 そのけっか、りえき が ふえた。", "ja": "会社 は 経費 を 減らした。 その結果、利益 が 増えた。", "ro": "kaisha wa keihi o herashita. sono kekka, rieki ga fueta."}
+      ],
+      "grammar": "Cause/Action + その結果 + Result"
+    },
+    {
+      "id": "n2-conj-017",
+      "ja": "それにしては",
+      "kana": "それにしては",
+      "ro": "sore ni shite wa",
+      "en": "for / considering — expresses that something is unexpected based on the preceding fact",
+      "examples": [
+        {"en": "He’s a child, but for a child he speaks very politely.", "kana": "かれ は こども だ。 それ に しては、とても ていねい に はなす。", "ja": "彼 は 子供 だ。 それ に しては、とても 丁寧 に 話す。", "ro": "kare wa kodomo da. sore ni shite wa, totemo teinei ni hanasu."},
+        {"en": "It’s April, but for April it’s quite cold.", "kana": "しがつ だ。 それ に しては、けっこう さむい。", "ja": "四月 だ。 それ に しては、結構 寒い。", "ro": "shigatsu da. sore ni shite wa, kekkou samui."},
+        {"en": "He’s rich, but for a rich person his house is small.", "kana": "かれ は おかねもち だ。 それ に しては、いえ が ちいさい。", "ja": "彼 は お金持ち だ。 それ に しては、家 が 小さい。", "ro": "kare wa okanemochi da. sore ni shite wa, ie ga chiisai."},
+        {"en": "She’s young, but for her age she’s very mature.", "kana": "かのじょ は わかい。 それ に しては、とても おとなっぽい。", "ja": "彼女 は 若い。 それ に しては、とても 大人っぽい。", "ro": "kanojo wa wakai. sore ni shite wa, totemo otonappoi."},
+        {"en": "He’s busy, but for someone busy he comes here often.", "kana": "かれ は いそがしい。 それ に しては、よく ここ に くる。", "ja": "彼 は 忙しい。 それ に しては、よく ここ に 来る。", "ro": "kare wa isogashii. sore ni shite wa, yoku koko ni kuru."}
+      ],
+      "grammar": "Fact A + それにしては + Unexpected Result B"
+    },
+    {
+      "id": "n2-conj-018",
+      "ja": "そればかりか",
+      "kana": "そればかりか",
+      "ro": "sore bakari ka",
+      "en": "not only that, but also — emphasizes an additional surprising fact",
+      "examples": [
+        {"en": "He can play the guitar. Not only that, but he can sing too.", "kana": "かれ は ぎたー が ひける。 そればかりか、うた も じょうず だ。", "ja": "彼 は ギター が 弾ける。 そればかりか、歌 も 上手 だ。", "ro": "kare wa gitaa ga hikeru. sore bakari ka, uta mo jouzu da."},
+        {"en": "She speaks English. Not only that, but also Chinese.", "kana": "かのじょ は えいご を はなせる。 そればかりか、ちゅうごくご も はなせる。", "ja": "彼女 は 英語 を 話せる。 そればかりか、中国語 も 話せる。", "ro": "kanojo wa eigo o hanaseru. sore bakari ka, chuugokugo mo hanaseru."},
+        {"en": "He was late. Not only that, but he forgot his homework.", "kana": "かれ は おくれた。 そればかりか、しゅくだい も わすれた。", "ja": "彼 は 遅れた。 そればかりか、宿題 も 忘れた。", "ro": "kare wa okureta. sore bakari ka, shukudai mo wasureta."},
+        {"en": "The food was cold. Not only that, but the service was bad.", "kana": "たべもの は つめたかった。 そればかりか、さーびす も わるかった。", "ja": "食べ物 は 冷たかった。 そればかりか、サービス も 悪かった。", "ro": "tabemono wa tsumetakatta. sore bakari ka, saabisu mo warukatta."},
+        {"en": "He is rich. Not only that, but he is very humble.", "kana": "かれ は おかねもち だ。 そればかりか、とても けんそん だ。", "ja": "彼 は お金持ち だ。 そればかりか、とても 謙遜 だ。", "ro": "kare wa okanemochi da. sore bakari ka, totemo kenson da."}
+      ],
+      "grammar": "Statement A + そればかりか + Additional/Surprising Statement B"
+    },
+    {
+      "id": "n2-conj-019",
+      "ja": "それどころではない",
+      "kana": "それどころではない",
+      "ro": "sore dokoro de wa nai",
+      "en": "there’s no time for that / that’s out of the question — used when a situation doesn’t allow something",
+      "examples": [
+        {"en": "I’m so busy. There’s no time for travel.", "kana": "いそがしすぎて、りょこう どころ では ない。", "ja": "忙しすぎて、旅行 どころ では ない。", "ro": "isogashisugite, ryokou dokoro de wa nai."},
+        {"en": "I’m broke. There’s no way I can buy a car.", "kana": "おかね が なくて、くるま を かう どころ では ない。", "ja": "お金 が なくて、車 を 買う どころ では ない。", "ro": "okane ga nakute, kuruma o kau dokoro de wa nai."},
+        {"en": "I have a fever. I can’t even go to work.", "kana": "ねつ が あって、しごと に いく どころ では ない。", "ja": "熱 が あって、仕事 に 行く どころ では ない。", "ro": "netsu ga atte, shigoto ni iku dokoro de wa nai."},
+        {"en": "The typhoon is coming. We can’t go out.", "kana": "たいふう が きていて、でかける どころ では ない。", "ja": "台風 が 来ていて、出かける どころ では ない。", "ro": "taifuu ga kite ite, dekakeru dokoro de wa nai."},
+        {"en": "I’m too tired to cook.", "kana": "つかれすぎて、りょうり どころ では ない。", "ja": "疲れすぎて、料理 どころ では ない。", "ro": "tsukaresugite, ryouri dokoro de wa nai."}
+      ],
+      "grammar": "Situation A + どころではない (impossible under the circumstances)"
+    },
+    {
+      "id": "n2-conj-020",
+      "ja": "だが",
+      "kana": "だが",
+      "ro": "daga",
+      "en": "but / however — formal or literary contrast",
+      "examples": [
+        {"en": "I was tired, but I couldn’t sleep.", "kana": "つかれていた。 だが、ねむれなかった。", "ja": "疲れていた。 だが、眠れなかった。", "ro": "tsukarete ita. daga, nemurenakatta."},
+        {"en": "He worked hard, but the result was not good.", "kana": "かれ は がんばった。 だが、けっか は よくなかった。", "ja": "彼 は 頑張った。 だが、結果 は 良くなかった。", "ro": "kare wa ganbatta. daga, kekka wa yokunakatta."},
+        {"en": "It’s a nice day, but I have to work.", "kana": "いい てんき だ。 だが、しごと を しなければ ならない。", "ja": "良い 天気 だ。 だが、仕事 を しなければ ならない。", "ro": "ii tenki da. daga, shigoto o shinakereba naranai."},
+        {"en": "He’s smart, but not friendly.", "kana": "かれ は あたま が いい。 だが、しんせつ では ない。", "ja": "彼 は 頭 が 良い。 だが、親切 では ない。", "ro": "kare wa atama ga ii. daga, shinsetsu de wa nai."},
+        {"en": "She’s young, but very talented.", "kana": "かのじょ は わかい。 だが、とても さいのう が ある。", "ja": "彼女 は 若い。 だが、とても 才能 が ある。", "ro": "kanojo wa wakai. daga, totemo sainou ga aru."}
+      ],
+      "grammar": "Statement A + だが + Contrasting Statement B"
+    },
+    {
+      "id": "n2-conj-021",
+      "ja": "だけあって",
+      "kana": "だけあって",
+      "ro": "dake atte",
+      "en": "as expected of / no wonder — expresses admiration or recognition due to a reason or status",
+      "examples": [
+        {"en": "He is a professional chef. As expected, his cooking is delicious.", "kana": "かれ は ぷろ の しぇふ だけあって、りょうり が おいしい。", "ja": "彼 は プロ の シェフ だけあって、料理 が 美味しい。", "ro": "kare wa puro no shefu dake atte, ryouri ga oishii."},
+        {"en": "She has studied Japanese for years. As expected, she speaks very well.", "kana": "かのじょ は なんねん も にほんご を べんきょう している だけあって、じょうず に はなす。", "ja": "彼女 は 何年 も 日本語 を 勉強 している だけあって、上手 に 話す。", "ro": "kanojo wa nannen mo nihongo o benkyou shite iru dake atte, jouzu ni hanasu."},
+        {"en": "This restaurant is famous. As expected, it’s always crowded.", "kana": "この れすとらん は ゆうめい な だけあって、いつも こんでいる。", "ja": "この レストラン は 有名 な だけあって、いつも 混んでいる。", "ro": "kono resutoran wa yuumei na dake atte, itsumo konde iru."},
+        {"en": "He is a soccer player. As expected, he runs fast.", "kana": "かれ は さっかーせんしゅ だけあって、はしる の が はやい。", "ja": "彼 は サッカー選手 だけあって、走る の が 早い。", "ro": "kare wa sakkaa senshu dake atte, hashiru no ga hayai."},
+        {"en": "This town is old. As expected, it has many traditional buildings.", "kana": "この まち は ふるい だけあって、でんとうてき な たてもの が おおい。", "ja": "この 町 は 古い だけあって、伝統的 な 建物 が 多い。", "ro": "kono machi wa furui dake atte, dentouteki na tatemono ga ooi."}
+      ],
+      "grammar": "Noun / Verb + だけあって + Result showing expected quality"
+    },
+    {
+      "id": "n2-conj-022",
+      "ja": "だけに",
+      "kana": "だけに",
+      "ro": "dake ni",
+      "en": "precisely because / all the more because — emphasizes a strong reason or corresponding result",
+      "examples": [
+        {"en": "He’s kind, so people trust him all the more.", "kana": "かれ は しんせつ な だけに、みんな に しんらい されている。", "ja": "彼 は 親切 な だけに、みんな に 信頼 されている。", "ro": "kare wa shinsetsu na dake ni, minna ni shinrai sarete iru."},
+        {"en": "It’s expensive, so it must be good quality.", "kana": "たかい だけに、ひんしつ は いい はず だ。", "ja": "高い だけに、品質 は 良い はず だ。", "ro": "takai dake ni, hinshitsu wa yoi hazu da."},
+        {"en": "He studied hard, so it’s even more disappointing that he failed.", "kana": "かれ は よく べんきょう した だけに、ふごうかく は ざんねん だ。", "ja": "彼 は よく 勉強 した だけに、不合格 は 残念 だ。", "ro": "kare wa yoku benkyou shita dake ni, fugoukaku wa zannen da."},
+        {"en": "She is young, so she learns quickly.", "kana": "かのじょ は わかい だけに、おぼえる の が はやい。", "ja": "彼女 は 若い だけに、覚える の が 早い。", "ro": "kanojo wa wakai dake ni, oboeru no ga hayai."},
+        {"en": "He’s been waiting long, so he’s even more tired.", "kana": "ながく まっていた だけに、もっと つかれた。", "ja": "長く 待っていた だけに、もっと 疲れた。", "ro": "nagaku matte ita dake ni, motto tsukareta."}
+      ],
+      "grammar": "Reason + だけに + Strongly corresponding result"
+    },
+    {
+      "id": "n2-conj-023",
+      "ja": "だけのことはある",
+      "kana": "だけのことはある",
+      "ro": "dake no koto wa aru",
+      "en": "it’s no wonder that / worth it — used to express admiration or justification for a result",
+      "examples": [
+        {"en": "He practices every day. No wonder he’s good.", "kana": "まいにち れんしゅう している。 だけの こと は ある。", "ja": "毎日 練習 している。 だけの こと は ある。", "ro": "mainichi renshuu shite iru. dake no koto wa aru."},
+        {"en": "She studied abroad. No wonder her English is good.", "kana": "かのじょ は りゅうがく した。 だから えいご が じょうず な だけの こと は ある。", "ja": "彼女 は 留学 した。 だから 英語 が 上手 な だけの こと は ある。", "ro": "kanojo wa ryuugaku shita. dakara eigo ga jouzu na dake no koto wa aru."},
+        {"en": "This hotel is expensive. No wonder it’s luxurious.", "kana": "この ほてる は たかい。 だけの こと は ある。", "ja": "この ホテル は 高い。 だけの こと は ある。", "ro": "kono hoteru wa takai. dake no koto wa aru."},
+        {"en": "He is an experienced teacher. No wonder his class is interesting.", "kana": "けいけん が ある せんせい だ。 だけの こと は ある。", "ja": "経験 が ある 先生 だ。 だけの こと は ある。", "ro": "keiken ga aru sensei da. dake no koto wa aru."},
+        {"en": "He trains hard. No wonder he won the match.", "kana": "かれ は きびしく れんしゅう している。 だから かつ だけの こと は ある。", "ja": "彼 は 厳しく 練習 している。 だから 勝つ だけの こと は ある。", "ro": "kare wa kibishiku renshuu shite iru. dakara katsu dake no koto wa aru."}
+      ],
+      "grammar": "Verb / Noun + だけのことはある (expressing justified result)"
+    },
+    {
+      "id": "n2-conj-024",
+      "ja": "だって",
+      "kana": "だって",
+      "ro": "datte",
+      "en": "because / but — casual connector used to give reasons or make excuses",
+      "examples": [
+        {"en": "Why didn’t you go? Because I was tired.", "kana": "どうして いかなかった の？ だって、つかれていた から。", "ja": "どうして 行かなかった の？ だって、疲れていた から。", "ro": "doushite ikanakatta no? datte, tsukarete ita kara."},
+        {"en": "Why are you crying? Because it hurts.", "kana": "どうして ないている の？ だって、いたい ん だ もん。", "ja": "どうして 泣いている の？ だって、痛い ん だ もん。", "ro": "doushite naite iru no? datte, itai n da mon."},
+        {"en": "Why don’t you eat? Because I’m not hungry.", "kana": "どうして たべない の？ だって、おなか すいて ない から。", "ja": "どうして 食べない の？ だって、お腹 空いて ない から。", "ro": "doushite tabenai no? datte, onaka suite nai kara."},
+        {"en": "Why didn’t you tell me? Because I forgot.", "kana": "どうして いわなかった の？ だって、わすれた から。", "ja": "どうして 言わなかった の？ だって、忘れた から。", "ro": "doushite iwanakatta no? datte, wasureta kara."},
+        {"en": "Why are you late? Because the train was delayed.", "kana": "どうして おくれた の？ だって、でんしゃ が おくれた ん だ。", "ja": "どうして 遅れた の？ だって、電車 が 遅れた ん だ。", "ro": "doushite okureta no? datte, densha ga okureta n da."}
+      ],
+      "grammar": "だって + Reason (used in casual speech)"
+    },
+    {
+      "id": "n2-conj-025",
+      "ja": "だからこそ",
+      "kana": "だからこそ",
+      "ro": "dakara koso",
+      "en": "precisely because — emphasizes a reason for determination or special importance",
+      "examples": [
+        {"en": "Precisely because it’s difficult, I want to try.", "kana": "むずかしい だからこそ、ちょうせん したい。", "ja": "難しい だからこそ、挑戦 したい。", "ro": "muzukashii dakara koso, chousen shitai."},
+        {"en": "Precisely because it’s painful, it has meaning.", "kana": "つらい だからこそ、いみ が ある。", "ja": "辛い だからこそ、意味 が ある。", "ro": "tsurai dakara koso, imi ga aru."},
+        {"en": "Precisely because he failed, he learned a lot.", "kana": "しっぱい した だからこそ、まなぶ こと が おおい。", "ja": "失敗 した だからこそ、学ぶ こと が 多い。", "ro": "shippai shita dakara koso, manabu koto ga ooi."},
+        {"en": "Precisely because I love you, I want you to be free.", "kana": "あいしている だからこそ、じゆう に なって ほしい。", "ja": "愛している だからこそ、自由 に なって ほしい。", "ro": "aishite iru dakara koso, jiyuu ni natte hoshii."},
+        {"en": "Precisely because it’s small, it’s easy to live in.", "kana": "ちいさい だからこそ、すみ やすい。", "ja": "小さい だからこそ、住み やすい。", "ro": "chiisai dakara koso, sumi yasui."}
+      ],
+      "grammar": "Reason + だからこそ + Emphasized Result or Feeling"
+    },
+    {
+      "id": "n2-conj-026",
+      "ja": "だとすると",
+      "kana": "だとすると",
+      "ro": "dato suru to",
+      "en": "if that’s the case / assuming that — used when drawing a logical conclusion from a premise",
+      "examples": [
+        {"en": "If that’s true, we need to change the plan.", "kana": "それ が ほんとう だと すると、けいかく を かえなければ ならない。", "ja": "それ が 本当 だと すると、計画 を 変えなければ ならない。", "ro": "sore ga hontou dato suru to, keikaku o kaenakereba naranai."},
+        {"en": "If he’s not coming, we should start without him.", "kana": "かれ が こない だと すると、かれ なし で はじめよう。", "ja": "彼 が 来ない だと すると、彼 なし で 始めよう。", "ro": "kare ga konai dato suru to, kare nashi de hajimeyou."},
+        {"en": "If this is the last train, we’ll have to take a taxi.", "kana": "これ が さいしゅう でんしゃ だと すると、たくしー で かえらなければ。", "ja": "これ が 最終 電車 だと すると、タクシー で 帰らなければ。", "ro": "kore ga saishuu densha dato suru to, takushii de kaeranakereba."},
+        {"en": "If that’s his voice, he must be nearby.", "kana": "それ が かれ の こえ だと すると、ちかく に いる はず だ。", "ja": "それ が 彼 の 声 だと すると、近く に いる はず だ。", "ro": "sore ga kare no koe dato suru to, chikaku ni iru hazu da."},
+        {"en": "If that rumor is true, it’s a big problem.", "kana": "その うわさ が ほんとう だと すると、おおきな もんだい だ。", "ja": "その 噂 が 本当 だと すると、大きな 問題 だ。", "ro": "sono uwasa ga hontou dato suru to, ookina mondai da."}
+      ],
+      "grammar": "Statement / Assumption + だとすると + Logical Result"
+    },
+    {
+      "id": "n2-conj-027",
+      "ja": "だとしても",
+      "kana": "だとしても",
+      "ro": "dato shite mo",
+      "en": "even if / even supposing — expresses concession; result doesn’t change even if assumption is true",
+      "examples": [
+        {"en": "Even if it rains, we’ll still go.", "kana": "あめ が ふる だとしても、いく よ。", "ja": "雨 が 降る だとしても、行く よ。", "ro": "ame ga furu dato shite mo, iku yo."},
+        {"en": "Even if he apologizes, I won’t forgive him.", "kana": "かれ が あやまる だとしても、ゆるさない。", "ja": "彼 が 謝る だとしても、許さない。", "ro": "kare ga ayamaru dato shite mo, yurusanai."},
+        {"en": "Even if I fail, I’ll try again.", "kana": "しっぱい する だとしても、もう いちど ちょうせん する。", "ja": "失敗 する だとしても、もう 一度 挑戦 する。", "ro": "shippai suru dato shite mo, mou ichido chousen suru."},
+        {"en": "Even if it’s expensive, I want it.", "kana": "たかい だとしても、ほしい。", "ja": "高い だとしても、欲しい。", "ro": "takai dato shite mo, hoshii."},
+        {"en": "Even if it’s difficult, I won’t give up.", "kana": "むずかしい だとしても、あきらめない。", "ja": "難しい だとしても、諦めない。", "ro": "muzukashii dato shite mo, akiramenai."}
+      ],
+      "grammar": "Assumption + だとしても + Result / Action unchanged"
+    },
+    {
+      "id": "n2-conj-028",
+      "ja": "というより",
+      "kana": "というより",
+      "ro": "to iu yori",
+      "en": "rather than / more like — used to correct or clarify an expression",
+      "examples": [
+        {"en": "He’s not kind, he’s more like quiet.", "kana": "かれ は しんせつ と いう より、しずか な ひと だ。", "ja": "彼 は 親切 と いう より、静か な 人 だ。", "ro": "kare wa shinsetsu to iu yori, shizuka na hito da."},
+        {"en": "It’s not a hobby, it’s more like a job.", "kana": "しゅみ と いう より、しごと に ちかい。", "ja": "趣味 と いう より、仕事 に 近い。", "ro": "shumi to iu yori, shigoto ni chikai."},
+        {"en": "It wasn’t delicious, more like strange.", "kana": "おいしい と いう より、へんな あじ だった。", "ja": "美味しい と いう より、変な 味 だった。", "ro": "oishii to iu yori, hen na aji datta."},
+        {"en": "He’s not angry, more like surprised.", "kana": "かれ は おこっている と いう より、おどろいている。", "ja": "彼 は 怒っている と いう より、驚いている。", "ro": "kare wa okotte iru to iu yori, odoroite iru."},
+        {"en": "It’s not easy, more like impossible.", "kana": "かんたん と いう より、むり だ。", "ja": "簡単 と いう より、無理 だ。", "ro": "kantan to iu yori, muri da."}
+      ],
+      "grammar": "A というより B (used to correct or refine expression)"
+    },
+    {
+      "id": "n2-conj-029",
+      "ja": "というのは",
+      "kana": "というのは",
+      "ro": "to iu no wa",
+      "en": "because / the reason is — used to explain or define something mentioned before",
+      "examples": [
+        {"en": "I didn’t go. The reason is I was sick.", "kana": "いかなかった。 という の は、びょうき だった から だ。", "ja": "行かなかった。 という の は、病気 だった から だ。", "ro": "ikanakatta. to iu no wa, byouki datta kara da."},
+        {"en": "He’s late. The reason is his train was delayed.", "kana": "かれ が おくれた。 という の は、でんしゃ が おくれた から だ。", "ja": "彼 が 遅れた。 という の は、電車 が 遅れた から だ。", "ro": "kare ga okureta. to iu no wa, densha ga okureta kara da."},
+        {"en": "I like her. The reason is she’s kind.", "kana": "かのじょ が すき だ。 という の は、しんせつ だから だ。", "ja": "彼女 が 好き だ。 という の は、親切 だから だ。", "ro": "kanojo ga suki da. to iu no wa, shinsetsu dakara da."},
+        {"en": "I’m moving. The reason is my company transferred me.", "kana": "ひっこす。 という の は、かいしゃ の いどう が あった から だ。", "ja": "引っ越す。 という の は、会社 の 異動 が あった から だ。", "ro": "hikkosu. to iu no wa, kaisha no idou ga atta kara da."},
+        {"en": "She cried. The reason is she was touched.", "kana": "かのじょ は ないた。 という の は、かんどう した から だ。", "ja": "彼女 は 泣いた。 という の は、感動 した から だ。", "ro": "kanojo wa naita. to iu no wa, kandou shita kara da."}
+      ],
+      "grammar": "Statement + というのは + Reason/Explanation"
+    },
+    {
+      "id": "n2-conj-030",
+      "ja": "というわけだ",
+      "kana": "というわけだ",
+      "ro": "to iu wake da",
+      "en": "that means / in other words / so — used to summarize or logically conclude something",
+      "examples": [
+        {"en": "He’s gone abroad, so he’s not in Japan now.", "kana": "かれ は がいこく に いった。 という わけ で、いま は にほん に いない。", "ja": "彼 は 外国 に 行った。 という わけ で、今 は 日本 に いない。", "ro": "kare wa gaikoku ni itta. to iu wake de, ima wa nihon ni inai."},
+        {"en": "She’s busy, so she can’t come today.", "kana": "かのじょ は いそがしい。 という わけ で、きょう は これない。", "ja": "彼女 は 忙しい。 という わけ で、今日 は 来れない。", "ro": "kanojo wa isogashii. to iu wake de, kyou wa korenai."},
+        {"en": "It’s raining, so the match was canceled.", "kana": "あめ が ふっている。 という わけ で、しあい は ちゅうし に なった。", "ja": "雨 が 降っている。 という わけ で、試合 は 中止 に なった。", "ro": "ame ga futte iru. to iu wake de, shiai wa chuushi ni natta."},
+        {"en": "He’s a teacher, so he knows a lot about education.", "kana": "かれ は せんせい だ。 という わけ で、きょういく に くわしい。", "ja": "彼 は 先生 だ。 という わけ で、教育 に 詳しい。", "ro": "kare wa sensei da. to iu wake de, kyouiku ni kuwashii."},
+        {"en": "It’s Sunday, so the bank is closed.", "kana": "にちようび だ。 という わけ で、ぎんこう は やすみ だ。", "ja": "日曜日 だ。 という わけ で、銀行 は 休み だ。", "ro": "nichiyoubi da. to iu wake de, ginkou wa yasumi da."}
+      ],
+      "grammar": "Statement + というわけだ (used for conclusion or summary)"
+    },
+    {
+      "id": "n2-conj-031",
+      "ja": "といっても",
+      "kana": "といっても",
+      "ro": "to itte mo",
+      "en": "although I say / even though — used to modify or downplay a previous statement",
+      "examples": [
+        {"en": "I live in Tokyo, but it’s just in the suburbs.", "kana": "とうきょう に すんでいる といっても、はずれ の ほう です。", "ja": "東京 に 住んでいる といっても、端 の 方 です。", "ro": "toukyou ni sunde iru to itte mo, hazure no hou desu."},
+        {"en": "He’s rich, but not that rich.", "kana": "かれ は おかねもち といっても、すごく では ない。", "ja": "彼 は お金持ち といっても、すごく では ない。", "ro": "kare wa okanemochi to itte mo, sugoku de wa nai."},
+        {"en": "I can cook, but only simple dishes.", "kana": "りょうり が できる といっても、かんたん な もの だけ です。", "ja": "料理 が できる といっても、簡単 な もの だけ です。", "ro": "ryouri ga dekiru to itte mo, kantan na mono dake desu."},
+        {"en": "I went abroad, but only for three days.", "kana": "かいがい に いった といっても、みっか だけ でした。", "ja": "海外 に 行った といっても、三日 だけ でした。", "ro": "kaigai ni itta to itte mo, mikka dake deshita."},
+        {"en": "He’s my friend, but we rarely meet.", "kana": "ともだち といっても、めった に あわない。", "ja": "友達 といっても、めった に 会わない。", "ro": "tomodachi to itte mo, metta ni awanai."}
+      ],
+      "grammar": "Statement A + といっても + Limiting / Contrasting B"
+    },
+    {
+      "id": "n2-conj-032",
+      "ja": "とはいえ",
+      "kana": "とはいえ",
+      "ro": "to wa ie",
+      "en": "having said that / though — expresses concession; acknowledges a fact but contrasts it",
+      "examples": [
+        {"en": "It’s spring, though it’s still cold.", "kana": "はる と は いえ、まだ さむい。", "ja": "春 とはいえ、まだ 寒い。", "ro": "haru to wa ie, mada samui."},
+        {"en": "He’s young, but very reliable.", "kana": "わかい と は いえ、とても たより に なる。", "ja": "若い とはいえ、とても 頼り に なる。", "ro": "wakai to wa ie, totemo tayori ni naru."},
+        {"en": "It’s cheap, though not good quality.", "kana": "やすい と は いえ、ひんしつ は よくない。", "ja": "安い とはいえ、品質 は 良くない。", "ro": "yasui to wa ie, hinshitsu wa yokunai."},
+        {"en": "He failed, but he learned a lot.", "kana": "しっぱい した と は いえ、おおく を まなんだ。", "ja": "失敗 した とはいえ、多く を 学んだ。", "ro": "shippai shita to wa ie, ooku o mananda."},
+        {"en": "It’s old, but still works fine.", "kana": "ふるい と は いえ、まだ ちゃんと うごく。", "ja": "古い とはいえ、まだ ちゃんと 動く。", "ro": "furui to wa ie, mada chanto ugoku."}
+      ],
+      "grammar": "Statement + とはいえ + Contrasting Statement"
+    },
+    {
+      "id": "n2-conj-033",
+      "ja": "ところが",
+      "kana": "ところが",
+      "ro": "tokoro ga",
+      "en": "however / unexpectedly — introduces an unexpected or opposite result",
+      "examples": [
+        {"en": "I thought it would be easy. However, it was very hard.", "kana": "かんたん だ と おもった。 ところが、とても むずかしかった。", "ja": "簡単 だ と思った。 ところが、とても 難しかった。", "ro": "kantan da to omotta. tokoro ga, totemo muzukashikatta."},
+        {"en": "He said he would come. However, he didn’t.", "kana": "かれ は くる と いった。 ところが、こなかった。", "ja": "彼 は 来る と 言った。 ところが、来なかった。", "ro": "kare wa kuru to itta. tokoro ga, konakatta."},
+        {"en": "It was supposed to rain. However, it was sunny.", "kana": "あめ が ふる はず だった。 ところが、はれ だった。", "ja": "雨 が 降る はず だった。 ところが、晴れ だった。", "ro": "ame ga furu hazu datta. tokoro ga, hare datta."},
+        {"en": "I practiced a lot. However, I didn’t win.", "kana": "たくさん れんしゅう した。 ところが、かてなかった。", "ja": "たくさん 練習 した。 ところが、勝てなかった。", "ro": "takusan renshuu shita. tokoro ga, katenakatta."},
+        {"en": "He looked kind. However, he was strict.", "kana": "やさしそう に みえた。 ところが、きびしかった。", "ja": "優しそう に 見えた。 ところが、厳しかった。", "ro": "yasashisou ni mieta. tokoro ga, kibishikatta."}
+      ],
+      "grammar": "Statement + ところが + Unexpected Result"
+    },
+    {
+      "id": "n2-conj-034",
+      "ja": "ところで",
+      "kana": "ところで",
+      "ro": "tokoro de",
+      "en": "by the way / incidentally — used to change topic or introduce new information",
+      "examples": [
+        {"en": "By the way, where are you from?", "kana": "ところで、どこ の しゅっしん ですか？", "ja": "ところで、どこ の 出身 ですか？", "ro": "tokoro de, doko no shusshin desu ka?"},
+        {"en": "By the way, have you finished your homework?", "kana": "ところで、しゅくだい は おわりました か？", "ja": "ところで、宿題 は 終わりました か？", "ro": "tokoro de, shukudai wa owarimashita ka?"},
+        {"en": "By the way, how’s your mother doing?", "kana": "ところで、おかあさん は おげんき です か？", "ja": "ところで、お母さん は お元気 です か？", "ro": "tokoro de, okaasan wa ogenki desu ka?"},
+        {"en": "By the way, what time is the meeting tomorrow?", "kana": "ところで、あした の かいぎ は なんじ です か？", "ja": "ところで、明日 の 会議 は 何時 です か？", "ro": "tokoro de, ashita no kaigi wa nanji desu ka?"},
+        {"en": "By the way, have you seen that movie?", "kana": "ところで、あの えいが を みました か？", "ja": "ところで、あの 映画 を 見ました か？", "ro": "tokoro de, ano eiga o mimashita ka?"}
+      ],
+      "grammar": "Used to shift the topic or introduce related question"
+    },
+    {
+      "id": "n2-conj-035",
+      "ja": "なお",
+      "kana": "なお",
+      "ro": "nao",
+      "en": "in addition / furthermore / also — adds supplementary or clarifying information (formal)",
+      "examples": [
+        {"en": "The meeting starts at 10. Also, please bring your documents.", "kana": "かいぎ は 10じ に はじまります。 なお、しりょう を もってきて ください。", "ja": "会議 は 10時 に 始まります。 なお、資料 を 持ってきて ください。", "ro": "kaigi wa juuji ni hajimarimasu. nao, shiryou o motte kite kudasai."},
+        {"en": "The store will close tomorrow. Also, it will reopen next week.", "kana": "みせ は あす しまります。 なお、らいしゅう さいかい します。", "ja": "店 は 明日 閉まります。 なお、来週 再開 します。", "ro": "mise wa asu shimarimasu. nao, raishuu saikai shimasu."},
+        {"en": "We have an exam next week. Also, don’t forget to review.", "kana": "らいしゅう しけん が あります。 なお、ふくしゅう を わすれない で ください。", "ja": "来週 試験 が あります。 なお、復習 を 忘れない で ください。", "ro": "raishuu shiken ga arimasu. nao, fukushuu o wasurenai de kudasai."},
+        {"en": "Applications close today. Also, late ones won’t be accepted.", "kana": "もうしこみ は きょう しめきり です。 なお、おくれた もの は うけつけません。", "ja": "申し込み は 今日 締め切り です。 なお、遅れた もの は 受け付けません。", "ro": "moushikomi wa kyou shimekiri desu. nao, okureta mono wa uketsukemasen."},
+        {"en": "The test begins at 9 a.m. Also, be sure to bring a pencil.", "kana": "しけん は ごぜん 9じ に はじまります。 なお、えんぴつ を もってきて ください。", "ja": "試験 は 午前9時 に 始まります。 なお、鉛筆 を 持ってきて ください。", "ro": "shiken wa gozen kuji ni hajimarimasu. nao, enpitsu o motte kite kudasai."}
+      ],
+      "grammar": "Statement + なお + Additional / Clarifying Information"
+    },
+    {
+      "id": "n2-conj-036",
+      "ja": "もっとも",
+      "kana": "もっとも",
+      "ro": "mottomo",
+      "en": "although / though / however — used to add a qualifying statement or correction to the previous one (formal)",
+      "examples": [
+        {"en": "He says he doesn’t drink. However, he sometimes has wine.", "kana": "かれ は のまない と いっている。 もっとも、たまに わいん を のむ。", "ja": "彼 は 飲まない と 言っている。 もっとも、たまに ワイン を 飲む。", "ro": "kare wa nomanai to itte iru. mottomo, tamani wain o nomu."},
+        {"en": "I’ll go if I have time. Though, I’m quite busy.", "kana": "じかん が あれば いく。 もっとも、いま は いそがしい。", "ja": "時間 が あれば 行く。 もっとも、今 は 忙しい。", "ro": "jikan ga areba iku. mottomo, ima wa isogashii."},
+        {"en": "It’s cheap. However, the quality isn’t great.", "kana": "やすい。 もっとも、ひんしつ は あまり よくない。", "ja": "安い。 もっとも、品質 は あまり 良くない。", "ro": "yasui. mottomo, hinshitsu wa amari yokunai."},
+        {"en": "She’s honest. Though sometimes too direct.", "kana": "かのじょ は しょうじき だ。 もっとも、すこし すなお すぎる ところ も ある。", "ja": "彼女 は 正直 だ。 もっとも、少し 素直 すぎる ところ も ある。", "ro": "kanojo wa shoujiki da. mottomo, sukoshi sunao sugiru tokoro mo aru."},
+        {"en": "He’s kind. However, he’s a bit shy.", "kana": "かれ は しんせつ だ。 もっとも、すこし はずかしがりや だ。", "ja": "彼 は 親切 だ。 もっとも、少し 恥ずかしがり屋 だ。", "ro": "kare wa shinsetsu da. mottomo, sukoshi hazukashigariya da."}
+      ],
+      "grammar": "Statement + もっとも + Additional / Corrective Statement"
+    },
+    {
+      "id": "n2-conj-037",
+      "ja": "ちなみに",
+      "kana": "ちなみに",
+      "ro": "chinami ni",
+      "en": "by the way / incidentally — used to add supplementary or side information",
+      "examples": [
+        {"en": "I’m from Osaka. By the way, my parents still live there.", "kana": "おおさか しゅっしん です。 ちなみに、りょうしん は まだ そこ に すんでいます。", "ja": "大阪 出身 です。 ちなみに、両親 は まだ そこ に 住んでいます。", "ro": "oosaka shusshin desu. chinami ni, ryoushin wa mada soko ni sundeimasu."},
+        {"en": "We met in Tokyo. By the way, that was ten years ago.", "kana": "とうきょう で あいました。 ちなみに、10ねん まえ です。", "ja": "東京 で 会いました。 ちなみに、10年 前 です。", "ro": "toukyou de aimashita. chinami ni, juu nen mae desu."},
+        {"en": "I like coffee. By the way, I drink it every morning.", "kana": "こーひー が すき です。 ちなみに、まいあさ のんでいます。", "ja": "コーヒー が 好き です。 ちなみに、毎朝 飲んでいます。", "ro": "koohii ga suki desu. chinami ni, mai asa nondeimasu."},
+        {"en": "We’re going to Kyoto. By the way, it’s my first visit.", "kana": "きょうと に いきます。 ちなみに、はじめて です。", "ja": "京都 に 行きます。 ちなみに、初めて です。", "ro": "kyouto ni ikimasu. chinami ni, hajimete desu."},
+        {"en": "He’s a teacher. By the way, his wife is too.", "kana": "かれ は せんせい です。 ちなみに、つま も そう です。", "ja": "彼 は 先生 です。 ちなみに、妻 も そう です。", "ro": "kare wa sensei desu. chinami ni, tsuma mo sou desu."}
+      ],
+      "grammar": "Statement + ちなみに + Related / Extra Information"
+    },
+    {
+      "id": "n2-conj-038",
+      "ja": "ゆえに",
+      "kana": "ゆえに",
+      "ro": "yueni",
+      "en": "therefore / for that reason — a formal expression meaning 'because of that'",
+      "examples": [
+        {"en": "He was sick, therefore he was absent.", "kana": "びょうき だった。 ゆえに、けっせき した。", "ja": "病気 だった。 ゆえに、欠席 した。", "ro": "byouki datta. yueni, kesseki shita."},
+        {"en": "It was raining, therefore the game was canceled.", "kana": "あめ だった。 ゆえに、しあい は ちゅうし に なった。", "ja": "雨 だった。 ゆえに、試合 は 中止 に なった。", "ro": "ame datta. yueni, shiai wa chuushi ni natta."},
+        {"en": "He broke the rule, therefore he was punished.", "kana": "きそく を やぶった。 ゆえに、しょち された。", "ja": "規則 を 破った。 ゆえに、処置 された。", "ro": "kisoku o yabutta. yueni, shochi sareta."},
+        {"en": "He is diligent, therefore trusted by everyone.", "kana": "かれ は まじめ だ。 ゆえに、みんな に しんらい されている。", "ja": "彼 は 真面目 だ。 ゆえに、皆 に 信頼 されている。", "ro": "kare wa majime da. yueni, minna ni shinrai sarete iru."},
+        {"en": "She is kind, therefore loved by everyone.", "kana": "かのじょ は やさしい。 ゆえに、みんな に あいされている。", "ja": "彼女 は 優しい。 ゆえに、皆 に 愛されている。", "ro": "kanojo wa yasashii. yueni, minna ni aisarete iru."}
+      ],
+      "grammar": "Formal Reason + ゆえに + Result (Formal Style)"
+    },
+    {
+      "id": "n2-conj-039",
+      "ja": "そのうえ",
+      "kana": "そのうえ",
+      "ro": "sono ue",
+      "en": "moreover / in addition / on top of that — adds further supporting information",
+      "examples": [
+        {"en": "He’s smart. Moreover, he’s hardworking.", "kana": "かれ は あたま が いい。 そのうえ、よく はたらく。", "ja": "彼 は 頭 が 良い。 その上、よく 働く。", "ro": "kare wa atama ga ii. sono ue, yoku hataraku."},
+        {"en": "This restaurant is cheap. Moreover, it’s delicious.", "kana": "この れすとらん は やすい。 そのうえ、おいしい。", "ja": "この レストラン は 安い。 その上、美味しい。", "ro": "kono resutoran wa yasui. sono ue, oishii."},
+        {"en": "She’s kind. Moreover, she’s beautiful.", "kana": "かのじょ は やさしい。 そのうえ、きれい だ。", "ja": "彼女 は 優しい。 その上、綺麗 だ。", "ro": "kanojo wa yasashii. sono ue, kirei da."},
+        {"en": "It’s raining. Moreover, it’s cold.", "kana": "あめ が ふっている。 そのうえ、さむい。", "ja": "雨 が 降っている。 その上、寒い。", "ro": "ame ga futte iru. sono ue, samui."},
+        {"en": "He’s busy. Moreover, he’s tired.", "kana": "かれ は いそがしい。 そのうえ、つかれている。", "ja": "彼 は 忙しい。 その上、疲れている。", "ro": "kare wa isogashii. sono ue, tsukarete iru."}
+      ],
+      "grammar": "Statement A + そのうえ + Additional Statement B"
+    },
+    {
+      "id": "n2-conj-040",
+      "ja": "それでも",
+      "kana": "それでも",
+      "ro": "sore demo",
+      "en": "even so / nevertheless — expresses that something happens despite a previous situation",
+      "examples": [
+        {"en": "It’s raining, but even so, I’ll go.", "kana": "あめ が ふっている。 それでも、いく。", "ja": "雨 が 降っている。 それでも、行く。", "ro": "ame ga futte iru. sore demo, iku."},
+        {"en": "He failed, but even so, he didn’t give up.", "kana": "かれ は しっぱい した。 それでも、あきらめなかった。", "ja": "彼 は 失敗 した。 それでも、諦めなかった。", "ro": "kare wa shippai shita. sore demo, akiramenakatta."},
+        {"en": "She’s busy, but even so, she helps others.", "kana": "かのじょ は いそがしい。 それでも、ひと を てつだう。", "ja": "彼女 は 忙しい。 それでも、人 を 手伝う。", "ro": "kanojo wa isogashii. sore demo, hito o tetsudau."},
+        {"en": "It’s expensive, but even so, I want it.", "kana": "たかい。 それでも、ほしい。", "ja": "高い。 それでも、欲しい。", "ro": "takai. sore demo, hoshii."},
+        {"en": "It’s difficult, but even so, he tries hard.", "kana": "むずかしい。 それでも、かれ は がんばっている。", "ja": "難しい。 それでも、彼 は 頑張っている。", "ro": "muzukashii. sore demo, kare wa ganbatte iru."}
+      ],
+      "grammar": "Statement A + それでも + Contrasting / Continuing B"
+    }
+  ]
+}

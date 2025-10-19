@@ -1,0 +1,1504 @@
+{
+  "entries": [
+{
+  "id": "n2-grammar-001",
+  "ja": "〜うちに",
+  "kana": "〜うちに",
+  "ro": "uchi ni",
+  "en": "while / before (something changes)",
+  "examples": [
+    {"en": "Please do it while you remember.", "ja": "覚えているうちにやってください。", "kana": "おぼえている うち に やって ください。", "ro": "oboeteiru uchi ni yatte kudasai."},
+    {"en": "Let’s go out while the weather is good.", "ja": "天気がいいうちに出かけましょう。", "kana": "てんき が いい うち に でかけましょう。", "ro": "tenki ga ii uchi ni dekakemashou."},
+    {"en": "I’ll call my parents while I have time.", "ja": "時間があるうちに両親に電話します。", "kana": "じかん が ある うち に りょうしん に でんわ します。", "ro": "jikan ga aru uchi ni ryoushin ni denwa shimasu."},
+    {"en": "It got dark while I was walking.", "ja": "歩いているうちに暗くなりました。", "kana": "あるいている うち に くらく なりました。", "ro": "aruiteiru uchi ni kuraku narimashita."},
+    {"en": "I fell asleep while watching TV.", "ja": "テレビを見ているうちに寝てしまいました。", "kana": "てれび を みている うち に ねて しまいました。", "ro": "terebi o miteiru uchi ni nete shimaimashita."}
+  ],
+  "grammar": "Verb (dictionary / ている form) / い-adj / Noun + のうちに"
+},
+{
+  "id": "n2-grammar-002",
+  "ja": "〜おかげで",
+  "kana": "〜おかげで",
+  "ro": "okagede",
+  "en": "thanks to / because of (positive reason)",
+  "examples": [
+    {"en": "Thanks to you, I was able to succeed.", "ja": "あなたのおかげで成功できました。", "kana": "あなた の おかげ で せいこう できました。", "ro": "anata no okage de seikou dekimashita."},
+    {"en": "Thanks to this medicine, I got better.", "ja": "この薬のおかげで元気になりました。", "kana": "この くすり の おかげ で げんき に なりました。", "ro": "kono kusuri no okage de genki ni narimashita."},
+    {"en": "Thanks to my teacher, I passed the exam.", "ja": "先生のおかげで試験に合格しました。", "kana": "せんせい の おかげ で しけん に ごうかく しました。", "ro": "sensei no okage de shiken ni goukaku shimashita."},
+    {"en": "Thanks to my parents, I can study abroad.", "ja": "両親のおかげで留学できます。", "kana": "りょうしん の おかげ で りゅうがく できます。", "ro": "ryoushin no okage de ryuugaku dekimasu."},
+    {"en": "Thanks to everyone, the event was successful.", "ja": "みんなのおかげでイベントは成功しました。", "kana": "みんな の おかげ で いべんと は せいこう しました。", "ro": "minna no okage de ibento wa seikou shimashita."}
+  ],
+  "grammar": "Verb / Noun + のおかげで"
+},
+{
+  "id": "n2-grammar-003",
+  "ja": "〜せいで",
+  "kana": "〜せいで",
+  "ro": "sei de",
+  "en": "because of / due to (negative reason)",
+  "examples": [
+    {"en": "Because of the rain, the event was canceled.", "ja": "雨のせいでイベントが中止になりました。", "kana": "あめ の せい で いべんと が ちゅうし に なりました。", "ro": "ame no sei de ibento ga chuushi ni narimashita."},
+    {"en": "Because of my mistake, everyone had trouble.", "ja": "私のせいでみんなに迷惑をかけました。", "kana": "わたし の せい で みんな に めいわく を かけました。", "ro": "watashi no sei de minna ni meiwaku o kakemashita."},
+    {"en": "Because of him, I was scolded.", "ja": "彼のせいで怒られました。", "kana": "かれ の せい で おこられました。", "ro": "kare no sei de okoraremashita."},
+    {"en": "I’m tired because of lack of sleep.", "ja": "寝不足のせいで疲れています。", "kana": "ねぶそく の せい で つかれています。", "ro": "nebusoku no sei de tsukareteimasu."},
+    {"en": "Because of the traffic jam, I was late.", "ja": "渋滞のせいで遅れました。", "kana": "じゅうたい の せい で おくれました。", "ro": "juutai no sei de okuremashita."}
+  ],
+  "grammar": "Verb / Noun + のせいで"
+},
+{
+  "id": "n2-grammar-004",
+  "ja": "〜たとたん（に）",
+  "kana": "〜たとたん（に）",
+  "ro": "ta totan (ni)",
+  "en": "just as / the moment / as soon as",
+  "examples": [
+    {"en": "The moment I stood up, I felt dizzy.", "ja": "立ち上がったとたん、めまいがしました。", "kana": "たちあがった とたん、 めまい が しました。", "ro": "tachiagatta totan, memai ga shimashita."},
+    {"en": "As soon as I went outside, it started raining.", "ja": "外に出たとたん、雨が降り出しました。", "kana": "そと に でた とたん、 あめ が ふりだしました。", "ro": "soto ni deta totan, ame ga furidashimashita."},
+    {"en": "As soon as the bell rang, the students left.", "ja": "ベルが鳴ったとたん、生徒たちは出て行きました。", "kana": "べる が なった とたん、 せいとたち は でて いきました。", "ro": "beru ga natta totan, seitotachi wa dete ikimashita."},
+    {"en": "As soon as I opened the door, the cat ran away.", "ja": "ドアを開けたとたん、猫が逃げました。", "kana": "どあ を あけた とたん、 ねこ が にげました。", "ro": "doa o aketa totan, neko ga nigemashita."},
+    {"en": "The moment I saw her face, I knew something was wrong.", "ja": "彼女の顔を見たとたん、何かが違うと感じました。", "kana": "かのじょ の かお を みた とたん、 なにか が ちがう と かんじました。", "ro": "kanojo no kao o mita totan, nanika ga chigau to kanjimashita."}
+  ],
+  "grammar": "Verb (た-form) + とたん（に）"
+},
+{
+  "id": "n2-grammar-005",
+  "ja": "〜か〜ないかのうちに",
+  "kana": "〜か〜ないかのうちに",
+  "ro": "ka nai ka no uchi ni",
+  "en": "as soon as / almost simultaneously",
+  "examples": [
+    {"en": "As soon as the bell rang, the class started.", "ja": "ベルが鳴るか鳴らないかのうちに授業が始まりました。", "kana": "べる が なる か ならない か の うち に じゅぎょう が はじまりました。", "ro": "beru ga naru ka naranai ka no uchi ni jugyou ga hajimarimashita."},
+    {"en": "As soon as I got home, the phone rang.", "ja": "家に着くか着かないかのうちに電話が鳴りました。", "kana": "いえ に つく か つかない か の うち に でんわ が なりました。", "ro": "ie ni tsuku ka tsukanai ka no uchi ni denwa ga narimashita."},
+    {"en": "As soon as I said that, everyone laughed.", "ja": "それを言うか言わないかのうちにみんなが笑いました。", "kana": "それ を いう か いわない か の うち に みんな が わらいました。", "ro": "sore o iu ka iwanai ka no uchi ni minna ga waraimashita."},
+    {"en": "As soon as the curtain opened, the audience applauded.", "ja": "カーテンが開くか開かないかのうちに拍手が起こりました。", "kana": "かーてん が あく か あかない か の うち に はくしゅ が おこりました。", "ro": "kaaten ga aku ka akanai ka no uchi ni hakushu ga okorimashita."},
+    {"en": "As soon as the teacher came in, the students stood up.", "ja": "先生が入るか入らないかのうちに生徒たちは立ち上がりました。", "kana": "せんせい が はいる か はいらない か の うち に せいとたち は たちあがりました。", "ro": "sensei ga hairu ka hairanai ka no uchi ni seitotachi wa tachiagarimashita."}
+  ],
+  "grammar": "Verb (dictionary form) + か + Verb (ない form) + かのうちに"
+},  
+{
+  "id": "n2-grammar-006",
+  "ja": "〜最中に",
+  "kana": "〜さいちゅうに",
+  "ro": "saichuu ni",
+  "en": "in the middle of / during",
+  "examples": [
+    {"en": "It started raining in the middle of the game.", "ja": "試合の最中に雨が降り出しました。", "kana": "しあい の さいちゅう に あめ が ふりだしました。", "ro": "shiai no saichuu ni ame ga furidashimashita."},
+    {"en": "I was interrupted during dinner.", "ja": "食事の最中に電話がかかってきました。", "kana": "しょくじ の さいちゅう に でんわ が かかって きました。", "ro": "shokuji no saichuu ni denwa ga kakatte kimashita."},
+    {"en": "A noise occurred while I was recording.", "ja": "録音の最中に雑音が入りました。", "kana": "ろくおん の さいちゅう に ざつおん が はいりました。", "ro": "rokuon no saichuu ni zatsuon ga hairimashita."},
+    {"en": "My friend came during my study time.", "ja": "勉強している最中に友達が来ました。", "kana": "べんきょう している さいちゅう に ともだち が きました。", "ro": "benkyou shiteiru saichuu ni tomodachi ga kimashita."},
+    {"en": "I sneezed during the test.", "ja": "テストの最中にくしゃみをしてしまいました。", "kana": "てすと の さいちゅう に くしゃみ を して しまいました。", "ro": "tesuto no saichuu ni kushami o shite shimaimashita."}
+  ],
+  "grammar": "Verb (ている form) / Noun + の最中に"
+},
+{
+  "id": "n2-grammar-007",
+  "ja": "〜に限って",
+  "kana": "〜にかぎって",
+  "ro": "ni kagitte",
+  "en": "especially / particularly / only / just (when)",
+  "examples": [
+    {"en": "It always rains on the day I hang out my laundry.", "ja": "洗濯をした日に限って雨が降ります。", "kana": "せんたく を した ひ に かぎって あめ が ふります。", "ro": "sentaku o shita hi ni kagitte ame ga furimasu."},
+    {"en": "She’s always late only when it’s important.", "ja": "大事な日に限って彼女は遅れます。", "kana": "だいじな ひ に かぎって かのじょ は おくれます。", "ro": "daijina hi ni kagitte kanojo wa okuremasu."},
+    {"en": "That teacher is kind only to girls.", "ja": "あの先生は女の子に限って優しいです。", "kana": "あの せんせい は おんなのこ に かぎって やさしい です。", "ro": "ano sensei wa onnanoko ni kagitte yasashii desu."},
+    {"en": "When I’m busy, trouble always happens.", "ja": "忙しい時に限って問題が起こります。", "kana": "いそがしい とき に かぎって もんだい が おこります。", "ro": "isogashii toki ni kagitte mondai ga okorimasu."},
+    {"en": "People who study hard usually pass the exam.", "ja": "よく勉強する人に限って試験に合格します。", "kana": "よく べんきょう する ひと に かぎって しけん に ごうかく します。", "ro": "yoku benkyou suru hito ni kagitte shiken ni goukaku shimasu."}
+  ],
+  "grammar": "Noun + に限って"
+},
+{
+  "id": "n2-grammar-008",
+  "ja": "〜に限らず",
+  "kana": "〜にかぎらず",
+  "ro": "ni kagirazu",
+  "en": "not only... but also / regardless of",
+  "examples": [
+    {"en": "This event is open not only to students but also to adults.", "ja": "このイベントは学生に限らず大人も参加できます。", "kana": "この いべんと は がくせい に かぎらず おとな も さんか できます。", "ro": "kono ibento wa gakusei ni kagirazu otona mo sanka dekimasu."},
+    {"en": "This restaurant is popular among locals and tourists alike.", "ja": "このレストランは地元の人に限らず観光客にも人気です。", "kana": "この れすとらん は じもと の ひと に かぎらず かんこうきゃく にも にんき です。", "ro": "kono resutoran wa jimoto no hito ni kagirazu kankoukyaku nimo ninki desu."},
+    {"en": "This applies not only to Japan but also to other countries.", "ja": "これは日本に限らず他の国にも当てはまります。", "kana": "これは にほん に かぎらず ほか の くに にも あてはまります。", "ro": "kore wa nihon ni kagirazu hoka no kuni nimo atehamarimasu."},
+    {"en": "This problem affects not only adults but also children.", "ja": "この問題は大人に限らず子どもにも影響します。", "kana": "この もんだい は おとな に かぎらず こども にも えいきょう します。", "ro": "kono mondai wa otona ni kagirazu kodomo nimo eikyou shimasu."},
+    {"en": "This song is loved not only in Japan but around the world.", "ja": "この歌は日本に限らず世界中で愛されています。", "kana": "この うた は にほん に かぎらず せかいじゅう で あいされて います。", "ro": "kono uta wa nihon ni kagirazu sekaijuu de aisareteimasu."}
+  ],
+  "grammar": "Noun + に限らず"
+},
+{
+  "id": "n2-grammar-009",
+  "ja": "〜にわたって",
+  "kana": "〜にわたって",
+  "ro": "ni watatte",
+  "en": "throughout / over (a period or area)",
+  "examples": [
+    {"en": "The typhoon caused damage across Japan.", "ja": "台風は日本全体にわたって被害をもたらしました。", "kana": "たいふう は にほん ぜんたい に わたって ひがい を もたらしました。", "ro": "taifuu wa nihon zentai ni watatte higai o motarashimashita."},
+    {"en": "The search continued for three days.", "ja": "捜索は三日にわたって行われました。", "kana": "そうさく は みっか に わたって おこなわれました。", "ro": "sousaku wa mikka ni watatte okonawaremashita."},
+    {"en": "The festival lasts for a week.", "ja": "祭りは一週間にわたって行われます。", "kana": "まつり は いっしゅうかん に わたって おこなわれます。", "ro": "matsuri wa isshuukan ni watatte okonawaremasu."},
+    {"en": "His influence spread throughout the country.", "ja": "彼の影響は国中にわたって広がりました。", "kana": "かれ の えいきょう は くにじゅう に わたって ひろがりました。", "ro": "kare no eikyou wa kunijuu ni watatte hirogarimashita."},
+    {"en": "The project took several years to complete.", "ja": "プロジェクトは数年にわたって続きました。", "kana": "ぷろじぇくと は すうねん に わたって つづきました。", "ro": "purojekuto wa suunen ni watatte tsuzukimashita."}
+  ],
+  "grammar": "Noun + にわたって / にわたり"
+},
+{
+  "id": "n2-grammar-010",
+  "ja": "〜において",
+  "kana": "〜において",
+  "ro": "ni oite",
+  "en": "in / at / on / regarding (formal)",
+  "examples": [
+    {"en": "This problem occurred at the meeting.", "ja": "会議において問題が発生しました。", "kana": "かいぎ に おいて もんだい が はっせい しました。", "ro": "kaigi ni oite mondai ga hassei shimashita."},
+    {"en": "He made a speech at the ceremony.", "ja": "式において彼はスピーチをしました。", "kana": "しき に おいて かれ は すぴーち を しました。", "ro": "shiki ni oite kare wa supiichi o shimashita."},
+    {"en": "This rule applies to all cases.", "ja": "この規則はすべての場合において適用されます。", "kana": "この きそく は すべて の ばあい に おいて てきよう されます。", "ro": "kono kisoku wa subete no baai ni oite tekiyou saremasu."},
+    {"en": "In Japan, people take off their shoes indoors.", "ja": "日本においては家の中で靴を脱ぎます。", "kana": "にほん に おいて は いえ の なか で くつ を ぬぎます。", "ro": "nihon ni oite wa ie no naka de kutsu o nugimasu."},
+    {"en": "This company has made great progress in technology.", "ja": "この会社は技術において大きな進歩を遂げました。", "kana": "この かいしゃ は ぎじゅつ に おいて おおきな しんぽ を とげました。", "ro": "kono kaisha wa gijutsu ni oite ookina shinpo o togemashita."}
+  ],
+  "grammar": "Noun + において"
+},
+{
+  "id": "n2-grammar-011",
+  "ja": "〜に違いない",
+  "kana": "〜にちがいない",
+  "ro": "ni chigainai",
+  "en": "must be / without a doubt / certain",
+  "examples": [
+    {"en": "He must be tired.", "ja": "彼は疲れているに違いない。", "kana": "かれ は つかれている に ちがいない。", "ro": "kare wa tsukareteiru ni chigainai."},
+    {"en": "This movie must be interesting.", "ja": "この映画は面白いに違いない。", "kana": "この えいが は おもしろい に ちがいない。", "ro": "kono eiga wa omoshiroi ni chigainai."},
+    {"en": "It must be his mistake.", "ja": "それは彼の間違いに違いない。", "kana": "それ は かれ の まちがい に ちがいない。", "ro": "sore wa kare no machigai ni chigainai."},
+    {"en": "She must be rich.", "ja": "彼女はお金持ちに違いない。", "kana": "かのじょ は おかねもち に ちがいない。", "ro": "kanojo wa okanemochi ni chigainai."},
+    {"en": "He must like her.", "ja": "彼は彼女のことが好きに違いない。", "kana": "かれ は かのじょ の こと が すき に ちがいない。", "ro": "kare wa kanojo no koto ga suki ni chigainai."}
+  ],
+  "grammar": "Verb (plain form) / い-adj / な-adj / Noun + に違いない"
+},
+{
+  "id": "n2-grammar-012",
+  "ja": "〜おそれがある",
+  "kana": "〜おそれがある",
+  "ro": "osore ga aru",
+  "en": "there is a risk / fear / possibility that...",
+  "examples": [
+    {"en": "There is a risk of a typhoon tomorrow.", "ja": "明日は台風が来るおそれがあります。", "kana": "あした は たいふう が くる おそれ が あります。", "ro": "ashita wa taifuu ga kuru osore ga arimasu."},
+    {"en": "There is a possibility of infection spreading.", "ja": "感染が広がるおそれがあります。", "kana": "かんせん が ひろがる おそれ が あります。", "ro": "kansen ga hirogaru osore ga arimasu."},
+    {"en": "The building may collapse.", "ja": "建物が倒れるおそれがあります。", "kana": "たてもの が たおれる おそれ が あります。", "ro": "tatemono ga taoreru osore ga arimasu."},
+    {"en": "There is a risk of losing data.", "ja": "データを失うおそれがあります。", "kana": "でーた を うしなう おそれ が あります。", "ro": "deeta o ushinau osore ga arimasu."},
+    {"en": "There is a fear that the company might go bankrupt.", "ja": "会社が倒産するおそれがあります。", "kana": "かいしゃ が とうさん する おそれ が あります。", "ro": "kaisha ga tousan suru osore ga arimasu."}
+  ],
+  "grammar": "Verb (dictionary form) / Noun + のおそれがある"
+},
+{
+  "id": "n2-grammar-013",
+  "ja": "〜に決まっている",
+  "kana": "〜にきまっている",
+  "ro": "ni kimatteiru",
+  "en": "it must be / I’m sure / definitely",
+  "examples": [
+    {"en": "He must be lying.", "ja": "彼はうそをついているに決まっている。", "kana": "かれ は うそ を ついている に きまっている。", "ro": "kare wa uso o tsuiteiru ni kimatteiru."},
+    {"en": "That shop must be expensive.", "ja": "あの店は高いに決まっている。", "kana": "あの みせ は たかい に きまっている。", "ro": "ano mise wa takai ni kimatteiru."},
+    {"en": "He will come late again for sure.", "ja": "彼はまた遅れてくるに決まっている。", "kana": "かれ は また おくれて くる に きまっている。", "ro": "kare wa mata okurete kuru ni kimatteiru."},
+    {"en": "It’s definitely difficult.", "ja": "それは難しいに決まっている。", "kana": "それ は むずかしい に きまっている。", "ro": "sore wa muzukashii ni kimatteiru."},
+    {"en": "That person must be a foreigner.", "ja": "あの人は外国人に決まっている。", "kana": "あの ひと は がいこくじん に きまっている。", "ro": "ano hito wa gaikokujin ni kimatteiru."}
+  ],
+  "grammar": "Verb (plain form) / い-adj / な-adj / Noun + に決まっている"
+},
+{
+  "id": "n2-grammar-014",
+  "ja": "〜にすぎない",
+  "kana": "〜にすぎない",
+  "ro": "ni suginai",
+  "en": "nothing more than / only / just",
+  "examples": [
+    {"en": "It’s just a joke.", "ja": "それは冗談にすぎません。", "kana": "それ は じょうだん に すぎません。", "ro": "sore wa joudan ni sugimasen."},
+    {"en": "I just did what I was told.", "ja": "言われたことをしたにすぎない。", "kana": "いわれた こと を した に すぎない。", "ro": "iwareta koto o shita ni suginai."},
+    {"en": "He’s just a child.", "ja": "彼は子どもにすぎない。", "kana": "かれ は こども に すぎない。", "ro": "kare wa kodomo ni suginai."},
+    {"en": "It’s only my opinion.", "ja": "それは私の意見にすぎません。", "kana": "それ は わたし の いけん に すぎません。", "ro": "sore wa watashi no iken ni sugimasen."},
+    {"en": "This is just the beginning.", "ja": "これは始まりにすぎない。", "kana": "これ は はじまり に すぎない。", "ro": "kore wa hajimari ni suginai."}
+  ],
+  "grammar": "Verb (plain form) / Noun + にすぎない"
+},
+{
+  "id": "n2-grammar-015",
+  "ja": "〜わけがない",
+  "kana": "〜わけがない",
+  "ro": "wake ga nai",
+  "en": "there’s no way / impossible / cannot be",
+  "examples": [
+    {"en": "There’s no way he did that.", "ja": "彼がそんなことをするわけがない。", "kana": "かれ が そんな こと を する わけ が ない。", "ro": "kare ga sonna koto o suru wake ga nai."},
+    {"en": "There’s no way I can win.", "ja": "私が勝てるわけがない。", "kana": "わたし が かてる わけ が ない。", "ro": "watashi ga kateru wake ga nai."},
+    {"en": "There’s no way she forgot.", "ja": "彼女が忘れるわけがない。", "kana": "かのじょ が わすれる わけ が ない。", "ro": "kanojo ga wasureru wake ga nai."},
+    {"en": "It’s impossible for this rumor to be true.", "ja": "このうわさが本当なわけがない。", "kana": "この うわさ が ほんとう な わけ が ない。", "ro": "kono uwasa ga hontou na wake ga nai."},
+    {"en": "There’s no way he knows the answer.", "ja": "彼が答えを知っているわけがない。", "kana": "かれ が こたえ を しっている わけ が ない。", "ro": "kare ga kotae o shitteiru wake ga nai."}
+  ],
+  "grammar": "Verb (plain form) / い-adj / な-adj + な / Noun + の + わけがない"
+},
+{
+  "id": "n2-grammar-016",
+  "ja": "〜わけではない",
+  "kana": "〜わけではない",
+  "ro": "wake de wa nai",
+  "en": "it doesn’t mean that / not necessarily / not always",
+  "examples": [
+    {"en": "I don’t dislike it, but I’m not good at it.", "ja": "嫌いなわけではないが、得意でもない。", "kana": "きらい な わけ で は ない が、とくい でも ない。", "ro": "kirai na wake de wa nai ga, tokui demo nai."},
+    {"en": "It’s not that I’m busy, I just don’t feel like going.", "ja": "忙しいわけではないけど、行く気がしない。", "kana": "いそがしい わけ で は ない けど、いく き が しない。", "ro": "isogashii wake de wa nai kedo, iku ki ga shinai."},
+    {"en": "It doesn’t mean that everything he says is true.", "ja": "彼の言うことがすべて正しいわけではない。", "kana": "かれ の いう こと が すべて ただしい わけ で は ない。", "ro": "kare no iu koto ga subete tadashii wake de wa nai."},
+    {"en": "It’s not that I don’t want to help you.", "ja": "手伝いたくないわけではありません。", "kana": "てつだいたく ない わけ で は ありません。", "ro": "tetsudaitaku nai wake de wa arimasen."},
+    {"en": "It doesn’t mean that I’m angry.", "ja": "怒っているわけではない。", "kana": "おこっている わけ で は ない。", "ro": "okotteiru wake de wa nai."}
+  ],
+  "grammar": "Verb (plain form) / い-adj / な-adj + な / Noun + の + わけではない"
+},
+{
+  "id": "n2-grammar-017",
+  "ja": "〜わけにはいかない",
+  "kana": "〜わけにはいかない",
+  "ro": "wake ni wa ikanai",
+  "en": "cannot afford to / can’t possibly / must not",
+  "examples": [
+    {"en": "I can’t take a day off today.", "ja": "今日は休むわけにはいかない。", "kana": "きょう は やすむ わけ に は いかない。", "ro": "kyou wa yasumu wake ni wa ikanai."},
+    {"en": "I can’t tell him the truth.", "ja": "彼に本当のことを言うわけにはいかない。", "kana": "かれ に ほんとう の こと を いう わけ に は いかない。", "ro": "kare ni hontou no koto o iu wake ni wa ikanai."},
+    {"en": "I can’t be late for the meeting.", "ja": "会議に遅れるわけにはいかない。", "kana": "かいぎ に おくれる わけ に は いかない。", "ro": "kaigi ni okureru wake ni wa ikanai."},
+    {"en": "I can’t ignore her feelings.", "ja": "彼女の気持ちを無視するわけにはいかない。", "kana": "かのじょ の きもち を むし する わけ に は いかない。", "ro": "kanojo no kimochi o mushi suru wake ni wa ikanai."},
+    {"en": "I can’t say something like that.", "ja": "そんなことを言うわけにはいかない。", "kana": "そんな こと を いう わけ に は いかない。", "ro": "sonna koto o iu wake ni wa ikanai."}
+  ],
+  "grammar": "Verb (dictionary form) + わけにはいかない"
+},
+{
+  "id": "n2-grammar-018",
+  "ja": "〜からには",
+  "kana": "〜からには",
+  "ro": "kara ni wa",
+  "en": "now that / since / as long as",
+  "examples": [
+    {"en": "Now that you promised, you must keep it.", "ja": "約束したからには守らなければならない。", "kana": "やくそく した から には まもらなければ ならない。", "ro": "yakusoku shita kara ni wa mamoranakereba naranai."},
+    {"en": "Since I started, I’ll finish it.", "ja": "始めたからには最後までやります。", "kana": "はじめた から には さいご まで やります。", "ro": "hajimeta kara ni wa saigo made yarimasu."},
+    {"en": "Now that I became a teacher, I’ll do my best.", "ja": "先生になったからには頑張ります。", "kana": "せんせい に なった から には がんばります。", "ro": "sensei ni natta kara ni wa ganbarimasu."},
+    {"en": "Since I decided to study abroad, I’ll prepare seriously.", "ja": "留学するからにはしっかり準備します。", "kana": "りゅうがく する から には しっかり じゅんび します。", "ro": "ryuugaku suru kara ni wa shikkari junbi shimasu."},
+    {"en": "As long as I live, I’ll protect my family.", "ja": "生きているからには家族を守ります。", "kana": "いきている から には かぞく を まもります。", "ro": "ikiteiru kara ni wa kazoku o mamorimasu."}
+  ],
+  "grammar": "Verb (plain form) + からには"
+},
+{
+  "id": "n2-grammar-019",
+  "ja": "〜だけあって",
+  "kana": "〜だけあって",
+  "ro": "dake atte",
+  "en": "as expected of / considering / being worthy of",
+  "examples": [
+    {"en": "As expected of a professional, his work is great.", "ja": "プロだけあって仕事がすばらしい。", "kana": "ぷろ だけ あって しごと が すばらしい。", "ro": "puro dake atte shigoto ga subarashii."},
+    {"en": "As expected of Kyoto, the scenery is beautiful.", "ja": "京都だけあって景色が美しい。", "kana": "きょうと だけ あって けしき が うつくしい。", "ro": "kyouto dake atte keshiki ga utsukushii."},
+    {"en": "As expected, the expensive restaurant’s food is delicious.", "ja": "高いだけあって料理はおいしい。", "kana": "たかい だけ あって りょうり は おいしい。", "ro": "takai dake atte ryouri wa oishii."},
+    {"en": "He is indeed a teacher; his explanation is easy to understand.", "ja": "先生だけあって説明が分かりやすい。", "kana": "せんせい だけ あって せつめい が わかりやすい。", "ro": "sensei dake atte setsumei ga wakariyasui."},
+    {"en": "She’s been practicing every day, so her Japanese is good.", "ja": "毎日練習しているだけあって日本語が上手です。", "kana": "まいにち れんしゅう している だけ あって にほんご が じょうず です。", "ro": "mainichi renshuu shiteiru dake atte nihongo ga jouzu desu."}
+  ],
+  "grammar": "Verb (plain form) / Noun + だけあって"
+},
+{
+  "id": "n2-grammar-020",
+  "ja": "〜だけに",
+  "kana": "〜だけに",
+  "ro": "dake ni",
+  "en": "especially because / all the more / precisely because",
+  "examples": [
+    {"en": "Because it’s important, I’m being extra careful.", "ja": "大事な仕事だけに注意しています。", "kana": "だいじ な しごと だけ に ちゅうい しています。", "ro": "daiji na shigoto dake ni chuui shiteimasu."},
+    {"en": "Because she’s kind, everyone likes her.", "ja": "優しい人だけにみんなに好かれます。", "kana": "やさしい ひと だけ に みんな に すかれます。", "ro": "yasashii hito dake ni minna ni sukaremasu."},
+    {"en": "Because he practices every day, his progress is fast.", "ja": "毎日練習しているだけに上達が早いです。", "kana": "まいにち れんしゅう している だけ に じょうたつ が はやい です。", "ro": "mainichi renshuu shiteiru dake ni joutatsu ga hayai desu."},
+    {"en": "Because it’s expensive, the quality is good.", "ja": "高いだけに品質がいいです。", "kana": "たかい だけ に ひんしつ が いい です。", "ro": "takai dake ni hinshitsu ga ii desu."},
+    {"en": "Because it’s important, I’m nervous.", "ja": "大事な試合だけに緊張します。", "kana": "だいじ な しあい だけ に きんちょう します。", "ro": "daiji na shiai dake ni kinchou shimasu."}
+  ],
+  "grammar": "Verb (plain form) / Noun + だけに"
+},
+{
+  "id": "n2-grammar-021",
+  "ja": "〜たとたん（に）",
+  "kana": "〜たとたん（に）",
+  "ro": "ta totan (ni)",
+  "en": "just when / as soon as",
+  "examples": [
+    {"en": "As soon as I stood up, I felt dizzy.", "ja": "立ち上がったとたん、目まいがした。", "kana": "たちあがった とたん、 めまい が した。", "ro": "tachiagatta totan, memai ga shita."},
+    {"en": "As soon as I went outside, it started raining.", "ja": "外に出たとたん、雨が降り出した。", "kana": "そと に でた とたん、 あめ が ふりだした。", "ro": "soto ni deta totan, ame ga furidashita."},
+    {"en": "As soon as I opened the door, the cat ran out.", "ja": "ドアを開けたとたん、猫が飛び出した。", "kana": "どあ を あけた とたん、 ねこ が とびだした。", "ro": "doa o aketa totan, neko ga tobidashta."},
+    {"en": "As soon as I sat down, the phone rang.", "ja": "座ったとたん、電話が鳴った。", "kana": "すわった とたん、 でんわ が なった。", "ro": "suwatta totan, denwa ga natta."},
+    {"en": "As soon as he saw me, he started laughing.", "ja": "彼は私を見るとたん、笑い出した。", "kana": "かれ は わたし を みる とたん、 わらいだした。", "ro": "kare wa watashi o miru totan, waraidashita."}
+  ],
+  "grammar": "Verb (た form) + とたん（に）"
+},
+{
+  "id": "n2-grammar-022",
+  "ja": "〜か〜ないかのうちに",
+  "kana": "〜か〜ないかのうちに",
+  "ro": "ka nai ka no uchi ni",
+  "en": "as soon as / just after (almost simultaneously)",
+  "examples": [
+    {"en": "As soon as I lay down, I fell asleep.", "ja": "横になったかならないかのうちに寝てしまった。", "kana": "よこ に なった か なって ない か の うち に ねて しまった。", "ro": "yoko ni natta ka nattenai ka no uchi ni neteshimatta."},
+    {"en": "The bell rang just as the class started.", "ja": "授業が始まったか始まらないかのうちにベルが鳴った。", "kana": "じゅぎょう が はじまった か はじまらない か の うち に べる が なった。", "ro": "jugyou ga hajimatta ka hajimaranai ka no uchi ni beru ga natta."},
+    {"en": "As soon as the movie started, the lights went out.", "ja": "映画が始まったか始まらないかのうちに電気が消えた。", "kana": "えいが が はじまった か はじまらない か の うち に でんき が きえた。", "ro": "eiga ga hajimatta ka hajimaranai ka no uchi ni denki ga kieta."},
+    {"en": "As soon as I sat down, the train started moving.", "ja": "座ったか座らないかのうちに電車が動き出した。", "kana": "すわった か すわらない か の うち に でんしゃ が うごきだした。", "ro": "suwatta ka suwaranai ka no uchi ni densha ga ugokidashita."},
+    {"en": "He left almost immediately after arriving.", "ja": "到着したかしないかのうちに彼は出かけた。", "kana": "とうちゃく した か しない か の うち に かれ は でかけた。", "ro": "touchaku shita ka shinai ka no uchi ni kare wa dekaketa."}
+  ],
+  "grammar": "Verb (dictionary form) + か + Verb (ない form) + かのうちに"
+},
+{
+  "id": "n2-grammar-023",
+  "ja": "〜かと思うと",
+  "kana": "〜かとおもうと",
+  "ro": "ka to omou to",
+  "en": "just when / no sooner than",
+  "examples": [
+    {"en": "It started raining just when I thought the weather had cleared up.", "ja": "晴れたかと思うと、また雨が降り出した。", "kana": "はれた か と おもう と、 また あめ が ふりだした。", "ro": "hareta ka to omou to, mata ame ga furidashita."},
+    {"en": "The baby started crying just when I thought he had fallen asleep.", "ja": "寝たかと思うと、赤ちゃんが泣き出した。", "kana": "ねた か と おもう と、 あかちゃん が なきだした。", "ro": "neta ka to omou to, akachan ga nakidashita."},
+    {"en": "He started eating right after he sat down.", "ja": "座ったかと思うと、食べ始めた。", "kana": "すわった か と おもう と、 たべはじめた。", "ro": "suwatta ka to omou to, tabe hajimeta."},
+    {"en": "Just when spring came, it snowed.", "ja": "春になったかと思うと雪が降った。", "kana": "はる に なった か と おもう と ゆき が ふった。", "ro": "haru ni natta ka to omou to yuki ga futta."},
+    {"en": "He suddenly got angry just after laughing.", "ja": "笑ったかと思うと、急に怒り出した。", "kana": "わらった か と おもう と、 きゅう に おこりだした。", "ro": "waratta ka to omou to, kyuu ni okoridashita."}
+  ],
+  "grammar": "Verb (た form) + かと思うと"
+},
+{
+  "id": "n2-grammar-024",
+  "ja": "〜かのようだ",
+  "kana": "〜かのようだ",
+  "ro": "ka no you da",
+  "en": "as if / as though / like",
+  "examples": [
+    {"en": "He talks as if he knows everything.", "ja": "彼は何でも知っているかのように話す。", "kana": "かれ は なんでも しっている か の よう に はなす。", "ro": "kare wa nandemo shitteiru ka no you ni hanasu."},
+    {"en": "She looks as if she were an actress.", "ja": "彼女は女優であるかのように美しい。", "kana": "かのじょ は じょゆう で ある か の よう に うつくしい。", "ro": "kanojo wa joyuu de aru ka no you ni utsukushii."},
+    {"en": "He runs as if he were flying.", "ja": "彼は飛ぶかのように走る。", "kana": "かれ は とぶ か の よう に はしる。", "ro": "kare wa tobu ka no you ni hashiru."},
+    {"en": "It looks as if it’s going to rain.", "ja": "雨が降るかのような空です。", "kana": "あめ が ふる か の よう な そら です。", "ro": "ame ga furu ka no you na sora desu."},
+    {"en": "She smiled as if nothing had happened.", "ja": "何もなかったかのように彼女は笑った。", "kana": "なにも なかった か の よう に かのじょ は わらった。", "ro": "nanimo nakatta ka no you ni kanojo wa waratta."}
+  ],
+  "grammar": "Verb (plain form) / Noun + である + かのようだ"
+},
+{
+  "id": "n2-grammar-025",
+  "ja": "〜末（に）",
+  "kana": "〜すえ（に）",
+  "ro": "sue (ni)",
+  "en": "after / as a result of / finally",
+  "examples": [
+    {"en": "After long discussions, we reached an agreement.", "ja": "長い話し合いの末、合意に達した。", "kana": "ながい はなしあい の すえ、ごうい に たっした。", "ro": "nagai hanashiai no sue, goui ni tasshita."},
+    {"en": "After much consideration, I decided to study abroad.", "ja": "よく考えた末、留学を決めました。", "kana": "よく かんがえた すえ、 りゅうがく を きめました。", "ro": "yoku kangaeta sue, ryuugaku o kimemashita."},
+    {"en": "After many failures, I succeeded.", "ja": "何度も失敗した末、成功した。", "kana": "なんども しっぱい した すえ、 せいこう した。", "ro": "nandomo shippai shita sue, seikou shita."},
+    {"en": "After long research, they discovered a new medicine.", "ja": "長い研究の末、新しい薬が発見された。", "kana": "ながい けんきゅう の すえ、 あたらしい くすり が はっけん された。", "ro": "nagai kenkyuu no sue, atarashii kusuri ga hakkensareta."},
+    {"en": "After years of effort, he achieved his dream.", "ja": "長年の努力の末、夢を実現した。", "kana": "ながねん の どりょく の すえ、 ゆめ を じつげん した。", "ro": "naganen no doryoku no sue, yume o jitsugen shita."}
+  ],
+  "grammar": "Verb (た form) / Noun + の末（に）"
+},
+{
+  "id": "n2-grammar-026",
+  "ja": "〜あげく（に）",
+  "kana": "〜あげく（に）",
+  "ro": "ageku (ni)",
+  "en": "after much... / in the end / finally (often negative result)",
+  "examples": [
+    {"en": "After much thinking, I decided to quit my job.", "ja": "悩んだあげく、会社を辞めることにした。", "kana": "なやんだ あげく、 かいしゃ を やめる こと に した。", "ro": "nayanda ageku, kaisha o yameru koto ni shita."},
+    {"en": "After long discussions, they couldn’t reach an agreement.", "ja": "長い話し合いのあげく、結論が出なかった。", "kana": "ながい はなしあい の あげく、 けつろん が でなかった。", "ro": "nagai hanashiai no ageku, ketsuron ga denakatta."},
+    {"en": "After being hospitalized for months, he finally passed away.", "ja": "数か月の入院のあげく、亡くなった。", "kana": "すうかげつ の にゅういん の あげく、 なくなった。", "ro": "suukagetsu no nyuuin no ageku, nakunatta."},
+    {"en": "After waiting for hours, the train never came.", "ja": "何時間も待ったあげく、電車は来なかった。", "kana": "なんじかん も まった あげく、 でんしゃ は こなかった。", "ro": "nanjikan mo matta ageku, densha wa konakatta."},
+    {"en": "After trying many times, I gave up.", "ja": "何度も挑戦したあげく、あきらめた。", "kana": "なんど も ちょうせん した あげく、 あきらめた。", "ro": "nando mo chousen shita ageku, akirameta."}
+  ],
+  "grammar": "Verb (た form) / Noun + の + あげく（に）"
+},
+{
+  "id": "n2-grammar-027",
+  "ja": "〜末に",
+  "kana": "〜すえに",
+  "ro": "sue ni",
+  "en": "after much... finally / as a result (neutral or positive result)",
+  "examples": [
+    {"en": "After long study, he passed the exam.", "ja": "長い勉強の末に、試験に合格した。", "kana": "ながい べんきょう の すえ に、 しけん に ごうかく した。", "ro": "nagai benkyou no sue ni, shiken ni goukaku shita."},
+    {"en": "After long discussions, we found a solution.", "ja": "話し合いの末に、解決策が見つかった。", "kana": "はなしあい の すえ に、 かいけつさく が みつかった。", "ro": "hanashiai no sue ni, kaiketsusaku ga mitsukatta."},
+    {"en": "After many trials, we succeeded.", "ja": "何度も試した末に、成功した。", "kana": "なんど も ためした すえ に、 せいこう した。", "ro": "nando mo tameshita sue ni, seikou shita."},
+    {"en": "After many hardships, they opened a new shop.", "ja": "多くの苦労の末に、新しい店を開いた。", "kana": "おおく の くろう の すえ に、 あたらしい みせ を ひらいた。", "ro": "ooku no kurou no sue ni, atarashii mise o hiraeta."},
+    {"en": "After long hesitation, I decided to confess.", "ja": "長い間迷った末に、告白した。", "kana": "ながい あいだ まよった すえ に、 こくはく した。", "ro": "nagai aida mayotta sue ni, kokuhaku shita."}
+  ],
+  "grammar": "Verb (た form) / Noun + の + 末に"
+},
+{
+  "id": "n2-grammar-028",
+  "ja": "〜にわたって",
+  "kana": "〜にわたって",
+  "ro": "ni watatte",
+  "en": "throughout / over a span of / across",
+  "examples": [
+    {"en": "The typhoon caused damage across Japan.", "ja": "台風は日本全体にわたって被害をもたらした。", "kana": "たいふう は にほん ぜんたい に わたって ひがい を もたらした。", "ro": "taifuu wa nihon zentai ni watatte higai o motarashita."},
+    {"en": "The meeting lasted for three days.", "ja": "会議は三日にわたって行われた。", "kana": "かいぎ は みっか に わたって おこなわれた。", "ro": "kaigi wa mikka ni watatte okonawareta."},
+    {"en": "The research was conducted over ten years.", "ja": "研究は十年にわたって続けられた。", "kana": "けんきゅう は じゅうねん に わたって つづけられた。", "ro": "kenkyuu wa juunen ni watatte tsuzukerareta."},
+    {"en": "The project involved people from various fields.", "ja": "プロジェクトはさまざまな分野にわたって行われた。", "kana": "ぷろじぇくと は さまざま な ぶんや に わたって おこなわれた。", "ro": "purojekuto wa samazama na bunya ni watatte okonawareta."},
+    {"en": "Snow continued to fall throughout the night.", "ja": "雪は一晩にわたって降り続いた。", "kana": "ゆき は ひとばん に わたって ふりつづいた。", "ro": "yuki wa hitoban ni watatte furitsuzuita."}
+  ],
+  "grammar": "Noun + にわたって"
+},
+{
+  "id": "n2-grammar-029",
+  "ja": "〜にしたがって",
+  "kana": "〜にしたがって",
+  "ro": "ni shitagatte",
+  "en": "as / in accordance with / following",
+  "examples": [
+    {"en": "As the temperature rises, ice melts.", "ja": "気温が上がるにしたがって氷が溶ける。", "kana": "きおん が あがる に したがって こおり が とける。", "ro": "kion ga agaru ni shitagatte koori ga tokeru."},
+    {"en": "As time passes, memories fade.", "ja": "時間がたつにしたがって記憶が薄れる。", "kana": "じかん が たつ に したがって きおく が うすれる。", "ro": "jikan ga tatsu ni shitagatte kioku ga usureru."},
+    {"en": "Follow the rules.", "ja": "ルールにしたがって行動してください。", "kana": "るーる に したがって こうどう してください。", "ro": "ruuru ni shitagatte koudou shite kudasai."},
+    {"en": "As you grow older, your opinions change.", "ja": "年を取るにしたがって考え方が変わる。", "kana": "とし を とる に したがって かんがえかた が かわる。", "ro": "toshi o toru ni shitagatte kangaekata ga kawaru."},
+    {"en": "In accordance with the plan, we will proceed.", "ja": "計画にしたがって作業を進めます。", "kana": "けいかく に したがって さぎょう を すすめます。", "ro": "keikaku ni shitagatte sagyou o susumemasu."}
+  ],
+  "grammar": "Verb (dictionary form) / Noun + にしたがって"
+},
+{
+  "id": "n2-grammar-030",
+  "ja": "〜につれて",
+  "kana": "〜につれて",
+  "ro": "ni tsurete",
+  "en": "as / along with / in proportion to",
+  "examples": [
+    {"en": "As children grow, their clothes become smaller.", "ja": "子どもが成長するにつれて服が小さくなる。", "kana": "こども が せいちょう する に つれて ふく が ちいさく なる。", "ro": "kodomo ga seichou suru ni tsurete fuku ga chiisaku naru."},
+    {"en": "As time passes, the pain decreases.", "ja": "時間がたつにつれて痛みが減っていく。", "kana": "じかん が たつ に つれて いたみ が へっていく。", "ro": "jikan ga tatsu ni tsurete itami ga hetteiku."},
+    {"en": "As the economy improves, people’s lives become richer.", "ja": "経済が回復するにつれて人々の生活が豊かになる。", "kana": "けいざい が かいふく する に つれて ひとびと の せいかつ が ゆたか に なる。", "ro": "keizai ga kaifuku suru ni tsurete hitobito no seikatsu ga yutaka ni naru."},
+    {"en": "As it gets darker, the temperature drops.", "ja": "暗くなるにつれて気温が下がる。", "kana": "くらく なる に つれて きおん が さがる。", "ro": "kuraku naru ni tsurete kion ga sagaru."},
+    {"en": "As technology develops, society changes.", "ja": "技術が発展するにつれて社会が変化する。", "kana": "ぎじゅつ が はってん する に つれて しゃかい が へんか する。", "ro": "gijutsu ga hatten suru ni tsurete shakai ga henka suru."}
+  ],
+  "grammar": "Verb (dictionary form) / Noun + につれて"
+},
+{
+  "id": "n2-grammar-031",
+  "ja": "〜にしたら",
+  "kana": "〜にしたら",
+  "ro": "ni shitara",
+  "en": "from the point of view of / for (someone)",
+  "examples": [
+    {"en": "For children, this book might be difficult.", "ja": "子どもにしたら、この本は難しいかもしれない。", "kana": "こども に したら、この ほん は むずかしい かも しれない。", "ro": "kodomo ni shitara, kono hon wa muzukashii kamo shirenai."},
+    {"en": "For parents, their child’s success is happiness.", "ja": "親にしたら、子どもの成功はうれしいことだ。", "kana": "おや に したら、こども の せいこう は うれしい こと だ。", "ro": "oya ni shitara, kodomo no seikou wa ureshii koto da."},
+    {"en": "For a foreigner, reading kanji is hard.", "ja": "外国人にしたら、漢字を読むのは大変だ。", "kana": "がいこくじん に したら、かんじ を よむ の は たいへん だ。", "ro": "gaikokujin ni shitara, kanji o yomu no wa taihen da."},
+    {"en": "For students, exams are always stressful.", "ja": "学生にしたら、試験はいつも緊張するものだ。", "kana": "がくせい に したら、しけん は いつも きんちょう する もの だ。", "ro": "gakusei ni shitara, shiken wa itsumo kinchou suru mono da."},
+    {"en": "For him, that was probably an unexpected result.", "ja": "彼にしたら、それは予想外の結果だっただろう。", "kana": "かれ に したら、それ は よそうがい の けっか だった だろう。", "ro": "kare ni shitara, sore wa yosougai no kekka datta darou."}
+  ],
+  "grammar": "Noun + にしたら"
+},
+{
+  "id": "n2-grammar-032",
+  "ja": "〜にしても",
+  "kana": "〜にしても",
+  "ro": "ni shite mo",
+  "en": "even if / even though / granted that",
+  "examples": [
+    {"en": "Even if you’re busy, you should sleep well.", "ja": "忙しいにしても、しっかり寝るべきだ。", "kana": "いそがしい に しても、しっかり ねる べき だ。", "ro": "isogashii ni shite mo, shikkari neru beki da."},
+    {"en": "Even if it’s a joke, that’s going too far.", "ja": "冗談にしても、それは言いすぎだ。", "kana": "じょうだん に しても、それ は いいすぎ だ。", "ro": "joudan ni shite mo, sore wa iisugi da."},
+    {"en": "Even if you fail, it’s a good experience.", "ja": "失敗するにしても、いい経験になる。", "kana": "しっぱい する に しても、いい けいけん に なる。", "ro": "shippai suru ni shite mo, ii keiken ni naru."},
+    {"en": "Even if it’s cheap, I don’t want it.", "ja": "安いにしても、買いたくない。", "kana": "やすい に しても、かいたく ない。", "ro": "yasui ni shite mo, kaitaku nai."},
+    {"en": "Even if it rains, we’ll go out.", "ja": "雨にしても、出かけます。", "kana": "あめ に しても、でかけます。", "ro": "ame ni shite mo, dekakemasu."}
+  ],
+  "grammar": "Verb (plain form) / い-adj / な-adj / Noun + にしても"
+},
+{
+  "id": "n2-grammar-033",
+  "ja": "〜にしろ / 〜にせよ",
+  "kana": "〜にしろ / 〜にせよ",
+  "ro": "ni shiro / ni seyo",
+  "en": "even if / even though / whether ~ or ~",
+  "examples": [
+    {"en": "Even if it’s impossible, try your best.", "ja": "無理にしろ、できるだけ頑張ってください。", "kana": "むり に しろ、できるだけ がんばって ください。", "ro": "muri ni shiro, dekiru dake ganbatte kudasai."},
+    {"en": "Even if you don’t like it, you have to do it.", "ja": "嫌いにしろ、やらなければならない。", "kana": "きらい に しろ、やらなければ ならない。", "ro": "kirai ni shiro, yaranakereba naranai."},
+    {"en": "Whether it’s true or not, I’ll check it myself.", "ja": "本当かうそかにしろ、自分で確かめます。", "kana": "ほんとう か うそ か に しろ、じぶん で たしかめます。", "ro": "hontou ka uso ka ni shiro, jibun de tashikamemasu."},
+    {"en": "Even if you’re rich, you should be humble.", "ja": "お金持ちにしろ、謙虚であるべきだ。", "kana": "おかねもち に しろ、けんきょ で ある べき だ。", "ro": "okanemochi ni shiro, kenkyo de aru beki da."},
+    {"en": "Even if you fail, don’t give up.", "ja": "失敗にせよ、あきらめないでください。", "kana": "しっぱい に せよ、あきらめないで ください。", "ro": "shippai ni seyo, akiramenaide kudasai."}
+  ],
+  "grammar": "Verb (plain form) / い-adj / な-adj / Noun + にしろ / にせよ"
+},
+{
+  "id": "n2-grammar-034",
+  "ja": "〜にかかわらず",
+  "kana": "〜にかかわらず",
+  "ro": "ni kakawarazu",
+  "en": "regardless of / irrespective of",
+  "examples": [
+    {"en": "Regardless of age, everyone can participate.", "ja": "年齢にかかわらず、誰でも参加できます。", "kana": "ねんれい に かかわらず、だれ でも さんか できます。", "ro": "nenrei ni kakawarazu, dare demo sanka dekimasu."},
+    {"en": "Regardless of weather, the event will be held.", "ja": "天候にかかわらず、イベントは行われます。", "kana": "てんこう に かかわらず、いべんと は おこなわれます。", "ro": "tenkou ni kakawarazu, ibento wa okonawaremasu."},
+    {"en": "Regardless of nationality, everyone is welcome.", "ja": "国籍にかかわらず、誰でも歓迎します。", "kana": "こくせき に かかわらず、だれ でも かんげい します。", "ro": "kokuseki ni kakawarazu, dare demo kangei shimasu."},
+    {"en": "Regardless of success or failure, do your best.", "ja": "成功か失敗かにかかわらず、全力を尽くす。", "kana": "せいこう か しっぱい か に かかわらず、ぜんりょく を つくす。", "ro": "seikou ka shippai ka ni kakawarazu, zenryoku o tsukusu."},
+    {"en": "Regardless of gender, everyone is equal.", "ja": "性別にかかわらず、みんな平等です。", "kana": "せいべつ に かかわらず、みんな びょうどう です。", "ro": "seibetsu ni kakawarazu, minna byoudou desu."}
+  ],
+  "grammar": "Verb (plain form) / Noun + にかかわらず"
+},
+{
+  "id": "n2-grammar-035",
+  "ja": "〜に反して",
+  "kana": "〜にはんして",
+  "ro": "ni hanshite",
+  "en": "contrary to / against",
+  "examples": [
+    {"en": "Contrary to expectations, the exam was easy.", "ja": "予想に反して、試験は簡単だった。", "kana": "よそう に はんして、しけん は かんたん だった。", "ro": "yosou ni hanshite, shiken wa kantan datta."},
+    {"en": "Contrary to my hopes, it started raining.", "ja": "期待に反して、雨が降り出した。", "kana": "きたい に はんして、あめ が ふりだした。", "ro": "kitai ni hanshite, ame ga furidashita."},
+    {"en": "He acted against the rules.", "ja": "ルールに反して行動した。", "kana": "るーる に はんして こうどう した。", "ro": "ruuru ni hanshite koudou shita."},
+    {"en": "Contrary to our teacher’s advice, he quit school.", "ja": "先生の忠告に反して、彼は学校を辞めた。", "kana": "せんせい の ちゅうこく に はんして、かれ は がっこう を やめた。", "ro": "sensei no chuukoku ni hanshite, kare wa gakkou o yameta."},
+    {"en": "Contrary to expectations, the team lost.", "ja": "予想に反してチームは負けた。", "kana": "よそう に はんして ちーむ は まけた。", "ro": "yosou ni hanshite chiimu wa maketa."}
+  ],
+  "grammar": "Noun + に反して"
+},
+{
+  "id": "n2-grammar-036",
+  "ja": "〜にもかかわらず",
+  "kana": "〜にもかかわらず",
+  "ro": "ni mo kakawarazu",
+  "en": "despite / in spite of / although",
+  "examples": [
+    {"en": "Despite the rain, he went out.", "ja": "雨にもかかわらず、彼は出かけた。", "kana": "あめ に も かかわらず、かれ は でかけた。", "ro": "ame ni mo kakawarazu, kare wa dekaketa."},
+    {"en": "Despite being sick, she went to work.", "ja": "病気にもかかわらず、彼女は仕事に行った。", "kana": "びょうき に も かかわらず、かのじょ は しごと に いった。", "ro": "byouki ni mo kakawarazu, kanojo wa shigoto ni itta."},
+    {"en": "Although he is young, he is very mature.", "ja": "若いにもかかわらず、とても落ち着いている。", "kana": "わかい に も かかわらず、とても おちついて いる。", "ro": "wakai ni mo kakawarazu, totemo ochitsuite iru."},
+    {"en": "Despite the high price, the restaurant was crowded.", "ja": "値段が高いにもかかわらず、レストランは混んでいた。", "kana": "ねだん が たかい に も かかわらず、れすとらん は こんでいた。", "ro": "nedan ga takai ni mo kakawarazu, resutoran wa kondeita."},
+    {"en": "In spite of the bad weather, the festival continued.", "ja": "悪天候にもかかわらず、祭りは続けられた。", "kana": "あくてんこう に も かかわらず、まつり は つづけられた。", "ro": "akutenkou ni mo kakawarazu, matsuri wa tsuzukerareta."}
+  ],
+  "grammar": "Verb (plain form) / Noun / な-adj + にもかかわらず"
+},
+{
+  "id": "n2-grammar-037",
+  "ja": "〜に対して",
+  "kana": "〜にたいして",
+  "ro": "ni taishite",
+  "en": "toward / against / regarding / whereas",
+  "examples": [
+    {"en": "She is kind to children.", "ja": "彼女は子どもに対して優しい。", "kana": "かのじょ は こども に たいして やさしい。", "ro": "kanojo wa kodomo ni taishite yasashii."},
+    {"en": "He has a negative attitude toward work.", "ja": "彼は仕事に対して消極的だ。", "kana": "かれ は しごと に たいして しょうきょくてき だ。", "ro": "kare wa shigoto ni taishite shoukyokuteki da."},
+    {"en": "The teacher’s words toward students were strict.", "ja": "先生の学生に対しての言葉は厳しかった。", "kana": "せんせい の がくせい に たいして の ことば は きびしかった。", "ro": "sensei no gakusei ni taishite no kotoba wa kibishikatta."},
+    {"en": "The company responded to the complaint.", "ja": "会社は苦情に対して対応した。", "kana": "かいしゃ は くじょう に たいして たいおう した。", "ro": "kaisha wa kujou ni taishite taiou shita."},
+    {"en": "The opinion toward this proposal is divided.", "ja": "この提案に対して意見が分かれている。", "kana": "この ていあん に たいして いけん が わかれている。", "ro": "kono teian ni taishite iken ga wakareteiru."}
+  ],
+  "grammar": "Noun + に対して"
+},
+{
+  "id": "n2-grammar-038",
+  "ja": "〜において",
+  "kana": "〜において",
+  "ro": "ni oite",
+  "en": "in / at / on / during (formal)",
+  "examples": [
+    {"en": "This problem occurred at the factory.", "ja": "この問題は工場において発生した。", "kana": "この もんだい は こうじょう に おいて はっせい した。", "ro": "kono mondai wa koujou ni oite hassei shita."},
+    {"en": "The meeting will be held in Tokyo.", "ja": "会議は東京において行われる。", "kana": "かいぎ は とうきょう に おいて おこなわれる。", "ro": "kaigi wa toukyou ni oite okonawareru."},
+    {"en": "In Japan, rice is an important food.", "ja": "日本において、米は重要な食べ物だ。", "kana": "にほん に おいて、こめ は じゅうよう な たべもの だ。", "ro": "nihon ni oite, kome wa juuyou na tabemono da."},
+    {"en": "There was progress in the field of medicine.", "ja": "医学の分野において進歩が見られた。", "kana": "いがく の ぶんや に おいて しんぽ が みられた。", "ro": "igaku no bunya ni oite shinpo ga mirareta."},
+    {"en": "In the meeting, a new plan was decided.", "ja": "会議において新しい計画が決定された。", "kana": "かいぎ に おいて あたらしい けいかく が けってい された。", "ro": "kaigi ni oite atarashii keikaku ga kettei sareta."}
+  ],
+  "grammar": "Noun + において"
+},
+{
+  "id": "n2-grammar-039",
+  "ja": "〜に応じて",
+  "kana": "〜におうじて",
+  "ro": "ni oujite",
+  "en": "according to / in response to / depending on",
+  "examples": [
+    {"en": "We will adjust the plan according to the situation.", "ja": "状況に応じて計画を調整します。", "kana": "じょうきょう に おうじて けいかく を ちょうせい します。", "ro": "joukyou ni oujite keikaku o chousei shimasu."},
+    {"en": "Salary increases according to ability.", "ja": "給料は能力に応じて上がる。", "kana": "きゅうりょう は のうりょく に おうじて あがる。", "ro": "kyuuryou wa nouryoku ni oujite agaru."},
+    {"en": "The color changes depending on the temperature.", "ja": "温度に応じて色が変わる。", "kana": "おんど に おうじて いろ が かわる。", "ro": "ondo ni oujite iro ga kawaru."},
+    {"en": "We will take action according to the customer’s needs.", "ja": "お客様の要望に応じて対応します。", "kana": "おきゃくさま の ようぼう に おうじて たいおう します。", "ro": "okyakusama no youbou ni oujite taiou shimasu."},
+    {"en": "Adjust the amount according to taste.", "ja": "好みに応じて量を調整してください。", "kana": "このみ に おうじて りょう を ちょうせい してください。", "ro": "konomi ni oujite ryou o chousei shite kudasai."}
+  ],
+  "grammar": "Noun + に応じて"
+},
+{
+  "id": "n2-grammar-040",
+  "ja": "〜に限らず",
+  "kana": "〜にかぎらず",
+  "ro": "ni kagirazu",
+  "en": "not limited to / not only but also",
+  "examples": [
+    {"en": "This event is open not only to students but also to the public.", "ja": "このイベントは学生に限らず一般の人も参加できる。", "kana": "この いべんと は がくせい に かぎらず いっぱん の ひと も さんか できる。", "ro": "kono ibento wa gakusei ni kagirazu ippan no hito mo sanka dekiru."},
+    {"en": "This movie is popular not only in Japan but also overseas.", "ja": "この映画は日本に限らず海外でも人気がある。", "kana": "この えいが は にほん に かぎらず かいがい でも にんき が ある。", "ro": "kono eiga wa nihon ni kagirazu kaigai demo ninki ga aru."},
+    {"en": "Smoking is harmful not only to smokers but also to others.", "ja": "喫煙は喫煙者に限らず周りの人にも悪影響を与える。", "kana": "きつえん は きつえんしゃ に かぎらず まわり の ひと に も あくえいきょう を あたえる。", "ro": "kitsuen wa kitsuensha ni kagirazu mawari no hito ni mo akueikyou o ataeru."},
+    {"en": "This problem affects not only Japan but also the whole world.", "ja": "この問題は日本に限らず世界全体に影響している。", "kana": "この もんだい は にほん に かぎらず せかい ぜんたい に えいきょう している。", "ro": "kono mondai wa nihon ni kagirazu sekai zentai ni eikyou shiteiru."},
+    {"en": "The sale applies not only to members but also to non-members.", "ja": "このセールは会員に限らず非会員も利用できる。", "kana": "この せーる は かいいん に かぎらず ひかいいん も りよう できる。", "ro": "kono seeru wa kaiin ni kagirazu hikaiin mo riyou dekiru."}
+  ],
+  "grammar": "Noun + に限らず"
+},
+{
+  "id": "n2-grammar-041",
+  "ja": "〜に限って",
+  "kana": "〜にかぎって",
+  "ro": "ni kagitte",
+  "en": "only in the case of / just when / particularly (often expressing irony or exception)",
+  "examples": [
+    {"en": "It always rains on the day I go out.", "ja": "出かける日に限って雨が降る。", "kana": "でかける ひ に かぎって あめ が ふる。", "ro": "dekakeru hi ni kagitte ame ga furu."},
+    {"en": "Just when I’m in a hurry, the train is delayed.", "ja": "急いでいる時に限って電車が遅れる。", "kana": "いそいでいる とき に かぎって でんしゃ が おくれる。", "ro": "isoideiru toki ni kagitte densha ga okureru."},
+    {"en": "Only this store is closed today.", "ja": "今日に限ってこの店は休みだ。", "kana": "きょう に かぎって この みせ は やすみ だ。", "ro": "kyou ni kagitte kono mise wa yasumi da."},
+    {"en": "Only my child wouldn’t lie.", "ja": "うちの子に限ってうそをつくはずがない。", "kana": "うち の こ に かぎって うそ を つく はず が ない。", "ro": "uchi no ko ni kagitte uso o tsuku hazu ga nai."},
+    {"en": "It’s just on my day off that the weather turns bad.", "ja": "休みの日に限って天気が悪くなる。", "kana": "やすみ の ひ に かぎって てんき が わるく なる。", "ro": "yasumi no hi ni kagitte tenki ga waruku naru."}
+  ],
+  "grammar": "Noun / Verb (dictionary form) + に限って"
+},
+{
+  "id": "n2-grammar-042",
+  "ja": "〜に限る",
+  "kana": "〜にかぎる",
+  "ro": "ni kagiru",
+  "en": "nothing better than / the best / it’s best to",
+  "examples": [
+    {"en": "There’s nothing better than hot tea on a cold day.", "ja": "寒い日には温かいお茶に限る。", "kana": "さむい ひ に は あたたかい おちゃ に かぎる。", "ro": "samui hi ni wa atatakai ocha ni kagiru."},
+    {"en": "When you’re tired, sleeping is best.", "ja": "疲れた時は寝るに限る。", "kana": "つかれた とき は ねる に かぎる。", "ro": "tsukareta toki wa neru ni kagiru."},
+    {"en": "Summer is best enjoyed by the sea.", "ja": "夏は海に限る。", "kana": "なつ は うみ に かぎる。", "ro": "natsu wa umi ni kagiru."},
+    {"en": "If you want to learn, practice is the best way.", "ja": "上達したいなら練習に限る。", "kana": "じょうたつ したい なら れんしゅう に かぎる。", "ro": "joutatsu shitai nara renshuu ni kagiru."},
+    {"en": "When it comes to sushi, this restaurant is the best.", "ja": "寿司に限ってはこの店が一番だ。", "kana": "すし に かぎって は この みせ が いちばん だ。", "ro": "sushi ni kagitte wa kono mise ga ichiban da."}
+  ],
+  "grammar": "Verb (dictionary form) / Noun + に限る"
+},
+{
+  "id": "n2-grammar-043",
+  "ja": "〜に先立って",
+  "kana": "〜にさきだって",
+  "ro": "ni sakidatte",
+  "en": "before / prior to / in advance of (formal)",
+  "examples": [
+    {"en": "Before the meeting, please read the materials.", "ja": "会議に先立って資料を読んでください。", "kana": "かいぎ に さきだって しりょう を よんで ください。", "ro": "kaigi ni sakidatte shiryou o yonde kudasai."},
+    {"en": "A ceremony was held before the opening of the Olympics.", "ja": "オリンピックの開会に先立って式典が行われた。", "kana": "おりんぴっく の かいかい に さきだって しきてん が おこなわれた。", "ro": "orinpikku no kaikai ni sakidatte shikiten ga okonawareta."},
+    {"en": "Prior to construction, an inspection was done.", "ja": "工事に先立って点検が行われた。", "kana": "こうじ に さきだって てんけん が おこなわれた。", "ro": "kouji ni sakidatte tenken ga okonawareta."},
+    {"en": "Before starting the project, we held a meeting.", "ja": "プロジェクト開始に先立って会議を開いた。", "kana": "ぷろじぇくと かいし に さきだって かいぎ を ひらいた。", "ro": "purojekuto kaishi ni sakidatte kaigi o hiraeta."},
+    {"en": "Before the event, a rehearsal will take place.", "ja": "イベントに先立ってリハーサルが行われる。", "kana": "いべんと に さきだって りはーさる が おこなわれる。", "ro": "ibento ni sakidatte rihaasaru ga okonawareru."}
+  ],
+  "grammar": "Noun + に先立って"
+},
+{
+  "id": "n2-grammar-044",
+  "ja": "〜に沿って",
+  "kana": "〜にそって",
+  "ro": "ni sotte",
+  "en": "along / in accordance with / following (a guideline or line)",
+  "examples": [
+    {"en": "Walk along the river.", "ja": "川に沿って歩きましょう。", "kana": "かわ に そって あるきましょう。", "ro": "kawa ni sotte arukimashou."},
+    {"en": "The plan was made according to the law.", "ja": "法律に沿って計画が作られた。", "kana": "ほうりつ に そって けいかく が つくられた。", "ro": "houritsu ni sotte keikaku ga tsukurareta."},
+    {"en": "We acted in line with the rules.", "ja": "ルールに沿って行動した。", "kana": "るーる に そって こうどう した。", "ro": "ruuru ni sotte koudou shita."},
+    {"en": "Please proceed according to the manual.", "ja": "マニュアルに沿って作業を進めてください。", "kana": "まにゅある に そって さぎょう を すすめて ください。", "ro": "manyuaru ni sotte sagyou o susumete kudasai."},
+    {"en": "The road was built along the coastline.", "ja": "海岸に沿って道路が作られた。", "kana": "かいがん に そって どうろ が つくられた。", "ro": "kaigan ni sotte douro ga tsukurareta."}
+  ],
+  "grammar": "Noun + に沿って"
+},
+{
+  "id": "n2-grammar-045",
+  "ja": "〜に基づいて",
+  "kana": "〜にもとづいて",
+  "ro": "ni motozuite",
+  "en": "based on / according to / on the basis of",
+  "examples": [
+    {"en": "The decision was made based on the data.", "ja": "データに基づいて決定された。", "kana": "でーた に もとづいて けってい された。", "ro": "deeta ni motozuite kettei sareta."},
+    {"en": "The law was created based on the constitution.", "ja": "法律は憲法に基づいて作られた。", "kana": "ほうりつ は けんぽう に もとづいて つくられた。", "ro": "houritsu wa kenpou ni motozuite tsukurareta."},
+    {"en": "We judged based on the facts.", "ja": "事実に基づいて判断した。", "kana": "じじつ に もとづいて はんだん した。", "ro": "jijitsu ni motozuite handan shita."},
+    {"en": "The story is based on a true event.", "ja": "この話は実際の出来事に基づいている。", "kana": "この はなし は じっさい の できごと に もとづいて いる。", "ro": "kono hanashi wa jissai no dekigoto ni motozuite iru."},
+    {"en": "The company made the plan based on customer feedback.", "ja": "会社は顧客の意見に基づいて計画を立てた。", "kana": "かいしゃ は こきゃく の いけん に もとづいて けいかく を たてた。", "ro": "kaisha wa kokyaku no iken ni motozuite keikaku o tateta."}
+  ],
+  "grammar": "Noun + に基づいて"
+},
+{
+  "id": "n2-grammar-046",
+  "ja": "〜につれて",
+  "kana": "〜につれて",
+  "ro": "ni tsurete",
+  "en": "as / in proportion to / as (something) changes",
+  "examples": [
+    {"en": "As you get older, you become wiser.", "ja": "年を取るにつれて、賢くなる。", "kana": "とし を とる に つれて、かしこく なる。", "ro": "toshi o toru ni tsurete, kashikoku naru."},
+    {"en": "As technology advances, our lives become more convenient.", "ja": "技術が進むにつれて、生活が便利になる。", "kana": "ぎじゅつ が すすむ に つれて、せいかつ が べんり に なる。", "ro": "gijutsu ga susumu ni tsurete, seikatsu ga benri ni naru."},
+    {"en": "As winter approaches, the days get shorter.", "ja": "冬になるにつれて、日が短くなる。", "kana": "ふゆ に なる に つれて、ひ が みじかく なる。", "ro": "fuyu ni naru ni tsurete, hi ga mijikaku naru."},
+    {"en": "As the population increases, housing prices go up.", "ja": "人口が増えるにつれて、住宅価格が上がる。", "kana": "じんこう が ふえる に つれて、じゅうたく かかく が あがる。", "ro": "jinkou ga fueru ni tsurete, juutaku kakaku ga agaru."},
+    {"en": "As I kept reading, the story became more interesting.", "ja": "読むにつれて、物語が面白くなった。", "kana": "よむ に つれて、ものがたり が おもしろく なった。", "ro": "yomu ni tsurete, monogatari ga omoshiroku natta."}
+  ],
+  "grammar": "Verb (dictionary form) + につれて"
+},
+{
+  "id": "n2-grammar-047",
+  "ja": "〜に伴って",
+  "kana": "〜にともなって",
+  "ro": "ni tomonatte",
+  "en": "along with / due to / accompanied by",
+  "examples": [
+    {"en": "Along with economic growth, the environment worsened.", "ja": "経済の発展に伴って、環境が悪化した。", "kana": "けいざい の はってん に ともなって、かんきょう が あっか した。", "ro": "keizai no hatten ni tomonatte, kankyou ga akka shita."},
+    {"en": "With the population increase, waste also increased.", "ja": "人口の増加に伴って、ごみも増えた。", "kana": "じんこう の ぞうか に ともなって、ごみ も ふえた。", "ro": "jinkou no zouka ni tomonatte, gomi mo fueta."},
+    {"en": "With the change of seasons, the temperature changes.", "ja": "季節の変化に伴って、気温が変わる。", "kana": "きせつ の へんか に ともなって、きおん が かわる。", "ro": "kisetsu no henka ni tomonatte, kion ga kawaru."},
+    {"en": "Due to the accident, there was a traffic jam.", "ja": "事故に伴って、渋滞が発生した。", "kana": "じこ に ともなって、じゅうたい が はっせい した。", "ro": "jiko ni tomonatte, juutai ga hassei shita."},
+    {"en": "With the company’s growth, the number of employees increased.", "ja": "会社の成長に伴って、社員の数が増えた。", "kana": "かいしゃ の せいちょう に ともなって、しゃいん の かず が ふえた。", "ro": "kaisha no seichou ni tomonatte, shain no kazu ga fueta."}
+  ],
+  "grammar": "Noun / Verb (dictionary form) + に伴って"
+},
+{
+  "id": "n2-grammar-048",
+  "ja": "〜にわたって",
+  "kana": "〜にわたって",
+  "ro": "ni watatte",
+  "en": "throughout / over (a period or area)",
+  "examples": [
+    {"en": "The event was held over three days.", "ja": "イベントは三日にわたって行われた。", "kana": "いべんと は みっか に わたって おこなわれた。", "ro": "ibento wa mikka ni watatte okonawareta."},
+    {"en": "The news spread throughout the country.", "ja": "ニュースは全国にわたって広がった。", "kana": "にゅーす は ぜんこく に わたって ひろがった。", "ro": "nyuusu wa zenkoku ni watatte hirogatta."},
+    {"en": "The project continued for five years.", "ja": "プロジェクトは五年にわたって続いた。", "kana": "ぷろじぇくと は ごねん に わたって つづいた。", "ro": "purojekuto wa gonen ni watatte tsuzuita."},
+    {"en": "Discussions were held across various departments.", "ja": "さまざまな部署にわたって議論が行われた。", "kana": "さまざま な ぶしょ に わたって ぎろん が おこなわれた。", "ro": "samazama na busho ni watatte giron ga okonawareta."},
+    {"en": "The rain continued for two weeks.", "ja": "雨は二週間にわたって降り続いた。", "kana": "あめ は にしゅうかん に わたって ふりつづいた。", "ro": "ame wa nishuukan ni watatte furitsuzuita."}
+  ],
+  "grammar": "Noun + にわたって"
+},
+{
+  "id": "n2-grammar-049",
+  "ja": "〜に向かって",
+  "kana": "〜にむかって",
+  "ro": "ni mukatte",
+  "en": "toward / to / facing",
+  "examples": [
+    {"en": "He shouted toward the mountain.", "ja": "彼は山に向かって叫んだ。", "kana": "かれ は やま に むかって さけんだ。", "ro": "kare wa yama ni mukatte sakenda."},
+    {"en": "Everyone prayed toward the sky.", "ja": "みんな空に向かって祈った。", "kana": "みんな そら に むかって いのった。", "ro": "minna sora ni mukatte inotta."},
+    {"en": "He spoke to the students.", "ja": "彼は学生に向かって話した。", "kana": "かれ は がくせい に むかって はなした。", "ro": "kare wa gakusei ni mukatte hanashita."},
+    {"en": "The airplane flew toward the south.", "ja": "飛行機は南に向かって飛んだ。", "kana": "ひこうき は みなみ に むかって とんだ。", "ro": "hikouki wa minami ni mukatte tonda."},
+    {"en": "The child ran toward his mother.", "ja": "子どもは母に向かって走った。", "kana": "こども は はは に むかって はしった。", "ro": "kodomo wa haha ni mukatte hashitta."}
+  ],
+  "grammar": "Noun + に向かって"
+},
+{
+  "id": "n2-grammar-050",
+  "ja": "〜にすぎない",
+  "kana": "〜にすぎない",
+  "ro": "ni suginai",
+  "en": "nothing more than / merely / only",
+  "examples": [
+    {"en": "He is only a child.", "ja": "彼は子どもにすぎない。", "kana": "かれ は こども に すぎない。", "ro": "kare wa kodomo ni suginai."},
+    {"en": "It was just a joke.", "ja": "それは冗談にすぎない。", "kana": "それ は じょうだん に すぎない。", "ro": "sore wa joudan ni suginai."},
+    {"en": "This is only my opinion.", "ja": "これは私の意見にすぎません。", "kana": "これ は わたし の いけん に すぎません。", "ro": "kore wa watashi no iken ni sugimasen."},
+    {"en": "He’s just a beginner.", "ja": "彼は初心者にすぎない。", "kana": "かれ は しょしんしゃ に すぎない。", "ro": "kare wa shoshinsha ni suginai."},
+    {"en": "It’s merely a rumor.", "ja": "それはうわさにすぎない。", "kana": "それ は うわさ に すぎない。", "ro": "sore wa uwasa ni suginai."}
+  ],
+  "grammar": "Verb (plain) / Noun + にすぎない"
+},
+{
+  "id": "n2-grammar-051",
+  "ja": "〜に応えて",
+  "kana": "〜にこたえて",
+  "ro": "ni kotaete",
+  "en": "in response to / in accordance with / to meet (expectations or requests)",
+  "examples": [
+    {"en": "We held the event in response to requests from the customers.", "ja": "お客様の要望に応えてイベントを開催した。", "kana": "おきゃくさま の ようぼう に こたえて いべんと を かいさい した。", "ro": "okyakusama no youbou ni kotaete ibento o kaisai shita."},
+    {"en": "He made a speech in response to the audience’s applause.", "ja": "観客の拍手に応えて彼はスピーチをした。", "kana": "かんきゃく の はくしゅ に こたえて かれ は すぴーち を した。", "ro": "kankyaku no hakushu ni kotaete kare wa supiichi o shita."},
+    {"en": "We improved our service in response to feedback.", "ja": "意見に応えてサービスを改善した。", "kana": "いけん に こたえて さーびす を かいぜん した。", "ro": "iken ni kotaete saabisu o kaizen shita."},
+    {"en": "The company expanded in response to demand.", "ja": "需要に応えて会社を拡大した。", "kana": "じゅよう に こたえて かいしゃ を かくだい した。", "ro": "juyou ni kotaete kaisha o kakudai shita."},
+    {"en": "He worked hard to meet everyone’s expectations.", "ja": "みんなの期待に応えて彼は頑張った。", "kana": "みんな の きたい に こたえて かれ は がんばった。", "ro": "minna no kitai ni kotaete kare wa ganbatta."}
+  ],
+  "grammar": "Noun + に応えて"
+},
+{
+  "id": "n2-grammar-052",
+  "ja": "〜に基づく",
+  "kana": "〜にもとづく",
+  "ro": "ni motozuku",
+  "en": "based on / founded on",
+  "examples": [
+    {"en": "This decision is based on data.", "ja": "この決定はデータに基づくものだ。", "kana": "この けってい は でーた に もとづく もの だ。", "ro": "kono kettei wa deeta ni motozuku mono da."},
+    {"en": "The story is based on a true event.", "ja": "この話は実際の出来事に基づく。", "kana": "この はなし は じっさい の できごと に もとづく。", "ro": "kono hanashi wa jissai no dekigoto ni motozuku."},
+    {"en": "The plan was made based on research results.", "ja": "計画は調査結果に基づいて作られた。", "kana": "けいかく は ちょうさ けっか に もとづいて つくられた。", "ro": "keikaku wa chousa kekka ni motozuite tsukurareta."},
+    {"en": "Laws are made based on the constitution.", "ja": "法律は憲法に基づいて作られる。", "kana": "ほうりつ は けんぽう に もとづいて つくられる。", "ro": "houritsu wa kenpou ni motozuite tsukurareru."},
+    {"en": "The decision was made according to the evidence.", "ja": "証拠に基づく判断が行われた。", "kana": "しょうこ に もとづく はんだん が おこなわれた。", "ro": "shouko ni motozuku handan ga okonawareta."}
+  ],
+  "grammar": "Noun + に基づく"
+},
+{
+  "id": "n2-grammar-053",
+  "ja": "〜に反して",
+  "kana": "〜にはんして",
+  "ro": "ni hanshite",
+  "en": "contrary to / against / in contrast to",
+  "examples": [
+    {"en": "Contrary to expectations, the result was bad.", "ja": "期待に反して結果は悪かった。", "kana": "きたい に はんして けっか は わるかった。", "ro": "kitai ni hanshite kekka wa warukatta."},
+    {"en": "He acted against the rules.", "ja": "彼はルールに反して行動した。", "kana": "かれ は るーる に はんして こうどう した。", "ro": "kare wa ruuru ni hanshite koudou shita."},
+    {"en": "Contrary to his words, his actions were different.", "ja": "言葉に反して行動が違った。", "kana": "ことば に はんして こうどう が ちがった。", "ro": "kotoba ni hanshite koudou ga chigatta."},
+    {"en": "He did something against his will.", "ja": "彼は自分の意志に反して行動した。", "kana": "かれ は じぶん の いし に はんして こうどう した。", "ro": "kare wa jibun no ishi ni hanshite koudou shita."},
+    {"en": "The result went against the prediction.", "ja": "結果は予想に反した。", "kana": "けっか は よそう に はんした。", "ro": "kekka wa yosou ni hanshita."}
+  ],
+  "grammar": "Noun + に反して"
+},
+{
+  "id": "n2-grammar-054",
+  "ja": "〜に比べて",
+  "kana": "〜にくらべて",
+  "ro": "ni kurabete",
+  "en": "compared with / in comparison to",
+  "examples": [
+    {"en": "Compared with last year, sales increased.", "ja": "去年に比べて売上が増えた。", "kana": "きょねん に くらべて うりあげ が ふえた。", "ro": "kyonen ni kurabete uriage ga fueta."},
+    {"en": "This hotel is cheaper compared to that one.", "ja": "このホテルはあのホテルに比べて安い。", "kana": "この ほてる は あの ほてる に くらべて やすい。", "ro": "kono hoteru wa ano hoteru ni kurabete yasui."},
+    {"en": "This year’s winter is warm compared to usual.", "ja": "今年の冬は例年に比べて暖かい。", "kana": "ことし の ふゆ は れいねん に くらべて あたたかい。", "ro": "kotoshi no fuyu wa reinen ni kurabete atatakai."},
+    {"en": "Women live longer compared to men.", "ja": "男性に比べて女性の方が長生きする。", "kana": "だんせい に くらべて じょせい の ほう が ながいき する。", "ro": "dansei ni kurabete josei no hou ga nagaiki suru."},
+    {"en": "Today’s work was easier compared to yesterday’s.", "ja": "今日は昨日に比べて仕事が楽だった。", "kana": "きょう は きのう に くらべて しごと が らく だった。", "ro": "kyou wa kinou ni kurabete shigoto ga raku datta."}
+  ],
+  "grammar": "Noun + に比べて"
+},
+{
+  "id": "n2-grammar-055",
+  "ja": "〜に加えて",
+  "kana": "〜にくわえて",
+  "ro": "ni kuwaete",
+  "en": "in addition to / besides / moreover",
+  "examples": [
+    {"en": "In addition to English, he can speak Chinese.", "ja": "英語に加えて中国語も話せる。", "kana": "えいご に くわえて ちゅうごくご も はなせる。", "ro": "eigo ni kuwaete chuugokugo mo hanaseru."},
+    {"en": "Besides studying, I also have to work part-time.", "ja": "勉強に加えてアルバイトもしなければならない。", "kana": "べんきょう に くわえて あるばいと も しなければならない。", "ro": "benkyou ni kuwaete arubaito mo shinakereba naranai."},
+    {"en": "In addition to the rain, the wind was strong.", "ja": "雨に加えて風も強かった。", "kana": "あめ に くわえて かぜ も つよかった。", "ro": "ame ni kuwaete kaze mo tsuyokatta."},
+    {"en": "He is kind and, in addition, very smart.", "ja": "彼は優しいし、それに加えて頭がいい。", "kana": "かれ は やさしい し、それ に くわえて あたま が いい。", "ro": "kare wa yasashii shi, sore ni kuwaete atama ga ii."},
+    {"en": "The accident caused injury and property damage as well.", "ja": "事故はけがに加えて物損もあった。", "kana": "じこ は けが に くわえて ぶっそん も あった。", "ro": "jiko wa kega ni kuwaete busson mo atta."}
+  ],
+  "grammar": "Noun + に加えて"
+},
+{
+  "id": "n2-grammar-056",
+  "ja": "〜に違いない",
+  "kana": "〜にちがいない",
+  "ro": "ni chigainai",
+  "en": "must be / without a doubt / I’m sure that ~",
+  "examples": [
+    {"en": "He must be the new teacher.", "ja": "彼は新しい先生に違いない。", "kana": "かれ は あたらしい せんせい に ちがいない。", "ro": "kare wa atarashii sensei ni chigainai."},
+    {"en": "This book must be interesting.", "ja": "この本は面白いに違いない。", "kana": "この ほん は おもしろい に ちがいない。", "ro": "kono hon wa omoshiroi ni chigainai."},
+    {"en": "He must have forgotten the promise.", "ja": "彼は約束を忘れたに違いない。", "kana": "かれ は やくそく を わすれた に ちがいない。", "ro": "kare wa yakusoku o wasureta ni chigainai."},
+    {"en": "It must be very cold outside.", "ja": "外はとても寒いに違いない。", "kana": "そと は とても さむい に ちがいない。", "ro": "soto wa totemo samui ni chigainai."},
+    {"en": "This is definitely the best way.", "ja": "これは最高の方法に違いない。", "kana": "これ は さいこう の ほうほう に ちがいない。", "ro": "kore wa saikou no houhou ni chigainai."}
+  ],
+  "grammar": "Verb (plain) / い-adjective / な-adjective + に違いない"
+},
+{
+  "id": "n2-grammar-057",
+  "ja": "〜に決まっている",
+  "kana": "〜にきまっている",
+  "ro": "ni kimatteiru",
+  "en": "it’s certain that / of course / definitely",
+  "examples": [
+    {"en": "He’s definitely lying.", "ja": "彼はうそをついているに決まっている。", "kana": "かれ は うそ を ついている に きまっている。", "ro": "kare wa uso o tsuiteiru ni kimatteiru."},
+    {"en": "It’s bound to rain today.", "ja": "今日は雨になるに決まっている。", "kana": "きょう は あめ に なる に きまっている。", "ro": "kyou wa ame ni naru ni kimatteiru."},
+    {"en": "That’s too difficult for a beginner.", "ja": "初心者には難しすぎるに決まっている。", "kana": "しょしんしゃ に は むずかしすぎる に きまっている。", "ro": "shoshinsha ni wa muzukashisugiru ni kimatteiru."},
+    {"en": "He’s definitely tired.", "ja": "彼は疲れているに決まっている。", "kana": "かれ は つかれている に きまっている。", "ro": "kare wa tsukareteiru ni kimatteiru."},
+    {"en": "This movie must be popular.", "ja": "この映画は人気があるに決まっている。", "kana": "この えいが は にんき が ある に きまっている。", "ro": "kono eiga wa ninki ga aru ni kimatteiru."}
+  ],
+  "grammar": "Verb (plain) / い-adjective / な-adjective + に決まっている"
+},
+{
+  "id": "n2-grammar-058",
+  "ja": "〜にせよ／〜にしろ",
+  "kana": "〜にせよ／〜にしろ",
+  "ro": "ni seyo / ni shiro",
+  "en": "even if / regardless of / whether or not",
+  "examples": [
+    {"en": "Even if it’s a lie, I’ll believe you.", "ja": "うそにせよ、あなたを信じます。", "kana": "うそ に せよ、あなた を しんじます。", "ro": "uso ni seyo, anata o shinjimasu."},
+    {"en": "Even if it’s hard, don’t give up.", "ja": "大変にせよ、あきらめないでください。", "kana": "たいへん に せよ、あきらめないで ください。", "ro": "taihen ni seyo, akiramenaide kudasai."},
+    {"en": "Whether you go or not, please call me.", "ja": "行くにせよ行かないにせよ、連絡してください。", "kana": "いく に せよ いかない に せよ、れんらく して ください。", "ro": "iku ni seyo ikanai ni seyo, renraku shite kudasai."},
+    {"en": "Even if you fail, try again.", "ja": "失敗するにしろ、もう一度やってみなさい。", "kana": "しっぱい する に しろ、もう いちど やって みなさい。", "ro": "shippai suru ni shiro, mou ichido yatte minasai."},
+    {"en": "Even if it’s cheap, I won’t buy it.", "ja": "安いにせよ、買いません。", "kana": "やすい に せよ、かいません。", "ro": "yasui ni seyo, kaimasen."}
+  ],
+  "grammar": "Verb (plain) / い-adjective / な-adjective / Noun + にせよ／にしろ"
+},
+{
+  "id": "n2-grammar-059",
+  "ja": "〜に沿って",
+  "kana": "〜にそって",
+  "ro": "ni sotte",
+  "en": "along / in accordance with / following",
+  "examples": [
+    {"en": "We walked along the river.", "ja": "川に沿って歩いた。", "kana": "かわ に そって あるいた。", "ro": "kawa ni sotte aruita."},
+    {"en": "The plan will proceed according to the rules.", "ja": "計画は規則に沿って進められる。", "kana": "けいかく は きそく に そって すすめられる。", "ro": "keikaku wa kisoku ni sotte susumerareru."},
+    {"en": "Please make a design according to the client’s request.", "ja": "依頼に沿ってデザインを作ってください。", "kana": "いらい に そって でざいん を つくって ください。", "ro": "irai ni sotte dezain o tsukutte kudasai."},
+    {"en": "We developed the product along the company’s policy.", "ja": "会社の方針に沿って製品を開発した。", "kana": "かいしゃ の ほうしん に そって せいひん を かいはつ した。", "ro": "kaisha no houshin ni sotte seihin o kaihatsu shita."},
+    {"en": "They built a park along the road.", "ja": "道路に沿って公園を作った。", "kana": "どうろ に そって こうえん を つくった。", "ro": "douro ni sotte kouen o tsukutta."}
+  ],
+  "grammar": "Noun + に沿って"
+},
+{
+  "id": "n2-grammar-060",
+  "ja": "〜にしては",
+  "kana": "〜にしては",
+  "ro": "ni shite wa",
+  "en": "considering / for / even though",
+  "examples": [
+    {"en": "He’s young considering his success.", "ja": "成功しているにしては彼は若い。", "kana": "せいこう している に しては かれ は わかい。", "ro": "seikou shiteiru ni shite wa kare wa wakai."},
+    {"en": "It’s cheap for this quality.", "ja": "この品質にしては安い。", "kana": "この ひんしつ に しては やすい。", "ro": "kono hinshitsu ni shite wa yasui."},
+    {"en": "She speaks Japanese very well for a foreigner.", "ja": "外国人にしては日本語が上手だ。", "kana": "がいこくじん に しては にほんご が じょうず だ。", "ro": "gaikokujin ni shite wa nihongo ga jouzu da."},
+    {"en": "It’s cold for May.", "ja": "5月にしては寒い。", "kana": "ごがつ に しては さむい。", "ro": "gogatsu ni shite wa samui."},
+    {"en": "He’s calm for someone who just lost his job.", "ja": "仕事を失ったにしては彼は落ち着いている。", "kana": "しごと を うしなった に しては かれ は おちついている。", "ro": "shigoto o ushinatta ni shite wa kare wa ochitsuiteiru."}
+  ],
+  "grammar": "Verb (plain) / Noun + にしては"
+},
+{
+  "id": "n2-grammar-061",
+  "ja": "〜にすぎない",
+  "kana": "〜にすぎない",
+  "ro": "ni suginai",
+  "en": "no more than / just / merely / only",
+  "examples": [
+    {"en": "It’s just a rumor.", "ja": "それはうわさにすぎない。", "kana": "それ は うわさ に すぎない。", "ro": "sore wa uwasa ni suginai."},
+    {"en": "He is just a child.", "ja": "彼は子どもにすぎない。", "kana": "かれ は こども に すぎない。", "ro": "kare wa kodomo ni suginai."},
+    {"en": "This is just my personal opinion.", "ja": "これは私の個人的な意見にすぎない。", "kana": "これ は わたし の こじんてき な いけん に すぎない。", "ro": "kore wa watashi no kojinteki na iken ni suginai."},
+    {"en": "He just happened to be there.", "ja": "彼はたまたまそこにいたにすぎない。", "kana": "かれ は たまたま そこ に いた に すぎない。", "ro": "kare wa tamatama soko ni ita ni suginai."},
+    {"en": "It’s just a coincidence.", "ja": "ただの偶然にすぎない。", "kana": "ただ の ぐうぜん に すぎない。", "ro": "tada no guuzen ni suginai."}
+  ],
+  "grammar": "Verb (plain) / Noun + にすぎない"
+},
+{
+  "id": "n2-grammar-062",
+  "ja": "〜に伴って",
+  "kana": "〜にともなって",
+  "ro": "ni tomonatte",
+  "en": "as / due to / along with / accompanied by",
+  "examples": [
+    {"en": "The population decreased as the economy declined.", "ja": "経済の低下に伴って人口が減少した。", "kana": "けいざい の ていか に ともなって じんこう が げんしょう した。", "ro": "keizai no teika ni tomonatte jinkou ga genshou shita."},
+    {"en": "The risk increases with temperature rise.", "ja": "気温の上昇に伴ってリスクが高まる。", "kana": "きおん の じょうしょう に ともなって りすく が たかまる。", "ro": "kion no joushou ni tomonatte risuku ga takamaru."},
+    {"en": "Changes come with the new system.", "ja": "新しい制度に伴って変化が起こる。", "kana": "あたらしい せいど に ともなって へんか が おこる。", "ro": "atarashii seido ni tomonatte henka ga okoru."},
+    {"en": "With development comes responsibility.", "ja": "発展に伴って責任も増す。", "kana": "はってん に ともなって せきにん も ます。", "ro": "hatten ni tomonatte sekinin mo masu."},
+    {"en": "Traffic increased along with population growth.", "ja": "人口の増加に伴って交通が増えた。", "kana": "じんこう の ぞうか に ともなって こうつう が ふえた。", "ro": "jinkou no zouka ni tomonatte koutsuu ga fueta."}
+  ],
+  "grammar": "Noun + に伴って"
+},
+{
+  "id": "n2-grammar-063",
+  "ja": "〜にわたって",
+  "kana": "〜にわたって",
+  "ro": "ni watatte",
+  "en": "throughout / over a span of / across",
+  "examples": [
+    {"en": "The festival lasted for three days.", "ja": "祭りは三日にわたって行われた。", "kana": "まつり は みっか に わたって おこなわれた。", "ro": "matsuri wa mikka ni watatte okonawareta."},
+    {"en": "The influence spread across the world.", "ja": "その影響は世界にわたって広がった。", "kana": "その えいきょう は せかい に わたって ひろがった。", "ro": "sono eikyou wa sekai ni watatte hirogatta."},
+    {"en": "The meeting continued for five hours.", "ja": "会議は五時間にわたって続いた。", "kana": "かいぎ は ごじかん に わたって つづいた。", "ro": "kaigi wa gojikan ni watatte tsuzuita."},
+    {"en": "He worked in this field for many years.", "ja": "彼は長年にわたってこの分野で働いた。", "kana": "かれ は ながねん に わたって この ぶんや で はたらいた。", "ro": "kare wa naganen ni watatte kono bunya de hataraita."},
+    {"en": "The effect lasted over a long period.", "ja": "その効果は長期間にわたって続いた。", "kana": "その こうか は ちょうきかん に わたって つづいた。", "ro": "sono kouka wa choukikan ni watatte tsuzuita."}
+  ],
+  "grammar": "Noun + にわたって"
+},
+{
+  "id": "n2-grammar-064",
+  "ja": "〜ぬく",
+  "kana": "〜ぬく",
+  "ro": "nuku",
+  "en": "to do something through to the end / to persevere / to continue until completion",
+  "examples": [
+    {"en": "He endured the hardship and succeeded.", "ja": "彼は苦労を乗り越えてやりぬいた。", "kana": "かれ は くろう を のりこえて やりぬいた。", "ro": "kare wa kurou o norikoete yarinuita."},
+    {"en": "She fought to the end.", "ja": "彼女は最後まで戦いぬいた。", "kana": "かのじょ は さいご まで たたかいぬいた。", "ro": "kanojo wa saigo made tatakainuita."},
+    {"en": "We worked hard and accomplished it.", "ja": "私たちは努力してやりぬいた。", "kana": "わたしたち は どりょく して やりぬいた。", "ro": "watashitachi wa doryoku shite yarinuita."},
+    {"en": "He survived through the harsh winter.", "ja": "彼は厳しい冬を生きぬいた。", "kana": "かれ は きびしい ふゆ を いきぬいた。", "ro": "kare wa kibishii fuyu o ikinuita."},
+    {"en": "She wrote the novel to the very end.", "ja": "彼女は小説を書きぬいた。", "kana": "かのじょ は しょうせつ を かきぬいた。", "ro": "kanojo wa shousetsu o kakinuita."}
+  ],
+  "grammar": "Verb (ます-stem) + ぬく"
+},
+{
+  "id": "n2-grammar-065",
+  "ja": "〜抜きで",
+  "kana": "〜ぬきで",
+  "ro": "nuki de",
+  "en": "without / leaving out / excluding",
+  "examples": [
+    {"en": "Let’s discuss it without emotion.", "ja": "感情抜きで話しましょう。", "kana": "かんじょう ぬき で はなしましょう。", "ro": "kanjou nuki de hanashimashou."},
+    {"en": "I ordered coffee without sugar.", "ja": "砂糖抜きでコーヒーをお願いします。", "kana": "さとう ぬき で こーひー を おねがいします。", "ro": "satou nuki de koohii o onegaishimasu."},
+    {"en": "We can’t make a decision without the manager.", "ja": "部長抜きで決めることはできません。", "kana": "ぶちょう ぬき で きめる こと は できません。", "ro": "buchou nuki de kimeru koto wa dekimasen."},
+    {"en": "It’s boring without you.", "ja": "あなた抜きではつまらない。", "kana": "あなた ぬき で は つまらない。", "ro": "anata nuki de wa tsumaranai."},
+    {"en": "He succeeded on his own, without any help.", "ja": "彼は助け抜きで自分の力で成功した。", "kana": "かれ は たすけ ぬき で じぶん の ちから で せいこう した。", "ro": "kare wa tasuke nuki de jibun no chikara de seikou shita."}
+  ],
+  "grammar": "Noun + 抜きで"
+},
+{
+  "id": "n2-grammar-066",
+  "ja": "〜のもとで",
+  "kana": "〜のもとで",
+  "ro": "no moto de",
+  "en": "under / under the supervision / influenced by",
+  "examples": [
+    {"en": "I studied Japanese under a famous teacher.", "ja": "有名な先生のもとで日本語を勉強した。", "kana": "ゆうめい な せんせい の もと で にほんご を べんきょう した。", "ro": "yuumei na sensei no moto de nihongo o benkyou shita."},
+    {"en": "He works under the president’s supervision.", "ja": "彼は社長のもとで働いている。", "kana": "かれ は しゃちょう の もと で はたらいている。", "ro": "kare wa shachou no moto de hataraiteiru."},
+    {"en": "We are developing the project under strict conditions.", "ja": "厳しい条件のもとでプロジェクトを進めている。", "kana": "きびしい じょうけん の もと で ぷろじぇくと を すすめている。", "ro": "kibishii jouken no moto de purojekuto o susumeteiru."},
+    {"en": "The event was held under fine weather.", "ja": "晴天のもとでイベントが行われた。", "kana": "せいてん の もと で いべんと が おこなわれた。", "ro": "seiten no moto de ibento ga okonawareta."},
+    {"en": "The agreement was made under mutual trust.", "ja": "お互いの信頼のもとで契約が結ばれた。", "kana": "おたがい の しんらい の もと で けいやく が むすばれた。", "ro": "otagai no shinrai no moto de keiyaku ga musubareta."}
+  ],
+  "grammar": "Noun + のもとで"
+},
+{
+  "id": "n2-grammar-067",
+  "ja": "〜のもとに",
+  "kana": "〜のもとに",
+  "ro": "no moto ni",
+  "en": "based on / with / under the influence or guidance of",
+  "examples": [
+    {"en": "The plan was made under the guidance of experts.", "ja": "専門家のもとに計画が立てられた。", "kana": "せんもんか の もと に けいかく が たてられた。", "ro": "senmonka no moto ni keikaku ga taterareta."},
+    {"en": "The team worked under strict supervision.", "ja": "厳しい監督のもとにチームが動いた。", "kana": "きびしい かんとく の もと に ちーむ が うごいた。", "ro": "kibishii kantoku no moto ni chiimu ga ugoita."},
+    {"en": "The ceremony was held under the clear sky.", "ja": "青空のもとに式が行われた。", "kana": "あおぞら の もと に しき が おこなわれた。", "ro": "aozora no moto ni shiki ga okonawareta."},
+    {"en": "The child grew up under loving parents.", "ja": "愛情のもとに子どもが育った。", "kana": "あいじょう の もと に こども が そだった。", "ro": "aijou no moto ni kodomo ga sodatta."},
+    {"en": "The experiment was conducted under safe conditions.", "ja": "安全な条件のもとに実験が行われた。", "kana": "あんぜん な じょうけん の もと に じっけん が おこなわれた。", "ro": "anzen na jouken no moto ni jikken ga okonawareta."}
+  ],
+  "grammar": "Noun + のもとに"
+},
+{
+  "id": "n2-grammar-068",
+  "ja": "〜のわりに",
+  "kana": "〜のわりに",
+  "ro": "no warini",
+  "en": "considering / although / for",
+  "examples": [
+    {"en": "This restaurant is cheap considering its quality.", "ja": "このレストランは質のわりに安い。", "kana": "この れすとらん は しつ の わり に やすい。", "ro": "kono resutoran wa shitsu no warini yasui."},
+    {"en": "He is tall considering his age.", "ja": "彼は年齢のわりに背が高い。", "kana": "かれ は ねんれい の わり に せ が たかい。", "ro": "kare wa nenrei no warini se ga takai."},
+    {"en": "This movie was boring for a famous director.", "ja": "有名な監督のわりにつまらなかった。", "kana": "ゆうめい な かんとく の わり に つまらなかった。", "ro": "yuumei na kantoku no warini tsumaranakatta."},
+    {"en": "He is strong for his size.", "ja": "彼は体の小さいわりに力が強い。", "kana": "かれ は からだ の ちいさい わり に ちから が つよい。", "ro": "kare wa karada no chiisai warini chikara ga tsuyoi."},
+    {"en": "The weather is nice for this season.", "ja": "この季節のわりに天気がいい。", "kana": "この きせつ の わり に てんき が いい。", "ro": "kono kisetsu no warini tenki ga ii."}
+  ],
+  "grammar": "Noun / Verb (plain) + わりに"
+},
+{
+  "id": "n2-grammar-069",
+  "ja": "〜のことだから",
+  "kana": "〜のことだから",
+  "ro": "no koto dakara",
+  "en": "knowing (someone), it’s natural that / as for / because (it’s typical of someone)",
+  "examples": [
+    {"en": "Knowing him, he will definitely help.", "ja": "彼のことだから、きっと手伝ってくれるだろう。", "kana": "かれ の こと だから、きっと てつだって くれる だろう。", "ro": "kare no koto dakara, kitto tetsudatte kureru darou."},
+    {"en": "Knowing her, she must be studying now.", "ja": "彼女のことだから、今ごろ勉強しているはずだ。", "kana": "かのじょ の こと だから、いまごろ べんきょう している はず だ。", "ro": "kanojo no koto dakara, imagoro benkyou shiteiru hazu da."},
+    {"en": "Knowing the manager, he won’t forgive this mistake.", "ja": "部長のことだから、このミスは許さないだろう。", "kana": "ぶちょう の こと だから、この みす は ゆるさない だろう。", "ro": "buchou no koto dakara, kono misu wa yurusanai darou."},
+    {"en": "Knowing my parents, they’ll be worried.", "ja": "両親のことだから、きっと心配している。", "kana": "りょうしん の こと だから、きっと しんぱい している。", "ro": "ryoushin no koto dakara, kitto shinpai shiteiru."},
+    {"en": "Knowing you, I’m sure you’ll succeed.", "ja": "あなたのことだから、成功すると思う。", "kana": "あなた の こと だから、せいこう する と おもう。", "ro": "anata no koto dakara, seikou suru to omou."}
+  ],
+  "grammar": "Noun + のことだから"
+},
+{
+  "id": "n2-grammar-070",
+  "ja": "〜のおかげで",
+  "kana": "〜のおかげで",
+  "ro": "no okage de",
+  "en": "thanks to / because of (positive reason)",
+  "examples": [
+    {"en": "Thanks to you, I passed the exam.", "ja": "あなたのおかげで試験に合格できた。", "kana": "あなた の おかげ で しけん に ごうかく できた。", "ro": "anata no okage de shiken ni goukaku dekita."},
+    {"en": "We succeeded thanks to teamwork.", "ja": "チームワークのおかげで成功した。", "kana": "ちーむわーく の おかげ で せいこう した。", "ro": "chiimuwaaku no okage de seikou shita."},
+    {"en": "I got better thanks to the doctor.", "ja": "先生のおかげで元気になりました。", "kana": "せんせい の おかげ で げんき に なりました。", "ro": "sensei no okage de genki ni narimashita."},
+    {"en": "Thanks to good weather, the event was a success.", "ja": "天気のおかげでイベントは成功した。", "kana": "てんき の おかげ で いべんと は せいこう した。", "ro": "tenki no okage de ibento wa seikou shita."},
+    {"en": "Thanks to my family, I could continue studying.", "ja": "家族のおかげで勉強を続けられた。", "kana": "かぞく の おかげ で べんきょう を つづけられた。", "ro": "kazoku no okage de benkyou o tsuzukerareta."}
+  ],
+  "grammar": "Noun + のおかげで"
+},
+{
+  "id": "n2-grammar-071",
+  "ja": "〜のせいで",
+  "kana": "〜のせいで",
+  "ro": "no sei de",
+  "en": "because of / due to (negative reason)",
+  "examples": [
+    {"en": "I caught a cold because of the rain.", "ja": "雨のせいで風邪をひいた。", "kana": "あめ の せい で かぜ を ひいた。", "ro": "ame no sei de kaze o hiita."},
+    {"en": "I failed the test because I didn’t study.", "ja": "勉強しなかったせいで試験に落ちた。", "kana": "べんきょう しなかった せい で しけん に おちた。", "ro": "benkyou shinakatta sei de shiken ni ochita."},
+    {"en": "My plan was ruined because of traffic.", "ja": "渋滞のせいで予定が狂った。", "kana": "じゅうたい の せい で よてい が くるった。", "ro": "juutai no sei de yotei ga kurutta."},
+    {"en": "I couldn’t sleep because of the noise.", "ja": "騒音のせいで眠れなかった。", "kana": "そうおん の せい で ねむれなかった。", "ro": "souon no sei de nemurenakatta."},
+    {"en": "The flowers died because of the heat.", "ja": "暑さのせいで花が枯れた。", "kana": "あつさ の せい で はな が かれた。", "ro": "atsusa no sei de hana ga kareta."}
+  ],
+  "grammar": "Noun + のせいで"
+},
+{
+  "id": "n2-grammar-072",
+  "ja": "〜のもとに／〜のもとで",
+  "kana": "〜のもとに／〜のもとで",
+  "ro": "no moto ni / no moto de",
+  "en": "under / based on / in the presence of",
+  "examples": [
+    {"en": "The plan was created under the supervision of experts.", "ja": "専門家のもとに計画が作られた。", "kana": "せんもんか の もと に けいかく が つくられた。", "ro": "senmonka no moto ni keikaku ga tsukurareta."},
+    {"en": "The project is progressing under the manager’s guidance.", "ja": "マネージャーのもとでプロジェクトが進められている。", "kana": "まねーじゃー の もと で ぷろじぇくと が すすめられている。", "ro": "maneejaa no moto de purojekuto ga susumerareteiru."},
+    {"en": "The child grew up under his parents’ love.", "ja": "両親の愛情のもとで子どもが育った。", "kana": "りょうしん の あいじょう の もと で こども が そだった。", "ro": "ryoushin no aijou no moto de kodomo ga sodatta."},
+    {"en": "The meeting was held under the clear sky.", "ja": "青空のもとに会議が行われた。", "kana": "あおぞら の もと に かいぎ が おこなわれた。", "ro": "aozora no moto ni kaigi ga okonawareta."},
+    {"en": "The research was conducted under strict conditions.", "ja": "厳しい条件のもとで研究が行われた。", "kana": "きびしい じょうけん の もと で けんきゅう が おこなわれた。", "ro": "kibishii jouken no moto de kenkyuu ga okonawareta."}
+  ],
+  "grammar": "Noun + のもとに／のもとで"
+},
+{
+  "id": "n2-grammar-073",
+  "ja": "〜ばかりでなく",
+  "kana": "〜ばかりでなく",
+  "ro": "bakari denaku",
+  "en": "not only... but also...",
+  "examples": [
+    {"en": "He can speak not only Japanese but also English.", "ja": "彼は日本語ばかりでなく英語も話せる。", "kana": "かれ は にほんご ばかり で なく えいご も はなせる。", "ro": "kare wa nihongo bakari denaku eigo mo hanaseru."},
+    {"en": "She is not only kind but also strong.", "ja": "彼女は優しいばかりでなく強い。", "kana": "かのじょ は やさしい ばかり で なく つよい。", "ro": "kanojo wa yasashii bakari denaku tsuyoi."},
+    {"en": "He is good not only at studying but also at sports.", "ja": "彼は勉強ばかりでなくスポーツも得意だ。", "kana": "かれ は べんきょう ばかり で なく すぽーつ も とくい だ。", "ro": "kare wa benkyou bakari denaku supootsu mo tokui da."},
+    {"en": "This restaurant is cheap and delicious.", "ja": "このレストランは安いばかりでなくおいしい。", "kana": "この れすとらん は やすい ばかり で なく おいしい。", "ro": "kono resutoran wa yasui bakari denaku oishii."},
+    {"en": "He is not only a teacher but also a writer.", "ja": "彼は教師ばかりでなく作家でもある。", "kana": "かれ は きょうし ばかり で なく さっか でも ある。", "ro": "kare wa kyoushi bakari denaku sakka demo aru."}
+  ],
+  "grammar": "Verb (plain) / Noun + ばかりでなく"
+},
+{
+  "id": "n2-grammar-074",
+  "ja": "〜反面",
+  "kana": "〜はんめん",
+  "ro": "hanmen",
+  "en": "on the other hand / while / although",
+  "examples": [
+    {"en": "This job is rewarding but stressful.", "ja": "この仕事はやりがいがある反面、ストレスも多い。", "kana": "この しごと は やりがい が ある はんめん、すとれす も おおい。", "ro": "kono shigoto wa yarigai ga aru hanmen, sutoresu mo ooi."},
+    {"en": "Living alone is fun, but it can be lonely.", "ja": "一人暮らしは楽しい反面、寂しいこともある。", "kana": "ひとりぐらし は たのしい はんめん、さびしい こと も ある。", "ro": "hitorigurashi wa tanoshii hanmen, sabishii koto mo aru."},
+    {"en": "Freedom brings responsibility.", "ja": "自由な反面、責任もある。", "kana": "じゆう な はんめん、せきにん も ある。", "ro": "jiyuu na hanmen, sekinin mo aru."},
+    {"en": "He is kind but sometimes too strict.", "ja": "彼は優しい反面、厳しすぎるところもある。", "kana": "かれ は やさしい はんめん、きびしすぎる ところ も ある。", "ro": "kare wa yasashii hanmen, kibishisugiru tokoro mo aru."},
+    {"en": "Studying abroad is exciting but challenging.", "ja": "留学は刺激的な反面、大変なことも多い。", "kana": "りゅうがく は しげきてき な はんめん、たいへん な こと も おおい。", "ro": "ryuugaku wa shigekiteki na hanmen, taihen na koto mo ooi."}
+  ],
+  "grammar": "Verb (plain) / Noun + の反面"
+},
+{
+  "id": "n2-grammar-075",
+  "ja": "〜一方（で）",
+  "kana": "〜いっぽう（で）",
+  "ro": "ippou (de)",
+  "en": "on the other hand / while / at the same time",
+  "examples": [
+    {"en": "She is cheerful, while her brother is quiet.", "ja": "彼女は明るい一方で、弟はおとなしい。", "kana": "かのじょ は あかるい いっぽう で、おとうと は おとなしい。", "ro": "kanojo wa akarui ippou de, otouto wa otonashii."},
+    {"en": "The economy is improving, while prices continue to rise.", "ja": "景気は良くなる一方で、物価は上がり続けている。", "kana": "けいき は よくなる いっぽう で、ぶっか は あがり つづけている。", "ro": "keiki wa yokunaru ippou de, bukka wa agari tsuzuketeiru."},
+    {"en": "He studies hard, but he doesn’t get enough rest.", "ja": "彼は熱心に勉強する一方で、休みが少ない。", "kana": "かれ は ねっしん に べんきょう する いっぽう で、やすみ が すくない。", "ro": "kare wa nesshin ni benkyou suru ippou de, yasumi ga sukunai."},
+    {"en": "This system is convenient, but expensive.", "ja": "このシステムは便利な一方で、費用が高い。", "kana": "この しすてむ は べんり な いっぽう で、ひよう が たかい。", "ro": "kono shisutemu wa benri na ippou de, hiyou ga takai."},
+    {"en": "Technology develops, while traditional culture is disappearing.", "ja": "技術が発達する一方で、伝統文化が失われている。", "kana": "ぎじゅつ が はったつ する いっぽう で、でんとうぶんか が うしなわれている。", "ro": "gijutsu ga hattatsu suru ippou de, dentou bunka ga ushinawareteiru."}
+  ],
+  "grammar": "Verb (plain) / Noun + の一方（で）"
+},
+{
+  "id": "n2-grammar-076",
+  "ja": "〜上で（うえで）",
+  "kana": "〜うえで",
+  "ro": "ue de",
+  "en": "upon / after / in the process of / when doing",
+  "examples": [
+    {"en": "Please think carefully before deciding.", "ja": "決める上でよく考えてください。", "kana": "きめる うえ で よく かんがえて ください。", "ro": "kimeru ue de yoku kangaete kudasai."},
+    {"en": "Experience is important when working abroad.", "ja": "海外で働く上で経験は大切だ。", "kana": "かいがい で はたらく うえ で けいけん は たいせつ だ。", "ro": "kaigai de hataraku ue de keiken wa taisetsu da."},
+    {"en": "We talked about various things in deciding the plan.", "ja": "計画を立てる上でさまざまなことを話し合った。", "kana": "けいかく を たてる うえ で さまざま な こと を はなしあった。", "ro": "keikaku o tateru ue de samazama na koto o hanashi atta."},
+    {"en": "Knowledge is necessary when teaching children.", "ja": "子どもを教える上で知識が必要です。", "kana": "こども を おしえる うえ で ちしき が ひつよう です。", "ro": "kodomo o oshieru ue de chishiki ga hitsuyou desu."},
+    {"en": "When using this machine, be careful.", "ja": "この機械を使う上で注意してください。", "kana": "この きかい を つかう うえ で ちゅうい して ください。", "ro": "kono kikai o tsukau ue de chuui shite kudasai."}
+  ],
+  "grammar": "Verb (dictionary form) + 上で"
+},
+{
+  "id": "n2-grammar-077",
+  "ja": "〜上に（うえに）",
+  "kana": "〜うえに",
+  "ro": "ue ni",
+  "en": "in addition / besides / moreover",
+  "examples": [
+    {"en": "This book is easy to read and cheap.", "ja": "この本は読みやすい上に安い。", "kana": "この ほん は よみやすい うえ に やすい。", "ro": "kono hon wa yomiyasui ue ni yasui."},
+    {"en": "He is kind and reliable.", "ja": "彼は親切な上に頼りになる。", "kana": "かれ は しんせつ な うえ に たより に なる。", "ro": "kare wa shinsetsu na ue ni tayori ni naru."},
+    {"en": "The weather was bad, and we missed the train.", "ja": "天気が悪い上に電車に乗り遅れた。", "kana": "てんき が わるい うえ に でんしゃ に のりおくれた。", "ro": "tenki ga warui ue ni densha ni noriokureta."},
+    {"en": "This restaurant’s food is delicious and cheap.", "ja": "このレストランはおいしい上に安い。", "kana": "この れすとらん は おいしい うえ に やすい。", "ro": "kono resutoran wa oishii ue ni yasui."},
+    {"en": "She is beautiful and very smart.", "ja": "彼女は美しい上に頭がいい。", "kana": "かのじょ は うつくしい うえ に あたま が いい。", "ro": "kanojo wa utsukushii ue ni atama ga ii."}
+  ],
+  "grammar": "Verb / い-adjective / な-adjective / Noun + 上に"
+},
+{
+  "id": "n2-grammar-078",
+  "ja": "〜うちに",
+  "kana": "〜うちに",
+  "ro": "uchi ni",
+  "en": "while / before something changes / during",
+  "examples": [
+    {"en": "Please do it while it’s fresh in your mind.", "ja": "忘れないうちにやってください。", "kana": "わすれない うち に やって ください。", "ro": "wasurenai uchi ni yatte kudasai."},
+    {"en": "You should go home while it’s still light.", "ja": "明るいうちに帰ったほうがいい。", "kana": "あかるい うち に かえった ほう が いい。", "ro": "akarui uchi ni kaetta hou ga ii."},
+    {"en": "Please read it while you have time.", "ja": "時間があるうちに読んでください。", "kana": "じかん が ある うち に よんで ください。", "ro": "jikan ga aru uchi ni yonde kudasai."},
+    {"en": "It started raining while I was walking.", "ja": "歩いているうちに雨が降り出した。", "kana": "あるいている うち に あめ が ふりだした。", "ro": "aruiteiru uchi ni ame ga furidashita."},
+    {"en": "You should say thank you while you can.", "ja": "言えるうちに感謝を伝えたほうがいい。", "kana": "いえる うち に かんしゃ を つたえた ほう が いい。", "ro": "ieru uchi ni kansha o tsutaeta hou ga ii."}
+  ],
+  "grammar": "Verb (dictionary or ている form) / Noun + の + うちに"
+},
+{
+  "id": "n2-grammar-079",
+  "ja": "〜おそれがある",
+  "kana": "〜おそれがある",
+  "ro": "osore ga aru",
+  "en": "there is a risk / fear / possibility that",
+  "examples": [
+    {"en": "There is a risk of heavy rain tonight.", "ja": "今夜は大雨のおそれがある。", "kana": "こんや は おおあめ の おそれ が ある。", "ro": "konya wa ooame no osore ga aru."},
+    {"en": "This medicine may cause side effects.", "ja": "この薬には副作用のおそれがある。", "kana": "この くすり には ふくさよう の おそれ が ある。", "ro": "kono kusuri ni wa fukusayou no osore ga aru."},
+    {"en": "There’s a possibility of an earthquake.", "ja": "地震が起こるおそれがある。", "kana": "じしん が おこる おそれ が ある。", "ro": "jishin ga okoru osore ga aru."},
+    {"en": "There’s a danger of information leaking.", "ja": "情報が漏れるおそれがある。", "kana": "じょうほう が もれる おそれ が ある。", "ro": "jouhou ga moreru osore ga aru."},
+    {"en": "There’s a risk that the plan will fail.", "ja": "計画が失敗するおそれがある。", "kana": "けいかく が しっぱい する おそれ が ある。", "ro": "keikaku ga shippai suru osore ga aru."}
+  ],
+  "grammar": "Verb (dictionary form) / Noun + の + おそれがある"
+},
+{
+  "id": "n2-grammar-080",
+  "ja": "〜かける",
+  "kana": "〜かける",
+  "ro": "kakeru",
+  "en": "half-done / in the middle of / about to",
+  "examples": [
+    {"en": "I left the book half-read.", "ja": "本を読みかけてやめた。", "kana": "ほん を よみかけて やめた。", "ro": "hon o yomikakete yameta."},
+    {"en": "The meal is half-eaten.", "ja": "食べかけの料理が残っている。", "kana": "たべかけ の りょうり が のこっている。", "ro": "tabekake no ryouri ga nokotteiru."},
+    {"en": "He almost said something.", "ja": "彼は何か言いかけた。", "kana": "かれ は なにか いいかけた。", "ro": "kare wa nanika iikaketa."},
+    {"en": "The door is half-open.", "ja": "ドアが開けかけだ。", "kana": "どあ が あけかけ だ。", "ro": "doa ga akekake da."},
+    {"en": "The work is half-finished.", "ja": "仕事がやりかけだ。", "kana": "しごと が やりかけ だ。", "ro": "shigoto ga yarikake da."}
+  ],
+  "grammar": "Verb (ます-stem) + かける"
+},
+{
+  "id": "n2-grammar-081",
+  "ja": "〜かのようだ",
+  "kana": "〜かのようだ",
+  "ro": "ka no you da",
+  "en": "as if / as though / like",
+  "examples": [
+    {"en": "He talks as if he knew everything.", "ja": "彼は何でも知っているかのように話す。", "kana": "かれ は なんでも しっている かの よう に はなす。", "ro": "kare wa nandemo shitteiru ka no you ni hanasu."},
+    {"en": "She smiled as if nothing had happened.", "ja": "彼女は何もなかったかのように笑った。", "kana": "かのじょ は なにも なかった かの よう に わらった。", "ro": "kanojo wa nanimo nakatta ka no you ni waratta."},
+    {"en": "It looks as if it’s going to rain.", "ja": "雨が降るかのような空だ。", "kana": "あめ が ふる かの よう な そら だ。", "ro": "ame ga furu ka no you na sora da."},
+    {"en": "He behaves as if he were the boss.", "ja": "彼は自分が上司であるかのように振る舞う。", "kana": "かれ は じぶん が じょうし で ある かの よう に ふるまう。", "ro": "kare wa jibun ga joushi de aru ka no you ni furumau."},
+    {"en": "The child looked at me as if asking for help.", "ja": "子どもは助けを求めるかのように私を見た。", "kana": "こども は たすけ を もとめる かの よう に わたし を みた。", "ro": "kodomo wa tasuke o motomeru ka no you ni watashi o mita."}
+  ],
+  "grammar": "Verb (plain) / Noun + かのようだ"
+},
+{
+  "id": "n2-grammar-082",
+  "ja": "〜かねない",
+  "kana": "〜かねない",
+  "ro": "kanenai",
+  "en": "might / could possibly / there is a risk that",
+  "examples": [
+    {"en": "If you say that, he might get angry.", "ja": "そんなことを言うと、彼は怒りかねない。", "kana": "そんな こと を いう と、かれ は おこりかねない。", "ro": "sonna koto o iu to, kare wa okorikanenai."},
+    {"en": "If you don’t study, you might fail.", "ja": "勉強しなければ落ちかねない。", "kana": "べんきょう しなければ おちかねない。", "ro": "benkyou shinakereba ochikanenai."},
+    {"en": "If you drive so fast, you could cause an accident.", "ja": "そんなにスピードを出すと事故を起こしかねない。", "kana": "そんな に すぴーど を だす と じこ を おこしかねない。", "ro": "sonna ni supiido o dasu to jiko o okoshikanenai."},
+    {"en": "If you keep ignoring him, he might quit.", "ja": "無視し続けると彼は辞めかねない。", "kana": "むし し つづける と かれ は やめかねない。", "ro": "mushi shi tsuzukeru to kare wa yamekanenai."},
+    {"en": "If we delay, we might lose the opportunity.", "ja": "遅れるとチャンスを逃しかねない。", "kana": "おくれる と ちゃんす を のがしかねない。", "ro": "okureru to chansu o nogashikanenai."}
+  ],
+  "grammar": "Verb (ます-stem) + かねない"
+},
+{
+  "id": "n2-grammar-083",
+  "ja": "〜かねる",
+  "kana": "〜かねる",
+  "ro": "kaneru",
+  "en": "cannot / be unable to / hesitate to",
+  "examples": [
+    {"en": "I cannot agree with that opinion.", "ja": "その意見には賛成しかねます。", "kana": "その いけん に は さんせい しかねます。", "ro": "sono iken ni wa sansei shikanemasu."},
+    {"en": "I’m sorry, but I cannot decide that now.", "ja": "申し訳ありませんが、今それを決めかねます。", "kana": "もうしわけ ありません が、いま それ を きめかねます。", "ro": "moushiwake arimasen ga, ima sore o kimekanemasu."},
+    {"en": "We can’t say for sure yet.", "ja": "まだ何とも言いかねます。", "kana": "まだ なんとも いいかねます。", "ro": "mada nantomo iikanemasu."},
+    {"en": "I can’t answer that question immediately.", "ja": "その質問にはすぐに答えかねます。", "kana": "その しつもん に は すぐ に こたえかねます。", "ro": "sono shitsumon ni wa sugu ni kotaekanemasu."},
+    {"en": "I hesitate to tell him the truth.", "ja": "彼に本当のことを言いかねた。", "kana": "かれ に ほんとう の こと を いいかねた。", "ro": "kare ni hontou no koto o iikaneta."}
+  ],
+  "grammar": "Verb (ます-stem) + かねる"
+},
+{
+  "id": "n2-grammar-084",
+  "ja": "〜からいうと／からいえば／からいって",
+  "kana": "〜からいうと／からいえば／からいって",
+  "ro": "kara iu to / kara ieba / kara itte",
+  "en": "from the point of view / judging from",
+  "examples": [
+    {"en": "From the price, it seems a good deal.", "ja": "値段からいうとお得だと思う。", "kana": "ねだん から いう と おとく だ と おもう。", "ro": "nedan kara iu to otoku da to omou."},
+    {"en": "From his attitude, he seems unhappy.", "ja": "彼の態度からいえば不満そうだ。", "kana": "かれ の たいど から いえば ふまん そう だ。", "ro": "kare no taido kara ieba fuman sou da."},
+    {"en": "From his skill, he might be a professional.", "ja": "腕からいってプロだと思う。", "kana": "うで から いって ぷろ だ と おもう。", "ro": "ude kara itte puro da to omou."},
+    {"en": "From his speech, he must be a teacher.", "ja": "話し方からいうと先生のようだ。", "kana": "はなしかた から いう と せんせい の よう だ。", "ro": "hanashikata kara iu to sensei no you da."},
+    {"en": "From her experience, that’s a wise decision.", "ja": "彼女の経験からいって賢い判断だ。", "kana": "かのじょ の けいけん から いって かしこい はんだん だ。", "ro": "kanojo no keiken kara itte kashikoi handan da."}
+  ],
+  "grammar": "Noun + からいうと／からいえば／からいって"
+},
+{
+  "id": "n2-grammar-085",
+  "ja": "〜からして",
+  "kana": "〜からして",
+  "ro": "kara shite",
+  "en": "judging from / even from / starting with",
+  "examples": [
+    {"en": "He is suspicious even from his attitude.", "ja": "彼は態度からして怪しい。", "kana": "かれ は たいど から して あやしい。", "ro": "kare wa taido kara shite ayashii."},
+    {"en": "He failed the exam, starting from the basics.", "ja": "彼は基本からして間違っている。", "kana": "かれ は きほん から して まちがっている。", "ro": "kare wa kihon kara shite machigatteiru."},
+    {"en": "From her expression, she must be angry.", "ja": "表情からして怒っているようだ。", "kana": "ひょうじょう から して おこっている よう だ。", "ro": "hyoujou kara shite okotteiru you da."},
+    {"en": "This plan is wrong even from the start.", "ja": "この計画は最初からして無理がある。", "kana": "この けいかく は さいしょ から して むり が ある。", "ro": "kono keikaku wa saisho kara shite muri ga aru."},
+    {"en": "That person is strange even from their clothes.", "ja": "あの人は服装からして変だ。", "kana": "あの ひと は ふくそう から して へん だ。", "ro": "ano hito wa fukusou kara shite hen da."}
+  ],
+  "grammar": "Noun + からして"
+},
+{
+  "id": "n2-grammar-086",
+  "ja": "〜からすると／からすれば",
+  "kana": "〜からすると／からすれば",
+  "ro": "kara suru to / kara sureba",
+  "en": "from the point of view / judging from / considering",
+  "examples": [
+    {"en": "Judging from his accent, he must be from Kansai.", "ja": "話し方からすると、彼は関西出身だろう。", "kana": "はなしかた から すると、かれ は かんさい しゅっしん だろう。", "ro": "hanashikata kara suru to, kare wa kansai shusshin darou."},
+    {"en": "From her expression, she seems happy.", "ja": "表情からすれば、彼女はうれしそうだ。", "kana": "ひょうじょう から すれば、かのじょ は うれしそう だ。", "ro": "hyoujou kara sureba, kanojo wa ureshisou da."},
+    {"en": "From his age, he must be a university student.", "ja": "年齢からすると、大学生くらいだろう。", "kana": "ねんれい から すると、だいがくせい くらい だろう。", "ro": "nenrei kara suru to, daigakusei kurai darou."},
+    {"en": "Judging from the situation, the meeting will be canceled.", "ja": "状況からすれば、会議は中止になるだろう。", "kana": "じょうきょう から すれば、かいぎ は ちゅうし に なる だろう。", "ro": "joukyou kara sureba, kaigi wa chuushi ni naru darou."},
+    {"en": "From her attitude, she seems uninterested.", "ja": "態度からすると、彼女は興味がなさそうだ。", "kana": "たいど から すると、かのじょ は きょうみ が なさそう だ。", "ro": "taido kara suru to, kanojo wa kyoumi ga nasasou da."}
+  ],
+  "grammar": "Noun + からすると／からすれば"
+},
+{
+  "id": "n2-grammar-087",
+  "ja": "〜からといって",
+  "kana": "〜からといって",
+  "ro": "kara to itte",
+  "en": "just because / even if / although",
+  "examples": [
+    {"en": "Just because you’re tired doesn’t mean you can skip class.", "ja": "疲れたからといって授業を休んではいけません。", "kana": "つかれた から と いって じゅぎょう を やすん では いけません。", "ro": "tsukareta kara to itte jugyou o yasunde wa ikemasen."},
+    {"en": "Just because it’s cheap doesn’t mean it’s good.", "ja": "安いからといって、いいものとは限らない。", "kana": "やすい から と いって、いい もの と は かぎらない。", "ro": "yasui kara to itte, ii mono to wa kagiranai."},
+    {"en": "Just because he is young doesn’t mean he is inexperienced.", "ja": "若いからといって、経験がないとは限らない。", "kana": "わかい から と いって、けいけん が ない と は かぎらない。", "ro": "wakai kara to itte, keiken ga nai to wa kagiranai."},
+    {"en": "Just because you study hard doesn’t mean you’ll pass.", "ja": "一生懸命勉強したからといって、必ず合格するとは限らない。", "kana": "いっしょうけんめい べんきょう した から と いって、かならず ごうかく する と は かぎらない。", "ro": "isshoukenmei benkyou shita kara to itte, kanarazu goukaku suru to wa kagiranai."},
+    {"en": "Just because she’s famous doesn’t mean she’s happy.", "ja": "有名だからといって、幸せとは限らない。", "kana": "ゆうめい だ から と いって、しあわせ と は かぎらない。", "ro": "yuumei da kara to itte, shiawase to wa kagiranai."}
+  ],
+  "grammar": "Verb / い-adjective / な-adjective / Noun + からといって"
+},
+{
+  "id": "n2-grammar-088",
+  "ja": "〜きり",
+  "kana": "〜きり",
+  "ro": "kiri",
+  "en": "only / just / since / after (and no more)",
+  "examples": [
+    {"en": "He left home and hasn’t come back since.", "ja": "彼は家を出たきり帰ってこない。", "kana": "かれ は いえ を でた きり かえって こない。", "ro": "kare wa ie o deta kiri kaette konai."},
+    {"en": "I met him once, and that was the last time.", "ja": "彼には一度会ったきりだ。", "kana": "かれ には いちど あった きり だ。", "ro": "kare ni wa ichido atta kiri da."},
+    {"en": "He’s been sleeping since this morning.", "ja": "彼は朝から寝たきりだ。", "kana": "かれ は あさ から ねた きり だ。", "ro": "kare wa asa kara neta kiri da."},
+    {"en": "We talked once and never met again.", "ja": "一度話したきり二度と会っていない。", "kana": "いちど はなした きり にど と あって いない。", "ro": "ichido hanashita kiri nido to atte inai."},
+    {"en": "I lent him money, but he hasn’t paid me back.", "ja": "お金を貸したきり返してもらっていない。", "kana": "おかね を かした きり かえして もらって いない。", "ro": "okane o kashita kiri kaeshite moratte inai."}
+  ],
+  "grammar": "Verb (た-form) + きり"
+},
+{
+  "id": "n2-grammar-089",
+  "ja": "〜くせに",
+  "kana": "〜くせに",
+  "ro": "kuseni",
+  "en": "even though / despite / although (used to criticize)",
+  "examples": [
+    {"en": "He acts like an adult even though he’s still a child.", "ja": "子どものくせに大人のように話す。", "kana": "こども の くせ に おとな の よう に はなす。", "ro": "kodomo no kuse ni otona no you ni hanasu."},
+    {"en": "He complains even though he doesn’t work much.", "ja": "あまり働かないくせに文句ばかり言う。", "kana": "あまり はたらかない くせ に もんく ばかり いう。", "ro": "amari hatarakanai kuse ni monku bakari iu."},
+    {"en": "She says she’s tired even though she slept all day.", "ja": "一日中寝ていたくせに疲れたと言う。", "kana": "いちにちじゅう ねていた くせ に つかれた と いう。", "ro": "ichinichijuu neteita kuse ni tsukareta to iu."},
+    {"en": "He didn’t help even though he saw me struggling.", "ja": "困っているのを見ていたくせに助けなかった。", "kana": "こまっている の を みていた くせ に たすけなかった。", "ro": "komatteiru no o miteita kuse ni tasukenakatta."},
+    {"en": "She said she would come even though she knew she couldn’t.", "ja": "来られないくせに来ると言った。", "kana": "こられない くせ に くる と いった。", "ro": "korarenai kuse ni kuru to itta."}
+  ],
+  "grammar": "Verb / い-adjective / な-adjective / Noun + の + くせに"
+},
+{
+  "id": "n2-grammar-090",
+  "ja": "〜ことから",
+  "kana": "〜ことから",
+  "ro": "koto kara",
+  "en": "from the fact that / because / due to",
+  "examples": [
+    {"en": "Because he is loved by everyone, he’s popular.", "ja": "みんなに好かれていることから、彼は人気がある。", "kana": "みんな に すかれている こと から、かれ は にんき が ある。", "ro": "minna ni sukareteiru koto kara, kare wa ninki ga aru."},
+    {"en": "From his behavior, we knew he was tired.", "ja": "彼の様子から疲れていることがわかった。", "kana": "かれ の ようす から つかれている こと が わかった。", "ro": "kare no yousu kara tsukareteiru koto ga wakatta."},
+    {"en": "The place got its name from the mountain nearby.", "ja": "この場所は近くの山の名前から名づけられた。", "kana": "この ばしょ は ちかく の やま の なまえ から なづけられた。", "ro": "kono basho wa chikaku no yama no namae kara nadzukerareta."},
+    {"en": "Because it was late, I took a taxi.", "ja": "時間が遅かったことから、タクシーで帰った。", "kana": "じかん が おそかった こと から、たくしー で かえった。", "ro": "jikan ga osokatta koto kara, takushii de kaetta."},
+    {"en": "Because of that experience, I chose this job.", "ja": "その経験をしたことから、この仕事を選んだ。", "kana": "その けいけん を した こと から、この しごと を えらんだ。", "ro": "sono keiken o shita koto kara, kono shigoto o eranda."}
+  ],
+  "grammar": "Verb / Noun + ことから"
+},
+{
+  "id": "n2-grammar-091",
+  "ja": "〜ことに",
+  "kana": "〜ことに",
+  "ro": "koto ni",
+  "en": "to (my) ... / I’m ... that / it is ... that (emotional emphasis)",
+  "examples": [
+    {"en": "I’m happy that I passed the exam.", "ja": "試験に合格したことにうれしく思う。", "kana": "しけん に ごうかく した こと に うれしく おもう。", "ro": "shiken ni goukaku shita koto ni ureshiku omou."},
+    {"en": "It’s surprising that he quit his job.", "ja": "彼が仕事を辞めたことに驚いた。", "kana": "かれ が しごと を やめた こと に おどろいた。", "ro": "kare ga shigoto o yameta koto ni odoraita."},
+    {"en": "I was sad that she didn’t come.", "ja": "彼女が来なかったことに悲しんだ。", "kana": "かのじょ が こなかった こと に かなしんだ。", "ro": "kanojo ga konakatta koto ni kanashinda."},
+    {"en": "I was shocked to hear the news.", "ja": "そのニュースを聞いたことにショックを受けた。", "kana": "その にゅーす を きいた こと に しょっく を うけた。", "ro": "sono nyuusu o kiita koto ni shokku o uketa."},
+    {"en": "I’m lucky that I met such a great teacher.", "ja": "すばらしい先生に出会えたことに感謝している。", "kana": "すばらしい せんせい に であえた こと に かんしゃ している。", "ro": "subarashii sensei ni deaeta koto ni kansha shiteiru."}
+  ],
+  "grammar": "Verb (plain past) + ことに / い-adjective + ことに / な-adjective + なことに"
+},
+{
+  "id": "n2-grammar-092",
+  "ja": "〜際（に）／〜際には",
+  "kana": "〜さい（に）／〜さいには",
+  "ro": "sai (ni) / sai ni wa",
+  "en": "when / on the occasion of / at the time of",
+  "examples": [
+    {"en": "Please show your passport when entering Japan.", "ja": "日本に入国する際にはパスポートを見せてください。", "kana": "にほん に にゅうこく する さい に は ぱすぽーと を みせて ください。", "ro": "nihon ni nyuukoku suru sai ni wa pasupooto o misete kudasai."},
+    {"en": "Please be careful when using fire.", "ja": "火を使う際は注意してください。", "kana": "ひ を つかう さい は ちゅうい して ください。", "ro": "hi o tsukau sai wa chuui shite kudasai."},
+    {"en": "If you have any questions during the process, please ask.", "ja": "手続きの際に質問があれば聞いてください。", "kana": "てつづき の さい に しつもん が あれば きいて ください。", "ro": "tetsuzuki no sai ni shitsumon ga areba kiite kudasai."},
+    {"en": "Please wear a helmet when entering the site.", "ja": "現場に入る際にはヘルメットを着用してください。", "kana": "げんば に はいる さい に は へるめっと を ちゃくよう して ください。", "ro": "genba ni hairu sai ni wa herumetto o chakuyou shite kudasai."},
+    {"en": "When traveling abroad, make sure to have insurance.", "ja": "海外へ行く際は保険に入ってください。", "kana": "かいがい へ いく さい は ほけん に はいって ください。", "ro": "kaigai e iku sai wa hoken ni haitte kudasai."}
+  ],
+  "grammar": "Verb (dictionary / noun + の) + 際（に）"
+},
+{
+  "id": "n2-grammar-093",
+  "ja": "〜次第（しだい）",
+  "kana": "〜しだい",
+  "ro": "shidai",
+  "en": "as soon as / depending on / immediately after",
+  "examples": [
+    {"en": "I’ll call you as soon as I arrive.", "ja": "到着次第、連絡します。", "kana": "とうちゃく しだい、れんらく します。", "ro": "touchaku shidai, renraku shimasu."},
+    {"en": "We’ll start as soon as everyone gathers.", "ja": "全員がそろい次第、始めます。", "kana": "ぜんいん が そろい しだい、はじめます。", "ro": "zen'in ga soroi shidai, hajimemasu."},
+    {"en": "We’ll contact you as soon as the result comes out.", "ja": "結果が分かり次第、ご連絡いたします。", "kana": "けっか が わかり しだい、ごれんらく いたします。", "ro": "kekka ga wakari shidai, gorenraku itashimasu."},
+    {"en": "We’ll start shipping as soon as the payment is confirmed.", "ja": "入金が確認でき次第、発送いたします。", "kana": "にゅうきん が かくにん でき しだい、はっそう いたします。", "ro": "nyuukin ga kakunin deki shidai, hassou itashimasu."},
+    {"en": "We’ll inform you as soon as the meeting is over.", "ja": "会議が終わり次第、ご報告します。", "kana": "かいぎ が おわり しだい、ごほうこく します。", "ro": "kaigi ga owari shidai, gohoukoku shimasu."}
+  ],
+  "grammar": "Verb (ます-stem) + 次第"
+},
+{
+  "id": "n2-grammar-094",
+  "ja": "〜上は（うえは）",
+  "kana": "〜うえは",
+  "ro": "ue wa",
+  "en": "now that / once / since",
+  "examples": [
+    {"en": "Now that you’ve decided, do your best.", "ja": "やると決めた上は、最後まで頑張りなさい。", "kana": "やる と きめた うえ は、さいご まで がんばりなさい。", "ro": "yaru to kimeta ue wa, saigo made ganbarinasai."},
+    {"en": "Since I’ve promised, I must keep it.", "ja": "約束した上は、守らなければならない。", "kana": "やくそく した うえ は、まもらなければ ならない。", "ro": "yakusoku shita ue wa, mamoranakereba naranai."},
+    {"en": "Now that we’ve started, we can’t stop halfway.", "ja": "始めた上は途中でやめられない。", "kana": "はじめた うえ は とちゅう で やめられない。", "ro": "hajimeta ue wa tochuu de yamerarenai."},
+    {"en": "Since you’ve become the leader, take responsibility.", "ja": "リーダーになった上は、責任を持ってください。", "kana": "りーだー に なった うえ は、せきにん を もって ください。", "ro": "riidaa ni natta ue wa, sekinin o motte kudasai."},
+    {"en": "Since you’ve joined the team, you should contribute.", "ja": "チームに入った上は、力を尽くすべきだ。", "kana": "ちーむ に はいった うえ は、ちから を つくす べき だ。", "ro": "chiimu ni haitta ue wa, chikara o tsukusu beki da."}
+  ],
+  "grammar": "Verb (plain past) + 上は"
+},
+{
+  "id": "n2-grammar-095",
+  "ja": "〜ずにはいられない／〜ないではいられない",
+  "kana": "〜ずにはいられない／〜ないではいられない",
+  "ro": "zu ni wa irarenai / nai de wa irarenai",
+  "en": "can’t help but / can’t stop oneself from",
+  "examples": [
+    {"en": "I couldn’t help laughing at his joke.", "ja": "彼の冗談に笑わずにはいられなかった。", "kana": "かれ の じょうだん に わらわず に は いられなかった。", "ro": "kare no joudan ni warawazu ni wa irarenakatta."},
+    {"en": "I can’t help crying when I see that movie.", "ja": "あの映画を見ると泣かずにはいられない。", "kana": "あの えいが を みる と なかず に は いられない。", "ro": "ano eiga o miru to nakazu ni wa irarenai."},
+    {"en": "I can’t help respecting her effort.", "ja": "彼女の努力には感心せずにはいられない。", "kana": "かのじょ の どりょく に は かんしん せず に は いられない。", "ro": "kanojo no doryoku ni wa kanshin sezu ni wa irarenai."},
+    {"en": "I couldn’t help admiring the scenery.", "ja": "美しい景色に感動せずにはいられなかった。", "kana": "うつくしい けしき に かんどう せず に は いられなかった。", "ro": "utsukushii keshiki ni kandou sezu ni wa irarenakatta."},
+    {"en": "When I see her smile, I can’t help smiling too.", "ja": "彼女の笑顔を見ると笑わないではいられない。", "kana": "かのじょ の えがお を みる と わらわない で は いられない。", "ro": "kanojo no egao o miru to warawanai de wa irarenai."}
+  ],
+  "grammar": "Verb (ない-form) + ずにはいられない / ないではいられない"
+},
+{
+  "id": "n2-grammar-096",
+  "ja": "〜せいで／〜せいか",
+  "kana": "〜せいで／〜せいか",
+  "ro": "sei de / sei ka",
+  "en": "because of / due to (negative cause or result)",
+  "examples": [
+    {"en": "I caught a cold because of the rain.", "ja": "雨のせいで風邪をひいた。", "kana": "あめ の せい で かぜ を ひいた。", "ro": "ame no sei de kaze o hiita."},
+    {"en": "I failed the test because I didn’t study.", "ja": "勉強しなかったせいで試験に落ちた。", "kana": "べんきょう しなかった せい で しけん に おちた。", "ro": "benkyou shinakatta sei de shiken ni ochita."},
+    {"en": "It might be because of lack of sleep that I’m tired.", "ja": "寝不足のせいか、今日はとても眠い。", "kana": "ねぶそく の せい か、きょう は とても ねむい。", "ro": "nebusoku no sei ka, kyou wa totemo nemui."},
+    {"en": "He’s been in a bad mood because of work stress.", "ja": "仕事のせいで彼は機嫌が悪い。", "kana": "しごと の せい で かれ は きげん が わるい。", "ro": "shigoto no sei de kare wa kigen ga warui."},
+    {"en": "I got wet because I forgot my umbrella.", "ja": "傘を忘れたせいでびしょ濡れになった。", "kana": "かさ を わすれた せい で びしょぬれ に なった。", "ro": "kasa o wasureta sei de bishonure ni natta."}
+  ],
+  "grammar": "Noun / Verb (plain form) + せいで／せいか"
+},
+{
+  "id": "n2-grammar-097",
+  "ja": "〜だけあって",
+  "kana": "〜だけあって",
+  "ro": "dake atte",
+  "en": "as expected from / precisely because / being worthy of",
+  "examples": [
+    {"en": "As expected from an expensive restaurant, the food is excellent.", "ja": "高いだけあって料理がすばらしい。", "kana": "たかい だけ あって りょうり が すばらしい。", "ro": "takai dake atte ryouri ga subarashii."},
+    {"en": "As expected from a professional, his skill is amazing.", "ja": "プロだけあって技術がすごい。", "kana": "ぷろ だけ あって ぎじゅつ が すごい。", "ro": "puro dake atte gijutsu ga sugoi."},
+    {"en": "It’s very clean, as expected from a new building.", "ja": "新しいだけあってとてもきれいだ。", "kana": "あたらしい だけ あって とても きれい だ。", "ro": "atarashii dake atte totemo kirei da."},
+    {"en": "He speaks well, as expected from a teacher.", "ja": "先生だけあって話し方が上手だ。", "kana": "せんせい だけ あって はなしかた が じょうず だ。", "ro": "sensei dake atte hanashikata ga jouzu da."},
+    {"en": "She’s strong, as expected from an athlete.", "ja": "スポーツ選手だけあって体が丈夫だ。", "kana": "すぽーつ せんしゅ だけ あって からだ が じょうぶ だ。", "ro": "supootsu senshu dake atte karada ga joubu da."}
+  ],
+  "grammar": "Noun / Verb / Adjective + だけあって"
+},
+{
+  "id": "n2-grammar-098",
+  "ja": "〜たとたん（に）",
+  "kana": "〜たとたん（に）",
+  "ro": "ta totan (ni)",
+  "en": "just as / as soon as / the moment (something happens)",
+  "examples": [
+    {"en": "The moment I went outside, it started raining.", "ja": "外に出たとたん、雨が降り出した。", "kana": "そと に でた とたん、あめ が ふりだした。", "ro": "soto ni deta totan, ame ga furidashita."},
+    {"en": "As soon as the bell rang, the students ran out.", "ja": "ベルが鳴ったとたん、生徒たちは飛び出した。", "kana": "べる が なった とたん、せいとたち は とびだした。", "ro": "beru ga natta totan, seitotachi wa tobidashta."},
+    {"en": "The train left as soon as I got on.", "ja": "電車に乗ったとたん、ドアが閉まった。", "kana": "でんしゃ に のった とたん、どあ が しまった。", "ro": "densha ni notta totan, doa ga shimatta."},
+    {"en": "As soon as he heard the news, he shouted in joy.", "ja": "ニュースを聞いたとたん、彼は喜びの声を上げた。", "kana": "にゅーす を きいた とたん、かれ は よろこび の こえ を あげた。", "ro": "nyuusu o kiita totan, kare wa yorokobi no koe o ageta."},
+    {"en": "As soon as I opened the window, a cold wind came in.", "ja": "窓を開けたとたん、冷たい風が入ってきた。", "kana": "まど を あけた とたん、つめたい かぜ が はいってきた。", "ro": "mado o aketa totan, tsumetai kaze ga haitte kita."}
+  ],
+  "grammar": "Verb (た-form) + とたん（に）"
+},
+{
+  "id": "n2-grammar-099",
+  "ja": "〜つつある",
+  "kana": "〜つつある",
+  "ro": "tsutsu aru",
+  "en": "in the process of / gradually / continuously",
+  "examples": [
+    {"en": "The economy is improving little by little.", "ja": "経済は回復しつつある。", "kana": "けいざい は かいふく しつつ ある。", "ro": "keizai wa kaifuku shitsutsu aru."},
+    {"en": "Global warming is progressing.", "ja": "地球温暖化が進みつつある。", "kana": "ちきゅう おんだんか が すすみ つつ ある。", "ro": "chikyuu ondanka ga susumi tsutsu aru."},
+    {"en": "The construction is progressing steadily.", "ja": "工事は順調に進みつつある。", "kana": "こうじ は じゅんちょう に すすみ つつ ある。", "ro": "kouji wa junchou ni susumi tsutsu aru."},
+    {"en": "Technology is constantly evolving.", "ja": "技術は発展しつつある。", "kana": "ぎじゅつ は はってん しつつ ある。", "ro": "gijutsu wa hatten shitsutsu aru."},
+    {"en": "The situation is changing day by day.", "ja": "状況は日々変わりつつある。", "kana": "じょうきょう は ひび かわり つつ ある。", "ro": "joukyou wa hibi kawari tsutsu aru."}
+  ],
+  "grammar": "Verb (ます-stem) + つつある"
+},
+{
+  "id": "n2-grammar-100",
+  "ja": "〜というものだ",
+  "kana": "〜というものだ",
+  "ro": "to iu mono da",
+  "en": "that’s what ... means / that’s typical of ... / it can be said that ...",
+  "examples": [
+    {"en": "Working without resting is what’s called overworking.", "ja": "休まずに働くのは働きすぎというものだ。", "kana": "やすまず に はたらく の は はたらきすぎ という もの だ。", "ro": "yasumazu ni hataraku no wa hatarakisugi to iu mono da."},
+    {"en": "Being late every day is irresponsible.", "ja": "毎日遅刻するのは無責任というものだ。", "kana": "まいにち ちこく する の は むせきにん という もの だ。", "ro": "mainichi chikoku suru no wa musekinin to iu mono da."},
+    {"en": "Crying over such a thing is what being kind means.", "ja": "そんなことで泣くのは優しいというものだ。", "kana": "そんな こと で なく の は やさしい という もの だ。", "ro": "sonna koto de naku no wa yasashii to iu mono da."},
+    {"en": "Not helping a friend in need is heartless.", "ja": "困っている友達を助けないのは冷たいというものだ。", "kana": "こまっている ともだち を たすけない の は つめたい という もの だ。", "ro": "komatteiru tomodachi o tasukenai no wa tsumetai to iu mono da."},
+    {"en": "It’s natural that he got angry after being lied to.", "ja": "うそをつかれて怒るのは当然というものだ。", "kana": "うそ を つかれて おこる の は とうぜん という もの だ。", "ro": "uso o tsukarete okoru no wa touzen to iu mono da."}
+  ],
+  "grammar": "Verb / Adjective / Noun + というものだ"
+}
+]
+}
