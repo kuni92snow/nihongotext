@@ -235,34 +235,29 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
 
     sendBtn.disabled = true;
 
-    const payload = {
-      name: document.getElementById('cf_name').value,
-      email: document.getElementById('cf_email').value,
-      message: document.getElementById('cf_message').value,
-      token
-    };
-
     try{
-      // ★ Simple POST（プリフライト回避）
-      const formData = new URLSearchParams();
-      formData.set('name',    payload.name);
-      formData.set('email',   payload.email);
-      formData.set('message', payload.message);
-      formData.set('token',   payload.token);
+      /* ==== Simple Request（multipart/form-data）: プリフライト回避 ==== */
+      const fd = new FormData();
+      fd.set('name',    document.getElementById('cf_name').value);
+      fd.set('email',   document.getElementById('cf_email').value);
+      fd.set('message', document.getElementById('cf_message').value);
+      fd.set('token',   token);
 
-      const res = await fetch(ENDPOINT, { method:'POST', body: formData });
-      const json = await res.json().catch(()=>({ok:false}));
+      const res  = await fetch(ENDPOINT, { method:'POST', body: fd });
+      const text = await res.text();
+      let json = {}; try { json = JSON.parse(text); } catch {}
 
-      if(json.ok){
+      if (res.ok && json.ok === true){
         toast('送信しました。ご連絡ありがとうございます！', true);
-        grecaptcha.reset();
-        form.reset();
-        setTimeout(()=> { document.getElementById('contactBackdrop').style.display='none'; }, 500);
-      }else{
+        grecaptcha.reset(); form.reset();
+        setTimeout(()=> { backdrop.style.display='none'; }, 500);
+      } else {
         toast('送信に失敗しました（しばらくして再度お試しください）', false);
+        console.warn('GAS response:', res.status, text);
       }
     }catch(err){
       toast('送信エラーが発生しました', false);
+      console.error(err);
     }finally{
       sendBtn.disabled = false;
     }
