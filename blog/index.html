@@ -1,23 +1,22 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>お知らせ・ブログ | nihongotext.com</title>
 <meta name="color-scheme" content="light only" />
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- GA4（トップと同じID） -->
+<!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+  gtag('js', new Date()); gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- AdSense（トップと同じクライアント） -->
+<!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <!-- reCAPTCHA v2（チェックボックス） -->
@@ -28,59 +27,63 @@
   --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
   --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
 }
-*{box-sizing:border-box}
-html,body{margin:0;color:var(--ink);background:var(--white);
+*{box-sizing:border-box} html,body{margin:0;color:var(--ink);background:var(--white);
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
 a{color:inherit;text-decoration:none}
 .container{max-width:1100px;margin:0 auto;padding:0 16px}
 
-/* ====== Header（トップと同様：ロゴクリックでトップへ） ====== */
+/* header */
 header{border-bottom:3px solid var(--shu);background:#fff}
 .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
 .brand{display:flex;flex-direction:column;gap:2px}
-.brand a.brand-link{display:inline-block;color:inherit;text-decoration:none}
+.brand a.brand-link{display:inline-block}
 .brand a.brand-link:focus-visible{outline:3px solid rgba(230,70,45,.35);border-radius:6px}
 .brand-title{font-weight:980;letter-spacing:.3px;font-size:clamp(24px,4.2vw,32px);color:var(--shu)}
 .brand-sub{width:fit-content;margin:0 auto;color:#ffb9aa;font-weight:700;font-size:12px;letter-spacing:.4px}
 .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
   border:1px solid var(--border);background:#fff}
-.iconbar .tool i{color:var(--shu)}
-.iconbar .tool:hover{border-color:var(--shu)}
-/* Alphabet ボタン（右上） */
+.iconbar .tool i{color:var(--shu)} .iconbar .tool:hover{border-color:var(--shu)}
 header .container.positioned{position:relative}
 #btnAlphabet{position:absolute;right:16px;top:12px;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;cursor:pointer}
-#btnAlphabet.active{border-color:var(--shu);background:#fff;color:var(--shu-deep)}
+#btnAlphabet.active{border-color:var(--shu);color:var(--shu-deep)}
 
-/* ====== Blog main ====== */
+/* main */
 main.blog{max-width:860px;margin:20px auto;padding:0 16px}
 .title-row{display:flex;align-items:center;gap:10px;justify-content:space-between;margin:6px 0 14px}
 .title-row h1{margin:0}
-.homebtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  border:1px solid var(--border);background:#fff;border-radius:10px;padding:8px 12px;}
-.homebtn i{color:var(--shu)}
-.homebtn:hover{border-color:var(--shu)}
+.homebtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#fff;border-radius:10px;padding:8px 12px}
+.homebtn i{color:var(--shu)} .homebtn:hover{border-color:var(--shu)}
 .post{border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px;background:var(--shu-tint);box-shadow:0 2px 8px rgba(230,70,45,.05)}
-.post h2{margin:0 0 6px;color:var(--shu)}
-.post .date{color:var(--muted);font-size:13px;margin-bottom:8px}
-.post p{line-height:1.6}
-.post .tags{margin-top:8px;color:var(--muted);font-size:13px}
+.post h2{margin:0 0 6px;color:var(--shu)} .post .date{color:var(--muted);font-size:13px;margin-bottom:8px}
+.post p{line-height:1.6} .post .tags{margin-top:8px;color:var(--muted);font-size:13px}
 
-/* ====== Footer（トップと同様） ====== */
+/* footer */
 footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
 .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
 .copy{color:#6b7280}
-
-/* Ad area */
 #adWrap{margin:16px 0;text-align:center}
 
-/* ====== Contact Modal mount（共通部品を挿入する受け皿） ====== */
-#contact-modal-mount{position:relative;z-index:60}
+/* contact modal */
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;z-index:60}
+.modal{background:#fff;border-radius:14px;max-width:560px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.modal header{border:none;padding:14px 16px}
+.modal .body{padding:0 16px 16px}
+.modal h3{margin:0 0 2px;color:var(--ink)} .modal small{color:var(--muted)}
+.modal .row{display:flex;flex-direction:column;margin-top:10px}
+.modal label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.modal input,.modal textarea{border:1px solid var(--border);border-radius:10px;padding:10px;font-size:15px}
+.modal textarea{min-height:120px;resize:vertical}
+.actions{display:flex;gap:8px;justify-content:flex-end;padding:14px 16px;border-top:1px solid var(--border)}
+.btn{border:1px solid var(--border);border-radius:10px;padding:10px 14px;background:#fff;cursor:pointer}
+.btn.primary{background:var(--shu);border-color:var(--shu);color:#fff}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 14px;border-radius:10px;display:none;z-index:80}
+.close-x{position:absolute;right:10px;top:8px;border:none;background:transparent;font-size:18px;cursor:pointer}
 </style>
 </head>
 <body>
 <header>
-  <!-- 1行目：ロゴ（クリックでトップへ） + beta + Alphabet -->
   <div class="container h-row positioned">
     <div class="brand">
       <a class="brand-link" href="/" aria-label="nihongotext.com のトップページへ">
@@ -90,14 +93,11 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     </div>
     <button id="btnAlphabet" title="Alphabet mode">Alphabet</button>
   </div>
-
-  <!-- 2行目：アイコン（トップと同様の並び） -->
   <div class="container">
     <nav class="iconbar" aria-label="site icons">
       <a class="tool" id="icPrint"  title="印刷（本文）" href="javascript:void(0)"><i class="fas fa-print"></i></a>
       <a class="tool" id="openContact" title="お問い合わせ（チャット）" href="javascript:void(0)"><i class="fas fa-comments"></i></a>
-      <!-- 覚えた一覧はトップで提供：案内としてトップへ遷移 -->
-      <a class="tool" id="icLearnedHeader" title="覚えた一覧（トップで開きます）" href="/"><i class="fas fa-list-check"></i></a>
+      <a class="tool" title="覚えた一覧（トップで開きます）" href="/"><i class="fas fa-list-check"></i></a>
       <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
       <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
       <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
@@ -107,7 +107,6 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
 </header>
 
 <main class="blog" id="main">
-  <!-- タイトル行（右端にホームボタン） -->
   <div class="title-row">
     <h1 id="ttl">お知らせ・ブログ</h1>
     <a class="homebtn" href="/" title="トップへ（Home）" aria-label="トップへ">
@@ -116,17 +115,10 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     </a>
   </div>
 
-  <!-- 記事リスト -->
   <div id="posts"></div>
 
-  <!-- インフィード広告（任意） -->
   <div id="adWrap">
-    <ins class="adsbygoogle"
-      style="display:block; text-align:center;"
-      data-ad-layout="in-article"
-      data-ad-format="fluid"
-      data-ad-client="ca-pub-2358198194205084"
-      data-ad-slot="3714541070"></ins>
+    <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2358198194205084" data-ad-slot="3714541070"></ins>
   </div>
 </main>
 
@@ -135,7 +127,7 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     <nav class="iconbar" aria-label="site icons">
       <a class="tool" id="icPrintFooter"  title="印刷（本文）" href="javascript:void(0)"><i class="fas fa-print"></i></a>
       <a class="tool" id="openContactF" title="お問い合わせ（チャット）" href="javascript:void(0)"><i class="fas fa-comments"></i></a>
-      <a class="tool" id="icLearnedF" title="覚えた一覧（トップで開きます）" href="/"><i class="fas fa-list-check"></i></a>
+      <a class="tool" title="覚えた一覧（トップで開きます）" href="/"><i class="fas fa-list-check"></i></a>
       <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
       <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
       <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
@@ -145,129 +137,133 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
   </div>
 </footer>
 
-<!-- ===== Contact Modal（共通HTMLを差し込むマウント） ===== -->
-<div id="contact-modal-mount"></div>
+<!-- ===== お問い合わせモーダル（ページ内実装・共通部品なしでも動作） ===== -->
+<div class="modal-backdrop" id="contactBackdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+    <header>
+      <h3 id="contactTitle">お問い合わせ / Contact</h3>
+      <button class="close-x" id="closeContact" aria-label="閉じる">×</button>
+      <small>ご連絡ありがとうございます。</small>
+    </header>
+    <div class="body">
+      <form id="contactForm">
+        <div class="row">
+          <label for="cf_name">お名前 / Name</label>
+          <input id="cf_name" name="name" required />
+        </div>
+        <div class="row">
+          <label for="cf_email">メール / Email</label>
+          <input id="cf_email" name="email" type="email" required />
+        </div>
+        <div class="row">
+          <label for="cf_message">メッセージ / Message</label>
+          <textarea id="cf_message" name="message" required></textarea>
+        </div>
+        <div class="row" style="margin-top:14px">
+          <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn" id="cancelContact">キャンセル</button>
+          <button type="submit" class="btn primary" id="sendBtn">送信 / Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
 
-<!-- ===== Blog scripts ===== -->
 <script>
 (() => {
-  // 言語状態（ブログ本文の i18n）
-  const LANG_KEY = 'nt_blog_lang';
-  let lang = localStorage.getItem(LANG_KEY) || 'ja';
-  const t = (ja,en) => (lang === 'ja' ? ja : en);
+  const LANG_KEY='nt_blog_lang'; let lang=localStorage.getItem(LANG_KEY)||'ja';
+  const t=(ja,en)=> (lang==='ja'?ja:en);
 
-  const els = {
-    posts:  document.getElementById('posts'),
-    ttl:    document.getElementById('ttl'),
-    homeLbl:document.querySelector('.homebtn .only-label')
-  };
+  const els={posts:document.getElementById('posts'), ttl:document.getElementById('ttl')};
+  const applyI18N=()=>{ els.ttl.textContent=t('お知らせ・ブログ','News & Blog'); document.title=t('お知らせ・ブログ | nihongotext.com','News & Blog | nihongotext.com'); };
 
-  function applyI18N(){
-    els.ttl.textContent = t('お知らせ・ブログ','News & Blog');
-    document.title = t('お知らせ・ブログ | nihongotext.com','News & Blog | nihongotext.com');
-    if(els.homeLbl) els.homeLbl.textContent = t('ホーム','Home');
-  }
-
-  async function loadAndRender(){
+  async function loadPosts(){
     try{
-      const res  = await fetch('./posts.json?ts=' + Date.now(), {cache:'no-store'});
-      const data = await res.json();
-      data.sort((a,b)=> new Date(b.date) - new Date(a.date));
-      els.posts.innerHTML = '';
-      data.forEach(p => {
-        const title = lang==='ja' ? (p.title_ja || p.title_en || p.slug)
-                                  : (p.title_en || p.title_ja || p.slug);
-        const summary = lang==='ja' ? (p.summary_ja || '') : (p.summary_en || '');
-        const url = `./posts/${p.slug}.html`;
-        const div = document.createElement('article');
-        div.className = 'post';
-        div.innerHTML = `
-          <h2><a href="${url}">${title}</a></h2>
-          <div class="date">${p.date}</div>
-          <p>${summary}</p>
-          ${(p.tags && p.tags.length) ? `<div class="tags">${t('タグ: ','Tags: ')}${p.tags.join(', ')}</div>` : '' }
-        `;
-        els.posts.appendChild(div);
+      const res=await fetch('./posts.json?ts=' + Date.now(), {cache:'no-store'}); const list=await res.json();
+      list.sort((a,b)=> new Date(b.date) - new Date(a.date));
+      els.posts.innerHTML='';
+      list.forEach(p=>{
+        const title= lang==='ja' ? (p.title_ja||p.title_en||p.slug) : (p.title_en||p.title_ja||p.slug);
+        const summary= lang==='ja' ? (p.summary_ja||'') : (p.summary_en||'');
+        const url=`./posts/${p.slug}.html`;
+        const el=document.createElement('article'); el.className='post';
+        el.innerHTML=`<h2><a href="${url}">${title}</a></h2><div class="date">${p.date}</div><p>${summary}</p>${(p.tags&&p.tags.length)?`<div class="tags">${t('タグ: ','Tags: ')}${p.tags.join(', ')}</div>`:''}`;
+        els.posts.appendChild(el);
       });
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(_){}
-      if (typeof gtag === 'function'){
-        gtag('event','page_view', { page_title: document.title, page_location: location.href, page_path: '/blog/' });
-      }
-    }catch(e){
-      els.posts.innerHTML = '<div style="color:#6b7280">記事の読み込みに失敗しました。</div>';
-    }
+      try{(window.adsbygoogle=window.adsbygoogle||[]).push({});}catch(_){}
+      if(typeof gtag==='function'){ gtag('event','page_view',{page_title:document.title,page_location:location.href,page_path:'/blog/'}); }
+    }catch(e){ els.posts.innerHTML='<div style="color:#6b7280">記事の読み込みに失敗しました。</div>'; }
   }
 
-  // Alphabet ボタンは外観のみ（本文には影響なし）
-  const $btnAlpha = document.getElementById('btnAlphabet');
-  $btnAlpha?.addEventListener('click', ()=> $btnAlpha.classList.toggle('active'));
+  // print
+  function printElement(el){ const w=window.open('','_blank'); const html=`<html><head><meta charset="utf-8"><title>Print</title>
+    <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;padding:20px}
+    article.post{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:12px} h1,h2{margin:0 0 8px}</style></head><body>${el.innerHTML}</body></html>`;
+    w.document.open(); w.document.write(html); w.document.close(); w.focus(); w.print(); w.close(); }
+  document.getElementById('icPrint')?.addEventListener('click',()=>printElement(document.getElementById('main')));
+  document.getElementById('icPrintFooter')?.addEventListener('click',()=>printElement(document.getElementById('main')));
 
-  // 印刷（本文領域）
-  function printElement(el){
-    const w=window.open('', '_blank');
-    const html=`<html><head><meta charset="utf-8"><title>Print</title>
-    <style>
-      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;padding:20px}
-      article.post{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:12px}
-      h1,h2{margin:0 0 8px}
-    </style></head><body>${el.innerHTML}</body></html>`;
-    w.document.open(); w.document.write(html); w.document.close(); w.focus(); w.print(); w.close();
-  }
-  document.getElementById('icPrint')?.addEventListener('click', ()=>printElement(document.getElementById('main')));
-  document.getElementById('icPrintFooter')?.addEventListener('click', ()=>printElement(document.getElementById('main')));
-
-  applyI18N();
-  loadAndRender();
+  applyI18N(); loadPosts();
 })();
 </script>
 
-<!-- ===== 共通：チャットモーダルを外部から読み込み＆初期化 ===== -->
 <script>
-(async () => {
-  const mount = document.getElementById('contact-modal-mount');
+(() => {
+  const ENDPOINT = 'PASTE_YOUR_GAS_WEBAPP_URL_HERE'; // ← ここをあなたの Web アプリ URL (/exec) に置換
 
-  // 1) HTMLを読み込み（存在しない場合は graceful fallback）
-  let html = '';
-  try {
-    const res = await fetch('/common/contact-modal.html', {cache:'no-store'});
-    if(!res.ok) throw new Error('contact html not found');
-    html = await res.text();
-  } catch (e) {
-    console.warn('[contact] modal html load failed:', e);
-    html = '<!-- contact modal not available -->';
-  }
-  mount.innerHTML = html;
+  const toast = (msg, ok=true) => {
+    const el=document.getElementById('toast'); el.textContent=msg; el.style.background= ok?'#111':'#b91c1c';
+    el.style.display='block'; setTimeout(()=> el.style.display='none', 2600);
+  };
 
-  // 2) 初期化スクリプトを読み込み
-  async function loadScript(src){
-    return new Promise((resolve,reject)=>{
-      const s=document.createElement('script');
-      s.src=src; s.defer=true;
-      s.onload=resolve; s.onerror=reject;
-      document.head.appendChild(s);
-    });
-  }
-  let jsReady = false;
-  try{
-    await loadScript('/assets/contact.js');
-    jsReady = typeof window.initContactModal === 'function';
-  }catch(e){
-    console.warn('[contact] js load failed:', e);
-  }
+  const backdrop = document.getElementById('contactBackdrop');
+  const openBtns = [document.getElementById('openContact'), document.getElementById('openContactF')];
+  const closeBtns= [document.getElementById('closeContact'), document.getElementById('cancelContact')];
+  openBtns.forEach(b=> b?.addEventListener('click', ()=> { backdrop.style.display='flex'; }));
+  closeBtns.forEach(b=> b?.addEventListener('click', ()=> { backdrop.style.display='none'; }));
 
-  // 3) 初期化（v2 の SiteKey を使用）
-  if(jsReady){
-    window.initContactModal({
-      endpoint: 'https://script.google.com/macros/s/AKfycbz2wQN431cFfswmnqadJlTgstgeJCOYooh8O1SX5ic6Bf9oOoHWKHOPGN17QpOozXcJ-g/exec',
-      sitekey:  '6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV',  // ← v2
-      defaultLang: 'ja'
-    });
-  }else{
-    // Fallback：ボタン押下時はアラートで案内（共通ファイル未設置時）
-    const fallback = () => alert('お問い合わせ（チャット）は準備中です。トップページからご利用ください。');
-    document.getElementById('openContact')?.addEventListener('click', fallback);
-    document.getElementById('openContactF')?.addEventListener('click', fallback);
-  }
+  const form = document.getElementById('contactForm');
+  const sendBtn = document.getElementById('sendBtn');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const token = grecaptcha.getResponse();
+    if(!token){ toast('「私はロボットではありません」にチェックしてください', false); return; }
+
+    sendBtn.disabled = true;
+
+    const payload = {
+      name: document.getElementById('cf_name').value,
+      email: document.getElementById('cf_email').value,
+      message: document.getElementById('cf_message').value,
+      token
+    };
+
+    try{
+      const res = await fetch(ENDPOINT, {
+        method:'POST',
+        mode:'cors',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(payload)
+      });
+      const json = await res.json().catch(()=>({ok:false}));
+      if(json.ok){
+        toast('送信しました。ご連絡ありがとうございます！', true);
+        grecaptcha.reset();
+        form.reset();
+        setTimeout(()=> { document.getElementById('contactBackdrop').style.display='none'; }, 500);
+      }else{
+        toast('送信に失敗しました（しばらくして再度お試しください）', false);
+      }
+    }catch(err){
+      toast('送信エラーが発生しました', false);
+    }finally{
+      sendBtn.disabled = false;
+    }
+  });
 })();
 </script>
 </body>
