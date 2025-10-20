@@ -13,7 +13,8 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date()); gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
 <!-- AdSense -->
@@ -27,7 +28,8 @@
   --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
   --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
 }
-*{box-sizing:border-box} html,body{margin:0;color:var(--ink);background:var(--white);
+*{box-sizing:border-box}
+html,body{margin:0;color:var(--ink);background:var(--white);
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
 a{color:inherit;text-decoration:none}
 .container{max-width:1100px;margin:0 auto;padding:0 16px}
@@ -43,7 +45,8 @@ header{border-bottom:3px solid var(--shu);background:#fff}
 .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
   border:1px solid var(--border);background:#fff}
-.iconbar .tool i{color:var(--shu)} .iconbar .tool:hover{border-color:var(--shu)}
+.iconbar .tool i{color:var(--shu)}
+.iconbar .tool:hover{border-color:var(--shu)}
 header .container.positioned{position:relative}
 #btnAlphabet{position:absolute;right:16px;top:12px;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;cursor:pointer}
 #btnAlphabet.active{border-color:var(--shu);color:var(--shu-deep)}
@@ -53,10 +56,13 @@ main.blog{max-width:860px;margin:20px auto;padding:0 16px}
 .title-row{display:flex;align-items:center;gap:10px;justify-content:space-between;margin:6px 0 14px}
 .title-row h1{margin:0}
 .homebtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#fff;border-radius:10px;padding:8px 12px}
-.homebtn i{color:var(--shu)} .homebtn:hover{border-color:var(--shu)}
+.homebtn i{color:var(--shu)}
+.homebtn:hover{border-color:var(--shu)}
 .post{border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px;background:var(--shu-tint);box-shadow:0 2px 8px rgba(230,70,45,.05)}
-.post h2{margin:0 0 6px;color:var(--shu)} .post .date{color:var(--muted);font-size:13px;margin-bottom:8px}
-.post p{line-height:1.6} .post .tags{margin-top:8px;color:var(--muted);font-size:13px}
+.post h2{margin:0 0 6px;color:var(--shu)}
+.post .date{color:var(--muted);font-size:13px;margin-bottom:8px}
+.post p{line-height:1.6}
+.post .tags{margin-top:8px;color:var(--muted);font-size:13px}
 
 /* footer */
 footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
@@ -69,7 +75,8 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
 .modal{background:#fff;border-radius:14px;max-width:560px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
 .modal header{border:none;padding:14px 16px}
 .modal .body{padding:0 16px 16px}
-.modal h3{margin:0 0 2px;color:var(--ink)} .modal small{color:var(--muted)}
+.modal h3{margin:0 0 2px;color:var(--ink)}
+.modal small{color:var(--muted)}
 .modal .row{display:flex;flex-direction:column;margin-top:10px}
 .modal label{font-size:13px;color:var(--muted);margin-bottom:6px}
 .modal input,.modal textarea{border:1px solid var(--border);border-radius:10px;padding:10px;font-size:15px}
@@ -175,15 +182,20 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
 
 <script>
 (() => {
-  const LANG_KEY='nt_blog_lang'; let lang=localStorage.getItem(LANG_KEY)||'ja';
+  const LANG_KEY='nt_blog_lang';
+  let lang=localStorage.getItem(LANG_KEY)||'ja';
   const t=(ja,en)=> (lang==='ja'?ja:en);
 
   const els={posts:document.getElementById('posts'), ttl:document.getElementById('ttl')};
-  const applyI18N=()=>{ els.ttl.textContent=t('お知らせ・ブログ','News & Blog'); document.title=t('お知らせ・ブログ | nihongotext.com','News & Blog | nihongotext.com'); };
+  const applyI18N=()=>{
+    els.ttl.textContent=t('お知らせ・ブログ','News & Blog');
+    document.title=t('お知らせ・ブログ | nihongotext.com','News & Blog | nihongotext.com');
+  };
 
   async function loadPosts(){
     try{
-      const res=await fetch('./posts.json?ts=' + Date.now(), {cache:'no-store'}); const list=await res.json();
+      const res=await fetch('./posts.json?ts=' + Date.now(), {cache:'no-store'});
+      const list=await res.json();
       list.sort((a,b)=> new Date(b.date) - new Date(a.date));
       els.posts.innerHTML='';
       list.forEach(p=>{
@@ -191,33 +203,45 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
         const summary= lang==='ja' ? (p.summary_ja||'') : (p.summary_en||'');
         const url=`./posts/${p.slug}.html`;
         const el=document.createElement('article'); el.className='post';
-        el.innerHTML=`<h2><a href="${url}">${title}</a></h2><div class="date">${p.date}</div><p>${summary}</p>${(p.tags&&p.tags.length)?`<div class="tags">${t('タグ: ','Tags: ')}${p.tags.join(', ')}</div>`:''}`;
+        el.innerHTML=`<h2><a href="${url}">${title}</a></h2><div class="date">${p.date}</div><p>${summary}</p>${
+          (p.tags&&p.tags.length)?`<div class="tags">${t('タグ: ','Tags: ')}${p.tags.join(', ')}</div>`:''
+        }`;
         els.posts.appendChild(el);
       });
       try{(window.adsbygoogle=window.adsbygoogle||[]).push({});}catch(_){}
-      if(typeof gtag==='function'){ gtag('event','page_view',{page_title:document.title,page_location:location.href,page_path:'/blog/'}); }
-    }catch(e){ els.posts.innerHTML='<div style="color:#6b7280">記事の読み込みに失敗しました。</div>'; }
+      if(typeof gtag==='function'){
+        gtag('event','page_view',{page_title:document.title,page_location:location.href,page_path:'/blog/'});
+      }
+    }catch(e){
+      els.posts.innerHTML='<div style="color:#6b7280">記事の読み込みに失敗しました。</div>';
+    }
   }
 
   // print
-  function printElement(el){ const w=window.open('','_blank'); const html=`<html><head><meta charset="utf-8"><title>Print</title>
+  function printElement(el){
+    const w=window.open('','_blank');
+    const html=`<html><head><meta charset="utf-8"><title>Print</title>
     <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;padding:20px}
-    article.post{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:12px} h1,h2{margin:0 0 8px}</style></head><body>${el.innerHTML}</body></html>`;
-    w.document.open(); w.document.write(html); w.document.close(); w.focus(); w.print(); w.close(); }
+    article.post{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:12px} h1,h2{margin:0 0 8px}</style>
+    </head><body>${el.innerHTML}</body></html>`;
+    w.document.open(); w.document.write(html); w.document.close(); w.focus(); w.print(); w.close();
+  }
   document.getElementById('icPrint')?.addEventListener('click',()=>printElement(document.getElementById('main')));
   document.getElementById('icPrintFooter')?.addEventListener('click',()=>printElement(document.getElementById('main')));
 
-  applyI18N(); loadPosts();
+  applyI18N();
+  loadPosts();
 })();
 </script>
 
 <script>
 (() => {
-  /* ★ v9 の /exec URL に差し替え済み（Simple Requestで送信）★ */
-  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwF0ZZ9JcGm0xwZfm4Xh8X08msO0pNZFkG-FwKpwidn2D17A089II8RcTbnvHdXcsLhZA/exec';
+  /* ★ v9 /exec に差し替え（Simple Request：CORSプリフライト回避）★ */
+  const ENDPOINT = 'https://script.google.com/macros/s/AKfycby7CZH4VHvQPXp9Zhic8sn4ss-0-A5vmB6CXzI0LTCMw8Rk4MHZxkTM_zlTGjIotKJ_Xw/exec';
 
   const toast = (msg, ok=true) => {
-    const el=document.getElementById('toast'); el.textContent=msg; el.style.background= ok?'#111':'#b91c1c';
+    const el=document.getElementById('toast');
+    el.textContent=msg; el.style.background= ok?'#111':'#b91c1c';
     el.style.display='block'; setTimeout(()=> el.style.display='none', 2600);
   };
 
@@ -238,7 +262,7 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     sendBtn.disabled = true;
 
     try{
-      /* ==== Simple Request（multipart/form-data）: プリフライト回避 ==== */
+      // Simple Request: multipart/form-data で送信（手動で Content-Type を付けない）
       const fd = new FormData();
       fd.set('name',    document.getElementById('cf_name').value);
       fd.set('email',   document.getElementById('cf_email').value);
