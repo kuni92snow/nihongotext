@@ -137,7 +137,7 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
   </div>
 </footer>
 
-<!-- ===== お問い合わせモーダル（ページ内実装・共通部品なしでも動作） ===== -->
+<!-- ===== お問い合わせモーダル ===== -->
 <div class="modal-backdrop" id="contactBackdrop" aria-hidden="true">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
     <header>
@@ -146,18 +146,18 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
       <small>ご連絡ありがとうございます。</small>
     </header>
     <div class="body">
-      <form id="contactForm">
+      <form id="contactForm" autocomplete="off">
         <div class="row">
           <label for="cf_name">お名前 / Name</label>
-          <input id="cf_name" name="name" required />
+          <input id="cf_name" name="name" required autocomplete="off" placeholder="Taro Yamada (dummy)" />
         </div>
         <div class="row">
           <label for="cf_email">メール / Email</label>
-          <input id="cf_email" name="email" type="email" required />
+          <input id="cf_email" name="email" type="email" required autocomplete="off" placeholder="dummy@example.com" />
         </div>
         <div class="row">
           <label for="cf_message">メッセージ / Message</label>
-          <textarea id="cf_message" name="message" required></textarea>
+          <textarea id="cf_message" name="message" required autocomplete="off" placeholder="Your message here (dummy)"></textarea>
         </div>
         <div class="row" style="margin-top:14px">
           <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
@@ -212,7 +212,7 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
 
 <script>
 (() => {
-  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwU2HSjwD5WMgr5U3Y4CbtlSx0JkMspTrMr4HBgHGGE9bfie58ymf0SC6KZbdWLaf6yxw/exec'; // ← ここをあなたの Web アプリ URL (/exec) に置換
+  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwU2HSjwD5WMgr5U3Y4CbtlSx0JkMspTrMr4HBgHGGE9bfie58ymf0SC6KZbdWLaf6yxw/exec';
 
   const toast = (msg, ok=true) => {
     const el=document.getElementById('toast'); el.textContent=msg; el.style.background= ok?'#111':'#b91c1c';
@@ -243,13 +243,16 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     };
 
     try{
-      const res = await fetch(ENDPOINT, {
-        method:'POST',
-        mode:'cors',
-        headers:{'Content-Type':'application/json'},
-        body: JSON.stringify(payload)
-      });
+      // ★ Simple POST（プリフライト回避）
+      const formData = new URLSearchParams();
+      formData.set('name',    payload.name);
+      formData.set('email',   payload.email);
+      formData.set('message', payload.message);
+      formData.set('token',   payload.token);
+
+      const res = await fetch(ENDPOINT, { method:'POST', body: formData });
       const json = await res.json().catch(()=>({ok:false}));
+
       if(json.ok){
         toast('送信しました。ご連絡ありがとうございます！', true);
         grecaptcha.reset();
