@@ -20,6 +20,9 @@
 <!-- AdSense（トップと同じクライアント） -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
+<!-- reCAPTCHA v2（チェックボックス） -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <style>
 :root{
   --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
@@ -252,11 +255,11 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     console.warn('[contact] js load failed:', e);
   }
 
-  // 3) 初期化（存在チェック付き）
+  // 3) 初期化（v2 の SiteKey を使用）
   if(jsReady){
     window.initContactModal({
       endpoint: 'https://script.google.com/macros/s/AKfycbz2wQN431cFfswmnqadJlTgstgeJCOYooh8O1SX5ic6Bf9oOoHWKHOPGN17QpOozXcJ-g/exec',
-      sitekey:  '6LeLRe4rAAAAAG9bnqf-BeU8rI3EM8k8F5plub25',
+      sitekey:  '6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV',  // ← v2
       defaultLang: 'ja'
     });
   }else{
@@ -267,49 +270,5 @@ footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
   }
 })();
 </script>
-<!-- ▼ お問い合わせモーダル（共通）を読み込む：/common, /assets はサイトルート -->
-<div id="contact-modal-mount"></div>
-<script>
-(async () => {
-  // 1) モーダルHTMLを読み込んで設置
-  const mount = document.getElementById('contact-modal-mount');
-  try {
-    const res = await fetch('/common/contact-modal.html', { cache: 'no-store' });
-    if (!res.ok) throw new Error('modal html ' + res.status);
-    mount.innerHTML = await res.text();
-  } catch (e) {
-    console.warn('contact modal html load failed:', e);
-    // フォールバック（現状の「準備中」alert）
-    const fallback = (e) => { alert('お問い合わせ（チャット）は準備中です。トップページからご利用ください。'); };
-    document.getElementById('openContact')?.addEventListener('click', fallback);
-    document.getElementById('openContactF')?.addEventListener('click', fallback);
-    return; // ここで終了
-  }
-
-  // 2) contact.js をロード（/assets はサイトルート）
-  await new Promise((resolve, reject) => {
-    const s = document.createElement('script');
-    s.src = '/assets/contact.js'; s.async = true;
-    s.onload = resolve; s.onerror = reject;
-    document.head.appendChild(s);
-  });
-
-  // 3) 初期化（トップページと同じ設定値）
-  //    ※ 既存 index.html から拾った値をそのまま利用
-  const CC_ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2wQN431cFfswmnqadJlTgstgeJCOYooh8O1SX5ic6Bf9oOoHWKHOPGN17QpOozXcJ-g/exec';
-  const RECAPTCHA_SITEKEY = '6LeLRe4rAAAAAG9bnqf-BeU8rI3EM8k8F5plub25';
-
-  if (window.initContactModal) {
-    window.initContactModal({
-      endpoint: CC_ENDPOINT,
-      sitekey: RECAPTCHA_SITEKEY,
-      defaultLang: (document.documentElement.lang || 'ja')
-    });
-  } else {
-    console.error('initContactModal is not defined.');
-  }
-})();
-</script>
-<!-- ▲ ここまでを </body> の直前に追加 -->
 </body>
 </html>
