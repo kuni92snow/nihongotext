@@ -1,184 +1,851 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>News & Blog | nihongotext.com</title>
-  <style>
-    :root{--fg:#111;--muted:#6b7280;--accent:#10b981;--danger:#ef4444;--bg:#fff;--border:#e5e7eb}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,ui-sans-serif;color:var(--fg);background:var(--bg)}
-    .wrap{max-width:980px;margin:24px auto;padding:0 16px}
-    h1{font-size:28px;margin:0 0 16px}
-    .lang{display:flex;gap:8px;margin-bottom:16px}
-    .pill{padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#f8fafc;cursor:pointer}
-    .pill.active{background:#111;color:#fff;border-color:#111}
-    .card{border:1px solid var(--border);border-radius:12px;padding:16px;background:#fff}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media (min-width:900px){.grid{grid-template-columns:1.1fr}}
-    label{display:block;font-size:12px;color:var(--muted);margin:10px 0 6px}
-    input,textarea{width:100%;box-sizing:border-box;font:inherit;padding:10px;border:1px solid var(--border);border-radius:8px;background:#fff}
-    textarea{min-height:160px;resize:vertical}
-    .row{display:flex;gap:10px;align-items:center;margin-top:12px}
-    .btn{padding:10px 16px;border:1px solid var(--border);border-radius:8px;background:#111;color:#fff;cursor:pointer}
-    .btn.secondary{background:#fff;color:#111}
-    .note{font-size:12px;color:var(--muted);margin-top:8px}
-    .msg-ok{color:var(--accent);font-weight:600}
-    .msg-ng{color:var(--danger);font-weight:600}
-    .hidden{display:none}
-  </style>
-  <!-- reCAPTCHA v2 (checkbox) -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>nihongotext.com</title>
+<meta name="color-scheme" content="light only" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
+
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+
+<style>
+:root{
+  --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
+  --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
+  --learned-bg:#eaf7ec; --learned-border:#cfead5; --learned-ink:#165b31;
+}
+*{box-sizing:border-box}
+html,body{margin:0;color:var(--ink);background:#fff;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* Header */
+header{border-bottom:3px solid var(--shu);background:#fff}
+.h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+
+/* brand */
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand a.brand-link{display:inline-block;color:inherit;text-decoration:none}
+.brand a.brand-link:focus-visible{outline:3px solid rgba(230,70,45,.35);border-radius:6px}
+.brand-title{font-weight:980;letter-spacing:.3px;font-size:clamp(24px,4.2vw,32px);color:var(--shu)}
+.brand-sub{width:fit-content;margin:0 auto;color:var(--shu-soft);font-weight:700;font-size:12px;letter-spacing:.4px}
+
+/* iconbars (centered) */
+.iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
+  border:1px solid var(--border);background:#fff}
+.iconbar .tool i{color:var(--shu)}
+.iconbar .tool:hover{border-color:var(--shu)}
+
+/* toolbar */
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0 12px}
+.toolbar select{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:#fff;min-width:84px}
+.toolbar input[type="search"]{flex:1;min-width:240px;padding:8px 12px;border:1px solid var(--border);border-radius:10px}
+
+/* tabs */
+.tabs-wrap{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:5}
+.tabs{display:flex;gap:10px;overflow:auto;scroll-snap-type:x mandatory;padding:10px 16px;align-items:center}
+.tab{
+  flex:0 0 auto; scroll-snap-align:center;
+  border:1px solid var(--border); background:#fff; border-radius:999px;
+  padding:8px 12px; cursor:pointer; white-space:nowrap;
+  display:flex; flex-direction:column; align-items:center; min-width:92px
+}
+.tab small{color:var(--muted);font-size:11px}
+.tab.active{border-color:var(--shu); background:var(--shu-tint)}
+.tab.learned i{font-size:16px;color:var(--shu)}
+.tab:focus-visible{outline:3px solid rgba(230,70,45,.35)}
+
+/* content area */
+main{max-width:1100px;margin:10px auto 24px;padding:0 16px}
+#right{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;box-shadow:0 2px 12px rgba(230,70,45,.06)}
+.word-card{border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:12px;background:var(--shu-tint);transition:background .2s,border-color .2s,color .2s}
+.word-card.is-learned{background:var(--learned-bg); border-color:var(--learned-border); color:var(--learned-ink)}
+.word-card.is-learned .pill .tag{border-color:var(--learned-border)}
+.word-head{display:grid;grid-template-columns:auto auto 1fr auto;gap:10px;align-items:center}
+.caret{border:1px solid var(--shu);background:#fff;font-size:16px;line-height:1;cursor:pointer;border-radius:6px;padding:2px 6px;transition:transform .15s}
+.caret.is-collapsed{transform:rotate(-90deg)}
+.num{font-weight:700;width:2.6em;text-align:right;color:var(--shu-deep)}
+.word-card.is-learned .num{color:var(--learned-ink)}
+.pill{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pill .tag{background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px}
+
+/* visibility toggles */
+.hide-ja .tag.ja, .hide-ja .ex-line.ja{display:none}
+.hide-kana .tag.kana, .hide-kana .ex-line.kana{display:none}
+.hide-roma .tag.roma, .hide-roma .ex-line.roma{display:none}
+.hide-en .tag.en, .hide-en .ex-line.en{display:none}
+
+/* examples */
+.examples{margin-top:8px;border-top:1px dashed var(--border);padding-top:8px}
+.ex{margin:8px 0}
+.ex-line{display:block;margin:2px 0}
+.ex-line small{color:#6b7280}
+.examples.is-collapsed{display:none}
+
+/* buttons */
+.actions{display:flex;gap:8px}
+.btn{padding:8px 12px;border-radius:10px;border:1px solid var(--shu);background:#fff;cursor:pointer}
+.btn.ok{background:var(--shu);color:#fff}
+
+/* pager */
+.pager{display:flex;gap:6px;flex-wrap:wrap;align-items:center;justify-content:center;margin:12px 0}
+.pager button{min-width:34px;height:34px;border-radius:8px;border:1px solid var(--border);background:#fff;cursor:pointer}
+.pager button.active{border-color:var(--shu);background:var(--shu-tint)}
+.pager .muted{opacity:.6}
+
+/* footer */
+footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
+.f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
+.copy{color:#6b7280}
+
+/* contact modal */
+.cc-msg{margin:6px 0;display:flex;gap:8px}
+.cc-msg>div{padding:8px 12px;border-radius:12px;max-width:80%}
+.cc-msg.user{justify-content:flex-end}
+.cc-msg.user>div{background:#fff;border:1px solid var(--shu)}
+.cc-msg.bot>div{background:var(--shu-tint);border:1px solid var(--border)}
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:50}
+.backdrop.open{display:flex}
+.modal{width:min(900px,94vw);background:#fff;border-radius:16px;padding:18px;border:1px solid var(--border);max-height:80vh;overflow:auto;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.modal .close{border:1px solid var(--border);background:#fff;font-size:18px;cursor:pointer;border-radius:8px;padding:2px 8px}
+
+/* Alphabet toggle (right-top in header) */
+#btnAlphabet{position:absolute;right:16px;top:12px;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;cursor:pointer}
+#btnAlphabet.active{border-color:var(--shu);background:#fff;color:var(--shu-deep)}
+header .container.positioned{position:relative}
+
+/* learned table */
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:12px}
+table.learned{width:100%;border-collapse:collapse}
+table.learned th, table.learned td{padding:8px;border-bottom:1px solid var(--border);vertical-align:top;white-space:nowrap}
+table.learned th{background:#fff7f5;position:sticky;top:0}
+table.learned td .pill{gap:6px}
+.sortable{cursor:pointer;user-select:none}
+.sortable .dir{font-size:10px;color:#999;margin-left:4px}
+.action-cell button{border:1px solid var(--border);background:#fff;border-radius:8px;padding:4px 8px;cursor:pointer}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>News & Blog</h1>
-
-    <!-- 言語切替 -->
-    <div class="lang">
-      <button id="btnJa" class="pill">日本語</button>
-      <button id="btnEn" class="pill">English</button>
+<header>
+  <!-- row 1 -->
+  <div class="container h-row positioned">
+    <div class="brand">
+      <!-- ▼ ロゴ全体をリンク化：トップへ戻る -->
+      <a class="brand-link" id="homeLink" href="/" aria-label="nihongotext.com のトップページへ">
+        <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
+        <div class="brand-sub">== beta version ==</div>
+      </a>
     </div>
-
-    <div class="grid">
-      <!-- Contact -->
-      <section class="card">
-        <h2 id="hContact">お問い合わせ</h2>
-
-        <!-- 非表示iframe（クロスオリジンPOSTでもページ遷移しない） -->
-        <iframe name="submit_iframe" id="submit_iframe" class="hidden"></iframe>
-
-        <!-- 送信フォーム：直接 Apps Script へ POST（x-www-form-urlencoded） -->
-        <form
-          id="contactForm"
-          target="submit_iframe"
-          method="POST"
-          action="https://script.google.com/macros/s/AKfycbzHvm3JmrYzJChzIPJJIR7PsAMmMOaPBKXVEyBXLeLQ_7mMrhCOJ_DdWxE75TVxWwWZvQ/exec"
-        >
-          <label for="name" id="lbName">お名前 / Name</label>
-          <input id="name" name="name" autocomplete="name" />
-
-          <label for="email" id="lbEmail">メール / Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" />
-
-          <label for="subject" id="lbSubject">件名 / Subject</label>
-          <input id="subject" name="subject" />
-
-          <label for="message" id="lbMessage">メッセージ / Message</label>
-          <textarea id="message" name="message"></textarea>
-
-          <!-- reCAPTCHA トークンは hidden に入れて送信 -->
-          <input type="hidden" id="token" name="token" />
-
-          <div class="row">
-            <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-            <button type="button" id="btnCancel" class="btn secondary">キャンセル</button>
-            <button type="submit" id="btnSend" class="btn">送信</button>
-          </div>
-
-          <div class="note" id="rcNote">
-            reCAPTCHA と Google の <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシー ポリシー</a> と
-            <a href="https://policies.google.com/terms?hl=ja" target="_blank" rel="noopener">利用規約</a> が適用されます。
-          </div>
-
-          <div class="note" id="msg" aria-live="polite"></div>
-        </form>
-      </section>
-    </div>
+    <!-- Aβ → Alphabet -->
+    <button id="btnAlphabet" title="Alphabet mode">Alphabet</button>
   </div>
 
-  <script>
-    // ===== 言語判定 =====
-    const params = new URL(location.href).searchParams;
-    let LANG = params.get('lang') === 'en' ? 'en' : 'ja';
-    const T = {
-      ja: {
-        contact: 'お問い合わせ',
-        name: 'お名前 / Name',
-        email: 'メール / Email',
-        subject: '件名 / Subject',
-        message: 'メッセージ / Message',
-        cancel: 'キャンセル',
-        send: '送信',
-        sentok: '送信しました。ありがとうございます。',
-        sentng: '送信に失敗しました。時間をおいて再度お試しください。',
-        recaptcha_need: 'reCAPTCHA をチェックしてください。'
-      },
-      en: {
-        contact: 'Contact',
-        name: 'Name',
-        email: 'Email',
-        subject: 'Subject',
-        message: 'Message',
-        cancel: 'Cancel',
-        send: 'Send',
-        sentok: 'Your message has been sent. Thank you!',
-        sentng: 'Failed to send. Please try again later.',
-        recaptcha_need: 'Please check the reCAPTCHA box.'
-      }
+  <!-- row 2: icons centered -->
+  <div class="container">
+    <nav class="iconbar" aria-label="site icons">
+      <a class="tool" id="icPrint" title="印刷（右コンテンツ or 覚えた一覧）" href="javascript:void(0)"><i class="fas fa-print"></i></a>
+      <a class="tool" id="openContact" title="お問い合わせ（チャット）" href="javascript:void(0)"><i class="fas fa-comments"></i></a>
+      <a class="tool" id="icLearnedHeader" title="覚えた一覧" href="javascript:void(0)"><i class="fas fa-list-check"></i></a>
+      <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
+      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+    </nav>
+  </div>
+
+  <!-- row 3: level + search -->
+  <div class="container toolbar" role="group" aria-label="検索と切替">
+    <select id="selLevel" aria-label="レベル">
+      <option>N5</option><option selected>N4</option><option>N3</option><option>N2</option><option>N1</option>
+    </select>
+    <input id="q" type="search" placeholder="キーワード検索…" aria-label="検索" />
+  </div>
+
+  <!-- tabs（覚えたタブを先頭） -->
+  <div class="tabs-wrap">
+    <div id="tabs" class="tabs" role="tablist" aria-label="カテゴリ"></div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- view toggles -->
+  <div id="viewToggles" style="display:flex;gap:14px;justify-content:center;align-items:center;margin:10px 0;">
+    <label id="lblJa"><input type="checkbox" id="chkJa" checked> 日本語</label>
+    <label id="lblKana"><input type="checkbox" id="chkKana" checked> ひらがな</label>
+    <label id="lblRoma"><input type="checkbox" id="chkRoma" checked> アルファベット</label>
+    <label id="lblEn"><input type="checkbox" id="chkEn" checked> 英語</label>
+  </div>
+
+  <section id="right" aria-live="polite"></section>
+  <div id="ad-below-content" style="margin:16px 0;"></div>
+  <div id="pager" class="pager" aria-label="pager"></div>
+</main>
+
+<footer>
+  <div class="container f-row">
+    <nav class="iconbar" aria-label="site icons">
+      <a class="tool" id="icPrintFooter" title="印刷（右コンテンツ or 覚えた一覧）" href="javascript:void(0)"><i class="fas fa-print"></i></a>
+      <a class="tool" id="openContactF" title="お問い合わせ（チャット）" href="javascript:void(0)"><i class="fas fa-comments"></i></a>
+      <a class="tool" id="icLearnedF" title="覚えた一覧" href="javascript:void(0)"><i class="fas fa-list-check"></i></a>
+      <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
+      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+    </nav>
+    <div class="copy">© 2025 nihongotext.com</div>
+  </div>
+</footer>
+
+<!-- 覚えた一覧（表形式） -->
+<div id="learnedModal" class="backdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Learned list">
+    <div class="toolbar" style="display:flex;justify-content:space-between;align-items:center">
+      <strong>覚えた一覧 / Learned</strong>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="printLearned" class="btn">印刷 / Print</button>
+        <button id="closeLearned" class="close" aria-label="close">&times;</button>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="learned" id="learnedTable" aria-label="learned table">
+        <thead>
+          <tr>
+            <th class="sortable" data-sort="rownum">#<span class="dir"></span></th>
+            <th class="sortable" data-sort="kanji">語<span class="dir"></span></th>
+            <th class="sortable" data-sort="level">レベル<span class="dir"></span></th>
+            <th class="sortable" data-sort="pos">品詞<span class="dir"></span></th>
+            <th>読み</th>
+            <th>英語</th>
+            <th class="sortable" data-sort="addedAt">覚えた日<span class="dir"></span></th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="learnedBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- お問い合わせ（Chat） -->
+<div id="contactChat" class="backdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Contact">
+    <div class="toolbar" style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <strong id="ccTitle">お問い合わせ（Chat）</strong>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="ccLangToggle" class="btn" title="日本語 / English">日本語 / English</button>
+        <button id="ccClose" class="close" aria-label="close">&times;</button>
+      </div>
+    </div>
+    <div id="ccIntro" style="margin-bottom:10px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
+        <input id="ccName" type="text" placeholder="お名前 / Name" style="padding:8px;border:1px solid var(--border);border-radius:8px;">
+        <input id="ccEmail" type="email" placeholder="メール / Email" style="padding:8px;border:1px solid var(--border);border-radius:8px;">
+      </div>
+      <small id="ccGuide" style="color:var(--muted)">送信すると nihongo.com@gmail.com にメールが届きます。</small>
+    </div>
+    <div id="ccThread" style="height:300px;overflow:auto;border:1px solid var(--border);border-radius:10px;padding:10px;background:#fff;">
+      <div class="cc-msg bot"><div id="ccHello">ご質問をどうぞ。右下の送信から送ってください。</div></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:10px;">
+      <textarea id="ccInput" rows="2" placeholder="メッセージを入力..." style="flex:1;padding:8px;border:1px solid var(--border);border-radius:10px;"></textarea>
+      <button id="ccSend" class="btn ok">送信</button>
+    </div>
+    <div id="ccNote" style="margin-top:8px;color:var(--muted);font-size:12px;"></div>
+  </div>
+</div>
+
+<!-- ===== JS ===== -->
+<script>
+/* ---------- Constants & State ---------- */
+const MAX_PUBLIC = Number(new URLSearchParams(location.search).get('max')) || 25;
+
+const TAB_DEFS = [
+  {key:'nouns',         ja:'名詞',      en:'Nouns'},
+  {key:'verbs',         ja:'動詞',      en:'Verbs'},
+  {key:'adjectives-i',  ja:'い形容詞',  en:'i-adjectives'},
+  {key:'adjectives-na', ja:'な形容詞',  en:'na-adjectives'},
+  {key:'adverbs',       ja:'副詞',      en:'Adverbs'},
+  {key:'particles',     ja:'助詞',      en:'Particles'},
+  {key:'conjunctions',  ja:'接続詞',    en:'Conjunctions'},
+  {key:'interjections', ja:'感動詞',    en:'Interjections'},
+  {key:'numerals',      ja:'数詞+助数詞', en:'Numerals'},
+  {key:'patterns',      ja:'文型',      en:'Patterns'}
+];
+const LEVELS = ['N5','N4','N3','N2','N1'];
+const PAGE_SIZE = 5;
+const DATA_ROOT = './data/json';
+
+const $tabs   = document.getElementById('tabs');
+const $right  = document.getElementById('right');
+const $pager  = document.getElementById('pager');
+const $level  = document.getElementById('selLevel');
+const $search = document.getElementById('q');
+
+const state = {
+  level:$level.value||'N4',
+  pos:'nouns',
+  page:1,
+  cache:{},
+  alphabet:false,
+  vis:{ ja:true, kana:true, roma:true, en:true },
+  global:false,
+  ccLang:'ja',
+  learnedSort:{ key:'addedAt', asc:false } // 覚えた一覧のソート状態
+};
+
+function buildPath(level, pos){ return `${DATA_ROOT}/${encodeURIComponent(level)}/${pos}.json`; }
+
+/* ---------- Helpers ---------- */
+function toDateStr(d){
+  const dt = (d instanceof Date) ? d : new Date(d);
+  const y = dt.getFullYear();
+  const m = String(dt.getMonth()+1).padStart(2,'0');
+  const da= String(dt.getDate()).padStart(2,'0');
+  const hh= String(dt.getHours()).padStart(2,'0');
+  const mm= String(dt.getMinutes()).padStart(2,'0');
+  return `${y}-${m}-${da} ${hh}:${mm}`;
+}
+function makeKey({kanji='',ro='',english=''},{level, pos}){
+  return [level||'', pos||'', kanji||'', ro||'', english||''].join('§');
+}
+
+/* ---------- Normalizers ---------- */
+function pickArrayFromObject(obj){
+  if (!obj || typeof obj !== 'object') return [];
+  const keys = ['data','items','list','words','entries','results'];
+  for (const k of keys){ if (Array.isArray(obj[k])) return obj[k]; }
+  for (const v of Object.values(obj)){ if (Array.isArray(v)) return v; }
+  return [];
+}
+function normalizeExamples(ex){
+  if (!ex) return [];
+  if (!Array.isArray(ex)) return [];
+  return ex.map(e=>{
+    if (typeof e === 'string') return { ja:e, kana:'', ro:'', en:'' };
+    return {
+      ja: e.ja || e.jp || e.sentence || e.example || '',
+      kana: e.kana || e.furigana || '',
+      ro: e.ro || e.romaji || e.roumaji || e.roma || '',
+      en: e.en || e.eng || e.translation || e.meaning || ''
     };
-    function applyLang() {
-      const t = T[LANG];
-      document.getElementById('hContact').textContent = t.contact;
-      document.getElementById('lbName').textContent = t.name;
-      document.getElementById('lbEmail').textContent = t.email;
-      document.getElementById('lbSubject').textContent = t.subject;
-      document.getElementById('lbMessage').textContent = t.message;
-      document.getElementById('btnCancel').textContent = t.cancel;
-      document.getElementById('btnSend').textContent = t.send;
-      // pill UI
-      document.getElementById('btnJa').classList.toggle('active', LANG==='ja');
-      document.getElementById('btnEn').classList.toggle('active', LANG==='en');
-      const url = new URL(location.href);
-      url.searchParams.set('lang', LANG);
-      history.replaceState(null, '', url.toString());
+  });
+}
+function normalizeItem(x){
+  return {
+    kanji:   x.kanji   || x.word   || x.jp   || x.ja   || x.term || x.k || '',
+    kana:    x.kana    || x.reading|| x.yomi || x.kana_jp || '',
+    ro:      x.ro      || x.romaji || x.roumaji || x.roma || '',
+    english: x.english || x.en     || x.mean || x.meaning || x.gloss || x.translation || '',
+    examples: normalizeExamples(x.examples || x.example || x.examples_ja || x.ex || [])
+  };
+}
+function normalizeList(raw){
+  let arr = Array.isArray(raw) ? raw : pickArrayFromObject(raw);
+  if (!Array.isArray(arr)) arr = [];
+  return arr.map(normalizeItem);
+}
+
+/* ---------- Data loader ---------- */
+async function ensureData(level, pos){
+  if (state.cache[level]?.[pos]) return state.cache[level][pos];
+  let result = [];
+  try{
+    const res = await fetch(buildPath(level, pos), { cache:'no-store' });
+    if (!res.ok) throw new Error(`${res.status}`);
+    const raw = await res.json();
+    result = normalizeList(raw);
+  }catch(e){
+    console.warn(`[nihongotext] ${level}/${pos}.json 読み込み失敗:`, e);
+    result = [];
+  }
+  (state.cache[level] ||= {})[pos] = result;
+  return result;
+}
+async function ensureAllData(){
+  const tasks=[];
+  for(const lv of LEVELS){
+    for(const def of TAB_DEFS){
+      tasks.push(ensureData(lv, def.key).then(list=>list.slice(0, MAX_PUBLIC).map(item=>({item, level:lv, pos:def.key}))));
     }
-    document.getElementById('btnJa').onclick = () => { LANG='ja'; applyLang(); };
-    document.getElementById('btnEn').onclick = () => { LANG='en'; applyLang(); };
-    applyLang();
+  }
+  const chunks = await Promise.all(tasks);
+  return chunks.flat();
+}
 
-    // ===== 送信制御（iframe方式） =====
-    const form = document.getElementById('contactForm');
-    const msg = document.getElementById('msg');
-    const btnSend = document.getElementById('btnSend');
-    const btnCancel = document.getElementById('btnCancel');
-    const iframe = document.getElementById('submit_iframe');
-
-    // iframe のロード完了＝GAS が応答した → 成功メッセージを表示（内容は読めないが完了は分かる）
-    iframe.addEventListener('load', () => {
-      btnSend.disabled = false;
-      const t = T[LANG];
-      msg.textContent = t.sentok;
-      msg.className = 'note msg-ok';
-      // フォーム初期化
-      form.reset();
-      if (window.grecaptcha) grecaptcha.reset();
+/* ---------- LocalStorage Learned ---------- */
+const STORAGE_KEY='nt_learned_v2'; // 複合キー + メタ + 日付
+function loadLearned(){ try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');}catch(e){return [];} }
+function saveLearned(list){ localStorage.setItem(STORAGE_KEY, JSON.stringify(list||[])); }
+function isLearned(key){ return !!loadLearned().find(x=>x.key===key); }
+function addLearned(item, meta){
+  const list=loadLearned();
+  const key = makeKey(item, meta);
+  if(!list.find(x=>x.key===key)){
+    list.push({
+      key,
+      kanji:item.kanji||'',
+      kana:item.kana||'',
+      ro:item.ro||'',
+      english:item.english||'',
+      level:meta.level,
+      pos:meta.pos,
+      addedAt:new Date().toISOString()
     });
+    saveLearned(list);
+  }
+}
+function removeLearnedByKey(key){
+  const list=loadLearned().filter(x=>x.key!==key);
+  saveLearned(list);
+}
 
-    form.addEventListener('submit', (ev) => {
-      // 事前に reCAPTCHA トークンを hidden に入れる
-      const t = T[LANG];
-      const token = window.grecaptcha ? grecaptcha.getResponse() : '';
-      if (!token) {
-        ev.preventDefault();
-        msg.textContent = t.recaptcha_need;
-        msg.className = 'note msg-ng';
-        return;
+/* ---------- Tabs ---------- */
+function drawTabs(){
+  $tabs.innerHTML = '';
+  const learned = document.createElement('button');
+  learned.className = 'tab learned';
+  learned.innerHTML = `<i class="fas fa-list-check" aria-hidden="true"></i><small id="labelLearned">${state.alphabet?'Oboeta':'覚えた'}</small>`;
+  learned.addEventListener('click', openLearnedModal);
+  $tabs.appendChild(learned);
+
+  TAB_DEFS.forEach(def=>{
+    const b=document.createElement('button');
+    b.className='tab'+(def.key===state.pos && !state.global?' active':'');
+    b.setAttribute('role','tab'); b.dataset.key=def.key;
+    b.innerHTML=`<span>${def.ja}</span><small>${def.en}</small>`;
+    b.addEventListener('click', async ()=>{
+      state.global = false;
+      state.pos=def.key; state.page=1;
+      drawTabs(); await drawContent(); gaPageView({event_label:'tab_change'});
+    });
+    $tabs.appendChild(b);
+  });
+}
+
+/* ---------- Pager ---------- */
+function drawPager(total){
+  const pages=Math.max(1, Math.ceil(total/PAGE_SIZE));
+  state.page=Math.min(state.page,pages);
+  const mk=(t,g,a=false,d=false)=>{const b=document.createElement('button'); b.textContent=t;
+    if(a)b.classList.add('active'); if(d){b.disabled=true;b.classList.add('muted')}
+    b.addEventListener('click', async ()=>{state.page=g; await drawContent(); gaPageView({event_label:'pager'});});
+    return b;};
+  $pager.innerHTML='';
+  const p=state.page;
+  $pager.appendChild(mk('«',1,false,p===1));
+  $pager.appendChild(mk('‹',Math.max(1,p-1),false,p===1));
+  for(let i=1;i<=pages;i++){
+    if(i===1||i===pages||Math.abs(i-p)<=2) $pager.appendChild(mk(String(i),i,i===p,false));
+    else if(Math.abs(i-p)===3){const s=document.createElement('span');s.textContent='…';$pager.appendChild(s);}
+  }
+  $pager.appendChild(mk('›',Math.min(pages,p+1),false,p===pages));
+  $pager.appendChild(mk('»',pages,false,p===pages));
+}
+
+/* ---------- Content ---------- */
+async function drawContent(){
+  // toggle classes by visibility
+  const cls = ['hide-ja','hide-kana','hide-roma','hide-en'];
+  $right.classList.remove(...cls);
+  if(!state.vis.ja)   $right.classList.add('hide-ja');
+  if(!state.vis.kana) $right.classList.add('hide-kana');
+  if(!state.vis.roma) $right.classList.add('hide-roma');
+  if(!state.vis.en)   $right.classList.add('hide-en');
+
+  const q=($search.value||'').trim().toLowerCase();
+
+  let items = [];
+  if(q){ // 横断検索
+    state.global = true;
+    const all = await ensureAllData();
+    items = all.filter(({item})=>{
+      const t=[item.kanji,item.kana,item.ro,item.english].join(' ').toLowerCase();
+      return t.includes(q);
+    });
+  }else{
+    state.global = false;
+    const listAll = await ensureData(state.level, state.pos);
+    const limited = listAll.slice(0, MAX_PUBLIC);
+    items = limited.map(item=>({item, level:state.level, pos:state.pos}));
+  }
+
+  if(!items.length){
+    $right.innerHTML = `<div style="padding:12px;color:#6b7280">一致するデータがありません。</div>`;
+    $pager.innerHTML=''; renderAdBelow(); return;
+  }
+
+  const start=(state.page-1)*PAGE_SIZE;
+  const slice=items.slice(start,start+PAGE_SIZE);
+
+  $right.innerHTML = slice.map(({item,level,pos},idx)=>{
+    const n=start+idx+1;
+    const showJaText = state.alphabet ? (item.ro || item.kana || item.kanji) : (item.kanji || '');
+    const showKana   = state.alphabet ? '' : (item.kana || '');
+    const showRoma   = item.ro || '';
+    const showEn     = item.english || '';
+    const exHtml=(item.examples||[]).map(ex=>{
+      return `
+        <div class="ex">
+          <div class="ex-line ja">${ex.ja||''}</div>
+          <div class="ex-line kana"><small>${ex.kana||''}</small></div>
+          <div class="ex-line roma"><small>${ex.ro||''}</small></div>
+          <div class="ex-line en"><small>${ex.en||''}</small></div>
+        </div>`;
+    }).join('');
+    const key = makeKey(item, {level, pos});
+    const inList = isLearned(key);
+    const btnLabel = inList ? (state.alphabet ? 'Oboeta' : '覚えた') : (state.alphabet ? 'Add to list' : '一覧に追加');
+    const meta = state.global ? `<span class="meta">[${level} / ${pos}]</span>` : '';
+    const learnedClass = inList ? ' is-learned' : '';
+    const collapsedClass = inList ? ' is-collapsed' : '';
+
+    return `
+      <article class="word-card${learnedClass}" data-key="${key}">
+        <div class="word-head">
+          <button class="btn caret${collapsedClass ? ' is-collapsed':''}" title="コンテンツを閉じる / Collapse" data-toggle="${n}">▼</button>
+          <div class="num">${n}.</div>
+          <div class="pill">
+            <span class="tag ja">${showJaText}</span>
+            <span class="tag kana">${showKana}</span>
+            <span class="tag roma">${showRoma}</span>
+            <span class="tag en">${showEn}</span>
+            ${meta}
+          </div>
+          <div class="actions">
+            <button class="btn ok" data-act="learn" data-level="${level}" data-pos="${pos}" data-key="${key}">${btnLabel}</button>
+          </div>
+        </div>
+        <div class="examples${collapsedClass}" id="ex-${n}">${exHtml || '<div class="ex"><div class="ex-line ja">例文はまだありません</div></div>'}</div>
+      </article>`;
+  }).join('');
+
+  // events
+  $right.querySelectorAll('button[data-act="learn"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const key = btn.dataset.key;
+      const level = btn.dataset.level;
+      const pos = btn.dataset.pos;
+      const card = btn.closest('.word-card');
+      const nToggle = card.querySelector('.caret')?.dataset.toggle;
+      const ex = document.getElementById('ex-' + nToggle);
+
+      const tags = card.querySelectorAll('.pill .tag');
+      const item = {
+        kanji: tags[0]?.textContent?.trim() || '',
+        kana:  tags[1]?.textContent?.trim() || '',
+        ro:    tags[2]?.textContent?.trim() || '',
+        english: tags[3]?.textContent?.trim() || ''
+      };
+
+      if (isLearned(key)){
+        removeLearnedByKey(key);
+        card.classList.remove('is-learned');
+        btn.textContent = state.alphabet ? 'Add to list' : '一覧に追加';
+        if(ex){ ex.classList.remove('is-collapsed'); }
+        const caret = card.querySelector('.caret');
+        if(caret){ caret.classList.remove('is-collapsed'); }
+      }else{
+        addLearned(item, {level, pos});
+        card.classList.add('is-learned');
+        btn.textContent = state.alphabet ? 'Oboeta' : '覚えた';
+        if(ex){ ex.classList.add('is-collapsed'); }
+        const caret = card.querySelector('.caret');
+        if(caret){ caret.classList.add('is-collapsed'); }
       }
-      document.getElementById('token').value = token;
-      // 送信中ロック
-      btnSend.disabled = true;
-      msg.textContent = '';
-      msg.className = 'note';
-      // 以降はブラウザがそのままクロスオリジンPOST（CORS不要）
-      // 応答は iframe の load イベントで受ける
-    });
 
-    btnCancel.addEventListener('click', () => {
-      form.reset();
-      msg.textContent = '';
-      msg.className = 'note';
-      if (window.grecaptcha) grecaptcha.reset();
+      if(document.getElementById('learnedModal').classList.contains('open')) rebuildLearnedTable();
     });
-  </script>
+  });
+
+  $right.querySelectorAll('[data-toggle]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const ex=document.getElementById('ex-'+btn.dataset.toggle);
+      if(ex){ ex.classList.toggle('is-collapsed'); btn.classList.toggle('is-collapsed');}
+    });
+  });
+
+  drawPager(items.length);
+  renderAdBelow();
+}
+
+/* ---------- Learned Modal (table) ---------- */
+function renderLearnedRow(rec, idx){
+  const dt = toDateStr(rec.addedAt);
+  return `<tr data-key="${rec.key}">
+    <td>${idx+1}</td>
+    <td>
+      <div class="pill"><span class="tag ja">${rec.kanji||''}</span></div>
+    </td>
+    <td>${rec.level}</td>
+    <td>${rec.pos}</td>
+    <td>${rec.kana||''}<br><small>${rec.ro||''}</small></td>
+    <td>${rec.english||''}</td>
+    <td>${dt}</td>
+    <td class="action-cell"><button data-del="${rec.key}" title="一覧から削除">🗑️</button></td>
+  </tr>`;
+}
+function sortLearned(list){
+  const {key, asc} = state.learnedSort;
+  if(key==='rownum') return asc ? list.slice() : list.slice().reverse();
+  const dir = asc ? 1 : -1;
+  const col = key;
+  const parse = (v)=> (col==='addedAt' ? new Date(v).getTime() : String(v||'').toLowerCase());
+  return list.slice().sort((a,b)=>{
+    const va=parse(a[col]); const vb=parse(b[col]);
+    if(va<vb) return -1*dir;
+    if(va>vb) return  1*dir;
+    return 0;
+  });
+}
+function updateSortIndicators(){
+  const ths = document.querySelectorAll('#learnedTable thead th.sortable');
+  ths.forEach(th=>{
+    const span = th.querySelector('.dir');
+    span.textContent = (th.dataset.sort===state.learnedSort.key) ? (state.learnedSort.asc ? '▲' : '▼') : '';
+  });
+}
+function rebuildLearnedTable(){
+  const body=document.getElementById('learnedBody');
+  let list = loadLearned();
+  list = sortLearned(list);
+  body.innerHTML = list.length ? list.map((rec, i)=>renderLearnedRow(rec, i)).join('') : '<tr><td colspan="8" style="color:#6b7280;padding:12px">まだ「一覧に追加」がありません。</td></tr>';
+
+  body.querySelectorAll('button[data-del]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const key = btn.dataset.del;
+      removeLearnedByKey(key);
+      const cardBtn = document.querySelector(`button[data-act="learn"][data-key="${CSS.escape(key)}"]`);
+      if(cardBtn){
+        cardBtn.textContent = state.alphabet ? 'Add to list' : '一覧に追加';
+        const card = cardBtn.closest('.word-card');
+        const caret = card?.querySelector('.caret');
+        const exId = caret?.dataset.toggle ? 'ex-'+caret.dataset.toggle : '';
+        const ex = exId ? document.getElementById(exId) : null;
+        card?.classList.remove('is-learned');
+        ex?.classList.remove('is-collapsed');
+        caret?.classList.remove('is-collapsed');
+      }
+      rebuildLearnedTable();
+    });
+  });
+}
+function openLearnedModal(){
+  rebuildLearnedTable();
+  document.getElementById('learnedModal').classList.add('open');
+  updateSortIndicators();
+}
+function closeLearnedModal(){ document.getElementById('learnedModal').classList.remove('open'); }
+
+/* ---------- Print ---------- */
+function printElement(el){
+  const w=window.open('', '_blank');
+  const html=`<html><head><meta charset="utf-8"><title>Print</title>
+  <style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;padding:20px}
+  table{width:100%;border-collapse:collapse}
+  th,td{border-bottom:1px solid #ddd;padding:8px;text-align:left}
+  th{background:#fff7f5}
+  </style></head><body>${el.innerHTML}</body></html>`;
+  w.document.open(); w.document.write(html); w.document.close(); w.focus(); w.print(); w.close();
+}
+
+/* ---------- GA page_view ---------- */
+function gaPageView(extra){
+  try{
+    if (!window.gtag) return;
+    const p = location.pathname +
+      `?level=${state.level}&pos=${state.pos}&page=${state.page}` +
+      (document.getElementById('q').value ? `&q=${encodeURIComponent(document.getElementById('q').value)}` : '') +
+      (state.alphabet ? '&alphabet=1' : '') +
+      (state.global ? '&global=1' : '');
+    gtag('event','page_view',Object.assign({page_title:document.title,page_path:p},extra||{}));
+  }catch(_){}
+}
+
+/* ---------- AdSense below content ---------- */
+const ADS_CLIENT='ca-pub-2358198194205084';
+const ADS_SLOT_ID=null;
+function renderAdBelow(){
+  const mount=document.getElementById('ad-below-content');
+  if(!mount) return;
+  mount.innerHTML='';
+  const ins=document.createElement('ins');
+  ins.className='adsbygoogle'; ins.style.display='block';
+  ins.setAttribute('data-ad-client', ADS_CLIENT);
+  if(ADS_SLOT_ID) ins.setAttribute('data-ad-slot', ADS_SLOT_ID);
+  ins.setAttribute('data-ad-format','auto');
+  ins.setAttribute('data-full-width-responsive','true');
+  mount.appendChild(ins);
+  try{ (window.adsbygoogle = window.adsbygoogle || []).push({}); }catch(e){}
+}
+
+/* ---------- お問い合わせ：言語切替 ---------- */
+function setContactLang(lang){
+  state.ccLang = lang;
+  const ja = (lang==='ja');
+  document.getElementById('ccTitle').textContent = ja ? 'お問い合わせ（Chat）' : 'Contact (Chat)';
+  document.getElementById('ccName').placeholder  = ja ? 'お名前 / Name' : 'Name / お名前';
+  document.getElementById('ccEmail').placeholder = ja ? 'メール / Email' : 'Email / メール';
+  document.getElementById('ccInput').placeholder = ja ? 'メッセージを入力...' : 'Type your message...';
+  document.getElementById('ccGuide').textContent = ja ? '送信すると nihongo.com@gmail.com にメールが届きます。'
+                                                      : 'Your message will be sent to nihongo.com@gmail.com.';
+  document.getElementById('ccHello').textContent = ja ? 'ご質問をどうぞ。右下の送信から送ってください。'
+                                                      : 'Welcome! Type your question and press Send.';
+  document.getElementById('ccSend').textContent  = ja ? '送信' : 'Send';
+}
+
+/* ---------- Init ---------- */
+document.addEventListener('DOMContentLoaded', async ()=>{
+  drawTabs();
+  await drawContent();
+  gaPageView();
+
+  // Level change
+  $level.addEventListener('change', async ()=>{
+    state.level=$level.value; state.page=1; await drawContent(); gaPageView({event_label:'level_change'});
+  });
+
+  // Search (debounced)
+  let qTimer=null;
+  $search.addEventListener('input', ()=>{
+    clearTimeout(qTimer);
+    qTimer=setTimeout(async ()=>{
+      state.page=1; await drawContent(); gaPageView({event_label:'search'});
+    }, 250);
+  });
+
+  // View toggles
+  const bindChk=(id,key)=>document.getElementById(id).addEventListener('change',async(e)=>{state.vis[key]=e.target.checked; await drawContent();});
+  bindChk('chkJa','ja'); bindChk('chkKana','kana'); bindChk('chkRoma','roma'); bindChk('chkEn','en');
+
+  // Alphabet ボタン
+  const $btnAlpha=document.getElementById('btnAlphabet');
+  const PH_JA = 'キーワード検索…';
+  const PH_RO = 'Romaji search…';
+  const setLabels = ()=>{
+    document.getElementById('lblJa').lastChild.textContent   = state.alphabet ? ' Nihongo'  : ' 日本語';
+    document.getElementById('lblKana').lastChild.textContent = state.alphabet ? ' Hiragana' : ' ひらがな';
+    document.getElementById('lblRoma').lastChild.textContent = state.alphabet ? ' Alphabet' : ' アルファベット';
+    document.getElementById('lblEn').lastChild.textContent   = state.alphabet ? ' Eigo'     : ' 英語';
+    const l = document.getElementById('labelLearned');
+    if(l) l.textContent = state.alphabet ? 'Oboeta' : '覚えた';
+  };
+  setLabels();
+
+  $btnAlpha.addEventListener('click', async ()=>{
+    state.alphabet=!state.alphabet;
+    $btnAlpha.classList.toggle('active', state.alphabet);
+    $search.placeholder = state.alphabet ? PH_RO : PH_JA;
+    setLabels();
+    await drawContent(); gaPageView({event_label:'alphabet_toggle', alphabet:state.alphabet?'1':'0'});
+  });
+
+  // Print（右コンテンツ）
+  ['icPrint','icPrintFooter'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.addEventListener('click', ()=>printElement(document.getElementById('right')));
+  });
+
+  // 覚えた一覧の開閉（ヘッダー/フッター/タブ）
+  ['icLearnedF','icLearnedHeader'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.addEventListener('click', openLearnedModal);
+  });
+
+  const closeBtn=document.getElementById('closeLearned');
+  if(closeBtn) closeBtn.addEventListener('click', closeLearnedModal);
+
+  const printLearnedBtn=document.getElementById('printLearned');
+  if(printLearnedBtn) printLearnedBtn.addEventListener('click', ()=>printElement(document.querySelector('.table-wrap')));
+
+  const learnedModal=document.getElementById('learnedModal');
+  if(learnedModal) learnedModal.addEventListener('click',(e)=>{ if(e.target===e.currentTarget) closeLearnedModal(); });
+
+  // 覚えた一覧：ヘッダークリックでソート
+  document.querySelectorAll('#learnedTable thead th.sortable').forEach(th=>{
+    th.addEventListener('click', ()=>{
+      const k = th.dataset.sort;
+      if(state.learnedSort.key===k){ state.learnedSort.asc=!state.learnedSort.asc; }else{ state.learnedSort={key:k,asc:true}; }
+      rebuildLearnedTable();
+      updateSortIndicators();
+    });
+  });
+
+  // お問い合わせ：開閉・言語切替
+  const openContactChat=()=>document.getElementById('contactChat').classList.add('open');
+  const closeContactChat=()=>document.getElementById('contactChat').classList.remove('open');
+  ['openContact','openContactF'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.addEventListener('click', openContactChat);
+  });
+  const ccClose=document.getElementById('ccClose');
+  if(ccClose) ccClose.addEventListener('click', closeContactChat);
+
+  const ccLangToggle=document.getElementById('ccLangToggle');
+  if(ccLangToggle) ccLangToggle.addEventListener('click', ()=>{
+    setContactLang(state.ccLang==='ja'?'en':'ja');
+  });
+  setContactLang('ja');
+});
+</script>
+
+<!-- Contact sending (GAS + reCAPTCHA v3) -->
+<script>
+(function(){
+  const CC_ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2wQN431cFfswmnqadJlTgstgeJCOYooh8O1SX5ic6Bf9oOoHWKHOPGN17QpOozXcJ-g/exec';
+  window.RECAPTCHA_SITEKEY = window.RECAPTCHA_SITEKEY || '6LeLRe4rAAAAAG9bnqf-BeU8rI3EM8k8F5plub25';
+  if(window.RECAPTCHA_SITEKEY){
+    const s=document.createElement('script');
+    s.src='https://www.google.com/recaptcha/api.js?render='+encodeURIComponent(window.RECAPTCHA_SITEKEY);
+    document.head.appendChild(s);
+  }
+  function ccAppend(role, text){
+    const box=document.getElementById('ccThread');
+    const wrap=document.createElement('div'); wrap.className='cc-msg '+(role==='user'?'user':'bot');
+    const b=document.createElement('div'); b.textContent=text; wrap.appendChild(b); box.appendChild(wrap); box.scrollTop=box.scrollHeight;
+  }
+  function ccSendMessage(){
+    const name=(document.getElementById('ccName').value||'').trim();
+    const email=(document.getElementById('ccEmail').value||'').trim();
+    const text=(document.getElementById('ccInput').value||'').trim();
+    const note=document.getElementById('ccNote');
+    const lang=(window.state?.ccLang)||'ja';
+    if(!text){ note.textContent= lang==='ja' ? 'メッセージを入力してください。' : 'Please type a message.'; return; }
+    if(!email){ note.textContent= lang==='ja' ? 'メールアドレスを入力してください。' : 'Please enter your email.'; return; }
+    ccAppend('user', text); document.getElementById('ccInput').value=''; note.textContent= lang==='ja' ? '送信しています...' : 'Sending...';
+
+    const base={name,email,message:text,level:(document.getElementById('selLevel')||{}).value||'',pos:(window.state||{}).pos||''};
+    function sendWith(token){
+      fetch(CC_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...base,recaptchaToken:token||''})})
+        .then(r=>r.json().catch(()=>({ok:true}))).then(res=>{
+          note.textContent=(res&&res.ok)?(lang==='ja'?'送信しました。返信までお待ちください。':'Sent. We will get back to you soon.'): (lang==='ja'?'送信しました（応答なし）。':'Sent (no response).');
+          ccAppend('bot', lang==='ja' ? 'ありがとうございます。内容を受け付けました。' : 'Thank you! Your message has been received.');
+        }).catch(()=>{ note.textContent= lang==='ja' ? '送信に失敗しました。後ほどお試しください。' : 'Failed to send. Please try again later.'; });
+    }
+    if(window.grecaptcha && window.RECAPTCHA_SITEKEY){
+      grecaptcha.ready(()=>{ grecaptcha.execute(window.RECAPTCHA_SITEKEY,{action:'contact'}).then(sendWith).catch(()=>sendWith('')); });
+    }else{ sendWith(''); }
+  }
+  document.addEventListener('click',(e)=>{
+    if(e.target && e.target.id==='ccSend') ccSendMessage();
+    const m=document.getElementById('contactChat'); if(e.target===m) m.classList.remove('open');
+  });
+})();
+</script>
 </body>
 </html>
