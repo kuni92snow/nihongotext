@@ -1,196 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>News &amp; Blog | nihongotext.com</title>
+  <title>News & Blog | nihongotext.com</title>
   <style>
-    :root { --fg:#1a1a1a; --muted:#777; --ok:#1a7f37; --ng:#b3261e; --bd:#e5e7eb; --bg:#fafafa; }
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:#fff;margin:0;}
-    .wrap{max-width:1080px;margin:0 auto;padding:24px 16px;}
-    h1{font-size:28px;margin:8px 0 24px;}
-    .langbar{display:flex;gap:8px;margin:0 0 16px;}
-    .pill{border:1px solid var(--bd);padding:6px 12px;border-radius:999px;background:#fff;cursor:pointer;}
-    .pill.active{background:#111;color:#fff;border-color:#111;}
-    .card{border:1px solid var(--bd);border-radius:12px;padding:16px;background:#fff;}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px;}
-    @media(min-width:900px){ .grid{grid-template-columns: 1fr 0; } } /* 右側Q&A欄は無いので0幅 */
-    label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;}
-    input[type="text"],input[type="email"],textarea{
-      width:100%;border:1px solid var(--bd);border-radius:8px;padding:10px;font-size:16px;background:#fff;
-    }
-    textarea{min-height:160px;resize:vertical;}
-    .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
-    .btn{border:1px solid #111;background:#111;color:#fff;border-radius:10px;padding:10px 16px;font-weight:600;cursor:pointer;}
-    .btn.secondary{background:#fff;color:#111;}
-    small.muted{color:var(--muted);}
-    .msg-ok{color:var(--ok);display:none;margin-top:8px;}
-    .msg-ng{color:var(--ng);display:none;margin-top:8px;}
+    :root{--fg:#111;--muted:#6b7280;--accent:#10b981;--danger:#ef4444;--bg:#fff;--border:#e5e7eb}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,ui-sans-serif;color:var(--fg);background:var(--bg)}
+    .wrap{max-width:980px;margin:24px auto;padding:0 16px}
+    h1{font-size:28px;margin:0 0 16px}
+    .lang{display:flex;gap:8px;margin-bottom:16px}
+    .pill{padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#f8fafc;cursor:pointer}
+    .pill.active{background:#111;color:#fff;border-color:#111}
+    .card{border:1px solid var(--border);border-radius:12px;padding:16px;background:#fff}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width:900px){.grid{grid-template-columns:1.1fr}}
+    label{display:block;font-size:12px;color:var(--muted);margin:10px 0 6px}
+    input,textarea{width:100%;box-sizing:border-box;font:inherit;padding:10px;border:1px solid var(--border);border-radius:8px;background:#fff}
+    textarea{min-height:160px;resize:vertical}
+    .row{display:flex;gap:10px;align-items:center;margin-top:12px}
+    .btn{padding:10px 16px;border:1px solid var(--border);border-radius:8px;background:#111;color:#fff;cursor:pointer}
+    .btn.secondary{background:#fff;color:#111}
+    .note{font-size:12px;color:var(--muted);margin-top:8px}
+    .msg-ok{color:var(--accent);font-weight:600}
+    .msg-ng{color:var(--danger);font-weight:600}
+    .hidden{display:none}
   </style>
-
-  <!-- reCAPTCHA v2 checkbox -->
+  <!-- reCAPTCHA v2 (checkbox) -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <div class="wrap">
-    <div class="row" style="justify-content:space-between;align-items:center">
-      <h1>News &amp; Blog</h1>
-      <div class="langbar">
-        <button class="pill" id="btnJa">日本語</button>
-        <button class="pill" id="btnEn">English</button>
-      </div>
+    <h1>News & Blog</h1>
+
+    <!-- 言語切替 -->
+    <div class="lang">
+      <button id="btnJa" class="pill">日本語</button>
+      <button id="btnEn" class="pill">English</button>
     </div>
 
     <div class="grid">
-      <!-- Contact only -->
+      <!-- Contact -->
       <section class="card">
-        <h2 id="t_contact">お問い合わせ</h2>
+        <h2 id="hContact">お問い合わせ</h2>
 
-        <form id="f" autocomplete="on">
-          <div class="field">
-            <label for="name" id="t_name1">お名前 / Name</label>
-            <input id="name" name="name" type="text" required />
-          </div>
+        <!-- 非表示iframe（クロスオリジンPOSTでもページ遷移しない） -->
+        <iframe name="submit_iframe" id="submit_iframe" class="hidden"></iframe>
 
-          <div class="field">
-            <label for="email" id="t_email1">メール / Email</label>
-            <input id="email" name="email" type="email" />
-          </div>
+        <!-- 送信フォーム：直接 Apps Script へ POST（x-www-form-urlencoded） -->
+        <form
+          id="contactForm"
+          target="submit_iframe"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyHEEBz5zMMi_9ilE5n5i88Kdilx0nYlGBOQXZy2TWhTQUZRxULVGTCygdh0JiJqaEdKg/exec"
+        >
+          <label for="name" id="lbName">お名前 / Name</label>
+          <input id="name" name="name" autocomplete="name" />
 
-          <div class="field">
-            <label for="subject" id="t_subject1">件名 / Subject</label>
-            <input id="subject" name="subject" type="text" />
-          </div>
+          <label for="email" id="lbEmail">メール / Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" />
 
-          <div class="field">
-            <label for="message" id="t_message1">メッセージ / Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
+          <label for="subject" id="lbSubject">件名 / Subject</label>
+          <input id="subject" name="subject" />
 
-          <div class="field">
-            <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-            <small class="muted" id="t_recaptcha_note">
-              reCAPTCHA と Google の <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシー ポリシー</a> と
-              <a href="https://policies.google.com/terms?hl=ja" target="_blank" rel="noopener">利用規約</a> が適用されます。
-            </small>
-          </div>
+          <label for="message" id="lbMessage">メッセージ / Message</label>
+          <textarea id="message" name="message"></textarea>
+
+          <!-- reCAPTCHA トークンは hidden に入れて送信 -->
+          <input type="hidden" id="token" name="token" />
 
           <div class="row">
-            <button type="button" class="btn secondary" id="btnCancel">キャンセル</button>
-            <button type="submit" class="btn" id="btnSend">送信</button>
+            <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+            <button type="button" id="btnCancel" class="btn secondary">キャンセル</button>
+            <button type="submit" id="btnSend" class="btn">送信</button>
           </div>
 
-          <div id="ok" class="msg-ok">送信しました。ありがとうございます。</div>
-          <div id="ng" class="msg-ng">送信に失敗しました。時間をおいて再度お試しください。</div>
+          <div class="note" id="rcNote">
+            reCAPTCHA と Google の <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシー ポリシー</a> と
+            <a href="https://policies.google.com/terms?hl=ja" target="_blank" rel="noopener">利用規約</a> が適用されます。
+          </div>
+
+          <div class="note" id="msg" aria-live="polite"></div>
         </form>
       </section>
     </div>
-
-    <small class="muted" style="display:block;margin-top:16px;">
-      © 2025 nihongotext.com
-    </small>
   </div>
 
   <script>
-    /* ====== 設定 ====== */
-    const EXEC_JSONP_BASE = "https://script.google.com/macros/s/AKfycbyHEEBz5zMMi_9ilE5n5i88Kdilx0nYlGBOQXZy2TWhTQUZRxULVGTCygdh0JiJqaEdKg/exec";
-
-    /* ====== i18n ====== */
+    // ===== 言語判定 =====
+    const params = new URL(location.href).searchParams;
+    let LANG = params.get('lang') === 'en' ? 'en' : 'ja';
     const T = {
       ja: {
-        contact:"お問い合わせ", name1:"お名前 / Name", email1:"メール / Email",
-        subject1:"件名 / Subject", message1:"メッセージ / Message",
-        cancel:"キャンセル", send:"送信",
-        ok:"送信しました。ありがとうございます。",
-        ng:"送信に失敗しました。時間をおいて再度お試しください。",
-        recaptcha_note:'reCAPTCHA と Google の <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシー ポリシー</a> と <a href="https://policies.google.com/terms?hl=ja" target="_blank" rel="noopener">利用規約</a> が適用されます。'
+        contact: 'お問い合わせ',
+        name: 'お名前 / Name',
+        email: 'メール / Email',
+        subject: '件名 / Subject',
+        message: 'メッセージ / Message',
+        cancel: 'キャンセル',
+        send: '送信',
+        sentok: '送信しました。ありがとうございます。',
+        sentng: '送信に失敗しました。時間をおいて再度お試しください。',
+        recaptcha_need: 'reCAPTCHA をチェックしてください。'
       },
       en: {
-        contact:"Contact", name1:"Name", email1:"Email",
-        subject1:"Subject", message1:"Message",
-        cancel:"Cancel", send:"Send",
-        ok:"Your message has been sent. Thank you!",
-        ng:"Failed to send. Please try again later.",
-        recaptcha_note:'This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.'
+        contact: 'Contact',
+        name: 'Name',
+        email: 'Email',
+        subject: 'Subject',
+        message: 'Message',
+        cancel: 'Cancel',
+        send: 'Send',
+        sentok: 'Your message has been sent. Thank you!',
+        sentng: 'Failed to send. Please try again later.',
+        recaptcha_need: 'Please check the reCAPTCHA box.'
       }
     };
-
-    const params = new URL(location.href).searchParams;
-    let LANG = (params.get("lang")==="en") ? "en" : "ja";
-    function applyI18n(){
+    function applyLang() {
       const t = T[LANG];
-      document.getElementById("t_contact").innerHTML = t.contact;
-      document.getElementById("t_name1").innerHTML = t.name1;
-      document.getElementById("t_email1").innerHTML = t.email1;
-      document.getElementById("t_subject1").innerHTML = t.subject1;
-      document.getElementById("t_message1").innerHTML = t.message1;
-      document.getElementById("btnCancel").innerText = t.cancel;
-      document.getElementById("btnSend").innerText = t.send;
-      document.getElementById("t_recaptcha_note").innerHTML = t.recaptcha_note;
-      document.getElementById("ok").innerText = t.ok;
-      document.getElementById("ng").innerText = t.ng;
-      document.getElementById("btnJa").classList.toggle("active", LANG==="ja");
-      document.getElementById("btnEn").classList.toggle("active", LANG==="en");
+      document.getElementById('hContact').textContent = t.contact;
+      document.getElementById('lbName').textContent = t.name;
+      document.getElementById('lbEmail').textContent = t.email;
+      document.getElementById('lbSubject').textContent = t.subject;
+      document.getElementById('lbMessage').textContent = t.message;
+      document.getElementById('btnCancel').textContent = t.cancel;
+      document.getElementById('btnSend').textContent = t.send;
+      // pill UI
+      document.getElementById('btnJa').classList.toggle('active', LANG==='ja');
+      document.getElementById('btnEn').classList.toggle('active', LANG==='en');
+      const url = new URL(location.href);
+      url.searchParams.set('lang', LANG);
+      history.replaceState(null, '', url.toString());
     }
-    document.getElementById("btnJa").onclick = ()=>{ location.search = "?lang=ja"; };
-    document.getElementById("btnEn").onclick = ()=>{ location.search = "?lang=en"; };
-    applyI18n();
+    document.getElementById('btnJa').onclick = () => { LANG='ja'; applyLang(); };
+    document.getElementById('btnEn').onclick = () => { LANG='en'; applyLang(); };
+    applyLang();
 
-    /* ====== 送信（JSONP） ====== */
-    const f = document.getElementById("f");
-    const elOK = document.getElementById("ok");
-    const elNG = document.getElementById("ng");
-    const btnSend = document.getElementById("btnSend");
-    const btnCancel = document.getElementById("btnCancel");
+    // ===== 送信制御（iframe方式） =====
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('msg');
+    const btnSend = document.getElementById('btnSend');
+    const btnCancel = document.getElementById('btnCancel');
+    const iframe = document.getElementById('submit_iframe');
 
-    btnCancel.addEventListener("click", () => {
-      f.reset();
-      elOK.style.display = "none";
-      elNG.style.display = "none";
-      // reCAPTCHA をクリア（v2）
-      if (window.grecaptcha) try{ grecaptcha.reset(); }catch(_){}
+    // iframe のロード完了＝GAS が応答した → 成功メッセージを表示（内容は読めないが完了は分かる）
+    iframe.addEventListener('load', () => {
+      btnSend.disabled = false;
+      const t = T[LANG];
+      msg.textContent = t.sentok;
+      msg.className = 'note msg-ok';
+      // フォーム初期化
+      form.reset();
+      if (window.grecaptcha) grecaptcha.reset();
     });
 
-    f.addEventListener("submit", (ev) => {
-      ev.preventDefault();
-      elOK.style.display = "none";
-      elNG.style.display = "none";
-
-      // reCAPTCHA v2 のレスポンス取得
-      let token = "";
-      try { token = grecaptcha.getResponse(); } catch(e) {}
-      if (!token) { elNG.style.display = "block"; return; }
-
-      const q = new URLSearchParams({
-        mode: "contact_submit",
-        name: document.getElementById("name").value || "",
-        email: document.getElementById("email").value || "",
-        subject: document.getElementById("subject").value || "",
-        message: document.getElementById("message").value || "",
-        token: token,
-        callback: "onContactSubmit"
-      });
-
-      // JSONP 呼び出し
-      const s = document.createElement("script");
-      s.src = `${EXEC_JSONP_BASE}?${q.toString()}`;
-      s.onerror = () => { elNG.style.display = "block"; };
-      document.body.appendChild(s);
-      // 二重送信防止の簡易無効化
-      btnSend.disabled = true;
-      setTimeout(()=>{ btnSend.disabled = false; }, 5000);
-    });
-
-    // JSONP コールバック（グローバルに必要）
-    window.onContactSubmit = function(res){
-      if (res && res.ok) {
-        elOK.style.display = "block";
-        f.reset();
-        if (window.grecaptcha) try{ grecaptcha.reset(); }catch(_){}
-      } else {
-        elNG.style.display = "block";
+    form.addEventListener('submit', (ev) => {
+      // 事前に reCAPTCHA トークンを hidden に入れる
+      const t = T[LANG];
+      const token = window.grecaptcha ? grecaptcha.getResponse() : '';
+      if (!token) {
+        ev.preventDefault();
+        msg.textContent = t.recaptcha_need;
+        msg.className = 'note msg-ng';
+        return;
       }
-    };
+      document.getElementById('token').value = token;
+      // 送信中ロック
+      btnSend.disabled = true;
+      msg.textContent = '';
+      msg.className = 'note';
+      // 以降はブラウザがそのままクロスオリジンPOST（CORS不要）
+      // 応答は iframe の load イベントで受ける
+    });
+
+    btnCancel.addEventListener('click', () => {
+      form.reset();
+      msg.textContent = '';
+      msg.className = 'note';
+      if (window.grecaptcha) grecaptcha.reset();
+    });
   </script>
 </body>
 </html>
