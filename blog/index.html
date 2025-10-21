@@ -5,265 +5,210 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>News & Blog | nihongotext.com</title>
   <style>
-    :root { --primary:#e74c3c; --line:#eee; --text:#222; --muted:#777; --bg:#fff; }
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:#fafafa;margin:0;}
-    .wrap{max-width:980px;margin:24px auto;padding:0 16px;}
-    header{display:flex;justify-content:space-between;align-items:center;margin:8px 0 24px;}
-    .lang-switch button{margin-left:8px;padding:6px 12px;border:1px solid var(--line);background:var(--bg);border-radius:16px;cursor:pointer}
-    .lang-switch button.active{border-color:var(--primary);color:var(--primary);font-weight:600}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    @media (max-width:800px){ .grid{grid-template-columns:1fr} }
-    .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px}
-    .card h2{margin:0 0 12px;font-size:20px}
-    .field{margin:10px 0}
-    .field label{display:block;margin:0 0 6px;font-size:14px;color:var(--muted)}
-    .field input,.field textarea{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #ddd;border-radius:8px;font-size:15px}
-    .field textarea{min-height:130px;resize:vertical}
-    .actions{display:flex;gap:10px;margin-top:10px}
-    .btn{padding:10px 16px;border-radius:8px;border:1px solid var(--line);background:var(--bg);cursor:pointer}
-    .btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}
-    .note{font-size:12px;color:var(--muted);margin-top:8px}
-    .qa-empty{color:var(--muted);font-size:14px}
-    .qa-item{border-top:1px dashed var(--line);padding:16px 0}
-    .qa-head{display:flex;gap:8px;align-items:center;margin-bottom:6px}
-    .qa-date{font-size:12px;color:var(--muted)}
-    .qa-title{font-weight:600}
-    .qa-q{white-space:pre-wrap;margin:8px 0;color:#333}
-    .qa-a{white-space:pre-wrap;margin:8px 0;background:#fbfbfb;border:1px solid var(--line);padding:10px;border-radius:8px}
-    .small{font-size:12px;color:var(--muted)}
-    .err{color:#b00020}
-    .ok{color:#0a7b34}
+    :root{
+      --bg:#fafafa; --card:#fff; --text:#222; --muted:#777; --brand:#e34b4b;
+      --bd:#e6e6e6; --ok:#108a00; --err:#b00020;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 16px;}
+    header h1{font-size:28px;margin:0 0 20px}
+    .lang-switch{display:flex;gap:.5rem}
+    .lang-btn{border:1px solid var(--bd);background:#fff;border-radius:24px;padding:6px 12px;cursor:pointer}
+    .lang-btn.active{border-color:var(--brand);color:#fff;background:var(--brand)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:18px}
+    .card h2{margin:0 0 14px}
+    label{display:block;font-size:12px;color:var(--muted);margin:10px 0 6px}
+    input[type="text"],input[type="email"],textarea{
+      width:100%;box-sizing:border-box;border:1px solid var(--bd);border-radius:8px;padding:10px 12px;font-size:15px;background:#fff
+    }
+    textarea{min-height:120px;resize:vertical}
+    .row{display:flex;gap:8px;align-items:center;margin-top:12px}
+    .btn{appearance:none;border:1px solid var(--bd);background:#fff;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer}
+    .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+    .fine{font-size:12px;color:var(--muted);margin-top:8px}
+    .status{margin-top:10px;font-size:14px}
+    .status.ok{color:var(--ok)} .status.err{color:var(--err)}
+    .qa-empty{color:var(--muted)}
+    .qa-item{border-top:1px dashed var(--bd);padding:14px 0}
+    .qa-item:first-child{border-top:0}
+    .qa-title{margin:.2rem 0 .3rem;font-size:16px}
+    .qa-meta{color:var(--muted);font-size:12px;margin-bottom:.35rem}
+    .qa-q strong,.qa-a strong{color:var(--brand)}
   </style>
-  <!-- reCAPTCHA v2 (checkbox) -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <h1>News & Blog</h1>
+    <header style="display:flex;justify-content:space-between;align-items:center;">
+      <h1 id="t_head">News & Blog</h1>
       <div class="lang-switch">
-        <button id="btn-ja">日本語</button>
-        <button id="btn-en">English</button>
+        <button class="lang-btn" data-lang="ja" id="btn-ja">日本語</button>
+        <button class="lang-btn" data-lang="en" id="btn-en">English</button>
       </div>
     </header>
 
     <div class="grid">
       <!-- Contact -->
-      <section class="card" aria-labelledby="h-contact">
-        <h2 id="h-contact">Contact</h2>
+      <section class="card">
+        <h2 id="t_contact">お問い合わせ</h2>
+        <form id="contact-form" method="POST"
+              action="https://script.google.com/macros/s/AKfycbx4xEjA43o2oovNbuvAvZQgqw2HfYt-ZVnrHr8WOT0bI2hJ8SpfXSYKYCRS97z_IcNF/exec"
+              target="contact_iframe">
+          <label id="t_name_label">お名前 / Name</label>
+          <input type="text" name="name" required autocomplete="name">
 
-        <form id="contactForm" novalidate>
-          <div class="field">
-            <label for="name" data-i18n="label_name">お名前 / Name</label>
-            <input id="name" name="name" autocomplete="name" />
+          <label id="t_email_label">メール / Email</label>
+          <input type="email" name="email" required autocomplete="email">
+
+          <label id="t_subject_label">件名 / Subject</label>
+          <input type="text" name="subject" required>
+
+          <label id="t_msg_label">メッセージ / Message</label>
+          <textarea name="message" required></textarea>
+
+          <input type="hidden" name="token" id="recaptcha-token">
+
+          <div class="row">
+            <button type="button" class="btn" id="btn-cancel">キャンセル</button>
+            <button type="submit" class="btn primary" id="btn-send">送信</button>
           </div>
 
-          <div class="field">
-            <label for="email" data-i18n="label_email">メール / Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" />
+          <div class="fine" id="t_policy">
+            reCAPTCHA と Google の <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a> と
+            <a href="https://policies.google.com/terms" target="_blank" rel="noopener">利用規約</a> が適用されます。
           </div>
-
-          <div class="field">
-            <label for="subject" data-i18n="label_subject">件名 / Subject</label>
-            <input id="subject" name="subject" />
-          </div>
-
-          <div class="field">
-            <label for="message" data-i18n="label_message">メッセージ / Message</label>
-            <textarea id="message" name="message"></textarea>
-          </div>
-
-          <div class="field">
-            <!-- reCAPTCHA checkbox -->
-            <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-          </div>
-
-          <div class="actions">
-            <button type="button" class="btn" id="btn-cancel" data-i18n="btn_cancel">キャンセル</button>
-            <button type="submit" class="btn primary" id="btn-send" data-i18n="btn_send">送信</button>
-          </div>
-
-          <div class="note small">
-            reCAPTCHA と Google の
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a> と
-            <a href="https://policies.google.com/terms" target="_blank" rel="noopener">利用規約</a>
-            が適用されます。
-          </div>
-
-          <div id="formMsg" class="small" role="status" aria-live="polite"></div>
+          <div id="status" class="status" aria-live="polite"></div>
         </form>
+        <!-- hidden target for POST -->
+        <iframe name="contact_iframe" style="display:none"></iframe>
       </section>
 
       <!-- Q&A -->
-      <section class="card" aria-labelledby="h-qa">
-        <h2 id="h-qa">Q&amp;A</h2>
-        <div id="qaList"><p class="qa-empty" data-i18n="qa_empty">公開済みのQ&amp;Aはまだありません。</p></div>
+      <section class="card">
+        <h2>Q&A</h2>
+        <div id="qa-list" class="qa-empty">Loading…</div>
       </section>
     </div>
-
-    <footer class="small" style="margin-top:24px;color:#999">
-      © 2025 nihongotext.com
-    </footer>
   </div>
 
-  <script>
-    // ===== Config =====
-    const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbw3ddHZ7NvYY5-MRsK7npZpdyLJnmoqV1j2tcJjApxAWRTL2YWpk2NsEod0jnFnIFtgvQ/exec";
+  <!-- reCAPTCHA v2 (invisible) -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></script>
 
-    // ===== i18n =====
-    const I18N = {
+  <script>
+    // ====== CONFIG ======
+    const EXEC_URL = "https://script.google.com/macros/s/AKfycbx4xEjA43o2oovNbuvAvZQgqw2HfYt-ZVnrHr8WOT0bI2hJ8SpfXSYKYCRS97z_IcNF/exec";
+    const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV";
+
+    // ====== i18n ======
+    const dict = {
       ja: {
+        head: "News & Blog",
         contact: "お問い合わせ",
-        label_name: "お名前 / Name",
-        label_email: "メール / Email",
-        label_subject: "件名 / Subject",
-        label_message: "メッセージ / Message",
-        btn_cancel: "キャンセル",
-        btn_send: "送信",
-        qa_empty: "公開済みのQ&Aはまだありません。",
-        sent_ok: "送信しました。返信までしばらくお待ちください。",
-        sent_ng: "送信に失敗しました。時間をおいてお試しください。",
-        need_captcha: "「私はロボットではありません」にチェックしてください。",
-        need_message: "メッセージを入力してください。"
+        name: "お名前 / Name",
+        email: "メール / Email",
+        subject: "件名 / Subject",
+        message: "メッセージ / Message",
+        cancel: "キャンセル",
+        send: "送信",
+        policy: 'reCAPTCHA と Google の <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a> と <a href="https://policies.google.com/terms" target="_blank" rel="noopener">利用規約</a> が適用されます。',
+        sent: "ありがとうございます。送信しました。",
+        fail: "送信に失敗しました。しばらくしてからお試しください。"
       },
       en: {
+        head: "News & Blog",
         contact: "Contact",
-        label_name: "Name",
-        label_email: "Email",
-        label_subject: "Subject",
-        label_message: "Message",
-        btn_cancel: "Cancel",
-        btn_send: "Send",
-        qa_empty: "No published Q&A yet.",
-        sent_ok: "Sent. We will get back to you shortly.",
-        sent_ng: "Failed to send. Please try again later.",
-        need_captcha: "Please tick the reCAPTCHA checkbox.",
-        need_message: "Please enter your message."
+        name: "Name",
+        email: "Email",
+        subject: "Subject",
+        message: "Message",
+        cancel: "Cancel",
+        send: "Send",
+        policy: 'This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.',
+        sent: "Thanks! Your message has been sent.",
+        fail: "Failed to send. Please try again later."
       }
     };
-    const urlLang = new URLSearchParams(location.search).get("lang");
-    let currentLang = (urlLang === "en") ? "en" : "ja";
-
-    function applyI18n() {
-      document.querySelectorAll("[data-i18n]").forEach(el=>{
-        const key = el.getAttribute("data-i18n");
-        el.textContent = I18N[currentLang][key] || el.textContent;
-      });
-      document.getElementById("btn-ja").classList.toggle("active", currentLang==="ja");
-      document.getElementById("btn-en").classList.toggle("active", currentLang==="en");
-      document.getElementById("h-contact").textContent = (currentLang==="ja") ? "お問い合わせ" : "Contact";
+    function getLang(){
+      const m = location.search.match(/[?&]lang=(ja|en)\b/);
+      return (m && m[1]) || "ja";
     }
-
-    document.getElementById("btn-ja").addEventListener("click", ()=>{
-      if (currentLang!=="ja"){ currentLang="ja"; applyI18n(); history.replaceState({}, "", "?lang=ja"); }
-    });
-    document.getElementById("btn-en").addEventListener("click", ()=>{
-      if (currentLang!=="en"){ currentLang="en"; applyI18n(); history.replaceState({}, "", "?lang=en"); }
-    });
-
-    // ===== Q&A list =====
-    async function loadQA(){
-      const wrap = document.getElementById("qaList");
-      wrap.innerHTML = '<p class="small">Loading...</p>';
-      try{
-        const res = await fetch(GAS_ENDPOINT + "?mode=qa", { method:"GET" });
-        const js = await res.json();
-        if (!js.ok || !Array.isArray(js.items) || js.items.length===0){
-          wrap.innerHTML = `<p class="qa-empty">${I18N[currentLang].qa_empty}</p>`;
-          return;
-        }
-        wrap.innerHTML = "";
-        js.items.forEach(it=>{
-          const title = it.title || it.subject || (it.question ? (it.question.split("\n")[0].slice(0,60) + (it.question.length>60?"…":"")) : "Q");
-          const el = document.createElement("div");
-          el.className = "qa-item";
-          el.innerHTML = `
-            <div class="qa-head">
-              <span class="qa-title">${escapeHtml(title)}</span>
-              <span class="qa-date">(${escapeHtml(it.createdAt || "")})</span>
-            </div>
-            <div class="small">${escapeHtml(it.nameMasked || "")}</div>
-            <div class="qa-q"><strong>Q.</strong> ${escapeHtml(it.question || "")}</div>
-            <div class="qa-a"><strong>A.</strong> ${escapeHtml(it.answer || "")}</div>
-          `;
-          wrap.appendChild(el);
-        });
-      }catch(err){
-        wrap.innerHTML = `<p class="qa-empty err">Failed to load.</p>`;
-        console.error(err);
-      }
+    function setLang(lang){
+      document.documentElement.lang = lang;
+      document.getElementById("btn-ja").classList.toggle("active", lang==="ja");
+      document.getElementById("btn-en").classList.toggle("active", lang==="en");
+      const t = dict[lang];
+      t_head.textContent = t.head;
+      t_contact.textContent = t.contact;
+      t_name_label.textContent = t.name;
+      t_email_label.textContent = t.email;
+      t_subject_label.textContent = t.subject;
+      t_msg_label.textContent = t.message;
+      btn-cancel.textContent = t.cancel; // filled below (ids with hyphen need getElementById)
+      document.getElementById("btn-cancel").textContent = t.cancel;
+      document.getElementById("btn-send").textContent = t.send;
+      document.getElementById("t_policy").innerHTML = t.policy;
     }
+    document.getElementById("btn-ja").onclick = ()=>{ location.search = "?lang=ja"; };
+    document.getElementById("btn-en").onclick = ()=>{ location.search = "?lang=en"; };
+    setLang(getLang());
 
-    // ===== Contact submit =====
-    const form = document.getElementById("contactForm");
-    const msgBox = document.getElementById("formMsg");
+    // ====== Contact: reCAPTCHA -> submit via hidden iframe ======
+    const form = document.getElementById("contact-form");
+    const statusEl = document.getElementById("status");
+    document.getElementById("btn-cancel").addEventListener("click", ()=>{ form.reset(); statusEl.textContent=""; });
 
-    document.getElementById("btn-cancel").addEventListener("click", ()=>{
-      form.reset();
-      if (window.grecaptcha) grecaptcha.reset();
-      msgBox.textContent = "";
-    });
-
-    form.addEventListener("submit", async (ev)=>{
+    form.addEventListener("submit", function(ev){
       ev.preventDefault();
-      msgBox.className = "small";
-      msgBox.textContent = "";
+      grecaptcha.ready(function() {
+        grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
+          document.getElementById("recaptcha-token").value = token;
+          // submit (to hidden iframe)
+          form.submit();
+          statusEl.className = "status ok";
+          statusEl.textContent = dict[getLang()].sent;
+          form.reset();
+        }).catch(function(){
+          statusEl.className = "status err";
+          statusEl.textContent = dict[getLang()].fail;
+        });
+      });
+    });
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if (!message){ msgBox.classList.add("err"); msgBox.textContent = I18N[currentLang].need_message; return; }
-
-      // reCAPTCHA v2 checkbox: get token from widget
-      let token = "";
-      try {
-        token = (window.grecaptcha && grecaptcha.getResponse()) || "";
-      } catch (_){}
-      if (!token){
-        msgBox.classList.add("err");
-        msgBox.textContent = I18N[currentLang].need_captcha;
+    // ====== Q&A: JSONP load ======
+    window.onQALoad = function(res){
+      const box = document.getElementById("qa-list");
+      box.innerHTML = "";
+      if(!res || !res.ok){
+        box.textContent = "Failed to load.";
+        box.classList.add("qa-empty");
         return;
       }
-
-      // POST
-      try{
-        const res = await fetch(GAS_ENDPOINT, {
-          method:"POST",
-          headers:{ "Content-Type":"application/json" },
-          body: JSON.stringify({ name, email, subject, message, token })
-        });
-        const js = await res.json();
-        if (js && js.ok){
-          msgBox.classList.add("ok");
-          msgBox.textContent = I18N[currentLang].sent_ok;
-          form.reset();
-          if (window.grecaptcha) grecaptcha.reset();
-        }else{
-          msgBox.classList.add("err");
-          msgBox.textContent = I18N[currentLang].sent_ng;
-        }
-      }catch(err){
-        console.error(err);
-        msgBox.classList.add("err");
-        msgBox.textContent = I18N[currentLang].sent_ng;
+      if(!res.items || !res.items.length){
+        box.textContent = getLang()==="ja" ? "公開中のQ&Aはまだありません。" : "No published Q&A yet.";
+        box.classList.add("qa-empty");
+        return;
       }
-    });
-
-    // ===== Utils =====
-    function escapeHtml(s=""){
-      return String(s)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#39;");
+      res.items.forEach(it=>{
+        const el = document.createElement("div");
+        el.className = "qa-item";
+        el.innerHTML = `
+          <h3 class="qa-title">${escapeHtml(it.title || (getLang()==="ja" ? "件名なし" : "No title"))}</h3>
+          <div class="qa-meta">${escapeHtml(it.createdAt || "")} ・ ${escapeHtml(it.nameMasked || "")}</div>
+          <p class="qa-q"><strong>Q.</strong> ${escapeHtml(it.question || "")}</p>
+          <p class="qa-a"><strong>A.</strong> ${escapeHtml(it.answer || "")}</p>
+        `;
+        box.appendChild(el);
+      });
+    };
+    function loadQA(){
+      const s = document.createElement("script");
+      s.src = `${EXEC_URL}?mode=qa&callback=onQALoad`;
+      s.onerror = ()=>{ const b=document.getElementById("qa-list"); b.textContent="Failed to load."; b.classList.add("qa-empty"); };
+      document.body.appendChild(s);
     }
-
-    // init
-    applyI18n();
-    loadQA();
+    function escapeHtml(s){ return String(s||"").replace(/[&<>"']/g,c=>({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c])); }
+    document.addEventListener("DOMContentLoaded", loadQA);
   </script>
 </body>
 </html>
