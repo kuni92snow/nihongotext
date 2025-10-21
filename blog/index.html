@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>News & Blog | nihongotext.com</title>
   <style>
-    :root {
-      --fg:#222; --muted:#666; --bg:#fafafa; --card:#fff; --accent:#ef4444; --line:#eee;
-    }
+    :root { --fg:#222; --muted:#666; --bg:#fafafa; --card:#fff; --accent:#111; --line:#eee; }
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;color:var(--fg);background:var(--bg)}
     header{max-width:980px;margin:24px auto 0;padding:0 16px;display:flex;align-items:center;gap:12px}
     header h1{font-size:28px;margin:0 8px 0 0}
     .lang-toggle{margin-left:auto;display:flex;gap:8px}
     .pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;font-size:12px;cursor:pointer}
-    .pill.active{background:#111;color:#fff;border-color:#111}
+    .pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
     main{max-width:980px;margin:16px auto;padding:0 16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
     @media (max-width:860px){main{grid-template-columns:1fr}}
     .card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
@@ -45,7 +43,7 @@
   <header>
     <h1>News &amp; Blog</h1>
     <div class="lang-toggle">
-      <button class="pill active" id="btn-ja">日本語</button>
+      <button class="pill" id="btn-ja">日本語</button>
       <button class="pill" id="btn-en">English</button>
     </div>
   </header>
@@ -99,187 +97,148 @@
 
   <script>
   /***** 設定 *****/
-  // 送信先（GAS Web アプリ doPost）
-  const EXEC_POST_URL = "https://script.google.com/macros/s/AKfycbx4xEjA43o2oovNbuvAvZQgqw2HfYt-ZVnrHr8WOT0bI2hJ8SpfXSYKYCRS97z_IcNF/exec";
-  // Q&A 取得（JSONP；取得できれば初期値を上書き）
+  // JSONPで呼べる「exec」のURL（あなたの v18）
+  const EXEC_JSONP_BASE = "https://script.google.com/macros/s/AKfycbx4xEjA43o2oovNbuvAvZQgqw2HfYt-ZVnrHr8WOT0bI2hJ8SpfXSYKYCRS97z_IcNF/exec";
+
+  // Q&A 取得（JSONP；成功したら初期値を上書き）
   const ECHO_QA_JSONP = "https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLgT1tB2k9x5oyc97jrwovr3oDRmnSF9kJ9I3DQZzDqS0q0XKJugVUIhrH3XNUBB3kxMpi-YHzbx-S3w8FCIGYlUxm5HtCp2AlKsW4L6FhJRDLxLlfhD7LB-ES2tL3L7nVNZKQ7cFyLOBNEyDL0o9Hkz1b0i6ROLgH6fHXr88pQ3J8VxF2lqkEoC2K7n3Q&lib=MPYC9R4b-H3qOZfI-E6xqCCVZPe5PzjmL";
 
-  /***** 初期埋め込みQ&A（指定いただいた2件）*****/
+  /***** 初期埋め込みQ&A（指定2件）*****/
   const QA_INITIAL = [
-    {
-      id: "s1",
-      createdAt: new Date().toISOString().slice(0,10),
-      title: "問い合わせについて",
-      question: "かならず返答していただけますか？",
-      answer: "できる限り返信はします。ただし、「確認しました。」のみの返信となる場合もあります。ご了承下さい。"
-    },
-    {
-      id: "s2",
-      createdAt: new Date().toISOString().slice(0,10),
-      title: "音声について",
-      question: "音声の実装予定はありますか？",
-      answer: "あります。ただし、公開時期は未定です。"
-    }
+    { id:"s1", createdAt:new Date().toISOString().slice(0,10), title:"問い合わせについて",
+      question:"かならず返答していただけますか？",
+      answer:"できる限り返信はします。ただし、「確認しました。」のみの返信となる場合もあります。ご了承下さい。" },
+    { id:"s2", createdAt:new Date().toISOString().slice(0,10), title:"音声について",
+      question:"音声の実装予定はありますか？",
+      answer:"あります。ただし、公開時期は未定です。" }
   ];
 
   /***** i18n *****/
   const I18N = {
-    ja: {
-      contact: "お問い合わせ",
-      name: "お名前 / Name",
-      email: "メール / Email",
-      subject: "件名 / Subject",
-      message: "メッセージ / Message",
-      cancel: "キャンセル",
-      send: "送信",
-      sentOK: "送信しました。ありがとうございました。",
-      sentNG: "送信に失敗しました。時間をおいて再度お試しください。",
-      loading: "読み込み中…",
-      loadNG: "読み込みに失敗しました。"
-    },
-    en: {
-      contact: "Contact",
-      name: "Name",
-      email: "Email",
-      subject: "Subject",
-      message: "Message",
-      cancel: "Cancel",
-      send: "Send",
-      sentOK: "Your message has been sent. Thank you!",
-      sentNG: "Failed to send. Please try again later.",
-      loading: "Loading…",
-      loadNG: "Failed to load."
-    }
+    ja:{contact:"お問い合わせ",name:"お名前 / Name",email:"メール / Email",subject:"件名 / Subject",message:"メッセージ / Message",cancel:"キャンセル",send:"送信",sentOK:"送信しました。ありがとうございました。",sentNG:"送信に失敗しました。時間をおいて再度お試しください。",loading:"読み込み中…",loadNG:"読み込みに失敗しました。",noQA:"公開中のQ&Aはまだありません。"},
+    en:{contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",cancel:"Cancel",send:"Send",sentOK:"Your message has been sent. Thank you!",sentNG:"Failed to send. Please try again later.",loading:"Loading…",loadNG:"Failed to load.",noQA:"No published Q&A yet."}
   };
-  let LANG = (new URLSearchParams(location.search).get("lang") === "en") ? "en" : "ja";
+  let LANG = (new URLSearchParams(location.search).get("lang")==="en")?"en":"ja";
 
-  function applyLang() {
-    const t = I18N[LANG];
-    document.getElementById("t-contact").textContent = t.contact;
-    document.getElementById("t-name").textContent = t.name;
-    document.getElementById("t-email").textContent = t.email;
-    document.getElementById("t-subject").textContent = t.subject;
-    document.getElementById("t-message").textContent = t.message;
-    document.getElementById("btn-cancel").textContent = t.cancel;
-    document.getElementById("btn-send").textContent = t.send;
-    document.getElementById("qa-status").textContent = t.loading;
-
-    // pills
-    document.getElementById("btn-ja").classList.toggle("active", LANG==="ja");
-    document.getElementById("btn-en").classList.toggle("active", LANG==="en");
+  function applyLang(){
+    const t=I18N[LANG];
+    document.getElementById("t-contact").textContent=t.contact;
+    document.getElementById("t-name").textContent=t.name;
+    document.getElementById("t-email").textContent=t.email;
+    document.getElementById("t-subject").textContent=t.subject;
+    document.getElementById("t-message").textContent=t.message;
+    document.getElementById("btn-cancel").textContent=t.cancel;
+    document.getElementById("btn-send").textContent=t.send;
+    document.getElementById("qa-status").textContent=t.loading;
+    document.getElementById("btn-ja").classList.toggle("active",LANG==="ja");
+    document.getElementById("btn-en").classList.toggle("active",LANG==="en");
+    // reCAPTCHA 免責リンク（言語切替に合わせる）
+    const note=document.getElementById("t-note");
+    note.innerHTML = (LANG==="ja")
+      ? `reCAPTCHA と Google の <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシー ポリシー</a> と <a href="https://policies.google.com/terms?hl=ja" target="_blank" rel="noopener">利用規約</a> が適用されます。`
+      : `This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en" target="_blank" rel="noopener">Terms of Service</a> apply.`;
   }
 
-  // 言語切替（URL パラメータを更新）
-  document.getElementById("btn-ja").addEventListener("click", ()=>{
-    const u = new URL(location.href); u.searchParams.set("lang","ja"); location.href = u.toString();
+  // 言語切替（URL を更新）
+  document.getElementById("btn-ja").addEventListener("click",()=>{
+    const u=new URL(location.href); u.searchParams.set("lang","ja"); location.href=u.toString();
   });
-  document.getElementById("btn-en").addEventListener("click", ()=>{
-    const u = new URL(location.href); u.searchParams.set("lang","en"); location.href = u.toString();
+  document.getElementById("btn-en").addEventListener("click",()=>{
+    const u=new URL(location.href); u.searchParams.set("lang","en"); location.href=u.toString();
   });
 
   /***** Q&A 表示 *****/
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
+  function nl2br(s){ return s.replace(/\n/g,"<br>"); }
   function renderQAs(items){
-    const wrap = document.getElementById("qa-list");
-    const status = document.getElementById("qa-status");
-    wrap.innerHTML = "";
-    if (!items || !items.length){
-      status.textContent = (LANG==="ja") ? "公開中のQ&Aはまだありません。" : "No published Q&A yet.";
-      wrap.hidden = true;
-      return;
-    }
-    status.textContent = "";
-    wrap.hidden = false;
+    const wrap=document.getElementById("qa-list"), status=document.getElementById("qa-status");
+    wrap.innerHTML=""; if(!items||!items.length){ status.textContent=I18N[LANG].noQA; wrap.hidden=true; return; }
+    status.textContent=""; wrap.hidden=false;
     for(const it of items){
-      const el = document.createElement("div");
-      el.className = "qa";
-      el.innerHTML = `
-        <h3>${escapeHtml(it.title || "Q&A")}</h3>
+      const el=document.createElement("div"); el.className="qa";
+      el.innerHTML=`<h3>${escapeHtml(it.title||"Q&A")}</h3>
         <div class="q"><strong>Q.</strong> ${nl2br(escapeHtml(it.question||""))}</div>
-        <div class="a"><strong>A.</strong> ${nl2br(escapeHtml(it.answer||""))}</div>
-      `;
+        <div class="a"><strong>A.</strong> ${nl2br(escapeHtml(it.answer||""))}</div>`;
       wrap.appendChild(el);
     }
   }
-  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m=>({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]))}
-  function nl2br(s){ return s.replace(/\n/g,"<br>"); }
-
-  // JSONP フェッチ（失敗しても初期Q&Aは表示済み）
   function loadQAJsonp(){
-    // まず初期埋め込みを表示
+    // まず初期データを表示
     renderQAs(QA_INITIAL);
-
-    // JSONP を試みる（成功したら上書き）
-    const cb = "onQALoad";
-    const s = document.createElement("script");
-    const url = new URL(ECHO_QA_JSONP);
-    url.searchParams.set("callback", cb);
-    s.src = url.toString();
-    s.onerror = () => {
-      document.getElementById("qa-status").textContent = I18N[LANG].loadNG;
-    };
+    // echo(JSONP) が成功したら上書き
+    const cb="onQALoad"; const s=document.createElement("script");
+    const url=new URL(ECHO_QA_JSONP); url.searchParams.set("callback",cb);
+    s.src=url.toString(); s.onerror=()=>{ document.getElementById("qa-status").textContent=I18N[LANG].loadNG; };
     document.body.appendChild(s);
   }
-  // JSONP コールバック（echo の返却を想定）
   function onQALoad(payload){
     try{
-      if (payload && payload.ok && Array.isArray(payload.items) && payload.items.length){
-        renderQAs(payload.items);
-        document.getElementById("qa-status").textContent = "";
+      if(payload&&payload.ok&&Array.isArray(payload.items)&&payload.items.length){
+        renderQAs(payload.items); document.getElementById("qa-status").textContent="";
       }else{
-        // 取得できない（空）→ 初期を維持
-        if (!document.getElementById("qa-list").children.length){
-          renderQAs(QA_INITIAL);
-        }
-        document.getElementById("qa-status").textContent = I18N[LANG].loadNG;
+        document.getElementById("qa-status").textContent=I18N[LANG].loadNG;
       }
-    }catch(e){
-      document.getElementById("qa-status").textContent = I18N[LANG].loadNG;
-    }
+    }catch{ document.getElementById("qa-status").textContent=I18N[LANG].loadNG; }
   }
-  window.onQALoad = onQALoad;
+  window.onQALoad=onQALoad;
 
-  /***** フォーム送信 *****/
+  /***** 問い合わせ送信（JSONP版）*****/
+  // fetch(POST) ではなく JSONP(GET) で CORS を回避
+  function sendContactJsonp({name,email,subject,message,token}){
+    return new Promise((resolve)=>{
+      const cb = "onContactDone_" + Math.random().toString(36).slice(2);
+      window[cb] = (res)=>{ try{ resolve(res||{}); } finally { delete window[cb]; script.remove(); } };
+      const url = new URL(EXEC_JSONP_BASE);
+      url.searchParams.set("mode","contact_submit");
+      url.searchParams.set("callback",cb);
+      url.searchParams.set("name",name);
+      url.searchParams.set("email",email);
+      url.searchParams.set("subject",subject);
+      url.searchParams.set("message",message);
+      url.searchParams.set("token",token);
+      const script=document.createElement("script");
+      script.src=url.toString();
+      script.onerror=()=>{ try{ delete window[cb]; }catch{} resolve({ok:false}); };
+      document.body.appendChild(script);
+      // 念のためタイムアウト
+      setTimeout(()=>{ if(window[cb]){ try{ delete window[cb]; }catch{} resolve({ok:false}); script.remove(); } }, 15000);
+    });
+  }
+
   document.getElementById("btn-cancel").addEventListener("click", ()=>{
     ["f-name","f-email","f-subject","f-message"].forEach(id=>document.getElementById(id).value="");
-    const msg = document.getElementById("form-msg");
-    msg.textContent = "";
+    grecaptcha.reset(); document.getElementById("form-msg").textContent="";
   });
 
   document.getElementById("btn-send").addEventListener("click", async ()=>{
-    const t = I18N[LANG];
+    const t=I18N[LANG];
     const name = document.getElementById("f-name").value.trim();
     const email = document.getElementById("f-email").value.trim();
     const subject = document.getElementById("f-subject").value.trim();
     const message = document.getElementById("f-message").value.trim();
     const token = grecaptcha.getResponse() || "";
-    const msg = document.getElementById("form-msg");
-    msg.className = "muted";
+    const msg = document.getElementById("form-msg"); msg.className="muted";
 
-    if (!message || !token){
-      msg.textContent = t.sentNG; return;
-    }
-    try{
-      const res = await fetch(EXEC_POST_URL, {
-        method: "POST",
-        headers: { "Content-Type":"application/json" },
-        body: JSON.stringify({ name, email, subject, message, token })
-      });
-      const js = await res.json().catch(()=> ({}));
-      if (res.ok && js && js.ok){
-        msg.textContent = t.sentOK; msg.className = "success";
-        ["f-name","f-email","f-subject","f-message"].forEach(id=>document.getElementById(id).value="");
-        grecaptcha.reset();
-      }else{
-        msg.textContent = t.sentNG; msg.className = "error";
-      }
-    }catch{
-      msg.textContent = t.sentNG; msg.className = "error";
+    if (!message || !token){ msg.textContent=t.sentNG; return; }
+
+    msg.textContent = (LANG==="ja" ? "送信中…" : "Sending…");
+
+    const res = await sendContactJsonp({name,email,subject,message,token});
+    if (res && res.ok){
+      msg.textContent=t.sentOK; msg.className="success";
+      ["f-name","f-email","f-subject","f-message"].forEach(id=>document.getElementById(id).value="");
+      grecaptcha.reset();
+    }else{
+      msg.textContent=t.sentNG; msg.className="error";
     }
   });
 
   // 初期化
   applyLang();
   loadQAJsonp();
+  // pills の見た目初期化
+  document.getElementById("btn-ja").classList.toggle("active",LANG==="ja");
+  document.getElementById("btn-en").classList.toggle("active",LANG==="en");
   </script>
 </body>
 </html>
