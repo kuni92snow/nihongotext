@@ -1,294 +1,240 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>お知らせ・ブログ | nihongotext.com</title>
-<meta name="color-scheme" content="light only" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>お知らせ・ブログ | nihongotext.com</title>
+  <style>
+    :root{--brand:#e4573d;}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;margin:0;background:#fff;}
+    header,footer{border-top:4px solid var(--brand);border-bottom:1px solid #eee;}
+    header .wrap,main .wrap,footer .wrap{max-width:920px;margin:auto;padding:16px;}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{appearance:none;background:var(--brand);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer}
+    .btn:disabled{opacity:.6;cursor:wait}
+    .btn-ghost{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+    .card{background:#fff;border:1px solid #eee;border-radius:12px;padding:16px}
+    label{display:block;margin:.4rem 0 .2rem}
+    input,textarea{width:100%;box-sizing:border-box;border:1px solid #ccc;border-radius:8px;padding:10px;font:inherit}
+    textarea{min-height:120px;resize:vertical}
+    .muted{color:#777;font-size:.92rem}
+    .ok{color:#0a8754}
+    .err{color:#b00020}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width:720px){ .grid-2{grid-template-columns:1fr 1fr} }
+    .lang-toggle{margin-left:auto}
+    .qa-item{border:1px solid #eee;border-radius:10px;padding:12px;margin:10px 0}
+    .qa-q{font-weight:700;margin-bottom:4px}
+    .spinner{display:inline-block;width:18px;height:18px;border:3px solid #ddd;border-top-color:var(--brand);border-radius:50%;animation:spin 1s linear infinite;vertical-align:-3px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    // ====== 設定 ======
+    const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbw3ddHZ7NvYY5-MRsK7npZpdyLJnmoqV1j2tcJjApxAWRTL2YWpk2NsEod0jnFnIFtgvQ/exec";
+    const RECAPTCHA_SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV";
 
-<!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
-</script>
+    // ====== 言語制御（URL ?lang=ja|en） ======
+    const url = new URL(location.href);
+    const lang = (url.searchParams.get("lang") || "ja").toLowerCase();
+    const t = {
+      ja: {
+        title:"お知らせ・ブログ",
+        contact:"お問い合わせ / Contact",
+        name:"お名前 / Name",
+        email:"メール / Email",
+        message:"メッセージ / Message",
+        send:"送信 / Send",
+        cancel:"キャンセル",
+        recaptcha:"私はロボットではありません",
+        sent_ok:"送信しました。ありがとうございます！",
+        sent_ng:"送信に失敗しました。しばらくしてから再度お試しください。",
+        qa_title:"Q&A",
+        qa_empty:"公開中のQ&Aはまだありません。",
+        loading:"読み込み中…"
+      },
+      en: {
+        title:"News & Blog",
+        contact:"Contact",
+        name:"Name",
+        email:"Email",
+        message:"Message",
+        send:"Send",
+        cancel:"Cancel",
+        recaptcha:"I'm not a robot",
+        sent_ok:"Your message has been sent. Thank you!",
+        sent_ng:"Failed to send. Please try again later.",
+        qa_title:"Q&A",
+        qa_empty:"No published Q&A yet.",
+        loading:"Loading…"
+      }
+    }[lang];
 
-<!-- AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+    // reCAPTCHA の言語は API に hl= で反映。切替はページ再読み込みで実施。
+    function switchLang(next){
+      const u = new URL(location.href);
+      u.searchParams.set("lang", next);
+      location.href = u.toString();
+    }
+  </script>
+  <!-- 選択中の言語で reCAPTCHA v2 を読み込み -->
+  <script src="" id="recaptcha-api" async defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("recaptcha-api").src =
+        "https://www.google.com/recaptcha/api.js?hl=" + lang;
+      document.getElementById("title").textContent = t.title;
+      // ラベル翻訳
+      for (const [id, val] of Object.entries({
+        contactTitle: t.contact,
+        labelName: t.name,
+        labelEmail: t.email,
+        labelMessage: t.message,
+        btnSend: t.send,
+        btnCancel: t.cancel,
+        qaTitle: t.qa_title
+      })){
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+      }
+      // Q&A 取得
+      loadQA();
+    });
 
-<!-- reCAPTCHA v2（チェックボックス） -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    async function loadQA(){
+      const box = document.getElementById("qa-list");
+      box.innerHTML = '<span class="spinner"></span> ' + t.loading;
+      try{
+        const res = await fetch(GAS_ENDPOINT + "?action=qa_list", { method:"GET" });
+        const json = await res.json();
+        if (!json.ok || !Array.isArray(json.items)) throw new Error("bad");
+        if (json.items.length === 0){
+          box.textContent = t.qa_empty;
+          return;
+        }
+        box.innerHTML = "";
+        json.items.forEach(item=>{
+          const div = document.createElement("div");
+          div.className = "qa-item";
+          div.innerHTML =
+            `<div class="qa-q">Q. ${escapeHtml(item.question || "")}</div>` +
+            `<div class="qa-a">A. ${escapeHtml(item.answer || "")}</div>`;
+          box.appendChild(div);
+        });
+      }catch(_){
+        box.textContent = t.qa_empty;
+      }
+    }
 
-<style>
-:root{
-  --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
-  --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
-}
-*{box-sizing:border-box}
-html,body{margin:0;color:var(--ink);background:var(--white);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
-a{color:inherit;text-decoration:none}
-.container{max-width:1100px;margin:0 auto;padding:0 16px}
+    // 送信処理
+    async function submitForm(ev){
+      ev.preventDefault();
+      const btn = document.getElementById("btnSend");
+      const msg = document.getElementById("sendMsg");
+      msg.textContent = "";
+      btn.disabled = true;
 
-/* header */
-header{border-bottom:3px solid var(--shu);background:#fff}
-.h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-.brand{display:flex;flex-direction:column;gap:2px}
-.brand a.brand-link{display:inline-block}
-.brand a.brand-link:focus-visible{outline:3px solid rgba(230,70,45,.35);border-radius:6px}
-.brand-title{font-weight:980;letter-spacing:.3px;font-size:clamp(24px,4.2vw,32px);color:var(--shu)}
-.brand-sub{width:fit-content;margin:0 auto;color:#ffb9aa;font-weight:700;font-size:12px;letter-spacing:.4px}
-.iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
-  border:1px solid var(--border);background:#fff}
-.iconbar .tool i{color:var(--shu)}
-.iconbar .tool:hover{border-color:var(--shu)}
-header .container.positioned{position:relative}
-#btnAlphabet{position:absolute;right:16px;top:12px;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;cursor:pointer}
-#btnAlphabet.active{border-color:var(--shu);color:var(--shu-deep)}
+      // reCAPTCHA トークン
+      const token = grecaptcha.getResponse();
+      if (!token){
+        msg.className = "err";
+        msg.textContent = t.recaptcha;
+        btn.disabled = false;
+        return;
+      }
 
-/* main */
-main.blog{max-width:860px;margin:20px auto;padding:0 16px}
-.title-row{display:flex;align-items:center;gap:10px;justify-content:space-between;margin:6px 0 14px}
-.title-row h1{margin:0}
-.homebtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#fff;border-radius:10px;padding:8px 12px}
-.homebtn i{color:var(--shu)}
-.homebtn:hover{border-color:var(--shu)}
-.post{border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px;background:var(--shu-tint);box-shadow:0 2px 8px rgba(230,70,45,.05)}
-.post h2{margin:0 0 6px;color:var(--shu)}
-.post .date{color:var(--muted);font-size:13px;margin-bottom:8px}
-.post p{line-height:1.6}
-.post .tags{margin-top:8px;color:var(--muted);font-size:13px}
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
 
-/* footer */
-footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
-.f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
-.copy{color:#6b7280}
-#adWrap{margin:16px 0;text-align:center}
+      const body = new URLSearchParams({
+        name, email, message, token
+      });
 
-/* contact modal */
-.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;z-index:60}
-.modal{background:#fff;border-radius:14px;max-width:560px;width:92%;box-shadow:0 10px 30px rgba(0,0,0,.15)}
-.modal header{border:none;padding:14px 16px}
-.modal .body{padding:0 16px 16px}
-.modal h3{margin:0 0 2px;color:var(--ink)}
-.modal small{color:var(--muted)}
-.modal .row{display:flex;flex-direction:column;margin-top:10px}
-.modal label{font-size:13px;color:var(--muted);margin-bottom:6px}
-.modal input,.modal textarea{border:1px solid var(--border);border-radius:10px;padding:10px;font-size:15px}
-.modal textarea{min-height:120px;resize:vertical}
-.actions{display:flex;gap:8px;justify-content:flex-end;padding:14px 16px;border-top:1px solid var(--border)}
-.btn{border:1px solid var(--border);border-radius:10px;padding:10px 14px;background:#fff;cursor:pointer}
-.btn.primary{background:var(--shu);border-color:var(--shu);color:#fff}
-.btn:disabled{opacity:.55;cursor:not-allowed}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 14px;border-radius:10px;display:none;z-index:80}
-.close-x{position:absolute;right:10px;top:8px;border:none;background:transparent;font-size:18px;cursor:pointer}
-</style>
+      try{
+        const res = await fetch(GAS_ENDPOINT, {
+          method: "POST",
+          headers: {"Content-Type":"application/x-www-form-urlencoded"},
+          body
+        });
+        const json = await res.json();
+        if (json && json.ok){
+          msg.className = "ok";
+          msg.textContent = t.sent_ok;
+          (document.getElementById("form")).reset();
+          grecaptcha.reset();
+        }else{
+          throw new Error("send failed");
+        }
+      }catch(e){
+        msg.className = "err";
+        msg.textContent = t.sent_ng;
+      }finally{
+        btn.disabled = false;
+      }
+    }
+
+    function escapeHtml(s){
+      return String(s||"")
+        .replace(/&/g,"&amp;").replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+    }
+  </script>
 </head>
 <body>
-<header>
-  <div class="container h-row positioned">
-    <div class="brand">
-      <a class="brand-link" href="/" aria-label="nihongotext.com のトップページへ">
-        <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
-        <div class="brand-sub">== beta version ==</div>
-      </a>
+  <header>
+    <div class="wrap row" style="align-items:center">
+      <h1 id="title" style="margin:0;font-size:1.4rem"></h1>
+      <div class="lang-toggle">
+        <button class="btn-ghost btn" onclick="switchLang('ja')">日本語</button>
+        <button class="btn-ghost btn" onclick="switchLang('en')">English</button>
+      </div>
     </div>
-    <button id="btnAlphabet" title="Alphabet mode">Alphabet</button>
-  </div>
-  <div class="container">
-    <nav class="iconbar" aria-label="site icons">
-      <a class="tool" id="icPrint"  title="印刷（本文）" href="javascript:void(0)"><i class="fas fa-print"></i></a>
-      <a class="tool" id="openContact" title="お問い合わせ（チャット）" href="javascript:void(0)"><i class="fas fa-comments"></i></a>
-      <a class="tool" title="覚えた一覧（トップで開きます）" href="/"><i class="fas fa-list-check"></i></a>
-      <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
-      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="blog" id="main">
-  <div class="title-row">
-    <h1 id="ttl">お知らせ・ブログ</h1>
-    <a class="homebtn" href="/" title="トップへ（Home）" aria-label="トップへ">
-      <span class="only-label" style="font-size:14px">Home</span>
-      <i class="fas fa-house" aria-hidden="true"></i>
-    </a>
-  </div>
+  <main>
+    <div class="wrap grid grid-2">
+      <!-- 左：お知らせカード（任意で既存のブログ記事を入れてください） -->
+      <section class="card">
+        <h2 id="contactTitle" style="margin-top:0"></h2>
+        <form id="form" onsubmit="submitForm(event)" class="grid">
+          <div>
+            <label for="name" id="labelName"></label>
+            <input id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email" id="labelEmail"></label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div class="grid" style="grid-column:1/-1">
+            <label for="message" id="labelMessage"></label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div style="grid-column:1/-1">
+            <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+            <div id="sendMsg" class="muted" style="margin-top:6px"></div>
+          </div>
+          <div class="row" style="grid-column:1/-1;justify-content:flex-end">
+            <button type="reset" class="btn-ghost btn" id="btnCancel"></button>
+            <button type="submit" class="btn" id="btnSend"></button>
+          </div>
+        </form>
+        <p class="muted" style="margin:10px 0 0">
+          reCAPTCHA と Google の <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a> と
+          <a href="https://policies.google.com/terms" target="_blank" rel="noopener">利用規約</a> が適用されます。
+        </p>
+      </section>
 
-  <div id="posts"></div>
-
-  <div id="adWrap">
-    <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2358198194205084" data-ad-slot="3714541070"></ins>
-  </div>
-</main>
-
-<footer>
-  <div class="container f-row">
-    <nav class="iconbar" aria-label="site icons">
-      <a class="tool" id="icPrintFooter"  title="印刷（本文）" href="javascript:void(0)"><i class="fas fa-print"></i></a>
-      <a class="tool" id="openContactF" title="お問い合わせ（チャット）" href="javascript:void(0)"><i class="fas fa-comments"></i></a>
-      <a class="tool" title="覚えた一覧（トップで開きます）" href="/"><i class="fas fa-list-check"></i></a>
-      <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
-      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-    </nav>
-    <div class="copy">© 2025 nihongotext.com</div>
-  </div>
-</footer>
-
-<!-- ===== お問い合わせモーダル ===== -->
-<div class="modal-backdrop" id="contactBackdrop" aria-hidden="true">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
-    <header>
-      <h3 id="contactTitle">お問い合わせ / Contact</h3>
-      <button class="close-x" id="closeContact" aria-label="閉じる">×</button>
-      <small>ご連絡ありがとうございます。</small>
-    </header>
-    <div class="body">
-      <form id="contactForm" autocomplete="off">
-        <div class="row">
-          <label for="cf_name">お名前 / Name</label>
-          <input id="cf_name" name="name" required autocomplete="off" placeholder="Taro Yamada (dummy)" />
-        </div>
-        <div class="row">
-          <label for="cf_email">メール / Email</label>
-          <input id="cf_email" name="email" type="email" required autocomplete="off" placeholder="dummy@example.com" />
-        </div>
-        <div class="row">
-          <label for="cf_message">メッセージ / Message</label>
-          <textarea id="cf_message" name="message" required autocomplete="off" placeholder="Your message here (dummy)"></textarea>
-        </div>
-        <div class="row" style="margin-top:14px">
-          <!-- reCAPTCHA v2 sitekey -->
-          <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-        </div>
-        <div class="actions">
-          <button type="button" class="btn" id="cancelContact">キャンセル</button>
-          <button type="submit" class="btn primary" id="sendBtn">送信 / Send</button>
-        </div>
-      </form>
+      <!-- 右：Q&A -->
+      <section class="card">
+        <h2 id="qaTitle" style="margin-top:0"></h2>
+        <div id="qa-list" class="muted"></div>
+      </section>
     </div>
-  </div>
-</div>
-<div class="toast" id="toast"></div>
+  </main>
 
-<script>
-(() => {
-  const LANG_KEY='nt_blog_lang';
-  let lang=localStorage.getItem(LANG_KEY)||'ja';
-  const t=(ja,en)=> (lang==='ja'?ja:en);
-
-  const els={posts:document.getElementById('posts'), ttl:document.getElementById('ttl')};
-  const applyI18N=()=>{
-    els.ttl.textContent=t('お知らせ・ブログ','News & Blog');
-    document.title=t('お知らせ・ブログ | nihongotext.com','News & Blog | nihongotext.com');
-  };
-
-  async function loadPosts(){
-    try{
-      const res=await fetch('./posts.json?ts=' + Date.now(), {cache:'no-store'});
-      const list=await res.json();
-      list.sort((a,b)=> new Date(b.date) - new Date(a.date));
-      els.posts.innerHTML='';
-      list.forEach(p=>{
-        const title= lang==='ja' ? (p.title_ja||p.title_en||p.slug) : (p.title_en||p.title_ja||p.slug);
-        const summary= lang==='ja' ? (p.summary_ja||'') : (p.summary_en||'');
-        const url=`./posts/${p.slug}.html`;
-        const el=document.createElement('article'); el.className='post';
-        el.innerHTML=`<h2><a href="${url}">${title}</a></h2><div class="date">${p.date}</div><p>${summary}</p>${
-          (p.tags&&p.tags.length)?`<div class="tags">${t('タグ: ','Tags: ')}${p.tags.join(', ')}</div>`:''
-        }`;
-        els.posts.appendChild(el);
-      });
-      try{(window.adsbygoogle=window.adsbygoogle||[]).push({});}catch(_){}
-      if(typeof gtag==='function'){
-        gtag('event','page_view',{page_title:document.title,page_location:location.href,page_path:'/blog/'});
-      }
-    }catch(e){
-      els.posts.innerHTML='<div style="color:#6b7280">記事の読み込みに失敗しました。</div>';
-    }
-  }
-
-  // print
-  function printElement(el){
-    const w=window.open('','_blank');
-    const html=`<html><head><meta charset="utf-8"><title>Print</title>
-    <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;padding:20px}
-    article.post{border:1px solid #ddd;border-radius:12px;padding:14px;margin-bottom:12px} h1,h2{margin:0 0 8px}</style>
-    </head><body>${el.innerHTML}</body></html>`;
-    w.document.open(); w.document.write(html); w.document.close(); w.focus(); w.print(); w.close();
-  }
-  document.getElementById('icPrint')?.addEventListener('click',()=>printElement(document.getElementById('main')));
-  document.getElementById('icPrintFooter')?.addEventListener('click',()=>printElement(document.getElementById('main')));
-
-  applyI18N();
-  loadPosts();
-})();
-</script>
-
-<script>
-(() => {
-  /* ★ v9 /exec に差し替え（Simple Request：CORSプリフライト回避）★ */
-  const ENDPOINT = 'https://script.google.com/macros/s/AKfycby7CZH4VHvQPXp9Zhic8sn4ss-0-A5vmB6CXzI0LTCMw8Rk4MHZxkTM_zlTGjIotKJ_Xw/exec';
-
-  const toast = (msg, ok=true) => {
-    const el=document.getElementById('toast');
-    el.textContent=msg; el.style.background= ok?'#111':'#b91c1c';
-    el.style.display='block'; setTimeout(()=> el.style.display='none', 2600);
-  };
-
-  const backdrop = document.getElementById('contactBackdrop');
-  const openBtns = [document.getElementById('openContact'), document.getElementById('openContactF')];
-  const closeBtns= [document.getElementById('closeContact'), document.getElementById('cancelContact')];
-  openBtns.forEach(b=> b?.addEventListener('click', ()=> { backdrop.style.display='flex'; }));
-  closeBtns.forEach(b=> b?.addEventListener('click', ()=> { backdrop.style.display='none'; }));
-
-  const form = document.getElementById('contactForm');
-  const sendBtn = document.getElementById('sendBtn');
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const token = grecaptcha.getResponse();
-    if(!token){ toast('「私はロボットではありません」にチェックしてください', false); return; }
-
-    sendBtn.disabled = true;
-
-    try{
-      // Simple Request: multipart/form-data で送信（手動で Content-Type を付けない）
-      const fd = new FormData();
-      fd.set('name',    document.getElementById('cf_name').value);
-      fd.set('email',   document.getElementById('cf_email').value);
-      fd.set('message', document.getElementById('cf_message').value);
-      fd.set('token',   token);
-
-      const res  = await fetch(ENDPOINT, { method:'POST', body: fd });
-      const text = await res.text();
-      let json = {}; try { json = JSON.parse(text); } catch {}
-
-      if (res.ok && json.ok === true){
-        toast('送信しました。ご連絡ありがとうございます！', true);
-        grecaptcha.reset(); form.reset();
-        setTimeout(()=> { backdrop.style.display='none'; }, 500);
-      } else {
-        toast('送信に失敗しました（しばらくして再度お試しください）', false);
-        console.warn('GAS response:', res.status, text);
-      }
-    }catch(err){
-      toast('送信エラーが発生しました', false);
-      console.error(err);
-    }finally{
-      sendBtn.disabled = false;
-    }
-  });
-})();
-</script>
+  <footer>
+    <div class="wrap muted">© 2025 nihongotext.com</div>
+  </footer>
 </body>
 </html>
