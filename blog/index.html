@@ -80,7 +80,6 @@
           </div>
           <div id="status" class="status" aria-live="polite"></div>
         </form>
-        <!-- hidden target for POST -->
         <iframe name="contact_iframe" style="display:none"></iframe>
       </section>
 
@@ -92,7 +91,7 @@
     </div>
   </div>
 
-  <!-- reCAPTCHA v2 (invisible) -->
+  <!-- reCAPTCHA -->
   <script src="https://www.google.com/recaptcha/api.js?render=6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></script>
 
   <script>
@@ -138,14 +137,13 @@
       document.getElementById("btn-ja").classList.toggle("active", lang==="ja");
       document.getElementById("btn-en").classList.toggle("active", lang==="en");
       const t = dict[lang];
-      t_head.textContent = t.head;
-      t_contact.textContent = t.contact;
-      t_name_label.textContent = t.name;
-      t_email_label.textContent = t.email;
-      t_subject_label.textContent = t.subject;
-      t_msg_label.textContent = t.message;
-      btn-cancel.textContent = t.cancel; // filled below (ids with hyphen need getElementById)
-      document.getElementById("btn-cancel").textContent = t.cancel;
+      document.getElementById("t_head").textContent = t.head;
+      document.getElementById("t_contact").textContent = t.contact;
+      document.getElementById("t_name_label").textContent = t.name;
+      document.getElementById("t_email_label").textContent = t.email;
+      document.getElementById("t_subject_label").textContent = t.subject;
+      document.getElementById("t_msg_label").textContent = t.message;
+      document.getElementById("btn-cancel").textContent = t.cancel; // ← 修正ポイント
       document.getElementById("btn-send").textContent = t.send;
       document.getElementById("t_policy").innerHTML = t.policy;
     }
@@ -153,7 +151,7 @@
     document.getElementById("btn-en").onclick = ()=>{ location.search = "?lang=en"; };
     setLang(getLang());
 
-    // ====== Contact: reCAPTCHA -> submit via hidden iframe ======
+    // ====== Contact: reCAPTCHA -> submit (hidden iframe) ======
     const form = document.getElementById("contact-form");
     const statusEl = document.getElementById("status");
     document.getElementById("btn-cancel").addEventListener("click", ()=>{ form.reset(); statusEl.textContent=""; });
@@ -163,8 +161,7 @@
       grecaptcha.ready(function() {
         grecaptcha.execute(SITE_KEY, {action: 'submit'}).then(function(token) {
           document.getElementById("recaptcha-token").value = token;
-          // submit (to hidden iframe)
-          form.submit();
+          form.submit();            // hidden iframe にPOST
           statusEl.className = "status ok";
           statusEl.textContent = dict[getLang()].sent;
           form.reset();
