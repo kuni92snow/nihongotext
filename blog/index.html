@@ -3,34 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>News / Updates | nihongotext.com</title>
-  <meta name="description" content="Official news and updates for nihongotext.com" />
+  <title>Blog | nihongotext.com</title>
+  <meta name="description" content="The official blog of nihongotext.com" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="alternate" href="/blog/news-ja.html" hreflang="ja" />
   <style>
-    :root{
-      --brand:#e53935;
-      --ink:#222; --muted:#666; --bg:#fff; --card:#fff; --line:#f0f0f0;
-    }
+    :root{--brand:#e53935;--ink:#222;--muted:#666;--bg:#fff;--card:#fff;--line:#f0f0f0}
     *{box-sizing:border-box}
     html,body{margin:0;background:var(--bg);color:var(--ink);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
 
-    .site-header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(4px)}
+    .site-header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
     .head-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
     .brand{font-weight:800;font-size:20px;line-height:1;display:flex;align-items:baseline;gap:6px}
     .brand .dot{color:var(--brand)}
     nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
     nav a{color:var(--ink);font-weight:600}
     nav a.active{color:var(--brand)}
-
-    .lang-switch{margin-left:8px;display:flex;gap:8px;align-items:center}
-    .lang-switch a,.lang-switch span{
-      font-weight:700;font-size:13px;border:1px solid var(--line);padding:6px 10px;border-radius:999px
-    }
-    .lang-switch span{background:var(--brand);color:#fff;border-color:var(--brand)}
 
     .wrap{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
     .breadcrumbs{font-size:14px;color:var(--muted);margin:6px 0 14px}
@@ -45,10 +34,10 @@
     .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;
       box-shadow:0 1px 0 rgba(0,0,0,.03);display:flex;flex-direction:column;gap:10px}
     .meta{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px}
-    .badge{background:var(--brand);color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:4px 8px}
     .title{font-size:18px;font-weight:800;line-height:1.4;margin:2px 0}
-    .body{color:#333;line-height:1.8}
+    .body{color:#333;line-height:1.9}
     .hr{height:1px;background:var(--line);margin:10px 0}
+    .more{margin-top:auto}
 
     .site-footer{border-top:1px solid var(--line);padding:22px 16px;color:var(--muted)}
     .foot-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
@@ -64,109 +53,101 @@
       </a>
       <nav>
         <a href="/index.html">Home</a>
-        <a href="/blog/index.html">Blog</a>
-        <a href="/blog/news.html" class="active">News</a>
+        <a href="/blog/index.html" class="active">Blog</a>
+        <a href="/blog/news.html">News</a>
         <a href="/inquiry/index.html">Contact</a>
       </nav>
-      <div class="lang-switch" aria-label="Language switch">
-        <a href="/blog/news-ja.html">日本語</a>
-        <span>English</span>
-      </div>
     </div>
   </header>
 
   <main class="wrap">
-    <div class="breadcrumbs"><a href="/index.html">Home</a> / <a href="/blog/index.html">Blog</a> / News</div>
-    <h1 class="page-title">News / Updates</h1>
-    <p class="desc">Official updates from nihongotext.com.</p>
+    <div class="breadcrumbs"><a href="/index.html">Home</a> / Blog</div>
+    <h1 class="page-title">Blog</h1>
+    <p class="desc">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
-    <section id="news-grid" class="grid" aria-live="polite"></section>
+    <section id="post-grid" class="grid" aria-live="polite"></section>
   </main>
 
   <footer class="site-footer">
     <div class="foot-inner">
       <div class="copy">© 2025 nihongotext.com</div>
-      <div><a href="/blog/index.html">Blog</a> / <a href="/inquiry/index.html">Contact</a></div>
+      <div><a href="/blog/news.html">News</a> / <a href="/inquiry/index.html">Contact</a></div>
     </div>
   </footer>
 
   <script>
-    const NEWS = [
+    // 英語ベースですが、日本語を「漢字(かな)」で混ぜると自動で <ruby> に変換して表示されます。
+    // 例）"N5 名詞(めいし)の作成(さくせい)について"
+    const POSTS = [
       {
-        id: "2025-11-03-release",
-        date: "2025-11-03",
-        type: "Release",
-        title: "nihongotext.com — Beta Release",
-        summary: "We’ve launched the beta of nihongotext.com, a learner-friendly website for studying Japanese vocabulary and grammar with natural example sentences.",
-        body: [
-          "This initial beta focuses on JLPT N5 content. We will expand to N4–N1 in stages.",
-          "Each entry supports quick toggles for JA / Kana / Romaji / English views.",
-          "You can mark items as “Learned,” review them in a sortable list, and print the list with a compact layout.",
-          "The UI is optimized for smartphones as well as desktops."
-        ],
-        links: [
-          { label: "Go to Home", href: "/index.html" },
-          { label: "Blog Top", href: "/blog/index.html" }
-        ]
+        id: "2025-10-01-roadmap",
+        date: "2025-10-01",
+        title: "Roadmap Sneak Peek",
+        summary: "A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.",
+        href: "#"
+      },
+      {
+        id: "2025-09-15-design",
+        date: "2025-09-15",
+        title: "Design Notes: A Simple Japanese Aesthetic",
+        // 日本語を混ぜたい場合は次のフィールドに「漢字(かな)」で記述するとルビ表示されます
+        jaNote: "見(み)やすさを重視(じゅうし)した設計(せっけい)メモ"
+      },
+      {
+        id: "2025-08-20-beta-prep",
+        date: "2025-08-20",
+        title: "Preparing for Beta",
+        jaNote: "公開準備(こうかいじゅんび)の裏側(うらがわ)"
       }
     ];
 
-    const root = document.getElementById("news-grid");
+    const root = document.getElementById("post-grid");
 
-    function cardTemplate(n){
-      const bodyHtml = (n.body||[]).map(p=>`<p class="body">${escapeHtml(p)}</p>`).join("");
+    function cardTemplate(p){
       return `
-        <article class="card" data-id="${n.id}" aria-labelledby="${n.id}-title">
-          <div class="meta">
-            <span class="badge">${n.type}</span>
-            <time datetime="${n.date}">${formatDateEn(n.date)}</time>
-          </div>
-          <h2 id="${n.id}-title" class="title">${escapeHtml(n.title)}</h2>
+        <article class="card" data-id="${esc(p.id)}" aria-labelledby="${esc(p.id)}-title">
+          <div class="meta"><time datetime="${esc(p.date)}">${fmtEn(p.date)}</time></div>
+          <h2 id="${esc(p.id)}-title" class="title">${esc(p.title)}</h2>
           <div class="hr"></div>
-          ${n.summary ? `<p class="body">${escapeHtml(n.summary)}</p>` : ""}
-          ${bodyHtml}
-          ${renderLinks(n.links)}
+          ${p.summary ? `<p class="body">${esc(p.summary)}</p>` : ""}
+          ${p.jaNote ? `<p class="body">${ruby(p.jaNote)}</p>` : ""}
+          ${p.href ? `<p class="more"><a href="${p.href}">Read more</a></p>` : ""}
         </article>
       `;
     }
 
-    function renderLinks(links){
-      if(!links || !links.length) return "";
-      const html = links.map(l=>`<a href="${l.href}">${escapeHtml(l.label)}</a>`).join(" / ");
-      return `<p class="body">${html}</p>`;
-    }
-
     function render(){
-      root.innerHTML = NEWS.map(cardTemplate).join("");
-      injectLDJson(NEWS, "en");
+      POSTS.sort((a,b)=> a.date < b.date ? 1 : -1);
+      root.innerHTML = POSTS.map(cardTemplate).join("");
+      injectLDJson(POSTS);
     }
 
-    function formatDateEn(iso){
-      const d = new Date(iso+"T00:00:00");
-      const opt = {year:"numeric", month:"short", day:"numeric"};
-      return d.toLocaleDateString("en-US", opt); // e.g., Nov 3, 2025
+    // --- ふりがな（漢字(かな) → <ruby>漢字<rt>かな</rt></ruby>）
+    function ruby(s){
+      return esc(String(s)).replace(/([^\s()（）]+)\(([^()]+)\)/g,
+        (_m,kan,rt)=>`<ruby>${kan}<rt>${rt}</rt></ruby>`);
     }
-    function escapeHtml(str){
-      return String(str).replaceAll("&","&amp;").replaceAll("<","&lt;")
+
+    function fmtEn(iso){
+      const d = new Date(iso+"T00:00:00");
+      return d.toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric"});
+    }
+    function esc(s){
+      return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;")
         .replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
     }
-    function injectLDJson(items, lang){
+    function injectLDJson(items){
       const data = {
         "@context":"https://schema.org",
-        "@type":"ItemList",
-        "itemListElement": items.map((n,idx)=>({
-          "@type":"ListItem",
-          "position": idx+1,
-          "item":{
-            "@type":"BlogPosting",
-            "inLanguage": lang,
-            "headline": n.title,
-            "datePublished": n.date,
-            "dateModified": n.date,
-            "articleSection": n.type,
-            "description": n.summary,
-            "mainEntityOfPage": {"@type":"WebPage","@id": location.href}
-          }
+        "@type":"Blog",
+        "name":"nihongotext.com Blog",
+        "blogPost": items.map(p=>({
+          "@type":"BlogPosting",
+          "headline": p.title,
+          "datePublished": p.date,
+          "dateModified": p.date,
+          "description": p.summary || "",
+          "mainEntityOfPage": {"@type":"WebPage","@id": location.href}
         }))
       };
       document.getElementById("ld-json").textContent = JSON.stringify(data);
