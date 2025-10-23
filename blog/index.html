@@ -76,50 +76,39 @@
   </footer>
 
   <script>
-    // 英語ベースですが、日本語を「漢字(かな)」で混ぜると自動で <ruby> に変換して表示されます。
-    // 例）"N5 名詞(めいし)の作成(さくせい)について"
-    const POSTS = [
-      {
-        id: "2025-10-01-roadmap",
-        date: "2025-10-01",
-        title: "Roadmap Sneak Peek",
-        summary: "A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.",
-        href: "#"
-      },
-      {
-        id: "2025-09-15-design",
-        date: "2025-09-15",
-        title: "Design Notes: A Simple Japanese Aesthetic",
-        // 日本語を混ぜたい場合は次のフィールドに「漢字(かな)」で記述するとルビ表示されます
-        jaNote: "見(み)やすさを重視(じゅうし)した設計(せっけい)メモ"
-      },
-      {
-        id: "2025-08-20-beta-prep",
-        date: "2025-08-20",
-        title: "Preparing for Beta",
-        jaNote: "公開準備(こうかいじゅんび)の裏側(うらがわ)"
-      }
-    ];
-
     const root = document.getElementById("post-grid");
+    let POSTS = [];
+
+    fetch('/blog/blogPosts.json', {cache:'no-store'})
+      .then(r => r.json())
+      .then(json => {
+        POSTS = json.sort((a,b)=> a.date < b.date ? 1 : -1);
+        render(POSTS);
+        injectLDJson(POSTS);
+      })
+      .catch(() => {
+        root.innerHTML = '<p class="body">Failed to load blog posts.</p>';
+      });
 
     function cardTemplate(p){
+      // title / summary / jaNote すべてルビ化対象（「漢字(かな)」→ <ruby>）
+      const titleHtml  = ruby(p.title || '');
+      const summaryHtml= p.summary ? ruby(p.summary) : '';
+      const jaNoteHtml = p.jaNote  ? ruby(p.jaNote)  : '';
       return `
         <article class="card" data-id="${esc(p.id)}" aria-labelledby="${esc(p.id)}-title">
           <div class="meta"><time datetime="${esc(p.date)}">${fmtEn(p.date)}</time></div>
-          <h2 id="${esc(p.id)}-title" class="title">${esc(p.title)}</h2>
+          <h2 id="${esc(p.id)}-title" class="title">${titleHtml}</h2>
           <div class="hr"></div>
-          ${p.summary ? `<p class="body">${esc(p.summary)}</p>` : ""}
-          ${p.jaNote ? `<p class="body">${ruby(p.jaNote)}</p>` : ""}
+          ${summaryHtml ? `<p class="body">${summaryHtml}</p>` : ""}
+          ${jaNoteHtml ? `<p class="body">${jaNoteHtml}</p>` : ""}
           ${p.href ? `<p class="more"><a href="${p.href}">Read more</a></p>` : ""}
         </article>
       `;
     }
 
-    function render(){
-      POSTS.sort((a,b)=> a.date < b.date ? 1 : -1);
-      root.innerHTML = POSTS.map(cardTemplate).join("");
-      injectLDJson(POSTS);
+    function render(items){
+      root.innerHTML = items.map(cardTemplate).join("");
     }
 
     // --- ふりがな（漢字(かな) → <ruby>漢字<rt>かな</rt></ruby>）
@@ -136,6 +125,7 @@
       return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;")
         .replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
     }
+
     function injectLDJson(items){
       const data = {
         "@context":"https://schema.org",
@@ -143,7 +133,7 @@
         "name":"nihongotext.com Blog",
         "blogPost": items.map(p=>({
           "@type":"BlogPosting",
-          "headline": p.title,
+          "headline": p.title || "",
           "datePublished": p.date,
           "dateModified": p.date,
           "description": p.summary || "",
@@ -152,8 +142,6 @@
       };
       document.getElementById("ld-json").textContent = JSON.stringify(data);
     }
-
-    render();
   </script>
 </body>
 </html>
