@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2025-11-03-release",
+    "date": "2025-11-03",
+    "type": "Release",
+    "en": {
+      "title": "nihongotext.com — Beta Release",
+      "summary": "We’ve launched the beta of nihongotext.com, a learner-friendly site for studying Japanese with natural examples.",
+      "body": [
+        "This initial beta focuses on JLPT N5 content. We will expand to N4–N1 in stages.",
+        "Each entry supports quick toggles for JA / Kana / Romaji / English views.",
+        "You can mark items as “Learned,” review them in a sortable list, and print the list.",
+        "Optimized for smartphones as well as desktops."
+      ],
+      "links": [
+        {"label":"Go to Home","href":"/index.html"},
+        {"label":"Blog Top","href":"/blog/index.html"}
+      ]
+    },
+    "ja": {
+      "title": "nihongotext.com β版(べーたばん)を公開(こうかい)しました",
+      "summary": "日本語(にほんご)の語彙(ごい)と文法(ぶんぽう)を自然(しぜん)な例文(れいぶん)といっしょに学(まな)べるサイトをβ版(べーたばん)として公開(こうかい)しました。",
+      "body": [
+        "今回(こんかい)のβ版(べーたばん)では、まず JLPT N5 レベルの内容(ないよう)を中心(ちゅうしん)に公開(こうかい)します。今後(こんご)は N4 から N1 まで順番(じゅんばん)に拡充(かくじゅう)していきます。",
+        "各(かく)エントリーでは、日本語(にほんご)・かな・ローマ字(じ)・英語(えいご)の表示(ひょうじ)をワンタップで切(き)り替(か)えられます。",
+        "「覚(おぼ)えた」ボタンと「覚(おぼ)えた一覧(いちらん)」で学習(がくしゅう)進捗(しんちょく)を確認(かくにん)でき、印刷(いんさつ)にも対応(たいおう)しています。",
+        "スマートフォンでも見(み)やすい UI/UX に最適化(さいてきか)しています。"
+      ],
+      "links": [
+        {"label":"トップページへ","href":"/index.html"},
+        {"label":"ブログトップ","href":"/blog/index.html"}
+      ]
+    }
+  },
+  {
+    "id": "2025-11-15-n5-nouns-130",
+    "date": "2025-11-15",
+    "type": "Update",
+    "en": {
+      "title": "JLPT N5 Nouns — 130 Words Officially Published",
+      "summary": "We’ve officially added 130 JLPT N5 nouns with short, natural examples.",
+      "body": [
+        "Furigana, Romaji, and English toggles are available for each entry.",
+        "The list integrates with the “Learned” view and print layout."
+      ],
+      "links": [
+        {"label":"Go to N5 Nouns","href":"/n5/nouns/index.html"}
+      ]
+    },
+    "ja": {
+      "title": "N5 名詞(めいし)130語(ご)を正式(せいしき)掲載(けいさい)",
+      "summary": "JLPT N5 の名詞(めいし)130語(ご)を正式(せいしき)に掲載(けいさい)しました。短(みじか)く自然(しぜん)な例文(れいぶん)つきです。",
+      "body": [
+        "各項目(かくこうもく)で ふりがな・ローマ字(じ)・英語(えいご)の切替(きりかえ)ができます。",
+        "「覚(おぼ)えた」一覧(いちらん)や印刷(いんさつ)にも対応(たいおう)しています。"
+      ],
+      "links": [
+        {"label":"N5 名詞(めいし)へ","href":"/n5/nouns/index.html"}
+      ]
+    }
+  }
+]

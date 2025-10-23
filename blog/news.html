@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>News / Updates | nihongotext.com</title>
+<meta name="description" content="Official news and updates for nihongotext.com" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="alternate" href="/blog/news-ja.html" hreflang="ja" />
+<style>
+  :root{--brand:#e53935;--ink:#222;--muted:#666;--bg:#fff;--line:#f0f0f0}
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif}
+  a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+  .site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+  .head-inner{max-width:900px;margin:0 auto;display:flex;gap:12px;align-items:center;padding:12px 16px}
+  .brand{font-weight:800;font-size:20px}.brand .dot{color:var(--brand)}
+  nav{margin-left:auto;display:flex;gap:14px} nav a{color:var(--ink);font-weight:600}
+  nav a.active{color:var(--brand)}
+  .lang{margin-left:8px;display:flex;gap:8px}
+  .lang a,.lang span{font-weight:700;font-size:13px;border:1px solid var(--line);padding:6px 10px;border-radius:999px}
+  .lang span{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .wrap{max-width:900px;margin:0 auto;padding:20px 16px 60px}
+  .breadcrumbs{font-size:14px;color:var(--muted);margin:6px 0 14px}
+  .page-title{font-size:28px;font-weight:800;margin:18px 0 10px}
+  .desc{color:var(--muted);margin:0 0 18px}
+  .search{display:flex;gap:8px;margin:12px 0 18px}
+  .search input{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px}
+  .count{font-size:13px;color:var(--muted);margin-bottom:10px}
+  .item{border-top:1px solid var(--line);padding:18px 0}
+  .meta{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px}
+  .badge{background:var(--brand);color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:2px 8px}
+  .title{font-size:20px;font-weight:800;margin:6px 0}
+  .body{color:#333;line-height:1.8}
+  .links{margin-top:6px}
+  .links a{margin-right:10px}
+  .site-footer{border-top:1px solid var(--line);padding:22px 16px;color:var(--muted)}
+  .foot-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+<script type="application/ld+json" id="ld-json"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="head-inner">
+    <a class="brand" href="/index.html"><span>nihongotext<span class="dot">.com</span></span></a>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/blog/news.html" class="active">News</a>
+      <a href="/inquiry/index.html">Contact</a>
+    </nav>
+    <div class="lang"><a href="/blog/news-ja.html">日本語</a><span>English</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="breadcrumbs"><a href="/index.html">Home</a> / <a href="/blog/index.html">Blog</a> / News</div>
+  <h1 class="page-title">News / Updates</h1>
+  <p class="desc">Official updates from nihongotext.com.</p>
+
+  <div class="search" role="search">
+    <input id="q" type="search" placeholder="Search news (title, summary, body)..." aria-label="Search news"/>
+  </div>
+  <div class="count" id="count"></div>
+
+  <section id="list" aria-live="polite"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-inner"><div>© 2025 nihongotext.com</div>
+    <div><a href="/blog/index.html">Blog</a> / <a href="/inquiry/index.html">Contact</a></div></div>
+</footer>
+
+<script>
+  const list = document.getElementById('list');
+  const q = document.getElementById('q');
+  const count = document.getElementById('count');
+  let DATA = [];
+
+  fetch('/blog/news.json', {cache:'no-store'})
+    .then(r=>r.json())
+    .then(json=>{
+      // newest first
+      DATA = json.sort((a,b)=> a.date < b.date ? 1 : -1);
+      render(DATA);
+      injectLDJson(DATA, 'en');
+    })
+    .catch(()=>{ list.innerHTML = '<p class="body">Failed to load news.</p>'; });
+
+  function render(items){
+    count.textContent = `${items.length} item${items.length===1?'':'s'}`;
+    list.innerHTML = items.map(item=>{
+      const en = item.en || {};
+      const links = (en.links||[]).map(l=>`<a href="${l.href}">${esc(l.label)}</a>`).join('');
+      return `
+        <article class="item" data-id="${esc(item.id)}">
+          <div class="meta"><span class="badge">${esc(item.type||'Info')}</span>
+            <time datetime="${esc(item.date)}">${fmtEn(item.date)}</time></div>
+          <h2 class="title">${esc(en.title || '(English version coming soon)')}</h2>
+          ${en.summary?`<p class="body">${esc(en.summary)}</p>`:''}
+          ${(en.body||[]).map(p=>`<p class="body">${esc(p)}</p>`).join('')}
+          ${links?`<p class="links">${links}</p>`:''}
+        </article>
+      `;
+    }).join('');
+  }
+
+  q.addEventListener('input', ()=>{
+    const v = q.value.trim().toLowerCase();
+    const filtered = !v ? DATA : DATA.filter(item=>{
+      const en = item.en || {};
+      const hay = [
+        item.type, item.date,
+        en.title, en.summary, ...(en.body||[])
+      ].filter(Boolean).join(' ').toLowerCase();
+      return hay.includes(v);
+    });
+    render(filtered);
+  });
+
+  function fmtEn(iso){
+    const d = new Date(iso+'T00:00:00');
+    return d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+  }
+  function esc(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#39;')}
+  function injectLDJson(items, lang){
+    const data = {
+      "@context":"https://schema.org",
+      "@type":"ItemList",
+      "itemListElement": items.map((n,idx)=>({
+        "@type":"ListItem","position":idx+1,
+        "item":{"@type":"BlogPosting","inLanguage":lang,"headline":n.en?.title||n.ja?.title||'',
+          "datePublished":n.date,"dateModified":n.date,"articleSection":n.type,
+          "description":n.en?.summary||''}}))
+    };
+    document.getElementById('ld-json').textContent = JSON.stringify(data);
+  }
+</script>
+</body>
+</html>
