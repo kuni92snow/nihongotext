@@ -1,178 +1,156 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>お知らせ | nihongotext.com</title>
-  <meta name="description" content="nihongotext.com 公式お知らせ（News / Updates）" />
+  <title>News / Updates | nihongotext.com</title>
+  <meta name="description" content="Official news and updates for nihongotext.com" />
   <link rel="icon" href="/favicon.ico" />
+  <link rel="alternate" href="/blog/news-ja.html" hreflang="ja" />
   <style>
     :root{
-      --brand:#e53935; /* 朱系レッド */
-      --ink:#222;
-      --muted:#666;
-      --bg:#fff;
-      --card:#ffffff;
-      --line:#f0f0f0;
+      --brand:#e53935;
+      --ink:#222; --muted:#666; --bg:#fff; --card:#fff; --line:#f0f0f0;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",sans-serif}
+    html,body{margin:0;background:var(--bg);color:var(--ink);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif}
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
 
-    /* header */
-    .site-header{
-      position:sticky;top:0;z-index:20;
-      background:linear-gradient(90deg,#fff, #fff 60%, #fff0 100%);
-      border-bottom:1px solid var(--line);
-      backdrop-filter:saturate(1.2) blur(4px);
-    }
+    .site-header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(4px)}
     .head-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
-    .brand{
-      font-weight:800;font-size:20px;line-height:1;
-      display:flex;align-items:baseline;gap:6px;
-    }
+    .brand{font-weight:800;font-size:20px;line-height:1;display:flex;align-items:baseline;gap:6px}
     .brand .dot{color:var(--brand)}
     nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
     nav a{color:var(--ink);font-weight:600}
     nav a.active{color:var(--brand)}
 
-    /* main */
+    .lang-switch{margin-left:8px;display:flex;gap:8px;align-items:center}
+    .lang-switch a,.lang-switch span{
+      font-weight:700;font-size:13px;border:1px solid var(--line);padding:6px 10px;border-radius:999px
+    }
+    .lang-switch span{background:var(--brand);color:#fff;border-color:var(--brand)}
+
     .wrap{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
-    .page-title{font-size:28px;font-weight:800;margin:18px 0 10px}
-    .desc{color:var(--muted);margin:0 0 22px}
     .breadcrumbs{font-size:14px;color:var(--muted);margin:6px 0 14px}
     .breadcrumbs a{color:var(--muted)}
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
+    .page-title{font-size:28px;font-weight:800;margin:18px 0 10px}
+    .desc{color:var(--muted);margin:0 0 22px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr);} }
     @media (max-width:640px){ .grid{grid-template-columns:1fr;} }
 
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:16px;
-      box-shadow:0 1px 0 rgba(0,0,0,.03);
-      display:flex;flex-direction:column;gap:10px;
-    }
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;
+      box-shadow:0 1px 0 rgba(0,0,0,.03);display:flex;flex-direction:column;gap:10px}
     .meta{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px}
     .badge{background:var(--brand);color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:4px 8px}
     .title{font-size:18px;font-weight:800;line-height:1.4;margin:2px 0}
     .body{color:#333;line-height:1.8}
-    .more{margin-top:auto;display:flex;gap:10px;align-items:center}
-    .more a{font-weight:700}
     .hr{height:1px;background:var(--line);margin:10px 0}
-    /* footer */
+
     .site-footer{border-top:1px solid var(--line);padding:22px 16px;color:var(--muted)}
     .foot-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
     .copy{font-size:13px}
   </style>
-
-  <!-- 構造化データ（将来カードを増やす前提で配列生成） -->
   <script type="application/ld+json" id="ld-json"></script>
 </head>
 <body>
-  <!-- Header -->
   <header class="site-header">
     <div class="head-inner">
-      <a class="brand" href="/index.html" aria-label="nihongotext.com トップへ">
+      <a class="brand" href="/index.html" aria-label="Go to homepage">
         <span>nihongotext<span class="dot">.com</span></span>
       </a>
       <nav>
         <a href="/index.html">Home</a>
         <a href="/blog/index.html">Blog</a>
-        <a href="/blog/news.html" class="active">お知らせ</a>
-        <a href="/inquiry/index.html">お問い合わせ</a>
-        <!-- 必要に応じて icons / sitemap など追加 -->
+        <a href="/blog/news.html" class="active">News</a>
+        <a href="/inquiry/index.html">Contact</a>
       </nav>
+      <div class="lang-switch" aria-label="Language switch">
+        <a href="/blog/news-ja.html">日本語</a>
+        <span>English</span>
+      </div>
     </div>
   </header>
 
-  <!-- Main -->
   <main class="wrap">
-    <div class="breadcrumbs"><a href="/index.html">Home</a> / <a href="/blog/index.html">Blog</a> / お知らせ</div>
-    <h1 class="page-title">お知らせ</h1>
-    <p class="desc">nihongotext.com の公式アップデート情報をお届けします。</p>
+    <div class="breadcrumbs"><a href="/index.html">Home</a> / <a href="/blog/index.html">Blog</a> / News</div>
+    <h1 class="page-title">News / Updates</h1>
+    <p class="desc">Official updates from nihongotext.com.</p>
 
     <section id="news-grid" class="grid" aria-live="polite"></section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="foot-inner">
       <div class="copy">© 2025 nihongotext.com</div>
-      <div><a href="/blog/index.html">Blog</a> / <a href="/inquiry/index.html">お問い合わせ</a></div>
+      <div><a href="/blog/index.html">Blog</a> / <a href="/inquiry/index.html">Contact</a></div>
     </div>
   </footer>
 
-  <!-- Data & Render -->
   <script>
-    // ここに項目を足すだけでカードが増えます
     const NEWS = [
       {
         id: "2025-11-03-release",
         date: "2025-11-03",
         type: "Release",
-        title: "nihongotext.com β版リリース",
-        summary: "学習者が日本語の語彙・文法を自然な例文とともに学べるサイト「nihongotext.com」をβ公開しました。N5を中心に、語彙のJA/かな/ローマ字/EN表示切替、覚えた管理、印刷などの基本機能を提供しています。",
+        title: "nihongotext.com — Beta Release",
+        summary: "We’ve launched the beta of nihongotext.com, a learner-friendly website for studying Japanese vocabulary and grammar with natural example sentences.",
         body: [
-          "今回のβ版では、まずN5レベルの語彙・文法を中心に公開しています。今後、N4〜N1の順に拡充していきます。",
-          "各語彙ページでは、例文を短く自然な日本語に統一し、かな・ローマ字・英訳をワンタップで切り替え可能です。",
-          "「覚えた」ボタンと「覚えた一覧」では、学習進捗の可視化と印刷レイアウトに対応しています。",
-          "スマートフォンでも見やすいUI/UXに最適化しています。"
+          "This initial beta focuses on JLPT N5 content. We will expand to N4–N1 in stages.",
+          "Each entry supports quick toggles for JA / Kana / Romaji / English views.",
+          "You can mark items as “Learned,” review them in a sortable list, and print the list with a compact layout.",
+          "The UI is optimized for smartphones as well as desktops."
         ],
         links: [
-          { label: "トップページを見る", href: "/index.html" },
-          { label: "ブログトップ", href: "/blog/index.html" }
+          { label: "Go to Home", href: "/index.html" },
+          { label: "Blog Top", href: "/blog/index.html" }
         ]
       }
     ];
 
-    // レンダリング
     const root = document.getElementById("news-grid");
 
     function cardTemplate(n){
-      const bodyHtml = n.body?.map(p=>`<p class="body">${escapeHtml(p)}</p>`).join("") ?? "";
-      const linksHtml = (n.links||[]).map(l=>`<a href="${l.href}">${escapeHtml(l.label)}</a>`).join(" / ");
+      const bodyHtml = (n.body||[]).map(p=>`<p class="body">${escapeHtml(p)}</p>`).join("");
       return `
         <article class="card" data-id="${n.id}" aria-labelledby="${n.id}-title">
           <div class="meta">
             <span class="badge">${n.type}</span>
-            <time datetime="${n.date}">${formatDateJP(n.date)}</time>
+            <time datetime="${n.date}">${formatDateEn(n.date)}</time>
           </div>
           <h2 id="${n.id}-title" class="title">${escapeHtml(n.title)}</h2>
           <div class="hr"></div>
           ${n.summary ? `<p class="body">${escapeHtml(n.summary)}</p>` : ""}
           ${bodyHtml}
-          <div class="more">${linksHtml}</div>
+          ${renderLinks(n.links)}
         </article>
       `;
     }
 
-    function render(){
-      root.innerHTML = NEWS.map(cardTemplate).join("");
-      injectLDJson(NEWS);
+    function renderLinks(links){
+      if(!links || !links.length) return "";
+      const html = links.map(l=>`<a href="${l.href}">${escapeHtml(l.label)}</a>`).join(" / ");
+      return `<p class="body">${html}</p>`;
     }
 
-    // ---- helpers
-    function formatDateJP(iso){
+    function render(){
+      root.innerHTML = NEWS.map(cardTemplate).join("");
+      injectLDJson(NEWS, "en");
+    }
+
+    function formatDateEn(iso){
       const d = new Date(iso+"T00:00:00");
-      const y = d.getFullYear(), m = d.getMonth()+1, day = d.getDate();
-      return `${y}年${String(m).padStart(2,"0")}月${String(day).padStart(2,"0")}日`;
+      const opt = {year:"numeric", month:"short", day:"numeric"};
+      return d.toLocaleDateString("en-US", opt); // e.g., Nov 3, 2025
     }
     function escapeHtml(str){
-      return String(str)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#39;");
+      return String(str).replaceAll("&","&amp;").replaceAll("<","&lt;")
+        .replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
     }
-    function injectLDJson(items){
+    function injectLDJson(items, lang){
       const data = {
         "@context":"https://schema.org",
         "@type":"ItemList",
@@ -181,6 +159,7 @@
           "position": idx+1,
           "item":{
             "@type":"BlogPosting",
+            "inLanguage": lang,
             "headline": n.title,
             "datePublished": n.date,
             "dateModified": n.date,
@@ -190,8 +169,7 @@
           }
         }))
       };
-      const tag = document.getElementById("ld-json");
-      tag.textContent = JSON.stringify(data);
+      document.getElementById("ld-json").textContent = JSON.stringify(data);
     }
 
     render();
