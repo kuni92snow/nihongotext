@@ -4,6 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>お問い合わせ | nihongotext.com</title>
+
+  <!-- 強制ノーキャッシュ -->
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <style>
     :root { --accent:#d33; --bg:#fff; --fg:#222; --muted:#666; }
     body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif; color:var(--fg); background:var(--bg); }
@@ -28,8 +34,8 @@
     .muted { color:#888; }
   </style>
 
-  <!-- reCAPTCHA v2 (checkbox) / explicit render -->
-  <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaReady&render=explicit" async defer></script>
+  <!-- reCAPTCHA v2（explicit）。クエリに v= を付けてキャッシュ回避 -->
+  <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaReady&render=explicit&hl=ja&v=20251029a" async defer></script>
 </head>
 <body>
   <header>
@@ -42,7 +48,6 @@
   </header>
 
   <main>
-    <!-- Contact only -->
     <section class="card" id="contactCard">
       <h2 id="h_contact">お問い合わせ</h2>
 
@@ -74,11 +79,31 @@
   </footer>
 
   <script>
-    // ====== 設定（添付版に合わせて維持） ======
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec";
-    const SITE_KEY   = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // 動作しているサイトキーを使用
+    // =========================
+    // キャッシュ・SW の強制クリア
+    // =========================
+    (async () => {
+      try {
+        if ('serviceWorker' in navigator) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          for (const r of regs) { await r.unregister(); }
+        }
+        if (window.caches && caches.keys) {
+          const keys = await caches.keys();
+          for (const k of keys) { await caches.delete(k); }
+        }
+        console.log('[inquiry] cache & SW cleared');
+      } catch (e) {
+        console.warn('[inquiry] cache/SW clear failed', e);
+      }
+    })();
 
-    // ====== 多言語 UIテキスト ======
+    // ====== 設定 ======
+    const VERSION   = '20251029a'; // ← 変えるとさらなるキャッシュ潰し
+    const SCRIPT_URL= 'https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec';
+    const SITE_KEY  = '6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV'; // 動作確認できたキー
+
+    // ====== 多言語テキスト ======
     const t = {
       ja: {
         contact:"お問い合わせ", name:"お名前", email:"メールアドレス", subject:"件名", message:"メッセージ",
@@ -99,7 +124,7 @@
         required:"Name, email, and message are required."
       }
     };
-    let lang = "ja";
+    let lang = 'ja';
     const $ = (q)=> document.querySelector(q);
 
     function applyLang() {
@@ -111,10 +136,12 @@
       $("#sendBtn").textContent   = t[lang].send;
     }
 
-    // ====== JSONP helper ======
+    // ====== JSONP helper（URLに v= を付与） ======
     function jsonp(url, cbname, done){
+      const u = url + (url.includes('?') ? '&' : '?') + 'callback=' + encodeURIComponent(cbname) + '&v=' + encodeURIComponent(VERSION);
+      console.log('[inquiry] JSONP ->', u);
       const s = document.createElement('script');
-      s.src = url + (url.includes('?') ? '&' : '?') + 'callback=' + encodeURIComponent(cbname);
+      s.src = u;
       s.async = true;
       s.onerror = () => done(new Error('jsonp_load_failed'));
       document.head.appendChild(s);
@@ -128,7 +155,9 @@
         'theme': 'light',
         'size' : 'normal'
       });
+      console.log('[inquiry] recaptcha rendered', { recaptchaWidgetId });
     }
+    window.onRecaptchaReady = onRecaptchaReady; // 明示エクスポート
 
     // ====== メッセージ表示 ======
     function setMsgOk(msg){ const s=$("#status"); s.className="msg ok"; s.textContent=msg; }
@@ -141,7 +170,6 @@
       const btn = this;
       btn.disabled = true;
 
-      // 必須チェック
       const name    = $("#name").value.trim();
       const email   = $("#email").value.trim();
       const subject = $("#subject").value.trim();
@@ -153,7 +181,7 @@
       }
 
       // reCAPTCHA
-      const token = grecaptcha.getResponse(recaptchaWidgetId);
+      const token = (typeof grecaptcha !== 'undefined' && recaptchaWidgetId!==null) ? grecaptcha.getResponse(recaptchaWidgetId) : '';
       if (!token) {
         setMsgNg(t[lang].captcha_needed);
         btn.disabled = false;
@@ -163,12 +191,14 @@
       const params = new URLSearchParams({
         mode:'contact_submit',
         name, email, subject, message,
-        token
+        token,
+        v: VERSION   // ここでも付与
       });
 
       const cbname = 'cb_' + Math.random().toString(36).slice(2);
       window[cbname] = function(res){
         try{
+          console.log('[inquiry] JSONP response', res);
           if (res && res.ok) {
             setMsgOk(t[lang].sent_ok);
             $("#message").value = "";
@@ -178,18 +208,17 @@
           }
         } finally {
           btn.disabled = false;
-          grecaptcha.reset(recaptchaWidgetId);
+          try { grecaptcha.reset(recaptchaWidgetId); } catch(e){}
           delete window[cbname];
         }
       };
 
       jsonp(`${SCRIPT_URL}?${params.toString()}`, cbname, (err)=>{
-        if (err){
-          setMsgNg(t[lang].sent_ng);
-          btn.disabled = false;
-          grecaptcha.reset(recaptchaWidgetId);
-          delete window[cbname];
-        }
+        console.warn('[inquiry] JSONP load error', err);
+        setMsgNg(t[lang].sent_ng);
+        btn.disabled = false;
+        try { grecaptcha.reset(recaptchaWidgetId); } catch(e){}
+        delete window[cbname];
       });
     });
 
