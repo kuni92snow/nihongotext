@@ -1,318 +1,310 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Inquiry | nihongotext.com</title>
-<meta name="color-scheme" content="light only" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!-- GA4（トップと同一ID） -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
-</script>
-
+<!-- 基本スタイル（トップページと同系色） -->
 <style>
-:root{
-  --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
-  --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
-}
-*{box-sizing:border-box}
-html,body{margin:0;background:#fff;color:var(--ink);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
-a{color:inherit;text-decoration:none}
-.container{max-width:1100px;margin:0 auto;padding:0 16px}
+  :root{
+    --brand:#e74c3c;        /* 朱色（ヘッダーライン・ボタン） */
+    --brand-weak:#fbe8e6;   /* 朱色の淡色（カード背景） */
+    --text:#333;
+    --border:#e6e6e6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI",Meiryo,sans-serif;color:var(--text);background:#fff}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
 
-/* Header */
-header{border-bottom:3px solid var(--shu);background:#fff}
-.h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-header .container.positioned{position:relative}
-.brand{display:flex;flex-direction:column;gap:2px}
-.brand a.brand-link{display:inline-block}
-.brand-title{font-weight:980;letter-spacing:.3px;font-size:clamp(24px,4.2vw,32px);color:var(--shu)}
-.brand-sub{width:fit-content;margin:0 auto;color:var(--shu-soft);font-weight:700;font-size:12px;letter-spacing:.4px}
-.iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
-  border:1px solid var(--border);background:#fff}
-.iconbar .tool i{color:var(--shu)}
-.iconbar .tool:hover{border-color:var(--shu)}
+  /* ヘッダー */
+  .site-header{
+    position:sticky;top:0;z-index:50;background:#fff;border-bottom:3px solid var(--brand);
+  }
+  .header-inner{
+    max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:16px 12px;
+  }
+  .brand{font-weight:800;font-size:28px;color:var(--brand)}
+  .beta{font-size:12px;opacity:.65}
+  .spacer{flex:1}
 
-/* 言語切替（右端固定） */
-.lang-switch{
-  position:absolute; right:16px; top:12px;
-  display:flex; gap:8px; align-items:center;
-}
-.lang-switch button{
-  border:1px solid var(--border); background:#fff; color:#333;
-  padding:6px 10px; border-radius:999px; cursor:pointer;
-}
-.lang-switch button.active{border-color:var(--shu); color:var(--shu-deep)}
+  /* 言語ボタン（右端固定） */
+  .lang-switch{display:flex;gap:8px;align-items:center}
+  .lang-btn{
+    border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;
+  }
+  .lang-btn.active{border-color:var(--brand);color:#fff;background:var(--brand)}
+  .iconbar{display:flex;gap:10px;margin-left:16px}
+  .iconbtn{width:28px;height:28px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer}
 
-/* main & form */
-main{max-width:900px;margin:14px auto 24px;padding:0 16px}
-.card{border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:0 2px 12px rgba(230,70,45,.06)}
-.card .hd{padding:14px 16px;border-bottom:1px solid var(--border);background:var(--shu-tint);font-weight:700}
-.card .bd{padding:16px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.form-row.single{grid-template-columns:1fr}
-.input, textarea, select{
-  width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:#fff;
-}
-label{font-size:13px;color:var(--muted);display:block;margin:6px 0 4px}
-.help{font-size:12px;color:var(--muted);margin-top:6px}
+  /* コンテナ */
+  .container{max-width:900px;margin:24px auto;padding:0 12px}
+  .card{
+    background:var(--brand-weak);border:1px solid var(--border);border-radius:12px;padding:18px 16px;
+  }
+  .card h2{margin:0 0 14px;font-size:18px}
 
-/* ボタン */
-.btn{padding:10px 14px;border-radius:12px;border:1px solid var(--shu);background:#fff;cursor:pointer}
-.btn.ok{background:var(--shu);color:#fff}
-.btn:disabled{opacity:.6;cursor:not-allowed}
+  /* フォーム */
+  .row{display:flex;gap:12px;margin-bottom:10px}
+  .col{flex:1}
+  .input, .select, .textarea{
+    width:100%;border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:14px;background:#fff;
+  }
+  .textarea{min-height:160px;resize:vertical}
+  .note{font-size:12px;opacity:.75;margin-top:8px}
+  .actions{margin-top:16px;display:flex;gap:10px;align-items:center}
+  .btn{
+    background:var(--brand);color:#fff;border:none;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer;
+  }
+  .btn:disabled{opacity:.55;cursor:not-allowed}
+  .status{font-size:13px}
 
-/* footer */
-footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
-.f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
-.copy{color:#6b7280}
+  /* フッター */
+  .site-footer{border-top:2px solid var(--brand);padding:18px 0;margin-top:40px}
+  .footer-inner{max-width:1080px;margin:0 auto;padding:0 12px;text-align:center;font-size:12px;opacity:.8}
+  .foot-icons{display:flex;gap:10px;justify-content:center;margin-top:10px}
+
+  /* 小さめ画面 */
+  @media (max-width:640px){ .row{flex-direction:column} }
 </style>
 </head>
 <body>
-<header>
-  <div class="container h-row positioned">
-    <div class="brand">
-      <a class="brand-link" href="/" aria-label="トップへ">
-        <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
-        <div class="brand-sub">== beta version ==</div>
-      </a>
-    </div>
-    <!-- 言語切替（右端） -->
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button id="btnJa" class="active">日本語</button>
-      <button id="btnEn">English</button>
-    </div>
-  </div>
 
-  <!-- アイコンバー -->
-  <div class="container">
-    <nav class="iconbar" aria-label="site icons">
-      <a class="tool" title="トップへ" href="/"><i class="fas fa-house"></i></a>
-      <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
-      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-    </nav>
+<!-- ヘッダー：ロゴ + 右端に言語ボタン -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">nihongotext<span class="beta">.com  == beta version ==</span></div>
+    <div class="spacer"></div>
+
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn" data-lang="ja" id="btnJA">日本語</button>
+      <button class="lang-btn" data-lang="en" id="btnEN">English</button>
+    </div>
+
+    <div class="iconbar" aria-hidden="true">
+      <div class="iconbtn">🏠</div>
+      <div class="iconbtn">🔍</div>
+      <div class="iconbtn">📝</div>
+      <div class="iconbtn">📧</div>
+    </div>
   </div>
 </header>
 
-<main>
+<main class="container">
   <section class="card">
-    <div class="hd" id="formTitle">お問い合わせ</div>
-    <div class="bd">
-      <form id="inqForm" novalidate>
-        <div class="form-row">
-          <div>
-            <label id="lblName">お名前</label>
-            <input id="name" class="input" type="text" autocomplete="name" required>
-          </div>
-          <div>
-            <label id="lblEmail">メール</label>
-            <input id="email" class="input" type="email" autocomplete="email">
-          </div>
-        </div>
-        <div class="form-row">
-          <div>
-            <label id="lblSubject">件名</label>
-            <input id="subject" class="input" type="text">
-          </div>
-          <div>
-            <label id="lblCategory">カテゴリ</label>
-            <select id="category" class="input">
-              <option value="general">一般</option>
-              <option value="bug">不具合</option>
-              <option value="request">要望</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row single">
-          <div>
-            <label id="lblMessage">内容</label>
-            <textarea id="message" class="input" rows="6" required></textarea>
-          </div>
-        </div>
+    <h2 id="titleTxt">お問い合わせ</h2>
 
-        <!-- reCAPTCHA v2（チェックボックス） -->
-        <div style="margin:10px 0">
-          <!-- ✅ 正しい v2/Checkbox の Site key をセット済み -->
-          <div id="recaptchaMount" class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+    <form id="inquiryForm">
+      <div class="row">
+        <div class="col">
+          <label id="lblName" for="name">お名前</label>
+          <input class="input" id="name" name="name" autocomplete="name" />
         </div>
+        <div class="col">
+          <label id="lblEmail" for="email">メール</label>
+          <input class="input" id="email" name="email" type="email" autocomplete="email" />
+        </div>
+      </div>
 
-        <div class="help" id="policyText">
-          送信すると、<a href="/privacy" target="_blank">プライバシーポリシー</a> と
-          <a href="/terms" target="_blank">利用規約</a> に同意したものとみなされます。
+      <div class="row">
+        <div class="col">
+          <label id="lblSubject" for="subject">件名</label>
+          <input class="input" id="subject" name="subject" />
         </div>
+        <div class="col">
+          <label id="lblCategory" for="category">カテゴリ</label>
+          <select class="select" id="category" name="category">
+            <option value="general">一般</option>
+            <option value="bug">不具合</option>
+            <option value="request">機能要望</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+      </div>
 
-        <div style="display:flex;gap:10px;align-items:center;margin-top:12px">
-          <button id="btnSend" class="btn ok" type="submit">送信</button>
-          <span id="formNote" class="help"></span>
+      <div class="row">
+        <div class="col">
+          <label id="lblMessage" for="message">内容</label>
+          <textarea class="textarea" id="message" name="message"></textarea>
         </div>
-      </form>
-    </div>
+      </div>
+
+      <!-- reCAPTCHA（動的に言語を切替） -->
+      <div id="captchaWrap" class="row" style="margin-top:6px">
+        <div class="col">
+          <div id="recaptcha"></div>
+          <div id="captchaErr" class="note" style="color:#c00; display:none"></div>
+        </div>
+      </div>
+
+      <div class="note" id="agreeNote">
+        送信すると、<a href="/privacy.html" target="_blank">プライバシーポリシー</a> と
+        <a href="/terms.html" target="_blank">利用規約</a> に同意したものとみなされます。
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn" id="btnSubmit">送信</button>
+        <div id="status" class="status"></div>
+      </div>
+    </form>
   </section>
 </main>
 
-<footer>
-  <div class="container f-row">
-    <nav class="iconbar" aria-label="site icons">
-      <a class="tool" title="トップへ" href="/"><i class="fas fa-house"></i></a>
-      <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
-      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-    </nav>
-    <div class="copy">© 2025 nihongotext.com</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="foot-icons" aria-hidden="true">
+      <div class="iconbtn">🏠</div>
+      <div class="iconbtn">🔍</div>
+      <div class="iconbtn">📝</div>
+      <div class="iconbtn">📧</div>
+    </div>
+    <div style="margin-top:6px">© 2025 nihongotext.com</div>
   </div>
 </footer>
 
-<!-- ===== JS ===== -->
+<!-- ===== フロントロジック ===== -->
 <script>
-/* ===== 設定 ===== */
-// JSONP 固定 GAS（/exec）URL：必要なら置き換え
-const GAS_JSONP = "https://script.google.com/macros/s/AKfycbzyHV_NSyJU-hPwvJU5JJMMuPAa7V3vhmRuq6Clq7WBIErCx6A2xHgG1SXtSlfmR42OHw/exec";
+/* === 設定 === */
+const GAS_JSONP = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec";
+const RECAPTCHA_SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // ご指定 Site key
 
-/* GA page_view */
-(function(){
-  if (!window.gtag) return;
-  gtag('event','page_view',{page_title:document.title,page_path:location.pathname + location.search});
-})();
-
-/* ===== i18n ===== */
-const i18n = {
-  ja: {
-    title:'お問い合わせ', name:'お名前', email:'メール', subject:'件名', category:'カテゴリ',
-    msg:'内容', send:'送信',
-    policy:'送信すると、<a href="/privacy" target="_blank">プライバシーポリシー</a> と <a href="/terms" target="_blank">利用規約</a> に同意したものとみなされます。',
-    cat:{general:'一般', bug:'不具合', request:'要望'},
-    note_sending:'送信しています…', note_ok:'送信しました。ありがとうございます。',
-    note_captcha:'reCAPTCHA を完了してください。'
+/* === i18n テキスト === */
+const T = {
+  ja:{
+    page:"お問い合わせ", name:"お名前", email:"メール", subject:"件名", category:"カテゴリ", message:"内容",
+    agree:`送信すると、<a href="/privacy.html" target="_blank">プライバシーポリシー</a> と <a href="/terms.html" target="_blank">利用規約</a> に同意したものとみなされます。`,
+    send:"送信", sending:"送信しています…", done:"送信できました。ありがとうございます。", captcha:"サイト所有者のエラー：サイ トキーが無効です",
   },
-  en: {
-    title:'Contact', name:'Name', email:'Email', subject:'Subject', category:'Category',
-    msg:'Message', send:'Send',
-    policy:'By submitting, you agree to our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="/terms" target="_blank">Terms of Service</a>.',
-    cat:{general:'General', bug:'Bug report', request:'Feature request'},
-    note_sending:'Sending…', note_ok:'Sent. Thank you!',
-    note_captcha:'Please complete reCAPTCHA.'
+  en:{
+    page:"Inquiry", name:"Name", email:"Email", subject:"Subject", category:"Category", message:"Message",
+    agree:`By sending, you agree to our <a href="/privacy.html" target="_blank">Privacy Policy</a> and <a href="/terms.html" target="_blank">Terms of Service</a>.`,
+    send:"Send", sending:"Sending…", done:"Your message has been sent. Thank you!", captcha:"reCAPTCHA verification is required.",
   }
 };
-let currentLang = 'ja';
-let recaptchaWidgetId = null;
 
-/* reCAPTCHA を明示レンダー（言語切替に対応） */
-function loadRecaptcha(hl){
-  // 古いスクリプトを除去
-  document.querySelectorAll('script[src*="google.com/recaptcha/api.js"]').forEach(s=>s.remove());
-  // mountリセット
-  const mount = document.getElementById('recaptchaMount');
-  const sitekey = mount.getAttribute('data-sitekey'); // ← この Site key を使用
-  mount.innerHTML = '';
-  // onloadコールバックで explicit render
-  const s=document.createElement('script');
-  s.src = 'https://www.google.com/recaptcha/api.js?onload=__re_onload&render=explicit&hl=' + encodeURIComponent(hl||'ja');
-  s.async = true; s.defer = true;
-  window.__re_onload = function(){
-    try{
-      recaptchaWidgetId = grecaptcha.render('recaptchaMount', { sitekey });
-    }catch(_){}
-  };
-  document.head.appendChild(s);
+let currentLang = (new URLSearchParams(location.search).get("lang")||"ja").toLowerCase();
+let widgetId = null;
+
+/* === 言語切替 === */
+function applyLang(){
+  const dict = T[currentLang] || T.ja;
+  document.documentElement.lang = currentLang;
+  document.getElementById("titleTxt").textContent = dict.page;
+  document.getElementById("lblName").textContent = dict.name;
+  document.getElementById("lblEmail").textContent = dict.email;
+  document.getElementById("lblSubject").textContent = dict.subject;
+  document.getElementById("lblCategory").textContent = dict.category;
+  document.getElementById("lblMessage").textContent = dict.message;
+  document.getElementById("agreeNote").innerHTML = dict.agree;
+  document.getElementById("btnSubmit").textContent = dict.send;
+
+  document.getElementById("btnJA").classList.toggle("active", currentLang==="ja");
+  document.getElementById("btnEN").classList.toggle("active", currentLang==="en");
+
+  // reCAPTCHA を選択言語で再ロード
+  loadRecaptcha(currentLang);
 }
 
-/* ラベル等の反映 */
-function applyLang(lang){
-  currentLang = lang;
-  document.documentElement.lang = lang === 'ja' ? 'ja' : 'en';
-  document.getElementById('btnJa').classList.toggle('active', lang==='ja');
-  document.getElementById('btnEn').classList.toggle('active', lang==='en');
+document.getElementById("btnJA").addEventListener("click", ()=>{ currentLang="ja"; applyLang(); history.replaceState(null,"","?lang=ja"); });
+document.getElementById("btnEN").addEventListener("click", ()=>{ currentLang="en"; applyLang(); history.replaceState(null,"","?lang=en"); });
 
-  const t=i18n[lang];
-  document.getElementById('formTitle').textContent = t.title;
-  document.getElementById('lblName').textContent  = t.name;
-  document.getElementById('lblEmail').textContent = t.email;
-  document.getElementById('lblSubject').textContent = t.subject;
-  document.getElementById('lblCategory').textContent = t.category;
-  document.getElementById('lblMessage').textContent = t.msg;
-  document.getElementById('btnSend').textContent = t.send;
-  document.getElementById('policyText').innerHTML = t.policy;
+/* === reCAPTCHA ローダ（言語毎に script を差し替え・明示レンダリング） === */
+function loadRecaptcha(lang){
+  // 既存スクリプト除去
+  const old = document.getElementById("recaptcha-api");
+  if (old) old.remove();
+  // コンテナ初期化
+  const wrap = document.getElementById("recaptcha");
+  wrap.innerHTML = "";
+  widgetId = null;
 
-  const cat = document.getElementById('category');
-  cat.options[0].text = t.cat.general;
-  cat.options[1].text = t.cat.bug;
-  cat.options[2].text = t.cat.request;
-
-  // reCAPTCHA言語切替
-  loadRecaptcha(lang === 'en' ? 'en' : 'ja');
-}
-
-/* 言語ボタン */
-document.getElementById('btnJa').addEventListener('click', ()=>applyLang('ja'));
-document.getElementById('btnEn').addEventListener('click', ()=>applyLang('en'));
-
-/* ==== 送信（JSONP：GET /exec?mode=contact_submit ...） ==== */
-function jsonp(url, params, cb){
-  const name = '__cb_' + Math.random().toString(36).slice(2);
-  params = params || {};
-  params.callback = name;
-  const qs = Object.keys(params).map(k=> k + '=' + encodeURIComponent(params[k])).join('&');
-  const s = document.createElement('script');
-  s.src = url + (url.indexOf('?')>=0 ? '&' : '?') + qs;
-  window[name] = function(resp){
-    try{ cb && cb(resp||{}); } finally {
-      delete window[name];
-      s.remove();
+  // onload コールバック名を固有化
+  const cbName = "onRecaptchaLoad_" + Date.now();
+  window[cbName] = function(){
+    if (window.grecaptcha) {
+      widgetId = grecaptcha.render("recaptcha", { sitekey: RECAPTCHA_SITE_KEY });
     }
   };
+
+  // 言語指定付きで api.js を読み込み
+  const s = document.createElement("script");
+  s.id = "recaptcha-api";
+  s.src = "https://www.google.com/recaptcha/api.js?onload="+cbName+"&render=explicit&hl="+(lang==="en"?"en":"ja");
+  s.defer = true; s.async = true;
   document.body.appendChild(s);
 }
 
-document.getElementById('inqForm').addEventListener('submit', function(e){
+/* === JSONP 送信 === */
+function sendJSONP(url, cb){
+  const cbName = "jsonp_cb_" + Date.now();
+  window[cbName] = function(res){ try{ cb(null,res);}finally{ cleanup(); } };
+  function cleanup(){
+    delete window[cbName];
+    scr.remove();
+    clearTimeout(timer);
+  }
+  const scr = document.createElement("script");
+  scr.src = url + (url.includes("?")?"&":"?") + "callback=" + cbName;
+  scr.onerror = ()=>{ cb(new Error("network")); cleanup(); };
+  document.body.appendChild(scr);
+  const timer = setTimeout(()=>{ cb(new Error("timeout")); cleanup(); }, 20000);
+}
+
+/* === フォーム送信 === */
+document.getElementById("inquiryForm").addEventListener("submit", function(e){
   e.preventDefault();
-  const note = document.getElementById('formNote');
-  const t = i18n[currentLang];
-  note.textContent = t.note_sending;
+  const dict = T[currentLang] || T.ja;
+  const status = document.getElementById("status");
+  const errBox = document.getElementById("captchaErr");
+  errBox.style.display = "none"; errBox.textContent = "";
 
-  // reCAPTCHA トークン取得
-  const token = grecaptcha.getResponse(recaptchaWidgetId);
-  if (!token) { note.textContent = t.note_captcha; return; }
+  const token = (window.grecaptcha && widgetId!=null) ? grecaptcha.getResponse(widgetId) : "";
+  if (!token) {
+    errBox.style.display = "block";
+    errBox.textContent = dict.captcha;
+    return;
+  }
 
-  const params = {
-    mode: 'contact_submit',
-    name:    document.getElementById('name').value.trim(),
-    email:   document.getElementById('email').value.trim(),
-    subject: document.getElementById('subject').value.trim(),
-    // 件名/カテゴリ/本文を連結して message に格納（GAS は message を読む）
-    message: [
-      'Subject: ' + (document.getElementById('subject').value.trim() || '(no subject)'),
-      'Category: ' + document.getElementById('category').value,
-      '',
-      document.getElementById('message').value.trim()
-    ].join('\n'),
-    token:   token
-  };
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const category = document.getElementById("category").value;
+  const message = document.getElementById("message").value.trim();
 
-  jsonp(GAS_JSONP, params, function(res){
-    if (res && res.ok) {
-      note.textContent = t.note_ok;
-      document.getElementById('inqForm').reset();
-      grecaptcha.reset(recaptchaWidgetId);
-    } else {
-      note.textContent = (res && res.reason) ? ('送信失敗: ' + res.reason) : '送信に失敗しました。';
+  // カテゴリは件名に付記
+  const subjectWithCat = subject ? `[${category}] ${subject}` : `[${category}]`;
+
+  status.textContent = dict.sending;
+  document.getElementById("btnSubmit").disabled = true;
+
+  // JSONP で送信（CORS不要・GAS側 doGet で受ける）
+  const params = new URLSearchParams({
+    mode:"contact_submit",
+    name, email,
+    subject: subjectWithCat,
+    message, token
+  });
+
+  const url = GAS_JSONP + "?" + params.toString();
+
+  sendJSONP(url, (err, res)=>{
+    document.getElementById("btnSubmit").disabled = false;
+    if (err){ status.textContent = (currentLang==="en"?"Failed to send. Please try again.":"送信に失敗しました。時間をおいて再度お試しください。"); return; }
+    if (res && res.ok){
+      status.textContent = dict.done;
+      // 送信後は内容をクリア & reCAPTCHA をリセット
+      document.getElementById("inquiryForm").reset();
+      if (window.grecaptcha && widgetId!=null) grecaptcha.reset(widgetId);
+    }else{
+      const reason = (res && res.reason) || "unknown";
+      status.textContent = (currentLang==="en" ? `Failed: ${reason}` : `失敗: ${reason}`);
     }
   });
 });
 
 /* 初期化 */
-applyLang('ja');
+applyLang();
 </script>
 </body>
 </html>
