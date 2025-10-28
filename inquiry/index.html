@@ -80,13 +80,19 @@
   <footer>© 2025 nihongotext.com</footer>
 
   <script>
-    // ===== 設定 =====
-    // あなたの exec URL（/exec で終わる）
+    /* ===== 設定 =====
+       - ENDPOINT_EXEC: 「デプロイ > ウェブアプリ」 の /exec で終わるURL
+       - ENDPOINT_ECHO: （任意）/macros/echo?user_content_key=...&lib=... の先頭部分
+                        例: https://script.googleusercontent.com/macros/echo
+                        ※ ユーザー様の ping で表示されたフルURL（user_content_key と lib も含む）を
+                          ここに貼れば、ブロッカー回避の成功率が上がります。 */
     const ENDPOINT_EXEC = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec";
-    // あなたの reCAPTCHA v2 (checkbox) site key
+    const ENDPOINT_ECHO = ""; // ここに googleusercontent の ping URL（?より前ではなく「?user_content_key=...」含む全部）を入れると更に堅牢になります。
+
+    // reCAPTCHA v2 site key（チェックボックス）
     const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV";
 
-    // ===== reCAPTCHA explicit render（重複レンダー防止） =====
+    /* ===== reCAPTCHA explicit render（重複レンダー防止） ===== */
     let recaptchaWidgetId = null;
     function onloadRecaptcha(){
       try{
@@ -96,38 +102,48 @@
       }catch(e){ console.warn("reCAPTCHA render skipped:", e); }
     }
 
-    // ===== i18n（必要最低限） =====
+    /* ===== i18n（必要最低限） ===== */
     const I18N = {
       ja: { t1:"お問い合わせ", name:"お名前", email:"メール", subject:"件名", category:"カテゴリ", message:"内容",
             pleaseCaptcha:"reCAPTCHA を完了してください。", sending:"送信しています…", sent:"送信しました。ありがとうございます！",
-            failed:"送信に失敗しました。" },
+            failed:"送信に失敗しました。", blocked:
+              "送信に失敗しました（スクリプトが読み込めません）。広告ブロッカー等をオフにするか、\n" +
+              "・script.google.com\n・script.googleusercontent.com\n・www.google.com/recaptcha/\nを許可してください。" },
       en: { t1:"Contact us", name:"Name", email:"Email", subject:"Subject", category:"Category", message:"Message",
-            pleaseCaptcha:"Please complete the reCAPTCHA.", sending:"Sending...", sent:"Sent. Thank you!", failed:"Failed to send." }
+            pleaseCaptcha:"Please complete the reCAPTCHA.", sending:"Sending...", sent:"Sent. Thank you!",
+            failed:"Failed to send.", blocked:
+              "Failed to send (script blocked). Please allow:\n" +
+              "• script.google.com\n• script.googleusercontent.com\n• www.google.com/recaptcha/" }
     };
     let currentLang = (new URL(location.href).searchParams.get("lang") || "ja").toLowerCase();
 
-    // ===== JSONP helper =====
-    function jsonp(url, params, timeoutMs=15000){
+    /* ===== JSONP loader（堅牢版） ===== */
+    function jsonp(urlWithParams, timeoutMs=15000){
       return new Promise((resolve,reject)=>{
         const cb = "cb_" + Date.now() + "_" + Math.random().toString(36).slice(2);
-        const sp = new URLSearchParams({...params, callback: cb});
+        const u  = new URL(urlWithParams);
+        u.searchParams.set("callback", cb);
+
         const s  = document.createElement("script");
-        let done = false;
-        function cleanup(){
-          if (done) return;
-          done = true;
-          delete window[cb];
-          s.remove();
+        s.async = true;
+
+        let finished = false;
+        function cleanup(err){
+          if (finished) return;
+          finished = true;
+          try{ delete window[cb]; }catch(_){}
+          try{ s.remove(); }catch(_){}
+          if (err) reject(err);
         }
         window[cb] = (data)=>{ cleanup(); resolve(data); };
-        s.onerror = ()=>{ cleanup(); reject(new Error("jsonp_load_failed")); };
-        s.src = url + "?" + sp.toString();
-        document.body.appendChild(s);
-        setTimeout(()=>{ cleanup(); reject(new Error("jsonp_timeout")); }, timeoutMs);
+        s.onerror = ()=> cleanup(new Error("jsonp_load_failed"));
+        s.src = u.toString();
+        (document.head || document.body).appendChild(s);
+        setTimeout(()=> cleanup(new Error("jsonp_timeout")), timeoutMs);
       });
     }
 
-    // ===== UI helpers =====
+    /* ===== UI helpers ===== */
     const $ = (id)=>document.getElementById(id);
     function setStatus(kind, msg){
       const el = $("status");
@@ -135,16 +151,16 @@
       el.textContent = msg;
     }
 
-    // ===== Submit =====
+    /* ===== Submit ===== */
     $("f").addEventListener("submit", async (ev)=>{
       ev.preventDefault();
-      const name = $("name").value.trim();
-      const email = $("email").value.trim();
-      const subject = $("subject").value.trim();
+      const name     = $("name").value.trim();
+      const email    = $("email").value.trim();
+      const subject  = $("subject").value.trim();
       const category = $("category").value.trim();
-      const message = $("message").value.trim();
+      const message  = $("message").value.trim();
 
-      // reCAPTCHA v2 checkbox のトークン取得
+      // reCAPTCHA token
       let token = "";
       try { token = grecaptcha.getResponse(recaptchaWidgetId || 0) || ""; } catch(_){}
       if (!token){
@@ -156,24 +172,43 @@
       btn.disabled = true;
       setStatus("ng", I18N[currentLang].sending);
 
-      try{
-        const res = await jsonp(ENDPOINT_EXEC, {
-          mode: "contact_submit",
-          name, email,
-          subject: subject || category, // どちらか空でも一応入るように
-          message,
-          token
-        });
+      // クエリ共通部
+      const q = new URLSearchParams({
+        mode: "contact_submit",
+        name, email,
+        subject: subject || category,
+        message, token
+      });
 
-        if (res && res.ok){
+      // 1st: script.google.com (/exec)
+      const urlExec = ENDPOINT_EXEC + "?" + q.toString();
+
+      // 2nd: （任意）googleusercontent の echo に直投げ
+      const useEcho = ENDPOINT_ECHO && ENDPOINT_ECHO.startsWith("https://script.googleusercontent.com/");
+      const urlEcho = useEcho ? (ENDPOINT_ECHO + "&" + q.toString()) : null;
+
+      try{
+        let res = await jsonp(urlExec, 15000);
+        if (!res || !res.ok) throw new Error(res?.reason || res?.detail || "server_error");
+
+        setStatus("ok", I18N[currentLang].sent);
+        $("f").reset();
+        try { grecaptcha.reset(recaptchaWidgetId || 0); } catch(_){}
+      }catch(err1){
+        // フォールバック試行
+        try{
+          if (!urlEcho) throw err1;
+          let res2 = await jsonp(urlEcho, 15000);
+          if (!res2 || !res2.ok) throw new Error(res2?.reason || res2?.detail || "server_error");
+
           setStatus("ok", I18N[currentLang].sent);
           $("f").reset();
           try { grecaptcha.reset(recaptchaWidgetId || 0); } catch(_){}
-        }else{
-          setStatus("ng", (res && (res.reason || res.detail)) || I18N[currentLang].failed);
+        }catch(err2){
+          const msg = (err2 && (""+err2).includes("jsonp_load_failed")) ? I18N[currentLang].blocked
+                    : I18N[currentLang].failed + " : " + (err2?.message || "unknown");
+          setStatus("ng", msg);
         }
-      }catch(err){
-        setStatus("ng", I18N[currentLang].failed + " : " + err.message);
       }finally{
         btn.disabled = false;
       }
@@ -183,4 +218,5 @@
   <!-- reCAPTCHA v2 (checkbox) — onload=onloadRecaptcha で明示レンダリング -->
   <script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptcha&render=explicit" async defer></script>
 </body>
+</html>  
 </html>
