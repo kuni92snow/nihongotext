@@ -1,201 +1,129 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog | nihongotext.com</title>
-  <meta name="color-scheme" content="light only" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Blog | nihongotext.com</title>
+<link rel="icon" href="/favicon.ico" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ');
-  </script>
+<!-- AdSense（スクリプト読込のみ・ページ内に広告枠は置きません） -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+<style>
+  :root{
+    --brand:#e74c3c; --ink:#222; --muted:#98a1a8; --line:#eee;
+    --card:#fff; --soft:#fff8f6;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#fff;color:var(--ink);
+    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif}
+  a{color:inherit;text-decoration:none}
 
-  <style>
-    :root{
-      --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
-      --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;color:var(--ink);background:#fff;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
-    a{color:inherit;text-decoration:none}
+  .topbar-border{border-top:4px solid var(--brand);border-bottom:1px solid var(--brand)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+  .spacer{height:10px}
 
-    /* Header */
-    header{border-bottom:3px solid var(--shu);background:#fff}
-    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
-    .brand{display:flex;flex-direction:column;gap:2px}
-    .brand-title{font-weight:980;font-size:28px;color:var(--shu)}
-    .brand-sub{color:var(--shu-soft);font-weight:700;font-size:12px;text-align:center}
-    .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;
-      border-radius:50%;border:1px solid var(--border);background:#fff}
-    .iconbar .tool i{color:var(--shu)}
-    .iconbar .tool:hover{border-color:var(--shu)}
+  /* Blog */
+  .crumbs{color:var(--muted);font-size:13px;margin:14px 0}
+  .title{font-size:28px;font-weight:800;margin:6px 0 2px}
+  .subtitle{color:var(--muted);margin-bottom:18px}
 
-    .lang-toggle{
-      margin-left:10px;
-      padding:6px 10px;
-      border:1px solid var(--border);
-      border-radius:6px;
-      background:#fff;
-      color:var(--shu-deep);
-      font-size:13px;
-      cursor:pointer;
-    }
+  .posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+  .post{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:14px}
+  .post:hover{box-shadow:0 6px 16px rgba(0,0,0,.06)}
+  .post .date{color:var(--muted);font-size:12px;margin-bottom:6px}
+  .post h3{margin:4px 0 8px 0;font-size:18px}
+  .post p{margin:0 0 10px 0;color:#444}
+  .more{display:inline-block;border:1px solid var(--brand);color:var(--brand);padding:6px 10px;border-radius:10px;font-weight:700}
 
-    /* Main */
-    main{max-width:980px;margin:20px auto;padding:0 16px}
-    h1{font-size:28px;margin:0 0 8px}
-    .lead{color:var(--muted);margin:0 0 16px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-    .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px}
-    .date{font-size:12px;color:var(--muted);margin-bottom:6px}
-    .title{font-weight:800;margin:0 0 6px}
-    .desc{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 10px}
-    .read{font-weight:700;color:var(--shu)}
+  .footer-nav{margin:20px 0 6px;display:flex;gap:14px;justify-content:flex-end}
+  .soft{background:var(--soft);border:1px dashed #f0d7d4;border-radius:12px;padding:8px 12px}
 
-    /* Footer */
-    footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
-    .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
-    .copy{color:#6b7280}
-
-    /* Ruby (furigana) */
-    ruby{ruby-position:over;}
-    rt{font-size:.65em;color:#6b7280;letter-spacing:0}
-  </style>
+  /* fallback header/footer containers (kept minimal; real content comes from partials) */
+  .brand-fallback{padding:14px 0;display:flex;gap:14px;align-items:center}
+  .brand-fallback a{font-weight:800;font-size:28px;color:var(--brand)}
+  .beta{color:var(--muted);font-size:12px}
+</style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="h-row">
-      <div class="brand">
-        <a href="/" aria-label="nihongotext.com">
-          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
-          <div class="brand-sub">== beta version ==</div>
-        </a>
-      </div>
 
-      <div style="display:flex;align-items:center;gap:10px">
-        <!-- nav (top) -->
-        <nav class="iconbar" aria-label="site tools">
-          <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
-          <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-          <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-          <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-          <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-        </nav>
-        <!-- Language toggle -->
-        <button class="lang-toggle" id="langBtn">日本語</button>
-      </div>
-    </div>
-  </header>
+<!-- header -->
+<div class="topbar-border">
+  <div id="site-header" class="wrap"></div>
+</div>
+<div class="spacer"></div>
 
-  <!-- Main -->
-  <main>
-    <h1 data-i18n="page_title">Blog</h1>
-    <p class="lead" data-i18n="lead">
-      Updates, tips, and behind-the-scenes notes from the nihongotext.com team.
-    </p>
+<main class="wrap">
+  <div class="crumbs"><a href="/">Home</a> / Blog</div>
+  <h1 class="title">Blog</h1>
+  <p class="subtitle">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
-    <section class="cards">
-      <article class="card">
-        <div class="date" data-i18n="post_date">Nov 3, 2025</div>
-        <h2 class="title" data-i18n="post_title">Roadmap Sneak Peek</h2>
-        <p class="desc" data-i18n="post_desc">
-          A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.
-        </p>
-        <a class="read" href="/blog/roadmap.html" data-i18n="read_more">Read more</a>
-      </article>
-    </section>
-  </main>
+  <!-- posts -->
+  <section class="posts" id="posts">
+    <!-- 既存の単一ポスト例。必要に応じて複製/差し替えしてください -->
+    <article class="post">
+      <div class="date">Nov 3, 2025</div>
+      <h3>Roadmap Sneak Peek</h3>
+      <p>A look at what's coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
+      <a class="more" href="/blog/roadmap-sneak-peek.html">Read more</a>
+    </article>
+  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="f-row">
-      <div class="iconbar">
-        <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
-        <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-        <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-        <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-        <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-      </div>
-      <div class="copy">© 2025 nihongotext.com</div>
-    </div>
-  </footer>
+  <div class="footer-nav">
+    <span class="soft">News / Contact</span>
+  </div>
+</main>
 
-  <!-- Language/i18n -->
-  <script>
-    // 英語デフォルト、ボタンで日本語(ルビ入り)へ切替
-    const dict = {
-      en: {
-        page_title: "Blog",
-        lead: "Updates, tips, and behind-the-scenes notes from the nihongotext.com team.",
-        post_date: "Nov 3, 2025",
-        post_title: "Roadmap Sneak Peek",
-        post_desc: "A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.",
-        read_more: "Read more",
-        btn: "日本語"
-      },
-      ja: {
-        // 日本語は innerHTML でルビ込みを流し込む
-        page_title: "<ruby><rb>ブログ</rb><rt>ぶろぐ</rt></ruby>",
-        lead:
-          "<ruby><rb>更新</rb><rt>こうしん</rt></ruby><ruby><rb>情報</rb><rt>じょうほう</rt></ruby>・" +
-          "<ruby><rb>豆知識</rb><rt>まめちしき</rt></ruby>・" +
-          "<ruby><rb>制作</rb><rt>せいさく</rt></ruby>の" +
-          "<ruby><rb>舞台裏</rb><rt>ぶたい うら</rt></ruby>ノートを" +
-          "nihongotext.com チームがお<ruby><rb>届</rb><rt>とど</rt></ruby>けします。",
-        post_date: "2025-11-03",
-        post_title:
-          "<ruby><rb>今後</rb><rt>こんご</rt></ruby>の<ruby><rb>計画</rb><rt>けいかく</rt></ruby>スニークピーク",
-        post_desc:
-          "<ruby><rb>今後</rb><rt>こんご</rt></ruby>のアップデート：" +
-          "JLPT レベルの<ruby><rb>拡充</rb><rt>かくじゅう</rt></ruby>、" +
-          "<ruby><rb>音声</rb><rt>おんせい</rt></ruby>TTS、" +
-          "<ruby><rb>学習</rb><rt>がくしゅう</rt></ruby>ツールの<ruby><rb>強化</rb><rt>きょうか</rt></ruby> など。",
-        read_more: "<ruby><rb>続きを読む</rb><rt>よむ</rt></ruby>",
-        btn: "English"
-      }
-    };
+<div class="spacer"></div>
+<!-- footer -->
+<div class="topbar-border">
+  <div id="site-footer" class="wrap"></div>
+</div>
 
-    const els = [...document.querySelectorAll("[data-i18n]")];
-    const langBtn = document.getElementById("langBtn");
-    let lang = "en"; // default
+<script>
+/* ===== 共通ヘッダー/フッターを読み込み ===== */
+(async function injectPartials(){
+  // ヘッダー
+  try{
+    const h = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.text());
+    document.getElementById('site-header').innerHTML = h;
+  }catch(e){
+    document.getElementById('site-header').innerHTML =
+      `<div class="brand-fallback">
+         <a href="/">nihongotext<span style="color:#333">.com</span></a>
+         <span class="beta">== beta version ==</span>
+         <div style="margin-left:auto"></div>
+       </div>`;
+  }
+  // フッター
+  try{
+    const f = await fetch('/footer.html',{cache:'no-store'}).then(r=>r.text());
+    document.getElementById('site-footer').innerHTML = f;
+  }catch(e){
+    document.getElementById('site-footer').innerHTML =
+      `<div style="padding:16px 0;text-align:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
+  }
+})();
 
-    function applyLang() {
-      document.documentElement.lang = lang;
-      const pack = dict[lang];
-      els.forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (!pack[key]) return;
-        // 日本語はルビ入りHTML、英語はテキスト
-        if (lang === "ja") {
-          el.innerHTML = pack[key];
-        } else {
-          el.textContent = pack[key];
-        }
-      });
-      langBtn.textContent = pack.btn;
-    }
-
-    langBtn.addEventListener("click", () => {
-      lang = (lang === "en") ? "ja" : "en";
-      applyLang();
+/* ===== GA4 手動ページビュー送信（SPA想定もカバー） ===== */
+(function(){
+  try{
+    gtag('event','page_view',{
+      page_title: document.title,
+      page_location: location.href,
+      page_path: location.pathname + location.search
     });
-
-    // 初期適用
-    applyLang();
-  </script>
+  }catch(_){}
+})();
+</script>
 </body>
 </html>
