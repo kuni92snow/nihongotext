@@ -4,165 +4,141 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blog | nihongotext.com</title>
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <link rel="icon" href="/favicon.ico" />
+  <meta name="color-scheme" content="light only" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- GA4 (same as top/inquiry) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9QSHWJE0HZ', { send_page_view: true });
+  </script>
+
+  <!-- AdSense (same as top/inquiry) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+
   <style>
+    /* ===== Site palette (same as inquiry) ===== */
     :root{
-      --accent:#e74c3c; --accent-2:#ff6b6b;
-      --ink:#222; --muted:#777; --bg:#fff; --card:#fff; --line:#f0f0f0;
+      --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
+      --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
+      --learned-bg:#eaf7ec; --learned-border:#cfead5; --learned-ink:#165b31;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--ink);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    html,body{margin:0;color:var(--ink);background:#fff;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
 
-    .site-header{position:sticky;top:0;z-index:20;background:#fff;
-      border-top:4px solid var(--accent);border-bottom:1px solid var(--line)}
-    .head-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:12px 16px}
-    .brand{font-weight:800;font-size:20px;line-height:1;cursor:pointer}
-    .beta{font-size:12px;color:#777;margin-left:8px}
-    nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
-    nav a{color:var(--ink);font-weight:600} nav a.active{color:var(--accent)}
+    /* ===== Header (same as inquiry) ===== */
+    header{border-bottom:3px solid var(--shu);background:#fff}
+    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;flex-direction:column;gap:2px}
+    .brand a.brand-link{display:inline-block;color:inherit;text-decoration:none}
+    .brand a.brand-link:focus-visible{outline:3px solid rgba(230,70,45,.35);border-radius:6px}
+    .brand-title{font-weight:980;letter-spacing:.3px;font-size:clamp(24px,4.2vw,32px);color:var(--shu)}
+    .brand-sub{width:fit-content;margin:0 auto;color:var(--shu-soft);font-weight:700;font-size:12px;letter-spacing:.4px}
+    .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
+      border:1px solid var(--border);background:#fff}
+    .iconbar .tool i{color:var(--shu)}
+    .iconbar .tool:hover{border-color:var(--shu)}
 
-    .site-footer{border-top:1px solid var(--line);padding:16px 0;margin-top:40px}
-    .foot-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 16px}
-    .copy{color:#555}
+    /* ===== Page main ===== */
+    main{max-width:980px;margin:20px auto 24px;padding:0 16px}
+    h1{font-size:28px;margin:0 0 8px}
+    .lead{color:var(--muted);margin:0 0 16px}
 
-    .wrap{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
-    .breadcrumbs{font-size:14px;color:var(--muted);margin:6px 0 14px}
-    .breadcrumbs a{color:var(--muted)}
-    .page-title{font-size:28px;font-weight:800;margin:18px 0 10px}
-    .desc{color:var(--muted);margin:0 0 22px}
+    /* Blog cards */
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+    .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px}
+    .date{font-size:12px;color:var(--muted);margin-bottom:6px}
+    .title{font-weight:800;margin:0 0 6px}
+    .desc{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 10px}
+    .read{font-weight:700;color:var(--shu)}
+    .read:hover{color:var(--shu-deep);text-decoration:underline}
 
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr);} }
-    @media (max-width:640px){ .grid{grid-template-columns:1fr;} }
+    /* ===== Footer (same as inquiry) ===== */
+    footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
+    .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
+    .copy{color:#6b7280}
 
-    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;
-      box-shadow:0 4px 14px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px}
-    .meta{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px}
-    .title{font-size:18px;font-weight:800;line-height:1.4;margin:2px 0}
-    .body{color:#333;line-height:1.9}
-    .hr{height:1px;background:var(--line);margin:10px 0}
-    .more{margin-top:auto}
+    /* Breadcrumb / nav under header (optional) */
+    .crumb{font-size:13px;color:var(--muted);margin:10px 0}
+    .topnav{display:flex;gap:16px;margin:0 0 6px}
+    .topnav a{padding:4px 0;border-bottom:2px solid transparent}
+    .topnav a.active{border-color:var(--shu);color:var(--shu)}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="head-inner">
-      <div class="brand" onclick="location.href='/'">nihongotext.com</div>
-      <div class="beta">== beta version ==</div>
-      <nav aria-label="Site">
-        <a href="/index.html">Home</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/inquiry/">Contact</a>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container h-row positioned">
+      <div class="brand">
+        <a class="brand-link" id="homeLink" href="/" aria-label="nihongotext.com のトップページへ">
+          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
+          <div class="brand-sub">== beta version ==</div>
+        </a>
+      </div>
+      <div></div>
+    </div>
+    <div class="container">
+      <nav class="iconbar" aria-label="site icons">
+        <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
+        <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+        <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+        <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <div class="breadcrumbs"><a href="/index.html">Home</a> / Blog</div>
-    <h1 class="page-title">Blog</h1>
-    <p class="desc">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
-    <section id="post-grid" class="grid" aria-live="polite"></section>
+  <!-- ===== Main ===== -->
+  <main>
+    <div class="container">
+      <nav class="topnav" aria-label="breadcrumbs and tabs">
+        <a href="/"      >Home</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/inquiry/">Contact</a>
+      </nav>
+
+      <h1>Blog</h1>
+      <p class="lead">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
+
+      <section class="cards">
+        <!-- Example post card -->
+        <article class="card">
+          <div class="date">Nov 3, 2025</div>
+          <h2 class="title">Roadmap Sneak Peek</h2>
+          <p class="desc">A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
+          <a class="read" href="/blog/roadmap.html">Read more</a>
+        </article>
+      </section>
+
+      <div style="margin-top:16px">
+        <a class="read" href="/news.html">News</a> / <a class="read" href="/inquiry/">Contact</a>
+      </div>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="foot-inner">
-      <div class="copy">© <span id="yy"></span> nihongotext.com</div>
-      <div><a href="/blog/news.html">News</a> / <a href="/inquiry/index.html">Contact</a></div>
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container f-row">
+      <nav class="iconbar" aria-label="site icons">
+        <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
+        <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+        <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+        <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+      </nav>
+      <div class="copy">© 2025 nihongotext.com</div>
     </div>
   </footer>
 
   <script>
-    // 年号
-    document.getElementById("yy").textContent = String(new Date().getFullYear());
-
-    // --- キャッシュ/古いSWの影響を極力バイパス ---
-    (async () => {
-      try{
-        if ('serviceWorker' in navigator) {
-          const regs = await navigator.serviceWorker.getRegistrations();
-          for (const r of regs) { if (r.scope.startsWith(location.origin)) { /*必要なら解除*/ } }
-        }
-        if ('caches' in window) {
-          const keys = await caches.keys();
-          for (const k of keys) { if (k.includes('nihongotext')) { await caches.delete(k); } }
-        }
-      }catch(_e){}
-    })();
-
-    const root = document.getElementById("post-grid");
-    const BUSTER = `v=${encodeURIComponent(new Date().toISOString().slice(0,19))}`;
-
-    // フォールバック記事（JSONが404でも真っ白にしない）
-    const FALLBACK = [{
-      id:"hello-nihongotext",
-      date:"2025-10-30",
-      title:"サイト更新(こうしん)のお知らせ",
-      summary:"Blog の初期化中です。しばらくしてから再読み込みしてください。",
-      href:"/index.html"
-    }];
-
-    fetch(`/blog/blogPosts.json?${BUSTER}`, { cache: 'no-store' })
-      .then(r => r.ok ? r.json() : Promise.reject(new Error(r.statusText)))
-      .then(json => {
-        const items = Array.isArray(json) ? json : [];
-        render(items.length ? items : FALLBACK);
-        injectLDJson(items.length ? items : FALLBACK);
-      })
-      .catch(() => {
-        render(FALLBACK);
-        injectLDJson(FALLBACK);
-      });
-
-    function cardTemplate(p){
-      const titleHtml  = ruby(p.title || '');
-      const summaryHtml= p.summary ? ruby(p.summary) : '';
-      const jaNoteHtml = p.jaNote  ? ruby(p.jaNote)  : '';
-      return `
-        <article class="card" data-id="${esc(p.id)}" aria-labelledby="${esc(p.id)}-title">
-          <div class="meta"><time datetime="${esc(p.date)}">${fmtEn(p.date)}</time></div>
-          <h2 id="${esc(p.id)}-title" class="title">${titleHtml}</h2>
-          <div class="hr"></div>
-          ${summaryHtml ? `<p class="body">${summaryHtml}</p>` : ""}
-          ${jaNoteHtml ? `<p class="body">${jaNoteHtml}</p>` : ""}
-          ${p.href ? `<p class="more"><a href="${p.href}">Read more</a></p>` : ""}
-        </article>`;
-    }
-    function render(items){ root.innerHTML = items.map(cardTemplate).join(""); }
-    function ruby(s){
-      return esc(String(s)).replace(/([^\s()（）]+)\(([^()]+)\)/g,
-        (_m,kan,rt)=>`<ruby>${kan}<rt>${rt}</rt></ruby>`);
-    }
-    function fmtEn(iso){
-      const d = new Date(iso+"T00:00:00");
-      return d.toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric"});
-    }
-    function esc(s){
-      return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;")
-        .replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
-    }
-    function injectLDJson(items){
-      const data = {
-        "@context":"https://schema.org",
-        "@type":"Blog",
-        "name":"nihongotext.com Blog",
-        "blogPost": items.map(p=>({
-          "@type":"BlogPosting",
-          "headline": p.title || "",
-          "datePublished": p.date,
-          "dateModified": p.date,
-          "description": p.summary || "",
-          "mainEntityOfPage": {"@type":"WebPage","@id": location.href}
-        }))
-      };
-      let el = document.getElementById("ld-json");
-      if(!el){ el = document.createElement("script"); el.id="ld-json"; el.type="application/ld+json"; document.body.appendChild(el); }
-      el.textContent = JSON.stringify(data);
-    }
+    // このページでは SW は登録しません（問い合わせと同方針）
   </script>
 </body>
 </html>
