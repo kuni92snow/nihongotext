@@ -1,203 +1,160 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Blog | nihongotext.com</title>
-<link rel="icon" href="/favicon.ico" />
-<base href="/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog | nihongotext.com</title>
+  <meta name="color-scheme" content="light only" />
 
-<!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
-</script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9QSHWJE0HZ', { send_page_view: false });
+  </script>
 
-<style>
-  :root{
-    --brand:#e4573d; --ink:#222; --muted:#98a1a8; --line:#eee;
-    --card:#fff; --soft:#fff8f6;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:#fff;color:var(--ink);
-    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
-         "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif}
-  a{color:inherit;text-decoration:none}
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
-  .topbar-border{border-top:4px solid var(--brand);border-bottom:1px solid var(--brand)}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-  .spacer{height:10px}
+  <style>
+    :root{
+      --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
+      --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;color:var(--ink);background:#fff;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+    a{color:inherit;text-decoration:none}
 
-  .crumbs{color:var(--muted);font-size:13px;margin:14px 0}
-  .title{font-size:28px;font-weight:800;margin:6px 0 2px}
-  .subtitle{color:var(--muted);margin-bottom:18px}
+    /* Header */
+    header{border-bottom:3px solid var(--shu);background:#fff}
+    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+    .brand{display:flex;flex-direction:column;gap:2px}
+    .brand-title{font-weight:980;font-size:28px;color:var(--shu)}
+    .brand-sub{color:var(--shu-soft);font-weight:700;font-size:12px;text-align:center}
 
-  .posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-  .post{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:14px}
-  .post:hover{box-shadow:0 6px 16px rgba(0,0,0,.06)}
-  .post .date{color:var(--muted);font-size:12px;margin-bottom:6px}
-  .post h3{margin:4px 0 8px 0;font-size:18px}
-  .post p{margin:0 0 10px 0;color:#444}
-  .more{display:inline-block;border:1px solid var(--brand);color:var(--brand);padding:6px 10px;border-radius:10px;font-weight:700}
+    .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;
+      border-radius:50%;border:1px solid var(--border);background:#fff}
+    .iconbar .tool i{color:var(--shu)}
+    .iconbar .tool:hover{border-color:var(--shu)}
 
-  .footer-nav{margin:20px 0 6px;display:flex;gap:14px;justify-content:flex-end}
-  .soft{background:var(--soft);border:1px dashed #f0d7d4;border-radius:12px;padding:8px 12px}
+    .lang-toggle{
+      margin-left:10px;
+      padding:6px 10px;
+      border:1px solid var(--border);
+      border-radius:6px;
+      background:#fff;
+      color:var(--shu-deep);
+      font-size:13px;
+      cursor:pointer;
+    }
 
-  /* AdSense */
-  .adslot{margin:16px 0}
-  .adslot ins.adsbygoogle{display:block}
+    /* Main */
+    main{max-width:980px;margin:20px auto;padding:0 16px}
+    h1{font-size:28px;margin:0 0 16px}
+    .post-card{border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:20px}
+    .post-card h2{margin:0 0 10px;color:var(--shu-deep)}
+    .post-card p{margin:0 0 10px;color:var(--ink)}
+    .btn-read{padding:8px 14px;border:1px solid var(--shu);color:var(--shu);border-radius:8px;text-decoration:none;font-size:14px}
+    .btn-read:hover{background:var(--shu-tint)}
 
-  /* fallback header/footer */
-  .brand-fallback{padding:14px 0;display:flex;gap:14px;align-items:center}
-  .brand-fallback a{font-weight:800;font-size:28px;color:var(--brand)}
-  .beta{color:var(--muted);font-size:12px}
-</style>
+    /* Ads */
+    .ads-box{margin:20px 0;text-align:center}
+
+    /* Footer */
+    footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
+    .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
+    .copy{color:#6b7280}
+  </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="h-row">
+      <div class="brand">
+        <a href="/" aria-label="nihongotext.com">
+          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
+          <div class="brand-sub">== beta version ==</div>
+        </a>
+      </div>
 
-<!-- header -->
-<div class="topbar-border">
-  <div id="site-header" class="wrap"></div>
-</div>
-<div class="spacer"></div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <nav class="iconbar">
+          <a class="tool" href="/blog/"><i class="fas fa-bell"></i></a>
+          <a class="tool" href="/inquiry/"><i class="fas fa-envelope"></i></a>
+          <a class="tool" href="https://reddit.com/r/nihongotext" target="_blank"><i class="fab fa-reddit"></i></a>
+          <a class="tool" href="https://medium.com/@nihongotext" target="_blank"><i class="fab fa-medium"></i></a>
+          <a class="tool" href="https://substack.com/@nihongotext" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+        </nav>
+        <button class="lang-toggle" id="langBtn">日本語</button>
+      </div>
+    </div>
+  </header>
 
-<main class="wrap">
-  <div class="crumbs"><a href="/">Home</a> / Blog</div>
-  <h1 class="title">Blog</h1>
-  <p class="subtitle">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
+  <!-- Main -->
+  <main>
+    <div class="ads-box">
+      <!-- AdSense top -->
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2358198194205084"
+        data-ad-slot="8427347812"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
-  <!-- AdSense 上部（data-ad-slot は実ユニットIDに変更） -->
-  <div class="adslot">
-    <ins class="adsbygoogle"
-         data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="0000000001"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
+    <h1>Blog</h1>
+    <p>Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
-  <!-- posts -->
-  <section class="posts" id="posts">
-    <article class="post">
-      <div class="date">Nov 3, 2025</div>
-      <h3>Roadmap Sneak Peek</h3>
+    <article class="post-card">
+      <p><strong>Nov 3, 2025</strong></p>
+      <h2>Roadmap Sneak Peek</h2>
       <p>A look at what's coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
-      <a class="more" href="/blog/roadmap-sneak-peek.html">Read more</a>
+      <a href="#" class="btn-read">Read more</a>
     </article>
-  </section>
 
-  <!-- AdSense 下部（data-ad-slot は実ユニットIDに変更） -->
-  <div class="adslot">
-    <ins class="adsbygoogle"
-         data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="0000000002"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
+    <div class="ads-box">
+      <!-- AdSense bottom -->
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2358198194205084"
+        data-ad-slot="1838268966"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </main>
 
-  <div class="footer-nav">
-    <span class="soft">News / Contact</span>
-  </div>
-</main>
+  <!-- Footer -->
+  <footer>
+    <div class="f-row">
+      <div class="iconbar">
+        <a class="tool" href="/blog/"><i class="fas fa-bell"></i></a>
+        <a class="tool" href="/inquiry/"><i class="fas fa-envelope"></i></a>
+        <a class="tool" href="https://reddit.com/r/nihongotext" target="_blank"><i class="fab fa-reddit"></i></a>
+        <a class="tool" href="https://medium.com/@nihongotext" target="_blank"><i class="fab fa-medium"></i></a>
+        <a class="tool" href="https://substack.com/@nihongotext" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+      </div>
+      <div class="copy">© 2025 nihongotext.com</div>
+    </div>
+  </footer>
 
-<div class="spacer"></div>
-
-<!-- footer -->
-<div class="topbar-border">
-  <div id="site-footer" class="wrap"></div>
-</div>
-
-<script>
-/* ===== ユーティリティ ===== */
-function getLang(){
-  const u = new URL(location.href);
-  return (u.searchParams.get('lang') || localStorage.getItem('nx_lang') || 'en');
-}
-function setLang(next){
-  const u = new URL(location.href);
-  u.searchParams.set('lang', next);
-  localStorage.setItem('nx_lang', next);
-  location.href = u.toString();
-}
-
-/* ===== 共通ヘッダー/フッター読み込み ===== */
-(async function injectPartials(){
-  // header
-  try{
-    const h = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.text());
-    document.getElementById('site-header').innerHTML = h;
-  }catch(e){
-    document.getElementById('site-header').innerHTML =
-      `<div class="brand-fallback">
-         <a href="/">nihongotext<span style="color:#333">.com</span></a>
-         <span class="beta">== beta version ==</span>
-       </div>`;
-  }
-
-  // footer
-  try{
-    const f = await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.text());
-    document.getElementById('site-footer').innerHTML = f;
-  }catch(e){
-    document.getElementById('site-footer').innerHTML =
-      `<div style="padding:16px 0;text-align:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
-  }
-
-  /* --- 1) アイコンURL差し替え（Tabler Icons 正規CDNへ） --- */
-  const TABLER = 'https://cdn.jsdelivr.net/npm/@tabler/icons@2.47.0/icons/outline/';
-  const map = {
-    printer:'printer.svg',
-    mail:'mail.svg',
-    'list-check':'list-check.svg',
-    notebook:'notebook.svg',
-    'brand-reddit':'brand-reddit.svg',
-    'brand-medium':'brand-medium.svg',
-    'brand-substack':'brand-substack.svg'
-  };
-  document.querySelectorAll('img[alt]').forEach(img=>{
-    const alt = img.getAttribute('alt') || '';
-    const key = alt.trim().toLowerCase();
-    // 既存の src が jsdelivr の gh/ 経由や 404 場合に置換
-    if (map[key]) img.src = TABLER + map[key];
-  });
-
-  /* --- 2) 言語切替ボタンの初期化（partials 挿入後に必ず実行） --- */
-  const btn = document.getElementById('langBtn');
-  if (btn){
-    const cur = getLang();                 // 'en' | 'ja'
-    btn.textContent = (cur === 'ja') ? 'English' : '日本語';
-    btn.addEventListener('click', ()=>{
-      const next = (getLang()==='ja') ? 'en' : 'ja';
-      setLang(next);
-    }, {passive:true});
-  }
-
-  /* --- 3) AdSense描画（ins を push） --- */
-  function renderAds(){
-    try{
-      document.querySelectorAll('ins.adsbygoogle').forEach(function(){
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      });
-    }catch(e){ console.warn(e); }
-  }
-  if (window.adsbygoogle) renderAds();
-  else window.addEventListener('load', renderAds);
-})();
-
-/* ===== GA4 手動 page_view ===== */
-try{
-  gtag('event','page_view',{
-    page_title: document.title,
-    page_location: location.href,
-    page_path: location.pathname + location.search
-  });
-}catch(_){}
-</script>
-
+  <script>
+    // Language toggle
+    const langBtn = document.getElementById('langBtn');
+    let lang = 'en';
+    langBtn.addEventListener('click', () => {
+      lang = (lang === 'en') ? 'ja' : 'en';
+      langBtn.textContent = (lang === 'en') ? '日本語' : 'English';
+      document.querySelector('h1').textContent = (lang === 'en') ? 'Blog' : 'ブログ';
+    });
+  </script>
 </body>
 </html>
