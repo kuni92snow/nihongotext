@@ -23,9 +23,7 @@
           for (const k of keys) await caches.delete(k);
         }
         console.log('[inquiry] cache & SW cleared');
-      } catch (e) {
-        console.warn('[inquiry] cache clear failed', e);
-      }
+      } catch (e) { console.warn('[inquiry] cache clear failed', e); }
     })();
   </script>
 
@@ -93,10 +91,19 @@
 (() => {
   "use strict";
 
-  // ===== 設定 =====
-  const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // 共有のサイトキー
-  const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec"; // 最新GAS URL
-  const VER = "20251030-widfix";
+  /* ====== reCAPTCHA サイトキー（方式B） ======
+     1) 管理画面で「SECRET_KEY = 6LcRKvArAAAAAIYct…」と“ペア”のサイトキーを確認
+     2) 下の SITE_KEY_DEFAULT に貼り付け
+     3) または URL に ?sitekey=... で一時切替、または localStorage.setItem('recaptcha_site_key', '...') でも可
+  ------------------------------------------------ */
+  const SITE_KEY_DEFAULT = ""; // ←★ここに「AIYct… とペアのサイトキー」を貼ってください
+  const siteKeyFromQS = new URL(location.href).searchParams.get("sitekey") || "";
+  const siteKeyFromLS = (()=>{ try{return localStorage.getItem("recaptcha_site_key")||"";}catch(_){return ""} })();
+  const SITE_KEY = siteKeyFromQS || siteKeyFromLS || SITE_KEY_DEFAULT;
+
+  // ===== GAS URL（最新・変更なし）=====
+  const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec";
+  const VER = "20251030-b";
 
   // ===== 文言 =====
   const T = {
@@ -163,7 +170,6 @@
           subject=$("subject").value.trim(), message=$("message").value.trim();
     if(!name || !email || !message){ setStatus(T[lang].need,false); $("sendBtn").disabled=false; return; }
 
-    // reCAPTCHA 未描画/未チェック防止（0 も OK）
     if(!isWidReady(window.__wid)){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
     const token = (typeof grecaptcha!=="undefined" && isWidReady(window.__wid))
       ? grecaptcha.getResponse(window.__wid)
@@ -174,7 +180,7 @@
       mode:'contact_submit',
       name, email, subject, message,
       token,
-      ['g-recaptcha-response']:token,
+      ['g-recaptcha-response']:token, // どちらでも受けられるよう二重で送る
       v:VER
     });
 
@@ -187,26 +193,33 @@
     sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{ if (isWidReady(window.__wid)) grecaptcha.reset(window.__wid);}catch(e){} };
     document.body.appendChild(sc);
 
-    // 一部実装向けフォロー
     setTimeout(()=>{ try{ delete window[dynamicCb]; }catch(e){} }, 5000);
   });
 
   // ===== 年号・初期化 =====
   $("yy").textContent = String(new Date().getFullYear());
   applyLang();
+
+  // サイトキー未設定時のガード
+  if(!SITE_KEY){
+    console.warn('[inquiry] No reCAPTCHA site key. Set SITE_KEY_DEFAULT or use ?sitekey=');
+    setStatus("reCAPTCHA の設定が見つかりません。管理画面のサイトキーを設定してください。", false);
+  }
 })();
 </script>
 
 <!-- ▼ reCAPTCHA は body 最後でロードし、確実に初期化（0 も有効IDとして扱う） -->
 <script>
   function initRecaptchaStable(){
-    if (typeof grecaptcha === "undefined" || !document.getElementById("recaptcha")) {
+    if (!document.getElementById("recaptcha")) return;
+    if (typeof grecaptcha === "undefined") {
       console.warn("[inquiry] reCAPTCHA not ready, retrying...");
       setTimeout(initRecaptchaStable, 700);
       return;
     }
     try {
-      window.__wid = grecaptcha.render("recaptcha", { sitekey: "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV", theme:"light", size:"normal" });
+      // 上で決定した SITE_KEY を使う
+      window.__wid = grecaptcha.render("recaptcha", { sitekey: (window.SITE_KEY || (function(){try{return (new URL(location.href)).searchParams.get('sitekey')||localStorage.getItem('recaptcha_site_key')||''}catch(_){return ''}})()), theme:"light", size:"normal" });
       console.log("[inquiry] reCAPTCHA initialized with wid:", window.__wid);
       document.getElementById("sendBtn").disabled = false; // 初期化後に有効化
     } catch(e) {
