@@ -23,23 +23,23 @@
       --muted:#6b7280;--border:#efdfdc;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,"Noto Sans JP",sans-serif;color:var(--ink)}
+    body{margin:0;font-family:system-ui,"Noto Sans JP",sans-serif;color:var(--ink);background:#fff}
     a{text-decoration:none;color:inherit}
 
-    header{border-bottom:3px solid var(--shu);background:#fff}
+    /* Header */
+    header{border-bottom:3px solid var(--shu);background:#fff;position:sticky;top:0;z-index:20}
     .h-row{display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
     .brand{display:flex;flex-direction:column}
     .brand-title{font-size:28px;font-weight:900;color:var(--shu)}
     .brand-sub{font-size:12px;color:var(--shu-soft)}
-    .iconbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .iconbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:6px 0 10px}
     .iconbar .tool{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;
       border-radius:50%;border:1px solid var(--border);background:#fff}
     .iconbar .tool i{color:var(--shu)}
     .iconbar .tool:hover{border-color:var(--shu)}
+    .lang-toggle{padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--shu-deep);cursor:pointer;font-size:13px}
 
-    .lang-toggle{padding:6px 10px;border:1px solid var(--border);
-      border-radius:6px;background:#fff;color:var(--shu-deep);cursor:pointer;font-size:13px}
-
+    /* Main */
     main{max-width:980px;margin:20px auto;padding:0 16px}
     h1{font-size:26px;margin:0 0 16px}
     label{display:block;margin:10px 0 4px;font-size:13px;color:var(--muted)}
@@ -51,13 +51,22 @@
     .btn.secondary{background:#fff;border:1px solid var(--shu);color:var(--shu)}
     .note{font-size:12px;color:var(--muted);margin-top:6px}
 
+    /* Footer */
     footer{border-top:3px solid var(--shu);background:#fff;margin-top:30px}
     .f-row{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px 0}
     .copy{color:#6b7280;font-size:13px}
+
+    /* i18n visibility */
+    .lang{display:none}
+    .lang.show{display:inline}
+    .block .lang.show{display:block}
+    ruby{ruby-position:over}
+    rt{font-size:0.7em;color:#777;letter-spacing:0.03em}
   </style>
 </head>
 
 <body>
+  <!-- ===== Header ===== -->
   <header>
     <div class="h-row">
       <div class="brand">
@@ -66,37 +75,74 @@
           <div class="brand-sub">== beta version ==</div>
         </a>
       </div>
-      <button class="lang-toggle" id="langBtn">日本語</button>
+      <button class="lang-toggle" id="langBtn" aria-label="Switch language">日本語</button>
     </div>
 
     <div class="iconbar">
       <a class="tool" href="/blog/" title="Blog"><i class="fas fa-bell"></i></a>
       <a class="tool" href="/inquiry/" title="Contact"><i class="fas fa-envelope"></i></a>
-      <a class="tool" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-      <a class="tool" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-      <a class="tool" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+      <a class="tool" target="_blank" href="https://reddit.com/r/nihongotext" title="Reddit"><i class="fab fa-reddit"></i></a>
+      <a class="tool" target="_blank" href="https://medium.com/@nihongotext" title="Medium"><i class="fab fa-medium"></i></a>
+      <a class="tool" target="_blank" href="https://substack.com/@nihongotext" title="Substack"><i class="fas fa-envelope-open-text"></i></a>
     </div>
   </header>
 
+  <!-- ===== Main ===== -->
   <main>
-    <h1><ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby> / Contact</h1>
+    <h1>
+      <span class="lang en show" data-key="title">Contact</span>
+      <span class="lang ja"><ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby></span>
+    </h1>
 
-    <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzHvm3JmrYzJChzIPJJIR7PsAMmMOaPBKXVEyBXLeLQ_7mMrhCOJ_DdWxE75TVxWwWZvQ/exec" method="POST" target="hidden_iframe">
-      <label><ruby><rb>お名前</rb><rt>おなまえ</rt></ruby> / Name</label>
-      <input name="name" required />
+    <!-- action: あなたのGAS（または今使っている）URLに合わせてください -->
+    <form id="contactForm"
+          action="https://script.google.com/macros/s/AKfycbzHvm3JmrYzJChzIPJJIR7PsAMmMOaPBKXVEyBXLeLQ_7mMrhCOJ_DdWxE75TVxWwWZvQ/exec"
+          method="POST" target="hidden_iframe" novalidate>
+      <!-- Name -->
+      <label class="block">
+        <span class="lang en show">Name</span>
+        <span class="lang ja"><ruby><rb>お名前</rb><rt>おなまえ</rt></ruby></span>
+      </label>
+      <input name="name" required
+             data-ph-en="Your name"
+             data-ph-ja="お名前を入力してください" />
 
-      <label><ruby><rb>メール</rb><rt>めーる</rt></ruby> / Email</label>
-      <input name="email" type="email" required />
+      <!-- Email -->
+      <label class="block" style="margin-top:10px">
+        <span class="lang en show">Email</span>
+        <span class="lang ja"><ruby><rb>メール</rb><rt>めーる</rt></ruby> <ruby><rb>アドレス</rb><rt>あどれす</rt></ruby></span>
+      </label>
+      <input name="email" type="email" required
+             data-ph-en="your@email.com"
+             data-ph-ja="メールアドレスを入力してください" />
 
-      <label><ruby><rb>件名</rb><rt>けんめい</rt></ruby> / Subject</label>
-      <input name="subject" required />
+      <!-- Subject -->
+      <label class="block" style="margin-top:10px">
+        <span class="lang en show">Subject</span>
+        <span class="lang ja"><ruby><rb>件名</rb><rt>けんめい</rt></ruby></span>
+      </label>
+      <input name="subject" required
+             data-ph-en="What is this about?"
+             data-ph-ja="件名を入力してください" />
 
-      <label><ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby> / Message</label>
-      <textarea name="message" required></textarea>
+      <!-- Message -->
+      <label class="block" style="margin-top:10px">
+        <span class="lang en show">Message</span>
+        <span class="lang ja"><ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby></span>
+      </label>
+      <textarea name="message" required
+                data-ph-en="Write your message..."
+                data-ph-ja="メッセージを入力してください"></textarea>
 
       <div class="row">
-        <button type="reset" class="btn secondary">キャンセル / Cancel</button>
-        <button type="submit" class="btn primary">送信 / Send</button>
+        <button type="reset" class="btn secondary">
+          <span class="lang en show">Cancel</span>
+          <span class="lang ja"><ruby><rb>キャンセル</rb><rt>きゃんせる</rt></ruby></span>
+        </button>
+        <button type="submit" class="btn primary">
+          <span class="lang en show">Send</span>
+          <span class="lang ja"><ruby><rb>送信</rb><rt>そうしん</rt></ruby></span>
+        </button>
       </div>
       <div class="note" id="resultMsg"></div>
     </form>
@@ -104,40 +150,75 @@
     <iframe name="hidden_iframe" style="display:none"></iframe>
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <div class="f-row">
       <div class="iconbar">
         <a class="tool" href="/blog/" title="Blog"><i class="fas fa-bell"></i></a>
         <a class="tool" href="/inquiry/" title="Contact"><i class="fas fa-envelope"></i></a>
-        <a class="tool" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-        <a class="tool" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-        <a class="tool" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+        <a class="tool" target="_blank" href="https://reddit.com/r/nihongotext" title="Reddit"><i class="fab fa-reddit"></i></a>
+        <a class="tool" target="_blank" href="https://medium.com/@nihongotext" title="Medium"><i class="fab fa-medium"></i></a>
+        <a class="tool" target="_blank" href="https://substack.com/@nihongotext" title="Substack"><i class="fas fa-envelope-open-text"></i></a>
       </div>
       <div class="copy">© 2025 nihongotext.com</div>
     </div>
   </footer>
 
   <script>
-    // === 言語切替 ===
-    const btn = document.getElementById("langBtn");
-    let isEn = true;
-    btn.onclick = () => {
-      isEn = !isEn;
-      if (isEn) {
-        btn.textContent = "日本語";
-        document.documentElement.lang = "en";
-      } else {
-        btn.textContent = "English";
-        document.documentElement.lang = "ja";
-      }
-    };
+    // --- helpers ---
+    const qs = (s,root=document)=>root.querySelector(s);
+    const qsa= (s,root=document)=>[...root.querySelectorAll(s)];
+    const getParam = (k)=> new URL(location.href).searchParams.get(k);
 
-    // === フォーム送信 ===
-    const form = document.getElementById("contactForm");
-    const msg = document.getElementById("resultMsg");
-    form.addEventListener("submit", () => {
-      msg.textContent = "送信しました。ありがとうございます。 / Message sent successfully!";
-      setTimeout(()=>{msg.textContent="";},4000);
+    function setPlaceholders(lang){
+      qsa('input,textarea').forEach(el=>{
+        const val = el.getAttribute(lang==='en'?'data-ph-en':'data-ph-ja');
+        if(val) el.placeholder = val;
+      });
+    }
+    function showLang(lang){
+      // toggle html lang + title
+      document.documentElement.lang = (lang==='ja' ? 'ja' : 'en');
+      document.title = (lang==='ja' ? 'お問い合わせ | nihongotext.com' : 'Contact | nihongotext.com');
+
+      // show/hide text
+      qsa('.lang').forEach(el=>el.classList.remove('show'));
+      qsa('.lang.'+lang).forEach(el=>el.classList.add('show'));
+
+      // button label shows the other option
+      const btn = qs('#langBtn');
+      btn.textContent = (lang==='ja' ? 'English' : '日本語');
+
+      // placeholders
+      setPlaceholders(lang);
+
+      // remember choice
+      try{ localStorage.setItem('nt_lang', lang); }catch(e){}
+    }
+
+    // initial language: URL param > localStorage > default(en)
+    (function initLang(){
+      const fromUrl = getParam('lang');
+      const stored  = (()=>{try{return localStorage.getItem('nt_lang')}catch(e){return null}})();
+      const lang = (fromUrl==='ja'||fromUrl==='en') ? fromUrl : (stored||'en');
+      showLang(lang);
+    })();
+
+    // toggle button
+    qs('#langBtn').addEventListener('click', ()=>{
+      const current = document.documentElement.lang==='ja' ? 'ja' : 'en';
+      showLang(current==='ja' ? 'en' : 'ja');
+    });
+
+    // submit UX（送信結果の軽い通知）
+    const form = qs("#contactForm");
+    const msg  = qs("#resultMsg");
+    form.addEventListener("submit", ()=>{
+      const lang = document.documentElement.lang;
+      msg.textContent = (lang==='ja')
+        ? "送信しました。ありがとうございます。"
+        : "Message sent successfully. Thank you!";
+      setTimeout(()=>{ msg.textContent=""; }, 4000);
     });
   </script>
 </body>
