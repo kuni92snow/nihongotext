@@ -10,7 +10,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <!-- ページ最上部で SW / Cache を必ず除去 -->
+  <!-- ページ最上部で SW / Cache を必ず除去（通常モード対策） -->
   <script>
     (async () => {
       try {
@@ -23,7 +23,9 @@
           for (const k of keys) await caches.delete(k);
         }
         console.log('[inquiry] cache & SW cleared');
-      } catch (e) { console.warn('[inquiry] cache clear failed', e); }
+      } catch (e) {
+        console.warn('[inquiry] cache clear failed', e);
+      }
     })();
   </script>
 
@@ -48,9 +50,6 @@
     .ok{color:#2e7d32}.err{color:#c62828}
     footer{text-align:center;color:var(--muted);font-size:12px}
   </style>
-
-  <!-- reCAPTCHA v2（explicit render） -->
-  <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaReady&render=explicit&hl=ja" async defer></script>
 </head>
 <body>
 <header>
@@ -97,7 +96,7 @@
   // ===== 設定 =====
   const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // 共有いただいたサイトキー
   const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec"; // 最新URL
-  const VER = "20251030-stable";
+  const VER = "20251030-final";
 
   // ===== 文言 =====
   const T = {
@@ -129,19 +128,6 @@
   // ===== ステータス表示 =====
   function setStatus(msg, ok){ const el=$("status"); el.textContent=msg; el.className="status "+(ok?"ok":"err"); }
 
-  // ===== reCAPTCHA（描画完了まで送信ボタンを無効化）=====
-  let wid = null;
-  window.onRecaptchaReady = function(){
-    try{
-      wid = grecaptcha.render("recaptcha", { sitekey:SITE_KEY, theme:"light", size:"normal" });
-      console.log('[inquiry] recaptcha rendered:', wid);
-      $("sendBtn").disabled = false; // ← ここで初めて送信可能にする
-    }catch(e){
-      console.error('[inquiry] reCAPTCHA render error', e);
-      setStatus("reCAPTCHA の読み込みに失敗しました。ページを再読み込みしてください。", false);
-    }
-  };
-
   // ===== JSONP 互換（固定/動的どちらにも対応）=====
   const FIXED_CB = "cb_x";
   window[FIXED_CB] = function(res){ onJSONPResponse(res); };
@@ -162,7 +148,7 @@
       }
     } finally {
       $("sendBtn").disabled = false;
-      try{ grecaptcha.reset(wid); }catch(e){}
+      try{ grecaptcha.reset(window.__wid); }catch(e){}
     }
   }
 
@@ -175,8 +161,8 @@
     if(!name || !email || !message){ setStatus(T[lang].need,false); $("sendBtn").disabled=false; return; }
 
     // reCAPTCHA 未描画/未チェック防止
-    if(wid===null){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
-    const token = grecaptcha.getResponse(wid);
+    if(!window.__wid && window.__wid!==0){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
+    const token = (typeof grecaptcha!=="undefined") ? grecaptcha.getResponse(window.__wid) : "";
     if(!token){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
 
     const params = new URLSearchParams({
@@ -193,7 +179,7 @@
 
     const sc = document.createElement("script");
     sc.src = url; sc.async = true; sc.defer = true;
-    sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{grecaptcha.reset(wid);}catch(e){} };
+    sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{grecaptcha.reset(window.__wid);}catch(e){} };
     document.body.appendChild(sc);
 
     // 一部実装向けフォロー
@@ -205,5 +191,27 @@
   applyLang();
 })();
 </script>
+
+<!-- ▼ reCAPTCHA は body 最後でロードし、確実に初期化する（遅延/拡張の影響を受けにくい） -->
+<script>
+  function initRecaptchaStable(){
+    if (typeof grecaptcha === "undefined" || !document.getElementById("recaptcha")) {
+      console.warn("[inquiry] reCAPTCHA not ready, retrying...");
+      setTimeout(initRecaptchaStable, 700);
+      return;
+    }
+    try {
+      window.__wid = grecaptcha.render("recaptcha", { sitekey: "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV", theme:"light", size:"normal" });
+      console.log("[inquiry] reCAPTCHA initialized with wid:", window.__wid);
+      document.getElementById("sendBtn").disabled = false; // ← 初めて有効化
+    } catch(e) {
+      console.error("[inquiry] reCAPTCHA render failed:", e);
+      setTimeout(initRecaptchaStable, 800);
+    }
+  }
+  window.addEventListener("load", initRecaptchaStable);
+</script>
+<script src="https://www.google.com/recaptcha/api.js?hl=ja" async defer></script>
+<!-- ▲ reCAPTCHA -->
 </body>
 </html>
