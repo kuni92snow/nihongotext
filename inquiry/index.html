@@ -6,40 +6,21 @@
   <title>Contact | nihongotext.com</title>
   <meta name="color-scheme" content="light only" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- Google Analytics -->
+  <!-- GA -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ');
-  </script>
-
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
   <style>
-    :root{
-      --shu:#e6462d;--shu-deep:#c13727;--shu-tint:#fff2ef;
-      --shu-soft:#ffb9aa;--white:#fff;--ink:#1f2937;
-      --muted:#6b7280;--border:#efdfdc;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,"Noto Sans JP",sans-serif;color:var(--ink);background:#fff}
+    :root{--shu:#e6462d;--shu-deep:#c13727;--shu-soft:#ffb9aa;--border:#efdfdc;--ink:#1f2937;--muted:#6b7280}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,"Noto Sans JP",sans-serif;color:var(--ink);background:#fff}
     a{text-decoration:none;color:inherit}
-
-    /* Header */
     header{border-bottom:3px solid var(--shu);background:#fff;position:sticky;top:0;z-index:20}
     .h-row{display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
     .brand{display:flex;flex-direction:column}
-    .brand-title{font-size:28px;font-weight:900;color:var(--shu)}
-    .brand-sub{font-size:12px;color:var(--shu-soft)}
+    .brand-title{font-size:28px;font-weight:900;color:var(--shu)} .brand-sub{font-size:12px;color:var(--shu-soft)}
     .iconbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:6px 0 10px}
-    .iconbar .tool{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;
-      border-radius:50%;border:1px solid var(--border);background:#fff}
-    .iconbar .tool i{color:var(--shu)}
-    .iconbar .tool:hover{border-color:var(--shu)}
+    .iconbar .tool{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--border);background:#fff}
+    .iconbar .tool i{color:var(--shu)} .iconbar .tool:hover{border-color:var(--shu)}
     .lang-toggle{padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--shu-deep);cursor:pointer;font-size:13px}
-
-    /* Main */
     main{max-width:980px;margin:20px auto;padding:0 16px}
     h1{font-size:26px;margin:0 0 16px}
     label{display:block;margin:10px 0 4px;font-size:13px;color:var(--muted)}
@@ -50,34 +31,23 @@
     .btn.primary{background:var(--shu);border:1px solid var(--shu);color:#fff}
     .btn.secondary{background:#fff;border:1px solid var(--shu);color:var(--shu)}
     .note{font-size:12px;color:var(--muted);margin-top:6px}
-
-    /* Footer */
     footer{border-top:3px solid var(--shu);background:#fff;margin-top:30px}
     .f-row{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px 0}
     .copy{color:#6b7280;font-size:13px}
-
-    /* i18n visibility */
-    .lang{display:none}
-    .lang.show{display:inline}
-    .block .lang.show{display:block}
-    ruby{ruby-position:over}
-    rt{font-size:0.7em;color:#777;letter-spacing:0.03em}
+    .lang{display:none} .lang.show{display:inline} .block .lang.show{display:block}
+    ruby{ruby-position:over} rt{font-size:.7em;color:#777;letter-spacing:.03em}
+    .recap-wrap{margin-top:12px}
   </style>
 </head>
-
 <body>
-  <!-- ===== Header ===== -->
+  <!-- Header -->
   <header>
     <div class="h-row">
       <div class="brand">
-        <a href="/">
-          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
-          <div class="brand-sub">== beta version ==</div>
-        </a>
+        <a href="/"><div class="brand-title">nihongotext<span style="color:#c13727">.com</span></div><div class="brand-sub">== beta version ==</div></a>
       </div>
       <button class="lang-toggle" id="langBtn" aria-label="Switch language">日本語</button>
     </div>
-
     <div class="iconbar">
       <a class="tool" href="/blog/" title="Blog"><i class="fas fa-bell"></i></a>
       <a class="tool" href="/inquiry/" title="Contact"><i class="fas fa-envelope"></i></a>
@@ -87,52 +57,47 @@
     </div>
   </header>
 
-  <!-- ===== Main ===== -->
   <main>
     <h1>
-      <span class="lang en show" data-key="title">Contact</span>
+      <span class="lang en show">Contact</span>
       <span class="lang ja"><ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby></span>
     </h1>
 
-    <!-- action: あなたのGAS（または今使っている）URLに合わせてください -->
+    <!-- action: あなたのGAS本番URL -->
     <form id="contactForm"
-          action="https://script.google.com/macros/s/AKfycbzHvm3JmrYzJChzIPJJIR7PsAMmMOaPBKXVEyBXLeLQ_7mMrhCOJ_DdWxE75TVxWwWZvQ/exec"
-          method="POST" target="hidden_iframe" novalidate>
-      <!-- Name -->
+      action="https://script.google.com/macros/s/AKfycbzHvm3JmrYzJChzIPJJIR7PsAMmMOaPBKXVEyBXLeLQ_7mMrhCOJ_DdWxE75TVxWwWZvQ/exec"
+      method="POST" target="hidden_iframe" novalidate>
       <label class="block">
         <span class="lang en show">Name</span>
         <span class="lang ja"><ruby><rb>お名前</rb><rt>おなまえ</rt></ruby></span>
       </label>
-      <input name="name" required
-             data-ph-en="Your name"
-             data-ph-ja="お名前を入力してください" />
+      <input name="name" required data-ph-en="Your name" data-ph-ja="お名前を入力してください" />
 
-      <!-- Email -->
       <label class="block" style="margin-top:10px">
         <span class="lang en show">Email</span>
         <span class="lang ja"><ruby><rb>メール</rb><rt>めーる</rt></ruby> <ruby><rb>アドレス</rb><rt>あどれす</rt></ruby></span>
       </label>
-      <input name="email" type="email" required
-             data-ph-en="your@email.com"
-             data-ph-ja="メールアドレスを入力してください" />
+      <input name="email" type="email" required data-ph-en="your@email.com" data-ph-ja="メールアドレスを入力してください" />
 
-      <!-- Subject -->
       <label class="block" style="margin-top:10px">
         <span class="lang en show">Subject</span>
         <span class="lang ja"><ruby><rb>件名</rb><rt>けんめい</rt></ruby></span>
       </label>
-      <input name="subject" required
-             data-ph-en="What is this about?"
-             data-ph-ja="件名を入力してください" />
+      <input name="subject" required data-ph-en="What is this about?" data-ph-ja="件名を入力してください" />
 
-      <!-- Message -->
       <label class="block" style="margin-top:10px">
         <span class="lang en show">Message</span>
         <span class="lang ja"><ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby></span>
       </label>
-      <textarea name="message" required
-                data-ph-en="Write your message..."
-                data-ph-ja="メッセージを入力してください"></textarea>
+      <textarea name="message" required data-ph-en="Write your message..." data-ph-ja="メッセージを入力してください"></textarea>
+
+      <!-- reCAPTCHA v2 -->
+      <div class="recap-wrap">
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFYmY2IyP9o_hwTszHwzp3bgRXtBV"></div>
+        <!-- GAS が期待する token をここに入れる -->
+        <input type="hidden" name="token" id="token">
+        <div class="note" id="recapNote"></div>
+      </div>
 
       <div class="row">
         <button type="reset" class="btn secondary">
@@ -146,11 +111,9 @@
       </div>
       <div class="note" id="resultMsg"></div>
     </form>
-
     <iframe name="hidden_iframe" style="display:none"></iframe>
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer>
     <div class="f-row">
       <div class="iconbar">
@@ -165,60 +128,80 @@
   </footer>
 
   <script>
-    // --- helpers ---
-    const qs = (s,root=document)=>root.querySelector(s);
-    const qsa= (s,root=document)=>[...root.querySelectorAll(s)];
-    const getParam = (k)=> new URL(location.href).searchParams.get(k);
-
-    function setPlaceholders(lang){
-      qsa('input,textarea').forEach(el=>{
-        const val = el.getAttribute(lang==='en'?'data-ph-en':'data-ph-ja');
-        if(val) el.placeholder = val;
-      });
-    }
+    // ====== i18n ======
+    const qs=(s,r=document)=>r.querySelector(s), qsa=(s,r=document)=>[...r.querySelectorAll(s)];
+    const getParam=k=>new URL(location.href).searchParams.get(k);
+    function setPlaceholders(lang){ qsa('input,textarea').forEach(el=>{ const v=el.getAttribute(lang==='en'?'data-ph-en':'data-ph-ja'); if(v) el.placeholder=v; }); }
     function showLang(lang){
-      // toggle html lang + title
-      document.documentElement.lang = (lang==='ja' ? 'ja' : 'en');
-      document.title = (lang==='ja' ? 'お問い合わせ | nihongotext.com' : 'Contact | nihongotext.com');
-
-      // show/hide text
-      qsa('.lang').forEach(el=>el.classList.remove('show'));
-      qsa('.lang.'+lang).forEach(el=>el.classList.add('show'));
-
-      // button label shows the other option
-      const btn = qs('#langBtn');
-      btn.textContent = (lang==='ja' ? 'English' : '日本語');
-
-      // placeholders
+      document.documentElement.lang=(lang==='ja'?'ja':'en');
+      document.title = (lang==='ja'?'お問い合わせ | nihongotext.com':'Contact | nihongotext.com');
+      qsa('.lang').forEach(el=>el.classList.remove('show')); qsa('.lang.'+lang).forEach(el=>el.classList.add('show'));
+      qs('#langBtn').textContent=(lang==='ja'?'English':'日本語');
       setPlaceholders(lang);
-
-      // remember choice
-      try{ localStorage.setItem('nt_lang', lang); }catch(e){}
+      try{localStorage.setItem('nt_lang',lang)}catch(e){}
+      loadRecaptcha(lang); // 言語に合わせて reCAPTCHA を再読込
     }
-
-    // initial language: URL param > localStorage > default(en)
     (function initLang(){
-      const fromUrl = getParam('lang');
-      const stored  = (()=>{try{return localStorage.getItem('nt_lang')}catch(e){return null}})();
-      const lang = (fromUrl==='ja'||fromUrl==='en') ? fromUrl : (stored||'en');
-      showLang(lang);
+      const fromUrl=getParam('lang'); const stored=(()=>{try{return localStorage.getItem('nt_lang')}catch(e){return null}})();
+      const lang=(fromUrl==='ja'||fromUrl==='en')?fromUrl:(stored||'en'); showLang(lang);
     })();
-
-    // toggle button
-    qs('#langBtn').addEventListener('click', ()=>{
-      const current = document.documentElement.lang==='ja' ? 'ja' : 'en';
-      showLang(current==='ja' ? 'en' : 'ja');
+    qs('#langBtn').addEventListener('click',()=>{
+      const cur=document.documentElement.lang==='ja'?'ja':'en'; showLang(cur==='ja'?'en':'ja');
     });
 
-    // submit UX（送信結果の軽い通知）
-    const form = qs("#contactForm");
-    const msg  = qs("#resultMsg");
-    form.addEventListener("submit", ()=>{
-      const lang = document.documentElement.lang;
-      msg.textContent = (lang==='ja')
-        ? "送信しました。ありがとうございます。"
-        : "Message sent successfully. Thank you!";
-      setTimeout(()=>{ msg.textContent=""; }, 4000);
+    // ====== reCAPTCHA (v2 checkbox) ======
+    const SITE_KEY = "6LcRKvArAAAAAFYmY2IyP9o_hwTszHwzp3bgRXtBV";
+    let recapScriptEl=null, recapWidgetId=null;
+    function loadRecaptcha(lang){
+      // 既存ウィジェット/スクリプトをクリーンアップ
+      try{ if(recapWidgetId!==null && window.grecaptcha) grecaptcha.reset(recapWidgetId);}catch(e){}
+      recapWidgetId=null;
+      // container リセット（"already rendered" 対策）
+      const box = qs('#recaptcha'); box.innerHTML='';
+      if(recapScriptEl){ recapScriptEl.remove(); recapScriptEl=null; }
+
+      // onload コールバック
+      window.ntOnRecaptchaLoaded = function(){
+        try{
+          recapWidgetId = grecaptcha.render('recaptcha', {sitekey:SITE_KEY});
+          qs('#recapNote').textContent = '';
+          console.info('[inquiry] reCAPTCHA rendered, wid:', recapWidgetId);
+        }catch(err){
+          qs('#recapNote').textContent = (lang==='ja')
+            ? 'reCAPTCHA の初期化に失敗しました。しばらくしてから再度お試しください。'
+            : 'Failed to initialize reCAPTCHA. Please try again later.';
+          console.warn('render failed:', err);
+        }
+      };
+
+      // 言語に合わせて読み込み（キャッシュバスターで SW/Cache 回避）
+      const src = `https://www.google.com/recaptcha/api.js?render=explicit&onload=ntOnRecaptchaLoaded&hl=${lang==='ja'?'ja':'en'}&_=${Date.now()}`;
+      recapScriptEl = document.createElement('script');
+      recapScriptEl.src = src; recapScriptEl.async = true; recapScriptEl.defer = true;
+      document.body.appendChild(recapScriptEl);
+      qs('#recapNote').textContent = (lang==='ja')?'reCAPTCHA を読み込み中…':'Loading reCAPTCHA…';
+    }
+
+    // ====== Submit hook ======
+    const form = qs('#contactForm'), msg = qs('#resultMsg');
+    form.addEventListener('submit',(ev)=>{
+      const lang=document.documentElement.lang;
+      try{
+        const token = (window.grecaptcha && recapWidgetId!==null) ? grecaptcha.getResponse(recapWidgetId) : '';
+        if(!token){
+          ev.preventDefault();
+          msg.textContent = (lang==='ja')?'先に「私はロボットではありません」にチェックしてください。':'Please complete the reCAPTCHA first.';
+          return;
+        }
+        qs('#token').value = token; // GAS が期待する token にセット
+        msg.textContent = (lang==='ja')?'送信しました。ありがとうございます。':'Message sent successfully. Thank you!';
+        setTimeout(()=>{ msg.textContent=''; }, 5000);
+      }catch(e){
+        ev.preventDefault();
+        msg.textContent = (document.documentElement.lang==='ja')
+          ? '送信できませんでした。ページを再読み込みして再試行してください。'
+          : 'Could not send. Please reload and try again.';
+      }
     });
   </script>
 </body>
