@@ -3,265 +3,331 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <meta http-equiv="Cache-Control" content="no-store" />
   <title>Contact | nihongotext.com</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9QSHWJE0HZ');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+
   <style>
-    /* ===== Brand tokens (match top page) ===== */
     :root{
-      --brand:#ef4444;           /* accent line / buttons */
-      --fg:#111;
-      --muted:#6b7280;
-      --bg:#fff;
-      --border:#e5e7eb;
-      --chip:#f8fafc;
+      --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
+      --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,ui-sans-serif;line-height:1.5}
+    html,body{margin:0;color:var(--ink);background:#fff;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
     a{color:inherit;text-decoration:none}
-    .container{max-width:980px;margin:0 auto;padding:0 16px}
 
-    /* ===== Header ===== */
-    .site-header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:2px solid var(--brand)}
-    .site-header .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{font-weight:800;letter-spacing:.2px}
-    .brand .dot{color:var(--brand)}
-    nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
-    nav a{opacity:.8}
-    nav a.active, nav a:hover{opacity:1}
-    .actions{display:flex;align-items:center;gap:8px}
-    .pill{padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:var(--chip);cursor:pointer;font-size:13px}
-    .pill.active{background:var(--fg);color:#fff;border-color:var(--fg)}
-    .cta{padding:8px 12px;border:1px solid var(--brand);color:#fff;background:var(--brand);border-radius:10px;font-weight:600}
-
-    /* ===== Page title ===== */
-    .page-head{padding:24px 0}
-    .page-head h1{margin:0 0 6px;font-size:28px}
-    .crumbs{font-size:13px;color:var(--muted)}
-
-    /* ===== Card & form ===== */
-    .card{border:1px solid var(--border);border-radius:14px;background:#fff}
-    .card.body{padding:18px}
-    label{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}
-    input,textarea{width:100%;font:inherit;padding:10px;border:1px solid var(--border);border-radius:8px;background:#fff}
-    textarea{min-height:180px;resize:vertical}
-    .row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px}
-    .btn{padding:10px 16px;border-radius:10px;border:1px solid var(--border);cursor:pointer}
-    .btn-primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
-    .btn-ghost{background:#fff}
-    .note{font-size:12px;color:var(--muted);margin-top:8px}
-    .msg-ok{color:#10b981;font-weight:600}
-    .msg-ng{color:var(--brand);font-weight:600}
-
-    /* ===== Footer ===== */
-    .site-footer{margin-top:36px;border-top:2px solid var(--brand);padding:18px 0;color:var(--muted)}
-    .foot-rows{display:flex;justify-content:center;gap:16px;margin:8px 0 6px}
-    .ico{width:28px;height:28px;display:inline-grid;place-items:center;border:1px solid var(--border);border-radius:999px}
-    .copyright{text-align:center;font-size:12px}
-
-    @media (max-width:640px){
-      nav ul{gap:14px}
-      .page-head h1{font-size:24px}
+    /* Header (Blogと同一トーン) */
+    header{border-bottom:3px solid var(--shu);background:#fff}
+    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+    .brand{display:flex;flex-direction:column;gap:2px}
+    .brand-title{font-weight:980;font-size:28px;color:var(--shu)}
+    .brand-sub{color:var(--shu-soft);font-weight:700;font-size:12px;text-align:center}
+    .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;
+      border-radius:50%;border:1px solid var(--border);background:#fff}
+    .iconbar .tool i{color:var(--shu)}
+    .iconbar .tool:hover{border-color:var(--shu)}
+    .lang-toggle{
+      margin-left:10px;padding:6px 10px;border:1px solid var(--border);border-radius:6px;
+      background:#fff;color:var(--shu-deep);font-size:13px;cursor:pointer;
     }
-  </style>
 
-  <!-- reCAPTCHA v2 (checkbox; async/defers are required for stable render) -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    /* Main */
+    main{max-width:980px;margin:20px auto;padding:0 16px}
+    h1{font-size:28px;margin:0 0 18px}
+    .form{border:1px solid var(--border);border-radius:12px;padding:18px;background:#fff}
+    .row{margin:10px 0}
+    label{display:block;margin:0 0 6px;color:var(--muted);font-size:14px}
+    input,textarea{
+      width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;background:#fff;
+      font-size:14px;outline:none;
+    }
+    textarea{min-height:160px;resize:vertical}
+    .actions{display:flex;gap:10px;margin-top:14px}
+    .btn{
+      padding:10px 16px;border-radius:8px;border:1px solid var(--border);cursor:pointer;background:#fff;
+    }
+    .btn.primary{background:var(--shu);color:#fff;border-color:var(--shu)}
+    .btn:disabled{opacity:.6;cursor:not-allowed}
+    .note{margin-top:10px;font-size:12px;color:var(--muted)}
+    .ok{color:#0a7a28}
+    .err{color:#b00020}
+
+    /* Footer */
+    footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
+    .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
+    .copy{color:#6b7280}
+
+    /* Furigana */
+    ruby{ruby-position:over;}
+    rt{font-size:.65em;color:#6b7280;letter-spacing:0}
+  </style>
 </head>
 <body>
-  <!-- ===== Header ===== -->
-  <header class="site-header">
-    <div class="container bar">
-      <a href="/" class="brand">nihongo<span class="dot">text</span>.com</a>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="/" data-i18n="nav_home">Home</a></li>
-          <li><a href="/blog/" data-i18n="nav_blog">Blog</a></li>
-          <li><a class="active" href="/inquiry/" data-i18n="nav_contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="actions">
-        <!-- Quick contact icon (same to Contact) -->
-        <a class="ico" href="/inquiry/" title="Contact">✉️</a>
-        <!-- Language toggle -->
-        <button id="btnEn" class="pill">English</button>
-        <button id="btnJa" class="pill">日本語</button>
+  <!-- Header -->
+  <header>
+    <div class="h-row">
+      <div class="brand">
+        <a href="/" aria-label="nihongotext.com">
+          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
+          <div class="brand-sub">== beta version ==</div>
+        </a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px">
+        <nav class="iconbar" aria-label="site tools">
+          <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
+          <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
+          <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+          <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+          <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+        </nav>
+        <button class="lang-toggle" id="langBtn">日本語</button>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Page head -->
-    <div class="page-head">
-      <div class="crumbs" id="crumbs">Home / Contact</div>
-      <h1 id="hContact">Contact</h1>
-    </div>
+  <!-- Main -->
+  <main>
+    <h1 id="title" data-i18n="title">Contact</h1>
 
-    <!-- Hidden iframe for cross-origin POST completion detection -->
-    <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
+    <section class="form" aria-label="contact form">
+      <div class="row">
+        <label for="name" id="lblName" data-i18n="lbl_name">Name</label>
+        <input id="name" type="text" placeholder="Your name" autocomplete="name" />
+      </div>
+      <div class="row">
+        <label for="email" id="lblEmail" data-i18n="lbl_email">Email</label>
+        <input id="email" type="email" placeholder="your@email.com" autocomplete="email" />
+      </div>
+      <div class="row">
+        <label for="subject" id="lblSubject" data-i18n="lbl_subject">Subject</label>
+        <input id="subject" type="text" placeholder="What is this about?" />
+      </div>
+      <div class="row">
+        <label for="message" id="lblMessage" data-i18n="lbl_message">Message</label>
+        <textarea id="message" placeholder="Write your message..."></textarea>
+      </div>
 
-    <!-- Contact card -->
-    <section class="card body">
-      <form
-        id="contactForm"
-        target="submit_iframe"
-        method="POST"
-        action="https://script.google.com/macros/s/AKfycbzHvm3JmrYzJChzIPJJIR7PsAMmMOaPBKXVEyBXLeLQ_7mMrhCOJ_DdWxE75TVxWwWZvQ/exec"
-      >
-        <label for="name" id="lbName">Name</label>
-        <input id="name" name="name" autocomplete="name" placeholder="Your name" />
-
-        <label for="email" id="lbEmail">Email</label>
-        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" />
-
-        <label for="subject" id="lbSubject">Subject</label>
-        <input id="subject" name="subject" placeholder="What is this about?" />
-
-        <label for="message" id="lbMessage">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message…"></textarea>
-
-        <!-- reCAPTCHA token will be sent via hidden input -->
-        <input type="hidden" id="token" name="token" />
-
-        <div class="row">
-          <!-- v2 checkbox widget -->
-          <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-          <button type="button" id="btnCancel" class="btn btn-ghost">Cancel</button>
-          <button type="submit" id="btnSend" class="btn btn-primary">Send</button>
+      <!-- reCAPTCHA v2 checkbox -->
+      <div class="row">
+        <div id="recaptchaBox">
+          <div id="recaptcha_container"></div>
+          <div class="note" id="rcNote"></div>
         </div>
+      </div>
 
-        <div class="note" id="rcNote">
-          reCAPTCHA and Google’s
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and
-          <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.
-        </div>
-        <div class="note" id="msg" aria-live="polite"></div>
-      </form>
+      <div class="actions">
+        <button class="btn" type="button" id="btnCancel" data-i18n="btn_cancel">Cancel</button>
+        <button class="btn primary" type="button" id="btnSend" data-i18n="btn_send">Send</button>
+      </div>
+      <div class="note" id="status"></div>
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="foot-rows" aria-label="Quick links">
-        <a class="ico" href="/" title="Home">🏠</a>
-        <a class="ico" href="/blog/" title="Blog">📰</a>
-        <a class="ico" href="/inquiry/" title="Contact">✉️</a>
+  <!-- Footer -->
+  <footer>
+    <div class="f-row">
+      <div class="iconbar">
+        <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
+        <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
+        <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+        <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+        <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
       </div>
-      <div class="copyright">© 2025 nihongotext.com</div>
+      <div class="copy">© 2025 nihongotext.com</div>
     </div>
   </footer>
 
+  <!-- reCAPTCHA v2 (explicit) -->
   <script>
-    /* ===== Language (EN default; toggle via ?lang=ja/en) ===== */
-    const params = new URL(location.href).searchParams;
-    let LANG = params.get('lang') === 'ja' ? 'ja' : 'en';
+    // === 設定 ===
+    // v2 checkbox の「サイトキー」（公開鍵）
+    const SITE_KEY = "6LcRkVArAAAAAFYmY2IyPo_hwTszHwzp3bgRXtBV";
+    // 方式B: JSONP (あなたのGASの公開URL)
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbzyHV_NSyJU-hPwvJU5JJMMuPAa7V3vhmRuq6Clq7WBIErCx6A2xHgG1SXtSlfmR42OHw/exec";
 
-    const T = {
+    let recaptchaWidgetId = null;
+    let recaptchaReady = false;
+
+    function onRecaptchaApiLoad(){
+      // 二重レンダー防止
+      if (recaptchaWidgetId !== null) return;
+      const box = document.getElementById("recaptcha_container");
+      if (!box) return;
+      recaptchaWidgetId = grecaptcha.render(box, { sitekey: SITE_KEY, theme: "light" });
+      recaptchaReady = true;
+      document.getElementById("rcNote").textContent = "rendered wid="+ recaptchaWidgetId +" via recaptcha.net";
+    }
+
+    // JSONPユーティリティ
+    function jsonp(url, cb){
+      const s = document.createElement("script");
+      s.src = url;
+      s.async = true;
+      s.onerror = ()=> cb({ ok:false, reason:"network_error" });
+      document.head.appendChild(s);
+    }
+  </script>
+  <script async defer src="https://www.recaptcha.net/recaptcha/api.js?onload=onRecaptchaApiLoad&render=explicit"></script>
+
+  <!-- i18n + submit -->
+  <script>
+    // ===== i18n（英語↔日本語[ふりがな付き] の単一表示） =====
+    const dict = {
       en: {
-        crumbs: 'Home / Contact',
-        contact: 'Contact',
-        name: 'Name',
-        email: 'Email',
-        subject: 'Subject',
-        message: 'Message',
-        cancel: 'Cancel',
-        send: 'Send',
-        sentok: 'Your message has been sent. Thank you!',
-        sentng: 'Failed to send. Please try again later.',
-        need: 'Please check the reCAPTCHA box.',
-        nav_home: 'Home', nav_blog: 'Blog', nav_contact: 'Contact'
+        title: "Contact",
+        lbl_name: "Name",
+        lbl_email: "Email",
+        lbl_subject: "Subject",
+        lbl_message: "Message",
+        btn_cancel: "Cancel",
+        btn_send: "Send",
+        btn_toggle: "日本語"
       },
       ja: {
-        crumbs: 'ホーム / お問い合わせ',
-        contact: 'お問い合わせ',
-        name: 'お名前',
-        email: 'メールアドレス',
-        subject: '件名',
-        message: 'メッセージ',
-        cancel: 'キャンセル',
-        send: '送信',
-        sentok: '送信しました。ありがとうございます。',
-        sentng: '送信に失敗しました。時間をおいて再度お試しください。',
-        need: 'reCAPTCHA をチェックしてください。',
-        nav_home: 'ホーム', nav_blog: 'ブログ', nav_contact: 'お問い合わせ'
+        title: "<ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby>",
+        lbl_name: "<ruby><rb>お名前</rb><rt>おなまえ</rt></ruby>",
+        lbl_email:"<ruby><rb>メールアドレス</rb><rt>めーる あどれす</rt></ruby>",
+        lbl_subject:"<ruby><rb>件名</rb><rt>けんめい</rt></ruby>",
+        lbl_message:"<ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby>",
+        btn_cancel:"<ruby><rb>キャンセル</rb><rt>きゃんせる</rt></ruby> / Cancel",
+        btn_send:"<ruby><rb>送信</rb><rt>そうしん</rt></ruby> / Send",
+        btn_toggle:"English"
       }
     };
-
+    let lang = "en"; // default 英語
+    const $ = (id)=> document.getElementById(id);
+    const iEls = {
+      title: $("title"),
+      lbl_name: $("lblName"),
+      lbl_email: $("lblEmail"),
+      lbl_subject: $("lblSubject"),
+      lbl_message: $("lblMessage"),
+      btn_cancel: $("btnCancel"),
+      btn_send: $("btnSend"),
+      toggle: $("langBtn")
+    };
     function applyLang(){
-      const t = T[LANG];
-      document.getElementById('crumbs').textContent = t.crumbs;
-      document.getElementById('hContact').textContent = t.contact;
-      document.getElementById('lbName').textContent = t.name;
-      document.getElementById('lbEmail').textContent = t.email;
-      document.getElementById('lbSubject').textContent = t.subject;
-      document.getElementById('lbMessage').textContent = t.message;
-      document.getElementById('btnCancel').textContent = t.cancel;
-      document.getElementById('btnSend').textContent = t.send;
-
-      // nav labels
-      const navMap = { nav_home: 'nav_home', nav_blog:'nav_blog', nav_contact:'nav_contact' };
-      Object.keys(navMap).forEach(key=>{
-        const el = document.querySelector(`[data-i18n="${key}"]`);
-        if (el) el.textContent = t[key];
-      });
-
-      // pills
-      document.getElementById('btnEn').classList.toggle('active', LANG==='en');
-      document.getElementById('btnJa').classList.toggle('active', LANG==='ja');
-
-      // persist to URL (no reload)
-      const url = new URL(location.href);
-      url.searchParams.set('lang', LANG);
-      history.replaceState(null, '', url.toString());
+      const pack = dict[lang];
+      document.documentElement.lang = lang;
+      if (lang==="ja"){
+        // ルビ入りは innerHTML
+        iEls.title.innerHTML = pack.title;
+        iEls.lbl_name.innerHTML = pack.lbl_name;
+        iEls.lbl_email.innerHTML = pack.lbl_email;
+        iEls.lbl_subject.innerHTML = pack.lbl_subject;
+        iEls.lbl_message.innerHTML = pack.lbl_message;
+        iEls.btn_cancel.innerHTML = pack.btn_cancel;
+        iEls.btn_send.innerHTML = pack.btn_send;
+      }else{
+        iEls.title.textContent = pack.title;
+        iEls.lbl_name.textContent = pack.lbl_name;
+        iEls.lbl_email.textContent = pack.lbl_email;
+        iEls.lbl_subject.textContent = pack.lbl_subject;
+        iEls.lbl_message.textContent = pack.lbl_message;
+        iEls.btn_cancel.textContent = pack.btn_cancel;
+        iEls.btn_send.textContent = pack.btn_send;
+      }
+      iEls.toggle.textContent = pack.btn_toggle;
     }
-    document.getElementById('btnEn').onclick = ()=>{ LANG='en'; applyLang(); };
-    document.getElementById('btnJa').onclick = ()=>{ LANG='ja'; applyLang(); };
+    iEls.toggle.addEventListener("click", ()=>{ lang = (lang==="en")?"ja":"en"; applyLang(); });
     applyLang();
 
-    /* ===== Submit flow (same as OK working version) ===== */
-    const form = document.getElementById('contactForm');
-    const msg  = document.getElementById('msg');
-    const btnSend = document.getElementById('btnSend');
-    const btnCancel = document.getElementById('btnCancel');
-    const iframe = document.getElementById('submit_iframe');
+    // ===== 送信（方式B: JSONP） =====
+    const btnSend = $("btnSend");
+    const btnCancel = $("btnCancel");
+    const statusEl = $("status");
 
-    // GAS 応答を iframe の load で検知 → 成功表示
-    iframe.addEventListener('load', () => {
-      btnSend.disabled = false;
-      msg.textContent = T[LANG].sentok;
-      msg.className = 'note msg-ok';
-      form.reset();
-      if (window.grecaptcha) grecaptcha.reset();
+    btnCancel.addEventListener("click", ()=>{
+      $("name").value = "";
+      $("email").value = "";
+      $("subject").value = "";
+      $("message").value = "";
+      if (recaptchaReady && recaptchaWidgetId!==null) grecaptcha.reset(recaptchaWidgetId);
+      statusEl.textContent = "";
     });
 
-    form.addEventListener('submit', (ev) => {
-      const token = window.grecaptcha ? grecaptcha.getResponse() : '';
-      if (!token){
-        ev.preventDefault();
-        msg.textContent = T[LANG].need;
-        msg.className = 'note msg-ng';
+    btnSend.addEventListener("click", ()=>{
+      const name = $("name").value.trim();
+      const email = $("email").value.trim();
+      const subject = $("subject").value.trim();
+      const message = $("message").value.trim();
+      if (!message){
+        statusEl.textContent = (lang==="en") ? "Message is required." : "メッセージを入力してください。";
+        statusEl.className = "note err";
         return;
       }
-      document.getElementById('token').value = token;
-      btnSend.disabled = true;
-      msg.textContent = '';
-      msg.className = 'note';
-      // 以降はブラウザがそのままクロスオリジンPOST（CORS不要）
-    });
-
-    btnCancel.addEventListener('click', () => {
-      form.reset();
-      msg.textContent = '';
-      msg.className = 'note';
-      if (window.grecaptcha) grecaptcha.reset();
-    });
-
-    /* ===== Defensive reCAPTCHA re-render (rare, but helps some caches) ===== */
-    window.addEventListener('pageshow', () => {
-      if (window.grecaptcha && document.querySelector('.g-recaptcha div iframe') == null) {
-        grecaptcha.render(document.querySelector('.g-recaptcha'), {
-          sitekey: '6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV'
-        });
+      if (!recaptchaReady || recaptchaWidgetId===null){
+        statusEl.textContent = "reCAPTCHA not ready. Please reload.";
+        statusEl.className = "note err";
+        return;
       }
+      const token = grecaptcha.getResponse(recaptchaWidgetId);
+      if (!token){
+        statusEl.textContent = (lang==="en") ? "Please complete reCAPTCHA." : "reCAPTCHA を完了してください。";
+        statusEl.className = "note err";
+        return;
+      }
+
+      btnSend.disabled = true;
+      statusEl.textContent = (lang==="en") ? "Sending..." : "送信中...";
+
+      // JSONP callback
+      const cbName = "cb_x_"+ Date.now();
+      window[cbName] = function(res){
+        try{
+          if (res && res.ok){
+            statusEl.textContent = (lang==="en") ? "Sent. Thank you!" : "送信しました。ありがとうございます。";
+            statusEl.className = "note ok";
+            $("message").value = "";
+            if (recaptchaWidgetId!==null) grecaptcha.reset(recaptchaWidgetId);
+          }else{
+            const reason = (res && res.reason) ? String(res.reason) : "unknown";
+            statusEl.textContent = (lang==="en")
+              ? ("Failed to send. ("+reason+")")
+              : ("送信に失敗しました（"+reason+"）。");
+            statusEl.className = "note err";
+          }
+        } finally {
+          btnSend.disabled = false;
+          // 後始末
+          try{
+            const tag = document.getElementById(cbName);
+            if (tag) tag.remove();
+            delete window[cbName];
+          }catch(_){}
+        }
+      };
+
+      const params = new URLSearchParams({
+        mode:"contact_submit",
+        name,email,subject,message,token,
+        callback: cbName
+      });
+      const url = GAS_URL + "?" + params.toString();
+      const s = document.createElement("script");
+      s.id = cbName;
+      s.src = url;
+      s.async = true;
+      s.onerror = ()=>{ window[cbName]({ ok:false, reason:"network_error" }); };
+      document.head.appendChild(s);
     });
   </script>
 </body>
