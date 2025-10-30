@@ -3,332 +3,231 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light only" />
-  <meta http-equiv="Cache-Control" content="no-store" />
-  <title>Contact | nihongotext.com</title>
+  <title>nihongotext.com</title>
+  <meta name="description" content="Japanese learning site: JLPT vocab & grammar with furigana." />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ');
-  </script>
-
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
-
+  <!-- Base colors & reset (inquiryページの配色に合わせる) -->
   <style>
     :root{
-      --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
-      --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
+      --brand:#ef4d3a;      /* accent line / buttons */
+      --brand-weak:#ffefe9; /* light bg */
+      --ink:#222;           /* main text */
+      --ink-weak:#667085;   /* secondary */
+      --line:#ef4d3a20;
+      --card:#fff;
+      --bg:#fff;
+      --radius:18px;
+      --shadow:0 6px 24px rgba(0,0,0,.06);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;color:var(--ink);background:#fff;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
-    a{color:inherit;text-decoration:none}
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;
+      color:var(--ink); background:var(--bg);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
 
-    /* Header (Blogと同一トーン) */
-    header{border-bottom:3px solid var(--shu);background:#fff}
-    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
-    .brand{display:flex;flex-direction:column;gap:2px}
-    .brand-title{font-weight:980;font-size:28px;color:var(--shu)}
-    .brand-sub{color:var(--shu-soft);font-weight:700;font-size:12px;text-align:center}
-    .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;
-      border-radius:50%;border:1px solid var(--border);background:#fff}
-    .iconbar .tool i{color:var(--shu)}
-    .iconbar .tool:hover{border-color:var(--shu)}
-    .lang-toggle{
-      margin-left:10px;padding:6px 10px;border:1px solid var(--border);border-radius:6px;
-      background:#fff;color:var(--shu-deep);font-size:13px;cursor:pointer;
+    /* Top bar (inquiryと同じ意匠) */
+    .topline{border-top:6px solid var(--brand);}
+    .sitebar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:14px 20px;
+    }
+    .brand{
+      font-weight:700; font-size:22px; letter-spacing:.2px;
+      color:#d63b2a;
+    }
+    .brand small{font-weight:400; font-size:12px; color:#d63b2a99}
+    .actions{display:flex; align-items:center; gap:10px}
+    .iconbtn{
+      width:36px; height:36px; border:1px solid #00000010; border-radius:999px;
+      display:grid; place-items:center; background:#fff; box-shadow:var(--shadow);
+    }
+    .langbtn{
+      border:1px solid var(--brand); color:var(--brand); background:#fff;
+      padding:6px 10px; border-radius:10px; font-weight:600; cursor:pointer;
     }
 
-    /* Main */
-    main{max-width:980px;margin:20px auto;padding:0 16px}
-    h1{font-size:28px;margin:0 0 18px}
-    .form{border:1px solid var(--border);border-radius:12px;padding:18px;background:#fff}
-    .row{margin:10px 0}
-    label{display:block;margin:0 0 6px;color:var(--muted);font-size:14px}
-    input,textarea{
-      width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;background:#fff;
-      font-size:14px;outline:none;
+    /* Page layout */
+    .wrap{max-width:980px; margin:10px auto 40px; padding:0 16px}
+    .hero{
+      background:var(--brand-weak);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px 24px; box-shadow:var(--shadow);
     }
-    textarea{min-height:160px;resize:vertical}
-    .actions{display:flex;gap:10px;margin-top:14px}
+    .hero h1{margin:0 0 6px; font-size:28px}
+    .hero p{margin:0; color:var(--ink-weak)}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:16px; margin-top:22px}
+    .card{
+      grid-column:span 6; background:var(--card); border:1px solid #00000010;
+      border-radius:var(--radius); padding:18px; box-shadow:var(--shadow);
+    }
+    @media (max-width:760px){ .card{grid-column:span 12} }
+
+    .cta{
+      margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;
+    }
     .btn{
-      padding:10px 16px;border-radius:8px;border:1px solid var(--border);cursor:pointer;background:#fff;
+      background:var(--brand); color:#fff; border:none; padding:10px 14px;
+      border-radius:12px; font-weight:700; cursor:pointer;
     }
-    .btn.primary{background:var(--shu);color:#fff;border-color:var(--shu)}
-    .btn:disabled{opacity:.6;cursor:not-allowed}
-    .note{margin-top:10px;font-size:12px;color:var(--muted)}
-    .ok{color:#0a7a28}
-    .err{color:#b00020}
+    .btn--ghost{
+      background:#fff; color:var(--brand); border:1px solid var(--brand);
+    }
 
-    /* Footer */
-    footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
-    .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
-    .copy{color:#6b7280}
+    /* Footer (inquiryと同じ意匠) */
+    .footer{
+      margin-top:36px; padding:22px 0 36px;
+      border-top:1px solid var(--line);
+    }
+    .foot-icons{display:flex; gap:12px; justify-content:center; margin:14px 0 8px}
+    .copy{font-size:13px; color:var(--ink-weak); text-align:center}
 
-    /* Furigana */
-    ruby{ruby-position:over;}
-    rt{font-size:.65em;color:#6b7280;letter-spacing:0}
+    /* ruby (ふりがな) */
+    ruby{ruby-position:over}
+    rt{
+      font-size:.6em; line-height:1; color:#00000099;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    }
+
+    /* Utility */
+    .crumb{color:#9aa3ae; font-size:13px; margin:8px 0 14px}
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="h-row">
-      <div class="brand">
-        <a href="/" aria-label="nihongotext.com">
-          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
-          <div class="brand-sub">== beta version ==</div>
-        </a>
-      </div>
+  <div class="topline"></div>
 
-      <div style="display:flex;align-items:center;gap:10px">
-        <nav class="iconbar" aria-label="site tools">
-          <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
-          <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-          <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-          <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-          <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-        </nav>
-        <button class="lang-toggle" id="langBtn">日本語</button>
-      </div>
+  <!-- Header -->
+  <header class="sitebar" role="banner">
+    <div class="brand">
+      <a href="/" style="text-decoration:none;color:inherit;">nihongotext.com</a>
+      <small> == beta version ==</small>
+    </div>
+    <div class="actions">
+      <!-- icons (ダミーSVG、必要なら差し替え) -->
+      <a class="iconbtn" href="/"><span aria-hidden="true">🏠</span></a>
+      <a class="iconbtn" href="/blog/"><span aria-hidden="true">📰</span></a>
+      <a class="iconbtn" href="/contact/"><span aria-hidden="true">✉️</span></a>
+      <a class="iconbtn" href="/inquiry/"><span aria-hidden="true">📮</span></a>
+      <!-- 言語切替 -->
+      <button id="langBtn" class="langbtn" type="button">日本語</button>
     </div>
   </header>
 
-  <!-- Main -->
-  <main>
-    <h1 id="title" data-i18n="title">Contact</h1>
+  <main class="wrap" role="main">
+    <div class="crumb" id="crumb"></div>
 
-    <section class="form" aria-label="contact form">
-      <div class="row">
-        <label for="name" id="lblName" data-i18n="lbl_name">Name</label>
-        <input id="name" type="text" placeholder="Your name" autocomplete="name" />
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <h1 id="heroTitle">Learn Japanese the clean way</h1>
+      <p id="heroLead">JLPT-ready vocabulary & grammar with clean examples and furigana.</p>
+      <div class="cta">
+        <a class="btn" href="/blog/">Read the blog</a>
+        <a class="btn btn--ghost" href="/inquiry/">Contact us</a>
       </div>
-      <div class="row">
-        <label for="email" id="lblEmail" data-i18n="lbl_email">Email</label>
-        <input id="email" type="email" placeholder="your@email.com" autocomplete="email" />
-      </div>
-      <div class="row">
-        <label for="subject" id="lblSubject" data-i18n="lbl_subject">Subject</label>
-        <input id="subject" type="text" placeholder="What is this about?" />
-      </div>
-      <div class="row">
-        <label for="message" id="lblMessage" data-i18n="lbl_message">Message</label>
-        <textarea id="message" placeholder="Write your message..."></textarea>
-      </div>
+    </section>
 
-      <!-- reCAPTCHA v2 checkbox -->
-      <div class="row">
-        <div id="recaptchaBox">
-          <div id="recaptcha_container"></div>
-          <div class="note" id="rcNote"></div>
-        </div>
-      </div>
+    <!-- Feature cards -->
+    <section class="grid" aria-label="highlights">
+      <article class="card">
+        <h3 id="c1h">All JLPT levels</h3>
+        <p id="c1p">From N5 basics to N1 pro, structured and searchable.</p>
+      </article>
+      <article class="card">
+        <h3 id="c2h">Natural examples</h3>
+        <p id="c2p">Short, everyday sentences checked for naturalness.</p>
+      </article>
+      <article class="card">
+        <h3 id="c3h">Practice tools</h3>
+        <p id="c3p">“Learned” tracking, printable lists, and audio (coming).</p>
+      </article>
+      <article class="card">
+        <h3 id="c4h">Built for phones</h3>
+        <p id="c4p">Fast and readable on mobile with large tap targets.</p>
+      </article>
+    </section>
 
-      <div class="actions">
-        <button class="btn" type="button" id="btnCancel" data-i18n="btn_cancel">Cancel</button>
-        <button class="btn primary" type="button" id="btnSend" data-i18n="btn_send">Send</button>
-      </div>
-      <div class="note" id="status"></div>
+    <!-- 日本語表示でのサンプル文（ふりがな付） -->
+    <section class="grid" style="margin-top:8px">
+      <article class="card" style="grid-column:span 12">
+        <h3 id="jaSampleH" hidden>サンプル</h3>
+        <p id="jaSampleP" hidden>
+          <ruby>日本語<rt>にほんご</rt></ruby>を
+          <ruby>楽<rt>たの</rt></ruby>しく
+          <ruby>学<rt>まな</rt></ruby>べる
+          サイトです。
+        </p>
+      </article>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="f-row">
-      <div class="iconbar">
-        <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
-        <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-        <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-        <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-        <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-      </div>
-      <div class="copy">© 2025 nihongotext.com</div>
+  <footer class="footer">
+    <div class="foot-icons">
+      <a class="iconbtn" href="/"><span aria-hidden="true">🏠</span></a>
+      <a class="iconbtn" href="/blog/"><span aria-hidden="true">📰</span></a>
+      <a class="iconbtn" href="/inquiry/"><span aria-hidden="true">📮</span></a>
+      <a class="iconbtn" href="/contact/"><span aria-hidden="true">✉️</span></a>
     </div>
+    <div class="copy">© 2025 nihongotext.com</div>
   </footer>
 
-  <!-- reCAPTCHA v2 (explicit) -->
+  <!-- 言語切替：?lang=ja / ?lang=en（デフォルトen） -->
   <script>
-    // === 設定 ===
-    // v2 checkbox の「サイトキー」（公開鍵）
-    const SITE_KEY = "6LcRkVArAAAAAFYmY2IyPo_hwTszHwzp3bgRXtBV";
-    // 方式B: JSONP (あなたのGASの公開URL)
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbzyHV_NSyJU-hPwvJU5JJMMuPAa7V3vhmRuq6Clq7WBIErCx6A2xHgG1SXtSlfmR42OHw/exec";
+    (function(){
+      const qs = new URLSearchParams(location.search);
+      const lang = (qs.get('lang')||'en').toLowerCase();
+      const isJA = lang === 'ja';
 
-    let recaptchaWidgetId = null;
-    let recaptchaReady = false;
-
-    function onRecaptchaApiLoad(){
-      // 二重レンダー防止
-      if (recaptchaWidgetId !== null) return;
-      const box = document.getElementById("recaptcha_container");
-      if (!box) return;
-      recaptchaWidgetId = grecaptcha.render(box, { sitekey: SITE_KEY, theme: "light" });
-      recaptchaReady = true;
-      document.getElementById("rcNote").textContent = "rendered wid="+ recaptchaWidgetId +" via recaptcha.net";
-    }
-
-    // JSONPユーティリティ
-    function jsonp(url, cb){
-      const s = document.createElement("script");
-      s.src = url;
-      s.async = true;
-      s.onerror = ()=> cb({ ok:false, reason:"network_error" });
-      document.head.appendChild(s);
-    }
-  </script>
-  <script async defer src="https://www.recaptcha.net/recaptcha/api.js?onload=onRecaptchaApiLoad&render=explicit"></script>
-
-  <!-- i18n + submit -->
-  <script>
-    // ===== i18n（英語↔日本語[ふりがな付き] の単一表示） =====
-    const dict = {
-      en: {
-        title: "Contact",
-        lbl_name: "Name",
-        lbl_email: "Email",
-        lbl_subject: "Subject",
-        lbl_message: "Message",
-        btn_cancel: "Cancel",
-        btn_send: "Send",
-        btn_toggle: "日本語"
-      },
-      ja: {
-        title: "<ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby>",
-        lbl_name: "<ruby><rb>お名前</rb><rt>おなまえ</rt></ruby>",
-        lbl_email:"<ruby><rb>メールアドレス</rb><rt>めーる あどれす</rt></ruby>",
-        lbl_subject:"<ruby><rb>件名</rb><rt>けんめい</rt></ruby>",
-        lbl_message:"<ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby>",
-        btn_cancel:"<ruby><rb>キャンセル</rb><rt>きゃんせる</rt></ruby> / Cancel",
-        btn_send:"<ruby><rb>送信</rb><rt>そうしん</rt></ruby> / Send",
-        btn_toggle:"English"
-      }
-    };
-    let lang = "en"; // default 英語
-    const $ = (id)=> document.getElementById(id);
-    const iEls = {
-      title: $("title"),
-      lbl_name: $("lblName"),
-      lbl_email: $("lblEmail"),
-      lbl_subject: $("lblSubject"),
-      lbl_message: $("lblMessage"),
-      btn_cancel: $("btnCancel"),
-      btn_send: $("btnSend"),
-      toggle: $("langBtn")
-    };
-    function applyLang(){
-      const pack = dict[lang];
-      document.documentElement.lang = lang;
-      if (lang==="ja"){
-        // ルビ入りは innerHTML
-        iEls.title.innerHTML = pack.title;
-        iEls.lbl_name.innerHTML = pack.lbl_name;
-        iEls.lbl_email.innerHTML = pack.lbl_email;
-        iEls.lbl_subject.innerHTML = pack.lbl_subject;
-        iEls.lbl_message.innerHTML = pack.lbl_message;
-        iEls.btn_cancel.innerHTML = pack.btn_cancel;
-        iEls.btn_send.innerHTML = pack.btn_send;
-      }else{
-        iEls.title.textContent = pack.title;
-        iEls.lbl_name.textContent = pack.lbl_name;
-        iEls.lbl_email.textContent = pack.lbl_email;
-        iEls.lbl_subject.textContent = pack.lbl_subject;
-        iEls.lbl_message.textContent = pack.lbl_message;
-        iEls.btn_cancel.textContent = pack.btn_cancel;
-        iEls.btn_send.textContent = pack.btn_send;
-      }
-      iEls.toggle.textContent = pack.btn_toggle;
-    }
-    iEls.toggle.addEventListener("click", ()=>{ lang = (lang==="en")?"ja":"en"; applyLang(); });
-    applyLang();
-
-    // ===== 送信（方式B: JSONP） =====
-    const btnSend = $("btnSend");
-    const btnCancel = $("btnCancel");
-    const statusEl = $("status");
-
-    btnCancel.addEventListener("click", ()=>{
-      $("name").value = "";
-      $("email").value = "";
-      $("subject").value = "";
-      $("message").value = "";
-      if (recaptchaReady && recaptchaWidgetId!==null) grecaptcha.reset(recaptchaWidgetId);
-      statusEl.textContent = "";
-    });
-
-    btnSend.addEventListener("click", ()=>{
-      const name = $("name").value.trim();
-      const email = $("email").value.trim();
-      const subject = $("subject").value.trim();
-      const message = $("message").value.trim();
-      if (!message){
-        statusEl.textContent = (lang==="en") ? "Message is required." : "メッセージを入力してください。";
-        statusEl.className = "note err";
-        return;
-      }
-      if (!recaptchaReady || recaptchaWidgetId===null){
-        statusEl.textContent = "reCAPTCHA not ready. Please reload.";
-        statusEl.className = "note err";
-        return;
-      }
-      const token = grecaptcha.getResponse(recaptchaWidgetId);
-      if (!token){
-        statusEl.textContent = (lang==="en") ? "Please complete reCAPTCHA." : "reCAPTCHA を完了してください。";
-        statusEl.className = "note err";
-        return;
-      }
-
-      btnSend.disabled = true;
-      statusEl.textContent = (lang==="en") ? "Sending..." : "送信中...";
-
-      // JSONP callback
-      const cbName = "cb_x_"+ Date.now();
-      window[cbName] = function(res){
-        try{
-          if (res && res.ok){
-            statusEl.textContent = (lang==="en") ? "Sent. Thank you!" : "送信しました。ありがとうございます。";
-            statusEl.className = "note ok";
-            $("message").value = "";
-            if (recaptchaWidgetId!==null) grecaptcha.reset(recaptchaWidgetId);
-          }else{
-            const reason = (res && res.reason) ? String(res.reason) : "unknown";
-            statusEl.textContent = (lang==="en")
-              ? ("Failed to send. ("+reason+")")
-              : ("送信に失敗しました（"+reason+"）。");
-            statusEl.className = "note err";
-          }
-        } finally {
-          btnSend.disabled = false;
-          // 後始末
-          try{
-            const tag = document.getElementById(cbName);
-            if (tag) tag.remove();
-            delete window[cbName];
-          }catch(_){}
+      const t = {
+        en:{
+          crumb:'Home',
+          heroTitle:'Learn Japanese the clean way',
+          heroLead:'JLPT-ready vocabulary & grammar with clean examples and furigana.',
+          c1h:'All JLPT levels', c1p:'From N5 basics to N1 pro, structured and searchable.',
+          c2h:'Natural examples', c2p:'Short, everyday sentences checked for naturalness.',
+          c3h:'Practice tools',  c3p:'“Learned” tracking, printable lists, and audio (coming).',
+          c4h:'Built for phones', c4p:'Fast and readable on mobile with large tap targets.',
+          langBtn:'日本語',
+        },
+        ja:{
+          crumb:'ホーム',
+          heroTitle:'シンプルに<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶ',
+          heroLead:'JLPTレベルに対応。<ruby>例文<rt>れいぶん</rt></ruby>は<ruby>短<rt>みじか</rt></ruby>くて<ruby>自然<rt>しぜん</rt></ruby>、ふりがな付き。',
+          c1h:'JLPT全レベル', c1p:'N5からN1まで、<ruby>整理<rt>せいり</rt></ruby>されたリストで検索できます。',
+          c2h:'自然な例文',   c2p:'毎日使う<ruby>表現<rt>ひょうげん</rt></ruby>にしぼり、<ruby>不自然<rt>ふしぜん</rt></ruby>さをチェック。',
+          c3h:'学習ツール',   c3p:'「<ruby>覚<rt>おぼ</rt></ruby>えた」<ruby>管理<rt>かんり</rt></ruby>や<ruby>印刷<rt>いんさつ</rt></ruby>、<ruby>音声<rt>おんせい</rt></ruby>（準備中）。',
+          c4h:'スマホ最適化', c4p:'<ruby>快適<rt>かいてき</rt></ruby>に読めるレイアウトとタップ操作。',
+          langBtn:'English',
         }
-      };
+      }[isJA ? 'ja' : 'en'];
 
-      const params = new URLSearchParams({
-        mode:"contact_submit",
-        name,email,subject,message,token,
-        callback: cbName
+      // 文言反映
+      const $ = id => document.getElementById(id);
+      $('crumb').textContent = t.crumb;
+      $('heroTitle').innerHTML = t.heroTitle;
+      $('heroLead').innerHTML  = t.heroLead;
+      $('c1h').innerHTML = t.c1h; $('c1p').innerHTML = t.c1p;
+      $('c2h').innerHTML = t.c2h; $('c2p').innerHTML = t.c2p;
+      $('c3h').innerHTML = t.c3h; $('c3p').innerHTML = t.c3p;
+      $('c4h').innerHTML = t.c4h; $('c4p').innerHTML = t.c4p;
+      const langBtn = document.getElementById('langBtn');
+      langBtn.textContent = t.langBtn;
+
+      // JAのときだけサンプル表示（ふりがな）
+      $('jaSampleH').hidden = !isJA;
+      $('jaSampleP').hidden = !isJA;
+
+      // 切替（?lang=ja/en を付け替え）
+      langBtn.addEventListener('click', ()=>{
+        const next = isJA ? 'en' : 'ja';
+        const q = new URLSearchParams(location.search);
+        q.set('lang', next);
+        location.search = q.toString();
       });
-      const url = GAS_URL + "?" + params.toString();
-      const s = document.createElement("script");
-      s.id = cbName;
-      s.src = url;
-      s.async = true;
-      s.onerror = ()=>{ window[cbName]({ ok:false, reason:"network_error" }); };
-      document.head.appendChild(s);
-    });
+    })();
   </script>
 </body>
 </html>
