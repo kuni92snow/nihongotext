@@ -5,17 +5,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Blog | nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
+<!-- 相対パスを常にサイトルート基準にする（/blog/配下でもアイコン等が表示される） -->
+<base href="/" />
 
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- AdSense（スクリプト読込のみ・ページ内に広告枠は置きません） -->
+<!-- AdSense（スクリプト読込） -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
@@ -32,7 +34,6 @@
   .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
   .spacer{height:10px}
 
-  /* Blog */
   .crumbs{color:var(--muted);font-size:13px;margin:14px 0}
   .title{font-size:28px;font-weight:800;margin:6px 0 2px}
   .subtitle{color:var(--muted);margin-bottom:18px}
@@ -48,10 +49,14 @@
   .footer-nav{margin:20px 0 6px;display:flex;gap:14px;justify-content:flex-end}
   .soft{background:var(--soft);border:1px dashed #f0d7d4;border-radius:12px;padding:8px 12px}
 
-  /* fallback header/footer containers (kept minimal; real content comes from partials) */
+  /* fallback header/footer containers */
   .brand-fallback{padding:14px 0;display:flex;gap:14px;align-items:center}
   .brand-fallback a{font-weight:800;font-size:28px;color:var(--brand)}
   .beta{color:var(--muted);font-size:12px}
+
+  /* AdSense 枠の余白（小さめ） */
+  .adslot{margin:10px 0}
+  .adslot ins.adsbygoogle{display:block}
 </style>
 </head>
 <body>
@@ -67,9 +72,17 @@
   <h1 class="title">Blog</h1>
   <p class="subtitle">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
+  <!-- ▼ AdSense: コンテンツ上部の小型広告（ユニットID差し替え） -->
+  <div class="adslot">
+    <ins class="adsbygoogle"
+         data-ad-client="ca-pub-2358198194205084"
+         data-ad-slot="0000000001"   <!-- TODO: あなたの広告ユニットIDに変更 -->
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
   <!-- posts -->
   <section class="posts" id="posts">
-    <!-- 既存の単一ポスト例。必要に応じて複製/差し替えしてください -->
     <article class="post">
       <div class="date">Nov 3, 2025</div>
       <h3>Roadmap Sneak Peek</h3>
@@ -77,6 +90,15 @@
       <a class="more" href="/blog/roadmap-sneak-peek.html">Read more</a>
     </article>
   </section>
+
+  <!-- ▼ AdSense: コンテンツ下部の小型広告（ユニットID差し替え） -->
+  <div class="adslot">
+    <ins class="adsbygoogle"
+         data-ad-client="ca-pub-2358198194205084"
+         data-ad-slot="0000000002"   <!-- TODO: あなたの広告ユニットIDに変更 -->
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
 
   <div class="footer-nav">
     <span class="soft">News / Contact</span>
@@ -112,9 +134,13 @@
     document.getElementById('site-footer').innerHTML =
       `<div style="padding:16px 0;text-align:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
   }
+
+  // AdSense 描画（上・下の2枠）
+  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
+  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
 })();
 
-/* ===== GA4 手動ページビュー送信（SPA想定もカバー） ===== */
+/* ===== GA4 page_view（SPA想定も含め手動送信） ===== */
 (function(){
   try{
     gtag('event','page_view',{
