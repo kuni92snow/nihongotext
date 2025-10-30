@@ -10,7 +10,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <!-- ページ最上部で SW / Cache を必ず除去（通常モード対策） -->
+  <!-- 通常モード対策：最上部で SW / Cache を確実に除去 -->
   <script>
     (async () => {
       try {
@@ -94,9 +94,9 @@
   "use strict";
 
   // ===== 設定 =====
-  const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // 共有いただいたサイトキー
-  const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec"; // 最新URL
-  const VER = "20251030-final";
+  const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // 共有のサイトキー
+  const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec"; // 最新GAS URL
+  const VER = "20251030-widfix";
 
   // ===== 文言 =====
   const T = {
@@ -148,9 +148,12 @@
       }
     } finally {
       $("sendBtn").disabled = false;
-      try{ grecaptcha.reset(window.__wid); }catch(e){}
+      try{ if (isWidReady(window.__wid)) grecaptcha.reset(window.__wid); }catch(e){}
     }
   }
+
+  // ===== wid 判定（0 も有効）=====
+  function isWidReady(w){ return Number.isInteger(w) && w >= 0; }
 
   // ===== 送信 =====
   $("sendBtn").addEventListener("click", () => {
@@ -160,9 +163,11 @@
           subject=$("subject").value.trim(), message=$("message").value.trim();
     if(!name || !email || !message){ setStatus(T[lang].need,false); $("sendBtn").disabled=false; return; }
 
-    // reCAPTCHA 未描画/未チェック防止
-    if(!window.__wid && window.__wid!==0){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
-    const token = (typeof grecaptcha!=="undefined") ? grecaptcha.getResponse(window.__wid) : "";
+    // reCAPTCHA 未描画/未チェック防止（0 も OK）
+    if(!isWidReady(window.__wid)){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
+    const token = (typeof grecaptcha!=="undefined" && isWidReady(window.__wid))
+      ? grecaptcha.getResponse(window.__wid)
+      : "";
     if(!token){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
 
     const params = new URLSearchParams({
@@ -179,7 +184,7 @@
 
     const sc = document.createElement("script");
     sc.src = url; sc.async = true; sc.defer = true;
-    sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{grecaptcha.reset(window.__wid);}catch(e){} };
+    sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{ if (isWidReady(window.__wid)) grecaptcha.reset(window.__wid);}catch(e){} };
     document.body.appendChild(sc);
 
     // 一部実装向けフォロー
@@ -192,7 +197,7 @@
 })();
 </script>
 
-<!-- ▼ reCAPTCHA は body 最後でロードし、確実に初期化する（遅延/拡張の影響を受けにくい） -->
+<!-- ▼ reCAPTCHA は body 最後でロードし、確実に初期化（0 も有効IDとして扱う） -->
 <script>
   function initRecaptchaStable(){
     if (typeof grecaptcha === "undefined" || !document.getElementById("recaptcha")) {
@@ -203,7 +208,7 @@
     try {
       window.__wid = grecaptcha.render("recaptcha", { sitekey: "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV", theme:"light", size:"normal" });
       console.log("[inquiry] reCAPTCHA initialized with wid:", window.__wid);
-      document.getElementById("sendBtn").disabled = false; // ← 初めて有効化
+      document.getElementById("sendBtn").disabled = false; // 初期化後に有効化
     } catch(e) {
       console.error("[inquiry] reCAPTCHA render failed:", e);
       setTimeout(initRecaptchaStable, 800);
