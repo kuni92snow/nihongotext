@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Blog | nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
-<!-- 相対パスを常にサイトルート基準にする（/blog/配下でもアイコン等が表示される） -->
+<!-- /blog/配下でも全ての相対パスをサイトルート基準にする -->
 <base href="/" />
 
 <!-- GA4 -->
@@ -17,7 +17,7 @@
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- AdSense（スクリプト読込） -->
+<!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
@@ -54,7 +54,7 @@
   .brand-fallback a{font-weight:800;font-size:28px;color:var(--brand)}
   .beta{color:var(--muted);font-size:12px}
 
-  /* AdSense 枠の余白（小さめ） */
+  /* AdSense: 小型枠の余白 */
   .adslot{margin:10px 0}
   .adslot ins.adsbygoogle{display:block}
 </style>
@@ -72,11 +72,11 @@
   <h1 class="title">Blog</h1>
   <p class="subtitle">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
-  <!-- ▼ AdSense: コンテンツ上部の小型広告（ユニットID差し替え） -->
+  <!-- AdSense: コンテンツ上部（※ data-ad-slot をあなたのユニットIDに変更） -->
   <div class="adslot">
     <ins class="adsbygoogle"
          data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="0000000001"   <!-- TODO: あなたの広告ユニットIDに変更 -->
+         data-ad-slot="0000000001"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   </div>
@@ -91,11 +91,11 @@
     </article>
   </section>
 
-  <!-- ▼ AdSense: コンテンツ下部の小型広告（ユニットID差し替え） -->
+  <!-- AdSense: コンテンツ下部（※ data-ad-slot をあなたのユニットIDに変更） -->
   <div class="adslot">
     <ins class="adsbygoogle"
          data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="0000000002"   <!-- TODO: あなたの広告ユニットIDに変更 -->
+         data-ad-slot="0000000002"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   </div>
@@ -112,9 +112,9 @@
 </div>
 
 <script>
-/* ===== 共通ヘッダー/フッターを読み込み ===== */
+/* ===== 共通ヘッダー/フッターの読み込み ===== */
 (async function injectPartials(){
-  // ヘッダー
+  // header
   try{
     const h = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.text());
     document.getElementById('site-header').innerHTML = h;
@@ -126,21 +126,24 @@
          <div style="margin-left:auto"></div>
        </div>`;
   }
-  // フッター
+  // footer（パス修正）
   try{
-    const f = await fetch('/footer.html',{cache:'no-store'}).then(r=>r.text());
+    const f = await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.text());
     document.getElementById('site-footer').innerHTML = f;
   }catch(e){
     document.getElementById('site-footer').innerHTML =
       `<div style="padding:16px 0;text-align:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
   }
 
-  // AdSense 描画（上・下の2枠）
-  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
-  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
+  // AdSense の描画（ページ内の全ての adslot を push）
+  try{
+    document.querySelectorAll('ins.adsbygoogle').forEach(function(){
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    });
+  }catch(_){}
 })();
 
-/* ===== GA4 page_view（SPA想定も含め手動送信） ===== */
+/* ===== GA4 page_view（SPA遷移も想定して手動送信） ===== */
 (function(){
   try{
     gtag('event','page_view',{
