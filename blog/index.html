@@ -72,11 +72,11 @@
   <h1 class="title">Blog</h1>
   <p class="subtitle">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
-  <!-- AdSense 上部 -->
+  <!-- AdSense 上部（data-ad-slot は実ユニットIDに変更） -->
   <div class="adslot">
     <ins class="adsbygoogle"
          data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="1234567890"  <!-- ←実際のユニットIDに変更 -->
+         data-ad-slot="0000000001"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   </div>
@@ -91,11 +91,11 @@
     </article>
   </section>
 
-  <!-- AdSense 下部 -->
+  <!-- AdSense 下部（data-ad-slot は実ユニットIDに変更） -->
   <div class="adslot">
     <ins class="adsbygoogle"
          data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="0987654321"  <!-- ←実際のユニットIDに変更 -->
+         data-ad-slot="0000000002"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
   </div>
@@ -113,6 +113,18 @@
 </div>
 
 <script>
+/* ===== ユーティリティ ===== */
+function getLang(){
+  const u = new URL(location.href);
+  return (u.searchParams.get('lang') || localStorage.getItem('nx_lang') || 'en');
+}
+function setLang(next){
+  const u = new URL(location.href);
+  u.searchParams.set('lang', next);
+  localStorage.setItem('nx_lang', next);
+  location.href = u.toString();
+}
+
 /* ===== 共通ヘッダー/フッター読み込み ===== */
 (async function injectPartials(){
   // header
@@ -136,7 +148,36 @@
       `<div style="padding:16px 0;text-align:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
   }
 
-  // AdSense描画
+  /* --- 1) アイコンURL差し替え（Tabler Icons 正規CDNへ） --- */
+  const TABLER = 'https://cdn.jsdelivr.net/npm/@tabler/icons@2.47.0/icons/outline/';
+  const map = {
+    printer:'printer.svg',
+    mail:'mail.svg',
+    'list-check':'list-check.svg',
+    notebook:'notebook.svg',
+    'brand-reddit':'brand-reddit.svg',
+    'brand-medium':'brand-medium.svg',
+    'brand-substack':'brand-substack.svg'
+  };
+  document.querySelectorAll('img[alt]').forEach(img=>{
+    const alt = img.getAttribute('alt') || '';
+    const key = alt.trim().toLowerCase();
+    // 既存の src が jsdelivr の gh/ 経由や 404 場合に置換
+    if (map[key]) img.src = TABLER + map[key];
+  });
+
+  /* --- 2) 言語切替ボタンの初期化（partials 挿入後に必ず実行） --- */
+  const btn = document.getElementById('langBtn');
+  if (btn){
+    const cur = getLang();                 // 'en' | 'ja'
+    btn.textContent = (cur === 'ja') ? 'English' : '日本語';
+    btn.addEventListener('click', ()=>{
+      const next = (getLang()==='ja') ? 'en' : 'ja';
+      setLang(next);
+    }, {passive:true});
+  }
+
+  /* --- 3) AdSense描画（ins を push） --- */
   function renderAds(){
     try{
       document.querySelectorAll('ins.adsbygoogle').forEach(function(){
