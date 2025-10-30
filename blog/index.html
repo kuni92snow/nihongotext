@@ -1,144 +1,145 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blog | nihongotext.com</title>
   <meta name="color-scheme" content="light only" />
 
-  <!-- Font Awesome (icons) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- GA4 (same as top/inquiry) -->
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ', { send_page_view: true });
+    gtag('config', 'G-9QSHWJE0HZ');
   </script>
 
-  <!-- AdSense (same as top/inquiry) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
   <style>
-    /* ===== Site palette (same as inquiry) ===== */
     :root{
       --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
       --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
-      --learned-bg:#eaf7ec; --learned-border:#cfead5; --learned-ink:#165b31;
     }
     *{box-sizing:border-box}
     html,body{margin:0;color:var(--ink);background:#fff;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
     a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 16px}
 
-    /* ===== Header (same as inquiry) ===== */
+    /* Header */
     header{border-bottom:3px solid var(--shu);background:#fff}
-    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
     .brand{display:flex;flex-direction:column;gap:2px}
-    .brand a.brand-link{display:inline-block;color:inherit;text-decoration:none}
-    .brand a.brand-link:focus-visible{outline:3px solid rgba(230,70,45,.35);border-radius:6px}
-    .brand-title{font-weight:980;letter-spacing:.3px;font-size:clamp(24px,4.2vw,32px);color:var(--shu)}
-    .brand-sub{width:fit-content;margin:0 auto;color:var(--shu-soft);font-weight:700;font-size:12px;letter-spacing:.4px}
+    .brand-title{font-weight:980;font-size:28px;color:var(--shu)}
+    .brand-sub{color:var(--shu-soft);font-weight:700;font-size:12px;text-align:center}
     .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;
-      border:1px solid var(--border);background:#fff}
+    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;
+      border-radius:50%;border:1px solid var(--border);background:#fff}
     .iconbar .tool i{color:var(--shu)}
     .iconbar .tool:hover{border-color:var(--shu)}
 
-    /* ===== Page main ===== */
-    main{max-width:980px;margin:20px auto 24px;padding:0 16px}
+    .lang-toggle{
+      margin-left:10px;
+      padding:6px 10px;
+      border:1px solid var(--border);
+      border-radius:6px;
+      background:#fff;
+      color:var(--shu-deep);
+      font-size:13px;
+      cursor:pointer;
+    }
+
+    /* Main */
+    main{max-width:980px;margin:20px auto;padding:0 16px}
     h1{font-size:28px;margin:0 0 8px}
     .lead{color:var(--muted);margin:0 0 16px}
-
-    /* Blog cards */
     .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
     .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px}
     .date{font-size:12px;color:var(--muted);margin-bottom:6px}
     .title{font-weight:800;margin:0 0 6px}
     .desc{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 10px}
     .read{font-weight:700;color:var(--shu)}
-    .read:hover{color:var(--shu-deep);text-decoration:underline}
 
-    /* ===== Footer (same as inquiry) ===== */
+    /* Footer */
     footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
     .copy{color:#6b7280}
-
-    /* Breadcrumb / nav under header (optional) */
-    .crumb{font-size:13px;color:var(--muted);margin:10px 0}
-    .topnav{display:flex;gap:16px;margin:0 0 6px}
-    .topnav a{padding:4px 0;border-bottom:2px solid transparent}
-    .topnav a.active{border-color:var(--shu);color:var(--shu)}
   </style>
 </head>
 <body>
-  <!-- ===== Header ===== -->
+  <!-- Header -->
   <header>
-    <div class="container h-row positioned">
+    <div class="h-row">
       <div class="brand">
-        <a class="brand-link" id="homeLink" href="/" aria-label="nihongotext.com のトップページへ">
+        <a href="/" aria-label="nihongotext.com">
           <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
           <div class="brand-sub">== beta version ==</div>
         </a>
       </div>
-      <div></div>
+
+      <!-- Language toggle -->
+      <div style="display:flex;align-items:center;">
+        <button class="lang-toggle" id="langBtn">日本語</button>
+      </div>
     </div>
-    <div class="container">
-      <nav class="iconbar" aria-label="site icons">
-        <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
-        <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-        <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-        <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-      </nav>
+
+    <div class="iconbar">
+      <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
+      <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
+      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
     </div>
   </header>
 
-  <!-- ===== Main ===== -->
+  <!-- Main -->
   <main>
-    <div class="container">
-      <nav class="topnav" aria-label="breadcrumbs and tabs">
-        <a href="/"      >Home</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/inquiry/">Contact</a>
-      </nav>
+    <h1>Blog</h1>
+    <p class="lead">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
 
-      <h1>Blog</h1>
-      <p class="lead">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
-
-      <section class="cards">
-        <!-- Example post card -->
-        <article class="card">
-          <div class="date">Nov 3, 2025</div>
-          <h2 class="title">Roadmap Sneak Peek</h2>
-          <p class="desc">A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
-          <a class="read" href="/blog/roadmap.html">Read more</a>
-        </article>
-      </section>
-
-      <div style="margin-top:16px">
-        <a class="read" href="/news.html">News</a> / <a class="read" href="/inquiry/">Contact</a>
-      </div>
-    </div>
+    <section class="cards">
+      <article class="card">
+        <div class="date">Nov 3, 2025</div>
+        <h2 class="title">Roadmap Sneak Peek</h2>
+        <p class="desc">A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
+        <a class="read" href="/blog/roadmap.html">Read more</a>
+      </article>
+    </section>
   </main>
 
-  <!-- ===== Footer ===== -->
+  <!-- Footer -->
   <footer>
-    <div class="container f-row">
-      <nav class="iconbar" aria-label="site icons">
-        <a class="tool" title="お知らせ（ブログ）" href="/blog/"><i class="fas fa-bell"></i></a>
+    <div class="f-row">
+      <div class="iconbar">
+        <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
+        <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
         <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
         <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
         <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
-      </nav>
+      </div>
       <div class="copy">© 2025 nihongotext.com</div>
     </div>
   </footer>
 
+  <!-- Language Toggle Script -->
   <script>
-    // このページでは SW は登録しません（問い合わせと同方針）
+    const langBtn = document.getElementById('langBtn');
+    let isEnglish = true;
+    langBtn.addEventListener('click', () => {
+      isEnglish = !isEnglish;
+      if(isEnglish){
+        langBtn.textContent = '日本語';
+        document.documentElement.lang = 'en';
+      } else {
+        langBtn.textContent = 'English';
+        document.documentElement.lang = 'ja';
+      }
+    });
   </script>
 </body>
 </html>
