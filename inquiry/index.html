@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>お問い合わせ | nihongotext.com</title>
 
-<!-- 強制ノーキャッシュ -->
+<!-- キャッシュ無効化（しつこい残留対策） -->
 <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -21,16 +21,15 @@
   label{display:block;margin:12px 0 6px;color:var(--muted);font-size:14px}
   input,textarea{width:100%;padding:12px;border:1px solid var(--bd);border-radius:10px;font-size:16px;background:#fafafa}
   textarea{min-height:150px;resize:vertical}
-  .actions{margin-top:14px;display:flex;align-items:center;gap:12px}
+  .row{margin-top:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .btn{border:0;border-radius:999px;background:linear-gradient(180deg,#ff6b6b,#e74c3c);color:#fff;padding:10px 18px;font-weight:700;cursor:pointer}
   .btn[disabled]{opacity:.6;cursor:not-allowed}
   .status{font-size:14px}
-  .ok{color:#2e7d32}.err{color:#c62828}
-  .muted{color:#999}
+  .ok{color:#2e7d32}.err{color:#c62828}.muted{color:#999}
 </style>
 
 <script>
-/* === 1) 起動時に Service Worker / Cache を徹底掃除（通常モードの残骸対策） === */
+/* 起動時：Service Worker / Cache を可能な範囲で掃除（通常モードの残骸対策） */
 (async () => {
   try {
     if ('serviceWorker' in navigator) {
@@ -55,40 +54,40 @@
   <section class="card">
     <h1>お問い合わせ</h1>
 
-    <label for="name">お名前</label>
-    <input id="name" type="text" autocomplete="name" />
-
-    <label for="email">メールアドレス</label>
-    <input id="email" type="email" autocomplete="email" />
-
-    <label for="subject">件名</label>
-    <input id="subject" type="text" />
-
-    <label for="message">メッセージ</label>
-    <textarea id="message"></textarea>
-
-    <!-- reCAPTCHA を動的ロードで毎回キャッシュバイパス -->
-    <div id="recaptcha-area" style="margin-top:12px">
-      <div id="recaptcha-container"></div>
-      <div id="recaptcha-msg" class="muted" style="font-size:12px"></div>
-    </div>
-
-    <div class="actions">
-      <button id="sendBtn" class="btn" type="button">送信</button>
-      <span id="status" class="status" aria-live="polite"></span>
-    </div>
-
-    <!-- JSONPがブロックされたときのフォールバック（CORS不要のhidden-iframe POST） -->
+    <!-- 送信は hidden-iframe 経由の POST のみ -->
     <iframe name="submitFrame" style="display:none;width:0;height:0;border:0;"></iframe>
-    <form id="fallbackForm"
+
+    <form id="contactForm"
           action="https://script.google.com/macros/s/AKfycbzyHV_NSyJU-hPwvJU5JJMMuPAa7V3vhmRuq6Clq7WBIErCx6A2xHgG1SXtSlfmR42OHw/exec"
-          method="POST" target="submitFrame" style="display:none">
+          method="POST" target="submitFrame" novalidate>
       <input type="hidden" name="mode" value="contact_submit">
-      <input type="hidden" name="name">
-      <input type="hidden" name="email">
-      <input type="hidden" name="subject">
-      <input type="hidden" name="message">
-      <input type="hidden" name="token">
+      <input type="hidden" name="token" id="token"><!-- reCAPTCHA トークン -->
+
+      <label for="name">お名前</label>
+      <input id="name" name="name" type="text" autocomplete="name" required />
+
+      <label for="email">メールアドレス</label>
+      <input id="email" name="email" type="email" autocomplete="email" required />
+
+      <label for="subject">件名</label>
+      <input id="subject" name="subject" type="text" />
+
+      <label for="message">メッセージ</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <div style="margin:12px 0">
+        <!-- v2 チェックボックスを明示レンダリング。コールバックで token を格納 -->
+        <div class="g-recaptcha"
+             data-sitekey="6LcRKvArAAAAAFYmY2IyPo_hwTszHwzp3bgRXtBV"
+             data-callback="onCaptcha"
+             data-expired-callback="onExpire"></div>
+        <div id="rc-msg" class="muted" style="font-size:12px"></div>
+      </div>
+
+      <div class="row">
+        <button id="sendBtn" class="btn" type="submit">送信</button>
+        <span id="status" class="status" aria-live="polite"></span>
+      </div>
     </form>
 
     <div id="dbg" class="muted" style="margin-top:10px;font-size:12px;white-space:pre-wrap"></div>
@@ -97,113 +96,60 @@
 
 <footer>© <span id="yy"></span> nihongotext.com</footer>
 
+<!-- reCAPTCHA を“直接”読み込む（タイムスタンプでキャッシュ回避） -->
+<script
+  src="https://www.google.com/recaptcha/api.js?hl=ja&cbts=<?php echo Date.now ? Date.now() : (new Date).getTime(); ?>"
+  async defer crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
 <script>
-/* === 2) 設定 === */
-const GAS_URL  = "https://script.google.com/macros/s/AKfycbzyHV_NSyJU-hPwvJU5JJMMuPAa7V3vhmRuq6Clq7WBIErCx6A2xHgG1SXtSlfmR42OHw/exec";
-const SITE_KEY = "6LcRKvArAAAAAFYmY2IyPo_hwTszHwzp3bgRXtBV"; // v2 チェックボックス
-
-/* === 3) reCAPTCHA を動的ロード（毎回タイムスタンプ付きでキャッシュ無効化） === */
-let recaptchaWidgetId = null;
-function onRecaptchaReady(){
-  try{
-    if (recaptchaWidgetId !== null) return; // 二重render防止
-    recaptchaWidgetId = grecaptcha.render("recaptcha-container", {
-      sitekey: SITE_KEY, theme: "light", size: "normal"
-    });
-    console.log("[inquiry] reCAPTCHA rendered, wid:", recaptchaWidgetId);
-    document.getElementById('recaptcha-msg').textContent = "";
-  }catch(e){
-    document.getElementById('recaptcha-msg').textContent = "reCAPTCHA の読み込みに失敗しました。拡張機能や通信環境をご確認ください。";
-  }
-}
-
-(function loadRecaptchaDynamically(){
-  const s = document.createElement('script');
-  const ts = Date.now(); // ★キャッシュバスター
-  s.src = "https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaReady&hl=ja&cbts=" + ts;
-  s.async = true; s.defer = true; s.crossOrigin = "anonymous"; s.referrerPolicy = "no-referrer-when-downgrade";
-  s.onerror = () => { document.getElementById('recaptcha-msg').textContent = "reCAPTCHA を読み込めませんでした。"; };
-  document.head.appendChild(s);
-})();
-
-/* === 4) JSONP + 失敗時フォールバック === */
 const $ = (id)=>document.getElementById(id);
 $("yy").textContent = new Date().getFullYear();
 
 function setStatus(msg, ok){ const el=$("status"); el.textContent=msg; el.className="status "+(ok?"ok":"err"); }
-function debug(extra){
+function debug(){
   $("dbg").textContent =
 `host: ${location.hostname}
-grecaptcha: ${typeof grecaptcha !== "undefined" ? "loaded" : "not loaded"}
-widget: ${recaptchaWidgetId===null?"not rendered":"rendered:"+recaptchaWidgetId}`
- + (extra?`\n${extra}`:"");
+grecaptcha: ${typeof grecaptcha !== "undefined" ? "loaded" : "not loaded"}`;
 }
-window.addEventListener("load", ()=> setTimeout(()=>debug(), 600));
+window.addEventListener("load", ()=> setTimeout(debug, 500));
 
-function jsonp(url, cbname, onerr){
-  const s = document.createElement("script");
-  s.src = url + (url.includes("?")?"&":"?") + "callback=" + encodeURIComponent(cbname);
-  s.async = true; s.defer = true;
-  s.onerror = () => onerr?.();
-  document.head.appendChild(s);
-}
+/* reCAPTCHA v2 callbacks */
+function onCaptcha(token){ $("token").value = token || ""; $("rc-msg").textContent = ""; }
+function onExpire(){ $("token").value = ""; $("rc-msg").textContent = "reCAPTCHA の有効期限が切れました。再チェックしてください。"; }
 
-$("sendBtn").addEventListener("click", ()=>{
-  setStatus("", true);
-  const btn = $("sendBtn"); btn.disabled = true;
+/* 送信ハンドリング（iframe POSTのみ） */
+const form = $("contactForm");
+form.addEventListener("submit", (e)=>{
+  e.preventDefault();
+  const btn = $("sendBtn");
+  const name = $("name").value.trim();
+  const email= $("email").value.trim();
+  const msg  = $("message").value.trim();
+  const token= $("token").value.trim();
 
-  const name    = $("name").value.trim();
-  const email   = $("email").value.trim();
-  const subject = $("subject").value.trim();
-  const message = $("message").value.trim();
-  if (!name || !email || !message){
+  if (!name || !email || !msg){
     setStatus("「お名前」「メール」「メッセージ」は必須です。", false);
-    btn.disabled = false; return;
+    return;
   }
-
-  let token = "";
-  try { token = grecaptcha.getResponse(recaptchaWidgetId) || ""; } catch(e){ token=""; }
   if (!token){
     setStatus("reCAPTCHA をチェックしてください。", false);
-    btn.disabled = false; return;
+    return;
   }
 
-  // 1) まず JSONP を試す
-  const v = "v_" + Date.now(); // ★キャッシュバスター
-  const params = new URLSearchParams({ mode:"contact_submit", name, email, subject, message, token, v });
-  const cbname = "cb_" + Math.random().toString(36).slice(2);
-  window[cbname] = function(res){
-    try{
-      if (res && res.ok) {
-        setStatus("送信しました。自動返信メールをご確認ください。", true);
-        $("message").value = "";
-      } else {
-        setStatus("送信に失敗しました。時間をおいて再度お試しください。", false);
-      }
-    } finally {
-      btn.disabled = false;
-      try { grecaptcha.reset(recaptchaWidgetId); } catch(e){}
-      delete window[cbname];
-    }
-  };
+  btn.disabled = true;
+  setStatus("送信中…", true);
 
-  jsonp(`${GAS_URL}?${params.toString()}`, cbname, () => {
-    // 2) JSONP が拡張/設定でブロック → フォールバック（hidden iframe POST）
-    console.warn("[inquiry] JSONP blocked. Fallback to form POST.");
-    const f = $("fallbackForm");
-    f.elements.name.value    = name;
-    f.elements.email.value   = email;
-    f.elements.subject.value = subject;
-    f.elements.message.value = message;
-    f.elements.token.value   = token;
-    f.submit();
-
-    // フォールバックは応答が取れないため楽観表示（GAS 側 doPost が送信）
+  /* iframe onload で“送れた”と判断（GAS 側 doPost がメール送信） */
+  const onld = () => {
     setStatus("送信しました。自動返信メールをご確認ください。", true);
-    try { grecaptcha.reset(recaptchaWidgetId); } catch(e){}
+    try { grecaptcha.reset(); } catch(e){}
+    $("token").value = "";
     btn.disabled = false;
-    delete window[cbname];
-  });
+    submitFrame.removeEventListener("load", onld);
+  };
+  submitFrame.addEventListener("load", onld);
+  form.submit();
 });
 </script>
 </body>
