@@ -10,7 +10,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <!-- キャッシュ削除を最上部で実行 -->
+  <!-- ページ最上部で SW / Cache を必ず除去 -->
   <script>
     (async () => {
       try {
@@ -18,14 +18,12 @@
           const regs = await navigator.serviceWorker.getRegistrations();
           for (const r of regs) await r.unregister();
         }
-        if (window.caches && caches.keys) {
+        if (window.caches?.keys) {
           const keys = await caches.keys();
           for (const k of keys) await caches.delete(k);
         }
         console.log('[inquiry] cache & SW cleared');
-      } catch (e) {
-        console.warn('[inquiry] cache clear failed', e);
-      }
+      } catch (e) { console.warn('[inquiry] cache clear failed', e); }
     })();
   </script>
 
@@ -84,7 +82,7 @@
     <div style="margin-top:12px"><div id="recaptcha"></div></div>
 
     <div class="actions">
-      <button class="btn" id="sendBtn" type="button">送信</button>
+      <button class="btn" id="sendBtn" type="button" disabled>送信</button>
       <span id="status" class="status" role="status" aria-live="polite"></span>
     </div>
   </section>
@@ -96,10 +94,12 @@
 (() => {
   "use strict";
 
-  const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV";
-  const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec";
-  const VER = "20251030a";
+  // ===== 設定 =====
+  const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"; // 共有いただいたサイトキー
+  const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec"; // 最新URL
+  const VER = "20251030-stable";
 
+  // ===== 文言 =====
   const T = {
     ja:{ ttl:"お問い合わせ", name:"お名前", email:"メールアドレス", subject:"件名", message:"メッセージ", send:"送信",
          ok:"送信しました。自動返信メールをご確認ください。",
@@ -114,26 +114,37 @@
          ng:"Failed to send. Please try again later."
     }
   };
-  let lang = "ja";
+
+  // ===== 参照 & 多言語 =====
   const $ = (id)=>document.getElementById(id);
+  let lang = (new URL(location.href).searchParams.get('lang')==='en') ? 'en' : 'ja';
   function applyLang(){
     const d=T[lang];
     $("ttl").textContent=d.ttl; $("l_name").textContent=d.name; $("l_email").textContent=d.email;
     $("l_subject").textContent=d.subject; $("l_message").textContent=d.message;
     $("sendBtn").textContent=d.send; document.documentElement.lang = lang;
   }
+  $("langBtn").addEventListener("click", ()=>{ lang = (lang==="ja")?"en":"ja"; applyLang(); });
 
-  let wid = null;
-  window.onRecaptchaReady = function(){
-    wid = grecaptcha.render("recaptcha", { sitekey:SITE_KEY, theme:"light", size:"normal" });
-    console.log('[inquiry] recaptcha rendered', {wid});
-  };
-
+  // ===== ステータス表示 =====
   function setStatus(msg, ok){ const el=$("status"); el.textContent=msg; el.className="status "+(ok?"ok":"err"); }
 
+  // ===== reCAPTCHA（描画完了まで送信ボタンを無効化）=====
+  let wid = null;
+  window.onRecaptchaReady = function(){
+    try{
+      wid = grecaptcha.render("recaptcha", { sitekey:SITE_KEY, theme:"light", size:"normal" });
+      console.log('[inquiry] recaptcha rendered:', wid);
+      $("sendBtn").disabled = false; // ← ここで初めて送信可能にする
+    }catch(e){
+      console.error('[inquiry] reCAPTCHA render error', e);
+      setStatus("reCAPTCHA の読み込みに失敗しました。ページを再読み込みしてください。", false);
+    }
+  };
+
+  // ===== JSONP 互換（固定/動的どちらにも対応）=====
   const FIXED_CB = "cb_x";
   window[FIXED_CB] = function(res){ onJSONPResponse(res); };
-
   function installDynamicCallback(){
     const name = 'cb_' + Math.random().toString(36).slice(2);
     window[name] = function(res){ onJSONPResponse(res); };
@@ -142,8 +153,10 @@
   function onJSONPResponse(res){
     console.log('[inquiry] JSONP response:', res);
     try{
-      if(res && res.ok){ setStatus(T[lang].ok,true); $("message").value=""; $("subject").value=""; }
-      else{
+      if(res && res.ok){
+        setStatus(T[lang].ok,true);
+        $("message").value=""; $("subject").value="";
+      }else{
         const reason = (res && res.reason) ? ` (${res.reason})` : "";
         setStatus(T[lang].ng + reason, false);
       }
@@ -153,6 +166,7 @@
     }
   }
 
+  // ===== 送信 =====
   $("sendBtn").addEventListener("click", () => {
     $("sendBtn").disabled = true; setStatus("", true);
 
@@ -160,7 +174,9 @@
           subject=$("subject").value.trim(), message=$("message").value.trim();
     if(!name || !email || !message){ setStatus(T[lang].need,false); $("sendBtn").disabled=false; return; }
 
-    const token = (typeof grecaptcha!=="undefined" && wid!==null) ? grecaptcha.getResponse(wid) : "";
+    // reCAPTCHA 未描画/未チェック防止
+    if(wid===null){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
+    const token = grecaptcha.getResponse(wid);
     if(!token){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
 
     const params = new URLSearchParams({
@@ -180,10 +196,11 @@
     sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{grecaptcha.reset(wid);}catch(e){} };
     document.body.appendChild(sc);
 
+    // 一部実装向けフォロー
     setTimeout(()=>{ try{ delete window[dynamicCb]; }catch(e){} }, 5000);
   });
 
-  $("langBtn").addEventListener("click", ()=>{ lang = (lang==="ja")?"en":"ja"; applyLang(); });
+  // ===== 年号・初期化 =====
   $("yy").textContent = String(new Date().getFullYear());
   applyLang();
 })();
