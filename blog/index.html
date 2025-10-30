@@ -69,6 +69,10 @@
     footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
     .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
     .copy{color:#6b7280}
+
+    /* Ruby (furigana) */
+    ruby{ruby-position:over;}
+    rt{font-size:.65em;color:#6b7280;letter-spacing:0}
   </style>
 </head>
 <body>
@@ -82,32 +86,36 @@
         </a>
       </div>
 
-      <!-- Language toggle -->
-      <div style="display:flex;align-items:center;">
+      <div style="display:flex;align-items:center;gap:10px">
+        <!-- nav (top) -->
+        <nav class="iconbar" aria-label="site tools">
+          <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
+          <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
+          <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
+          <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
+          <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
+        </nav>
+        <!-- Language toggle -->
         <button class="lang-toggle" id="langBtn">日本語</button>
       </div>
-    </div>
-
-    <div class="iconbar">
-      <a class="tool" title="Blog" href="/blog/"><i class="fas fa-bell"></i></a>
-      <a class="tool" title="Contact" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-      <a class="tool" title="Reddit" target="_blank" href="https://reddit.com/r/nihongotext"><i class="fab fa-reddit"></i></a>
-      <a class="tool" title="Medium" target="_blank" href="https://medium.com/@nihongotext"><i class="fab fa-medium"></i></a>
-      <a class="tool" title="Substack" target="_blank" href="https://substack.com/@nihongotext"><i class="fas fa-envelope-open-text"></i></a>
     </div>
   </header>
 
   <!-- Main -->
   <main>
-    <h1>Blog</h1>
-    <p class="lead">Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
+    <h1 data-i18n="page_title">Blog</h1>
+    <p class="lead" data-i18n="lead">
+      Updates, tips, and behind-the-scenes notes from the nihongotext.com team.
+    </p>
 
     <section class="cards">
       <article class="card">
-        <div class="date">Nov 3, 2025</div>
-        <h2 class="title">Roadmap Sneak Peek</h2>
-        <p class="desc">A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
-        <a class="read" href="/blog/roadmap.html">Read more</a>
+        <div class="date" data-i18n="post_date">Nov 3, 2025</div>
+        <h2 class="title" data-i18n="post_title">Roadmap Sneak Peek</h2>
+        <p class="desc" data-i18n="post_desc">
+          A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.
+        </p>
+        <a class="read" href="/blog/roadmap.html" data-i18n="read_more">Read more</a>
       </article>
     </section>
   </main>
@@ -126,20 +134,68 @@
     </div>
   </footer>
 
-  <!-- Language Toggle Script -->
+  <!-- Language/i18n -->
   <script>
-    const langBtn = document.getElementById('langBtn');
-    let isEnglish = true;
-    langBtn.addEventListener('click', () => {
-      isEnglish = !isEnglish;
-      if(isEnglish){
-        langBtn.textContent = '日本語';
-        document.documentElement.lang = 'en';
-      } else {
-        langBtn.textContent = 'English';
-        document.documentElement.lang = 'ja';
+    // 英語デフォルト、ボタンで日本語(ルビ入り)へ切替
+    const dict = {
+      en: {
+        page_title: "Blog",
+        lead: "Updates, tips, and behind-the-scenes notes from the nihongotext.com team.",
+        post_date: "Nov 3, 2025",
+        post_title: "Roadmap Sneak Peek",
+        post_desc: "A look at what’s coming next: more JLPT levels, audio TTS, and smarter practice tools.",
+        read_more: "Read more",
+        btn: "日本語"
+      },
+      ja: {
+        // 日本語は innerHTML でルビ込みを流し込む
+        page_title: "<ruby><rb>ブログ</rb><rt>ぶろぐ</rt></ruby>",
+        lead:
+          "<ruby><rb>更新</rb><rt>こうしん</rt></ruby><ruby><rb>情報</rb><rt>じょうほう</rt></ruby>・" +
+          "<ruby><rb>豆知識</rb><rt>まめちしき</rt></ruby>・" +
+          "<ruby><rb>制作</rb><rt>せいさく</rt></ruby>の" +
+          "<ruby><rb>舞台裏</rb><rt>ぶたい うら</rt></ruby>ノートを" +
+          "nihongotext.com チームがお<ruby><rb>届</rb><rt>とど</rt></ruby>けします。",
+        post_date: "2025-11-03",
+        post_title:
+          "<ruby><rb>今後</rb><rt>こんご</rt></ruby>の<ruby><rb>計画</rb><rt>けいかく</rt></ruby>スニークピーク",
+        post_desc:
+          "<ruby><rb>今後</rb><rt>こんご</rt></ruby>のアップデート：" +
+          "JLPT レベルの<ruby><rb>拡充</rb><rt>かくじゅう</rt></ruby>、" +
+          "<ruby><rb>音声</rb><rt>おんせい</rt></ruby>TTS、" +
+          "<ruby><rb>学習</rb><rt>がくしゅう</rt></ruby>ツールの<ruby><rb>強化</rb><rt>きょうか</rt></ruby> など。",
+        read_more: "<ruby><rb>続きを読む</rb><rt>よむ</rt></ruby>",
+        btn: "English"
       }
+    };
+
+    const els = [...document.querySelectorAll("[data-i18n]")];
+    const langBtn = document.getElementById("langBtn");
+    let lang = "en"; // default
+
+    function applyLang() {
+      document.documentElement.lang = lang;
+      const pack = dict[lang];
+      els.forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (!pack[key]) return;
+        // 日本語はルビ入りHTML、英語はテキスト
+        if (lang === "ja") {
+          el.innerHTML = pack[key];
+        } else {
+          el.textContent = pack[key];
+        }
+      });
+      langBtn.textContent = pack.btn;
+    }
+
+    langBtn.addEventListener("click", () => {
+      lang = (lang === "en") ? "ja" : "en";
+      applyLang();
     });
+
+    // 初期適用
+    applyLang();
   </script>
 </body>
 </html>
