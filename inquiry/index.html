@@ -10,6 +10,25 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
+  <!-- キャッシュ削除を最上部で実行 -->
+  <script>
+    (async () => {
+      try {
+        if ('serviceWorker' in navigator) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          for (const r of regs) await r.unregister();
+        }
+        if (window.caches && caches.keys) {
+          const keys = await caches.keys();
+          for (const k of keys) await caches.delete(k);
+        }
+        console.log('[inquiry] cache & SW cleared');
+      } catch (e) {
+        console.warn('[inquiry] cache clear failed', e);
+      }
+    })();
+  </script>
+
   <style>
     :root { --accent:#e74c3c; --fg:#222; --muted:#777; --bd:#e9e9e9; }
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;color:var(--fg)}
@@ -77,27 +96,10 @@
 (() => {
   "use strict";
 
-  // ========= まず SW と Cache を潰す（通常モードでも古いJSが残らないように）=========
-  (async () => {
-    try {
-      if ('serviceWorker' in navigator) {
-        const regs = await navigator.serviceWorker.getRegistrations();
-        for (const r of regs) await r.unregister();
-      }
-      if (window.caches && caches.keys) {
-        const keys = await caches.keys();
-        for (const k of keys) await caches.delete(k);
-      }
-      console.log('[inquiry] SW & caches cleared');
-    } catch(e){ console.warn('[inquiry] clear failed', e); }
-  })();
-
-  // ========= 設定（サイトキーは添付動作版に合わせる）=========
   const SITE_KEY = "6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV";
   const GAS_URL  = "https://script.google.com/macros/s/AKfycbwOZYS2HD-rvYVGFMkKsgm0feGWxgFypjpPbhVE8LYgKJe1T3lXfkgDNAiKIjJZcZNdNA/exec";
-  const VER = "20251029c";
+  const VER = "20251030a";
 
-  // ========= 表示テキスト =========
   const T = {
     ja:{ ttl:"お問い合わせ", name:"お名前", email:"メールアドレス", subject:"件名", message:"メッセージ", send:"送信",
          ok:"送信しました。自動返信メールをご確認ください。",
@@ -121,24 +123,20 @@
     $("sendBtn").textContent=d.send; document.documentElement.lang = lang;
   }
 
-  // ========= reCAPTCHA =========
   let wid = null;
   window.onRecaptchaReady = function(){
     wid = grecaptcha.render("recaptcha", { sitekey:SITE_KEY, theme:"light", size:"normal" });
     console.log('[inquiry] recaptcha rendered', {wid});
   };
 
-  // ========= ステータス表示 =========
   function setStatus(msg, ok){ const el=$("status"); el.textContent=msg; el.className="status "+(ok?"ok":"err"); }
 
-  // ========= JSONP 互換：固定 cb_x と動的コールバックの両方を受ける =========
-  // GASが「callback=cb_x 固定」を想定していても、「任意名のcallbackをそのまま返す」実装でも動くようにする
   const FIXED_CB = "cb_x";
-  window[FIXED_CB] = function(res){ onJSONPResponse(res); }; // 固定名に対応
+  window[FIXED_CB] = function(res){ onJSONPResponse(res); };
 
   function installDynamicCallback(){
     const name = 'cb_' + Math.random().toString(36).slice(2);
-    window[name] = function(res){ onJSONPResponse(res); }; // 動的名にも対応
+    window[name] = function(res){ onJSONPResponse(res); };
     return name;
   }
   function onJSONPResponse(res){
@@ -155,7 +153,6 @@
     }
   }
 
-  // ========= 送信 =========
   $("sendBtn").addEventListener("click", () => {
     $("sendBtn").disabled = true; setStatus("", true);
 
@@ -166,16 +163,14 @@
     const token = (typeof grecaptcha!=="undefined" && wid!==null) ? grecaptcha.getResponse(wid) : "";
     if(!token){ setStatus(T[lang].cap,false); $("sendBtn").disabled=false; return; }
 
-    // 互換：token を両方の名前で送る
     const params = new URLSearchParams({
       mode:'contact_submit',
       name, email, subject, message,
-      token,                         // 添付の動作版と同じ名前
-      ['g-recaptcha-response']:token,// GAS側の一般的な検証名
+      token,
+      ['g-recaptcha-response']:token,
       v:VER
     });
 
-    // 互換：callback= は固定名で送る（固定想定GAS向け）
     const dynamicCb = installDynamicCallback();
     const url = `${GAS_URL}?${params.toString()}&callback=${encodeURIComponent(FIXED_CB)}`;
     console.log('[inquiry] JSONP ->', url);
@@ -185,11 +180,9 @@
     sc.onerror = ()=>{ setStatus(T[lang].ng,false); $("sendBtn").disabled=false; try{grecaptcha.reset(wid);}catch(e){} };
     document.body.appendChild(sc);
 
-    // 互換：一部のGASが「指定callback名」を尊重する場合に備え、動的名も5秒だけ待受
     setTimeout(()=>{ try{ delete window[dynamicCb]; }catch(e){} }, 5000);
   });
 
-  // ========= 言語切替 & 年号 =========
   $("langBtn").addEventListener("click", ()=>{ lang = (lang==="ja")?"en":"ja"; applyLang(); });
   $("yy").textContent = String(new Date().getFullYear());
   applyLang();
