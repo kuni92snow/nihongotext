@@ -7,6 +7,11 @@
   <link rel="icon" href="/favicon.ico" />
   <base href="/" />
 
+  <!-- Font Awesome (inquiry と同じCDNを利用) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb}
     body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7}
@@ -29,15 +34,11 @@
     .more{margin-top:8px}
     /* 言語切替 */
     [data-i18n][data-lang="en"] .ja{display:none}
-    [data-i18n][data-lang="en"] .en{display:block}
     [data-i18n][data-lang="ja"] .en{display:none}
-    [data-i18n][data-lang="ja"] .ja{display:block}
     /* ふりがな */
     ruby{ruby-position:over;ruby-align:start}
     rt{font-size:.6em;color:#666;letter-spacing:.03em}
-    /* SVGアイコンのサイズ調整用 */
-    .ico{width:18px;height:18px;display:inline-block}
-    .ico-lg{width:28px;height:28px}
+    .fa-fw{width:1.1em;text-align:center}
   </style>
 
   <!-- GA4 -->
@@ -50,20 +51,13 @@
 
   <main>
     <div class="wrap" id="page" data-i18n data-lang="en">
-      <!-- 見出し（ロゴSVG） -->
+      <!-- 見出し -->
       <div class="en">
-        <h1 class="row">
-          <!-- ロゴ -->
-          <svg class="ico-lg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#e6462d" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#e6462d"/></svg>
-          Blog
-        </h1>
+        <h1 class="row"><i class="fa-solid fa-record-vinyl fa-fw" style="color:#e6462d"></i> Blog</h1>
         <p class="muted">Latest update from nihongotext.com</p>
       </div>
       <div class="ja">
-        <h1 class="row">
-          <svg class="ico-lg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#e6462d" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#e6462d"/></svg>
-          ブログ
-        </h1>
+        <h1 class="row"><i class="fa-solid fa-record-vinyl fa-fw" style="color:#e6462d"></i> ブログ</h1>
         <p class="muted">nihongotext.com からのお知らせ</p>
       </div>
 
@@ -74,13 +68,11 @@
           <button id="btn-ja" class="btn">日本語</button>
         </div>
         <div class="search">
-          <!-- 検索アイコン -->
-          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#6b7280" stroke-width="2"/><path d="M20 20l-4.2-4.2" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>
+          <i class="fa-solid fa-magnifying-glass fa-fw" aria-hidden="true"></i>
           <input id="q" type="search" placeholder="Search posts..." aria-label="Search posts">
         </div>
         <a class="row" href="/blog/updates.html" title="All updates">
-          <!-- 履歴アイコン -->
-          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4v6h6" stroke="#132c3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.7 20A8 8 0 1 0 6 6" stroke="#132c3a" stroke-width="2" fill="none"/><path d="M12 8v5l3 2" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/></svg>
+          <i class="fa-solid fa-rotate-left fa-fw" aria-hidden="true"></i>
           <span>Updates</span>
         </a>
       </div>
@@ -93,8 +85,7 @@
 
       <div class="more">
         <a href="/blog/updates.html" class="row">
-          <!-- 矢印 -->
-          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="#132c3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <i class="fa-solid fa-angles-right fa-fw" aria-hidden="true"></i>
           View full update history
         </a>
       </div>
@@ -105,16 +96,29 @@
   <div id="footer"></div>
 
   <script>
-    // ===== 共通パーツ =====
+    // ===== 共通パーツ読込（ヘッダーの言語ボタンとも連動） =====
     async function loadPartials(){
       const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
       document.getElementById('header').innerHTML=await h.text();
       document.getElementById('footer').innerHTML=await f.text();
-      document.querySelector('#btn-en')?.addEventListener('click',()=>applyLang('en'));
-      document.querySelector('#btn-ja')?.addEventListener('click',()=>applyLang('ja'));
+
+      // ヘッダーの #langBtn をブログ側の言語状態に同期
+      const btnHeader = document.getElementById('langBtn');
+      const syncHeaderText = ()=>{
+        const lang=currentLang();
+        if(btnHeader) btnHeader.textContent = (lang==='ja' ? 'English' : '日本語');
+      };
+      btnHeader?.addEventListener('click', ()=>{
+        // ヘッダーボタンでトグル → ブログ本文も切替
+        const next = currentLang()==='ja' ? 'en' : 'ja';
+        applyLang(next);
+      });
+      syncHeaderText();
     }
 
-    // ===== 言語切替 =====
+    // ===== 言語状態 =====
+    const currentLang = ()=> localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en');
+
     function applyLang(lang){
       const page=document.getElementById('page');
       page.setAttribute('data-lang',lang);
@@ -122,11 +126,19 @@
       localStorage.setItem('nt_lang',lang);
       document.getElementById('btn-en')?.classList.toggle('active',lang==='en');
       document.getElementById('btn-ja')?.classList.toggle('active',lang==='ja');
-      if(window.__posts){ renderLatest(window.__posts); if(!document.getElementById('searchResults').hidden) doSearch(); }
+      // ヘッダーボタンの表示も合わせる
+      const btnHeader=document.getElementById('langBtn');
+      if(btnHeader) btnHeader.textContent = (lang==='ja' ? 'English' : '日本語');
+
+      // 再描画
+      if(window.__posts){
+        renderLatest(window.__posts);
+        if(!document.getElementById('searchResults').hidden) doSearch();
+      }
       if(window.gtag) gtag('event','language_change',{language:lang});
     }
 
-    // ===== 投稿取得 =====
+    // ===== 投稿取得（/blog/posts.json）=====
     async function fetchPosts(){
       const res=await fetch('/blog/posts.json',{cache:'no-store'});
       const data=await res.json();
@@ -134,22 +146,19 @@
       window.__posts=data; return data;
     }
 
-    // ===== 最新記事描画 =====
+    // ===== 最新記事を描画 =====
     function renderLatest(posts){
-      const latest=posts[0]; const lang=localStorage.getItem('nt_lang')||'en';
+      const latest=posts[0]; const lang=currentLang();
       const el=document.getElementById('latest');
       if(!latest){ el.innerHTML='<p class="muted">No posts yet.</p>'; return; }
       const head=`
         <div class="row" style="justify-content:space-between">
           <div class="row">
-            <!-- ノート -->
-            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#132c3a" stroke-width="2"/><path d="M8 7h8M8 11h8M8 15h5" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/></svg>
+            <i class="fa-regular fa-note-sticky fa-fw" aria-hidden="true"></i>
             <time datetime="${latest.date}">${latest.date}</time>
           </div>
           <a class="row" href="/blog/updates.html#${latest.slug}" title="Permalink">
-            <!-- リンク -->
-            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13a5 5 0 0 1 0-7l2-2a5 5 0 0 1 7 7l-1 1" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 0 1 0 7l-2 2a5 5 0 0 1-7-7l1-1" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/></svg>
-            <span>Permalink</span>
+            <i class="fa-solid fa-link fa-fw" aria-hidden="true"></i><span>Permalink</span>
           </a>
         </div>`;
       const bodyEn=`<h2>${latest.en.title}</h2>${latest.en.html}`;
@@ -162,7 +171,7 @@
     function doSearch(){
       const q=document.getElementById('q').value.trim().toLowerCase();
       const box=document.getElementById('searchResults');
-      const lang=localStorage.getItem('nt_lang')||'en';
+      const lang=currentLang();
       if(!q){ box.hidden=true; box.innerHTML=''; return; }
       const hits=window.__posts.filter(p=>{
         const t=(lang==='ja'?(p.ja.title+' '+stripHtml(p.ja.html)):(p.en.title+' '+stripHtml(p.en.html)));
@@ -177,11 +186,14 @@
     // ===== 初期化 =====
     document.addEventListener('DOMContentLoaded',async()=>{
       await loadPartials();
-      const saved=localStorage.getItem('nt_lang');
-      applyLang(saved || ((navigator.language||'en').startsWith('ja')?'ja':'en'));
+      applyLang(currentLang());
       const posts=await fetchPosts();
       renderLatest(posts);
       document.getElementById('q').addEventListener('input',doSearch);
+
+      // ページ内の独自切替ボタン（英語/日本語）も連動
+      document.getElementById('btn-en')?.addEventListener('click',()=>applyLang('en'));
+      document.getElementById('btn-ja')?.addEventListener('click',()=>applyLang('ja'));
     });
   </script>
 </body>
