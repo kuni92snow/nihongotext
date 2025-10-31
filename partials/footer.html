@@ -1,27 +1,28 @@
 <!-- /partials/footer.html -->
-<footer>
-  <div class="foot-icons" style="display:flex;gap:14px;align-items:center;justify-content:center;padding:16px 0 6px;border-top:4px solid #e4573d">
-    <a class="iconbtn" href="javascript:window.print()" title="Print" aria-label="Print" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="print" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/printer.svg" width="18" height="18">
-    </a>
-    <a class="iconbtn" href="/inquiry/" title="Contact" aria-label="Contact" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="contact" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/mail.svg" width="18" height="18">
-    </a>
-    <a class="iconbtn" href="/learned/" title="Learned list" aria-label="Learned list" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="learned" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/list-check.svg" width="18" height="18">
-    </a>
-    <a class="iconbtn" href="/blog/" title="Blog" aria-label="Blog" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="blog" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/notebook.svg" width="18" height="18">
-    </a>
-    <a class="iconbtn" href="https://www.reddit.com/" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="reddit" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-reddit.svg" width="18" height="18">
-    </a>
-    <a class="iconbtn" href="https://medium.com/" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="medium" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-medium.svg" width="18" height="18">
-    </a>
-    <a class="iconbtn" href="https://substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #f4b2a6;border-radius:999px;background:#fff">
-      <img alt="substack" loading="lazy" src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-substack.svg" width="18" height="18">
-    </a>
+<footer class="ntx-footer">
+  <div class="ntx-wrap">
+    <nav class="ntx-icons">
+      <a href="/" title="Home" aria-label="Home" class="icon-btn"><i class="fa-solid fa-house"></i></a>
+      <a href="javascript:window.print()" title="Print" aria-label="Print" class="icon-btn"><i class="fa-solid fa-print"></i></a>
+      <a href="/blog/" title="Blog" aria-label="Blog" class="icon-btn"><i class="fa-solid fa-pen-to-square"></i></a>
+      <a href="/sitemap.html" title="Sitemap" aria-label="Sitemap" class="icon-btn"><i class="fa-solid fa-sitemap"></i></a>
+      <a href="/inquiry/" title="Contact" aria-label="Contact" class="icon-btn"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" aria-label="X" class="icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook" class="icon-btn"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram" class="icon-btn"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub" class="icon-btn"><i class="fa-brands fa-github"></i></a>
+      <a href="/rss.xml" title="RSS" aria-label="RSS" class="icon-btn"><i class="fa-solid fa-rss"></i></a>
+    </nav>
+    <small class="ntx-copy">© 2025 nihongotext.com</small>
   </div>
-  <div class="copy" style="font-size:12px;color:#666;text-align:center;padding:10px 0 24px">© 2025 nihongotext.com</div>
 </footer>
+
+<style>
+  .ntx-footer{border-top:2px solid #e6462d;margin-top:24px}
+  .ntx-wrap{max-width:1100px;margin:0 auto;padding:12px;display:flex;flex-direction:column;gap:10px;align-items:center}
+  .ntx-icons{display:flex;gap:10px}
+  .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px solid #e6462d;border-radius:999px;color:#e6462d;text-decoration:none}
+  .icon-btn i{font-size:14px;line-height:1}
+  .icon-btn:hover{background:#fff1ee}
+  .ntx-copy{color:#6b7280}
+</style>
