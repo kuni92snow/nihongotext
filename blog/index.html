@@ -8,18 +8,32 @@
   <base href="/" />
 
   <style>
-    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d}
-    body{margin:0;font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;color:var(--ink);line-height:1.7}
-    main .wrap{max-width:1100px;margin:auto;padding:14px 16px}
+    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7}
+    main .wrap{max-width:1100px;margin:auto;padding:16px}
     .muted{color:var(--muted)}
-    article{padding:18px 16px;border-bottom:1px solid #f0f0f0}
-    h2{margin:.2rem 0 0.5rem}
+    .card{border:1px solid var(--border);border-radius:14px;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .lang-switch .btn{border:1px solid var(--border);padding:6px 10px;border-radius:10px;background:#fff;cursor:pointer}
+    .lang-switch .btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+    h1{margin:0 0 8px}
+    h2{margin:.2rem 0 .5rem}
     time{color:var(--muted);font-size:.9rem}
+    .tools{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:8px 0 16px}
+    .search{display:flex;gap:8px;align-items:center;flex:1}
+    .search input{flex:1;border:1px solid var(--border);border-radius:10px;padding:8px 10px;font-size:15px}
+    .results{margin-top:10px}
+    .result-item{padding:8px 10px;border-bottom:1px dashed var(--border)}
+    .result-item a{text-decoration:none;color:var(--ink)}
+    .result-item small{color:var(--muted)}
+    .more{margin-top:8px}
+    /* 言語切替 */
     [data-i18n][data-lang="en"] .ja{display:none}
     [data-i18n][data-lang="en"] .en{display:block}
     [data-i18n][data-lang="ja"] .en{display:none}
     [data-i18n][data-lang="ja"] .ja{display:block}
-    ruby{ruby-position:over; ruby-align:start}
+    /* ふりがな */
+    ruby{ruby-position:over;ruby-align:start}
     rt{font-size:.6em;color:#666;letter-spacing:.03em}
   </style>
 
@@ -28,94 +42,149 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ');
+    gtag('js', new Date()); gtag('config', 'G-9QSHWJE0HZ');
   </script>
 </head>
 <body>
-  <!-- 共通ヘッダーを挿入 -->
+  <!-- 共通ヘッダー -->
   <div id="header"></div>
 
   <main>
     <div class="wrap" id="page" data-i18n data-lang="en">
-      <div class="en"><h1>Blog</h1><p class="muted">Updates and notes from nihongotext.com</p></div>
-      <div class="ja"><h1>ブログ</h1><p class="muted">nihongotext.com からのお知らせ</p></div>
+      <!-- 見出し -->
+      <div class="en"><h1 class="row"><img src="/icons/nt-logo-32.png" alt="" width="28" height="28"> Blog</h1><p class="muted">Latest update from nihongotext.com</p></div>
+      <div class="ja"><h1 class="row"><img src="/icons/nt-logo-32.png" alt="" width="28" height="28"> ブログ</h1><p class="muted">nihongotext.com からのお知らせ</p></div>
 
-      <article>
-        <time datetime="2025-10-31">2025-10-31</time>
-        <div class="en">
-          <h2>We added an inquiry admin panel</h2>
-          <p>Now you can manage inquiries, export CSV, and open the sheet from the admin page.</p>
+      <!-- ツールバー（言語/検索/リンク） -->
+      <div class="tools">
+        <div class="lang-switch row">
+          <button id="btn-en" class="btn">English</button>
+          <button id="btn-ja" class="btn">日本語</button>
         </div>
-        <div class="ja">
-          <h2>
-            お問い合わせ<ruby><rb>管理</rb><rt>かんり</rt></ruby><ruby><rb>画面</rb><rt>がめん</rt></ruby>を<ruby><rb>追加</rb><rt>ついか</rt></ruby>しました
-          </h2>
-          <p>
-            これからは<ruby><rb>管理</rb><rt>かんり</rt></ruby>ページから<ruby><rb>問い合わせ</rb><rt>といあわ</rt></ruby>の
-            <ruby><rb>管理</rb><rt>かんり</rt></ruby>・CSV<ruby><rb>出力</rb><rt>しゅつりょく</rt></ruby>・
-            シート<ruby><rb>表示</rb><rt>ひょうじ</rt></ruby>ができます。
-          </p>
+        <div class="search">
+          <img src="/icons/search.svg" alt="" width="18" height="18">
+          <input id="q" type="search" placeholder="Search posts..." aria-label="Search posts">
         </div>
-      </article>
+        <a class="row" href="/blog/updates.html" title="All updates">
+          <img src="/icons/history.svg" alt="" width="18" height="18"><span>Updates</span>
+        </a>
+      </div>
 
-      <article>
-        <time datetime="2025-10-25">2025-10-25</time>
-        <div class="en">
-          <h2>Site roadmap</h2>
-          <p>Next we’ll improve the Blog with a JP/EN toggle and furigana for learners.</p>
-        </div>
-        <div class="ja">
-          <h2>サイト<ruby><rb>計画</rb><rt>けいかく</rt></ruby></h2>
-          <p>
-            つぎはブログに<ruby><rb>日本語</rb><rt>にほんご</rt></ruby>／English
-            <ruby><rb>切替</rb><rt>きりかえ</rt></ruby>と
-            <ruby><rb>漢字</rb><rt>かんじ</rt></ruby>の
-            <ruby><rb>ふりがな</rb><rt>ふりがな</rt></ruby>を
-            <ruby><rb>導入</rb><rt>どうにゅう</rt></ruby>します。
-          </p>
-        </div>
-      </article>
+      <!-- 最新記事だけ表示 -->
+      <section id="latest" class="card"></section>
+
+      <!-- 検索結果（一覧のみ表示） -->
+      <div id="searchResults" class="results" hidden></div>
+
+      <div class="more">
+        <a href="/blog/updates.html" class="row"><img src="/icons/chevron-right.svg" width="18" height="18" alt="">View full update history</a>
+      </div>
     </div>
   </main>
 
-  <!-- 共通フッターを挿入 -->
+  <!-- 共通フッター -->
   <div id="footer"></div>
 
   <script>
-    // ==== 共通ヘッダー・フッター読込 ====
+    // ====== 共通ヘッダー/フッター読込 ======
     async function loadPartials(){
-      const header = await fetch('/partials/header.html');
-      const footer = await fetch('/partials/footer.html');
-      document.getElementById('header').innerHTML = await header.text();
-      document.getElementById('footer').innerHTML = await footer.text();
+      const [h,f] = await Promise.all([
+        fetch('/partials/header.html'),
+        fetch('/partials/footer.html')
+      ]);
+      document.getElementById('header').innerHTML = await h.text();
+      document.getElementById('footer').innerHTML = await f.text();
 
-      // 言語切替ボタンを探して動作させる
-      const page = document.getElementById('page');
-      const btnEn = document.querySelector('#btn-en');
-      const btnJa = document.querySelector('#btn-ja');
-      if(btnEn && btnJa){
-        btnEn.addEventListener('click', ()=>applyLang('en'));
-        btnJa.addEventListener('click', ()=>applyLang('ja'));
-      }
+      // ヘッダー内の言語ボタン(IDは header.html に用意しておくとより自然)
+      const headerBtnEn = document.querySelector('#btn-en');
+      const headerBtnJa = document.querySelector('#btn-ja');
+      if (headerBtnEn) headerBtnEn.addEventListener('click', ()=>applyLang('en'));
+      if (headerBtnJa) headerBtnJa.addEventListener('click', ()=>applyLang('ja'));
     }
 
-    // ==== 言語切替 ====
+    // ====== 言語切替 ======
     function applyLang(lang){
       const page = document.getElementById('page');
-      if(!page) return;
       page.setAttribute('data-lang', lang);
-      document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
+      document.documentElement.lang = (lang==='ja'?'ja':'en');
       localStorage.setItem('nt_lang', lang);
-      if (window.gtag) gtag('event', 'language_change', {language: lang});
+      // トグルの見た目
+      document.getElementById('btn-en')?.classList.toggle('active', lang==='en');
+      document.getElementById('btn-ja')?.classList.toggle('active', lang==='ja');
+      // 再レンダリング（検索表示中/最新表示ともに言語に合わせて中身を描写）
+      if (window.__posts) {
+        renderLatest(window.__posts);
+        if (document.getElementById('searchResults').hidden === false) {
+          doSearch();
+        }
+      }
+      if (window.gtag) gtag('event','language_change',{language:lang});
     }
 
-    // ==== 初期処理 ====
+    // ====== 記事データ取得（JSON） ======
+    async function fetchPosts(){
+      // /blog/posts.json から配列を取得
+      const res = await fetch('/blog/posts.json', {cache:'no-store'});
+      const data = await res.json(); // [{id,date,slug,en:{title,html},ja:{title,html}}, ...]
+      // 日付で降順
+      data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+      window.__posts = data;
+      return data;
+    }
+
+    // ====== 最新記事を描画（英語ベース、日本語はふりがな入り） ======
+    function renderLatest(posts){
+      const latest = posts[0];
+      const lang = localStorage.getItem('nt_lang') || 'en';
+      const el = document.getElementById('latest');
+      if (!latest) { el.innerHTML = '<p class="muted">No posts yet.</p>'; return; }
+      const head = `
+        <div class="row" style="justify-content:space-between">
+          <div class="row">
+            <img src="/icons/note.svg" width="18" height="18" alt="">
+            <time datetime="${latest.date}">${latest.date}</time>
+          </div>
+          <a class="row" href="/blog/updates.html#${latest.slug}" title="Open in updates">
+            <img src="/icons/link.svg" width="18" height="18" alt=""><span>Permalink</span>
+          </a>
+        </div>`;
+      const bodyEn = `<h2>${latest.en.title}</h2>${latest.en.html}`;
+      const bodyJa = `<h2>${latest.ja.title}</h2>${latest.ja.html}`;
+      el.innerHTML = head + (lang==='ja' ? bodyJa : bodyEn);
+    }
+
+    // ====== 検索（タイトル＆本文、結果は一覧リンク） ======
+    function doSearch(){
+      const q = document.getElementById('q').value.trim().toLowerCase();
+      const box = document.getElementById('searchResults');
+      const lang = localStorage.getItem('nt_lang') || 'en';
+      if (!q) { box.hidden = true; box.innerHTML=''; return; }
+      const hits = window.__posts.filter(p=>{
+        const t = (lang==='ja' ? (p.ja.title + ' ' + stripHtml(p.ja.html)) 
+                               : (p.en.title + ' ' + stripHtml(p.en.html)));
+        return t.toLowerCase().includes(q);
+      }).slice(0,20);
+      if (!hits.length){ box.hidden=false; box.innerHTML='<div class="muted">No results.</div>'; return; }
+      box.hidden=false;
+      box.innerHTML = hits.map(p=>(
+        `<div class="result-item">
+           <a href="/blog/updates.html#${p.slug}">
+             <strong>${lang==='ja'?p.ja.title:p.en.title}</strong>
+           </a><br>
+           <small>${p.date}</small>
+         </div>`
+      )).join('');
+    }
+    function stripHtml(s){ return String(s||'').replace(/<[^>]+>/g,' '); }
+
+    // ====== 初期化 ======
     document.addEventListener('DOMContentLoaded', async ()=>{
       await loadPartials();
       const saved = localStorage.getItem('nt_lang');
-      const initial = saved || ((navigator.language||'en').startsWith('ja') ? 'ja' : 'en');
-      applyLang(initial);
+      applyLang(saved || ((navigator.language||'en').startsWith('ja')?'ja':'en'));
+      const posts = await fetchPosts();
+      renderLatest(posts);
+      document.getElementById('q').addEventListener('input', doSearch);
     });
   </script>
 </body>
