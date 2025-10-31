@@ -18,23 +18,48 @@
 
   <style>
     :root{
-      --shu:#e6462d; --shu-deep:#c13727; --border:#e5e7eb; --ink:#1f2937; --muted:#6b7280;
+      --shu:#e6462d; --border:#e5e7eb; --ink:#132c3a; --muted:#6b7280;
     }
+    /* ====== base ====== */
+    *{box-sizing:border-box}
     body{margin:0;background:#fff;color:var(--ink);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.7}
-    main .wrap{max-width:960px;margin:auto;padding:16px}
-    h1{font-size:28px;margin:0 0 16px}
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.7}
+    a{color:inherit}
+    ruby{ruby-position:over} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
+
+    /* ====== header ====== */
+    header{border-bottom:2px solid var(--shu)}
+    .wrap{max-width:1100px;margin:auto;padding:12px}
+    .head-row{display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:8px;align-items:baseline;color:#132c3a;text-decoration:none}
+    .logo .main{font-weight:700}
+    .logo .dot{color:var(--shu);font-weight:700}
+    .beta{color:var(--muted);font-size:.9rem;margin-left:8px}
+    .icons{display:flex;gap:10px;align-items:center}
+    .icon-btn{display:inline-flex;align-items:center;justify-content:center;
+      width:28px;height:28px;border:2px solid var(--shu);border-radius:999px;color:var(--shu);text-decoration:none}
+    .icon-btn i{font-size:14px;line-height:1}
+    .icon-btn:hover{background:#fff1ee}
+    .langbtn{border:1px solid var(--border);border-radius:999px;padding:4px 10px;background:#fff;cursor:pointer}
+
+    /* ====== page ====== */
+    main .wrap{max-width:960px}
+    h1{font-size:28px;margin:16px 0}
     .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px 18px 14px}
     label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}
     input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:#fff;font:inherit}
     textarea{min-height:180px;resize:vertical}
     .row{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
     .btn{padding:10px 16px;border-radius:10px;background:var(--shu);color:#fff;border:none;cursor:pointer}
-    .btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--border)}
+    .btn.secondary{background:#fff;color:#111827;border:1px solid var(--border)}
     .note{font-size:12px;color:var(--muted);margin-top:8px}
     .msg-ok{color:#10b981;font-weight:700}
     .msg-ng{color:#ef4444;font-weight:700}
-    ruby{ruby-position:over;} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
+
+    /* ====== footer ====== */
+    footer{border-top:2px solid var(--shu);margin-top:24px}
+    .foot-row{display:flex;flex-direction:column;gap:10px;align-items:center}
+    .copy{color:var(--muted)}
   </style>
 
   <!-- GA4 -->
@@ -42,9 +67,31 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
 </head>
 <body>
-  <!-- 共通ヘッダー -->
-  <div id="header"></div>
 
+  <!-- ====== Header (共通・直書き) ====== -->
+  <header>
+    <div class="wrap head-row">
+      <a class="logo" href="/" title="Go to top">
+        <span class="main">nihongotext</span><span class="dot">.com</span>
+        <span class="beta">== beta version ==</span>
+      </a>
+      <nav class="icons">
+        <a href="/" class="icon-btn" aria-label="Home" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="javascript:window.print()" class="icon-btn" aria-label="Print" title="Print"><i class="fa-solid fa-print"></i></a>
+        <a href="/blog/" class="icon-btn" aria-label="Blog" title="Blog"><i class="fa-solid fa-pen-to-square"></i></a>
+        <a href="/sitemap.html" class="icon-btn" aria-label="Sitemap" title="Sitemap"><i class="fa-solid fa-sitemap"></i></a>
+        <a href="/inquiry/" class="icon-btn" aria-label="Contact" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/nihongotext" target="_blank" rel="noopener" class="icon-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="/rss.xml" class="icon-btn" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
+      </nav>
+      <button id="langBtn" class="langbtn" type="button">日本語</button>
+    </div>
+  </header>
+
+  <!-- ====== Page ====== -->
   <main>
     <div class="wrap">
       <h1 id="title" data-i18n="contact">Contact</h1>
@@ -52,8 +99,9 @@
       <section class="card" aria-labelledby="title">
         <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
 
+        <!-- 最新の Apps Script Web App URL に差し替える場合は action を更新 -->
         <form id="contactForm" target="submit_iframe" method="POST"
-          action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
+              action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
 
           <label for="name" id="lbName" data-i18n="name">Name</label>
           <input id="name" name="name" autocomplete="name" placeholder="Your name" />
@@ -86,11 +134,28 @@
     </div>
   </main>
 
-  <!-- 共通フッター -->
-  <div id="footer"></div>
+  <!-- ====== Footer (共通・直書き) ====== -->
+  <footer>
+    <div class="wrap foot-row">
+      <nav class="icons">
+        <a href="/" class="icon-btn" aria-label="Home" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="javascript:window.print()" class="icon-btn" aria-label="Print" title="Print"><i class="fa-solid fa-print"></i></a>
+        <a href="/blog/" class="icon-btn" aria-label="Blog" title="Blog"><i class="fa-solid fa-pen-to-square"></i></a>
+        <a href="/sitemap.html" class="icon-btn" aria-label="Sitemap" title="Sitemap"><i class="fa-solid fa-sitemap"></i></a>
+        <a href="/inquiry/" class="icon-btn" aria-label="Contact" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/nihongotext" target="_blank" rel="noopener" class="icon-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="/rss.xml" class="icon-btn" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
+      </nav>
+      <small class="copy">© 2025 nihongotext.com</small>
+    </div>
+  </footer>
 
-  <!-- 言語切替 -->
+  <!-- ====== Lang / Submit scripts ====== -->
   <script>
+    // 文言辞書（日本語はふりがな付き）
     const dict = {
       en: {
         contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",
@@ -116,62 +181,81 @@
       }
     };
 
-    const params=new URL(location.href).searchParams;
-    let lang=(params.get('lang')==='ja')?'ja':'en';
-    const els={title:document.getElementById('title'),lbName:lbName,lbEmail:lbEmail,lbSubject:lbSubject,
-      lbMessage:lbMessage,btnCancel:btnCancel,btnSend:btnSend,name:name,email:email,subject:subject,
-      message:message,msg:msg,langBtn:null};
+    // 状態
+    let lang = (localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en'));
+
+    const els = {
+      title: document.getElementById('title'),
+      lbName: document.getElementById('lbName'),
+      lbEmail: document.getElementById('lbEmail'),
+      lbSubject: document.getElementById('lbSubject'),
+      lbMessage: document.getElementById('lbMessage'),
+      btnCancel: document.getElementById('btnCancel'),
+      btnSend: document.getElementById('btnSend'),
+      name: document.getElementById('name'),
+      email: document.getElementById('email'),
+      subject: document.getElementById('subject'),
+      message: document.getElementById('message'),
+      msg: document.getElementById('msg'),
+      langBtn: document.getElementById('langBtn')
+    };
 
     function applyLang(){
-      const t=dict[lang];
-      document.documentElement.lang=(lang==='ja')?'ja':'en';
-      els.title.innerHTML=t.contact;
-      els.lbName.innerHTML=t.name;els.lbEmail.innerHTML=t.email;
-      els.lbSubject.innerHTML=t.subject;els.lbMessage.innerHTML=t.message;
-      els.btnCancel.innerHTML=t.cancel;els.btnSend.innerHTML=t.send;
-      els.name.placeholder=t.placeholders.name;
-      els.email.placeholder=t.placeholders.email;
-      els.subject.placeholder=t.placeholders.subject;
-      els.message.placeholder=t.placeholders.message;
-      const btn=document.getElementById('langBtn');if(btn)btn.textContent=t.btn;
+      const t = dict[lang];
+      document.documentElement.lang = (lang==='ja')?'ja':'en';
+      els.title.innerHTML = t.contact;
+      els.lbName.innerHTML = t.name;
+      els.lbEmail.innerHTML = t.email;
+      els.lbSubject.innerHTML = t.subject;
+      els.lbMessage.innerHTML = t.message;
+      els.btnCancel.innerHTML = t.cancel;
+      els.btnSend.innerHTML = t.send;
+      els.name.placeholder = t.placeholders.name;
+      els.email.placeholder = t.placeholders.email;
+      els.subject.placeholder = t.placeholders.subject;
+      els.message.placeholder = t.placeholders.message;
+      if (els.langBtn) els.langBtn.textContent = t.btn;
+      localStorage.setItem('nt_lang', lang);
     }
 
-    function initLang(){
-      const btn=document.getElementById('langBtn');
-      if(btn){btn.addEventListener('click',()=>{lang=(lang==='en')?'ja':'en';applyLang();});}
+    els.langBtn?.addEventListener('click', ()=>{
+      lang = (lang==='en')?'ja':'en';
       applyLang();
-    }
+    });
+    applyLang();
 
-    const form=document.getElementById('contactForm');
-    const iframe=document.getElementById('submit_iframe');
-    iframe.addEventListener('load',()=>{
-      const t=dict[lang];
-      els.msg.innerHTML=t.sentok;
-      els.msg.className='note msg-ok';
+    // 送信結果（iframe onload で成功扱い）
+    const form = document.getElementById('contactForm');
+    const iframe = document.getElementById('submit_iframe');
+    iframe.addEventListener('load', ()=>{
+      const t = dict[lang];
+      els.msg.innerHTML = t.sentok;
+      els.msg.className = 'note msg-ok';
       form.reset();
-      if(window.grecaptcha)grecaptcha.reset();
+      if (window.grecaptcha) grecaptcha.reset();
     });
 
-    form.addEventListener('submit',ev=>{
-      const t=dict[lang];
-      const token=window.grecaptcha?grecaptcha.getResponse():'';
-      if(!token){ev.preventDefault();els.msg.innerHTML=t.need;els.msg.className='note msg-ng';return;}
-      document.getElementById('token').value=token;
-      els.msg.textContent='';els.msg.className='note';
+    // 送信前チェック（reCAPTCHA 必須）
+    form.addEventListener('submit', (ev)=>{
+      const t = dict[lang];
+      const token = window.grecaptcha ? grecaptcha.getResponse() : '';
+      if (!token){
+        ev.preventDefault();
+        els.msg.innerHTML = t.need;
+        els.msg.className = 'note msg-ng';
+        return;
+      }
+      document.getElementById('token').value = token;
+      els.msg.textContent=''; els.msg.className='note';
     });
 
-    document.getElementById('btnCancel').addEventListener('click',()=>{
-      form.reset();els.msg.textContent='';els.msg.className='note';
-      if(window.grecaptcha)grecaptcha.reset();
+    // キャンセル
+    document.getElementById('btnCancel').addEventListener('click', ()=>{
+      form.reset();
+      els.msg.textContent='';
+      els.msg.className='note';
+      if (window.grecaptcha) grecaptcha.reset();
     });
-
-    // 共通ヘッダー／フッターをロード
-    (async()=>{
-      const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
-      document.getElementById('header').innerHTML=await h.text();
-      document.getElementById('footer').innerHTML=await f.text();
-      initLang();
-    })();
   </script>
 </body>
 </html>
