@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sitemap | nihongotext.com</title>
+  <link rel="icon" href="/favicon.ico" />
+  <base href="/" />
+  <!-- Font Awesome（ヘッダー/フッターと統一） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <style>
+    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7}
+    main .wrap{max-width:1100px;margin:auto;padding:16px}
+    h1{margin:.2rem 0 1rem;display:flex;align-items:center;gap:.5rem}
+    h2{margin:1.2rem 0 .6rem}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .card{border:1px solid var(--border);border-radius:14px;padding:14px 16px}
+    ul{margin:.2rem 0 0 1rem;padding:0}
+    li{margin:.25rem 0}
+    .li-row{display:flex;align-items:center;gap:.5rem}
+    .pill{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--border);border-radius:999px;padding:.1rem .5rem;font-size:.85rem;color:var(--muted)}
+    .post-list small{color:var(--muted)}
+    .more{margin-top:.6rem}
+    .icon{width:1.1em;text-align:center}
+  </style>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
+</head>
+<body>
+  <!-- 共通ヘッダー -->
+  <div id="header"></div>
+
+  <main>
+    <div class="wrap" id="page" data-i18n data-lang="en">
+      <h1><i class="fa-solid fa-sitemap icon" style="color:#e6462d"></i> Sitemap</h1>
+      <p class="muted">Quick map of pages on nihongotext.com</p>
+
+      <div class="grid">
+        <!-- Site -->
+        <section class="card">
+          <h2><i class="fa-solid fa-globe icon"></i> Site</h2>
+          <ul>
+            <li class="li-row"><i class="fa-solid fa-house icon"></i><a href="/">Home</a></li>
+            <li class="li-row"><i class="fa-solid fa-pen-to-square icon"></i><a href="/blog/">Blog (Latest)</a></li>
+            <li class="li-row"><i class="fa-solid fa-rotate-left icon"></i><a href="/blog/updates.html">Blog Updates (Archive)</a></li>
+            <li class="li-row"><i class="fa-solid fa-envelope icon"></i><a href="/inquiry/">Contact / Inquiry</a></li>
+            <li class="li-row"><i class="fa-solid fa-sitemap icon"></i><a href="/sitemap.html" aria-current="page">Sitemap</a></li>
+          </ul>
+        </section>
+
+        <!-- Learning（トップ入口） -->
+        <section class="card">
+          <h2><i class="fa-solid fa-book-open icon"></i> Learning</h2>
+          <ul>
+            <li class="li-row"><i class="fa-solid fa-list-check icon"></i><a href="/">Vocabulary & Grammar index</a> <span class="pill">N5–N1</span></li>
+            <li class="li-row"><i class="fa-solid fa-magnifying-glass icon"></i><a href="/">Search & Filters</a> <span class="pill">Romaji/Kana/Kanji</span></li>
+            <li class="li-row"><i class="fa-solid fa-print icon"></i><a href="/">Learned list & Print</a></li>
+          </ul>
+          <p class="muted" style="margin-top:.5rem">※ 学習ページはトップ（/）からレベル・品詞を切り替えるUIになっています。</p>
+        </section>
+
+        <!-- Blog latest from posts.json -->
+        <section class="card">
+          <h2><i class="fa-regular fa-note-sticky icon"></i> Latest blog posts</h2>
+          <ul id="latestPosts" class="post-list">
+            <li class="muted">Loading…</li>
+          </ul>
+          <div class="more"><a href="/blog/updates.html"><i class="fa-solid fa-angles-right icon"></i>See all updates</a></div>
+        </section>
+
+        <!-- Social -->
+        <section class="card">
+          <h2><i class="fa-solid fa-share-nodes icon"></i> Social</h2>
+          <ul>
+            <li class="li-row"><i class="fa-brands fa-x-twitter icon"></i><a href="https://x.com/nihongotext" target="_blank" rel="noopener">X (Twitter)</a></li>
+            <li class="li-row"><i class="fa-brands fa-github icon"></i><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li class="li-row"><i class="fa-solid fa-rss icon"></i><a href="/rss.xml">RSS</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- 共通フッター -->
+  <div id="footer"></div>
+
+  <script>
+    // ——— Partials load & lang sync ———
+    (async ()=>{
+      const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
+      document.getElementById('header').innerHTML=await h.text();
+      document.getElementById('footer').innerHTML=await f.text();
+      const cur=localStorage.getItem('nt_lang')||((navigator.language||'en').startsWith('ja')?'ja':'en');
+      applyLang(cur);
+      document.getElementById('langBtn')?.addEventListener('click',()=>{
+        const next=(document.documentElement.lang==='ja'?'en':'ja'); applyLang(next);
+      });
+      function applyLang(lang){
+        document.getElementById('page').setAttribute('data-lang',lang);
+        document.documentElement.lang=lang==='ja'?'ja':'en';
+        localStorage.setItem('nt_lang',lang);
+        const btn=document.getElementById('langBtn'); if(btn) btn.textContent=(lang==='ja'?'English':'日本語');
+      }
+    })();
+
+    // ——— Blog posts from /blog/posts.json ———
+    (async ()=>{
+      try{
+        const res=await fetch('/blog/posts.json',{cache:'no-store'});
+        const posts=await res.json();
+        posts.sort((a,b)=> new Date(b.date)-new Date(a.date));
+        const list=document.getElementById('latestPosts');
+        const lang=(localStorage.getItem('nt_lang')||((navigator.language||'en').startsWith('ja')?'ja':'en'));
+        list.innerHTML = posts.slice(0,10).map(p=>{
+          const title = lang==='ja' ? p.ja.title : p.en.title;
+          return `<li><a href="/blog/updates.html#${p.slug}">${title}</a> <small>${p.date}</small></li>`;
+        }).join('');
+      }catch(e){
+        document.getElementById('latestPosts').innerHTML='<li class="muted">No posts</li>';
+      }
+    })();
+  </script>
+</body>
+</html>
