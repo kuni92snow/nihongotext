@@ -5,32 +5,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blog | nihongotext.com</title>
   <link rel="icon" href="/favicon.ico" />
-  <!-- /blog/配下でも全ての相対パスをサイトルート基準にする -->
   <base href="/" />
 
-  <!-- ふりがな表示に見やすいスタイル -->
   <style>
     :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d}
     body{margin:0;font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;color:var(--ink);line-height:1.7}
-    header,footer{border-bottom:1px solid #eee}
-    header .wrap, main .wrap, footer .wrap{max-width:1100px;margin:auto;padding:14px 16px}
-    nav a{color:var(--ink);text-decoration:none;margin-right:16px}
-    .spacer{flex:1}
-    .lang-switch{display:flex;gap:8px}
-    .btn{border:1px solid #ddd;padding:6px 10px;border-radius:10px;background:#fff;cursor:pointer}
-    .btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+    main .wrap{max-width:1100px;margin:auto;padding:14px 16px}
     .muted{color:var(--muted)}
     article{padding:18px 16px;border-bottom:1px solid #f0f0f0}
     h2{margin:.2rem 0 0.5rem}
     time{color:var(--muted);font-size:.9rem}
-
-    /* 多言語切替: data-lang="en|ja" を切り替え表示 */
     [data-i18n][data-lang="en"] .ja{display:none}
     [data-i18n][data-lang="en"] .en{display:block}
     [data-i18n][data-lang="ja"] .en{display:none}
     [data-i18n][data-lang="ja"] .ja{display:block}
-
-    /* ruby の見た目微調整 */
     ruby{ruby-position:over; ruby-align:start}
     rt{font-size:.6em;color:#666;letter-spacing:.03em}
   </style>
@@ -45,33 +33,14 @@
   </script>
 </head>
 <body>
-  <!-- ヘッダー（サイト共通想定） -->
-  <header>
-    <div class="wrap" style="display:flex;align-items:center;gap:14px">
-      <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none">
-        <img src="/icons/nt-logo-32.png" alt="nihongotext logo" width="24" height="24" />
-        <strong>nihongotext<span class="muted">.com</span></strong>
-      </a>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/blog/" aria-current="page"><strong>Blog</strong></a>
-        <a href="/inquiry/">Contact</a>
-      </nav>
-      <div class="spacer"></div>
-      <div class="lang-switch">
-        <button id="btn-en" class="btn">English</button>
-        <button id="btn-ja" class="btn">日本語</button>
-      </div>
-    </div>
-  </header>
+  <!-- 共通ヘッダーを挿入 -->
+  <div id="header"></div>
 
   <main>
     <div class="wrap" id="page" data-i18n data-lang="en">
-      <!-- ページ見出し（多言語） -->
       <div class="en"><h1>Blog</h1><p class="muted">Updates and notes from nihongotext.com</p></div>
       <div class="ja"><h1>ブログ</h1><p class="muted">nihongotext.com からのお知らせ</p></div>
 
-      <!-- 記事カード例：英語と日本語（日本語には ruby でふりがな） -->
       <article>
         <time datetime="2025-10-31">2025-10-31</time>
         <div class="en">
@@ -80,23 +49,12 @@
         </div>
         <div class="ja">
           <h2>
-            お問い合わせ<strong>
-            <ruby><rb>管理</rb><rt>かんり</rt></ruby>
-            <ruby><rb>画面</rb><rt>がめん</rt></ruby>
-            </strong>を
-            <ruby><rb>追加</rb><rt>ついか</rt></ruby>しました
+            お問い合わせ<ruby><rb>管理</rb><rt>かんり</rt></ruby><ruby><rb>画面</rb><rt>がめん</rt></ruby>を<ruby><rb>追加</rb><rt>ついか</rt></ruby>しました
           </h2>
           <p>
-            これからは
-            <ruby><rb>管理</rb><rt>かんり</rt></ruby>
-            ページから
-            <ruby><rb>問い合わせ</rb><rt>といあわ</rt></ruby>
-            の
-            <ruby><rb>管理</rb><rt>かんり</rt></ruby>・CSV
-            <ruby><rb>出力</rb><rt>しゅつりょく</rt></ruby>・
-            シート
-            <ruby><rb>表示</rb><rt>ひょうじ</rt></ruby>
-            ができます。
+            これからは<ruby><rb>管理</rb><rt>かんり</rt></ruby>ページから<ruby><rb>問い合わせ</rb><rt>といあわ</rt></ruby>の
+            <ruby><rb>管理</rb><rt>かんり</rt></ruby>・CSV<ruby><rb>出力</rb><rt>しゅつりょく</rt></ruby>・
+            シート<ruby><rb>表示</rb><rt>ひょうじ</rt></ruby>ができます。
           </p>
         </div>
       </article>
@@ -108,64 +66,57 @@
           <p>Next we’ll improve the Blog with a JP/EN toggle and furigana for learners.</p>
         </div>
         <div class="ja">
-          <h2>
-            サイト
-            <ruby><rb>計画</rb><rt>けいかく</rt></ruby>
-          </h2>
-        <p>
-          つぎはブログに
-          <ruby><rb>日本語</rb><rt>にほんご</rt></ruby>／English
-          <ruby><rb>切替</rb><rt>きりかえ</rt></ruby>と
-          <ruby><rb>漢字</rb><rt>かんじ</rt></ruby>の
-          <ruby><rb>ふりがな</rb><rt>ふりがな</rt></ruby>
-          を
-          <ruby><rb>導入</rb><rt>どうにゅう</rt></ruby>
-          します。
-        </p>
+          <h2>サイト<ruby><rb>計画</rb><rt>けいかく</rt></ruby></h2>
+          <p>
+            つぎはブログに<ruby><rb>日本語</rb><rt>にほんご</rt></ruby>／English
+            <ruby><rb>切替</rb><rt>きりかえ</rt></ruby>と
+            <ruby><rb>漢字</rb><rt>かんじ</rt></ruby>の
+            <ruby><rb>ふりがな</rb><rt>ふりがな</rt></ruby>を
+            <ruby><rb>導入</rb><rt>どうにゅう</rt></ruby>します。
+          </p>
         </div>
       </article>
-
-      <!-- 以降、記事を同じパターンで追加 -->
     </div>
   </main>
 
-  <footer>
-    <div class="wrap" style="display:flex;gap:12px;align-items:center;justify-content:space-between">
-      <small class="muted">© <span id="y"></span> nihongotext.com</small>
-      <div>
-        <a href="/sitemap.xml" class="muted">Sitemap</a> ·
-        <a href="/privacy/" class="muted">Privacy</a>
-      </div>
-    </div>
-  </footer>
+  <!-- 共通フッターを挿入 -->
+  <div id="footer"></div>
 
   <script>
-    // ---- 言語切替（保存つき） ----
-    const page = document.getElementById('page');
-    const btnEn = document.getElementById('btn-en');
-    const btnJa = document.getElementById('btn-ja');
+    // ==== 共通ヘッダー・フッター読込 ====
+    async function loadPartials(){
+      const header = await fetch('/partials/header.html');
+      const footer = await fetch('/partials/footer.html');
+      document.getElementById('header').innerHTML = await header.text();
+      document.getElementById('footer').innerHTML = await footer.text();
 
-    function applyLang(lang){
-      page.setAttribute('data-lang', lang);
-      document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
-      btnEn.classList.toggle('active', lang==='en');
-      btnJa.classList.toggle('active', lang==='ja');
-      localStorage.setItem('nt_lang', lang);
-      // 計測（任意）
-      if (window.gtag) gtag('event', 'language_change', {language: lang, page_location: location.pathname});
+      // 言語切替ボタンを探して動作させる
+      const page = document.getElementById('page');
+      const btnEn = document.querySelector('#btn-en');
+      const btnJa = document.querySelector('#btn-ja');
+      if(btnEn && btnJa){
+        btnEn.addEventListener('click', ()=>applyLang('en'));
+        btnJa.addEventListener('click', ()=>applyLang('ja'));
+      }
     }
 
-    // ボタン
-    btnEn.addEventListener('click', ()=>applyLang('en'));
-    btnJa.addEventListener('click', ()=>applyLang('ja'));
+    // ==== 言語切替 ====
+    function applyLang(lang){
+      const page = document.getElementById('page');
+      if(!page) return;
+      page.setAttribute('data-lang', lang);
+      document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
+      localStorage.setItem('nt_lang', lang);
+      if (window.gtag) gtag('event', 'language_change', {language: lang});
+    }
 
-    // 初期化（保存値 or ブラウザ言語）
-    const saved = localStorage.getItem('nt_lang');
-    const initial = saved || (navigator.language||'en').startsWith('ja') ? 'ja' : 'en';
-    applyLang(initial);
-
-    // 年
-    document.getElementById('y').textContent = new Date().getFullYear();
+    // ==== 初期処理 ====
+    document.addEventListener('DOMContentLoaded', async ()=>{
+      await loadPartials();
+      const saved = localStorage.getItem('nt_lang');
+      const initial = saved || ((navigator.language||'en').startsWith('ja') ? 'ja' : 'en');
+      applyLang(initial);
+    });
   </script>
 </body>
 </html>
