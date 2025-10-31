@@ -35,15 +35,14 @@
     /* ふりがな */
     ruby{ruby-position:over;ruby-align:start}
     rt{font-size:.6em;color:#666;letter-spacing:.03em}
+    /* SVGアイコンのサイズ調整用 */
+    .ico{width:18px;height:18px;display:inline-block}
+    .ico-lg{width:28px;height:28px}
   </style>
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date()); gtag('config', 'G-9QSHWJE0HZ');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
 </head>
 <body>
   <!-- 共通ヘッダー -->
@@ -51,33 +50,53 @@
 
   <main>
     <div class="wrap" id="page" data-i18n data-lang="en">
-      <!-- 見出し -->
-      <div class="en"><h1 class="row"><img src="/icons/nt-logo-32.png" alt="" width="28" height="28"> Blog</h1><p class="muted">Latest update from nihongotext.com</p></div>
-      <div class="ja"><h1 class="row"><img src="/icons/nt-logo-32.png" alt="" width="28" height="28"> ブログ</h1><p class="muted">nihongotext.com からのお知らせ</p></div>
+      <!-- 見出し（ロゴSVG） -->
+      <div class="en">
+        <h1 class="row">
+          <!-- ロゴ -->
+          <svg class="ico-lg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#e6462d" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#e6462d"/></svg>
+          Blog
+        </h1>
+        <p class="muted">Latest update from nihongotext.com</p>
+      </div>
+      <div class="ja">
+        <h1 class="row">
+          <svg class="ico-lg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#e6462d" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#e6462d"/></svg>
+          ブログ
+        </h1>
+        <p class="muted">nihongotext.com からのお知らせ</p>
+      </div>
 
-      <!-- ツールバー（言語/検索/リンク） -->
+      <!-- ツールバー -->
       <div class="tools">
         <div class="lang-switch row">
           <button id="btn-en" class="btn">English</button>
           <button id="btn-ja" class="btn">日本語</button>
         </div>
         <div class="search">
-          <img src="/icons/search.svg" alt="" width="18" height="18">
+          <!-- 検索アイコン -->
+          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#6b7280" stroke-width="2"/><path d="M20 20l-4.2-4.2" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>
           <input id="q" type="search" placeholder="Search posts..." aria-label="Search posts">
         </div>
         <a class="row" href="/blog/updates.html" title="All updates">
-          <img src="/icons/history.svg" alt="" width="18" height="18"><span>Updates</span>
+          <!-- 履歴アイコン -->
+          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4v6h6" stroke="#132c3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.7 20A8 8 0 1 0 6 6" stroke="#132c3a" stroke-width="2" fill="none"/><path d="M12 8v5l3 2" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Updates</span>
         </a>
       </div>
 
-      <!-- 最新記事だけ表示 -->
+      <!-- 最新記事 -->
       <section id="latest" class="card"></section>
 
-      <!-- 検索結果（一覧のみ表示） -->
+      <!-- 検索結果 -->
       <div id="searchResults" class="results" hidden></div>
 
       <div class="more">
-        <a href="/blog/updates.html" class="row"><img src="/icons/chevron-right.svg" width="18" height="18" alt="">View full update history</a>
+        <a href="/blog/updates.html" class="row">
+          <!-- 矢印 -->
+          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="#132c3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          View full update history
+        </a>
       </div>
     </div>
   </main>
@@ -86,105 +105,83 @@
   <div id="footer"></div>
 
   <script>
-    // ====== 共通ヘッダー/フッター読込 ======
+    // ===== 共通パーツ =====
     async function loadPartials(){
-      const [h,f] = await Promise.all([
-        fetch('/partials/header.html'),
-        fetch('/partials/footer.html')
-      ]);
-      document.getElementById('header').innerHTML = await h.text();
-      document.getElementById('footer').innerHTML = await f.text();
-
-      // ヘッダー内の言語ボタン(IDは header.html に用意しておくとより自然)
-      const headerBtnEn = document.querySelector('#btn-en');
-      const headerBtnJa = document.querySelector('#btn-ja');
-      if (headerBtnEn) headerBtnEn.addEventListener('click', ()=>applyLang('en'));
-      if (headerBtnJa) headerBtnJa.addEventListener('click', ()=>applyLang('ja'));
+      const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
+      document.getElementById('header').innerHTML=await h.text();
+      document.getElementById('footer').innerHTML=await f.text();
+      document.querySelector('#btn-en')?.addEventListener('click',()=>applyLang('en'));
+      document.querySelector('#btn-ja')?.addEventListener('click',()=>applyLang('ja'));
     }
 
-    // ====== 言語切替 ======
+    // ===== 言語切替 =====
     function applyLang(lang){
-      const page = document.getElementById('page');
-      page.setAttribute('data-lang', lang);
-      document.documentElement.lang = (lang==='ja'?'ja':'en');
-      localStorage.setItem('nt_lang', lang);
-      // トグルの見た目
-      document.getElementById('btn-en')?.classList.toggle('active', lang==='en');
-      document.getElementById('btn-ja')?.classList.toggle('active', lang==='ja');
-      // 再レンダリング（検索表示中/最新表示ともに言語に合わせて中身を描写）
-      if (window.__posts) {
-        renderLatest(window.__posts);
-        if (document.getElementById('searchResults').hidden === false) {
-          doSearch();
-        }
-      }
-      if (window.gtag) gtag('event','language_change',{language:lang});
+      const page=document.getElementById('page');
+      page.setAttribute('data-lang',lang);
+      document.documentElement.lang=(lang==='ja'?'ja':'en');
+      localStorage.setItem('nt_lang',lang);
+      document.getElementById('btn-en')?.classList.toggle('active',lang==='en');
+      document.getElementById('btn-ja')?.classList.toggle('active',lang==='ja');
+      if(window.__posts){ renderLatest(window.__posts); if(!document.getElementById('searchResults').hidden) doSearch(); }
+      if(window.gtag) gtag('event','language_change',{language:lang});
     }
 
-    // ====== 記事データ取得（JSON） ======
+    // ===== 投稿取得 =====
     async function fetchPosts(){
-      // /blog/posts.json から配列を取得
-      const res = await fetch('/blog/posts.json', {cache:'no-store'});
-      const data = await res.json(); // [{id,date,slug,en:{title,html},ja:{title,html}}, ...]
-      // 日付で降順
-      data.sort((a,b)=> new Date(b.date) - new Date(a.date));
-      window.__posts = data;
-      return data;
+      const res=await fetch('/blog/posts.json',{cache:'no-store'});
+      const data=await res.json();
+      data.sort((a,b)=> new Date(b.date)-new Date(a.date));
+      window.__posts=data; return data;
     }
 
-    // ====== 最新記事を描画（英語ベース、日本語はふりがな入り） ======
+    // ===== 最新記事描画 =====
     function renderLatest(posts){
-      const latest = posts[0];
-      const lang = localStorage.getItem('nt_lang') || 'en';
-      const el = document.getElementById('latest');
-      if (!latest) { el.innerHTML = '<p class="muted">No posts yet.</p>'; return; }
-      const head = `
+      const latest=posts[0]; const lang=localStorage.getItem('nt_lang')||'en';
+      const el=document.getElementById('latest');
+      if(!latest){ el.innerHTML='<p class="muted">No posts yet.</p>'; return; }
+      const head=`
         <div class="row" style="justify-content:space-between">
           <div class="row">
-            <img src="/icons/note.svg" width="18" height="18" alt="">
+            <!-- ノート -->
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#132c3a" stroke-width="2"/><path d="M8 7h8M8 11h8M8 15h5" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/></svg>
             <time datetime="${latest.date}">${latest.date}</time>
           </div>
-          <a class="row" href="/blog/updates.html#${latest.slug}" title="Open in updates">
-            <img src="/icons/link.svg" width="18" height="18" alt=""><span>Permalink</span>
+          <a class="row" href="/blog/updates.html#${latest.slug}" title="Permalink">
+            <!-- リンク -->
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 13a5 5 0 0 1 0-7l2-2a5 5 0 0 1 7 7l-1 1" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 0 1 0 7l-2 2a5 5 0 0 1-7-7l1-1" stroke="#132c3a" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Permalink</span>
           </a>
         </div>`;
-      const bodyEn = `<h2>${latest.en.title}</h2>${latest.en.html}`;
-      const bodyJa = `<h2>${latest.ja.title}</h2>${latest.ja.html}`;
-      el.innerHTML = head + (lang==='ja' ? bodyJa : bodyEn);
+      const bodyEn=`<h2>${latest.en.title}</h2>${latest.en.html}`;
+      const bodyJa=`<h2>${latest.ja.title}</h2>${latest.ja.html}`;
+      el.innerHTML=head+(lang==='ja'?bodyJa:bodyEn);
     }
 
-    // ====== 検索（タイトル＆本文、結果は一覧リンク） ======
+    // ===== 検索 =====
+    function stripHtml(s){return String(s||'').replace(/<[^>]+>/g,' ');}
     function doSearch(){
-      const q = document.getElementById('q').value.trim().toLowerCase();
-      const box = document.getElementById('searchResults');
-      const lang = localStorage.getItem('nt_lang') || 'en';
-      if (!q) { box.hidden = true; box.innerHTML=''; return; }
-      const hits = window.__posts.filter(p=>{
-        const t = (lang==='ja' ? (p.ja.title + ' ' + stripHtml(p.ja.html)) 
-                               : (p.en.title + ' ' + stripHtml(p.en.html)));
+      const q=document.getElementById('q').value.trim().toLowerCase();
+      const box=document.getElementById('searchResults');
+      const lang=localStorage.getItem('nt_lang')||'en';
+      if(!q){ box.hidden=true; box.innerHTML=''; return; }
+      const hits=window.__posts.filter(p=>{
+        const t=(lang==='ja'?(p.ja.title+' '+stripHtml(p.ja.html)):(p.en.title+' '+stripHtml(p.en.html)));
         return t.toLowerCase().includes(q);
       }).slice(0,20);
-      if (!hits.length){ box.hidden=false; box.innerHTML='<div class="muted">No results.</div>'; return; }
       box.hidden=false;
-      box.innerHTML = hits.map(p=>(
-        `<div class="result-item">
-           <a href="/blog/updates.html#${p.slug}">
-             <strong>${lang==='ja'?p.ja.title:p.en.title}</strong>
-           </a><br>
-           <small>${p.date}</small>
-         </div>`
-      )).join('');
+      box.innerHTML = hits.length
+        ? hits.map(p=>`<div class="result-item"><a href="/blog/updates.html#${p.slug}"><strong>${lang==='ja'?p.ja.title:p.en.title}</strong></a><br><small>${p.date}</small></div>`).join('')
+        : '<div class="muted">No results.</div>';
     }
-    function stripHtml(s){ return String(s||'').replace(/<[^>]+>/g,' '); }
 
-    // ====== 初期化 ======
-    document.addEventListener('DOMContentLoaded', async ()=>{
+    // ===== 初期化 =====
+    document.addEventListener('DOMContentLoaded',async()=>{
       await loadPartials();
-      const saved = localStorage.getItem('nt_lang');
+      const saved=localStorage.getItem('nt_lang');
       applyLang(saved || ((navigator.language||'en').startsWith('ja')?'ja':'en'));
-      const posts = await fetchPosts();
+      const posts=await fetchPosts();
       renderLatest(posts);
-      document.getElementById('q').addEventListener('input', doSearch);
+      document.getElementById('q').addEventListener('input',doSearch);
     });
   </script>
 </body>
