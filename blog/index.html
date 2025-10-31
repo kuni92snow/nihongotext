@@ -4,157 +4,168 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blog | nihongotext.com</title>
-  <meta name="color-scheme" content="light only" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- /blog/配下でも全ての相対パスをサイトルート基準にする -->
+  <base href="/" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ふりがな表示に見やすいスタイル -->
+  <style>
+    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d}
+    body{margin:0;font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;color:var(--ink);line-height:1.7}
+    header,footer{border-bottom:1px solid #eee}
+    header .wrap, main .wrap, footer .wrap{max-width:1100px;margin:auto;padding:14px 16px}
+    nav a{color:var(--ink);text-decoration:none;margin-right:16px}
+    .spacer{flex:1}
+    .lang-switch{display:flex;gap:8px}
+    .btn{border:1px solid #ddd;padding:6px 10px;border-radius:10px;background:#fff;cursor:pointer}
+    .btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+    .muted{color:var(--muted)}
+    article{padding:18px 16px;border-bottom:1px solid #f0f0f0}
+    h2{margin:.2rem 0 0.5rem}
+    time{color:var(--muted);font-size:.9rem}
 
-  <!-- Google Analytics -->
+    /* 多言語切替: data-lang="en|ja" を切り替え表示 */
+    [data-i18n][data-lang="en"] .ja{display:none}
+    [data-i18n][data-lang="en"] .en{display:block}
+    [data-i18n][data-lang="ja"] .en{display:none}
+    [data-i18n][data-lang="ja"] .ja{display:block}
+
+    /* ruby の見た目微調整 */
+    ruby{ruby-position:over; ruby-align:start}
+    rt{font-size:.6em;color:#666;letter-spacing:.03em}
+  </style>
+
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ', { send_page_view: false });
+    gtag('config', 'G-9QSHWJE0HZ');
   </script>
-
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
-
-  <style>
-    :root{
-      --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
-      --shu-soft:#ffb9aa; --white:#fff; --ink:#1f2937; --muted:#6b7280; --border:#efdfdc;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;color:var(--ink);background:#fff;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
-    a{color:inherit;text-decoration:none}
-
-    /* Header */
-    header{border-bottom:3px solid var(--shu);background:#fff}
-    .h-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
-    .brand{display:flex;flex-direction:column;gap:2px}
-    .brand-title{font-weight:980;font-size:28px;color:var(--shu)}
-    .brand-sub{color:var(--shu-soft);font-weight:700;font-size:12px;text-align:center}
-
-    .iconbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-    .iconbar .tool{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;
-      border-radius:50%;border:1px solid var(--border);background:#fff}
-    .iconbar .tool i{color:var(--shu)}
-    .iconbar .tool:hover{border-color:var(--shu)}
-
-    .lang-toggle{
-      margin-left:10px;
-      padding:6px 10px;
-      border:1px solid var(--border);
-      border-radius:6px;
-      background:#fff;
-      color:var(--shu-deep);
-      font-size:13px;
-      cursor:pointer;
-    }
-
-    /* Main */
-    main{max-width:980px;margin:20px auto;padding:0 16px}
-    h1{font-size:28px;margin:0 0 16px}
-    .post-card{border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:20px}
-    .post-card h2{margin:0 0 10px;color:var(--shu-deep)}
-    .post-card p{margin:0 0 10px;color:var(--ink)}
-    .btn-read{padding:8px 14px;border:1px solid var(--shu);color:var(--shu);border-radius:8px;text-decoration:none;font-size:14px}
-    .btn-read:hover{background:var(--shu-tint)}
-
-    /* Ads */
-    .ads-box{margin:20px 0;text-align:center}
-
-    /* Footer */
-    footer{border-top:3px solid var(--shu);margin-top:24px;background:#fff}
-    .f-row{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;padding:12px 0}
-    .copy{color:#6b7280}
-  </style>
 </head>
 <body>
-  <!-- Header -->
+  <!-- ヘッダー（サイト共通想定） -->
   <header>
-    <div class="h-row">
-      <div class="brand">
-        <a href="/" aria-label="nihongotext.com">
-          <div class="brand-title">nihongotext<span style="color:var(--shu-deep)">.com</span></div>
-          <div class="brand-sub">== beta version ==</div>
-        </a>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:10px">
-        <nav class="iconbar">
-          <a class="tool" href="/blog/"><i class="fas fa-bell"></i></a>
-          <a class="tool" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-          <a class="tool" href="https://reddit.com/r/nihongotext" target="_blank"><i class="fab fa-reddit"></i></a>
-          <a class="tool" href="https://medium.com/@nihongotext" target="_blank"><i class="fab fa-medium"></i></a>
-          <a class="tool" href="https://substack.com/@nihongotext" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
-        </nav>
-        <button class="lang-toggle" id="langBtn">日本語</button>
+    <div class="wrap" style="display:flex;align-items:center;gap:14px">
+      <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none">
+        <img src="/icons/nt-logo-32.png" alt="nihongotext logo" width="24" height="24" />
+        <strong>nihongotext<span class="muted">.com</span></strong>
+      </a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/" aria-current="page"><strong>Blog</strong></a>
+        <a href="/inquiry/">Contact</a>
+      </nav>
+      <div class="spacer"></div>
+      <div class="lang-switch">
+        <button id="btn-en" class="btn">English</button>
+        <button id="btn-ja" class="btn">日本語</button>
       </div>
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <div class="ads-box">
-      <!-- AdSense top -->
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-2358198194205084"
-        data-ad-slot="8427347812"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
+    <div class="wrap" id="page" data-i18n data-lang="en">
+      <!-- ページ見出し（多言語） -->
+      <div class="en"><h1>Blog</h1><p class="muted">Updates and notes from nihongotext.com</p></div>
+      <div class="ja"><h1>ブログ</h1><p class="muted">nihongotext.com からのお知らせ</p></div>
 
-    <h1>Blog</h1>
-    <p>Updates, tips, and behind-the-scenes notes from the nihongotext.com team.</p>
+      <!-- 記事カード例：英語と日本語（日本語には ruby でふりがな） -->
+      <article>
+        <time datetime="2025-10-31">2025-10-31</time>
+        <div class="en">
+          <h2>We added an inquiry admin panel</h2>
+          <p>Now you can manage inquiries, export CSV, and open the sheet from the admin page.</p>
+        </div>
+        <div class="ja">
+          <h2>
+            お問い合わせ<strong>
+            <ruby><rb>管理</rb><rt>かんり</rt></ruby>
+            <ruby><rb>画面</rb><rt>がめん</rt></ruby>
+            </strong>を
+            <ruby><rb>追加</rb><rt>ついか</rt></ruby>しました
+          </h2>
+          <p>
+            これからは
+            <ruby><rb>管理</rb><rt>かんり</rt></ruby>
+            ページから
+            <ruby><rb>問い合わせ</rb><rt>といあわ</rt></ruby>
+            の
+            <ruby><rb>管理</rb><rt>かんり</rt></ruby>・CSV
+            <ruby><rb>出力</rb><rt>しゅつりょく</rt></ruby>・
+            シート
+            <ruby><rb>表示</rb><rt>ひょうじ</rt></ruby>
+            ができます。
+          </p>
+        </div>
+      </article>
 
-    <article class="post-card">
-      <p><strong>Nov 3, 2025</strong></p>
-      <h2>Roadmap Sneak Peek</h2>
-      <p>A look at what's coming next: more JLPT levels, audio TTS, and smarter practice tools.</p>
-      <a href="#" class="btn-read">Read more</a>
-    </article>
+      <article>
+        <time datetime="2025-10-25">2025-10-25</time>
+        <div class="en">
+          <h2>Site roadmap</h2>
+          <p>Next we’ll improve the Blog with a JP/EN toggle and furigana for learners.</p>
+        </div>
+        <div class="ja">
+          <h2>
+            サイト
+            <ruby><rb>計画</rb><rt>けいかく</rt></ruby>
+          </h2>
+        <p>
+          つぎはブログに
+          <ruby><rb>日本語</rb><rt>にほんご</rt></ruby>／English
+          <ruby><rb>切替</rb><rt>きりかえ</rt></ruby>と
+          <ruby><rb>漢字</rb><rt>かんじ</rt></ruby>の
+          <ruby><rb>ふりがな</rb><rt>ふりがな</rt></ruby>
+          を
+          <ruby><rb>導入</rb><rt>どうにゅう</rt></ruby>
+          します。
+        </p>
+        </div>
+      </article>
 
-    <div class="ads-box">
-      <!-- AdSense bottom -->
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-2358198194205084"
-        data-ad-slot="1838268966"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <!-- 以降、記事を同じパターンで追加 -->
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <div class="f-row">
-      <div class="iconbar">
-        <a class="tool" href="/blog/"><i class="fas fa-bell"></i></a>
-        <a class="tool" href="/inquiry/"><i class="fas fa-envelope"></i></a>
-        <a class="tool" href="https://reddit.com/r/nihongotext" target="_blank"><i class="fab fa-reddit"></i></a>
-        <a class="tool" href="https://medium.com/@nihongotext" target="_blank"><i class="fab fa-medium"></i></a>
-        <a class="tool" href="https://substack.com/@nihongotext" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+    <div class="wrap" style="display:flex;gap:12px;align-items:center;justify-content:space-between">
+      <small class="muted">© <span id="y"></span> nihongotext.com</small>
+      <div>
+        <a href="/sitemap.xml" class="muted">Sitemap</a> ·
+        <a href="/privacy/" class="muted">Privacy</a>
       </div>
-      <div class="copy">© 2025 nihongotext.com</div>
     </div>
   </footer>
 
   <script>
-    // Language toggle
-    const langBtn = document.getElementById('langBtn');
-    let lang = 'en';
-    langBtn.addEventListener('click', () => {
-      lang = (lang === 'en') ? 'ja' : 'en';
-      langBtn.textContent = (lang === 'en') ? '日本語' : 'English';
-      document.querySelector('h1').textContent = (lang === 'en') ? 'Blog' : 'ブログ';
-    });
+    // ---- 言語切替（保存つき） ----
+    const page = document.getElementById('page');
+    const btnEn = document.getElementById('btn-en');
+    const btnJa = document.getElementById('btn-ja');
+
+    function applyLang(lang){
+      page.setAttribute('data-lang', lang);
+      document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
+      btnEn.classList.toggle('active', lang==='en');
+      btnJa.classList.toggle('active', lang==='ja');
+      localStorage.setItem('nt_lang', lang);
+      // 計測（任意）
+      if (window.gtag) gtag('event', 'language_change', {language: lang, page_location: location.pathname});
+    }
+
+    // ボタン
+    btnEn.addEventListener('click', ()=>applyLang('en'));
+    btnJa.addEventListener('click', ()=>applyLang('ja'));
+
+    // 初期化（保存値 or ブラウザ言語）
+    const saved = localStorage.getItem('nt_lang');
+    const initial = saved || (navigator.language||'en').startsWith('ja') ? 'ja' : 'en';
+    applyLang(initial);
+
+    // 年
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
