@@ -7,7 +7,7 @@
   <link rel="icon" href="/favicon.ico" />
   <base href="/" />
 
-  <!-- Font Awesome (inquiry と同じCDNを利用) -->
+  <!-- Font Awesome（inquiryと同じ系統の代替アイコンとして使用） -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,8 +19,6 @@
     .muted{color:var(--muted)}
     .card{border:1px solid var(--border);border-radius:14px;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
     .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .lang-switch .btn{border:1px solid var(--border);padding:6px 10px;border-radius:10px;background:#fff;cursor:pointer}
-    .lang-switch .btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
     h1{margin:0 0 8px}
     h2{margin:.2rem 0 .5rem}
     time{color:var(--muted);font-size:.9rem}
@@ -46,7 +44,7 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
 </head>
 <body>
-  <!-- 共通ヘッダー -->
+  <!-- 共通ヘッダー（partials） -->
   <div id="header"></div>
 
   <main>
@@ -61,12 +59,8 @@
         <p class="muted">nihongotext.com からのお知らせ</p>
       </div>
 
-      <!-- ツールバー -->
+      <!-- ツールバー（ページ内の言語ボタンは削除） -->
       <div class="tools">
-        <div class="lang-switch row">
-          <button id="btn-en" class="btn">English</button>
-          <button id="btn-ja" class="btn">日本語</button>
-        </div>
         <div class="search">
           <i class="fa-solid fa-magnifying-glass fa-fw" aria-hidden="true"></i>
           <input id="q" type="search" placeholder="Search posts..." aria-label="Search posts">
@@ -92,31 +86,63 @@
     </div>
   </main>
 
-  <!-- 共通フッター -->
+  <!-- 共通フッター（partials） -->
   <div id="footer"></div>
 
   <script>
-    // ===== 共通パーツ読込（ヘッダーの言語ボタンとも連動） =====
+    // === ヘッダー／フッター読込 + アイコン自動補修 ===
     async function loadPartials(){
       const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
       document.getElementById('header').innerHTML=await h.text();
       document.getElementById('footer').innerHTML=await f.text();
 
-      // ヘッダーの #langBtn をブログ側の言語状態に同期
-      const btnHeader = document.getElementById('langBtn');
-      const syncHeaderText = ()=>{
-        const lang=currentLang();
-        if(btnHeader) btnHeader.textContent = (lang==='ja' ? 'English' : '日本語');
+      // 画像が壊れたらFont Awesomeに置換
+      const map = [
+        {key:'home', cls:'fa-house'},
+        {key:'print', cls:'fa-print'},
+        {key:'blog', cls:'fa-pen-to-square'},
+        {key:'sitemap', cls:'fa-sitemap'},
+        {key:'contact', cls:'fa-envelope'},
+        {key:'x', cls:'fa-x-twitter'},
+        {key:'twitter', cls:'fa-x-twitter'},
+        {key:'facebook', cls:'fa-facebook'},
+        {key:'instagram', cls:'fa-instagram'},
+        {key:'github', cls:'fa-github'},
+        {key:'rss', cls:'fa-rss'}
+      ];
+      const fallback = (img)=>{
+        const src = (img.getAttribute('src')||'').toLowerCase();
+        const hit = map.find(m=> src.includes(m.key));
+        const i = document.createElement('i');
+        i.className = 'fa-brands fa-fw';
+        if(hit){
+          i.className = `fa-solid ${hit.cls} fa-fw`;
+        }else{
+          i.className = 'fa-regular fa-circle-question fa-fw';
+        }
+        i.style.color = '#e6462d';
+        i.title = img.alt || '';
+        img.replaceWith(i);
       };
-      btnHeader?.addEventListener('click', ()=>{
-        // ヘッダーボタンでトグル → ブログ本文も切替
-        const next = currentLang()==='ja' ? 'en' : 'ja';
-        applyLang(next);
+      document.querySelectorAll('#header img, #footer img').forEach(img=>{
+        img.addEventListener('error', ()=> fallback(img), {once:true});
+        // すでに壊れている可能性にも対応
+        if (img.complete && img.naturalWidth === 0) fallback(img);
       });
-      syncHeaderText();
+
+      // ヘッダーの言語ボタンと連動
+      const btnHeader = document.getElementById('langBtn');
+      if(btnHeader){
+        const syncHeader = ()=> btnHeader.textContent = (currentLang()==='ja' ? 'English' : '日本語');
+        btnHeader.addEventListener('click', ()=>{
+          const next = currentLang()==='ja' ? 'en' : 'ja';
+          applyLang(next);
+        });
+        syncHeader();
+      }
     }
 
-    // ===== 言語状態 =====
+    // === 言語状態 ===
     const currentLang = ()=> localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en');
 
     function applyLang(lang){
@@ -124,13 +150,10 @@
       page.setAttribute('data-lang',lang);
       document.documentElement.lang=(lang==='ja'?'ja':'en');
       localStorage.setItem('nt_lang',lang);
-      document.getElementById('btn-en')?.classList.toggle('active',lang==='en');
-      document.getElementById('btn-ja')?.classList.toggle('active',lang==='ja');
-      // ヘッダーボタンの表示も合わせる
+      // ヘッダーボタンの表記も同期
       const btnHeader=document.getElementById('langBtn');
       if(btnHeader) btnHeader.textContent = (lang==='ja' ? 'English' : '日本語');
 
-      // 再描画
       if(window.__posts){
         renderLatest(window.__posts);
         if(!document.getElementById('searchResults').hidden) doSearch();
@@ -138,7 +161,7 @@
       if(window.gtag) gtag('event','language_change',{language:lang});
     }
 
-    // ===== 投稿取得（/blog/posts.json）=====
+    // === 投稿取得 ===
     async function fetchPosts(){
       const res=await fetch('/blog/posts.json',{cache:'no-store'});
       const data=await res.json();
@@ -146,7 +169,7 @@
       window.__posts=data; return data;
     }
 
-    // ===== 最新記事を描画 =====
+    // === 最新記事 ===
     function renderLatest(posts){
       const latest=posts[0]; const lang=currentLang();
       const el=document.getElementById('latest');
@@ -166,7 +189,7 @@
       el.innerHTML=head+(lang==='ja'?bodyJa:bodyEn);
     }
 
-    // ===== 検索 =====
+    // === 検索 ===
     function stripHtml(s){return String(s||'').replace(/<[^>]+>/g,' ');}
     function doSearch(){
       const q=document.getElementById('q').value.trim().toLowerCase();
@@ -183,17 +206,13 @@
         : '<div class="muted">No results.</div>';
     }
 
-    // ===== 初期化 =====
+    // === 初期化 ===
     document.addEventListener('DOMContentLoaded',async()=>{
       await loadPartials();
       applyLang(currentLang());
       const posts=await fetchPosts();
       renderLatest(posts);
       document.getElementById('q').addEventListener('input',doSearch);
-
-      // ページ内の独自切替ボタン（英語/日本語）も連動
-      document.getElementById('btn-en')?.addEventListener('click',()=>applyLang('en'));
-      document.getElementById('btn-ja')?.addEventListener('click',()=>applyLang('ja'));
     });
   </script>
 </body>
