@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>nihongotext.com Blog</title>
+    <link>https://nihongotext.com/blog/</link>
+    <description>Learn Japanese naturally with examples, grammar notes, and updates.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 3 Nov 2025 12:00:00 +0900</lastBuildDate>
+
+    <!-- === 最新記事 === -->
+    <item>
+      <title>Welcome to nihongotext blog</title>
+      <link>https://nihongotext.com/blog/</link>
+      <description>The official nihongotext.com blog has launched! We share grammar, vocabulary, and learning tips every week.</description>
+      <pubDate>Mon, 3 Nov 2025 12:00:00 +0900</pubDate>
+      <guid>https://nihongotext.com/blog/001</guid>
+    </item>
+
+    <!-- === 2件目以降はこの形で追加 ===
+    <item>
+      <title>JLPT N5 Grammar: 〜てください</title>
+      <link>https://nihongotext.com/blog/n5-grammar-te-kudasai.html</link>
+      <description>Learn how to use 〜てください to make polite requests in Japanese.</description>
+      <pubDate>Sat, 02 Nov 2025 08:30:00 +0900</pubDate>
+      <guid>https://nihongotext.com/blog/n5-grammar-te-kudasai.html</guid>
+    </item>
+    -->
+
+  </channel>
+</rss>
