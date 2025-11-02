@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
-
-<!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <!-- GA4 -->
@@ -69,25 +67,27 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .line{margin:6px 0}
 .ja{font-weight:800}
 .kana,.ro,.en{opacity:.95}
-.en{font-weight:700} /* 英語を強調 */
+.en{font-weight:700}
 
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
 .pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
 .pagebtn.active{border-color:var(--shu);color:var(--shu);font-weight:800}
 
-/* Amazon Associates ポップアップ（ページャー時のみ） */
+/* Amazon Associates popup */
 .admask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
 .admask.show{display:flex}
 .ad{background:#fff;border-radius:16px;max-width:680px;width:min(96vw,680px);padding:18px;border:2px solid var(--shu)}
 .ad .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
 .ad h3{margin:4px 0 12px}
 .ad small{color:var(--muted)}
-#amznAdBox{min-height:250px}
+#amznAdBox{min-height:260px}
+#adFallback{display:none;border:1px dashed #e5e7eb;border-radius:12px;padding:12px;margin-top:8px}
+#adFallback a{color:var(--shu);text-decoration:underline}
 </style>
 </head>
 <body>
 
-<!-- ===== Header（partials注入。失敗時は簡易表示） ===== -->
+<!-- ===== Header ===== -->
 <div class="topbar">
   <div id="site-header" class="wrap brandbar">
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
@@ -112,7 +112,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
     <button id="printBtn" class="btn" type="button">Print Learned</button>
 
-    <!-- 表示切替 -->
     <div class="toggle-row" role="group" aria-label="Field toggles">
       <label><input type="checkbox" id="toggleEN" checked> English</label>
       <label><input type="checkbox" id="toggleJA" checked> Kanji</label>
@@ -126,17 +125,27 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="pager" class="pager"></div>
 </main>
 
-<!-- ===== Footer（partials注入。失敗時の簡易表示） ===== -->
+<!-- ===== Footer ===== -->
 <div class="footer">
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- Learned モーダル -->
-<div id="learnedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="learnedTitle" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:80">
-  <div class="panel" style="background:#fff;border-radius:14px;max-width:720px;width:min(92vw,720px);padding:16px">
-    <button class="close" id="closeLearned" style="float:right;border:1px solid #e5e7eb;padding:4px 8px;border-radius:8px;background:#fff">Close</button>
-    <h3 id="learnedTitle" style="margin:0 0 8px">Learned</h3>
-    <div id="learnedBody" class="list-simple" style="border-top:1px dashed #ddd;margin-top:10px"></div>
+<!-- ===== Learned Modal ===== -->
+<div id="learnedModal" class="admask" style="background:rgba(0,0,0,.35)">
+  <div class="ad" style="max-width:820px">
+    <button class="x" id="closeLearned" aria-label="Close">×</button>
+    <h3 id="learnedTitle" style="margin:0 0 10px">Learned</h3>
+
+    <!-- ★ Learned 専用トグル -->
+    <div class="toggle-row" id="learnedToggles" style="margin-bottom:8px">
+      <label><input type="checkbox" id="L_EN" checked> English</label>
+      <label><input type="checkbox" id="L_JA" checked> Kanji</label>
+      <label><input type="checkbox" id="L_KANA" checked> Hiragana</label>
+      <label><input type="checkbox" id="L_RO" checked> Romaji</label>
+    </div>
+
+    <div id="learnedBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
+
     <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
       <button id="clearLearned" class="btn">Clear</button>
       <button id="printLearned" class="btn ok">Print</button>
@@ -144,18 +153,27 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   </div>
 </div>
 
-<!-- Amazonアソシエイト（ページャー操作時のみ表示） -->
+<!-- ===== Amazon Associates (pager時のみ) ===== -->
 <div id="adMask" class="admask" aria-hidden="true">
   <div class="ad" role="dialog" aria-label="Amazon Associates">
     <button class="x" id="adClose" aria-label="Close">×</button>
     <h3><i class="fa-brands fa-amazon"></i> Recommended</h3>
     <div id="amznAdBox"></div>
-    <small>Amazon Associates (Tracking ID: blog0c9-22)</small>
+    <!-- フォールバック -->
+    <div id="adFallback">
+      <div style="font-weight:700;margin-bottom:6px">Recommended picks</div>
+      <ul style="margin:0 0 6px 16px">
+        <li><a href="https://www.amazon.co.jp/s?k=%E6%97%A5%E6%9C%AC%E8%AA%9E+%E5%AD%A6%E7%BF%92&tag=blog0c9-22" target="_blank" rel="sponsored noopener">日本語学習（検索）</a></li>
+        <li><a href="https://www.amazon.co.jp/s?k=JLPT+N5&tag=blog0c9-22" target="_blank" rel="sponsored noopener">JLPT N5（書籍）</a></li>
+        <li><a href="https://www.amazon.co.jp/s?k=JLPT+N4&tag=blog0c9-22" target="_blank" rel="sponsored noopener">JLPT N4（書籍）</a></li>
+      </ul>
+      <small>Amazon Associates (Tracking ID: blog0c9-22)</small>
+    </div>
   </div>
 </div>
 
 <script>
-/* ========= 設定 ========= */
+/* ====== Config ====== */
 const LEVELS = ['N5','N4','N3','N2','N1'];
 const POS = [
   {k:'nouns', file:'nouns.json',          ja:'名詞',        enLabel:'Nouns'},
@@ -170,12 +188,12 @@ const POS = [
   {k:'pat',   file:'patterns.json',       ja:'文型',        enLabel:'Patterns'},
 ];
 let level='N5', posKey='verbs', page=1;
-const PAGE_SIZE=5, MAX_TOTAL=30;  // ★ 合計30件まで
+const PAGE_SIZE=5, MAX_TOTAL=30;
 let lastData=[];
-let uiLang='en';                   // 'en' or 'ja'
+let uiLang='en';
 const enFirstOrder=['en','ja','kana','ro'];
 
-/* ========= ユーティリティ ========= */
+/* ====== Utils ====== */
 function buildPath(lvl=level, pk=posKey){
   return `data/json/${lvl}/${POS.find(p=>p.k===pk).file}`;
 }
@@ -190,48 +208,16 @@ function coerceArray(json){
   return [];
 }
 
-/* ========= Learned ========= */
+/* ====== Learned storage ====== */
 const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
 function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
 function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
 
-/* ========= Learned モーダル ========= */
-function openLearned(){
-  const modal=document.getElementById('learnedModal');
-  const body=document.getElementById('learnedBody');
-  const s=learnedSet();
-  body.innerHTML='';
-  const rows=(lastData||[]).filter(x=>s.has(x.id));
-  if(rows.length===0){
-    body.innerHTML=`<div class="row" style="color:#6b7280">${uiLang==='en'?'No items yet.':'まだありません。'}</div>`;
-  }else{
-    rows.forEach((x,i)=>{
-      const r=document.createElement('div');
-      r.className='row';
-      r.textContent=`${i+1}. ${x.ja||''} / ${x.kana||''} / ${x.ro||''} — ${x.en||''}`;
-      body.appendChild(r);
-    });
-  }
-  modal.style.display='flex';
-}
-document.getElementById('closeLearned').onclick=()=>document.getElementById('learnedModal').style.display='none';
-document.getElementById('learnedModal').addEventListener('click',e=>{
-  if(e.target.id==='learnedModal') e.currentTarget.style.display='none';
-});
-document.getElementById('clearLearned').onclick=()=>{ localStorage.setItem(LS_KEY(),'[]'); openLearned(); };
-document.getElementById('printLearned').onclick=()=>{
-  const s=learnedSet(); if(!s.size){ alert('No learned items.'); return; }
-  const w=open('','_blank'); const rows=(lastData||[]).filter(x=>s.has(x.id));
-  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
-  rows.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}</div>`));
-  w.document.close(); w.print();
-};
-
-/* ========= Partials & 言語トグル ========= */
+/* ====== Partials + Lang toggle ====== */
 function bindLangToggle(root){
   const btn = root.querySelector('#langToggle, [data-lang-toggle], .lang-toggle') || document.getElementById('langToggleFallback');
   if(!btn) return;
-  btn.addEventListener('click', (e)=>{
+  btn.addEventListener('click',(e)=>{
     e.preventDefault();
     uiLang = (uiLang==='en') ? 'ja' : 'en';
     btn.textContent = (uiLang==='en') ? '日本語' : 'English';
@@ -250,9 +236,7 @@ async function injectPartials(){
     const f=await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     ftr.innerHTML=f;
   }catch(_){}
-  // 言語切替ボタンを確実に機能させる
   bindLangToggle(hdr);
-  // Learned ボタンが無いテーマにも追加
   if(!document.getElementById('openLearnedTop')){
     const btn=document.createElement('button');
     btn.id='openLearnedTop'; btn.className='learnedIcon'; btn.type='button';
@@ -262,7 +246,7 @@ async function injectPartials(){
   document.getElementById('openLearnedTop').addEventListener('click', openLearned);
 }
 
-/* ========= ラベル再構築 ========= */
+/* ====== Labels ====== */
 function rebuildStaticLabels(){
   buildChips();
   const kw=document.getElementById('kw');
@@ -271,7 +255,7 @@ function rebuildStaticLabels(){
   document.getElementById('printBtn').textContent   = (uiLang==='en') ? 'Print Learned' : '覚えた一覧を印刷';
 }
 
-/* ========= フェッチ ========= */
+/* ====== Fetch ====== */
 async function fetchJsonSafe(path){
   try{
     const r=await fetch(path,{cache:'no-store'});
@@ -280,7 +264,7 @@ async function fetchJsonSafe(path){
   }catch(_){ return []; }
 }
 
-/* ========= UI要素 ========= */
+/* ====== UI refs ====== */
 const kw=document.getElementById('kw');
 const list=document.getElementById('list');
 const pager=document.getElementById('pager');
@@ -296,9 +280,9 @@ kw.addEventListener('input', onSearchInput, {passive:true});
 document.getElementById('levelSel').addEventListener('change', e=>{
   level=e.target.value; page=1; if(!kw.value.trim()) loadSingleAndRender(); else onSearchInput();
 });
-document.getElementById('printBtn').addEventListener('click', openLearned);
+document.getElementById('printBtn').addEventListener('click', ()=>openLearned());
 
-/* ========= 品詞チップ ========= */
+/* ====== Chips ====== */
 function buildChips(){
   chips.innerHTML='';
   POS.forEach(p=>{
@@ -310,29 +294,26 @@ function buildChips(){
   });
 }
 
-/* ========= 通常表示（30件に制限） ========= */
+/* ====== Default sample ====== */
 const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet","examples":[
   {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
   {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
 ]}];
 
+/* ====== Normal load (limit 30) ====== */
 async function loadSingleAndRender(){
   document.getElementById('meta').textContent=`Level: ${level} • Part: ${POS.find(p=>p.k===posKey).enLabel}`;
   let arr=await fetchJsonSafe(buildPath());
-  // ★ 通常表示も最大30件に制限
-  lastData = arr.length ? arr.slice(0, MAX_TOTAL) : SAMPLE;
+  lastData = arr.length ? arr.slice(0,30) : SAMPLE;
   renderList(lastData);
-  try{
-    gtag('event','page_view',{page_title:`${level}/${posKey}`,page_location:location.href,page_path:location.pathname+location.search});
-  }catch(_){}
+  try{ gtag('event','page_view',{page_title:`${level}/${posKey}`}); }catch(_){}
 }
 
-/* ========= 横断検索（こちらは既にMAX_TOTALを適用） ========= */
+/* ====== Cross search (limit 30) ====== */
 let searchAbort=0;
 async function onSearchInput(){
   const t=kw.value.trim().toLowerCase();
   if(!t){ page=1; loadSingleAndRender(); return; }
-
   const myId=++searchAbort;
   document.getElementById('meta').textContent = (uiLang==='en') ? 'Searching across all levels and parts…' : '全レベル・全品詞を横断して検索中…';
 
@@ -355,27 +336,24 @@ async function onSearchInput(){
     return hay.includes(t);
   });
 
-  lastData=filtered.slice(0,MAX_TOTAL);
+  lastData=filtered.slice(0,30);
   page=1;
   document.getElementById('meta').textContent=(uiLang==='en')
-    ? `Results: ${lastData.length} item(s) (showing up to ${MAX_TOTAL}).`
-    : `検索結果: ${lastData.length} 件（最大 ${MAX_TOTAL} 件を表示）`;
+    ? `Results: ${lastData.length} item(s) (showing up to 30).`
+    : `検索結果: ${lastData.length} 件（最大 30 件を表示）`;
   renderList(lastData);
 }
 
-/* ========= ページネーション & 描画 ========= */
+/* ====== Pagination + render ====== */
 function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
-
 function paginate(data){
-  const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
+  const total=Math.max(1,Math.ceil(data.length/5));
   if(page>total)page=total;
-  const start=(page-1)*PAGE_SIZE;
-  const rows=data.slice(start,start+PAGE_SIZE);
-
+  const start=(page-1)*5;
+  const rows=data.slice(start,start+5);
   pager.innerHTML='';
   const prev=pageBtn('Prev',()=>{page--;renderList(lastData,true);showAdPopup();});
   prev.disabled=page<=1; pager.appendChild(prev);
-
   for(let i=1;i<=total;i++){
     const b=pageBtn(String(i),()=>{page=i;renderList(lastData,true);showAdPopup();});
     if(i===page) b.classList.add('active');
@@ -385,7 +363,6 @@ function paginate(data){
   next.disabled=page>=total; pager.appendChild(next);
   return rows;
 }
-
 function div(cls,txt){const d=document.createElement('div');d.className=cls;if(txt!=null)d.textContent=txt;return d;}
 
 function renderList(data){
@@ -397,7 +374,7 @@ function renderList(data){
     list.innerHTML=`<div style="color:#6b7280; padding:12px 0;">${uiLang==='en'?'No items to show.':'表示できる項目がありません。'}</div>`;
     return;
   }
-  let idx=(page-1)*PAGE_SIZE;
+  let idx=(page-1)*5;
   rows.forEach(item=>{
     idx++;
     const card=document.createElement('article'); card.className='card';
@@ -419,7 +396,7 @@ function renderList(data){
     act.textContent = learnedSet().has(item.id) ? (uiLang==='en'?'Unlearn':'覚えたを戻す') : (uiLang==='en'?'Learned':'覚えた');
     act.onclick=()=>toggleLearned(item,card,act);
 
-    head.append(num,/**/tags,act);
+    head.append(num,tags,act);
 
     const body=div('content',''); body.dataset.examples='1';
     (item.examples||[]).forEach(ex=>{
@@ -452,13 +429,74 @@ function toggleLearned(item,card,btnEl){
   setLearned(s);
 }
 
-/* ========= Amazon Associates（ページャー時のみ） ========= */
+/* ====== Learned modal ====== */
+function openLearned(){
+  const modal=document.getElementById('learnedModal');
+  modal.classList.add('show');
+  renderLearnedModal();
+}
+document.getElementById('closeLearned').onclick=()=>document.getElementById('learnedModal').classList.remove('show');
+document.getElementById('learnedModal').addEventListener('click',e=>{ if(e.target.id==='learnedModal') e.currentTarget.classList.remove('show'); });
+document.getElementById('clearLearned').onclick=()=>{ localStorage.setItem(LS_KEY(),'[]'); renderLearnedModal(); };
+document.getElementById('printLearned').onclick=()=>{
+  const s=learnedSet(); if(!s.size){ alert('No learned items.'); return; }
+  const w=open('','_blank'); const rows=(lastData||[]).filter(x=>s.has(x.id));
+  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
+  rows.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}</div>`));
+  w.document.close(); w.print();
+};
+/* モーダル内トグル */
+['L_EN','L_JA','L_KANA','L_RO'].forEach(id=>{
+  document.getElementById(id).addEventListener('change',renderLearnedModal);
+});
+function renderLearnedModal(){
+  const body=document.getElementById('learnedBody');
+  const s=learnedSet();
+  body.innerHTML='';
+  const rows=(lastData||[]).filter(x=>s.has(x.id));
+  if(rows.length===0){ body.innerHTML='<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
+
+  const showEN=document.getElementById('L_EN').checked;
+  const showJA=document.getElementById('L_JA').checked;
+  const showKA=document.getElementById('L_KANA').checked;
+  const showRO=document.getElementById('L_RO').checked;
+
+  rows.forEach((x,i)=>{
+    const wrap=document.createElement('div');
+    wrap.style.cssText='padding:8px 0;border-bottom:1px dashed #eee';
+    const lineTop=document.createElement('div');
+    lineTop.style.fontWeight='700';
+    const tags=[];
+    if(showEN && x.en) tags.push(x.en);
+    if(showJA && x.ja) tags.push(x.ja);
+    if(showKA && x.kana) tags.push(x.kana);
+    if(showRO && x.ro) tags.push(x.ro);
+    lineTop.textContent=`${i+1}. ${tags.join(' / ')}`;
+    wrap.appendChild(lineTop);
+
+    (x.examples||[]).forEach(ex=>{
+      const block=document.createElement('div');
+      block.style.margin='4px 0 0 18px';
+      const bits=[];
+      if(showEN && ex.en)   bits.push(`<div class="en">${ex.en}</div>`);
+      if(showJA && ex.ja)   bits.push(`<div class="ja">${ex.ja}</div>`);
+      if(showKA && ex.kana) bits.push(`<div class="kana">${ex.kana}</div>`);
+      if(showRO && ex.ro)   bits.push(`<div class="ro">${ex.ro}</div>`);
+      if(bits.length){ block.innerHTML=bits.join(''); wrap.appendChild(block); }
+    });
+    body.appendChild(wrap);
+  });
+}
+
+/* ====== Amazon OneTag with fallback ====== */
 const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
 let amazonBooted=false;
 function showAdPopup(){
   adMask.classList.add('show');
   if(!amazonBooted){
     amazonBooted=true;
+    const box=document.getElementById('amznAdBox');
+    // OneTag config
     const cfg=document.createElement('script');
     cfg.type='text/javascript';
     cfg.text=`
@@ -470,19 +508,26 @@ function showAdPopup(){
       amzn_assoc_region="JP";
       amzn_assoc_default_search_phrase="Japanese learning";
       amzn_assoc_default_category="All";
+      amzn_assoc_search_bar="true";
     `;
     const js=document.createElement('script');
     js.async=true;
-    // ★ https 明示（ERR_NAME_NOT_RESOLVED対策）
     js.src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=JP";
-    const box=document.getElementById('amznAdBox');
+    // Fallback timer
+    let rendered=false;
+    const guard=setTimeout(()=>{
+      if(!rendered){
+        document.getElementById('adFallback').style.display='block';
+      }
+    }, 3000);
+    js.onload=()=>{ rendered=true; };
     box.appendChild(cfg); box.appendChild(js);
   }
 }
 adClose.onclick=()=>adMask.classList.remove('show');
 adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remove('show'); });
 
-/* ========= 初期化 ========= */
+/* ====== Init ====== */
 (async function init(){
   await injectPartials();
   rebuildStaticLabels();
