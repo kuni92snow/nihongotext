@@ -1,11 +1,12 @@
 [
   {
     "slug": "launch",
-    "date": "2025-11-3",
+    "date": "2025-11-03",
+    "title": "Site Launch Announcement",
     "title_ja": "サイト公開のお知らせ",
     "title_en": "Site Launch Announcement",
     "summary_ja": "nihongotext.com のベータ版を公開しました。いろいろと追加予定です。",
     "summary_en": "We launched the beta of nihongotext.com. We plan to add various things.",
-    "tags": ["info","release"]
+    "tags": ["info", "release"]
   }
 ]
