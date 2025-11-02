@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -18,7 +18,7 @@
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- AdSense（所有権確認のみ。広告配信は行いません） -->
+<!-- AdSense（所有権確認のみ） -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
@@ -36,7 +36,7 @@ button{cursor:pointer}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff}
 .brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
-.brand{font-weight:900;font-size:26px;color:var(--shu)}
+.brand{font-weight:900;font-size:34px;color:var(--shu)} /* ← 2サイズUP */
 .small-dot{color:#222}
 .beta{color:var(--muted);font-size:12px}
 .header-right{margin-left:auto;display:flex;gap:10px;align-items:center}
@@ -55,6 +55,9 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:8px 12px;font-weight:700}
 .chip.active{border-color:var(--shu);background:#fde3df}
 
+.toggle-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.toggle-row label{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--line);padding:6px 10px;border-radius:10px;background:#fff}
+
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 .card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;overflow:hidden}
 .card.learned{background:#eefbf1;border-color:#cceedd}
@@ -65,7 +68,8 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .content{padding:12px 14px}
 .line{margin:6px 0}
 .ja{font-weight:800}
-.kana,.ro,.en{opacity:.9}
+.kana,.ro,.en{opacity:.95}
+.en{font-weight:700} /* 英語ベースで強調 */
 
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
 .pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
@@ -89,7 +93,8 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
     <span class="beta">== beta version ==</span>
     <div class="header-right">
-      <button id="openLearnedTop" class="learnedIcon" type="button"><i class="fa-solid fa-book-bookmark"></i>&nbsp;覚えた一覧</button>
+      <button id="langToggleFallback" class="btn" type="button">日本語</button>
+      <button id="openLearnedTop" class="learnedIcon" type="button"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Learned</button>
     </div>
   </div>
 </div>
@@ -102,10 +107,19 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
         <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
       </select>
     </label>
+
     <div class="chips" id="posChips" role="tablist" aria-label="Parts of Speech"></div>
-    <input id="kw" type="text" placeholder="Search keyword…" />
-    <div class="grow"></div>
+
+    <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
     <button id="printBtn" class="btn" type="button">Print Learned</button>
+
+    <!-- 表示切り替え -->
+    <div class="toggle-row" role="group" aria-label="Field toggles">
+      <label><input type="checkbox" id="toggleEN" checked> English</label>
+      <label><input type="checkbox" id="toggleJA" checked> Kanji</label>
+      <label><input type="checkbox" id="toggleKANA" checked> Hiragana</label>
+      <label><input type="checkbox" id="toggleRO" checked> Romaji</label>
+    </div>
   </div>
 
   <!-- コンテンツ -->
@@ -119,11 +133,11 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- 覚えた一覧モーダル -->
+<!-- Learned モーダル -->
 <div id="learnedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="learnedTitle" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:80">
   <div class="panel" style="background:#fff;border-radius:14px;max-width:720px;width:min(92vw,720px);padding:16px">
     <button class="close" id="closeLearned" style="float:right;border:1px solid #e5e7eb;padding:4px 8px;border-radius:8px;background:#fff">Close</button>
-    <h3 id="learnedTitle" style="margin:0 0 8px">覚えた一覧 / Learned</h3>
+    <h3 id="learnedTitle" style="margin:0 0 8px">Learned</h3>
     <div id="learnedBody" class="list-simple" style="border-top:1px dashed #ddd;margin-top:10px"></div>
     <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
       <button id="clearLearned" class="btn">Clear</button>
@@ -136,36 +150,15 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 <div id="adMask" class="admask" aria-hidden="true">
   <div class="ad" role="dialog" aria-label="Amazon Associates">
     <button class="x" id="adClose" aria-label="Close">×</button>
-    <h3><i class="fa-brands fa-amazon"></i> おすすめ商品</h3>
+    <h3><i class="fa-brands fa-amazon"></i> Recommended</h3>
     <div id="amznAdBox"></div>
-    <small>※Amazonアソシエイト（Tracking ID: blog0c9-22）</small>
+    <small>Amazon Associates (Tracking ID: blog0c9-22)</small>
   </div>
 </div>
 
 <script>
-/* ========= Partials 読み込み ========= */
-async function injectPartials(){
-  const hdr = document.getElementById('site-header');
-  const ftr = document.getElementById('site-footer');
-  try{
-    const h = await fetch('partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    hdr.innerHTML = h;
-  }catch(_){}
-  try{
-    const f = await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    ftr.innerHTML = f;
-  }catch(_){}
-  if(!document.getElementById('openLearnedTop')){
-    const btn=document.createElement('button');
-    btn.id='openLearnedTop'; btn.className='learnedIcon'; btn.type='button';
-    btn.innerHTML='<i class="fa-solid fa-book-bookmark"></i>&nbsp;覚えた一覧';
-    const host = hdr.querySelector('.header-right') || hdr.appendChild(Object.assign(document.createElement('div'),{className:'header-right'}));
-    host.appendChild(btn);
-  }
-  document.getElementById('openLearnedTop').addEventListener('click', openLearned);
-}
-
-/* ========= データ表示 ========= */
+/* ========= 設定 ========= */
+const LEVELS = ['N5','N4','N3','N2','N1'];
 const POS = [
   {k:'nouns', file:'nouns.json',          ja:'名詞',        enLabel:'Nouns'},
   {k:'verbs', file:'verbs.json',          ja:'動詞',        enLabel:'Verbs'},
@@ -179,11 +172,66 @@ const POS = [
   {k:'pat',   file:'patterns.json',       ja:'文型',        enLabel:'Patterns'},
 ];
 let level='N5', posKey='verbs', page=1;
-const PAGE_SIZE=5;         // 1ページ=5件
-const MAX_TOTAL=30;        // 合計最大30件まで表示
-let lastData=[];
+const PAGE_SIZE=5;
+const MAX_TOTAL=30;
+let lastData=[];           // 現在表示中のデータ（単一ファイル or 検索結果）
+let uiLang = 'en';         // 'en' or 'ja'（ヘッダー 日本語ボタンで切替）
 
-/* JSONを必ず配列に正規化（arr.slice エラー対策） */
+const enFirstOrder = ['en','ja','kana','ro']; // 英語ベースで描画
+
+/* ========= Partials 読み込み（＆日本語ボタンを有効化） ========= */
+async function injectPartials(){
+  const hdr = document.getElementById('site-header');
+  const ftr = document.getElementById('site-footer');
+  try{
+    const h = await fetch('partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    hdr.innerHTML = h;
+  }catch(_){}
+  try{
+    const f = await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    ftr.innerHTML = f;
+  }catch(_){}
+
+  // 「日本語」ボタン（partials 内 or フォールバック）を活性化
+  const langBtn = hdr.querySelector('#langToggle') || document.getElementById('langToggleFallback');
+  if(langBtn){
+    langBtn.addEventListener('click', ()=>{
+      uiLang = (uiLang === 'en') ? 'ja' : 'en';
+      langBtn.textContent = (uiLang === 'en') ? '日本語' : 'English';
+      rebuildStaticLabels();
+      renderList(lastData);
+    });
+  }
+
+  // Learned ボタン（partialsに無い場合の保険）
+  if(!document.getElementById('openLearnedTop')){
+    const btn=document.createElement('button');
+    btn.id='openLearnedTop'; btn.className='learnedIcon'; btn.type='button';
+    btn.innerHTML='<i class="fa-solid fa-book-bookmark"></i>&nbsp;Learned';
+    const host = hdr.querySelector('.header-right') || hdr.appendChild(Object.assign(document.createElement('div'),{className:'header-right'}));
+    host.appendChild(btn);
+  }
+  document.getElementById('openLearnedTop').addEventListener('click', openLearned);
+}
+
+/* ========= ラベル（英⇄日）再構築 ========= */
+function rebuildStaticLabels(){
+  // 品詞チップ
+  buildChips();
+  // プレースホルダ
+  kw.placeholder = (uiLang==='en') ? 'Search across all levels & parts…' : 'レベル・品詞を横断して検索…';
+  // Learned モーダル見出し
+  document.getElementById('learnedTitle').textContent = (uiLang==='en') ? 'Learned' : '覚えた一覧';
+  // Print Learned ボタン
+  document.getElementById('printBtn').textContent = (uiLang==='en') ? 'Print Learned' : '覚えた一覧を印刷';
+}
+
+/* ========= パス & ユーティリティ ========= */
+function buildPath(lvl=level, pk=posKey){
+  return `data/json/${lvl}/${POS.find(p=>p.k===pk).file}`;
+}
+
+/* どんなJSONでも配列に正規化 */
 function coerceArray(json){
   if (Array.isArray(json)) return json;
   const keys = ['items','data','entries','list','rows','result','results'];
@@ -197,69 +245,99 @@ function coerceArray(json){
   return [];
 }
 
-function buildPath(){return `data/json/${level}/${POS.find(p=>p.k===posKey).file}`;}
+/* ========= UI要素 ========= */
+const kw=document.getElementById('kw');
+const chips = document.getElementById('posChips');
+const list=document.getElementById('list');
+const pager=document.getElementById('pager');
 
+const toggleEN   = document.getElementById('toggleEN');
+const toggleJA   = document.getElementById('toggleJA');
+const toggleKANA = document.getElementById('toggleKANA');
+const toggleRO   = document.getElementById('toggleRO');
+
+[toggleEN,toggleJA,toggleKANA,toggleRO].forEach(el=>el.addEventListener('change',()=>renderList(lastData)));
+
+kw.addEventListener('input', onSearchInput, {passive:true});
+document.getElementById('levelSel').addEventListener('change', e=>{
+  level=e.target.value; page=1; if(!kw.value.trim()) loadSingleAndRender(); else onSearchInput();
+});
+
+/* 品詞チップ */
+function buildChips(){
+  chips.innerHTML='';
+  POS.forEach(p=>{
+    const b=document.createElement('button');
+    b.className='chip'+(p.k===posKey?' active':'');
+    b.textContent=(uiLang==='en') ? p.enLabel : `${p.ja} / ${p.enLabel}`;
+    b.onclick=()=>{posKey=p.k;page=1; if(!kw.value.trim()) loadSingleAndRender(); else onSearchInput(); buildChips();};
+    chips.appendChild(b);
+  });
+}
+
+/* ========= データ読み込み ========= */
 const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet",
   "examples":[
     {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
     {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
   ]}];
 
-const kw=document.getElementById('kw');
-kw.addEventListener('input', ()=>{page=1;renderList(lastData);});
-
-document.getElementById('levelSel').addEventListener('change', e=>{
-  level=e.target.value; page=1; loadAndRender();
-});
-
-const chips = document.getElementById('posChips');
-function buildChips(){
-  chips.innerHTML='';
-  POS.forEach(p=>{
-    const b=document.createElement('button');
-    b.className='chip'+(p.k===posKey?' active':'');
-    b.textContent=`${p.ja} / ${p.enLabel}`;
-    b.onclick=()=>{posKey=p.k;page=1;buildChips();loadAndRender();};
-    chips.appendChild(b);
-  });
+async function fetchJsonSafe(path){
+  try{
+    const r = await fetch(path,{cache:'no-store'});
+    if(!r.ok) return [];
+    const j = await r.json();
+    return coerceArray(j);
+  }catch(e){ return []; }
 }
 
-async function loadAndRender(){
-  document.getElementById('meta').textContent=`Level: ${level} • Part: ${POS.find(p=>p.k===posKey).ja}`;
-  try{
-    const r=await fetch(buildPath(),{cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    const json = await r.json();
-    lastData = coerceArray(json);
-    if (!lastData.length) lastData = SAMPLE;
-  }catch(_){ lastData = SAMPLE; }
+/* 通常表示：現在の level × pos のみ */
+async function loadSingleAndRender(){
+  document.getElementById('meta').textContent = `Level: ${level} • Part: ${POS.find(p=>p.k===posKey).enLabel}`;
+  let arr = await fetchJsonSafe(buildPath());
+  lastData = arr.length ? arr : SAMPLE;
   renderList(lastData);
-
-  try{
-    gtag('event','page_view',{
-      page_title: `${level} / ${posKey}`,
-      page_location: location.href,
-      page_path: location.pathname + location.search
-    });
-  }catch(_){}
+  try{ gtag('event','page_view',{page_title:`${level}/${posKey}`,page_location:location.href,page_path:location.pathname+location.search}); }catch(_){}
 }
 
-/* フィルタ・ページネーション・描画 */
-const list=document.getElementById('list');
-const pager=document.getElementById('pager');
+/* 検索：レベル・品詞を横断（最大30件返す） */
+let searchAbort = 0;
+async function onSearchInput(){
+  const t = kw.value.trim().toLowerCase();
+  if(!t){ page=1; loadSingleAndRender(); return; }
 
-function filtered(data){
-  const base = coerceArray(data);
-  const t=kw.value.trim().toLowerCase();
-  let arr = base;
-  if (t){
-    arr = base.filter(x=>{
-      const hay=[x.ja||'',x.kana||'',x.ro||'',x.en||'',...(x.examples||[]).flatMap(e=>[e.ja||'',e.kana||'',e.ro||'',e.en||''])].join(' ').toLowerCase();
-      return hay.includes(t);
-    });
+  const myId = ++searchAbort; // レース対策
+  document.getElementById('meta').textContent = (uiLang==='en') ? 'Searching across all levels and parts…' : '全レベル・全品詞を横断して検索中…';
+
+  const tasks = [];
+  for(const lv of LEVELS){
+    for(const p of POS){
+      tasks.push(fetchJsonSafe(buildPath(lv,p.k)).then(arr=>arr.map(x=>({...x, _level:lv, _pos:p.enLabel, _posJa:p.ja}))));
+    }
   }
-  return arr.slice(0, MAX_TOTAL); // 合計30件に制限
+  const chunks = await Promise.all(tasks);
+  if(myId!==searchAbort) return; // 直前の検索だけ採用
+
+  const joined = chunks.flat();
+  const filtered = joined.filter(x=>{
+    const hay = [
+      x.en||'', x.ja||'', x.kana||'', x.ro||'',
+      x._level||'', x._pos||'', x._posJa||'',
+      ...(x.examples||[]).flatMap(e=>[e.en||'',e.ja||'',e.kana||'',e.ro||''])
+    ].join(' ').toLowerCase();
+    return hay.includes(t);
+  });
+
+  lastData = filtered.slice(0, MAX_TOTAL);
+  page = 1;
+  document.getElementById('meta').textContent = (uiLang==='en')
+    ? `Results: ${lastData.length} item(s) (showing up to ${MAX_TOTAL}).`
+    : `検索結果: ${lastData.length} 件（最大 ${MAX_TOTAL} 件を表示）`;
+  renderList(lastData);
 }
+
+/* ========= ページネーション & 描画 ========= */
+function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
 
 function paginate(data){
   const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
@@ -280,14 +358,16 @@ function paginate(data){
   next.disabled=page>=total; pager.appendChild(next);
   return rows;
 }
-function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
+
+function div(cls,txt){const d=document.createElement('div');d.className=cls; if(txt!=null)d.textContent=txt; return d;}
 
 function renderList(data){
+  const base = Array.isArray(data) ? data : [];
   list.innerHTML='';
-  const rows=paginate(filtered(data));
+  const rows = paginate(base);
   if (!rows.length){
     pager.innerHTML='';
-    list.innerHTML = '<div style="color:#6b7280; padding:12px 0;">（表示できる項目がありません）</div>';
+    list.innerHTML = `<div style="color:#6b7280; padding:12px 0;">${uiLang==='en'?'No items to show.':'表示できる項目がありません。'}</div>`;
     return;
   }
   let idx=(page-1)*PAGE_SIZE;
@@ -296,63 +376,65 @@ function renderList(data){
     const card=document.createElement('article'); card.className='card';
     if(learnedSet().has(item.id)) card.classList.add('learned');
 
+    /* ヘッダ（英語ベースでタグ表示） */
     const head=document.createElement('div'); head.className='head';
     const num=div('num',idx+'.');
     const tags=div('tags','');
-    ['ja','kana','ro','en'].forEach(k=>{const s=document.createElement('span');s.className='tag';s.textContent=item[k]||'';tags.appendChild(s);});
-    const act=document.createElement('button'); act.className='btn'; act.textContent= learnedSet().has(item.id) ? '覚えたを戻す' : '覚えた';
+
+    // 欠落を自動スキップ
+    const tagMap = {en:item.en, ja:item.ja, kana:item.kana, ro:item.ro};
+    enFirstOrder.forEach(k=>{
+      const val = tagMap[k];
+      if(val && val.trim()){
+        const s=document.createElement('span'); s.className='tag '+k; s.textContent=val; tags.appendChild(s);
+      }
+    });
+
+    const act=document.createElement('button'); act.className='btn'; act.textContent= learnedSet().has(item.id) ? (uiLang==='en'?'Unlearn':'覚えたを戻す') : (uiLang==='en'?'Learned':'覚えた');
     act.onclick=()=>toggleLearned(item,card,act);
     head.append(num,tags,act);
 
+    /* 本文（切替チェック反映） */
     const body=div('content',''); body.dataset.examples='1';
     (item.examples||[]).forEach(ex=>{
-      const block=div('line',''); 
-      block.innerHTML = `
-        <div class="ja">${ex.ja||''}</div>
-        <div class="kana">${ex.kana||''}</div>
-        <div class="ro">${ex.ro||''}</div>
-        <div class="en">${ex.en||''}</div>`;
-      body.appendChild(block);
+      const block=div('line','');
+      // チェック状態を見て出力
+      const parts = [];
+      if(toggleEN.checked   && ex.en   ) parts.push(`<div class="en">${ex.en}</div>`);
+      if(toggleJA.checked   && ex.ja   ) parts.push(`<div class="ja">${ex.ja}</div>`);
+      if(toggleKANA.checked && ex.kana ) parts.push(`<div class="kana">${ex.kana}</div>`);
+      if(toggleRO.checked   && ex.ro   ) parts.push(`<div class="ro">${ex.ro}</div>`);
+      block.innerHTML = parts.join('');
+      if(parts.length) body.appendChild(block);
     });
+
     card.append(head,body); list.appendChild(card);
     if(learnedSet().has(item.id)) body.style.display='none';
   });
-}
-function div(cls,txt){const d=document.createElement('div');d.className=cls; if(txt!=null)d.textContent=txt; return d;}
 
-/* 覚えた */
+  // メタ（英語ベース）
+  const posLabel = POS.find(p=>p.k===posKey);
+  document.getElementById('meta').textContent = (uiLang==='en')
+    ? `Level: ${level} • Part: ${posLabel.enLabel}`
+    : `レベル: ${level} • 品詞: ${posLabel.ja}`;
+}
+
+/* ========= Learned ========= */
 const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
 function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
 function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
 function toggleLearned(item,card,btnEl){
   const s=learnedSet();
   const body = card.querySelector('[data-examples]');
-  if(s.has(item.id)){ s.delete(item.id); card.classList.remove('learned'); body.style.display=''; if(btnEl) btnEl.textContent='覚えた'; }
-  else { s.add(item.id); card.classList.add('learned'); body.style.display='none'; if(btnEl) btnEl.textContent='覚えたを戻す'; }
+  if(s.has(item.id)){
+    s.delete(item.id); card.classList.remove('learned'); body.style.display=''; if(btnEl) btnEl.textContent=(uiLang==='en'?'Learned':'覚えた');
+  }else{
+    s.add(item.id); card.classList.add('learned'); body.style.display='none'; if(btnEl) btnEl.textContent=(uiLang==='en'?'Unlearn':'覚えたを戻す');
+  }
   setLearned(s);
 }
 
-/* 覚えたモーダル */
-const learnedModal=document.getElementById('learnedModal');
-function openLearned(){
-  const s=learnedSet(); const body=document.getElementById('learnedBody'); body.innerHTML='';
-  const rows=(lastData||[]).filter(x=>s.has(x.id));
-  if(rows.length===0){ body.innerHTML='<div class="row" style="color:#6b7280">（まだありません）</div>'; }
-  else rows.forEach((x,i)=>{const r=document.createElement('div');r.className='row';r.textContent=`${i+1}. ${x.ja} / ${x.kana} / ${x.ro} — ${x.en}`;body.appendChild(r);});
-  learnedModal.style.display='flex';
-}
-document.getElementById('closeLearned').onclick=()=>learnedModal.style.display='none';
-document.getElementById('learnedModal').addEventListener('click',e=>{if(e.target===learnedModal) learnedModal.style.display='none';});
-document.getElementById('clearLearned').onclick=()=>{localStorage.setItem(LS_KEY(),'[]');openLearned();};
-document.getElementById('printLearned').onclick=()=>{
-  const s=learnedSet(); if(!s.size){alert('No learned items.');return;}
-  const w=open('','_blank'); const rows=(lastData||[]).filter(x=>s.has(x.id));
-  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
-  rows.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja}</strong> / ${x.kana} / ${x.ro} — ${x.en}</div>`));
-  w.document.close(); w.print();
-};
-
-/* ===== Amazon Associates（ページャー時のみ） ===== */
+/* ========= Amazon Associates（ページャー時のみ） ========= */
 const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
 let amazonBooted = false;
 function showAdPopup(){
@@ -368,7 +450,7 @@ function showAdPopup(){
       amzn_assoc_ad_type = "smart";
       amzn_assoc_marketplace = "amazon";
       amzn_assoc_region = "JP";
-      amzn_assoc_default_search_phrase = "日本語 学習";
+      amzn_assoc_default_search_phrase = "Japanese learning";
       amzn_assoc_default_category = "All";
     `;
     const js = document.createElement('script');
@@ -382,12 +464,13 @@ function showAdPopup(){
 adClose.onclick=()=>adMask.classList.remove('show');
 adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remove('show'); });
 
-/* ===== 初期化：partials → UI → データ ===== */
+/* ========= 初期化 ========= */
 (async function init(){
   await injectPartials();
+  rebuildStaticLabels();
   buildChips();
   document.getElementById('printBtn').addEventListener('click', openLearned);
-  await loadAndRender();
+  await loadSingleAndRender();  // 初期は現在の level × pos
 })();
 </script>
 </body>
