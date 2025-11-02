@@ -8,25 +8,5 @@
     "summary_ja": "nihongotext.com のベータ版を公開しました。いろいろと追加予定です。",
     "summary_en": "We launched the beta of nihongotext.com. We plan to add various things.",
     "tags": ["info", "release"]
-  },
-  {
-    "slug": "update-n5-verbs",
-    "date": "2025-11-10",
-    "title": "N5 Verb List Published",
-    "title_ja": "JLPT N5の動詞一覧を公開しました",
-    "title_en": "N5 Verb List Published",
-    "summary_ja": "JLPT N5レベルの動詞一覧を例文付きで公開しました。次回は名詞を追加予定です。",
-    "summary_en": "The verb list for JLPT N5 level has been published with example sentences. Nouns will follow soon.",
-    "tags": ["jlpt", "n5", "update"]
-  },
-  {
-    "slug": "add-sns-links",
-    "date": "2025-11-12",
-    "title": "New SNS Accounts Added",
-    "title_ja": "SNSアカウントを追加しました",
-    "title_en": "New SNS Accounts Added",
-    "summary_ja": "X・Reddit・Instagram・Substack のリンクをヘッダーとフッターに追加しました。",
-    "summary_en": "Links for X, Reddit, Instagram, and Substack were added in the header and footer.",
-    "tags": ["sns", "ui", "update"]
   }
 ]
