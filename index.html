@@ -20,7 +20,7 @@
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- ===== AdSense（所有権確認のみ / 広告表示はAmazon） ===== -->
+<!-- ===== AdSense（所有権確認のみ／広告表示はAmazonのみ） ===== -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
@@ -42,7 +42,7 @@ button{cursor:pointer}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 .brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
 
-/* ==== EDIT: ブランドの大きさはここで変更（betaより2サイズ大きい想定） ==== */
+/* ==== 修正ポイント: ブランドサイズ（betaより2サイズ大きい） ==== */
 .brand{font-weight:900;font-size:40px;color:var(--shu);} /* 40px */
 .small-dot{color:#222}
 .beta{color:var(--muted);font-size:12px}
@@ -86,7 +86,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .footer{border-top:1px solid var(--shu-tint);background:#fff}
 .footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
 
-/* ===== Amazon Associates popup（コンパクト版） ===== */
+/* ===== Amazon Associates popup（コンパクト） ===== */
 .admask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
 .admask.show{display:flex}
 .ad{background:#fff;border-radius:12px;max-width:560px;width:min(96vw,560px);
@@ -109,8 +109,8 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
     <span class="beta">== beta version ==</span>
     <div class="header-right">
-      <!-- ==== EDIT: 日本語トグルの文言はJSが自動で切替 ==== -->
-      <button id="langToggleFallback" class="btn" type="button">日本語</button>
+      <!-- ==== 修正ポイント: フォールバックの言語ボタン（partials側は id="langBtn" を用意） ==== -->
+      <button id="langBtn" class="btn" type="button">日本語</button>
       <button id="openLearnedTop" class="learnedIcon" type="button"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Learned</button>
     </div>
   </div>
@@ -128,7 +128,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 
     <div class="chips" id="posChips" role="tablist" aria-label="Parts of Speech"></div>
 
-    <!-- ==== EDIT: 全体横断検索はここ ==== -->
+    <!-- ==== 修正ポイント: 全体横断検索 ==== -->
     <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
     <button id="printBtn" class="btn" type="button">Print Learned</button>
 
@@ -197,12 +197,16 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 /* =========================================================
    nihongotext.com  index.html  —  運用メモ
    ---------------------------------------------------------
-   // ==== EDIT: で検索すると編集ポイントにジャンプできます
-   - データの場所: data/json/<Level>/<file>
-   - 1ページ: 5件 / 合計表示上限: 30件
-   - ヘッダー＆フッターは partials/header.html / partials/footer.html を自動読込
-   - 日本語ボタンは #langToggle か [data-lang-toggle] をパーシャル内に置くと確実
+   「修正ポイント」で検索すると編集場所にジャンプできます
+   - データ: data/json/<Level>/<file>
+   - 1ページ: 5件（PAGE_SIZE）／全体上限: 30件（MAX_TOTAL）
+   - ヘッダー／フッターは partials/header.html / partials/footer.html を自動読込
+   - 言語トグルは partials の #langBtn を拾います（localStorage.lang = en|ja）
    ========================================================= */
+
+/* ====== 言語保持ユーティリティ ====== */
+const getLang = () => localStorage.getItem('lang') || 'en';
+const setLang = (v) => localStorage.setItem('lang', v);
 
 /* ====== 定義 ====== */
 const LEVELS = ['N5','N4','N3','N2','N1'];
@@ -221,7 +225,7 @@ const POS = [
 let level='N5', posKey='verbs', page=1;
 const PAGE_SIZE=5, MAX_TOTAL=30;
 let lastData=[];
-let uiLang='en';
+let uiLang = getLang();                    // ← 言語を保存値から復元
 const enFirstOrder=['en','ja','kana','ro'];
 
 /* ====== ユーティリティ ====== */
@@ -242,36 +246,32 @@ const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
 function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
 function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
 
-/* ====== Partials + 言語トグル（堅牢版） ====== */
-function bindLangToggle(root){
-  const setBtnText = (btn)=>{ if(!btn) return;
-    btn.textContent = (uiLang==='en') ? '日本語' : 'English';
-  };
+/* ====== Partials + 言語トグル ====== */
+function applyLangToUI(){
+  // ボタン表記（英語UIの時は「日本語」、日本語UIの時は「English」）
+  const btn = document.getElementById('langBtn');
+  if(btn){ btn.textContent = (uiLang==='en') ? '日本語' : 'English'; }
 
-  const existing = root?.querySelector('#langToggle, [data-lang-toggle], .lang-toggle') 
-                || document.getElementById('langToggleFallback');
-  setBtnText(existing);
+  // プレースホルダなど静的ラベル
+  const kw=document.getElementById('kw');
+  if(kw){ kw.placeholder = (uiLang==='en') ? 'Search across all levels & parts…' : 'レベル・品詞を横断して検索…'; }
+  const lt=document.getElementById('learnedTitle');
+  if(lt){ lt.textContent = (uiLang==='en') ? 'Learned' : '覚えた一覧'; }
+  const pb=document.getElementById('printBtn');
+  if(pb){ pb.textContent = (uiLang==='en') ? 'Print Learned' : '覚えた一覧を印刷'; }
+}
 
-  // ドキュメント委譲（差し替え後も生きる）
-  document.addEventListener('click', (e)=>{
-    const t = e.target.closest('#langToggle, [data-lang-toggle], .lang-toggle, #langToggleFallback');
-    if(!t) return;
+function attachLangToggle(){
+  const btn = document.getElementById('langBtn');
+  if(!btn) return;
+  btn.addEventListener('click',(e)=>{
     e.preventDefault();
     uiLang = (uiLang==='en') ? 'ja' : 'en';
-    document.querySelectorAll('#langToggle, [data-lang-toggle], .lang-toggle, #langToggleFallback')
-      .forEach(setBtnText);
-    rebuildStaticLabels();
+    setLang(uiLang);
+    applyLangToUI();
+    buildChips();
     renderList(lastData);
   });
-
-  // ヘッダーDOMの入れ替わりを監視し文言を再設定
-  const hdr = document.getElementById('site-header');
-  if(window.__langMo) window.__langMo.disconnect();
-  window.__langMo = new MutationObserver(()=> {
-    const btn = hdr.querySelector('#langToggle, [data-lang-toggle], .lang-toggle');
-    setBtnText(btn);
-  });
-  window.__langMo.observe(hdr, {childList:true, subtree:true});
 }
 
 async function injectPartials(){
@@ -280,30 +280,41 @@ async function injectPartials(){
   try{
     const h=await fetch('partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     hdr.innerHTML=h;
-  }catch(_){}
+  }catch(_){
+    // フォールバック（簡易ヘッダー）
+    hdr.innerHTML =
+      `<div style="padding:14px 0;display:flex;gap:14px;align-items:center">
+         <a href="/" style="font-weight:800;font-size:28px;color:#e6462d">nihongotext<span style="color:#333">.com</span></a>
+         <span style="color:#98a1a8;font-size:12px">== beta version ==</span>
+         <button id="langBtn" type="button" class="btn" style="margin-left:auto">日本語</button>
+       </div>`;
+  }
   try{
     const f=await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     ftr.innerHTML=f;
-  }catch(_){}
-  bindLangToggle(hdr);
-  // Learnedボタンが無い場合は追加
+  }catch(_){
+    ftr.innerHTML =
+      `<div style="padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:#98a1a8;font-size:12px">
+         © 2025 nihongotext.com
+       </div>`;
+  }
+
+  // Learned ボタンが無ければ生成
   if(!document.getElementById('openLearnedTop')){
     const btn=document.createElement('button');
     btn.id='openLearnedTop'; btn.className='learnedIcon'; btn.type='button';
     btn.innerHTML='<i class="fa-solid fa-book-bookmark"></i>&nbsp;Learned';
-    (hdr.querySelector('.header-right')||hdr).appendChild(btn);
+    const host = hdr.querySelector('.header-right') || hdr.appendChild(Object.assign(document.createElement('div'),{className:'header-right'}));
+    host.appendChild(btn);
+    btn.addEventListener('click', typeof openLearned==='function'?openLearned:()=>{});
   }
-  document.getElementById('openLearnedTop').addEventListener('click', openLearned);
+
+  // 言語トグルを紐付け＆初期表示同期
+  attachLangToggle();
+  applyLangToUI();
 }
 
 /* ====== ラベル・チップ ====== */
-function rebuildStaticLabels(){
-  buildChips();
-  const kw=document.getElementById('kw');
-  kw.placeholder = (uiLang==='en') ? 'Search across all levels & parts…' : 'レベル・品詞を横断して検索…';
-  document.getElementById('learnedTitle').textContent = (uiLang==='en') ? 'Learned' : '覚えた一覧';
-  document.getElementById('printBtn').textContent   = (uiLang==='en') ? 'Print Learned' : '覚えた一覧を印刷';
-}
 function buildChips(){
   const chips=document.getElementById('posChips');
   chips.innerHTML='';
@@ -321,7 +332,7 @@ const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"mee
   {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."}
 ]}];
 
-/* ====== 単一ロード（上限30） ====== */
+/* ====== Fetch & Load ====== */
 async function fetchJsonSafe(path){
   try{
     const r=await fetch(path,{cache:'no-store'});
@@ -549,7 +560,7 @@ function showAdPopup(){
     cfg.type='text/javascript';
     cfg.text=`
       amzn_assoc_placement="adunit0";
-      amzn_assoc_tracking_id="blog0c9-22";   /* ==== EDIT: 変更する場合はここ（例: yourid-22） ==== */
+      amzn_assoc_tracking_id="blog0c9-22";   /* ==== 修正ポイント: 変更する場合はここ（例: yourid-22） ==== */
       amzn_assoc_ad_mode="search";
       amzn_assoc_ad_type="smart";
       amzn_assoc_marketplace="amazon";
@@ -579,7 +590,6 @@ adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remo
 /* ====== 初期化 ====== */
 (async function init(){
   await injectPartials();
-  rebuildStaticLabels();
   buildChips();
   await loadSingleAndRender();
 })();
