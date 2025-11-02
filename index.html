@@ -6,7 +6,7 @@
 <title>nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
 
-<!-- GA4 -->
+<!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,11 +15,11 @@
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- ✅ AdSense（本番） -->
+<!-- ✅ AdSense 所有権確認のみ（配信はしない） -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
-/* ===== Theme: 朱×白 ===== */
+/* ===== Theme: 朱×白（統一） ===== */
 :root{
   --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
   --ink:#1f2937; --muted:#6b7280; --line:#f1f5f9;
@@ -50,7 +50,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
 .btn.ok{background:var(--shu);color:#fff}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{border:1px solid var(--line);background:var(--chip);border-radius:999px;padding:8px 12px;font-weight:700}
+.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:8px 12px;font-weight:700}
 .chip.active{border-color:var(--shu);background:#fde3df}
 
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
@@ -69,30 +69,28 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
 .pagebtn.active{border-color:var(--shu);color:var(--shu);font-weight:800}
 
-.adslot{margin:12px 0}
-
-/* modal */
-.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:80}
-.panel{background:#fff;border-radius:14px;max-width:720px;width:min(92vw,720px);padding:16px}
-.panel h3{margin:0 0 8px}
-.close{float:right;border:1px solid var(--line);padding:4px 8px;border-radius:8px;background:#fff}
-.list-simple{border-top:1px dashed #ddd;margin-top:10px}
-.row{padding:8px 0;border-bottom:1px dashed #eee}
-.tools{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}
+/* ポップアップ広告（ハウスアド） */
+.admask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
+.admask.show{display:flex}
+.ad{background:#fff;border-radius:16px;max-width:520px;width:min(92vw,520px);padding:18px;border:2px solid var(--shu)}
+.ad .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
+.ad h3{margin:4px 0 8px}
+.ad small{color:var(--muted)}
 </style>
 </head>
 <body>
 
-<!-- ===== Header（内蔵） ===== -->
-<header class="topbar">
-  <div class="wrap brandbar">
+<!-- ===== Header（partials を注入） ===== -->
+<div class="topbar">
+  <div id="site-header" class="wrap brandbar">
+    <!-- 読み込み失敗時のフォールバック -->
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
     <span class="beta">== beta version ==</span>
     <div class="header-right">
       <button id="openLearnedTop" class="learnedIcon" type="button">📘 覚えた一覧</button>
     </div>
   </div>
-</header>
+</div>
 
 <main class="wrap">
   <!-- 操作UI -->
@@ -108,52 +106,71 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <button id="printBtn" class="btn" type="button">Print Learned</button>
   </div>
 
-  <!-- ✅ AdSense 上部 -->
-  <div class="adslot">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="3714541070"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
+  <!-- ※ 上下の AdSense 枠は削除（ページャー時のみポップアップを表示） -->
 
   <div id="meta" style="color:var(--muted);font-size:13px;margin:4px 0 10px"></div>
   <div id="list" class="grid" aria-live="polite"></div>
-
-  <!-- ✅ AdSense 下部 -->
-  <div class="adslot">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2358198194205084"
-         data-ad-slot="3714541070"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
-
   <div id="pager" class="pager"></div>
 </main>
 
-<!-- ===== Footer（内蔵） ===== -->
-<footer class="footer">
-  <div class="wrap footer-inner">© 2025 nihongotext.com</div>
-</footer>
+<!-- ===== Footer（partials を注入） ===== -->
+<div class="footer">
+  <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
+</div>
 
 <!-- ===== 覚えた一覧モーダル ===== -->
-<div id="learnedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="learnedTitle">
-  <div class="panel">
-    <button class="close" id="closeLearned">Close</button>
-    <h3 id="learnedTitle">覚えた一覧 / Learned</h3>
-    <div id="learnedBody" class="list-simple"></div>
-    <div class="tools">
+<div id="learnedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="learnedTitle" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:80">
+  <div class="panel" style="background:#fff;border-radius:14px;max-width:720px;width:min(92vw,720px);padding:16px">
+    <button class="close" id="closeLearned" style="float:right;border:1px solid #e5e7eb;padding:4px 8px;border-radius:8px;background:#fff">Close</button>
+    <h3 id="learnedTitle" style="margin:0 0 8px">覚えた一覧 / Learned</h3>
+    <div id="learnedBody" class="list-simple" style="border-top:1px dashed #ddd;margin-top:10px"></div>
+    <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
       <button id="clearLearned" class="btn">Clear</button>
       <button id="printLearned" class="btn ok">Print</button>
     </div>
   </div>
 </div>
 
+<!-- ===== ページャークリック時だけ出すポップアップ広告（ハウスアド） ===== -->
+<div id="adMask" class="admask" aria-hidden="true">
+  <div class="ad" role="dialog" aria-label="Promotion">
+    <button class="x" id="adClose" aria-label="Close">×</button>
+    <h3>nihongotext.com からのお知らせ</h3>
+    <p>最新の記事や追加コンテンツは <a href="/blog/" style="text-decoration:underline">お知らせページ</a> をチェック！</p>
+    <small>※このポップアップは自社告知（ハウスアド）です。</small>
+  </div>
+</div>
+
 <script>
-/* ========= 定数 ========= */
+/* ========= Partials 読み込み（完了まで待つ） ========= */
+async function injectPartials(){
+  const hdr = document.getElementById('site-header');
+  const ftr = document.getElementById('site-footer');
+  try{
+    const h = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    hdr.innerHTML = h;
+  }catch(_){
+    // フォールバック（既に初期HTMLを表示済み）
+  }
+  try{
+    const f = await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    ftr.innerHTML = f;
+  }catch(_){
+    // 既定の簡易フッターを維持
+  }
+
+  // ヘッダー／フッターに「覚えた一覧」ボタンがなければ追加
+  if(!document.getElementById('openLearnedTop')){
+    const btn=document.createElement('button');
+    btn.id='openLearnedTop'; btn.className='learnedIcon'; btn.type='button'; btn.textContent='📘 覚えた一覧';
+    // 右側に置く
+    const host = hdr.querySelector('.header-right') || hdr.appendChild(Object.assign(document.createElement('div'),{style:"margin-left:auto"}));
+    host.appendChild(btn);
+  }
+  document.getElementById('openLearnedTop').addEventListener('click', openLearned);
+}
+
+/* ========= データ表示 ========= */
 const POS = [
   {k:'nouns', file:'nouns.json', ja:'名詞', en:'Nouns'},
   {k:'verbs', file:'verbs.json', ja:'動詞', en:'Verbs'},
@@ -166,25 +183,17 @@ const POS = [
   {k:'nums',  file:'numerals.json', ja:'数詞+助数詞', en:'Numerals'},
   {k:'pat',   file:'patterns.json', ja:'文型', en:'Patterns'},
 ];
-
 let level='N5', posKey='verbs', page=1;
 const PAGE_SIZE=5;
 let lastData=[];
 
-/* JSONが無いときのダミーデータ（必ず表示される保証用） */
-const SAMPLE=[
-  {"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet",
-   "examples":[
-     {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
-     {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
-   ]},
-  {"id":"demo-002","ja":"開ける","kana":"あける","ro":"akeru","en":"open",
-   "examples":[
-     {"ja":"窓を開けます。","kana":"まど を あけます。","ro":"mado o akemasu.","en":"I open the window."}
-   ]}
-];
+const kw=document.getElementById('kw');
+kw.addEventListener('input', ()=>{page=1;renderList(lastData);});
 
-/* ========= UI構築 ========= */
+document.getElementById('levelSel').addEventListener('change', e=>{
+  level=e.target.value; page=1; loadAndRender(true,'level');
+});
+
 const chips = document.getElementById('posChips');
 function buildChips(){
   chips.innerHTML='';
@@ -196,20 +205,16 @@ function buildChips(){
     chips.appendChild(b);
   });
 }
-buildChips();
 
-document.getElementById('levelSel').addEventListener('change', e=>{
-  level=e.target.value; page=1; loadAndRender(true,'level');
-});
-
-document.getElementById('openLearnedTop').addEventListener('click', openLearned);
-document.getElementById('printBtn').addEventListener('click', openLearned);
-
-const kw=document.getElementById('kw');
-kw.addEventListener('input', ()=>{page=1;renderList(lastData);});
-
-/* ========= データ読み込み & 表示 ========= */
 function buildPath(){return `/data/json/${level}/${POS.find(p=>p.k===posKey).file}`;}
+
+const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet",
+  "examples":[
+    {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
+    {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
+  ]},
+  {"id":"demo-002","ja":"開ける","kana":"あける","ro":"akeru","en":"open",
+  "examples":[{"ja":"窓を開けます。","kana":"まど を あけます。","ro":"mado o akemasu.","en":"I open the window."}]}];
 
 async function loadAndRender(showAd){
   document.getElementById('meta').textContent=`Level: ${level} • Part: ${POS.find(p=>p.k===posKey).en}`;
@@ -217,11 +222,9 @@ async function loadAndRender(showAd){
     const r=await fetch(buildPath(),{cache:'no-store'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     lastData=await r.json();
-  }catch(_){
-    lastData=SAMPLE; // 失敗時も必ず表示
-  }
+  }catch(_){ lastData=SAMPLE; }
   renderList(lastData);
-  if(showAd) requestAdRender();
+
   // GA page_view
   try{
     gtag('event','page_view',{
@@ -232,6 +235,7 @@ async function loadAndRender(showAd){
   }catch(_){}
 }
 
+/* フィルタ・ページネーション・描画 */
 const list=document.getElementById('list');
 const pager=document.getElementById('pager');
 
@@ -250,19 +254,19 @@ function paginate(data){
   const rows=data.slice(start,start+PAGE_SIZE);
 
   pager.innerHTML='';
-  const prev=btn('Prev',()=>{page--;renderList(lastData,true);requestAdRender();});
+  const prev=pageBtn('Prev',()=>{page--;renderList(lastData,true);showAdPopup();});
   prev.disabled=page<=1; pager.appendChild(prev);
 
   for(let i=1;i<=total;i++){
-    const b=btn(String(i),()=>{page=i;renderList(lastData,true);requestAdRender();});
+    const b=pageBtn(String(i),()=>{page=i;renderList(lastData,true);showAdPopup();});
     if(i===page) b.classList.add('active');
     pager.appendChild(b);
   }
-  const next=btn('Next',()=>{page++;renderList(lastData,true);requestAdRender();});
+  const next=pageBtn('Next',()=>{page++;renderList(lastData,true);showAdPopup();});
   next.disabled=page>=total; pager.appendChild(next);
   return rows;
 }
-function btn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
+function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
 
 function renderList(data){
   list.innerHTML='';
@@ -295,10 +299,9 @@ function renderList(data){
     if(learnedSet().has(item.id)) body.style.display='none';
   });
 }
-
 function div(cls,txt){const d=document.createElement('div');d.className=cls; if(txt!=null)d.textContent=txt; return d;}
 
-/* ========= 覚えた ========= */
+/* 覚えた */
 const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
 function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
 function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
@@ -310,12 +313,12 @@ function toggleLearned(item,card,btnEl){
   setLearned(s);
 }
 
-/* ========= 覚えたモーダル ========= */
+/* 覚えたモーダル */
 const learnedModal=document.getElementById('learnedModal');
 function openLearned(){
   const s=learnedSet(); const body=document.getElementById('learnedBody'); body.innerHTML='';
   const rows=(lastData||[]).filter(x=>s.has(x.id));
-  if(rows.length===0){ body.innerHTML='<div class="row" style="color:var(--muted)">（まだありません）</div>'; }
+  if(rows.length===0){ body.innerHTML='<div class="row" style="color:#6b7280">（まだありません）</div>'; }
   else rows.forEach((x,i)=>{const r=document.createElement('div');r.className='row';r.textContent=`${i+1}. ${x.ja} / ${x.kana} / ${x.ro} — ${x.en}`;body.appendChild(r);});
   learnedModal.style.display='flex';
 }
@@ -330,14 +333,19 @@ document.getElementById('printLearned').onclick=()=>{
   w.document.close(); w.print();
 };
 
-/* ========= AdSense 描画 ========= */
-function requestAdRender(){
-  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
-  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
-}
+/* ===== ページャークリック時のみ出すハウスアド（AdSenseは使わない） ===== */
+const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
+function showAdPopup(){ adMask.classList.add('show'); }
+adClose.onclick=()=>adMask.classList.remove('show');
+adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remove('show'); });
 
-/* ========= 初期表示 ========= */
-loadAndRender(false);
+/* ===== 初期化：partials 読み込み後に表示開始 ===== */
+(async function init(){
+  await injectPartials();
+  buildChips();
+  document.getElementById('printBtn').addEventListener('click', openLearned);
+  await loadAndRender(false);
+})();
 </script>
 </body>
 </html>
