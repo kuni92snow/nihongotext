@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Updates | nihongotext.com</title>
+  <link rel="icon" href="/favicon.ico" />
+  <base href="/" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="/common/style.css" rel="stylesheet" />
+
+  <style>
+    body { font-family: system-ui, sans-serif; background: #fafafa; color: #1f2937; }
+    .container { max-width: 880px; margin: 40px auto; padding: 0 16px; }
+    h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #e6462d; }
+    .post-list { list-style: none; padding: 0; margin: 0; }
+    .post-item { background: #fff; border: 1px solid #e5e7eb; padding: 16px 20px; border-radius: 10px; margin-bottom: 16px; }
+    .post-date { font-size: 0.9rem; color: #6b7280; }
+    .post-title { font-size: 1.2rem; font-weight: 600; margin: 6px 0; }
+    .post-more { margin-top: 6px; display: inline-block; color: #e6462d; text-decoration: none; font-size: 0.9rem; }
+    .post-more:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー（partials/header.html が読み込みされます） -->
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1>Blog Updates</h1>
+    <ul id="postList" class="post-list"></ul>
+  </main>
+
+  <!-- フッター -->
+  <footer id="site-footer"></footer>
+
+  <script>
+    // Load header/footer
+    async function injectPartials(){
+      const hdr = document.getElementById('site-header');
+      const ftr = document.getElementById('site-footer');
+      try{
+        hdr.innerHTML = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.text());
+        ftr.innerHTML = await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.text());
+      }catch(_){
+        hdr.innerHTML = '<div style="padding:14px;">nihongotext.com (header load failed)</div>';
+        ftr.innerHTML = '<div style="padding:14px;">(footer load failed)</div>';
+      }
+    }
+
+    // Fetch and render blog posts
+    async function loadPosts(){
+      const ul = document.getElementById('postList');
+      try{
+        const lang = localStorage.getItem('lang') || 'en';
+        const json = await fetch('/blog/posts.json',{cache:'no-store'}).then(r=>r.json());
+        const items = Array.isArray(json) ? json : [];
+
+        // sort: newest first
+        items.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+        // render
+        ul.innerHTML = items.map(post=>{
+          const t = post[lang]?.title || post.en?.title || '(no title)';
+          const d = post.date || '';
+          const slug = post.slug || '';
+          return `
+            <li class="post-item">
+              <div class="post-date">${d}</div>
+              <div class="post-title">${t}</div>
+              <a class="post-more" href="/blog/#/${slug}">Read more</a>
+            </li>
+          `;
+        }).join('');
+      }catch(e){
+        ul.innerHTML = '<li style="color:#b91c1c;">Failed to load posts.</li>';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+      injectPartials();
+      loadPosts();
+    });
+  </script>
+
+</body>
+</html>
