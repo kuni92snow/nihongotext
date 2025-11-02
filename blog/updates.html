@@ -25,14 +25,28 @@
   <header id="site-header"></header>
 
   <main class="container" id="page" data-lang="en">
-    <h1>Blog Updates</h1>
+    <h1 class="en">Blog Updates</h1>
+    <h1 class="ja">ブログ更新一覧</h1>
     <div id="list"></div>
   </main>
 
   <footer id="site-footer"></footer>
 
   <script>
-    // 共通パーツ
+    // 言語状態
+    const currentLang = ()=> localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en');
+    function applyLang(lang){
+      const page=document.getElementById('page');
+      page.setAttribute('data-lang',lang);
+      document.documentElement.lang=(lang==='ja'?'ja':'en');
+      localStorage.setItem('nt_lang',lang);
+      // ヘッダーのボタン表示も更新
+      const btn = document.getElementById('langBtn');
+      if(btn) btn.textContent = (lang==='ja' ? 'English' : '日本語');
+      if(window.__posts) render(window.__posts);
+    }
+
+    // 共通パーツ（ヘッダー/フッター）読み込み + 言語ボタンセットアップ ←★追加
     async function injectPartials(){
       const hdr = document.getElementById('site-header');
       const ftr = document.getElementById('site-footer');
@@ -43,16 +57,17 @@
         hdr.innerHTML = '<div style="padding:14px;">nihongotext.com (header load failed)</div>';
         ftr.innerHTML = '<div style="padding:14px;">(footer load failed)</div>';
       }
-    }
-
-    // 言語
-    const currentLang = ()=> localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en');
-    function applyLang(lang){
-      const page=document.getElementById('page');
-      page.setAttribute('data-lang',lang);
-      document.documentElement.lang=(lang==='ja'?'ja':'en');
-      localStorage.setItem('nt_lang',lang);
-      if(window.__posts) render(window.__posts);
+      // ヘッダーの言語ボタンにイベントを付与
+      const btn = document.getElementById('langBtn');
+      if(btn){
+        const sync=()=> btn.textContent = (currentLang()==='ja' ? 'English' : '日本語');
+        btn.addEventListener('click', ()=>{
+          const next = (currentLang()==='ja' ? 'en' : 'ja');
+          applyLang(next);
+          sync();
+        });
+        sync();
+      }
     }
 
     // スキーマ互換
@@ -102,6 +117,7 @@
       }
     }
 
+    // posts.json 読み込み
     async function loadPosts(){
       try{
         const json = await fetch('/blog/posts.json',{cache:'no-store'}).then(r=>r.json());
@@ -112,6 +128,7 @@
       }
     }
 
+    // 初期化
     document.addEventListener('DOMContentLoaded', async ()=>{
       await injectPartials();
       applyLang(currentLang());
