@@ -119,7 +119,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- 覚えた一覧モーダル（既存機能） -->
+<!-- 覚えた一覧モーダル -->
 <div id="learnedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="learnedTitle" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:80">
   <div class="panel" style="background:#fff;border-radius:14px;max-width:720px;width:min(92vw,720px);padding:16px">
     <button class="close" id="closeLearned" style="float:right;border:1px solid #e5e7eb;padding:4px 8px;border-radius:8px;background:#fff">Close</button>
@@ -137,7 +137,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div class="ad" role="dialog" aria-label="Amazon Associates">
     <button class="x" id="adClose" aria-label="Close">×</button>
     <h3><i class="fa-brands fa-amazon"></i> おすすめ商品</h3>
-    <!-- Amazonの広告ユニットが挿入される領域 -->
     <div id="amznAdBox"></div>
     <small>※Amazonアソシエイト（Tracking ID: blog0c9-22）</small>
   </div>
@@ -167,7 +166,6 @@ async function injectPartials(){
 }
 
 /* ========= データ表示 ========= */
-/* スクショのファイル名に完全一致させています */
 const POS = [
   {k:'nouns', file:'nouns.json',          ja:'名詞',        enLabel:'Nouns'},
   {k:'verbs', file:'verbs.json',          ja:'動詞',        enLabel:'Verbs'},
@@ -184,6 +182,28 @@ let level='N5', posKey='verbs', page=1;
 const PAGE_SIZE=5;         // 1ページ=5件
 const MAX_TOTAL=30;        // 合計最大30件まで表示
 let lastData=[];
+
+/* JSONを必ず配列に正規化（arr.slice エラー対策） */
+function coerceArray(json){
+  if (Array.isArray(json)) return json;
+  const keys = ['items','data','entries','list','rows','result','results'];
+  for (const k of keys){
+    if (json && Array.isArray(json[k])) return json[k];
+  }
+  if (json && typeof json === 'object'){
+    const vals = Object.values(json);
+    if (vals.length && vals.every(v => typeof v === 'object')) return vals;
+  }
+  return [];
+}
+
+function buildPath(){return `data/json/${level}/${POS.find(p=>p.k===posKey).file}`;}
+
+const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet",
+  "examples":[
+    {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
+    {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
+  ]}];
 
 const kw=document.getElementById('kw');
 kw.addEventListener('input', ()=>{page=1;renderList(lastData);});
@@ -204,24 +224,17 @@ function buildChips(){
   });
 }
 
-function buildPath(){return `data/json/${level}/${POS.find(p=>p.k===posKey).file}`;}
-
-const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet",
-  "examples":[
-    {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
-    {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
-  ]}];
-
 async function loadAndRender(){
   document.getElementById('meta').textContent=`Level: ${level} • Part: ${POS.find(p=>p.k===posKey).ja}`;
   try{
     const r=await fetch(buildPath(),{cache:'no-store'});
     if(!r.ok) throw new Error('HTTP '+r.status);
-    lastData = await r.json();
+    const json = await r.json();
+    lastData = coerceArray(json);
+    if (!lastData.length) lastData = SAMPLE;
   }catch(_){ lastData = SAMPLE; }
   renderList(lastData);
 
-  // GA page_view
   try{
     gtag('event','page_view',{
       page_title: `${level} / ${posKey}`,
@@ -236,14 +249,18 @@ const list=document.getElementById('list');
 const pager=document.getElementById('pager');
 
 function filtered(data){
+  const base = coerceArray(data);
   const t=kw.value.trim().toLowerCase();
-  let arr = !t ? data : data.filter(x=>{
-    const hay=[x.ja||'',x.kana||'',x.ro||'',x.en||'',...(x.examples||[]).flatMap(e=>[e.ja||'',e.kana||'',e.ro||'',e.en||''])].join(' ').toLowerCase();
-    return hay.includes(t);
-  });
-  // ✅ 合計30件に制限
-  return arr.slice(0, MAX_TOTAL);
+  let arr = base;
+  if (t){
+    arr = base.filter(x=>{
+      const hay=[x.ja||'',x.kana||'',x.ro||'',x.en||'',...(x.examples||[]).flatMap(e=>[e.ja||'',e.kana||'',e.ro||'',e.en||''])].join(' ').toLowerCase();
+      return hay.includes(t);
+    });
+  }
+  return arr.slice(0, MAX_TOTAL); // 合計30件に制限
 }
+
 function paginate(data){
   const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
   if(page>total)page=total;
@@ -268,6 +285,11 @@ function pageBtn(t,fn){const b=document.createElement('button');b.className='pag
 function renderList(data){
   list.innerHTML='';
   const rows=paginate(filtered(data));
+  if (!rows.length){
+    pager.innerHTML='';
+    list.innerHTML = '<div style="color:#6b7280; padding:12px 0;">（表示できる項目がありません）</div>';
+    return;
+  }
   let idx=(page-1)*PAGE_SIZE;
   rows.forEach(item=>{
     idx++;
@@ -337,7 +359,6 @@ function showAdPopup(){
   adMask.classList.add('show');
   if(!amazonBooted){
     amazonBooted = true;
-    // ユニット設定（Native Shopping Ads: 検索モード例）
     const cfg = document.createElement('script');
     cfg.type='text/javascript';
     cfg.text = `
