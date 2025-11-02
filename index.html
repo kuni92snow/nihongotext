@@ -6,7 +6,7 @@
 <title>nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
 
-<!-- Font Awesome（partials内のアイコンもこれで表示） -->
+<!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <!-- GA4 -->
@@ -69,13 +69,13 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .line{margin:6px 0}
 .ja{font-weight:800}
 .kana,.ro,.en{opacity:.95}
-.en{font-weight:700} /* 英語ベースで強調 */
+.en{font-weight:700} /* 英語を強調 */
 
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
 .pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
 .pagebtn.active{border-color:var(--shu);color:var(--shu);font-weight:800}
 
-/* Amazonアソシエイト ポップアップ（ページャーでのみ） */
+/* Amazon Associates ポップアップ（ページャー時のみ） */
 .admask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
 .admask.show{display:flex}
 .ad{background:#fff;border-radius:16px;max-width:680px;width:min(96vw,680px);padding:18px;border:2px solid var(--shu)}
@@ -93,7 +93,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
     <span class="beta">== beta version ==</span>
     <div class="header-right">
-      <!-- partialsに #langToggle があればそれを使う。無ければこれを使う -->
       <button id="langToggleFallback" class="btn" type="button">日本語</button>
       <button id="openLearnedTop" class="learnedIcon" type="button"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Learned</button>
     </div>
@@ -101,7 +100,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 </div>
 
 <main class="wrap">
-  <!-- 操作UI -->
   <div class="controls">
     <label>Level
       <select id="levelSel">
@@ -123,7 +121,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     </div>
   </div>
 
-  <!-- コンテンツ -->
   <div id="meta" style="color:var(--muted);font-size:13px;margin:4px 0 10px"></div>
   <div id="list" class="grid" aria-live="polite"></div>
   <div id="pager" class="pager"></div>
@@ -173,16 +170,15 @@ const POS = [
   {k:'pat',   file:'patterns.json',       ja:'文型',        enLabel:'Patterns'},
 ];
 let level='N5', posKey='verbs', page=1;
-const PAGE_SIZE=5, MAX_TOTAL=30;
+const PAGE_SIZE=5, MAX_TOTAL=30;  // ★ 合計30件まで
 let lastData=[];
 let uiLang='en';                   // 'en' or 'ja'
-const enFirstOrder=['en','ja','kana','ro']; // 英語を先頭表示
+const enFirstOrder=['en','ja','kana','ro'];
 
 /* ========= ユーティリティ ========= */
 function buildPath(lvl=level, pk=posKey){
   return `data/json/${lvl}/${POS.find(p=>p.k===pk).file}`;
 }
-/* どんなJSONでも配列に正規化 */
 function coerceArray(json){
   if (Array.isArray(json)) return json;
   const keys=['items','data','entries','list','rows','result','results'];
@@ -194,12 +190,12 @@ function coerceArray(json){
   return [];
 }
 
-/* ========= Learned（localStorage） ========= */
+/* ========= Learned ========= */
 const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
 function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
 function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
 
-/* ========= Learned モーダル（先に定義） ========= */
+/* ========= Learned モーダル ========= */
 function openLearned(){
   const modal=document.getElementById('learnedModal');
   const body=document.getElementById('learnedBody');
@@ -231,7 +227,18 @@ document.getElementById('printLearned').onclick=()=>{
   w.document.close(); w.print();
 };
 
-/* ========= Partials 読み込み（日本語ボタン有効化） ========= */
+/* ========= Partials & 言語トグル ========= */
+function bindLangToggle(root){
+  const btn = root.querySelector('#langToggle, [data-lang-toggle], .lang-toggle') || document.getElementById('langToggleFallback');
+  if(!btn) return;
+  btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    uiLang = (uiLang==='en') ? 'ja' : 'en';
+    btn.textContent = (uiLang==='en') ? '日本語' : 'English';
+    rebuildStaticLabels();
+    renderList(lastData);
+  });
+}
 async function injectPartials(){
   const hdr=document.getElementById('site-header');
   const ftr=document.getElementById('site-footer');
@@ -243,24 +250,14 @@ async function injectPartials(){
     const f=await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     ftr.innerHTML=f;
   }catch(_){}
-
-  // lang トグル（partials 内 #langToggle があれば優先、なければフォールバック）
-  const langBtn = hdr.querySelector('#langToggle') || document.getElementById('langToggleFallback');
-  if(langBtn){
-    langBtn.addEventListener('click', ()=>{
-      uiLang = (uiLang==='en') ? 'ja' : 'en';
-      langBtn.textContent = (uiLang==='en') ? '日本語' : 'English';
-      rebuildStaticLabels();
-      renderList(lastData);
-    });
-  }
-  // Learned ボタンが無いテーマでも確実に追加
+  // 言語切替ボタンを確実に機能させる
+  bindLangToggle(hdr);
+  // Learned ボタンが無いテーマにも追加
   if(!document.getElementById('openLearnedTop')){
     const btn=document.createElement('button');
     btn.id='openLearnedTop'; btn.className='learnedIcon'; btn.type='button';
     btn.innerHTML='<i class="fa-solid fa-book-bookmark"></i>&nbsp;Learned';
-    const host = hdr.querySelector('.header-right') || hdr.appendChild(Object.assign(document.createElement('div'),{className:'header-right'}));
-    host.appendChild(btn);
+    (hdr.querySelector('.header-right')||hdr).appendChild(btn);
   }
   document.getElementById('openLearnedTop').addEventListener('click', openLearned);
 }
@@ -283,7 +280,7 @@ async function fetchJsonSafe(path){
   }catch(_){ return []; }
 }
 
-/* ========= UI要素取得＆イベント ========= */
+/* ========= UI要素 ========= */
 const kw=document.getElementById('kw');
 const list=document.getElementById('list');
 const pager=document.getElementById('pager');
@@ -313,7 +310,7 @@ function buildChips(){
   });
 }
 
-/* ========= 通常表示：現在の level × pos ========= */
+/* ========= 通常表示（30件に制限） ========= */
 const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet","examples":[
   {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
   {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
@@ -322,14 +319,15 @@ const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"mee
 async function loadSingleAndRender(){
   document.getElementById('meta').textContent=`Level: ${level} • Part: ${POS.find(p=>p.k===posKey).enLabel}`;
   let arr=await fetchJsonSafe(buildPath());
-  lastData = arr.length ? arr : SAMPLE;
+  // ★ 通常表示も最大30件に制限
+  lastData = arr.length ? arr.slice(0, MAX_TOTAL) : SAMPLE;
   renderList(lastData);
   try{
     gtag('event','page_view',{page_title:`${level}/${posKey}`,page_location:location.href,page_path:location.pathname+location.search});
   }catch(_){}
 }
 
-/* ========= 横断検索 ========= */
+/* ========= 横断検索（こちらは既にMAX_TOTALを適用） ========= */
 let searchAbort=0;
 async function onSearchInput(){
   const t=kw.value.trim().toLowerCase();
@@ -421,7 +419,7 @@ function renderList(data){
     act.textContent = learnedSet().has(item.id) ? (uiLang==='en'?'Unlearn':'覚えたを戻す') : (uiLang==='en'?'Learned':'覚えた');
     act.onclick=()=>toggleLearned(item,card,act);
 
-    head.append(num,tags,act);
+    head.append(num,/**/tags,act);
 
     const body=div('content',''); body.dataset.examples='1';
     (item.examples||[]).forEach(ex=>{
@@ -474,7 +472,9 @@ function showAdPopup(){
       amzn_assoc_default_category="All";
     `;
     const js=document.createElement('script');
-    js.async=true; js.src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=JP";
+    js.async=true;
+    // ★ https 明示（ERR_NAME_NOT_RESOLVED対策）
+    js.src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=JP";
     const box=document.getElementById('amznAdBox');
     box.appendChild(cfg); box.appendChild(js);
   }
