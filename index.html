@@ -1,53 +1,114 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
 
-<!-- Google Analytics (GA4) -->
+<!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-9QSHWJE0HZ", { send_page_view: false });
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- ✅ AdSense 所有権確認 & 配信コード（本番ID） -->
+<!-- ✅ AdSense（本番） -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
-/* === 省略なし：スタイル全て含めた完全版 === */
-/* 中略（ご希望あれば CSS 部分も完全出力できます）*/
+/* ===== Theme: 朱×白 ===== */
+:root{
+  --shu:#e6462d; --shu-deep:#c13727; --shu-tint:#fff2ef;
+  --ink:#1f2937; --muted:#6b7280; --line:#f1f5f9;
+  --chip:#f8fafc; --card:#fff7f6; --ok:#16a34a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff}
+.brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
+.brand{font-weight:900;font-size:26px;color:var(--shu)}
+.small-dot{color:#222}
+.beta{color:var(--muted);font-size:12px}
+.header-right{margin-left:auto;display:flex;gap:10px;align-items:center}
+.learnedIcon{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--shu);color:var(--shu);
+  background:#fff;border-radius:999px;padding:6px 10px;font-weight:700}
+
+.footer{border-top:1px solid var(--shu-tint);background:#fff}
+.footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}
+select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 12px;background:#fff}
+.grow{flex:1}
+.btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
+.btn.ok{background:var(--shu);color:#fff}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--chip);border-radius:999px;padding:8px 12px;font-weight:700}
+.chip.active{border-color:var(--shu);background:#fde3df}
+
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;overflow:hidden}
+.card.learned{background:#eefbf1;border-color:#cceedd}
+.head{display:flex;gap:10px;align-items:center;padding:10px 12px;background:#fff;border-bottom:1px dashed #f0d7d4}
+.num{font-weight:800;color:var(--shu)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:13px;background:#fff;border:1px solid #f0d7d4;border-radius:8px;padding:3px 8px}
+.content{padding:12px 14px}
+.line{margin:6px 0}
+.ja{font-weight:800}
+.kana,.ro,.en{opacity:.9}
+
+.pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
+.pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
+.pagebtn.active{border-color:var(--shu);color:var(--shu);font-weight:800}
+
+.adslot{margin:12px 0}
+
+/* modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:80}
+.panel{background:#fff;border-radius:14px;max-width:720px;width:min(92vw,720px);padding:16px}
+.panel h3{margin:0 0 8px}
+.close{float:right;border:1px solid var(--line);padding:4px 8px;border-radius:8px;background:#fff}
+.list-simple{border-top:1px dashed #ddd;margin-top:10px}
+.row{padding:8px 0;border-bottom:1px dashed #eee}
+.tools{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}
 </style>
 </head>
 <body>
 
-<div class="topbar-border">
-  <div id="site-header" class="wrap"></div>
-</div>
-<div class="spacer"></div>
+<!-- ===== Header（内蔵） ===== -->
+<header class="topbar">
+  <div class="wrap brandbar">
+    <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
+    <span class="beta">== beta version ==</span>
+    <div class="header-right">
+      <button id="openLearnedTop" class="learnedIcon" type="button">📘 覚えた一覧</button>
+    </div>
+  </div>
+</header>
 
 <main class="wrap">
-
-  <!-- 🔍 データ条件UI -->
+  <!-- 操作UI -->
   <div class="controls">
     <label>Level
       <select id="levelSel">
         <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
       </select>
     </label>
-
     <div class="chips" id="posChips" role="tablist" aria-label="Parts of Speech"></div>
-
     <input id="kw" type="text" placeholder="Search keyword…" />
     <div class="grow"></div>
     <button id="printBtn" class="btn" type="button">Print Learned</button>
   </div>
 
-  <!-- ✅ AdSense: 上部バナー -->
+  <!-- ✅ AdSense 上部 -->
   <div class="adslot">
     <ins class="adsbygoogle"
          style="display:block"
@@ -57,13 +118,10 @@
          data-full-width-responsive="true"></ins>
   </div>
 
-  <!-- 📊 データ件数・メタ表示 -->
   <div id="meta" style="color:var(--muted);font-size:13px;margin:4px 0 10px"></div>
-
-  <!-- 📚 語彙カード一覧 -->
   <div id="list" class="grid" aria-live="polite"></div>
 
-  <!-- ✅ AdSense: 下部バナー -->
+  <!-- ✅ AdSense 下部 -->
   <div class="adslot">
     <ins class="adsbygoogle"
          style="display:block"
@@ -73,218 +131,213 @@
          data-full-width-responsive="true"></ins>
   </div>
 
-  <!-- 📌 ページネーション -->
   <div id="pager" class="pager"></div>
 </main>
 
-<!-- === 略（フッター、モーダル、広告ポップアップ） === -->
+<!-- ===== Footer（内蔵） ===== -->
+<footer class="footer">
+  <div class="wrap footer-inner">© 2025 nihongotext.com</div>
+</footer>
+
+<!-- ===== 覚えた一覧モーダル ===== -->
+<div id="learnedModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="learnedTitle">
+  <div class="panel">
+    <button class="close" id="closeLearned">Close</button>
+    <h3 id="learnedTitle">覚えた一覧 / Learned</h3>
+    <div id="learnedBody" class="list-simple"></div>
+    <div class="tools">
+      <button id="clearLearned" class="btn">Clear</button>
+      <button id="printLearned" class="btn ok">Print</button>
+    </div>
+  </div>
+</div>
 
 <script>
-/* === ✅ データ表示スクリプト === */
-
-/**
- * JSON ファイル位置
- * /data/json/{level}/{part}.json
- * e.g. /data/json/N5/verbs.json
- */
+/* ========= 定数 ========= */
 const POS = [
-  {key: 'nouns', file: 'nouns.json',     ja: '名詞',        en: 'Nouns'},
-  {key: 'verbs', file: 'verbs.json',     ja: '動詞',        en: 'Verbs'},
-  {key: 'iadj',  file: 'iadj.json',      ja: 'い形容詞',    en: 'i-Adjectives'},
-  {key: 'naadj', file: 'naadj.json',     ja: 'な形容詞',    en: 'na-Adjectives'},
-  {key: 'advs',  file: 'adverbs.json',   ja: '副詞',        en: 'Adverbs'},
-  {key: 'prt',   file: 'particles.json', ja: '助詞',        en: 'Particles'},
-  {key: 'conj',  file: 'conjunctions.json', ja: '接続詞',  en: 'Conjunctions'},
-  {key: 'interj',file: 'interjections.json', ja: '感動詞', en: 'Interjections'},
-  {key: 'nums',  file: 'numerals.json',  ja: '数詞',        en: 'Numerals'},
-  {key: 'pat',   file: 'patterns.json',  ja: '文型',        en: 'Patterns'},
+  {k:'nouns', file:'nouns.json', ja:'名詞', en:'Nouns'},
+  {k:'verbs', file:'verbs.json', ja:'動詞', en:'Verbs'},
+  {k:'iadj',  file:'iadj.json',  ja:'い形容詞', en:'i-adjectives'},
+  {k:'naadj', file:'naadj.json', ja:'な形容詞', en:'na-adjectives'},
+  {k:'advs',  file:'adverbs.json', ja:'副詞', en:'Adverbs'},
+  {k:'prt',   file:'particles.json', ja:'助詞', en:'Particles'},
+  {k:'conj',  file:'conjunctions.json', ja:'接続詞', en:'Conjunctions'},
+  {k:'interj',file:'interjections.json', ja:'感動詞', en:'Interjections'},
+  {k:'nums',  file:'numerals.json', ja:'数詞+助数詞', en:'Numerals'},
+  {k:'pat',   file:'patterns.json', ja:'文型', en:'Patterns'},
 ];
 
-let level = 'N5';
-let posKey = 'verbs';
-let page = 1;
-const PAGE_SIZE = 5;
-let lastData = [];
+let level='N5', posKey='verbs', page=1;
+const PAGE_SIZE=5;
+let lastData=[];
 
-// ✅ 芝居データ（JSONが無いときのみ使用）
-const SAMPLE = [
-  {
-    id: "demo-001",
-    ja: "計画",
-    kana: "けいかく",
-    ro: "keikaku",
-    en: "plan / schedule / project",
-    examples: [
-      {
-        ja: "私たちは旅行の計画を立てた。",
-        kana: "わたしたち は りょこう の けいかく を たてた。",
-        ro: "watashitachi wa ryokou no keikaku o tateta.",
-        en: "We made a plan for the trip."
-      }
-    ]
-  }
+/* JSONが無いときのダミーデータ（必ず表示される保証用） */
+const SAMPLE=[
+  {"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet",
+   "examples":[
+     {"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."},
+     {"ja":"駅で先生に会いました。","kana":"えき で せんせい に あいました。","ro":"eki de sensei ni aimashita.","en":"I met my teacher at the station."}
+   ]},
+  {"id":"demo-002","ja":"開ける","kana":"あける","ro":"akeru","en":"open",
+   "examples":[
+     {"ja":"窓を開けます。","kana":"まど を あけます。","ro":"mado o akemasu.","en":"I open the window."}
+   ]}
 ];
 
-/* --- UI構築 & イベントバインド --- */
-
-/* 品詞タブ（chips） */
+/* ========= UI構築 ========= */
+const chips = document.getElementById('posChips');
 function buildChips(){
-  const chips = document.getElementById("posChips");
-  chips.innerHTML = '';
+  chips.innerHTML='';
   POS.forEach(p=>{
     const b=document.createElement('button');
-    b.className='chip'+(p.key===posKey?' active':'');
+    b.className='chip'+(p.k===posKey?' active':'');
     b.textContent=`${p.ja} / ${p.en}`;
-    b.onclick=()=>{ posKey=p.key; page=1; buildChips(); loadAndRender(true,'pos'); };
+    b.onclick=()=>{posKey=p.k;page=1;buildChips();loadAndRender(true,'pos');};
     chips.appendChild(b);
   });
 }
+buildChips();
 
-/* レベル変更イベント */
 document.getElementById('levelSel').addEventListener('change', e=>{
-  level = e.target.value;
-  page = 1;
-  loadAndRender(true,'level');
+  level=e.target.value; page=1; loadAndRender(true,'level');
 });
 
-/* 検索キーワード */
-const kw = document.getElementById('kw');
-kw.addEventListener('input', ()=>{
-  page = 1;
-  renderList(lastData);
-});
+document.getElementById('openLearnedTop').addEventListener('click', openLearned);
+document.getElementById('printBtn').addEventListener('click', openLearned);
 
-/* JSONパス作成 */
-function buildPath(){
-  const p = POS.find(p=>p.key===posKey);
-  return `/data/json/${level}/${p.file}`;
-}
+const kw=document.getElementById('kw');
+kw.addEventListener('input', ()=>{page=1;renderList(lastData);});
 
-/* --- データ読み込みと画面描画 --- */
+/* ========= データ読み込み & 表示 ========= */
+function buildPath(){return `/data/json/${level}/${POS.find(p=>p.k===posKey).file}`;}
+
 async function loadAndRender(showAd){
-  const meta=document.getElementById('meta');
-  meta.textContent=`Level: ${level} • Part: ${POS.find(p=>p.key===posKey).en}`;
+  document.getElementById('meta').textContent=`Level: ${level} • Part: ${POS.find(p=>p.k===posKey).en}`;
   try{
     const r=await fetch(buildPath(),{cache:'no-store'});
-    if(!r.ok) throw new Error(r.status);
-    lastData = await r.json();
-  }catch(e){
-    lastData = SAMPLE;
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    lastData=await r.json();
+  }catch(_){
+    lastData=SAMPLE; // 失敗時も必ず表示
   }
   renderList(lastData);
   if(showAd) requestAdRender();
+  // GA page_view
+  try{
+    gtag('event','page_view',{
+      page_title: `${level} / ${posKey}`,
+      page_location: location.href,
+      page_path: location.pathname + location.search
+    });
+  }catch(_){}
 }
 
-/* --- データフィルタリング・ページネーション --- */
+const list=document.getElementById('list');
+const pager=document.getElementById('pager');
+
 function filtered(data){
   const t=kw.value.trim().toLowerCase();
   if(!t) return data;
   return data.filter(x=>{
-    const hay=[x.ja,x.kana,x.ro,x.en].join(' ').toLowerCase();
+    const hay=[x.ja||'',x.kana||'',x.ro||'',x.en||'',...(x.examples||[]).flatMap(e=>[e.ja||'',e.kana||'',e.ro||'',e.en||''])].join(' ').toLowerCase();
     return hay.includes(t);
   });
 }
-
-/* ページ表示 */
 function paginate(data){
   const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
-  if(page>total) page=total;
+  if(page>total)page=total;
   const start=(page-1)*PAGE_SIZE;
   const rows=data.slice(start,start+PAGE_SIZE);
 
-  const pager=document.getElementById('pager');
-  pager.innerHTML = '';
+  pager.innerHTML='';
+  const prev=btn('Prev',()=>{page--;renderList(lastData,true);requestAdRender();});
+  prev.disabled=page<=1; pager.appendChild(prev);
 
-  // Prev
-  const prev=makePageBtn('Prev', ()=>{page--;renderList(lastData,true);});
-  prev.disabled = (page<=1);
-  pager.appendChild(prev);
-
-  // Number
   for(let i=1;i<=total;i++){
-    const b=makePageBtn(i, ()=>{page=i;renderList(lastData,true);});
+    const b=btn(String(i),()=>{page=i;renderList(lastData,true);requestAdRender();});
     if(i===page) b.classList.add('active');
     pager.appendChild(b);
   }
-
-  // Next
-  const next=makePageBtn('Next', ()=>{page++;renderList(lastData,true);});
-  next.disabled = (page>=total);
-  pager.appendChild(next);
-
+  const next=btn('Next',()=>{page++;renderList(lastData,true);requestAdRender();});
+  next.disabled=page>=total; pager.appendChild(next);
   return rows;
 }
-function makePageBtn(t,fn){
-  const b=document.createElement('button');
-  b.className='pagebtn';
-  b.textContent=t;
-  b.onclick=fn;
-  return b;
-}
+function btn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
 
-/* --- 語彙カード描画（✅データ表示部分） --- */
-function renderList(data,fromPager=false){
-  const list=document.getElementById('list');
+function renderList(data){
   list.innerHTML='';
   const rows=paginate(filtered(data));
   let idx=(page-1)*PAGE_SIZE;
   rows.forEach(item=>{
     idx++;
-    const card=document.createElement('article');
-    card.className='card';
+    const card=document.createElement('article'); card.className='card';
+    if(learnedSet().has(item.id)) card.classList.add('learned');
 
-    /* header */
-    const head=document.createElement('div');
-    head.className='head';
-    const num=document.createElement('div');
-    num.className='num'; num.textContent=idx+'.';
-
-    const tags=document.createElement('div');
-    tags.className='tags';
-    ['ja','kana','ro','en'].forEach(k=>{
-      const s=document.createElement('span');
-      s.className='tag'; s.textContent=item[k]||'';
-      tags.appendChild(s);
-    });
-
-    /* 学習済ボタン */
-    const act=document.createElement('button');
-    act.className='btn'; act.textContent='覚えた';
-    act.onclick=()=>toggleLearned(item);
-
+    const head=document.createElement('div'); head.className='head';
+    const num=div('num',idx+'.');
+    const tags=div('tags','');
+    ['ja','kana','ro','en'].forEach(k=>{const s=document.createElement('span');s.className='tag';s.textContent=item[k]||'';tags.appendChild(s);});
+    const act=document.createElement('button'); act.className='btn'; act.textContent= learnedSet().has(item.id) ? '覚えたを戻す' : '覚えた';
+    act.onclick=()=>toggleLearned(item,card,act);
     head.append(num,tags,act);
-    card.appendChild(head);
 
-    /* body */
-    const body=document.createElement('div');
-    body.className='content';
-    body.dataset.examples='1';
+    const body=div('content',''); body.dataset.examples='1';
     (item.examples||[]).forEach(ex=>{
-      const block=document.createElement('div');
-      block.className='line';
-      block.innerHTML=
-       `<div class="ja">${ex.ja}</div>
-        <div class="kana">${ex.kana}</div>
-        <div class="ro">${ex.ro}</div>
-        <div class="en">${ex.en}</div>`;
+      const block=div('line',''); 
+      block.innerHTML = `
+        <div class="ja">${ex.ja||''}</div>
+        <div class="kana">${ex.kana||''}</div>
+        <div class="ro">${ex.ro||''}</div>
+        <div class="en">${ex.en||''}</div>`;
       body.appendChild(block);
     });
-    card.appendChild(body);
-
-    list.appendChild(card);
+    card.append(head,body); list.appendChild(card);
+    if(learnedSet().has(item.id)) body.style.display='none';
   });
 }
 
-/* ✅ AdSense レスポンシブ広告の再描画 */
-function requestAdRender(){
-  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(e){}
-  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(e){}
+function div(cls,txt){const d=document.createElement('div');d.className=cls; if(txt!=null)d.textContent=txt; return d;}
+
+/* ========= 覚えた ========= */
+const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
+function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
+function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
+function toggleLearned(item,card,btnEl){
+  const s=learnedSet();
+  const body = card.querySelector('[data-examples]');
+  if(s.has(item.id)){ s.delete(item.id); card.classList.remove('learned'); body.style.display=''; if(btnEl) btnEl.textContent='覚えた'; }
+  else { s.add(item.id); card.classList.add('learned'); body.style.display='none'; if(btnEl) btnEl.textContent='覚えたを戻す'; }
+  setLearned(s);
 }
 
-/* ✅ 初期起動 */
-buildChips();
+/* ========= 覚えたモーダル ========= */
+const learnedModal=document.getElementById('learnedModal');
+function openLearned(){
+  const s=learnedSet(); const body=document.getElementById('learnedBody'); body.innerHTML='';
+  const rows=(lastData||[]).filter(x=>s.has(x.id));
+  if(rows.length===0){ body.innerHTML='<div class="row" style="color:var(--muted)">（まだありません）</div>'; }
+  else rows.forEach((x,i)=>{const r=document.createElement('div');r.className='row';r.textContent=`${i+1}. ${x.ja} / ${x.kana} / ${x.ro} — ${x.en}`;body.appendChild(r);});
+  learnedModal.style.display='flex';
+}
+document.getElementById('closeLearned').onclick=()=>learnedModal.style.display='none';
+document.getElementById('learnedModal').addEventListener('click',e=>{if(e.target===learnedModal) learnedModal.style.display='none';});
+document.getElementById('clearLearned').onclick=()=>{localStorage.setItem(LS_KEY(),'[]');openLearned();};
+document.getElementById('printLearned').onclick=()=>{
+  const s=learnedSet(); if(!s.size){alert('No learned items.');return;}
+  const w=open('','_blank'); const rows=(lastData||[]).filter(x=>s.has(x.id));
+  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
+  rows.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja}</strong> / ${x.kana} / ${x.ro} — ${x.en}</div>`));
+  w.document.close(); w.print();
+};
+
+/* ========= AdSense 描画 ========= */
+function requestAdRender(){
+  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
+  try{ (adsbygoogle = window.adsbygoogle || []).push({}); }catch(_){}
+}
+
+/* ========= 初期表示 ========= */
 loadAndRender(false);
 </script>
-
 </body>
 </html>
