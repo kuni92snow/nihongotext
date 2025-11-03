@@ -22,7 +22,7 @@
         <i class="fa-brands fa-reddit"></i>
       </a>
 
-      <!-- Medium（追加） -->
+      <!-- Medium -->
       <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener" title="Medium" aria-label="Medium" class="icon-btn">
         <i class="fa-brands fa-medium"></i>
       </a>
@@ -41,9 +41,17 @@
 </footer>
 
 <style>
-  .ntx-footer{ border-top:2px solid #e6462d; margin-top:24px; }
+  .ntx-footer{ position:relative; margin-top:24px; }
+  /* フルブリードの赤い線（端から端） */
+  .ntx-footer::before{
+    content:""; display:block; height:0;
+    border-top:2px solid #e6462d;
+    width:100vw; margin-left:calc(50% - 50vw);
+    margin-bottom:12px;
+  }
+
   .ntx-wrap{
-    max-width:1100px; margin:0 auto; padding:12px;
+    max-width:1100px; margin:0 auto; padding:0 12px 12px;
     display:flex; flex-direction:column; gap:10px; align-items:center;
   }
   .ntx-icons{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
