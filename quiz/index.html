@@ -7,7 +7,7 @@
 <link rel="icon" href="/favicon.ico" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<!-- GA4 (match existing: disable auto page_view) -->
+<!-- GA4 (disable auto page_view like main page) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -166,6 +166,7 @@ function coerceArray(json){
   if(json && typeof json==='object'){ const vals=Object.values(json); if(vals.length && vals.every(v=>typeof v==='object')) return vals; }
   return [];
 }
+function uuid(){ return (crypto && crypto.randomUUID) ? crypto.randomUUID() : Math.random().toString(16).slice(2) + Date.now().toString(16); }
 
 /* ===== State ===== */
 let bank=[], quiz=[], idx=0, score=0, level='N5', posKey='verbs';
@@ -174,7 +175,7 @@ let bank=[], quiz=[], idx=0, score=0, level='N5', posKey='verbs';
    - Randomly choose question type per item:
      A) JA → EN:  "What is the English meaning of '会う'?"
      B) EN → JA:  "What is the Japanese for 'meet'?"
-   - Choices shuffled each time.
+   - Choices are shuffled each time.
 */
 function generateQuizFromBank(items, count=10){
   const pool = items.filter(x=>x && (x.en||x.ja));
@@ -191,14 +192,12 @@ function generateQuizFromBank(items, count=10){
     const options = shuffle([correct, ...distract]);
 
     out.push({
-      id: item.id || crypto.randomUUID(),
+      id: item.id || uuid(),
       qtype: type,
       question: (type==='ja2en')
         ? `What is the English meaning of “${item.ja||''}”?`
         : `What is the Japanese for “${item.en||''}”?`,
-      subtext: (type==='ja2en')
-        ? (item.kana?`(${item.kana} / ${item.ro||''})` : (item.ro||''||''))
-        : (item.kana?`(${item.kana} / ${item.ro||''})` : ''),
+      subtext: (item.kana || item.ro) ? `(${[item.kana, item.ro].filter(Boolean).join(' / ')})` : '',
       options,
       answer: options.indexOf(correct),
       explanation: item.examples && item.examples[0]
@@ -259,8 +258,8 @@ function choose(i){
     if(j===q.answer) n.classList.add('correct');
     if(j===i && i!==q.answer) n.classList.add('wrong');
   });
-  if(i===q.answer){ score++; try{ gtag('event','quiz_correct',{level, pos:posKey, qid:q.id}); }catch(_{}) }
-  else{ try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_{}) }
+  if(i===q.answer){ score++; try{ gtag('event','quiz_correct',{level, pos:posKey, qid:q.id}); }catch(_){} }
+  else{ try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_){} }
   if(q.explanation){ const ex=document.getElementById('explain'); ex.style.display=''; }
   document.getElementById('nextBtn').disabled=false;
 }
@@ -275,7 +274,7 @@ function finish(){
   showResult();
   const t = `Level ${level} / ${posKey}: ${quiz.length} questions, ${score} correct`;
   document.getElementById('resultText').textContent = t;
-  try{ gtag('event','quiz_complete',{level, pos:posKey, total:quiz.length, score}); }catch(_){}
+  try{ gtag('event','quiz_complete',{level, pos:posKey, total:quiz.length, score}); }catch(_){} 
 }
 
 function retry(){ showIntro(); }
@@ -292,7 +291,10 @@ async function start(){
     const res = await fetch(path,{cache:'no-store'});
     const raw = await res.json();
     bank = coerceArray(raw);
-  }catch(_){ bank = []; }
+  }catch(e){
+    console.error('Failed to load JSON:', e);
+    bank = [];
+  }
 
   if(!bank.length){
     alert('No data found. Please check /data/json/ path and files.');
@@ -306,7 +308,7 @@ async function start(){
   quiz = generateQuizFromBank(bank, qCount);
   idx=0; score=0;
   showQuiz(); renderQ();
-  try{ gtag('event','quiz_start',{level, pos:posKey, count:qCount}); }catch(_){}
+  try{ gtag('event','quiz_start',{level, pos:posKey, count:qCount}); }catch(_){} 
 }
 
 /* ===== Init ===== */
