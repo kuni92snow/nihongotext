@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quiz | nihongotext.com</title>
+<link rel="icon" href="/favicon.ico" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- GA4 (match existing: disable auto page_view) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
+
+<style>
+:root{
+  --shu:#e6462d; --shu-tint:#fff2ef;
+  --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif}
+a{color:inherit;text-decoration:none} button{cursor:pointer}
+
+.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
+
+.btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
+select,input[type="number"]{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 12px;background:#fff}
+
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}
+.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:14px}
+.choice{display:block;border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0;background:#fff;width:100%;text-align:left}
+.choice.correct{border-color:#16a34a}
+.choice.wrong{border-color:#dc2626}
+
+.footer{border-top:1px solid var(--shu-tint);background:#fff}
+.footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 8px;background:#fff;font-weight:700}
+.meta{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+<!-- Shared header via partials (fallback if missing) -->
+<div class="topbar"><div id="site-header" class="wrap brandbar"></div></div>
+
+<main class="wrap">
+  <div class="controls">
+    <label>Level
+      <select id="levelSel">
+        <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
+      </select>
+    </label>
+
+    <label>Part
+      <select id="posSel">
+        <option value="verbs">Verbs</option>
+        <option value="nouns">Nouns</option>
+        <option value="iadj">i-Adjectives</option>
+        <option value="naadj">na-Adjectives</option>
+        <option value="advs">Adverbs</option>
+        <option value="prt">Particles</option>
+        <option value="conj">Conjunctions</option>
+        <option value="interj">Interjections</option>
+        <option value="nums">Numerals</option>
+        <option value="pat">Patterns</option>
+      </select>
+    </label>
+
+    <label>Questions
+      <input id="qCount" type="number" min="5" max="30" step="1" value="10" style="width:90px">
+    </label>
+
+    <button id="startBtn" class="btn" type="button">Start</button>
+    <span id="about" class="meta" style="margin-left:auto"></span>
+  </div>
+
+  <section id="stage" class="card" aria-live="polite">
+    <div id="intro">
+      <h2 style="margin:0 0 8px">Multiple-choice Quiz</h2>
+      <p class="meta" style="margin:0 0 8px">
+        Questions are generated on the fly from your vocabulary JSON (Kanji / Kana / Romaji / English).
+      </p>
+      <p class="meta" style="margin:0">
+        Each question randomly asks <strong>Japanese → English</strong> or <strong>English → Japanese</strong>. Choices are shuffled every time.
+      </p>
+    </div>
+
+    <div id="quiz" style="display:none">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+        <div id="crumbs" class="badge">—</div>
+        <div id="score" class="badge">Score: 0</div>
+      </div>
+      <h3 id="qtext" style="margin:12px 0 8px">—</h3>
+      <div id="subtext" class="meta" style="margin:0 0 8px"></div>
+      <div id="choices"></div>
+      <div id="explain" class="meta" style="display:none;margin-top:8px"></div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+        <button id="nextBtn" class="btn" type="button" disabled>Next</button>
+        <button id="finishBtn" class="btn" type="button" style="display:none">Finish</button>
+      </div>
+    </div>
+
+    <div id="result" style="display:none">
+      <h3 style="margin:0 0 8px">Result</h3>
+      <p id="resultText" style="margin:0 0 8px"></p>
+      <button id="retryBtn" class="btn" type="button">Retry</button>
+    </div>
+  </section>
+</main>
+
+<!-- Shared footer -->
+<div class="footer"><div id="site-footer" class="wrap footer-inner"></div></div>
+
+<script>
+/* ===== Inject shared header/footer (same approach as main page) ===== */
+async function injectPartials(){
+  const hdr=document.getElementById('site-header');
+  const ftr=document.getElementById('site-footer');
+  try{
+    const h=await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    hdr.innerHTML=h;
+  }catch(_){
+    hdr.innerHTML = '<a href="/" style="font-weight:800;font-size:28px;color:#e6462d">nihongotext<span style="color:#333">.com</span></a>'
+                  + '<span style="color:#98a1a8;font-size:12px;margin-left:8px">== beta version ==</span>';
+  }
+  try{
+    const f=await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    ftr.innerHTML=f;
+  }catch(_){
+    ftr.innerHTML = '© 2025 nihongotext.com';
+  }
+}
+
+/* ===== POS mapping (aligned with your main index) ===== */
+const POS = [
+  {k:'nouns', file:'nouns.json',        en:'Nouns'},
+  {k:'verbs', file:'verbs.json',        en:'Verbs'},
+  {k:'iadj',  file:'adjectives-i.json', en:'i-Adjectives'},
+  {k:'naadj', file:'adjectives-na.json',en:'na-Adjectives'},
+  {k:'advs',  file:'adverbs.json',      en:'Adverbs'},
+  {k:'prt',   file:'particles.json',    en:'Particles'},
+  {k:'conj',  file:'conjunctions.json', en:'Conjunctions'},
+  {k:'interj',file:'interjections.json',en:'Interjections'},
+  {k:'nums',  file:'numerals.json',     en:'Numerals'},
+  {k:'pat',   file:'patterns.json',     en:'Patterns'},
+];
+
+function buildPath(level, posKey){
+  const p = POS.find(x=>x.k===posKey);
+  return `/data/json/${level}/${p.file}`;
+}
+
+/* ===== Utils ===== */
+function shuffle(arr){ return arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]); }
+function coerceArray(json){
+  if(Array.isArray(json)) return json;
+  const keys=['items','data','entries','list','rows','result','results'];
+  for(const k of keys){ if(json && Array.isArray(json[k])) return json[k]; }
+  if(json && typeof json==='object'){ const vals=Object.values(json); if(vals.length && vals.every(v=>typeof v==='object')) return vals; }
+  return [];
+}
+
+/* ===== State ===== */
+let bank=[], quiz=[], idx=0, score=0, level='N5', posKey='verbs';
+
+/* ===== Build quiz from vocab JSON (random 4-choice) =====
+   - Randomly choose question type per item:
+     A) JA → EN:  "What is the English meaning of '会う'?"
+     B) EN → JA:  "What is the Japanese for 'meet'?"
+   - Choices shuffled each time.
+*/
+function generateQuizFromBank(items, count=10){
+  const pool = items.filter(x=>x && (x.en||x.ja));
+  const base = shuffle(pool).slice(0, Math.min(count, pool.length));
+  const out = [];
+  base.forEach(item=>{
+    const type = Math.random()<0.5 ? 'ja2en' : 'en2ja';
+    const correct = (type==='ja2en') ? (item.en||'') : (item.ja||'');
+    const distractFrom = pool.filter(x=>{
+      const v = (type==='ja2en') ? x.en : x.ja;
+      return v && v!==correct;
+    });
+    const distract = shuffle(distractFrom).slice(0,3).map(x=> type==='ja2en' ? x.en : x.ja);
+    const options = shuffle([correct, ...distract]);
+
+    out.push({
+      id: item.id || crypto.randomUUID(),
+      qtype: type,
+      question: (type==='ja2en')
+        ? `What is the English meaning of “${item.ja||''}”?`
+        : `What is the Japanese for “${item.en||''}”?`,
+      subtext: (type==='ja2en')
+        ? (item.kana?`(${item.kana} / ${item.ro||''})` : (item.ro||''||''))
+        : (item.kana?`(${item.kana} / ${item.ro||''})` : ''),
+      options,
+      answer: options.indexOf(correct),
+      explanation: item.examples && item.examples[0]
+        ? ((type==='ja2en') ? (item.examples[0].en||'') : (item.examples[0].ja||'')) : ''
+    });
+  });
+  return out;
+}
+
+/* ===== Views ===== */
+function showIntro(){
+  document.getElementById('intro').style.display='';
+  document.getElementById('quiz').style.display='none';
+  document.getElementById('result').style.display='none';
+  document.getElementById('about').textContent='';
+}
+function showQuiz(){
+  document.getElementById('intro').style.display='none';
+  document.getElementById('quiz').style.display='';
+  document.getElementById('result').style.display='none';
+}
+function showResult(){
+  document.getElementById('intro').style.display='none';
+  document.getElementById('quiz').style.display='none';
+  document.getElementById('result').style.display='';
+}
+
+/* ===== Rendering ===== */
+function renderQ(){
+  const total = quiz.length;
+  const q = quiz[idx];
+  document.getElementById('crumbs').textContent = `${idx+1} / ${total}`;
+  document.getElementById('score').textContent  = `Score: ${score}`;
+  document.getElementById('qtext').textContent  = q.question;
+  document.getElementById('subtext').textContent= q.subtext || '';
+  const box = document.getElementById('choices');
+  box.innerHTML='';
+  q.options.forEach((opt,i)=>{
+    const b=document.createElement('button');
+    b.className='choice';
+    b.type='button';
+    b.textContent = `${i+1}. ${opt}`;
+    b.onclick = ()=> choose(i);
+    box.appendChild(b);
+  });
+  const ex = document.getElementById('explain');
+  ex.style.display='none';
+  ex.textContent = q.explanation || '';
+  document.getElementById('nextBtn').disabled = true;
+  document.getElementById('finishBtn').style.display = (idx===total-1)?'':'none';
+}
+
+function choose(i){
+  const q = quiz[idx];
+  const nodes=[...document.querySelectorAll('.choice')];
+  nodes.forEach((n,j)=>{
+    n.disabled=true;
+    if(j===q.answer) n.classList.add('correct');
+    if(j===i && i!==q.answer) n.classList.add('wrong');
+  });
+  if(i===q.answer){ score++; try{ gtag('event','quiz_correct',{level, pos:posKey, qid:q.id}); }catch(_{}) }
+  else{ try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_{}) }
+  if(q.explanation){ const ex=document.getElementById('explain'); ex.style.display=''; }
+  document.getElementById('nextBtn').disabled=false;
+}
+
+function nextQ(){
+  idx++;
+  if(idx>=quiz.length){ finish(); return; }
+  renderQ();
+}
+
+function finish(){
+  showResult();
+  const t = `Level ${level} / ${posKey}: ${quiz.length} questions, ${score} correct`;
+  document.getElementById('resultText').textContent = t;
+  try{ gtag('event','quiz_complete',{level, pos:posKey, total:quiz.length, score}); }catch(_){}
+}
+
+function retry(){ showIntro(); }
+
+/* ===== Start flow ===== */
+async function start(){
+  level = document.getElementById('levelSel').value;
+  posKey = document.getElementById('posSel').value;
+  const qCount = Math.max(5, Math.min(30, parseInt(document.getElementById('qCount').value||'10',10)));
+  const path = buildPath(level, posKey);
+
+  document.getElementById('about').textContent = `Loading: ${level} • ${posKey}`;
+  try{
+    const res = await fetch(path,{cache:'no-store'});
+    const raw = await res.json();
+    bank = coerceArray(raw);
+  }catch(_){ bank = []; }
+
+  if(!bank.length){
+    alert('No data found. Please check /data/json/ path and files.');
+    return;
+  }
+  if(bank.length < 4){
+    alert('Not enough items (need at least 4) to build multiple-choice options.');
+    return;
+  }
+
+  quiz = generateQuizFromBank(bank, qCount);
+  idx=0; score=0;
+  showQuiz(); renderQ();
+  try{ gtag('event','quiz_start',{level, pos:posKey, count:qCount}); }catch(_){}
+}
+
+/* ===== Init ===== */
+document.addEventListener('DOMContentLoaded', ()=>{
+  injectPartials();
+  document.getElementById('startBtn').onclick = start;
+  document.getElementById('nextBtn').onclick  = nextQ;
+  document.getElementById('finishBtn').onclick= finish;
+  document.getElementById('retryBtn').onclick = retry;
+  showIntro();
+});
+</script>
+</body>
+</html>
