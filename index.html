@@ -68,6 +68,14 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .kana,.ro,.en{opacity:.95}
 .en{font-weight:700}
 
+/* ▼/▲ トグルボタン */
+.toggle-btn{
+  border:none;background:none;color:var(--shu);cursor:pointer;
+  width:22px;height:22px;font-size:16px;line-height:1;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.toggle-btn:hover{opacity:.8}
+
 /* Pager */
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
 .pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
@@ -262,8 +270,6 @@ async function injectPartials(){
        </div>`;
   }
 
-  /* ★ Learned のフォールバック自動生成は削除済み（何もしない） */
-
   attachLangToggle();
   applyLangToUI();
 }
@@ -382,9 +388,16 @@ function renderList(data){
   rows.forEach(item=>{
     idx++;
     const card=document.createElement('article'); card.className='card';
-    if(learnedSet().has(item.id)) card.classList.add('learned');
 
+    // ==== ヘッダー（番号の左にトグル） ====
     const head=document.createElement('div'); head.className='head';
+
+    // ▼/▲ トグル（初期は開いた状態＝▲）
+    const tog=document.createElement('button');
+    tog.className='toggle-btn';
+    tog.setAttribute('aria-expanded','true');
+    tog.textContent='▲';
+
     const num=div('num',idx+'.');
     const tags=div('tags','');
 
@@ -397,11 +410,10 @@ function renderList(data){
 
     const act=document.createElement('button');
     act.className='btn';
-    act.textContent = learnedSet().has(item.id) ? (uiLang==='en'?'Unlearn':'覚えたを戻す') : (uiLang==='en'?'Learned':'覚えた');
-    act.onclick=()=>toggleLearned(item,card,act);
 
-    head.append(num,tags,act);
+    head.append(tog,num,tags,act); // ← トグルを先頭に
 
+    // ==== 本文（例文） ====
     const body=div('content',''); body.dataset.examples='1';
     (item.examples||[]).forEach(ex=>{
       const parts=[];
@@ -412,8 +424,35 @@ function renderList(data){
       if(parts.length){ const block=div('line',''); block.innerHTML=parts.join(''); body.appendChild(block); }
     });
 
+    // ==== Learned 状態反映（初期は開く／Learned のときは閉じる） ====
+    const isLearned = learnedSet().has(item.id);
+    if(isLearned){
+      card.classList.add('learned');
+      body.style.display='none';
+      tog.textContent='▼';
+      tog.setAttribute('aria-expanded','false');
+    }else{
+      body.style.display='';
+      tog.textContent='▲';
+      tog.setAttribute('aria-expanded','true');
+    }
+
+    // ==== Learned/Unlearn ボタンの表示テキスト ====
+    act.textContent = isLearned ? (uiLang==='en'?'Unlearn':'覚えたを戻す') : (uiLang==='en'?'Learned':'覚えた');
+    act.onclick=()=>toggleLearned(item,card,act,tog,body);
+
+    // ==== トグルのクリック処理 ====
+    tog.addEventListener('click',()=>{
+      const open = body.style.display!=='none';
+      if(open){
+        body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false');
+      }else{
+        body.style.display='';    tog.textContent='▲'; tog.setAttribute('aria-expanded','true');
+      }
+    });
+
+    // ==== DOM へ追加 ====
     card.append(head,body); list.appendChild(card);
-    if(learnedSet().has(item.id)) body.style.display='none';
   });
 
   const posLabel=POS.find(p=>p.k===posKey);
@@ -421,13 +460,25 @@ function renderList(data){
     ? `Level: ${level} • Part: ${posLabel.enLabel}`
     : `レベル: ${level} • 品詞: ${posLabel.ja}`;
 }
-function toggleLearned(item,card,btnEl){
+
+/* Learned トグル：ボタンと例文表示も同期して更新 */
+function toggleLearned(item,card,btnEl,togBtn,bodyEl){
   const s=learnedSet();
-  const body=card.querySelector('[data-examples]');
-  if(s.has(item.id)){
-    s.delete(item.id); card.classList.remove('learned'); body.style.display=''; if(btnEl) btnEl.textContent=(uiLang==='en'?'Learned':'覚えた');
+  const has=s.has(item.id);
+  if(has){
+    s.delete(item.id);
+    card.classList.remove('learned');
+    if(btnEl) btnEl.textContent=(uiLang==='en'?'Learned':'覚えた');
+    // Learned解除 → 例文は開く
+    if(bodyEl){ bodyEl.style.display=''; }
+    if(togBtn){ togBtn.textContent='▲'; togBtn.setAttribute('aria-expanded','true'); }
   }else{
-    s.add(item.id); card.classList.add('learned'); body.style.display='none'; if(btnEl) btnEl.textContent=(uiLang==='en'?'Unlearn':'覚えたを戻す');
+    s.add(item.id);
+    card.classList.add('learned');
+    if(btnEl) btnEl.textContent=(uiLang==='en'?'Unlearn':'覚えたを戻す');
+    // Learned → 例文は閉じる
+    if(bodyEl){ bodyEl.style.display='none'; }
+    if(togBtn){ togBtn.textContent='▼'; togBtn.setAttribute('aria-expanded','false'); }
   }
   setLearned(s);
 }
