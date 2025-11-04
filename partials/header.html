@@ -56,11 +56,10 @@
       </a>
     </nav>
 
-    <!-- 右：Learned アイコン + 言語切替 -->
+    <!-- 右：Learned ボタン + 言語切替 -->
     <div class="ntx-right">
-      <a href="/learned/index.html" class="icon-btn" title="Learned" aria-label="Learned">
-        <i class="fa-solid fa-book-open-reader"></i>
-      </a>
+      <!-- ★ ここをアイコンからボタン化（言語連動：Learned / 覚えた一覧） -->
+      <button id="learnedBtn" class="ntx-langbtn" type="button" aria-label="Learned">Learned</button>
       <button id="langBtn" class="ntx-langbtn" type="button">日本語</button>
     </div>
   </div>
@@ -109,3 +108,34 @@
     .ntx-logo-dot{ font-size:1.3rem; }
   }
 </style>
+
+<!-- ラベル同期 & クリック動作（グローバルJSが無いページでも安全に） -->
+<script>
+(function(){
+  function getLang(){ return localStorage.getItem('lang') || 'en'; }
+  function syncHeaderLabels(){
+    const ui = getLang();
+    const lb = document.getElementById('learnedBtn');
+    const langBtn = document.getElementById('langBtn');
+    if(lb)     lb.textContent   = (ui === 'ja') ? '覚えた一覧' : 'Learned';
+    // langBtnの表記は各ページ側のJSで切替える想定だが、無いページのために簡易同期
+    if(langBtn) langBtn.textContent = (ui === 'ja') ? 'English' : '日本語';
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    syncHeaderLabels();
+
+    // Learned ボタン：index.html ではモーダルを開く。その他ページは /learned/ に遷移。
+    const lb = document.getElementById('learnedBtn');
+    if(lb){
+      lb.addEventListener('click', function(){
+        if (typeof window.openLearned === 'function') { window.openLearned(); }
+        else { window.location.href = '/learned/'; }
+      });
+    }
+  });
+
+  // 他ページ側でUI言語が動的に変わったとき用に、外部から再同期できるフックを用意
+  window.__ntxSyncHeaderLabels = syncHeaderLabels;
+})();
+</script>
