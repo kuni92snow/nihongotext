@@ -8,5 +8,15 @@
     "summary_ja": "nihongotext.com のベータ版を公開しました。いろいろと追加予定です。",
     "summary_en": "We launched the beta of nihongotext.com. We plan to add various things.",
     "tags": ["info", "release"]
+  },
+  {
+    "slug": "search-highlight-update",
+    "date": "2025-11-04",
+    "title": "Search Highlight Feature Improved",
+    "title_ja": "検索ハイライト機能を改善しました",
+    "title_en": "Search Highlight Feature Improved",
+    "summary_ja": "検索キーワードが単語だけでなく、例文内でも自動的にハイライトされるようになりました。また、検索欄が空になるとハイライトが自動解除されるように調整済みです。",
+    "summary_en": "The search highlight feature has been improved. The typed keyword is now highlighted not only in word entries but also inside example sentences. Highlights are automatically removed when the search box is cleared.",
+    "tags": ["update", "feature", "search"]
   }
 ]
