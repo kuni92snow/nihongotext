@@ -1,7 +1,7 @@
 <!-- /partials/header.html -->
 <header class="ntx-header">
   <div class="ntx-wrap">
-    <!-- 左：ロゴ（nihongotext.com を1行、その幅で beta を中央揃え） -->
+    <!-- 左：ロゴ -->
     <a class="ntx-logo" href="/" title="Go to top" aria-label="Go to top">
       <div class="ntx-logo-block">
         <div class="ntx-brand-row" aria-label="Site brand">
@@ -19,33 +19,11 @@
       <a href="/blog/" title="Blog" class="icon-btn" aria-label="Blog"><i class="fa-solid fa-pen-to-square"></i></a>
       <a href="/sitemap.html" title="Sitemap" class="icon-btn" aria-label="Sitemap"><i class="fa-solid fa-sitemap"></i></a>
       <a href="/inquiry/" title="Contact" class="icon-btn" aria-label="Contact"><i class="fa-solid fa-envelope"></i></a>
-
-      <!-- X -->
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" aria-label="X" class="icon-btn">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-
-      <!-- Reddit -->
-      <a href="https://www.reddit.com/r/nihongotext/" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" class="icon-btn">
-        <i class="fa-brands fa-reddit"></i>
-      </a>
-
-      <!-- Medium -->
-      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener" title="Medium" aria-label="Medium" class="icon-btn">
-        <i class="fa-brands fa-medium"></i>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://instagram.com/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram" class="icon-btn">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <!-- Substack -->
-      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener" title="Substack" aria-label="Substack" class="icon-btn">
-        <i class="fa-solid fa-square-rss"></i>
-      </a>
-
-      <!-- Ko-fi（インラインSVGで確実表示） -->
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" aria-label="X" class="icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/r/nihongotext/" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" class="icon-btn"><i class="fa-brands fa-reddit"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener" title="Medium" aria-label="Medium" class="icon-btn"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram" class="icon-btn"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener" title="Substack" aria-label="Substack" class="icon-btn"><i class="fa-solid fa-square-rss"></i></a>
       <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener nofollow" title="Ko-fi" aria-label="Ko-fi" class="icon-btn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="18" height="18" aria-hidden="true">
           <rect x="6" y="16" width="40" height="28" rx="6" ry="6" fill="#29abe0"></rect>
@@ -56,9 +34,9 @@
       </a>
     </nav>
 
-    <!-- 右：Learned ボタン + 言語切替 -->
+    <!-- 右：learning ボタン + 言語切替 -->
     <div class="ntx-right">
-      <button id="learnedBtn" class="ntx-langbtn" type="button" aria-label="Learned">Learned</button>
+      <button id="learnedBtn" class="ntx-langbtn" type="button" aria-label="learning">learning</button>
       <button id="langBtn" class="ntx-langbtn" type="button">日本語</button>
     </div>
   </div>
@@ -69,54 +47,42 @@
   /* 端から端までの赤線（途切れない版） */
   .ntx-header::after{
     content:"";
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-1px;
-    width:100vw;
-    height:0;
-    border-bottom:2px solid #e6462d;
-    pointer-events:none;
+    position:absolute; left:50%; transform:translateX(-50%); bottom:-1px;
+    width:100vw; height:0; border-bottom:2px solid #e6462d; pointer-events:none;
   }
   .ntx-wrap{
     max-width:1100px; margin:0 auto; padding:10px 12px;
     display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center;
   }
-
-  /* ロゴ */
   .ntx-logo{ text-decoration:none; color:inherit; }
   .ntx-logo-block{ display:flex; flex-direction:column; align-items:center; gap:3px; }
   .ntx-brand-row{ display:flex; gap:6px; align-items:baseline; justify-content:center; line-height:1; }
   .ntx-logo-main{ font-size:2.4rem; font-weight:900; color:#e6462d; }
   .ntx-logo-dot{ font-size:1.6rem; font-weight:900; color:#132c3a; }
   .ntx-beta{ font-size:0.8rem; color:#6b7280; text-align:center; width:100%; }
-
   .ntx-icons{ display:flex; gap:10px; align-items:center; justify-content:center; }
-  .icon-btn{
-    display:inline-flex; align-items:center; justify-content:center;
-    width:28px; height:28px; border:2px solid #e6462d; border-radius:999px;
-    color:#e6462d; text-decoration:none;
-  }
+  .icon-btn{ display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border:2px solid #e6462d; border-radius:999px; color:#e6462d; text-decoration:none; }
   .icon-btn i{ font-size:14px; line-height:1; }
   .icon-btn svg, .icon-btn img{ display:block; width:18px; height:18px; }
   .icon-btn:hover{ background:#fff1ee; }
-
   .ntx-right{ display:flex; gap:10px; align-items:center; }
-  .ntx-langbtn{
-    border:1px solid #e5e7eb; border-radius:999px; padding:4px 10px;
-    background:#fff; cursor:pointer;
-  }
-
+  .ntx-langbtn{ border:1px solid #e5e7eb; border-radius:999px; padding:4px 10px; background:#fff; cursor:pointer; }
   @media (max-width: 520px){
     .ntx-logo-main{ font-size:2rem; }
     .ntx-logo-dot{ font-size:1.3rem; }
+  }
+  /* learnedModal 内へ差し込む “Go to learning” ボタン用 */
+  .go-learning-btn{
+    display:inline-flex; align-items:center; gap:.4rem;
+    border:2px solid #e6462d; color:#e6462d; background:#fff2ef;
+    padding:.35rem .7rem; border-radius:8px; text-decoration:none; font-weight:700;
   }
 </style>
 
 <script>
 /* ===== Robust header wiring (dynamic partial-safe) ===== */
 (function(){
-  // --- lang helpers: support both keys (uiLang / lang) and <html lang> fallback
+  // --- lang helpers: support both keys (uiLang / lang) and <html lang>
   function getLang(){
     try{
       return (localStorage.getItem('uiLang')
@@ -126,75 +92,88 @@
     }catch(_){ return (document.documentElement.getAttribute('lang')||'en').toLowerCase(); }
   }
   function setLang(v){
-    try{
-      localStorage.setItem('uiLang', v);
-      localStorage.setItem('lang', v);
-    }catch(_){}
+    try{ localStorage.setItem('uiLang', v); localStorage.setItem('lang', v); }catch(_){}
     try{ document.documentElement.setAttribute('lang', v); }catch(_){}
   }
 
-  // --- label sync
+  // --- label sync（learning は常に固定）
   function syncHeaderLabels(){
-    const ui = getLang()==='ja' ? 'ja' : 'en';
-    const lb = document.getElementById('learnedBtn');
     const langBtn = document.getElementById('langBtn');
-    if (lb)      lb.textContent      = (ui === 'ja') ? '覚えた一覧' : 'Learned';
+    const ui = getLang()==='ja' ? 'ja' : 'en';
     if (langBtn) langBtn.textContent = (ui === 'ja') ? 'English' : '日本語';
+    const lb = document.getElementById('learnedBtn');
+    if (lb) lb.textContent = 'learning';
   }
 
-  // --- learned open bridge: openLearned() | openLearnedList() | #learnedModal | /learned/
-  function openLearnedBridge(){
-    if (typeof window.openLearned === 'function')      { window.openLearned(); return; }
-    if (typeof window.openLearnedList === 'function')  { window.openLearnedList(); return; }
-    const modal = document.getElementById('learnedModal');
-    if (modal && modal.classList) { modal.classList.add('show'); return; }
-    window.location.href = '/learned/';
+  // --- open learning: 関数 → モーダル → /learning/ → /learned/ の順
+  function openLearningBridge(){
+    if (typeof window.openLearning === 'function')     { window.openLearning(); return; }
+    if (typeof window.openLearningList === 'function') { window.openLearningList(); return; }
+    const lm = document.getElementById('learningModal');
+    if (lm && lm.classList) { lm.classList.add('show'); return; }
+    // ページが無い場合も考慮し、最低限どこかへ遷移
+    window.location.href = '/learning/';
+  }
+
+  // --- learned（覚えた一覧）側に “Go to learning” ボタンを自動で差し込む
+  function injectGoLearningButton(){
+    const learnedModal = document.getElementById('learnedModal');
+    if (!learnedModal) return;
+    if (learnedModal.querySelector('#goLearningBtn')) return;
+
+    // 挿入先：ヘッダ相当があればそこ、なければ先頭に
+    const host = learnedModal.querySelector('.modal-header, header, .head, .title') || learnedModal;
+    const a = document.createElement('a');
+    a.id = 'goLearningBtn';
+    a.href = '/learning/';
+    a.className = 'go-learning-btn';
+    a.innerHTML = 'learning へ移動';
+    host.insertBefore(a, host.firstChild);
   }
 
   // --- wire events once
   function wireOnce(){
     const lb = document.getElementById('learnedBtn');
     if (lb && !lb.dataset.wired){
-      lb.addEventListener('click', openLearnedBridge);
+      lb.addEventListener('click', openLearningBridge);
       lb.dataset.wired = '1';
     }
     const langBtn = document.getElementById('langBtn');
     if (langBtn && !langBtn.dataset.wired){
       langBtn.addEventListener('click', function(){
         const before = getLang();
-        // 既存のトグルがあれば優先
         if (typeof window.toggleLang === 'function') { window.toggleLang(); }
         else { setLang(before==='ja' ? 'en' : 'ja'); }
-        // 即時同期
         setTimeout(function(){
           syncHeaderLabels();
           const after = getLang();
-          // 連動通知
           try{ document.dispatchEvent(new CustomEvent('ntx:lang-changed', { detail:{ lang: after }})); }catch(_){}
           if (typeof window.applyLangToUI === 'function') window.applyLangToUI();
         }, 0);
       });
       langBtn.dataset.wired = '1';
     }
+
+    // learned モーダルが既にある／後から出る両方に対応
+    injectGoLearningButton();
   }
 
-  // 初期同期＆配線
+  // 初期
   syncHeaderLabels();
   wireOnce();
 
-  // partial が後から差し込まれても配線
+  // 後挿入にも追随
   if (typeof MutationObserver !== 'undefined'){
     const mo = new MutationObserver(()=>{ wireOnce(); syncHeaderLabels(); });
     mo.observe(document.documentElement, {subtree:true, childList:true});
   }
 
-  // 外部の storage 変更でもラベル更新
+  // storage 変化でも更新
   window.addEventListener('storage', function(e){
-    if (!e) return;
-    if (e.key === 'uiLang' || e.key === 'lang') syncHeaderLabels();
+    if (e && (e.key === 'uiLang' || e.key === 'lang')) syncHeaderLabels();
   });
 
-  // 手動再同期用フック
+  // 外部から再同期
   window.__ntxHeaderSync = syncHeaderLabels;
 })();
 </script>
