@@ -19,11 +19,14 @@
       <a href="/blog/" title="Blog" class="icon-btn" aria-label="Blog"><i class="fa-solid fa-pen-to-square"></i></a>
       <a href="/sitemap.html" title="Sitemap" class="icon-btn" aria-label="Sitemap"><i class="fa-solid fa-sitemap"></i></a>
       <a href="/inquiry/" title="Contact" class="icon-btn" aria-label="Contact"><i class="fa-solid fa-envelope"></i></a>
+
       <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" aria-label="X" class="icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.reddit.com/r/nihongotext/" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" class="icon-btn"><i class="fa-brands fa-reddit"></i></a>
       <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener" title="Medium" aria-label="Medium" class="icon-btn"><i class="fa-brands fa-medium"></i></a>
       <a href="https://instagram.com/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram" class="icon-btn"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener" title="Substack" aria-label="Substack" class="icon-btn"><i class="fa-solid fa-square-rss"></i></a>
+
+      <!-- Ko-fi（SVG） -->
       <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener nofollow" title="Ko-fi" aria-label="Ko-fi" class="icon-btn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="18" height="18" aria-hidden="true">
           <rect x="6" y="16" width="40" height="28" rx="6" ry="6" fill="#29abe0"></rect>
@@ -34,9 +37,9 @@
       </a>
     </nav>
 
-    <!-- 右：learning ボタン + 言語切替 -->
+    <!-- 右：learn（学習中モーダル起動） + 言語切替 -->
     <div class="ntx-right">
-      <button id="learnedBtn" class="ntx-langbtn" type="button" aria-label="learning">learning</button>
+      <button id="learnBtn" class="ntx-langbtn" type="button" aria-label="learn">learn</button>
       <button id="langBtn" class="ntx-langbtn" type="button">日本語</button>
     </div>
   </div>
@@ -44,11 +47,10 @@
 
 <style>
   .ntx-header{ position:relative; z-index:10; }
-  /* 端から端までの赤線（途切れない版） */
+  /* 端から端までの赤線（切れ防止） */
   .ntx-header::after{
-    content:"";
-    position:absolute; left:50%; transform:translateX(-50%); bottom:-1px;
-    width:100vw; height:0; border-bottom:2px solid #e6462d; pointer-events:none;
+    content:""; position:absolute; left:50%; transform:translateX(-50%);
+    bottom:-1px; width:100vw; height:0; border-bottom:2px solid #e6462d; pointer-events:none;
   }
   .ntx-wrap{
     max-width:1100px; margin:0 auto; padding:10px 12px;
@@ -60,120 +62,61 @@
   .ntx-logo-main{ font-size:2.4rem; font-weight:900; color:#e6462d; }
   .ntx-logo-dot{ font-size:1.6rem; font-weight:900; color:#132c3a; }
   .ntx-beta{ font-size:0.8rem; color:#6b7280; text-align:center; width:100%; }
+
   .ntx-icons{ display:flex; gap:10px; align-items:center; justify-content:center; }
-  .icon-btn{ display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border:2px solid #e6462d; border-radius:999px; color:#e6462d; text-decoration:none; }
+  .icon-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:28px; height:28px; border:2px solid #e6462d; border-radius:999px;
+    color:#e6462d; text-decoration:none;
+  }
   .icon-btn i{ font-size:14px; line-height:1; }
-  .icon-btn svg, .icon-btn img{ display:block; width:18px; height:18px; }
+  .icon-btn svg{ display:block; width:18px; height:18px; }
   .icon-btn:hover{ background:#fff1ee; }
+
   .ntx-right{ display:flex; gap:10px; align-items:center; }
-  .ntx-langbtn{ border:1px solid #e5e7eb; border-radius:999px; padding:4px 10px; background:#fff; cursor:pointer; }
+  .ntx-langbtn{
+    border:1px solid #e5e7eb; border-radius:999px; padding:4px 10px;
+    background:#fff; cursor:pointer;
+  }
+
   @media (max-width: 520px){
     .ntx-logo-main{ font-size:2rem; }
     .ntx-logo-dot{ font-size:1.3rem; }
   }
-  /* learnedModal 内へ差し込む “Go to learning” ボタン用 */
-  .go-learning-btn{
-    display:inline-flex; align-items:center; gap:.4rem;
-    border:2px solid #e6462d; color:#e6462d; background:#fff2ef;
-    padding:.35rem .7rem; border-radius:8px; text-decoration:none; font-weight:700;
-  }
 </style>
 
 <script>
-/* ===== Robust header wiring (dynamic partial-safe) ===== */
 (function(){
-  // --- lang helpers: support both keys (uiLang / lang) and <html lang>
-  function getLang(){
-    try{
-      return (localStorage.getItem('uiLang')
-           || localStorage.getItem('lang')
-           || (document.documentElement.getAttribute('lang')||'')
-      ).toLowerCase() || 'en';
-    }catch(_){ return (document.documentElement.getAttribute('lang')||'en').toLowerCase(); }
+  function getLang(){ try{ return localStorage.getItem('lang') || 'en'; }catch(_){ return 'en'; } }
+  function setLang(v){ try{ localStorage.setItem('lang', v); }catch(_){} }
+  function i18n(k){
+    const ja={learn:'覚える', jpBtn:'English'};
+    const en={learn:'learn',  jpBtn:'日本語'};
+    const t = (getLang()==='ja') ? ja : en;
+    return t[k] || k;
   }
-  function setLang(v){
-    try{ localStorage.setItem('uiLang', v); localStorage.setItem('lang', v); }catch(_){}
-    try{ document.documentElement.setAttribute('lang', v); }catch(_){}
-  }
-
-  // --- label sync（learning は常に固定）
   function syncHeaderLabels(){
-    const langBtn = document.getElementById('langBtn');
-    const ui = getLang()==='ja' ? 'ja' : 'en';
-    if (langBtn) langBtn.textContent = (ui === 'ja') ? 'English' : '日本語';
-    const lb = document.getElementById('learnedBtn');
-    if (lb) lb.textContent = 'learning';
+    const lb = document.getElementById('learnBtn');
+    const lg = document.getElementById('langBtn');
+    if(lb) lb.textContent = i18n('learn');
+    if(lg) lg.textContent = i18n('jpBtn');
   }
-
-  // --- open learning: 関数 → モーダル → /learning/ → /learned/ の順
-  function openLearningBridge(){
-    if (typeof window.openLearning === 'function')     { window.openLearning(); return; }
-    if (typeof window.openLearningList === 'function') { window.openLearningList(); return; }
-    const lm = document.getElementById('learningModal');
-    if (lm && lm.classList) { lm.classList.add('show'); return; }
-    // ページが無い場合も考慮し、最低限どこかへ遷移
-    window.location.href = '/learning/';
-  }
-
-  // --- learned（覚えた一覧）側に “Go to learning” ボタンを自動で差し込む
-  function injectGoLearningButton(){
-    const learnedModal = document.getElementById('learnedModal');
-    if (!learnedModal) return;
-    if (learnedModal.querySelector('#goLearningBtn')) return;
-
-    // 挿入先：ヘッダ相当があればそこ、なければ先頭に
-    const host = learnedModal.querySelector('.modal-header, header, .head, .title') || learnedModal;
-    const a = document.createElement('a');
-    a.id = 'goLearningBtn';
-    a.href = '/learning/';
-    a.className = 'go-learning-btn';
-    a.innerHTML = 'learning へ移動';
-    host.insertBefore(a, host.firstChild);
-  }
-
-  // --- wire events once
-  function wireOnce(){
-    const lb = document.getElementById('learnedBtn');
-    if (lb && !lb.dataset.wired){
-      lb.addEventListener('click', openLearningBridge);
-      lb.dataset.wired = '1';
-    }
-    const langBtn = document.getElementById('langBtn');
-    if (langBtn && !langBtn.dataset.wired){
-      langBtn.addEventListener('click', function(){
-        const before = getLang();
-        if (typeof window.toggleLang === 'function') { window.toggleLang(); }
-        else { setLang(before==='ja' ? 'en' : 'ja'); }
-        setTimeout(function(){
-          syncHeaderLabels();
-          const after = getLang();
-          try{ document.dispatchEvent(new CustomEvent('ntx:lang-changed', { detail:{ lang: after }})); }catch(_){}
-          if (typeof window.applyLangToUI === 'function') window.applyLangToUI();
-        }, 0);
-      });
-      langBtn.dataset.wired = '1';
-    }
-
-    // learned モーダルが既にある／後から出る両方に対応
-    injectGoLearningButton();
-  }
-
-  // 初期
-  syncHeaderLabels();
-  wireOnce();
-
-  // 後挿入にも追随
-  if (typeof MutationObserver !== 'undefined'){
-    const mo = new MutationObserver(()=>{ wireOnce(); syncHeaderLabels(); });
-    mo.observe(document.documentElement, {subtree:true, childList:true});
-  }
-
-  // storage 変化でも更新
-  window.addEventListener('storage', function(e){
-    if (e && (e.key === 'uiLang' || e.key === 'lang')) syncHeaderLabels();
+  document.addEventListener('DOMContentLoaded', ()=>{
+    syncHeaderLabels();
+    // learn=学習中モーダルを開く
+    document.getElementById('learnBtn')?.addEventListener('click', ()=> {
+      if(typeof window.ntxOpenLearning==='function') window.ntxOpenLearning();
+    });
+    // 言語トグル（既存ロジックがなければ localStorage を反転）
+    document.getElementById('langBtn')?.addEventListener('click', ()=>{
+      const before = getLang();
+      setTimeout(()=>{
+        let after = localStorage.getItem('lang') || before;
+        if(before===after){ after = (before==='ja')?'en':'ja'; setLang(after); }
+        syncHeaderLabels();
+        document.dispatchEvent(new CustomEvent('ntx:lang-changed', {detail:{lang:after}}));
+      },0);
+    });
   });
-
-  // 外部から再同期
-  window.__ntxHeaderSync = syncHeaderLabels;
 })();
 </script>
