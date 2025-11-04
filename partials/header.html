@@ -65,22 +65,32 @@
 </header>
 
 <style>
-  .ntx-header{ position:relative; }
+  .ntx-header{ position:relative; z-index:10; }
+  /* 端から端までの赤線（途切れない版） */
   .ntx-header::after{
-    content:""; display:block; height:0;
+    content:"";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-1px;
+    width:100vw;
+    height:0;
     border-bottom:2px solid #e6462d;
-    width:100vw; margin-left:calc(50% - 50vw);
+    pointer-events:none;
   }
   .ntx-wrap{
     max-width:1100px; margin:0 auto; padding:10px 12px;
     display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center;
   }
+
+  /* ロゴ */
   .ntx-logo{ text-decoration:none; color:inherit; }
   .ntx-logo-block{ display:flex; flex-direction:column; align-items:center; gap:3px; }
   .ntx-brand-row{ display:flex; gap:6px; align-items:baseline; justify-content:center; line-height:1; }
   .ntx-logo-main{ font-size:2.4rem; font-weight:900; color:#e6462d; }
   .ntx-logo-dot{ font-size:1.6rem; font-weight:900; color:#132c3a; }
   .ntx-beta{ font-size:0.8rem; color:#6b7280; text-align:center; width:100%; }
+
   .ntx-icons{ display:flex; gap:10px; align-items:center; justify-content:center; }
   .icon-btn{
     display:inline-flex; align-items:center; justify-content:center;
@@ -90,11 +100,13 @@
   .icon-btn i{ font-size:14px; line-height:1; }
   .icon-btn svg, .icon-btn img{ display:block; width:18px; height:18px; }
   .icon-btn:hover{ background:#fff1ee; }
+
   .ntx-right{ display:flex; gap:10px; align-items:center; }
   .ntx-langbtn{
     border:1px solid #e5e7eb; border-radius:999px; padding:4px 10px;
     background:#fff; cursor:pointer;
   }
+
   @media (max-width: 520px){
     .ntx-logo-main{ font-size:2rem; }
     .ntx-logo-dot{ font-size:1.3rem; }
@@ -107,22 +119,23 @@
   // --- lang helpers: support both keys (uiLang / lang) and <html lang> fallback
   function getLang(){
     try{
-      return localStorage.getItem('uiLang')
-          || localStorage.getItem('lang')
-          || (document.documentElement.getAttribute('lang') || '').toLowerCase()
-          || 'en';
-    }catch(_){ return 'en'; }
+      return (localStorage.getItem('uiLang')
+           || localStorage.getItem('lang')
+           || (document.documentElement.getAttribute('lang')||'')
+      ).toLowerCase() || 'en';
+    }catch(_){ return (document.documentElement.getAttribute('lang')||'en').toLowerCase(); }
   }
   function setLang(v){
     try{
       localStorage.setItem('uiLang', v);
       localStorage.setItem('lang', v);
     }catch(_){}
+    try{ document.documentElement.setAttribute('lang', v); }catch(_){}
   }
 
   // --- label sync
   function syncHeaderLabels(){
-    const ui = getLang();
+    const ui = getLang()==='ja' ? 'ja' : 'en';
     const lb = document.getElementById('learnedBtn');
     const langBtn = document.getElementById('langBtn');
     if (lb)      lb.textContent      = (ui === 'ja') ? '覚えた一覧' : 'Learned';
@@ -149,61 +162,39 @@
     if (langBtn && !langBtn.dataset.wired){
       langBtn.addEventListener('click', function(){
         const before = getLang();
-
-        // 既存のトグル関数があれば優先実行
-        if (typeof window.toggleLang === 'function') window.toggleLang();
-        else if (typeof window.attachLangToggle === 'function') {
-          try{ window.attachLangToggle(); }catch(_){}
-        } else {
-          // フォールバック：ここでトグル
-          setLang(before === 'ja' ? 'en' : 'ja');
-        }
-
-        // 少し待ってから再同期（他スクリプトがlocalStorageを書き換える猶予）
+        // 既存のトグルがあれば優先
+        if (typeof window.toggleLang === 'function') { window.toggleLang(); }
+        else { setLang(before==='ja' ? 'en' : 'ja'); }
+        // 即時同期
         setTimeout(function(){
           syncHeaderLabels();
           const after = getLang();
-
           // 連動通知
           try{ document.dispatchEvent(new CustomEvent('ntx:lang-changed', { detail:{ lang: after }})); }catch(_){}
           if (typeof window.applyLangToUI === 'function') window.applyLangToUI();
-          if (typeof window.__ntxHeaderSync === 'function') window.__ntxHeaderSync();
         }, 0);
       });
       langBtn.dataset.wired = '1';
     }
   }
 
-  // --- initial attempt (partial may already be in DOM)
+  // 初期同期＆配線
   syncHeaderLabels();
   wireOnce();
 
-  // --- observe dynamic insertions (partial injected after load)
+  // partial が後から差し込まれても配線
   if (typeof MutationObserver !== 'undefined'){
-    const mo = new MutationObserver((muts)=>{
-      let need = false;
-      for (const m of muts){
-        if (m.type === 'childList'){
-          for (const n of m.addedNodes){
-            if (n.nodeType === 1 && (n.id === 'learnedBtn' || n.id === 'langBtn' || n.querySelector?.('#learnedBtn, #langBtn'))){
-              need = true; break;
-            }
-          }
-        }
-        if (need) break;
-      }
-      if (need){ wireOnce(); syncHeaderLabels(); }
-    });
+    const mo = new MutationObserver(()=>{ wireOnce(); syncHeaderLabels(); });
     mo.observe(document.documentElement, {subtree:true, childList:true});
   }
 
-  // --- react to external changes
+  // 外部の storage 変更でもラベル更新
   window.addEventListener('storage', function(e){
     if (!e) return;
     if (e.key === 'uiLang' || e.key === 'lang') syncHeaderLabels();
   });
 
-  // 外部から再同期を呼べるフック
+  // 手動再同期用フック
   window.__ntxHeaderSync = syncHeaderLabels;
 })();
 </script>
