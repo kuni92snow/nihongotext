@@ -17,7 +17,7 @@
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<!-- AdSense（審査用/実表示はAmazonのみ） -->
+<!-- AdSense（審査用/実表示はポップアップのみ） -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
 <style>
@@ -85,7 +85,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .footer{border-top:1px solid var(--shu-tint);background:#fff}
 .footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
 
-/* Amazon popup */
+/* Popup */
 .admask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
 .admask.show{display:flex}
 .ad{background:#fff;border-radius:12px;max-width:560px;width:min(96vw,560px);
@@ -93,7 +93,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .ad h3{margin:2px 0 8px;font-size:16px;line-height:1.2}
 .ad .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
 #adFallback{display:none;border:1px dashed #e5e7eb;border-radius:10px;padding:8px;margin-top:6px}
-#adFallback ul{margin:6px 0 0 16px}
 #adMask small{display:none}
 #amznAdBox{min-height:220px}
 
@@ -106,15 +105,13 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 </head>
 <body>
 
-<!-- Header (partials で差し替え) -->
+<!-- Header -->
 <div class="topbar">
   <div id="site-header" class="wrap brandbar">
-    <!-- フォールバック（Learned は置かない） -->
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
     <span class="beta">== beta version ==</span>
     <div class="header-right">
       <button id="langBtn" class="btn" type="button">日本語</button>
-      <!-- ★ Learned フォールバックは削除済み -->
     </div>
   </div>
 </div>
@@ -145,12 +142,12 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="pager" class="pager"></div>
 </main>
 
-<!-- Footer (partials で差し替え) -->
+<!-- Footer -->
 <div class="footer">
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- Learned モーダル（機能は存続） -->
+<!-- Learned モーダル -->
 <div id="learnedModal" class="admask" style="background:rgba(0,0,0,.35)">
   <div class="ad" style="max-width:820px">
     <button class="x" id="closeLearned" aria-label="Close">×</button>
@@ -172,7 +169,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   </div>
 </div>
 
-<!-- Amazon popup -->
+<!-- Recommended popup（AdSense + Preply） -->
 <div id="adMask" class="admask" aria-hidden="true">
   <div class="ad" role="dialog" aria-label="Affiliate Promotion">
     <button class="x" id="adClose" aria-label="Close">×</button>
@@ -189,7 +186,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
     <!-- === /Google AdSense === -->
@@ -209,7 +206,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     </div>
   </div>
 </div>
-
 
 <script>
 /* ========= 基本設定 ========= */
@@ -250,7 +246,7 @@ function coerceArray(json){
   return [];
 }
 
-/* ========= ヘッダー/フッターの読込（Learnedの自動生成はしない） ========= */
+/* ========= ヘッダー/フッターの読込 ========= */
 function applyLangToUI(){
   const btn = document.getElementById('langBtn');
   if(btn){ btn.textContent = (uiLang==='en') ? '日本語' : 'English'; }
@@ -438,7 +434,7 @@ function renderList(data){
     const act=document.createElement('button');
     act.className='btn';
 
-    head.append(tog,num,tags,act); // ← トグルを先頭に
+    head.append(tog,num,tags,act); // トグルを先頭に
 
     // ==== 本文（例文） ====
     const body=div('content',''); body.dataset.examples='1';
@@ -451,7 +447,7 @@ function renderList(data){
       if(parts.length){ const block=div('line',''); block.innerHTML=parts.join(''); body.appendChild(block); }
     });
 
-    // ==== Learned 状態反映（初期は開く／Learned のときは閉じる） ====
+    // ==== Learned 状態反映 ====
     const isLearned = learnedSet().has(item.id);
     if(isLearned){
       card.classList.add('learned');
@@ -464,11 +460,11 @@ function renderList(data){
       tog.setAttribute('aria-expanded','true');
     }
 
-    // ==== Learned/Unlearn ボタンの表示テキスト ====
+    // ==== Learned/Unlearn ボタン ====
     act.textContent = isLearned ? (uiLang==='en'?'Unlearn':'覚えたを戻す') : (uiLang==='en'?'Learned':'覚えた');
     act.onclick=()=>toggleLearned(item,card,act,tog,body);
 
-    // ==== トグルのクリック処理 ====
+    // ==== トグル ====
     tog.addEventListener('click',()=>{
       const open = body.style.display!=='none';
       if(open){
@@ -488,7 +484,7 @@ function renderList(data){
     : `レベル: ${level} • 品詞: ${posLabel.ja}`;
 }
 
-/* Learned トグル：ボタンと例文表示も同期して更新 */
+/* Learned トグル */
 function toggleLearned(item,card,btnEl,togBtn,bodyEl){
   const s=learnedSet();
   const has=s.has(item.id);
@@ -496,14 +492,12 @@ function toggleLearned(item,card,btnEl,togBtn,bodyEl){
     s.delete(item.id);
     card.classList.remove('learned');
     if(btnEl) btnEl.textContent=(uiLang==='en'?'Learned':'覚えた');
-    // Learned解除 → 例文は開く
     if(bodyEl){ bodyEl.style.display=''; }
     if(togBtn){ togBtn.textContent='▲'; togBtn.setAttribute('aria-expanded','true'); }
   }else{
     s.add(item.id);
     card.classList.add('learned');
     if(btnEl) btnEl.textContent=(uiLang==='en'?'Unlearn':'覚えたを戻す');
-    // Learned → 例文は閉じる
     if(bodyEl){ bodyEl.style.display='none'; }
     if(togBtn){ togBtn.textContent='▼'; togBtn.setAttribute('aria-expanded','false'); }
   }
@@ -573,114 +567,83 @@ function renderLearnedModal(){
   });
 }
 
-/* ========= Search highlight (words only) — safe version ========= */
-/* 1) 正規表現用エスケープ */
+/* ========= Search highlight (words only) — loop-safe ========= */
+let HL_LOCK = false;  // 再入防止ロック
+
 function escapeRegExp(s){ return (s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 
-/* 2) .head .tag に元文 data-text を付与（多重実行OK） */
 function ensureWordTagDatasets(root){
-  var scope = root || document;
-  var list = scope.querySelectorAll ? scope.querySelectorAll('#list .head .tag') : [];
-  list.forEach(function(t){
+  const scope = root || document;
+  const list = scope.querySelectorAll ? scope.querySelectorAll('#list .head .tag') : [];
+  list.forEach(t=>{
     if(!t.dataset.text){ t.dataset.text = t.textContent || ''; }
   });
 }
 
-/* 3) 単語タグだけ <mark> ハイライト（検索空→解除） */
 function highlightCurrentTermInWords(){
-  var kwEl = document.getElementById('kw');
-  var term = (kwEl && kwEl.value ? kwEl.value.trim() : '');
-  var listEl = document.getElementById('list');
+  if (HL_LOCK) return;
+  const kwEl = document.getElementById('kw');
+  const term = (kwEl && kwEl.value ? kwEl.value.trim() : '');
+  const listEl = document.getElementById('list');
   if(!listEl) return;
 
-  var tags = listEl.querySelectorAll('.head .tag');
-  var re = term ? new RegExp(escapeRegExp(term), 'gi') : null;
+  const tags = listEl.querySelectorAll('.head .tag');
+  const re = term ? new RegExp(escapeRegExp(term), 'gi') : null;
 
-  tags.forEach(function(t){
-    var raw = t.dataset && t.dataset.text ? t.dataset.text : (t.textContent || '');
+  HL_LOCK = true;
+  tags.forEach(t=>{
+    const raw = t.dataset && t.dataset.text ? t.dataset.text : (t.textContent || '');
     if(!term){
-      t.innerHTML = raw;  // 解除
+      t.innerHTML = raw;
     }else{
-      t.innerHTML = raw.replace(re, function(m){ return '<mark class="search-hit">'+m+'</mark>'; });
+      t.innerHTML = raw.replace(re, m=>`<mark class="search-hit">${m}</mark>`);
     }
   });
+  HL_LOCK = false;
 }
 
-/* 4) 入力イベントに追従（既存検索と干渉しない） */
-(function bindSearchHighlight(){
-  var kwEl = document.getElementById('kw');
+function bindSearchHighlight(){
+  const kwEl = document.getElementById('kw');
   if(!kwEl) return;
-  kwEl.addEventListener('input', function(){
-    requestAnimationFrame(function(){
+  kwEl.addEventListener('input', ()=>{
+    requestAnimationFrame(()=>{
       ensureWordTagDatasets();
       highlightCurrentTermInWords();
     });
   }, {passive:true});
-})();
-
-/* 5) #list の内容が再描画されても追従（ページ切替等） */
-(function attachListObserver(){
-  var listEl = document.getElementById('list');
-  if(!listEl || typeof MutationObserver === 'undefined') return;
-  var mo = new MutationObserver(function(muts){
-    var needs = false;
-    muts.forEach(function(m){
-      if(m.addedNodes && m.addedNodes.length){
-        m.addedNodes.forEach(function(n){
-          if(n.nodeType===1){ ensureWordTagDatasets(n); needs = true; }
-        });
-      }
-    });
-    if(needs) highlightCurrentTermInWords();
-  });
-  mo.observe(listEl, {childList:true, subtree:true});
-})();
-
-/* ========= Amazon OneTag ========= */
-const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
-let amazonBooted=false;
-function showAdPopup(){
-  adMask.classList.add('show');
-  if(!amazonBooted){
-    amazonBooted=true;
-    const box=document.getElementById('amznAdBox');
-    const cfg=document.createElement('script');
-    cfg.type='text/javascript';
-    cfg.text=`
-      amzn_assoc_placement="adunit0";
-      amzn_assoc_tracking_id="blog0c9-22";
-      amzn_assoc_ad_mode="search";
-      amzn_assoc_ad_type="smart";
-      amzn_assoc_marketplace="amazon";
-      amzn_assoc_region="JP";
-      amzn_assoc_default_search_phrase="Japanese learning";
-      amzn_assoc_default_category="All";
-      amzn_assoc_search_bar="true";
-    `;
-    const js=document.createElement('script');
-    js.async=true;
-    js.src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=JP";
-    let rendered=false;
-    const guard=setTimeout(()=>{
-      if(!rendered){
-        const fb=document.getElementById('adFallback');
-        if(fb){ fb.style.display='block'; }
-      }
-    }, 2000);
-    js.onload=()=>{ rendered=true; };
-    box.appendChild(cfg); box.appendChild(js);
-  }
 }
+
+function attachListObserver(){
+  const listEl = document.getElementById('list');
+  if(!listEl || typeof MutationObserver === 'undefined') return;
+
+  const mo = new MutationObserver((muts)=>{
+    const changed = muts.some(m => m.type === 'childList' && (m.addedNodes.length || m.removedNodes.length));
+    if(changed){
+      muts.forEach(m=>{
+        m.addedNodes.forEach(n=>{
+          if(n.nodeType===1) ensureWordTagDatasets(n);
+        });
+      });
+      requestAnimationFrame(highlightCurrentTermInWords);
+    }
+  });
+  mo.observe(listEl, {childList:true, subtree:false}); // subtree:false が重要
+}
+
+/* ========= Popup & 初期化 ========= */
+const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
 adClose.onclick=()=>adMask.classList.remove('show');
 adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remove('show'); });
 
-/* ========= 初期化 ========= */
 (async function init(){
   await injectPartials();
   buildChips();
   await loadSingleAndRender();
-  // 初期ハイライトの下準備
+
   ensureWordTagDatasets();
+  bindSearchHighlight();
+  attachListObserver();
   highlightCurrentTermInWords();
 })();
 </script>
