@@ -97,6 +97,13 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 #adMask small{display:none}
 #amznAdBox{min-height:220px}
 </style>
+<style>
+/* ===== Search highlight (words only) ===== */
+.head .tag mark.search-hit{
+  background:#fff59d;           /* やさしい黄色 */
+  padding:0 2px; border-radius:3px;
+}
+</style>
 </head>
 <body>
 
@@ -611,6 +618,77 @@ adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remo
   buildChips();
   await loadSingleAndRender();
 })();
+</script>
+<script>
+/* ========= Search highlight (words only) ========= */
+/* 1) 文字列を正規表現用にエスケープ */
+function escapeRegExp(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+
+/* 2) #list 内の .head .tag に data-text（元文）を付与 */
+function ensureWordTagDatasets(root=document){
+  const tags = root.querySelectorAll('#list .head .tag');
+  tags.forEach(t=>{
+    if(!t.dataset.text){
+      t.dataset.text = t.textContent;
+    }
+  });
+}
+
+/* 3) 検索語を単語タグだけ <mark> でハイライト */
+function highlightCurrentTermInWords(){
+  const kwInput = document.getElementById('kw');
+  const term = (kwInput ? kwInput.value : '').trim();
+  const tags = document.querySelectorAll('#list .head .tag');
+
+  tags.forEach(t=>{
+    const raw = t.dataset.text ?? t.textContent;
+    if(!term){
+      t.innerHTML = raw;              // 検索欄が空→解除
+      return;
+    }
+    const re = new RegExp(escapeRegExp(term), 'gi');
+    t.innerHTML = raw.replace(re, m=>`<mark class="search-hit">${m}</mark>`);
+  });
+}
+
+/* 4) 入力に追従（既存の検索処理と共存OK） */
+function bindSearchHighlight(){
+  const kw = document.getElementById('kw');
+  if(!kw) return;
+  kw.addEventListener('input', () => {
+    // フィルタ処理より後に実行されてもOKなように少し遅らせる
+    setTimeout(() => {
+      ensureWordTagDatasets();
+      highlightCurrentTermInWords();
+    }, 0);
+  }, {passive:true});
+}
+
+/* 5) #list の中身が描き直されても自動で再ハイライト（ページ切替など対応） */
+const listEl = document.getElementById('list');
+if(listEl){
+  const mo = new MutationObserver((muts)=>{
+    // 新ノードに元文を付与 → 再ハイライト
+    muts.forEach(m=>{
+      if(m.addedNodes && m.addedNodes.length){
+        m.addedNodes.forEach(n=>{
+          if(n.nodeType===1){ // ELEMENT_NODE
+            ensureWordTagDatasets(n);
+          }
+        });
+      }
+    });
+    highlightCurrentTermInWords();
+  });
+  mo.observe(listEl, {childList:true, subtree:true});
+}
+
+/* 6) 初期起動 */
+document.addEventListener('DOMContentLoaded', () => {
+  ensureWordTagDatasets();
+  bindSearchHighlight();
+  highlightCurrentTermInWords();
+});
 </script>
 </body>
 </html>
