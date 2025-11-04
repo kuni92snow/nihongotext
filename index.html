@@ -567,69 +567,82 @@ function renderLearnedModal(){
   });
 }
 
-/* ========= Search highlight (words only) — loop-safe ========= */
+/* ========= Search highlight (words + examples) — loop-safe ========= */
 let HL_LOCK = false;  // 再入防止ロック
 
 function escapeRegExp(s){ return (s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 
-function ensureWordTagDatasets(root){
+// 1) data-text を付与（単語タグ + 例文の各行）
+function ensureDatasets(root){
   const scope = root || document;
-  const list = scope.querySelectorAll ? scope.querySelectorAll('#list .head .tag') : [];
-  list.forEach(t=>{
-    if(!t.dataset.text){ t.dataset.text = t.textContent || ''; }
-  });
+  // 単語タグ（ヘッダーのバッジ）
+  const wordTags = scope.querySelectorAll('#list .head .tag');
+  wordTags.forEach(t=>{ if(!t.dataset.text){ t.dataset.text = t.textContent || ''; }});
+  // 例文（本文の各行）
+  const exNodes = scope.querySelectorAll('#list .content .en, #list .content .ja, #list .content .kana, #list .content .ro');
+  exNodes.forEach(n=>{ if(!n.dataset.text){ n.dataset.text = n.textContent || ''; }});
 }
 
-function highlightCurrentTermInWords(){
+// 2) 単語タグ + 例文の両方をハイライト（空文字→解除）
+function highlightCurrentTerm(){
   if (HL_LOCK) return;
-  const kwEl = document.getElementById('kw');
-  const term = (kwEl && kwEl.value ? kwEl.value.trim() : '');
-  const listEl = document.getElementById('list');
+
+  const kwEl  = document.getElementById('kw');
+  const term  = (kwEl && kwEl.value ? kwEl.value.trim() : '');
+  const listEl= document.getElementById('list');
   if(!listEl) return;
 
-  const tags = listEl.querySelectorAll('.head .tag');
+  const targets = listEl.querySelectorAll(
+    '.head .tag, .content .en, .content .ja, .content .kana, .content .ro'
+  );
   const re = term ? new RegExp(escapeRegExp(term), 'gi') : null;
 
-  HL_LOCK = true;
-  tags.forEach(t=>{
-    const raw = t.dataset && t.dataset.text ? t.dataset.text : (t.textContent || '');
-    if(!term){
-      t.innerHTML = raw;
-    }else{
-      t.innerHTML = raw.replace(re, m=>`<mark class="search-hit">${m}</mark>`);
-    }
+  HL_LOCK = true;  // 内部変更での再発火を抑止
+  targets.forEach(el=>{
+    const raw = el.dataset && el.dataset.text ? el.dataset.text : (el.textContent || '');
+    el.innerHTML = !term ? raw : raw.replace(re, m=>`<mark class="search-hit">${m}</mark>`);
   });
   HL_LOCK = false;
 }
 
+// 3) 入力に追従（既存の検索フィルタ描画後にハイライト）
 function bindSearchHighlight(){
   const kwEl = document.getElementById('kw');
   if(!kwEl) return;
   kwEl.addEventListener('input', ()=>{
     requestAnimationFrame(()=>{
-      ensureWordTagDatasets();
-      highlightCurrentTermInWords();
+      ensureDatasets();
+      highlightCurrentTerm();
     });
   }, {passive:true});
 }
 
+// 4) #list の直下の子入れ替え時にだけ再ハイライト（<mark> には反応しない）
 function attachListObserver(){
   const listEl = document.getElementById('list');
-  if(!listEl || typeof MutationObserver === 'undefined') return;
+  if(!listEl || typeof MutationObserver==='undefined') return;
 
-  const mo = new MutationObserver((muts)=>{
-    const changed = muts.some(m => m.type === 'childList' && (m.addedNodes.length || m.removedNodes.length));
+  const mo = new MutationObserver(muts=>{
+    const changed = muts.some(m => m.type==='childList' && (m.addedNodes.length || m.removedNodes.length));
     if(changed){
       muts.forEach(m=>{
         m.addedNodes.forEach(n=>{
-          if(n.nodeType===1) ensureWordTagDatasets(n);
+          if(n.nodeType===1) ensureDatasets(n);
         });
       });
-      requestAnimationFrame(highlightCurrentTermInWords);
+      requestAnimationFrame(highlightCurrentTerm);
     }
   });
-  mo.observe(listEl, {childList:true, subtree:false}); // subtree:false が重要
+  mo.observe(listEl, {childList:true, subtree:false}); // subtree:false がループ防止の肝
 }
+
+// 5) 初期化フック（既存 init の後でも前でもOK）
+document.addEventListener('DOMContentLoaded', ()=>{
+  ensureDatasets();
+  bindSearchHighlight();
+  attachListObserver();
+  highlightCurrentTerm();
+});
 
 /* ========= Popup & 初期化 ========= */
 const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
