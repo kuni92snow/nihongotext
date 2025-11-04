@@ -660,5 +660,151 @@ adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remo
   highlightCurrentTermInWords();
 })();
 </script>
+
+<!-- ===== BEGIN: Learning / Learned UI injection ===== -->
+<style>
+  .ntx-modal-mask{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;z-index:9998}
+  .ntx-modal{position:fixed;top:8vh;left:50%;transform:translateX(-50%);width:min(920px,96vw);
+             background:#fff;border:2px solid #e6462d;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.2);
+             display:none;z-index:9999}
+  .ntx-modal.show,.ntx-modal-mask.show{display:block}
+  .ntx-m-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid #f2c9c2}
+  .ntx-m-title{font-weight:800}
+  .ntx-m-body{padding:12px 14px;max-height:70vh;overflow:auto}
+  .ntx-table{width:100%;border-collapse:collapse}
+  .ntx-table th,.ntx-table td{border-bottom:1px solid #eee;padding:8px 6px;text-align:left}
+  .ntx-ctl{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{border:2px solid #e6462d;color:#e6462d;background:#fff2ef;padding:.35rem .7rem;border-radius:8px;cursor:pointer;font-weight:700}
+  .btn.secondary{border-color:#c4c4c4;color:#333;background:#fff}
+  .btn.danger{border-color:#b91c1c;color:#b91c1c;background:#fff5f5}
+  .xbtn{border:none;background:transparent;font-size:20px;line-height:1;cursor:pointer}
+  @media print{
+    .ntx-modal,.ntx-modal-mask{position:static;transform:none;width:100%;border:none;box-shadow:none;display:block}
+    .xbtn,.ntx-ctl{display:none}
+  }
+  /* optional: header underline full width safeguard */
+  .ntx-header{position:relative;z-index:10}
+  .ntx-header::after{
+    content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:-1px;width:100vw;height:0;border-bottom:2px solid #e6462d;pointer-events:none;
+  }
+  /* "go learning" button that may be injected into learned modal from header code */
+  .go-learning-btn{
+    display:inline-flex;align-items:center;gap:.4rem;border:2px solid #e6462d;color:#e6462d;background:#fff2ef;
+    padding:.35rem .7rem;border-radius:8px;text-decoration:none;font-weight:700
+  }
+</style>
+
+<div id="ntxModalMask" class="ntx-modal-mask"></div>
+
+<!-- learning (学習中) -->
+<div id="learningModal" class="ntx-modal" role="dialog" aria-label="learning">
+  <div class="ntx-m-head">
+    <div class="ntx-m-title">learning</div>
+    <div class="ntx-ctl">
+      <button class="btn" id="printLearning">Print</button>
+      <button class="btn secondary" id="goToLearned">go to learned</button>
+      <button class="xbtn" data-close="learningModal" aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="ntx-m-body">
+    <table class="ntx-table" id="learningTable">
+      <thead><tr><th>#</th><th>Word</th><th>Level/Part</th><th>Moved on</th><th>Action</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- learned (覚えた) -->
+<div id="learnedModal" class="ntx-modal" role="dialog" aria-label="learned">
+  <div class="ntx-m-head">
+    <div class="ntx-m-title">learned</div>
+    <div class="ntx-ctl">
+      <button class="btn" id="printLearned">Print</button>
+      <button class="btn secondary" id="goToLearning">go to learning</button>
+      <button class="xbtn" data-close="learnedModal" aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="ntx-m-body">
+    <table class="ntx-table" id="learnedTable">
+      <thead><tr><th>#</th><th>Word</th><th>Level/Part</th><th>Moved on</th><th>Action</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+/* ===== Guard missing functions to avoid blocking other UI ===== */
+try{ if(typeof ensureWordTagDatasets==='function'){ /* ok */ } }catch(e){}
+
+/* ===== Storage helpers ===== */
+const NTX_KEYS={learning:'ntx_learning_v1', learned:'ntx_learned_v1'};
+function ntxLoad(k){ try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(_){return[]} }
+function ntxSave(k,v){ try{localStorage.setItem(k,JSON.stringify(v))}catch(_){} }
+function today(){ const d=new Date(),z=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`; }
+function upsert(k,item){ const a=ntxLoad(k); const i=a.findIndex(x=>x.id===item.id); if(i>=0)a[i]=item; else a.push(item); ntxSave(k,a); }
+function removeFrom(k,id){ ntxSave(k, ntxLoad(k).filter(x=>x.id!==id)); }
+
+/* Public API to move items */
+window.ntxToLearning=function(item){ if(!item||!item.id)return; item.movedAt=today(); upsert(NTX_KEYS.learning,item); removeFrom(NTX_KEYS.learned,item.id); renderLearning(); };
+window.ntxToLearned=function(item){ if(!item||!item.id)return; item.movedAt=today(); upsert(NTX_KEYS.learned,item); removeFrom(NTX_KEYS.learning,item.id); renderLearned(); };
+
+/* Rendering */
+function makeRow(idx,it,toKey){
+  const meta=[it.level||'',it.part||''].filter(Boolean).join(' / ');
+  const payload=encodeURIComponent(JSON.stringify({id:it.id,ja:it.ja,en:it.en,level:it.level,part:it.part}));
+  const to=(toKey===NTX_KEYS.learned)?'to learned':'to learning';
+  const fn=(toKey===NTX_KEYS.learned)?'ntxToLearned':'ntxToLearning';
+  return `<tr data-id="${it.id}"><td>${idx}</td><td>${(it.en||'')}${it.ja?` / ${it.ja}`:''}</td><td>${meta||'-'}</td><td>${it.movedAt||'-'}</td>
+  <td><button class="btn" onclick="(function(){ ${fn}(JSON.parse(decodeURIComponent('${payload}'))); })()">move ${to}</button>
+  <button class="btn danger" onclick="(function(){ removeFrom('${toKey}','${it.id}'); renderLearning(); renderLearned(); })()">remove</button></td></tr>`;
+}
+function renderLearning(){ const tb=document.querySelector('#learningTable tbody'); if(!tb)return; const arr=ntxLoad(NTX_KEYS.learning); tb.innerHTML=arr.map((it,i)=>makeRow(i+1,it,NTX_KEYS.learned)).join('')||`<tr><td colspan="5">No items</td></tr>`; }
+function renderLearned(){ const tb=document.querySelector('#learnedTable tbody'); if(!tb)return; const arr=ntxLoad(NTX_KEYS.learned); tb.innerHTML=arr.map((it,i)=>makeRow(i+1,it,NTX_KEYS.learning)).join('')||`<tr><td colspan="5">No items</td></tr>`; }
+
+/* Open/Close/Print */
+function openModal(id){ document.getElementById('ntxModalMask')?.classList.add('show'); const el=document.getElementById(id); if(!el)return; el.classList.add('show'); if(id==='learningModal')renderLearning(); if(id==='learnedModal')renderLearned(); }
+function closeModal(id){ document.getElementById(id)?.classList.remove('show'); const anyOpen=document.querySelector('.ntx-modal.show'); if(!anyOpen) document.getElementById('ntxModalMask')?.classList.remove('show'); }
+function printTable(id){
+  const box=document.querySelector('#'+id+' .ntx-m-body'); if(!box)return;
+  const w=window.open('','_blank'); w.document.write('<meta charset="utf-8"><title>Print</title><style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;padding:16px}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:6px 8px;text-align:left}</style>'+box.innerHTML); w.document.close(); w.focus(); w.print(); w.close();
+}
+
+/* Header integration (non-destructive): insert "learn" button if missing */
+document.addEventListener('DOMContentLoaded', function(){
+  // Add learn button into header right block if not existing
+  let right=document.querySelector('.ntx-header .ntx-right');
+  if(!right){
+    // create right block next to header if missing
+    const wrap=document.querySelector('.ntx-header .ntx-wrap');
+    right=document.createElement('div'); right.className='ntx-right';
+    if(wrap) wrap.appendChild(right);
+  }
+  if(right && !document.getElementById('learnBtn')){
+    const btn=document.createElement('button');
+    btn.id='learnBtn'; btn.className='ntx-langbtn'; btn.type='button'; btn.textContent='learn'; btn.setAttribute('aria-label','learn');
+    right.prepend(btn);
+  }
+  const learnBtn=document.getElementById('learnBtn');
+  if(learnBtn) learnBtn.addEventListener('click', ()=>openModal('learningModal'));
+
+  // Hook for an existing "open learned" control (if present)
+  const openLearnedBtn = document.getElementById('openLearned') || document.querySelector('[data-open="learned"]');
+  if(openLearnedBtn) openLearnedBtn.addEventListener('click', ()=>openModal('learnedModal'));
+
+  // Cross navigation buttons inside modals
+  document.getElementById('goToLearned') ?.addEventListener('click', ()=>{ closeModal('learningModal'); openModal('learnedModal'); });
+  document.getElementById('goToLearning')?.addEventListener('click', ()=>{ closeModal('learnedModal');  openModal('learningModal'); });
+
+  // Close handlers
+  document.querySelectorAll('.xbtn[data-close]').forEach(b=>{ b.addEventListener('click', ()=>closeModal(b.getAttribute('data-close'))); });
+  document.getElementById('ntxModalMask')?.addEventListener('click', ()=>{ closeModal('learningModal'); closeModal('learnedModal'); });
+
+  // Print handlers
+  document.getElementById('printLearning')?.addEventListener('click', ()=>printTable('learningModal'));
+  document.getElementById('printLearned') ?.addEventListener('click', ()=>printTable('learnedModal'));
+});
+</script>
+<!-- ===== END: Learning / Learned UI injection ===== -->
+
 </body>
 </html>
