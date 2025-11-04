@@ -58,7 +58,7 @@
 
     <!-- 右：Learned ボタン + 言語切替 -->
     <div class="ntx-right">
-      <!-- ★ ここをアイコンからボタン化（言語連動：Learned / 覚えた一覧） -->
+      <!-- 言語連動：ja=覚えた一覧 / それ以外=Learned -->
       <button id="learnedBtn" class="ntx-langbtn" type="button" aria-label="Learned">Learned</button>
       <button id="langBtn" class="ntx-langbtn" type="button">日本語</button>
     </div>
@@ -109,33 +109,69 @@
   }
 </style>
 
-<!-- ラベル同期 & クリック動作（グローバルJSが無いページでも安全に） -->
+<!-- ラベル同期 & クリック動作（共通ヘッダーだけでも安全に動く） -->
 <script>
 (function(){
-  function getLang(){ return localStorage.getItem('lang') || 'en'; }
+  function getLang(){ try{ return localStorage.getItem('lang') || 'en'; }catch(_){ return 'en'; } }
+  function setLang(v){ try{ localStorage.setItem('lang', v); }catch(_){} }
+
+  // ヘッダーのラベルをUI言語に同期
   function syncHeaderLabels(){
     const ui = getLang();
     const lb = document.getElementById('learnedBtn');
     const langBtn = document.getElementById('langBtn');
-    if(lb)     lb.textContent   = (ui === 'ja') ? '覚えた一覧' : 'Learned';
-    // langBtnの表記は各ページ側のJSで切替える想定だが、無いページのために簡易同期
-    if(langBtn) langBtn.textContent = (ui === 'ja') ? 'English' : '日本語';
+
+    if (lb)      lb.textContent      = (ui === 'ja') ? '覚えた一覧' : 'Learned';
+    // ページ側JSがない場合のフォールバック（簡易）
+    if (langBtn) langBtn.textContent = (ui === 'ja') ? 'English' : '日本語';
+  }
+
+  // Learned ボタン → openLearned() / #learnedModal / /learned/ の順でフォールバック
+  function openLearnedBridge(){
+    if (typeof window.openLearned === 'function') { window.openLearned(); return; }
+    const modal = document.getElementById('learnedModal');
+    if (modal) { modal.classList.add('show'); return; }
+    window.location.href = '/learned/';
   }
 
   document.addEventListener('DOMContentLoaded', function(){
     syncHeaderLabels();
 
-    // Learned ボタン：index.html ではモーダルを開く。その他ページは /learned/ に遷移。
+    // 1) Learned ボタンクリック
     const lb = document.getElementById('learnedBtn');
-    if(lb){
-      lb.addEventListener('click', function(){
-        if (typeof window.openLearned === 'function') { window.openLearned(); }
-        else { window.location.href = '/learned/'; }
+    if (lb){
+      lb.addEventListener('click', openLearnedBridge);
+    }
+
+    // 2) 言語トグル後に Learned ラベルも即時連動
+    const langBtn = document.getElementById('langBtn');
+    if (langBtn){
+      langBtn.addEventListener('click', function(){
+        // 既存ページ側の言語切替ロジックがあってもなくても連動するようにする
+        const before = getLang();
+        setTimeout(function(){
+          let after = getLang();
+          if (before === after){
+            // ページ側で切替が行われていない → ここでトグル
+            after = (before === 'ja') ? 'en' : 'ja';
+            setLang(after);
+          }
+          syncHeaderLabels();
+
+          // 他スクリプトに言語変更を通知（任意）
+          try{
+            document.dispatchEvent(new CustomEvent('ntx:lang-changed', { detail:{ lang: after }}));
+          }catch(_){}
+
+          // ページ側が用意している再同期関数があれば呼ぶ（任意）
+          if (typeof window.__ntxSyncHeaderLabels === 'function') window.__ntxSyncHeaderLabels();
+          if (typeof window.applyLangToUI === 'function') window.applyLangToUI();
+        }, 0);
       });
     }
   });
 
-  // 他ページ側でUI言語が動的に変わったとき用に、外部から再同期できるフックを用意
-  window.__ntxSyncHeaderLabels = syncHeaderLabels;
+  // 外部から明示的に再同期したいとき用（任意）
+  window.__ntxHeaderSync = syncHeaderLabels;
 })();
 </script>
