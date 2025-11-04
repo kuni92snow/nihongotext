@@ -96,8 +96,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 #adFallback ul{margin:6px 0 0 16px}
 #adMask small{display:none}
 #amznAdBox{min-height:220px}
-</style>
-<style>
+
 /* ===== Search highlight (words only) ===== */
 .head .tag mark.search-hit{
   background:#fff59d;           /* やさしい黄色 */
@@ -574,6 +573,69 @@ function renderLearnedModal(){
   });
 }
 
+/* ========= Search highlight (words only) — safe version ========= */
+/* 1) 正規表現用エスケープ */
+function escapeRegExp(s){ return (s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+
+/* 2) .head .tag に元文 data-text を付与（多重実行OK） */
+function ensureWordTagDatasets(root){
+  var scope = root || document;
+  var list = scope.querySelectorAll ? scope.querySelectorAll('#list .head .tag') : [];
+  list.forEach(function(t){
+    if(!t.dataset.text){ t.dataset.text = t.textContent || ''; }
+  });
+}
+
+/* 3) 単語タグだけ <mark> ハイライト（検索空→解除） */
+function highlightCurrentTermInWords(){
+  var kwEl = document.getElementById('kw');
+  var term = (kwEl && kwEl.value ? kwEl.value.trim() : '');
+  var listEl = document.getElementById('list');
+  if(!listEl) return;
+
+  var tags = listEl.querySelectorAll('.head .tag');
+  var re = term ? new RegExp(escapeRegExp(term), 'gi') : null;
+
+  tags.forEach(function(t){
+    var raw = t.dataset && t.dataset.text ? t.dataset.text : (t.textContent || '');
+    if(!term){
+      t.innerHTML = raw;  // 解除
+    }else{
+      t.innerHTML = raw.replace(re, function(m){ return '<mark class="search-hit">'+m+'</mark>'; });
+    }
+  });
+}
+
+/* 4) 入力イベントに追従（既存検索と干渉しない） */
+(function bindSearchHighlight(){
+  var kwEl = document.getElementById('kw');
+  if(!kwEl) return;
+  kwEl.addEventListener('input', function(){
+    requestAnimationFrame(function(){
+      ensureWordTagDatasets();
+      highlightCurrentTermInWords();
+    });
+  }, {passive:true});
+})();
+
+/* 5) #list の内容が再描画されても追従（ページ切替等） */
+(function attachListObserver(){
+  var listEl = document.getElementById('list');
+  if(!listEl || typeof MutationObserver === 'undefined') return;
+  var mo = new MutationObserver(function(muts){
+    var needs = false;
+    muts.forEach(function(m){
+      if(m.addedNodes && m.addedNodes.length){
+        m.addedNodes.forEach(function(n){
+          if(n.nodeType===1){ ensureWordTagDatasets(n); needs = true; }
+        });
+      }
+    });
+    if(needs) highlightCurrentTermInWords();
+  });
+  mo.observe(listEl, {childList:true, subtree:true});
+})();
+
 /* ========= Amazon OneTag ========= */
 const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
 let amazonBooted=false;
@@ -617,78 +679,10 @@ adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remo
   await injectPartials();
   buildChips();
   await loadSingleAndRender();
-})();
-</script>
-<script>
-/* ========= Search highlight (words only) ========= */
-/* 1) 文字列を正規表現用にエスケープ */
-function escapeRegExp(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
-
-/* 2) #list 内の .head .tag に data-text（元文）を付与 */
-function ensureWordTagDatasets(root=document){
-  const tags = root.querySelectorAll('#list .head .tag');
-  tags.forEach(t=>{
-    if(!t.dataset.text){
-      t.dataset.text = t.textContent;
-    }
-  });
-}
-
-/* 3) 検索語を単語タグだけ <mark> でハイライト */
-function highlightCurrentTermInWords(){
-  const kwInput = document.getElementById('kw');
-  const term = (kwInput ? kwInput.value : '').trim();
-  const tags = document.querySelectorAll('#list .head .tag');
-
-  tags.forEach(t=>{
-    const raw = t.dataset.text ?? t.textContent;
-    if(!term){
-      t.innerHTML = raw;              // 検索欄が空→解除
-      return;
-    }
-    const re = new RegExp(escapeRegExp(term), 'gi');
-    t.innerHTML = raw.replace(re, m=>`<mark class="search-hit">${m}</mark>`);
-  });
-}
-
-/* 4) 入力に追従（既存の検索処理と共存OK） */
-function bindSearchHighlight(){
-  const kw = document.getElementById('kw');
-  if(!kw) return;
-  kw.addEventListener('input', () => {
-    // フィルタ処理より後に実行されてもOKなように少し遅らせる
-    setTimeout(() => {
-      ensureWordTagDatasets();
-      highlightCurrentTermInWords();
-    }, 0);
-  }, {passive:true});
-}
-
-/* 5) #list の中身が描き直されても自動で再ハイライト（ページ切替など対応） */
-const listEl = document.getElementById('list');
-if(listEl){
-  const mo = new MutationObserver((muts)=>{
-    // 新ノードに元文を付与 → 再ハイライト
-    muts.forEach(m=>{
-      if(m.addedNodes && m.addedNodes.length){
-        m.addedNodes.forEach(n=>{
-          if(n.nodeType===1){ // ELEMENT_NODE
-            ensureWordTagDatasets(n);
-          }
-        });
-      }
-    });
-    highlightCurrentTermInWords();
-  });
-  mo.observe(listEl, {childList:true, subtree:true});
-}
-
-/* 6) 初期起動 */
-document.addEventListener('DOMContentLoaded', () => {
+  // 初期ハイライトの下準備
   ensureWordTagDatasets();
-  bindSearchHighlight();
   highlightCurrentTermInWords();
-});
+})();
 </script>
 </body>
 </html>
