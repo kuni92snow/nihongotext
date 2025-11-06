@@ -208,12 +208,12 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <button class="x" id="closeLearned" aria-label="Close">×</button>
     <h3 id="learnedTitle" style="margin:0 0 10px">Learned</h3>
 
-    <div class="toggle-row" id="learnedToggles" style="margin-bottom:8px">
-      <label><input type="checkbox" id="L_EN" checked> English</label>
-      <label><input type="checkbox" id="L_JA" checked> Kanji</label>
-      <label><input type="checkbox" id="L_KANA" checked> Hiragana</label>
-      <label><input type="checkbox" id="L_RO" checked> Romaji</label>
-    </div>
+<div class="toggle-row" id="learnedToggles" style="margin-bottom:8px">
+  <label><input type="checkbox" id="L_JA" checked> 日本語</label>
+  <label><input type="checkbox" id="L_KANA" checked> ひらがな</label>
+  <label><input type="checkbox" id="L_RO" checked> ローマ字</label>
+  <label><input type="checkbox" id="L_EN" checked> English</label>
+</div>
 
     <div id="learnedBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
 
@@ -321,6 +321,20 @@ const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
 function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
 function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
 
+// === learned 日付ストア（id -> 'YYYY-MM-DD'） ===
+const LEARNED_DATE_KEY = 'ntx_learned_dates_v1';
+function getLearnedDates(){
+  try { return JSON.parse(localStorage.getItem(LEARNED_DATE_KEY) || '{}'); }
+  catch (_) { return {}; }
+}
+function setLearnedDate(id, dstr){
+  const m = getLearnedDates(); m[id] = dstr;
+  localStorage.setItem(LEARNED_DATE_KEY, JSON.stringify(m));
+}
+function getLearnedDateStr(id){
+  const m = getLearnedDates(); return m[id] || '';
+}
+  
 function buildPath(lvl=level, pk=posKey){ return `data/json/${lvl}/${POS.find(p=>p.k===pk).file}`; }
 function coerceArray(json){
   if (Array.isArray(json)) return json;
@@ -637,14 +651,39 @@ function openLearned(){
 document.getElementById('closeLearned').onclick=()=>document.getElementById('learnedModal').classList.remove('show');
 document.getElementById('learnedModal').addEventListener('click',e=>{ if(e.target.id==='learnedModal') e.currentTarget.classList.remove('show'); });
 document.getElementById('clearLearned').onclick=()=>{ localStorage.setItem(LS_KEY(),'[]'); renderLearnedModal(); };
+
 document.getElementById('printLearned').onclick=()=>{
-  const s=learnedSet(); if(!s.size){ alert('No learned items.'); return; }
-  const w=open('','_blank'); const rows=(lastData||[]).filter(x=>s.has(x.id));
-  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
-  rows.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}</div>`));
+  const s = learnedSet(); 
+  if(!s.size){ alert('No learned items.'); return; }
+  const rows = (lastData||[]).filter(x=>s.has(x.id));
+  const w = open('','_blank');
+  w.document.write(`<!doctype html><meta charset="utf-8">
+<title>Learned</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;margin:24px}
+  h1{font-size:20px;margin:0 0 12px}
+  .row{border-bottom:1px dashed #ccc;padding:6px 0}
+  .date{color:#888;font-weight:400;margin-left:6px}
+</style>
+<h1>Learned</h1>`);
+  rows.forEach((x,i)=>{
+    const d = (function(){ try{return JSON.parse(localStorage.getItem('ntx_learned_dates_v1')||'{}')[x.id]||'';}catch(_){return '';} })();
+    const title = [
+      x.ja||'',
+      x.kana||'',
+      x.ro||'',
+      x.en||''
+    ].filter(Boolean).join(' / ');
+    w.document.write(
+      `<div class="row">${i+1}. <strong>${title}</strong>`+
+      (d?` <span class="date">（${d}）</span>`:'')+
+      `</div>`
+    );
+  });
   w.document.close(); w.print();
-};
-['L_EN','L_JA','L_KANA','L_RO'].forEach(id=>{
+};  
+  
+['L_JA','L_KANA','L_RO','L_EN'].forEach(id=>{
   document.getElementById(id).addEventListener('change',renderLearnedModal);
 });
 function renderLearnedModal(){
@@ -668,9 +707,13 @@ const tags=[];
     if(showKA && x.kana) tags.push(x.kana);
     if(showRO && x.ro)   tags.push(x.ro);
     if(showEN && x.en)   tags.push(x.en);
-    const lineTop=document.createElement('div');
-    lineTop.style.fontWeight='700';
-    lineTop.textContent=`${i+1}. ${tags.join(' / ')}`;
+
+const lineTop=document.createElement('div');
+lineTop.style.fontWeight='700';
+const d = getLearnedDateStr(x.id);
+lineTop.innerHTML = `${i+1}. ${tags.join(' / ')}`
+  + (d ? ` <span style="font-weight:400;color:#888">（${d}）</span>` : '');
+    
     wrap.appendChild(lineTop);
 
     const ex = (x.examples && x.examples.length) ? x.examples[0] : null;
@@ -791,6 +834,7 @@ function renderLearningModal(){
       const s  = learnedSet();
       s.add(id);
       setLearned(s);
+      setLearnedDate(id, new Date().toISOString().slice(0,10)); // 例: 2025-11-06
       setLearning(getLearning().filter(x => x.id !== id)); // Learning から削除
       renderLearningModal();
     });
