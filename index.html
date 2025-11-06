@@ -175,12 +175,12 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
     <button id="printBtn" class="btn" type="button">Print Learned</button>
 
-    <div class="toggle-row" role="group" aria-label="Field toggles">
-      <label><input type="checkbox" id="toggleEN" checked> English</label>
-      <label><input type="checkbox" id="toggleJA" checked> Kanji</label>
-      <label><input type="checkbox" id="toggleKANA" checked> Hiragana</label>
-      <label><input type="checkbox" id="toggleRO" checked> Romaji</label>
-    </div>
+<div class="toggle-row" role="group" aria-label="Field toggles">
+  <label><input type="checkbox" id="toggleJA"   checked> <span id="lblJA">Nihongo</span></label>
+  <label><input type="checkbox" id="toggleKANA" checked> <span id="lblKANA">Hiragana</span></label>
+  <label><input type="checkbox" id="toggleRO"   checked> <span id="lblRO">Romaji</span></label>
+  <label><input type="checkbox" id="toggleEN"   checked> <span id="lblEN">English</span></label>
+</div>
   </div>
 
   <div id="meta" style="color:var(--muted);font-size:13px;margin:4px 0 10px"></div>
@@ -228,9 +228,18 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <label><input type="checkbox" id="LG_RO" checked> ローマ字</label>
   <label><input type="checkbox" id="LG_EN" checked> English</label>
 </div>
+
+ <!-- ▲ Learning ツール（上部） -->
+<div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin:10px 0">
+  <button id="toLearnedViewTop" class="btn">Open Learned</button>
+  <button id="printLearningTop" class="btn" style="background:var(--shu);color:#fff;border-color:var(--shu)">Print</button>
+</div>   
     
     <div id="learningBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
 
+document.getElementById('toLearnedViewTop')?.addEventListener('click', ()=> openLearned());
+document.getElementById('printLearningTop')?.addEventListener('click', ()=> document.getElementById('printLearning').click());
+    
 <!-- ▼ Learning 用ページャ -->
 <div id="learningPager" class="pager"></div>  
 
@@ -329,6 +338,20 @@ function applyLangToUI(){
   const pb=document.getElementById('printBtn');
   if(pb){ pb.textContent = (uiLang==='en') ? 'Print Learned' : '覚えた一覧を印刷'; }
 }
+
+// field toggle labels
+  const en = (uiLang==='en');
+  const map = {
+    lblJA  : en ? 'Nihongo'  : '日本語',
+    lblKANA: en ? 'Hiragana' : 'ひらがな',
+    lblRO  : en ? 'Romaji'   : 'ローマ字',
+    lblEN  : en ? 'English'  : '英語',
+  };
+  Object.entries(map).forEach(([id,txt])=>{
+    const el = document.getElementById(id);
+    if (el) el.textContent = txt;
+  });
+  
 function attachLangToggle(){
   const btn = document.getElementById('langBtn');
   if(!btn) return;
@@ -504,12 +527,12 @@ function renderList(data){
     const num=div('num',idx+'.');
     const tags=div('tags','');
 
-    const tagMap={en:item.en, ja:item.ja, kana:item.kana, ro:item.ro};
-    ['en','ja','kana','ro'].forEach(k=>{
+   const tagMap={ja:item.ja, kana:item.kana, ro:item.ro, en:item.en};
+    ['ja','kana','ro','en'].forEach(k=>{
       const v=tagMap[k]; if(v && String(v).trim()){
         const s=document.createElement('span'); s.className='tag '+k; s.textContent=v; tags.appendChild(s);
       }
-    });
+    }); 
 
     const act=document.createElement('button');
     act.className='btn';
@@ -634,11 +657,11 @@ function renderLearnedModal(){
     const wrap=document.createElement('div');
     wrap.style.cssText='padding:8px 0;border-bottom:1px dashed #eee';
 
-    const tags=[];
-    if(showEN && x.en) tags.push(x.en);
-    if(showJA && x.ja) tags.push(x.ja);
+const tags=[];
+    if(showJA && x.ja)   tags.push(x.ja);
     if(showKA && x.kana) tags.push(x.kana);
-    if(showRO && x.ro) tags.push(x.ro);
+    if(showRO && x.ro)   tags.push(x.ro);
+    if(showEN && x.en)   tags.push(x.en);
     const lineTop=document.createElement('div');
     lineTop.style.fontWeight='700';
     lineTop.textContent=`${i+1}. ${tags.join(' / ')}`;
@@ -647,10 +670,10 @@ function renderLearnedModal(){
     const ex = (x.examples && x.examples.length) ? x.examples[0] : null;
     if(ex){
       const bits=[];
-      if(showEN && ex.en)   bits.push(`<div class="en">${ex.en}</div>`);
-      if(showJA && ex.ja)   bits.push(`<div class="ja">${ex.ja}</div>`);
+    if(showJA && ex.ja)   bits.push(`<div class="ja">${ex.ja}</div>`);
       if(showKA && ex.kana) bits.push(`<div class="kana">${ex.kana}</div>`);
       if(showRO && ex.ro)   bits.push(`<div class="ro">${ex.ro}</div>`);
+      if(showEN && ex.en)   bits.push(`<div class="en">${ex.en}</div>`);  
       if(bits.length){
         const block=document.createElement('div');
         block.style.margin='4px 0 0 18px';
