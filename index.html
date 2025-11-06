@@ -131,6 +131,21 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   overflow: auto;            /* 内部もスクロール */
   margin: 0 auto;            /* 横は中央寄せ */
 }
+
+/* === Learned modal: make overlay scrollable & keep head visible === */
+/* 外枠（オーバーレイ）を縦スクロール可・上部から表示にする */
+#learnedModal.admask.show{
+  align-items: flex-start;   /* 画面上部から配置 */
+  overflow-y: auto;          /* 外枠でスクロール可能に */
+  padding: 16px 0;           /* 上が見える余白 */
+}
+
+/* 中身カードが画面をはみ出さないよう高さ制限 + 内部スクロール */
+#learnedModal .ad{
+  max-height: 88vh;          /* 画面高の88%まで */
+  overflow: auto;            /* 内部もスクロール */
+  margin: 0 auto;            /* 横は中央寄せ */
+}
   
 </style>
 </head>
