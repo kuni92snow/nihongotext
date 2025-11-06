@@ -191,7 +191,18 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <button class="x" id="closeLearning" aria-label="Close">×</button>
     <h3 style="margin:0 0 10px">Learning</h3>
 
+<!-- ▼ Learning の表示トグル -->
+<div class="toggle-row" id="learningToggles" style="margin-bottom:8px">
+  <label><input type="checkbox" id="LG_JA" checked> 日本語</label>
+  <label><input type="checkbox" id="LG_KANA" checked> ひらがな</label>
+  <label><input type="checkbox" id="LG_RO" checked> ローマ字</label>
+  <label><input type="checkbox" id="LG_EN" checked> English</label>
+</div>
+    
     <div id="learningBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
+
+<!-- ▼ Learning 用ページャ -->
+<div id="learningPager" class="pager"></div>  
 
     <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
       <button id="toLearnedView" class="btn">Open Learned</button>
@@ -624,6 +635,9 @@ function renderLearnedModal(){
 /* ========= Learning modal & storage ========= */
 const LEARN_KEY = 'ntx_learning_v2';
 
+const LEARN_PAGE_SIZE = 5;
+let learnPage = 1;
+
 function getLearning(){
   try { return JSON.parse(localStorage.getItem(LEARN_KEY) || '[]'); }
   catch(_) { return []; }
@@ -664,32 +678,89 @@ function renderLearningModal(){
     return;
   }
 
-  body.innerHTML = arr.map((x,i)=>`
-    <div style="padding:8px 0;border-bottom:1px dashed #eee">
-      <div style="font-weight:700">${i+1}. ${[x.ja,x.kana,x.ro,x.en].filter(Boolean).join(' / ')}</div>
-      <div style="margin:4px 0 0 18px">
-        ${ (x.examples && x.examples[0])
-            ? [x.examples[0].en,x.examples[0].ja,x.examples[0].kana,x.examples[0].ro]
-                .filter(Boolean).map(t=>`<div>${t}</div>`).join('')
-            : '' }
-      </div>
-      <div style="margin-top:6px;text-align:right">
-        <button class="btn" data-learned="${encodeURIComponent(x.id)}">Learned</button>
-      </div>
-    </div>
-  `).join('');
+// ▼ ページング
+  const total = Math.max(1, Math.ceil(arr.length / LEARN_PAGE_SIZE));
+  if (learnPage > total) learnPage = total;
+  const start = (learnPage - 1) * LEARN_PAGE_SIZE;
+  const rows  = arr.slice(start, start + LEARN_PAGE_SIZE);
 
-  // 「Learned」押下で Learned 側へ移動（現行の learnedSet を利用）
+  // ▼ 表示トグルの現在値
+  const showJA   = document.getElementById('LG_JA')?.checked !== false;
+  const showKANA = document.getElementById('LG_KANA')?.checked !== false;
+  const showRO   = document.getElementById('LG_RO')?.checked !== false;
+  const showEN   = document.getElementById('LG_EN')?.checked !== false;
+
+  // ▼ 本文（例文は全件、<details>で個別開閉）
+  body.innerHTML = rows.map((x,i)=>{
+    const title = [
+      showJA   && x.ja   ? x.ja   : null,
+      showKANA && x.kana ? x.kana : null,
+      showRO   && x.ro   ? x.ro   : null,
+      showEN   && x.en   ? x.en   : null,
+    ].filter(Boolean).join(' / ');
+
+    const exHtml = (x.examples||[]).map((e,idx)=>{
+      const bits = [];
+      if (showJA   && e.ja)   bits.push(`<div class="ja">${e.ja}</div>`);
+      if (showKANA && e.kana) bits.push(`<div class="kana">${e.kana}</div>`);
+      if (showRO   && e.ro)   bits.push(`<div class="ro">${e.ro}</div>`);
+      if (showEN   && e.en)   bits.push(`<div class="en">${e.en}</div>`);
+      return `
+        <details ${idx===0 ? 'open' : ''} style="margin:6px 0 0 18px">
+          <summary style="cursor:pointer">Example ${idx+1}</summary>
+          <div style="margin-top:4px">${bits.join('')}</div>
+        </details>`;
+    }).join('');
+
+    return `
+      <div class="learning-row" data-id="${encodeURIComponent(x.id)}"
+           style="padding:8px 0;border-bottom:1px dashed #eee">
+        <div style="font-weight:700">${start+i+1}. ${title || (x.id||'-')}</div>
+        ${exHtml}
+        <div style="margin-top:8px;display:flex;gap:8px;justify-content:flex-end">
+          <button class="btn" data-learned="${encodeURIComponent(x.id)}">Learned</button>
+          <button class="btn" data-return="${encodeURIComponent(x.id)}">Return to Learn</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // ▼ Learned へ移動
   body.querySelectorAll('[data-learned]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const id = decodeURIComponent(btn.getAttribute('data-learned'));
-      const s  = learnedSet();  // 既存関数（レベル/品詞別のID集合）
+      const s  = learnedSet();
       s.add(id);
       setLearned(s);
       setLearning(getLearning().filter(x => x.id !== id)); // Learning から削除
       renderLearningModal();
     });
   });
+
+  // ▼ Learn へ戻す（＝Learning から削除）
+  body.querySelectorAll('[data-return]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const id = decodeURIComponent(btn.getAttribute('data-return'));
+      setLearning(getLearning().filter(x => x.id !== id));
+      renderLearningModal();
+    });
+  });
+
+  // ▼ ページャ描画
+  const pagerEl = document.getElementById('learningPager');
+  if (pagerEl){
+    pagerEl.innerHTML = '';
+    const mk = (label, disabled, on)=> {
+      const b=document.createElement('button');
+      b.className='pagebtn'; b.textContent=label; b.disabled=disabled; b.onclick=on; return b;
+    };
+    pagerEl.appendChild(mk('Prev', learnPage<=1, ()=>{ learnPage--; renderLearningModal(); }));
+    const info = document.createElement('span'); info.style.margin='0 6px';
+    info.textContent = `${learnPage}/${total}`;
+    pagerEl.appendChild(info);
+    pagerEl.appendChild(mk('Next', learnPage>=total, ()=>{ learnPage++; renderLearningModal(); }));
+  }
+  
 }
 
 // Learning モーダルのボタン類
@@ -710,6 +781,11 @@ document.getElementById('printLearning')?.addEventListener('click', ()=>{
   arr.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}</div>`));
   w.document.close(); w.print();
 });  
+
+// ▼ Learning 表示トグルのイベント
+['LG_JA','LG_KANA','LG_RO','LG_EN'].forEach(id=>{
+  document.getElementById(id)?.addEventListener('change', ()=>{ learnPage = 1; renderLearningModal(); });
+});
   
 /* ========= Search highlight (words + examples) — loop-safe ========= */
 let HL_LOCK = false;
