@@ -4,32 +4,29 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>nihongotext.com</title>
-<link rel="icon" href="/favicon.ico" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ');
-</script>
+
+<!-- ページ固有のスタイル（共通ヘッダー/フッターは partials 側に任せる） -->
 <style>
 :root{--shu:#e60012;--ink:#222;--muted:#666;--line:#e8e8e8;--card:#fff7f6}
 *{box-sizing:border-box}
 html,body{margin:0;background:#fff;color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer}
-.topbar{border-top:4px solid var(--shu);border-bottom:1px solid #f2cacc;background:#fff;position:sticky;top:0;z-index:5}
+
+/* ページ本体 */
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-.brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
-.brand{font-weight:900;font-size:40px;color:var(--shu);line-height:1}
-.small-dot{font-weight:400;font-size:.6em;color:#000}
-.nav{margin-left:auto;display:flex;gap:8px;align-items:center}
-.nav .btn{border:1px solid var(--line);padding:8px 12px;border-radius:10px;background:#fff}
-.nav .primary{border-color:var(--shu);color:#fff;background:var(--shu)}
 main.wrap{display:block;padding:20px 0}
+
+/* コントロール群 */
 .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 14px}
 .controls .grow{flex:1 1 260px}
 select,input[type="text"]{border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.tag{border:1px solid var(--line);border-radius:20px;padding:2px 8px;font-size:12px;background:#fff}
+.btn{border:1px solid var(--line);padding:6px 10px;border-radius:10px;background:#fff}
+.btn.primary{border-color:var(--shu);background:var(--shu);color:#fff}
+
+/* 単語カード */
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 @media (max-width:800px){.grid{grid-template-columns:1fr}}
 .card{border:2px solid var(--line);border-radius:14px;background:var(--card);padding:10px}
@@ -37,14 +34,12 @@ select,input[type="text"]{border:1px solid var(--line);border-radius:8px;padding
 .card h3{font-size:18px;margin:0 0 6px}
 .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
 .tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.btn{border:1px solid var(--line);padding:6px 10px;border-radius:10px;background:#fff}
-.btn.primary{border-color:var(--shu);background:var(--shu);color:#fff}
-.btn.secondary{background:#f6f6f6}
-.btn.danger{border-color:#f66;color:#f66;background:#fff}
-.tag{border:1px solid var(--line);border-radius:20px;padding:2px 8px;font-size:12px;background:#fff}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
+
+/* ページャ */
 .pager{display:flex;gap:8px;justify-content:center;margin:12px 0}
 .pagebtn{border:1px solid var(--line);padding:6px 10px;border-radius:8px;background:#fff}
+
+/* モーダル */
 .ntx-modal{position:fixed;left:0;right:0;bottom:0;display:none;z-index:1000;background:#fff;border-top:3px solid var(--shu);max-height:92vh}
 .ntx-modal.show{display:block}
 .ntx-m-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line)}
@@ -56,36 +51,29 @@ select,input[type="text"]{border:1px solid var(--line);border-radius:8px;padding
 .ntx-table th{background:#fafafa}
 #ntxModalMask{position:fixed;inset:0;background:rgba(0,0,0,.15);display:none;z-index:900}
 #ntxModalMask.show{display:block}
-.footer{border-top:1px solid #eee;margin-top:40px;background:#fff}
-.footer-inner{max-width:1100px;margin:0 auto;padding:24px 16px;color:#666;font-size:14px;text-align:center}
+
+/* フッターの最終行だけここで整える（本体は partials 側） */
+.site-footer-wrap{max-width:1100px;margin:0 auto;padding:24px 16px;color:#666;font-size:14px;text-align:center}
 </style>
 </head>
 <body>
-<div class="topbar">
-  <header class="wrap brandbar" id="site-header">
-    <div class="brand">
-      <a href="/" aria-label="Go to Home">
-        <span>nihongotext</span><span class="small-dot">.com</span>
-        <br><span style="font-size:12px;color:#444">== beta version ==</span>
-      </a>
-    </div>
-    <nav class="nav">
-      <button id="langBtn" class="btn secondary" type="button">日本語</button>
-      <a href="/inquiry/" class="btn primary">Contact</a>
-    </nav>
-    <div class="header-right"></div>
-  </header>
-</div>
-<main class="wrap">
+
+<!-- ここに /partials/header.html を読み込む -->
+<div id="site-header"></div>
+
+<main class="wrap" id="app">
   <div class="controls">
     <label>Level
       <select id="levelSel">
         <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
       </select>
     </label>
+
     <div class="chips" id="posChips" role="tablist" aria-label="Parts of Speech"></div>
+
     <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
     <button id="printBtn" class="btn" type="button">Print Learned</button>
+
     <div class="chips" role="group" aria-label="Field toggles">
       <label class="tag"><input type="checkbox" id="toggleEN" checked> English</label>
       <label class="tag"><input type="checkbox" id="toggleJA" checked> Kanji</label>
@@ -93,158 +81,183 @@ select,input[type="text"]{border:1px solid var(--line);border-radius:8px;padding
       <label class="tag"><input type="checkbox" id="toggleRO" checked> Romaji</label>
     </div>
   </div>
+
   <div id="meta" style="color:var(--muted);font-size:13px;margin:4px 0 10px"></div>
   <div id="list" class="grid" aria-live="polite"></div>
   <div id="pager" class="pager"></div>
 </main>
-<div class="footer"><div class="footer-inner">© 2025 nihongotext.com</div></div>
+
+<!-- ここに /partials/footer.html を読み込む -->
+<div id="site-footer"></div>
+
+<!-- ===== Learning / Learned モーダル ===== -->
 <div id="ntxModalMask"></div>
+
 <div id="learningModal" class="ntx-modal" role="dialog" aria-label="learning">
-  <div class="ntx-m-head"><div class="ntx-m-title">Learning</div>
+  <div class="ntx-m-head">
+    <div class="ntx-m-title">Learning</div>
     <div class="ntx-ctl">
       <button class="btn" id="printLearning">Print</button>
-      <button class="btn secondary" id="goToLearned">go to learned</button>
+      <button class="btn" id="goToLearned">go to learned</button>
       <button class="xbtn" data-close="learningModal" aria-label="Close">×</button>
     </div>
   </div>
   <div class="ntx-m-body">
     <table class="ntx-table" id="learningTable">
-      <thead><tr><th>#</th><th>Word</th><th>Level/Part</th><th>Moved on</th><th>Examples</th><th>Quiz</th><th>Action</th></tr></thead>
+      <thead>
+        <tr><th>#</th><th>Word</th><th>Level/Part</th><th>Moved on</th><th>Examples</th><th>Quiz</th><th>Action</th></tr>
+      </thead>
       <tbody></tbody>
     </table>
   </div>
 </div>
+
 <div id="learnedModal" class="ntx-modal" role="dialog" aria-label="learned">
-  <div class="ntx-m-head"><div class="ntx-m-title">Learned</div>
+  <div class="ntx-m-head">
+    <div class="ntx-m-title">Learned</div>
     <div class="ntx-ctl">
       <button class="btn" id="printLearned">Print</button>
-      <button class="btn secondary" id="goToLearning">go to learning</button>
+      <button class="btn" id="goToLearning">go to learning</button>
       <button class="xbtn" data-close="learnedModal" aria-label="Close">×</button>
     </div>
   </div>
   <div class="ntx-m-body">
     <table class="ntx-table" id="learnedTable">
-      <thead><tr><th>#</th><th>Word</th><th>Level/Part</th><th>Moved on</th><th>Examples</th><th>Quiz</th><th>Action</th></tr></thead>
+      <thead>
+        <tr><th>#</th><th>Word</th><th>Level/Part</th><th>Moved on</th><th>Examples</th><th>Quiz</th><th>Action</th></tr>
+      </thead>
       <tbody></tbody>
     </table>
   </div>
 </div>
+
 <script>
+/* ========= 部分テンプレートの読み込み ========= */
+async function loadPartials() {
+  try {
+    const headerHtml = await fetch('/partials/header.html', {cache:'no-cache'}).then(r => r.text());
+    document.getElementById('site-header').innerHTML = headerHtml;
+  } catch(e) {
+    document.getElementById('site-header').innerHTML =
+      '<div class="wrap" style="border-top:4px solid var(--shu);padding:14px 16px"><strong>nihongotext.com</strong></div>';
+  }
+  try {
+    const footerHtml = await fetch('/partials/footer.html', {cache:'no-cache'}).then(r => r.text());
+    document.getElementById('site-footer').innerHTML = footerHtml;
+  } catch(e) {
+    document.getElementById('site-footer').innerHTML =
+      '<div class="site-footer-wrap">© 2025 nihongotext.com</div>';
+  }
+
+  // Learning ボタン（header.html 内に #learnBtn がある前提。なければ安全に無視）
+  const learnBtn = document.getElementById('learnBtn');
+  if (learnBtn) learnBtn.addEventListener('click', () => openModal('learningModal'));
+}
+
+/* ========= 言語切替（シンプル） ========= */
 function ntxLang(){ try{return localStorage.getItem('lang')||'en'}catch(_){return'en'} }
 function setLang(l){ try{localStorage.setItem('lang',l)}catch(_){ } applyI18n(); renderList(lastData,true); }
 function applyI18n(){
-  var lb=document.getElementById('langBtn');
-  if(lb) lb.textContent = (ntxLang()==='ja'?'English':'日本語');
-  var b=document.getElementById('learnBtn');
+  const b=document.getElementById('learnBtn');
   if(b) b.textContent = (ntxLang()==='ja'?'学習中':'Learning');
 }
-var NTX_KEYS={learning:'ntx_learning_v2', learned:'ntx_learned_v2'};
+
+/* ========= ストレージ ========= */
+const NTX_KEYS={learning:'ntx_learning_v2', learned:'ntx_learned_v2'};
 function ntxLoad(k){ try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(_){return[]} }
 function ntxSave(k,v){ try{localStorage.setItem(k,JSON.stringify(v))}catch(_){} }
-function today(){ var d=new Date(),z=function(n){return String(n).padStart(2,'0')}; return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate()); }
-function upsert(k,item){ var a=ntxLoad(k); var i=a.findIndex(function(x){return x.id===item.id}); if(i>=0)a[i]=item; else a.push(item); ntxSave(k,a); }
-function removeFrom(k,id){ ntxSave(k, ntxLoad(k).filter(function(x){return x.id!==id})); }
+function today(){ const d=new Date(),z=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`; }
+function upsert(k,item){ const a=ntxLoad(k); const i=a.findIndex(x=>x.id===item.id); if(i>=0)a[i]=item; else a.push(item); ntxSave(k,a); }
+function removeFrom(k,id){ ntxSave(k, ntxLoad(k).filter(x=>x.id!==id)); }
+
+/* ========= 公開 API ========= */
 window.ntxToLearning=function(item){ if(!item||!item.id)return; item.movedAt=item.movedAt||today(); item.quiz=item.quiz||{taken:0,correct:0}; upsert(NTX_KEYS.learning,item); removeFrom(NTX_KEYS.learned,item.id); renderLearning(); };
 window.ntxToLearned=function(item){ if(!item||!item.id)return; item.movedAt=item.movedAt||today(); item.quiz=item.quiz||{taken:0,correct:0}; upsert(NTX_KEYS.learned,item); removeFrom(NTX_KEYS.learning,item.id); renderLearned(); };
 window.ntxQuizAddResult=function(id,correct){
-  [NTX_KEYS.learning,NTX_KEYS.learned].forEach(function(k){
-    var a=ntxLoad(k), i=a.findIndex(function(x){return x.id===id});
+  [NTX_KEYS.learning,NTX_KEYS.learned].forEach(k=>{
+    const a=ntxLoad(k), i=a.findIndex(x=>x.id===id);
     if(i>=0){ a[i].quiz=a[i].quiz||{taken:0,correct:0}; a[i].quiz.taken++; if(!!correct) a[i].quiz.correct++; ntxSave(k,a); }
   });
   renderLearning(); renderLearned();
 };
-function escapeHtml(s){ return (s||'').replace(/[&<>"']/g, function(m){return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m]}); }
-function quizText(q){ q=q||{taken:0,correct:0}; return (q.correct||0)+'/'+(q.taken||0); }
+
+/* ========= テーブル描画 ========= */
+function escapeHtml(s){ return (s||'').replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[m]); }
+function quizText(q){ q=q||{taken:0,correct:0}; return `${q.correct||0}/${q.taken||0}`; }
 function examplesHtml(exs){
   if(!exs||!exs.length) return '-';
-  var parts = ['<details><summary>Examples</summary>'];
-  for(var i=0;i<exs.length;i++){
-    var e=exs[i];
-    parts.push('<div><span>'+escapeHtml(e.en||'')+'</span>');
-    if(e.ja)   parts.push('<div>'+escapeHtml(e.ja)+'</div>');
-    if(e.kana) parts.push('<div>'+escapeHtml(e.kana)+'</div>');
-    if(e.ro)   parts.push('<div>'+escapeHtml(e.ro)+'</div>');
-    parts.push('</div>');
+  let html = '<details><summary>Examples</summary>';
+  for(const e of exs){
+    html += '<div><span>'+escapeHtml(e.en||'')+'</span>';
+    if(e.ja)   html+='<div>'+escapeHtml(e.ja)+'</div>';
+    if(e.kana) html+='<div>'+escapeHtml(e.kana)+'</div>';
+    if(e.ro)   html+='<div>'+escapeHtml(e.ro)+'</div>';
+    html += '</div>';
   }
-  parts.push('</details>');
-  return parts.join('');
-}
-function rowHTML(idx, it, toKey){
-  var meta=[it.level||'', it.part||''].filter(Boolean).join(' / ');
-  var examples=examplesHtml(it.examples);
-  var isToLearned = (toKey===NTX_KEYS.learned);
-  var moveLabel = isToLearned ? (ntxLang()==='ja'?'Learned':'Learned') : (ntxLang()==='ja'?'Learning':'Learning');
-  var fn = (toKey===NTX_KEYS.learned?'window.ntxToLearned':'window.ntxToLearning');
-  var payload = encodeURIComponent(JSON.stringify(it));
-  var html='';
-  html+='<tr>';
-  html+='<td>'+(idx+1)+'</td>';
-  html+='<td><strong>'+escapeHtml(it.ja||it.en||it.id||'-')+'</strong><br/><span style="color:#666">'+escapeHtml(it.en||'')+'</span></td>';
-  html+='<td>'+(meta||'-')+'</td>';
-  html+='<td>'+(it.movedAt||'-')+'</td>';
-  html+='<td>'+examples+'</td>';
-  html+='<td class="quizstat">'+quizText(it.quiz)+'</td>';
-  html+='<td>';
-  html+='<button class="btn" onclick="(function(){ '+fn+'(JSON.parse(decodeURIComponent(\''+payload+'\'))); })()">'+moveLabel+'</button>';
-  html+='<button class="btn danger" onclick="(function(){ removeFrom(\''+toKey+'\',\''+it.id+'\'); renderLearning(); renderLearned(); })()">'+(ntxLang()==='ja'?'削除':'remove')+'</button>';
-  html+='</td>';
-  html+='</tr>';
+  html += '</details>';
   return html;
 }
-function renderLearning(){ var tb=document.querySelector('#learningTable tbody'); if(!tb)return; var a=ntxLoad(NTX_KEYS.learning); tb.innerHTML = a.map(function(x,i){return rowHTML(i,x,NTX_KEYS.learned)}).join('')||'<tr><td colspan="7">No items</td></tr>'; }
-function renderLearned(){ var tb=document.querySelector('#learnedTable tbody'); if(!tb)return; var a=ntxLoad(NTX_KEYS.learned);  tb.innerHTML = a.map(function(x,i){return rowHTML(i,x,NTX_KEYS.learning)}).join('')||'<tr><td colspan="7">No items</td></tr>'; }
-function openModal(id){ var m=document.getElementById(id); if(!m)return; document.getElementById('ntxModalMask').classList.add('show'); m.classList.add('show'); if(id==='learningModal')renderLearning(); if(id==='learnedModal')renderLearned(); }
-function closeModal(id){ var m=document.getElementById(id); if(!m)return; m.classList.remove('show'); document.getElementById('ntxModalMask').classList.remove('show'); }
+function rowHTML(idx, it, toKey){
+  const meta=[it.level||'', it.part||''].filter(Boolean).join(' / ');
+  const examples=examplesHtml(it.examples);
+  const isToLearned = (toKey===NTX_KEYS.learned);
+  const moveLabel = isToLearned ? (ntxLang()==='ja'?'Learned':'Learned') : (ntxLang()==='ja'?'Learning':'Learning');
+  const fn = (toKey===NTX_KEYS.learned?'window.ntxToLearned':'window.ntxToLearning');
+  const payload = encodeURIComponent(JSON.stringify(it));
+  return `<tr>
+    <td>${idx+1}</td>
+    <td><strong>${escapeHtml(it.ja||it.en||it.id||'-')}</strong><br/><span style="color:#666">${escapeHtml(it.en||'')}</span></td>
+    <td>${meta||'-'}</td>
+    <td>${it.movedAt||'-'}</td>
+    <td>${examples}</td>
+    <td class="quizstat">${quizText(it.quiz)}</td>
+    <td>
+      <button class="btn" onclick="(function(){ ${fn}(JSON.parse(decodeURIComponent('${payload}'))); })()">${moveLabel}</button>
+      <button class="btn" onclick="(function(){ removeFrom('${toKey}','${it.id}'); renderLearning(); renderLearned(); })()">${ntxLang()==='ja'?'削除':'remove'}</button>
+    </td>
+  </tr>`;
+}
+function renderLearning(){ const tb=document.querySelector('#learningTable tbody'); if(!tb)return; const a=ntxLoad(NTX_KEYS.learning); tb.innerHTML = a.map((x,i)=>rowHTML(i,x,NTX_KEYS.learned)).join('')||`<tr><td colspan="7">No items</td></tr>`; }
+function renderLearned(){ const tb=document.querySelector('#learnedTable tbody'); if(!tb)return; const a=ntxLoad(NTX_KEYS.learned);  tb.innerHTML = a.map((x,i)=>rowHTML(i,x,NTX_KEYS.learning)).join('')||`<tr><td colspan="7">No items</td></tr>`; }
+
+/* ========= モーダル制御・印刷 ========= */
+function openModal(id){ document.getElementById('ntxModalMask')?.classList.add('show'); document.getElementById(id)?.classList.add('show'); if(id==='learningModal')renderLearning(); if(id==='learnedModal')renderLearned(); }
+function closeModal(id){ document.getElementById(id)?.classList.remove('show'); document.getElementById('ntxModalMask')?.classList.remove('show'); }
 function printTable(id){
-  var box=document.querySelector('#'+id+' .ntx-m-body'); if(!box)return;
-  var w=window.open('','_blank');
-  w.document.write('<meta charset="utf-8"><title>Print</title><style>body{font:14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;} h1{font-size:18px} table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:6px 8px;text-align:left} details{margin:.2rem 0} summary{font-weight:700}</style>'+box.innerHTML);
+  const box=document.querySelector('#'+id+' .ntx-m-body'); if(!box)return;
+  const w=window.open('','_blank');
+  w.document.write('<meta charset="utf-8"><title>Print</title><style>body{font:14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial} table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:6px 8px;text-align:left} details{margin:.2rem 0} summary{font-weight:700}</style>'+box.innerHTML);
   w.document.close(); w.focus(); w.print(); w.close();
 }
-document.addEventListener('click', function(e){
-  var c=e.target.closest && e.target.closest('.xbtn[data-close]'); if(c){ closeModal(c.getAttribute('data-close')); }
-});
-document.getElementById('ntxModalMask').addEventListener('click', function(){ closeModal('learningModal'); closeModal('learnedModal'); });
-document.addEventListener('DOMContentLoaded', function(){
-  var hdr = document.getElementById('site-header');
-  var right = hdr ? hdr.querySelector('.header-right') : null;
-  if (hdr && !right) { right = document.createElement('div'); right.className = 'header-right'; hdr.appendChild(right); }
-  if (right && !document.getElementById('learnBtn')) {
-    var btn = document.createElement('button');
-    btn.id = 'learnBtn'; btn.className = 'btn'; btn.type = 'button';
-    btn.textContent = (ntxLang()==='ja' ? '学習中' : 'Learning');
-    right.appendChild(btn);
-  }
-  document.getElementById('learnBtn')?.addEventListener('click', function(){ openModal('learningModal'); });
-  document.getElementById('goToLearned') ?.addEventListener('click', function(){ closeModal('learningModal'); openModal('learnedModal'); });
-  document.getElementById('goToLearning')?.addEventListener('click', function(){ closeModal('learnedModal');  openModal('learningModal'); });
-  document.getElementById('printLearning')?.addEventListener('click', function(){ printTable('learningModal'); });
-  document.getElementById('printLearned') ?.addEventListener('click', function(){ printTable('learnedModal'); });
-  applyI18n();
-});
-var POS=[ {k:'nouns',enLabel:'Nouns'}, {k:'verbs',enLabel:'Verbs'} ];
-var level='N5'; var posKey='nouns'; var page=1; var lastData=[]; var PAGE_SIZE=20;
-var posChips=document.getElementById('posChips'); var list=document.getElementById('list'); var pager=document.getElementById('pager');
-var kw=document.getElementById('kw'); var meta=document.getElementById('meta');
-document.getElementById('langBtn').addEventListener('click', function(){ setLang(ntxLang()==='ja'?'en':'ja'); });
-function chip(label, key){ var b=document.createElement('button'); b.textContent=label; b.className='btn'; b.onclick=function(){ posKey=key; page=1; renderList(lastData,true); }; return b; }
-function buildChips(){ posChips.innerHTML=''; POS.forEach(function(p){ posChips.appendChild(chip(p.enLabel, p.k)); }); }
+document.addEventListener('click', (e)=>{ const c=e.target.closest?.('.xbtn[data-close]'); if(c){ closeModal(c.getAttribute('data-close')); } });
+document.getElementById('ntxModalMask').addEventListener('click', ()=>{ closeModal('learningModal'); closeModal('learnedModal'); });
+
+/* ========= メインリスト（デモ） ========= */
+const POS=[ {k:'nouns',enLabel:'Nouns'}, {k:'verbs',enLabel:'Verbs'} ];
+let level='N5', posKey='nouns', page=1, lastData=[], PAGE_SIZE=20;
+const posChips=document.getElementById('posChips'), list=document.getElementById('list'), pager=document.getElementById('pager');
+const kw=document.getElementById('kw'), meta=document.getElementById('meta');
+
+function chip(label, key){ const b=document.createElement('button'); b.textContent=label; b.className='btn'; b.onclick=()=>{ posKey=key; page=1; renderList(lastData,true); }; return b; }
+function buildChips(){ posChips.innerHTML=''; POS.forEach(p=>posChips.appendChild(chip(p.enLabel, p.k))); }
 buildChips();
-document.getElementById('levelSel').addEventListener('change', function(e){ level=e.target.value; page=1; renderList(lastData,true); });
-kw.addEventListener('input', function(){ renderList(lastData,true); });
-['toggleEN','toggleJA','toggleKANA','toggleRO'].forEach(function(id){ document.getElementById(id).addEventListener('change',function(){ renderList(lastData); }); });
-function pageBtn(t,fn){var b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
+
+document.getElementById('levelSel').addEventListener('change', e=>{ level=e.target.value; page=1; renderList(lastData,true); });
+kw.addEventListener('input', ()=>renderList(lastData,true));
+document.getElementById('printBtn').addEventListener('click', ()=>openModal('learnedModal'));
+
+function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
 function paginate(data){
-  var total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
+  const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
   if(page>total)page=total;
-  var start=(page-1)*PAGE_SIZE;
-  var rows=data.slice(start,start+PAGE_SIZE);
+  const start=(page-1)*PAGE_SIZE;
+  const rows=data.slice(start,start+PAGE_SIZE);
   pager.innerHTML='';
-  var prev=pageBtn('Prev',function(){page--;renderList(lastData,true);});
+  const prev=pageBtn('Prev',()=>{page--;renderList(lastData,true);});
   prev.disabled=(page<=1);
-  var next=pageBtn('Next',function(){page++;renderList(lastData,true);});
+  const next=pageBtn('Next',()=>{page++;renderList(lastData,true);});
   next.disabled=(page>=total);
-  pager.append(prev,document.createTextNode(' '+page+'/'+total+' '),next);
+  pager.append(prev,document.createTextNode(` ${page}/${total} `),next);
   return rows;
 }
 function demoData(){
@@ -255,19 +268,19 @@ function demoData(){
 }
 function renderList(data, scrollTop){
   lastData=data;
-  var rows=paginate(data);
+  const rows=paginate(data);
   list.innerHTML='';
-  rows.forEach(function(item){
-    var card=document.createElement('div'); card.className='card';
-    var head=document.createElement('div');
-    var h3=document.createElement('h3'); h3.textContent=String(item.ja||item.en||item.id);
-    var metaEl=document.createElement('div'); metaEl.className='meta'; metaEl.textContent=level+' / '+((POS.find(function(p){return p.k===posKey})||{}).enLabel||posKey);
+  rows.forEach(item=>{
+    const card=document.createElement('div'); card.className='card';
+    const head=document.createElement('div');
+    const h3=document.createElement('h3'); h3.textContent=String(item.ja||item.en||item.id);
+    const metaEl=document.createElement('div'); metaEl.className='meta'; metaEl.textContent=`${level} / ${(POS.find(p=>p.k===posKey)||{}).enLabel||posKey}`;
     head.append(h3,metaEl);
-    var body=document.createElement('div');
-    var htmlparts=[];
+
+    const body=document.createElement('div');
+    let htmlparts=[];
     if(item.examples && item.examples.length){
-      for(var i=0;i<item.examples.length;i++){
-        var e=item.examples[i];
+      for(const e of item.examples){
         htmlparts.push('<div style="padding:6px 0;border-top:1px dashed #ddd">');
         htmlparts.push('<div>'+escapeHtml(e.en||'')+'</div>');
         if(e.ja)   htmlparts.push('<div>'+escapeHtml(e.ja)+'</div>');
@@ -279,30 +292,41 @@ function renderList(data, scrollTop){
       htmlparts.push('<div style="color:#777">-</div>');
     }
     body.innerHTML = htmlparts.join('');
-    var tools=document.createElement('div'); tools.className='tools';
-    var tog=document.createElement('button'); tog.className='btn'; tog.textContent='▲'; tog.setAttribute('aria-expanded','true');
-    var act=document.createElement('button'); act.className='btn primary'; act.textContent=(ntxLang()==='en'?'Learn':'覚える');
-    act.onclick = function(){
-      var posLabel = ((POS.find(function(p){return p.k===posKey})||{}).enLabel || posKey);
-      var payload = { id:item.id, ja:item.ja, en:item.en, level:level, part:posLabel, examples:item.examples||[], quiz:{taken:0,correct:0} };
+
+    const tools=document.createElement('div'); tools.className='tools';
+    const tog=document.createElement('button'); tog.className='btn'; tog.textContent='▲'; tog.setAttribute('aria-expanded','true');
+    const act=document.createElement('button'); act.className='btn primary'; act.textContent=(ntxLang()==='en'?'Learn':'覚える');
+
+    // Learn → Learning
+    act.onclick = () => {
+      const posLabel = ((POS.find(p=>p.k===posKey)||{}).enLabel || posKey);
+      const payload = { id:item.id, ja:item.ja, en:item.en, level, part:posLabel, examples:item.examples||[], quiz:{taken:0,correct:0} };
       window.ntxToLearning(payload);
       card.classList.add('learning');
       body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false');
     };
-    tog.addEventListener('click',function(){
-      var open = body.style.display!=='none';
+
+    tog.addEventListener('click',()=>{
+      const open = body.style.display!=='none';
       if(open){ body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false'); }
       else{ body.style.display=''; tog.textContent='▲'; tog.setAttribute('aria-expanded','true'); }
     });
+
     tools.append(tog, act);
     card.append(head,body,tools);
     list.appendChild(card);
   });
+
   if(scrollTop){ window.scrollTo({top:0,behavior:'smooth'}); }
-  meta.textContent = data.length+' items';
+  meta.textContent = `${data.length} items`;
 }
-document.getElementById('printBtn').addEventListener('click', function(){ openModal('learnedModal'); });
-(function init(){ try{ var data = demoData(); renderList(data,true); }catch(e){ renderList(demoData(),true); } })();
+
+/* ========= 起動 ========= */
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadPartials();       // ヘッダー＆フッター読み込み
+  applyI18n();                // Learningボタンの文言を反映
+  renderList(demoData(),true);// 今はデモ。fetch(JSON)に差し替え可
+});
 </script>
 </body>
 </html>
