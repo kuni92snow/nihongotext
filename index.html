@@ -117,6 +117,15 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   overflow-y: auto;
 }
 
+/* === Learning / Learned 印刷時に内容を全て展開 === */
+@media print {
+  #learningModal .ad,
+  #learnedModal .ad {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+  
 /* === Learning modal: make overlay scrollable & keep head visible === */
 /* 外枠（オーバーレイ）を縦スクロール可・上部から表示にする */
 #learningModal.admask.show{
