@@ -55,9 +55,9 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .toggle-row label{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--line);padding:6px 10px;border-radius:10px;background:#fff}
 
 /* Cards */
-.card.learning{background:#f0fff4;border-color:#34d399;}
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 .card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;overflow:hidden}
+.card.learning{background:#f0fff4;border-color:#34d399}
 .card.learned{background:#eefbf1;border-color:#cceedd}
 .head{display:flex;gap:10px;align-items:center;padding:10px 12px;background:#fff;border-bottom:1px dashed #f0d7d4}
 .num{font-weight:800;color:var(--shu)}
@@ -471,9 +471,9 @@ act.onclick = () => {
     examples: item.examples || [],
     quiz: {taken:0, correct:0}
   };
-  // Learningへ保存
+  // Learning に保存
   window.ntxToLearning(payload);
-  // 見た目：緑枠＆例文クローズ
+  // 見た目：緑枠＋例文を閉じる＋トグルを▼
   card.classList.add('learning');
   if (body) body.style.display = 'none';
   tog.textContent = '▼';
@@ -844,7 +844,7 @@ function printTable(id){
   w.document.close(); w.focus(); w.print(); w.close();
 }
 
-/* ========= ヘッダー統合（Learningボタン） ========= */
+/* ========= ヘッダー統合（Learningボタンを右端に） ========= */
 document.addEventListener('DOMContentLoaded', function(){
   const hdr = document.getElementById('site-header');
   let right = hdr ? hdr.querySelector('.header-right') : null;
@@ -858,7 +858,7 @@ document.addEventListener('DOMContentLoaded', function(){
     btn.id = 'learnBtn';
     btn.className = 'btn';
     btn.type = 'button';
-    btn.textContent = (localStorage.getItem('lang')==='ja' ? '学習中' : 'Learning');
+    btn.textContent = (ntxLang()==='ja' ? '学習中' : 'Learning');
     right.appendChild(btn);
   }
   document.getElementById('learnBtn')?.addEventListener('click', ()=>openModal('learningModal'));
@@ -868,6 +868,7 @@ document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('ntxModalMask')?.addEventListener('click', ()=>{ closeModal('learningModal'); closeModal('learnedModal'); });
   document.getElementById('printLearning')?.addEventListener('click', ()=>printTable('learningModal'));
   document.getElementById('printLearned') ?.addEventListener('click', ()=>printTable('learnedModal'));
+  applyI18n();
 });
 </script>
 <!-- ===== END: Learning / Learned UI injection ===== -->
