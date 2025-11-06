@@ -784,11 +784,11 @@ function renderLearningModal(){
       const b=document.createElement('button');
       b.className='pagebtn'; b.textContent=label; b.disabled=disabled; b.onclick=on; return b;
     };
-    pagerEl.appendChild(mk('Prev', learnPage<=1, ()=>{ learnPage--; renderLearningModal(); }));
+   pagerEl.appendChild(mk('Prev', learnPage<=1, ()=>{ learnPage--; renderLearningModal(); showAdPopup(); }));
     const info = document.createElement('span'); info.style.margin='0 6px';
     info.textContent = `${learnPage}/${total}`;
     pagerEl.appendChild(info);
-    pagerEl.appendChild(mk('Next', learnPage>=total, ()=>{ learnPage++; renderLearningModal(); }));
+  pagerEl.appendChild(mk('Next', learnPage>=total, ()=>{ learnPage++; renderLearningModal(); showAdPopup(); }));
   }
   
 }
@@ -870,6 +870,26 @@ function attachListObserver(){
 }
 
 /* ========= Popup & 初期化 ========= */
+
+/* === Pager click -> open Ad modal & push ads === */
+function showAdPopup(){
+  const mask = document.getElementById('adMask');
+  if (!mask) return;
+
+  // モーダル表示
+  mask.classList.add('show');
+
+  // AdSense 再描画（非表示→表示直後のNo slot size対策）
+  try{
+    const box = document.getElementById('amznAdBox');
+    const ins = box && box.querySelector('ins.adsbygoogle');
+    if (ins){
+      ins.style.display = 'block';
+      setTimeout(()=>{ (window.adsbygoogle = window.adsbygoogle || []).push({}); }, 50);
+    }
+  }catch(_){}
+}  
+  
 const adMask=document.getElementById('adMask'), adClose=document.getElementById('adClose');
 adClose.onclick=()=>adMask.classList.remove('show');
 adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remove('show'); });
