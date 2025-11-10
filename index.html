@@ -983,6 +983,16 @@ adMask.addEventListener('click',e=>{ if(e.target===adMask) adMask.classList.remo
   attachListObserver();
   highlightCurrentTerm();
 })();
+
+  // 「Learn」をクリックしたら「Learning」に変更する
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('button.learn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.textContent = 'Learning';
+      });
+    });
+  });
+  
 </script>
 
 </body>
