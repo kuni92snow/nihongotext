@@ -561,7 +561,7 @@ function renderList(data){
     }); 
 
     const act=document.createElement('button');
-    act.className='btn';
+    act.className = 'btn learn';
 
     head.append(tog,num,tags,act);
 
@@ -603,6 +603,7 @@ function renderList(data){
       window.ntxToLearning(payload);
       // 2) カードを緑枠化＆例文クローズ（UI即時反映）
       card.classList.add('learning');
+act.textContent = 'Learning';
       body.style.display='none';
       tog.textContent='▼';
       tog.setAttribute('aria-expanded','false');
