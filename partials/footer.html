@@ -32,6 +32,33 @@
       </a>
     </nav>
 
+    <!-- ===== AdSense Footer Block ===== -->
+    <div id="footerAdWrap">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2358198194205084"
+           data-ad-slot="3714541070"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+    <script>
+      // フッター広告の初期化（幅0エラーを回避）
+      (function initFooterAds(){
+        var el = document.querySelector('#footerAdWrap ins.adsbygoogle');
+        if(!el) return;
+        function tryInit(){
+          var w = el.offsetWidth;
+          if(w && w > 0){
+            try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e){}
+          } else {
+            setTimeout(tryInit, 150);
+          }
+        }
+        tryInit();
+      })();
+    </script>
+    <!-- ===== /AdSense Footer Block ===== -->
+
     <small class="ntx-copy">© 2025 nihongotext.com</small>
   </div>
 </footer>
@@ -58,5 +85,18 @@
   .icon-btn i{ font-size:14px; line-height:1; }
   .icon-btn svg, .icon-btn img{ display:block; width:18px; height:18px; }
   .icon-btn:hover{ background:#fff1ee; }
-  .ntx-copy{ color:#6b7280; font-size:0.85rem; }
+  .ntx-copy{ color:#6b7280; font-size:0.85rem; margin-top:4px; }
+
+  /* --- Footer Ad --- */
+  #footerAdWrap {
+    width:100%;
+    max-width:1100px;
+    margin:8px auto 0;
+    min-height:90px;
+  }
+  #footerAdWrap .adsbygoogle {
+    display:block;
+    width:100%;
+    min-height:90px;
+  }
 </style>
