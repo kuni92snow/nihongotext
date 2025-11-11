@@ -16,9 +16,15 @@
       <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
 
-      <!-- Learning（ドロワー起動ボタン） -->
-      <button id="btn-learning" type="button" title="Learning list"
-        style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+      <!-- Learning（ドロワー起動ボタン：idは #learnBtn、data-open="learning" も付与） -->
+      <button
+        id="learnBtn"
+        data-open="learning"
+        type="button"
+        title="Learning list"
+        style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
+        onclick="(window.openLearning?openLearning(): (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
+      >
         <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
         <span>Learning</span>
         <span id="learning-count-badge" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
@@ -67,11 +73,13 @@
       </div>
       <div style="display:flex; align-items:center; gap:8px;">
         <button id="btn-print-learning" title="Print"
-                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
+                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                onclick="(function(){var c=document.getElementById('learning-content'); if(!c) return; var w=window.open('', '_blank'); w.document.open(); w.document.write('<!doctype html><html><head><title>Learning - Print</title></head><body>'+c.innerHTML+'</body></html>'); w.document.close(); w.focus(); w.print(); w.close(); })()">
           <i class="fa-solid fa-print"></i>
         </button>
         <button id="btn-close-learning" title="Close"
-                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
+                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                onclick="(function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){d.style.right='-560px'; setTimeout(function(){o.style.display='none';},250);} })()">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -93,19 +101,21 @@
     <!-- Drawer footer -->
     <div style="padding:12px 16px; border-top:1px solid #eee; display:flex; justify-content:space-between; gap:8px;">
       <button id="btn-clear-learning" title="Clear Learning list"
-              style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
+              style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+              onclick="(function(){ try{ localStorage.setItem('nihongo_learning','[]'); localStorage.setItem('ntx_learning_v2','[]'); }catch(_){}; var b=document.getElementById('learning-count-badge'); if(b) b.textContent='0'; var l=document.getElementById('learning-list'); if(l) l.innerHTML='<p style=&quot;color:#666; margin:8px 0;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>'; var c=document.getElementById('learning-count'); if(c) c.textContent='(0)'; })()">
         <i class="fa-solid fa-trash-can"></i> Clear
       </button>
       <div style="display:flex; gap:8px;">
         <button id="btn-export-learning" title="Export list as JSON"
-                style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
+                style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                onclick="(function(){ var data=[]; try{ data = JSON.parse(localStorage.getItem('nihongo_learning')||'[]'); }catch(_){}; try{ var alt = JSON.parse(localStorage.getItem('ntx_learning_v2')||'[]'); if(Array.isArray(alt)) data = data.concat(alt); }catch(_){}; var seen=new Set(); data=data.filter(function(x){ if(!x||!x.id) return false; var k=String(x.id); if(seen.has(k)) return false; seen.add(k); return true; }); var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); var url=URL.createObjectURL(blob); var a=document.createElement('a'); a.href=url; a.download='learning.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); })()">
           <i class="fa-solid fa-file-arrow-down"></i> Export
         </button>
       </div>
     </div>
   </aside>
 
-  <!-- ====== （承認前仕様）広告ポップアップ：フォールバックのみ。AdSense枠は置かない ====== -->
+  <!-- ====== （承認前）広告ポップアップ：フォールバックのみ ====== -->
   <div id="adMask" role="dialog" aria-modal="true" aria-labelledby="adTitle"
        style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:90;">
     <div id="adPopup" style="position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); width:min(720px,96vw); max-height:85vh; overflow:auto; background:#fff; border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,.2);">
@@ -113,12 +123,13 @@
         <h3 id="adTitle" style="margin:0; font-size:16px; display:flex; align-items:center; gap:8px; color:#333;">
           <i class="fa-solid fa-bullhorn" style="color:#e6462d;"></i> Sponsored
         </h3>
-        <button id="adCloseBtn" class="btn" aria-label="Close" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
+        <button class="btn" aria-label="Close"
+                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                onclick="(function(){var m=document.getElementById('adMask'); if(m) m.style.display='none'; })()">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
       <div class="bd" style="padding:12px 14px;">
-        <!-- ここは承認前仕様：フォールバックのみ表示 -->
         <div id="adFallback" style="display:block; margin-top:0; border:1px solid #eee; border-radius:8px; padding:10px;">
           <a href="https://preply.com/" target="_blank" rel="noopener" style="display:flex; gap:10px; align-items:center; text-decoration:none;">
             <img src="/assets/preply-banner.png" alt="Find a Japanese tutor on Preply" style="width:96px; height:96px; object-fit:cover; border-radius:8px; border:1px solid #eee;">
@@ -130,243 +141,11 @@
         </div>
       </div>
       <div class="ft" style="padding:10px 14px; border-top:1px solid #eee; text-align:right;">
-        <button id="adOkBtn" class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
+        <button class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                onclick="(function(){var m=document.getElementById('adMask'); if(m) m.style.display='none'; })()">
           <i class="fa-solid fa-check"></i> OK
         </button>
       </div>
     </div>
   </div>
-
-  <script>
-    (function () {
-      // ===== Storage keys（旧・新 両対応）=====
-      var KEY_PRIMARY = 'nihongo_learning';
-      var KEY_ALT     = 'ntx_learning_v2';
-      var KEY_LEARNED = 'nihongo_learned';
-
-      // ===== Elements =====
-      var btnOpen   = document.getElementById('btn-learning');
-      var badge     = document.getElementById('learning-count-badge');
-      var overlay   = document.getElementById('learning-overlay');
-      var drawer    = document.getElementById('learning-drawer');
-      var btnClose  = document.getElementById('btn-close-learning');
-      var btnPrint  = document.getElementById('btn-print-learning');
-      var btnClear  = document.getElementById('btn-clear-learning');
-      var btnExport = document.getElementById('btn-export-learning');
-      var listWrap  = document.getElementById('learning-list');
-      var countText = document.getElementById('learning-count');
-
-      // ===== Utilities =====
-      function readRaw(key) { try { return JSON.parse(localStorage.getItem(key) || '[]') || []; } catch(_) { return []; } }
-      function writeRaw(key, arr) { localStorage.setItem(key, JSON.stringify(arr || [])); }
-      function mergeLists(a,b){
-        var map = new Map();
-        [].concat(a||[], b||[]).forEach(function(x){
-          if (!x || !x.id) return;
-          map.set(String(x.id), Object.assign({}, map.get(String(x.id)) || {}, x));
-        });
-        return Array.from(map.values());
-      }
-      function readLearning() {
-        var p = readRaw(KEY_PRIMARY);
-        var q = readRaw(KEY_ALT);
-        return mergeLists(p,q);
-      }
-      function writeLearning(arr) {
-        writeRaw(KEY_PRIMARY, arr);
-        writeRaw(KEY_ALT, arr); // 同期保存（互換）
-      }
-      function readLearned(){ return readRaw(KEY_LEARNED); }
-      function writeLearned(arr){ writeRaw(KEY_LEARNED, arr); }
-      function findIndexById(arr, id) { return arr.findIndex(function(x){ return String(x.id) === String(id); }); }
-      function fmtDate(d) {
-        var dt = (d instanceof Date) ? d : new Date(d || Date.now());
-        var y = dt.getFullYear(), m = ('0'+(dt.getMonth()+1)).slice(-2), day = ('0'+dt.getDate()).slice(-2);
-        return y + '-' + m + '-' + day;
-      }
-
-      // ===== Public API（別名も全部受ける）=====
-      function normalizeItem(item){
-        if (!item) return null;
-        var id = item.id || item.slug || item.key;
-        if (!id) return null;
-        return {
-          id: String(id),
-          en: item.en || item.term || '',
-          ja: item.ja || '',
-          kana: item.kana || '',
-          ro: item.ro || item.romaji || '',
-          level: item.level || item.lv || '',
-          pos: item.pos || item.part || '',
-          examples: Array.isArray(item.examples) ? item.examples : [],
-          addedAt: item.addedAt || new Date().toISOString()
-        };
-      }
-      function addToLearning(item){
-        var it = normalizeItem(item);
-        if (!it) return;
-        var list = readLearning();
-        if (findIndexById(list, it.id) === -1) {
-          list.push(it);
-          writeLearning(list);
-          refreshUI();
-          // 直後にドロワーを開くと確認しやすい → 任意
-          // openLearning();
-        }
-      }
-      function removeFromLearning(id){
-        var list = readLearning();
-        var idx = findIndexById(list, id);
-        if (idx >= 0) {
-          list.splice(idx,1);
-          writeLearning(list);
-          refreshUI();
-        }
-      }
-      function moveToLearned(id){
-        var learning = readLearning();
-        var learned  = readLearned();
-        var idx = findIndexById(learning, id);
-        if (idx >= 0) {
-          var item = learning.splice(idx,1)[0];
-          item.learnedAt = new Date().toISOString();
-          item.quizStats = item.quizStats || { taken:0, correct:0 };
-          learned.push(item);
-          writeLearning(learning);
-          writeLearned(learned);
-          refreshUI();
-        }
-      }
-
-      // 公開（互換エイリアス）
-      window.NT = window.NT || {};
-      window.NT.addToLearning = addToLearning;
-      window.NT.removeFromLearning = removeFromLearning;
-      window.NT.moveToLearned = moveToLearned;
-      // 旧呼び出し互換
-      window.ntxToLearning = addToLearning;
-      window.addToLearning = addToLearning;
-      window.NT.add = addToLearning;
-
-      // ===== Rendering =====
-      function renderBadge(){
-        var n = readLearning().length;
-        if (badge) badge.textContent = n;
-        if (countText) countText.textContent = '('+ n +')';
-      }
-      function itemTitle(item){ return item.en || item.ja || item.term || ('#'+item.id); }
-      function renderExamples(ex){
-        if(!Array.isArray(ex) || !ex.length) return '';
-        return '<details style="margin-top:6px;"><summary style="cursor:pointer;">Examples ('+ex.length+')</summary>' +
-          ex.map(function(row){
-            var en=row.en||'', ja=row.ja||'', ro=row.ro||row.romaji||'';
-            var parts=[en,ja,ro].filter(Boolean).join(' / ');
-            return '<div style="padding:6px 0; border-bottom:1px dashed #eee; font-size:14px;">'+parts+'</div>';
-          }).join('') + '</details>';
-      }
-      function renderLearningList(){
-        var learning = readLearning();
-        if(!learning.length){
-          listWrap.innerHTML = '<p style="color:#666; margin:8px 0;">No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
-          return;
-        }
-        listWrap.innerHTML = learning.map(function(item){
-          var meta=[];
-          if(item.level) meta.push(item.level);
-          if(item.pos)   meta.push(item.pos);
-          if(item.addedAt) meta.push('Added: '+fmtDate(item.addedAt));
-          var subtitle=meta.join(' · ');
-          return ''+
-          '<article data-id="'+String(item.id)+'" style="border:1px solid #eee; border-radius:12px; padding:10px 12px;">'+
-            '<div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">'+
-              '<div style="min-width:0;">'+
-                '<div style="font-weight:600;">'+ itemTitle(item) +'</div>'+
-                (subtitle?'<div style="color:#666; font-size:12px; margin-top:2px;">'+subtitle+'</div>':'')+
-              '</div>'+
-              '<div style="display:flex; gap:6px; flex-wrap:wrap;">'+
-                '<button class="btn-back-to-learn" title="Back to Learn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">'+
-                  '<i class="fa-solid fa-rotate-left" style="color:#e6462d;"></i> Back'+
-                '</button>'+
-                '<button class="btn-move-to-learned" title="Move to Learned" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">'+
-                  '<i class="fa-solid fa-check" style="color:#e6462d;"></i> Learned'+
-                '</button>'+
-              '</div>'+
-            '</div>'+
-            (item.en||item.ja||item.ro?'<div style="margin-top:6px; font-size:14px; color:#333;">'+[item.en,item.ja,item.ro].filter(Boolean).join(' / ')+'</div>':'')+
-            renderExamples(item.examples)+
-          '</article>';
-        }).join('');
-      }
-      function refreshUI(){ renderBadge(); renderLearningList(); }
-
-      // ===== Drawer controls =====
-      function openLearning(){ overlay.style.display='block'; setTimeout(function(){ drawer.style.right='0'; },10); refreshUI(); }
-      function closeLearning(){ drawer.style.right='-560px'; setTimeout(function(){ overlay.style.display='none'; },250); }
-      window.openLearning = openLearning; // 外部から開けるよう公開
-
-      if (btnOpen)  btnOpen.addEventListener('click', openLearning);
-      if (btnClose) btnClose.addEventListener('click', closeLearning);
-      if (overlay)  overlay.addEventListener('click', function(e){ if(e.target===overlay) closeLearning(); });
-      document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLearning(); });
-
-      if (btnPrint) btnPrint.addEventListener('click', function(){
-        var printable = document.getElementById('learning-content').innerHTML;
-        var w = window.open('', '_blank');
-        w.document.open();
-        w.document.write('<!doctype html><html><head><title>Learning - Print</title></head><body>'+ printable +'</body></html>');
-        w.document.close(); w.focus(); w.print(); w.close();
-      });
-
-      if (btnClear) btnClear.addEventListener('click', function(){
-        if(confirm('Clear all items in Learning?')){ writeLearning([]); refreshUI(); }
-      });
-
-      if (btnExport) btnExport.addEventListener('click', function(){
-        var data = readLearning();
-        var blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a'); a.href=url; a.download='learning.json';
-        document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-      });
-
-      // ボタン委譲（Back / Learned）
-      listWrap.addEventListener('click', function(e){
-        var btn = e.target.closest('button'); if(!btn) return;
-        var article = e.target.closest('article[data-id]'); if(!article) return;
-        var id = article.getAttribute('data-id');
-
-        if (btn.classList.contains('btn-back-to-learn')) removeFromLearning(id);
-        else if (btn.classList.contains('btn-move-to-learned')) moveToLearned(id);
-      });
-
-      // 他タブ・他ページの変更をバッジへ反映
-      window.addEventListener('storage', function(ev){
-        if (ev.key === KEY_PRIMARY || ev.key === KEY_ALT) renderBadge();
-      });
-
-      // 初期描画
-      refreshUI();
-
-
-      // ======（承認前仕様）広告ポップアップ：フォールバックのみ ======
-      var adMask = document.getElementById('adMask');
-      var adCloseBtn = document.getElementById('adCloseBtn');
-      var adOkBtn = document.getElementById('adOkBtn');
-
-      function openAdPopup(){
-        if (!adMask) return;
-        adMask.style.display = 'block';
-      }
-      function closeAdPopup(){
-        if (!adMask) return;
-        adMask.style.display = 'none';
-      }
-      if (adCloseBtn) adCloseBtn.addEventListener('click', closeAdPopup);
-      if (adOkBtn) adOkBtn.addEventListener('click', closeAdPopup);
-      if (adMask) adMask.addEventListener('click', function(e){ if (e.target === adMask) closeAdPopup(); });
-
-      // 外部から開けるAPI
-      window.openAdPopup = openAdPopup;
-    })();
-  </script>
 </header>
