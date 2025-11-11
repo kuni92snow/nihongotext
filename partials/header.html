@@ -1,4 +1,4 @@
-<!-- header (partials/header.html) -->
+<!-- /partials/header.html -->
 <header class="site-header" style="background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30;">
   <div class="container" style="max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; gap:8px;">
     <!-- 1行目：タイトル -->
@@ -9,29 +9,34 @@
       </a>
     </div>
 
-    <!-- 2行目：ナビ -->
+    <!-- 2行目：Learning / Learned -->
+    <nav aria-label="Learning navigation" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <button id="btn-open-learning" type="button" class="ntx-btn"
+        style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
+        onclick="window._ntxOpenLearning && window._ntxOpenLearning()">
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
+        <span>Learning</span>
+        <span id="badge-learning" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
+      </button>
+
+      <button id="btn-open-learned" type="button" class="ntx-btn"
+        style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
+        onclick="window._ntxOpenLearned && window._ntxOpenLearned()">
+        <i class="fa-solid fa-graduation-cap" style="color:#e6462d;"></i>
+        <span>Learned</span>
+        <span id="badge-learned" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
+      </button>
+    </nav>
+
+    <!-- 3行目：ナビ -->
     <nav aria-label="Main navigation" style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
-      <a href="/" style="color:#333; text-decoration:none;">Home</a>
       <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
       <a href="/inquiry/index.html" style="color:#333; text-decoration:none;">Inquiry</a>
       <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
-
-      <!-- Learning（常に開けるフォールバック付き） -->
-      <button
-        id="learnBtn"
-        type="button"
-        title="Learning list"
-        style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
-        onclick="(window._ntxOpenLearning ? window._ntxOpenLearning() : (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
-      >
-        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
-        <span>Learning</span>
-        <span id="learning-count-badge" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
-      </button>
     </nav>
 
-    <!-- 3行目：アイコン（赤） -->
+    <!-- 4行目：アイコン（赤） -->
     <nav aria-label="Header icons" style="display:flex; align-items:center; gap:14px; font-size:20px;">
       <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#e6462d;">
         <i class="fa-brands fa-x-twitter"></i>
@@ -58,58 +63,246 @@
     </nav>
   </div>
 
-  <!-- Overlay + Drawer（スクリプトが無くても閉じられるフォールバック付き） -->
+  <!-- ===== Overlay (共通) ===== -->
   <div id="learning-overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
 
-  <aside id="learning-drawer" style="position:fixed; top:0; right:-560px; width:560px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
-    <!-- ヘッダー -->
-    <div style="display:flex; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
-      <h2 style="margin:0; font-size:18px; display:flex; align-items:center; gap:8px;">
-        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i> Learning
-        <span id="learning-count" style="color:#666; font-size:13px;"></span>
-      </h2>
-      <button id="btn-close-learning"
-        style="border:1px solid #ddd; background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer;"
-        title="Close"
-        onclick="(window._ntxCloseLearning ? window._ntxCloseLearning() : (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){ d.style.right='-560px'; setTimeout(function(){ o.style.display='none'; },250);} })())">
+  <!-- ===== Learning Drawer ===== -->
+  <aside id="learning-drawer" aria-labelledby="learning-title" role="dialog" aria-modal="true"
+         style="position:fixed; top:0; right:-620px; width:620px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
+    <!-- Header -->
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
+        <h2 id="learning-title" style="margin:0; font-size:18px;">Learning <span id="learning-count" style="color:#666; font-size:13px;"></span></h2>
+      </div>
+      <button title="Close" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+              onclick="window._ntxCloseLearning && window._ntxCloseLearning()">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
 
-    <!-- 本文 -->
+    <!-- Content -->
     <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
-      <!-- ここへ単語＋例文を描画 -->
-      <div id="learning-list"></div>
+      <div id="learning-list" style="display:flex; flex-direction:column; gap:12px;"></div>
+
+      <!-- pager -->
+      <div style="display:flex; gap:8px; align-items:center; margin:12px 0 0;">
+        <button class="btn" id="btn-l-prev" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">&lt; Prev</button>
+        <div id="l-pages" style="color:#666;"></div>
+        <button class="btn" id="btn-l-next" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">Next &gt;</button>
+      </div>
 
       <!-- Quiz placeholder -->
-      <section style="margin-top:18px; border-top:1px dashed #eee; padding-top:12px;">
-        <h3 style="font-size:16px; margin:0 0 8px;">
+      <section id="learning-quiz" style="margin-top:18px; padding-top:12px; border-top:1px dashed #eee;">
+        <h3 style="margin:0 0 8px; font-size:16px; color:#333; display:flex; align-items:center; gap:8px;">
           <i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)
         </h3>
-        <p style="margin:0; color:#666;">You will be able to test the items currently in Learning here.</p>
+        <p style="margin:0; color:#666; font-size:13px;">You will be able to test the items currently in Learning here.</p>
       </section>
     </div>
+  </aside>
 
-    <!-- フッター操作 -->
-    <div style="padding:12px 16px; border-top:1px solid #eee; display:flex; justify-content:space-between; gap:8px;">
-      <button title="Clear Learning list"
-        style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-        onclick="(function(){ try{ localStorage.setItem('nihongo_learning','[]'); localStorage.setItem('ntx_learning_v2','[]'); localStorage.setItem('nihongo_learned', JSON.stringify(JSON.parse(localStorage.getItem('nihongo_learned')||'[]'))); }catch(_){};
-          var b=document.getElementById('learning-count-badge'); if(b) b.textContent='0';
-          var l=document.getElementById('learning-list'); if(l) l.innerHTML='<p style=&quot;color:#666;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
-          var c=document.getElementById('learning-count'); if(c) c.textContent='(0)';
-        })()">
-        <i class="fa-solid fa-trash-can" style="color:#e6462d;"></i> Clear
-      </button>
-      <button title="Export Learning (JSON)"
-        style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-        onclick="(function(){ var data=[]; try{ data = JSON.parse(localStorage.getItem('nihongo_learning')||'[]'); }catch(_){}
-          try{ var alt = JSON.parse(localStorage.getItem('ntx_learning_v2')||'[]'); if(Array.isArray(alt)) data = data.concat(alt); }catch(_){}
-          var seen=new Set(); data=data.filter(function(x){ if(!x||!x.id) return false; var k=String(x.id); if(seen.has(k)) return false; seen.add(k); return true; });
-          var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); var url=URL.createObjectURL(blob);
-          var a=document.createElement('a'); a.href=url; a.download='learning.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); })()">
-        <i class="fa-solid fa-file-arrow-down" style="color:#e6462d;"></i> Export
+  <!-- ===== Learned Drawer ===== -->
+  <aside id="learned-drawer" aria-labelledby="learned-title" role="dialog" aria-modal="true"
+         style="position:fixed; top:0; right:-620px; width:620px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <i class="fa-solid fa-graduation-cap" style="color:#e6462d;"></i>
+        <h2 id="learned-title" style="margin:0; font-size:18px;">Learned <span id="learned-count" style="color:#666; font-size:13px;"></span></h2>
+      </div>
+      <button title="Close" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+              onclick="window._ntxCloseLearned && window._ntxCloseLearned()">
+        <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
+
+    <div id="learned-content" style="padding:12px 16px; overflow:auto; flex:1;">
+      <div id="learned-list" style="display:flex; flex-direction:column; gap:12px;"></div>
+
+      <div style="display:flex; gap:8px; align-items:center; margin:12px 0 0;">
+        <button class="btn" id="btn-d-prev" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">&lt; Prev</button>
+        <div id="d-pages" style="color:#666;"></div>
+        <button class="btn" id="btn-d-next" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">Next &gt;</button>
+      </div>
+    </div>
   </aside>
+
+  <!-- ===== ヘッダースクリプト（Learning / Learned描画 + ページング + バッジ） ===== -->
+  <script>
+  (function(){
+    const KEY_P = 'nihongo_learning';
+    const KEY_D = 'nihongo_learned';
+    const PAGE = { learning: 1, learned: 1 };
+    const SIZE = 5;
+
+    function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]');}catch{return [];} }
+    function W(k,v){ try{localStorage.setItem(k,JSON.stringify(v));}catch{} }
+    function TM(ts){ try{ const d=new Date(ts); return isFinite(d)? d.toISOString().slice(0,10):'';}catch{ return ''; } }
+    function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+    function rubyFromItem(it){
+      // 例文に segments は不要。語本体のみ ruby がある場合を考慮
+      if (it.ruby) return it.ruby;
+      if (it.ja && it.kana && it.ja!==it.kana) return `<ruby>${esc(it.ja)}<rt>${esc(it.kana)}</rt></ruby>`;
+      return esc(it.ja||'');
+    }
+
+    function setBadges(){
+      const lb=document.getElementById('badge-learning');
+      const db=document.getElementById('badge-learned');
+      if(lb) lb.textContent = String(R(KEY_P).length||0);
+      if(db) db.textContent = String(R(KEY_D).length||0);
+      const lc=document.getElementById('learning-count');
+      const dc=document.getElementById('learned-count');
+      if(lc) lc.textContent = '('+(R(KEY_P).length||0)+')';
+      if(dc) dc.textContent = '('+(R(KEY_D).length||0)+')';
+    }
+
+    function buildExamples(exs, id){
+      if(!Array.isArray(exs) || !exs.length) return '';
+      const html = exs.map(e=>{
+        const l1 = e.ja ? `<div>${esc(e.ja)}</div>` : '';
+        const l2 = e.kana ? `<div>${esc(e.kana)}</div>` : '';
+        const l3 = e.ro ? `<div>${esc(e.ro)}</div>` : '';
+        const l4 = e.en ? `<div>${esc(e.en)}</div>` : '';
+        return `<div style="margin:4px 0 8px;">${l1}${l2}${l3}${l4}</div>`;
+      }).join('');
+      return `<details style="margin-top:6px;"><summary class="muted"><i class="fa-solid fa-caret-down"></i> Examples</summary><div style="margin-top:6px;">${html}</div></details>`;
+    }
+
+    function paginate(arr, page){
+      const start = (page-1)*SIZE;
+      return arr.slice(start, start+SIZE);
+    }
+
+    function renderLearning(){
+      const box = document.getElementById('learning-list');
+      const data = R(KEY_P);
+      if(!box){ setBadges(); return; }
+      if(!data.length){
+        box.innerHTML = `<p class="muted" style="color:#666;">No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>`;
+        setBadges(); renderLPager(1,1); return;
+        }
+      const pages = Math.max(1, Math.ceil(data.length / SIZE));
+      PAGE.learning = Math.min(Math.max(1,PAGE.learning), pages);
+      const slice = paginate(data, PAGE.learning);
+
+      box.innerHTML = slice.map(it=>{
+        const main = `
+          <div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">
+            <div>
+              <div style="font-weight:600;">${esc(it.en||it.ja||it.id)}</div>
+              <div style="margin-top:2px; font-size:18px;">${rubyFromItem(it)}</div>
+              <div>${esc(it.kana||'')}</div>
+              <div>${esc(it.ro||'')}</div>
+              <div>${esc(it.en||'')}</div>
+              ${buildExamples(it.examples, it.id)}
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <button class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                      onclick="(function(id){ try{ const arr=JSON.parse(localStorage.getItem('${KEY_P}')||'[]').filter(x=>String(x.id)!==String(id)); localStorage.setItem('${KEY_P}', JSON.stringify(arr)); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_P}'})); }catch{} })('${esc(it.id)}')">
+                <i class="fa-solid fa-rotate-left"></i> Learn
+              </button>
+              <button class="btn" style="padding:6px 10px; border:1px solid #e6462d; color:#e6462d; background:#fff; border-radius:8px; cursor:pointer;"
+                      onclick="(function(it){ try{ const d=JSON.parse(localStorage.getItem('${KEY_D}')||'[]'); d.push(Object.assign({}, it, {learnedAt: Date.now()})); localStorage.setItem('${KEY_D}', JSON.stringify(d)); const p=JSON.parse(localStorage.getItem('${KEY_P}')||'[]').filter(x=>String(x.id)!==String(it.id)); localStorage.setItem('${KEY_P}', JSON.stringify(p)); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_D}'})); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_P}'})); }catch{} })(${JSON.stringify(it).replace(/</g,'\\u003c')})">
+                <i class="fa-solid fa-check"></i> Learned
+              </button>
+            </div>
+          </div>`;
+        return `<article style="border:1px solid #eee; border-radius:10px; padding:10px;">${main}</article>`;
+      }).join('');
+
+      setBadges();
+      renderLPager(PAGE.learning, pages);
+    }
+
+    function renderLPager(cur, pages){
+      const nums = Array.from({length:pages}, (_,i)=>i+1)
+        .map(p=>`<button class="btn" ${p===cur?'disabled':''} onclick="(function(p){ window._ntxGotoLearning && window._ntxGotoLearning(p); })(${p})">${p}</button>`).join(' ');
+      const holder = document.getElementById('l-pages');
+      if(holder) holder.innerHTML = nums;
+      const bPrev = document.getElementById('btn-l-prev');
+      const bNext = document.getElementById('btn-l-next');
+      if (bPrev) bPrev.onclick = ()=> window._ntxGotoLearning(Math.max(1, cur-1));
+      if (bNext) bNext.onclick = ()=> window._ntxGotoLearning(Math.min(pages, cur+1));
+    }
+
+    function renderLearned(){
+      const box = document.getElementById('learned-list');
+      const data = R(KEY_D);
+      if(!box){ setBadges(); return; }
+      if(!data.length){
+        box.innerHTML = `<p class="muted" style="color:#666;">No items in Learned yet.</p>`;
+        setBadges(); renderDPager(1,1); return;
+      }
+      const pages = Math.max(1, Math.ceil(data.length / SIZE));
+      PAGE.learned = Math.min(Math.max(1,PAGE.learned), pages);
+      const slice = paginate(data, PAGE.learned);
+
+      box.innerHTML = slice.map(it=>{
+        const when = it.learnedAt ? ` / ${TM(it.learnedAt)}` : '';
+        return `<article style="border:1px solid #eee; border-radius:10px; padding:10px;">
+          <div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">
+            <div>
+              <div style="font-weight:600;">${esc(it.en||it.ja||it.id)}${when}</div>
+              <div style="margin-top:2px; font-size:18px;">${rubyFromItem(it)}</div>
+              <div>${esc(it.kana||'')}</div>
+              <div>${esc(it.ro||'')}</div>
+              <div>${esc(it.en||'')}</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <button class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+                onclick="(function(it){ try{ const p=JSON.parse(localStorage.getItem('${KEY_P}')||'[]'); p.push(it); localStorage.setItem('${KEY_P}', JSON.stringify(p)); const d=JSON.parse(localStorage.getItem('${KEY_D}')||'[]').filter(x=>String(x.id)!==String(it.id)); localStorage.setItem('${KEY_D}', JSON.stringify(d)); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_P}'})); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_D}'})); }catch{} })(${JSON.stringify(it).replace(/</g,'\\u003c')})">
+                <i class="fa-solid fa-rotate-left"></i> Learning
+              </button>
+            </div>
+          </div>
+        </article>`;
+      }).join('');
+
+      setBadges();
+      renderDPager(PAGE.learned, pages);
+    }
+
+    function renderDPager(cur, pages){
+      const nums = Array.from({length:pages}, (_,i)=>i+1)
+        .map(p=>`<button class="btn" ${p===cur?'disabled':''} onclick="(function(p){ window._ntxGotoLearned && window._ntxGotoLearned(p); })(${p})">${p}</button>`).join(' ');
+      const holder = document.getElementById('d-pages');
+      if(holder) holder.innerHTML = nums;
+      const bPrev = document.getElementById('btn-d-prev');
+      const bNext = document.getElementById('btn-d-next');
+      if (bPrev) bPrev.onclick = ()=> window._ntxGotoLearned(Math.max(1, cur-1));
+      if (bNext) bNext.onclick = ()=> window._ntxGotoLearned(Math.min(pages, cur+1));
+    }
+
+    // 公開 API
+    window._ntxOpenLearning = function(){
+      const o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer');
+      if(!o||!d) return; o.style.display='block'; setTimeout(()=>{d.style.right='0';},10); renderLearning();
+    };
+    window._ntxCloseLearning = function(){
+      const o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer');
+      if(!o||!d) return; d.style.right='-620px'; setTimeout(()=>{o.style.display='none';},250);
+    };
+    window._ntxOpenLearned = function(){
+      const o=document.getElementById('learning-overlay'), d=document.getElementById('learned-drawer');
+      if(!o||!d) return; o.style.display='block'; setTimeout(()=>{d.style.right='0';},10); renderLearned();
+    };
+    window._ntxCloseLearned = function(){
+      const o=document.getElementById('learning-overlay'), d=document.getElementById('learned-drawer');
+      if(!o||!d) return; d.style.right='-620px'; setTimeout(()=>{o.style.display='none';},250);
+    };
+    window._ntxRenderLearning = renderLearning;
+    window._ntxRenderLearned  = renderLearned;
+    window._ntxGotoLearning = function(p){ PAGE.learning = p; renderLearning(); };
+    window._ntxGotoLearned  = function(p){ PAGE.learned  = p; renderLearned(); };
+
+    // 他ページからの追加/移動に追随
+    window.addEventListener('storage', ev=>{
+      if (ev && (ev.key===KEY_P || ev.key===KEY_D)) { setBadges(); renderLearning(); renderLearned(); }
+    });
+
+    // 初期バッジ
+    setBadges();
+  })();
+  </script>
 </header>
