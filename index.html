@@ -87,7 +87,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 </head>
 <body>
 
-<!-- Header -->
+<!-- Header（Learning/Learnedは header.html 側のみで表示） -->
 <div class="topbar">
   <div id="site-header" class="wrap brandbar">
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
@@ -110,7 +110,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 
     <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
 
-    <!-- 表示トグル（JS から参照するIDを必ず置く） -->
+    <!-- 表示トグル -->
     <div class="toggle-row" id="viewToggles" aria-label="View toggles">
       <label><input type="checkbox" id="toggleJA" checked> Nihongo（漢字＋ふりがな）</label>
       <label><input type="checkbox" id="toggleKANA" checked> Hiragana</label>
@@ -259,7 +259,7 @@ async function injectPartials(){
   attachLangToggle();
   applyLangToUI();
 
-  // ヘッダー内の Learning 起動ボタンに連携
+  // ヘッダー内の Learning 起動ボタン（id="learnBtn" か data-open="learning"）に連携
   const learnBtn = (hdr && (hdr.querySelector('#learnBtn') || hdr.querySelector('[data-open="learning"]'))) || null;
   if (learnBtn) {
     learnBtn.addEventListener('click', ()=> { if (typeof openLearning==='function') openLearning(); });
@@ -484,6 +484,32 @@ const LEARN_KEY = 'ntx_learning_v2';
 const LEARN_PAGE_SIZE = 5; let learnPage = 1;
 const getLearning = ()=>{ try{return JSON.parse(localStorage.getItem(LEARN_KEY)||'[]')}catch(_){return[]} };
 const setLearning = (arr)=>{ try{localStorage.setItem(LEARN_KEY,JSON.stringify(arr));}catch(_){ } };
+
+// 先に宣言（hoistの有無に関係なく安全）
+function renderLearningModal(){
+  const wrap = document.getElementById('learningBody');
+  if(!wrap){ return; }
+  const showEN = document.getElementById('LG_EN')?.checked !== false;
+  const showJA = document.getElementById('LG_JA')?.checked !== false;
+  const showKA = document.getElementById('LG_KANA')?.checked !== false;
+  const showRO = document.getElementById('LG_RO')?.checked !== false;
+
+  const arr = getLearning();
+  wrap.innerHTML = '';
+  if(!arr.length){ wrap.innerHTML = '<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
+  arr.forEach((x,i)=>{
+    const block = document.createElement('div');
+    block.style.cssText='padding:8px 0;border-bottom:1px dashed #eee';
+    const tags=[];
+    if(showJA&&x.ja)tags.push(x.ja);
+    if(showKA&&x.kana)tags.push(x.kana);
+    if(showRO&&x.ro)tags.push(x.ro);
+    if(showEN&&x.en)tags.push(x.en);
+    const d = x.movedAt ? ` <span style="color:#888">（${x.movedAt}）</span>` : '';
+    block.innerHTML = `${i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
+    wrap.appendChild(block);
+  });
+}
 
 window.ntxToLearning = function(item){
   const arr = getLearning();
