@@ -3,331 +3,123 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>JLPT — Words | nihongotext.com</title>
+  <title>JLPT Words | nihongotext.com</title>
   <link rel="icon" href="/favicon.ico" />
   <base href="/" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb;--card:#fff}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7;background:#fff}
-    main .wrap{max-width:1100px;margin:auto;padding:16px}
-    h1{margin:10px 0 8px}
-    .muted{color:var(--muted)}
-    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:10px 0 12px}
-    .toolbar select{border:1px solid var(--border);border-radius:10px;padding:6px 10px;font-size:14px;background:#fff}
-    .checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;width:100%}
-    .notice{border:1px dashed var(--border);border-radius:12px;padding:12px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:12px}
-    .card{border:1px solid var(--border);border-radius:14px;background:var(--card);padding:12px 12px 10px}
-    .card h3{margin:0 0 6px;font-size:14px;color:var(--muted);font-weight:600}
-    .wordline{font-size:18px}
-    ruby{ruby-position:over;ruby-align:start}
-    rt{font-size:.6em;color:#666;letter-spacing:.03em}
-    .mini{font-size:12px;color:var(--muted)}
-    details summary{cursor:pointer;list-style:none}
-    details summary::marker, details summary::-webkit-details-marker{display:none}
-    .pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);border-radius:999px;padding:4px 10px;background:#fff}
-    .pager{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:14px 0 2px}
-    .pager button{border:1px solid var(--border);border-radius:8px;padding:4px 8px;background:#fff;cursor:pointer}
-    .pager button[disabled]{opacity:.45;cursor:not-allowed}
-    .error{border:1px dashed #ef4444;color:#b91c1c;padding:12px;border-radius:12px;background:#fff5f5}
-    .parts-line{font-size:13px;color:#444;margin:8px 0 4px}
-  </style>
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+  </script>
+
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="/assets/common.js" defer></script>
 </head>
 <body>
+
+  <!-- Header -->
   <div id="header"></div>
 
   <main>
-    <div class="wrap">
-      <h1 class="row"><i class="fa-solid fa-language" style="color:#e6462d"></i> JLPT — Words</h1>
+    <h1>JLPT — Words</h1>
 
-      <!-- レベルごとの存在ファイルを自動表示 -->
-      <div id="partsLines" class="mini"></div>
+    <div class="selector">
+      <label>Level
+        <select id="level">
+          <option value="N5">N5</option>
+          <option value="N4">N4</option>
+          <option value="N3">N3</option>
+          <option value="N2">N2</option>
+          <option value="N1">N1</option>
+        </select>
+      </label>
 
-      <!-- ツールバー -->
-      <div class="toolbar">
-        <label>Level
-          <select id="levelSel" aria-label="Level">
-            <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
-          </select>
-        </label>
-        <label>Part
-          <select id="partSel" aria-label="Part"></select>
-        </label>
-      </div>
-
-      <!-- 表示トグル（2行） -->
-      <div class="checks" style="margin:8px 0 4px">
-        <label class="pill"><input id="chkJa" type="checkbox" checked> Nihongo（漢字+ふりがな）</label>
-        <label class="pill"><input id="chkKana" type="checkbox" checked> Hiragana</label>
-        <label class="pill"><input id="chkRo" type="checkbox" checked> Alphabet（romaji）</label>
-        <label class="pill"><input id="chkEn" type="checkbox" checked> English</label>
-      </div>
-
-      <!-- ページャ（上） -->
-      <div class="pager" id="pagerTop"></div>
-
-      <!-- リスト -->
-      <div id="list"></div>
-
-      <!-- ページャ（下） -->
-      <div class="pager" id="pagerBottom"></div>
-
-      <div id="msg" class="notice" hidden></div>
+      <label>Part
+        <select id="part">
+          <option value="verbs">verbs</option>
+          <option value="nouns">nouns</option>
+          <option value="adjectives-i">adjectives-i</option>
+          <option value="adjectives-na">adjectives-na</option>
+          <option value="adverbs">adverbs</option>
+          <option value="numerals">numerals</option>
+          <option value="particles">particles</option>
+          <option value="conjunctions">conjunctions</option>
+          <option value="interjections">interjections</option>
+          <option value="patterns">patterns</option>
+        </select>
+      </label>
     </div>
+
+    <div class="display-options">
+      <label><input type="checkbox" id="showKanji" checked /> Nihongo（漢字＋ふりがな）</label>
+      <label><input type="checkbox" id="showHiragana" /> Hiragana</label>
+      <label><input type="checkbox" id="showRomaji" /> Alphabet (romaji)</label>
+      <label><input type="checkbox" id="showEnglish" checked /> English</label>
+    </div>
+
+    <div id="content" class="content-area"></div>
   </main>
 
+  <!-- Footer -->
   <div id="footer"></div>
 
-  <script>
-  /***** ユーティリティ *****/
-  const PAGE_SIZE = 5;
-  const CANDIDATE_PARTS = [
-    'verbs','nouns','adjective-i','adjective-na','adverbs',
-    'numerals','particles','conjunctions','interjections','patterns'
-  ];
-  const byId = (id)=>document.getElementById(id);
+  <script type="module">
+    // --- Header & Footer 読み込み ---
+    document.getElementById('header').innerHTML = await (await fetch('/partials/header.html')).text();
+    document.getElementById('footer').innerHTML = await (await fetch('/partials/footer.html')).text();
 
-  // ふりがなレンダリング：segments 形式 [{w:'漢字',r:'かな'}, ...]
-  function renderRuby(segments, fallbackText){
-    if(!Array.isArray(segments) || !segments.length){
-      return fallbackText ? escapeHtml(fallbackText) : '';
-    }
-    return segments.map(seg=>{
-      const w = escapeHtml(seg.w ?? '');
-      const r = escapeHtml(seg.r ?? '');
-      return r ? `<ruby>${w}<rt>${r}</rt></ruby>` : w;
-    }).join('');
-  }
-  function escapeHtml(s){return String(s||'').replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));}
+    const levelSelect = document.getElementById('level');
+    const partSelect = document.getElementById('part');
+    const content = document.getElementById('content');
 
-  // ページャUI
-  function renderPager(total, page, mountId, onJump){
-    const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-    const box = byId(mountId);
-    const btn = (label, disabled, goto)=>`<button ${disabled?'disabled':''} data-goto="${goto||''}">${label}</button>`;
-    let html = btn('« Prev', page<=1, page-1);
-    for(let p=1;p<=pages;p++){
-      html += btn(String(p), p===page, p);
-    }
-    html += btn('Next »', page>=pages, page+1);
-    box.innerHTML = html;
-    box.querySelectorAll('button').forEach(b=>{
-      b.addEventListener('click', e=>{
-        const g = Number(e.currentTarget.getAttribute('data-goto'));
-        if(g) onJump(g);
-      });
-    });
-  }
+    levelSelect.addEventListener('change', reloadData);
+    partSelect.addEventListener('change', reloadData);
 
-  // クエリ
-  function getParams(){
-    const u = new URL(location.href);
-    return {
-      level: (u.searchParams.get('level')||'N5').toUpperCase(),
-      part:  (u.searchParams.get('part') || 'verbs'),
-      page:  Math.max(1, parseInt(u.searchParams.get('page')||'1',10))
-    };
-  }
-  function setParams(p){
-    const u = new URL(location.href);
-    u.searchParams.set('level', p.level);
-    u.searchParams.set('part',  p.part);
-    u.searchParams.set('page',  String(p.page||1));
-    history.replaceState(null,'',u);
-  }
-
-  // レベル内の存在ファイルを走査して見出し行を作る
-  async function detectParts(level){
-    const found = [];
-    await Promise.all(CANDIDATE_PARTS.map(async part=>{
+    async function reloadData() {
+      const level = levelSelect.value;
+      const part = partSelect.value;
       const url = `/data/json/${level}/${part}.json`;
-      try{
-        const res = await fetch(url,{cache:'no-store',method:'GET'});
-        if(res.ok){
-          // JSONかどうか軽く確認
-          await res.clone().json();
-          found.push(part);
-        }
-      }catch(_){}
-    }));
-    found.sort();
-    return found;
-  }
-  function partsLabel(level, arr){
-    if(!arr.length) return '';
-    return `${level.toUpperCase()} ${arr.join(' ')}`;
-  }
-  async function renderPartsLines(){
-    const levels = ['N5','N4','N3','N2','N1'];
-    const lines = [];
-    for(const lv of levels){
-      const ps = await detectParts(lv);
-      if(ps.length) lines.push(`<div class="parts-line">${partsLabel(lv, ps)}</div>`);
-    }
-    byId('partsLines').innerHTML = lines.join('');
-  }
 
-  // データ読み込み
-  async function loadJson(url){
-    const res = await fetch(url, {cache:'no-store'});
-    if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-    return await res.json();
-  }
-
-  async function tryLoadSegments(level, part){
-    // オプショナル：存在しなければ空
-    const url = `/data/segments/${level}/${part}.json`;
-    try{
-      const res = await fetch(url, {cache:'no-store'});
-      if(!res.ok) return {};
-      const obj = await res.json(); // 期待形: { [id]: [{w,r},...] }
-      return (obj && typeof obj==='object') ? obj : {};
-    }catch(_){ return {}; }
-  }
-
-  // レンダリング
-  function renderList(items, segMap, page, toggles, level, part){
-    const start = (page-1)*PAGE_SIZE;
-    const slice = items.slice(start, start+PAGE_SIZE);
-    const grid = document.createElement('div');
-    grid.className = 'grid';
-
-    slice.forEach(it=>{
-      const seg = segMap[it.id] || null;
-      const ja = renderRuby(seg, it.ja);
-      const kana = escapeHtml(it.kana || '');
-      const ro = escapeHtml(it.ro || it.romaji || '');
-      const en = escapeHtml(it.en || it.eng || '');
-
-      const ex = Array.isArray(it.examples) ? it.examples : [];
-      const exHtml = ex.length
-        ? `<ul style="margin:6px 0 0 18px;padding:0">
-            ${ex.map(e=>`<li>${escapeHtml(e.en||'')} / ${escapeHtml(e.ja||'')}</li>`).join('')}
-           </ul>`
-        : `<div class="mini" style="margin-top:6px;color:#999">No examples</div>`;
-
-      const card = document.createElement('article');
-      card.className = 'card';
-      card.innerHTML = `
-        <h3>${level} ${part}</h3>
-        <div class="wordline" data-ja>${ja||''}</div>
-        <div class="mini" data-kana>${kana||''}</div>
-        <div class="mini" data-ro>${ro||''}</div>
-        <div class="mini" data-en>${en||''}</div>
-        <details style="margin-top:6px">
-          <summary class="row mini"><i class="fa-solid fa-caret-down"></i> Examples</summary>
-          ${exHtml}
-        </details>
-      `;
-      grid.appendChild(card);
-    });
-
-    // 反映
-    const list = byId('list');
-    list.innerHTML = '';
-    list.appendChild(grid);
-
-    // トグル適用
-    applyToggles(toggles);
-  }
-
-  function applyToggles(tog){
-    document.querySelectorAll('[data-ja]').forEach(n=>n.style.display = tog.ja ? '' : 'none');
-    document.querySelectorAll('[data-kana]').forEach(n=>n.style.display = tog.kana ? '' : 'none');
-    document.querySelectorAll('[data-ro]').forEach(n=>n.style.display = tog.ro ? '' : 'none');
-    document.querySelectorAll('[data-en]').forEach(n=>n.style.display = tog.en ? '' : 'none');
-  }
-
-  /***** 初期化 *****/
-  document.addEventListener('DOMContentLoaded', async ()=>{
-    // ヘッダー/フッター
-    try{
-      const [h,f]=await Promise.all([
-        fetch('/partials/header.html').then(r=>r.text()),
-        fetch('/partials/footer.html').then(r=>r.text())
-      ]);
-      byId('header').innerHTML=h;
-      byId('footer').innerHTML=f;
-    }catch(_){}
-
-    // パーツ候補（とりあえず全候補を入れておき、後で足りないときは404にならないよう存在チェックで案内）
-    const partSel = byId('partSel');
-    function fillPartOptions(parts){
-      partSel.innerHTML = parts.map(p=>`<option value="${p}">${p}</option>`).join('');
-    }
-    fillPartOptions(CANDIDATE_PARTS);
-
-    await renderPartsLines(); // 上部の「N5 verbs nouns …」行を実在ファイルから生成
-
-    // パラメータ反映
-    const p0 = getParams();
-    byId('levelSel').value = p0.level;
-    // 存在しない候補を選んでいたら verbs に退避
-    if(!CANDIDATE_PARTS.includes(p0.part)) p0.part = 'verbs';
-    partSel.value = p0.part;
-
-    // トグル
-    const toggles = {ja:true,kana:true,ro:true,en:true};
-    ['chkJa','chkKana','chkRo','chkEn'].forEach(id=>{
-      byId(id).addEventListener('change',(e)=>{
-        toggles[id==='chkJa'?'ja':id==='chkKana'?'kana':id==='chkRo'?'ro':'en'] = e.target.checked;
-        applyToggles(toggles);
-      });
-    });
-
-    // 変更イベント
-    byId('levelSel').addEventListener('change',()=>reload(1));
-    partSel.addEventListener('change',()=>reload(1));
-
-    // ページャジャンプ
-    function onJump(page){ reload(page); }
-
-    async function reload(page){
-      const level = byId('levelSel').value;
-      const part  = byId('partSel').value;
-      setParams({level,part,page});
-      byId('msg').hidden = true;
-      byId('list').innerHTML = '';
-      const url = `/data/json/${level}/${part}.json`;
-      try{
-        // データ本体
-        const data = await loadJson(url);
-        if(!Array.isArray(data) || !data.length){
-          byId('list').innerHTML = `<div class="notice">No items.</div>`;
-          byId('pagerTop').innerHTML = byId('pagerBottom').innerHTML = '';
-          return;
-        }
-        // segments（任意）
-        const segMap = await tryLoadSegments(level, part);
-
-        // ページャ
-        renderPager(data.length, page, 'pagerTop', onJump);
-        renderPager(data.length, page, 'pagerBottom', onJump);
-
-        // リスト
-        renderList(data, segMap, page, toggles, level, part);
-      }catch(err){
-        byId('list').innerHTML = '';
-        byId('pagerTop').innerHTML = byId('pagerBottom').innerHTML = '';
-        byId('msg').hidden = false;
-        byId('msg').innerHTML = `<div class="error">
-          <strong>This file is not valid JSON.</strong><br>
-          ${escapeHtml(url)}
-        </div>`;
-        console.error(err);
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('File not found');
+        const data = await res.json();
+        renderList(data);
+      } catch (err) {
+        content.innerHTML = `<div class="error">This file is not valid JSON.<br>${url}</div>`;
       }
     }
 
-    // 初回ロード
-    reload(p0.page);
-  });
+    function renderList(data) {
+      let html = '';
+      data.forEach((item, i) => {
+        html += `
+          <div class="word-item">
+            <div class="word-title">
+              <b>${i + 1}. ${item.ja}</b> (${item.ro})
+            </div>
+            <div class="word-meaning">${item.en}</div>
+          </div>`;
+      });
+      content.innerHTML = html || '<div>No data found.</div>';
+    }
+
+    reloadData();
   </script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; }
+    main { padding: 1rem 2rem; }
+    .selector, .display-options { margin-bottom: 1rem; }
+    select { margin-left: 0.5rem; }
+    .word-item { border-bottom: 1px solid #ddd; padding: 0.5rem 0; }
+    .word-title { font-size: 1.1em; }
+    .error { color: #c00; padding: 1rem; background: #fee; border-radius: 8px; }
+  </style>
+
 </body>
 </html>
