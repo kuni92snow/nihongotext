@@ -1,308 +1,351 @@
-<!-- /partials/header.html -->
-<header class="site-header" style="background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30;">
-  <div class="container" style="max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; gap:8px;">
-    <!-- 1行目：タイトル -->
-    <div style="display:flex; align-items:center; gap:10px;">
-      <a href="/" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
-        <img src="/icon-512.png" alt="nihongotext logo" style="width:28px; height:28px; border-radius:6px;" />
-        <span style="font-weight:700; font-size:20px; color:#e6462d;">nihongotext<span style="color:#333;">.com</span></span>
-      </a>
-    </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JLPT — Words | nihongotext.com</title>
+  <base href="/" />
+  <link rel="icon" href="/icon-512.png" />
+  <meta name="description" content="Browse JLPT vocabulary by level and part of speech. Add items to Learning and move to Learned. Toggle kanji with furigana, hiragana, romaji, and English." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root { --brand:#e6462d; }
+    body{ font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Apple Color Emoji','Segoe UI Emoji'; color:#222; background:#fff; }
+    main{ max-width:1100px; margin:20px auto 60px; padding:0 16px; }
+    h1{ color:#d33; font-size:20px; margin:10px 0 16px; }
+    .toolbar{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin:10px 0 14px; }
+    .toolbar .grp{ display:flex; align-items:center; gap:8px; }
+    .row{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+    select, button, input[type="checkbox"]{ font-size:14px; }
+    .cards{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
+    .card{ border:1px solid #eee; border-radius:10px; padding:12px; background:#fff; }
+    .muted{ color:#666; }
+    .topline{ display:flex; justify-content:space-between; gap:8px; align-items:center; margin-bottom:6px; }
+    .badges{ display:flex; gap:6px; align-items:center; }
+    .btn{ border:1px solid #ddd; background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer; }
+    .btn:hover{ border-color:#ccc; }
+    .btn-learn     { border-color:#ddd; color:#333; background:#fff; }
+    .btn-learning  { border-color:var(--brand); color:#fff; background:var(--brand); }
+    .btn-learned   { border-color:var(--brand); color:var(--brand); background:#fff; }
+    .lines{ line-height:1.8; }
+    .line{ margin:2px 0; }
+    ruby rt{ font-size:.72em; color:#666; }
+    details summary{ cursor:pointer; list-style:none; }
+    details summary::-webkit-details-marker{ display:none; }
+    .pager{ display:flex; gap:8px; align-items:center; margin:16px 0 4px; }
+    .pager .btn[disabled]{ opacity:.5; cursor:not-allowed; }
+    .error{ border:1px dashed #f2b; padding:10px; border-radius:8px; color:#a00; background:#fff7f9; }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
 
-    <!-- 2行目：Learning / Learned -->
-    <nav aria-label="Learning navigation" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
-      <button id="btn-open-learning" type="button" class="ntx-btn"
-        style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
-        onclick="window._ntxOpenLearning && window._ntxOpenLearning()">
-        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
-        <span>Learning</span>
-        <span id="badge-learning" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
-      </button>
+  <main>
+    <h1>JLPT — Words</h1>
 
-      <button id="btn-open-learned" type="button" class="ntx-btn"
-        style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
-        onclick="window._ntxOpenLearned && window._ntxOpenLearned()">
-        <i class="fa-solid fa-graduation-cap" style="color:#e6462d;"></i>
-        <span>Learned</span>
-        <span id="badge-learned" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
-      </button>
-    </nav>
-
-    <!-- 3行目：ナビ -->
-    <nav aria-label="Main navigation" style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
-      <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
-      <a href="/inquiry/index.html" style="color:#333; text-decoration:none;">Inquiry</a>
-      <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
-      <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
-    </nav>
-
-    <!-- 4行目：アイコン（赤） -->
-    <nav aria-label="Header icons" style="display:flex; align-items:center; gap:14px; font-size:20px;">
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#e6462d;">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="color:#e6462d;">
-        <i class="fa-brands fa-reddit-alien"></i>
-      </a>
-      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="color:#e6462d;">
-        <i class="fa-brands fa-medium"></i>
-      </a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" aria-label="Ko-fi" style="color:#e6462d;">
-        <i class="fa-solid fa-mug-hot"></i>
-      </a>
-      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="color:#e6462d;">
-        <i class="fa-solid fa-newspaper"></i>
-      </a>
-      <!-- Policy icons -->
-      <a href="/privacy.html" title="Privacy Policy" aria-label="Privacy Policy" style="color:#e6462d;">
-        <i class="fa-solid fa-user-shield"></i>
-      </a>
-      <a href="/legal.html" title="Legal Notice" aria-label="Legal Notice" style="color:#e6462d;">
-        <i class="fa-solid fa-scale-balanced"></i>
-      </a>
-    </nav>
-  </div>
-
-  <!-- ===== Overlay (共通) ===== -->
-  <div id="learning-overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
-
-  <!-- ===== Learning Drawer ===== -->
-  <aside id="learning-drawer" aria-labelledby="learning-title" role="dialog" aria-modal="true"
-         style="position:fixed; top:0; right:-620px; width:620px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
-    <!-- Header -->
-    <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
-      <div style="display:flex; align-items:center; gap:10px;">
-        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
-        <h2 id="learning-title" style="margin:0; font-size:18px;">Learning <span id="learning-count" style="color:#666; font-size:13px;"></span></h2>
+    <!-- Controls -->
+    <div class="toolbar">
+      <div class="grp">
+        <label for="sel-level">Level</label>
+        <select id="sel-level">
+          <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
+        </select>
       </div>
-      <button title="Close" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-              onclick="window._ntxCloseLearning && window._ntxCloseLearning()">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-
-    <!-- Content -->
-    <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
-      <div id="learning-list" style="display:flex; flex-direction:column; gap:12px;"></div>
-
-      <!-- pager -->
-      <div style="display:flex; gap:8px; align-items:center; margin:12px 0 0;">
-        <button class="btn" id="btn-l-prev" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">&lt; Prev</button>
-        <div id="l-pages" style="color:#666;"></div>
-        <button class="btn" id="btn-l-next" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">Next &gt;</button>
-      </div>
-
-      <!-- Quiz placeholder -->
-      <section id="learning-quiz" style="margin-top:18px; padding-top:12px; border-top:1px dashed #eee;">
-        <h3 style="margin:0 0 8px; font-size:16px; color:#333; display:flex; align-items:center; gap:8px;">
-          <i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)
-        </h3>
-        <p style="margin:0; color:#666; font-size:13px;">You will be able to test the items currently in Learning here.</p>
-      </section>
-    </div>
-  </aside>
-
-  <!-- ===== Learned Drawer ===== -->
-  <aside id="learned-drawer" aria-labelledby="learned-title" role="dialog" aria-modal="true"
-         style="position:fixed; top:0; right:-620px; width:620px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
-    <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
-      <div style="display:flex; align-items:center; gap:10px;">
-        <i class="fa-solid fa-graduation-cap" style="color:#e6462d;"></i>
-        <h2 id="learned-title" style="margin:0; font-size:18px;">Learned <span id="learned-count" style="color:#666; font-size:13px;"></span></h2>
-      </div>
-      <button title="Close" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-              onclick="window._ntxCloseLearned && window._ntxCloseLearned()">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-
-    <div id="learned-content" style="padding:12px 16px; overflow:auto; flex:1;">
-      <div id="learned-list" style="display:flex; flex-direction:column; gap:12px;"></div>
-
-      <div style="display:flex; gap:8px; align-items:center; margin:12px 0 0;">
-        <button class="btn" id="btn-d-prev" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">&lt; Prev</button>
-        <div id="d-pages" style="color:#666;"></div>
-        <button class="btn" id="btn-d-next" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">Next &gt;</button>
+      <div class="grp">
+        <label for="sel-part">Part</label>
+        <select id="sel-part">
+          <option value="verbs">verbs</option>
+          <option value="nouns">nouns</option>
+          <option value="adjectives-i">adjectives-i</option>
+          <option value="adjectives-na">adjectives-na</option>
+          <option value="adverbs">adverbs</option>
+          <option value="numerals">numerals</option>
+          <option value="particles">particles</option>
+          <option value="conjunctions">conjunctions</option>
+          <option value="interjections">interjections</option>
+        </select>
       </div>
     </div>
-  </aside>
 
-  <!-- ===== ヘッダースクリプト（Learning / Learned描画 + ページング + バッジ） ===== -->
+    <!-- Toggle (2 rows) -->
+    <div class="toolbar" style="flex-direction:column; align-items:flex-start;">
+      <div class="row">
+        <label><input type="checkbox" id="chk-ja" checked> Nihongo（漢字+ふりがな）</label>
+        <label><input type="checkbox" id="chk-kana" checked> Hiragana</label>
+      </div>
+      <div class="row">
+        <label><input type="checkbox" id="chk-ro" checked> Alphabet（romaji）</label>
+        <label><input type="checkbox" id="chk-en" checked> English</label>
+      </div>
+    </div>
+
+    <!-- Pager -->
+    <div class="pager">
+      <button class="btn" id="btn-prev">&lt; Prev</button>
+      <div id="page-numbers" class="muted"></div>
+      <button class="btn" id="btn-next">Next &gt;</button>
+    </div>
+
+    <div id="list"></div>
+
+    <div class="pager">
+      <button class="btn" id="btn-prev-b">&lt; Prev</button>
+      <div id="page-numbers-b" class="muted"></div>
+      <button class="btn" id="btn-next-b">Next &gt;</button>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Partials -->
+  <script>
+    (async function injectPartials(){
+      try{
+        const [h,f] = await Promise.all([
+          fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.text()),
+          fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.text())
+        ]);
+        document.getElementById('header-placeholder').innerHTML = h;
+        document.getElementById('footer-placeholder').innerHTML = f;
+      }catch(e){ console.warn('partials load failed', e); }
+    })();
+  </script>
+
+  <!-- Main App -->
   <script>
   (function(){
-    const KEY_P = 'nihongo_learning';
-    const KEY_D = 'nihongo_learned';
-    const PAGE = { learning: 1, learned: 1 };
-    const SIZE = 5;
+    const MAX_ITEMS = 30;
+    const PAGE_SIZE = 5;
+    const KEY_LEARNING = 'nihongo_learning';
+    const KEY_LEARNED  = 'nihongo_learned';
 
+    const state = { level:'N5', part:'verbs', items:[], segments:{}, page:1 };
+
+    function getParams(){
+      const sp=new URLSearchParams(location.search);
+      return { level:sp.get('level')||'N5', part:sp.get('part')||'verbs', page:Math.max(1,parseInt(sp.get('page')||'1',10)) };
+    }
+    function setParams(obj){
+      const sp=new URLSearchParams(location.search);
+      for (const [k,v] of Object.entries(obj)) sp.set(k,String(v));
+      history.replaceState(null,'','?'+sp.toString());
+    }
     function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]');}catch{return [];} }
     function W(k,v){ try{localStorage.setItem(k,JSON.stringify(v));}catch{} }
-    function TM(ts){ try{ const d=new Date(ts); return isFinite(d)? d.toISOString().slice(0,10):'';}catch{ return ''; } }
+    function M(a,b){ const m=new Map(); [...a,...b].forEach(x=>{if(x&&x.id!=null)m.set(String(x.id),x)}); return [...m.values()]; }
     function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
-    function rubyFromItem(it){
-      // 例文に segments は不要。語本体のみ ruby がある場合を考慮
-      if (it.ruby) return it.ruby;
-      if (it.ja && it.kana && it.ja!==it.kana) return `<ruby>${esc(it.ja)}<rt>${esc(it.kana)}</rt></ruby>`;
-      return esc(it.ja||'');
-    }
 
-    function setBadges(){
-      const lb=document.getElementById('badge-learning');
-      const db=document.getElementById('badge-learned');
-      if(lb) lb.textContent = String(R(KEY_P).length||0);
-      if(db) db.textContent = String(R(KEY_D).length||0);
-      const lc=document.getElementById('learning-count');
-      const dc=document.getElementById('learned-count');
-      if(lc) lc.textContent = '('+(R(KEY_P).length||0)+')';
-      if(dc) dc.textContent = '('+(R(KEY_D).length||0)+')';
-    }
-
-    function buildExamples(exs, id){
-      if(!Array.isArray(exs) || !exs.length) return '';
-      const html = exs.map(e=>{
-        const l1 = e.ja ? `<div>${esc(e.ja)}</div>` : '';
-        const l2 = e.kana ? `<div>${esc(e.kana)}</div>` : '';
-        const l3 = e.ro ? `<div>${esc(e.ro)}</div>` : '';
-        const l4 = e.en ? `<div>${esc(e.en)}</div>` : '';
-        return `<div style="margin:4px 0 8px;">${l1}${l2}${l3}${l4}</div>`;
-      }).join('');
-      return `<details style="margin-top:6px;"><summary class="muted"><i class="fa-solid fa-caret-down"></i> Examples</summary><div style="margin-top:6px;">${html}</div></details>`;
-    }
-
-    function paginate(arr, page){
-      const start = (page-1)*SIZE;
-      return arr.slice(start, start+SIZE);
-    }
-
-    function renderLearning(){
-      const box = document.getElementById('learning-list');
-      const data = R(KEY_P);
-      if(!box){ setBadges(); return; }
-      if(!data.length){
-        box.innerHTML = `<p class="muted" style="color:#666;">No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>`;
-        setBadges(); renderLPager(1,1); return;
-        }
-      const pages = Math.max(1, Math.ceil(data.length / SIZE));
-      PAGE.learning = Math.min(Math.max(1,PAGE.learning), pages);
-      const slice = paginate(data, PAGE.learning);
-
-      box.innerHTML = slice.map(it=>{
-        const main = `
-          <div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">
-            <div>
-              <div style="font-weight:600;">${esc(it.en||it.ja||it.id)}</div>
-              <div style="margin-top:2px; font-size:18px;">${rubyFromItem(it)}</div>
-              <div>${esc(it.kana||'')}</div>
-              <div>${esc(it.ro||'')}</div>
-              <div>${esc(it.en||'')}</div>
-              ${buildExamples(it.examples, it.id)}
-            </div>
-            <div style="display:flex; flex-direction:column; gap:6px;">
-              <button class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                      onclick="(function(id){ try{ const arr=JSON.parse(localStorage.getItem('${KEY_P}')||'[]').filter(x=>String(x.id)!==String(id)); localStorage.setItem('${KEY_P}', JSON.stringify(arr)); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_P}'})); }catch{} })('${esc(it.id)}')">
-                <i class="fa-solid fa-rotate-left"></i> Learn
-              </button>
-              <button class="btn" style="padding:6px 10px; border:1px solid #e6462d; color:#e6462d; background:#fff; border-radius:8px; cursor:pointer;"
-                      onclick="(function(it){ try{ const d=JSON.parse(localStorage.getItem('${KEY_D}')||'[]'); d.push(Object.assign({}, it, {learnedAt: Date.now()})); localStorage.setItem('${KEY_D}', JSON.stringify(d)); const p=JSON.parse(localStorage.getItem('${KEY_P}')||'[]').filter(x=>String(x.id)!==String(it.id)); localStorage.setItem('${KEY_P}', JSON.stringify(p)); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_D}'})); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_P}'})); }catch{} })(${JSON.stringify(it).replace(/</g,'\\u003c')})">
-                <i class="fa-solid fa-check"></i> Learned
-              </button>
-            </div>
-          </div>`;
-        return `<article style="border:1px solid #eee; border-radius:10px; padding:10px;">${main}</article>`;
-      }).join('');
-
-      setBadges();
-      renderLPager(PAGE.learning, pages);
-    }
-
-    function renderLPager(cur, pages){
-      const nums = Array.from({length:pages}, (_,i)=>i+1)
-        .map(p=>`<button class="btn" ${p===cur?'disabled':''} onclick="(function(p){ window._ntxGotoLearning && window._ntxGotoLearning(p); })(${p})">${p}</button>`).join(' ');
-      const holder = document.getElementById('l-pages');
-      if(holder) holder.innerHTML = nums;
-      const bPrev = document.getElementById('btn-l-prev');
-      const bNext = document.getElementById('btn-l-next');
-      if (bPrev) bPrev.onclick = ()=> window._ntxGotoLearning(Math.max(1, cur-1));
-      if (bNext) bNext.onclick = ()=> window._ntxGotoLearning(Math.min(pages, cur+1));
-    }
-
-    function renderLearned(){
-      const box = document.getElementById('learned-list');
-      const data = R(KEY_D);
-      if(!box){ setBadges(); return; }
-      if(!data.length){
-        box.innerHTML = `<p class="muted" style="color:#666;">No items in Learned yet.</p>`;
-        setBadges(); renderDPager(1,1); return;
+    function toRuby(id, ja, kana){
+      const seg = state.segments && state.segments[id];
+      if (Array.isArray(seg) && seg.length){
+        return seg.map(s=>{
+          const k=(s.kanji||'').trim(); const r=(s.kana||'').trim();
+          if(!k) return ''; if(!r || k===r) return esc(k);
+          return `<ruby>${esc(k)}<rt>${esc(r)}</rt></ruby>`;
+        }).join('');
       }
-      const pages = Math.max(1, Math.ceil(data.length / SIZE));
-      PAGE.learned = Math.min(Math.max(1,PAGE.learned), pages);
-      const slice = paginate(data, PAGE.learned);
-
-      box.innerHTML = slice.map(it=>{
-        const when = it.learnedAt ? ` / ${TM(it.learnedAt)}` : '';
-        return `<article style="border:1px solid #eee; border-radius:10px; padding:10px;">
-          <div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">
-            <div>
-              <div style="font-weight:600;">${esc(it.en||it.ja||it.id)}${when}</div>
-              <div style="margin-top:2px; font-size:18px;">${rubyFromItem(it)}</div>
-              <div>${esc(it.kana||'')}</div>
-              <div>${esc(it.ro||'')}</div>
-              <div>${esc(it.en||'')}</div>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:6px;">
-              <button class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(function(it){ try{ const p=JSON.parse(localStorage.getItem('${KEY_P}')||'[]'); p.push(it); localStorage.setItem('${KEY_P}', JSON.stringify(p)); const d=JSON.parse(localStorage.getItem('${KEY_D}')||'[]').filter(x=>String(x.id)!==String(it.id)); localStorage.setItem('${KEY_D}', JSON.stringify(d)); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_P}'})); window.dispatchEvent(new StorageEvent('storage',{key:'${KEY_D}'})); }catch{} })(${JSON.stringify(it).replace(/</g,'\\u003c')})">
-                <i class="fa-solid fa-rotate-left"></i> Learning
-              </button>
-            </div>
-          </div>
-        </article>`;
-      }).join('');
-
-      setBadges();
-      renderDPager(PAGE.learned, pages);
+      if(!ja) return '';
+      if(!kana || kana===ja) return esc(ja);
+      return `<ruby>${esc(ja)}<rt>${esc(kana)}</rt></ruby>`;
     }
 
-    function renderDPager(cur, pages){
+    async function fetchJsonStrict(url){
+      const res = await fetch(url,{cache:'no-store'});
+      const text = await res.text();
+      if(!res.ok || /^\s*</.test(text)) throw new Error('Fetch failed '+url);
+      return JSON.parse(text);
+    }
+
+    async function loadData(){
+      const {level, part} = state;
+      const bases=['/data/json','/dada/json'];
+      const lv=[level, level.toUpperCase(), level.toLowerCase()];
+      const candidates=[]; for(const b of bases){ for(const L of lv){ candidates.push(`${b}/${L}/${part}.json`); } }
+      let data=null;
+      for(const u of candidates){ try{ data = await fetchJsonStrict(u); break; }catch(e){} }
+      if(!Array.isArray(data)){ document.getElementById('list').innerHTML='<div class="error">Failed to load dataset.</div>'; state.items=[]; render(); return; }
+      state.items = data.slice(0,MAX_ITEMS);
+
+      // segments
+      state.segments = {};
+      const segBases = ['/data/segments','/dada/segments'];
+      for (const b of segBases){
+        for (const L of lv){
+          try{
+            const seg = await fetchJsonStrict(`${b}/${L}/${part}.json`);
+            if (seg && typeof seg==='object'){ state.segments = seg; throw 'done'; }
+          }catch(e){ if(e==='done') break; }
+        }
+      }
+      render(); updatePager();
+    }
+
+    function render(){
+      const list = document.getElementById('list');
+      const start=(state.page-1)*PAGE_SIZE;
+      const slice=state.items.slice(start,start+PAGE_SIZE);
+
+      const show = {
+        ja:   document.getElementById('chk-ja').checked,
+        kana: document.getElementById('chk-kana').checked,
+        ro:   document.getElementById('chk-ro').checked,
+        en:   document.getElementById('chk-en').checked,
+      };
+
+      list.innerHTML = `<div class="cards">${
+        slice.map(item=>{
+          const id=item.id??'';
+          const ja = toRuby(id, item.ja, item.kana);
+          const kana = esc(item.kana||'');
+          const ro   = esc(item.ro||'');
+          const en   = esc(item.en||'');
+          const examples = Array.isArray(item.examples)?item.examples:[];
+          const json = JSON.stringify(item).replace(/</g,'\\u003c');
+
+          const exHtml = examples.map(e=>{
+            const l1 = e.ja   ? `<div class="line">${toRuby(id, e.ja, e.kana||'')}</div>` : '';
+            const l2 = e.kana ? `<div class="line">${esc(e.kana)}</div>` : '';
+            const l3 = e.ro   ? `<div class="line">${esc(e.ro)}</div>`   : '';
+            const l4 = e.en   ? `<div class="line">${esc(e.en)}</div>`   : '';
+            return `<div class="lines" style="margin:4px 0 8px 0;">${l1}${l2}${l3}${l4}</div>`;
+          }).join('');
+
+          const inP = R(KEY_LEARNING).some(x=>String(x.id)===String(id));
+          const learnClass = inP ? 'btn-learning' : 'btn-learn';
+          const learnLabel = inP ? '<i class="fa-solid fa-book-open"></i> Learning' : '<i class="fa-solid fa-book-open"></i> Learn';
+
+          return `<article class="card" data-id="${id}">
+            <div class="topline">
+              <div class="muted"><span class="badge">${esc(state.level)}</span> <span class="badge">${esc(state.part)}</span></div>
+              <div class="badges">
+                <button class="btn ${learnClass}" data-action="to-learning" data-id="${id}" data-json='${json}'>${learnLabel}</button>
+                <button class="btn btn-learned" data-action="to-learned"  data-id="${id}" data-json='${json}'><i class="fa-solid fa-check"></i> Learned</button>
+              </div>
+            </div>
+            ${show.ja?`<div class="line" style="font-size:18px">${ja}</div>`:''}
+            ${show.kana?`<div class="line">${kana}</div>`:''}
+            ${show.ro?`<div class="line">${ro}</div>`:''}
+            ${show.en?`<div class="line">${en}</div>`:''}
+            ${examples.length ? `<details style="margin-top:8px;"><summary class="muted"><i class="fa-solid fa-caret-down"></i> Examples</summary><div style="margin-top:6px;">${exHtml}</div></details>` : ``}
+          </article>`;
+        }).join('')
+      }</div>`;
+    }
+
+    function updatePager(){
+      const pages = Math.max(1, Math.ceil(state.items.length / PAGE_SIZE));
+      state.page = Math.min(Math.max(1,state.page), pages);
       const nums = Array.from({length:pages}, (_,i)=>i+1)
-        .map(p=>`<button class="btn" ${p===cur?'disabled':''} onclick="(function(p){ window._ntxGotoLearned && window._ntxGotoLearned(p); })(${p})">${p}</button>`).join(' ');
-      const holder = document.getElementById('d-pages');
-      if(holder) holder.innerHTML = nums;
-      const bPrev = document.getElementById('btn-d-prev');
-      const bNext = document.getElementById('btn-d-next');
-      if (bPrev) bPrev.onclick = ()=> window._ntxGotoLearned(Math.max(1, cur-1));
-      if (bNext) bNext.onclick = ()=> window._ntxGotoLearned(Math.min(pages, cur+1));
+        .map(p=>`<button class="btn" data-gop="${p}" ${p===state.page?'disabled':''}>${p}</button>`).join(' ');
+      const a=document.getElementById('page-numbers'), b=document.getElementById('page-numbers-b');
+      if(a) a.innerHTML=nums; if(b) b.innerHTML=nums;
+      document.getElementById('btn-prev').disabled = (state.page<=1);
+      document.getElementById('btn-prev-b').disabled = (state.page<=1);
+      document.getElementById('btn-next').disabled = (state.page>=pages);
+      document.getElementById('btn-next-b').disabled = (state.page>=pages);
     }
 
-    // 公開 API
-    window._ntxOpenLearning = function(){
-      const o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer');
-      if(!o||!d) return; o.style.display='block'; setTimeout(()=>{d.style.right='0';},10); renderLearning();
-    };
-    window._ntxCloseLearning = function(){
-      const o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer');
-      if(!o||!d) return; d.style.right='-620px'; setTimeout(()=>{o.style.display='none';},250);
-    };
-    window._ntxOpenLearned = function(){
-      const o=document.getElementById('learning-overlay'), d=document.getElementById('learned-drawer');
-      if(!o||!d) return; o.style.display='block'; setTimeout(()=>{d.style.right='0';},10); renderLearned();
-    };
-    window._ntxCloseLearned = function(){
-      const o=document.getElementById('learning-overlay'), d=document.getElementById('learned-drawer');
-      if(!o||!d) return; d.style.right='-620px'; setTimeout(()=>{o.style.display='none';},250);
-    };
-    window._ntxRenderLearning = renderLearning;
-    window._ntxRenderLearned  = renderLearned;
-    window._ntxGotoLearning = function(p){ PAGE.learning = p; renderLearning(); };
-    window._ntxGotoLearned  = function(p){ PAGE.learned  = p; renderLearned(); };
+    // クリック（Learn / Learned / ページ）
+    document.addEventListener('click', (ev)=>{
+      const btn = ev.target.closest('button');
+      if(!btn) return;
 
-    // 他ページからの追加/移動に追随
-    window.addEventListener('storage', ev=>{
-      if (ev && (ev.key===KEY_P || ev.key===KEY_D)) { setBadges(); renderLearning(); renderLearned(); }
+      // pager
+      if (btn.dataset.gop){
+        state.page = parseInt(btn.dataset.gop,10);
+        setParams({page:state.page});
+        render(); updatePager(); return;
+      }
+      if (btn.id==='btn-prev' || btn.id==='btn-prev-b'){
+        state.page = Math.max(1, state.page-1); setParams({page:state.page}); render(); updatePager(); return;
+      }
+      if (btn.id==='btn-next' || btn.id==='btn-next-b'){
+        const pages = Math.max(1, Math.ceil(state.items.length / PAGE_SIZE));
+        state.page = Math.min(pages, state.page+1); setParams({page:state.page}); render(); updatePager(); return;
+      }
+
+      // Learn / Learned
+      const act = btn.dataset.action;
+      if (!act) return;
+      const item = JSON.parse(btn.dataset.json||'{}');
+      if (!item || item.id==null) return;
+
+      if (act==='to-learning'){
+        const list = R(KEY_LEARNING);
+        const exists = list.some(x=>String(x.id)===String(item.id));
+        const next = exists ? list.filter(x=>String(x.id)!==String(item.id)) : M(list,[item]);
+        W(KEY_LEARNING, next);
+        // UIトグル（色と文言）
+        if (exists){
+          btn.classList.remove('btn-learning'); btn.classList.add('btn-learn');
+          btn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learn';
+        }else{
+          btn.classList.remove('btn-learn'); btn.classList.add('btn-learning');
+          btn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learning';
+        }
+        // Learned からは外す
+        W(KEY_LEARNED, R(KEY_LEARNED).filter(x=>String(x.id)!==String(item.id)));
+        // ヘッダードロワー更新
+        if (window._ntxRenderLearning) window._ntxRenderLearning();
+        if (window._ntxRenderLearned)  window._ntxRenderLearned();
+        // バッジ更新（ヘッダー側で storage を拾えるよう疑似 event）
+        window.dispatchEvent(new StorageEvent('storage',{key:KEY_LEARNING}));
+        return;
+      }
+
+      if (act==='to-learned'){
+        // Learned へ移動
+        const done = M(R(KEY_LEARNED), [Object.assign({}, item, {learnedAt: Date.now()})]);
+        W(KEY_LEARNED, done);
+        // Learning から除外
+        W(KEY_LEARNING, R(KEY_LEARNING).filter(x=>String(x.id)!==String(item.id)));
+        // ボタンの見た目は Learning 側だけトグル
+        const learnBtn = btn.parentElement.querySelector('button[data-action="to-learning"]');
+        if (learnBtn){
+          learnBtn.classList.remove('btn-learning'); learnBtn.classList.add('btn-learn');
+          learnBtn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learn';
+        }
+        if (window._ntxRenderLearning) window._ntxRenderLearning();
+        if (window._ntxRenderLearned)  window._ntxRenderLearned();
+        window.dispatchEvent(new StorageEvent('storage',{key:KEY_LEARNED}));
+        return;
+      }
     });
 
-    // 初期バッジ
-    setBadges();
+    // トグル変更
+    ['chk-ja','chk-kana','chk-ro','chk-en'].forEach(id=>{
+      const el=document.getElementById(id); if(el) el.addEventListener('change', ()=> render());
+    });
+
+    // セレクト変更
+    document.getElementById('sel-level').addEventListener('change', ()=>{
+      state.level = document.getElementById('sel-level').value; state.page=1;
+      setParams({level:state.level, page:1, part:state.part}); loadData();
+    });
+    document.getElementById('sel-part').addEventListener('change', ()=>{
+      state.part = document.getElementById('sel-part').value; state.page=1;
+      setParams({level:state.level, page:1, part:state.part}); loadData();
+    });
+
+    // 初期化
+    (function init(){
+      const {level, part, page} = getParams();
+      state.level=level; state.part=part; state.page=page;
+      document.getElementById('sel-level').value=level;
+      document.getElementById('sel-part').value=part;
+      loadData();
+    })();
+
+    // ヘッダードロワーの更新に追随
+    window.addEventListener('storage', (ev)=>{
+      if (ev && (ev.key===KEY_LEARNING || ev.key===KEY_LEARNED)){
+        if (window._ntxRenderLearning) window._ntxRenderLearning();
+        if (window._ntxRenderLearned)  window._ntxRenderLearned();
+      }
+    });
   })();
   </script>
-</header>
+</body>
+</html>
