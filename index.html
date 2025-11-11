@@ -29,6 +29,10 @@
     .examples { display:none; padding-left:10px; margin-top:6px; }
     .examples .ex { margin:6px 0; }
     .notice { padding:10px; border:1px dashed #eee; border-radius:8px; color:#666; }
+    .pager { display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin:12px 0 24px; }
+    .pager button { padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; }
+    .pager button[disabled] { opacity:.5; cursor:not-allowed; }
+    .pager .current { background:#e6462d; color:#fff; border-color:#e6462d; }
   </style>
 </head>
 
@@ -72,6 +76,7 @@
     </section>
 
     <div id="word-list"></div>
+    <div id="pager" class="pager" aria-label="Pagination"></div>
     <p class="notice" id="limit-note" style="display:none;">Showing up to 30 items for this part. More will be added later.</p>
   </main>
 
@@ -88,10 +93,13 @@
       document.getElementById('footer-placeholder').innerHTML = f;
     });
 
-    /* ========== Helpers ========== */
-    const MAX_ITEMS = 30;
+    /* ========== Constants & Helpers ========== */
+    const PAGE_SIZE = 5;           // 1ページ5件
+    const MAX_ITEMS_CAP = 30;      // 各品詞の上限表示（将来拡張で使用）
+
     const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
+    // Furigana helpers
     const RE_KANJI=/[\u4E00-\u9FFF\u3400-\u4DBF]/, RE_HIRA=/[\u3040-\u309F]/, RE_KATA=/[\u30A0-\u30FF]/;
     const isKanji = ch=>RE_KANJI.test(ch), isKana = ch=>RE_HIRA.test(ch)||RE_KATA.test(ch);
 
@@ -103,7 +111,7 @@
       }).join('');
     }
     function rubyAutoAlign(ja, kana){
-      if(!ja) return '';
+      if(!ja)   return '';
       if(!kana) return esc(ja);
       const kanaOnly = Array.from(kana).filter(isKana).join('');
       const blocks=[]; let cur='', tp=null;
@@ -123,9 +131,19 @@
       });
       return out.join('');
     }
-    function jaWithStrictRuby(item){
+
+    // 外部segmentsを最優先で適用（無ければ自動アライン）
+    function jaWithStrictRuby(item, segMap){
+      const segForItem = segMap && segMap[item.id] && segMap[item.id].word;
+      if(Array.isArray(segForItem) && segForItem.length) return rubyFromSegments(segForItem);
       if(Array.isArray(item.segments) && item.segments.length) return rubyFromSegments(item.segments);
       return rubyAutoAlign(item.ja, item.kana);
+    }
+    function exRuby(ex, segForItem, exIndex){
+      const custom = segForItem && segForItem.examples && (segForItem.examples[exIndex] ?? segForItem.examples[String(exIndex)]);
+      if(Array.isArray(custom) && custom.length) return rubyFromSegments(custom);
+      if(Array.isArray(ex.segments) && ex.segments.length) return rubyFromSegments(ex.segments);
+      return rubyAutoAlign(ex.ja || '', ex.kana || '');
     }
 
     /* ========== LocalStorage (objects) ========== */
@@ -158,10 +176,8 @@
       if(window._ntxRenderLearning) window._ntxRenderLearning();
     }
     function moveToLearned(item){
-      // Learning から削除
       const r = lsRead(LS_LEARNING).filter(x=>String(x?.id)!==String(item.id));
       lsWrite(LS_LEARNING, r);
-      // Learned へ追加
       upsertTo(LS_LEARNED, item);
       if(window._ntxRenderLearning) window._ntxRenderLearning();
     }
@@ -169,62 +185,102 @@
     /* ========== Data load & UI ========== */
     const levelSel = document.getElementById('level');
     const partSel  = document.getElementById('part');
+    const listEl   = document.getElementById('word-list');
+    const pagerEl  = document.getElementById('pager');
+
     const q = new URLSearchParams(location.search);
     if(q.get('level')) levelSel.value = q.get('level');
     if(q.get('part'))  partSel.value  = q.get('part');
 
-    levelSel.addEventListener('change', syncAndLoad);
-    partSel .addEventListener('change', syncAndLoad);
+    let DATA = [];
+    let SEGMENTS_MAP = {};   // 外部segments
+    let currentPage = Math.max(1, parseInt(q.get('page')||'1',10));
+
+    levelSel.addEventListener('change', ()=>{ currentPage=1; syncAndLoad(); });
+    partSel .addEventListener('change', ()=>{ currentPage=1; syncAndLoad(); });
     ['show-ja','show-kana','show-ro','show-en'].forEach(id=>{
       document.getElementById(id).addEventListener('change', render);
     });
 
-    let DATA = [];
-
     async function syncAndLoad(){
       const level = levelSel.value;
       const part  = partSel.value;
-      const url   = `/data/json/${level}/${part}.json`;
+      const dataUrl = `/data/json/${level}/${part}.json`;
+      const segUrl  = `/data/segments/${level}/${part}.segments.json`; // ← 任意配置
 
       const u = new URL(location.href);
       u.searchParams.set('level', level);
       u.searchParams.set('part',  part);
+      u.searchParams.set('page',  String(currentPage));
       history.replaceState(null, '', u);
 
       try{
-        const res = await fetch(url, {cache:'no-cache'});
-        if(!res.ok) throw new Error(res.status + ' ' + res.statusText);
-        DATA = await res.json();
+        const [resData, resSeg] = await Promise.all([
+          fetch(dataUrl, {cache:'no-cache'}),
+          fetch(segUrl,  {cache:'no-cache'})
+            .catch(()=>null)
+        ]);
+        if(!resData.ok) throw new Error(resData.status + ' ' + resData.statusText);
+        DATA = await resData.json();
+
+        if(resSeg && resSeg.ok){
+          SEGMENTS_MAP = await resSeg.json();
+        }else{
+          SEGMENTS_MAP = {};
+        }
         render();
       }catch(e){
         console.error(e);
-        document.getElementById('word-list').innerHTML =
-          `<p class="notice" style="color:#c00;">Failed to load dataset. Check <code>${url}</code>.</p>`;
+        listEl.innerHTML = `<p class="notice" style="color:#c00;">Failed to load dataset. Check <code>${dataUrl}</code>.</p>`;
+        pagerEl.innerHTML = '';
       }
     }
 
+    function renderPager(total, page, perPage){
+      const totalPages = Math.max(1, Math.ceil(total / perPage));
+      const btn = (p, label, disabled=false, current=false)=>(
+        `<button ${disabled?'disabled':''} data-page="${p}" ${current?'class="current"':''}>${label}</button>`
+      );
+      let html = '';
+      html += btn(Math.max(1, page-1), 'Prev', page<=1);
+      for(let i=1;i<=totalPages;i++){
+        html += btn(i, i, false, i===page);
+      }
+      html += btn(Math.min(totalPages, page+1), 'Next', page>=totalPages);
+      pagerEl.innerHTML = html;
+    }
+
     function render(){
-      if(!Array.isArray(DATA)){ document.getElementById('word-list').innerHTML=''; return; }
+      if(!Array.isArray(DATA)){ listEl.innerHTML=''; pagerEl.innerHTML=''; return; }
 
       const showJa   = document.getElementById('show-ja').checked;
       const showKana = document.getElementById('show-kana').checked;
       const showRo   = document.getElementById('show-ro').checked;
       const showEn   = document.getElementById('show-en').checked;
 
-      const items = DATA.slice(0, MAX_ITEMS);
-      document.getElementById('limit-note').style.display = DATA.length > MAX_ITEMS ? 'block' : 'none';
+      const capped = DATA.slice(0, MAX_ITEMS_CAP);
+      const total  = capped.length;
+      const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+      if(currentPage>totalPages) currentPage = totalPages;
 
-      const html = items.map(item=>{
+      const start = (currentPage-1)*PAGE_SIZE;
+      const items = capped.slice(start, start+PAGE_SIZE);
+
+      document.getElementById('limit-note').style.display = DATA.length > MAX_ITEMS_CAP ? 'block' : 'none';
+
+      const html = items.map((item, idxOnPage)=>{
+        const segForItem = SEGMENTS_MAP[item.id]; // {word:[], examples:{'0':[]...}}
         const line1 = `<div class="line meta">${esc(levelSel.value)} ・ ${esc(partSel.value)}</div>`;
-        const line2 = showJa   ? `<div class="line"><strong>${jaWithStrictRuby(item)}</strong></div>` : '';
+        const line2 = showJa   ? `<div class="line"><strong>${jaWithStrictRuby(item, SEGMENTS_MAP)}</strong></div>` : '';
         const line3 = showKana ? `<div class="line">${esc(item.kana||'')}</div>` : '';
         const line4 = showRo   ? `<div class="line">${esc(item.ro||'')}</div>` : '';
         const line5 = showEn   ? `<div class="line">${esc(item.en||'')}</div>` : '';
 
-        const exHtml = Array.isArray(item.examples) ? item.examples.map(ex=>`
+        const hasEx = Array.isArray(item.examples) && item.examples.length;
+        const exHtml = hasEx ? item.examples.map((ex, i)=>`
           <div class="ex">
             ${showEn   && ex.en   ? `<div>• ${esc(ex.en)}</div>`:''}
-            ${showJa   && (ex.ja||ex.kana) ? `<div>${jaWithStrictRuby({ja:ex.ja||'', kana:ex.kana||'', segments:ex.segments||[]})}</div>`:''}
+            ${showJa   && (ex.ja||ex.kana) ? `<div>${exRuby(ex, segForItem, i)}</div>`:''}
             ${showKana && ex.kana ? `<div>${esc(ex.kana)}</div>`:''}
             ${showRo   && ex.ro   ? `<div>${esc(ex.ro)}</div>`:''}
           </div>`).join('') : '';
@@ -233,41 +289,61 @@
           <article class="word-card" data-id="${esc(item.id||'')}">
             ${line1}${line2}${line3}${line4}${line5}
             <div class="word-actions">
-              <button class="btn btn-learn"   data-id="${esc(item.id||'')}">Learn</button>
-              <button class="btn btn-learned" data-id="${esc(item.id||'')}">Learned</button>
-              ${exHtml ? `<span class="toggle" onclick="toggleExamples(this)">▼ Examples</span>`:''}
+              <button class="btn act-learn"   data-id="${esc(item.id||'')}">Learn</button>
+              <button class="btn act-learned" data-id="${esc(item.id||'')}">Learned</button>
+              ${exHtml ? `<span class="toggle act-toggle">▼ Examples</span>`:''}
             </div>
-            ${exHtml ? `<div class="examples">${exHtml}</div>`:''}
+            ${exHtml ? `<div class="examples" hidden>${exHtml}</div>`:''}
           </article>`;
       }).join('');
 
-      document.getElementById('word-list').innerHTML = html || '<p class="notice">No items.</p>';
-
-      // クリック（安全に後付け）
-      document.querySelectorAll('.btn-learn').forEach(btn=>{
-        btn.addEventListener('click', ()=>{
-          const id = String(btn.getAttribute('data-id'));
-          const item = DATA.find(x=>String(x.id)===id);
-          if(item) upsertLearning(item);
-        });
-      });
-      document.querySelectorAll('.btn-learned').forEach(btn=>{
-        btn.addEventListener('click', ()=>{
-          const id = String(btn.getAttribute('data-id'));
-          const item = DATA.find(x=>String(x.id)===id);
-          if(item) moveToLearned(item);
-        });
-      });
+      listEl.innerHTML = html || '<p class="notice">No items.</p>';
+      renderPager(total, currentPage, PAGE_SIZE);
     }
 
-    // 例文開閉
-    window.toggleExamples = function(el){
-      const box = el.parentElement.nextElementSibling;
-      if(!box) return;
-      const open = box.style.display!=='none';
-      box.style.display = open ? 'none' : 'block';
-      el.textContent = open ? '▼ Examples' : '▲ Hide examples';
-    };
+    // ====== クリックはデリゲーションで確実に捕捉 ======
+    document.getElementById('word-list').addEventListener('click', (ev)=>{
+      const btnLearn   = ev.target.closest('.act-learn');
+      const btnLearned = ev.target.closest('.act-learned');
+      const btnToggle  = ev.target.closest('.act-toggle');
+      if(!(btnLearn||btnLearned||btnToggle)) return;
+
+      const art = ev.target.closest('article.word-card');
+      if(!art) return;
+      const id = String(art.getAttribute('data-id')||'');
+      const item = (Array.isArray(DATA) ? DATA.find(x=>String(x.id)===id) : null);
+      if(!item) return;
+
+      if(btnLearn){
+        upsertLearning(item);
+        btnLearn.textContent = 'Added';
+      } else if(btnLearned){
+        moveToLearned(item);
+        btnLearned.textContent = 'Moved';
+      } else if(btnToggle){
+        const box = art.querySelector('.examples');
+        if(!box) return;
+        const open = !box.hasAttribute('hidden');
+        if(open){ box.setAttribute('hidden',''); btnToggle.textContent='▼ Examples'; }
+        else { box.removeAttribute('hidden'); btnToggle.textContent='▲ Hide examples'; }
+      }
+    });
+
+    // ページャーのクリック
+    document.getElementById('pager').addEventListener('click', (ev)=>{
+      const b = ev.target.closest('button[data-page]');
+      if(!b || b.disabled) return;
+      const p = parseInt(b.getAttribute('data-page'),10);
+      if(!Number.isFinite(p)) return;
+      currentPage = Math.max(1, p);
+
+      const u = new URL(location.href);
+      u.searchParams.set('page', String(currentPage));
+      history.replaceState(null, '', u);
+
+      render();
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
 
     // 初回ロード
     syncAndLoad();
