@@ -82,7 +82,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .admask.show{display:flex}
 .ad{background:#fff;border-radius:12px;max-width:560px;width:min(96vw,560px);padding:12px;border:2px solid var(--shu)}
 .ad .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
-#adFallback{display:none;border:1px dashed #e5e7eb;border-radius:10px;padding:8px;margin-top:6px}
 </style>
 </head>
 <body>
@@ -259,7 +258,6 @@ async function injectPartials(){
   attachLangToggle();
   applyLangToUI();
 
-  // ヘッダー内の Learning 起動ボタン（id="learnBtn" か data-open="learning"）に連携
   const learnBtn = (hdr && (hdr.querySelector('#learnBtn') || hdr.querySelector('[data-open="learning"]'))) || null;
   if (learnBtn) {
     learnBtn.addEventListener('click', ()=> { if (typeof openLearning==='function') openLearning(); });
@@ -333,15 +331,11 @@ async function onSearchInput(){
 const list=document.getElementById('list');
 const pager=document.getElementById('pager');
 
-function safeToggle(id, def=true){
+/* トグルで再描画 */
+['toggleEN','toggleJA','toggleKANA','toggleRO'].forEach(id=>{
   const el=document.getElementById(id);
-  return { exists:!!el, value: el ? !!el.checked : def, on:(type,fn)=>{ if(el) el.addEventListener(type,fn);} };
-}
-const tEN   = safeToggle('toggleEN',true);
-const tJA   = safeToggle('toggleJA',true);
-const tKANA = safeToggle('toggleKANA',true);
-const tRO   = safeToggle('toggleRO',true);
-[tEN,tJA,tKANA,tRO].forEach(t=>t.on('change',()=>renderList(lastData)));
+  if(el){ el.addEventListener('change', ()=>renderList(lastData)); }
+});
 
 document.getElementById('levelSel').addEventListener('change', e=>{
   level=e.target.value; page=1; if(!kw?.value.trim()) loadSingleAndRender(); else onSearchInput();
@@ -375,6 +369,13 @@ function renderList(data){
     list.innerHTML=`<div style="color:#6b7280; padding:12px 0;">${uiLang==='en'?'No items to show.':'表示できる項目がありません。'}</div>`;
     return;
   }
+
+  /* ←←← ここが修正ポイント：現在のチェック状態を都度読む */
+  const showEN   = document.getElementById('toggleEN')?.checked !== false;
+  const showJA   = document.getElementById('toggleJA')?.checked !== false;
+  const showKANA = document.getElementById('toggleKANA')?.checked !== false;
+  const showRO   = document.getElementById('toggleRO')?.checked !== false;
+
   let idx=(page-1)*PAGE_SIZE;
   rows.forEach(item=>{
     idx++;
@@ -398,10 +399,10 @@ function renderList(data){
     const body=div('content',''); body.dataset.examples='1';
     (item.examples||[]).forEach(ex=>{
       const parts=[];
-      if(tEN.value   && ex.en   ) parts.push(`<div class="en">${ex.en}</div>`);
-      if(tJA.value   && ex.ja   ) parts.push(`<div class="ja">${ex.ja}</div>`);
-      if(tKANA.value && ex.kana ) parts.push(`<div class="kana">${ex.kana}</div>`);
-      if(tRO.value   && ex.ro   ) parts.push(`<div class="ro">${ex.ro}</div>`);
+      if(showEN   && ex.en   ) parts.push(`<div class="en">${ex.en}</div>`);
+      if(showJA   && ex.ja   ) parts.push(`<div class="ja">${ex.ja}</div>`);
+      if(showKANA && ex.kana ) parts.push(`<div class="kana">${ex.kana}</div>`);
+      if(showRO   && ex.ro   ) parts.push(`<div class="ro">${ex.ro}</div>`);
       if(parts.length){ const block=div('line',''); block.innerHTML=parts.join(''); body.appendChild(block); }
     });
 
@@ -481,11 +482,9 @@ function renderLearnedModal(){
 
 /* ========= Learning ========= */
 const LEARN_KEY = 'ntx_learning_v2';
-const LEARN_PAGE_SIZE = 5; let learnPage = 1;
 const getLearning = ()=>{ try{return JSON.parse(localStorage.getItem(LEARN_KEY)||'[]')}catch(_){return[]} };
 const setLearning = (arr)=>{ try{localStorage.setItem(LEARN_KEY,JSON.stringify(arr));}catch(_){ } };
 
-// 先に宣言（hoistの有無に関係なく安全）
 function renderLearningModal(){
   const wrap = document.getElementById('learningBody');
   if(!wrap){ return; }
@@ -540,7 +539,6 @@ document.getElementById('printLearning')?.addEventListener('click', ()=>{
   buildChips();
   await loadSingleAndRender();
 
-  // 検索ハイライト
   const kwEl = document.getElementById('kw');
   if(kwEl){
     kwEl.addEventListener('input', ()=>{
