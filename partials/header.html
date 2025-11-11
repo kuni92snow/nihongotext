@@ -62,6 +62,7 @@
   <div id="learning-overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
 
   <aside id="learning-drawer" style="position:fixed; top:0; right:-560px; width:560px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
+    <!-- ヘッダー -->
     <div style="display:flex; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
       <h2 style="margin:0; font-size:18px; display:flex; align-items:center; gap:8px;">
         <i class="fa-solid fa-book-open" style="color:#e6462d;"></i> Learning
@@ -75,7 +76,9 @@
       </button>
     </div>
 
+    <!-- 本文 -->
     <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
+      <!-- ここへ単語＋例文を描画 -->
       <div id="learning-list"></div>
 
       <!-- Quiz placeholder -->
@@ -85,6 +88,28 @@
         </h3>
         <p style="margin:0; color:#666;">You will be able to test the items currently in Learning here.</p>
       </section>
+    </div>
+
+    <!-- フッター操作 -->
+    <div style="padding:12px 16px; border-top:1px solid #eee; display:flex; justify-content:space-between; gap:8px;">
+      <button title="Clear Learning list"
+        style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+        onclick="(function(){ try{ localStorage.setItem('nihongo_learning','[]'); localStorage.setItem('ntx_learning_v2','[]'); localStorage.setItem('nihongo_learned', JSON.stringify(JSON.parse(localStorage.getItem('nihongo_learned')||'[]'))); }catch(_){};
+          var b=document.getElementById('learning-count-badge'); if(b) b.textContent='0';
+          var l=document.getElementById('learning-list'); if(l) l.innerHTML='<p style=&quot;color:#666;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
+          var c=document.getElementById('learning-count'); if(c) c.textContent='(0)';
+        })()">
+        <i class="fa-solid fa-trash-can" style="color:#e6462d;"></i> Clear
+      </button>
+      <button title="Export Learning (JSON)"
+        style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
+        onclick="(function(){ var data=[]; try{ data = JSON.parse(localStorage.getItem('nihongo_learning')||'[]'); }catch(_){}
+          try{ var alt = JSON.parse(localStorage.getItem('ntx_learning_v2')||'[]'); if(Array.isArray(alt)) data = data.concat(alt); }catch(_){}
+          var seen=new Set(); data=data.filter(function(x){ if(!x||!x.id) return false; var k=String(x.id); if(seen.has(k)) return false; seen.add(k); return true; });
+          var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); var url=URL.createObjectURL(blob);
+          var a=document.createElement('a'); a.href=url; a.download='learning.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); })()">
+        <i class="fa-solid fa-file-arrow-down" style="color:#e6462d;"></i> Export
+      </button>
     </div>
   </aside>
 </header>
