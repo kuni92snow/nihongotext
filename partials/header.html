@@ -6,51 +6,19 @@
       <span>nihongotext<span style="color:#333;">.com</span></span>
     </a>
 
-    <!-- Nav -->
+    <!-- Navigation -->
     <nav class="main-nav" aria-label="Main navigation" style="display:flex; align-items:center; gap:14px;">
       <a href="/" style="color:#333; text-decoration:none;">Home</a>
       <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
       <a href="/inquiry/index.html" style="color:#333; text-decoration:none;">Inquiry</a>
       <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
-
-      <!-- Language switch (Method A: ファイル切替) -->
-      <button id="lang-switch" type="button" style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">
-        日本語
-      </button>
     </nav>
   </div>
 
   <script>
     (function () {
-      // 現在ページが日本語版か英語版かを判定してボタン表示を切替
-      var btn = document.getElementById('lang-switch');
-      if (!btn) return;
-
-      var path = location.pathname; // 例: /privacy.html, /index.html, /index-ja.html
-      var isJa = path.endsWith('-ja.html') || /\/ja\/?$/.test(path);
-
-      // ラベル：英語版では「日本語」→ ja へ、 日本語版では「English」→ en へ
-      btn.textContent = isJa ? 'English' : '日本語';
-
-      // リンク先生成: *.html → *-ja.html / その逆
-      function toJa(p) {
-        if (p === '/' || p === '/index.html') return '/index-ja.html';
-        if (p.endsWith('.html')) return p.replace(/\.html$/, '-ja.html');
-        // ディレクトリ末尾の場合（例：/blog/）：/blog/index.html の日本語版へ誘導する場合は個別に運用
-        if (p.endsWith('/')) return p.replace(/\/$/, '') + '-ja.html';
-        return p + '-ja.html';
-      }
-      function toEn(p) {
-        if (p === '/index-ja.html') return '/index.html';
-        if (p.endsWith('-ja.html')) return p.replace(/-ja\.html$/, '.html');
-        return '/index.html';
-      }
-
-      btn.addEventListener('click', function () {
-        var target = isJa ? toEn(path) : toJa(path);
-        location.href = target;
-      });
+      // 共通ヘッダー用スクリプト（必要に応じてここに追加可能）
     })();
   </script>
 </header>
