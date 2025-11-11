@@ -1,427 +1,167 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>nihongotext.com</title>
-  <base href="/" />
-  <link rel="icon" href="/icon-512.png"/>
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ');
-  </script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- AdSense（承認前でもOK / ポップアップ等はヘッダー側にあり） -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
-
-  <style>
-    body { font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans"; color:#222; margin:0; background:#fff; }
-    main { max-width:1100px; margin:24px auto; padding:0 16px; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; }
-    .card { border:1px solid #eee; border-radius:12px; padding:12px; background:#fff; }
-    .card h3 { margin:0 0 6px; font-size:18px; }
-    .meta { color:#666; font-size:12px; }
-    .actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
-    .btn { padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; }
-    .btn i { color:#e6462d; }
-    .examples { margin-top:8px; font-size:14px; color:#333; border-top:1px dashed #eee; padding-top:8px; }
-    .pager { display:flex; gap:8px; align-items:center; justify-content:center; margin:24px 0; }
-    .pager button { padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; }
-    .pager .num { min-width:36px; text-align:center; }
-    .badge { display:inline-flex; align-items:center; gap:6px; margin-left:8px; padding:4px 8px; border:1px solid #eee; border-radius:8px; background:#fff; font-size:12px; color:#666; }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>JLPT Words | nihongotext.com</title>
+<base href="/" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+body { font-family: system-ui, sans-serif; margin:0; background:#fff; color:#333; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+.word-card { border:1px solid #eee; border-radius:12px; padding:16px; margin-bottom:16px; background:#fff; }
+.word-header { display:flex; justify-content:space-between; align-items:center; }
+.word-buttons button { border:1px solid #ddd; border-radius:8px; background:#fff; cursor:pointer; padding:4px 8px; margin-left:4px; }
+.word-buttons button:hover { background:#f8f8f8; }
+.examples { margin-top:8px; padding-left:12px; }
+.example { margin-bottom:6px; }
+.toggle-btn { cursor:pointer; color:#e6462d; font-size:14px; }
+.pagination { display:flex; justify-content:center; gap:8px; margin-top:20px; }
+.pagination button { border:1px solid #ddd; border-radius:6px; padding:4px 10px; background:#fff; cursor:pointer; }
+.pagination button.active { background:#e6462d; color:#fff; border-color:#e6462d; }
+#display-options { display:flex; gap:12px; margin-bottom:16px; align-items:center; }
+label { font-size:14px; }
+</style>
 </head>
+
 <body>
+  <!-- 共通ヘッダー -->
   <div id="header-placeholder"></div>
 
-  <main>
-    <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
-      <h1 id="page-title" style="color:#e6462d; font-size:24px; margin:10px 0 16px;">JLPT — Words</h1>
-      <span id="data-badge" class="badge" title="Loaded dataset"><i class="fa-solid fa-database" style="color:#e6462d;"></i><span id="badge-path"></span></span>
+  <main class="container">
+    <h1 id="page-title">JLPT — Words</h1>
+
+    <!-- 表示切替 -->
+    <div id="display-options">
+      <label><input type="checkbox" id="show-ja" checked> 日本語</label>
+      <label><input type="checkbox" id="show-kana" checked> ひらがな</label>
+      <label><input type="checkbox" id="show-ro" checked> ローマ字</label>
+      <label><input type="checkbox" id="show-en" checked> 英語</label>
     </div>
 
-    <section id="word-list" class="grid" aria-live="polite"></section>
-
-    <div class="pager" aria-label="Pagination">
-      <button class="prev btn" data-page="prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
-      <span id="page-numbers"></span>
-      <button class="next btn" data-page="next">Next <i class="fa-solid fa-chevron-right"></i></button>
-    </div>
+    <div id="word-list"></div>
+    <div class="pagination" id="pagination"></div>
   </main>
 
+  <!-- 共通フッター -->
   <div id="footer-placeholder"></div>
 
   <script>
-    async function loadPartials() {
-      try {
-        const [hdr, ftr] = await Promise.all([
-          fetch("/partials/header.html").then(r=>r.text()),
-          fetch("/partials/footer.html").then(r=>r.text())
-        ]);
-        document.getElementById("header-placeholder").innerHTML = hdr;
-        document.getElementById("footer-placeholder").innerHTML = ftr;
-      } catch(e) { console.error("Failed to load partials:", e); }
+  // ===== ヘッダー・フッター読み込み =====
+  Promise.all([
+    fetch('/partials/header.html').then(r=>r.text()),
+    fetch('/partials/footer.html').then(r=>r.text())
+  ]).then(([h,f])=>{
+    document.getElementById('header-placeholder').innerHTML=h;
+    document.getElementById('footer-placeholder').innerHTML=f;
+  });
+
+  // ===== 設定 =====
+  const PAGE_SIZE = 5;
+  let DATA = [];
+  let CURRENT_PAGE = 1;
+  const params = new URLSearchParams(location.search);
+  const level = params.get('level') || 'N5';
+  const part = params.get('part') || 'verbs';
+  const DATA_URL = `/data/json/${level}/${part}.json`;
+
+  // ===== JSONロード =====
+  async function loadData() {
+    try {
+      const res = await fetch(DATA_URL);
+      DATA = await res.json();
+      renderPage();
+    } catch(e) {
+      document.getElementById('word-list').innerHTML = `<p style="color:red;">Failed to load dataset: ${DATA_URL}</p>`;
+      console.error(e);
     }
+  }
 
-    /* ===== URLパラメータから Level / Part を取得 ===== */
-    function getParams() {
-      const u = new URL(location.href);
-      const level = (u.searchParams.get('level') || 'N5').toUpperCase();   // N1..N5
-      const part  = (u.searchParams.get('part')  || 'verbs').toLowerCase(); // verbs/nouns/...（ファイル名）
-      return { level, part };
+  // ===== レンダリング =====
+  function renderPage() {
+    const start = (CURRENT_PAGE-1)*PAGE_SIZE;
+    const end = start+PAGE_SIZE;
+    const visible = DATA.slice(start,end);
+
+    const showJa = document.getElementById('show-ja').checked;
+    const showKana = document.getElementById('show-kana').checked;
+    const showRo = document.getElementById('show-ro').checked;
+    const showEn = document.getElementById('show-en').checked;
+
+    const html = visible.map(item=>{
+      const exHtml = item.examples.map((ex,i)=>`
+        <div class="example">
+          ${showEn? `<div>• ${ex.en}</div>`:''}
+          ${showJa? `<div>${ex.ja}</div>`:''}
+          ${showKana? `<div>${ex.kana}</div>`:''}
+          ${showRo? `<div>${ex.ro}</div>`:''}
+        </div>
+      `).join('');
+
+      return `
+      <article class="word-card">
+        <div class="word-header">
+          <div>
+            ${showEn? `<div style="font-weight:bold;">${item.en}</div>`:''}
+            ${showRo? `<div>${item.ro}</div>`:''}
+            ${showKana? `<div>${item.kana}</div>`:''}
+            ${showJa? `<div>${item.ja}</div>`:''}
+          </div>
+          <div class="word-buttons">
+            <button onclick="moveToLearning('${item.id}')">Learn</button>
+            <button onclick="moveToLearned('${item.id}')">Learned</button>
+          </div>
+        </div>
+        <div>
+          <span class="toggle-btn" onclick="toggleExamples(this)">▼ Show examples</span>
+          <div class="examples" style="display:none;">${exHtml}</div>
+        </div>
+      </article>`;
+    }).join('');
+
+    document.getElementById('word-list').innerHTML = html;
+    renderPagination();
+  }
+
+  function renderPagination() {
+    const total = Math.ceil(DATA.length / PAGE_SIZE);
+    let html = '';
+    for(let i=1;i<=total;i++){
+      html += `<button class="${i===CURRENT_PAGE?'active':''}" onclick="gotoPage(${i})">${i}</button>`;
     }
+    document.getElementById('pagination').innerHTML = html;
+  }
 
-    /* ===== /data/json/{Level}/{part}.json を取得して、カード描画に必要な形へ正規化 =====
-       期待JSON: [{ id, en, ja, kana, ro, examples: [{en,ja,kana,ro}, ...] }, ...]
-       ※サイトの既存JSONでも、キー名が同じならそのまま通ります。
-    */
-    async function loadDataset(level, part) {
-      const path = `/data/json/${level}/${part}.json`;
-      const res  = await fetch(path, { cache:'no-store' });
-      if (!res.ok) throw new Error(`Failed to fetch ${path}`);
-      const raw = await res.json();
+  function gotoPage(p){ CURRENT_PAGE=p; renderPage(); }
 
-      // raw が配列で、上記キーをだいたい満たす前提。足りない場合は空文字で補完。
-      const norm = (Array.isArray(raw) ? raw : []).map((it, idx) => ({
-        id   : it.id   || `${level}-${part}-${String(idx+1).padStart(3,'0')}`,
-        en   : it.en   || '',
-        ja   : it.ja   || '',
-        kana : it.kana || '',
-        ro   : it.ro   || '',
-        level: level,
-        pos  : part.replace('.json',''),
-        examples: Array.isArray(it.examples) ? it.examples.map(e=>({
-          en: e.en || '', ja: e.ja || '', kana: e.kana || '', ro: e.ro || ''
-        })) : []
-      }));
-      return { path, data:norm };
-    }
+  // ===== 例文開閉 =====
+  function toggleExamples(el){
+    const ex = el.nextElementSibling;
+    if(ex.style.display==='none'){ ex.style.display='block'; el.textContent='▲ Hide examples'; }
+    else{ ex.style.display='none'; el.textContent='▼ Show examples'; }
+  }
 
-    /* ===== メインリスト描画（例文JSONを <script> で埋め込み、Learning側が利用） ===== */
-    const PAGE_SIZE_MAIN = 12;
-    let MAIN = { data:[], page:1, pages:1 };
+  // ===== LocalStorage操作 =====
+  function moveToLearning(id){
+    const list = JSON.parse(localStorage.getItem('nihongo_learning')||'[]');
+    if(!list.includes(id)) list.push(id);
+    localStorage.setItem('nihongo_learning',JSON.stringify(list));
+    alert('Added to Learning.');
+  }
+  function moveToLearned(id){
+    const list = JSON.parse(localStorage.getItem('nihongo_learned')||'[]');
+    if(!list.includes(id)) list.push(id);
+    localStorage.setItem('nihongo_learned',JSON.stringify(list));
+    alert('Moved to Learned.');
+  }
 
-    function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  // ===== チェックボックス再描画 =====
+  document.addEventListener('change', e=>{
+    if(['show-ja','show-kana','show-ro','show-en'].includes(e.target.id)) renderPage();
+  });
 
-    function renderMainGrid() {
-      const wrap = document.getElementById('word-list');
-      const start = (MAIN.page-1) * PAGE_SIZE_MAIN;
-      const pageItems = MAIN.data.slice(start, start + PAGE_SIZE_MAIN);
-
-      wrap.innerHTML = pageItems.map(item => {
-        const exHtml = (item.examples||[])
-          .slice(0,2) // カード内は軽く2件まで表示（Learning側で全量表示）
-          .map(e=>`<div>• ${esc(e.en)} / ${esc(e.ja)}</div>`).join("");
-        const exJson = JSON.stringify(item.examples||[]);
-        return `<article class="card"
-                  data-card
-                  data-id="${esc(item.id)}"
-                  data-en="${esc(item.en)}"
-                  data-ja="${esc(item.ja)}"
-                  data-kana="${esc(item.kana)}"
-                  data-ro="${esc(item.ro)}"
-                  data-level="${esc(item.level)}"
-                  data-pos="${esc(item.pos)}">
-            <h3>${esc(item.en)} <span class="meta">(${esc(item.ja)} / ${esc(item.kana)} / ${esc(item.ro)})</span></h3>
-            <div class="meta">${esc(item.level)} ${item.pos ? '· '+esc(item.pos) : ''}</div>
-            <div class="actions">
-              <button class="btn btn-learn" data-action="learn">
-                <i class="fa-solid fa-book-open"></i> Learn
-              </button>
-            </div>
-            ${exHtml ? `<div class="examples">${exHtml}</div>` : ''}
-            <script type="application/json" class="examples">${exJson}</script>
-          </article>`;
-      }).join("");
-
-      // ページャー
-      const nums = document.getElementById('page-numbers');
-      let html = '';
-      for(let p=1;p<=MAIN.pages;p++){
-        const active = p===MAIN.page;
-        html += `<button class="num btn" data-page="${p}" style="background:${active?'#ffecea':'#fff'}">${p}</button>`;
-      }
-      nums.innerHTML = html;
-    }
-
-    // Learn 追加（Learning ドロワーに渡すためのデータを localStorage へ）
-    document.addEventListener('click', function(ev){
-      const t = ev.target.closest('[data-action="learn"], .btn-learn');
-      if(!t) return;
-      const card = t.closest('[data-card], .card, article');
-      if(!card) return;
-
-      // header 側スクリプトに合わせた格納
-      const KP='nihongo_learning';
-      function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]')}catch{return[]} }
-      function W(k,v){ localStorage.setItem(k, JSON.stringify(v||[])); }
-      const item = {
-        id   : card.dataset.id,
-        en   : card.dataset.en,
-        ja   : card.dataset.ja,
-        kana : card.dataset.kana,
-        ro   : card.dataset.ro,
-        level: card.dataset.level,
-        pos  : card.dataset.pos,
-        examples:[]
-      };
-      const jsonEl = card.querySelector('script.examples[type="application/json"]');
-      if(jsonEl){
-        try{ const arr = JSON.parse(jsonEl.textContent||'[]'); if(Array.isArray(arr)) item.examples = arr; }catch(_){}
-      }
-      const cur = R(KP);
-      const i = cur.findIndex(x=>String(x.id)===String(item.id));
-      if(i>=0){
-        // 例文マージ
-        const base = Array.isArray(cur[i].examples)?cur[i].examples:[];
-        const add  = Array.isArray(item.examples)?item.examples:[];
-        const sig  = o => (o.en||'')+'|'+(o.ja||'')+'|'+(o.kana||'')+'|'+(o.ro||'');
-        const seen = new Set(base.map(sig));
-        cur[i] = Object.assign({}, cur[i], item, { examples:[...base, ...add.filter(e=>!seen.has(sig(e)))] });
-      }else{
-        cur.push(item);
-      }
-      W(KP, cur);
-      // バッジ更新
-      if(window._ntxRenderLearning) window._ntxRenderLearning(true);
-    }, {capture:true});
-
-    // メインのページャー
-    document.addEventListener('click', (ev)=>{
-      const b = ev.target.closest('.pager .btn');
-      if(!b) return;
-      const val = b.getAttribute('data-page');
-      if(val === 'prev'){ MAIN.page = Math.max(1, MAIN.page-1); renderMainGrid(); return; }
-      if(val === 'next'){ MAIN.page = Math.min(MAIN.pages, MAIN.page+1); renderMainGrid(); return; }
-      const num = parseInt(val, 10);
-      if(!isNaN(num)){ MAIN.page = num; renderMainGrid(); }
-    });
-
-    (async function init(){
-      await loadPartials();
-
-      const {level, part} = getParams();
-      document.getElementById('page-title').textContent = `JLPT ${level} — ${part.charAt(0).toUpperCase()+part.slice(1)}`;
-
-      try{
-        const { path, data } = await loadDataset(level, part);
-        document.getElementById('badge-path').textContent = path;
-        MAIN.data  = data;
-        MAIN.pages = Math.max(1, Math.ceil(MAIN.data.length / PAGE_SIZE_MAIN));
-        MAIN.page  = 1;
-        renderMainGrid();
-      }catch(err){
-        console.error(err);
-        document.getElementById('word-list').innerHTML =
-          `<div class="card">Failed to load dataset. Please check <code>/data/json/${level}/${part}.json</code>.</div>`;
-      }
-    })();
-  </script>
-
-  <!-- === Learning Drawer（前回と同等：4言語切替／Back・Learned／例文開閉／5件ページャー） === -->
-  <script>
-  (function(){
-    const KP='nihongo_learning', KA='ntx_learning_v2';  // storage keys
-    const PREF='ntx_learning_view';                     // 表示設定
-    const PAGE_SIZE = 5;
-
-    const $ = s => document.querySelector(s);
-    const R = k => { try{return JSON.parse(localStorage.getItem(k)||'[]')}catch{return[]} };
-    const W = (k,v) => localStorage.setItem(k, JSON.stringify(v||[]));
-    const M = (a,b)=>{ const m=new Map(); [...a,...b].forEach(x=>{ if(x&&x.id)m.set(String(x.id),x) }); return [...m.values()] };
-
-    function loadPref(){ return Object.assign({en:true,ja:true,kana:true,ro:true}, R(PREF)||{}); }
-    function savePref(p){ W(PREF,p); }
-
-    function setBadge(){
-      const n = M(R(KP),R(KA)).length;
-      const b = document.querySelector('#learning-count-badge');
-      const c = document.querySelector('#learning-count');
-      if(b) b.textContent = n;
-      if(c) c.textContent = '('+n+')';
-    }
-
-    // カード抽出は index 側で保存済みなので、ここでは localStorage から使うだけでOK
-
-    // ===== Learning 描画 =====
-    let state = { page:1, pref: loadPref() };
-
-    function ensureScaffold(){
-      const host = document.querySelector('#learning-content');
-      if(!host) return;
-      if(!document.querySelector('#learning-toolbar')){
-        const bar = document.createElement('div');
-        bar.id = 'learning-toolbar';
-        bar.style.cssText = 'display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:6px 0 10px;';
-        bar.innerHTML = `
-          <span style="font-weight:600;">View:</span>
-          <label style="display:inline-flex;gap:6px;align-items:center;"><input type="checkbox" id="lv-en"> EN</label>
-          <label style="display:inline-flex;gap:6px;align-items:center;"><input type="checkbox" id="lv-ja"> 日本語</label>
-          <label style="display:inline-flex;gap:6px;align-items:center;"><input type="checkbox" id="lv-kana"> ひらがな</label>
-          <label style="display:inline-flex;gap:6px;align-items:center;"><input type="checkbox" id="lv-ro"> ローマ字</label>
-          <span id="lv-count" style="margin-left:auto;color:#666;"></span>
-        `;
-        host.prepend(bar);
-        // 初期チェック
-        document.querySelector('#lv-en').checked   = !!state.pref.en;
-        document.querySelector('#lv-ja').checked   = !!state.pref.ja;
-        document.querySelector('#lv-kana').checked = !!state.pref.kana;
-        document.querySelector('#lv-ro').checked   = !!state.pref.ro;
-        // 保存
-        ['en','ja','kana','ro'].forEach(k=>{
-          document.querySelector('#lv-'+k).addEventListener('change', ()=>{
-            state.pref[k] = document.querySelector('#lv-'+k).checked;
-            savePref(state.pref);
-            render(true);
-          });
-        });
-      }
-      if(!document.querySelector('#learning-list')){
-        const list = document.createElement('div');
-        list.id = 'learning-list';
-        host.appendChild(list);
-      }
-      if(!document.querySelector('#learning-pager')){
-        const pg = document.createElement('div');
-        pg.id = 'learning-pager';
-        pg.style.cssText = 'display:flex;gap:8px;align-items:center;justify-content:center;margin:10px 0 6px;';
-        host.appendChild(pg);
-      }
-    }
-
-    function btn(html, onclick){
-      return `<button class="btn" style="padding:6px 10px;border:1px solid #ddd;background:#fff;border-radius:8px;cursor:pointer;" onclick="${onclick}">${html}</button>`;
-    }
-    function moveBackJS(id){
-      return `(function(id){
-        function R(k){try{return JSON.parse(localStorage.getItem(k)||'[]')}catch{return[]}}
-        function W(k,v){localStorage.setItem(k,JSON.stringify(v||[]))}
-        var cur=R('${KP}'); var i=cur.findIndex(x=>String(x.id)===String(id)); if(i>=0){cur.splice(i,1); W('${KP}',cur);}
-        var alt=R('${KA}'); var j=alt.findIndex(x=>String(x.id)===String(id)); if(j>=0){alt.splice(j,1); W('${KA}',alt);}
-        if(window._ntxRenderLearning) window._ntxRenderLearning(true);
-      })('${id}')`;
-    }
-    function moveLearnedJS(id){
-      return `(function(id){
-        function R(k){try{return JSON.parse(localStorage.getItem(k)||'[]')}catch{return[]}}
-        function W(k,v){localStorage.setItem(k,JSON.stringify(v||[]))}
-        function M(a,b){var m=new Map();[...a,...b].forEach(x=>{if(x&&x.id)m.set(String(x.id),x)});return[...m.values()]}
-        var cur=M(R('${KP}'),R('${KA}'));
-        var i=cur.findIndex(x=>String(x.id)===String(id));
-        if(i>=0){
-          var item=cur[i]; item.learnedAt=new Date().toISOString();
-          var learned=R('nihongo_learned'); if(!Array.isArray(learned)) learned=[];
-          learned.push(item); W('nihongo_learned', learned);
-          cur.splice(i,1); W('${KP}',cur); W('${KA}',cur);
-        }
-        if(window._ntxRenderLearning) window._ntxRenderLearning(true);
-      })('${id}')`;
-    }
-    function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
-
-    function render(keepPage){
-      ensureScaffold();
-      const listEl = document.querySelector('#learning-list');
-      const pagerEl= document.querySelector('#learning-pager');
-      const all = M(R(KP), R(KA));
-
-      // ページ計算
-      const total = all.length;
-      const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-      if(!keepPage) state.page = 1;
-      state.page = Math.min(Math.max(1, state.page), totalPages);
-      const start = (state.page-1)*PAGE_SIZE;
-      const pageItems = all.slice(start, start+PAGE_SIZE);
-
-      setBadge();
-      const cnt = document.querySelector('#lv-count'); if(cnt) cnt.textContent = `${total} items`;
-
-      if(!pageItems.length){
-        listEl.innerHTML = '<p style="color:#666;">No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
-        pagerEl.innerHTML = '';
-        return;
-      }
-
-      const P = state.pref;
-      listEl.innerHTML = pageItems.map(it=>{
-        const title = [
-          (P.en   && it.en  )? `<span>${esc(it.en)}</span>` : '',
-          (P.ja   && it.ja  )? `<span>（${esc(it.ja)}）</span>` : '',
-          (P.kana && it.kana)? `<span> / ${esc(it.kana)}</span>` : '',
-          (P.ro   && it.ro  )? `<span> / ${esc(it.ro)}</span>` : '',
-        ].join(' ');
-        const meta = [it.level, it.pos].filter(Boolean).join(' · ');
-        const ex = (it.examples||[]).map(e=>{
-          const row=[];
-          if(P.en   && e.en  ) row.push(esc(e.en));
-          if(P.ja   && e.ja  ) row.push(esc(e.ja));
-          if(P.kana && e.kana) row.push(esc(e.kana));
-          if(P.ro   && e.ro  ) row.push(esc(e.ro));
-          return `<li>${row.join(' / ')}</li>`;
-        }).join('');
-        return `
-          <article data-id="${esc(it.id)}" style="border:1px solid #eee;border-radius:8px;padding:10px; margin-bottom:10px;">
-            <div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start;">
-              <div>
-                <strong>${title || esc(it.id)}</strong>
-                ${meta ? `<div style="color:#666;font-size:12px;margin-top:2px;">${esc(meta)}</div>` : ''}
-              </div>
-              <div style="display:flex;gap:6px;flex-wrap:wrap;">
-                <button class="btn" onclick="${moveBackJS(it.id)}"><i class="fa-solid fa-rotate-left" style="color:#e6462d;"></i> Back</button>
-                <button class="btn" onclick="${moveLearnedJS(it.id)}"><i class="fa-solid fa-check" style="color:#e6462d;"></i> Learned</button>
-              </div>
-            </div>
-            ${(it.examples&&it.examples.length)
-              ? `<details style="margin-top:6px;"><summary style="cursor:pointer;">Examples (${it.examples.length})</summary><ul style="margin:6px 0 0 18px;">${ex}</ul></details>`
-              : ''}
-          </article>`;
-      }).join('');
-
-      // ページャー
-      const mkBtn = (p,label,disabled,active)=>`
-        <button ${disabled?'disabled':''}
-          style="padding:6px 10px;border:1px solid #ddd;background:${active?'#ffecea':'#fff'};border-radius:8px;cursor:${disabled?'default':'pointer'};"
-          onclick="${disabled?'':`(function(){window._ntxLearningGoto(${p});})()`}">
-          ${label}
-        </button>`;
-      let html = mkBtn(state.page-1,'Prev', state.page<=1, false);
-      for(let p=1;p<=totalPages;p++){
-        if(p===1 || p===totalPages || Math.abs(p-state.page)<=2){
-          html += mkBtn(p,String(p),false,p===state.page);
-        }else if(Math.abs(p-state.page)===3){
-          html += `<span style="padding:0 4px;color:#999;">…</span>`;
-        }
-      }
-      html += mkBtn(state.page+1,'Next', state.page>=totalPages, false);
-      pagerEl.innerHTML = html;
-    }
-
-    // ページ移動
-    window._ntxLearningGoto = function(p){
-      const all = M(R(KP), R(KA));
-      const totalPages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
-      state.page = Math.min(Math.max(1, p), totalPages);
-      render(true);
-    };
-
-    // ドロワー API（header のボタンから呼ばれる）
-    window._ntxRenderLearning = render;
-    window._ntxOpenLearning   = ()=>{ const o=document.querySelector('#learning-overlay'), d=document.querySelector('#learning-drawer'); if(o&&d){ o.style.display='block'; d.style.right='0'; render(true); } };
-    window._ntxCloseLearning  = ()=>{ const o=document.querySelector('#learning-overlay'), d=document.querySelector('#learning-drawer'); if(o&&d){ d.style.right='-560px'; setTimeout(()=>{ o.style.display='none'; },250); } };
-    window.openLearning = window._ntxOpenLearning;
-
-    // 初期化
-    render(true);
-    window.addEventListener('storage', ev=>{ if(['nihongo_learning','ntx_learning_v2','ntx_learning_view'].includes(ev.key)) render(true); });
-  })();
+  loadData();
   </script>
 </body>
 </html>
