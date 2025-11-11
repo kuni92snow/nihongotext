@@ -7,36 +7,61 @@
   <base href="/" />
   <link rel="icon" href="/icon-512.png" />
   <meta name="description" content="Browse JLPT vocabulary by level and part of speech. Add items to Learning and move to Learned. Toggle kanji with furigana, hiragana, romaji, and English." />
+
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ');</script>
+  <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date()); gtag('config','G-9QSHWJE0HZ');
+  </script>
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    :root { --brand:#e6462d; }
-    body{ font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Apple Color Emoji','Segoe UI Emoji'; color:#222; background:#fff; }
-    main{ max-width:1100px; margin:20px auto 60px; padding:0 16px; }
-    h1{ color:#d33; font-size:20px; margin:10px 0 16px; }
-    .toolbar{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin:10px 0 14px; }
-    .toolbar .grp{ display:flex; align-items:center; gap:8px; }
-    .row{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
-    select, button, input[type="checkbox"]{ font-size:14px; }
-    .cards{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:14px; }
-    .card{ border:1px solid #eee; border-radius:10px; padding:12px; background:#fff; }
-    .muted{ color:#666; }
-    .topline{ display:flex; justify-content:space-between; gap:8px; align-items:center; margin-bottom:6px; }
-    .badges{ display:flex; gap:6px; align-items:center; }
-    .btn{ border:1px solid #ddd; background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer; }
-    .btn:hover{ border-color:#ccc; }
-    .btn-learn     { border-color:#ddd; color:#333; background:#fff; }
-    .btn-learning  { border-color:var(--brand); color:#fff; background:var(--brand); }
-    .btn-learned   { border-color:var(--brand); color:var(--brand); background:#fff; }
-    .lines{ line-height:1.8; }
-    .line{ margin:2px 0; }
-    ruby rt{ font-size:.72em; color:#666; }
-    details summary{ cursor:pointer; list-style:none; }
-    details summary::-webkit-details-marker{ display:none; }
-    .pager{ display:flex; gap:8px; align-items:center; margin:16px 0 4px; }
-    .pager .btn[disabled]{ opacity:.5; cursor:not-allowed; }
-    .error{ border:1px dashed #f2b; padding:10px; border-radius:8px; color:#a00; background:#fff7f9; }
+    :root{ --brand:#e6462d; --ink:#222; --muted:#666; --border:#eee; }
+    html,body{background:#fff;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif}
+    main{max-width:1100px;margin:20px auto 68px;padding:0 16px}
+    h1{margin:10px 0 14px;font-size:20px;color:#d33}
+
+    /* toolbars */
+    .toolbar{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:10px 0 12px}
+    .toolbar .grp{display:flex;gap:8px;align-items:center}
+    .toolbar.v{flex-direction:column;align-items:flex-start}
+    .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    label{user-select:none}
+    select,button,input[type="checkbox"]{font-size:14px}
+
+    /* cards */
+    #list .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+    .card{border:1px solid var(--border);border-radius:10px;background:#fff;padding:12px}
+    .topline{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:6px}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block;padding:2px 8px;border:1px solid #ddd;border-radius:999px;font-size:12px;color:#555;background:#fafafa}
+
+    .btn{border:1px solid #ddd;background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
+    .btn:hover{border-color:#ccc}
+    .btn[disabled]{opacity:.55;cursor:not-allowed}
+    .btn-learn{border-color:#ddd;color:#333;background:#fff}
+    .btn-learning{border-color:var(--brand);color:#fff;background:var(--brand)}
+    .btn-learned{border-color:var(--brand);color:var(--brand);background:#fff}
+
+    .line{margin:2px 0;line-height:1.8}
+    ruby rt{font-size:.72em;color:#666}
+    details summary{cursor:pointer;list-style:none}
+    details summary::-webkit-details-marker{display:none}
+
+    /* pager */
+    .pager{display:flex;gap:8px;align-items:center;margin:16px 0 4px}
+    .pager .btn-page{min-width:36px}
+    .pager .btn[disabled]{opacity:.5}
+
+    /* error */
+    .error{border:1px dashed #f2b;background:#fff7f9;color:#a00;padding:10px;border-radius:8px}
+
+    /* header badges at very top (from header.html) get space */
+    #header-placeholder{margin-bottom:6px}
   </style>
 </head>
 <body>
@@ -45,17 +70,17 @@
   <main>
     <h1>JLPT — Words</h1>
 
-    <!-- Controls -->
+    <!-- Selectors -->
     <div class="toolbar">
       <div class="grp">
         <label for="sel-level">Level</label>
-        <select id="sel-level">
+        <select id="sel-level" aria-label="JLPT level">
           <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
         </select>
       </div>
       <div class="grp">
         <label for="sel-part">Part</label>
-        <select id="sel-part">
+        <select id="sel-part" aria-label="Part of speech">
           <option value="verbs">verbs</option>
           <option value="nouns">nouns</option>
           <option value="adjectives-i">adjectives-i</option>
@@ -69,8 +94,8 @@
       </div>
     </div>
 
-    <!-- Toggle (2 rows) -->
-    <div class="toolbar" style="flex-direction:column; align-items:flex-start;">
+    <!-- 2-row toggles -->
+    <div class="toolbar v" role="group" aria-label="Display toggles">
       <div class="row">
         <label><input type="checkbox" id="chk-ja" checked> Nihongo（漢字+ふりがな）</label>
         <label><input type="checkbox" id="chk-kana" checked> Hiragana</label>
@@ -81,19 +106,20 @@
       </div>
     </div>
 
-    <!-- Pager -->
-    <div class="pager">
-      <button class="btn" id="btn-prev">&lt; Prev</button>
+    <!-- pager top -->
+    <div class="pager" aria-label="Pagination">
+      <button class="btn" id="btn-prev" aria-label="Previous page">&lt; Prev</button>
       <div id="page-numbers" class="muted"></div>
-      <button class="btn" id="btn-next">Next &gt;</button>
+      <button class="btn" id="btn-next" aria-label="Next page">Next &gt;</button>
     </div>
 
     <div id="list"></div>
 
-    <div class="pager">
-      <button class="btn" id="btn-prev-b">&lt; Prev</button>
+    <!-- pager bottom -->
+    <div class="pager" aria-label="Pagination">
+      <button class="btn" id="btn-prev-b" aria-label="Previous page">&lt; Prev</button>
       <div id="page-numbers-b" class="muted"></div>
-      <button class="btn" id="btn-next-b">Next &gt;</button>
+      <button class="btn" id="btn-next-b" aria-label="Next page">Next &gt;</button>
     </div>
   </main>
 
@@ -109,6 +135,9 @@
         ]);
         document.getElementById('header-placeholder').innerHTML = h;
         document.getElementById('footer-placeholder').innerHTML = f;
+        // ヘッダーの Learning/Learned ドロワーの初期レンダリング
+        if(window._ntxRenderLearning) window._ntxRenderLearning();
+        if(window._ntxRenderLearned) window._ntxRenderLearned();
       }catch(e){ console.warn('partials load failed', e); }
     })();
   </script>
@@ -116,12 +145,20 @@
   <!-- Main App -->
   <script>
   (function(){
-    const MAX_ITEMS = 30;
-    const PAGE_SIZE = 5;
-    const KEY_LEARNING = 'nihongo_learning';
-    const KEY_LEARNED  = 'nihongo_learned';
+    /* ===== Constants ===== */
+    const PAGE_SIZE      = 5;     // 1ページ5つ
+    const MAX_ITEMS      = 30;    // 各品詞は30件まで表示
+    const KEY_LEARNING   = 'nihongo_learning';
+    const KEY_LEARNED    = 'nihongo_learned';
 
-    const state = { level:'N5', part:'verbs', items:[], segments:{}, page:1 };
+    /* ===== State ===== */
+    const S = { level:'N5', part:'verbs', items:[], segments:{}, page:1 };
+
+    /* ===== Helpers ===== */
+    function esc(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+    function R(k){try{return JSON.parse(localStorage.getItem(k)||'[]');}catch{return []}}
+    function W(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch{}}
+    function M(a,b){const m=new Map();[...a,...b].forEach(x=>{if(x&&x.id!=null)m.set(String(x.id),x)});return [...m.values()]}
 
     function getParams(){
       const sp=new URLSearchParams(location.search);
@@ -129,20 +166,18 @@
     }
     function setParams(obj){
       const sp=new URLSearchParams(location.search);
-      for (const [k,v] of Object.entries(obj)) sp.set(k,String(v));
+      for(const [k,v] of Object.entries(obj)) sp.set(k,String(v));
       history.replaceState(null,'','?'+sp.toString());
     }
-    function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]');}catch{return [];} }
-    function W(k,v){ try{localStorage.setItem(k,JSON.stringify(v));}catch{} }
-    function M(a,b){ const m=new Map(); [...a,...b].forEach(x=>{if(x&&x.id!=null)m.set(String(x.id),x)}); return [...m.values()]; }
-    function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 
+    // 厳密ふりがな：/data/segments/{Level}/{part}.json 形式（{id:[{kanji,kana},{...}], ...}）
     function toRuby(id, ja, kana){
-      const seg = state.segments && state.segments[id];
-      if (Array.isArray(seg) && seg.length){
+      const seg = S.segments && S.segments[id];
+      if(Array.isArray(seg) && seg.length){
         return seg.map(s=>{
           const k=(s.kanji||'').trim(); const r=(s.kana||'').trim();
-          if(!k) return ''; if(!r || k===r) return esc(k);
+          if(!k) return '';
+          if(!r || k===r) return esc(k);
           return `<ruby>${esc(k)}<rt>${esc(r)}</rt></ruby>`;
         }).join('');
       }
@@ -152,30 +187,37 @@
     }
 
     async function fetchJsonStrict(url){
-      const res = await fetch(url,{cache:'no-store'});
-      const text = await res.text();
+      const res=await fetch(url,{cache:'no-store'});
+      const text=await res.text();
       if(!res.ok || /^\s*</.test(text)) throw new Error('Fetch failed '+url);
       return JSON.parse(text);
     }
 
     async function loadData(){
-      const {level, part} = state;
       const bases=['/data/json','/dada/json'];
-      const lv=[level, level.toUpperCase(), level.toLowerCase()];
-      const candidates=[]; for(const b of bases){ for(const L of lv){ candidates.push(`${b}/${L}/${part}.json`); } }
-      let data=null;
-      for(const u of candidates){ try{ data = await fetchJsonStrict(u); break; }catch(e){} }
-      if(!Array.isArray(data)){ document.getElementById('list').innerHTML='<div class="error">Failed to load dataset.</div>'; state.items=[]; render(); return; }
-      state.items = data.slice(0,MAX_ITEMS);
+      const lv=[S.level,S.level.toUpperCase(),S.level.toLowerCase()];
+      const candidates=[];
+      for(const b of bases){ for(const L of lv){ candidates.push(`${b}/${L}/${S.part}.json`); } }
 
-      // segments
-      state.segments = {};
-      const segBases = ['/data/segments','/dada/segments'];
-      for (const b of segBases){
-        for (const L of lv){
+      let data=null;
+      for(const u of candidates){ try{ data=await fetchJsonStrict(u); break; }catch(e){} }
+
+      if(!Array.isArray(data)){
+        document.getElementById('list').innerHTML =
+          `<div class="error">Failed to load dataset. Check <code>/data/json/${esc(S.level)}/${esc(S.part)}.json</code>.</div>`;
+        S.items=[]; render(); updatePager(); return;
+      }
+
+      S.items = data.slice(0,MAX_ITEMS);
+
+      // ふりがなセグメントの併用
+      S.segments = {};
+      const segBases=['/data/segments','/dada/segments'];
+      for(const b of segBases){
+        for(const L of lv){
           try{
-            const seg = await fetchJsonStrict(`${b}/${L}/${part}.json`);
-            if (seg && typeof seg==='object'){ state.segments = seg; throw 'done'; }
+            const seg = await fetchJsonStrict(`${b}/${L}/${S.part}.json`);
+            if(seg && typeof seg==='object'){ S.segments = seg; throw 'done'; }
           }catch(e){ if(e==='done') break; }
         }
       }
@@ -183,28 +225,26 @@
     }
 
     function render(){
-      const list = document.getElementById('list');
-      const start=(state.page-1)*PAGE_SIZE;
-      const slice=state.items.slice(start,start+PAGE_SIZE);
+      const list=document.getElementById('list');
+      const start=(S.page-1)*PAGE_SIZE;
+      const slice=S.items.slice(start,start+PAGE_SIZE);
 
-      const show = {
-        ja:   document.getElementById('chk-ja').checked,
-        kana: document.getElementById('chk-kana').checked,
-        ro:   document.getElementById('chk-ro').checked,
-        en:   document.getElementById('chk-en').checked,
+      const show={
+        ja:document.getElementById('chk-ja').checked,
+        kana:document.getElementById('chk-kana').checked,
+        ro:document.getElementById('chk-ro').checked,
+        en:document.getElementById('chk-en').checked,
       };
 
       list.innerHTML = `<div class="cards">${
         slice.map(item=>{
           const id=item.id??'';
-          const ja = toRuby(id, item.ja, item.kana);
-          const kana = esc(item.kana||'');
-          const ro   = esc(item.ro||'');
-          const en   = esc(item.en||'');
+          const ja  = toRuby(id, item.ja, item.kana);
+          const kana= esc(item.kana||'');
+          const ro  = esc(item.ro||'');
+          const en  = esc(item.en||'');
           const examples = Array.isArray(item.examples)?item.examples:[];
-          const json = JSON.stringify(item).replace(/</g,'\\u003c');
-
-          const exHtml = examples.map(e=>{
+          const examplesHtml = examples.map(e=>{
             const l1 = e.ja   ? `<div class="line">${toRuby(id, e.ja, e.kana||'')}</div>` : '';
             const l2 = e.kana ? `<div class="line">${esc(e.kana)}</div>` : '';
             const l3 = e.ro   ? `<div class="line">${esc(e.ro)}</div>`   : '';
@@ -212,101 +252,94 @@
             return `<div class="lines" style="margin:4px 0 8px 0;">${l1}${l2}${l3}${l4}</div>`;
           }).join('');
 
-          const inP = R(KEY_LEARNING).some(x=>String(x.id)===String(id));
+          const json = JSON.stringify(item).replace(/</g,'\\u003c');
+          const inP  = R(KEY_LEARNING).some(x=>String(x.id)===String(id));
           const learnClass = inP ? 'btn-learning' : 'btn-learn';
-          const learnLabel = inP ? '<i class="fa-solid fa-book-open"></i> Learning' : '<i class="fa-solid fa-book-open"></i> Learn';
+          const learnLabel = inP ? '<i class="fa-solid fa-book-open"></i> Learning'
+                                 : '<i class="fa-solid fa-book-open"></i> Learn';
 
-          return `<article class="card" data-id="${id}">
+          return `<article class="card" data-id="${esc(id)}">
             <div class="topline">
-              <div class="muted"><span class="badge">${esc(state.level)}</span> <span class="badge">${esc(state.part)}</span></div>
+              <div class="muted"><span class="badge">${esc(S.level)}</span> <span class="badge">${esc(S.part)}</span></div>
               <div class="badges">
-                <button class="btn ${learnClass}" data-action="to-learning" data-id="${id}" data-json='${json}'>${learnLabel}</button>
-                <button class="btn btn-learned" data-action="to-learned"  data-id="${id}" data-json='${json}'><i class="fa-solid fa-check"></i> Learned</button>
+                <button class="btn ${learnClass}" data-action="to-learning" data-id="${esc(id)}" data-json='${json}'>${learnLabel}</button>
+                <button class="btn btn-learned"  data-action="to-learned"  data-id="${esc(id)}" data-json='${json}'><i class="fa-solid fa-check"></i> Learned</button>
               </div>
             </div>
-            ${show.ja?`<div class="line" style="font-size:18px">${ja}</div>`:''}
-            ${show.kana?`<div class="line">${kana}</div>`:''}
-            ${show.ro?`<div class="line">${ro}</div>`:''}
-            ${show.en?`<div class="line">${en}</div>`:''}
-            ${examples.length ? `<details style="margin-top:8px;"><summary class="muted"><i class="fa-solid fa-caret-down"></i> Examples</summary><div style="margin-top:6px;">${exHtml}</div></details>` : ``}
+
+            ${show.ja   ? `<div class="line" style="font-size:18px">${ja}</div>`   : ``}
+            ${show.kana ? `<div class="line">${kana}</div>`                           : ``}
+            ${show.ro   ? `<div class="line">${ro}</div>`                             : ``}
+            ${show.en   ? `<div class="line">${en}</div>`                             : ``}
+
+            ${examples.length
+              ? `<details style="margin-top:8px;">
+                   <summary class="muted"><i class="fa-solid fa-caret-down"></i> Examples</summary>
+                   <div style="margin-top:6px;">${examplesHtml}</div>
+                 </details>`
+              : ``}
           </article>`;
         }).join('')
       }</div>`;
     }
 
     function updatePager(){
-      const pages = Math.max(1, Math.ceil(state.items.length / PAGE_SIZE));
-      state.page = Math.min(Math.max(1,state.page), pages);
-      const nums = Array.from({length:pages}, (_,i)=>i+1)
-        .map(p=>`<button class="btn" data-gop="${p}" ${p===state.page?'disabled':''}>${p}</button>`).join(' ');
+      const pages = Math.max(1, Math.ceil(S.items.length / PAGE_SIZE));
+      S.page = Math.min(Math.max(1,S.page), pages);
+      const nums = Array.from({length:pages},(_,i)=>i+1)
+        .map(p=>`<button class="btn btn-page" data-gop="${p}" ${p===S.page?'disabled':''}>${p}</button>`).join(' ');
       const a=document.getElementById('page-numbers'), b=document.getElementById('page-numbers-b');
-      if(a) a.innerHTML=nums; if(b) b.innerHTML=nums;
-      document.getElementById('btn-prev').disabled = (state.page<=1);
-      document.getElementById('btn-prev-b').disabled = (state.page<=1);
-      document.getElementById('btn-next').disabled = (state.page>=pages);
-      document.getElementById('btn-next-b').disabled = (state.page>=pages);
+      if(a) a.innerHTML = nums; if(b) b.innerHTML = nums;
+      document.getElementById('btn-prev').disabled   = (S.page<=1);
+      document.getElementById('btn-prev-b').disabled = (S.page<=1);
+      document.getElementById('btn-next').disabled   = (S.page>=pages);
+      document.getElementById('btn-next-b').disabled = (S.page>=pages);
     }
 
-    // クリック（Learn / Learned / ページ）
-    document.addEventListener('click', (ev)=>{
-      const btn = ev.target.closest('button');
-      if(!btn) return;
+    // Learn / Learned / Pager click handler
+    document.addEventListener('click',(ev)=>{
+      const btn = ev.target.closest('button'); if(!btn) return;
 
-      // pager
-      if (btn.dataset.gop){
-        state.page = parseInt(btn.dataset.gop,10);
-        setParams({page:state.page});
-        render(); updatePager(); return;
-      }
-      if (btn.id==='btn-prev' || btn.id==='btn-prev-b'){
-        state.page = Math.max(1, state.page-1); setParams({page:state.page}); render(); updatePager(); return;
-      }
-      if (btn.id==='btn-next' || btn.id==='btn-next-b'){
-        const pages = Math.max(1, Math.ceil(state.items.length / PAGE_SIZE));
-        state.page = Math.min(pages, state.page+1); setParams({page:state.page}); render(); updatePager(); return;
+      // Pager
+      if (btn.dataset.gop || btn.id==='btn-prev' || btn.id==='btn-prev-b' || btn.id==='btn-next' || btn.id==='btn-next-b'){
+        const pages = Math.max(1, Math.ceil(S.items.length / PAGE_SIZE));
+        if (btn.dataset.gop){ S.page = parseInt(btn.dataset.gop,10); }
+        else if (btn.id==='btn-prev' || btn.id==='btn-prev-b'){ S.page = Math.max(1, S.page-1); }
+        else if (btn.id==='btn-next' || btn.id==='btn-next-b'){ S.page = Math.min(pages, S.page+1); }
+        setParams({level:S.level, part:S.part, page:S.page});
+        render(); updatePager();
+        // Ads popup hook（承認前はヘッダー側のフォールバックを表示）
+        if (window.openAdPopup) try{ window.openAdPopup(); }catch{}
+        return;
       }
 
       // Learn / Learned
-      const act = btn.dataset.action;
-      if (!act) return;
-      const item = JSON.parse(btn.dataset.json||'{}');
-      if (!item || item.id==null) return;
+      const act = btn.dataset.action; if(!act) return;
+      const item = JSON.parse(btn.dataset.json||'{}'); if(item.id==null) return;
 
       if (act==='to-learning'){
-        const list = R(KEY_LEARNING);
-        const exists = list.some(x=>String(x.id)===String(item.id));
-        const next = exists ? list.filter(x=>String(x.id)!==String(item.id)) : M(list,[item]);
-        W(KEY_LEARNING, next);
-        // UIトグル（色と文言）
-        if (exists){
-          btn.classList.remove('btn-learning'); btn.classList.add('btn-learn');
-          btn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learn';
-        }else{
-          btn.classList.remove('btn-learn'); btn.classList.add('btn-learning');
-          btn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learning';
-        }
-        // Learned からは外す
+        const cur = R(KEY_LEARNING);
+        const exists = cur.some(x=>String(x.id)===String(item.id));
+        const next = exists ? cur.filter(x=>String(x.id)!==String(item.id)) : M(cur,[item]);
+        W(KEY_LEARNING,next);
+        // toggle look
+        if (exists){ btn.classList.remove('btn-learning'); btn.classList.add('btn-learn'); btn.innerHTML='<i class="fa-solid fa-book-open"></i> Learn'; }
+        else       { btn.classList.remove('btn-learn');    btn.classList.add('btn-learning'); btn.innerHTML='<i class="fa-solid fa-book-open"></i> Learning'; }
+        // remove from learned
         W(KEY_LEARNED, R(KEY_LEARNED).filter(x=>String(x.id)!==String(item.id)));
-        // ヘッダードロワー更新
         if (window._ntxRenderLearning) window._ntxRenderLearning();
         if (window._ntxRenderLearned)  window._ntxRenderLearned();
-        // バッジ更新（ヘッダー側で storage を拾えるよう疑似 event）
         window.dispatchEvent(new StorageEvent('storage',{key:KEY_LEARNING}));
         return;
       }
 
       if (act==='to-learned'){
-        // Learned へ移動
         const done = M(R(KEY_LEARNED), [Object.assign({}, item, {learnedAt: Date.now()})]);
         W(KEY_LEARNED, done);
-        // Learning から除外
         W(KEY_LEARNING, R(KEY_LEARNING).filter(x=>String(x.id)!==String(item.id)));
-        // ボタンの見た目は Learning 側だけトグル
-        const learnBtn = btn.parentElement.querySelector('button[data-action="to-learning"]');
-        if (learnBtn){
-          learnBtn.classList.remove('btn-learning'); learnBtn.classList.add('btn-learn');
-          learnBtn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learn';
-        }
+        // reset Learn button look on the same card
+        const lb = btn.parentElement?.querySelector('button[data-action="to-learning"]');
+        if (lb){ lb.classList.remove('btn-learning'); lb.classList.add('btn-learn'); lb.innerHTML='<i class="fa-solid fa-book-open"></i> Learn'; }
         if (window._ntxRenderLearning) window._ntxRenderLearning();
         if (window._ntxRenderLearned)  window._ntxRenderLearned();
         window.dispatchEvent(new StorageEvent('storage',{key:KEY_LEARNED}));
@@ -314,36 +347,34 @@
       }
     });
 
-    // トグル変更
+    // toggles
     ['chk-ja','chk-kana','chk-ro','chk-en'].forEach(id=>{
-      const el=document.getElementById(id); if(el) el.addEventListener('change', ()=> render());
+      const el=document.getElementById(id); if(el) el.addEventListener('change',()=>render());
     });
 
-    // セレクト変更
-    document.getElementById('sel-level').addEventListener('change', ()=>{
-      state.level = document.getElementById('sel-level').value; state.page=1;
-      setParams({level:state.level, page:1, part:state.part}); loadData();
+    // selects
+    document.getElementById('sel-level').addEventListener('change',()=>{
+      S.level=document.getElementById('sel-level').value; S.page=1;
+      setParams({level:S.level,part:S.part,page:1}); loadData();
     });
-    document.getElementById('sel-part').addEventListener('change', ()=>{
-      state.part = document.getElementById('sel-part').value; state.page=1;
-      setParams({level:state.level, page:1, part:state.part}); loadData();
+    document.getElementById('sel-part').addEventListener('change',()=>{
+      S.part=document.getElementById('sel-part').value; S.page=1;
+      setParams({level:S.level,part:S.part,page:1}); loadData();
     });
 
-    // 初期化
+    // init
     (function init(){
-      const {level, part, page} = getParams();
-      state.level=level; state.part=part; state.page=page;
-      document.getElementById('sel-level').value=level;
-      document.getElementById('sel-part').value=part;
+      const p=getParams(); S.level=p.level; S.part=p.part; S.page=p.page;
+      document.getElementById('sel-level').value=S.level;
+      document.getElementById('sel-part').value=S.part;
       loadData();
     })();
 
-    // ヘッダードロワーの更新に追随
-    window.addEventListener('storage', (ev)=>{
-      if (ev && (ev.key===KEY_LEARNING || ev.key===KEY_LEARNED)){
-        if (window._ntxRenderLearning) window._ntxRenderLearning();
-        if (window._ntxRenderLearned)  window._ntxRenderLearned();
-      }
+    // Listen updates from header drawers
+    window.addEventListener('storage',(ev)=>{
+      if(!ev) return;
+      if(ev.key===KEY_LEARNING && window._ntxRenderLearning) window._ntxRenderLearning();
+      if(ev.key===KEY_LEARNED  && window._ntxRenderLearned)  window._ntxRenderLearned();
     });
   })();
   </script>
