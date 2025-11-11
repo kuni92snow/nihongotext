@@ -19,13 +19,13 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <!-- AdSense（publisher id を本番値に） -->
+  <!-- AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2358198194205084" crossorigin="anonymous"></script>
 
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color:#222; margin:0; }
+    body { font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans"; color:#222; margin:0; }
     main { max-width:1100px; margin:24px auto; padding:0 16px; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap:12px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; }
     .card { border:1px solid #eee; border-radius:12px; padding:12px; background:#fff; }
     .card h3 { margin:0 0 6px; font-size:18px; }
     .meta { color:#666; font-size:12px; }
@@ -36,32 +36,15 @@
     .pager { display:flex; gap:8px; align-items:center; justify-content:center; margin:24px 0; }
     .pager button { padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; }
     .pager .num { min-width:36px; text-align:center; }
-    /* Ad modal */
-    #adMask { position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:90; }
-    #adMask.show { display:block; }
-    #adPopup {
-      position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
-      width: min(720px, 96vw); max-height: 85vh; overflow:auto;
-      background:#fff; border-radius:12px; box-shadow: 0 20px 40px rgba(0,0,0,.2); z-index:100;
-    }
-    #adPopup .hd { display:flex; justify-content:space-between; align-items:center; gap:8px; border-bottom:1px solid #eee; padding:12px 14px; }
-    #adPopup .bd { padding:12px 14px; }
-    #adPopup .ft { padding:10px 14px; border-top:1px solid #eee; text-align:right; }
-    #adFallback { display:none; margin-top:10px; border:1px solid #eee; border-radius:8px; padding:10px; }
-    #adFallback a { color:#e6462d; text-decoration:none; }
   </style>
 </head>
 <body>
-  <!-- Partials -->
   <div id="header-placeholder"></div>
 
   <main>
     <h1 style="color:#e6462d; font-size:24px; margin:10px 0 16px;">JLPT N5 — Verbs (demo)</h1>
-
-    <!-- 単語カード（デモ）。実際はJSONから生成 -->
     <section id="word-list" class="grid"></section>
 
-    <!-- ページャー -->
     <div class="pager" aria-label="Pagination">
       <button class="prev btn" data-page="prev"><i class="fa-solid fa-chevron-left"></i> Prev</button>
       <button class="num btn" data-page="1">1</button>
@@ -73,45 +56,7 @@
 
   <div id="footer-placeholder"></div>
 
-  <!-- ====== 広告モーダル ====== -->
-  <div id="adMask" role="dialog" aria-modal="true" aria-labelledby="adTitle">
-    <div id="adPopup">
-      <div class="hd">
-        <h3 id="adTitle" style="margin:0; font-size:16px; display:flex; align-items:center; gap:8px; color:#333;">
-          <i class="fa-solid fa-bullhorn" style="color:#e6462d;"></i> Sponsored
-        </h3>
-        <button id="adCloseBtn" class="btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="bd">
-        <!-- AdSense slot（publisher / slot を実値に） -->
-        <div id="amznAdBox" style="margin:8px 0;">
-          <ins class="adsbygoogle"
-               style="display:block; min-height:220px"
-               data-ad-client="ca-pub-2358198194205084"
-               data-ad-slot="3714541070"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-        </div>
-
-        <!-- フォールバック（Preplyなど） -->
-        <div id="adFallback">
-          <a href="https://preply.com/" target="_blank" rel="noopener" style="display:flex; gap:10px; align-items:center;">
-            <img src="/assets/preply-banner.png" alt="Find a Japanese tutor on Preply" style="width:96px; height:96px; object-fit:cover; border-radius:8px; border:1px solid #eee;">
-            <div>
-              <div style="font-weight:600; font-size:16px; color:#333;">Find a Japanese tutor on Preply</div>
-              <div style="color:#666; font-size:14px;">1-on-1 lessons that match your pace. Click to explore tutors.</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="ft">
-        <button id="adOkBtn" class="btn"><i class="fa-solid fa-check"></i> OK</button>
-      </div>
-    </div>
-  </div>
-
   <script>
-    // ===== 共通パーシャル読込 =====
     async function loadPartials() {
       try {
         const [hdr, ftr] = await Promise.all([
@@ -120,127 +65,113 @@
         ]);
         document.getElementById("header-placeholder").innerHTML = hdr;
         document.getElementById("footer-placeholder").innerHTML = ftr;
-      } catch(e) {
-        console.error("Failed to load partials:", e);
-      }
+      } catch(e) { console.error("Failed to load partials:", e); }
     }
 
-    // ===== デモ用データ（実際は /data/json/N5/verbs.json 等から取得） =====
     const DEMO = [
       { id:"n5-verb-001", en:"to meet", ja:"会う", kana:"あう", ro:"au", level:"N5", pos:"verb",
-        examples:[ {en:"I meet my friend.", ja:"友達に会う。", ro:"tomodachi ni au."} ] },
+        examples:[{en:"I meet my friend.", ja:"友達に会う。", ro:"tomodachi ni au."}] },
       { id:"n5-verb-002", en:"to open", ja:"開ける", kana:"あける", ro:"akeru", level:"N5", pos:"verb",
-        examples:[ {en:"Open the window.", ja:"窓を開ける。", ro:"mado o akeru."} ] },
+        examples:[{en:"Open the window.", ja:"窓を開ける。", ro:"mado o akeru."}] },
       { id:"n5-verb-003", en:"to go", ja:"行く", kana:"いく", ro:"iku", level:"N5", pos:"verb",
-        examples:[ {en:"I go to school.", ja:"学校へ行く。", ro:"gakkou e iku."} ] },
+        examples:[{en:"I go to school.", ja:"学校へ行く。", ro:"gakkou e iku."}] },
       { id:"n5-verb-004", en:"to read", ja:"読む", kana:"よむ", ro:"yomu", level:"N5", pos:"verb",
-        examples:[ {en:"Read a book.", ja:"本を読む。", ro:"hon o yomu."} ] },
+        examples:[{en:"Read a book.", ja:"本を読む。", ro:"hon o yomu."}] },
       { id:"n5-verb-005", en:"to write", ja:"書く", kana:"かく", ro:"kaku", level:"N5", pos:"verb",
-        examples:[ {en:"Write a letter.", ja:"手紙を書く。", ro:"tegami o kaku."} ] }
+        examples:[{en:"Write a letter.", ja:"手紙を書く。", ro:"tegami o kaku."}] }
     ];
 
-    // ===== 単語レンダリング =====
     function renderList(data) {
       const wrap = document.getElementById('word-list');
       wrap.innerHTML = data.map(item => {
-        const ex = (item.examples||[]).map((e,i)=>`<div>• ${[e.en, e.ja, e.ro].filter(Boolean).join(' / ')}</div>`).join("");
-        return `
-          <article class="card" data-id="${item.id}">
+        const ex = (item.examples||[]).map(e=>`<div>• ${e.en} / ${e.ja}</div>`).join("");
+        return `<article class="card" data-id="${item.id}" data-en="${item.en}" data-ja="${item.ja}" data-level="${item.level}" data-pos="${item.pos}">
             <h3>${item.en} <span class="meta">(${item.ja} / ${item.ro})</span></h3>
             <div class="meta">${item.level || ''} ${item.pos ? '· ' + item.pos : ''}</div>
             <div class="actions">
-              <button class="btn btn-learn"><i class="fa-solid fa-book-open"></i> Learn</button>
+              <button class="btn btn-learn" data-action="learn"><i class="fa-solid fa-book-open"></i> Learn</button>
             </div>
             <div class="examples">${ex}</div>
-          </article>
-        `;
+          </article>`;
       }).join("");
-
-      // Learn クリック → Learning に追加
-      wrap.querySelectorAll('.btn-learn').forEach(btn => {
-        btn.addEventListener('click', (ev) => {
-          const card = ev.currentTarget.closest('.card');
-          const id = card.getAttribute('data-id');
-          const item = data.find(x => String(x.id) === String(id));
-          if (!item) return;
-          // ヘッダー実装の公開APIを使用
-          if (window.NT && typeof window.NT.addToLearning === 'function') {
-            window.NT.addToLearning({
-              id: item.id,
-              en: item.en, ja: item.ja, kana: item.kana || '', ro: item.ro || '',
-              level: item.level, pos: item.pos,
-              examples: Array.isArray(item.examples) ? item.examples : []
-            });
-          }
-          // 視覚的な即時反映（任意）
-          ev.currentTarget.textContent = 'Learning';
-        });
-      });
     }
 
-    // ===== ページャー（クリックで広告モーダル） =====
-    function bindPager() {
-      const pager = document.querySelector('.pager');
-      if (!pager) return;
-      pager.addEventListener('click', (e) => {
-        const btn = e.target.closest('button');
-        if (!btn) return;
-        // ここで実際のページ切替処理（JSON再読込等）を先に走らせてもOK
-        showAdPopup();
-      });
-    }
-
-    // ===== 広告ポップアップ =====
-    function showAdPopup() {
-      const mask = document.getElementById('adMask');
-      const closeBtn = document.getElementById('adCloseBtn');
-      const okBtn = document.getElementById('adOkBtn');
-      const fb = document.getElementById('adFallback');
-      const box = document.getElementById('amznAdBox');
-      const ins = box ? box.querySelector('ins.adsbygoogle') : null;
-
-      if (!mask) return;
-      mask.classList.add('show');
-
-      function close() { mask.classList.remove('show'); }
-
-      if (closeBtn) closeBtn.onclick = close;
-      if (okBtn) okBtn.onclick = close;
-      mask.addEventListener('click', (ev) => {
-        if (ev.target === mask) close();
-      });
-
-      // AdSense 試行 → 2秒反応なければフォールバック
-      let done = false;
-      function revealFallback(){
-        if (done) return;
-        done = true;
-        if (fb) fb.style.display = 'block';
-      }
-
-      try {
-        if (ins) {
-          ins.style.display = 'block';
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-          const startH = ins.offsetHeight;
-          setTimeout(() => {
-            const nowH = ins.offsetHeight;
-            if (!nowH || nowH === startH) revealFallback();
-          }, 2000);
-        } else {
-          revealFallback();
-        }
-      } catch(_) {
-        revealFallback();
-      }
-    }
-
-    // ===== 起動 =====
-    (async function init() {
+    (async function init(){
       await loadPartials();
       renderList(DEMO);
-      bindPager();
     })();
+  </script>
+
+  <!-- === Learning機能統合スクリプト === -->
+  <script>
+  (function(){
+    const KP='nihongo_learning', KA='ntx_learning_v2';
+    const R=k=>{try{return JSON.parse(localStorage.getItem(k)||'[]')}catch{return[]}};
+    const W=(k,v)=>localStorage.setItem(k,JSON.stringify(v||[]));
+    const M=(a,b)=>{const m=new Map();[...a,...b].forEach(x=>{if(x&&x.id)m.set(String(x.id),x)});return[...m.values()]};
+
+    function setBadge(){
+      const n=M(R(KP),R(KA)).length;
+      const b=document.querySelector('#learning-count-badge');
+      const c=document.querySelector('#learning-count');
+      if(b) b.textContent=n;
+      if(c) c.textContent='('+n+')';
+    }
+
+    function extractItemFromCard(card){
+      if(!card) return null;
+      const item={
+        id:card.dataset.id||'',
+        en:card.dataset.en||'',
+        ja:card.dataset.ja||'',
+        level:card.dataset.level||'',
+        pos:card.dataset.pos||'',
+        examples:[]
+      };
+      card.querySelectorAll('.examples div').forEach(li=>{
+        const txt=(li.textContent||'').split('/');
+        item.examples.push({en:(txt[0]||'').trim(),ja:(txt[1]||'').trim()});
+      });
+      return item;
+    }
+
+    document.addEventListener('click',ev=>{
+      const t=ev.target.closest('[data-action="learn"],.btn-learn');
+      if(!t) return;
+      const card=t.closest('.card');
+      const item=extractItemFromCard(card);
+      if(!item||!item.id) return;
+      const cur=R(KP);
+      const idx=cur.findIndex(x=>x.id===item.id);
+      if(idx<0) cur.push(item);
+      else cur[idx]=item;
+      W(KP,cur);
+      setBadge();
+      if(window._ntxRenderLearning) window._ntxRenderLearning();
+    });
+
+    function render(){
+      const list=document.querySelector('#learning-list');
+      if(!list){setBadge();return;}
+      const arr=M(R(KP),R(KA));
+      if(!arr.length){list.innerHTML='<p style="color:#666;">No items in Learning yet.</p>';setBadge();return;}
+      list.innerHTML=arr.map(it=>{
+        const ex=(it.examples||[]).map(e=>`<li>${e.en} / ${e.ja}</li>`).join('');
+        return `<div style="border:1px solid #eee;border-radius:8px;padding:8px;margin-bottom:8px;">
+          <strong>${it.en}</strong> <span style="color:#666;">(${it.ja})</span>
+          ${ex?`<ul>${ex}</ul>`:''}
+        </div>`;
+      }).join('');
+      setBadge();
+    }
+
+    window._ntxRenderLearning=render;
+    window._ntxOpenLearning=()=>{const o=document.querySelector('#learning-overlay'),d=document.querySelector('#learning-drawer');if(o&&d){o.style.display='block';d.style.right='0';render();}};
+    window._ntxCloseLearning=()=>{const o=document.querySelector('#learning-overlay'),d=document.querySelector('#learning-drawer');if(o&&d){d.style.right='-560px';setTimeout(()=>o.style.display='none',250);}};
+
+    render();
+    window.addEventListener('storage',ev=>{if([KP,KA].includes(ev.key))render();});
+  })();
   </script>
 </body>
 </html>
