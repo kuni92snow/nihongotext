@@ -1,6 +1,6 @@
+<!-- ✅ 修正版 header.html -->
 <header class="site-header" style="background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30;">
   <div class="container" style="max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; gap:8px;">
-    <!-- 1行目：タイトル -->
     <div style="display:flex; align-items:center; gap:10px;">
       <a href="/" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
         <img src="/icon-512.png" alt="nihongotext logo" style="width:28px; height:28px; border-radius:6px;" />
@@ -8,7 +8,6 @@
       </a>
     </div>
 
-    <!-- 2行目：ナビ -->
     <nav aria-label="Main navigation" style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
       <a href="/" style="color:#333; text-decoration:none;">Home</a>
       <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
@@ -16,205 +15,88 @@
       <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
 
-      <!-- Learning（ドロワー起動ボタン：idは #learnBtn、data-open="learning" も付与） -->
-      <button
-        id="learnBtn"
-        data-open="learning"
-        type="button"
-        title="Learning list"
+      <button id="learnBtn" type="button"
         style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
-        onclick="(window._ntxOpenLearning?window._ntxOpenLearning(): (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
-      >
+        onclick="window._ntxOpenLearning && window._ntxOpenLearning()">
         <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
         <span>Learning</span>
         <span id="learning-count-badge" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
       </button>
     </nav>
 
-    <!-- 3行目：アイコン（赤） -->
-    <nav aria-label="Header icons" style="display:flex; align-items:center; gap:14px; font-size:20px;">
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#e6462d;">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="color:#e6462d;">
-        <i class="fa-brands fa-reddit-alien"></i>
-      </a>
-      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="color:#e6462d;">
-        <i class="fa-brands fa-medium"></i>
-      </a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" aria-label="Ko-fi" style="color:#e6462d;">
-        <i class="fa-solid fa-mug-hot"></i>
-      </a>
-      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="color:#e6462d;">
-        <i class="fa-solid fa-newspaper"></i>
-      </a>
-      <!-- Policy icons -->
-      <a href="/privacy.html" title="Privacy Policy" aria-label="Privacy Policy" style="color:#e6462d;">
-        <i class="fa-solid fa-user-shield"></i>
-      </a>
-      <a href="/legal.html" title="Legal Notice" aria-label="Legal Notice" style="color:#e6462d;">
-        <i class="fa-solid fa-scale-balanced"></i>
-      </a>
+    <nav style="display:flex; align-items:center; gap:14px; font-size:20px;">
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 
-  <!-- ===== Learning Drawer (overlay) ===== -->
-  <div id="learning-overlay" aria-hidden="true"
-       style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
+  <!-- Overlay + Drawer -->
+  <div id="learning-overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
 
-  <aside id="learning-drawer" aria-labelledby="learning-title" role="dialog" aria-modal="true"
-         style="position:fixed; top:0; right:-560px; width:560px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
-    <!-- Drawer header -->
-    <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
-      <div style="display:flex; align-items:center; gap:10px;">
-        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
-        <h2 id="learning-title" style="margin:0; font-size:18px;">Learning</h2>
+  <aside id="learning-drawer" style="position:fixed; top:0; right:-560px; width:560px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
+    <div style="display:flex; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
+      <h2 style="margin:0; font-size:18px; display:flex; align-items:center; gap:8px;">
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i> Learning
         <span id="learning-count" style="color:#666; font-size:13px;"></span>
-      </div>
-      <div style="display:flex; align-items:center; gap:8px;">
-        <button id="btn-print-learning" title="Print"
-                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(function(){var c=document.getElementById('learning-content'); if(!c) return; var w=window.open('', '_blank'); w.document.open(); w.document.write('<!doctype html><html><head><title>Learning - Print</title></head><body>'+c.innerHTML+'</body></html>'); w.document.close(); w.focus(); w.print(); w.close(); })()">
-          <i class="fa-solid fa-print"></i>
-        </button>
-        <button id="btn-close-learning" title="Close"
-                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(window._ntxCloseLearning?window._ntxCloseLearning(): (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){d.style.right='-560px'; setTimeout(function(){o.style.display='none';},250);} })())">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Drawer content -->
-    <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
-      <div id="learning-list" style="display:flex; flex-direction:column; gap:12px;"></div>
-
-      <!-- Quiz placeholder -->
-      <section id="learning-quiz" style="margin-top:18px; padding-top:12px; border-top:1px dashed #eee;">
-        <h3 style="margin:0 0 8px; font-size:16px; color:#333; display:flex; align-items:center; gap:8px;">
-          <i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)
-        </h3>
-        <p style="margin:0; color:#666; font-size:13px;">You will be able to test the items currently in Learning here.</p>
-      </section>
-    </div>
-
-    <!-- Drawer footer -->
-    <div style="padding:12px 16px; border-top:1px solid #eee; display:flex; justify-content:space-between; gap:8px;">
-      <button id="btn-clear-learning" title="Clear Learning list"
-              style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-              onclick="(function(){ try{ localStorage.setItem('nihongo_learning','[]'); localStorage.setItem('ntx_learning_v2','[]'); }catch(_){}; if(window._ntxRenderLearning){window._ntxRenderLearning();} else { var b=document.getElementById('learning-count-badge'); if(b) b.textContent='0'; var l=document.getElementById('learning-list'); if(l) l.innerHTML='<p style=&quot;color:#666; margin:8px 0;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>'; var c=document.getElementById('learning-count'); if(c) c.textContent='(0)'; } })()">
-        <i class="fa-solid fa-trash-can"></i> Clear
+      </h2>
+      <button onclick="window._ntxCloseLearning()" style="border:1px solid #ddd; background:#fff; border-radius:8px; padding:6px 10px;">
+        <i class="fa-solid fa-xmark"></i>
       </button>
-      <div style="display:flex; gap:8px;">
-        <button id="btn-export-learning" title="Export list as JSON"
-                style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(function(){ var data=[]; try{ data = JSON.parse(localStorage.getItem('nihongo_learning')||'[]'); }catch(_){}; try{ var alt = JSON.parse(localStorage.getItem('ntx_learning_v2')||'[]'); if(Array.isArray(alt)) data = data.concat(alt); }catch(_){}; var seen=new Set(); data=data.filter(function(x){ if(!x||!x.id) return false; var k=String(x.id); if(seen.has(k)) return false; seen.add(k); return true; }); var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); var url=URL.createObjectURL(blob); var a=document.createElement('a'); a.href=url; a.download='learning.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); })()">
-          <i class="fa-solid fa-file-arrow-down"></i> Export
-        </button>
-      </div>
+    </div>
+
+    <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
+      <div id="learning-list"></div>
+      <section style="margin-top:18px; border-top:1px dashed #eee; padding-top:12px;">
+        <h3 style="font-size:16px; margin:0 0 8px;"><i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)</h3>
+        <p style="margin:0; color:#666;">You will be able to test the items currently in Learning here.</p>
+      </section>
     </div>
   </aside>
 
-  <!-- ====== （承認前）広告ポップアップ：フォールバックのみ ====== -->
-  <div id="adMask" role="dialog" aria-modal="true" aria-labelledby="adTitle"
-       style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:90;">
-    <div id="adPopup" style="position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); width:min(720px,96vw); max-height:85vh; overflow:auto; background:#fff; border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,.2);">
-      <div class="hd" style="display:flex; justify-content:space-between; align-items:center; gap:8px; border-bottom:1px solid #eee; padding:12px 14px;">
-        <h3 id="adTitle" style="margin:0; font-size:16px; display:flex; align-items:center; gap:8px; color:#333;">
-          <i class="fa-solid fa-bullhorn" style="color:#e6462d;"></i> Sponsored
-        </h3>
-        <button class="btn" aria-label="Close"
-                style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(function(){var m=document.getElementById('adMask'); if(m) m.style.display='none'; })()">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div class="bd" style="padding:12px 14px;">
-        <div id="adFallback" style="display:block; margin-top:0; border:1px solid #eee; border-radius:8px; padding:10px;">
-          <a href="https://preply.com/" target="_blank" rel="noopener" style="display:flex; gap:10px; align-items:center; text-decoration:none;">
-            <img src="/assets/preply-banner.png" alt="Find a Japanese tutor on Preply" style="width:96px; height:96px; object-fit:cover; border-radius:8px; border:1px solid #eee;">
-            <div>
-              <div style="font-weight:600; font-size:16px; color:#333;">Find a Japanese tutor on Preply</div>
-              <div style="color:#666; font-size:14px;">1-on-1 lessons that match your pace. Click to explore tutors.</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="ft" style="padding:10px 14px; border-top:1px solid #eee; text-align:right;">
-        <button class="btn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(function(){var m=document.getElementById('adMask'); if(m) m.style.display='none'; })()">
-          <i class="fa-solid fa-check"></i> OK
-        </button>
-      </div>
-    </div>
-  </div>
+  <!-- ✅ Learning表示スクリプト -->
+  <script>
+    (function(){
+      const KP = 'nihongo_learning';
+      const KA = 'ntx_learning_v2';
+      function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]');}catch{return [];} }
+      function M(a,b){ const m=new Map(); [...a,...b].forEach(x=>{if(x&&x.id)m.set(String(x.id),x)}); return [...m.values()]; }
 
-  <!-- ====== 初期化（partialでも確実に実行：1px画像 onload） ====== -->
-  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" style="display:none"
-       onload="(function(){
-        var KP='nihongo_learning', KA='ntx_learning_v2';
-        function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]')||[]}catch(_){return[]} }
-        function W(k,a){ localStorage.setItem(k, JSON.stringify(a||[])); }
-        function M(a,b){ var m=new Map(); [].concat(a||[],b||[]).forEach(function(x){ if(!x||!x.id)return; var id=String(x.id); m.set(id, Object.assign({}, m.get(id)||{}, x)); }); return Array.from(m.values()); }
-        function fmt(d){ var dt=new Date(d||Date.now()); var y=dt.getFullYear(), m=('0'+(dt.getMonth()+1)).slice(-2), dd=('0'+dt.getDate()).slice(-2); return y+'-'+m+'-'+dd; }
+      function setBadge(){
+        const n = M(R(KP),R(KA)).length;
+        const b = document.getElementById('learning-count-badge');
+        const c = document.getElementById('learning-count');
+        if(b) b.textContent = n;
+        if(c) c.textContent = '('+n+')';
+      }
 
-        function setBadge(){
-          var n = M(R(KP),R(KA)).length;
-          var b = document.getElementById('learning-count-badge'); if(b) b.textContent = n;
-          var c = document.getElementById('learning-count'); if(c) c.textContent = '('+n+')';
+      function render(){
+        const list = document.getElementById('learning-list');
+        const arr = M(R(KP),R(KA));
+        if(!list) return;
+        if(!arr.length){
+          list.innerHTML = '<p style="color:#666;">No items in Learning yet. Use the Learn button on words to add them here.</p>';
+          setBadge(); return;
         }
-
-        function render(){
-          var wrap = document.getElementById('learning-list');
-          if(!wrap){ setBadge(); return; }
-          var arr = M(R(KP),R(KA));
-          if(!arr.length){
-            wrap.innerHTML = '<p style=&quot;color:#666; margin:8px 0;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
-            setBadge(); return;
-          }
-          function exHTML(ex){
-            if(!Array.isArray(ex)||!ex.length) return '';
-            return '<details style=&quot;margin-top:6px;&quot;><summary style=&quot;cursor:pointer;&quot;>Examples ('+ex.length+')</summary>'+
-              ex.map(function(e){
-                var en=e.en||'', ja=e.ja||'', ro=e.ro||e.romaji||'';
-                var t=[en,ja,ro].filter(Boolean).join(' / ');
-                return '<div style=&quot;padding:6px 0; border-bottom:1px dashed #eee; font-size:14px;&quot;>'+t+'</div>';
-              }).join('') + '</details>';
-          }
-          wrap.innerHTML = arr.map(function(it){
-            var meta=[]; if(it.level)meta.push(it.level); if(it.pos)meta.push(it.pos); if(it.addedAt)meta.push('Added: '+fmt(it.addedAt));
-            return ''+
-              '<article data-id=&quot;'+String(it.id)+'&quot; style=&quot;border:1px solid #eee; border-radius:12px; padding:10px 12px;&quot;>'+
-                '<div style=&quot;display:flex; justify-content:space-between; gap:8px; align-items:flex-start;&quot;>'+
-                  '<div style=&quot;min-width:0;&quot;>'+
-                    '<div style=&quot;font-weight:600;&quot;>'+(it.en||it.ja||('#'+it.id))+'</div>'+
-                    (meta.length?'<div style=&quot;color:#666; font-size:12px; margin-top:2px;&quot;>'+meta.join(' · ')+'</div>':'')+
-                  '</div>'+
-                  '<div style=&quot;display:flex; gap:6px; flex-wrap:wrap;&quot;>'+
-                    '<button style=&quot;padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;&quot; onclick=&quot;(function(id){var a='+KA+', p='+KP+'; function R(k){try{return JSON.parse(localStorage.getItem(k)||'+'\'[]\''+')||[]}catch(_){return[]} } function W(k,v){localStorage.setItem(k,JSON.stringify(v||[]));} function rm(list){var i=list.findIndex(function(x){return String(x.id)===String(id)}); if(i>=0) list.splice(i,1);} var L=R(p), A=R(a); rm(L); rm(A); W(p,L); W(a,A); if(window._ntxRenderLearning){window._ntxRenderLearning();} })(&quot;'+String(it.id)+'&quot;)&quot;>' +
-                      '<i class=&quot;fa-solid fa-rotate-left&quot; style=&quot;color:#e6462d;&quot;></i> Back'+
-                    '</button>'+
-                    '<button style=&quot;padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;&quot; onclick=&quot;(function(id){var KP='+"'"+'nihongo_learning'+"'"+', KA='+"'"+'ntx_learning_v2'+"'"+'; function R(k){try{return JSON.parse(localStorage.getItem(k)||'+'\'[]\''+')||[]}catch(_){return[]} } function W(k,v){localStorage.setItem(k,JSON.stringify(v||[]));} function M(a,b){var m=new Map();[].concat(a||[],b||[]).forEach(function(x){if(!x||!x.id)return;var s=String(x.id);m.set(s,Object.assign({},m.get(s)||{},x));});return Array.from(m.values());} var L=R(KP), A=R(KA), cur=M(L,A); var i=cur.findIndex(function(x){return String(x.id)===String(id)}); if(i>=0){ var item=cur[i]; item.learnedAt=new Date().toISOString(); var learned=R('+"'"+'nihongo_learned'+"'"+'); learned.push(item); cur.splice(i,1); W(KP,cur); W(KA,cur); W('+"'"+'nihongo_learned'+"'"+',learned);} if(window._ntxRenderLearning){window._ntxRenderLearning();} })(&quot;'+String(it.id)+'&quot;)&quot;>' +
-                      '<i class=&quot;fa-solid fa-check&quot; style=&quot;color:#e6462d;&quot;></i> Learned'+
-                    '</button>'+
-                  '</div>'+
-                '</div>'+
-                ((it.en||it.ja||it.ro)?'<div style=&quot;margin-top:6px; font-size:14px; color:#333;&quot;>'+[it.en,it.ja,it.ro].filter(Boolean).join(' / ')+'</div>':'')+
-                exHTML(it.examples)+
-              '</article>';
-          }).join('');
-          setBadge();
-        }
-
-        // 公開API
-        window._ntxRenderLearning = render;
-        window._ntxOpenLearning = function(){ var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){ render(); o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} };
-        window._ntxCloseLearning = function(){ var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){ d.style.right='-560px'; setTimeout(function(){o.style.display='none';},250);} };
-        window.openLearning = window._ntxOpenLearning; // 既存呼び出し互換
-        window.openAdPopup = function(){ var m=document.getElementById('adMask'); if(m) m.style.display='block'; };
-
-        // 初回バッジ更新 & storage 連動
+        list.innerHTML = arr.map(it=>{
+          const ex = (it.examples||[]).map(e=>`<li>${e.en||''} / ${e.ja||''}</li>`).join('');
+          return `<div style="border:1px solid #eee; border-radius:8px; padding:8px; margin-bottom:8px;">
+            <strong>${it.en||it.ja||it.id}</strong>
+            ${ex?`<ul>${ex}</ul>`:''}
+          </div>`;
+        }).join('');
         setBadge();
-        try{ window.addEventListener('storage', function(ev){ if(ev && (ev.key===KP || ev.key===KA)) setBadge(); }); }catch(_){}
-       })()">
+      }
+
+      window._ntxRenderLearning = render;
+      window._ntxOpenLearning = ()=>{ document.getElementById('learning-overlay').style.display='block'; const d=document.getElementById('learning-drawer'); d.style.right='0'; render(); };
+      window._ntxCloseLearning = ()=>{ const o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); d.style.right='-560px'; setTimeout(()=>o.style.display='none',250); };
+      window.openLearning = window._ntxOpenLearning;
+
+      render();
+      window.addEventListener('storage', ev=>{ if([KP,KA].includes(ev.key)) render(); });
+    })();
+  </script>
 </header>
