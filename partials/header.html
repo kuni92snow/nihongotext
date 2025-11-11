@@ -1,6 +1,7 @@
-<!-- ✅ 修正版 header.html -->
+<!-- header (partials/header.html) -->
 <header class="site-header" style="background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30;">
   <div class="container" style="max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; gap:8px;">
+    <!-- 1行目：タイトル -->
     <div style="display:flex; align-items:center; gap:10px;">
       <a href="/" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
         <img src="/icon-512.png" alt="nihongotext logo" style="width:28px; height:28px; border-radius:6px;" />
@@ -8,6 +9,7 @@
       </a>
     </div>
 
+    <!-- 2行目：ナビ -->
     <nav aria-label="Main navigation" style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
       <a href="/" style="color:#333; text-decoration:none;">Home</a>
       <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
@@ -15,29 +17,48 @@
       <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
 
-<button
-  id="learnBtn"
-  type="button"
-  title="Learning list"
-  style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
-  onclick="(window._ntxOpenLearning ? window._ntxOpenLearning() : (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
->
-  <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
-  <span>Learning</span>
-  <span id="learning-count-badge" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
-</button>
+      <!-- Learning（常に開けるフォールバック付き） -->
+      <button
+        id="learnBtn"
+        type="button"
+        title="Learning list"
+        style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
+        onclick="(window._ntxOpenLearning ? window._ntxOpenLearning() : (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
+      >
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
+        <span>Learning</span>
+        <span id="learning-count-badge" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
+      </button>
     </nav>
 
-    <nav style="display:flex; align-items:center; gap:14px; font-size:20px;">
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" style="color:#e6462d;"><i class="fa-solid fa-newspaper"></i></a>
+    <!-- 3行目：アイコン（赤） -->
+    <nav aria-label="Header icons" style="display:flex; align-items:center; gap:14px; font-size:20px;">
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#e6462d;">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="color:#e6462d;">
+        <i class="fa-brands fa-reddit-alien"></i>
+      </a>
+      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="color:#e6462d;">
+        <i class="fa-brands fa-medium"></i>
+      </a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" aria-label="Ko-fi" style="color:#e6462d;">
+        <i class="fa-solid fa-mug-hot"></i>
+      </a>
+      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="color:#e6462d;">
+        <i class="fa-solid fa-newspaper"></i>
+      </a>
+      <!-- Policy icons -->
+      <a href="/privacy.html" title="Privacy Policy" aria-label="Privacy Policy" style="color:#e6462d;">
+        <i class="fa-solid fa-user-shield"></i>
+      </a>
+      <a href="/legal.html" title="Legal Notice" aria-label="Legal Notice" style="color:#e6462d;">
+        <i class="fa-solid fa-scale-balanced"></i>
+      </a>
     </nav>
   </div>
 
-  <!-- Overlay + Drawer -->
+  <!-- Overlay + Drawer（スクリプトが無くても閉じられるフォールバック付き） -->
   <div id="learning-overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
 
   <aside id="learning-drawer" style="position:fixed; top:0; right:-560px; width:560px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
@@ -46,61 +67,24 @@
         <i class="fa-solid fa-book-open" style="color:#e6462d;"></i> Learning
         <span id="learning-count" style="color:#666; font-size:13px;"></span>
       </h2>
-      <button onclick="window._ntxCloseLearning()" style="border:1px solid #ddd; background:#fff; border-radius:8px; padding:6px 10px;">
+      <button id="btn-close-learning"
+        style="border:1px solid #ddd; background:#fff; border-radius:8px; padding:6px 10px; cursor:pointer;"
+        title="Close"
+        onclick="(window._ntxCloseLearning ? window._ntxCloseLearning() : (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){ d.style.right='-560px'; setTimeout(function(){ o.style.display='none'; },250);} })())">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
 
     <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
       <div id="learning-list"></div>
+
+      <!-- Quiz placeholder -->
       <section style="margin-top:18px; border-top:1px dashed #eee; padding-top:12px;">
-        <h3 style="font-size:16px; margin:0 0 8px;"><i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)</h3>
+        <h3 style="font-size:16px; margin:0 0 8px;">
+          <i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)
+        </h3>
         <p style="margin:0; color:#666;">You will be able to test the items currently in Learning here.</p>
       </section>
     </div>
   </aside>
-
-  <!-- ✅ Learning表示スクリプト -->
-  <script>
-    (function(){
-      const KP = 'nihongo_learning';
-      const KA = 'ntx_learning_v2';
-      function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]');}catch{return [];} }
-      function M(a,b){ const m=new Map(); [...a,...b].forEach(x=>{if(x&&x.id)m.set(String(x.id),x)}); return [...m.values()]; }
-
-      function setBadge(){
-        const n = M(R(KP),R(KA)).length;
-        const b = document.getElementById('learning-count-badge');
-        const c = document.getElementById('learning-count');
-        if(b) b.textContent = n;
-        if(c) c.textContent = '('+n+')';
-      }
-
-      function render(){
-        const list = document.getElementById('learning-list');
-        const arr = M(R(KP),R(KA));
-        if(!list) return;
-        if(!arr.length){
-          list.innerHTML = '<p style="color:#666;">No items in Learning yet. Use the Learn button on words to add them here.</p>';
-          setBadge(); return;
-        }
-        list.innerHTML = arr.map(it=>{
-          const ex = (it.examples||[]).map(e=>`<li>${e.en||''} / ${e.ja||''}</li>`).join('');
-          return `<div style="border:1px solid #eee; border-radius:8px; padding:8px; margin-bottom:8px;">
-            <strong>${it.en||it.ja||it.id}</strong>
-            ${ex?`<ul>${ex}</ul>`:''}
-          </div>`;
-        }).join('');
-        setBadge();
-      }
-
-      window._ntxRenderLearning = render;
-      window._ntxOpenLearning = ()=>{ document.getElementById('learning-overlay').style.display='block'; const d=document.getElementById('learning-drawer'); d.style.right='0'; render(); };
-      window._ntxCloseLearning = ()=>{ const o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); d.style.right='-560px'; setTimeout(()=>o.style.display='none',250); };
-      window.openLearning = window._ntxOpenLearning;
-
-      render();
-      window.addEventListener('storage', ev=>{ if([KP,KA].includes(ev.key)) render(); });
-    })();
-  </script>
 </header>
