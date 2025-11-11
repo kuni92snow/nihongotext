@@ -1,40 +1,67 @@
-<header class="site-header" style="padding:14px 0; border-bottom:1px solid #eee; background:#fff; position:relative; z-index:30;">
-  <div class="container" style="max-width:1100px; margin:0 auto; padding:0 16px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
-    <!-- Brand -->
-    <a href="/" class="brand" style="text-decoration:none; color:#e6462d; font-weight:700; font-size:20px; display:flex; align-items:center; gap:8px;">
-      <img src="/icon-512.png" alt="nihongotext logo" style="width:28px; height:28px; border-radius:6px;" />
-      <span>nihongotext<span style="color:#333;">.com</span></span>
-    </a>
+<header class="site-header" style="background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30;">
+  <div class="container" style="max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; gap:8px;">
+    <!-- 1行目：タイトル -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="/" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+        <img src="/icon-512.png" alt="nihongotext logo" style="width:28px; height:28px; border-radius:6px;" />
+        <span style="font-weight:700; font-size:20px; color:#e6462d;">nihongotext<span style="color:#333;">.com</span></span>
+      </a>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="main-nav" aria-label="Main navigation" style="display:flex; align-items:center; gap:14px;">
+    <!-- 2行目：ナビ（Home Blog Inquiry Legal Privacy Learning） -->
+    <nav aria-label="Main navigation" style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
       <a href="/" style="color:#333; text-decoration:none;">Home</a>
       <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
       <a href="/inquiry/index.html" style="color:#333; text-decoration:none;">Inquiry</a>
       <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
 
-      <!-- Learning button (opens drawer) -->
+      <!-- Learning（ドロワー起動ボタン） -->
       <button id="btn-learning" type="button" title="Learning list"
-        style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:flex; align-items:center; gap:6px;">
-        <i class="fa-solid fa-book-open"></i>
+        style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
         <span>Learning</span>
         <span id="learning-count-badge" style="min-width:18px; height:18px; padding:0 6px; border-radius:9px; background:#e6462d; color:#fff; font-size:12px; display:inline-flex; align-items:center; justify-content:center;">0</span>
       </button>
+    </nav>
+
+    <!-- 3行目：アイコン（赤） -->
+    <nav aria-label="Header social/policy icons" style="display:flex; align-items:center; gap:14px; font-size:20px;">
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#e6462d;">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="color:#e6462d;">
+        <i class="fa-brands fa-reddit-alien"></i>
+      </a>
+      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="color:#e6462d;">
+        <i class="fa-brands fa-medium"></i>
+      </a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" aria-label="Ko-fi" style="color:#e6462d;">
+        <i class="fa-solid fa-mug-hot"></i>
+      </a>
+      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="color:#e6462d;">
+        <i class="fa-solid fa-newspaper"></i>
+      </a>
+      <!-- Policy icons -->
+      <a href="/privacy.html" title="Privacy Policy" aria-label="Privacy Policy" style="color:#e6462d;">
+        <i class="fa-solid fa-user-shield"></i>
+      </a>
+      <a href="/legal.html" title="Legal Notice" aria-label="Legal Notice" style="color:#e6462d;">
+        <i class="fa-solid fa-scale-balanced"></i>
+      </a>
     </nav>
   </div>
 
   <!-- ===== Learning Drawer (overlay) ===== -->
   <div id="learning-overlay" aria-hidden="true"
-       style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;">
-  </div>
+       style="position:fixed; inset:0; background:rgba(0,0,0,0.35); display:none; z-index:40;"></div>
 
   <aside id="learning-drawer" aria-labelledby="learning-title" role="dialog" aria-modal="true"
          style="position:fixed; top:0; right:-560px; width:560px; max-width:96vw; height:100%; background:#fff; box-shadow:-12px 0 24px rgba(0,0,0,0.12); z-index:50; display:flex; flex-direction:column; transition:right .25s ease;">
     <!-- Drawer header -->
     <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid #eee;">
       <div style="display:flex; align-items:center; gap:10px;">
-        <i class="fa-solid fa-book-open"></i>
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
         <h2 id="learning-title" style="margin:0; font-size:18px;">Learning</h2>
         <span id="learning-count" style="color:#666; font-size:13px;"></span>
       </div>
@@ -52,16 +79,14 @@
 
     <!-- Drawer content -->
     <div id="learning-content" style="padding:12px 16px; overflow:auto; flex:1;">
-      <!-- Rendered list will appear here -->
       <div id="learning-list" style="display:flex; flex-direction:column; gap:12px;"></div>
 
-      <!-- Quiz placeholder: can be replaced later -->
+      <!-- Quiz placeholder -->
       <section id="learning-quiz" style="margin-top:18px; padding-top:12px; border-top:1px dashed #eee;">
         <h3 style="margin:0 0 8px; font-size:16px; color:#333; display:flex; align-items:center; gap:8px;">
-          <i class="fa-solid fa-circle-question"></i> Quiz (coming soon)
+          <i class="fa-solid fa-circle-question" style="color:#e6462d;"></i> Quiz (coming soon)
         </h3>
         <p style="margin:0; color:#666; font-size:13px;">You will be able to test the items currently in Learning here.</p>
-        <!-- Later: insert quiz controls -->
       </section>
     </div>
 
@@ -82,11 +107,9 @@
 
   <script>
     (function () {
-      // ===== Storage keys =====
       var KEY_LEARNING = 'nihongo_learning';
       var KEY_LEARNED  = 'nihongo_learned';
 
-      // ===== Elements =====
       var btnOpen   = document.getElementById('btn-learning');
       var badge     = document.getElementById('learning-count-badge');
       var overlay   = document.getElementById('learning-overlay');
@@ -98,51 +121,38 @@
       var listWrap  = document.getElementById('learning-list');
       var countText = document.getElementById('learning-count');
 
-      // ===== Utilities =====
-      function readList(key) {
-        try { return JSON.parse(localStorage.getItem(key) || '[]') || []; }
-        catch (_) { return []; }
-      }
-      function writeList(key, arr) {
-        localStorage.setItem(key, JSON.stringify(arr || []));
-      }
-      function findIndexById(arr, id) {
-        return arr.findIndex(function (x) { return String(x.id) === String(id); });
-      }
-      function fmtDate(d) {
-        var dt = (d instanceof Date) ? d : new Date(d || Date.now());
-        var y = dt.getFullYear(), m = ('0'+(dt.getMonth()+1)).slice(-2), day = ('0'+dt.getDate()).slice(-2);
-        return y + '-' + m + '-' + day;
-      }
+      function readList(key){ try{return JSON.parse(localStorage.getItem(key)||'[]')||[]}catch(_){return[];} }
+      function writeList(key, arr){ localStorage.setItem(key, JSON.stringify(arr||[])); }
+      function findIndexById(arr, id){ return arr.findIndex(function(x){ return String(x.id)===String(id); }); }
+      function fmtDate(d){ var dt=(d instanceof Date)?d:new Date(d||Date.now()); var y=dt.getFullYear(), m=('0'+(dt.getMonth()+1)).slice(-2), day=('0'+dt.getDate()).slice(-2); return y+'-'+m+'-'+day; }
 
-      // Public API for other pages (optional)
       window.NT = window.NT || {};
-      window.NT.addToLearning = function(item) {
+      window.NT.addToLearning = function(item){
         var learning = readList(KEY_LEARNING);
-        if (findIndexById(learning, item.id) === -1) {
+        if(findIndexById(learning, item.id)===-1){
           item.addedAt = item.addedAt || new Date().toISOString();
           learning.push(item);
           writeList(KEY_LEARNING, learning);
           refreshUI();
         }
       };
-      window.NT.removeFromLearning = function(id) {
+      window.NT.removeFromLearning = function(id){
         var learning = readList(KEY_LEARNING);
         var idx = findIndexById(learning, id);
-        if (idx >= 0) {
-          learning.splice(idx, 1);
+        if(idx>=0){
+          learning.splice(idx,1);
           writeList(KEY_LEARNING, learning);
           refreshUI();
         }
       };
-      window.NT.moveToLearned = function(id) {
+      window.NT.moveToLearned = function(id){
         var learning = readList(KEY_LEARNING);
         var learned  = readList(KEY_LEARNED);
         var idx = findIndexById(learning, id);
-        if (idx >= 0) {
-          var item = learning.splice(idx, 1)[0];
+        if(idx>=0){
+          var item = learning.splice(idx,1)[0];
           item.learnedAt = new Date().toISOString();
-          item.quizStats = item.quizStats || { taken: 0, correct: 0 };
+          item.quizStats = item.quizStats || { taken:0, correct:0 };
           learned.push(item);
           writeList(KEY_LEARNING, learning);
           writeList(KEY_LEARNED, learned);
@@ -150,145 +160,96 @@
         }
       };
 
-      // ===== Rendering =====
-      function renderBadge() {
+      function renderBadge(){
         var n = readList(KEY_LEARNING).length;
         badge.textContent = n;
-        countText.textContent = '(' + n + ')';
+        countText.textContent = '('+ n +')';
       }
 
-      function itemTitle(item) {
-        // Prefer EN or JA; fallbacks to id
-        return item.en || item.ja || item.term || ('#' + item.id);
+      function itemTitle(item){ return item.en || item.ja || item.term || ('#'+item.id); }
+      function renderExamples(ex){
+        if(!Array.isArray(ex)||!ex.length) return '';
+        return '<details style="margin-top:6px;"><summary style="cursor:pointer;">Examples ('+ex.length+')</summary>' +
+          ex.map(function(row){
+            var en=row.en||'', ja=row.ja||'', ro=row.ro||row.romaji||'';
+            var parts=[en,ja,ro].filter(Boolean).join(' / ');
+            return '<div style="padding:6px 0; border-bottom:1px dashed #eee; font-size:14px;">'+parts+'</div>';
+          }).join('') + '</details>';
       }
-
-      function renderExamples(examples) {
-        if (!Array.isArray(examples) || !examples.length) return '';
-        return '<details style="margin-top:6px;"><summary style="cursor:pointer;">Examples (' + examples.length + ')</summary>' +
-          examples.map(function(ex, i) {
-            var en = ex.en || '';
-            var ja = ex.ja || '';
-            var ro = ex.ro || ex.romaji || '';
-            var parts = [en, ja, ro].filter(Boolean).join(' / ');
-            return '<div style="padding:6px 0; border-bottom:1px dashed #eee; font-size:14px;">' + parts + '</div>';
-          }).join('') +
-        '</details>';
-      }
-
-      function renderLearningList() {
+      function renderLearningList(){
         var learning = readList(KEY_LEARNING);
-        if (!learning.length) {
+        if(!learning.length){
           listWrap.innerHTML = '<p style="color:#666; margin:8px 0;">No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
           return;
         }
-
-        listWrap.innerHTML = learning.map(function(item, idx) {
-          var subtitleParts = [];
-          if (item.level) subtitleParts.push(item.level);
-          if (item.pos) subtitleParts.push(item.pos);
-          if (item.addedAt) subtitleParts.push('Added: ' + fmtDate(item.addedAt));
-
-          var subtitle = subtitleParts.join(' · ');
-          var examplesHTML = renderExamples(item.examples);
-
-          return (
-            '<article data-id="'+ String(item.id) +'" style="border:1px solid #eee; border-radius:12px; padding:10px 12px;">' +
-              '<div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">' +
-                '<div style="min-width:0;">' +
-                  '<div style="font-weight:600;">' + itemTitle(item) + '</div>' +
-                  (subtitle ? '<div style="color:#666; font-size:12px; margin-top:2px;">' + subtitle + '</div>' : '') +
-                '</div>' +
-                '<div style="display:flex; gap:6px; flex-wrap:wrap;">' +
-                  '<button class="btn-back-to-learn" title="Back to Learn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">' +
-                    '<i class="fa-solid fa-rotate-left"></i> Back' +
-                  '</button>' +
-                  '<button class="btn-move-to-learned" title="Move to Learned" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">' +
-                    '<i class="fa-solid fa-check"></i> Learned' +
-                  '</button>' +
-                '</div>' +
-              '</div>' +
-              (item.en || item.ja || item.ro ? '<div style="margin-top:6px; font-size:14px; color:#333;">' +
-                  [item.en, item.ja, item.ro].filter(Boolean).join(' / ') + '</div>' : '') +
-              examplesHTML +
-            '</article>'
-          );
+        listWrap.innerHTML = learning.map(function(item){
+          var meta=[];
+          if(item.level) meta.push(item.level);
+          if(item.pos)   meta.push(item.pos);
+          if(item.addedAt) meta.push('Added: '+fmtDate(item.addedAt));
+          var subtitle=meta.join(' · ');
+          return ''+
+          '<article data-id="'+String(item.id)+'" style="border:1px solid #eee; border-radius:12px; padding:10px 12px;">'+
+            '<div style="display:flex; justify-content:space-between; gap:8px; align-items:flex-start;">'+
+              '<div style="min-width:0;">'+
+                '<div style="font-weight:600;">'+ itemTitle(item) +'</div>'+
+                (subtitle?'<div style="color:#666; font-size:12px; margin-top:2px;">'+subtitle+'</div>':'')+
+              '</div>'+
+              '<div style="display:flex; gap:6px; flex-wrap:wrap;">'+
+                '<button class="btn-back-to-learn" title="Back to Learn" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">'+
+                  '<i class="fa-solid fa-rotate-left" style="color:#e6462d;"></i> Back'+
+                '</button>'+
+                '<button class="btn-move-to-learned" title="Move to Learned" style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;">'+
+                  '<i class="fa-solid fa-check" style="color:#e6462d;"></i> Learned'+
+                '</button>'+
+              '</div>'+
+            '</div>'+
+            (item.en||item.ja||item.ro?'<div style="margin-top:6px; font-size:14px; color:#333;">'+[item.en,item.ja,item.ro].filter(Boolean).join(' / ')+'</div>':'')+
+            renderExamples(item.examples)+
+          '</article>';
         }).join('');
       }
+      function refreshUI(){ renderBadge(); renderLearningList(); }
 
-      function refreshUI() {
-        renderBadge();
-        renderLearningList();
-      }
+      function openDrawer(){ overlay.style.display='block'; setTimeout(function(){ drawer.style.right='0'; },10); refreshUI(); }
+      function closeDrawer(){ drawer.style.right='-560px'; setTimeout(function(){ overlay.style.display='none'; },250); }
 
-      // ===== Drawer controls =====
-      function openDrawer() {
-        overlay.style.display = 'block';
-        setTimeout(function(){ drawer.style.right = '0'; }, 10);
-        refreshUI();
-      }
-      function closeDrawer() {
-        drawer.style.right = '-560px';
-        setTimeout(function(){ overlay.style.display = 'none'; }, 250);
-      }
+      if(btnOpen)  btnOpen.addEventListener('click', openDrawer);
+      if(btnClose) btnClose.addEventListener('click', closeDrawer);
+      if(overlay)  overlay.addEventListener('click', closeDrawer);
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDrawer(); });
 
-      // ===== Events =====
-      if (btnOpen)  btnOpen.addEventListener('click', openDrawer);
-      if (btnClose) btnClose.addEventListener('click', closeDrawer);
-      if (overlay)  overlay.addEventListener('click', closeDrawer);
-      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeDrawer(); });
-
-      if (btnPrint) btnPrint.addEventListener('click', function(){
-        // Print only the drawer content
-        var html = document.documentElement.innerHTML;
+      if(btnPrint) btnPrint.addEventListener('click', function(){
         var printable = document.getElementById('learning-content').innerHTML;
         var w = window.open('', '_blank');
         w.document.open();
         w.document.write('<!doctype html><html><head><title>Learning - Print</title></head><body>'+ printable +'</body></html>');
-        w.document.close();
-        w.focus();
-        w.print();
-        w.close();
+        w.document.close(); w.focus(); w.print(); w.close();
       });
 
-      if (btnClear) btnClear.addEventListener('click', function(){
-        if (confirm('Clear all items in Learning?')) {
-          writeList(KEY_LEARNING, []);
-          refreshUI();
-        }
+      if(btnClear) btnClear.addEventListener('click', function(){
+        if(confirm('Clear all items in Learning?')){ writeList(KEY_LEARNING, []); refreshUI(); }
       });
 
-      if (btnExport) btnExport.addEventListener('click', function(){
+      if(btnExport) btnExport.addEventListener('click', function(){
         var data = readList(KEY_LEARNING);
         var blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
-        var url  = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url;
-        a.download = 'learning.json';
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a'); a.href=url; a.download='learning.json';
+        document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
       });
 
-      // Delegate item buttons
       listWrap.addEventListener('click', function(e){
-        var btn = e.target.closest('button');
-        if (!btn) return;
-        var article = e.target.closest('article[data-id]');
-        if (!article) return;
+        var btn = e.target.closest('button'); if(!btn) return;
+        var article = e.target.closest('article[data-id]'); if(!article) return;
         var id = article.getAttribute('data-id');
 
-        if (btn.classList.contains('btn-back-to-learn')) {
-          // Remove from Learning (戻す = Learningから外す)
-          window.NT.removeFromLearning(id);
-        } else if (btn.classList.contains('btn-move-to-learned')) {
-          // Move to Learned
-          window.NT.moveToLearned(id);
-        }
+        if(btn.classList.contains('btn-back-to-learn')) window.NT.removeFromLearning(id);
+        else if(btn.classList.contains('btn-move-to-learned')) window.NT.moveToLearned(id);
       });
 
-      // Initial render for badge on page load
-      renderBadge();
+      // 初期バッジ更新
+      (function init(){ var n = readList(KEY_LEARNING).length; badge.textContent=n; })();
     })();
   </script>
 </header>
