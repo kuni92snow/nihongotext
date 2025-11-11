@@ -6,44 +6,55 @@
   <title>JLPT — Words | nihongotext.com</title>
   <base href="/" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
+  <meta name="description" content="Browse JLPT words by level and part of speech. Add items to Learning, track progress, and study with examples.">
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9QSHWJE0HZ');
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root { --brand:#e6462d; }
-    body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color:#333; }
+    body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color:#333; background:#fff; }
     .container { max-width:1100px; margin:0 auto; padding:20px 16px; }
     h1 { margin:12px 0 16px; font-size:22px; }
+    /* toolbar */
     .toolbar { display:grid; grid-template-columns:1fr; gap:10px; margin-bottom:14px; }
     .row { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
     .row label { font-size:14px; display:flex; align-items:center; gap:6px; }
     select { padding:6px 10px; border:1px solid #ddd; border-radius:8px; background:#fff; }
+    input[type="checkbox"] { width:16px; height:16px; }
+    /* cards */
     .word-card { border:1px solid #eee; border-radius:12px; background:#fff; padding:14px; margin-bottom:12px; }
     .meta { color:#666; font-size:12px; margin-bottom:6px; }
     .line { margin:2px 0; }
     .line strong { font-weight:700; }
     ruby rt { font-size:.65em; color:#666; }
+    .word-actions { margin-top:8px; display:flex; gap:8px; align-items:center; }
     .btn { border:1px solid #ddd; background:#fff; border-radius:8px; padding:4px 10px; cursor:pointer; }
     .btn:hover { background:#f8f8f8; }
-    .word-actions { margin-top:8px; display:flex; gap:8px; align-items:center; }
     .toggle { color:var(--brand); cursor:pointer; font-size:14px; }
     .examples { display:none; padding-left:10px; margin-top:6px; }
     .examples .ex { margin:6px 0; }
     .notice { padding:10px; border:1px dashed #eee; border-radius:8px; color:#666; }
+    /* pager */
     .pager { display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin:12px 0 24px; }
     .pager button { padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; }
     .pager button[disabled] { opacity:.5; cursor:not-allowed; }
     .pager .current { background:#e6462d; color:#fff; border-color:#e6462d; }
   </style>
 </head>
-
 <body>
-  <!-- Header -->
+  <!-- Header (partials) -->
   <div id="header-placeholder"></div>
 
   <main class="container">
     <h1>JLPT — Words</h1>
 
-    <!-- ツールバー -->
+    <!-- Filters -->
     <section class="toolbar" aria-label="Filters">
       <div class="row">
         <label>Level
@@ -63,15 +74,14 @@
           </select>
         </label>
       </div>
-
-      <!-- 表示切替（2行） -->
+      <!-- 2-line toggles -->
       <div class="row">
-        <label><input type="checkbox" id="show-ja" checked /> Nihongo（漢字＋ふりがな）</label>
-        <label><input type="checkbox" id="show-kana" checked /> Hiragana</label>
+        <label><input type="checkbox" id="show-ja" checked> Nihongo（漢字＋ふりがな）</label>
+        <label><input type="checkbox" id="show-kana" checked> Hiragana</label>
       </div>
       <div class="row">
-        <label><input type="checkbox" id="show-ro" checked /> Alphabet（romaji）</label>
-        <label><input type="checkbox" id="show-en" checked /> English</label>
+        <label><input type="checkbox" id="show-ro" checked> Alphabet（romaji）</label>
+        <label><input type="checkbox" id="show-en" checked> English</label>
       </div>
     </section>
 
@@ -80,11 +90,11 @@
     <p class="notice" id="limit-note" style="display:none;">Showing up to 30 items for this part. More will be added later.</p>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (partials) -->
   <div id="footer-placeholder"></div>
 
   <script>
-    /* ========== Load header/footer partials ========== */
+    /* ========= Load header/footer ========= */
     Promise.all([
       fetch('/partials/header.html').then(r=>r.text()),
       fetch('/partials/footer.html').then(r=>r.text())
@@ -93,9 +103,9 @@
       document.getElementById('footer-placeholder').innerHTML = f;
     });
 
-    /* ========== Constants & Helpers ========== */
-    const PAGE_SIZE = 5;           // 1ページ5件
-    const MAX_ITEMS_CAP = 30;      // 各品詞の上限表示（将来拡張で使用）
+    /* ========= Constants & helpers ========= */
+    const PAGE_SIZE = 5;      // per-page
+    const MAX_ITEMS_CAP = 30; // per part cap
 
     const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
@@ -131,8 +141,7 @@
       });
       return out.join('');
     }
-
-    // 外部segmentsを最優先で適用（無ければ自動アライン）
+    // apply strict ruby from external segments if present
     function jaWithStrictRuby(item, segMap){
       const segForItem = segMap && segMap[item.id] && segMap[item.id].word;
       if(Array.isArray(segForItem) && segForItem.length) return rubyFromSegments(segForItem);
@@ -146,14 +155,13 @@
       return rubyAutoAlign(ex.ja || '', ex.kana || '');
     }
 
-    /* ========== LocalStorage (objects) ========== */
+    /* ========= LocalStorage ========= */
     const LS_LEARNING = 'nihongo_learning';
     const LS_LEARNED  = 'nihongo_learned';
-    const LS_ALT      = 'ntx_learning_v2'; // 互換キー
+    const LS_ALT      = 'ntx_learning_v2'; // compat
 
     const lsRead  = key => { try{ return JSON.parse(localStorage.getItem(key)||'[]'); }catch{return [];} };
     const lsWrite = (key, arr) => localStorage.setItem(key, JSON.stringify(arr));
-
     const pick = (item)=>({
       id:item.id, ja:item.ja, kana:item.kana, ro:item.ro, en:item.en,
       segments: Array.isArray(item.segments)?item.segments:undefined,
@@ -161,7 +169,6 @@
         en:e.en, ja:e.ja, kana:e.kana, ro:e.ro, segments:e.segments
       })) : undefined
     });
-
     function upsertTo(key, item){
       const arr = lsRead(key);
       const id  = String(item.id);
@@ -172,7 +179,7 @@
     }
     function upsertLearning(item){
       upsertTo(LS_LEARNING, item);
-      upsertTo(LS_ALT, item);                 // 互換保存
+      upsertTo(LS_ALT, item); // keep legacy in sync
       if(window._ntxRenderLearning) window._ntxRenderLearning();
     }
     function moveToLearned(item){
@@ -182,18 +189,19 @@
       if(window._ntxRenderLearning) window._ntxRenderLearning();
     }
 
-    /* ========== Data load & UI ========== */
+    /* ========= Data & UI ========= */
     const levelSel = document.getElementById('level');
     const partSel  = document.getElementById('part');
     const listEl   = document.getElementById('word-list');
     const pagerEl  = document.getElementById('pager');
 
+    // restore URL params
     const q = new URLSearchParams(location.search);
     if(q.get('level')) levelSel.value = q.get('level');
     if(q.get('part'))  partSel.value  = q.get('part');
 
     let DATA = [];
-    let SEGMENTS_MAP = {};   // 外部segments
+    let SEGMENTS_MAP = {};
     let currentPage = Math.max(1, parseInt(q.get('page')||'1',10));
 
     levelSel.addEventListener('change', ()=>{ currentPage=1; syncAndLoad(); });
@@ -206,7 +214,7 @@
       const level = levelSel.value;
       const part  = partSel.value;
       const dataUrl = `/data/json/${level}/${part}.json`;
-      const segUrl  = `/data/segments/${level}/${part}.segments.json`; // ← 任意配置
+      const segUrl  = `/data/segments/${level}/${part}.segments.json`; // optional
 
       const u = new URL(location.href);
       u.searchParams.set('level', level);
@@ -217,8 +225,7 @@
       try{
         const [resData, resSeg] = await Promise.all([
           fetch(dataUrl, {cache:'no-cache'}),
-          fetch(segUrl,  {cache:'no-cache'})
-            .catch(()=>null)
+          fetch(segUrl,  {cache:'no-cache'}).catch(()=>null)
         ]);
         if(!resData.ok) throw new Error(resData.status + ' ' + resData.statusText);
         DATA = await resData.json();
@@ -258,6 +265,7 @@
       const showRo   = document.getElementById('show-ro').checked;
       const showEn   = document.getElementById('show-en').checked;
 
+      // cap to 30, then page by 5
       const capped = DATA.slice(0, MAX_ITEMS_CAP);
       const total  = capped.length;
       const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
@@ -268,7 +276,7 @@
 
       document.getElementById('limit-note').style.display = DATA.length > MAX_ITEMS_CAP ? 'block' : 'none';
 
-      const html = items.map((item, idxOnPage)=>{
+      const html = items.map((item)=>{
         const segForItem = SEGMENTS_MAP[item.id]; // {word:[], examples:{'0':[]...}}
         const line1 = `<div class="line meta">${esc(levelSel.value)} ・ ${esc(partSel.value)}</div>`;
         const line2 = showJa   ? `<div class="line"><strong>${jaWithStrictRuby(item, SEGMENTS_MAP)}</strong></div>` : '';
@@ -291,9 +299,9 @@
             <div class="word-actions">
               <button class="btn act-learn"   data-id="${esc(item.id||'')}">Learn</button>
               <button class="btn act-learned" data-id="${esc(item.id||'')}">Learned</button>
-              ${exHtml ? `<span class="toggle act-toggle">▼ Examples</span>`:''}
+              ${hasEx ? `<span class="toggle act-toggle">▼ Examples</span>`:''}
             </div>
-            ${exHtml ? `<div class="examples" hidden>${exHtml}</div>`:''}
+            ${hasEx ? `<div class="examples" hidden>${exHtml}</div>`:''}
           </article>`;
       }).join('');
 
@@ -301,7 +309,7 @@
       renderPager(total, currentPage, PAGE_SIZE);
     }
 
-    // ====== クリックはデリゲーションで確実に捕捉 ======
+    // click delegation (learn/learned/toggle)
     document.getElementById('word-list').addEventListener('click', (ev)=>{
       const btnLearn   = ev.target.closest('.act-learn');
       const btnLearned = ev.target.closest('.act-learned');
@@ -329,7 +337,7 @@
       }
     });
 
-    // ページャーのクリック
+    // pager clicks
     document.getElementById('pager').addEventListener('click', (ev)=>{
       const b = ev.target.closest('button[data-page]');
       if(!b || b.disabled) return;
@@ -345,7 +353,7 @@
       window.scrollTo({top:0, behavior:'smooth'});
     });
 
-    // 初回ロード
+    // initial load
     syncAndLoad();
   </script>
 </body>
