@@ -1,11 +1,11 @@
 <footer class="site-footer" style="background:#fff; border-top:1px solid #eee;">
   <div class="container" style="max-width:1100px; margin:0 auto; padding:12px 16px; display:flex; flex-direction:column; gap:8px;">
-    <!-- 1行目：コピーライト（ご要望通り "C 2025 ..." 表記） -->
+    <!-- 1行目：コピーライト -->
     <div style="color:#666; font-size:14px;">
-      C 2025 nihongotext.com
+      © <span id="ft-year"></span> nihongotext.com
     </div>
 
-    <!-- 2行目：ナビ（Home Blog Inquiry Legal Privacy） -->
+    <!-- 2行目：ナビ -->
     <nav aria-label="Footer navigation" style="display:flex; flex-wrap:wrap; gap:14px;">
       <a href="/" style="color:#333; text-decoration:none;">Home</a>
       <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
@@ -41,7 +41,11 @@
     </nav>
   </div>
 
+  <!-- コピーライト年を自動更新 -->
   <script>
-    // 必要に応じてフッター専用のJSを追加可能
+    (function(){
+      var el = document.getElementById('ft-year');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
   </script>
 </footer>
