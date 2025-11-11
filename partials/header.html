@@ -23,7 +23,7 @@
         type="button"
         title="Learning list"
         style="margin-left:8px; padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;"
-        onclick="(window.openLearning?openLearning(): (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
+        onclick="(window._ntxOpenLearning?window._ntxOpenLearning(): (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} })())"
       >
         <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
         <span>Learning</span>
@@ -79,7 +79,7 @@
         </button>
         <button id="btn-close-learning" title="Close"
                 style="padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-                onclick="(function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){d.style.right='-560px'; setTimeout(function(){o.style.display='none';},250);} })()">
+                onclick="(window._ntxCloseLearning?window._ntxCloseLearning(): (function(){var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){d.style.right='-560px'; setTimeout(function(){o.style.display='none';},250);} })())">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -102,7 +102,7 @@
     <div style="padding:12px 16px; border-top:1px solid #eee; display:flex; justify-content:space-between; gap:8px;">
       <button id="btn-clear-learning" title="Clear Learning list"
               style="padding:8px 12px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;"
-              onclick="(function(){ try{ localStorage.setItem('nihongo_learning','[]'); localStorage.setItem('ntx_learning_v2','[]'); }catch(_){}; var b=document.getElementById('learning-count-badge'); if(b) b.textContent='0'; var l=document.getElementById('learning-list'); if(l) l.innerHTML='<p style=&quot;color:#666; margin:8px 0;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>'; var c=document.getElementById('learning-count'); if(c) c.textContent='(0)'; })()">
+              onclick="(function(){ try{ localStorage.setItem('nihongo_learning','[]'); localStorage.setItem('ntx_learning_v2','[]'); }catch(_){}; if(window._ntxRenderLearning){window._ntxRenderLearning();} else { var b=document.getElementById('learning-count-badge'); if(b) b.textContent='0'; var l=document.getElementById('learning-list'); if(l) l.innerHTML='<p style=&quot;color:#666; margin:8px 0;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>'; var c=document.getElementById('learning-count'); if(c) c.textContent='(0)'; } })()">
         <i class="fa-solid fa-trash-can"></i> Clear
       </button>
       <div style="display:flex; gap:8px;">
@@ -148,4 +148,73 @@
       </div>
     </div>
   </div>
+
+  <!-- ====== 初期化（partialでも確実に実行：1px画像 onload） ====== -->
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" style="display:none"
+       onload="(function(){
+        var KP='nihongo_learning', KA='ntx_learning_v2';
+        function R(k){ try{return JSON.parse(localStorage.getItem(k)||'[]')||[]}catch(_){return[]} }
+        function W(k,a){ localStorage.setItem(k, JSON.stringify(a||[])); }
+        function M(a,b){ var m=new Map(); [].concat(a||[],b||[]).forEach(function(x){ if(!x||!x.id)return; var id=String(x.id); m.set(id, Object.assign({}, m.get(id)||{}, x)); }); return Array.from(m.values()); }
+        function fmt(d){ var dt=new Date(d||Date.now()); var y=dt.getFullYear(), m=('0'+(dt.getMonth()+1)).slice(-2), dd=('0'+dt.getDate()).slice(-2); return y+'-'+m+'-'+dd; }
+
+        function setBadge(){
+          var n = M(R(KP),R(KA)).length;
+          var b = document.getElementById('learning-count-badge'); if(b) b.textContent = n;
+          var c = document.getElementById('learning-count'); if(c) c.textContent = '('+n+')';
+        }
+
+        function render(){
+          var wrap = document.getElementById('learning-list');
+          if(!wrap){ setBadge(); return; }
+          var arr = M(R(KP),R(KA));
+          if(!arr.length){
+            wrap.innerHTML = '<p style=&quot;color:#666; margin:8px 0;&quot;>No items in Learning yet. Use the <em>Learn</em> button on words to add them here.</p>';
+            setBadge(); return;
+          }
+          function exHTML(ex){
+            if(!Array.isArray(ex)||!ex.length) return '';
+            return '<details style=&quot;margin-top:6px;&quot;><summary style=&quot;cursor:pointer;&quot;>Examples ('+ex.length+')</summary>'+
+              ex.map(function(e){
+                var en=e.en||'', ja=e.ja||'', ro=e.ro||e.romaji||'';
+                var t=[en,ja,ro].filter(Boolean).join(' / ');
+                return '<div style=&quot;padding:6px 0; border-bottom:1px dashed #eee; font-size:14px;&quot;>'+t+'</div>';
+              }).join('') + '</details>';
+          }
+          wrap.innerHTML = arr.map(function(it){
+            var meta=[]; if(it.level)meta.push(it.level); if(it.pos)meta.push(it.pos); if(it.addedAt)meta.push('Added: '+fmt(it.addedAt));
+            return ''+
+              '<article data-id=&quot;'+String(it.id)+'&quot; style=&quot;border:1px solid #eee; border-radius:12px; padding:10px 12px;&quot;>'+
+                '<div style=&quot;display:flex; justify-content:space-between; gap:8px; align-items:flex-start;&quot;>'+
+                  '<div style=&quot;min-width:0;&quot;>'+
+                    '<div style=&quot;font-weight:600;&quot;>'+(it.en||it.ja||('#'+it.id))+'</div>'+
+                    (meta.length?'<div style=&quot;color:#666; font-size:12px; margin-top:2px;&quot;>'+meta.join(' · ')+'</div>':'')+
+                  '</div>'+
+                  '<div style=&quot;display:flex; gap:6px; flex-wrap:wrap;&quot;>'+
+                    '<button style=&quot;padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;&quot; onclick=&quot;(function(id){var a='+KA+', p='+KP+'; function R(k){try{return JSON.parse(localStorage.getItem(k)||'+'\'[]\''+')||[]}catch(_){return[]} } function W(k,v){localStorage.setItem(k,JSON.stringify(v||[]));} function rm(list){var i=list.findIndex(function(x){return String(x.id)===String(id)}); if(i>=0) list.splice(i,1);} var L=R(p), A=R(a); rm(L); rm(A); W(p,L); W(a,A); if(window._ntxRenderLearning){window._ntxRenderLearning();} })(&quot;'+String(it.id)+'&quot;)&quot;>' +
+                      '<i class=&quot;fa-solid fa-rotate-left&quot; style=&quot;color:#e6462d;&quot;></i> Back'+
+                    '</button>'+
+                    '<button style=&quot;padding:6px 10px; border:1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer;&quot; onclick=&quot;(function(id){var KP='+"'"+'nihongo_learning'+"'"+', KA='+"'"+'ntx_learning_v2'+"'"+'; function R(k){try{return JSON.parse(localStorage.getItem(k)||'+'\'[]\''+')||[]}catch(_){return[]} } function W(k,v){localStorage.setItem(k,JSON.stringify(v||[]));} function M(a,b){var m=new Map();[].concat(a||[],b||[]).forEach(function(x){if(!x||!x.id)return;var s=String(x.id);m.set(s,Object.assign({},m.get(s)||{},x));});return Array.from(m.values());} var L=R(KP), A=R(KA), cur=M(L,A); var i=cur.findIndex(function(x){return String(x.id)===String(id)}); if(i>=0){ var item=cur[i]; item.learnedAt=new Date().toISOString(); var learned=R('+"'"+'nihongo_learned'+"'"+'); learned.push(item); cur.splice(i,1); W(KP,cur); W(KA,cur); W('+"'"+'nihongo_learned'+"'"+',learned);} if(window._ntxRenderLearning){window._ntxRenderLearning();} })(&quot;'+String(it.id)+'&quot;)&quot;>' +
+                      '<i class=&quot;fa-solid fa-check&quot; style=&quot;color:#e6462d;&quot;></i> Learned'+
+                    '</button>'+
+                  '</div>'+
+                '</div>'+
+                ((it.en||it.ja||it.ro)?'<div style=&quot;margin-top:6px; font-size:14px; color:#333;&quot;>'+[it.en,it.ja,it.ro].filter(Boolean).join(' / ')+'</div>':'')+
+                exHTML(it.examples)+
+              '</article>';
+          }).join('');
+          setBadge();
+        }
+
+        // 公開API
+        window._ntxRenderLearning = render;
+        window._ntxOpenLearning = function(){ var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){ render(); o.style.display='block'; setTimeout(function(){d.style.right='0';},10);} };
+        window._ntxCloseLearning = function(){ var o=document.getElementById('learning-overlay'), d=document.getElementById('learning-drawer'); if(o&&d){ d.style.right='-560px'; setTimeout(function(){o.style.display='none';},250);} };
+        window.openLearning = window._ntxOpenLearning; // 既存呼び出し互換
+        window.openAdPopup = function(){ var m=document.getElementById('adMask'); if(m) m.style.display='block'; };
+
+        // 初回バッジ更新 & storage 連動
+        setBadge();
+        try{ window.addEventListener('storage', function(ev){ if(ev && (ev.key===KP || ev.key===KA)) setBadge(); }); }catch(_){}
+       })()">
 </header>
