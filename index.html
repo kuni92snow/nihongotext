@@ -79,7 +79,7 @@
   <div id="footer-placeholder"></div>
 
   <script>
-    // ---------- Partials ----------
+    /* ========== Load header/footer partials ========== */
     Promise.all([
       fetch('/partials/header.html').then(r=>r.text()),
       fetch('/partials/footer.html').then(r=>r.text())
@@ -88,109 +88,87 @@
       document.getElementById('footer-placeholder').innerHTML = f;
     });
 
-    // ---------- Helpers ----------
-    const $ = s => document.querySelector(s);
+    /* ========== Helpers ========== */
     const MAX_ITEMS = 30;
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
-    function esc(s){ return String(s||'').replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])); }
+    const RE_KANJI=/[\u4E00-\u9FFF\u3400-\u4DBF]/, RE_HIRA=/[\u3040-\u309F]/, RE_KATA=/[\u30A0-\u30FF]/;
+    const isKanji = ch=>RE_KANJI.test(ch), isKana = ch=>RE_HIRA.test(ch)||RE_KATA.test(ch);
 
-    // 文字クラス
-    const RE_KANJI = /[\u4E00-\u9FFF\u3400-\u4DBF]/;               // CJK
-    const RE_HIRA  = /[\u3040-\u309F]/;
-    const RE_KATA  = /[\u30A0-\u30FF]/;
-    const isKanji = ch => RE_KANJI.test(ch);
-    const isKana  = ch => RE_HIRA.test(ch) || RE_KATA.test(ch);
-
-    // ---- 厳密ルビ：segments があればそれを優先 ----
     function rubyFromSegments(segs){
       return segs.map(s=>{
-        const rb = esc(s.rb ?? '');
-        const rt = esc(s.rt ?? '');
+        const rb = esc(s.rb ?? ''), rt = esc(s.rt ?? '');
         if(!rb) return '';
-        if(!rt) return rb;               // 読み無し（助詞など）
-        return `<ruby>${rb}<rt>${rt}</rt></ruby>`;
+        return rt ? `<ruby>${rb}<rt>${rt}</rt></ruby>` : rb;
       }).join('');
     }
-
-    // ---- 自動アライン（語ブロック単位の高精度推定）----
-    // 方針：
-    // 1) 日本語表記を「[KANJI連続]」「かな/記号」ブロックに分割
-    // 2) 読み(kana)から「非かな」を除去しポインタ進行
-    // 3) KANJIブロックには、直後のかな・既知の送り仮名を考慮してできる限り対応部分を割り当て
-    //    例: 開ける(あける) → 「開」=あ, 「ける」=素文字
     function rubyAutoAlign(ja, kana){
       if(!ja) return '';
       if(!kana) return esc(ja);
-
-      const kanaOnly = Array.from(kana).filter(ch=>isKana(ch)).join('');
-
-      // ja をブロック分割
-      const blocks = [];
-      let cur = '', curType = null;
+      const kanaOnly = Array.from(kana).filter(isKana).join('');
+      const blocks=[]; let cur='', tp=null;
       for(const ch of Array.from(ja)){
-        const t = isKanji(ch) ? 'K' : (isKana(ch)? 'A' : 'O'); // K:漢字, A:かな, O:その他
-        if(cur && t===curType){ cur += ch; }
-        else { if(cur) blocks.push({t:curType, s:cur}); cur=ch; curType=t; }
+        const t = isKanji(ch)?'K':(isKana(ch)?'A':'O');
+        if(tp===t) cur+=ch; else { if(cur) blocks.push({t:tp,s:cur}); cur=ch; tp=t; }
       }
-      if(cur) blocks.push({t:curType, s:cur});
-
-      // kana ポインタ
-      let kp = 0;
-      const K = Array.from(kanaOnly);
-
-      const out = [];
-
-      for(const b of blocks){
-        if(b.t === 'K'){ // 連続漢字ブロックに読みを割り当て
-          // 次のブロックが かな(A) であれば、それは送り仮名の可能性が高い
-          // → 今の漢字ブロック用の読みは、次のAブロック長を除いた分を優先的に取る
-          // ただし読みが尽きることを避け、最低1文字は割り当てる
-          // 緩和：読みが余れば全部付けてもOK（語単位ルビ）
-          let read = '';
-          // 送り仮名見込み
-          // 直後の A ブロックの長さ（例：「開」+「ける」）
-          // ただし漢字ブロックが2文字以上（例：学校）で送り仮名なしなら全読みをまとめて充てる
-          // ここでは簡易に「次ブロックがAなら、その長さ分は後ろに残す」方法を取る
-          const nextA = (blocks[blocks.indexOf(b)+1] && blocks[blocks.indexOf(b)+1].t==='A') ? Array.from(blocks[blocks.indexOf(b)+1].s).length : 0;
-          const remain = K.length - kp - nextA;
-          const take = Math.max(1, remain); // 最低1文字
-
-          read = K.slice(kp, kp+take).join('');
-          kp += take;
-
+      if(cur) blocks.push({t:tp,s:cur});
+      let kp=0; const K=[...kanaOnly]; const out=[];
+      blocks.forEach((b,i)=>{
+        if(b.t==='K'){
+          const nextA = (blocks[i+1] && blocks[i+1].t==='A') ? [...blocks[i+1].s].length : 0;
+          const take = Math.max(1, K.length - kp - nextA);
+          const read = K.slice(kp, kp+take).join(''); kp+=take;
           out.push(`<ruby>${esc(b.s)}<rt>${esc(read)}</rt></ruby>`);
-        } else if(b.t === 'A'){ // 素のかなはそのまま
-          out.push(esc(b.s));
-        } else { // 記号など
-          out.push(esc(b.s));
-        }
-      }
-      // 残った読みは無視（句読点等に由来することがある）
+        } else out.push(esc(b.s));
+      });
       return out.join('');
     }
-
     function jaWithStrictRuby(item){
-      // 1) segments があれば完全厳密
-      if(Array.isArray(item.segments) && item.segments.length){
-        return rubyFromSegments(item.segments);
-      }
-      // 2) 無ければ自動アライン（語ブロックごと）
+      if(Array.isArray(item.segments) && item.segments.length) return rubyFromSegments(item.segments);
       return rubyAutoAlign(item.ja, item.kana);
     }
 
-    // LocalStorage：Learn / Learned（ID配列）
+    /* ========== LocalStorage (objects) ========== */
     const LS_LEARNING = 'nihongo_learning';
     const LS_LEARNED  = 'nihongo_learned';
-    function pushUnique(key, id){
-      const arr = JSON.parse(localStorage.getItem(key)||'[]');
-      if(!arr.includes(id)){ arr.push(id); localStorage.setItem(key, JSON.stringify(arr)); }
+    const LS_ALT      = 'ntx_learning_v2'; // 互換キー
+
+    const lsRead  = key => { try{ return JSON.parse(localStorage.getItem(key)||'[]'); }catch{return [];} };
+    const lsWrite = (key, arr) => localStorage.setItem(key, JSON.stringify(arr));
+
+    const pick = (item)=>({
+      id:item.id, ja:item.ja, kana:item.kana, ro:item.ro, en:item.en,
+      segments: Array.isArray(item.segments)?item.segments:undefined,
+      examples: Array.isArray(item.examples)? item.examples.map(e=>({
+        en:e.en, ja:e.ja, kana:e.kana, ro:e.ro, segments:e.segments
+      })) : undefined
+    });
+
+    function upsertTo(key, item){
+      const arr = lsRead(key);
+      const id  = String(item.id);
+      const idx = arr.findIndex(x=>String(x?.id)===id);
+      const obj = pick(item);
+      if(idx>=0) arr[idx]=obj; else arr.push(obj);
+      lsWrite(key, arr);
+    }
+    function upsertLearning(item){
+      upsertTo(LS_LEARNING, item);
+      upsertTo(LS_ALT, item);                 // 互換保存
+      if(window._ntxRenderLearning) window._ntxRenderLearning();
+    }
+    function moveToLearned(item){
+      // Learning から削除
+      const r = lsRead(LS_LEARNING).filter(x=>String(x?.id)!==String(item.id));
+      lsWrite(LS_LEARNING, r);
+      // Learned へ追加
+      upsertTo(LS_LEARNED, item);
+      if(window._ntxRenderLearning) window._ntxRenderLearning();
     }
 
-    // ---------- Data load ----------
+    /* ========== Data load & UI ========== */
     const levelSel = document.getElementById('level');
     const partSel  = document.getElementById('part');
-
-    // URLパラメータから初期値
     const q = new URLSearchParams(location.search);
     if(q.get('level')) levelSel.value = q.get('level');
     if(q.get('part'))  partSel.value  = q.get('part');
@@ -206,7 +184,8 @@
     async function syncAndLoad(){
       const level = levelSel.value;
       const part  = partSel.value;
-      const url = `/data/json/${level}/${part}.json`;
+      const url   = `/data/json/${level}/${part}.json`;
+
       const u = new URL(location.href);
       u.searchParams.set('level', level);
       u.searchParams.set('part',  part);
@@ -220,7 +199,7 @@
       }catch(e){
         console.error(e);
         document.getElementById('word-list').innerHTML =
-          `<p style="color:#c00;">Failed to load dataset. Check <code>${url}</code>.</p>`;
+          `<p class="notice" style="color:#c00;">Failed to load dataset. Check <code>${url}</code>.</p>`;
       }
     }
 
@@ -242,22 +221,20 @@
         const line4 = showRo   ? `<div class="line">${esc(item.ro||'')}</div>` : '';
         const line5 = showEn   ? `<div class="line">${esc(item.en||'')}</div>` : '';
 
-        const exHtml = Array.isArray(item.examples) ? item.examples.map(ex=>{
-          return `
-            <div class="ex">
-              ${showEn   && ex.en   ? `<div>• ${esc(ex.en)}</div>`:''}
-              ${showJa   && (ex.ja||ex.kana) ? `<div>${jaWithStrictRuby({ja:ex.ja||'', kana:ex.kana||'', segments:ex.segments||[]})}</div>`:''}
-              ${showKana && ex.kana ? `<div>${esc(ex.kana)}</div>`:''}
-              ${showRo   && ex.ro   ? `<div>${esc(ex.ro)}</div>`:''}
-            </div>`;
-        }).join('') : '';
+        const exHtml = Array.isArray(item.examples) ? item.examples.map(ex=>`
+          <div class="ex">
+            ${showEn   && ex.en   ? `<div>• ${esc(ex.en)}</div>`:''}
+            ${showJa   && (ex.ja||ex.kana) ? `<div>${jaWithStrictRuby({ja:ex.ja||'', kana:ex.kana||'', segments:ex.segments||[]})}</div>`:''}
+            ${showKana && ex.kana ? `<div>${esc(ex.kana)}</div>`:''}
+            ${showRo   && ex.ro   ? `<div>${esc(ex.ro)}</div>`:''}
+          </div>`).join('') : '';
 
         return `
           <article class="word-card" data-id="${esc(item.id||'')}">
             ${line1}${line2}${line3}${line4}${line5}
             <div class="word-actions">
-              <button class="btn" onclick="(function(id){ ${'/* add to Learning */'} pushUnique('${LS_LEARNING}', id); alert('Added to Learning'); })('${esc(item.id||'')}')">Learn</button>
-              <button class="btn" onclick="(function(id){ ${'/* move to Learned */'}  pushUnique('${LS_LEARNED}',  id); alert('Moved to Learned'); })('${esc(item.id||'')}')">Learned</button>
+              <button class="btn btn-learn"   data-id="${esc(item.id||'')}">Learn</button>
+              <button class="btn btn-learned" data-id="${esc(item.id||'')}">Learned</button>
               ${exHtml ? `<span class="toggle" onclick="toggleExamples(this)">▼ Examples</span>`:''}
             </div>
             ${exHtml ? `<div class="examples">${exHtml}</div>`:''}
@@ -265,8 +242,25 @@
       }).join('');
 
       document.getElementById('word-list').innerHTML = html || '<p class="notice">No items.</p>';
+
+      // クリック（安全に後付け）
+      document.querySelectorAll('.btn-learn').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const id = String(btn.getAttribute('data-id'));
+          const item = DATA.find(x=>String(x.id)===id);
+          if(item) upsertLearning(item);
+        });
+      });
+      document.querySelectorAll('.btn-learned').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const id = String(btn.getAttribute('data-id'));
+          const item = DATA.find(x=>String(x.id)===id);
+          if(item) moveToLearned(item);
+        });
+      });
     }
 
+    // 例文開閉
     window.toggleExamples = function(el){
       const box = el.parentElement.nextElementSibling;
       if(!box) return;
