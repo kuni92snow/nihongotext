@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7;background:#fff}
     main .wrap{max-width:1100px;margin:auto;padding:16px}
     .muted{color:var(--muted)}
-    .card{border:1px solid var(--border);border-radius:14px;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+    .card{border:1px solid var(--border);border-radius:14px;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.03);background:#fff}
     .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
     h1{margin:0 0 8px}
     h2{margin:.2rem 0 .5rem}
@@ -62,7 +62,7 @@
         </a>
       </div>
 
-      <section id="latest" class="card"></section>
+      <section id="latest" class="card" aria-live="polite"></section>
       <div id="searchResults" class="results" hidden></div>
 
       <div class="more">
@@ -77,21 +77,27 @@
   <div id="footer"></div>
 
   <script>
-    // -------- 共通: ヘッダー/フッター読込（inquiryと同系） --------
+    // -------- 共通: ヘッダー/フッター読込（no-store で更新を反映） --------
     async function loadPartials(){
-      const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
-      document.getElementById('header').innerHTML=await h.text();
-      document.getElementById('footer').innerHTML=await f.text();
+      try{
+        const [h,f]=await Promise.all([
+          fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.text()),
+          fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.text())
+        ]);
+        document.getElementById('header').innerHTML=h;
+        document.getElementById('footer').innerHTML=f;
 
-      const btnHeader = document.getElementById('langBtn');
-      if(btnHeader){
-        const sync = ()=> btnHeader.textContent = (currentLang()==='ja' ? 'English' : '日本語');
-        btnHeader.addEventListener('click', ()=>{
-          const next = currentLang()==='ja' ? 'en' : 'ja';
-          applyLang(next);
-        });
-        sync();
-      }
+        // 言語ボタンがヘッダー側にある場合と同期
+        const btnHeader = document.getElementById('langBtn');
+        if(btnHeader){
+          const sync = ()=> btnHeader.textContent = (currentLang()==='ja' ? 'English' : '日本語');
+          btnHeader.addEventListener('click', ()=>{
+            const next = currentLang()==='ja' ? 'en' : 'ja';
+            applyLang(next);
+          });
+          sync();
+        }
+      }catch(e){ console.warn('partials load failed', e); }
     }
 
     // -------- 言語状態 --------
@@ -128,24 +134,26 @@
     }
     function getTitle(p, lang){
       return pick(p, [
-        `${lang}.title`,           // 未来のネスト型 {ja:{title},en:{title}}
-        `title_${lang}`,           // 現行のフラット型
-        `title${lang==='ja'?'_ja':'_en'}`, // 念のため
-        `title`                    // 予備
+        `${lang}.title`,
+        `title_${lang}`,
+        `title${lang==='ja'?'_ja':'_en'}`,
+        `title`
       ]);
     }
     function getSummary(p, lang){
       return pick(p, [
-        `${lang}.summary`, `summary_${lang}`, `summary${lang==='ja'?'_ja':'_en'}`
+        `${lang}.summary`,
+        `summary_${lang}`,
+        `summary${lang==='ja'?'_ja':'_en'}`
       ]);
     }
     function getHtml(p, lang){
-      // HTML本文がない場合は summary を段落化して代用
       const html = pick(p, [`${lang}.html`]);
       if(html) return html;
       const s = getSummary(p, lang);
       return s ? `<p>${s}</p>` : '';
     }
+    function stripHtml(s){return String(s||'').replace(/<[^>]+>/g,' ');}
 
     // -------- 最新記事描画 --------
     function renderLatest(posts){
@@ -168,7 +176,6 @@
     }
 
     // -------- 検索 --------
-    function stripHtml(s){return String(s||'').replace(/<[^>]+>/g,' ');}
     function doSearch(){
       const q=document.getElementById('q').value.trim().toLowerCase();
       const box=document.getElementById('searchResults');
