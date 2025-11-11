@@ -1,45 +1,47 @@
-<footer class="site-footer" style="padding:16px 0; background:#fafafa; border-top:1px solid #eee;">
-  <div class="container" style="max-width:1100px; margin:0 auto; padding:0 16px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
-    <!-- Left: copyright -->
-    <div class="copy" style="color:#666; font-size:14px;">
-      © <span id="ft-year"></span> nihongotext.com
+<footer class="site-footer" style="background:#fff; border-top:1px solid #eee;">
+  <div class="container" style="max-width:1100px; margin:0 auto; padding:12px 16px; display:flex; flex-direction:column; gap:8px;">
+    <!-- 1行目：コピーライト（ご要望通り "C 2025 ..." 表記） -->
+    <div style="color:#666; font-size:14px;">
+      C 2025 nihongotext.com
     </div>
 
-    <!-- Right: icon links -->
-    <nav class="footer-icons" aria-label="Footer links" style="display:flex; align-items:center; gap:14px; font-size:20px;">
-      <!-- Socials (必要に応じて削除/並び替え) -->
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#333;">
+    <!-- 2行目：ナビ（Home Blog Inquiry Legal Privacy） -->
+    <nav aria-label="Footer navigation" style="display:flex; flex-wrap:wrap; gap:14px;">
+      <a href="/" style="color:#333; text-decoration:none;">Home</a>
+      <a href="/blog/index.html" style="color:#333; text-decoration:none;">Blog</a>
+      <a href="/inquiry/index.html" style="color:#333; text-decoration:none;">Inquiry</a>
+      <a href="/legal.html" style="color:#333; text-decoration:none;">Legal</a>
+      <a href="/privacy.html" style="color:#333; text-decoration:none;">Privacy</a>
+    </nav>
+
+    <!-- 3行目：アイコン（赤） -->
+    <nav aria-label="Footer icons" style="display:flex; align-items:center; gap:14px; font-size:20px;">
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)" style="color:#e6462d;">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
-      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="color:#333;">
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit" style="color:#e6462d;">
         <i class="fa-brands fa-reddit-alien"></i>
       </a>
-      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="color:#333;">
+      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" aria-label="Medium" style="color:#e6462d;">
         <i class="fa-brands fa-medium"></i>
       </a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" aria-label="Ko-fi" style="color:#333;">
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" aria-label="Ko-fi" style="color:#e6462d;">
         <i class="fa-solid fa-mug-hot"></i>
       </a>
-      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="color:#333;">
+      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" aria-label="Substack" style="color:#e6462d;">
         <i class="fa-solid fa-newspaper"></i>
       </a>
-
-      <!-- Policies (ここがご要望のアイコン) -->
-      <a href="/privacy.html" title="Privacy Policy" aria-label="Privacy Policy" style="color:#333;">
+      <!-- Policy icons -->
+      <a href="/privacy.html" title="Privacy Policy" aria-label="Privacy Policy" style="color:#e6462d;">
         <i class="fa-solid fa-user-shield"></i>
       </a>
-      <a href="/legal.html" title="Legal Notice (Specified Commercial Transactions)" aria-label="Legal Notice" style="color:#333;">
+      <a href="/legal.html" title="Legal Notice" aria-label="Legal Notice" style="color:#e6462d;">
         <i class="fa-solid fa-scale-balanced"></i>
       </a>
     </nav>
   </div>
 
   <script>
-    // 年号を自動更新
-    (function(){ 
-      var y = new Date().getFullYear(); 
-      var el = document.getElementById('ft-year'); 
-      if (el) el.textContent = y; 
-    })();
+    // 必要に応じてフッター専用のJSを追加可能
   </script>
 </footer>
