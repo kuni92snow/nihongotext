@@ -18,5 +18,15 @@
     "summary_ja": "検索キーワードが単語だけでなく、例文内でも自動的にハイライトされるようになりました。また、検索欄が空になるとハイライトが自動解除されるように調整済みです。",
     "summary_en": "The search highlight feature has been improved. The typed keyword is now highlighted not only in word entries but also inside example sentences. Highlights are automatically removed when the search box is cleared.",
     "tags": ["update", "feature", "search"]
+  },
+  {
+    "slug": "learning-learned-ui-update",
+    "date": "2025-11-12",
+    "title": "Learning/Learned UI and Ad Display Updated",
+    "title_ja": "Learning／Learned 表示と広告機能を改善しました",
+    "title_en": "Learning/Learned UI and Ad Display Updated",
+    "summary_ja": "「Learning」と「Learned」のUIを改良しました。各ボタン（Learn／Move to Learned／Back to Learning）を右揃えに統一し、ページャー操作時に英語広告がポップアップ表示されるようになりました。また、Learned一覧では5件ずつのページ表示と印刷機能にも対応しています。",
+    "summary_en": "The Learning and Learned interfaces have been refined. Action buttons (Learn, Move to Learned, Back to Learning) are now right-aligned, and ads now appear in a popup when navigating through pages. The Learned list now supports 5-item pagination and a printable view.",
+    "tags": ["update", "ui", "feature", "ads"]
   }
 ]
