@@ -65,13 +65,6 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 /* ▼/▲ トグルボタン */
 .toggle-btn{border:none;background:none;color:var(--shu);cursor:pointer;width:22px;height:22px;font-size:16px;line-height:1;display:inline-flex;align-items:center;justify-content:center}
 
-/* 操作用ボタン（右寄せ） */
-.head .actions{margin-left:auto;display:flex;gap:8px;align-items:center}
-.btn-ghost{background:#fff;border:1px solid var(--line);color:#333}
-.btn-green{background:#10b981;border-color:#10b981;color:#fff}
-.btn-amber{background:#f59e0b;border-color:#f59e0b;color:#fff}
-.btn-brand{background:var(--shu);border-color:var(--shu);color:#fff}
-
 /* Pager */
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
 .pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
@@ -136,7 +129,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- Learned モーダル -->
+<!-- Learned モーダル（仕様更新版） -->
 <div id="learnedModal" class="mask">
   <div class="win">
     <button class="x" id="closeLearned" aria-label="Close">×</button>
@@ -150,12 +143,12 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <div id="learnedBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
     <div id="learnedPager" class="pager"></div>
     <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
-      <button id="printLearned" class="btn btn-brand">Print</button>
+      <button id="printLearned" class="btn" style="background:var(--shu);color:#fff;border-color:var(--shu)">Print</button>
     </div>
   </div>
 </div>
 
-<!-- Learning モーダル（英語広告対応） -->
+<!-- Learning モーダル（既存＋英語広告対応） -->
 <div id="learningModal" class="mask">
   <div class="win">
     <button class="x" id="closeLearning" aria-label="Close">×</button>
@@ -168,18 +161,18 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     </div>
     <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin:10px 0">
       <button id="toLearnedViewTop" class="btn">Open Learned</button>
-      <button id="printLearningTop" class="btn btn-brand">Print</button>
+      <button id="printLearningTop" class="btn" style="background:var(--shu);color:#fff;border-color:var(--shu)">Print</button>
     </div>
     <div id="learningBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
     <div id="learningPager" class="pager"></div>
     <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
       <button id="toLearnedView" class="btn">Open Learned</button>
-      <button id="printLearning" class="btn btn-brand">Print</button>
+      <button id="printLearning" class="btn" style="background:var(--shu);color:#fff;border-color:var(--shu)">Print</button>
     </div>
   </div>
 </div>
 
-<!-- 広告ポップアップ（英語表記） -->
+<!-- 広告ポップアップ（英語表記に統一） -->
 <div id="adModal" class="mask" aria-hidden="true">
   <div class="win" style="max-width:560px">
     <button class="x" id="adClose" aria-label="Close">×</button>
@@ -187,7 +180,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
     <p style="margin:0 0 10px">Take 1-on-1 online Japanese lessons. Check it out!</p>
     <p style="margin:0">
       <a id="adLink" href="https://preply.com/ja/?pref=MTE2MDM4MjQ=&id=1762934766.097797&ep=w1" target="_blank" rel="noopener"
-         class="btn btn-brand" style="display:inline-block">Explore Preply</a>
+         class="btn" style="display:inline-block;background:var(--shu);border-color:var(--shu);color:#fff">Explore Preply</a>
     </p>
   </div>
 </div>
@@ -243,7 +236,7 @@ function updateBadges(){
 }
 
 /* ====== パス・読込 ====== */
-function buildPath(lvl=level, pk=posKey){ return `/data/json/${lvl}/${POS.find(p=>p.k===pk).file}`; } // ルート相対
+function buildPath(lvl=level, pk=posKey){ return `data/json/${lvl}/${POS.find(p=>p.k===pk).file}`; }
 function coerceArray(json){
   if (Array.isArray(json)) return json;
   const keys=['items','data','entries','list','rows','result','results'];
@@ -285,7 +278,7 @@ async function injectPartials(){
   const hdr=document.getElementById('site-header');
   const ftr=document.getElementById('site-footer');
   try{
-    const h=await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    const h=await fetch('partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     hdr.innerHTML=h;
   }catch(_){
     hdr.innerHTML =
@@ -296,7 +289,7 @@ async function injectPartials(){
        </div>`;
   }
   try{
-    const f=await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    const f=await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     ftr.innerHTML=f;
   }catch(_){
     ftr.innerHTML = `<div style="padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
@@ -305,9 +298,9 @@ async function injectPartials(){
   attachLangToggle();
   applyLangToUI();
 
-  // ヘッダー側の Learning / Learned を開く（id または data-open 属性をサポート）
-  const openLearnBtn  = hdr.querySelector('#learnBtn')    || hdr.querySelector('[data-open="learning"]');
-  const openLearnedBtn= hdr.querySelector('#learnedBtn')  || hdr.querySelector('[data-open="learned"]');
+  // ヘッダー側ボタンのフォールバック
+  const openLearnBtn  = hdr.querySelector('#learnBtn')   || hdr.querySelector('[data-open="learning"]');
+  const openLearnedBtn= hdr.querySelector('#learnedBtn') || hdr.querySelector('[data-open="learned"]');
   if (openLearnBtn)   openLearnBtn.addEventListener('click', ()=> openLearning());
   if (openLearnedBtn) openLearnedBtn.addEventListener('click', ()=> openLearned());
 }
@@ -352,7 +345,7 @@ async function onSearchInput(){
 
   const tasks=[];
   for(const lv of LEVELS){ for(const p of POS){
-    tasks.push(fetchJsonSafe(`/data/json/${lv}/${p.file}`).then(arr=>arr.map(x=>({...x,_level:lv,_pos:p.enLabel,_posJa:p.ja}))));
+    tasks.push(fetchJsonSafe(`data/json/${lv}/${p.file}`).then(arr=>arr.map(x=>({...x,_level:lv,_pos:p.enLabel,_posJa:p.ja}))));
   }}
   const chunks=await Promise.all(tasks);
   if(myId!==searchAbort) return;
@@ -383,50 +376,23 @@ document.getElementById('levelSel').addEventListener('change', e=>{
   level=e.target.value; page=1; if(!kw?.value.trim()) loadSingleAndRender(); else onSearchInput();
 });
 
-function showAdThen(next){
-  const mask = document.getElementById('adModal');
-  const close = document.getElementById('adClose');
-  const link  = document.getElementById('adLink');
-  const finish = ()=>{ mask.classList.remove('show'); next(); };
-  mask.classList.add('show');
-  close.onclick = finish;
-  mask.addEventListener('click', e=>{ if(e.target.id==='adModal') finish(); }, {once:true});
-  link.addEventListener('click', ()=>finish(), {once:true});
-}
-
-function pageBtn(t,fn,active=false,disabled=false){
-  const b=document.createElement('button');
-  b.className='pagebtn';
-  if(active) b.classList.add('active');
-  b.textContent=t;
-  b.disabled=disabled;
-  b.onclick=()=> showAdThen(fn);
-  return b;
-}
-
+function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
 function paginate(data){
   const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
   if(page>total)page=total;
   const start=(page-1)*PAGE_SIZE;
   const rows=data.slice(start,start+PAGE_SIZE);
-
   pager.innerHTML='';
-  pager.appendChild(pageBtn('Prev', ()=>{page=Math.max(1,page-1); renderList(lastData);}, false, page<=1));
+  const prev=pageBtn('Prev',()=>{page--;renderList(lastData,true);}); prev.disabled=page<=1; pager.appendChild(prev);
   for(let i=1;i<=total;i++){
-    pager.appendChild(pageBtn(String(i), ()=>{page=i; renderList(lastData);}, i===page));
+    const b=pageBtn(String(i),()=>{page=i;renderList(lastData,true);});
+    if(i===page) b.classList.add('active');
+    pager.appendChild(b);
   }
-  pager.appendChild(pageBtn('Next', ()=>{page=Math.min(total,page+1); renderList(lastData);}, false, page>=total));
-
+  const next=pageBtn('Next',()=>{page++;renderList(lastData,true);}); next.disabled=page>=total; pager.appendChild(next);
   return rows;
 }
-
-function withFurigana(ja,kana){
-  if(!ja) return '';
-  if(!kana) return ja;
-  return `<ruby>${escapeHTML(ja)}<rt>${escapeHTML(kana)}</rt></ruby>`;
-}
-const escMap = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;' };
-const escapeHTML = s => String(s||'').replace(/[&<>"']/g, m=>escMap[m]);
+function div(cls,txt){const d=document.createElement('div');d.className=cls;if(txt!=null)d.textContent=txt;return d;}
 
 function renderList(data){
   if(!list) return;
@@ -438,6 +404,7 @@ function renderList(data){
     list.innerHTML=`<div style="color:#6b7280; padding:12px 0;">No items to show.</div>`;
     return;
   }
+
   const showEN   = document.getElementById('toggleEN')?.checked !== false;
   const showJA   = document.getElementById('toggleJA')?.checked !== false;
   const showKANA = document.getElementById('toggleKANA')?.checked !== false;
@@ -448,88 +415,52 @@ function renderList(data){
     idx++;
     const card=document.createElement('article'); card.className='card';
 
-    // ヘッダ
     const head=document.createElement('div'); head.className='head';
     const tog=document.createElement('button'); tog.className='toggle-btn'; tog.setAttribute('aria-expanded','true'); tog.textContent='▲';
-    const num=document.createElement('div'); num.className='num'; num.textContent=idx+'.';
-    const tags=document.createElement('div'); tags.className='tags';
+    const num=div('num',idx+'.');
+    const tags=div('tags','');
 
-    // 1行目: Nihongo（ふりがな）
-    if(showJA && (item.ja||item.kana)){
-      const s=document.createElement('span'); s.className='tag ja';
-      s.innerHTML = withFurigana(item.ja||'', item.kana||'');
-      tags.appendChild(s);
-    }
-    // 2行目以降: その他
-    if(showKANA && item.kana){ const s=document.createElement('span'); s.className='tag kana'; s.textContent=item.kana; tags.appendChild(s); }
-    if(showRO   && item.ro  ){ const s=document.createElement('span'); s.className='tag ro';   s.textContent=item.ro;   tags.appendChild(s); }
-    if(showEN   && item.en  ){ const s=document.createElement('span'); s.className='tag en';   s.textContent=item.en;   tags.appendChild(s); }
-
-    // 右寄せボタン
-    const acts=document.createElement('div'); acts.className='actions';
-    const btnLearn=document.createElement('button'); btnLearn.className='btn btn-ghost'; btnLearn.innerHTML='<i class="fa-regular fa-bookmark"></i> Learn';
-    const btnToLearned=document.createElement('button'); btnToLearned.className='btn btn-green'; btnToLearned.innerHTML='<i class="fa-solid fa-graduation-cap"></i> Move to Learned';
-    const btnBack=document.createElement('button'); btnBack.className='btn btn-amber'; btnBack.innerHTML='<i class="fa-solid fa-rotate-left"></i> Back to Learning';
-    acts.append(btnLearn, btnToLearned, btnBack);
-
-    head.append(tog,num,tags,acts);
-
-    // 本文（例文）
-    const body=document.createElement('div'); body.className='content'; body.dataset.examples='1';
-    (item.examples||[]).forEach(ex=>{
-      const block=document.createElement('div'); block.className='line';
-      const parts=[];
-      if(showEN   && ex.en   ) parts.push(`<div class="en">${escapeHTML(ex.en)}</div>`);
-      if(showJA   && ex.ja   ) parts.push(`<div class="ja">${withFurigana(ex.ja||'', ex.kana||'')}</div>`);
-      if(showKANA && ex.kana ) parts.push(`<div class="kana">${escapeHTML(ex.kana)}</div>`);
-      if(showRO   && ex.ro   ) parts.push(`<div class="ro">${escapeHTML(ex.ro)}</div>`);
-      block.innerHTML=parts.join('');
-      body.appendChild(block);
+    const tagMap={ja:item.ja, kana:item.kana, ro:item.ro, en:item.en};
+    ['ja','kana','ro','en'].forEach(k=>{
+      const v=tagMap[k]; if(v && String(v).trim()){
+        const s=document.createElement('span'); s.className='tag '+k; s.textContent=v; tags.appendChild(s);
+      }
     });
 
-    // Learn → Learning へ
-    btnLearn.addEventListener('click', ()=>{
-      const payload = { id:item.id, ja:item.ja, en:item.en, kana:item.kana, ro:item.ro, level, part:(POS.find(p=>p.k===posKey)?.enLabel||posKey), examples:item.examples||[], quiz:{taken:0,correct:0} };
+    const act=document.createElement('button'); act.className='btn learn';
+    head.append(tog,num,tags,act);
+
+    const body=div('content',''); body.dataset.examples='1';
+    (item.examples||[]).forEach(ex=>{
+      const parts=[];
+      if(showEN   && ex.en   ) parts.push(`<div class="en">${ex.en}</div>`);
+      if(showJA   && ex.ja   ) parts.push(`<div class="ja">${ex.ja}</div>`);
+      if(showKANA && ex.kana ) parts.push(`<div class="kana">${ex.kana}</div>`);
+      if(showRO   && ex.ro   ) parts.push(`<div class="ro">${ex.ro}</div>`);
+      if(parts.length){ const block=div('line',''); block.innerHTML=parts.join(''); body.appendChild(block); }
+    });
+
+    const isLearned = learnedSet().has(item.id);
+    if(isLearned){ card.classList.add('learned'); body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false'); }
+
+    act.textContent = 'Learn';
+    act.onclick = () => {
+      const posLabel = POS.find(p=>p.k===posKey)?.enLabel || posKey;
+      const payload = { id:item.id, ja:item.ja, en:item.en, kana:item.kana, ro:item.ro, level, part:posLabel, examples:item.examples||[], quiz:{taken:0,correct:0} };
       ntxToLearning(payload);
       card.classList.add('learning');
-      btnLearn.classList.add('btn-brand');
-      btnLearn.innerHTML='<i class="fa-solid fa-book-open"></i> Learning';
+      act.textContent = 'Learning';
       body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false');
       updateBadges();
-    });
+    };
 
-    // Move to Learned
-    btnToLearned.addEventListener('click', ()=>{
-      // Learning から削除、Learned へ追加＋日付
-      const arr = getLearning().filter(x=>x.id!==item.id);
-      setLearning(arr);
-      const ids = learnedSet(); if(!ids.has(item.id)) ids.add(item.id); setLearned(ids);
-      const d = new Date(); const z = n => String(n).padStart(2,'0'); const today = `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
-      setLearnedDate(item.id, today);
-      const map = getLearnedMap(); map[item.id] = item; setLearnedMap(map);
-      updateBadges();
-    });
-
-    // Back to Learning
-    btnBack.addEventListener('click', ()=>{
-      const ids = learnedSet(); ids.delete(item.id); setLearned(ids);
-      const arr = getLearning(); if(!arr.find(x=>x.id===item.id)){
-        const d=new Date(); const z=n=>String(n).padStart(2,'0'); const today=`${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
-        arr.push({...item, movedAt: today});
-      }
-      setLearning(arr);
-      updateBadges();
-    });
-
-    // 例文の開閉
     tog.addEventListener('click',()=>{
       const open = body.style.display!=='none';
       if(open){ body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false'); }
       else    { body.style.display='';    tog.textContent='▲'; tog.setAttribute('aria-expanded','true'); }
     });
 
-    card.append(head,body);
-    list.appendChild(card);
+    card.append(head,body); list.appendChild(card);
   });
 
   const posLabel=POS.find(p=>p.k===posKey);
@@ -549,6 +480,7 @@ function getLearnedRows(){
   const ids = [...learnedSet()];
   const map = getLearnedMap();
   const dates = getLearnedDates();
+  // map から引き、無い場合は lastData から探す
   return ids.map(id=>{
     const m = map[id] || (lastData||[]).find(x=>x.id===id) || {id};
     return {...m, movedAt: dates[id] || m.movedAt || ''};
@@ -557,9 +489,9 @@ function getLearnedRows(){
 
 function renderLearnedModal(){
   const body=document.getElementById('learnedBody');
-  const pag=document.getElementById('learnedPager');
+  const pager=document.getElementById('learnedPager');
   const rowsAll = getLearnedRows();
-  body.innerHTML=''; pag.innerHTML='';
+  body.innerHTML=''; pager.innerHTML='';
 
   if(!rowsAll.length){ body.innerHTML='<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
 
@@ -589,9 +521,8 @@ function renderLearnedModal(){
     const dateStr = x.movedAt ? ` <span style="color:#888">(${x.movedAt})</span>` : '';
     line.innerHTML = `${start+i+1}. <strong>${parts.join(' / ')}</strong>${dateStr}`;
 
-    // Learned → Back to Learning
     const backBtn=document.createElement('button');
-    backBtn.className='btn btn-amber';
+    backBtn.className='btn';
     backBtn.textContent='Back to Learning';
     backBtn.addEventListener('click', ()=> moveBackToLearning(x));
 
@@ -600,18 +531,19 @@ function renderLearnedModal(){
     body.appendChild(block);
   });
 
-  // ページャー（広告付き）
+  // ページャー（クリックで広告）
   const mk=(t,fn,active)=>{ const b=document.createElement('button'); b.className='pagebtn'; if(active) b.classList.add('active'); b.textContent=t; b.onclick=()=>showAdThen(fn); return b; };
-  const prev = mk('Prev', ()=>{ learnedPage=Math.max(1, learnedPage-1); renderLearnedModal(); }, learnedPage===1); prev.disabled=learnedPage===1; pag.appendChild(prev);
-  const total = Math.max(1, Math.ceil(rowsAll.length/5));
-  for(let i=1;i<=total;i++){ pag.appendChild(mk(String(i), ()=>{ learnedPage=i; renderLearnedModal(); }, i===learnedPage)); }
-  const next = mk('Next', ()=>{ learnedPage=Math.min(total, learnedPage+1); renderLearnedModal(); }, learnedPage===total); next.disabled=learnedPage===total; pag.appendChild(next);
+  const prev = mk('Prev', ()=>{ learnedPage=Math.max(1, learnedPage-1); renderLearnedModal(); }, learnedPage===1); prev.disabled=learnedPage===1; pager.appendChild(prev);
+  for(let i=1;i<=total;i++){ pager.appendChild(mk(String(i), ()=>{ learnedPage=i; renderLearnedModal(); }, i===learnedPage)); }
+  const next = mk('Next', ()=>{ learnedPage=Math.min(total, learnedPage+1); renderLearnedModal(); }, learnedPage===total); next.disabled=learnedPage===total; pager.appendChild(next);
 }
 
 function moveBackToLearning(item){
+  // 1) Learned から削除
   const set = learnedSet(); set.delete(item.id); setLearned(set);
   const map = getLearnedMap(); delete map[item.id]; setLearnedMap(map);
 
+  // 2) Learning に追加（重複防止）
   const arr = getLearning();
   if(!arr.find(x=>x.id===item.id)){
     const d=new Date(); const z=n=>String(n).padStart(2,'0');
@@ -624,7 +556,7 @@ function moveBackToLearning(item){
   updateBadges();
 }
 
-/* ====== Learning モーダル：例文・ページング・広告 ====== */
+/* ====== Learning モーダル：例文・ページング・広告（既存） ====== */
 let learningPage = 1;
 
 function openLearning(){ const m=document.getElementById('learningModal'); if(!m) return; m.classList.add('show'); learningPage=1; renderLearningModal(learningPage); }
@@ -639,7 +571,7 @@ document.getElementById('toLearnedView')?.addEventListener('click',   ()=>{ docu
   if(el) el.addEventListener('change', ()=>renderLearningModal(learningPage));
 });
 
-function renderLearningModal(pageNo=1){
+function renderLearningModal(page=1){
   const wrap = document.getElementById('learningBody');
   const pag = document.getElementById('learningPager');
   if(!wrap){ return; }
@@ -653,8 +585,9 @@ function renderLearningModal(pageNo=1){
 
   if(!all.length){ wrap.innerHTML = '<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
 
+  // ページング（5件）
   const total = Math.max(1, Math.ceil(all.length/5));
-  learningPage = Math.min(Math.max(1,pageNo), total);
+  learningPage = Math.min(Math.max(1,page), total);
   const start = (learningPage-1)*5;
   const rows = all.slice(start, start+5);
 
@@ -679,8 +612,9 @@ function renderLearningModal(pageNo=1){
 
     // 「Learnedへ」ボタン
     const toLearnedBtn = document.createElement('button');
-    toLearnedBtn.className='btn btn-green'; toLearnedBtn.textContent = 'Move to Learned';
+    toLearnedBtn.className='btn'; toLearnedBtn.textContent = 'Move to Learned';
     toLearnedBtn.addEventListener('click', ()=>{
+      // learned へ移動（id セット＋詳細保存＋日付記録）
       const s = learnedSet();
       if (!s.has(x.id)) {
         s.add(x.id);
@@ -690,6 +624,7 @@ function renderLearningModal(pageNo=1){
         setLearnedDate(x.id, today);
         const m = getLearnedMap(); m[x.id] = x; setLearnedMap(m);
       }
+      // learning から削除
       const rest = getLearning().filter(y=>y.id!==x.id);
       setLearning(rest);
       renderLearningModal(learningPage);
@@ -705,10 +640,10 @@ function renderLearningModal(pageNo=1){
       examples.forEach((ex,ei)=>{
         const one = document.createElement('div'); one.style.margin='6px 0';
         const bits=[];
-        if(showEN&&ex.en)bits.push(`<div class="en">${escapeHTML(ex.en)}</div>`);
-        if(showJA&&ex.ja)bits.push(`<div class="ja">${withFurigana(ex.ja||'', ex.kana||'')}</div>`);
-        if(showKA&&ex.kana)bits.push(`<div class="kana">${escapeHTML(ex.kana)}</div>`);
-        if(showRO&&ex.ro)bits.push(`<div class="ro">${escapeHTML(ex.ro)}</div>`);
+        if(showEN&&ex.en)bits.push(`<div class="en">${ex.en}</div>`);
+        if(showJA&&ex.ja)bits.push(`<div class="ja">${ex.ja}</div>`);
+        if(showKA&&ex.kana)bits.push(`<div class="kana">${ex.kana}</div>`);
+        if(showRO&&ex.ro)bits.push(`<div class="ro">${ex.ro}</div>`);
         one.innerHTML = `<div class="exhdr">Example ${ei+1}</div>` + bits.join('');
         exWrap.appendChild(one);
       });
@@ -727,11 +662,23 @@ function renderLearningModal(pageNo=1){
     wrap.appendChild(block);
   });
 
-  // ページャー（広告付き）
+  // ページャー（クリックで広告）
   const mk = (t,fn,active)=>{ const b=document.createElement('button'); b.className='pagebtn'; if(active) b.classList.add('active'); b.textContent=t; b.onclick=()=>{ showAdThen(()=>fn()); }; return b; };
   const prev = mk('Prev', ()=>renderLearningModal(learningPage-1), learningPage===1); prev.disabled = learningPage<=1; pag.appendChild(prev);
   for(let i=1;i<=total;i++){ pag.appendChild(mk(String(i), ()=>renderLearningModal(i), i===learningPage)); }
   const next = mk('Next', ()=>renderLearningModal(learningPage+1), learningPage===total); next.disabled = learningPage>=total; pag.appendChild(next);
+}
+
+/* ====== 広告（英語） ====== */
+function showAdThen(next){
+  const mask = document.getElementById('adModal');
+  const close = document.getElementById('adClose');
+  const link  = document.getElementById('adLink');
+  const finish = ()=>{ mask.classList.remove('show'); next(); };
+  mask.classList.add('show');
+  close.onclick = finish;
+  mask.addEventListener('click', e=>{ if(e.target.id==='adModal') finish(); }, {once:true});
+  link.addEventListener('click', ()=>finish(), {once:true});
 }
 
 /* ====== Learning へ追加（一覧の Learn ボタン用） ====== */
@@ -754,7 +701,7 @@ function printLearning(){
   const arr = getLearning(); if (!arr.length){ alert('No learning items.'); return; }
   const w = open('', '_blank');
   w.document.write('<!doctype html><meta charset="utf-8"><title>Learning</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learning</h1>');
-  arr.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${escapeHTML(x.ja||'')}</strong> / ${escapeHTML(x.kana||'')} / ${escapeHTML(x.ro||'')} — ${escapeHTML(x.en||'')}${x.movedAt?` (${x.movedAt})`:''}</div>`));
+  arr.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}${x.movedAt?` (${x.movedAt})`:''}</div>`));
   w.document.close(); w.print();
 }
 
@@ -763,7 +710,7 @@ document.getElementById('printLearned').onclick=()=>{
   if(!rows.length){ alert('No learned items.'); return; }
   const w=open('','_blank');
   w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
-  rows.forEach((x,i)=> w.document.write(`<div class="row">${i+1}. <strong>${escapeHTML(x.ja||'')}</strong> / ${escapeHTML(x.kana||'')} / ${escapeHTML(x.ro||'')} — ${escapeHTML(x.en||'')}${x.movedAt?` (${x.movedAt})`:''}</div>`));
+  rows.forEach((x,i)=> w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}${x.movedAt?` (${x.movedAt})`:''}</div>`));
   w.document.close(); w.print();
 };
 
