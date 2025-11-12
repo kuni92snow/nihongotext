@@ -78,10 +78,14 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 .footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:#fff;font-size:12px}
 
 /* Popup base */
-.admask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
-.admask.show{display:flex}
-.ad{background:#fff;border-radius:12px;max-width:560px;width:min(96vw,560px);padding:12px;border:2px solid var(--shu)}
-.ad .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
+.mask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
+.mask.show{display:flex}
+.win{background:#fff;border-radius:12px;max-width:820px;width:min(96vw,820px);padding:12px;border:2px solid var(--shu)}
+.win .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
+
+/* Learning 行の例文用 */
+.exwrap{margin:6px 0 0 18px;border-left:3px solid #f3c6bd;padding-left:10px}
+.exhdr{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:#555;cursor:pointer}
 </style>
 </head>
 <body>
@@ -128,9 +132,9 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- Learned / Learning モーダル（起動はヘッダーのボタンから） -->
-<div id="learnedModal" class="admask" style="background:rgba(0,0,0,.35)">
-  <div class="ad" style="max-width:820px">
+<!-- Learned モーダル -->
+<div id="learnedModal" class="mask">
+  <div class="win">
     <button class="x" id="closeLearned" aria-label="Close">×</button>
     <h3 id="learnedTitle" style="margin:0 0 10px">Learned</h3>
     <div class="toggle-row" style="margin-bottom:8px">
@@ -147,8 +151,9 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   </div>
 </div>
 
-<div id="learningModal" class="admask" style="background:rgba(0,0,0,.35)">
-  <div class="ad" style="max-width:820px">
+<!-- Learning モーダル（例文の開閉・Learnedへ移動・5件/ページ＋広告） -->
+<div id="learningModal" class="mask">
+  <div class="win">
     <button class="x" id="closeLearning" aria-label="Close">×</button>
     <h3 style="margin:0 0 10px">Learning</h3>
     <div class="toggle-row" style="margin-bottom:8px">
@@ -170,6 +175,16 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   </div>
 </div>
 
+<!-- 広告ポップアップ（Learning ページャーで表示） -->
+<div id="adModal" class="mask" aria-hidden="true">
+  <div class="win" style="max-width:560px">
+    <button class="x" id="adClose" aria-label="Close">×</button>
+    <h3 style="margin:6px 0 8px">おすすめ</h3>
+    <p style="margin:0 0 10px">日本語レッスンをオンラインで。今すぐチェック！</p>
+    <p style="margin:0"><a id="adLink" href="https://preply.com/ja/?pref=MTE2MDM4MjQ=&id=1762934766.097797&ep=w1" target="_blank" rel="noopener" class="btn" style="display:inline-block;background:var(--shu);border-color:var(--shu);color:#fff">Preply を見る</a></p>
+  </div>
+</div>
+
 <script>
 /* ========= 設定 ========= */
 const LEVELS = ['N5','N4','N3','N2','N1'];
@@ -185,6 +200,7 @@ const POS = [
   {k:'nums',  file:'numerals.json',       ja:'数詞',        enLabel:'Numerals'},
   {k:'pat',   file:'patterns.json',       ja:'文型',        enLabel:'Patterns'},
 ];
+
 let level='N5', posKey='verbs', page=1;
 const PAGE_SIZE=5, MAX_TOTAL=30;
 let lastData=[];
@@ -194,8 +210,8 @@ const setLang = (v) => localStorage.setItem('lang', v);
 let uiLang = getLang();
 
 const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;
-function learnedSet(){return new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));}
-function setLearned(s){localStorage.setItem(LS_KEY(),JSON.stringify([...s]));}
+const learnedSet = () => new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));
+const setLearned = (set)=>localStorage.setItem(LS_KEY(),JSON.stringify([...set]));
 
 // learned日付
 const LEARNED_DATE_KEY = 'ntx_learned_dates_v1';
@@ -242,10 +258,10 @@ async function injectPartials(){
     hdr.innerHTML=h;
   }catch(_){
     hdr.innerHTML =
-      `<div style="padding:14px 0;display:flex;gap:14px;align-items:center">
-         <a href="/" style="font-weight:800;font-size:28px;color:#e6462d">nihongotext<span style="color:#333">.com</span></a>
-         <span style="color:#98a1a8;font-size:12px">== beta version ==</span>
-         <button id="langBtn" type="button" class="btn" style="margin-left:auto">日本語</button>
+      `<div style="padding:14px 0;display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column">
+         <a href="/" style="font-weight:800;font-size:32px;color:#e6462d;text-decoration:none">nihongotext<span style="color:#333">.com</span></a>
+         <div style="font-size:20px;color:#98a1a8">== beta version ==</div>
+         <div style="width:100%;display:flex;justify-content:flex-end"><button id="langBtn" type="button" class="btn">日本語</button></div>
        </div>`;
   }
   try{
@@ -258,10 +274,11 @@ async function injectPartials(){
   attachLangToggle();
   applyLangToUI();
 
-  const learnBtn = (hdr && (hdr.querySelector('#learnBtn') || hdr.querySelector('[data-open="learning"]'))) || null;
-  if (learnBtn) {
-    learnBtn.addEventListener('click', ()=> { if (typeof openLearning==='function') openLearning(); });
-  }
+  // ヘッダー側ボタンのフォールバック
+  const openLearnBtn  = hdr.querySelector('#learnBtn')   || hdr.querySelector('[data-open="learning"]');
+  const openLearnedBtn= hdr.querySelector('#learnedBtn') || hdr.querySelector('[data-open="learned"]');
+  if (openLearnBtn)   openLearnBtn.addEventListener('click', ()=> openLearning());
+  if (openLearnedBtn) openLearnedBtn.addEventListener('click', ()=> openLearned());
 }
 
 /* ========= UI構築 ========= */
@@ -273,7 +290,7 @@ function buildChips(){
     const b=document.createElement('button');
     b.className='chip'+(p.k===posKey?' active':'');
     b.textContent=(uiLang==='en') ? p.enLabel : `${p.ja} / ${p.enLabel}`;
-    b.onclick=()=>{posKey=p.k;page=1; if(!kw.value.trim()) loadSingleAndRender(); else onSearchInput(); buildChips();};
+    b.onclick=()=>{posKey=p.k;page=1; if(!kw.value.trim()) loadSingleAndRender(); else onSearchInput(); buildChips(); updateBadges();};
     chips.appendChild(b);
   });
 }
@@ -292,6 +309,7 @@ async function loadSingleAndRender(){
   let arr=await fetchJsonSafe(buildPath());
   lastData = arr.length ? arr.slice(0,MAX_TOTAL) : SAMPLE;
   renderList(lastData);
+  updateBadges();
   try{ gtag('event','page_view',{page_title:`${level}/${posKey}`}); }catch(_){}
 }
 
@@ -325,6 +343,7 @@ async function onSearchInput(){
     ? `Results: ${lastData.length} item(s) (showing up to ${MAX_TOTAL}).`
     : `検索結果: ${lastData.length} 件（最大 ${MAX_TOTAL} 件を表示）`;
   renderList(lastData);
+  updateBadges();
 }
 
 /* ========= ページング＆描画 ========= */
@@ -370,7 +389,6 @@ function renderList(data){
     return;
   }
 
-  /* ←←← ここが修正ポイント：現在のチェック状態を都度読む */
   const showEN   = document.getElementById('toggleEN')?.checked !== false;
   const showJA   = document.getElementById('toggleJA')?.checked !== false;
   const showKANA = document.getElementById('toggleKANA')?.checked !== false;
@@ -413,10 +431,11 @@ function renderList(data){
     act.onclick = () => {
       const posLabel = POS.find(p=>p.k===posKey)?.enLabel || posKey;
       const payload = { id:item.id, ja:item.ja, en:item.en, kana:item.kana, ro:item.ro, level, part:posLabel, examples:item.examples||[], quiz:{taken:0,correct:0} };
-      if (typeof window.ntxToLearning === 'function') window.ntxToLearning(payload);
+      ntxToLearning(payload);
       card.classList.add('learning');
       act.textContent = 'Learning';
       body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false');
+      updateBadges();
     };
 
     tog.addEventListener('click',()=>{
@@ -439,10 +458,12 @@ function renderList(data){
 function openLearned(){ const m=document.getElementById('learnedModal'); m.classList.add('show'); renderLearnedModal(); }
 document.getElementById('closeLearned').onclick=()=>document.getElementById('learnedModal').classList.remove('show');
 document.getElementById('learnedModal').addEventListener('click',e=>{ if(e.target.id==='learnedModal') e.currentTarget.classList.remove('show'); });
-document.getElementById('clearLearned').onclick=()=>{ localStorage.setItem(LS_KEY(),'[]'); renderLearnedModal(); };
+document.getElementById('clearLearned').onclick=()=>{ localStorage.setItem(LS_KEY(),'[]'); renderLearnedModal(); updateBadges(); };
 document.getElementById('printLearned').onclick=()=>{
   const s = learnedSet(); if(!s.size){ alert('No learned items.'); return; }
-  const rows = (lastData||[]).filter(x=>s.has(x.id));
+  // lastData に無い場合もあるので、Learning からも補完
+  const pool = [...(lastData||[]) , ...getLearning()];
+  const rows = pool.filter((x,i,self)=>s.has(x.id) && self.findIndex(y=>y.id===x.id)===i);
   const w = open('','_blank');
   w.document.write(`<!doctype html><meta charset="utf-8"><title>Learned</title><style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;margin:24px}
@@ -458,7 +479,8 @@ document.getElementById('printLearned').onclick=()=>{
 ['L_JA','L_KANA','L_RO','L_EN'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('change',renderLearnedModal); });
 function renderLearnedModal(){
   const body=document.getElementById('learnedBody'); const s=learnedSet(); body.innerHTML='';
-  const rows=(lastData||[]).filter(x=>s.has(x.id));
+  const pool=[...(lastData||[]), ...getLearning()];
+  const rows=pool.filter((x,i,self)=>s.has(x.id) && self.findIndex(y=>y.id===x.id)===i);
   if(rows.length===0){ body.innerHTML='<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
   const showEN= document.getElementById('L_EN')?.checked !== false;
   const showJA= document.getElementById('L_JA')?.checked !== false;
@@ -481,11 +503,19 @@ function renderLearnedModal(){
 }
 
 /* ========= Learning ========= */
-const LEARN_KEY = 'ntx_learning_v2';
+const LEARN_KEY = 'ntx_learning_v3';
 const getLearning = ()=>{ try{return JSON.parse(localStorage.getItem(LEARN_KEY)||'[]')}catch(_){return[]} };
 const setLearning = (arr)=>{ try{localStorage.setItem(LEARN_KEY,JSON.stringify(arr));}catch(_){ } };
 
-function renderLearningModal(){
+function updateBadges(){
+  // ヘッダーのバッジ（存在すれば）
+  const bLrn  = document.querySelector('#badge-learning');
+  const bLrnd = document.querySelector('#badge-learned');
+  if (bLrn)  bLrn.textContent  = String(getLearning().length);
+  if (bLrnd) bLrnd.textContent = String(learnedSet().size);
+}
+
+function renderLearningModal(page=1){
   const wrap = document.getElementById('learningBody');
   if(!wrap){ return; }
   const showEN = document.getElementById('LG_EN')?.checked !== false;
@@ -493,21 +523,103 @@ function renderLearningModal(){
   const showKA = document.getElementById('LG_KANA')?.checked !== false;
   const showRO = document.getElementById('LG_RO')?.checked !== false;
 
-  const arr = getLearning();
+  const all = getLearning();
   wrap.innerHTML = '';
-  if(!arr.length){ wrap.innerHTML = '<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
-  arr.forEach((x,i)=>{
+  if(!all.length){ wrap.innerHTML = '<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; document.getElementById('learningPager').innerHTML=''; return; }
+
+  // ページング（5件）
+  const total = Math.max(1, Math.ceil(all.length/5));
+  page = Math.min(Math.max(1,page), total);
+  const start = (page-1)*5;
+  const rows = all.slice(start, start+5);
+
+  rows.forEach((x,i)=>{
     const block = document.createElement('div');
     block.style.cssText='padding:8px 0;border-bottom:1px dashed #eee';
+    const line = document.createElement('div');
+    line.style.display='flex'; line.style.alignItems='center'; line.style.gap='10px'; line.style.flexWrap='wrap';
+
     const tags=[];
     if(showJA&&x.ja)tags.push(x.ja);
     if(showKA&&x.kana)tags.push(x.kana);
     if(showRO&&x.ro)tags.push(x.ro);
     if(showEN&&x.en)tags.push(x.en);
     const d = x.movedAt ? ` <span style="color:#888">（${x.movedAt}）</span>` : '';
-    block.innerHTML = `${i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
+    line.innerHTML = `${start+i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
+
+    // ▼/▲（例文開閉）
+    const exBtn = document.createElement('button');
+    exBtn.className='toggle-btn'; exBtn.textContent='▼'; exBtn.setAttribute('aria-expanded','false');
+    line.prepend(exBtn);
+
+    // 「Learnedへ」ボタン
+    const toLearnedBtn = document.createElement('button');
+    toLearnedBtn.className='btn'; toLearnedBtn.textContent = (uiLang==='en'?'Move to Learned':'Learnedへ');
+    toLearnedBtn.addEventListener('click', ()=>{
+      // learned へ移動
+      const s = learnedSet();
+      if (!s.has(x.id)) {
+        s.add(x.id);
+        setLearned(s);
+        const d = new Date(); const z = n => String(n).padStart(2,'0');
+        setLearnedDate(x.id, `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`);
+      }
+      // learning から削除
+      const rest = getLearning().filter(y=>y.id!==x.id);
+      setLearning(rest);
+      renderLearningModal(page);
+      updateBadges();
+    });
+    line.appendChild(toLearnedBtn);
+
+    // 例文コンテナ
+    const exWrap = document.createElement('div');
+    exWrap.className='exwrap'; exWrap.style.display='none';
+    const examples = x.examples || [];
+    if(examples.length){
+      examples.forEach((ex,ei)=>{
+        const one = document.createElement('div'); one.style.margin='6px 0';
+        const bits=[];
+        if(showEN&&ex.en)bits.push(`<div class="en">${ex.en}</div>`);
+        if(showJA&&ex.ja)bits.push(`<div class="ja">${ex.ja}</div>`);
+        if(showKA&&ex.kana)bits.push(`<div class="kana">${ex.kana}</div>`);
+        if(showRO&&ex.ro)bits.push(`<div class="ro">${ex.ro}</div>`);
+        one.innerHTML = `<div class="exhdr">Example ${ei+1}</div>` + bits.join('');
+        exWrap.appendChild(one);
+      });
+    }else{
+      exWrap.innerHTML = '<div class="exhdr">No examples</div>';
+    }
+
+    exBtn.addEventListener('click', ()=>{
+      const open = exWrap.style.display !== 'none';
+      exWrap.style.display = open ? 'none' : '';
+      exBtn.textContent = open ? '▼' : '▲';
+      exBtn.setAttribute('aria-expanded', String(!open));
+    });
+
+    block.append(line, exWrap);
     wrap.appendChild(block);
   });
+
+  // ページャー（クリックで広告）
+  const pag = document.getElementById('learningPager');
+  pag.innerHTML='';
+  const mk = (t,fn,active)=>{ const b=document.createElement('button'); b.className='pagebtn'; if(active) b.classList.add('active'); b.textContent=t; b.onclick=()=>{ showAdThen(()=>fn()); }; return b; };
+  const prev = mk('Prev', ()=>renderLearningModal(page-1), page===1); prev.disabled = page<=1; pag.appendChild(prev);
+  for(let i=1;i<=total;i++){ pag.appendChild(mk(String(i), ()=>renderLearningModal(i), i===page)); }
+  const next = mk('Next', ()=>renderLearningModal(page+1), page===total); next.disabled = page>=total; pag.appendChild(next);
+}
+
+function showAdThen(next){
+  const mask = document.getElementById('adModal');
+  const close = document.getElementById('adClose');
+  const link  = document.getElementById('adLink');
+  const finish = ()=>{ mask.classList.remove('show'); next(); };
+  mask.classList.add('show');
+  close.onclick = finish;
+  mask.addEventListener('click', e=>{ if(e.target.id==='adModal') finish(); }, {once:true});
+  link.addEventListener('click', ()=>finish(), {once:true});
 }
 
 window.ntxToLearning = function(item){
@@ -518,20 +630,30 @@ window.ntxToLearning = function(item){
     arr.push({ ...item, movedAt: item.movedAt || today });
   }
   setLearning(arr);
-  renderLearningModal();
+  renderLearningModal(); // 開いている場合に更新
+  updateBadges();
 };
 
-function openLearning(){ const m=document.getElementById('learningModal'); if(!m) return; m.classList.add('show'); renderLearningModal(); }
+function openLearning(){ const m=document.getElementById('learningModal'); if(!m) return; m.classList.add('show'); renderLearningModal(1); }
 
 document.getElementById('closeLearning').onclick=()=>document.getElementById('learningModal')?.classList.remove('show');
-document.getElementById('toLearnedView')?.addEventListener('click', ()=>{ document.getElementById('learningModal')?.classList.remove('show'); openLearned(); });
-document.getElementById('printLearning')?.addEventListener('click', ()=>{
+document.getElementById('toLearnedViewTop')?.addEventListener('click', ()=>{ document.getElementById('learningModal')?.classList.remove('show'); openLearned(); });
+document.getElementById('toLearnedView')?.addEventListener('click',   ()=>{ document.getElementById('learningModal')?.classList.remove('show'); openLearned(); });
+
+['LG_JA','LG_KANA','LG_RO','LG_EN'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el) el.addEventListener('change', ()=>renderLearningModal(1));
+});
+
+document.getElementById('printLearningTop')?.addEventListener('click', printLearning);
+document.getElementById('printLearning')?.addEventListener('click', printLearning);
+function printLearning(){
   const arr = getLearning(); if (!arr.length){ alert('No learning items.'); return; }
   const w = open('', '_blank');
   w.document.write('<!doctype html><meta charset="utf-8"><title>Learning</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learning</h1>');
   arr.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}</div>`));
   w.document.close(); w.print();
-});
+}
 
 /* ========= 初期化 ========= */
 (async function init(){
