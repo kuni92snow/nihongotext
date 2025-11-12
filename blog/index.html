@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Blog | nihongotext.com</title>
 
-<!-- root-relative paths -->
 <base href="/" />
 
 <link rel="icon" href="/favicon.ico" />
@@ -35,7 +34,6 @@ a{ color:inherit; text-decoration:none }
 /* Hide Learning / Learned only on blog page (keep language toggle) */
 .site-header nav[aria-label="Learning navigation"]{ display:none !important; }
 
-/* language button (if we inject it) */
 .btn{border:1px solid var(--line); background:#fff; border-radius:10px; padding:8px 12px; cursor:pointer;}
 .btn--accent{border-color:var(--shu); color:var(--shu);}
 
@@ -60,14 +58,13 @@ a{ color:inherit; text-decoration:none }
 </head>
 <body>
 
-<!-- Header (loaded from partials). We'll add a language toggle if the partial doesn't include one. -->
 <header class="topbar">
   <div id="site-header" class="wrap site-header" style="padding:12px 0;"></div>
 </header>
 
 <main class="wrap" style="padding-bottom:24px">
-  <h1 class="page-title"><i class="fa-solid fa-rss"></i> Blog</h1>
-  <div style="color:var(--muted); font-size:13px; margin-bottom:6px">
+  <h1 id="pageTitle" class="page-title"><i class="fa-solid fa-rss"></i> <span>Blog</span></h1>
+  <div id="subLead" style="color:var(--muted); font-size:13px; margin-bottom:6px">
     Latest update from nihongotext.com
   </div>
 
@@ -103,17 +100,16 @@ a{ color:inherit; text-decoration:none }
   </div>
 </main>
 
-<!-- Footer (loaded from partials) -->
 <footer class="site-footer">
   <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
 </footer>
 
 <script>
-/* ---------- language helpers (shared key) ---------- */
+/* ---------- language helpers ---------- */
 const getLang = () => localStorage.getItem('lang') || 'en';
 const setLang = (v) => localStorage.setItem('lang', v);
 
-/* ---------- inject partials, then ensure a language toggle exists ---------- */
+/* ---------- inject partials and language toggle ---------- */
 (async function injectPartials(){
   const hdr = document.getElementById('site-header');
   const ftr = document.getElementById('site-footer');
@@ -134,12 +130,11 @@ const setLang = (v) => localStorage.setItem('lang', v);
     ftr.innerHTML = '<div style="text-align:center;color:#98a1a8;font-size:12px;padding:12px 0">© 2025 nihongotext.com</div>';
   }
 
-  // 1) Hide Learning/Learned nav on this page only
+  // Hide Learning/Learned on this page only
   const learnNav = hdr.querySelector('nav[aria-label="Learning navigation"]');
   if (learnNav) learnNav.style.display = 'none';
 
-  // 2) Ensure a language toggle button exists in the header.
-  //    If the partial already had #langBtn, keep it. Otherwise, append a right-aligned one.
+  // Ensure a language toggle button exists
   let langBtn = hdr.querySelector('#langBtn');
   if (!langBtn) {
     const wrap = document.createElement('div');
@@ -150,14 +145,26 @@ const setLang = (v) => localStorage.setItem('lang', v);
     wrap.appendChild(langBtn);
     hdr.appendChild(wrap);
   }
-  // set label and behavior
-  function applyLangLabel(){
-    langBtn.textContent = (getLang()==='en') ? '日本語' : 'English';
-    document.getElementById('kw').placeholder = (getLang()==='en') ? 'Search posts...' : '記事を検索…';
+
+  function applyLangToHeaderAndTitle(){
+    const lang = getLang();
+    // header button label
+    langBtn.textContent = (lang==='en') ? '日本語' : 'English';
+    // page H1 and document title
+    const pageTitle = document.getElementById('pageTitle')?.querySelector('span');
+    if(pageTitle){ pageTitle.textContent = (lang==='en') ? 'Blog' : 'ブログ'; }
+    document.title = ((lang==='en') ? 'Blog' : 'ブログ') + ' | nihongotext.com';
+    // search placeholder & sub lead
+    const kw = document.getElementById('kw');
+    if(kw){ kw.placeholder = (lang==='en') ? 'Search posts...' : '記事を検索…'; }
+    const sub = document.getElementById('subLead');
+    if(sub){ sub.textContent = (lang==='en') ? 'Latest update from nihongotext.com' : 'nihongotext.com からの最新更新情報'; }
+    // re-render posts to switch title/summary language
     render(window.__ALL_POSTS__||[]);
   }
-  langBtn.onclick = ()=>{ setLang(getLang()==='en' ? 'ja' : 'en'); applyLangLabel(); };
-  applyLangLabel();
+
+  langBtn.onclick = ()=>{ setLang(getLang()==='en' ? 'ja' : 'en'); applyLangToHeaderAndTitle(); };
+  applyLangToHeaderAndTitle();
 })();
 
 /* ---------- load posts ---------- */
@@ -169,7 +176,7 @@ async function loadPosts(){
       if(!r.ok) continue;
       const data = await r.json();
       if(Array.isArray(data) && data.length) return data;
-    }catch(_){ /* try next */ }
+    }catch(_){}
   }
   return [];
 }
@@ -182,6 +189,7 @@ function render(posts){
     return;
   }
   const lang = getLang();
+
   posts
     .slice()
     .sort((a,b)=>(b.date||'').localeCompare(a.date||''))
@@ -191,9 +199,15 @@ function render(posts){
 
       const head = document.createElement('div');
       head.className = 'head';
+
+      // language-aware title
+      const titleText = (lang==='ja')
+        ? (p.title_ja || p.title || p.title_en || '(untitled)')
+        : (p.title_en || p.title || p.title_ja || '(untitled)');
+
       head.innerHTML =
         `<div class="date"><i class="fa-regular fa-calendar-days"></i> ${p.date||''}</div>
-         <div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${p.title||p.title_en||p.title_ja||'(untitled)'}</a></div>`;
+         <div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${titleText}</a></div>`;
 
       const body = document.createElement('div');
       body.className = 'body';
@@ -218,7 +232,9 @@ function render(posts){
 
 (async function init(){
   const all = await loadPosts();
-  window.__ALL_POSTS__ = all; // keep for re-render when language toggles
+  window.__ALL_POSTS__ = all;
+
+  // initial render (uses current language)
   render(all);
 
   // simple client-side search
