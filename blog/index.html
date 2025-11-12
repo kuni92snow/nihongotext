@@ -1,161 +1,206 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog | nihongotext.com</title>
-  <link rel="icon" href="/favicon.ico" />
-  <base href="/" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Blog | nihongotext.com</title>
 
-  <!-- ここで Learning/Learned を非表示 -->
-  <style>header .site-header nav[aria-label="Learning navigation"]{display:none!important}</style>
+<!-- make all relative URLs root-based -->
+<base href="/" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7}
-    main .wrap{max-width:1100px;margin:auto;padding:16px}
-    .muted{color:var(--muted)}
-    .card{border:1px solid var(--border);border-radius:14px;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
-    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    h1{margin:0 0 8px}
-    h2{margin:.2rem 0 .5rem}
-    time{color:var(--muted);font-size:.9rem}
-    .tools{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:8px 0 16px}
-    .search{display:flex;gap:8px;align-items:center;flex:1}
-    .search input{flex:1;border:1px solid var(--border);border-radius:10px;padding:8px 10px;font-size:15px}
-    .results{margin-top:10px}
-    .result-item{padding:8px 10px;border-bottom:1px dashed var(--border)}
-    .result-item a{text-decoration:none;color:var(--ink)}
-    .result-item small{color:var(--muted)}
-    .more{margin-top:8px}
-    [data-i18n][data-lang="en"] .ja{display:none}
-    [data-i18n][data-lang="ja"] .en{display:none}
-    ruby{ruby-position:over;ruby-align:start}
-    rt{font-size:.6em;color:#666;letter-spacing:.03em}
-    .fa-fw{width:1.1em;text-align:center}
-  </style>
+<link rel="icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512" />
+<link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#b22222" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9QSHWJE0HZ',{send_page_view:false});</script>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
+
+<style>
+:root{ --shu:#e6462d; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; }
+*{ box-sizing:border-box }
+html,body{ margin:0; background:#fff; color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif }
+a{ color:inherit; text-decoration:none }
+.wrap{ max-width:1100px; margin:0 auto; padding:0 16px }
+
+/* Hide Learning / Learned only on blog page (keep language toggle) */
+.site-header nav[aria-label="Learning navigation"]{ display:none !important; }
+
+/* Page */
+.page-title{ display:flex; align-items:center; gap:10px; margin:18px 0 10px }
+.page-title i{ color:var(--shu) }
+.searchbar{ display:flex; align-items:center; gap:8px; margin:10px 0 16px }
+.searchbar input{ flex:1; height:40px; border:1px solid var(--line); border-radius:10px; padding:0 12px }
+
+/* Cards */
+.list{ display:grid; gap:12px }
+.card{ border:1px solid #f0d7d4; border-radius:14px; background:#fff7f6; overflow:hidden }
+.card .head{ display:flex; align-items:center; gap:10px; padding:12px; border-bottom:1px dashed #f0d7d4; background:#fff }
+.card .date{ color:#888; font-size:13px }
+.card .title{ font-weight:800; font-size:18px; display:flex; align-items:center; gap:8px }
+.card .body{ padding:12px }
+.card .tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:6px }
+.card .tag{ font-size:12px; border:1px solid #f0d7d4; border-radius:999px; padding:3px 8px; background:#fff }
+.footer-links{ text-align:center; color:#98a1a8; font-size:12px; margin:20px 0 }
+</style>
 </head>
 <body>
-  <div id="header"></div>
 
-  <main>
-    <div class="wrap" id="page" data-i18n data-lang="en">
-      <div class="en">
-        <h1 class="row"><i class="fa-solid fa-record-vinyl fa-fw" style="color:#e6462d"></i> Blog</h1>
-        <p class="muted">Latest update from nihongotext.com</p>
-      </div>
-      <div class="ja">
-        <h1 class="row"><i class="fa-solid fa-record-vinyl fa-fw" style="color:#e6462d"></i> ブログ</h1>
-        <p class="muted">nihongotext.com からのお知らせ</p>
-      </div>
+<!-- Header (loaded from partials) -->
+<header class="topbar">
+  <div id="site-header" class="wrap" style="padding:12px 0;"></div>
+</header>
 
-      <div class="tools">
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass fa-fw" aria-hidden="true"></i>
-          <input id="q" type="search" placeholder="Search posts..." aria-label="Search posts">
-        </div>
-        <a class="row" href="/blog/updates.html" title="All updates">
-          <i class="fa-solid fa-rotate-left fa-fw" aria-hidden="true"></i>
-          <span>Updates</span>
-        </a>
-      </div>
+<main class="wrap" style="padding-bottom:24px">
+  <h1 class="page-title"><i class="fa-solid fa-rss"></i> Blog</h1>
+  <div style="color:var(--muted); font-size:13px; margin-bottom:6px">
+    Latest update from nihongotext.com
+  </div>
 
-      <section id="latest" class="card"></section>
-      <div id="searchResults" class="results" hidden></div>
+  <div class="searchbar">
+    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+    <input id="kw" type="text" placeholder="Search posts..." />
+    <a id="updatesLink" href="/blog/index.html#all" style="white-space:nowrap; color:var(--shu)">
+      <i class="fa-solid fa-rotate"></i> Updates
+    </a>
+    <a id="permalinkLink" href="/blog/index.html" style="white-space:nowrap; color:var(--shu)">
+      <i class="fa-solid fa-link"></i> Permalink
+    </a>
+  </div>
 
-      <div class="more">
-        <a href="/blog/updates.html" class="row">
-          <i class="fa-solid fa-angles-right fa-fw" aria-hidden="true"></i>
-          View full update history
-        </a>
-      </div>
+  <section id="list" class="list" aria-live="polite"></section>
+
+  <div class="footer-links">
+    © nihongotext.com
+    <div style="margin-top:8px">
+      <a href="/" style="margin:0 8px">Home</a>
+      <a href="/blog/index.html" style="margin:0 8px">Blog</a>
+      <a href="/inquiry/index.html" style="margin:0 8px">Inquiry</a>
+      <a href="/legal.html" style="margin:0 8px">Legal</a>
+      <a href="/privacy.html" style="margin:0 8px">Privacy</a>
     </div>
-  </main>
+    <div style="font-size:18px; margin-top:10px">
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" style="color:#e6462d"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" style="color:#e6462d; margin-left:12px"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" style="color:#e6462d; margin-left:12px"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" style="color:#e6462d; margin-left:12px"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" style="color:#e6462d; margin-left:12px"><i class="fa-solid fa-newspaper"></i></a>
+    </div>
+  </div>
+</main>
 
-  <div id="footer"></div>
+<!-- Footer (loaded from partials) -->
+<footer class="site-footer">
+  <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
+</footer>
 
-  <script>
-    async function loadPartials(){
-      const [h,f]=await Promise.all([fetch('/partials/header.html'),fetch('/partials/footer.html')]);
-      document.getElementById('header').innerHTML=await h.text();
-      document.getElementById('footer').innerHTML=await f.text();
+<script>
+/* ---------- load partials ---------- */
+(async function injectPartials(){
+  const hdr = document.getElementById('site-header');
+  const ftr = document.getElementById('site-footer');
+  try{
+    const h = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    hdr.innerHTML = h;
+  }catch(_){
+    hdr.innerHTML = '<a href="/" style="font-weight:800;font-size:28px;color:#e6462d;text-decoration:none;display:block;text-align:center">nihongotext<span style="color:#333">.com</span></a><div style="text-align:center;color:#98a1a8">== beta version ==</div>';
+  }
+  try{
+    const t = await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    ftr.innerHTML = t;
+  }catch(_){
+    ftr.innerHTML = '<div style="text-align:center;color:#98a1a8;font-size:12px;padding:12px 0">© 2025 nihongotext.com</div>';
+  }
+})();
 
-      const btnHeader = document.getElementById('langBtn');
-      if(btnHeader){
-        const sync = ()=> btnHeader.textContent = (currentLang()==='ja' ? 'English' : '日本語');
-        btnHeader.addEventListener('click', ()=>{
-          const next = currentLang()==='ja' ? 'en' : 'ja';
-          applyLang(next);
-        });
-        sync();
-      }
-    }
-    const currentLang = ()=> localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en');
-    function applyLang(lang){
-      const page=document.getElementById('page');
-      page.setAttribute('data-lang',lang);
-      document.documentElement.lang=(lang==='ja'?'ja':'en');
-      localStorage.setItem('nt_lang',lang);
-      const btnHeader=document.getElementById('langBtn');
-      if(btnHeader) btnHeader.textContent = (lang==='ja' ? 'English' : '日本語');
-      if(window.__posts){ renderLatest(window.__posts); if(!document.getElementById('searchResults').hidden) doSearch(); }
-      if(window.gtag) gtag('event','language_change',{language:lang});
-    }
-    async function fetchPosts(){
-      const res=await fetch('/blog/posts.json',{cache:'no-store'});
-      const data=await res.json();
-      data.sort((a,b)=> new Date(b.date)-new Date(a.date));
-      window.__posts=data; return data;
-    }
-    function pick(obj, paths){ for(const p of paths){ const v=p.split('.').reduce((o,k)=>(o||{})[k],obj); if(typeof v==='string'&&v.trim()) return v; } return '';}
-    function getTitle(p,lang){ return pick(p,[`${lang}.title`,`title_${lang}`,`title${lang==='ja'?'_ja':'_en'}`,`title`]); }
-    function getSummary(p,lang){ return pick(p,[`${lang}.summary`,`summary_${lang}`,`summary${lang==='ja'?'_ja':'_en'}`]); }
-    function getHtml(p,lang){ const html=pick(p,[`${lang}.html`]); if(html) return html; const s=getSummary(p,lang); return s?`<p>${s}</p>`:''; }
-    function renderLatest(posts){
-      const latest=posts[0]; const lang=currentLang();
-      const el=document.getElementById('latest');
-      if(!latest){ el.innerHTML='<p class="muted">No posts yet.</p>'; return; }
-      const title=getTitle(latest,lang)||'(no title)';
-      const html=getHtml(latest,lang);
-      const head=`
-        <div class="row" style="justify-content:space-between">
-          <div class="row">
-            <i class="fa-regular fa-note-sticky fa-fw" aria-hidden="true"></i>
-            <time datetime="${latest.date||''}">${latest.date||''}</time>
-          </div>
-          <a class="row" href="/blog/updates.html#${latest.slug||''}" title="Permalink">
-            <i class="fa-solid fa-link fa-fw" aria-hidden="true"></i><span>Permalink</span>
-          </a>
-        </div>`;
-      el.innerHTML=head+`<h2>${title}</h2>${html}`;
-    }
-    function stripHtml(s){return String(s||'').replace(/<[^>]+>/g,' ');}
-    function doSearch(){
-      const q=document.getElementById('q').value.trim().toLowerCase();
-      const box=document.getElementById('searchResults');
-      const lang=currentLang();
-      if(!q){ box.hidden=true; box.innerHTML=''; return; }
-      const hits=window.__posts.filter(p=>{
-        const t=getTitle(p,lang)+' '+stripHtml(getHtml(p,lang));
-        return t.toLowerCase().includes(q);
-      }).slice(0,20);
-      box.hidden=false;
-      box.innerHTML = hits.length
-        ? hits.map(p=>`<div class="result-item"><a href="/blog/updates.html#${p.slug}"><strong>${getTitle(p, lang)}</strong></a><br><small>${p.date||''}</small></div>`).join('')
-        : '<div class="muted">No results.</div>';
-    }
-    document.addEventListener('DOMContentLoaded',async()=>{
-      await loadPartials();
-      applyLang(currentLang());
-      const posts=await fetchPosts();
-      renderLatest(posts);
-      document.getElementById('q').addEventListener('input',doSearch);
+/* ---------- language helper (use same key as top) ---------- */
+const getLang = () => localStorage.getItem('lang') || 'en';
+
+/* ---------- load posts ---------- */
+const endpoints = ['/blog/posts.json', '/blog/news.json'];
+async function loadPosts(){
+  for(const url of endpoints){
+    try{
+      const r = await fetch(url,{cache:'no-store'});
+      if(!r.ok) continue;
+      const data = await r.json();
+      if(Array.isArray(data) && data.length) return data;
+    }catch(_){ /* try next */ }
+  }
+  return [];
+}
+
+function render(posts){
+  const list = document.getElementById('list');
+  list.innerHTML = '';
+  if(!posts.length){
+    list.innerHTML = '<div style="color:#6b7280">No posts yet.</div>';
+    return;
+  }
+  const lang = getLang();
+  posts
+    .slice()  // copy
+    .sort((a,b)=>(b.date||'').localeCompare(a.date||''))
+    .forEach(p=>{
+      const card = document.createElement('article');
+      card.className = 'card';
+
+      const head = document.createElement('div');
+      head.className = 'head';
+      head.innerHTML =
+        `<div class="date"><i class="fa-regular fa-calendar-days"></i> ${p.date||''}</div>
+         <div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${p.title||p.title_en||p.title_ja||'(untitled)'}</a></div>`;
+      const body = document.createElement('div');
+      body.className = 'body';
+      const sum = (lang==='ja' ? (p.summary_ja||p.summary_en) : (p.summary_en||p.summary_ja)) || '';
+      body.innerHTML = `<div>${sum}</div>`;
+
+      const tags = document.createElement('div');
+      tags.className = 'tags';
+      (p.tags||[]).forEach(t=>{
+        const s = document.createElement('span');
+        s.className = 'tag';
+        s.textContent = t;
+        tags.appendChild(s);
+      });
+      body.appendChild(tags);
+
+      card.appendChild(head);
+      card.appendChild(body);
+      list.appendChild(card);
     });
-  </script>
+}
+
+(async function init(){
+  const all = await loadPosts();
+  render(all);
+
+  // simple client-side search
+  const kw = document.getElementById('kw');
+  kw.addEventListener('input', ()=>{
+    const term = kw.value.trim().toLowerCase();
+    if(!term){ render(all); return; }
+    const filtered = all.filter(p=>{
+      const blob = [
+        p.slug, p.title, p.title_en, p.title_ja, p.summary_en, p.summary_ja,
+        ...(p.tags||[])
+      ].join(' ').toLowerCase();
+      return blob.includes(term);
+    });
+    render(filtered);
+  });
+
+  try{ gtag('event','page_view',{page_title:'blog/index'}); }catch(_){}
+})();
+</script>
 </body>
 </html>
