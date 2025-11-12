@@ -31,7 +31,7 @@ html,body{ margin:0; background:#fff; color:var(--ink);
 a{ color:inherit; text-decoration:none }
 .wrap{ max-width:1100px; margin:0 auto; padding:0 16px }
 
-/* Hide Learning / Learned only on blog page (keep language toggle) */
+/* Learning/Learned はブログでは非表示（言語トグルは表示） */
 .site-header nav[aria-label="Learning navigation"]{ display:none !important; }
 
 .btn{border:1px solid var(--line); background:#fff; border-radius:10px; padding:8px 12px; cursor:pointer;}
@@ -104,70 +104,11 @@ a{ color:inherit; text-decoration:none }
   <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
 </footer>
 
+<!-- 共通パーシャル読込（言語トグル付き） -->
+<script src="/assets/partials.js"></script>
+
 <script>
-/* ---------- language helpers ---------- */
-const getLang = () => localStorage.getItem('lang') || 'en';
-const setLang = (v) => localStorage.setItem('lang', v);
-
-/* ---------- inject partials and language toggle ---------- */
-(async function injectPartials(){
-  const hdr = document.getElementById('site-header');
-  const ftr = document.getElementById('site-footer');
-  try{
-    const h = await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    hdr.innerHTML = h;
-  }catch(_){
-    hdr.innerHTML =
-      '<div style="padding:14px 0;display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column">' +
-      '<a href="/" style="font-weight:800;font-size:32px;color:#e6462d;text-decoration:none">nihongotext<span style="color:#333">.com</span></a>' +
-      '<div style="font-size:20px;color:#98a1a8">== beta version ==</div>' +
-      '</div>';
-  }
-  try{
-    const t = await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    ftr.innerHTML = t;
-  }catch(_){
-    ftr.innerHTML = '<div style="text-align:center;color:#98a1a8;font-size:12px;padding:12px 0">© 2025 nihongotext.com</div>';
-  }
-
-  // Hide Learning/Learned on this page only
-  const learnNav = hdr.querySelector('nav[aria-label="Learning navigation"]');
-  if (learnNav) learnNav.style.display = 'none';
-
-  // Ensure a language toggle button exists
-  let langBtn = hdr.querySelector('#langBtn');
-  if (!langBtn) {
-    const wrap = document.createElement('div');
-    wrap.style.cssText = 'display:flex;justify-content:flex-end;gap:8px;padding-top:6px';
-    langBtn = document.createElement('button');
-    langBtn.id = 'langBtn';
-    langBtn.className = 'btn btn--accent';
-    wrap.appendChild(langBtn);
-    hdr.appendChild(wrap);
-  }
-
-  function applyLangToHeaderAndTitle(){
-    const lang = getLang();
-    // header button label
-    langBtn.textContent = (lang==='en') ? '日本語' : 'English';
-    // page H1 and document title
-    const pageTitle = document.getElementById('pageTitle')?.querySelector('span');
-    if(pageTitle){ pageTitle.textContent = (lang==='en') ? 'Blog' : 'ブログ'; }
-    document.title = ((lang==='en') ? 'Blog' : 'ブログ') + ' | nihongotext.com';
-    // search placeholder & sub lead
-    const kw = document.getElementById('kw');
-    if(kw){ kw.placeholder = (lang==='en') ? 'Search posts...' : '記事を検索…'; }
-    const sub = document.getElementById('subLead');
-    if(sub){ sub.textContent = (lang==='en') ? 'Latest update from nihongotext.com' : 'nihongotext.com からの最新更新情報'; }
-    // re-render posts to switch title/summary language
-    render(window.__ALL_POSTS__||[]);
-  }
-
-  langBtn.onclick = ()=>{ setLang(getLang()==='en' ? 'ja' : 'en'); applyLangToHeaderAndTitle(); };
-  applyLangToHeaderAndTitle();
-})();
-
-/* ---------- load posts ---------- */
+/* ====== posts 読み込み ====== */
 const endpoints = ['/blog/posts.json', '/blog/news.json'];
 async function loadPosts(){
   for(const url of endpoints){
@@ -180,6 +121,9 @@ async function loadPosts(){
   }
   return [];
 }
+
+/* ====== レンダリング ====== */
+function getLang(){ return localStorage.getItem('lang') || 'en'; }
 
 function render(posts){
   const list = document.getElementById('list');
@@ -200,7 +144,6 @@ function render(posts){
       const head = document.createElement('div');
       head.className = 'head';
 
-      // language-aware title
       const titleText = (lang==='ja')
         ? (p.title_ja || p.title || p.title_en || '(untitled)')
         : (p.title_en || p.title || p.title_ja || '(untitled)');
@@ -230,14 +173,34 @@ function render(posts){
     });
 }
 
+/* ====== 初期化：partials.js を使ってヘッダー/フッター＋言語トグルを注入 ====== */
 (async function init(){
+  // assets/partials.js の共通インジェクタを利用
+  // - hideLearningNav: ブログでは Learning/Learned を隠す
+  // - titleTargets: ページ内タイトルの切替対象
+  // - titleDoc   : <title> の言語切替
+  // - onLangApply: 言語トグル押下時にページ固有の文言を更新
+  window.injectPartials && window.injectPartials({
+    hideLearningNav: true,
+    titleTargets: [
+      { el: document.querySelector('#pageTitle span'), en: 'Blog', ja: 'ブログ' }
+    ],
+    titleDoc: { en: 'Blog | nihongotext.com', ja: 'ブログ | nihongotext.com' },
+    onLangApply(lang){
+      const kw = document.getElementById('kw');
+      if(kw){ kw.placeholder = (lang==='en') ? 'Search posts...' : '記事を検索…'; }
+      const sub = document.getElementById('subLead');
+      if(sub){ sub.textContent = (lang==='en') ? 'Latest update from nihongotext.com' : 'nihongotext.com からの最新更新情報'; }
+      // 言語切替時に再描画
+      render(window.__ALL_POSTS__||[]);
+    }
+  });
+
   const all = await loadPosts();
   window.__ALL_POSTS__ = all;
-
-  // initial render (uses current language)
   render(all);
 
-  // simple client-side search
+  // 検索
   const kw = document.getElementById('kw');
   kw.addEventListener('input', ()=>{
     const term = kw.value.trim().toLowerCase();
