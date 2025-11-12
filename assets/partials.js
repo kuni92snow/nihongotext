@@ -1,81 +1,96 @@
-// ===== Language helpers =====
-const getLang = () => localStorage.getItem('lang') || 'en';
-const setLang = (v) => localStorage.setItem('lang', v);
+/* ======================================================
+ * nihongotext.com - Common partials loader
+ * - Header / Footer injection
+ * - Language toggle
+ * ====================================================== */
 
-// ===== injectPartials(options) =====
-// options = { hideLearnNav: true/false, titleTargets: [{el,textEn,textJa}], titleDoc:{en,ja}, onLangApply(lang) }
-async function injectPartials(options = {}) {
-  const hdr = document.getElementById('site-header');
-  const ftr = document.getElementById('site-footer');
-
-  // header
-  try {
-    const h = await fetch('/partials/header.html', { cache: 'no-store' })
-      .then(r => r.ok ? r.text() : Promise.reject());
-    if (hdr) hdr.innerHTML = h;
-  } catch (_) {
-    if (hdr) {
-      hdr.innerHTML =
-        '<div style="padding:14px 0;display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column">' +
-        '<a href="/" style="font-weight:800;font-size:32px;color:#e6462d;text-decoration:none">nihongotext<span style="color:#333">.com</span></a>' +
-        '<div style="font-size:20px;color:#98a1a8">== beta version ==</div>' +
-        '</div>';
-    }
+window.injectPartials = async function (options = {}) {
+  // ===== header/footer 読み込み =====
+  const header = document.getElementById("site-header");
+  const footer = document.getElementById("site-footer");
+  if (header) {
+    const res = await fetch("/partials/header.html");
+    header.innerHTML = await res.text();
+  }
+  if (footer) {
+    const res = await fetch("/partials/footer.html");
+    footer.innerHTML = await res.text();
   }
 
-  // footer
-  try {
-    const t = await fetch('/partials/footer.html', { cache: 'no-store' })
-      .then(r => r.ok ? r.text() : Promise.reject());
-    if (ftr) ftr.innerHTML = t;
-  } catch (_) {
-    if (ftr) {
-      ftr.innerHTML =
-        '<div style="text-align:center;color:#98a1a8;font-size:12px;padding:12px 0">© 2025 nihongotext.com</div>';
-    }
-  }
+  // ===== 言語トグルボタンの生成 =====
+  const hdr = document.querySelector("header .container, #site-header, header.site-header");
+  if (hdr) {
+    const wrap = document.createElement("div");
+    wrap.style.cssText = `
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: 6px;
+      margin-bottom: 4px;
+    `;
 
-  // 1) Learning/Learned を非表示（index 以外で使う場合）
-  if (options.hideLearnNav && hdr) {
-    const nav = hdr.querySelector('nav[aria-label="Learning navigation"]');
-    if (nav) nav.style.display = 'none';
-  }
+    const langBtn = document.createElement("button");
+    langBtn.id = "langBtn";
+    langBtn.textContent = getLang() === "ja" ? "日本語" : "EN";
+    langBtn.style.cssText = `
+      background: #fff7f6;
+      border: 1px solid #e6462d;
+      color: #e6462d;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all .2s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      margin-right: 6px;
+    `;
+    langBtn.onmouseover = () => (langBtn.style.background = "#ffeceb");
+    langBtn.onmouseout = () => (langBtn.style.background = "#fff7f6");
 
-  // 2) 言語トグル（無ければ追加）
-  let langBtn = hdr ? hdr.querySelector('#langBtn') : null;
-  if (!langBtn && hdr) {
-    const wrap = document.createElement('div');
-    wrap.style.cssText = 'display:flex;justify-content:flex-end;gap:8px;padding-top:6px';
-    langBtn = document.createElement('button');
-    langBtn.id = 'langBtn';
-    langBtn.className = 'btn';
+    langBtn.onclick = () => {
+      const newLang = getLang() === "ja" ? "en" : "ja";
+      localStorage.setItem("lang", newLang);
+      applyLang();
+    };
+
     wrap.appendChild(langBtn);
     hdr.appendChild(wrap);
   }
 
+  // ===== 言語取得関数 =====
+  function getLang() {
+    return localStorage.getItem("lang") || "en";
+  }
+
+  // ===== 言語適用処理 =====
   function applyLang() {
     const lang = getLang();
-    if (langBtn) langBtn.textContent = (lang === 'en') ? '日本語' : 'English';
+    const btn = document.getElementById("langBtn");
+    if (btn) btn.textContent = lang === "ja" ? "日本語" : "EN";
 
-    // 3) ページ見出しの切替
-    (options.titleTargets || []).forEach(t => {
-      if (!t || !t.el) return;
-      t.el.textContent = (lang === 'ja' ? (t.textJa || t.textEn || '') : (t.textEn || t.textJa || ''));
-    });
-
-    // 4) document.title の切替
-    if (options.titleDoc) {
-      document.title = (lang === 'ja' ? options.titleDoc.ja : options.titleDoc.en);
+    if (options.titleTargets && Array.isArray(options.titleTargets)) {
+      options.titleTargets.forEach((t) => {
+        if (!t.el) return;
+        t.el.textContent = lang === "ja" ? t.ja || t.en : t.en || t.ja;
+      });
     }
 
-    if (typeof options.onLangApply === 'function') options.onLangApply(lang);
+    if (options.titleDoc) {
+      document.title = lang === "ja" ? options.titleDoc.ja : options.titleDoc.en;
+    }
+
+    if (typeof options.onLangApply === "function") {
+      options.onLangApply(lang);
+    }
   }
 
-  if (langBtn) {
-    langBtn.onclick = () => { setLang(getLang() === 'en' ? 'ja' : 'en'); applyLang(); };
-  }
+  // 初期適用
   applyLang();
-}
 
-// どこからでも使えるように公開
-window.injectPartials = injectPartials;
+  // ===== Learning/Learned 表示制御 =====
+  if (options.hideLearningNav) {
+    const learnNav = document.querySelector("nav[aria-label='Learning navigation']");
+    if (learnNav) learnNav.style.display = "none";
+  }
+};
