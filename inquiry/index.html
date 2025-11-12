@@ -3,39 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | nihongotext.com</title>
+  <title>Inquiry | nihongotext.com</title>
   <link rel="icon" href="/favicon.ico" />
   <base href="/" />
-  <meta name="color-scheme" content="light only" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512">
 
-  <!-- reCAPTCHA v2 -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- Fonts/Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    :root{ --shu:#e6462d; --border:#e5e7eb; --ink:#132c3a; --muted:#6b7280; }
-    *{box-sizing:border-box}
-    body{margin:0;background:#fff;color:var(--ink);
-      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.7}
-    a{color:inherit}
-    ruby{ruby-position:over} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
-
-    main .wrap{max-width:960px;margin:auto;padding:12px}
-    h1{font-size:28px;margin:16px 0}
-    .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px 18px 14px}
-    label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}
-    input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:#fff;font:inherit}
-    textarea{min-height:180px;resize:vertical}
-    .row{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
-    .btn{padding:10px 16px;border-radius:10px;background:var(--shu);color:#fff;border:none;cursor:pointer}
-    .btn.secondary{background:#fff;color:#111827;border:1px solid var(--border)}
-    .note{font-size:12px;color:var(--muted);margin-top:8px}
-    .msg-ok{color:#10b981;font-weight:700}
-    .msg-ng{color:#ef4444;font-weight:700}
+    :root{--ink:#132c3a;--muted:#6b7280;--brand:#e6462d;--border:#e5e7eb}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+    main .wrap{max-width:1100px;margin:auto;padding:16px}
+    .muted{color:var(--muted)}
+    .card{border:1px solid var(--border);border-radius:14px;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.03);background:#fff}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    h1{margin:0 0 8px}
+    h2{margin:.2rem 0 .5rem}
+    .fa-fw{width:1.1em;text-align:center}
+    input,textarea{width:100%;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:15px}
+    textarea{min-height:140px;resize:vertical}
+    .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:12px}
+    .btn{border:1px solid var(--border);border-radius:10px;background:#fff;padding:10px 14px;cursor:pointer}
+    .btn.primary{border-color:var(--brand);background:var(--brand);color:#fff}
+    .note{font-size:.9rem;color:var(--muted)}
   </style>
 
   <!-- GA4 -->
@@ -44,238 +38,333 @@
     window.dataLayer=window.dataLayer||[];
     function gtag(){dataLayer.push(arguments);}
     gtag('js',new Date());
-    gtag('config','G-9QSHWJE0HZ');
+    gtag('config','G-9QSHWJE0HZ',{send_page_view:false});
   </script>
 </head>
 <body>
-
-  <!-- ====== Header (partials) ====== -->
+  <!-- Header / Footer placeholders -->
   <div id="header"></div>
 
-  <!-- ====== Page ====== -->
   <main>
-    <div class="wrap">
-      <h1 id="title" data-i18n="contact">Contact</h1>
+    <div class="wrap" id="page" data-i18n data-lang="en">
+      <div class="en">
+        <h1 class="row"><i class="fa-solid fa-envelope fa-fw" style="color:#e6462d"></i> Inquiry</h1>
+        <p class="muted">Feel free to contact us. Required fields are marked with *</p>
+      </div>
+      <div class="ja">
+        <h1 class="row"><i class="fa-solid fa-envelope fa-fw" style="color:#e6462d"></i> お問い合わせ</h1>
+        <p class="muted">ご自由にお問い合わせください。* は必須項目です。</p>
+      </div>
 
-      <section class="card" aria-labelledby="title">
-        <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
+      <section class="card" aria-labelledby="inq-title">
+        <h2 id="inq-title" class="en">Contact Form</h2>
+        <h2 class="ja">お問い合わせフォーム</h2>
 
-        <!-- ★必要に応じて Apps Script Web App URL を差し替え -->
-        <form id="contactForm" target="submit_iframe" method="POST"
-              action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
+        <form id="inqForm" novalidate>
+          <label class="en">Your Name *</label>
+          <label class="ja">お名前 *</label>
+          <input id="name" name="name" required placeholder="John Doe">
 
-          <label for="name" id="lbName" data-i18n="name">Name</label>
-          <input id="name" name="name" autocomplete="name" placeholder="Your name" />
+          <label class="en">Email *</label>
+          <label class="ja">メールアドレス *</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
 
-          <label for="email" id="lbEmail" data-i18n="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" />
+          <label class="en">Message *</label>
+          <label class="ja">メッセージ *</label>
+          <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
 
-          <label for="subject" id="lbSubject" data-i18n="subject">Subject</label>
-          <input id="subject" name="subject" placeholder="What is this about?" />
+          <!-- reCAPTCHA v2 -->
+          <div id="recaptcha-box" style="margin:10px 0;"></div>
+          <div class="note en">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</div>
+          <div class="note ja">このサイトは reCAPTCHA によって保護されています。</div>
 
-          <label for="message" id="lbMessage" data-i18n="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write your message..."></textarea>
-
-          <input type="hidden" id="token" name="token" />
-
-          <div class="row">
-            <!-- ★sitekey はご利用のキーに合わせてください -->
-            <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-            <button type="button" class="btn secondary" id="btnCancel" data-i18n="cancel">Cancel</button>
-            <button type="submit" class="btn" id="btnSend" data-i18n="send">Send</button>
+          <div class="actions">
+            <button type="button" id="btnReset" class="btn">Reset</button>
+            <button type="submit" id="btnSubmit" class="btn primary">Send</button>
           </div>
-
-          <div class="note" id="rcNote">
-            reCAPTCHA and Google’s
-            <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Privacy Policy</a> and
-            <a href="https://policies.google.com/terms?hl=en" target="_blank" rel="noopener">Terms of Service</a> apply.
-          </div>
-          <div class="note" id="msg" aria-live="polite"></div>
         </form>
+
+        <p id="result" class="note" role="status" aria-live="polite" style="margin-top:10px;"></p>
       </section>
     </div>
   </main>
 
-  <!-- ====== Footer (partials) ====== -->
   <div id="footer"></div>
 
-  <!-- ====== Lang / Submit / Partials / Learning hooks ====== -->
+  <!-- reCAPTCHA v2 -->
+  <script src="https://www.google.com/recaptcha/api.js?onload=onReCaptchaLoad&render=explicit" async defer></script>
+
   <script>
-    // ---------- (A) ヘッダー / フッターの読み込み ----------
+    /***********************
+     * Lang helpers
+     ***********************/
+    const currentLang = ()=> localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en');
+    function applyLang(lang){
+      const page=document.getElementById('page');
+      page.setAttribute('data-lang',lang);
+      document.documentElement.lang=(lang==='ja'?'ja':'en');
+      localStorage.setItem('nt_lang',lang);
+      const btnHeader=document.getElementById('langBtn');
+      if(btnHeader) btnHeader.textContent = (lang==='ja' ? 'English' : '日本語');
+      if(window.gtag) gtag('event','language_change',{language:lang});
+    }
+
+    /***********************
+     * Partials loader + header wire-up
+     ***********************/
     async function loadPartials(){
-      const [h,f] = await Promise.all([
+      const [h,f]=await Promise.all([
         fetch('/partials/header.html',{cache:'no-store'}),
         fetch('/partials/footer.html',{cache:'no-store'})
       ]);
-      document.getElementById('header').innerHTML = await h.text();
-      document.getElementById('footer').innerHTML = await f.text();
+      document.getElementById('header').innerHTML=await h.text();
+      document.getElementById('footer').innerHTML=await f.text();
 
-      // 言語トグル（無ければ補完作成）
-      ensureLangButton();
-      setupLangToggle();
-
-      // Learning / Learned（ID, data-open どちらでも拾う）
-      hookLearningButtons();
-    }
-
-    // ---------- (B) 言語辞書（ページ内テキストのみ切替） ----------
-    const dict = {
-      en: {
-        contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",
-        cancel:"Cancel",send:"Send",btn:"日本語",
-        placeholders:{name:"Your name",email:"your@email.com",subject:"What is this about?",message:"Write your message..."},
-        sentok:"Your message has been sent. Thank you!",
-        sentng:"Failed to send. Please try again later.",
-        need:"Please check the reCAPTCHA box."
-      },
-      ja:{
-        contact:"<ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby>",
-        name:"<ruby><rb>お名前</rb><rt>おなまえ</rt></ruby> / Name",
-        email:"<ruby><rb>メール</rb><rt>めーる</rt></ruby> / Email",
-        subject:"<ruby><rb>件名</rb><rt>けんめい</rt></ruby> / Subject",
-        message:"<ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby> / Message",
-        cancel:"<ruby><rb>キャンセル</rb><rt>きゃんせる</rt></ruby>",
-        send:"<ruby><rb>送信</rb><rt>そうしん</rt></ruby>",
-        btn:"English",
-        placeholders:{name:"おなまえ",email:"your@email.com",subject:"ご用件",message:"メッセージを入力してください"},
-        sentok:"<ruby><rb>送信</rb><rt>そうしん</rt></ruby>しました。ありがとうございます。",
-        sentng:"<ruby><rb>送信</rb><rt>そうしん</rt></ruby>に<ruby><rb>失敗</rb><rt>しっぱい</rt></ruby>しました。時間をおいてお試しください。",
-        need:"reCAPTCHA をチェックしてください。"
-      }
-    };
-    let lang = (localStorage.getItem('nt_lang') || ((navigator.language||'en').startsWith('ja')?'ja':'en'));
-
-    const els = {
-      title: document.getElementById('title'),
-      lbName: document.getElementById('lbName'),
-      lbEmail: document.getElementById('lbEmail'),
-      lbSubject: document.getElementById('lbSubject'),
-      lbMessage: document.getElementById('lbMessage'),
-      btnCancel: document.getElementById('btnCancel'),
-      btnSend: document.getElementById('btnSend'),
-      name: document.getElementById('name'),
-      email: document.getElementById('email'),
-      subject: document.getElementById('subject'),
-      message: document.getElementById('message'),
-      msg: document.getElementById('msg')
-    };
-
-    function applyLang(){
-      const t = dict[lang];
-      document.documentElement.lang = (lang==='ja')?'ja':'en';
-      els.title.innerHTML = t.contact;
-      els.lbName.innerHTML = t.name;
-      els.lbEmail.innerHTML = t.email;
-      els.lbSubject.innerHTML = t.subject;
-      els.lbMessage.innerHTML = t.message;
-      els.btnCancel.innerHTML = t.cancel;
-      els.btnSend.innerHTML = t.send;
-      els.name.placeholder = t.placeholders.name;
-      els.email.placeholder = t.placeholders.email;
-      els.subject.placeholder = t.placeholders.subject;
-      els.message.placeholder = t.placeholders.message;
-
-      const btnHeader = document.getElementById('langBtn');
-      if (btnHeader) btnHeader.textContent = t.btn;
-
-      localStorage.setItem('nt_lang', lang);
-    }
-
-    // ヘッダーに #langBtn が無い場合は右端に補完ボタンを挿入
-    function ensureLangButton(){
-      let btn = document.getElementById('langBtn');
-      if (btn) return;
-      const host = document.querySelector('.site-header .container') || document.getElementById('header');
-      if (!host) return;
-      btn = document.createElement('button');
-      btn.id = 'langBtn';
-      btn.type = 'button';
-      btn.className = 'btn';
-      btn.style.cssText = 'margin-left:auto;border:1px solid #e5e7eb;background:#fff;color:#111827;border-radius:10px;padding:8px 12px';
-      btn.textContent = (lang==='ja') ? 'English' : '日本語';
-      // なるべく右上に配置
-      const firstRow = host.querySelector('nav[aria-label="Main navigation"]') || host.firstElementChild;
-      host.insertBefore(btn, firstRow);
-    }
-
-    function setupLangToggle(){
-      const btnHeader = document.getElementById('langBtn');
-      if (!btnHeader) return;
-      btnHeader.addEventListener('click', ()=>{
-        lang = (lang==='en')?'ja':'en';
-        applyLang();
-      });
-      applyLang();
-    }
-
-    // ---------- (C) Learning / Learned を開くフォールバック ----------
-    function openOverlay(drawerSel){
-      const overlay = document.getElementById('learning-overlay');
-      const drawer  = document.querySelector(drawerSel);
-      if (overlay && drawer){
-        overlay.style.display='block';
-        setTimeout(()=>{ drawer.style.right='0'; },10);
-      }
-    }
-    function hookLearningButtons(){
-      const openLearningBtn = document.querySelector('#learnBtn, [data-open="learning"]');
-      const openLearnedBtn  = document.querySelector('#learnedBtn, [data-open="learned"]');
-
-      if (openLearningBtn){
-        openLearningBtn.addEventListener('click', (e)=>{
-          e.preventDefault();
-          if (window._ntxOpenLearning) window._ntxOpenLearning();
-          else openOverlay('#learning-drawer');
+      // Lang toggle (keep)
+      const btnHeader=document.getElementById('langBtn');
+      if(btnHeader){
+        const sync=()=> btnHeader.textContent=(currentLang()==='ja'?'English':'日本語');
+        btnHeader.addEventListener('click', ()=>{
+          const next = currentLang()==='ja' ? 'en' : 'ja';
+          applyLang(next);
         });
+        sync();
       }
-      if (openLearnedBtn){
-        openLearnedBtn.addEventListener('click', (e)=>{
-          e.preventDefault();
-          if (window._ntxOpenLearned) window._ntxOpenLearned();
-          else openOverlay('#learned-drawer');
-        });
-      }
+
+      // Header buttons (Learning / Learned)
+      const openLearnBtn   = document.getElementById('learnBtn');
+      const openLearnedBtn = document.getElementById('learnedBtn');
+      if(openLearnBtn)   openLearnBtn.addEventListener('click', ()=> window._ntxOpenLearning());
+      if(openLearnedBtn) openLearnedBtn.addEventListener('click', ()=> window._ntxOpenLearned());
+
+      // Badges初期表示
+      updateBadges();
     }
 
-    // ---------- (D) 送信処理（reCAPTCHA 必須） ----------
-    const form = document.getElementById('contactForm');
-    const iframe = document.getElementById('submit_iframe');
+    /***********************
+     * Storage helpers（index.htmlと互換）
+     ***********************/
+    const LEARN_KEY = 'ntx_learning_v3';
+    function getLearning(){ try{return JSON.parse(localStorage.getItem(LEARN_KEY)||'[]')}catch(_){return[]} }
+    function setLearning(arr){ try{localStorage.setItem(LEARN_KEY,JSON.stringify(arr));}catch(_){ } }
 
-    iframe.addEventListener('load', ()=>{
-      const t = dict[lang];
-      const msg = document.getElementById('msg');
-      msg.innerHTML = t.sentok;
-      msg.className = 'note msg-ok';
-      form.reset();
-      if (window.grecaptcha) grecaptcha.reset();
-    });
+    const LEARNED_STORE = 'ntx_learned_items_v1';   // id->item
+    const LEARNED_DATE_KEY = 'ntx_learned_dates_v1';// id->YYYY-MM-DD
 
-    form.addEventListener('submit', (ev)=>{
-      const t = dict[lang];
-      const token = window.grecaptcha ? grecaptcha.getResponse() : '';
-      const msg = document.getElementById('msg');
-      if (!token){
-        ev.preventDefault();
-        msg.innerHTML = t.need;
-        msg.className = 'note msg-ng';
+    function getLearnedMap(){ try{return JSON.parse(localStorage.getItem(LEARNED_STORE)||'{}')}catch(_){return{}} }
+    function setLearnedMap(m){ localStorage.setItem(LEARNED_STORE, JSON.stringify(m)); }
+    function getLearnedDates(){ try{return JSON.parse(localStorage.getItem(LEARNED_DATE_KEY)||'{}')}catch(_){return{}} }
+    function setLearnedDate(id, d){ const k=getLearnedDates(); k[id]=d; localStorage.setItem(LEARNED_DATE_KEY, JSON.stringify(k)); }
+    function learnedIds(){ return Object.keys(getLearnedMap()); }
+
+    function updateBadges(){
+      const bLrn  = document.getElementById('badge-learning');
+      const bLrnd = document.getElementById('badge-learned');
+      if (bLrn)  bLrn.textContent  = String(getLearning().length);
+      if (bLrnd) bLrnd.textContent = String(learnedIds().length);
+    }
+
+    /***********************
+     * Header drawers renderer (Learning / Learned)
+     * - header.html 側に用意されている:
+     *   #learning-overlay, #learning-drawer, #learned-drawer
+     *   #learning-list（Learningの中身）
+     ***********************/
+    function openOverlay(){ const o=document.getElementById('learning-overlay'); if(o){o.style.display='block';} }
+    function closeOverlay(){ const o=document.getElementById('learning-overlay'); if(o){o.style.display='none';} }
+
+    function _renderLearningDrawer(){
+      const box = document.getElementById('learning-list');
+      if(!box){ return; }
+      const arr = getLearning();
+      box.innerHTML = '';
+
+      if(!arr.length){
+        box.innerHTML = '<div style="color:#6b7280">No items yet.</div>';
         return;
       }
-      document.getElementById('token').value = token;
-      msg.textContent=''; msg.className='note';
+
+      arr.forEach((x,i)=>{
+        const line = document.createElement('div');
+        line.style.cssText='display:flex;gap:10px;align-items:center;justify-content:space-between;border-bottom:1px dashed #eee;padding:8px 0';
+
+        const left = document.createElement('div');
+        left.innerHTML = `<strong>${i+1}. ${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}${x.movedAt?` <span style="color:#888">(${x.movedAt})</span>`:''}`;
+
+        const right = document.createElement('div');
+        const toLearned = document.createElement('button');
+        toLearned.className='btn';
+        toLearned.textContent='Move to Learned';
+        toLearned.onclick = ()=> {
+          // add to learned
+          const m=getLearnedMap();
+          if(!m[x.id]){
+            m[x.id]=x;
+            setLearnedMap(m);
+            const d=new Date(); const z=n=>String(n).padStart(2,'0');
+            const today=`${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+            setLearnedDate(x.id, today);
+          }
+          // remove from learning
+          const rest=getLearning().filter(y=>y.id!==x.id);
+          setLearning(rest);
+          _renderLearningDrawer();
+          updateBadges();
+        };
+        right.appendChild(toLearned);
+
+        line.append(left,right);
+        box.appendChild(line);
+      });
+    }
+
+    function _renderLearnedDrawer(){
+      const box = document.getElementById('learned-list');
+      if(!box){ return; }
+      box.innerHTML='';
+
+      const m = getLearnedMap();
+      const d = getLearnedDates();
+      const ids = Object.keys(m);
+      if(!ids.length){
+        box.innerHTML = '<div style="color:#6b7280">No items yet.</div>';
+        return;
+      }
+
+      ids.forEach((id, i)=>{
+        const x = m[id];
+        const line = document.createElement('div');
+        line.style.cssText='display:flex;gap:10px;align-items:center;justify-content:space-between;border-bottom:1px dashed #eee;padding:8px 0';
+
+        const left = document.createElement('div');
+        const movedAt = d[id] ? ` <span style="color:#888">(${d[id]})</span>` : '';
+        left.innerHTML = `<strong>${i+1}. ${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}${movedAt}`;
+
+        const right = document.createElement('div');
+        const backBtn = document.createElement('button');
+        backBtn.className='btn';
+        backBtn.textContent='Back to Learning';
+        backBtn.onclick = ()=>{
+          // remove from learned
+          const map = getLearnedMap(); delete map[id]; setLearnedMap(map);
+          const dates = getLearnedDates(); delete dates[id]; localStorage.setItem(LEARNED_DATE_KEY, JSON.stringify(dates));
+          // add to learning if absent
+          const arr = getLearning();
+          if(!arr.find(y=>y.id===id)){
+            const now=new Date(); const z=n=>String(n).padStart(2,'0');
+            arr.push({...x, movedAt: `${now.getFullYear()}-${z(now.getMonth()+1)}-${z(now.getDate())}`});
+            setLearning(arr);
+          }
+          _renderLearnedDrawer();
+          updateBadges();
+        };
+        right.appendChild(backBtn);
+
+        line.append(left,right);
+        box.appendChild(line);
+      });
+    }
+
+    // グローバル公開（header の onclick フォールバックからも呼べる）
+    window._ntxOpenLearning = function(){
+      const d=document.getElementById('learning-drawer');
+      if(!d) return;
+      _renderLearningDrawer();
+      openOverlay();
+      setTimeout(()=>{ d.style.right='0'; },10);
+      // 閉じる処理（×ボタン or オーバーレイ）
+      const closeBtn = document.getElementById('btn-close-learning');
+      if(closeBtn){
+        closeBtn.onclick=()=>{ d.style.right='-560px'; setTimeout(closeOverlay,250); };
+      }
+      const overlay=document.getElementById('learning-overlay');
+      if(overlay){
+        overlay.onclick=(e)=>{ if(e.target.id==='learning-overlay'){ d.style.right='-560px'; setTimeout(closeOverlay,250);} };
+      }
+    };
+
+    window._ntxOpenLearned = function(){
+      const d=document.getElementById('learned-drawer');
+      if(!d) return;
+      _renderLearnedDrawer();
+      openOverlay();
+      setTimeout(()=>{ d.style.right='0'; },10);
+      // 閉じる
+      const overlay=document.getElementById('learning-overlay');
+      if(overlay){
+        overlay.onclick=(e)=>{ if(e.target.id==='learning-overlay'){ d.style.right='-560px'; setTimeout(closeOverlay,250);} };
+      }
+      const closeBtn = document.getElementById('btn-close-learned');
+      if(closeBtn){
+        closeBtn.onclick=()=>{ d.style.right='-560px'; setTimeout(closeOverlay,250); };
+      }
+    };
+
+    /***********************
+     * reCAPTCHA v2
+     ***********************/
+    let recaptchaWidgetId = null;
+    function onReCaptchaLoad(){
+      const el = document.getElementById('recaptcha-box');
+      if(el){
+        // ★必須：サイトキーを本番の key に置き換えてください
+        recaptchaWidgetId = grecaptcha.render(el, { sitekey: 'YOUR_RECAPTCHA_V2_SITE_KEY' });
+      }
+    }
+    window.onReCaptchaLoad = onReCaptchaLoad; // global
+
+    /***********************
+     * Form submit (JSONP例/GASなどに合わせて適宜置換)
+     ***********************/
+    document.getElementById('btnReset').addEventListener('click',()=>{
+      document.getElementById('inqForm').reset();
+      if(typeof grecaptcha!=='undefined' && recaptchaWidgetId!=null){
+        grecaptcha.reset(recaptchaWidgetId);
+      }
+      document.getElementById('result').textContent='';
     });
 
-    document.getElementById('btnCancel').addEventListener('click', ()=>{
-      form.reset();
-      const msg = document.getElementById('msg');
-      msg.textContent=''; msg.className='note';
-      if (window.grecaptcha) grecaptcha.reset();
+    document.getElementById('inqForm').addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const message=document.getElementById('message').value.trim();
+      const resEl=document.getElementById('result');
+
+      if(!name || !email || !message){
+        resEl.textContent = (currentLang()==='ja') ? '未入力の必須項目があります。' : 'Please fill all required fields.';
+        return;
+      }
+      let token='';
+      try{ token = grecaptcha.getResponse(recaptchaWidgetId)||''; }catch(_){}
+      if(!token){
+        resEl.textContent = (currentLang()==='ja') ? 'reCAPTCHA を完了してください。' : 'Please complete reCAPTCHA.';
+        return;
+      }
+
+      // ここでGAS等に送信（ダミー）
+      try{
+        // 実運用：fetch(JSONP/GET/POST) に置換
+        await new Promise(r=>setTimeout(r,600));
+        resEl.textContent = (currentLang()==='ja') ? '送信しました。ありがとうございます。' : 'Sent. Thank you!';
+        document.getElementById('inqForm').reset();
+        grecaptcha.reset(recaptchaWidgetId);
+      }catch(err){
+        resEl.textContent = (currentLang()==='ja') ? '送信でエラーが発生しました。' : 'Failed to send. Please try again.';
+      }
     });
 
-    // ---------- 初期化 ----------
-    (async function init(){
-      await loadPartials();   // ← 読み込み後にトグル/ボタンのイベントを必ず設定
-      applyLang();            // 念のため再適用
-    })();
+    /***********************
+     * Init
+     ***********************/
+    document.addEventListener('DOMContentLoaded', async ()=>{
+      await loadPartials();
+      applyLang(currentLang());
+      // ページ間維持（LocalStorage）のバッジ同期
+      updateBadges();
+      window.addEventListener('storage', updateBadges);
+      try{ gtag('event','page_view',{page_title:'inquiry'}); }catch(_){}
+    });
   </script>
 </body>
 </html>
