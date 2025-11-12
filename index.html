@@ -1,439 +1,793 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>nihongotext.com</title>
-  <base href="/" />
-  <link rel="icon" href="/icon-512.png" />
-  <meta name="description" content="Japanese learning site with JLPT vocabulary, examples, Learning / Learned list, and quizzes." />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>nihongotext.com　==beta version==</title>
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#b22222">
 
-  <!-- GA4 (no auto page_view) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
-  </script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <style>
-    :root{ --brand:#e6462d; --ink:#111827; --muted:#6b7280; --border:#e5e7eb; --bg:#ffffff; }
-    *{box-sizing:border-box}
-    body{margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif; color:var(--ink); background:var(--bg); line-height:1.7}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
 
-    main .wrap{max-width:1100px; margin:auto; padding:16px}
-    h1{margin:.5rem 0 1rem; font-size:1.6rem}
-    .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-    .controls{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:10px 0 8px}
-    .controls select, .controls input[type="search"]{border:1px solid var(--border); border-radius:10px; padding:8px 10px; font-size:15px}
-    .toggles{display:grid; grid-template-columns:repeat(2,auto); gap:8px 16px; align-items:center}
-    .panel{border:1px solid var(--border); border-radius:14px; padding:14px; box-shadow:0 2px 10px rgba(0,0,0,.03); background:#fff}
-    .card{border:1px solid var(--border); border-radius:12px; padding:12px; background:#fff}
-    .muted{color:var(--muted)}
-    .badge{display:inline-flex; align-items:center; gap:6px; padding:2px 8px; border:1px solid var(--border); border-radius:9999px; font-size:12px; color:#555; background:#fafafa}
+<style>
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{box-sizing:border-box}
+html,body{ margin:0;background:#fff;color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif }
+a{color:inherit;text-decoration:none} button{cursor:pointer}
 
-    /* 単語カード */
-    .list{display:flex; flex-direction:column; gap:12px}
-    .word{display:flex; flex-direction:column; gap:6px}
-    .word-head{
-      display:flex; align-items:flex-start; gap:10px; justify-content:space-between;
-      border-bottom:1px dashed var(--border); padding-bottom:6px;
-    }
-    .word-meta{display:flex; gap:6px; flex-wrap:wrap; align-items:center}
-    .word-buttons{display:flex; gap:6px; align-items:center; justify-content:flex-end;}
-    .btn{
-      padding:6px 10px; border:1px solid var(--border); background:#fff; border-radius:8px; cursor:pointer;
-      display:inline-flex; align-items:center; gap:6px; font-size:14px;
-    }
-    .btn:hover{background:#f9fafb}
-    .btn-brand{border-color:var(--brand); color:#fff; background:var(--brand)}
-    .btn-ghost{background:#fff}
-    .btn-success{background:#10b981; color:#fff; border-color:#10b981}
-    .btn-warning{background:#f59e0b; color:#fff; border-color:#f59e0b}
+/* Header */
+.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
+.brand{font-weight:900;font-size:40px;color:var(--shu);}
+.small-dot{color:#222}.beta{color:var(--muted);font-size:12px}
+.header-right{margin-left:auto;display:flex;gap:10px;align-items:center}
+.btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
 
-    .word-body{margin-top:6px}
-    .ex-toggle{cursor:pointer; display:inline-flex; align-items:center; gap:6px; user-select:none}
-    .examples{margin:8px 0 0; padding-left:18px}
-    .examples li{margin:4px 0}
-    ruby{ruby-position:over; ruby-align:start}
-    rt{font-size:.6em; color:#666; letter-spacing:.03em}
+/* Controls */
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}
+select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 12px;background:#fff}
+.grow{flex:1}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:8px 12px;font-weight:700}
+.chip.active{border-color:var(--shu);background:#fde3df}
+.toggle-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.toggle-row label{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--line);padding:6px 10px;border-radius:10px;background:#fff}
 
-    /* ページャー */
-    .pager{display:flex; gap:8px; align-items:center; justify-content:center; margin:14px 0 4px}
-    .pager .btn{min-width:38px; justify-content:center}
+/* Cards */
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;overflow:hidden}
+.card.learned{background:#eefbf1;border-color:#cceedd}
+.card.learning{background:#f0fff4;border-color:#34d399}
 
-    /* 広告モーダル */
-    #adMask{position:fixed; inset:0; background:rgba(0,0,0,.35); display:none; z-index:90;}
-    #adPopup{
-      position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
-      width:min(720px,96vw); max-height:85vh; overflow:auto; background:#fff;
-      border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,.2);
-    }
-    #adPopup .hd{display:flex; justify-content:space-between; align-items:center; gap:8px; border-bottom:1px solid var(--border); padding:12px 14px;}
-    #adPopup .bd{padding:14px}
-    #adPopup .ft{padding:10px 14px; border-top:1px solid var(--border); text-align:right}
-  </style>
+.head{display:flex;gap:10px;align-items:center;padding:10px 12px;background:#fff;border-bottom:1px dashed #f0d7d4}
+.num{font-weight:800;color:var(--shu)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:13px;background:#fff;border:1px solid #f0d7d4;border-radius:8px;padding:3px 8px}
+.content{padding:12px 14px}
+.line{margin:6px 0}
+.ja{font-weight:800}
+
+/* ▼/▲ トグルボタン */
+.toggle-btn{border:none;background:none;color:var(--shu);cursor:pointer;width:22px;height:22px;font-size:16px;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+
+/* 操作用ボタン（右寄せ） */
+.head .actions{margin-left:auto;display:flex;gap:8px;align-items:center}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:#333}
+.btn-green{background:#10b981;border-color:#10b981;color:#fff}
+.btn-amber{background:#f59e0b;border-color:#f59e0b;color:#fff}
+.btn-brand{background:var(--shu);border-color:var(--shu);color:#fff}
+
+/* Pager */
+.pager{display:flex;gap:8px;align-items:center;justify-content:center;margin:16px 0 10px}
+.pagebtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px}
+.pagebtn.active{border-color:var(--shu);color:var(--shu);font-weight:800}
+
+/* Footer */
+.footer{border-top:1px solid var(--shu-tint);background:#fff}
+.footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:#98a1a8;font-size:12px}
+
+/* Popup base */
+.mask{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:90}
+.mask.show{display:flex}
+.win{background:#fff;border-radius:12px;max-width:820px;width:min(96vw,820px);padding:12px;border:2px solid var(--shu)}
+.win .x{float:right;border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:8px;padding:4px 9px}
+
+/* Learning 行の例文用 */
+.exwrap{margin:6px 0 0 18px;border-left:3px solid #f3c6bd;padding-left:10px}
+.exhdr{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:#555;cursor:pointer}
+</style>
 </head>
 <body>
-  <div id="header"></div>
 
-  <main>
-    <div class="wrap">
-      <h1 class="row">
-        <i class="fa-solid fa-language" style="color:var(--brand)"></i>
-        JLPT Vocabulary
-      </h1>
-
-      <!-- 条件パネル -->
-      <section class="panel" aria-label="Filters">
-        <div class="controls">
-          <label>Level
-            <select id="level">
-              <option value="N5">N5</option><option value="N4">N4</option><option value="N3">N3</option><option value="N2">N2</option><option value="N1">N1</option>
-            </select>
-          </label>
-          <label>Part of speech
-            <select id="part">
-              <option value="verbs">verbs</option>
-              <option value="nouns">nouns</option>
-              <option value="adjectives-i">adjective-i</option>
-              <option value="adjectives-na">adjective-na</option>
-              <option value="adverbs">adverbs</option>
-              <option value="numerals">numerals</option>
-              <option value="particles">particles</option>
-              <option value="conjunctions">conjunctions</option>
-              <option value="interjections">interjections</option>
-            </select>
-          </label>
-          <input id="search" type="search" placeholder="Search..." />
-          <span class="badge"><i class="fa-regular fa-rectangle-list"></i> 5 items / page</span>
-        </div>
-
-        <!-- 表示トグル（2行構成） -->
-        <div class="toggles" style="margin-top:6px">
-          <label><input type="checkbox" class="tg" data-key="nihongo" checked> Nihongo (kanji with furigana)</label>
-          <label><input type="checkbox" class="tg" data-key="hiragana" checked> Hiragana</label>
-          <label><input type="checkbox" class="tg" data-key="alphabet" checked> Alphabet (romaji)</label>
-          <label><input type="checkbox" class="tg" data-key="english" checked> English</label>
-        </div>
-      </section>
-
-      <!-- リスト -->
-      <section id="list" class="list" aria-live="polite"></section>
-
-      <!-- ページャー（クリックで広告） -->
-      <div class="pager" id="pager">
-        <button class="btn" data-page="prev" aria-label="Previous"><i class="fa-solid fa-angle-left"></i></button>
-        <span id="pageLabel" class="badge">1</span>
-        <button class="btn" data-page="next" aria-label="Next"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
+<!-- Header（Learning/Learnedは header.html 側で表示） -->
+<div class="topbar">
+  <div id="site-header" class="wrap brandbar">
+    <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
+    <span class="beta">== beta version ==</span>
+    <div class="header-right">
+      <button id="langBtn" class="btn" type="button">日本語</button>
     </div>
-  </main>
+  </div>
+</div>
 
-  <div id="footer"></div>
+<main class="wrap">
+  <div class="controls">
+    <label>Level
+      <select id="levelSel">
+        <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
+      </select>
+    </label>
 
-  <!-- ====== (English) Ad Popup ====== -->
-  <div id="adMask" role="dialog" aria-modal="true" aria-labelledby="adTitle">
-    <div id="adPopup">
-      <div class="hd">
-        <h3 id="adTitle" style="margin:0; font-size:16px; display:flex; align-items:center; gap:8px; color:#333;">
-          <i class="fa-solid fa-bullhorn" style="color:var(--brand);"></i> Sponsored
-        </h3>
-        <button class="btn" aria-label="Close" onclick="hideAd()"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="bd">
-        <a href="https://preply.com/ja/?pref=MTE2MDM4MjQ=&id=1762934766.097797&ep=w1" target="_blank" rel="noopener" style="text-decoration:none;">
-          <div class="card row" style="gap:12px; align-items:center;">
-            <img src="/assets/preply-banner.png" alt="Find a Japanese tutor on Preply" style="width:96px; height:96px; object-fit:cover; border-radius:8px; border:1px solid var(--border);">
-            <div>
-              <div style="font-weight:700; font-size:16px; color:#111">Find a Japanese tutor on Preply</div>
-              <div class="muted" style="font-size:14px;">1-on-1 lessons that match your pace. Click to explore tutors.</div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="ft">
-        <button class="btn" onclick="hideAd()"><i class="fa-solid fa-check"></i> OK</button>
-      </div>
+    <div class="chips" id="posChips" role="tablist" aria-label="Parts of Speech"></div>
+
+    <input id="kw" class="grow" type="text" placeholder="Search across all levels & parts…" />
+
+    <!-- 表示トグル -->
+    <div class="toggle-row" id="viewToggles" aria-label="View toggles">
+      <label><input type="checkbox" id="toggleJA" checked> Nihongo（漢字＋ふりがな）</label>
+      <label><input type="checkbox" id="toggleKANA" checked> Hiragana</label>
+      <label><input type="checkbox" id="toggleRO" checked> Alphabet（romaji）</label>
+      <label><input type="checkbox" id="toggleEN" checked> English</label>
     </div>
   </div>
 
-  <script>
-    /* ------------ Partials ------------ */
-    async function loadPartials(){
-      const [h,f] = await Promise.all([fetch('/partials/header.html'), fetch('/partials/footer.html')]);
-      document.getElementById('header').innerHTML = await h.text();
-      document.getElementById('footer').innerHTML = await f.text();
+  <div id="meta" style="color:var(--muted);font-size:13px;margin:4px 0 10px"></div>
+  <div id="list" class="grid" aria-live="polite"></div>
+  <div id="pager" class="pager"></div>
+</main>
+
+<!-- Footer -->
+<div class="footer">
+  <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
+</div>
+
+<!-- Learned モーダル -->
+<div id="learnedModal" class="mask">
+  <div class="win">
+    <button class="x" id="closeLearned" aria-label="Close">×</button>
+    <h3 id="learnedTitle" style="margin:0 0 10px">Learned</h3>
+    <div class="toggle-row" style="margin-bottom:8px">
+      <label><input type="checkbox" id="L_JA" checked> Nihongo</label>
+      <label><input type="checkbox" id="L_KANA" checked> Hiragana</label>
+      <label><input type="checkbox" id="L_RO" checked> Alphabet</label>
+      <label><input type="checkbox" id="L_EN" checked> English</label>
+    </div>
+    <div id="learnedBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
+    <div id="learnedPager" class="pager"></div>
+    <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
+      <button id="printLearned" class="btn btn-brand">Print</button>
+    </div>
+  </div>
+</div>
+
+<!-- Learning モーダル（英語広告対応） -->
+<div id="learningModal" class="mask">
+  <div class="win">
+    <button class="x" id="closeLearning" aria-label="Close">×</button>
+    <h3 style="margin:0 0 10px">Learning</h3>
+    <div class="toggle-row" style="margin-bottom:8px">
+      <label><input type="checkbox" id="LG_JA" checked> Nihongo</label>
+      <label><input type="checkbox" id="LG_KANA" checked> Hiragana</label>
+      <label><input type="checkbox" id="LG_RO" checked> Alphabet</label>
+      <label><input type="checkbox" id="LG_EN" checked> English</label>
+    </div>
+    <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin:10px 0">
+      <button id="toLearnedViewTop" class="btn">Open Learned</button>
+      <button id="printLearningTop" class="btn btn-brand">Print</button>
+    </div>
+    <div id="learningBody" style="border-top:1px dashed #ddd;margin-top:8px"></div>
+    <div id="learningPager" class="pager"></div>
+    <div class="tools" style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
+      <button id="toLearnedView" class="btn">Open Learned</button>
+      <button id="printLearning" class="btn btn-brand">Print</button>
+    </div>
+  </div>
+</div>
+
+<!-- 広告ポップアップ（英語表記） -->
+<div id="adModal" class="mask" aria-hidden="true">
+  <div class="win" style="max-width:560px">
+    <button class="x" id="adClose" aria-label="Close">×</button>
+    <h3 style="margin:6px 0 8px">Sponsored</h3>
+    <p style="margin:0 0 10px">Take 1-on-1 online Japanese lessons. Check it out!</p>
+    <p style="margin:0">
+      <a id="adLink" href="https://preply.com/ja/?pref=MTE2MDM4MjQ=&id=1762934766.097797&ep=w1" target="_blank" rel="noopener"
+         class="btn btn-brand" style="display:inline-block">Explore Preply</a>
+    </p>
+  </div>
+</div>
+
+<script>
+/* ========= 設定 ========= */
+const LEVELS = ['N5','N4','N3','N2','N1'];
+const POS = [
+  {k:'nouns', file:'nouns.json',          ja:'名詞',        enLabel:'Nouns'},
+  {k:'verbs', file:'verbs.json',          ja:'動詞',        enLabel:'Verbs'},
+  {k:'iadj',  file:'adjectives-i.json',   ja:'い形容詞',    enLabel:'i-Adjectives'},
+  {k:'naadj', file:'adjectives-na.json',  ja:'な形容詞',    enLabel:'na-Adjectives'},
+  {k:'advs',  file:'adverbs.json',        ja:'副詞',        enLabel:'Adverbs'},
+  {k:'prt',   file:'particles.json',      ja:'助詞',        enLabel:'Particles'},
+  {k:'conj',  file:'conjunctions.json',   ja:'接続詞',      enLabel:'Conjunctions'},
+  {k:'interj',file:'interjections.json',  ja:'感動詞',      enLabel:'Interjections'},
+  {k:'nums',  file:'numerals.json',       ja:'数詞',        enLabel:'Numerals'},
+  {k:'pat',   file:'patterns.json',       ja:'文型',        enLabel:'Patterns'},
+];
+
+let level='N5', posKey='verbs', page=1;
+const PAGE_SIZE=5, MAX_TOTAL=30;
+let lastData=[];
+
+const getLang = () => localStorage.getItem('lang') || 'en';
+const setLang = (v) => localStorage.setItem('lang', v);
+let uiLang = getLang();
+
+/* ====== Learned の保存（詳細保持） ====== */
+const LS_KEY = ()=>`nt_learned_${level}_${posKey}`;            // id セット（互換）
+const LEARNED_STORE = 'ntx_learned_items_v1';                   // 明細本体
+const LEARNED_DATE_KEY = 'ntx_learned_dates_v1';                // 日付
+
+const learnedSet   = () => new Set(JSON.parse(localStorage.getItem(LS_KEY())||'[]'));
+const setLearned   = (set)=>localStorage.setItem(LS_KEY(),JSON.stringify([...set]));
+const getLearnedMap= ()=>{ try{return JSON.parse(localStorage.getItem(LEARNED_STORE)||'{}')}catch(_){return{}} };
+const setLearnedMap= (m)=> localStorage.setItem(LEARNED_STORE, JSON.stringify(m));
+const getLearnedDates = ()=>{ try{return JSON.parse(localStorage.getItem(LEARNED_DATE_KEY)||'{}')}catch(_){return {}} };
+const setLearnedDate  = (id,d)=>{ const m=getLearnedDates(); m[id]=d; localStorage.setItem(LEARNED_DATE_KEY,JSON.stringify(m)); };
+const getLearnedDateStr = (id)=> getLearnedDates()[id]||'';
+
+/* ====== Learning 保存 ====== */
+const LEARN_KEY = 'ntx_learning_v3';
+const getLearning = ()=>{ try{return JSON.parse(localStorage.getItem(LEARN_KEY)||'[]')}catch(_){return[]} };
+const setLearning = (arr)=>{ try{localStorage.setItem(LEARN_KEY,JSON.stringify(arr));}catch(_){ } };
+
+/* ====== ヘッダーのバッジ更新 ====== */
+function updateBadges(){
+  const bLrn  = document.querySelector('#badge-learning');
+  const bLrnd = document.querySelector('#badge-learned');
+  if (bLrn)  bLrn.textContent  = String(getLearning().length);
+  if (bLrnd) bLrnd.textContent = String(learnedSet().size);
+}
+
+/* ====== パス・読込 ====== */
+function buildPath(lvl=level, pk=posKey){ return `/data/json/${lvl}/${POS.find(p=>p.k===pk).file}`; } // ルート相対
+function coerceArray(json){
+  if (Array.isArray(json)) return json;
+  const keys=['items','data','entries','list','rows','result','results'];
+  for(const k of keys){ if(json && Array.isArray(json[k])) return json[k]; }
+  if(json && typeof json==='object'){
+    const vals=Object.values(json);
+    if(vals.length && vals.every(v=>typeof v==='object')) return vals;
+  }
+  return [];
+}
+async function fetchJsonSafe(path){
+  try{
+    const r=await fetch(path,{cache:'no-store'});
+    if(!r.ok) return [];
+    return coerceArray(await r.json());
+  }catch(_){ return []; }
+}
+
+/* ====== 画面初期化（部分） ====== */
+function applyLangToUI(){
+  const btn = document.getElementById('langBtn');
+  if(btn){ btn.textContent = (uiLang==='en') ? '日本語' : 'English'; }
+  const kw=document.getElementById('kw');
+  if(kw){ kw.placeholder = (uiLang==='en') ? 'Search across all levels & parts…' : 'レベル・品詞を横断して検索…'; }
+  const lt=document.getElementById('learnedTitle');
+  if(lt){ lt.textContent = 'Learned'; }
+}
+function attachLangToggle(){
+  const btn = document.getElementById('langBtn');
+  if(!btn) return;
+  btn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    uiLang = (uiLang==='en') ? 'ja' : 'en';
+    setLang(uiLang);
+    applyLangToUI(); buildChips(); renderList(lastData);
+  });
+}
+async function injectPartials(){
+  const hdr=document.getElementById('site-header');
+  const ftr=document.getElementById('site-footer');
+  try{
+    const h=await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    hdr.innerHTML=h;
+  }catch(_){
+    hdr.innerHTML =
+      `<div style="padding:14px 0;display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column">
+         <a href="/" style="font-weight:800;font-size:32px;color:#e6462d;text-decoration:none">nihongotext<span style="color:#333">.com</span></a>
+         <div style="font-size:20px;color:#98a1a8">== beta version ==</div>
+         <div style="width:100%;display:flex;justify-content:flex-end"><button id="langBtn" type="button" class="btn">日本語</button></div>
+       </div>`;
+  }
+  try{
+    const f=await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
+    ftr.innerHTML=f;
+  }catch(_){
+    ftr.innerHTML = `<div style="padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
+  }
+
+  attachLangToggle();
+  applyLangToUI();
+
+  // ヘッダー側の Learning / Learned を開く（id または data-open 属性をサポート）
+  const openLearnBtn  = hdr.querySelector('#learnBtn')    || hdr.querySelector('[data-open="learning"]');
+  const openLearnedBtn= hdr.querySelector('#learnedBtn')  || hdr.querySelector('[data-open="learned"]');
+  if (openLearnBtn)   openLearnBtn.addEventListener('click', ()=> openLearning());
+  if (openLearnedBtn) openLearnedBtn.addEventListener('click', ()=> openLearned());
+}
+
+/* ====== UI構築（品詞チップ） ====== */
+function buildChips(){
+  const chips=document.getElementById('posChips');
+  if(!chips) return;
+  chips.innerHTML='';
+  POS.forEach(p=>{
+    const b=document.createElement('button');
+    b.className='chip'+(p.k===posKey?' active':'');
+    b.textContent=p.enLabel;
+    b.onclick=()=>{posKey=p.k;page=1; if(!kw.value.trim()) loadSingleAndRender(); else onSearchInput(); buildChips(); updateBadges();};
+    chips.appendChild(b);
+  });
+}
+
+/* ====== データロードと描画 ====== */
+const SAMPLE=[{"id":"demo-001","ja":"会う","kana":"あう","ro":"au","en":"meet","examples":[{"ja":"毎週友達に会います。","kana":"まいしゅう ともだち に あいます。","ro":"maishuu tomodachi ni aimasu.","en":"I meet my friends every week."}]}];
+async function loadSingleAndRender(){
+  const label = POS.find(p=>p.k===posKey)?.enLabel || posKey;
+  const meta=document.getElementById('meta');
+  if(meta) meta.textContent=`Level: ${level} • Part: ${label}`;
+  let arr=await fetchJsonSafe(buildPath());
+  lastData = arr.length ? arr.slice(0,MAX_TOTAL) : SAMPLE;
+  renderList(lastData);
+  updateBadges();
+  try{ gtag('event','page_view',{page_title:`${level}/${posKey}`}); }catch(_){}
+}
+
+/* ====== 横断検索 ====== */
+const kw=document.getElementById('kw');
+let searchAbort=0;
+if(kw){ kw.addEventListener('input', onSearchInput, {passive:true}); }
+async function onSearchInput(){
+  const t=(kw?.value||'').trim().toLowerCase();
+  if(!t){ page=1; loadSingleAndRender(); return; }
+  const myId=++searchAbort;
+  const meta=document.getElementById('meta');
+  if(meta) meta.textContent = 'Searching across all levels and parts…';
+
+  const tasks=[];
+  for(const lv of LEVELS){ for(const p of POS){
+    tasks.push(fetchJsonSafe(`/data/json/${lv}/${p.file}`).then(arr=>arr.map(x=>({...x,_level:lv,_pos:p.enLabel,_posJa:p.ja}))));
+  }}
+  const chunks=await Promise.all(tasks);
+  if(myId!==searchAbort) return;
+
+  const joined=chunks.flat();
+  const filtered=joined.filter(x=>{
+    const hay=[x.en||'',x.ja||'',x.kana||'',x.ro||'',x._level||'',x._pos||'',x._posJa||'',...(x.examples||[]).flatMap(e=>[e.en||'',e.ja||'',e.kana||'',e.ro||''])].join(' ').toLowerCase();
+    return hay.includes(t);
+  });
+
+  lastData=filtered.slice(0,MAX_TOTAL);
+  page=1;
+  if(meta) meta.textContent = `Results: ${lastData.length} item(s) (showing up to ${MAX_TOTAL}).`;
+  renderList(lastData);
+  updateBadges();
+}
+
+/* ====== ページング＆描画（一覧） ====== */
+const list=document.getElementById('list');
+const pager=document.getElementById('pager');
+
+['toggleEN','toggleJA','toggleKANA','toggleRO'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el){ el.addEventListener('change', ()=>renderList(lastData)); }
+});
+
+document.getElementById('levelSel').addEventListener('change', e=>{
+  level=e.target.value; page=1; if(!kw?.value.trim()) loadSingleAndRender(); else onSearchInput();
+});
+
+function showAdThen(next){
+  const mask = document.getElementById('adModal');
+  const close = document.getElementById('adClose');
+  const link  = document.getElementById('adLink');
+  const finish = ()=>{ mask.classList.remove('show'); next(); };
+  mask.classList.add('show');
+  close.onclick = finish;
+  mask.addEventListener('click', e=>{ if(e.target.id==='adModal') finish(); }, {once:true});
+  link.addEventListener('click', ()=>finish(), {once:true});
+}
+
+function pageBtn(t,fn,active=false,disabled=false){
+  const b=document.createElement('button');
+  b.className='pagebtn';
+  if(active) b.classList.add('active');
+  b.textContent=t;
+  b.disabled=disabled;
+  b.onclick=()=> showAdThen(fn);
+  return b;
+}
+
+function paginate(data){
+  const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
+  if(page>total)page=total;
+  const start=(page-1)*PAGE_SIZE;
+  const rows=data.slice(start,start+PAGE_SIZE);
+
+  pager.innerHTML='';
+  pager.appendChild(pageBtn('Prev', ()=>{page=Math.max(1,page-1); renderList(lastData);}, false, page<=1));
+  for(let i=1;i<=total;i++){
+    pager.appendChild(pageBtn(String(i), ()=>{page=i; renderList(lastData);}, i===page));
+  }
+  pager.appendChild(pageBtn('Next', ()=>{page=Math.min(total,page+1); renderList(lastData);}, false, page>=total));
+
+  return rows;
+}
+
+function withFurigana(ja,kana){
+  if(!ja) return '';
+  if(!kana) return ja;
+  return `<ruby>${escapeHTML(ja)}<rt>${escapeHTML(kana)}</rt></ruby>`;
+}
+const escMap = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;' };
+const escapeHTML = s => String(s||'').replace(/[&<>"']/g, m=>escMap[m]);
+
+function renderList(data){
+  if(!list) return;
+  list.innerHTML='';
+  const base=Array.isArray(data)?data:[];
+  const rows=paginate(base);
+  if(!rows.length){
+    pager.innerHTML='';
+    list.innerHTML=`<div style="color:#6b7280; padding:12px 0;">No items to show.</div>`;
+    return;
+  }
+  const showEN   = document.getElementById('toggleEN')?.checked !== false;
+  const showJA   = document.getElementById('toggleJA')?.checked !== false;
+  const showKANA = document.getElementById('toggleKANA')?.checked !== false;
+  const showRO   = document.getElementById('toggleRO')?.checked !== false;
+
+  let idx=(page-1)*PAGE_SIZE;
+  rows.forEach(item=>{
+    idx++;
+    const card=document.createElement('article'); card.className='card';
+
+    // ヘッダ
+    const head=document.createElement('div'); head.className='head';
+    const tog=document.createElement('button'); tog.className='toggle-btn'; tog.setAttribute('aria-expanded','true'); tog.textContent='▲';
+    const num=document.createElement('div'); num.className='num'; num.textContent=idx+'.';
+    const tags=document.createElement('div'); tags.className='tags';
+
+    // 1行目: Nihongo（ふりがな）
+    if(showJA && (item.ja||item.kana)){
+      const s=document.createElement('span'); s.className='tag ja';
+      s.innerHTML = withFurigana(item.ja||'', item.kana||'');
+      tags.appendChild(s);
     }
+    // 2行目以降: その他
+    if(showKANA && item.kana){ const s=document.createElement('span'); s.className='tag kana'; s.textContent=item.kana; tags.appendChild(s); }
+    if(showRO   && item.ro  ){ const s=document.createElement('span'); s.className='tag ro';   s.textContent=item.ro;   tags.appendChild(s); }
+    if(showEN   && item.en  ){ const s=document.createElement('span'); s.className='tag en';   s.textContent=item.en;   tags.appendChild(s); }
 
-    /* ------------ Ad Popup ------------ */
-    function showAd(){ const m=document.getElementById('adMask'); if(m) m.style.display='block'; }
-    function hideAd(){ const m=document.getElementById('adMask'); if(m) m.style.display='none'; }
+    // 右寄せボタン
+    const acts=document.createElement('div'); acts.className='actions';
+    const btnLearn=document.createElement('button'); btnLearn.className='btn btn-ghost'; btnLearn.innerHTML='<i class="fa-regular fa-bookmark"></i> Learn';
+    const btnToLearned=document.createElement('button'); btnToLearned.className='btn btn-green'; btnToLearned.innerHTML='<i class="fa-solid fa-graduation-cap"></i> Move to Learned';
+    const btnBack=document.createElement('button'); btnBack.className='btn btn-amber'; btnBack.innerHTML='<i class="fa-solid fa-rotate-left"></i> Back to Learning';
+    acts.append(btnLearn, btnToLearned, btnBack);
 
-    /* ------------ Storage Helpers ------------ */
-    const K_LEARN_A = 'nihongo_learning';
-    const K_LEARN_B = 'ntx_learning_v2';
-    const K_LEARNED = 'ntx_learned_v1';
-    const readJSON = (k, fallback=[]) => { try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(fallback));}catch(_){return fallback;} };
-    const writeJSON = (k, v) => { try{ localStorage.setItem(k, JSON.stringify(v)); }catch(_){} };
-    const mergeLearning = () => {
-      const a = readJSON(K_LEARN_A, []), b = readJSON(K_LEARN_B, []);
-      const m = new Map(); [...a, ...b].forEach(x=>{ if(x&&x.id)m.set(String(x.id),x); });
-      return [...m.values()];
-    };
-    const setBadgeIfAny = (id, n) => { const el=document.getElementById(id); if(el) el.textContent = String(n); };
+    head.append(tog,num,tags,acts);
 
-    function syncBadges(){
-      const learnCount   = mergeLearning().length;
-      const learnedCount = readJSON(K_LEARNED, []).length;
-      setBadgeIfAny('learning-count-badge', learnCount);
-      setBadgeIfAny('badge-learning',        learnCount);
-      setBadgeIfAny('badge-learned',         learnedCount);
-    }
-
-    function addToLearning(item){
-      const cur = mergeLearning();
-      if(!cur.find(x=> String(x.id) === String(item.id))) cur.push(item);
-      writeJSON(K_LEARN_A, cur);
-      syncBadges();
-      if(window._ntxRenderLearning) window._ntxRenderLearning();
-    }
-
-    function moveToLearned(item){
-      const cur = mergeLearning().filter(x => String(x.id) !== String(item.id));
-      writeJSON(K_LEARN_A, cur);
-      const learned = readJSON(K_LEARNED, []);
-      const exists = learned.find(x=> String(x.id) === String(item.id));
-      const nowISO = new Date().toISOString().slice(0,10);
-      if(exists){ exists.moved_at = nowISO; } else { learned.push({...item, moved_at: nowISO}); }
-      writeJSON(K_LEARNED, learned);
-      syncBadges();
-      if(window._ntxRenderLearning) window._ntxRenderLearning();
-      if(window._ntxRenderLearned)  window._ntxRenderLearned();
-    }
-
-    function backToLearning(item){
-      const learned = readJSON(K_LEARNED, []).filter(x => String(x.id) !== String(item.id));
-      writeJSON(K_LEARNED, learned);
-      addToLearning(item);
-      if(window._ntxRenderLearned)  window._ntxRenderLearned();
-    }
-
-    /* ------------ Data Load & Render ------------ */
-    const PAGE_SIZE = 5;
-    let STATE = {
-      level:'N5', part:'verbs', q:'', page:1,
-      toggles: { nihongo:true, hiragana:true, alphabet:true, english:true },
-      data: []
-    };
-
-    const elLevel  = ()=>document.getElementById('level');
-    const elPart   = ()=>document.getElementById('part');
-    const elSearch = ()=>document.getElementById('search');
-    const elList   = ()=>document.getElementById('list');
-    const elPager  = ()=>document.getElementById('pager');
-    const elPageLabel = ()=>document.getElementById('pageLabel');
-
-    function buildUrl(level, part){
-      return `/data/json/${level}/${part}.json`; // 本番パス
-    }
-
-    async function fetchData(){
-      const url = buildUrl(STATE.level, STATE.part);
-      try{
-        const res = await fetch(url, {cache:'no-store'});
-        const data = await res.json();
-        STATE.data = Array.isArray(data) ? data.slice(0,30) : [];
-      }catch(e){
-        STATE.data = [];
-      }
-    }
-
-    function matchesQuery(item, q){
-      if(!q) return true;
-      q = q.toLowerCase();
-      const hay = [
-        item.en, item.ja, item.kana, item.ro,
-        (item.examples||[]).map(e=>[e.en,e.ja,e.kana,e.ro].join(' ')).join(' ')
-      ].join(' ').toLowerCase();
-      return hay.includes(q);
-    }
-
-    function paginated(items){
-      const start = (STATE.page-1)*PAGE_SIZE;
-      return items.slice(start, start+PAGE_SIZE);
-    }
-
-    function wordCardHTML(it){
-      const id = String(it.id);
-      const examples = (it.examples||[]).map(e=>{
-        return `
-          <li>
-            <div class="ex-line nihongo">${escapeHTML(e.ja||'')}</div>
-            <div class="ex-line hiragana">${escapeHTML(e.kana||'')}</div>
-            <div class="ex-line alphabet">${escapeHTML(e.ro||'')}</div>
-            <div class="ex-line english">${escapeHTML(e.en||'')}</div>
-          </li>`;
-      }).join('');
-
-      return `
-      <article class="card word" data-id="${id}">
-        <div class="word-head">
-          <div class="word-meta">
-            <span class="badge">${STATE.level}</span>
-            <span class="badge">${STATE.part}</span>
-          </div>
-          <div class="word-buttons">
-            <button class="btn btn-ghost" data-action="learn" data-id="${id}" title="Add to Learning">
-              <i class="fa-regular fa-bookmark"></i> Learn
-            </button>
-            <button class="btn btn-success" data-action="toLearned" data-id="${id}" title="Move to Learned">
-              <i class="fa-solid fa-graduation-cap"></i> Move to Learned
-            </button>
-            <button class="btn btn-warning" data-action="backToLearning" data-id="${id}" title="Back to Learning">
-              <i class="fa-solid fa-rotate-left"></i> Back to Learning
-            </button>
-          </div>
-        </div>
-
-        <div class="word-body">
-          <div class="nihongo" style="font-weight:700; font-size:18px;">
-            ${withFurigana(it.ja||'', it.kana||'')}
-          </div>
-          <div class="hiragana">${escapeHTML(it.kana||'')}</div>
-          <div class="alphabet">${escapeHTML(it.ro||'')}</div>
-          <div class="english">${escapeHTML(it.en||'')}</div>
-
-          <div class="row" style="margin-top:6px;">
-            <span class="ex-toggle" data-role="ex-toggle" data-id="${id}" role="button" tabindex="0" aria-expanded="false">
-              <i class="fa-solid fa-caret-right arrow"></i> Examples
-            </span>
-          </div>
-          <ul id="ex-${id}" class="examples" style="display:none;" data-open="0">
-            ${examples || '<li class="muted">No examples.</li>'}
-          </ul>
-        </div>
-      </article>`;
-    }
-
-    function renderList(){
-      const list = elList(); if(!list) return;
-      const filtered = STATE.data.filter(it=>matchesQuery(it, STATE.q));
-      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-      if(STATE.page > totalPages) STATE.page = totalPages;
-
-      const pageItems = paginated(filtered);
-
-      if(!pageItems.length){
-        list.innerHTML = '<div class="card muted">No items.</div>';
-        elPageLabel().textContent = `${STATE.page} / ${totalPages}`;
-        return;
-      }
-
-      list.innerHTML = pageItems.map((it)=>wordCardHTML(it)).join('');
-      elPageLabel().textContent = `${STATE.page} / ${totalPages}`;
-      applyToggles();
-    }
-
-    /* --------- Utilities --------- */
-    const escMap = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;' };
-    const escapeHTML = s => String(s||'').replace(/[&<>"']/g, m=>escMap[m]);
-    function withFurigana(ja, kana){
-      if(!ja) return '';
-      if(!kana) return escapeHTML(ja);
-      return `<ruby>${escapeHTML(ja)}<rt>${escapeHTML(kana)}</rt></ruby>`;
-    }
-    function applyToggles(){
-      const root = elList();
-      if(!root) return;
-      ['nihongo','hiragana','alphabet','english'].forEach(key=>{
-        root.querySelectorAll('.'+key).forEach(el=>{
-          el.style.display = STATE.toggles[key] ? '' : 'none';
-        });
-      });
-    }
-
-    /* --------- Event Binding (委譲) --------- */
-    function bindUI(){
-      elLevel().addEventListener('change', async e=>{
-        STATE.level = e.target.value; STATE.page=1;
-        await fetchData(); renderList();
-      });
-      elPart().addEventListener('change', async e=>{
-        STATE.part = e.target.value; STATE.page=1;
-        await fetchData(); renderList();
-      });
-      elSearch().addEventListener('input', e=>{
-        STATE.q = e.target.value.trim(); STATE.page=1; renderList();
-      });
-
-      document.querySelectorAll('.tg').forEach(chk=>{
-        chk.addEventListener('change', e=>{
-          const key = e.target.getAttribute('data-key');
-          STATE.toggles[key] = e.target.checked;
-          applyToggles();
-        });
-      });
-
-      // ページャー（必ず広告）
-      elPager().addEventListener('click', (ev)=>{
-        const btn = ev.target.closest('[data-page]');
-        if(!btn) return;
-        const filtered = STATE.data.filter(it=>matchesQuery(it, STATE.q));
-        const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-        if(btn.getAttribute('data-page')==='prev'){ STATE.page = Math.max(1, STATE.page-1); }
-        if(btn.getAttribute('data-page')==='next'){ STATE.page = Math.min(totalPages, STATE.page+1); }
-        renderList();
-        showAd();
-      });
-
-      // ★ list内のクリックを委譲して処理
-      elList().addEventListener('click', (ev)=>{
-        const exBtn = ev.target.closest('[data-role="ex-toggle"]');
-        if(exBtn){
-          const id = exBtn.getAttribute('data-id');
-          const box = document.getElementById(`ex-${id}`);
-          if(box){
-            const open = box.getAttribute('data-open') === '1';
-            box.style.display = open ? 'none' : 'block';
-            box.setAttribute('data-open', open ? '0' : '1');
-            const icon = exBtn.querySelector('.arrow');
-            if(icon) icon.className = open ? 'fa-solid fa-caret-right arrow' : 'fa-solid fa-caret-down arrow';
-          }
-          return;
-        }
-
-        const btn = ev.target.closest('[data-action]');
-        if(!btn) return;
-        const action = btn.getAttribute('data-action');
-        const id     = btn.getAttribute('data-id');
-        const item   = STATE.data.find(x=> String(x.id) === String(id));
-        if(!item) return;
-
-        if(action==='learn'){
-          addToLearning(item);
-          btn.classList.add('btn-brand');
-          btn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learning';
-        }
-        if(action==='toLearned'){ moveToLearned(item); }
-        if(action==='backToLearning'){ backToLearning(item); }
-      });
-    }
-
-    /* ------------ Init ------------ */
-    document.addEventListener('DOMContentLoaded', async ()=>{
-      await loadPartials();
-      syncBadges();
-      await fetchData();
-      renderList();
-      bindUI();
+    // 本文（例文）
+    const body=document.createElement('div'); body.className='content'; body.dataset.examples='1';
+    (item.examples||[]).forEach(ex=>{
+      const block=document.createElement('div'); block.className='line';
+      const parts=[];
+      if(showEN   && ex.en   ) parts.push(`<div class="en">${escapeHTML(ex.en)}</div>`);
+      if(showJA   && ex.ja   ) parts.push(`<div class="ja">${withFurigana(ex.ja||'', ex.kana||'')}</div>`);
+      if(showKANA && ex.kana ) parts.push(`<div class="kana">${escapeHTML(ex.kana)}</div>`);
+      if(showRO   && ex.ro   ) parts.push(`<div class="ro">${escapeHTML(ex.ro)}</div>`);
+      block.innerHTML=parts.join('');
+      body.appendChild(block);
     });
-  </script>
+
+    // Learn → Learning へ
+    btnLearn.addEventListener('click', ()=>{
+      const payload = { id:item.id, ja:item.ja, en:item.en, kana:item.kana, ro:item.ro, level, part:(POS.find(p=>p.k===posKey)?.enLabel||posKey), examples:item.examples||[], quiz:{taken:0,correct:0} };
+      ntxToLearning(payload);
+      card.classList.add('learning');
+      btnLearn.classList.add('btn-brand');
+      btnLearn.innerHTML='<i class="fa-solid fa-book-open"></i> Learning';
+      body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false');
+      updateBadges();
+    });
+
+    // Move to Learned
+    btnToLearned.addEventListener('click', ()=>{
+      // Learning から削除、Learned へ追加＋日付
+      const arr = getLearning().filter(x=>x.id!==item.id);
+      setLearning(arr);
+      const ids = learnedSet(); if(!ids.has(item.id)) ids.add(item.id); setLearned(ids);
+      const d = new Date(); const z = n => String(n).padStart(2,'0'); const today = `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+      setLearnedDate(item.id, today);
+      const map = getLearnedMap(); map[item.id] = item; setLearnedMap(map);
+      updateBadges();
+    });
+
+    // Back to Learning
+    btnBack.addEventListener('click', ()=>{
+      const ids = learnedSet(); ids.delete(item.id); setLearned(ids);
+      const arr = getLearning(); if(!arr.find(x=>x.id===item.id)){
+        const d=new Date(); const z=n=>String(n).padStart(2,'0'); const today=`${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+        arr.push({...item, movedAt: today});
+      }
+      setLearning(arr);
+      updateBadges();
+    });
+
+    // 例文の開閉
+    tog.addEventListener('click',()=>{
+      const open = body.style.display!=='none';
+      if(open){ body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false'); }
+      else    { body.style.display='';    tog.textContent='▲'; tog.setAttribute('aria-expanded','true'); }
+    });
+
+    card.append(head,body);
+    list.appendChild(card);
+  });
+
+  const posLabel=POS.find(p=>p.k===posKey);
+  const meta=document.getElementById('meta');
+  if(meta) meta.textContent = `Level: ${level} • Part: ${posLabel.enLabel}`;
+}
+
+/* ====== Learned モーダル：描画（5件ページング・広告・戻す） ====== */
+let learnedPage = 1;
+
+function openLearned(){ const m=document.getElementById('learnedModal'); m.classList.add('show'); learnedPage=1; renderLearnedModal(); }
+document.getElementById('closeLearned').onclick=()=>document.getElementById('learnedModal').classList.remove('show');
+document.getElementById('learnedModal').addEventListener('click',e=>{ if(e.target.id==='learnedModal') e.currentTarget.classList.remove('show'); });
+['L_JA','L_KANA','L_RO','L_EN'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('change',()=>renderLearnedModal()); });
+
+function getLearnedRows(){
+  const ids = [...learnedSet()];
+  const map = getLearnedMap();
+  const dates = getLearnedDates();
+  return ids.map(id=>{
+    const m = map[id] || (lastData||[]).find(x=>x.id===id) || {id};
+    return {...m, movedAt: dates[id] || m.movedAt || ''};
+  });
+}
+
+function renderLearnedModal(){
+  const body=document.getElementById('learnedBody');
+  const pag=document.getElementById('learnedPager');
+  const rowsAll = getLearnedRows();
+  body.innerHTML=''; pag.innerHTML='';
+
+  if(!rowsAll.length){ body.innerHTML='<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
+
+  const total = Math.max(1, Math.ceil(rowsAll.length/5));
+  if(learnedPage>total) learnedPage=total;
+  const start=(learnedPage-1)*5;
+  const rows = rowsAll.slice(start, start+5);
+
+  const showEN=document.getElementById('L_EN')?.checked!==false;
+  const showJA=document.getElementById('L_JA')?.checked!==false;
+  const showKA=document.getElementById('L_KANA')?.checked!==false;
+  const showRO=document.getElementById('L_RO')?.checked!==false;
+
+  rows.forEach((x,i)=>{
+    const block=document.createElement('div');
+    block.style.cssText='padding:8px 0;border-bottom:1px dashed #eee';
+
+    const line=document.createElement('div');
+    line.style.display='flex'; line.style.alignItems='center'; line.style.gap='10px'; line.style.flexWrap='wrap';
+
+    const parts=[];
+    if(showJA&&x.ja)parts.push(x.ja);
+    if(showKA&&x.kana)parts.push(x.kana);
+    if(showRO&&x.ro)parts.push(x.ro);
+    if(showEN&&x.en)parts.push(x.en);
+
+    const dateStr = x.movedAt ? ` <span style="color:#888">(${x.movedAt})</span>` : '';
+    line.innerHTML = `${start+i+1}. <strong>${parts.join(' / ')}</strong>${dateStr}`;
+
+    // Learned → Back to Learning
+    const backBtn=document.createElement('button');
+    backBtn.className='btn btn-amber';
+    backBtn.textContent='Back to Learning';
+    backBtn.addEventListener('click', ()=> moveBackToLearning(x));
+
+    line.appendChild(backBtn);
+    block.appendChild(line);
+    body.appendChild(block);
+  });
+
+  // ページャー（広告付き）
+  const mk=(t,fn,active)=>{ const b=document.createElement('button'); b.className='pagebtn'; if(active) b.classList.add('active'); b.textContent=t; b.onclick=()=>showAdThen(fn); return b; };
+  const prev = mk('Prev', ()=>{ learnedPage=Math.max(1, learnedPage-1); renderLearnedModal(); }, learnedPage===1); prev.disabled=learnedPage===1; pag.appendChild(prev);
+  const total = Math.max(1, Math.ceil(rowsAll.length/5));
+  for(let i=1;i<=total;i++){ pag.appendChild(mk(String(i), ()=>{ learnedPage=i; renderLearnedModal(); }, i===learnedPage)); }
+  const next = mk('Next', ()=>{ learnedPage=Math.min(total, learnedPage+1); renderLearnedModal(); }, learnedPage===total); next.disabled=learnedPage===total; pag.appendChild(next);
+}
+
+function moveBackToLearning(item){
+  const set = learnedSet(); set.delete(item.id); setLearned(set);
+  const map = getLearnedMap(); delete map[item.id]; setLearnedMap(map);
+
+  const arr = getLearning();
+  if(!arr.find(x=>x.id===item.id)){
+    const d=new Date(); const z=n=>String(n).padStart(2,'0');
+    const today=`${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+    arr.push({...item, movedAt: today});
+  }
+  setLearning(arr);
+
+  renderLearnedModal();
+  updateBadges();
+}
+
+/* ====== Learning モーダル：例文・ページング・広告 ====== */
+let learningPage = 1;
+
+function openLearning(){ const m=document.getElementById('learningModal'); if(!m) return; m.classList.add('show'); learningPage=1; renderLearningModal(learningPage); }
+document.getElementById('closeLearning').onclick=()=>document.getElementById('learningModal')?.classList.remove('show');
+document.getElementById('learningModal').addEventListener('click',e=>{ if(e.target.id==='learningModal') e.currentTarget.classList.remove('show'); });
+
+document.getElementById('toLearnedViewTop')?.addEventListener('click', ()=>{ document.getElementById('learningModal')?.classList.remove('show'); openLearned(); });
+document.getElementById('toLearnedView')?.addEventListener('click',   ()=>{ document.getElementById('learningModal')?.classList.remove('show'); openLearned(); });
+
+['LG_JA','LG_KANA','LG_RO','LG_EN'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el) el.addEventListener('change', ()=>renderLearningModal(learningPage));
+});
+
+function renderLearningModal(pageNo=1){
+  const wrap = document.getElementById('learningBody');
+  const pag = document.getElementById('learningPager');
+  if(!wrap){ return; }
+  const showEN = document.getElementById('LG_EN')?.checked !== false;
+  const showJA = document.getElementById('LG_JA')?.checked !== false;
+  const showKA = document.getElementById('LG_KANA')?.checked !== false;
+  const showRO = document.getElementById('LG_RO')?.checked !== false;
+
+  const all = getLearning();
+  wrap.innerHTML = ''; pag.innerHTML='';
+
+  if(!all.length){ wrap.innerHTML = '<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
+
+  const total = Math.max(1, Math.ceil(all.length/5));
+  learningPage = Math.min(Math.max(1,pageNo), total);
+  const start = (learningPage-1)*5;
+  const rows = all.slice(start, start+5);
+
+  rows.forEach((x,i)=>{
+    const block = document.createElement('div');
+    block.style.cssText='padding:8px 0;border-bottom:1px dashed #eee';
+    const line = document.createElement('div');
+    line.style.display='flex'; line.style.alignItems='center'; line.style.gap='10px'; line.style.flexWrap='wrap';
+
+    const tags=[];
+    if(showJA&&x.ja)tags.push(x.ja);
+    if(showKA&&x.kana)tags.push(x.kana);
+    if(showRO&&x.ro)tags.push(x.ro);
+    if(showEN&&x.en)tags.push(x.en);
+    const d = x.movedAt ? ` <span style="color:#888">(${x.movedAt})</span>` : '';
+    line.innerHTML = `${start+i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
+
+    // ▼/▲（例文開閉）
+    const exBtn = document.createElement('button');
+    exBtn.className='toggle-btn'; exBtn.textContent='▼'; exBtn.setAttribute('aria-expanded','false');
+    line.prepend(exBtn);
+
+    // 「Learnedへ」ボタン
+    const toLearnedBtn = document.createElement('button');
+    toLearnedBtn.className='btn btn-green'; toLearnedBtn.textContent = 'Move to Learned';
+    toLearnedBtn.addEventListener('click', ()=>{
+      const s = learnedSet();
+      if (!s.has(x.id)) {
+        s.add(x.id);
+        setLearned(s);
+        const d = new Date(); const z = n => String(n).padStart(2,'0');
+        const today = `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+        setLearnedDate(x.id, today);
+        const m = getLearnedMap(); m[x.id] = x; setLearnedMap(m);
+      }
+      const rest = getLearning().filter(y=>y.id!==x.id);
+      setLearning(rest);
+      renderLearningModal(learningPage);
+      updateBadges();
+    });
+    line.appendChild(toLearnedBtn);
+
+    // 例文コンテナ
+    const exWrap = document.createElement('div');
+    exWrap.className='exwrap'; exWrap.style.display='none';
+    const examples = x.examples || [];
+    if(examples.length){
+      examples.forEach((ex,ei)=>{
+        const one = document.createElement('div'); one.style.margin='6px 0';
+        const bits=[];
+        if(showEN&&ex.en)bits.push(`<div class="en">${escapeHTML(ex.en)}</div>`);
+        if(showJA&&ex.ja)bits.push(`<div class="ja">${withFurigana(ex.ja||'', ex.kana||'')}</div>`);
+        if(showKA&&ex.kana)bits.push(`<div class="kana">${escapeHTML(ex.kana)}</div>`);
+        if(showRO&&ex.ro)bits.push(`<div class="ro">${escapeHTML(ex.ro)}</div>`);
+        one.innerHTML = `<div class="exhdr">Example ${ei+1}</div>` + bits.join('');
+        exWrap.appendChild(one);
+      });
+    }else{
+      exWrap.innerHTML = '<div class="exhdr">No examples</div>';
+    }
+
+    exBtn.addEventListener('click', ()=>{
+      const open = exWrap.style.display !== 'none';
+      exWrap.style.display = open ? 'none' : '';
+      exBtn.textContent = open ? '▼' : '▲';
+      exBtn.setAttribute('aria-expanded', String(!open));
+    });
+
+    block.append(line, exWrap);
+    wrap.appendChild(block);
+  });
+
+  // ページャー（広告付き）
+  const mk = (t,fn,active)=>{ const b=document.createElement('button'); b.className='pagebtn'; if(active) b.classList.add('active'); b.textContent=t; b.onclick=()=>{ showAdThen(()=>fn()); }; return b; };
+  const prev = mk('Prev', ()=>renderLearningModal(learningPage-1), learningPage===1); prev.disabled = learningPage<=1; pag.appendChild(prev);
+  for(let i=1;i<=total;i++){ pag.appendChild(mk(String(i), ()=>renderLearningModal(i), i===learningPage)); }
+  const next = mk('Next', ()=>renderLearningModal(learningPage+1), learningPage===total); next.disabled = learningPage>=total; pag.appendChild(next);
+}
+
+/* ====== Learning へ追加（一覧の Learn ボタン用） ====== */
+window.ntxToLearning = function(item){
+  const arr = getLearning();
+  if (!arr.find(x => x.id === item.id)) {
+    const d = new Date(); const z = n => String(n).padStart(2,'0');
+    const today = `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+    arr.push({ ...item, movedAt: item.movedAt || today });
+  }
+  setLearning(arr);
+  renderLearningModal(learningPage); // 開いている場合に更新
+  updateBadges();
+};
+
+/* ====== Print（Learning / Learned） ====== */
+document.getElementById('printLearningTop')?.addEventListener('click', printLearning);
+document.getElementById('printLearning')?.addEventListener('click', printLearning);
+function printLearning(){
+  const arr = getLearning(); if (!arr.length){ alert('No learning items.'); return; }
+  const w = open('', '_blank');
+  w.document.write('<!doctype html><meta charset="utf-8"><title>Learning</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learning</h1>');
+  arr.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${escapeHTML(x.ja||'')}</strong> / ${escapeHTML(x.kana||'')} / ${escapeHTML(x.ro||'')} — ${escapeHTML(x.en||'')}${x.movedAt?` (${x.movedAt})`:''}</div>`));
+  w.document.close(); w.print();
+}
+
+document.getElementById('printLearned').onclick=()=>{
+  const rows = getLearnedRows();
+  if(!rows.length){ alert('No learned items.'); return; }
+  const w=open('','_blank');
+  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
+  rows.forEach((x,i)=> w.document.write(`<div class="row">${i+1}. <strong>${escapeHTML(x.ja||'')}</strong> / ${escapeHTML(x.kana||'')} / ${escapeHTML(x.ro||'')} — ${escapeHTML(x.en||'')}${x.movedAt?` (${x.movedAt})`:''}</div>`));
+  w.document.close(); w.print();
+};
+
+/* ====== 初期化 ====== */
+(async function init(){
+  await injectPartials();
+  buildChips();
+  await loadSingleAndRender();
+
+  // 検索語のハイライト（軽量）
+  const kwEl = document.getElementById('kw');
+  if(kwEl){
+    kwEl.addEventListener('input', ()=>{
+      const term = kwEl.value.trim();
+      const listEl = document.getElementById('list');
+      const targets = listEl.querySelectorAll('.head .tag, .content .en, .content .ja, .content .kana, .content .ro');
+      const re = term ? new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi') : null;
+      targets.forEach(el=>{
+        const raw = el.textContent || '';
+        el.innerHTML = !term ? raw : raw.replace(re, m=>`<mark class="search-hit">${m}</mark>`);
+      });
+    }, {passive:true});
+  }
+})();
+</script>
 </body>
 </html>
