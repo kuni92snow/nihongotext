@@ -21,9 +21,7 @@
   </script>
 
   <style>
-    :root{
-      --brand:#e6462d; --ink:#111827; --muted:#6b7280; --border:#e5e7eb; --bg:#ffffff;
-    }
+    :root{ --brand:#e6462d; --ink:#111827; --muted:#6b7280; --border:#e5e7eb; --bg:#ffffff; }
     *{box-sizing:border-box}
     body{margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif; color:var(--ink); background:var(--bg); line-height:1.7}
     a{color:var(--brand); text-decoration:none}
@@ -41,6 +39,7 @@
     .badge{display:inline-flex; align-items:center; gap:6px; padding:2px 8px; border:1px solid var(--border); border-radius:9999px; font-size:12px; color:#555; background:#fafafa}
 
     /* 単語カード */
+    .list{display:flex; flex-direction:column; gap:12px}
     .word{display:flex; flex-direction:column; gap:6px}
     .word-head{
       display:flex; align-items:flex-start; gap:10px; justify-content:space-between;
@@ -65,8 +64,7 @@
     ruby{ruby-position:over; ruby-align:start}
     rt{font-size:.6em; color:#666; letter-spacing:.03em}
 
-    /* リストとページャー */
-    .list{display:flex; flex-direction:column; gap:12px}
+    /* ページャー */
     .pager{display:flex; gap:8px; align-items:center; justify-content:center; margin:14px 0 4px}
     .pager .btn{min-width:38px; justify-content:center}
 
@@ -97,11 +95,7 @@
         <div class="controls">
           <label>Level
             <select id="level">
-              <option value="N5">N5</option>
-              <option value="N4">N4</option>
-              <option value="N3">N3</option>
-              <option value="N2">N2</option>
-              <option value="N1">N1</option>
+              <option value="N5">N5</option><option value="N4">N4</option><option value="N3">N3</option><option value="N2">N2</option><option value="N1">N1</option>
             </select>
           </label>
           <label>Part of speech
@@ -133,7 +127,7 @@
       <!-- リスト -->
       <section id="list" class="list" aria-live="polite"></section>
 
-      <!-- ページャー（クリック時に必ず広告） -->
+      <!-- ページャー（クリックで広告） -->
       <div class="pager" id="pager">
         <button class="btn" data-page="prev" aria-label="Previous"><i class="fa-solid fa-angle-left"></i></button>
         <span id="pageLabel" class="badge">1</span>
@@ -205,28 +199,19 @@
 
     function addToLearning(item){
       const cur = mergeLearning();
-      if(!cur.find(x=> String(x.id) === String(item.id))) {
-        cur.push(item);
-      }
-      // write to primary
+      if(!cur.find(x=> String(x.id) === String(item.id))) cur.push(item);
       writeJSON(K_LEARN_A, cur);
       syncBadges();
-      if(window._ntxRenderLearning) window._ntxRenderLearning(); // header側のリスト更新（存在すれば）
+      if(window._ntxRenderLearning) window._ntxRenderLearning();
     }
 
     function moveToLearned(item){
-      // remove from learning
       const cur = mergeLearning().filter(x => String(x.id) !== String(item.id));
       writeJSON(K_LEARN_A, cur);
-      // add to learned with date
       const learned = readJSON(K_LEARNED, []);
       const exists = learned.find(x=> String(x.id) === String(item.id));
       const nowISO = new Date().toISOString().slice(0,10);
-      if(exists){
-        exists.moved_at = nowISO;
-      }else{
-        learned.push({...item, moved_at: nowISO});
-      }
+      if(exists){ exists.moved_at = nowISO; } else { learned.push({...item, moved_at: nowISO}); }
       writeJSON(K_LEARNED, learned);
       syncBadges();
       if(window._ntxRenderLearning) window._ntxRenderLearning();
@@ -234,10 +219,8 @@
     }
 
     function backToLearning(item){
-      // remove from learned
       const learned = readJSON(K_LEARNED, []).filter(x => String(x.id) !== String(item.id));
       writeJSON(K_LEARNED, learned);
-      // add to learning
       addToLearning(item);
       if(window._ntxRenderLearned)  window._ntxRenderLearned();
     }
@@ -258,8 +241,7 @@
     const elPageLabel = ()=>document.getElementById('pageLabel');
 
     function buildUrl(level, part){
-      // 本番データのパス仕様：/data/json/{Level}/{part}.json
-      return `/data/json/${level}/${part}.json`;
+      return `/data/json/${level}/${part}.json`; // 本番パス
     }
 
     async function fetchData(){
@@ -267,7 +249,6 @@
       try{
         const res = await fetch(url, {cache:'no-store'});
         const data = await res.json();
-        // 仕様：各品詞は 30 件まで（超過は今後追加）
         STATE.data = Array.isArray(data) ? data.slice(0,30) : [];
       }catch(e){
         STATE.data = [];
@@ -278,7 +259,8 @@
       if(!q) return true;
       q = q.toLowerCase();
       const hay = [
-        item.en, item.ja, item.kana, item.ro, (item.examples||[]).map(e=>[e.en,e.ja,e.kana,e.ro].join(' ')).join(' ')
+        item.en, item.ja, item.kana, item.ro,
+        (item.examples||[]).map(e=>[e.en,e.ja,e.kana,e.ro].join(' ')).join(' ')
       ].join(' ').toLowerCase();
       return hay.includes(q);
     }
@@ -286,53 +268,6 @@
     function paginated(items){
       const start = (STATE.page-1)*PAGE_SIZE;
       return items.slice(start, start+PAGE_SIZE);
-    }
-
-    function renderList(){
-      const list = elList(); if(!list) return;
-      const filtered = STATE.data.filter(it=>matchesQuery(it, STATE.q));
-      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-      if(STATE.page > totalPages) STATE.page = totalPages;
-
-      const pageItems = paginated(filtered);
-
-      if(!pageItems.length){
-        list.innerHTML = '<div class="card muted">No items.</div>';
-        elPageLabel().textContent = `${STATE.page} / ${totalPages}`;
-        return;
-      }
-
-      list.innerHTML = pageItems.map((it)=>wordCardHTML(it)).join('');
-      elPageLabel().textContent = `${STATE.page} / ${totalPages}`;
-
-      // 展開トグル: 例文
-      list.querySelectorAll('.js-ex-toggle').forEach(btn=>{
-        btn.addEventListener('click', ()=>{
-          const id = btn.getAttribute('data-id');
-          const box = document.getElementById(`ex-${id}`);
-          if(!box) return;
-          const open = box.getAttribute('data-open') === '1';
-          box.style.display = open ? 'none' : 'block';
-          box.setAttribute('data-open', open ? '0' : '1');
-          btn.querySelector('.arrow').className = open ? 'fa-solid fa-caret-right arrow' : 'fa-solid fa-caret-down arrow';
-        });
-      });
-
-      // ボタン操作（右揃え部）
-      list.querySelectorAll('[data-action]').forEach(btn=>{
-        btn.addEventListener('click', ()=>{
-          const action = btn.getAttribute('data-action');
-          const id     = btn.getAttribute('data-id');
-          const item   = STATE.data.find(x=> String(x.id) === String(id));
-          if(!item) return;
-          if(action==='learn'){ addToLearning(item); btn.classList.add('btn-brand'); btn.innerHTML='<i class="fa-solid fa-book-open"></i> Learning'; }
-          if(action==='toLearned'){ moveToLearned(item); }
-          if(action==='backToLearning'){ backToLearning(item); }
-        });
-      });
-
-      // 表示トグル反映
-      applyToggles();
     }
 
     function wordCardHTML(it){
@@ -376,7 +311,7 @@
           <div class="english">${escapeHTML(it.en||'')}</div>
 
           <div class="row" style="margin-top:6px;">
-            <span class="ex-toggle js-ex-toggle" data-id="${id}" role="button" tabindex="0" aria-expanded="false">
+            <span class="ex-toggle" data-role="ex-toggle" data-id="${id}" role="button" tabindex="0" aria-expanded="false">
               <i class="fa-solid fa-caret-right arrow"></i> Examples
             </span>
           </div>
@@ -387,16 +322,33 @@
       </article>`;
     }
 
+    function renderList(){
+      const list = elList(); if(!list) return;
+      const filtered = STATE.data.filter(it=>matchesQuery(it, STATE.q));
+      const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+      if(STATE.page > totalPages) STATE.page = totalPages;
+
+      const pageItems = paginated(filtered);
+
+      if(!pageItems.length){
+        list.innerHTML = '<div class="card muted">No items.</div>';
+        elPageLabel().textContent = `${STATE.page} / ${totalPages}`;
+        return;
+      }
+
+      list.innerHTML = pageItems.map((it)=>wordCardHTML(it)).join('');
+      elPageLabel().textContent = `${STATE.page} / ${totalPages}`;
+      applyToggles();
+    }
+
+    /* --------- Utilities --------- */
+    const escMap = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;' };
+    const escapeHTML = s => String(s||'').replace(/[&<>"']/g, m=>escMap[m]);
     function withFurigana(ja, kana){
-      // 簡易実装（後でsegments活用に差し替え可）
       if(!ja) return '';
       if(!kana) return escapeHTML(ja);
       return `<ruby>${escapeHTML(ja)}<rt>${escapeHTML(kana)}</rt></ruby>`;
     }
-
-    const escMap = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;' };
-    const escapeHTML = s => String(s||'').replace(/[&<>"']/g, m=>escMap[m]);
-
     function applyToggles(){
       const root = elList();
       if(!root) return;
@@ -407,7 +359,7 @@
       });
     }
 
-    /* ------------ Events ------------ */
+    /* --------- Event Binding (委譲) --------- */
     function bindUI(){
       elLevel().addEventListener('change', async e=>{
         STATE.level = e.target.value; STATE.page=1;
@@ -429,7 +381,7 @@
         });
       });
 
-      // ページャー：クリックのたびに広告ポップアップ表示
+      // ページャー（必ず広告）
       elPager().addEventListener('click', (ev)=>{
         const btn = ev.target.closest('[data-page]');
         if(!btn) return;
@@ -438,7 +390,39 @@
         if(btn.getAttribute('data-page')==='prev'){ STATE.page = Math.max(1, STATE.page-1); }
         if(btn.getAttribute('data-page')==='next'){ STATE.page = Math.min(totalPages, STATE.page+1); }
         renderList();
-        showAd(); // ← すべてのページャークリックで広告表示
+        showAd();
+      });
+
+      // ★ list内のクリックを委譲して処理
+      elList().addEventListener('click', (ev)=>{
+        const exBtn = ev.target.closest('[data-role="ex-toggle"]');
+        if(exBtn){
+          const id = exBtn.getAttribute('data-id');
+          const box = document.getElementById(`ex-${id}`);
+          if(box){
+            const open = box.getAttribute('data-open') === '1';
+            box.style.display = open ? 'none' : 'block';
+            box.setAttribute('data-open', open ? '0' : '1');
+            const icon = exBtn.querySelector('.arrow');
+            if(icon) icon.className = open ? 'fa-solid fa-caret-right arrow' : 'fa-solid fa-caret-down arrow';
+          }
+          return;
+        }
+
+        const btn = ev.target.closest('[data-action]');
+        if(!btn) return;
+        const action = btn.getAttribute('data-action');
+        const id     = btn.getAttribute('data-id');
+        const item   = STATE.data.find(x=> String(x.id) === String(id));
+        if(!item) return;
+
+        if(action==='learn'){
+          addToLearning(item);
+          btn.classList.add('btn-brand');
+          btn.innerHTML = '<i class="fa-solid fa-book-open"></i> Learning';
+        }
+        if(action==='toLearned'){ moveToLearned(item); }
+        if(action==='backToLearning'){ backToLearning(item); }
       });
     }
 
@@ -448,6 +432,7 @@
       syncBadges();
       await fetchData();
       renderList();
+      bindUI();
     });
   </script>
 </body>
