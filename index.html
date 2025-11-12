@@ -34,7 +34,7 @@ a{color:inherit;text-decoration:none} button{cursor:pointer}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 .brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
 .brand{font-weight:900;font-size:40px;color:var(--shu);}
-.small-dot{color:#222}.beta{color:var(--muted);font-size:12px}
+.small-dot{color:var(--ink)}.beta{color:var(--muted);font-size:12px}
 .header-right{margin-left:auto;display:flex;gap:10px;align-items:center}
 .btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
 
@@ -129,7 +129,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   <div id="site-footer" class="wrap footer-inner">© 2025 nihongotext.com</div>
 </div>
 
-<!-- Learned モーダル（仕様更新版） -->
+<!-- Learned モーダル -->
 <div id="learnedModal" class="mask">
   <div class="win">
     <button class="x" id="closeLearned" aria-label="Close">×</button>
@@ -148,7 +148,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   </div>
 </div>
 
-<!-- Learning モーダル（既存＋英語広告対応） -->
+<!-- Learning モーダル -->
 <div id="learningModal" class="mask">
   <div class="win">
     <button class="x" id="closeLearning" aria-label="Close">×</button>
@@ -172,7 +172,7 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
   </div>
 </div>
 
-<!-- 広告ポップアップ（英語表記に統一） -->
+<!-- 広告ポップアップ（英語表記） -->
 <div id="adModal" class="mask" aria-hidden="true">
   <div class="win" style="max-width:560px">
     <button class="x" id="adClose" aria-label="Close">×</button>
@@ -376,7 +376,8 @@ document.getElementById('levelSel').addEventListener('change', e=>{
   level=e.target.value; page=1; if(!kw?.value.trim()) loadSingleAndRender(); else onSearchInput();
 });
 
-function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=fn;return b;}
+// showAdThen を通してページ遷移する版
+function pageBtn(t,fn){const b=document.createElement('button');b.className='pagebtn';b.textContent=t;b.onclick=()=>showAdThen(fn);return b;}
 function paginate(data){
   const total=Math.max(1,Math.ceil(data.length/PAGE_SIZE));
   if(page>total)page=total;
@@ -428,6 +429,7 @@ function renderList(data){
     });
 
     const act=document.createElement('button'); act.className='btn learn';
+    act.style.marginLeft='auto'; /* ← 右寄せ */
     head.append(tog,num,tags,act);
 
     const body=div('content',''); body.dataset.examples='1';
@@ -480,7 +482,6 @@ function getLearnedRows(){
   const ids = [...learnedSet()];
   const map = getLearnedMap();
   const dates = getLearnedDates();
-  // map から引き、無い場合は lastData から探す
   return ids.map(id=>{
     const m = map[id] || (lastData||[]).find(x=>x.id===id) || {id};
     return {...m, movedAt: dates[id] || m.movedAt || ''};
@@ -524,6 +525,7 @@ function renderLearnedModal(){
     const backBtn=document.createElement('button');
     backBtn.className='btn';
     backBtn.textContent='Back to Learning';
+    backBtn.style.marginLeft='auto'; /* ← 右寄せ */
     backBtn.addEventListener('click', ()=> moveBackToLearning(x));
 
     line.appendChild(backBtn);
@@ -539,11 +541,9 @@ function renderLearnedModal(){
 }
 
 function moveBackToLearning(item){
-  // 1) Learned から削除
   const set = learnedSet(); set.delete(item.id); setLearned(set);
   const map = getLearnedMap(); delete map[item.id]; setLearnedMap(map);
 
-  // 2) Learning に追加（重複防止）
   const arr = getLearning();
   if(!arr.find(x=>x.id===item.id)){
     const d=new Date(); const z=n=>String(n).padStart(2,'0');
@@ -556,7 +556,7 @@ function moveBackToLearning(item){
   updateBadges();
 }
 
-/* ====== Learning モーダル：例文・ページング・広告（既存） ====== */
+/* ====== Learning モーダル：例文・ページング・広告 ====== */
 let learningPage = 1;
 
 function openLearning(){ const m=document.getElementById('learningModal'); if(!m) return; m.classList.add('show'); learningPage=1; renderLearningModal(learningPage); }
@@ -585,7 +585,6 @@ function renderLearningModal(page=1){
 
   if(!all.length){ wrap.innerHTML = '<div style="color:#6b7280;padding-top:6px">No items yet.</div>'; return; }
 
-  // ページング（5件）
   const total = Math.max(1, Math.ceil(all.length/5));
   learningPage = Math.min(Math.max(1,page), total);
   const start = (learningPage-1)*5;
@@ -605,16 +604,16 @@ function renderLearningModal(page=1){
     const d = x.movedAt ? ` <span style="color:#888">(${x.movedAt})</span>` : '';
     line.innerHTML = `${start+i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
 
-    // ▼/▲（例文開閉）
+    // ▼/▲
     const exBtn = document.createElement('button');
     exBtn.className='toggle-btn'; exBtn.textContent='▼'; exBtn.setAttribute('aria-expanded','false');
     line.prepend(exBtn);
 
-    // 「Learnedへ」ボタン
+    // 「Learnedへ」ボタン（右寄せ）
     const toLearnedBtn = document.createElement('button');
     toLearnedBtn.className='btn'; toLearnedBtn.textContent = 'Move to Learned';
+    toLearnedBtn.style.marginLeft='auto'; /* ← 右寄せ */
     toLearnedBtn.addEventListener('click', ()=>{
-      // learned へ移動（id セット＋詳細保存＋日付記録）
       const s = learnedSet();
       if (!s.has(x.id)) {
         s.add(x.id);
@@ -624,7 +623,6 @@ function renderLearningModal(page=1){
         setLearnedDate(x.id, today);
         const m = getLearnedMap(); m[x.id] = x; setLearnedMap(m);
       }
-      // learning から削除
       const rest = getLearning().filter(y=>y.id!==x.id);
       setLearning(rest);
       renderLearningModal(learningPage);
@@ -632,7 +630,6 @@ function renderLearningModal(page=1){
     });
     line.appendChild(toLearnedBtn);
 
-    // 例文コンテナ
     const exWrap = document.createElement('div');
     exWrap.className='exwrap'; exWrap.style.display='none';
     const examples = x.examples || [];
@@ -690,7 +687,7 @@ window.ntxToLearning = function(item){
     arr.push({ ...item, movedAt: item.movedAt || today });
   }
   setLearning(arr);
-  renderLearningModal(learningPage); // 開いている場合に更新
+  renderLearningModal(learningPage);
   updateBadges();
 };
 
