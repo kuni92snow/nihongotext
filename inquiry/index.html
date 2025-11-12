@@ -17,16 +17,13 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <style>
-    :root{
-      --shu:#e6462d; --border:#e5e7eb; --ink:#132c3a; --muted:#6b7280;
-    }
+    :root{ --shu:#e6462d; --border:#e5e7eb; --ink:#132c3a; --muted:#6b7280; }
     *{box-sizing:border-box}
     body{margin:0;background:#fff;color:var(--ink);
       font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.7}
     a{color:inherit}
     ruby{ruby-position:over} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
 
-    /* layout */
     main .wrap{max-width:960px;margin:auto;padding:12px}
     h1{font-size:28px;margin:16px 0}
     .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px 18px 14px}
@@ -63,7 +60,7 @@
       <section class="card" aria-labelledby="title">
         <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
 
-        <!-- 最新の Apps Script Web App URL に差し替える場合は action を更新 -->
+        <!-- ★必要に応じて Apps Script Web App URL を差し替え -->
         <form id="contactForm" target="submit_iframe" method="POST"
               action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
 
@@ -82,6 +79,7 @@
           <input type="hidden" id="token" name="token" />
 
           <div class="row">
+            <!-- ★sitekey はご利用のキーに合わせてください -->
             <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
             <button type="button" class="btn secondary" id="btnCancel" data-i18n="cancel">Cancel</button>
             <button type="submit" class="btn" id="btnSend" data-i18n="send">Send</button>
@@ -103,7 +101,7 @@
 
   <!-- ====== Lang / Submit / Partials / Learning hooks ====== -->
   <script>
-    // ---------- 1) ヘッダー / フッターの読み込み ----------
+    // ---------- (A) ヘッダー / フッターの読み込み ----------
     async function loadPartials(){
       const [h,f] = await Promise.all([
         fetch('/partials/header.html',{cache:'no-store'}),
@@ -112,13 +110,15 @@
       document.getElementById('header').innerHTML = await h.text();
       document.getElementById('footer').innerHTML = await f.text();
 
-      // Learning / Learned ボタンをフォールバックで動かす
-      hookLearningButtons();
-      // 言語トグル（ヘッダー側の #langBtn を利用）
+      // 言語トグル（無ければ補完作成）
+      ensureLangButton();
       setupLangToggle();
+
+      // Learning / Learned（ID, data-open どちらでも拾う）
+      hookLearningButtons();
     }
 
-    // ---------- 2) 日本語トグル（ページ内辞書は維持） ----------
+    // ---------- (B) 言語辞書（ページ内テキストのみ切替） ----------
     const dict = {
       en: {
         contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",
@@ -174,9 +174,28 @@
       els.email.placeholder = t.placeholders.email;
       els.subject.placeholder = t.placeholders.subject;
       els.message.placeholder = t.placeholders.message;
+
       const btnHeader = document.getElementById('langBtn');
       if (btnHeader) btnHeader.textContent = t.btn;
+
       localStorage.setItem('nt_lang', lang);
+    }
+
+    // ヘッダーに #langBtn が無い場合は右端に補完ボタンを挿入
+    function ensureLangButton(){
+      let btn = document.getElementById('langBtn');
+      if (btn) return;
+      const host = document.querySelector('.site-header .container') || document.getElementById('header');
+      if (!host) return;
+      btn = document.createElement('button');
+      btn.id = 'langBtn';
+      btn.type = 'button';
+      btn.className = 'btn';
+      btn.style.cssText = 'margin-left:auto;border:1px solid #e5e7eb;background:#fff;color:#111827;border-radius:10px;padding:8px 12px';
+      btn.textContent = (lang==='ja') ? 'English' : '日本語';
+      // なるべく右上に配置
+      const firstRow = host.querySelector('nav[aria-label="Main navigation"]') || host.firstElementChild;
+      host.insertBefore(btn, firstRow);
     }
 
     function setupLangToggle(){
@@ -186,42 +205,42 @@
         lang = (lang==='en')?'ja':'en';
         applyLang();
       });
-      // 初期同期
       applyLang();
     }
 
-    // ---------- 3) Learning / Learned をヘッダーから開くフォールバック ----------
-    function openOverlay(selectorDrawer){
+    // ---------- (C) Learning / Learned を開くフォールバック ----------
+    function openOverlay(drawerSel){
       const overlay = document.getElementById('learning-overlay');
-      const drawer  = document.querySelector(selectorDrawer);
+      const drawer  = document.querySelector(drawerSel);
       if (overlay && drawer){
-        overlay.style.display = 'block';
-        // slide-in
-        setTimeout(()=>{ drawer.style.right = '0'; }, 10);
+        overlay.style.display='block';
+        setTimeout(()=>{ drawer.style.right='0'; },10);
       }
     }
     function hookLearningButtons(){
-      const openLearningBtn = document.querySelector('[data-open="learning"], #learnBtn');
-      const openLearnedBtn  = document.querySelector('[data-open="learned"],  #learnedBtn');
+      const openLearningBtn = document.querySelector('#learnBtn, [data-open="learning"]');
+      const openLearnedBtn  = document.querySelector('#learnedBtn, [data-open="learned"]');
+
       if (openLearningBtn){
         openLearningBtn.addEventListener('click', (e)=>{
           e.preventDefault();
-          if (window._ntxOpenLearning) { window._ntxOpenLearning(); }
-          else { openOverlay('#learning-drawer'); }
+          if (window._ntxOpenLearning) window._ntxOpenLearning();
+          else openOverlay('#learning-drawer');
         });
       }
       if (openLearnedBtn){
         openLearnedBtn.addEventListener('click', (e)=>{
           e.preventDefault();
-          if (window._ntxOpenLearned) { window._ntxOpenLearned(); }
-          else { openOverlay('#learned-drawer'); }
+          if (window._ntxOpenLearned) window._ntxOpenLearned();
+          else openOverlay('#learned-drawer');
         });
       }
     }
 
-    // ---------- 4) 送信処理（reCAPTCHA 必須） ----------
+    // ---------- (D) 送信処理（reCAPTCHA 必須） ----------
     const form = document.getElementById('contactForm');
     const iframe = document.getElementById('submit_iframe');
+
     iframe.addEventListener('load', ()=>{
       const t = dict[lang];
       const msg = document.getElementById('msg');
@@ -252,10 +271,10 @@
       if (window.grecaptcha) grecaptcha.reset();
     });
 
-    // 初期化
-    (async function(){
-      await loadPartials();
-      // 言語適用は loadPartials 内で setupLangToggle() → applyLang() 済み
+    // ---------- 初期化 ----------
+    (async function init(){
+      await loadPartials();   // ← 読み込み後にトグル/ボタンのイベントを必ず設定
+      applyLang();            // 念のため再適用
     })();
   </script>
 </body>
