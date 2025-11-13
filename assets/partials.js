@@ -1,96 +1,126 @@
-/* ======================================================
- * nihongotext.com - Common partials loader
- * - Header / Footer injection
- * - Language toggle
- * ====================================================== */
+/**
+ * assets/partials.js
+ * - /partials/header.html と /partials/footer.html を読み込む共通ローダー
+ * - 日本語トグル（#lang-toggle）と連携して、各ページの onLangApply を呼び出す
+ * - blog/index.html / inquiry/index.html の両方で動作
+ */
 
-window.injectPartials = async function (options = {}) {
-  // ===== header/footer 読み込み =====
-  const header = document.getElementById("site-header");
-  const footer = document.getElementById("site-footer");
-  if (header) {
-    const res = await fetch("/partials/header.html");
-    header.innerHTML = await res.text();
-  }
-  if (footer) {
-    const res = await fetch("/partials/footer.html");
-    footer.innerHTML = await res.text();
-  }
+(function () {
+  const STORAGE_KEY = "nt_lang"; // "ja" / "en" を保存
 
-  // ===== 言語トグルボタンの生成 =====
-  const hdr = document.querySelector("header .container, #site-header, header.site-header");
-  if (hdr) {
-    const wrap = document.createElement("div");
-    wrap.style.cssText = `
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      margin-top: 6px;
-      margin-bottom: 4px;
-    `;
-
-    const langBtn = document.createElement("button");
-    langBtn.id = "langBtn";
-    langBtn.textContent = getLang() === "ja" ? "日本語" : "EN";
-    langBtn.style.cssText = `
-      background: #fff7f6;
-      border: 1px solid #e6462d;
-      color: #e6462d;
-      border-radius: 999px;
-      padding: 6px 14px;
-      font-weight: 600;
-      font-size: 14px;
-      cursor: pointer;
-      transition: all .2s ease;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-      margin-right: 6px;
-    `;
-    langBtn.onmouseover = () => (langBtn.style.background = "#ffeceb");
-    langBtn.onmouseout = () => (langBtn.style.background = "#fff7f6");
-
-    langBtn.onclick = () => {
-      const newLang = getLang() === "ja" ? "en" : "ja";
-      localStorage.setItem("lang", newLang);
-      applyLang();
-    };
-
-    wrap.appendChild(langBtn);
-    hdr.appendChild(wrap);
+  function getInitialLang() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored === "ja" || stored === "en") return stored;
+    } catch (_) {}
+    const nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+    return nav.startsWith("ja") ? "ja" : "en";
   }
 
-  // ===== 言語取得関数 =====
-  function getLang() {
-    return localStorage.getItem("lang") || "en";
+  function setLang(lang) {
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (_) {}
   }
 
-  // ===== 言語適用処理 =====
-  function applyLang() {
-    const lang = getLang();
-    const btn = document.getElementById("langBtn");
-    if (btn) btn.textContent = lang === "ja" ? "日本語" : "EN";
+  function applyRootLang(lang) {
+    const isJa = lang === "ja";
+    document.documentElement.lang = isJa ? "ja" : "en";
+    // CSS用のフラグ（必要なら）
+    document.documentElement.dataset.lang = isJa ? "ja" : "en";
+  }
 
-    if (options.titleTargets && Array.isArray(options.titleTargets)) {
-      options.titleTargets.forEach((t) => {
-        if (!t.el) return;
-        t.el.textContent = lang === "ja" ? t.ja || t.en : t.en || t.ja;
-      });
-    }
-
-    if (options.titleDoc) {
-      document.title = lang === "ja" ? options.titleDoc.ja : options.titleDoc.en;
-    }
-
-    if (typeof options.onLangApply === "function") {
-      options.onLangApply(lang);
+  async function loadPartial(targetId, url) {
+    const host = document.getElementById(targetId);
+    if (!host) return;
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) return;
+      const html = await res.text();
+      host.innerHTML = html;
+    } catch (e) {
+      console.warn("partials.js: failed to load", url, e);
     }
   }
 
-  // 初期適用
-  applyLang();
+  /**
+   * lang を適用したあとに、ページ側の onLangApply を呼ぶためのヘルパ
+   */
+  function applyLanguageEverywhere(lang, opts) {
+    applyRootLang(lang);
 
-  // ===== Learning/Learned 表示制御 =====
-  if (options.hideLearningNav) {
-    const learnNav = document.querySelector("nav[aria-label='Learning navigation']");
-    if (learnNav) learnNav.style.display = "none";
+    // Learning / Learned ナビを隠したいページ（blog / inquiry など）
+    if (opts && opts.hideLearningNav) {
+      const nav = document.querySelector('nav[aria-label="Learning navigation"]');
+      if (nav) nav.style.display = "none";
+    }
+
+    // 各ページ専用の処理（blog/index.html, inquiry/index.htmlなど）
+    if (opts && typeof opts.onLangApply === "function") {
+      try {
+        opts.onLangApply(lang);
+      } catch (e) {
+        console.warn("partials.js: onLangApply error", e);
+      }
+    }
   }
-};
+
+  /**
+   * ヘッダー内の #lang-toggle ボタンを初期化
+   */
+  function initLangToggle(opts) {
+    const btn = document.querySelector("#lang-toggle");
+    const current = getInitialLang();
+
+    // 初期状態を反映
+    applyLanguageEverywhere(current, opts);
+    if (btn) {
+      btn.setAttribute("data-lang", current);
+    }
+
+    if (!btn) return; // ボタンがないページも想定
+
+    btn.addEventListener("click", function () {
+      const now = btn.getAttribute("data-lang") || getInitialLang();
+      const next = now === "ja" ? "en" : "ja";
+      setLang(next);
+      btn.setAttribute("data-lang", next);
+      applyLanguageEverywhere(next, opts);
+    });
+  }
+
+  async function runWithOptions(opts) {
+    opts = opts || {};
+
+    // header / footer の読み込み
+    await Promise.all([
+      loadPartial("site-header", "/partials/header.html"),
+      loadPartial("site-footer", "/partials/footer.html"),
+    ]);
+
+    // 言語トグルを初期化（ヘッダー挿入後に実行する必要がある）
+    initLangToggle(opts);
+  }
+
+  /**
+   * 各ページから呼び出す API
+   * 例：
+   *   window.injectPartials({
+   *     hideLearningNav: true,
+   *     onLangApply(lang){ ... }
+   *   });
+   */
+  window.injectPartials = function (opts) {
+    if (document.readyState === "loading") {
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          runWithOptions(opts);
+        },
+        { once: true }
+      );
+    } else {
+      runWithOptions(opts);
+    }
+  };
+})();
