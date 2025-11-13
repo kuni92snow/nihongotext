@@ -1,51 +1,60 @@
 <!-- /partials/header.html -->
 <header class="site-header" style="background:#fff;border-bottom:1px solid #eee;position:relative;z-index:30;">
   <div class="container" style="max-width:1100px;margin:0 auto;padding:6px 16px;display:flex;flex-direction:column;align-items:center;gap:6px;">
-    <!-- 1行目：ロゴ＋タイトル（余白最小化） -->
-    <a href="/" style="display:flex;align-items:center;gap:6px;text-decoration:none;line-height:1;">
-      <span style="font-weight:800;font-size:32px;line-height:1;color:#e6462d;">nihongotext<span style="color:#333;">.com</span></span>
-    </a>
 
-    <!-- 2行目：ベータ表示（20px） -->
+    <!-- 1行目：ロゴ + トグル（右端） -->
+    <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+      <a href="/" style="text-decoration:none;display:flex;align-items:center;">
+        <span style="font-weight:800;font-size:32px;color:#e6462d;">nihongotext</span>
+        <span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+      </a>
+
+      <!-- 言語トグルボタン（右端固定） -->
+      <button id="langToggleBtn"
+        style="padding:4px 12px;font-size:14px;border:1px solid #e6462d;border-radius:20px;background:#fff;color:#e6462d;cursor:pointer;">
+        EN
+      </button>
+    </div>
+
+    <!-- ベータ表示 -->
     <div style="font-size:20px;line-height:1;color:#98a1a8;">== beta version ==</div>
 
-    <!-- 3行目：Learning / Learned -->
-    <nav aria-label="Learning navigation" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;">
-      <button type="button"
-        style="padding:6px 10px;border:1px solid #ddd;background:#fff;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;line-height:1;"
-        onclick="(window._ntxOpenLearning?window._ntxOpenLearning(): (function(){var o=document.getElementById('learningModal')||document.getElementById('learning-overlay'),d=document.getElementById('learningModal')?document.querySelector('#learningModal .win'):document.getElementById('learning-drawer');if(o&&d){o.classList?o.classList.add('show'):o.style.display='block';setTimeout(function(){if(d.style)d.style.right='0';},10);}})())">
-        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
-        <span>Learning</span>
-        <span id="badge-learning" style="min-width:18px;height:18px;padding:0 6px;border-radius:9px;background:#e6462d;color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;line-height:1;">0</span>
-      </button>
-
-      <button type="button"
-        style="padding:6px 10px;border:1px solid #ddd;background:#fff;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;line-height:1;"
-        onclick="(window._ntxOpenLearned?window._ntxOpenLearned(): (function(){var o=document.getElementById('learnedModal')||document.getElementById('learning-overlay'),d=document.getElementById('learnedModal')?document.querySelector('#learnedModal .win'):document.getElementById('learned-drawer');if(o&&d){o.classList?o.classList.add('show'):o.style.display='block';setTimeout(function(){if(d.style)d.style.right='0';},10);}})())">
-        <i class="fa-solid fa-graduation-cap" style="color:#e6462d;"></i>
-        <span>Learned</span>
-        <span id="badge-learned" style="min-width:18px;height:18px;padding:0 6px;border-radius:9px;background:#e6462d;color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;line-height:1;">0</span>
-      </button>
+    <!-- 下部ナビ -->
+    <nav style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;">
+      <a href="/blog/index.html" style="color:#333;text-decoration:none;">Blog</a>
+      <a href="/inquiry/index.html" style="color:#333;text-decoration:none;">Inquiry</a>
+      <a href="/legal.html" style="color:#333;text-decoration:none;">Legal</a>
+      <a href="/privacy.html" style="color:#333;text-decoration:none;">Privacy</a>
     </nav>
 
-    <!-- 4行目：下部ナビ -->
-    <nav aria-label="Main navigation" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;">
-      <a href="/blog/index.html" style="color:#333;text-decoration:none;line-height:1;">Blog</a>
-      <a href="/inquiry/index.html" style="color:#333;text-decoration:none;line-height:1;">Inquiry</a>
-      <a href="/legal.html" style="color:#333;text-decoration:none;line-height:1;">Legal</a>
-      <a href="/privacy.html" style="color:#333;text-decoration:none;line-height:1;">Privacy</a>
+    <!-- SNSアイコン -->
+    <nav style="display:flex;align-items:center;gap:14px;font-size:20px;justify-content:center;">
+      <a href="https://x.com/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://nihongotext.substack.com/" target="_blank" style="color:#e6462d;"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
 
-    <!-- 5行目：アイコン -->
-    <nav aria-label="Header icons" style="display:flex;align-items:center;gap:14px;font-size:20px;justify-content:center;line-height:1;">
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" style="color:#e6462d;"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" style="color:#e6462d;"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" style="color:#e6462d;"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" style="color:#e6462d;"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" style="color:#e6462d;"><i class="fa-solid fa-newspaper"></i></a>
-    </nav>
   </div>
-
-  <!-- 互換オーバーレイ（必要な場合に使用） -->
-  <div id="learning-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;z-index:40;"></div>
 </header>
+
+<script>
+// ===============================
+// 多言語トグル（共通パーツ）
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("langToggleBtn");
+  if (!btn) return;
+
+  const current = localStorage.getItem("ntx-lang") || "en";
+  btn.textContent = current.toUpperCase();
+
+  btn.addEventListener("click", () => {
+    const now = btn.textContent.toLowerCase() === "en" ? "ja" : "en";
+    localStorage.setItem("ntx-lang", now);
+    btn.textContent = now.toUpperCase();
+    location.reload();
+  });
+});
+</script>
