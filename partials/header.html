@@ -2,9 +2,15 @@
 <header class="site-header" style="background:#fff;border-bottom:1px solid #eee;position:relative;z-index:30;">
   <div class="container" 
        style="max-width:1100px;margin:0 auto;padding:12px 16px;
-              display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;">
+              display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;position:relative;">
 
-    <!-- ロゴ -->
+    <!-- ▼ トグル位置専用：右上固定枠 -->
+    <div id="toggle-holder"
+         style="position:absolute;right:16px;top:12px;z-index:5;">
+      <!-- partials.js がここにトグルを挿入 -->
+    </div>
+
+    <!-- ▼ ロゴ -->
     <a href="/" style="text-decoration:none;">
       <div style="display:flex;align-items:center;justify-content:center;gap:4px;">
         <span style="font-weight:800;font-size:32px;color:#e6462d;">nihongotext</span>
@@ -12,13 +18,13 @@
       </div>
     </a>
 
-    <!-- ベータ表示 -->
+    <!-- ▼ ベータ表示 -->
     <div style="font-size:18px;line-height:1;color:#98a1a8; margin-top:-4px;">
       == beta version ==
     </div>
 
-    <!-- Learning / Learned -->
-    <div style="display:flex;gap:14px;font-size:14px; margin-top:-2px;">
+    <!-- ▼ Learning / Learned（index.html だけ表示）-->
+    <div id="ll-wrapper" style="display:none;margin-top:-2px;gap:14px;font-size:14px;">
       <a href="/learning/index.html" 
          style="padding:4px 12px;border-radius:20px;border:1px solid #e6462d;
                 color:#e6462d;text-decoration:none;">Learning</a>
@@ -28,7 +34,7 @@
                 color:#e6462d;text-decoration:none;">Learned</a>
     </div>
 
-    <!-- 下部ナビ -->
+    <!-- ▼ 下部ナビ -->
     <nav style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
       <a href="/blog/index.html" style="color:#333;text-decoration:none;">Blog</a>
       <a href="/inquiry/index.html" style="color:#333;text-decoration:none;">Inquiry</a>
@@ -36,7 +42,7 @@
       <a href="/privacy.html" style="color:#333;text-decoration:none;">Privacy</a>
     </nav>
 
-    <!-- SNSアイコン -->
+    <!-- ▼ SNS -->
     <nav style="display:flex;align-items:center;gap:16px;font-size:20px;justify-content:center;">
       <a href="https://x.com/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.reddit.com/user/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-reddit-alien"></i></a>
@@ -48,4 +54,13 @@
   </div>
 </header>
 
-<!-- トグルボタンは partials.js が自動挿入 -->
+<script>
+/* ===== index.html のときだけ Learning / Learned を表示 ===== */
+document.addEventListener("DOMContentLoaded", () => {
+  const isIndex = location.pathname === "/" || location.pathname === "/index.html";
+  if (isIndex) {
+    const box = document.getElementById("ll-wrapper");
+    if (box) box.style.display = "flex";
+  }
+});
+</script>
