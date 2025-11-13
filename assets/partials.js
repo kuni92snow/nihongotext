@@ -1,7 +1,7 @@
 /**
  * assets/partials.js
  * - /partials/header.html と /partials/footer.html を読み込む共通ローダー
- * - 日本語トグル（#lang-toggle）と連携して、各ページの onLangApply を呼び出す
+ * - 日本語トグル（自動生成）で各ページの onLangApply を呼び出す
  * - blog/index.html / inquiry/index.html の両方で動作
  */
 
@@ -26,7 +26,6 @@
   function applyRootLang(lang) {
     const isJa = lang === "ja";
     document.documentElement.lang = isJa ? "ja" : "en";
-    // CSS用のフラグ（必要なら）
     document.documentElement.dataset.lang = isJa ? "ja" : "en";
   }
 
@@ -44,19 +43,19 @@
   }
 
   /**
-   * lang を適用したあとに、ページ側の onLangApply を呼ぶためのヘルパ
+   * 共通：言語適用 → ページ固有 onLangApply コール
    */
   function applyLanguageEverywhere(lang, opts) {
+    opts = opts || {};
     applyRootLang(lang);
 
-    // Learning / Learned ナビを隠したいページ（blog / inquiry など）
-    if (opts && opts.hideLearningNav) {
+    // blog / inquiry などでは Learning ナビを隠したい
+    if (opts.hideLearningNav) {
       const nav = document.querySelector('nav[aria-label="Learning navigation"]');
       if (nav) nav.style.display = "none";
     }
 
-    // 各ページ専用の処理（blog/index.html, inquiry/index.htmlなど）
-    if (opts && typeof opts.onLangApply === "function") {
+    if (typeof opts.onLangApply === "function") {
       try {
         opts.onLangApply(lang);
       } catch (e) {
@@ -66,39 +65,66 @@
   }
 
   /**
-   * ヘッダー内の #lang-toggle ボタンを初期化
+   * 日本語トグルボタンをヘッダーに作成＆初期化
    */
   function initLangToggle(opts) {
-    const btn = document.querySelector("#lang-toggle");
-    const current = getInitialLang();
+    opts = opts || {};
+    // 1) 挿入先のヘッダー要素を探す
+    const hdr =
+      document.querySelector("[data-site-header]") ||
+      document.getElementById("site-header") ||
+      document.querySelector("header");
+    if (!hdr) return;
 
-    // 初期状態を反映
-    applyLanguageEverywhere(current, opts);
-    if (btn) {
-      btn.setAttribute("data-lang", current);
+    // 2) 既にボタンがあればそれを使う／無ければ作成
+    let btn = document.querySelector("#lang-toggle");
+    if (!btn) {
+      const wrap = document.createElement("div");
+      wrap.style.cssText = "margin-left:auto;display:flex;align-items:center;gap:8px;";
+
+      btn = document.createElement("button");
+      btn.id = "lang-toggle";
+      btn.type = "button";
+      btn.style.cssText =
+        "padding:4px 14px;border-radius:999px;border:1px solid #e6462d;" +
+        "background:#fff;color:#e6462d;font-size:12px;font-weight:600;" +
+        "cursor:pointer;line-height:1;";
+
+      wrap.appendChild(btn);
+
+      // ヘッダー右側に差し込む（既存ナビの後ろ）
+      if (hdr.lastElementChild) {
+        hdr.lastElementChild.insertAdjacentElement("afterend", wrap);
+      } else {
+        hdr.appendChild(wrap);
+      }
     }
 
-    if (!btn) return; // ボタンがないページも想定
+    // 3) 初期状態
+    const current = getInitialLang();
+    btn.setAttribute("data-lang", current);
+    btn.textContent = current === "ja" ? "English" : "日本語";
+    applyLanguageEverywhere(current, opts);
 
+    // 4) クリックでトグル
     btn.addEventListener("click", function () {
       const now = btn.getAttribute("data-lang") || getInitialLang();
       const next = now === "ja" ? "en" : "ja";
       setLang(next);
       btn.setAttribute("data-lang", next);
+      btn.textContent = next === "ja" ? "English" : "日本語";
       applyLanguageEverywhere(next, opts);
     });
   }
 
   async function runWithOptions(opts) {
-    opts = opts || {};
-
-    // header / footer の読み込み
+    // header / footer 読み込み
     await Promise.all([
       loadPartial("site-header", "/partials/header.html"),
       loadPartial("site-footer", "/partials/footer.html"),
     ]);
 
-    // 言語トグルを初期化（ヘッダー挿入後に実行する必要がある）
+    // 読み込み後にトグルを組み立てる
     initLangToggle(opts);
   }
 
@@ -107,7 +133,7 @@
    * 例：
    *   window.injectPartials({
    *     hideLearningNav: true,
-   *     onLangApply(lang){ ... }
+   *     onLangApply(lang){ ... }   // blog/inquiry それぞれのテキスト切替
    *   });
    */
   window.injectPartials = function (opts) {
