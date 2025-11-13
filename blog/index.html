@@ -4,9 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Blog | nihongotext.com</title>
-<link rel="icon" href="/favicon.ico" />
-<!-- /blog/配下でも全ての相対パスをサイトルート基準にする -->
+
 <base href="/" />
+
+<link rel="icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512" />
+<link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="theme-color" content="#b22222" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
@@ -14,370 +20,201 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view: false });
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-
 <style>
-:root{
-  --shu:#e6462d;
-  --shu-tint:#fff2ef;
-  --ink:#1f2937;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-}
+:root{ --shu:#e6462d; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; }
+*{ box-sizing:border-box }
+html,body{ margin:0; background:#fff; color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif }
+a{ color:inherit; text-decoration:none }
+.wrap{ max-width:1100px; margin:0 auto; padding:0 16px }
 
-/* 全体 */
-*{box-sizing:border-box}
-html,body{
-  margin:0;
-  background:#fff;
-  color:var(--ink);
-  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
-}
-a{color:inherit;text-decoration:none}
+/* ブログでは Learning/Learned 非表示（言語トグルは表示） */
+.site-header nav[aria-label="Learning navigation"]{ display:none !important; }
 
-/* コンテナ */
-.container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 16px;
-}
+/* ページUI */
+.page-title{ display:flex; align-items:center; gap:10px; margin:18px 0 10px }
+.page-title i{ color:var(--shu) }
+.searchbar{ display:flex; align-items:center; gap:8px; margin:10px 0 16px }
+.searchbar input{ flex:1; height:40px; border:1px solid var(--line); border-radius:10px; padding:0 12px }
 
-/* メイン */
-main{
-  padding:20px 0 40px;
-}
+/* カード */
+.list{ display:grid; gap:12px }
+.card{ border:1px solid #f0d7d4; border-radius:14px; background:#fff7f6; overflow:hidden }
+.card .head{ display:flex; align-items:center; gap:10px; padding:12px; border-bottom:1px dashed #f0d7d4; background:#fff }
+.card .date{ color:#888; font-size:13px }
+.card .title{ font-weight:800; font-size:18px; display:flex; align-items:center; gap:8px }
+.card .body{ padding:12px }
+.card .tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:6px }
+.card .tag{ font-size:12px; border:1px solid #f0d7d4; border-radius:999px; padding:3px 8px; background:#fff }
 
-/* タイトル行 */
-.page-title-row{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  margin-bottom:12px;
-}
-.page-title-text{
-  font-size:24px;
-  font-weight:800;
-  color:var(--ink);
-}
-
-/* 検索ボックス */
-.search-row{
-  display:flex;
-  justify-content:flex-end;
-  margin-bottom:16px;
-}
-.search-row input[type="search"]{
-  width:260px;
-  max-width:100%;
-  border:1px solid var(--line);
-  border-radius:999px;
-  padding:6px 12px;
-  font-size:14px;
-}
-
-/* タグ */
-.tag-list{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:16px;
-  font-size:13px;
-}
-.tag-pill{
-  border-radius:999px;
-  border:1px solid var(--line);
-  padding:4px 10px;
-  cursor:pointer;
-  background:#fff;
-}
-.tag-pill.active{
-  border-color:var(--shu);
-  color:var(--shu);
-  background:#fff7f6;
-}
-
-/* 記事リスト */
-.post-list{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-}
-.post-card{
-  border-radius:14px;
-  border:1px solid #f1cbc6;
-  background:#fff7f6;
-  padding:12px 14px;
-}
-.post-title{
-  font-size:18px;
-  font-weight:700;
-  margin:0 0 4px;
-}
-.post-meta{
-  font-size:12px;
-  color:var(--muted);
-  margin-bottom:6px;
-}
-.post-summary{
-  font-size:14px;
-}
-
-/* タグ表示 */
-.post-tags{
-  margin-top:6px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  font-size:11px;
-}
-.post-tag{
-  border-radius:999px;
-  border:1px solid #f5c4ba;
-  padding:2px 8px;
-}
-
-/* レスポンシブ */
-@media (max-width:640px){
-  .page-title-row{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-  .search-row{
-    justify-content:flex-start;
-  }
-}
-
-/* Learning ナビは blog では非表示 */
-.site-header nav[aria-label="Learning navigation"]{
-  display:none !important;
-}
+/* 下部リンク */
+.footer-links{ text-align:center; color:#98a1a8; font-size:12px; margin:20px 0 }
 </style>
 </head>
 <body>
-  <!-- 共通ヘッダー（partials.js が header.html を読み込み） -->
-  <div id="header"></div>
 
-  <main class="container">
-    <div class="page-title-row">
-      <div>
-        <h1 class="page-title-text" data-en="Blog" data-ja="ブログ">Blog</h1>
-      </div>
+<header class="topbar">
+  <div id="site-header" class="wrap site-header" style="padding:12px 0;"></div>
+</header>
+
+<main class="wrap" style="padding-bottom:24px">
+  <h1 id="pageTitle" class="page-title"><i class="fa-solid fa-rss"></i> <span>Blog</span></h1>
+  <div id="subLead" style="color:var(--muted); font-size:13px; margin-bottom:6px">
+    Latest update from nihongotext.com
+  </div>
+
+  <div class="searchbar">
+    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+    <input id="kw" type="text" placeholder="Search posts..." />
+    <a id="updatesLink" href="/blog/index.html#all" style="white-space:nowrap; color:var(--shu)">
+      <i class="fa-solid fa-rotate"></i> Updates
+    </a>
+    <a id="permalinkLink" href="/blog/index.html" style="white-space:nowrap; color:var(--shu)">
+      <i class="fa-solid fa-link"></i> Permalink
+    </a>
+  </div>
+
+  <section id="list" class="list" aria-live="polite"></section>
+
+  <div class="footer-links">
+    © nihongotext.com
+    <div style="margin-top:8px">
+      <a href="/" style="margin:0 8px">Home</a>
+      <a href="/blog/index.html" style="margin:0 8px">Blog</a>
+      <a href="/inquiry/index.html" style="margin:0 8px">Inquiry</a>
+      <a href="/legal.html" style="margin:0 8px">Legal</a>
+      <a href="/privacy.html" style="margin:0 8px">Privacy</a>
     </div>
-
-    <div class="search-row">
-      <input
-        id="blog-search"
-        type="search"
-        placeholder="Search posts…"
-        aria-label="Search blog posts"
-      />
+    <div style="font-size:18px; margin-top:10px">
+      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" style="color:#e6462d"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" style="color:#e6462d; margin-left:12px"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" style="color:#e6462d; margin-left:12px"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" style="color:#e6462d; margin-left:12px"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" style="color:#e6462d; margin-left:12px"><i class="fa-solid fa-newspaper"></i></a>
     </div>
+  </div>
+</main>
 
-    <div id="blog-tags" class="tag-list"></div>
+<footer class="site-footer">
+  <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
+</footer>
 
-    <section id="blog-list" class="post-list" aria-live="polite"></section>
-  </main>
-
-  <!-- 共通フッター（footer.html を読み込むためのプレースホルダ） -->
-  <div id="site-footer"></div>
+<!-- 共通パーシャル -->
+<script src="/assets/partials.js"></script>
 
 <script>
-(function(){
-  // blog JSON をロード
-  const BLOG_JSON = '/data/blog/index.json';
+(() => {
+  // === 重複回避：ブログ専用のローカル関数名にする ===
+  const blogGetLang = () => (window.getLang ? window.getLang() : (localStorage.getItem('lang') || 'en'));
 
-  let allPosts = [];
-  let currentLang = 'en'; // 'en' or 'ja'
-  let activeTag = '';
-
-  function getLang(){
-    try{
-      return localStorage.getItem('nt_lang') || 'en';
-    }catch(e){
-      return 'en';
+  // posts.json / news.json どちらか
+  const endpoints = ['/blog/posts.json', '/blog/news.json'];
+  async function loadPosts(){
+    for(const url of endpoints){
+      try{
+        const r = await fetch(url,{cache:'no-store'});
+        if(!r.ok) continue;
+        const data = await r.json();
+        if(Array.isArray(data) && data.length) return data;
+      }catch(_){}
     }
-  }
-  function setLang(lang){
-    currentLang = lang;
-    try{
-      localStorage.setItem('nt_lang', lang);
-    }catch(e){}
-    applyLangToPage();
+    return [];
   }
 
-  // タイトルと本文の切り替え
-  function applyLangToPage(){
-    const lang = currentLang;
-    // ページタイトル
-    document.querySelectorAll('[data-en][data-ja]').forEach(el=>{
-      el.textContent = (lang === 'ja') ? el.getAttribute('data-ja') : el.getAttribute('data-en');
-    });
-    // 記事リスト再描画
-    render(allPosts);
-  }
-
-  // タグ描画
-  function renderTags(posts){
-    const tagBox = document.getElementById('blog-tags');
-    if(!tagBox) return;
-    const tagSet = new Set();
-    posts.forEach(p=>{
-      (p.tags || []).forEach(t => tagSet.add(t));
-    });
-    const tags = Array.from(tagSet).sort();
-    tagBox.innerHTML = '';
-    if(!tags.length) return;
-
-    const allBtn = document.createElement('button');
-    allBtn.className = 'tag-pill' + (!activeTag ? ' active' : '');
-    allBtn.textContent = 'All';
-    allBtn.addEventListener('click', ()=>{
-      activeTag = '';
-      render(allPosts);
-      renderTags(allPosts);
-    });
-    tagBox.appendChild(allBtn);
-
-    tags.forEach(tag=>{
-      const btn = document.createElement('button');
-      btn.className = 'tag-pill' + (activeTag === tag ? ' active' : '');
-      btn.textContent = tag;
-      btn.addEventListener('click', ()=>{
-        activeTag = tag;
-        render(allPosts);
-        renderTags(allPosts);
-      });
-      tagBox.appendChild(btn);
-    });
-  }
-
-  // 記事描画
   function render(posts){
-    const list = document.getElementById('blog-list');
-    if(!list) return;
-    let items = posts.slice();
+    const list = document.getElementById('list');
+    list.innerHTML = '';
+    if(!posts.length){
+      list.innerHTML = '<div style="color:#6b7280">No posts yet.</div>';
+      return;
+    }
+    const lang = blogGetLang();
 
-    // タグフィルタ
-    if(activeTag){
-      items = items.filter(p => (p.tags || []).includes(activeTag));
+    posts
+      .slice()
+      .sort((a,b)=>(b.date||'').localeCompare(a.date||''))
+      .forEach(p=>{
+        const card = document.createElement('article');
+        card.className = 'card';
+
+        const head = document.createElement('div');
+        head.className = 'head';
+
+        const titleText = (lang==='ja')
+          ? (p.title_ja || p.title || p.title_en || '(untitled)')
+          : (p.title_en || p.title || p.title_ja || '(untitled)');
+
+        head.innerHTML =
+          `<div class="date"><i class="fa-regular fa-calendar-days"></i> ${p.date||''}</div>
+           <div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${titleText}</a></div>`;
+
+        const body = document.createElement('div');
+        body.className = 'body';
+        const sum = (lang==='ja' ? (p.summary_ja||p.summary_en) : (p.summary_en||p.summary_ja)) || '';
+        body.innerHTML = `<div>${sum}</div>`;
+
+        const tags = document.createElement('div');
+        tags.className = 'tags';
+        (p.tags||[]).forEach(t=>{
+          const s = document.createElement('span');
+          s.className = 'tag';
+          s.textContent = t;
+          tags.appendChild(s);
+        });
+        body.appendChild(tags);
+
+        card.appendChild(head);
+        card.appendChild(body);
+        list.appendChild(card);
+      });
+  }
+
+  // 初期化
+  (async function init(){
+    // ヘッダー/フッター注入（Learning/Learned 非表示・言語トグルは有効）
+    if (window.injectPartials){
+      window.injectPartials({
+        hideLearningNav: true,
+        titleTargets: [
+          { el: document.querySelector('#pageTitle span'), en: 'Blog', ja: 'ブログ' }
+        ],
+        titleDoc: { en: 'Blog | nihongotext.com', ja: 'ブログ | nihongotext.com' },
+        onLangApply(lang){
+          const kw = document.getElementById('kw');
+          if(kw){ kw.placeholder = (lang==='en') ? 'Search posts...' : '記事を検索…'; }
+          const sub = document.getElementById('subLead');
+          if(sub){ sub.textContent = (lang==='en') ? 'Latest update from nihongotext.com' : 'nihongotext.com からの最新更新情報'; }
+          render(window.__ALL_POSTS__||[]);
+        }
+      });
     }
 
-    const term = (document.getElementById('blog-search')?.value || '').trim().toLowerCase();
-    if(term){
-      items = items.filter(p=>{
+    const all = await loadPosts();
+    window.__ALL_POSTS__ = all;
+    render(all);
+
+    // 検索
+    const kw = document.getElementById('kw');
+    kw.addEventListener('input', ()=>{
+      const term = kw.value.trim().toLowerCase();
+      const base = window.__ALL_POSTS__ || [];
+      if(!term){ render(base); return; }
+      const filtered = base.filter(p=>{
         const blob = [
           p.slug, p.title, p.title_en, p.title_ja, p.summary_en, p.summary_ja,
           ...(p.tags||[])
         ].join(' ').toLowerCase();
         return blob.includes(term);
       });
-    }
-
-    // 日付降順
-    items.sort((a,b)=>{
-      const da = (a.date||'').replace(/-/g,'');
-      const db = (b.date||'').replace(/-/g,'');
-      return db.localeCompare(da);
+      render(filtered);
     });
-
-    list.innerHTML = '';
-
-    if(!items.length){
-      const div = document.createElement('div');
-      div.style.color = '#6b7280';
-      div.textContent = (currentLang === 'ja')
-        ? '該当するブログ記事がありません。'
-        : 'No blog posts found.';
-      list.appendChild(div);
-      return;
-    }
-
-    items.forEach(p=>{
-      const card = document.createElement('article');
-      card.className = 'post-card';
-
-      const title = document.createElement('h2');
-      title.className = 'post-title';
-      title.textContent = (currentLang === 'ja'
-        ? (p.title_ja || p.title_en || p.title)
-        : (p.title_en || p.title || p.title_ja)
-      );
-      card.appendChild(title);
-
-      const meta = document.createElement('div');
-      meta.className = 'post-meta';
-      meta.textContent = p.date || '';
-      card.appendChild(meta);
-
-      const summary = document.createElement('p');
-      summary.className = 'post-summary';
-      summary.textContent = (currentLang === 'ja'
-        ? (p.summary_ja || p.summary_en)
-        : (p.summary_en || p.summary_ja)
-      );
-      card.appendChild(summary);
-
-      if(p.tags && p.tags.length){
-        const tagsRow = document.createElement('div');
-        tagsRow.className = 'post-tags';
-        p.tags.forEach(t=>{
-          const span = document.createElement('span');
-          span.className = 'post-tag';
-          span.textContent = t;
-          tagsRow.appendChild(span);
-        });
-        card.appendChild(tagsRow);
-      }
-
-      list.appendChild(card);
-    });
-  }
-
-  // 初期化
-  async function init(){
-    currentLang = getLang();
-
-    // JSONロード
-    try{
-      const res = await fetch(BLOG_JSON,{cache:'no-store'});
-      if(res.ok){
-        const json = await res.json();
-        if(Array.isArray(json)){
-          allPosts = json;
-        }else if(Array.isArray(json.posts)){
-          allPosts = json.posts;
-        }
-      }
-    }catch(e){
-      allPosts = [];
-    }
-
-    renderTags(allPosts);
-    render(allPosts);
-
-    // 検索イベント
-    const searchInput = document.getElementById('blog-search');
-    if(searchInput){
-      searchInput.addEventListener('input', ()=>{
-        render(allPosts);
-      });
-    }
-
-    // ページロード後、共通の言語設定を反映
-    applyLangToPage();
 
     try{ gtag('event','page_view',{page_title:'blog/index'}); }catch(_){}
-  }
-
-  document.addEventListener('DOMContentLoaded', init);
+  })();
 })();
 </script>
-
-<!-- 共通ヘッダー・フッター読込 -->
-<script src="/assets/partials.js" defer></script>
 </body>
 </html>
