@@ -1,34 +1,59 @@
 <!-- /partials/header.html -->
 <header class="site-header" style="background:#fff;border-bottom:1px solid #eee;position:relative;z-index:30;">
-  <div class="container" style="max-width:1100px;margin:0 auto;padding:6px 16px;display:flex;flex-direction:column;align-items:center;gap:6px;">
+  <div class="container"
+       style="max-width:1100px;margin:0 auto;padding:6px 16px;display:flex;flex-direction:column;align-items:center;gap:6px;">
 
-    <!-- 1行目：ロゴ + トグル（右端） -->
-    <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
-      <a href="/" style="text-decoration:none;display:flex;align-items:center;">
+    <!-- 1行目：ロゴ（中央揃え） -->
+    <div style="display:flex;align-items:center;justify-content:center;width:100%;">
+      <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:4px;">
         <span style="font-weight:800;font-size:32px;color:#e6462d;">nihongotext</span>
         <span style="font-weight:800;font-size:32px;color:#333;">.com</span>
       </a>
-
-      <!-- 言語トグルボタン（右端固定） -->
-      <button id="langToggleBtn"
-        style="padding:4px 12px;font-size:14px;border:1px solid #e6462d;border-radius:20px;background:#fff;color:#e6462d;cursor:pointer;">
-        EN
-      </button>
     </div>
 
-    <!-- ベータ表示 -->
-    <div style="font-size:20px;line-height:1;color:#98a1a8;">== beta version ==</div>
+    <!-- 2行目：ベータ表示（中央） -->
+    <div style="font-size:20px;line-height:1;color:#98a1a8;text-align:center;">
+      == beta version ==
+    </div>
 
-    <!-- 下部ナビ -->
-    <nav style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;">
+    <!-- 3行目：Learning / Learned ナビ（中央） -->
+    <nav aria-label="Learning navigation"
+         style="display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:2px;">
+      <!-- Learning ボタン -->
+      <button type="button"
+        style="padding:6px 10px;border:1px solid #e5e7eb;background:#fff;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"
+        onclick="if(window.openLearning){ openLearning(); }">
+        <i class="fa-solid fa-book-open" style="color:#e6462d;"></i>
+        <span>Learning</span>
+        <span id="badge-learning"
+          style="min-width:18px;height:18px;padding:0 6px;border-radius:9px;background:#e6462d;color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;">
+          0
+        </span>
+      </button>
+
+      <!-- Learned ボタン -->
+      <button type="button"
+        style="padding:6px 10px;border:1px solid #e5e7eb;background:#fff;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"
+        onclick="if(window.openLearned){ openLearned(); }">
+        <i class="fa-solid fa-graduation-cap" style="color:#e6462d;"></i>
+        <span>Learned</span>
+        <span id="badge-learned"
+          style="min-width:18px;height:18px;padding:0 6px;border-radius:9px;background:#e6462d;color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;">
+          0
+        </span>
+      </button>
+    </nav>
+
+    <!-- 4行目：下部ナビ（中央） -->
+    <nav style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
       <a href="/blog/index.html" style="color:#333;text-decoration:none;">Blog</a>
       <a href="/inquiry/index.html" style="color:#333;text-decoration:none;">Inquiry</a>
       <a href="/legal.html" style="color:#333;text-decoration:none;">Legal</a>
       <a href="/privacy.html" style="color:#333;text-decoration:none;">Privacy</a>
     </nav>
 
-    <!-- SNSアイコン -->
-    <nav style="display:flex;align-items:center;gap:14px;font-size:20px;justify-content:center;">
+    <!-- 5行目：SNSアイコン（中央） -->
+    <nav style="display:flex;align-items:center;gap:14px;font-size:20px;justify-content:center;margin-bottom:4px;">
       <a href="https://x.com/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.reddit.com/user/nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-reddit-alien"></i></a>
       <a href="https://medium.com/@nihongotext" target="_blank" style="color:#e6462d;"><i class="fa-brands fa-medium"></i></a>
@@ -38,23 +63,3 @@
 
   </div>
 </header>
-
-<script>
-// ===============================
-// 多言語トグル（共通パーツ）
-// ===============================
-document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("langToggleBtn");
-  if (!btn) return;
-
-  const current = localStorage.getItem("ntx-lang") || "en";
-  btn.textContent = current.toUpperCase();
-
-  btn.addEventListener("click", () => {
-    const now = btn.textContent.toLowerCase() === "en" ? "ja" : "en";
-    localStorage.setItem("ntx-lang", now);
-    btn.textContent = now.toUpperCase();
-    location.reload();
-  });
-});
-</script>
