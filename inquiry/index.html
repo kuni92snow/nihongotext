@@ -53,9 +53,8 @@
     .msg-ok{color:#10b981;font-weight:700}
     .msg-ng{color:#ef4444;font-weight:700}
 
-    /* inquiry では Learning/Learned を非表示 */
+    /* ← Learning/Learned は inquiry では完全非表示にする */
     nav[aria-label="Learning navigation"]{ display:none !important; }
-
   </style>
 
   <!-- GA4 -->
@@ -99,7 +98,6 @@
 
         <div class="row">
           <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-
           <button type="button" class="btn secondary" id="btnCancel" data-i18n="cancel">Cancel</button>
           <button type="submit" class="btn" id="btnSend" data-i18n="send">Send</button>
         </div>
@@ -120,6 +118,7 @@
   <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
 </footer>
 
+<!-- 共通ヘッダー・フッター -->
 <script src="/assets/partials.js"></script>
 
 <script>
@@ -128,12 +127,8 @@ const dict = {
   en:{
     contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",
     cancel:"Cancel",send:"Send",
-    placeholders:{
-      name:"Your name",
-      email:"your@email.com",
-      subject:"What is this about?",
-      message:"Write your message..."
-    },
+    placeholders:{name:"Your name",email:"your@email.com",
+    subject:"What is this about?",message:"Write your message..."},
     need:"Please check the reCAPTCHA box.",
     sentok:"Your message has been sent. Thank you!",
     sentng:"Failed to send. Please try again later."
@@ -146,108 +141,87 @@ const dict = {
     message:"<ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby> / Message",
     cancel:"キャンセル",
     send:"送信",
-    placeholders:{
-      name:"おなまえ",
-      email:"your@email.com",
-      subject:"ご用件",
-      message:"メッセージを入力してください"
-    },
+    placeholders:{name:"おなまえ",email:"your@email.com",
+    subject:"ご用件",message:"メッセージを入力してください"},
     need:"reCAPTCHA をチェックしてください。",
     sentok:"送信しました。ありがとうございます。",
     sentng:"送信に失敗しました。時間をおいてお試しください。"
   }
 };
 
-let lang = localStorage.getItem("nt_lang")
-        || ((navigator.language||"en").startsWith("ja") ? "ja" : "en");
+let lang = localStorage.getItem('nt_lang') ||
+          ((navigator.language||'en').startsWith('ja') ? 'ja':'en');
 
-const els={
-  title:document.getElementById("title"),
-  lbName:document.getElementById("lbName"),
-  lbEmail:document.getElementById("lbEmail"),
-  lbSubject:document.getElementById("lbSubject"),
-  lbMessage:document.getElementById("lbMessage"),
-  btnCancel:document.getElementById("btnCancel"),
-  btnSend:document.getElementById("btnSend"),
-  name:document.getElementById("name"),
-  email:document.getElementById("email"),
-  subject:document.getElementById("subject"),
-  message:document.getElementById("message"),
-  msg:document.getElementById("msg")
+const els = {
+  title: document.getElementById('title'),
+  lbName: document.getElementById('lbName'),
+  lbEmail: document.getElementById('lbEmail'),
+  lbSubject: document.getElementById('lbSubject'),
+  lbMessage: document.getElementById('lbMessage'),
+  btnCancel: document.getElementById('btnCancel'),
+  btnSend: document.getElementById('btnSend'),
+  name: document.getElementById('name'),
+  email: document.getElementById('email'),
+  subject: document.getElementById('subject'),
+  message: document.getElementById('message'),
+  msg: document.getElementById('msg'),
 };
 
 function applyLang(){
-  const t=dict[lang];
-  els.title.innerHTML=t.contact;
-  els.lbName.innerHTML=t.name;
-  els.lbEmail.innerHTML=t.email;
-  els.lbSubject.innerHTML=t.subject;
-  els.lbMessage.innerHTML=t.message;
-  els.btnCancel.textContent=t.cancel;
-  els.btnSend.textContent=t.send;
-  els.name.placeholder=t.placeholders.name;
-  els.email.placeholder=t.placeholders.email;
-  els.subject.placeholder=t.placeholders.subject;
-  els.message.placeholder=t.placeholders.message;
-  localStorage.setItem("nt_lang",lang);
+  const t = dict[lang];
+  els.title.innerHTML = t.contact;
+  els.lbName.innerHTML = t.name;
+  els.lbEmail.innerHTML = t.email;
+  els.lbSubject.innerHTML = t.subject;
+  els.lbMessage.innerHTML = t.message;
+  els.btnCancel.textContent = t.cancel;
+  els.btnSend.textContent = t.send;
+  els.name.placeholder = t.placeholders.name;
+  els.email.placeholder = t.placeholders.email;
+  els.subject.placeholder = t.placeholders.subject;
+  els.message.placeholder = t.placeholders.message;
+
+  localStorage.setItem('nt_lang',lang);
 }
 
-/* === 送信 === */
-const form=document.getElementById("contactForm");
-const iframe=document.getElementById("submit_iframe");
+/* === form送信 === */
+const form = document.getElementById('contactForm');
+const iframe = document.getElementById('submit_iframe');
 
-iframe.addEventListener("load",()=>{
+iframe.addEventListener('load',()=>{
   const t=dict[lang];
   els.msg.innerHTML=t.sentok;
-  els.msg.className="note msg-ok";
+  els.msg.className='note msg-ok';
   form.reset();
   if(window.grecaptcha) grecaptcha.reset();
 });
 
-form.addEventListener("submit",ev=>{
+form.addEventListener('submit',ev=>{
   const t=dict[lang];
-  const token=window.grecaptcha?grecaptcha.getResponse():"";
+  const token=window.grecaptcha?grecaptcha.getResponse():'';
   if(!token){
     ev.preventDefault();
     els.msg.innerHTML=t.need;
-    els.msg.className="note msg-ng";
+    els.msg.className='note msg-ng';
     return;
   }
-  document.getElementById("token").value=token;
+  document.getElementById('token').value=token;
 });
 
 /* === 初期化 === */
 (async function init(){
-
-  /* ★ヘッダー・フッタ挿入 */
   window.injectPartials &&
   window.injectPartials({
     hideLearningNav:true,
-    onLangApply:()=>{
-      applyLang();
-      syncHeaderToggle();
-    }
+    titleTargets:[
+      {el:document.querySelector('#title'),en:'Contact',ja:'お問い合わせ'}
+    ],
+    titleDoc:{en:'Contact | nihongotext.com',ja:'お問い合わせ | nihongotext.com'},
+    onLangApply:applyLang
   });
 
   applyLang();
-  syncHeaderToggle();
 })();
-
-/* === トグル同期 === */
-function syncHeaderToggle(){
-  const btn=document.querySelector("#lang-toggle-btn");
-  if(!btn) return;
-
-  btn.textContent = (lang==="ja" ? "English" : "日本語");
-
-  btn.onclick=()=>{
-    lang = (lang==="ja" ? "en" : "ja");
-    applyLang();
-    btn.textContent = (lang==="ja" ? "English" : "日本語");
-  };
-}
-
 </script>
-
 </body>
 </html>
