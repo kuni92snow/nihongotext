@@ -171,7 +171,13 @@ const els = {
 };
 
 function applyLang(){
-  const t = dict[lang];
+  // ★ ヘッダー側のトグル操作に追従するため、毎回 localStorage から取り直す
+  const stored = localStorage.getItem('nt_lang');
+  if (stored === 'ja' || stored === 'en') {
+    lang = stored;
+  }
+
+  const t = dict[lang] || dict.en;
 
   els.title.innerHTML = t.contact;
   els.lbName.innerHTML = t.name;
@@ -184,8 +190,6 @@ function applyLang(){
   els.email.placeholder = t.placeholders.email;
   els.subject.placeholder = t.placeholders.subject;
   els.message.placeholder = t.placeholders.message;
-
-  localStorage.setItem('nt_lang',lang);
 }
 
 /* === form送信 === */
@@ -193,7 +197,7 @@ const form = document.getElementById('contactForm');
 const iframe = document.getElementById('submit_iframe');
 
 iframe.addEventListener('load',()=>{
-  const t=dict[lang];
+  const t=dict[lang] || dict.en;
   els.msg.innerHTML=t.sentok;
   els.msg.className='note msg-ok';
   form.reset();
@@ -201,7 +205,7 @@ iframe.addEventListener('load',()=>{
 });
 
 form.addEventListener('submit',ev=>{
-  const t=dict[lang];
+  const t=dict[lang] || dict.en;
   const token=window.grecaptcha?grecaptcha.getResponse():'';
   if(!token){
     ev.preventDefault();
