@@ -3,408 +3,251 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inquiry / Contact | nihongotext.com</title>
+  <title>Contact | nihongotext.com</title>
+
+  <base href="/" />
 
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512" />
   <link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512" />
+  <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="theme-color" content="#b22222" />
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ', { send_page_view: false });
-  </script>
-
-  <style>
-    :root{
-      --shu:#e6462d;
-      --ink:#111827;
-      --muted:#6b7280;
-      --line:#e5e7eb;
-      --bg:#f9fafb;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
-      color:var(--ink);
-      background:#fff;
-    }
-    a{color:inherit;text-decoration:none}
-    button{cursor:pointer}
-
-    .wrap{max-width:960px;margin:0 auto;padding:0 16px}
-
-    /* ヘッダー全体 */
-    .topbar{
-      border-top:4px solid var(--shu);
-      border-bottom:1px solid #fde3df;
-      background:#fff;
-    }
-    #header{max-width:1100px;margin:0 auto;padding:10px 16px;}
-
-    /* 言語トグル（ここでデザインを統一） */
-    .lang-wrap{
-      display:flex;
-      justify-content:flex-end;
-      margin-top:6px;
-    }
-    #langBtn{
-      margin-left:auto;
-      border:1px solid var(--shu);
-      background:#fff;
-      color:var(--shu);
-      border-radius:999px;
-      padding:6px 14px;
-      font-size:13px;
-      font-weight:600;
-      cursor:pointer;
-      transition:background .15s,color .15s,border-color .15s;
-    }
-    #langBtn:hover{
-      background:var(--shu);
-      color:#fff;
-      border-color:var(--shu);
-    }
-
-    main{padding:32px 0 40px}
-    h1{
-      font-size:26px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-      margin-bottom:8px;
-    }
-    h1 .icon{
-      width:26px;
-      height:26px;
-      border-radius:50%;
-      background:var(--shu);
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-size:14px;
-    }
-    .lead{
-      color:var(--muted);
-      font-size:14px;
-      margin-bottom:24px;
-    }
-
-    .card{
-      max-width:720px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:#fff;
-      padding:24px 24px 20px;
-      box-shadow:0 10px 25px rgba(15,23,42,.06);
-    }
-    .field{
-      margin-bottom:14px;
-    }
-    .field label{
-      display:block;
-      font-size:13px;
-      font-weight:600;
-      margin-bottom:4px;
-    }
-    .field label span.req{
-      color:#e11d48;
-      margin-left:3px;
-    }
-    .field input,
-    .field textarea{
-      width:100%;
-      border-radius:10px;
-      border:1px solid var(--line);
-      padding:10px 12px;
-      font:inherit;
-      background:#f9fafb;
-    }
-    .field textarea{
-      min-height:140px;
-      resize:vertical;
-    }
-    .help{
-      font-size:11px;
-      color:var(--muted);
-      margin-top:4px;
-    }
-
-    .actions{
-      display:flex;
-      justify-content:flex-end;
-      gap:10px;
-      margin-top:18px;
-    }
-    .btn{
-      border-radius:999px;
-      padding:8px 20px;
-      font-size:14px;
-      font-weight:600;
-      border:1px solid #d1d5db;
-      background:#fff;
-      color:var(--ink);
-    }
-    .btn-primary{
-      border-color:var(--shu);
-      background:var(--shu);
-      color:#fff;
-    }
-
-    .footer{
-      border-top:1px solid #fde3df;
-      background:#fff;
-      padding:18px 0 20px;
-      font-size:12px;
-      color:#9ca3af;
-    }
-    .footer-nav{
-      display:flex;
-      justify-content:center;
-      gap:16px;
-      margin-top:6px;
-    }
-    .footer-icons{
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      margin-top:8px;
-      font-size:16px;
-    }
-
-    .note{
-      font-size:11px;
-      color:var(--muted);
-      margin-top:8px;
-    }
-  </style>
-</head>
-<body>
-  <!-- 共通ヘッダー -->
-  <div class="topbar">
-    <header id="header"></header>
-  </div>
-
-  <main>
-    <section class="wrap">
-      <h1>
-        <span class="icon">✉</span>
-        <span id="title-en">Inquiry / Contact</span>
-        <span id="title-ja" style="display:none;">お問い合わせ</span>
-      </h1>
-      <p class="lead" id="lead-en">
-        Please feel free to ask any questions or send feedback about nihongotext.com.
-      </p>
-      <p class="lead" id="lead-ja" style="display:none;">
-        nihongotext.com に関するご質問やご意見がありましたら、こちらからお気軽にお問い合わせください。
-      </p>
-
-      <div class="card">
-        <form id="inqForm">
-          <div class="field">
-            <label id="label-name-en">Name <span class="req">*</span></label>
-            <label id="label-name-ja" style="display:none;">おなまえ / Name <span class="req">*</span></label>
-            <input type="text" name="name" required />
-          </div>
-
-          <div class="field">
-            <label id="label-email-en">Email <span class="req">*</span></label>
-            <label id="label-email-ja" style="display:none;">メール / Email <span class="req">*</span></label>
-            <input type="email" name="email" required />
-            <p class="help" id="help-email-en">
-              We will only use your email address to reply to your inquiry.
-            </p>
-            <p class="help" id="help-email-ja" style="display:none;">
-              ご入力いただいたメールアドレスは、お問い合わせへの返信のみに使用します。
-            </p>
-          </div>
-
-          <div class="field">
-            <label id="label-subject-en">Subject <span class="req">*</span></label>
-            <label id="label-subject-ja" style="display:none;">件名 / Subject <span class="req">*</span></label>
-            <input type="text" name="subject" required />
-          </div>
-
-          <div class="field">
-            <label id="label-message-en">Message <span class="req">*</span></label>
-            <label id="label-message-ja" style="display:none;">メッセージ / Message <span class="req">*</span></label>
-            <textarea name="message" required></textarea>
-            <p class="help" id="help-message-en">
-              You can write in English or Japanese.
-            </p>
-            <p class="help" id="help-message-ja" style="display:none;">
-              日本語でも英語でもご記入いただけます。
-            </p>
-          </div>
-
-          <!-- reCAPTCHA v2 -->
-          <div class="field">
-            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_V2_SITE_KEY"></div>
-          </div>
-
-          <p class="note" id="note-en">
-            Please do not include passwords or highly confidential information.
-          </p>
-          <p class="note" id="note-ja" style="display:none;">
-            パスワードなどの機密情報は記載しないようお願いいたします。
-          </p>
-
-          <div class="actions">
-            <button type="reset" class="btn" id="btn-clear-en">Clear</button>
-            <button type="reset" class="btn" id="btn-clear-ja" style="display:none;">キャンセル</button>
-
-            <button type="submit" class="btn btn-primary" id="btn-send-en">Send</button>
-            <button type="submit" class="btn btn-primary" id="btn-send-ja" style="display:none;">送信</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- 共通フッター -->
-  <footer class="footer">
-    <div id="footer" class="wrap">
-      <div style="text-align:center;">© nihongotext.com</div>
-      <nav class="footer-nav">
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/inquiry/">Inquiry</a>
-        <a href="/legal.html">Legal</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
-      <div class="footer-icons">
-        <a href="https://x.com/nihongotext" target="_blank" rel="noopener">✕</a>
-        <a href="https://reddit.com/r/nihongotext" target="_blank" rel="noopener">⬤</a>
-        <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener">☕</a>
-        <a href="https://nihongotext.com" target="_blank" rel="noopener">📕</a>
-      </div>
-    </div>
-  </footer>
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- reCAPTCHA v2 -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-  <!-- ヘッダー共通スクリプト -->
+  <style>
+    :root{ --shu:#e6462d; --border:#e5e7eb; --ink:#132c3a; --muted:#6b7280; }
+    *{box-sizing:border-box}
+    body{
+      margin:0;background:#fff;color:var(--ink);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+      line-height:1.7
+    }
+    a{color:inherit}
+    ruby{ruby-position:over} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
+
+    main .wrap{max-width:960px;margin:auto;padding:12px}
+    h1{font-size:28px;margin:16px 0}
+    .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px 18px 14px}
+    label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}
+    input,textarea{
+      width:100%;padding:12px;border:1px solid var(--border);
+      border-radius:10px;background:#fff;font:inherit
+    }
+    textarea{min-height:180px;resize:vertical}
+    .row{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
+    .btn{
+      padding:10px 16px;border-radius:10px;background:var(--shu);
+      color:#fff;border:none;cursor:pointer
+    }
+    .btn.secondary{
+      background:#fff;color:#111827;border:1px solid var(--border)
+    }
+    .note{font-size:12px;color:var(--muted);margin-top:8px}
+    .msg-ok{color:#10b981;font-weight:700}
+    .msg-ng{color:#ef4444;font-weight:700}
+
+    /* inquiry では Learning/Learned を非表示 */
+    nav[aria-label="Learning navigation"]{ display:none !important; }
+
+  </style>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
   <script>
-    // ========= 言語状態 =========
-    function getLang(){
-      return localStorage.getItem('nt_lang') || 'en';
-    }
-    function setLang(v){
-      localStorage.setItem('nt_lang', v);
-    }
-
-    // ========= ヘッダー読み込み =========
-    async function loadPartials(){
-      try{
-        const res = await fetch('/partials/header.html',{cache:'no-store'});
-        if(!res.ok) throw new Error('header load failed');
-        const html = await res.text();
-        const hdr = document.getElementById('header');
-        hdr.innerHTML = html;
-
-        ensureLangButton(hdr);
-        hookLearningButtons();   // ← Inquiry では Learning / Learned を非表示
-        initLang();
-      }catch(e){
-        console.error(e);
-        const hdr = document.getElementById('header');
-        hdr.innerHTML =
-          '<div style="display:flex;align-items:center;gap:10px;justify-content:space-between;">'
-          + '<a href="/" style="font-weight:900;font-size:28px;color:#e6462d;text-decoration:none;">nihongotext<span style="color:#111">.com</span></a>'
-          + '<div class="lang-wrap"><button id="langBtn" type="button">English</button></div>'
-          + '</div>';
-        ensureLangButton(document);
-        initLang();
-      }
-    }
-
-    // ========= 言語トグルボタンの追加 =========
-    function ensureLangButton(root){
-      if(!root) root = document;
-      let btn = root.querySelector('#langBtn');
-      if(!btn){
-        const hdr = root.querySelector('#header') || root.body || root;
-        const wrap = document.createElement('div');
-        wrap.className = 'lang-wrap';
-        btn = document.createElement('button');
-        btn.id = 'langBtn';
-        btn.type = 'button';
-        wrap.appendChild(btn);
-        hdr.appendChild(wrap);
-      }
-      // デザインをサイト共通の赤ベースに統一
-      btn.style.cssText =
-        'margin-left:auto;border:1px solid #e6462d;background:#fff;color:#e6462d;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;cursor:pointer;';
-      btn.onclick = toggleLang;
-    }
-
-    // ========= Learning / Learned を非表示にするだけ =========
-    function hookLearningButtons(){
-      const hdr = document.getElementById('header');
-      if (!hdr) return;
-      const toHide = hdr.querySelectorAll('#learnBtn, #learnedBtn, [data-open="learning"], [data-open="learned"]');
-      toHide.forEach(el => { el.style.display = 'none'; });
-    }
-
-    // ========= 言語の適用 =========
-    function applyLang(){
-      const lang = getLang();
-      const isJa = lang === 'ja';
-
-      const pairs = [
-        ['title-en','title-ja'],
-        ['lead-en','lead-ja'],
-        ['label-name-en','label-name-ja'],
-        ['label-email-en','label-email-ja'],
-        ['label-subject-en','label-subject-ja'],
-        ['label-message-en','label-message-ja'],
-        ['help-email-en','help-email-ja'],
-        ['help-message-en','help-message-ja'],
-        ['note-en','note-ja'],
-        ['btn-clear-en','btn-clear-ja'],
-        ['btn-send-en','btn-send-ja'],
-      ];
-      pairs.forEach(([enId,jaId])=>{
-        const en = document.getElementById(enId);
-        const ja = document.getElementById(jaId);
-        if(!en || !ja) return;
-        if(isJa){ en.style.display='none'; ja.style.display='block'; }
-        else    { en.style.display='block'; ja.style.display='none'; }
-      });
-
-      const btn = document.getElementById('langBtn');
-      if(btn) btn.textContent = isJa ? 'English' : '日本語';
-
-      document.documentElement.lang = isJa ? 'ja' : 'en';
-      document.title = isJa
-        ? 'お問い合わせ | nihongotext.com'
-        : 'Inquiry / Contact | nihongotext.com';
-    }
-
-    function initLang(){
-      applyLang();
-    }
-    function toggleLang(){
-      const next = getLang()==='ja' ? 'en' : 'ja';
-      setLang(next);
-      applyLang();
-    }
-
-    document.addEventListener('DOMContentLoaded', ()=>{
-      loadPartials();
-      initLang();
-
-      // フォーム送信（フロント側ではそのまま送信）
-      document.getElementById('inqForm').addEventListener('submit', function(e){
-        // ここでは特に JS 側で送信処理を書かず、既存の Apps Script / サーバー側処理に任せます。
-      });
-    });
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());
+    gtag('config','G-9QSHWJE0HZ');
   </script>
+</head>
+
+<body>
+<header class="topbar">
+  <div id="site-header" class="wrap site-header" style="padding:12px 0;"></div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1 id="title" data-i18n="contact">Contact</h1>
+
+    <section class="card" aria-labelledby="title">
+      <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
+
+      <form id="contactForm" target="submit_iframe" method="POST"
+            action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
+
+        <label for="name" id="lbName" data-i18n="name">Name</label>
+        <input id="name" name="name" autocomplete="name" placeholder="Your name" />
+
+        <label for="email" id="lbEmail" data-i18n="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" />
+
+        <label for="subject" id="lbSubject" data-i18n="subject">Subject</label>
+        <input id="subject" name="subject" placeholder="What is this about?" />
+
+        <label for="message" id="lbMessage" data-i18n="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+
+        <input type="hidden" id="token" name="token" />
+
+        <div class="row">
+          <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+
+          <button type="button" class="btn secondary" id="btnCancel" data-i18n="cancel">Cancel</button>
+          <button type="submit" class="btn" id="btnSend" data-i18n="send">Send</button>
+        </div>
+
+        <div class="note" id="rcNote">
+          reCAPTCHA and Google’s
+          <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Privacy Policy</a> and
+          <a href="https://policies.google.com/terms?hl=en" target="_blank" rel="noopener">Terms of Service</a> apply.
+        </div>
+
+        <div class="note" id="msg" aria-live="polite"></div>
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
+</footer>
+
+<script src="/assets/partials.js"></script>
+
+<script>
+/* === 言語辞書 === */
+const dict = {
+  en:{
+    contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",
+    cancel:"Cancel",send:"Send",
+    placeholders:{
+      name:"Your name",
+      email:"your@email.com",
+      subject:"What is this about?",
+      message:"Write your message..."
+    },
+    need:"Please check the reCAPTCHA box.",
+    sentok:"Your message has been sent. Thank you!",
+    sentng:"Failed to send. Please try again later."
+  },
+  ja:{
+    contact:"<ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby>",
+    name:"<ruby><rb>お名前</rb><rt>おなまえ</rt></ruby> / Name",
+    email:"<ruby><rb>メール</rb><rt>めーる</rt></ruby> / Email",
+    subject:"<ruby><rb>件名</rb><rt>けんめい</rt></ruby> / Subject",
+    message:"<ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby> / Message",
+    cancel:"キャンセル",
+    send:"送信",
+    placeholders:{
+      name:"おなまえ",
+      email:"your@email.com",
+      subject:"ご用件",
+      message:"メッセージを入力してください"
+    },
+    need:"reCAPTCHA をチェックしてください。",
+    sentok:"送信しました。ありがとうございます。",
+    sentng:"送信に失敗しました。時間をおいてお試しください。"
+  }
+};
+
+let lang = localStorage.getItem("nt_lang")
+        || ((navigator.language||"en").startsWith("ja") ? "ja" : "en");
+
+const els={
+  title:document.getElementById("title"),
+  lbName:document.getElementById("lbName"),
+  lbEmail:document.getElementById("lbEmail"),
+  lbSubject:document.getElementById("lbSubject"),
+  lbMessage:document.getElementById("lbMessage"),
+  btnCancel:document.getElementById("btnCancel"),
+  btnSend:document.getElementById("btnSend"),
+  name:document.getElementById("name"),
+  email:document.getElementById("email"),
+  subject:document.getElementById("subject"),
+  message:document.getElementById("message"),
+  msg:document.getElementById("msg")
+};
+
+function applyLang(){
+  const t=dict[lang];
+  els.title.innerHTML=t.contact;
+  els.lbName.innerHTML=t.name;
+  els.lbEmail.innerHTML=t.email;
+  els.lbSubject.innerHTML=t.subject;
+  els.lbMessage.innerHTML=t.message;
+  els.btnCancel.textContent=t.cancel;
+  els.btnSend.textContent=t.send;
+  els.name.placeholder=t.placeholders.name;
+  els.email.placeholder=t.placeholders.email;
+  els.subject.placeholder=t.placeholders.subject;
+  els.message.placeholder=t.placeholders.message;
+  localStorage.setItem("nt_lang",lang);
+}
+
+/* === 送信 === */
+const form=document.getElementById("contactForm");
+const iframe=document.getElementById("submit_iframe");
+
+iframe.addEventListener("load",()=>{
+  const t=dict[lang];
+  els.msg.innerHTML=t.sentok;
+  els.msg.className="note msg-ok";
+  form.reset();
+  if(window.grecaptcha) grecaptcha.reset();
+});
+
+form.addEventListener("submit",ev=>{
+  const t=dict[lang];
+  const token=window.grecaptcha?grecaptcha.getResponse():"";
+  if(!token){
+    ev.preventDefault();
+    els.msg.innerHTML=t.need;
+    els.msg.className="note msg-ng";
+    return;
+  }
+  document.getElementById("token").value=token;
+});
+
+/* === 初期化 === */
+(async function init(){
+
+  /* ★ヘッダー・フッタ挿入 */
+  window.injectPartials &&
+  window.injectPartials({
+    hideLearningNav:true,
+    onLangApply:()=>{
+      applyLang();
+      syncHeaderToggle();
+    }
+  });
+
+  applyLang();
+  syncHeaderToggle();
+})();
+
+/* === トグル同期 === */
+function syncHeaderToggle(){
+  const btn=document.querySelector("#lang-toggle-btn");
+  if(!btn) return;
+
+  btn.textContent = (lang==="ja" ? "English" : "日本語");
+
+  btn.onclick=()=>{
+    lang = (lang==="ja" ? "en" : "ja");
+    applyLang();
+    btn.textContent = (lang==="ja" ? "English" : "日本語");
+  };
+}
+
+</script>
+
 </body>
 </html>
