@@ -53,7 +53,7 @@
     .msg-ok{color:#10b981;font-weight:700}
     .msg-ng{color:#ef4444;font-weight:700}
 
-    /* ← Learning/Learned は inquiry では完全非表示にする */
+    /* inquiry では Learning/Learned を非表示 */
     nav[aria-label="Learning navigation"]{ display:none !important; }
   </style>
 
@@ -79,6 +79,7 @@
     <section class="card" aria-labelledby="title">
       <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
 
+      <!-- ★ 既存の Apps Script URL をそのまま使用 -->
       <form id="contactForm" target="submit_iframe" method="POST"
             action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
 
@@ -97,7 +98,9 @@
         <input type="hidden" id="token" name="token" />
 
         <div class="row">
+          <!-- ★sitekey は index(77) の内容をそのまま維持 -->
           <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+
           <button type="button" class="btn secondary" id="btnCancel" data-i18n="cancel">Cancel</button>
           <button type="submit" class="btn" id="btnSend" data-i18n="send">Send</button>
         </div>
@@ -118,7 +121,7 @@
   <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
 </footer>
 
-<!-- 共通ヘッダー・フッター -->
+<!-- 共通パーシャル -->
 <script src="/assets/partials.js"></script>
 
 <script>
@@ -127,8 +130,8 @@ const dict = {
   en:{
     contact:"Contact",name:"Name",email:"Email",subject:"Subject",message:"Message",
     cancel:"Cancel",send:"Send",
-    placeholders:{name:"Your name",email:"your@email.com",
-    subject:"What is this about?",message:"Write your message..."},
+    placeholders:{name:"Your name",email:"your@email.com",subject:"What is this about?",
+    message:"Write your message..."},
     need:"Please check the reCAPTCHA box.",
     sentok:"Your message has been sent. Thank you!",
     sentng:"Failed to send. Please try again later."
@@ -167,8 +170,14 @@ const els = {
   msg: document.getElementById('msg'),
 };
 
-function applyLang(){
-  const t = dict[lang];
+function applyLang(ctx){
+  // ★ パーシャル側の現在言語を優先して取得
+  lang = (ctx && ctx.lang) ||
+         localStorage.getItem('nt_lang') ||
+         lang || 'en';
+
+  const t = dict[lang] || dict.en;
+
   els.title.innerHTML = t.contact;
   els.lbName.innerHTML = t.name;
   els.lbEmail.innerHTML = t.email;
@@ -189,7 +198,7 @@ const form = document.getElementById('contactForm');
 const iframe = document.getElementById('submit_iframe');
 
 iframe.addEventListener('load',()=>{
-  const t=dict[lang];
+  const t=dict[lang] || dict.en;
   els.msg.innerHTML=t.sentok;
   els.msg.className='note msg-ok';
   form.reset();
@@ -197,7 +206,7 @@ iframe.addEventListener('load',()=>{
 });
 
 form.addEventListener('submit',ev=>{
-  const t=dict[lang];
+  const t=dict[lang] || dict.en;
   const token=window.grecaptcha?grecaptcha.getResponse():'';
   if(!token){
     ev.preventDefault();
@@ -209,7 +218,8 @@ form.addEventListener('submit',ev=>{
 });
 
 /* === 初期化 === */
-(async function init(){
+(function init(){
+  // パーシャル読み込み（Learning/Learned 非表示）
   window.injectPartials &&
   window.injectPartials({
     hideLearningNav:true,
