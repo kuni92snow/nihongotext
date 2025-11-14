@@ -744,21 +744,111 @@ window.ntxToLearning = function(item){
 /* ====== Print（Learning / Learned） ====== */
 document.getElementById('printLearningTop')?.addEventListener('click', printLearning);
 document.getElementById('printLearning')?.addEventListener('click', printLearning);
+
 function printLearning(){
-  const arr = getLearning(); if (!arr.length){ alert('No learning items.'); return; }
+  const arr = getLearning();
+  if (!arr.length){
+    alert('No learning items.');
+    return;
+  }
   const w = open('', '_blank');
-  w.document.write('<!doctype html><meta charset="utf-8"><title>Learning</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learning</h1>');
-  arr.forEach((x,i)=>w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}${x.movedAt?` (${x.movedAt})`:''}</div>`));
-  w.document.close(); w.print();
+  w.document.write(
+    '<!doctype html><html><head><meta charset="utf-8">' +
+    '<title>Learning</title>' +
+    '<style>' +
+    'body{font:14px system-ui;padding:20px}' +
+    'h1{margin-top:0}' +
+    '.row{border-bottom:1px dashed #ccc;padding:6px 0}' +
+    '.word-line{font-weight:600}' +
+    '.examples{margin:4px 0 0 1.5em;font-size:13px;color:#333}' +
+    '.examples-title{font-weight:600;margin-bottom:2px}' +
+    '.ex-item{margin-bottom:4px}' +
+    '</style></head><body><h1>Learning</h1>'
+  );
+
+  arr.forEach((x,i)=>{
+    const head =
+      (i+1) + '. <strong>' + (x.ja||'') + '</strong> / ' +
+      (x.kana||'') + ' / ' + (x.ro||'') + ' — ' + (x.en||'') +
+      (x.movedAt ? ' (' + x.movedAt + ')' : '');
+    w.document.write('<div class="row">');
+    w.document.write('<div class="word-line">' + head + '</div>');
+
+    const exs = x.examples || [];
+    if (exs.length){
+      w.document.write('<div class="examples"><div class="examples-title">Examples:</div>');
+      exs.forEach((ex,idx)=>{
+        w.document.write(
+          '<div class="ex-item">' +
+            '[' + (idx+1) + '] ' + (ex.en || '') + '<br>' +
+            (ex.ja   || '') + '<br>' +
+            (ex.kana || '') + '<br>' +
+            (ex.ro   || '') +
+          '</div>'
+        );
+      });
+      w.document.write('</div>');
+    }
+
+    w.document.write('</div>');
+  });
+
+  w.document.write('</body></html>');
+  w.document.close();
+  w.print();
 }
 
-document.getElementById('printLearned').onclick=()=>{
+document.getElementById('printLearned').onclick = () => {
   const rows = getLearnedRows();
-  if(!rows.length){ alert('No learned items.'); return; }
-  const w=open('','_blank');
-  w.document.write('<!doctype html><meta charset="utf-8"><title>Learned</title><style>body{font:14px system-ui;padding:20px}.row{border-bottom:1px dashed #ccc;padding:6px 0}</style><h1>Learned</h1>');
-  rows.forEach((x,i)=> w.document.write(`<div class="row">${i+1}. <strong>${x.ja||''}</strong> / ${x.kana||''} / ${x.ro||''} — ${x.en||''}${x.movedAt?` (${x.movedAt})`:''}</div>`));
-  w.document.close(); w.print();
+  if(!rows.length){
+    alert('No learned items.');
+    return;
+  }
+  const w = open('','_blank');
+  w.document.write(
+    '<!doctype html><html><head><meta charset="utf-8">' +
+    '<title>Learned</title>' +
+    '<style>' +
+    'body{font:14px system-ui;padding:20px}' +
+    'h1{margin-top:0}' +
+    '.row{border-bottom:1px dashed #ccc;padding:6px 0}' +
+    '.word-line{font-weight:600}' +
+    '.examples{margin:4px 0 0 1.5em;font-size:13px;color:#333}' +
+    '.examples-title{font-weight:600;margin-bottom:2px}' +
+    '.ex-item{margin-bottom:4px}' +
+    '</style></head><body><h1>Learned</h1>'
+  );
+
+  rows.forEach((x,i)=>{
+    const head =
+      (i+1) + '. <strong>' + (x.ja||'') + '</strong> / ' +
+      (x.kana||'') + ' / ' + (x.ro||'') + ' — ' + (x.en||'') +
+      (x.movedAt ? ' (' + x.movedAt + ')' : '');
+    w.document.write('<div class="row">');
+    w.document.write('<div class="word-line">' + head + '</div>');
+
+    const exs = x.examples || [];
+    if (exs.length){
+      w.document.write('<div class="examples"><div class="examples-title">Examples:</div>');
+      exs.forEach((ex,idx)=>{
+        w.document.write(
+          '<div class="ex-item">' +
+            '[' + (idx+1) + '] ' + (ex.en || '') + '<br>' +
+            (ex.ja   || '') + '<br>' +
+            (ex.kana || '') + '<br>' +
+            (ex.ro   || '') +
+          '</div>'
+        );
+      });
+      w.document.write('</div>');
+    }
+
+    w.document.write('</div>');
+  });
+
+  w.document.write('</body></html>');
+  w.document.close();
+  w.print();
 };
 
 /* ====== 初期化 ====== */
