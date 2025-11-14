@@ -652,7 +652,7 @@ function renderLearningModal(page=1){
     const tags=[];
     if(showJA&&x.ja)tags.push(x.ja);
     if(showKA&&x.kana)tags.push(x.kana);
-    ifshowRO&&x.ro)tags.push(x.ro);
+    if(showRO&&x.ro)tags.push(x.ro);
     if(showEN&&x.en)tags.push(x.en);
     const d = x.movedAt ? ` <span style="color:#888">(${x.movedAt})</span>` : '';
     line.innerHTML = `${start+i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
