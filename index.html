@@ -233,6 +233,32 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 </div>
 
 <script>
+/* ===== Learning / Learned 用ストレージのバージョン管理 ===== */
+(function () {
+  try {
+    const STORAGE_VERSION = '2025-11-14-1'; // 変更したらここだけ更新
+
+    const current = localStorage.getItem('ntx_storage_version');
+    if (current !== STORAGE_VERSION) {
+      // 旧バージョンのデータを掃除してから、新バージョンを書き込む
+      Object.keys(localStorage).forEach((k) => {
+        if (
+          k.startsWith('nt_learned_') ||
+          k.startsWith('ntx_learning_v') ||
+          k === 'ntx_learned_items_v1' ||
+          k === 'ntx_learned_dates_v1'
+        ) {
+          localStorage.removeItem(k);
+        }
+      });
+      localStorage.setItem('ntx_storage_version', STORAGE_VERSION);
+    }
+  } catch (e) {
+    // localStorage が使えない場合は何もしない
+    console.warn('storage version check failed', e);
+  }
+})();
+
 /* ========= 設定 ========= */
 const LEVELS = ['N5','N4','N3','N2','N1'];
 const POS = [
@@ -626,7 +652,7 @@ function renderLearningModal(page=1){
     const tags=[];
     if(showJA&&x.ja)tags.push(x.ja);
     if(showKA&&x.kana)tags.push(x.kana);
-    if(showRO&&x.ro)tags.push(x.ro);
+    ifshowRO&&x.ro)tags.push(x.ro);
     if(showEN&&x.en)tags.push(x.en);
     const d = x.movedAt ? ` <span style="color:#888">(${x.movedAt})</span>` : '';
     line.innerHTML = `${start+i+1}. <strong>${tags.join(' / ')}</strong>${d}`;
