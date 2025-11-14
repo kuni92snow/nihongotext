@@ -32,10 +32,28 @@ a{color:inherit;text-decoration:none} button{cursor:pointer}
 /* Header */
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-.brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
+
+/* ★ ヘッダーを縦方向レイアウト＆センター揃えに変更 */
+.brandbar{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:14px 0;
+  text-align:center;
+}
 .brand{font-weight:900;font-size:40px;color:var(--shu);}
-.small-dot{color:var(--ink)}.beta{color:var(--muted);font-size:12px}
-.header-right{margin-left:auto;display:flex;gap:10px;align-items:center}
+.small-dot{color:var(--ink)}
+.beta{color:var(--muted);font-size:12px;margin-top:4px}
+
+/* Learning / Learned ボタン用 */
+.learning-buttons{
+  margin-top:8px;
+  display:flex;
+  gap:8px;
+  justify-content:center;
+}
+
 .btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
 
 /* Controls */
@@ -87,13 +105,16 @@ select,input[type="text"]{height:40px;border:1px solid var(--line);border-radius
 </head>
 <body>
 
-<!-- Header（Learning/Learnedは header.html 側で表示） -->
+<!-- Header（index.html 専用：センター揃え & Learning/Learned ボタン） -->
 <div class="topbar">
   <div id="site-header" class="wrap brandbar">
     <a href="/" class="brand">nihongotext<span class="small-dot">.com</span></a>
     <span class="beta">== beta version ==</span>
-    <div class="header-right">
-      <button id="langBtn" class="btn" type="button">日本語</button>
+
+    <!-- ★ Learning / Learned ボタン追加（ENバッジ削除済み） -->
+    <div class="learning-buttons">
+      <button id="learningBtn" class="btn" type="button">Learning</button>
+      <button id="learnedBtn" class="btn" type="button">Learned</button>
     </div>
   </div>
 </div>
@@ -257,13 +278,13 @@ async function fetchJsonSafe(path){
 
 /* ====== 画面初期化（部分） ====== */
 function applyLangToUI(){
-  const btn = document.getElementById('langBtn');
-  if(btn){ btn.textContent = (uiLang==='en') ? '日本語' : 'English'; }
   const kw=document.getElementById('kw');
   if(kw){ kw.placeholder = (uiLang==='en') ? 'Search across all levels & parts…' : 'レベル・品詞を横断して検索…'; }
   const lt=document.getElementById('learnedTitle');
   if(lt){ lt.textContent = 'Learned'; }
 }
+
+/* index.html ではヘッダーに言語トグルを置かないので attachLangToggle は実質何もしない */
 function attachLangToggle(){
   const btn = document.getElementById('langBtn');
   if(!btn) return;
@@ -274,35 +295,16 @@ function attachLangToggle(){
     applyLangToUI(); buildChips(); renderList(lastData);
   });
 }
+
+/* ★ index.html ではヘッダーは部分テンプレートを使わず、フッターだけ読み込む */
 async function injectPartials(){
-  const hdr=document.getElementById('site-header');
   const ftr=document.getElementById('site-footer');
-  try{
-    const h=await fetch('partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    hdr.innerHTML=h;
-  }catch(_){
-    hdr.innerHTML =
-      `<div style="padding:14px 0;display:flex;gap:14px;align-items:center;justify-content:center;flex-direction:column">
-         <a href="/" style="font-weight:800;font-size:32px;color:#e6462d;text-decoration:none">nihongotext<span style="color:#333">.com</span></a>
-         <div style="font-size:20px;color:#98a1a8">== beta version ==</div>
-         <div style="width:100%;display:flex;justify-content:flex-end"><button id="langBtn" type="button" class="btn">日本語</button></div>
-       </div>`;
-  }
   try{
     const f=await fetch('partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     ftr.innerHTML=f;
   }catch(_){
     ftr.innerHTML = `<div style="padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:#98a1a8;font-size:12px">© 2025 nihongotext.com</div>`;
   }
-
-  attachLangToggle();
-  applyLangToUI();
-
-  // ヘッダー側ボタンのフォールバック
-  const openLearnBtn  = hdr.querySelector('#learnBtn')   || hdr.querySelector('[data-open="learning"]');
-  const openLearnedBtn= hdr.querySelector('#learnedBtn') || hdr.querySelector('[data-open="learned"]');
-  if (openLearnBtn)   openLearnBtn.addEventListener('click', ()=> openLearning());
-  if (openLearnedBtn) openLearnedBtn.addEventListener('click', ()=> openLearned());
 }
 
 /* ====== UI構築（品詞チップ） ====== */
@@ -714,8 +716,15 @@ document.getElementById('printLearned').onclick=()=>{
 /* ====== 初期化 ====== */
 (async function init(){
   await injectPartials();
+  applyLangToUI();
+  attachLangToggle(); // index ではボタンがないので何もしない
+
   buildChips();
   await loadSingleAndRender();
+
+  // Learning / Learned ボタンの動作をヘッダーに接続
+  document.getElementById('learningBtn')?.addEventListener('click', openLearning);
+  document.getElementById('learnedBtn')?.addEventListener('click', openLearned);
 
   // 検索語のハイライト（軽量）
   const kwEl = document.getElementById('kw');
