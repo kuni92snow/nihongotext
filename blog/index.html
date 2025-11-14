@@ -26,103 +26,39 @@
 <style>
 :root{ --shu:#e6462d; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; }
 *{ box-sizing:border-box }
-html,body{
-  margin:0;
-  background:#fff;
-  color:var(--ink);
-  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
-       "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
-}
+html,body{ margin:0; background:#fff; color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif }
 a{ color:inherit; text-decoration:none }
 .wrap{ max-width:1100px; margin:0 auto; padding:0 16px }
 
 /* ブログでは Learning/Learned 非表示（言語トグルは表示） */
-.site-header nav[aria-label="Learning navigation"],
-.header-learning-nav { display:none !important; }
+.site-header nav[aria-label="Learning navigation"]{ display:none !important; }
 
-.page-title{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin:18px 0 10px;
-}
+/* ページUI */
+.page-title{ display:flex; align-items:center; gap:10px; margin:18px 0 10px }
 .page-title i{ color:var(--shu) }
-
-.searchbar{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  margin:10px 0 16px;
-}
-.searchbar input{
-  flex:1;
-  height:40px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:0 12px;
-}
+.searchbar{ display:flex; align-items:center; gap:8px; margin:10px 0 16px }
+.searchbar input{ flex:1; height:40px; border:1px solid var(--line); border-radius:10px; padding:0 12px }
 
 /* カード */
 .list{ display:grid; gap:12px }
-.card{
-  border:1px solid #f0d7d4;
-  border-radius:14px;
-  background:#fff7f6;
-  overflow:hidden;
-}
-.card .head{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  padding:12px;
-  border-bottom:1px dashed #f0d7d4;
-  background:#fff;
-}
-.card .date{ color:#888; font-size:13px; }
-.card .title{
-  font-weight:800;
-  font-size:18px;
-  display:flex;
-  align-items:center;
-  gap:8px;
-}
+.card{ border:1px solid #f0d7d4; border-radius:14px; background:#fff7f6; overflow:hidden }
+.card .head{ display:flex; align-items:center; gap:10px; padding:12px; border-bottom:1px dashed #f0d7d4; background:#fff }
+.card .date{ color:#888; font-size:13px }
+.card .title{ font-weight:800; font-size:18px; display:flex; align-items:center; gap:8px }
 .card .body{ padding:12px }
-.card .tags{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-top:6px;
-}
-.card .tag{
-  font-size:12px;
-  border:1px solid #f0d7d4;
-  border-radius:999px;
-  padding:3px 8px;
-  background:#fff;
-}
-
-/* 下部リンク（旧フッター ※本物の共通フッターはpartialsで読み込み） */
-.footer-links{
-  text-align:center;
-  color:#98a1a8;
-  font-size:12px;
-  margin:20px 0;
-}
+.card .tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:6px }
+.card .tag{ font-size:12px; border:1px solid #f0d7d4; border-radius:999px; padding:3px 8px; background:#fff }
 </style>
 </head>
 <body>
 
 <header class="topbar">
-  <!-- 共通ヘッダーがここに挿入される -->
   <div id="site-header" class="wrap site-header" style="padding:12px 0;"></div>
 </header>
 
 <main class="wrap" style="padding-bottom:24px">
-  <h1 id="pageTitle" class="page-title">
-    <i class="fa-solid fa-rss"></i>
-    <span>Blog</span>
-  </h1>
-
+  <h1 id="pageTitle" class="page-title"><i class="fa-solid fa-rss"></i> <span>Blog</span></h1>
   <div id="subLead" style="color:var(--muted); font-size:13px; margin-bottom:6px">
     Latest update from nihongotext.com
   </div>
@@ -139,39 +75,9 @@ a{ color:inherit; text-decoration:none }
   </div>
 
   <section id="list" class="list" aria-live="polite"></section>
-
-  <!-- 旧フッター相当（ナビ＋アイコン）は一応残すが、見た目は共通フッターがメイン -->
-  <div class="footer-links">
-    © nihongotext.com
-    <div style="margin-top:8px">
-      <a href="/" style="margin:0 8px">Home</a>
-      <a href="/blog/index.html" style="margin:0 8px">Blog</a>
-      <a href="/inquiry/index.html" style="margin:0 8px">Inquiry</a>
-      <a href="/legal.html" style="margin:0 8px">Legal</a>
-      <a href="/privacy.html" style="margin:0 8px">Privacy</a>
-    </div>
-    <div style="font-size:18px; margin-top:10px">
-      <a href="https://x.com/nihongotext" target="_blank" rel="noopener" title="X" style="color:#e6462d">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.reddit.com/user/nihongotext" target="_blank" rel="noopener" title="Reddit" style="color:#e6462d; margin-left:12px">
-        <i class="fa-brands fa-reddit-alien"></i>
-      </a>
-      <a href="https://medium.com/@nihongotext" target="_blank" rel="noopener" title="Medium" style="color:#e6462d; margin-left:12px">
-        <i class="fa-brands fa-medium"></i>
-      </a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener" title="Ko-fi" style="color:#e6462d; margin-left:12px">
-        <i class="fa-solid fa-mug-hot"></i>
-      </a>
-      <a href="https://nihongotext.substack.com/" target="_blank" rel="noopener" title="Substack" style="color:#e6462d; margin-left:12px">
-        <i class="fa-solid fa-newspaper"></i>
-      </a>
-    </div>
-  </div>
 </main>
 
 <footer class="site-footer">
-  <!-- 共通フッターがここに挿入される -->
   <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
 </footer>
 
@@ -180,20 +86,10 @@ a{ color:inherit; text-decoration:none }
 
 <script>
 (() => {
-  // 現在の言語を取得（partials.js が html[data-lang] を更新）
-  const blogGetLang = () => {
-    const doc = document.documentElement;
-    if (doc && doc.dataset && (doc.dataset.lang === 'ja' || doc.dataset.lang === 'en')) {
-      return doc.dataset.lang;
-    }
-    try {
-      const stored = localStorage.getItem('nt_lang');
-      if (stored === 'ja' || stored === 'en') return stored;
-    } catch (_) {}
-    return 'en';
-  };
+  // === 重複回避：ブログ専用のローカル関数名にする ===
+  const blogGetLang = () => (window.getLang ? window.getLang() : (localStorage.getItem('lang') || 'en'));
 
-  // posts.json / news.json どちらかをロード
+  // posts.json / news.json どちらか
   const endpoints = ['/blog/posts.json', '/blog/news.json'];
   async function loadPosts(){
     for(const url of endpoints){
@@ -207,16 +103,14 @@ a{ color:inherit; text-decoration:none }
     return [];
   }
 
-  // langOverride を渡せるようにする（トグル押下時に使用）
-  function render(posts, langOverride){
+  function render(posts){
     const list = document.getElementById('list');
     list.innerHTML = '';
     if(!posts.length){
       list.innerHTML = '<div style="color:#6b7280">No posts yet.</div>';
       return;
     }
-
-    const lang = langOverride || blogGetLang();
+    const lang = blogGetLang();
 
     posts
       .slice()
@@ -228,24 +122,22 @@ a{ color:inherit; text-decoration:none }
         const head = document.createElement('div');
         head.className = 'head';
 
-        const titleText = (lang === 'ja')
+        const titleText = (lang==='ja')
           ? (p.title_ja || p.title || p.title_en || '(untitled)')
           : (p.title_en || p.title || p.title_ja || '(untitled)');
 
         head.innerHTML =
-          '<div class="date"><i class="fa-regular fa-calendar-days"></i> ' + (p.date || '') + '</div>' +
-          '<div class="title"><a href="/blog/' + ((p.slug||'').trim()) + '.html">' + titleText + '</a></div>';
+          `<div class="date"><i class="fa-regular fa-calendar-days"></i> ${p.date||''}</div>
+           <div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${titleText}</a></div>`;
 
         const body = document.createElement('div');
         body.className = 'body';
-        const sum = (lang === 'ja'
-          ? (p.summary_ja || p.summary_en)
-          : (p.summary_en || p.summary_ja)) || '';
-        body.innerHTML = '<div>' + (sum || '') + '</div>';
+        const sum = (lang==='ja' ? (p.summary_ja||p.summary_en) : (p.summary_en||p.summary_ja)) || '';
+        body.innerHTML = `<div>${sum}</div>`;
 
         const tags = document.createElement('div');
         tags.className = 'tags';
-        (p.tags || []).forEach(t=>{
+        (p.tags||[]).forEach(t=>{
           const s = document.createElement('span');
           s.className = 'tag';
           s.textContent = t;
@@ -261,62 +153,42 @@ a{ color:inherit; text-decoration:none }
 
   // 初期化
   (async function init(){
-    // 共通ヘッダー/フッター読み込み + 言語トグル設定
+    // ヘッダー/フッター注入（Learning/Learned 非表示・言語トグルは有効）
     if (window.injectPartials){
       window.injectPartials({
-        hideLearningNav: true, // Learning / Learned を隠す
+        hideLearningNav: true,
         titleTargets: [
-          {
-            el: document.querySelector('#pageTitle span'),
-            en: 'Blog',
-            ja: 'ブログ'
-          }
+          { el: document.querySelector('#pageTitle span'), en: 'Blog', ja: 'ブログ' }
         ],
-        titleDoc: {
-          en: 'Blog | nihongotext.com',
-          ja: 'ブログ | nihongotext.com'
-        },
+        titleDoc: { en: 'Blog | nihongotext.com', ja: 'ブログ | nihongotext.com' },
         onLangApply(lang){
-          // プレースホルダなどを切り替え
           const kw = document.getElementById('kw');
-          if(kw){
-            kw.placeholder = (lang === 'en') ? 'Search posts...' : '記事を検索…';
-          }
+          if(kw){ kw.placeholder = (lang==='en') ? 'Search posts...' : '記事を検索…'; }
           const sub = document.getElementById('subLead');
-          if(sub){
-            sub.textContent = (lang === 'en')
-              ? 'Latest update from nihongotext.com'
-              : 'nihongotext.com からの最新更新情報';
-          }
-          // 言語変更時に再描画
-          render(window.__ALL_POSTS__ || [], lang);
+          if(sub){ sub.textContent = (lang==='en') ? 'Latest update from nihongotext.com' : 'nihongotext.com からの最新更新情報'; }
+          render(window.__ALL_POSTS__||[]);
         }
       });
     }
 
     const all = await loadPosts();
     window.__ALL_POSTS__ = all;
-
-    // 初回描画（現在の言語で）
-    render(all, blogGetLang());
+    render(all);
 
     // 検索
     const kw = document.getElementById('kw');
     kw.addEventListener('input', ()=>{
       const term = kw.value.trim().toLowerCase();
       const base = window.__ALL_POSTS__ || [];
-      if(!term){
-        render(base, blogGetLang());
-        return;
-      }
+      if(!term){ render(base); return; }
       const filtered = base.filter(p=>{
         const blob = [
           p.slug, p.title, p.title_en, p.title_ja, p.summary_en, p.summary_ja,
-          ...(p.tags || [])
+          ...(p.tags||[])
         ].join(' ').toLowerCase();
         return blob.includes(term);
       });
-      render(filtered, blogGetLang());
+      render(filtered);
     });
 
     try{ gtag('event','page_view',{page_title:'blog/index'}); }catch(_){}
