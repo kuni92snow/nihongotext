@@ -34,10 +34,25 @@
 
     .wrap{max-width:960px;margin:0 auto;padding:12px}
 
-    /* ヘッダー/フッター */
+    /* ヘッダー/フッター＋トグル */
     .topbar{
       border-top:4px solid var(--shu);
       border-bottom:1px solid #fee2e2;
+      background:#fff;
+    }
+    .site-header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px 0;
+    }
+    .lang-toggle-btn{
+      margin-left:auto;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:4px 10px;
+      font-size:13px;
+      cursor:pointer;
       background:#fff;
     }
     .site-footer{
@@ -90,7 +105,7 @@
 
 <body>
 <header class="topbar">
-  <div id="site-header" class="wrap site-header" style="padding:12px 0;"></div>
+  <div id="site-header" class="wrap site-header"></div>
 </header>
 
 <main>
@@ -100,7 +115,7 @@
     <section class="card" aria-labelledby="title">
       <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
 
-      <!-- ★ 既存の Apps Script URL をそのまま使用 -->
+      <!-- Apps Script -->
       <form id="contactForm" target="submit_iframe" method="POST"
             action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
 
@@ -119,7 +134,6 @@
         <input type="hidden" id="token" name="token" />
 
         <div class="row">
-          <!-- ★sitekey は index(77) の内容をそのまま維持 -->
           <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
 
           <button type="button" class="btn secondary" id="btnCancel" data-i18n="cancel">Cancel</button>
@@ -139,7 +153,7 @@
 </main>
 
 <footer class="site-footer">
-  <div id="site-footer" class="wrap" style="padding-bottom:16px"></div>
+  <div id="site-footer" class="wrap"></div>
 </footer>
 
 <!-- 共通パーシャル -->
@@ -192,7 +206,6 @@ const els = {
 };
 
 function applyLang(ctx){
-  // ★ パーシャル側の現在言語を優先して取得
   lang = (ctx && ctx.lang) ||
          localStorage.getItem('nt_lang') ||
          lang || 'en';
@@ -211,7 +224,6 @@ function applyLang(ctx){
   els.subject.placeholder = t.placeholders.subject;
   els.message.placeholder = t.placeholders.message;
 
-  // <title> も切り替え
   const titleEl = document.querySelector('title');
   if(titleEl){
     titleEl.textContent =
@@ -219,6 +231,7 @@ function applyLang(ctx){
   }
 
   localStorage.setItem('nt_lang',lang);
+  localStorage.setItem('lang',lang);
 }
 
 /* === form送信 === */
@@ -245,10 +258,34 @@ form.addEventListener('submit',ev=>{
   document.getElementById('token').value=token;
 });
 
+/* === ヘッダー右端トグル === */
+function attachLangToggle(){
+  const header = document.querySelector('.site-header');
+  if(!header) return;
+
+  let btn = document.getElementById('nt-lang-toggle-contact');
+  if(!btn){
+    btn = document.createElement('button');
+    btn.id = 'nt-lang-toggle-contact';
+    btn.type = 'button';
+    btn.className = 'lang-toggle-btn';
+    header.appendChild(btn);
+  }
+
+  const syncLabel = () => {
+    btn.textContent = (lang === 'en') ? '日本語' : 'English';
+  };
+  syncLabel();
+
+  btn.addEventListener('click', () => {
+    lang = (lang === 'en') ? 'ja' : 'en';
+    applyLang({lang});
+  });
+}
+
 /* === 初期化 === */
 (function init(){
   if (window.injectPartials){
-    // パーシャル読み込み（Learning/Learned 非表示）
     window.injectPartials({
       hideLearningNav:true,
       titleTargets:[
@@ -258,25 +295,11 @@ form.addEventListener('submit',ev=>{
       onLangApply:(currentLang)=>applyLang({lang:currentLang})
     });
   } else {
-    // フォールバック：header/footer を直接読み込み
-    const headerEl = document.getElementById('site-header');
-    if(headerEl){
-      fetch('/partials/header.html',{cache:'no-store'})
-        .then(r=>r.ok?r.text():'')
-        .then(html=>{ headerEl.innerHTML = html; })
-        .catch(()=>{});
-    }
-    const footerEl = document.getElementById('site-footer');
-    if(footerEl){
-      fetch('/partials/footer.html',{cache:'no-store'})
-        .then(r=>r.ok?r.text():'')
-        .then(html=>{ footerEl.innerHTML = html; })
-        .catch(()=>{
-          footerEl.textContent = '© 2025 nihongotext.com';
-        });
-    }
-    applyLang({lang});
+    applyLang();
   }
+
+  applyLang();
+  attachLangToggle();
 })();
 </script>
 </body>
