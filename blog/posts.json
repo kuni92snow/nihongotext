@@ -28,5 +28,15 @@
     "summary_ja": "「Learning」と「Learned」のUIを改良しました。各ボタン（Learn／Move to Learned／Back to Learning）を右揃えに統一し、ページャー操作時に英語広告がポップアップ表示されるようになりました。また、Learned一覧では5件ずつのページ表示と印刷機能にも対応しています。",
     "summary_en": "The Learning and Learned interfaces have been refined. Action buttons (Learn, Move to Learned, Back to Learning) are now right-aligned, and ads now appear in a popup when navigating through pages. The Learned list now supports 5-item pagination and a printable view.",
     "tags": ["update", "ui", "feature", "ads"]
+  },
+  {
+    "slug": "legal-privacy-contact-lang-toggle",
+    "date": "2025-11-17",
+    "title": "Legal / Privacy / Contact Pages Updated",
+    "title_ja": "利用規約・プライバシー・問い合わせページを改良しました",
+    "title_en": "Legal / Privacy / Contact Pages Updated",
+    "summary_ja": "legal.html、privacy.html、inquiryページ、blogページのヘッダーとフッターを共通化し、右上に言語トグルボタン（English／日本語）を追加しました。トグル操作でページタイトルや本文表示が英語・日本語に切り替わります。また、問い合わせフォームでは reCAPTCHA と送信ボタンのレイアウトを調整し、見やすさを改善しています。",
+    "summary_en": "We unified the header and footer on the legal notice, privacy policy, contact, and blog pages and added a language toggle button (English / 日本語) in the top-right corner. Page titles and text now switch between English and Japanese via the toggle. The contact form layout around reCAPTCHA and the send buttons has also been refined for better readability.",
+    "tags": ["update", "ui", "legal", "privacy"]
   }
 ]
