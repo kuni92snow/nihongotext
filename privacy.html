@@ -49,18 +49,18 @@
       padding:0 16px;
     }
 
-    /* 共通ヘッダー・フッター + 言語トグル（右端） */
+    /* ヘッダー・フッター共通 */
     .topbar{
       border-top:4px solid var(--shu);
       border-bottom:1px solid #fee2e2;
       background:#fff;
     }
-    .site-header{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      padding:12px 0;
+    .site-footer{
+      border-top:1px solid #fee2e2;
+      background:#fff;
     }
+
+    /* 言語トグル（右端） */
     .lang-toggle-btn{
       margin-left:auto;
       border:1px solid var(--line);
@@ -69,19 +69,7 @@
       font-size:13px;
       cursor:pointer;
       background:#fff;
-    }
-    .site-footer{
-      border-top:1px solid #fee2e2;
-      background:#fff;
-    }
-    .site-footer .wrap{
-      padding:16px 0;
-      display:flex;
-      gap:10px;
-      align-items:center;
-      justify-content:center;
-      color:#98a1a8;
-      font-size:12px;
+      white-space:nowrap;
     }
 
     /* 本文 */
@@ -131,13 +119,14 @@
 
 <body>
 <header class="topbar">
-  <div id="site-header" class="wrap site-header"></div>
+  <div class="wrap">
+    <div id="header-placeholder"></div>
+  </div>
 </header>
 
 <main class="wrap">
   <h1 id="pageTitle">Privacy Policy</h1>
 
-  <!-- ★ 現在は Legal のテンプレを流用。文面は後で差し替え可能です -->
   <h2>Scope</h2>
   <p>
     This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information
@@ -240,14 +229,13 @@
 </main>
 
 <footer class="site-footer">
-  <div id="site-footer" class="wrap"></div>
+  <div class="wrap">
+    <div id="footer-placeholder"></div>
+  </div>
 </footer>
 
-<!-- 共通パーシャル -->
-<script src="/assets/partials.js"></script>
-
 <script>
-  // このページ用の言語適用（タイトルと document.title のみ簡易対応）
+  // タイトルと言語の切り替え
   function applyLang(ctx){
     let lang =
       (ctx && ctx.lang) ||
@@ -270,61 +258,55 @@
     localStorage.setItem('lang',    lang);
   }
 
-  // ヘッダー右端に言語トグルボタン設置
-  function attachLangToggle(){
-    const header = document.querySelector('.site-header');
-    if(!header) return;
+  // ヘッダー／フッター読み込み & トグル設置
+  async function loadPartialsAndToggle(){
+    try{
+      const [headerHtml, footerHtml] = await Promise.all([
+        fetch('/partials/header.html').then(r => r.text()),
+        fetch('/partials/footer.html').then(r => r.text())
+      ]);
 
-    let currentLang =
-      localStorage.getItem('nt_lang') ||
-      localStorage.getItem('lang') ||
-      'en';
+      document.getElementById('header-placeholder').innerHTML = headerHtml;
+      document.getElementById('footer-placeholder').innerHTML = footerHtml;
 
-    let btn = document.getElementById('nt-lang-toggle-privacy');
-    if(!btn){
-      btn = document.createElement('button');
-      btn.id = 'nt-lang-toggle-privacy';
-      btn.type = 'button';
-      btn.className = 'lang-toggle-btn';
-      header.appendChild(btn);
+      // ヘッダー右端にトグルボタンを追加
+      const headerRoot =
+        document.querySelector('#header-placeholder .site-header') ||
+        document.getElementById('header-placeholder');
+
+      if (headerRoot && !document.getElementById('nt-lang-toggle-privacy')){
+        let currentLang =
+          localStorage.getItem('nt_lang') ||
+          localStorage.getItem('lang') ||
+          'en';
+
+        const btn = document.createElement('button');
+        btn.id = 'nt-lang-toggle-privacy';
+        btn.type = 'button';
+        btn.className = 'lang-toggle-btn';
+
+        const syncLabel = () => {
+          btn.textContent = (currentLang === 'en') ? '日本語' : 'English';
+        };
+        syncLabel();
+
+        btn.addEventListener('click', () => {
+          currentLang = (currentLang === 'en') ? 'ja' : 'en';
+          applyLang({ lang: currentLang });
+          syncLabel();
+        });
+
+        headerRoot.appendChild(btn);
+      }
+    } catch(e){
+      console.error('Failed to load partials:', e);
     }
-
-    const syncLabel = () => {
-      btn.textContent = (currentLang === 'en') ? '日本語' : 'English';
-    };
-    syncLabel();
-
-    btn.addEventListener('click', () => {
-      currentLang = (currentLang === 'en') ? 'ja' : 'en';
-      applyLang({lang: currentLang});
-      syncLabel();
-    });
   }
 
-  (function init(){
-    if (window.injectPartials){
-      window.injectPartials({
-        hideLearningNav:true,
-        titleTargets:[
-          {
-            el: document.getElementById('pageTitle'),
-            en: 'Privacy Policy',
-            ja: 'プライバシーポリシー'
-          }
-        ],
-        titleDoc:{
-          en:'Privacy Policy | nihongotext.com',
-          ja:'プライバシーポリシー | nihongotext.com'
-        },
-        onLangApply:(lang)=>applyLang({lang})
-      });
-    } else {
-      applyLang();
-    }
-
+  document.addEventListener('DOMContentLoaded', () => {
     applyLang();
-    attachLangToggle();
-  })();
+    loadPartialsAndToggle();
+  });
 </script>
 </body>
 </html>
