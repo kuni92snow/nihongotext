@@ -22,27 +22,58 @@
   --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:#fff;color:var(--ink);
-  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif}
-a{color:inherit;text-decoration:none} button{cursor:pointer}
+html,body{
+  margin:0;background:#fff;color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
+       "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
+}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
 
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 .brandbar{display:flex;gap:14px;align-items:center;padding:14px 0}
 
-.btn{border:1px solid var(--shu);color:var(--shu);background:#fff;border-radius:10px;padding:8px 12px;font-weight:700}
-select,input[type="number"]{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 12px;background:#fff}
+.btn{
+  border:1px solid var(--shu);color:var(--shu);background:#fff;
+  border-radius:10px;padding:8px 12px;font-weight:700
+}
+select,input[type="number"]{
+  height:40px;border:1px solid var(--line);border-radius:10px;
+  padding:0 12px;background:#fff
+}
 
 .controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}
 .card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:14px}
-.choice{display:block;border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0;background:#fff;width:100%;text-align:left}
+.choice{
+  display:block;border:1px solid var(--line);border-radius:10px;
+  padding:10px;margin:8px 0;background:#fff;width:100%;text-align:left
+}
 .choice.correct{border-color:#16a34a}
 .choice.wrong{border-color:#dc2626}
 
 .footer{border-top:1px solid var(--shu-tint);background:#fff}
-.footer-inner{padding:16px 0;display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
-.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 8px;background:#fff;font-weight:700}
+.footer-inner{
+  padding:16px 0;display:flex;gap:10px;align-items:center;
+  justify-content:center;color:var(--muted);font-size:12px
+}
+.badge{
+  display:inline-block;border:1px solid var(--line);border-radius:999px;
+  padding:4px 8px;background:#fff;font-weight:700
+}
 .meta{color:var(--muted);font-size:13px}
+
+/* history table */
+.history-card{margin-top:16px}
+.history-table{
+  width:100%;border-collapse:collapse;font-size:13px;margin-top:4px;
+}
+.history-table th,.history-table td{
+  border:1px solid var(--line);padding:4px 6px;vertical-align:top;
+}
+.history-table th{
+  background:#fff;font-weight:600;text-align:left;
+}
 </style>
 </head>
 <body>
@@ -101,9 +132,17 @@ select,input[type="number"]{height:40px;border:1px solid var(--line);border-radi
       <div id="subtext" class="meta" style="margin:0 0 8px"></div>
       <div id="choices"></div>
       <div id="explain" class="meta" style="display:none;margin-top:8px"></div>
-      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
-        <button id="nextBtn" class="btn" type="button" disabled>Next</button>
-        <button id="finishBtn" class="btn" type="button" style="display:none">Finish</button>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:8px">
+        <!-- Stop button: allow ending quiz mid-way -->
+        <button id="stopBtn" class="btn" type="button"
+                style="border-color:var(--line);color:var(--muted)">
+          Stop
+        </button>
+        <div style="display:flex;gap:8px">
+          <button id="nextBtn" class="btn" type="button" disabled>Next</button>
+          <button id="finishBtn" class="btn" type="button" style="display:none">Finish</button>
+        </div>
       </div>
     </div>
 
@@ -112,6 +151,15 @@ select,input[type="number"]{height:40px;border:1px solid var(--line);border-radi
       <p id="resultText" style="margin:0 0 8px"></p>
       <button id="retryBtn" class="btn" type="button">Retry</button>
     </div>
+  </section>
+
+  <!-- Past results history -->
+  <section id="history" class="card history-card">
+    <h3 style="margin:0 0 6px">Past Results</h3>
+    <p class="meta" style="margin:0 0 6px">
+      You can review the summary of each quiz you have taken on this device.
+    </p>
+    <div id="historyList" class="meta">No quiz history yet.</div>
   </section>
 </main>
 
@@ -127,8 +175,10 @@ async function injectPartials(){
     const h=await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
     hdr.innerHTML=h;
   }catch(_){
-    hdr.innerHTML = '<a href="/" style="font-weight:800;font-size:28px;color:#e6462d">nihongotext<span style="color:#333">.com</span></a>'
-                  + '<span style="color:#98a1a8;font-size:12px;margin-left:8px">== beta version ==</span>';
+    hdr.innerHTML =
+      '<a href="/" style="font-weight:800;font-size:28px;color:#e6462d">nihongotext' +
+      '<span style="color:#333">.com</span></a>' +
+      '<span style="color:#98a1a8;font-size:12px;margin-left:8px">== beta version ==</span>';
   }
   try{
     const f=await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
@@ -156,27 +206,102 @@ function buildPath(level, posKey){
   const p = POS.find(x=>x.k===posKey);
   return `/data/json/${level}/${p.file}`;
 }
+function posLabel(key){
+  const p = POS.find(x=>x.k===key);
+  return p ? p.en : key;
+}
 
 /* ===== Utils ===== */
-function shuffle(arr){ return arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]); }
+function shuffle(arr){
+  return arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+}
 function coerceArray(json){
   if(Array.isArray(json)) return json;
   const keys=['items','data','entries','list','rows','result','results'];
-  for(const k of keys){ if(json && Array.isArray(json[k])) return json[k]; }
-  if(json && typeof json==='object'){ const vals=Object.values(json); if(vals.length && vals.every(v=>typeof v==='object')) return vals; }
+  for(const k of keys){
+    if(json && Array.isArray(json[k])) return json[k];
+  }
+  if(json && typeof json==='object'){
+    const vals=Object.values(json);
+    if(vals.length && vals.every(v=>typeof v==='object')) return vals;
+  }
   return [];
 }
-function uuid(){ return (crypto && crypto.randomUUID) ? crypto.randomUUID() : Math.random().toString(16).slice(2) + Date.now().toString(16); }
+function uuid(){
+  return (crypto && crypto.randomUUID)
+    ? crypto.randomUUID()
+    : Math.random().toString(16).slice(2) + Date.now().toString(16);
+}
+
+/* ===== History (per test) ===== */
+const HISTORY_KEY = 'nt_quiz_history_v1';
+
+function loadHistory(){
+  try{
+    const raw = localStorage.getItem(HISTORY_KEY);
+    if(!raw) return [];
+    const arr = JSON.parse(raw);
+    return Array.isArray(arr) ? arr : [];
+  }catch(_){ return []; }
+}
+function saveHistory(list){
+  try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(list)); }catch(_){}
+}
+function addHistoryEntry(entry){
+  const list = loadHistory();
+  list.unshift(entry);
+  if(list.length > 50) list.length = 50;
+  saveHistory(list);
+  renderHistory(list);
+}
+function renderHistory(list){
+  if(!list) list = loadHistory();
+  const box = document.getElementById('historyList');
+  if(!box) return;
+  if(!list.length){
+    box.textContent = 'No quiz history yet.';
+    return;
+  }
+  const rows = list.map((h,i)=>{
+    const d = new Date(h.time || Date.now());
+    const dt = d.toLocaleString();
+    const modeLabel = (h.mode === 'stopped') ? 'Stopped' : 'Completed';
+    const pct = (h.attempted > 0)
+      ? Math.round((h.correct / h.attempted) * 100)
+      : 0;
+    return `
+      <tr>
+        <td>${i+1}</td>
+        <td>${dt}</td>
+        <td>${h.level}</td>
+        <td>${posLabel(h.pos)}</td>
+        <td>${h.correct} / ${h.attempted} (${pct}%)</td>
+        <td>${h.total}</td>
+        <td>${modeLabel}</td>
+      </tr>`;
+  }).join('');
+  box.innerHTML =
+    `<table class="history-table">
+       <thead>
+         <tr>
+           <th>#</th>
+           <th>Date</th>
+           <th>Level</th>
+           <th>Part</th>
+           <th>Score (attempted)</th>
+           <th>Generated Qs</th>
+           <th>Result</th>
+         </tr>
+       </thead>
+       <tbody>${rows}</tbody>
+     </table>`;
+}
 
 /* ===== State ===== */
 let bank=[], quiz=[], idx=0, score=0, level='N5', posKey='verbs';
+let answered = []; // true/false per question index
 
-/* ===== Build quiz from vocab JSON (random 4-choice) =====
-   - Randomly choose question type per item:
-     A) JA → EN:  "What is the English meaning of '会う'?"
-     B) EN → JA:  "What is the Japanese for 'meet'?"
-   - Choices are shuffled each time.
-*/
+/* ===== Build quiz from vocab JSON (random 4-choice) ===== */
 function generateQuizFromBank(items, count=10){
   const pool = items.filter(x=>x && (x.en||x.ja));
   const base = shuffle(pool).slice(0, Math.min(count, pool.length));
@@ -197,7 +322,9 @@ function generateQuizFromBank(items, count=10){
       question: (type==='ja2en')
         ? `What is the English meaning of “${item.ja||''}”?`
         : `What is the Japanese for “${item.en||''}”?`,
-      subtext: (item.kana || item.ro) ? `(${[item.kana, item.ro].filter(Boolean).join(' / ')})` : '',
+      subtext: (item.kana || item.ro)
+        ? `(${[item.kana, item.ro].filter(Boolean).join(' / ')})`
+        : '',
       options,
       answer: options.indexOf(correct),
       explanation: item.examples && item.examples[0]
@@ -258,35 +385,82 @@ function choose(i){
     if(j===q.answer) n.classList.add('correct');
     if(j===i && i!==q.answer) n.classList.add('wrong');
   });
-  if(i===q.answer){ score++; try{ gtag('event','quiz_correct',{level, pos:posKey, qid:q.id}); }catch(_){} }
-  else{ try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_){} }
-  if(q.explanation){ const ex=document.getElementById('explain'); ex.style.display=''; }
+  if(i===q.answer){
+    score++;
+    try{ gtag('event','quiz_correct',{level, pos:posKey, qid:q.id}); }catch(_){}
+  } else {
+    try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_){}
+  }
+  answered[idx] = true;
+  if(q.explanation){
+    const ex=document.getElementById('explain');
+    ex.style.display='';
+  }
   document.getElementById('nextBtn').disabled=false;
 }
 
 function nextQ(){
   idx++;
-  if(idx>=quiz.length){ finish(); return; }
+  if(idx>=quiz.length){
+    finish('completed');
+    return;
+  }
   renderQ();
 }
 
-function finish(){
+/* mode: 'completed' or 'stopped' */
+function finish(mode){
+  const attempted = answered.filter(Boolean).length;
+  const total = quiz.length;
+  const correct = score;
+
   showResult();
-  const t = `Level ${level} / ${posKey}: ${quiz.length} questions, ${score} correct`;
-  document.getElementById('resultText').textContent = t;
-  try{ gtag('event','quiz_complete',{level, pos:posKey, total:quiz.length, score}); }catch(_){} 
+
+  let msg;
+  if(attempted === 0){
+    msg = `Quiz ended without answering any questions. (Set: Level ${level}, ${posLabel(posKey)})`;
+  }else{
+    const pct = Math.round((correct/attempted)*100);
+    const modeLabel = (mode === 'stopped') ? 'stopped early' : 'completed';
+    msg =
+      `Level ${level} / ${posLabel(posKey)} — ` +
+      `${correct} correct out of ${attempted} attempted (${pct}%). ` +
+      `(${total} questions were generated, quiz was ${modeLabel}.)`;
+  }
+  document.getElementById('resultText').textContent = msg;
+
+  try{
+    gtag('event','quiz_complete',{
+      level, pos:posKey, total, score:correct, attempted, mode
+    });
+  }catch(_){}
+
+  // Save history
+  addHistoryEntry({
+    id: uuid(),
+    time: Date.now(),
+    level,
+    pos: posKey,
+    total,
+    attempted,
+    correct,
+    mode
+  });
 }
 
-function retry(){ showIntro(); }
+function retry(){
+  showIntro();
+}
 
 /* ===== Start flow ===== */
 async function start(){
   level = document.getElementById('levelSel').value;
   posKey = document.getElementById('posSel').value;
-  const qCount = Math.max(5, Math.min(30, parseInt(document.getElementById('qCount').value||'10',10)));
+  const qCount = Math.max(5, Math.min(30,
+    parseInt(document.getElementById('qCount').value||'10',10)));
   const path = buildPath(level, posKey);
 
-  document.getElementById('about').textContent = `Loading: ${level} • ${posKey}`;
+  document.getElementById('about').textContent = `Loading: ${level} • ${posLabel(posKey)}`;
   try{
     const res = await fetch(path,{cache:'no-store'});
     const raw = await res.json();
@@ -306,19 +480,29 @@ async function start(){
   }
 
   quiz = generateQuizFromBank(bank, qCount);
-  idx=0; score=0;
-  showQuiz(); renderQ();
-  try{ gtag('event','quiz_start',{level, pos:posKey, count:qCount}); }catch(_){} 
+  idx=0;
+  score=0;
+  answered = new Array(quiz.length).fill(false);
+
+  showQuiz();
+  renderQ();
+
+  try{
+    gtag('event','quiz_start',{level, pos:posKey, count:qCount});
+  }catch(_){}
 }
 
 /* ===== Init ===== */
 document.addEventListener('DOMContentLoaded', ()=>{
   injectPartials();
-  document.getElementById('startBtn').onclick = start;
-  document.getElementById('nextBtn').onclick  = nextQ;
-  document.getElementById('finishBtn').onclick= finish;
-  document.getElementById('retryBtn').onclick = retry;
+  document.getElementById('startBtn').onclick  = start;
+  document.getElementById('nextBtn').onclick   = nextQ;
+  document.getElementById('finishBtn').onclick = () => finish('completed');
+  document.getElementById('stopBtn').onclick   = () => finish('stopped');
+  document.getElementById('retryBtn').onclick  = retry;
+
   showIntro();
+  renderHistory(); // load history on first view
 });
 </script>
 </body>
