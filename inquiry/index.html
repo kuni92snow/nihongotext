@@ -89,7 +89,15 @@
       border-radius:10px;background:#fff;font:inherit
     }
     textarea{min-height:180px;resize:vertical}
-    .row{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
+    .row{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin-top:12px;
+      flex-wrap:wrap;
+      justify-content:center;   /* ★ 追加：中央揃え */
+      text-align:center;        /* ★ 追加：中身も中央寄せ */
+    }
     .btn{
       padding:10px 16px;border-radius:10px;background:var(--shu);
       color:#fff;border:none;cursor:pointer
