@@ -31,24 +31,26 @@ html,body{ margin:0; background:#fff; color:var(--ink);
 a{ color:inherit; text-decoration:none }
 .wrap{ max-width:1100px; margin:0 auto; padding:0 16px }
 
-/* ヘッダー/フッターの見た目 */
+/* ヘッダー（トグルを右端に配置） */
 .topbar{
   border-top:4px solid var(--shu);
   border-bottom:1px solid #fee2e2;
   background:#fff;
 }
-.site-footer{
-  border-top:1px solid #fee2e2;
-  background:#fff;
-}
-.site-footer .wrap{
-  padding:16px 0;
+.site-header{
   display:flex;
-  gap:10px;
   align-items:center;
-  justify-content:center;
-  color:#98a1a8;
-  font-size:12px;
+  gap:12px;
+  padding:12px 0;
+}
+.lang-toggle-btn{
+  margin-left:auto;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:13px;
+  cursor:pointer;
+  background:#fff;
 }
 
 /* ブログでは Learning/Learned 非表示（言語トグルは表示） */
@@ -63,7 +65,7 @@ a{ color:inherit; text-decoration:none }
 /* カード */
 .list{ display:grid; gap:12px }
 .card{ border:1px solid #f0d7d4; border-radius:14px; background:#fff7f6; overflow:hidden }
-.card .head{ display:flex; flex-direction:column; gap:6px; padding:12px; border-bottom:1px dashed #f0d7d4; background:#fff }
+.card .head{ display:flex; flex-direction:column; gap:4px; padding:12px; border-bottom:1px dashed #f0d7d4; background:#fff }
 .card .date{ color:#888; font-size:13px }
 .card .title{ font-weight:800; font-size:18px; display:flex; align-items:center; gap:8px }
 .card .body{ padding:12px }
@@ -74,7 +76,7 @@ a{ color:inherit; text-decoration:none }
 <body>
 
 <header class="topbar">
-  <div id="site-header" class="wrap site-header" style="padding:12px 0;"></div>
+  <div id="site-header" class="wrap site-header"></div>
 </header>
 
 <main class="wrap" style="padding-bottom:24px">
@@ -106,36 +108,15 @@ a{ color:inherit; text-decoration:none }
 
 <script>
 (() => {
-  // === 言語取得（partials.js が無くても動くように） ===
-  const blogGetLang = () =>
-    (window.getLang ? window.getLang() : (localStorage.getItem('lang') || 'en'));
-
-  function applyLangBlog(lang){
-    const kw = document.getElementById('kw');
-    if(kw){
-      kw.placeholder = (lang === 'en') ? 'Search posts...' : '記事を検索…';
-    }
-    const sub = document.getElementById('subLead');
-    if(sub){
-      sub.textContent = (lang === 'en')
-        ? 'Latest update from nihongotext.com'
-        : 'nihongotext.com からの最新更新情報';
-    }
-    const titleSpan = document.querySelector('#pageTitle span');
-    if(titleSpan){
-      titleSpan.textContent = (lang === 'en') ? 'Blog' : 'ブログ';
-    }
-    // <title> も切り替え
-    const t = document.querySelector('title');
-    if(t){
-      t.textContent = (lang === 'en')
-        ? 'Blog | nihongotext.com'
-        : 'ブログ | nihongotext.com';
-    }
-  }
+  // 現在の言語取得（共通ヘッダー側の値 or localStorage）
+  const blogGetLang = () => {
+    if (window.getLang) return window.getLang();
+    return localStorage.getItem('nt_lang') || localStorage.getItem('lang') || 'en';
+  };
 
   // posts.json / news.json どちらか
   const endpoints = ['/blog/posts.json', '/blog/news.json'];
+
   async function loadPosts(){
     for(const url of endpoints){
       try{
@@ -146,6 +127,29 @@ a{ color:inherit; text-decoration:none }
       }catch(_){}
     }
     return [];
+  }
+
+  function applyUILang(lang){
+    const kw = document.getElementById('kw');
+    if(kw){ kw.placeholder = (lang==='en') ? 'Search posts...' : '記事を検索…'; }
+
+    const sub = document.getElementById('subLead');
+    if(sub){
+      sub.textContent = (lang==='en')
+        ? 'Latest update from nihongotext.com'
+        : 'nihongotext.com からの最新更新情報';
+    }
+
+    const titleSpan = document.querySelector('#pageTitle span');
+    if(titleSpan){
+      titleSpan.textContent = (lang==='en') ? 'Blog' : 'ブログ';
+    }
+
+    const docTitle = (lang==='en')
+      ? 'Blog | nihongotext.com'
+      : 'ブログ | nihongotext.com';
+    document.title = docTitle;
+    document.documentElement.lang = (lang==='ja' ? 'ja' : 'en');
   }
 
   function render(posts){
@@ -171,9 +175,9 @@ a{ color:inherit; text-decoration:none }
           ? (p.title_ja || p.title || p.title_en || '(untitled)')
           : (p.title_en || p.title || p.title_ja || '(untitled)');
 
-        const dateHtml = `<div class="date"><i class="fa-regular fa-calendar-days"></i> ${p.date||''}</div>`;
-        const titleHtml = `<div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${titleText}</a></div>`;
-        head.innerHTML = dateHtml + titleHtml;
+        head.innerHTML =
+          `<div class="date"><i class="fa-regular fa-calendar-days"></i> ${p.date||''}</div>
+           <div class="title"><a href="/blog/${(p.slug||'').trim()}.html">${titleText}</a></div>`;
 
         const body = document.createElement('div');
         body.className = 'body';
@@ -196,6 +200,36 @@ a{ color:inherit; text-decoration:none }
       });
   }
 
+  // ヘッダー右端にローカルな言語トグルを付ける
+  function attachLangToggle(){
+    const header = document.querySelector('.site-header');
+    if(!header) return;
+
+    let btn = document.getElementById('nt-lang-toggle-blog');
+    if(!btn){
+      btn = document.createElement('button');
+      btn.id = 'nt-lang-toggle-blog';
+      btn.type = 'button';
+      btn.className = 'lang-toggle-btn';
+      header.appendChild(btn);
+    }
+
+    const syncLabel = () => {
+      const lang = blogGetLang();
+      btn.textContent = (lang === 'en') ? '日本語' : 'English';
+    };
+    syncLabel();
+
+    btn.addEventListener('click', () => {
+      const cur = blogGetLang();
+      const next = (cur === 'en') ? 'ja' : 'en';
+      localStorage.setItem('nt_lang', next);
+      localStorage.setItem('lang',    next);
+      applyUILang(next);
+      render(window.__ALL_POSTS__ || []);
+    });
+  }
+
   // 初期化
   (async function init(){
     // ヘッダー/フッター注入
@@ -207,31 +241,15 @@ a{ color:inherit; text-decoration:none }
         ],
         titleDoc: { en: 'Blog | nihongotext.com', ja: 'ブログ | nihongotext.com' },
         onLangApply(lang){
-          applyLangBlog(lang);
-          render(window.__ALL_POSTS__||[]);
+          applyUILang(lang);
+          render(window.__ALL_POSTS__ || []);
         }
       });
     } else {
-      // フォールバック：partials.js が無い場合でも表示させる
-      const headerEl = document.getElementById('site-header');
-      if(headerEl){
-        fetch('/partials/header.html',{cache:'no-store'})
-          .then(r=>r.ok?r.text():'')
-          .then(html=>{ headerEl.innerHTML = html; })
-          .catch(()=>{});
-      }
-      const footerEl = document.getElementById('site-footer');
-      if(footerEl){
-        fetch('/partials/footer.html',{cache:'no-store'})
-          .then(r=>r.ok?r.text():'')
-          .then(html=>{ footerEl.innerHTML = html; })
-          .catch(()=>{
-            footerEl.textContent = '© 2025 nihongotext.com';
-          });
-      }
-      applyLangBlog(blogGetLang());
+      applyUILang(blogGetLang());
     }
 
+    // 投稿読み込み
     const all = await loadPosts();
     window.__ALL_POSTS__ = all;
     render(all);
@@ -251,6 +269,8 @@ a{ color:inherit; text-decoration:none }
       });
       render(filtered);
     });
+
+    attachLangToggle();
 
     try{ gtag('event','page_view',{page_title:'blog/index'}); }catch(_){}
   })();
