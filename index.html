@@ -465,6 +465,10 @@ function renderList(data){
   const showKANA = document.getElementById('toggleKANA')?.checked !== false;
   const showRO   = document.getElementById('toggleRO')?.checked !== false;
 
+  // ★ ここで Learned / Learning の状態をまとめて取得
+  const learnedIdsSet = learnedSet();
+  const learningIdSet = new Set(getLearning().map(x => x.id));
+
   let idx=(page-1)*PAGE_SIZE;
   rows.forEach(item=>{
     idx++;
@@ -496,13 +500,40 @@ function renderList(data){
       if(parts.length){ const block=div('line',''); block.innerHTML=parts.join(''); body.appendChild(block); }
     });
 
-    const isLearned = learnedSet().has(item.id);
-    if(isLearned){ card.classList.add('learned'); body.style.display='none'; tog.textContent='▼'; tog.setAttribute('aria-expanded','false'); }
+    // Learned 状態
+    const isLearned = learnedIdsSet.has(item.id);
+    if (isLearned){
+      card.classList.add('learned');
+      body.style.display='none';
+      tog.textContent='▼';
+      tog.setAttribute('aria-expanded','false');
+    }
 
+    // デフォルトは Learn
     act.textContent = 'Learn';
+
+    // Learning 状態ならボタン表示と色も復元
+    if (!isLearned && learningIdSet.has(item.id)){
+      card.classList.add('learning');
+      act.textContent = 'Learning';
+      body.style.display='none';
+      tog.textContent='▼';
+      tog.setAttribute('aria-expanded','false');
+    }
+
     act.onclick = () => {
       const posLabel = POS.find(p=>p.k===posKey)?.enLabel || posKey;
-      const payload = { id:item.id, ja:item.ja, en:item.en, kana:item.kana, ro:item.ro, level, part:posLabel, examples:item.examples||[], quiz:{taken:0,correct:0} };
+      const payload = {
+        id:item.id,
+        ja:item.ja,
+        en:item.en,
+        kana:item.kana,
+        ro:item.ro,
+        level,
+        part:posLabel,
+        examples:item.examples||[],
+        quiz:{taken:0,correct:0}
+      };
       ntxToLearning(payload);
       card.classList.add('learning');
       act.textContent = 'Learning';
