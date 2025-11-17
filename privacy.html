@@ -55,14 +55,20 @@
       border-bottom:1px solid #fee2e2;
       background:#fff;
     }
+    .topbar .wrap{
+      position:relative; /* トグルを右端に固定するため */
+    }
     .site-footer{
       border-top:1px solid #fee2e2;
       background:#fff;
     }
 
-    /* 言語トグル（右端） */
+    /* 言語トグル（右端固定） */
     .lang-toggle-btn{
-      margin-left:auto;
+      position:absolute;
+      right:16px;
+      top:50%;
+      transform:translateY(-50%);
       border:1px solid var(--line);
       border-radius:999px;
       padding:4px 10px;
@@ -70,6 +76,13 @@
       cursor:pointer;
       background:#fff;
       white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+    .lang-toggle-btn i{
+      font-size:13px;
+      color:var(--muted);
     }
 
     /* 本文 */
@@ -127,105 +140,109 @@
 <main class="wrap">
   <h1 id="pageTitle">Privacy Policy</h1>
 
-  <h2>Scope</h2>
-  <p>
-    This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information
-    obtained through this website.
-  </p>
+  <!-- 本文はここを JS で日英切り替え -->
+  <div id="privacyMainInner">
+    <!-- 初期表示（英語） -->
+    <h2>Scope</h2>
+    <p>
+      This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information
+      obtained through this website.
+    </p>
 
-  <h2>Operator</h2>
-  <p><strong>nihongotext.com</strong></p>
+    <h2>Operator</h2>
+    <p><strong>nihongotext.com</strong></p>
 
-  <h2>Representative</h2>
-  <p><strong>Hirotaka Kunishima</strong></p>
+    <h2>Representative</h2>
+    <p><strong>Hirotaka Kunishima</strong></p>
 
-  <h2>Contact</h2>
-  <p>
-    Email: <strong>info@nihongotext.com</strong><br />
-    Website:
-    <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
-  </p>
+    <h2>Contact</h2>
+    <p>
+      Email: <strong>info@nihongotext.com</strong><br />
+      Website:
+      <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
+    </p>
 
-  <h2>Information We Collect</h2>
-  <p>We may collect the following types of information:</p>
-  <ul>
-    <li>Name and email address you enter on the inquiry form</li>
-    <li>Message contents you submit</li>
-    <li>Technical information such as IP address, browser type, and access logs</li>
-    <li>Analytics data collected via Google Analytics</li>
-  </ul>
+    <h2>Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li>Name and email address you enter on the inquiry form</li>
+      <li>Message contents you submit</li>
+      <li>Technical information such as IP address, browser type, and access logs</li>
+      <li>Analytics data collected via Google Analytics</li>
+    </ul>
 
-  <h2>Purpose of Use</h2>
-  <p>We use collected information for the following purposes:</p>
-  <ul>
-    <li>To respond to inquiries and provide support</li>
-    <li>To maintain and improve the website and services</li>
-    <li>To analyze access for improving content and UX (via analytics tools)</li>
-    <li>To prevent unauthorized access and ensure security</li>
-  </ul>
+    <h2>Purpose of Use</h2>
+    <p>We use collected information for the following purposes:</p>
+    <ul>
+      <li>To respond to inquiries and provide support</li>
+      <li>To maintain and improve the website and services</li>
+      <li>To analyze access for improving content and UX (via analytics tools)</li>
+      <li>To prevent unauthorized access and ensure security</li>
+    </ul>
 
-  <h2>Google Analytics</h2>
-  <p>
-    This site uses Google Analytics to collect and analyze access logs. Data is anonymized and does not
-    identify specific individuals. Data collection and use are governed by Google’s
-    <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-      Privacy Policy
-    </a>
-    and
-    <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
-      Terms of Service
-    </a>.
-  </p>
+    <h2>Google Analytics</h2>
+    <p>
+      This site uses Google Analytics to collect and analyze access logs. Data is anonymized and does not
+      identify specific individuals. Data collection and use are governed by Google’s
+      <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        Privacy Policy
+      </a>
+      and
+      <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+        Terms of Service
+      </a>.
+    </p>
 
-  <h2>reCAPTCHA</h2>
-  <p>
-    This site uses Google reCAPTCHA to protect inquiry forms from spam and abuse.
-    Use of reCAPTCHA is subject to Google’s
-    <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-      Privacy Policy
-    </a>
-    and
-    <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
-      Terms of Service
-    </a>.
-  </p>
+    <h2>reCAPTCHA</h2>
+    <p>
+      This site uses Google reCAPTCHA to protect inquiry forms from spam and abuse.
+      Use of reCAPTCHA is subject to Google’s
+      <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        Privacy Policy
+      </a>
+      and
+      <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+        Terms of Service
+      </a>.
+    </p>
 
-  <h2>Data Sharing and Provision to Third Parties</h2>
-  <p>
-    We do not share personal information with third parties except in the following cases:
-  </p>
-  <ul>
-    <li>When required by law or by governmental authorities</li>
-    <li>When we use external services (such as Ko-fi, payment providers, or hosting) within the scope necessary</li>
-  </ul>
+    <h2>Data Sharing and Provision to Third Parties</h2>
+    <p>
+      We do not share personal information with third parties except in the following cases:
+    </p>
+    <ul>
+      <li>When required by law or by governmental authorities</li>
+      <li>When we use external services (such as Ko-fi, payment providers, or hosting) within the scope necessary</li>
+    </ul>
 
-  <h2>Data Retention</h2>
-  <p>
-    Personal information is retained only for as long as necessary to achieve the purposes described above,
-    and is then deleted or anonymized in an appropriate manner.
-  </p>
+    <h2>Data Retention</h2>
+    <p>
+      Personal information is retained only for as long as necessary to achieve the purposes described above,
+      and is then deleted or anonymized in an appropriate manner.
+    </p>
 
-  <h2>Security</h2>
-  <p>
-    We take reasonable measures to protect personal information from unauthorized access, loss, destruction,
-    alteration, or leakage. However, we cannot guarantee absolute security on the internet.
-  </p>
+    <h2>Security</h2>
+    <p>
+      We take reasonable measures to protect personal information from unauthorized access, loss, destruction,
+      alteration, or leakage. However, we cannot guarantee absolute security on the internet.
+    </p>
 
-  <h2>Your Rights</h2>
-  <p>
-    If you wish to request disclosure, correction, or deletion of your personal information,
-    please contact us via the inquiry form or email. We will respond within a reasonable scope
-    after confirming your identity.
-  </p>
+    <h2>Your Rights</h2>
+    <p>
+      If you wish to request disclosure, correction, or deletion of your personal information,
+      please contact us via the inquiry form or email. We will respond within a reasonable scope
+      after confirming your identity.
+    </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    We may revise this Privacy Policy without prior notice. The latest version will always be posted on this page.
-  </p>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may revise this Privacy Policy without prior notice. The latest version will always be posted on this page.
+    </p>
 
-  <p style="margin-top:20px;" class="muted">
-    Last updated: November 2025
-  </p>
+    <p style="margin-top:20px;" class="muted">
+      Last updated: November 2025
+    </p>
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -235,7 +252,219 @@
 </footer>
 
 <script>
-  // タイトルと言語の切り替え
+  // 本文テンプレート（日英）
+  const privacyTemplates = {
+    en: `
+      <h2>Scope</h2>
+      <p>
+        This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information
+        obtained through this website.
+      </p>
+
+      <h2>Operator</h2>
+      <p><strong>nihongotext.com</strong></p>
+
+      <h2>Representative</h2>
+      <p><strong>Hirotaka Kunishima</strong></p>
+
+      <h2>Contact</h2>
+      <p>
+        Email: <strong>info@nihongotext.com</strong><br />
+        Website:
+        <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>We may collect the following types of information:</p>
+      <ul>
+        <li>Name and email address you enter on the inquiry form</li>
+        <li>Message contents you submit</li>
+        <li>Technical information such as IP address, browser type, and access logs</li>
+        <li>Analytics data collected via Google Analytics</li>
+      </ul>
+
+      <h2>Purpose of Use</h2>
+      <p>We use collected information for the following purposes:</p>
+      <ul>
+        <li>To respond to inquiries and provide support</li>
+        <li>To maintain and improve the website and services</li>
+        <li>To analyze access for improving content and UX (via analytics tools)</li>
+        <li>To prevent unauthorized access and ensure security</li>
+      </ul>
+
+      <h2>Google Analytics</h2>
+      <p>
+        This site uses Google Analytics to collect and analyze access logs. Data is anonymized and does not
+        identify specific individuals. Data collection and use are governed by Google’s
+        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          Privacy Policy
+        </a>
+        and
+        <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+          Terms of Service
+        </a>.
+      </p>
+
+      <h2>reCAPTCHA</h2>
+      <p>
+        This site uses Google reCAPTCHA to protect inquiry forms from spam and abuse.
+        Use of reCAPTCHA is subject to Google’s
+        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          Privacy Policy
+        </a>
+        and
+        <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+          Terms of Service
+        </a>.
+      </p>
+
+      <h2>Data Sharing and Provision to Third Parties</h2>
+      <p>
+        We do not share personal information with third parties except in the following cases:
+      </p>
+      <ul>
+        <li>When required by law or by governmental authorities</li>
+        <li>When we use external services (such as Ko-fi, payment providers, or hosting) within the scope necessary</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <p>
+        Personal information is retained only for as long as necessary to achieve the purposes described above,
+        and is then deleted or anonymized in an appropriate manner.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        We take reasonable measures to protect personal information from unauthorized access, loss, destruction,
+        alteration, or leakage. However, we cannot guarantee absolute security on the internet.
+      </p>
+
+      <h2>Your Rights</h2>
+      <p>
+        If you wish to request disclosure, correction, or deletion of your personal information,
+        please contact us via the inquiry form or email. We will respond within a reasonable scope
+        after confirming your identity.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may revise this Privacy Policy without prior notice. The latest version will always be posted on this page.
+      </p>
+
+      <p style="margin-top:20px;" class="muted">
+        Last updated: November 2025
+      </p>
+    `,
+    ja: `
+      <h2>適用範囲</h2>
+      <p>
+        本プライバシーポリシーは、<strong>nihongotext.com</strong>（以下「当サイト」）が
+        本ウェブサイトを通じて取得する個人情報の取扱いについて定めるものです。
+      </p>
+
+      <h2>運営者</h2>
+      <p><strong>nihongotext.com</strong></p>
+
+      <h2>代表者</h2>
+      <p><strong>國島 裕貴（Hirotaka Kunishima）</strong></p>
+
+      <h2>お問い合わせ</h2>
+      <p>
+        メール：<strong>info@nihongotext.com</strong><br />
+        ウェブサイト：
+        <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
+      </p>
+
+      <h2>取得する情報の種類</h2>
+      <p>当サイトでは、次のような情報を取得する場合があります。</p>
+      <ul>
+        <li>お問い合わせフォームに入力されたお名前・メールアドレス</li>
+        <li>お問い合わせフォームに入力されたメッセージ内容</li>
+        <li>IP アドレス、ブラウザ種別、アクセスログ等の技術情報</li>
+        <li>Google アナリティクス等によるアクセス解析データ</li>
+      </ul>
+
+      <h2>利用目的</h2>
+      <p>取得した情報は、主に以下の目的で利用します。</p>
+      <ul>
+        <li>お問い合わせへの回答およびサポートの提供</li>
+        <li>当サイトおよびサービスの運営・保守・改善</li>
+        <li>コンテンツやユーザー体験向上のためのアクセス解析</li>
+        <li>不正アクセスやスパム等の防止・セキュリティ確保</li>
+      </ul>
+
+      <h2>Google アナリティクスについて</h2>
+      <p>
+        当サイトでは、アクセス状況の把握のために Google アナリティクスを利用しています。
+        収集されるデータには、特定の個人を識別できる情報は含まれません。
+        データの収集および利用方法については、Google の
+        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          プライバシーポリシー
+        </a>
+        および
+        <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+          利用規約
+        </a>
+        をご確認ください。
+      </p>
+
+      <h2>reCAPTCHA について</h2>
+      <p>
+        当サイトのお問い合わせフォームでは、スパムや不正利用を防止するために
+        Google reCAPTCHA を利用しています。
+        reCAPTCHA の利用には、Google の
+        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          プライバシーポリシー
+        </a>
+        および
+        <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+          利用規約
+        </a>
+        が適用されます。
+      </p>
+
+      <h2>第三者提供について</h2>
+      <p>
+        当サイトは、次の場合を除き、取得した個人情報を第三者に提供することはありません。
+      </p>
+      <ul>
+        <li>法令に基づき開示が求められた場合</li>
+        <li>Ko-fi 等の決済サービスやホスティングサービスなど、利用目的の達成に必要な範囲で外部サービスを利用する場合</li>
+      </ul>
+
+      <h2>保管期間</h2>
+      <p>
+        取得した個人情報は、上記の利用目的を達成するために必要な期間保存し、
+        その後は適切な方法で削除または匿名化します。
+      </p>
+
+      <h2>安全管理措置</h2>
+      <p>
+        当サイトは、個人情報への不正アクセス、紛失、破壊、改ざん、漏えい等を防止するため、
+        合理的な安全管理措置を講じます。ただし、インターネット上の通信・保存である以上、
+        その安全性を完全に保証するものではありません。
+      </p>
+
+      <h2>開示・訂正・削除等のご請求</h2>
+      <p>
+        ご自身の個人情報の開示・訂正・削除等をご希望の場合は、
+        お問い合わせフォームまたはメールにてご連絡ください。
+        ご本人確認のうえ、合理的な範囲で対応いたします。
+      </p>
+
+      <h2>本ポリシーの改定</h2>
+      <p>
+        本プライバシーポリシーの内容は、必要に応じて予告なく変更される場合があります。
+        最新の内容は常に本ページに掲載されます。
+      </p>
+
+      <p style="margin-top:20px;" class="muted">
+        最終更新日：2025年11月
+      </p>
+    `
+  };
+
+  // タイトルと言語の切り替え + 本文切り替え
   function applyLang(ctx){
     let lang =
       (ctx && ctx.lang) ||
@@ -244,6 +473,8 @@
       'en';
 
     const titleEl = document.getElementById('pageTitle');
+    const mainInner = document.getElementById('privacyMainInner');
+
     if (lang === 'ja'){
       titleEl.textContent = 'プライバシーポリシー';
       document.title = 'プライバシーポリシー | nihongotext.com';
@@ -252,6 +483,10 @@
       document.title = 'Privacy Policy | nihongotext.com';
       lang = 'en';
     }
+
+    // 本文をテンプレートで切り替え
+    const tpl = privacyTemplates[lang] || privacyTemplates.en;
+    if (mainInner){ mainInner.innerHTML = tpl; }
 
     document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
     localStorage.setItem('nt_lang', lang);
@@ -284,9 +519,12 @@
         btn.id = 'nt-lang-toggle-privacy';
         btn.type = 'button';
         btn.className = 'lang-toggle-btn';
+        btn.innerHTML = ''; // 後でセット
 
         const syncLabel = () => {
-          btn.textContent = (currentLang === 'en') ? '日本語' : 'English';
+          btn.innerHTML =
+            `<i class="fa-solid fa-globe"></i>` +
+            `<span>${currentLang === 'en' ? '日本語' : 'English'}</span>`;
         };
         syncLabel();
 
