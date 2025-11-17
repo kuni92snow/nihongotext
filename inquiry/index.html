@@ -32,7 +32,28 @@
     a{color:inherit}
     ruby{ruby-position:over} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
 
-    main .wrap{max-width:960px;margin:auto;padding:12px}
+    .wrap{max-width:960px;margin:0 auto;padding:12px}
+
+    /* ヘッダー/フッター */
+    .topbar{
+      border-top:4px solid var(--shu);
+      border-bottom:1px solid #fee2e2;
+      background:#fff;
+    }
+    .site-footer{
+      border-top:1px solid #fee2e2;
+      background:#fff;
+    }
+    .site-footer .wrap{
+      padding:16px 0;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      color:#98a1a8;
+      font-size:12px;
+    }
+
     h1{font-size:28px;margin:16px 0}
     .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px 18px 14px}
     label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}
@@ -190,6 +211,13 @@ function applyLang(ctx){
   els.subject.placeholder = t.placeholders.subject;
   els.message.placeholder = t.placeholders.message;
 
+  // <title> も切り替え
+  const titleEl = document.querySelector('title');
+  if(titleEl){
+    titleEl.textContent =
+      (lang === 'en') ? 'Contact | nihongotext.com' : 'お問い合わせ | nihongotext.com';
+  }
+
   localStorage.setItem('nt_lang',lang);
 }
 
@@ -219,18 +247,36 @@ form.addEventListener('submit',ev=>{
 
 /* === 初期化 === */
 (function init(){
-  // パーシャル読み込み（Learning/Learned 非表示）
-  window.injectPartials &&
-  window.injectPartials({
-    hideLearningNav:true,
-    titleTargets:[
-      {el:document.querySelector('#title'),en:'Contact',ja:'お問い合わせ'}
-    ],
-    titleDoc:{en:'Contact | nihongotext.com',ja:'お問い合わせ | nihongotext.com'},
-    onLangApply:applyLang
-  });
-
-  applyLang();
+  if (window.injectPartials){
+    // パーシャル読み込み（Learning/Learned 非表示）
+    window.injectPartials({
+      hideLearningNav:true,
+      titleTargets:[
+        {el:document.querySelector('#title'),en:'Contact',ja:'お問い合わせ'}
+      ],
+      titleDoc:{en:'Contact | nihongotext.com',ja:'お問い合わせ | nihongotext.com'},
+      onLangApply:(currentLang)=>applyLang({lang:currentLang})
+    });
+  } else {
+    // フォールバック：header/footer を直接読み込み
+    const headerEl = document.getElementById('site-header');
+    if(headerEl){
+      fetch('/partials/header.html',{cache:'no-store'})
+        .then(r=>r.ok?r.text():'')
+        .then(html=>{ headerEl.innerHTML = html; })
+        .catch(()=>{});
+    }
+    const footerEl = document.getElementById('site-footer');
+    if(footerEl){
+      fetch('/partials/footer.html',{cache:'no-store'})
+        .then(r=>r.ok?r.text():'')
+        .then(html=>{ footerEl.innerHTML = html; })
+        .catch(()=>{
+          footerEl.textContent = '© 2025 nihongotext.com';
+        });
+    }
+    applyLang({lang});
+  }
 })();
 </script>
 </body>
