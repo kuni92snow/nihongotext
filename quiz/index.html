@@ -146,6 +146,31 @@ select,input[type="number"]{
 #historyList .label{
   font-weight:700;
 }
+
+/* 例文エリア */
+.ex-panel{
+  margin-top:8px;
+  border-top:1px dashed #f1cbc6;
+  padding-top:8px;
+  font-size:13px;
+}
+.ex-row{
+  margin-bottom:6px;
+}
+.ex-label{
+  font-weight:600;
+  margin-right:6px;
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+}
+.ex-block{
+  margin-left:22px;
+  margin-top:2px;
+}
+.ex-block div{
+  margin:1px 0;
+}
 </style>
 </head>
 <body>
@@ -186,12 +211,14 @@ select,input[type="number"]{
 
   <section id="stage" class="card" aria-live="polite">
     <div id="intro">
-      <h2 style="margin:0 0 8px">Multiple-choice Quiz</h2>
+      <h2 style="margin:0 0 8px">Multiple-choice Quiz (JLPT-style)</h2>
       <p class="meta" style="margin:0 0 8px">
-        Questions are generated on the fly from your vocabulary JSON (Kanji / Kana / Romaji / English).
+        Each question shows a Japanese sentence with <strong>（　　）</strong>.
+        Choose the best word from 1–4, like the JLPT vocabulary questions.
       </p>
       <p class="meta" style="margin:0">
-        Each question randomly asks <strong>Japanese → English</strong> or <strong>English → Japanese</strong>. Choices are shuffled every time.
+        After answering, you can see example sentences in <strong>Japanese / Hiragana / Romaji / English</strong>
+        and toggle each with checkboxes.
       </p>
     </div>
 
@@ -201,7 +228,9 @@ select,input[type="number"]{
         <div id="score" class="badge">Score: 0</div>
       </div>
       <h3 id="qtext" style="margin:12px 0 8px">—</h3>
-      <div id="subtext" class="meta" style="margin:0 0 8px"></div>
+      <div id="subtext" class="meta" style="margin:0 0 8px">
+        （　　）に入ることばとして、いちばんよいものを １～４ からえらびなさい。
+      </div>
       <div id="choices"></div>
       <div id="explain" class="meta" style="display:none;margin-top:8px"></div>
       <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px;flex-wrap:wrap">
@@ -303,6 +332,12 @@ function formatDateTime(ts){
   if(isNaN(d)) return '';
   return d.toLocaleString([], {year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
 }
+function escapeHtml(str){
+  return String(str||'')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;');
+}
 
 /* ===== State ===== */
 let bank=[], quiz=[], idx=0, score=0, level='N5', posKey='verbs';
@@ -354,34 +389,87 @@ function renderHistory(){
   });
 }
 
-/* ===== Build quiz from vocab JSON (random 4-choice) ===== */
+/* ===== JLPT-style quiz builder =====
+   - Use a Japanese sentence with （　　） where the target word appears.
+   - Choices: 4 Japanese words (Kanji) – 1 correct + 3 distractors.
+*/
+function makeBlankSentence(example, item){
+  const targetJa   = item.ja   || '';
+  const targetKana = item.kana || '';
+  const targetRo   = item.ro   || '';
+
+  const srcJa   = example.ja   || '';
+  const srcKana = example.kana || '';
+  const srcRo   = example.ro   || '';
+
+  const BLANK = '（　　）';
+
+  let jaBlank = srcJa;
+  let kanaBlank = srcKana;
+  let roBlank = srcRo;
+
+  if(targetJa && srcJa.includes(targetJa)){
+    jaBlank = srcJa.replace(targetJa, BLANK);
+  }else if(targetKana && srcJa.includes(targetKana)){
+    jaBlank = srcJa.replace(targetKana, BLANK);
+  }else if(srcJa){
+    jaBlank = BLANK + ' ' + srcJa;
+  }
+
+  if(targetKana && srcKana.includes(targetKana)){
+    kanaBlank = srcKana.replace(targetKana, BLANK);
+  }else if(srcKana){
+    kanaBlank = BLANK + ' ' + srcKana;
+  }
+
+  if(targetRo && srcRo.includes(targetRo)){
+    roBlank = srcRo.replace(targetRo, BLANK);
+  }else if(srcRo){
+    roBlank = BLANK + ' ' + srcRo;
+  }
+
+  return {
+    ja:   jaBlank || BLANK,
+    kana: kanaBlank || '',
+    ro:   roBlank || '',
+    en:   example.en || ''
+  };
+}
+
 function generateQuizFromBank(items, count=10){
   const pool = items.filter(x=>x && (x.en||x.ja));
   const base = shuffle(pool).slice(0, Math.min(count, pool.length));
   const out = [];
+
   base.forEach(item=>{
-    const type = Math.random()<0.5 ? 'ja2en' : 'en2ja';
-    const correct = (type==='ja2en') ? (item.en||'') : (item.ja||'');
+    const allExamples = Array.isArray(item.examples) ? item.examples.slice() : [];
+    const example = allExamples[0] || {
+      ja:   item.ja   || '',
+      kana: item.kana || '',
+      ro:   item.ro   || '',
+      en:   item.en   || ''
+    };
+
+    const sentenceBlank = makeBlankSentence(example, item);
+
+    const correctWord = item.ja || '';
     const distractFrom = pool.filter(x=>{
-      const v = (type==='ja2en') ? x.en : x.ja;
-      return v && v!==correct;
+      const v = x.ja;
+      return v && v !== correctWord;
     });
-    const distract = shuffle(distractFrom).slice(0,3).map(x=> type==='ja2en' ? x.en : x.ja);
-    const options = shuffle([correct, ...distract]);
+    const distract = shuffle(distractFrom).slice(0,3).map(x=> x.ja || '');
+    const options = shuffle([correctWord, ...distract]);
 
     out.push({
       id: item.id || uuid(),
-      qtype: type,
-      question: (type==='ja2en')
-        ? `What is the English meaning of “${item.ja||''}”?`
-        : `What is the Japanese for “${item.en||''}”?`,
-      subtext: (item.kana || item.ro) ? `(${[item.kana, item.ro].filter(Boolean).join(' / ')})` : '',
+      item,
+      sentenceBlank,      // {ja,kana,ro,en} with （　　）
       options,
-      answer: options.indexOf(correct),
-      explanation: item.examples && item.examples[0]
-        ? ((type==='ja2en') ? (item.examples[0].en||'') : (item.examples[0].ja||'')) : ''
+      answer: options.indexOf(correctWord),
+      examples: allExamples.length ? allExamples : [example]
     });
   });
+
   return out;
 }
 
@@ -403,14 +491,72 @@ function showResult(){
   document.getElementById('result').style.display='';
 }
 
+/* ===== Example panel builder ===== */
+function buildExamplesHTML(examples){
+  const renderLines = (key)=>{
+    const lines = examples.map((ex,i)=>{
+      const v = ex && ex[key];
+      if(!v) return '';
+      const label = (examples.length>1) ? (i+1)+'. ' : '';
+      return `<div>${label}${escapeHtml(v)}</div>`;
+    }).join('');
+    return lines || '<div style="color:#9ca3af">—</div>';
+  };
+
+  return `
+    <div class="ex-panel">
+      <div class="ex-row">
+        <label class="ex-label">
+          <input type="checkbox" class="ex-toggle" data-kind="ja" checked>
+          Japanese (Kanji)
+        </label>
+        <div class="ex-block" data-kind="ja">
+          ${renderLines('ja')}
+        </div>
+      </div>
+      <div class="ex-row">
+        <label class="ex-label">
+          <input type="checkbox" class="ex-toggle" data-kind="kana" checked>
+          Hiragana
+        </label>
+        <div class="ex-block" data-kind="kana">
+          ${renderLines('kana')}
+        </div>
+      </div>
+      <div class="ex-row">
+        <label class="ex-label">
+          <input type="checkbox" class="ex-toggle" data-kind="ro" checked>
+          Romaji
+        </label>
+        <div class="ex-block" data-kind="ro">
+          ${renderLines('ro')}
+        </div>
+      </div>
+      <div class="ex-row">
+        <label class="ex-label">
+          <input type="checkbox" class="ex-toggle" data-kind="en" checked>
+          English
+        </label>
+        <div class="ex-block" data-kind="en">
+          ${renderLines('en')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 /* ===== Rendering ===== */
 function renderQ(){
   const total = quiz.length;
   const q = quiz[idx];
   document.getElementById('crumbs').textContent = `${idx+1} / ${total}`;
   document.getElementById('score').textContent  = `Score: ${score}`;
-  document.getElementById('qtext').textContent  = q.question;
-  document.getElementById('subtext').textContent= q.subtext || '';
+  document.getElementById('qtext').textContent  = q.sentenceBlank.ja || '（　　）';
+
+  // JLPT風の固定説明文
+  document.getElementById('subtext').textContent =
+    '（　　）に入ることばとして、いちばんよいものを １～４ からえらびなさい。';
+
   const box = document.getElementById('choices');
   box.innerHTML='';
   q.options.forEach((opt,i)=>{
@@ -421,9 +567,11 @@ function renderQ(){
     b.onclick = ()=> choose(i);
     box.appendChild(b);
   });
+
   const ex = document.getElementById('explain');
   ex.style.display='none';
-  ex.textContent = q.explanation || '';
+  ex.innerHTML = '';
+
   document.getElementById('nextBtn').disabled = true;
   document.getElementById('finishBtn').style.display = (idx===total-1)?'':'none';
 }
@@ -445,10 +593,22 @@ function choose(i){
   }else{
     try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_){}
   }
-  if(q.explanation){
-    const ex=document.getElementById('explain');
-    ex.style.display='';
+
+  // 回答後に例文（日本語・ひらがな・ローマ字・英語）を表示＋チェックボックスでON/OFF
+  if(q.examples && q.examples.length){
+    const exDiv = document.getElementById('explain');
+    exDiv.innerHTML = buildExamplesHTML(q.examples);
+    exDiv.style.display = '';
+
+    exDiv.querySelectorAll('.ex-toggle').forEach(chk=>{
+      chk.addEventListener('change', ()=>{
+        const kind = chk.getAttribute('data-kind');
+        const block = exDiv.querySelector('.ex-block[data-kind="'+kind+'"]');
+        if(block) block.style.display = chk.checked ? '' : 'none';
+      });
+    });
   }
+
   document.getElementById('nextBtn').disabled=false;
 }
 
