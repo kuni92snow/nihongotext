@@ -4,9 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy | nihongotext.com</title>
+
   <base href="/" />
-  <link rel="icon" href="/icon-512.png" />
-  <meta name="description" content="Privacy Policy of nihongotext.com, a Japanese language learning platform for global learners." />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#b22222" />
+  <meta name="description" content="Privacy Policy for nihongotext.com." />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
@@ -17,67 +23,308 @@
     gtag('config', 'G-9QSHWJE0HZ');
   </script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
-    main { max-width: 900px; margin: 40px auto; padding: 0 16px; line-height: 1.8; }
-    h1 { color: #e6462d; font-size: 1.8em; border-bottom: 2px solid #e6462d; padding-bottom: 6px; margin-bottom: 20px; }
-    h2 { color: #333; font-size: 1.2em; margin-top: 24px; }
-    p { margin: 8px 0; color: #444; }
-    ul { margin-left: 20px; }
-    a { color: #e6462d; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root{
+      --shu:#e6462d;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      background:#fff;
+      color:var(--ink);
+      font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
+           "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
+    }
+    a{color:inherit;text-decoration:none}
+
+    .wrap{
+      max-width:900px;
+      margin:0 auto;
+      padding:0 16px;
+    }
+
+    /* 共通ヘッダー・フッター + 言語トグル（右端） */
+    .topbar{
+      border-top:4px solid var(--shu);
+      border-bottom:1px solid #fee2e2;
+      background:#fff;
+    }
+    .site-header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px 0;
+    }
+    .lang-toggle-btn{
+      margin-left:auto;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:4px 10px;
+      font-size:13px;
+      cursor:pointer;
+      background:#fff;
+    }
+    .site-footer{
+      border-top:1px solid #fee2e2;
+      background:#fff;
+    }
+    .site-footer .wrap{
+      padding:16px 0;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      color:#98a1a8;
+      font-size:12px;
+    }
+
+    /* 本文 */
+    main{
+      line-height:1.8;
+      padding-top:24px;
+      padding-bottom:40px;
+    }
+    h1{
+      color:#e6462d;
+      font-size:1.8em;
+      border-bottom:2px solid #e6462d;
+      padding-bottom:6px;
+      margin:0 0 20px;
+    }
+    h2{
+      color:#333;
+      font-size:1.2em;
+      margin-top:24px;
+      margin-bottom:4px;
+    }
+    p{margin:8px 0;color:#444}
+    ul{margin-left:20px}
+    a.link{color:#e6462d;text-decoration:none}
+    a.link:hover{text-decoration:underline}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:16px;
+    }
+    th,td{
+      border:1px solid #ddd;
+      padding:8px 10px;
+      vertical-align:top;
+    }
+    th{
+      background:#fafafa;
+      text-align:left;
+      width:32%;
+    }
+    .muted{color:#666;font-size:0.9em}
+
+    /* Privacy でも Learning/Learned ナビは非表示 */
+    nav[aria-label="Learning navigation"]{ display:none !important; }
   </style>
 </head>
 
 <body>
-  <div id="header-placeholder"></div>
+<header class="topbar">
+  <div id="site-header" class="wrap site-header"></div>
+</header>
 
-  <main>
-    <h1>Privacy Policy</h1>
+<main class="wrap">
+  <h1 id="pageTitle">Privacy Policy</h1>
 
-    <p>At <strong>nihongotext.com</strong>, we value your privacy and are committed to protecting your personal information.</p>
+  <!-- ★ 現在は Legal のテンプレを流用。文面は後で差し替え可能です -->
+  <h2>Scope</h2>
+  <p>
+    This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information
+    obtained through this website.
+  </p>
 
-    <h2>1. Information We Collect</h2>
-    <ul>
-      <li>Personal information you voluntarily provide (e.g., your name or email address).</li>
-      <li>Automatically collected data such as IP address and browser type for analytics.</li>
-      <li>Cookies to improve user experience.</li>
-    </ul>
+  <h2>Operator</h2>
+  <p><strong>nihongotext.com</strong></p>
 
-    <h2>2. Use of Information</h2>
-    <ul>
-      <li>To respond to inquiries and improve site functionality.</li>
-      <li>To analyze traffic and display relevant ads via Google AdSense.</li>
-    </ul>
+  <h2>Representative</h2>
+  <p><strong>Hirotaka Kunishima</strong></p>
 
-    <h2>3. Google AdSense and Cookies</h2>
-    <p>This site uses Google AdSense to display ads. You can disable personalized ads via <a href="https://adssettings.google.com/">Google Ads Settings</a>.</p>
+  <h2>Contact</h2>
+  <p>
+    Email: <strong>info@nihongotext.com</strong><br />
+    Website:
+    <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
+  </p>
 
-    <h2>4. Data Security</h2>
-    <p>We use secure methods to prevent unauthorized access, loss, or misuse of data.</p>
+  <h2>Information We Collect</h2>
+  <p>We may collect the following types of information:</p>
+  <ul>
+    <li>Name and email address you enter on the inquiry form</li>
+    <li>Message contents you submit</li>
+    <li>Technical information such as IP address, browser type, and access logs</li>
+    <li>Analytics data collected via Google Analytics</li>
+  </ul>
 
-    <h2>5. Contact</h2>
-    <p>If you have any questions, please contact us at: <strong>info@nihongotext.com</strong></p>
+  <h2>Purpose of Use</h2>
+  <p>We use collected information for the following purposes:</p>
+  <ul>
+    <li>To respond to inquiries and provide support</li>
+    <li>To maintain and improve the website and services</li>
+    <li>To analyze access for improving content and UX (via analytics tools)</li>
+    <li>To prevent unauthorized access and ensure security</li>
+  </ul>
 
-    <h2>6. Changes</h2>
-    <p>We may update this policy occasionally. The latest version will always be available on this page.</p>
+  <h2>Google Analytics</h2>
+  <p>
+    This site uses Google Analytics to collect and analyze access logs. Data is anonymized and does not
+    identify specific individuals. Data collection and use are governed by Google’s
+    <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+      Privacy Policy
+    </a>
+    and
+    <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+      Terms of Service
+    </a>.
+  </p>
 
-    <p style="margin-top:20px; color:#666; font-size:0.9em;">
-      Last updated: November 2025
-    </p>
-  </main>
+  <h2>reCAPTCHA</h2>
+  <p>
+    This site uses Google reCAPTCHA to protect inquiry forms from spam and abuse.
+    Use of reCAPTCHA is subject to Google’s
+    <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+      Privacy Policy
+    </a>
+    and
+    <a class="link" href="https://policies.google.com/terms" target="_blank" rel="noopener">
+      Terms of Service
+    </a>.
+  </p>
 
-  <div id="footer-placeholder"></div>
+  <h2>Data Sharing and Provision to Third Parties</h2>
+  <p>
+    We do not share personal information with third parties except in the following cases:
+  </p>
+  <ul>
+    <li>When required by law or by governmental authorities</li>
+    <li>When we use external services (such as Ko-fi, payment providers, or hosting) within the scope necessary</li>
+  </ul>
 
-  <script>
-    async function loadPartials() {
-      const header = await fetch("/partials/header.html").then(r => r.text());
-      const footer = await fetch("/partials/footer.html").then(r => r.text());
-      document.getElementById("header-placeholder").innerHTML = header;
-      document.getElementById("footer-placeholder").innerHTML = footer;
+  <h2>Data Retention</h2>
+  <p>
+    Personal information is retained only for as long as necessary to achieve the purposes described above,
+    and is then deleted or anonymized in an appropriate manner.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    We take reasonable measures to protect personal information from unauthorized access, loss, destruction,
+    alteration, or leakage. However, we cannot guarantee absolute security on the internet.
+  </p>
+
+  <h2>Your Rights</h2>
+  <p>
+    If you wish to request disclosure, correction, or deletion of your personal information,
+    please contact us via the inquiry form or email. We will respond within a reasonable scope
+    after confirming your identity.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    We may revise this Privacy Policy without prior notice. The latest version will always be posted on this page.
+  </p>
+
+  <p style="margin-top:20px;" class="muted">
+    Last updated: November 2025
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div id="site-footer" class="wrap"></div>
+</footer>
+
+<!-- 共通パーシャル -->
+<script src="/assets/partials.js"></script>
+
+<script>
+  // このページ用の言語適用（タイトルと document.title のみ簡易対応）
+  function applyLang(ctx){
+    let lang =
+      (ctx && ctx.lang) ||
+      localStorage.getItem('nt_lang') ||
+      localStorage.getItem('lang') ||
+      'en';
+
+    const titleEl = document.getElementById('pageTitle');
+    if (lang === 'ja'){
+      titleEl.textContent = 'プライバシーポリシー';
+      document.title = 'プライバシーポリシー | nihongotext.com';
+    } else {
+      titleEl.textContent = 'Privacy Policy';
+      document.title = 'Privacy Policy | nihongotext.com';
+      lang = 'en';
     }
-    loadPartials();
-  </script>
+
+    document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
+    localStorage.setItem('nt_lang', lang);
+    localStorage.setItem('lang',    lang);
+  }
+
+  // ヘッダー右端に言語トグルボタン設置
+  function attachLangToggle(){
+    const header = document.querySelector('.site-header');
+    if(!header) return;
+
+    let currentLang =
+      localStorage.getItem('nt_lang') ||
+      localStorage.getItem('lang') ||
+      'en';
+
+    let btn = document.getElementById('nt-lang-toggle-privacy');
+    if(!btn){
+      btn = document.createElement('button');
+      btn.id = 'nt-lang-toggle-privacy';
+      btn.type = 'button';
+      btn.className = 'lang-toggle-btn';
+      header.appendChild(btn);
+    }
+
+    const syncLabel = () => {
+      btn.textContent = (currentLang === 'en') ? '日本語' : 'English';
+    };
+    syncLabel();
+
+    btn.addEventListener('click', () => {
+      currentLang = (currentLang === 'en') ? 'ja' : 'en';
+      applyLang({lang: currentLang});
+      syncLabel();
+    });
+  }
+
+  (function init(){
+    if (window.injectPartials){
+      window.injectPartials({
+        hideLearningNav:true,
+        titleTargets:[
+          {
+            el: document.getElementById('pageTitle'),
+            en: 'Privacy Policy',
+            ja: 'プライバシーポリシー'
+          }
+        ],
+        titleDoc:{
+          en:'Privacy Policy | nihongotext.com',
+          ja:'プライバシーポリシー | nihongotext.com'
+        },
+        onLangApply:(lang)=>applyLang({lang})
+      });
+    } else {
+      applyLang();
+    }
+
+    applyLang();
+    attachLangToggle();
+  })();
+</script>
 </body>
 </html>
