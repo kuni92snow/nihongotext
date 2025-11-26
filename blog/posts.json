@@ -38,5 +38,15 @@
     "summary_ja": "legal.html、privacy.html、inquiryページ、blogページのヘッダーとフッターを共通化し、右上に言語トグルボタン（English／日本語）を追加しました。トグル操作でページタイトルや本文表示が英語・日本語に切り替わります。また、問い合わせフォームでは reCAPTCHA と送信ボタンのレイアウトを調整し、見やすさを改善しています。",
     "summary_en": "We unified the header and footer on the legal notice, privacy policy, contact, and blog pages and added a language toggle button (English / 日本語) in the top-right corner. Page titles and text now switch between English and Japanese via the toggle. The contact form layout around reCAPTCHA and the send buttons has also been refined for better readability.",
     "tags": ["update", "ui", "legal", "privacy"]
-  }
+  },
+  {
+  "slug": "quiz-feature-added",
+  "date": "2025-11-26",
+  "title": "Quiz Feature Released",
+  "title_ja": "クイズ機能を追加しました",
+  "title_en": "Quiz Feature Released",
+  "summary_ja": "単語学習画面の右下に「Quiz」ボタンを追加し、簡単にクイズができるようになりました。また、サイト共通ヘッダーにもQuizメニューを追加し、クイズ専用ページへアクセスしやすくなりました。今後はレベルや品詞に応じたクイズ生成や結果表示にも対応予定です。",
+  "summary_en": "A floating Quiz button has been added to the vocabulary learning screen, allowing easy access to quizzes. A Quiz menu has also been added to the shared header for quick access to the quiz page. More features are coming, including level- and part-based quiz generation and scoring display.",
+  "tags": ["update", "quiz", "feature"]
+}
 ]
