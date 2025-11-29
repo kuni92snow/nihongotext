@@ -48,5 +48,15 @@
   "summary_ja": "単語学習画面の右下に「Quiz」ボタンを追加し、簡単にクイズができるようになりました。また、サイト共通ヘッダーにもQuizメニューを追加し、クイズ専用ページへアクセスしやすくなりました。今後はレベルや品詞に応じたクイズ生成や結果表示にも対応予定です。",
   "summary_en": "A floating Quiz button has been added to the vocabulary learning screen, allowing easy access to quizzes. A Quiz menu has also been added to the shared header for quick access to the quiz page. More features are coming, including level- and part-based quiz generation and scoring display.",
   "tags": ["update", "quiz", "feature"]
-}
+},
+{
+  "slug": "sns-links-updated",
+  "date": "2025-11-29",
+  "title": "SNS Links Updated",
+  "title_ja": "SNSリンクを更新しました",
+  "title_en": "SNS Links Updated",
+  "summary_ja": "ヘッダーのX、Reddit、Medium、Ko-fi、Substackへのリンクを最新のものへ更新しました。これにより、各SNSへ正しくアクセスできるようになり、連携もしやすくなりました。",
+  "summary_en": "We updated the social media links in the site header, including X, Reddit, Medium, Ko-fi, and Substack. You can now access our official channels more reliably and stay connected with our updates!",
+  "tags": ["update", "sns", "ui"]
+} 
 ]
