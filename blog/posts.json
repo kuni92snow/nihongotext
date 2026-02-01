@@ -58,5 +58,15 @@
   "summary_ja": "ヘッダーのX、Reddit、Medium、Ko-fi、Substackへのリンクを最新のものへ更新しました。これにより、各SNSへ正しくアクセスできるようになり、連携もしやすくなりました。",
   "summary_en": "We updated the social media links in the site header, including X, Reddit, Medium, Ko-fi, and Substack. You can now access our official channels more reliably and stay connected with our updates!",
   "tags": ["update", "sns", "ui"]
-} 
+},
+{
+  "slug": "self-introduction-added",
+  "date": "2026-02-01",
+  "title": "New Content: Self-Introduction",
+  "title_ja": "新着：自己紹介のレッスンを公開しました",
+  "title_en": "New Content: Self-Introduction",
+  "summary_ja": "初心者向けの自己紹介レッスンを追加しました。ネイティブスピーカーによる音声付きで、発音の練習も可能です。基本フレーズから文法解説まで網羅しています。",
+  "summary_en": "We added a new self-introduction lesson for beginners! It includes native audio for pronunciation practice, basic phrases, and clear grammar explanations to help you start conversations in Japanese.",
+  "tags": ["new-content", "beginner", "audio"]
+}
 ]
