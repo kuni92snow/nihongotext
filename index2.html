@@ -9,24 +9,23 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
-/* 既存の変数を継承 */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
 html,body{ margin:0;background:#fff;color:var(--ink);
   font:16px/1.65 system-ui,-apple-system,sans-serif }
 .wrap{max-width:800px;margin:0 auto;padding:0 16px}
 
-/* Header & Footer (既存デザイン) */
+/* Header & Footer */
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
 .brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
 nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
-nav a{color:var(--ink);font-weight:600;font-size:14px}
+nav a{color:var(--ink);font-weight:600;font-size:14px;text-decoration:none}
 nav a:hover{color:var(--shu)}
 
 /* Article Style */
 .hero-img{width:100%;height:auto;border-radius:12px;margin:20px 0;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
 .post-title{font-size:28px;font-weight:800;color:var(--ink);margin-bottom:10px;line-height:1.3}
-.audio-player{background:var(--shu-tint);padding:15px;border-radius:10px;margin:20px 0;display:flex;align-items:center;gap:10px}
+.audio-player{background:var(--shu-tint);padding:15px;border-radius:10px;margin:20px 0;display:flex;align-items:center;gap:15px}
 .section-title{border-left:5px solid var(--shu);padding-left:12px;margin:30px 0 15px;font-size:22px}
 
 .dialogue-box{background:var(--card);border:1px solid #f1cbc6;border-radius:12px;padding:20px;margin:20px 0}
@@ -40,7 +39,7 @@ nav a:hover{color:var(--shu)}
 .grammar-item h4{margin:0 0 5px;color:var(--shu);font-size:18px}
 
 .cta-box{background:var(--ink);color:#fff;padding:30px;text-align:center;border-radius:15px;margin:40px 0}
-.btn-primary{background:var(--shu);color:#fff;padding:12px 24px;border-radius:8px;font-weight:700;display:inline-block;margin-top:15px}
+.btn-primary{background:var(--shu);color:#fff;padding:12px 24px;border-radius:8px;font-weight:700;display:inline-block;margin-top:15px;text-decoration:none}
 
 .footer{border-top:1px solid var(--shu-tint);padding:20px 0;text-align:center;color:var(--muted);font-size:12px}
 </style>
@@ -52,7 +51,8 @@ nav a:hover{color:var(--shu)}
     <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
     <nav>
       <a href="/">Home</a>
-      <a href="/dictionary.html">Vocabulary Tool</a> <a href="/blog/index.html">Blog</a>
+      <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
     </nav>
   </div>
@@ -63,13 +63,13 @@ nav a:hover{color:var(--shu)}
     <h1 class="post-title">Easy Japanese: Self-Introduction (Jiko-shokai)</h1>
     <p style="color:var(--muted)">Learn how to introduce yourself in Japanese simply and naturally.</p>
 
-    <img src="path/to/your/image.png" alt="Self Introduction Illustration" class="hero-img">
+    <img src="/assets/images/self-intro.png" alt="Self Introduction Illustration" class="hero-img">
 
     <div class="audio-player">
       <i class="fa-solid fa-circle-play" style="font-size:30px;color:var(--shu)"></i>
-      <div>
-        <strong>Listen to the pronunciation</strong>
-        <audio controls src="path/to/your/voice.mp3" style="display:block;margin-top:5px"></audio>
+      <div style="flex-grow: 1;">
+        <strong style="display: block; margin-bottom: 5px;">Listen to the pronunciation</strong>
+        <audio controls src="/assets/audio/self-intro.mp3" style="width: 100%;"></audio>
       </div>
     </div>
 
@@ -100,7 +100,7 @@ nav a:hover{color:var(--shu)}
     </div>
     <div class="grammar-item">
       <h4>3. よろしくお願いします (Yoroshiku onegaishimasu)</h4>
-      <p>A essential phrase to end your introduction, meaning "Please be kind to me."</p>
+      <p>An essential phrase to end your introduction, meaning "Please be kind to me."</p>
     </div>
 
     <div class="cta-box">
