@@ -68,5 +68,16 @@
   "summary_ja": "初心者向けの自己紹介レッスンを追加しました。ネイティブスピーカーによる音声付きで、発音の練習も可能です。基本フレーズから文法解説まで網羅しています。",
   "summary_en": "We added a new self-introduction lesson for beginners! It includes native audio for pronunciation practice, basic phrases, and clear grammar explanations to help you start conversations in Japanese.",
   "tags": ["new-content", "beginner", "audio"]
+},
+{
+  "slug": "new-lessons-shopping-and-restaurant",
+  "date": "2026-02-02",
+  "title": "New Lessons: Shopping and Restaurant",
+  "title_ja": "新着：買い物とレストランのレッスンを公開しました",
+  "title_en": "New Lessons: Shopping and Restaurant",
+  "summary_ja": "「買い物」と「レストランでの注文」の2つの新しいレッスンを公開しました！どちらもネイティブの音声付きで、日本での日常生活に役立つ実践的なフレーズが学べます。",
+  "summary_en": "We've added two new lessons: 'At the Store' and 'Ordering Food'! Both include audio support to help you master essential phrases for your daily life in Japan.",
+  "tags": ["new-content", "beginner", "shopping", "dining"]
 }
+  
 ]
