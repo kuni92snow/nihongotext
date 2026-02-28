@@ -2985,6 +2985,36 @@
         "ro": "Yama no ue de chiisana hana ga saiteimashita.",
         "en": "Small flowers were blooming on the mountain."
       }
+      [
+  {
+    "id": "n5-v-081",
+    "ja": "ください",
+    "kana": "ください",
+    "ro": "kudasai",
+    "en": "please / give me",
+    "examples": [
+      {"ja": "水をください。", "kana": "みず を ください。", "ro": "Mizu o kudasai.", "en": "Water, please."},
+      {"ja": "これをください。", "kana": "これ を ください。", "ro": "Kore o kudasai.", "en": "I'll take this, please."},
+      {"ja": "メニューをください。", "kana": "めにゅー を ください。", "ro": "Menyuu o kudasai.", "en": "Please give me the menu."},
+      {"ja": "りんごを３つください。", "kana": "りんご を みっつ ください。", "ro": "Ringo o mittsu kudasai.", "en": "Three apples, please."},
+      {"ja": "チケットを２枚ください。", "kana": "ちけっと を にまい ください。", "ro": "Chiketto o nimai kudasai.", "en": "Two tickets, please."}
+    ]
+  },
+  {
+    "id": "n5-v-082",
+    "ja": "お願いします",
+    "kana": "おねがいします",
+    "ro": "onegaishimasu",
+    "en": "please (polite request)",
+    "examples": [
+      {"ja": "よろしくお願いします。", "kana": "よろしく おねがいします。", "ro": "Yoroshiku onegaishimasu.", "en": "Nice to meet you / Please be kind to me."},
+      {"ja": "コーヒーをお願いします。", "kana": "こーひー を おねがいします。", "ro": "Koohii o onegaishimasu.", "en": "Coffee, please."},
+      {"ja": "お会計をお願いします。", "kana": "おかいけい を おねがいします。", "ro": "Okaikei o onegaishimasu.", "en": "The check, please."},
+      {"ja": "タクシーをお願いします。", "kana": "たくしー を おねがいします。", "ro": "Takushii o onegaishimasu.", "en": "A taxi, please."},
+      {"ja": "予約をお願いします。", "kana": "よやく を おねがいします。", "ro": "Yoyaku o onegaishimasu.", "en": "I'd like to make a reservation, please."}
+    ]
+  }
+]
     ]
   }
 ]
