@@ -4670,7 +4670,77 @@
         "kana": "がっこうせいかつ は とても いそがしい です。",
         "ro": "gakkou seikatsu wa totemo isogashii desu.",
         "en": "School life is very busy."
-      }
+      },
+  {
+    "id": "n5-noun-131",
+    "ja": "駅",
+    "kana": "えき",
+    "ro": "eki",
+    "en": "station",
+    "examples": [
+      {"ja": "駅はどこですか？", "kana": "えき は どこ です か？", "ro": "Eki wa doko desu ka?", "en": "Where is the station?"},
+      {"ja": "駅まで歩きます。", "kana": "えき まで あるきます。", "ro": "Eki made arukimasu.", "en": "I walk to the station."},
+      {"ja": "駅の近くに銀行があります。", "kana": "えき の ちかく に ぎんこう が あります。", "ro": "Eki no chikaku ni ginkou ga arimasu.", "en": "There is a bank near the station."},
+      {"ja": "新宿駅で降ります。", "kana": "しんじゅく えき で おります。", "ro": "Shinjuku-eki de orimasu.", "en": "I get off at Shinjuku Station."},
+      {"ja": "この駅はいつも人が多いです。", "kana": "この えき は いつも ひと が おおい です。", "ro": "Kono eki wa itsumo hito ga ooi desu.", "en": "This station is always crowded."}
+    ]
+  },
+  {
+    "id": "n5-noun-132",
+    "ja": "メニュー",
+    "kana": "めにゅー",
+    "ro": "menyuu",
+    "en": "menu",
+    "examples": [
+      {"ja": "メニューを見せてください。", "kana": "めにゅー を みせて ください。", "ro": "Menyuu o misete kudasai.", "en": "Please show me the menu."},
+      {"ja": "英語のメニューはありますか？", "kana": "えいご の めにゅー は あります か？", "ro": "Eigo no menyuu wa arimasu ka?", "en": "Do you have an English menu?"},
+      {"ja": "これが今日のメニューです。", "kana": "これ が きょう の めにゅー です。", "ro": "Kore ga kyou no menyuu desu.", "en": "This is today's menu."},
+      {"ja": "ランチメニューはありますか？", "kana": "らんち めにゅー は あります か？", "ro": "Ranchi menyuu wa arimasu ka?", "en": "Do you have a lunch menu?"},
+      {"ja": "メニューをお願いします。", "kana": "めにゅー を おねがいします。", "ro": "Menyuu o onegaishimasu.", "en": "Menu, please."}
+    ]
+  },
+  {
+    "id": "n5-noun-133",
+    "ja": "注文",
+    "kana": "ちゅうもん",
+    "ro": "chuumon",
+    "en": "order",
+    "examples": [
+      {"ja": "注文をお願いします。", "kana": "ちゅうもん を おねがいします。", "ro": "Chuumon o onegaishimasu.", "en": "I'd like to order, please."},
+      {"ja": "注文は何にしますか？", "kana": "ちゅうもん は なん に します か？", "ro": "Chuumon wa nan ni shimasu ka?", "en": "What would you like to order?"},
+      {"ja": "まだ注文していません。", "kana": "まだ ちゅうもん して いません。", "ro": "Mada chuumon shite imasen.", "en": "I haven't ordered yet."},
+      {"ja": "これが私の注文です。", "kana": "これ が わたし の ちゅうもん です。", "ro": "Kore ga watashi no chuumon desu.", "en": "This is my order."},
+      {"ja": "注文を確認してください。", "kana": "ちゅうもん を かくにん して ください。", "ro": "Chuumon o kakunin shite kudasai.", "en": "Please check the order."}
+    ]
+  },
+  {
+    "id": "n5-noun-134",
+    "ja": "これ",
+    "kana": "これ",
+    "ro": "kore",
+    "en": "this",
+    "examples": [
+      {"ja": "これは何ですか？", "kana": "これ は なん です か？", "ro": "Kore wa nan desu ka?", "en": "What is this?"},
+      {"ja": "これは私のです。", "kana": "これ は わたし の です。", "ro": "Kore wa watashi no desu.", "en": "This is mine."},
+      {"ja": "これはとても美味しいです。", "kana": "これ は とても おいしい です。", "ro": "Kore wa totemo oishii desu.", "en": "This is very delicious."},
+      {"ja": "これを買います。", "kana": "これ を かいます。", "ro": "Kore o kaimasu.", "en": "I will buy this."},
+      {"ja": "これは日本語で何と言いますか？", "kana": "これ は にほんご で なんと いいま す か？", "ro": "Kore wa Nihongo de nanto iimasu ka?", "en": "What do you call this in Japanese?"}
+    ]
+  },
+  {
+    "id": "n5-noun-135",
+    "ja": "どこ",
+    "kana": "どこ",
+    "ro": "doko",
+    "en": "where",
+    "examples": [
+      {"ja": "トイレはどこですか？", "kana": "といれ は どこ です か？", "ro": "Toire wa doko desu ka?", "en": "Where is the restroom?"},
+      {"ja": "出身はどこですか？", "kana": "しゅっしん は どこ です か？", "ro": "Shusshin wa doko desu ka?", "en": "Where are you from?"},
+      {"ja": "どこに住んでいますか？", "kana": "どこ に すんで います か？", "ro": "Doko ni sunde imasu ka?", "en": "Where do you live?"},
+      {"ja": "どこへ行きますか？", "kana": "どこ へ いきます か？", "ro": "Doko e ikimasu ka?", "en": "Where are you going?"},
+      {"ja": "鞄はどこにありますか？", "kana": "かばん は どこ に あります か？", "ro": "Kaban wa doko ni arimasu ka?", "en": "Where is the bag?"}
+  }
+      
     ]
   }
 ]
