@@ -38,10 +38,9 @@ nav a:hover{color:var(--shu)}
 .controls{background:#f9fafb;padding:20px;border-radius:15px;margin:20px 0;border:1px solid var(--line)}
 .search-group{display:flex;gap:10px;margin-bottom:15px}
 input[type="text"]{flex:1;height:45px;border:1px solid var(--line);border-radius:10px;padding:0 15px;font-size:16px}
-select{height:45px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:#fff}
 
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--muted)}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--muted);transition: 0.2s;}
 .chip.active{border-color:var(--shu);background:var(--shu-tint);color:var(--shu)}
 
 /* Grid */
@@ -79,14 +78,7 @@ mark{background:#fff176;color:#000;padding:0 2px;border-radius:2px}
 <main class="wrap">
   <div class="controls">
     <div class="search-group">
-      <select id="levelSel">
-        <option value="N5">N5</option>
-        <option value="N4">N4</option>
-        <option value="N3">N3</option>
-        <option value="N2">N2</option>
-        <option value="N1">N1</option>
-      </select>
-      <input id="kw" type="text" placeholder="Search words (e.g. sushi, 食べる, eki)..." autocomplete="off" />
+      <input id="kw" type="text" placeholder="Search across all levels (e.g. sushi, 食べる, eki)..." autocomplete="off" />
     </div>
     
     <div class="chips" id="posChips">
@@ -130,7 +122,6 @@ async function fetchJson(lv, fileName) {
     const res = await fetch(`/data/json/${lv}/${fileName}`);
     if (!res.ok) return [];
     const data = await res.json();
-    // 配列ならそのまま、オブジェクトで entries があればそれを返す
     return Array.isArray(data) ? data : (data.entries || []);
   } catch(e) { 
     return []; 
@@ -139,29 +130,27 @@ async function fetchJson(lv, fileName) {
 
 async function performSearch() {
   const kwInput = document.getElementById('kw');
-  const levelSel = document.getElementById('levelSel');
   const listEl = document.getElementById('list');
   const statusEl = document.getElementById('status');
   
   const query = kwInput.value.trim().toLowerCase();
-  const selectedLevel = levelSel.value;
   const activeChip = document.querySelector('.chip.active');
   const selectedPos = activeChip ? activeChip.dataset.pos : 'all';
 
   listEl.innerHTML = '';
-  statusEl.textContent = 'Searching...';
+  statusEl.textContent = 'Searching all levels...';
 
   let allMatches = [];
-
-  // 検索範囲の決定
-  const levelsToSearch = query ? LEVELS : [selectedLevel];
   const posToSearch = (selectedPos === 'all') ? POS_LIST : POS_LIST.filter(p => p.id === selectedPos);
 
-  for (const lv of levelsToSearch) {
+  // パフォーマンスのため、全表示の際の表示上限数を設定（検索時は全表示）
+  const maxInitialDisplay = 60;
+
+  for (const lv of LEVELS) {
     for (const pos of posToSearch) {
       const items = await fetchJson(lv, pos.file);
       const matches = items.filter(item => {
-        if (!query) return true; // 検索語がない場合はそのレベルの全表示
+        if (!query) return true; 
         return (
           (item.ja && item.ja.includes(query)) ||
           (item.kana && item.kana.includes(query)) ||
@@ -176,15 +165,19 @@ async function performSearch() {
     }
   }
 
-  // 表示
   if (allMatches.length === 0) {
     statusEl.textContent = 'No results found.';
     return;
   }
 
-  statusEl.textContent = `Found ${allMatches.length} items.`;
+  // 検索語がない場合は一部を表示（全部出すと重くなるため）
+  const displayItems = query ? allMatches : allMatches.slice(0, maxInitialDisplay);
   
-  allMatches.forEach(item => {
+  statusEl.textContent = query 
+    ? `Found ${allMatches.length} items across all levels.`
+    : `Showing latest ${displayItems.length} items from all levels.`;
+  
+  displayItems.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
@@ -200,13 +193,10 @@ async function performSearch() {
   });
 }
 
-// 初期化
 (async function init() {
   const kwInput = document.getElementById('kw');
-  const levelSel = document.getElementById('levelSel');
   const posChips = document.getElementById('posChips');
 
-  // チップのクリックイベント
   posChips.addEventListener('click', (e) => {
     if (e.target.classList.contains('chip')) {
       document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -215,26 +205,19 @@ async function performSearch() {
     }
   });
 
-  // レベル変更
-  levelSel.addEventListener('change', performSearch);
-
-  // 入力検索 (デバウンス)
   let timer;
   kwInput.addEventListener('input', () => {
     clearTimeout(timer);
     timer = setTimeout(performSearch, 400);
   });
 
-  // URLパラメータ (?kw=...) 対応
   const params = new URLSearchParams(window.location.search);
   const query = params.get('kw');
   if (query) {
     kwInput.value = decodeURIComponent(query);
-    performSearch();
-  } else {
-    // 初期表示
-    performSearch();
   }
+  
+  performSearch();
 })();
 </script>
 </body>
