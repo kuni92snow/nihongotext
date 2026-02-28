@@ -558,5 +558,18 @@
       {"ja": "次のイベントにぜひ参加してください。", "kana": "つぎ の いべんと に ぜひ さんか して ください。", "ro": "Tsugi no ibento ni zehi sanka shite kudasai.", "en": "Please join the next event by all means."},
       {"ja": "ぜひ日本へ遊びに来てください。", "kana": "ぜひ にほん へ あそび に きて ください。", "ro": "Zehi nihon e asobi ni kite kudasai.", "en": "Please come visit Japan."}
     ]
+  },
+  {
+    "id": "n5-adv-041",
+    "ja": "いくら",
+    "kana": "いくら",
+    "ro": "ikura",
+    "en": "how much",
+    "examples": [
+      {"ja": "これはいくらですか？", "kana": "これ は いくら です か？", "ro": "Kore wa ikura desu ka?", "en": "How much is this?"},
+      {"ja": "全部でいくらですか？", "kana": "ぜんぶ で いくら です か？", "ro": "Zenbu de ikura desu ka?", "en": "How much is it in total?"}
+    ]
+  }
+    ]
   }
 ] 
