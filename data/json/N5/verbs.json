@@ -2979,14 +2979,15 @@
         "ro": "Mou sugu chuurippu ga sakimasu.",
         "en": "Tulips will bloom soon."
       },
-      {
+    {
         "ja": "山の上で小さな花が咲いていました。",
         "kana": "やま の うえ で ちいさな はな が さいて いました。",
         "ro": "Yama no ue de chiisana hana ga saiteimashita.",
         "en": "Small flowers were blooming on the mountain."
       }
-      [
-{
+    ]
+  },
+  {
     "id": "n5-v-081",
     "ja": "ください",
     "kana": "ください",
@@ -3006,8 +3007,6 @@
     "examples": [
       {"ja": "コーヒーをお願いします。", "kana": "こーひー を おねがいします。", "ro": "Coffee, please."},
       {"ja": "よろしくお願いします。", "kana": "よろしく おねがいします。", "ro": "Yoroshiku onegaishimasu.", "en": "Nice to meet you."}
-    ]
-  }
     ]
   }
 ]
