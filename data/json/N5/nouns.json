@@ -4665,14 +4665,15 @@
         "ro": "gakkou seikatsu no omoide ga takusan arimasu.",
         "en": "I have many memories of school life."
       },
-      {
+     {
         "ja": "学校生活はとても忙しいです。",
         "kana": "がっこうせいかつ は とても いそがしい です。",
         "ro": "gakkou seikatsu wa totemo isogashii desu.",
         "en": "School life is very busy."
-      },
+      }
     ]
-{
+  },
+  {
     "id": "n5-noun-131",
     "ja": "これ",
     "kana": "これ",
@@ -4726,9 +4727,6 @@
     "examples": [
       {"ja": "トイレはどこですか？", "kana": "といれ は どこ です か？", "ro": "Toire wa doko desu ka?", "en": "Where is the restroom?"},
       {"ja": "出身はどこですか？", "kana": "しゅっしん は どこ です か？", "ro": "Shusshin wa doko desu ka?", "en": "Where are you from?"}
-    ]
-  }
-      
     ]
   }
 ]
