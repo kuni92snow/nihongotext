@@ -343,7 +343,7 @@
     "en": "occasionally / once in a while",
     "examples": [
       {"ja": "たまに映画を見ます。", "kana": "たまに えいが を みます。", "ro": "Tamani eiga o mimasu.", "en": "I watch movies occasionally."},
-      {"ja": "たまに外食します。", "kana": "たまに がいしょく します。", "ro": "Tamani gaishoku shimasu.", "en": "I eat out once in a while."},
+      {"ja": "たまに外食します。", "kana": "たまに がいしょく します。", "ro": "Tamani gaishoku shuesu.", "en": "I eat out once in a while."},
       {"ja": "たまに友達に会います。", "kana": "たまに ともだち に あいます。", "ro": "Tamani tomodachi ni aimasu.", "en": "I meet my friends occasionally."},
       {"ja": "たまにジョギングをします。", "kana": "たまに じょぎんぐ を します。", "ro": "Tamani jogingu o shimasu.", "en": "I go jogging once in a while."},
       {"ja": "たまに旅行したいです。", "kana": "たまに りょこう したい です。", "ro": "Tamani ryokou shitai desu.", "en": "I want to travel occasionally."}
@@ -525,7 +525,7 @@
     "en": "right after / soon after",
     "examples": [
       {"ja": "授業のすぐあとで帰りました。", "kana": "じゅぎょう の すぐ あとで かえりました。", "ro": "Jugyou no sugu ato de kaerimashita.", "en": "I went home right after class."},
-      {"ja": "昼ごはんのすぐあとで出かけました。", "kana": "ひるごはん の すぐ あとで でかけました。", "ro": "Hirugohan no sugu ato de dekakemashita.", "en": "I went out right after lunch."},
+      {"ja": "昼ごはんのすぐあとで出かけました。", "kana": "昼ごはん の すぐ あとで 出かけました。", "ro": "Hirugohan no sugu ato de dekakemashita.", "en": "I went out right after lunch."},
       {"ja": "すぐあとで雨が降り始めました。", "kana": "すぐ あとで あめ が ふり はじめました。", "ro": "Sugu ato de ame ga furi hajimemashita.", "en": "It started raining right after that."},
       {"ja": "すぐあとで彼に電話します。", "kana": "すぐ あとで かれ に でんわ します。", "ro": "Sugu ato de kare ni denwa shimasu.", "en": "I’ll call him right after that."},
       {"ja": "仕事のすぐあとで映画を見ました。", "kana": "しごと の すぐ あとで えいが を みました。", "ro": "Shigoto no sugu ato de eiga o mimashita.", "en": "I watched a movie right after work."}
@@ -559,7 +559,7 @@
       {"ja": "ぜひ日本へ遊びに来てください。", "kana": "ぜひ にほん へ あそび に きて ください。", "ro": "Zehi nihon e asobi ni kite kudasai.", "en": "Please come visit Japan."}
     ]
   },
- {
+  {
     "id": "n5-adv-041",
     "ja": "いくら",
     "kana": "いくら",
@@ -567,10 +567,10 @@
     "en": "how much",
     "examples": [
       {"ja": "これはいくらですか？", "kana": "これ は いくら です か？", "ro": "Kore wa ikura desu ka?", "en": "How much is this?"},
-      {"ja": "全部でいくらですか？", "kana": "ぜんぶ で いくら です か？", "ro": "Zenbu de ikura desu ka?", "en": "How much is it in total?"}
+      {"ja": "全部でいくらですか？", "kana": "ぜんぶ で いくら です か？", "ro": "Zenbu de ikura desu ka?", "en": "How much is it in total?"},
+      {"ja": "コーヒーはいくらですか？", "kana": "こーひー は いくら です か？", "ro": "Koohii wa ikura desu ka?", "en": "How much is the coffee?"},
+      {"ja": "チケットはいくらですか？", "kana": "ちけっと は いくら です か？", "ro": "Chiketto wa ikura desu ka?", "en": "How much is the ticket?"},
+      {"ja": "その鞄はいくらでしたか？", "kana": "その かばん は いくら でした か？", "ro": "Sono kaban wa ikura deshita ka?", "en": "How much was that bag?"}
     ]
   }
 ]
-    ]
-  }
-] 
