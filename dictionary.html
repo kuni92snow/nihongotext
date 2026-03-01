@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>nihongotext.com - Vocabulary Tool</title>
+<title>Vocabulary Tool | nihongotext.com</title>
 
 <link rel="icon" href="/favicon.ico" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -11,30 +11,55 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
 </script>
 
 <style>
-:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
-*{box-sizing:border-box}
-html,body{ margin:0;background:#fff;color:var(--ink);
-  font:16px/1.65 system-ui,-apple-system,sans-serif }
-a{color:inherit;text-decoration:none}
-button{cursor:pointer; font-family:inherit;}
+/* --- Design Tokens: User Specified --- */
+:root{
+  --shu:#e6462d;
+  --shu-tint:#fff2ef; /* 統一感のためのアクセント */
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --card:#fff7f6;
+}
 
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+*{ box-sizing:border-box }
 
-/* Header */
-.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:15px 0}
-.brandbar{display:flex;flex-direction:column;align-items:center;text-align:center}
-.brand{font-weight:900;font-size:32px;color:var(--shu);text-decoration:none}
-nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
-nav a{color:var(--ink);font-weight:600;font-size:14px}
-nav a:hover{color:var(--shu)}
+/* Font Stack: User Specified for High Quality Typography */
+html,body{
+  margin:0;
+  background:#fff;
+  color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
+        "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
+}
 
-/* Controls */
+a{ color:inherit; text-decoration:none }
+button{ cursor:pointer; font-family:inherit; }
+
+/* Wrapper: User Specified max-width */
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 16px;
+}
+
+/* --- Header: Blog Unified --- */
+.site-header { background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30; }
+.site-header-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
+.logo-text { font-weight:800; font-size:32px; color:var(--shu); }
+.beta-text { font-size:20px; line-height:1; color:#98a1a8; margin-bottom: 5px; }
+.nav-links { display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; }
+.nav-links a { color:#333; font-weight:600; font-size:15px; }
+.nav-links a:hover { color:var(--shu); }
+.sns-nav { display:flex; align-items:center; gap:14px; font-size:20px; justify-content:center; margin-top: 5px; }
+.sns-nav a { color:var(--shu); }
+
+/* --- Controls & Layout Fixes --- */
 .controls{background:#f9fafb;padding:20px;border-radius:15px;margin:20px 0;border:1px solid var(--line)}
 .search-group{display:flex;gap:10px;margin-bottom:15px}
 input[type="text"]{flex:1;height:45px;border:1px solid var(--line);border-radius:10px;padding:0 15px;font-size:16px}
@@ -43,39 +68,39 @@ input[type="text"]{flex:1;height:45px;border:1px solid var(--line);border-radius
 .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--muted);transition: 0.2s;}
 .chip.active{border-color:var(--shu);background:var(--shu-tint);color:var(--shu)}
 
-/* Grid & Cards - PCでのレイアウト調整 */
+/* Grid Adjustment: PCで中央に寄りすぎず、かつ広がすぎないバランス */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
   gap:25px;
   margin-bottom:40px;
-  justify-content: center;
 }
 
-/* 検索結果が1つの時に広がりすぎないように制限 */
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
+  /* 検索結果が1つの時は最大幅を制限して中央に置く（不自然さを解消） */
   .grid:has(> :last-child:nth-child(1)) {
-    grid-template-columns: minmax(360px, 600px);
+    grid-template-columns: minmax(340px, 600px);
     justify-content: center;
   }
 }
 
-.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:24px;transition:transform 0.2s; height: fit-content;}
+/* Card Design */
+.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:22px;transition:transform 0.2s; height: fit-content; display: flex; flex-direction: column;}
 .card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.06)}
-.card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
 .tag{font-size:11px;font-weight:800;background:#fff;border:1px solid #f1cbc6;padding:2px 8px;border-radius:6px;color:var(--muted);text-transform:uppercase}
 .ja{font-size:26px;font-weight:800;color:var(--ink);display:block}
 .kana{font-size:15px;color:var(--muted);display:block;margin-bottom:8px}
 
-/* Audio Player Style */
-.audio-container { margin: 15px 0; background: #fff; border-radius: 8px; padding: 5px; border: 1px solid var(--line); }
-audio { width: 100%; height: 35px; }
+/* Audio Player */
+.audio-box { margin: 12px 0; background: #fff; border-radius: 8px; padding: 4px; border: 1px solid #eee; }
+audio { width: 100%; height: 32px; outline: none; }
 
-.en{font-size:18px;color:var(--ink);border-top:1px dashed #f1cbc6;padding-top:12px;margin-top:12px;display:block;font-weight:600}
+.en{font-size:18px;color:var(--ink);border-top:1px dashed #f1cbc6;padding-top:10px;margin-top:10px;display:block;font-weight:600}
 
 /* Example Accordion */
 .example-details { margin-top: 15px; border-top: 1px solid var(--line); padding-top: 10px; }
-.example-details summary { font-size: 13px; color: var(--shu); font-weight: 800; list-style: none; display: flex; align-items: center; gap: 5px; outline: none; cursor: pointer; }
+.example-details summary { font-size: 13px; color: var(--shu); font-weight: 800; list-style: none; display: flex; align-items: center; gap: 5px; outline: none; cursor:pointer;}
 .example-details summary::before { content: '\f054'; font-family: 'Font Awesome 6 Free'; font-weight: 900; font-size: 10px; transition: 0.2s; }
 .example-details[open] summary::before { transform: rotate(90deg); }
 .example-list { margin-top: 12px; }
@@ -84,21 +109,39 @@ audio { width: 100%; height: 35px; }
 .ex-ro { color: var(--muted); font-size: 12px; margin: 0; font-style: italic; }
 .ex-en { color: var(--muted); margin: 2px 0 0 0; }
 
-/* Footer */
-.footer{border-top:1px solid var(--shu-tint);padding:30px 0;text-align:center;color:var(--muted);font-size:12px}
-.status-msg{margin:20px 0;font-size:14px;color:var(--muted); text-align: center;}
+/* --- Footer: Blog Unified --- */
+.site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding: 25px 0; margin-top: 40px; }
+.footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
+.footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
+.footer-nav { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+.footer-nav a { color:var(--shu); font-weight:600; }
+.footer-icons { display:flex; align-items:center; justify-content:center; gap:18px; font-size:22px; }
+.footer-icons a { color:var(--shu); }
+
+.status-msg{margin:15px 0;font-size:14px;color:var(--muted); text-align: center;}
 </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap brandbar">
-    <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/dictionary.html" style="color:var(--shu)">Vocabulary Tool</a>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/quiz/index.html">Quiz</a>
       <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </header>
@@ -106,9 +149,8 @@ audio { width: 100%; height: 35px; }
 <main class="wrap">
   <div class="controls">
     <div class="search-group">
-      <input id="kw" type="text" placeholder="Search across all levels and categories..." autocomplete="off" />
+      <input id="kw" type="text" placeholder="Search vocabulary..." autocomplete="off" />
     </div>
-    
     <div class="chips" id="posChips">
       <button class="chip active" data-pos="all">All Categories</button>
       <button class="chip" data-pos="nouns">Nouns</button>
@@ -118,7 +160,6 @@ audio { width: 100%; height: 35px; }
       <button class="chip" data-pos="adverbs">Adverbs</button>
       <button class="chip" data-pos="particles">Particles</button>
       <button class="chip" data-pos="numerals">Numerals</button>
-      <button class="chip" data-pos="conjunctions">Conj</button>
     </div>
   </div>
 
@@ -126,8 +167,24 @@ audio { width: 100%; height: 35px; }
   <div id="list" class="grid"></div>
 </main>
 
-<footer class="footer">
-  <div class="wrap">© 2026 nihongotext.com</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
+  </div>
 </footer>
 
 <script>
@@ -139,10 +196,7 @@ const POS_LIST = [
   {id:'adjectives-na', file:'adjectives-na.json', label:'na-Adjective'},
   {id:'adverbs', file:'adverbs.json', label:'Adverbs'},
   {id:'particles', file:'particles.json', label:'Particles'},
-  {id:'conjunctions', file:'conjunctions.json', label:'Conjunctions'},
-  {id:'interjections', file:'interjections.json', label:'Interjections'},
-  {id:'numerals', file:'numerals.json', label:'Numerals'},
-  {id:'patterns', file:'patterns.json', label:'Patterns'}
+  {id:'numerals', file:'numerals.json', label:'Numerals'}
 ];
 
 async function fetchJson(lv, fileName) {
@@ -151,19 +205,15 @@ async function fetchJson(lv, fileName) {
     if (!res.ok) return [];
     const data = await res.json();
     return Array.isArray(data) ? data : (data.entries || []);
-  } catch(e) { 
-    return []; 
-  }
+  } catch(e) { return []; }
 }
 
 async function performSearch() {
   const kwInput = document.getElementById('kw');
   const listEl = document.getElementById('list');
   const statusEl = document.getElementById('status');
-  
   const query = kwInput.value.trim().toLowerCase();
-  const activeChip = document.querySelector('.chip.active');
-  const selectedPos = activeChip ? activeChip.dataset.pos : 'all';
+  const selectedPos = document.querySelector('.chip.active').dataset.pos;
 
   listEl.innerHTML = '';
   statusEl.textContent = 'Searching...';
@@ -176,50 +226,33 @@ async function performSearch() {
       const items = await fetchJson(lv, pos.file);
       const matches = items.filter(item => {
         if (!query) return true; 
-        return (
-          (item.ja && item.ja.includes(query)) ||
-          (item.kana && item.kana.includes(query)) ||
-          (item.en && item.en.toLowerCase().includes(query)) ||
-          (item.ro && item.ro.toLowerCase().includes(query))
-        );
+        return (item.ja?.includes(query) || item.kana?.includes(query) || item.en?.toLowerCase().includes(query));
       });
-
-      matches.forEach(item => {
-        allMatches.push({ ...item, lv, category: pos.label });
-      });
+      matches.forEach(item => allMatches.push({ ...item, lv, category: pos.label }));
     }
   }
 
-  if (allMatches.length === 0) {
-    statusEl.textContent = 'No results found.';
-    return;
-  }
+  if (!allMatches.length) { statusEl.textContent = 'No results found.'; return; }
 
   const displayItems = query ? allMatches : allMatches.slice(0, 50);
-  statusEl.textContent = query ? `Found ${allMatches.length} items.` : `Showing ${displayItems.length} items.`;
+  statusEl.textContent = query ? `Found ${allMatches.length} items.` : `Showing latest ${displayItems.length} items.`;
   
   displayItems.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
     
-    // .mp4音声プレイヤーの生成
-    const audioUrl = `/audio/${item.id}.mp4`;
-    const audioHtml = `
-      <div class="audio-container">
-        <audio controls src="${audioUrl}">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    `;
+    // Audio Path: using .mp4 as requested
+    const audioHtml = `<div class="audio-box"><audio controls src="/audio/${item.id}.mp4"></audio></div>`;
 
-    // 例文セクション（例文は3つまで表示）
+    // Examples: Strictly limit to 3 examples
     let examplesHtml = '';
     if (item.examples && item.examples.length > 0) {
+      const limitedEx = item.examples.slice(0, 3);
       examplesHtml = `
         <details class="example-details">
-          <summary>Show Examples (${item.examples.length})</summary>
+          <summary>Show Examples (${limitedEx.length})</summary>
           <div class="example-list">
-            ${item.examples.map(ex => `
+            ${limitedEx.map(ex => `
               <div class="ex-item">
                 <p class="ex-ja">${ex.ja}</p>
                 <p class="ex-ro">${ex.ro || ''}</p>
@@ -227,8 +260,7 @@ async function performSearch() {
               </div>
             `).join('')}
           </div>
-        </details>
-      `;
+        </details>`;
     }
 
     card.innerHTML = `
@@ -246,28 +278,23 @@ async function performSearch() {
   });
 }
 
-(async function init() {
-  const kwInput = document.getElementById('kw');
-  const posChips = document.getElementById('posChips');
+document.getElementById('posChips').addEventListener('click', e => {
+  if (e.target.classList.contains('chip')) {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    e.target.classList.add('active');
+    performSearch();
+  }
+});
 
-  posChips.addEventListener('click', (e) => {
-    if (e.target.classList.contains('chip')) {
-      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-      e.target.classList.add('active');
-      performSearch();
-    }
-  });
+let timer;
+document.getElementById('kw').addEventListener('input', () => {
+  clearTimeout(timer);
+  timer = setTimeout(performSearch, 300);
+});
 
-  let timer;
-  kwInput.addEventListener('input', () => {
-    clearTimeout(timer);
-    timer = setTimeout(performSearch, 400);
-  });
-
-  const params = new URLSearchParams(window.location.search);
-  const query = params.get('kw');
-  if (query) kwInput.value = decodeURIComponent(query);
-  
+// Init
+(function(){
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
   performSearch();
 })();
 </script>
