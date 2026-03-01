@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,46 +8,151 @@
 <link rel="icon" href="/favicon.ico" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
+
 <style>
-:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
-*{box-sizing:border-box}
-html,body{ margin:0;background:#fff;color:var(--ink);
-  font:16px/1.65 system-ui,-apple-system,sans-serif }
-.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+/* --- Design Tokens: User Specified --- */
+:root{
+  --shu:#e6462d;
+  --shu-tint:#fff2ef;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+}
 
-/* Header & Footer */
-.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
-.brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
-nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
-nav a{color:var(--ink);font-weight:600;font-size:14px;text-decoration:none}
-nav a:hover{color:var(--shu)}
+*{ box-sizing:border-box }
 
-/* Portal Style */
-.hero-section{text-align:center;padding:40px 0;background:var(--shu-tint);border-radius:0 0 50px 50px;margin-bottom:40px}
-.hero-section h1{font-size:36px;margin:0;color:var(--shu)}
+/* Font Stack: User Specified for High Quality Typography */
+html,body{
+  margin:0;
+  background:#fff;
+  color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
+        "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
+}
 
-.lesson-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:20px;margin-bottom:50px}
-.lesson-card{background:var(--card);border:1px solid #f1cbc6;border-radius:15px;overflow:hidden;transition:transform 0.2s;text-decoration:none;display:block}
-.lesson-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1)}
-.lesson-card img{width:100%;height:160px;object-fit:cover}
-.lesson-info{padding:15px}
-.lesson-category{font-size:12px;font-weight:700;color:var(--shu);text-transform:uppercase}
-.lesson-title{font-size:18px;font-weight:800;margin:5px 0 10px;color:var(--ink)}
-.lesson-desc{font-size:14px;color:var(--muted);line-height:1.4}
+a{ color:inherit; text-decoration:none }
 
-.footer{border-top:1px solid var(--shu-tint);padding:20px 0;text-align:center;color:var(--muted);font-size:12px}
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 16px;
+}
+
+/* --- Header: Unified Design --- */
+.site-header { background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30; }
+.site-header-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
+.logo-text { font-weight:800; font-size:32px; color:var(--shu); }
+.beta-text { font-size:20px; line-height:1; color:#98a1a8; margin-bottom: 5px; }
+.nav-links { display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; }
+.nav-links a { color:#333; font-weight:600; font-size:15px; }
+.nav-links a:hover { color:var(--shu); }
+.sns-nav { display:flex; align-items:center; gap:14px; font-size:20px; justify-content:center; margin-top: 5px; }
+.sns-nav a { color:var(--shu); }
+
+/* --- Portal Style (Preserved from original index.html) --- */
+.hero-section{
+  text-align:center;
+  padding:60px 0;
+  background:var(--shu-tint);
+  border-radius:0 0 50px 50px;
+  margin-bottom:40px;
+}
+.hero-section h1{
+  font-size:36px;
+  margin:0;
+  color:var(--shu);
+  font-weight: 800;
+}
+.hero-section p{
+  font-size:18px;
+  color:var(--ink);
+  margin-top: 10px;
+}
+
+.lesson-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+  gap:25px;
+  margin-bottom:50px;
+}
+.lesson-card{
+  background:#fff7f6; /* --card color */
+  border:1px solid #f1cbc6;
+  border-radius:15px;
+  overflow:hidden;
+  transition:transform 0.2s;
+  display:block;
+}
+.lesson-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+.lesson-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.lesson-info{ padding:20px; }
+.lesson-category{
+  font-size:12px;
+  font-weight:700;
+  color:var(--shu);
+  text-transform:uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+.lesson-title{
+  font-size:20px;
+  font-weight:800;
+  margin:0 0 10px;
+  color:var(--ink);
+}
+.lesson-desc{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+/* --- Footer: Unified Design --- */
+.site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding: 25px 0; margin-top: 40px; }
+.footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
+.footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
+.footer-nav { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+.footer-nav a { color:var(--shu); font-weight:600; }
+.footer-icons { display:flex; align-items:center; justify-content:center; gap:18px; font-size:22px; }
+.footer-icons a { color:var(--shu); }
 </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap">
-    <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
-    <nav>
-      <a href="/" style="font-weight:bold;">Home</a>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/" style="color:var(--shu);">Home</a>
       <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html">Quiz</a>
       <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </header>
@@ -89,21 +194,44 @@ nav a:hover{color:var(--shu)}
     </a>
 
     <a href="/station.html" class="lesson-card">
-  <img src="/assets/images/station.jpg" alt="Transportation">
-  <div class="lesson-info">
-    <span class="lesson-category">Transportation</span>
-    <h3 class="lesson-title">At the Station</h3>
-    <p class="lesson-desc">Learn how to ask for directions and buy tickets.</p>
-  </div>
-</a>
-     </div>
-    </div>
+      <img src="/assets/images/station.jpg" alt="Transportation">
+      <div class="lesson-info">
+        <span class="lesson-category">Transportation</span>
+        <h3 class="lesson-title">At the Station</h3>
+        <p class="lesson-desc">Learn how to ask for directions and buy tickets.</p>
+      </div>
+    </a>
   </div>
 </main>
 
-<footer class="footer">
-  <div class="wrap">© 2026 nihongotext.com</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
+  </div>
 </footer>
+
+<script>
+  // Dynamic Year for Footer
+  (function(){
+    const el = document.getElementById('ft-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>
 
 </body>
 </html>
