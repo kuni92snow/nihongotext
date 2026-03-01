@@ -1,5 +1,5 @@
 [
- {
+  {
     "id": "n5-iadj-001",
     "ja": "おいしい",
     "kana": "おいしい",
@@ -26,20 +26,6 @@
         "kana": "おいしい みず を のみました。",
         "ro": "oishii mizu o nomimashita.",
         "en": "I drank delicious water.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このレストランの料理はおいしいです。",
-        "kana": "この れすとらん の りょうり は おいしい です。",
-        "ro": "kono resutoran no ryouri wa oishii desu.",
-        "en": "The food at this restaurant is good.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "おいしいパンを買いました。",
-        "kana": "おいしい ぱん を かいました。",
-        "ro": "oishii pan o kaimashita.",
-        "en": "I bought delicious bread.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -69,22 +55,8 @@
       {
         "ja": "この薬はまずいです。",
         "kana": "この くすり は まずい です。",
-        "ro": "kono kusuri wa mazui desu.",
+        "ro": "kono kusuri wa まずい です。",
         "en": "This medicine tastes bad.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "まずい水を飲みたくありません。",
-        "kana": "まずい みず を のみたく ありません。",
-        "ro": "mazui mizu o nomitaku arimasen.",
-        "en": "I don’t want to drink bad-tasting water.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このレストランの料理はまずかった です。",
-        "kana": "この れすとらん の りょうり は まずかった です。",
-        "ro": "kono resutoran no ryouri wa mazukatta desu.",
-        "en": "The food at this restaurant was bad.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -117,20 +89,6 @@
         "ro": "kono isu wa sukoshi hikui desu.",
         "en": "This chair is a little low.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "声が低いです。",
-        "kana": "こえ が ひくい です。",
-        "ro": "koe ga hikui desu.",
-        "en": "The voice is low.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "天井が低い部屋です。",
-        "kana": "てんじょう が ひくい へや です。",
-        "ro": "tenjou ga hikui heya desu.",
-        "en": "It is a room with a low ceiling.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -161,20 +119,6 @@
         "kana": "つめたい かぜ が ふいて います。",
         "ro": "tsumetai kaze ga fuite imasu.",
         "en": "A cold wind is blowing.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "冷たい手ですね。",
-        "kana": "つめたい て です ね。",
-        "ro": "tsumetai te desu ne.",
-        "en": "Your hands are cold.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "冷たいスープが好きです。",
-        "kana": "つめたい すーぷ が すき です。",
-        "ro": "tsumetai suupu ga suki desu.",
-        "en": "I like cold soup.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -207,20 +151,6 @@
         "ro": "furui tokei ga arimasu.",
         "en": "I have an old clock.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "古い町が好きです。",
-        "kana": "ふるい まち が すき です。",
-        "ro": "furui machi ga suki desu.",
-        "en": "I like old towns.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "古い映画を見ました。",
-        "kana": "ふるい えいが を みました。",
-        "ro": "furui eiga o mimashita.",
-        "en": "I watched an old movie.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -251,20 +181,6 @@
         "kana": "しゅくだい が おおい です。",
         "ro": "shukudai ga ooi desu.",
         "en": "I have a lot of homework.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このクラスは学生が多いです。",
-        "kana": "この くらす は がくせい が おおい です。",
-        "ro": "kono kurasu wa gakusei ga ooi desu.",
-        "en": "There are many students in this class.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "日本には山が多いです。",
-        "kana": "にほん に は やま が おおい です。",
-        "ro": "nihon ni wa yama ga ooi desu.",
-        "en": "There are many mountains in Japan.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -297,20 +213,6 @@
         "ro": "ookii koe de hanashite kudasai.",
         "en": "Please speak in a loud voice.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このかばんは大きくて便利です。",
-        "kana": "この かばん は おおきくて べんり です。",
-        "ro": "kono kaban wa ookikute benri desu.",
-        "en": "This bag is big and convenient.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "あのスーパーは大きいです。",
-        "kana": "あの すーぱー は おおきい です。",
-        "ro": "ano suupaa wa ookii desu.",
-        "en": "That supermarket is big.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -341,20 +243,6 @@
         "kana": "この ほてる は やすい です。",
         "ro": "kono hoteru wa yasui desu.",
         "en": "This hotel is inexpensive.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このレストランは安くておいしいです。",
-        "kana": "この れすとらん は やすくて おいしい です。",
-        "ro": "kono resutoran wa yasukute oishii desu.",
-        "en": "This restaurant is cheap and tasty.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "そのかばんは安くありません。",
-        "kana": "その かばん は やすく ありません。",
-        "ro": "sono kaban wa yasuku arimasen.",
-        "en": "That bag is not cheap.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -387,20 +275,6 @@
         "ro": "heya ga samui desu.",
         "en": "The room is cold.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "外が寒いので、コートを着ます。",
-        "kana": "そと が さむい ので、こーと を きます。",
-        "ro": "soto ga samui node, kooto o kimasu.",
-        "en": "It’s cold outside, so I’ll wear a coat.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "寒い朝にコーヒーを飲みます。",
-        "kana": "さむい あさ に こーひー を のみます。",
-        "ro": "samui asa ni koohii o nomimasu.",
-        "en": "I drink coffee on cold mornings.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -431,20 +305,6 @@
         "kana": "ちいさい こども が こうえん で あそんで います。",
         "ro": "chiisai kodomo ga kouen de asonde imasu.",
         "en": "A small child is playing in the park.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "小さいかばんを買いました。",
-        "kana": "ちいさい かばん を かいました。",
-        "ro": "chiisai kaban o kaimashita.",
-        "en": "I bought a small bag.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "私のいぬは小さいです。",
-        "kana": "わたし の いぬ は ちいさい です。",
-        "ro": "watashi no inu wa chiisai desu.",
-        "en": "My dog is small.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -477,20 +337,6 @@
         "ro": "okane ga sukunai desu.",
         "en": "I have little money.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "この店はメニューが少ないです。",
-        "kana": "この みせ は めにゅー が すくない です。",
-        "ro": "kono mise wa menyuu ga sukunai desu.",
-        "en": "This shop has few menu items.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "冬は雨が少ないです。",
-        "kana": "ふゆ は あめ が すくない です。",
-        "ro": "fuyu wa ame ga sukunai desu.",
-        "en": "There is little rain in winter.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -521,20 +367,6 @@
         "kana": "ひろい いえ に すみたい です。",
         "ro": "hiroi ie ni sumitai desu.",
         "en": "I want to live in a large house.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "この教室は広くてきれいです。",
-        "kana": "この きょうしつ は ひろくて きれい です。",
-        "ro": "kono kyoushitsu wa hirokute kirei desu.",
-        "en": "This classroom is wide and clean.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "広い海を見ました。",
-        "kana": "ひろい うみ を みました。",
-        "ro": "hiroi umi o mimashita.",
-        "en": "I saw the wide sea.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -567,20 +399,6 @@
         "ro": "kono chiimu wa sukoshi yowai desu.",
         "en": "This team is a little weak.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼は力が弱いです。",
-        "kana": "かれ は ちから が よわい です。",
-        "ro": "kare wa chikara ga yowai desu.",
-        "en": "He is not very strong.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "私は寒さに弱いです。",
-        "kana": "わたし は さむさ に よわい です。",
-        "ro": "watashi wa samusa ni yowai desu.",
-        "en": "I am weak against the cold.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -611,20 +429,6 @@
         "kana": "つよい ちーむ が しあい に かちました。",
         "ro": "tsuyoi chiimu ga shiai ni kachimashita.",
         "en": "The strong team won the match.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "私は辛い食べ物が強くありません。",
-        "kana": "わたし は からい たべもの が つよく ありません。",
-        "ro": "watashi wa karai tabemono ga tsuyoku arimasen.",
-        "en": "I’m not good with spicy food.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼女は心が強いです。",
-        "kana": "かのじょ は こころ が つよい です。",
-        "ro": "kanojo wa kokoro ga tsuyoi desu.",
-        "en": "She has a strong heart.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -657,20 +461,6 @@
         "ro": "isogashikute hirugohan o taberaremasen deshita.",
         "en": "I was busy and couldn’t eat lunch.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "朝は家事で忙しいです。",
-        "kana": "あさ は かじ で いそがしい です。",
-        "ro": "asa wa kaji de isogashii desu.",
-        "en": "I’m busy with housework in the morning.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "忙しい日は早く寝ます。",
-        "kana": "いそがしい ひ は はやく ねます。",
-        "ro": "isogashii hi wa hayaku nemasu.",
-        "en": "On busy days, I go to bed early.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -701,20 +491,6 @@
         "kana": "いそがしくない ひ に あいましょう。",
         "ro": "isogashikunai hi ni aimashou.",
         "en": "Let’s meet on a day when we’re not busy.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "母は今日は忙しくないです。",
-        "kana": "はは は きょう は いそがしくない です。",
-        "ro": "haha wa kyou wa isogashikunai desu.",
-        "en": "My mother isn’t busy today.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼はあまり忙しくないです。",
-        "kana": "かれ は あまり いそがしくない です。",
-        "ro": "kare wa amari isogashikunai desu.",
-        "en": "He’s not very busy.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -747,20 +523,6 @@
         "ro": "kowai yume o mimashita.",
         "en": "I had a scary dream.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "虫が怖いです。",
-        "kana": "むし が こわい です。",
-        "ro": "mushi ga kowai desu.",
-        "en": "I’m scared of insects.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼は怖い顔をしています。",
-        "kana": "かれ は こわい かお を して います。",
-        "ro": "kare wa kowai kao o shite imasu.",
-        "en": "He has a scary face.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -791,20 +553,6 @@
         "kana": "からだ の ちょうし が わるい です。",
         "ro": "karada no choushi ga warui desu.",
         "en": "I’m not feeling well.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "音が悪くて聞こえません。",
-        "kana": "おと が わるくて きこえません。",
-        "ro": "oto ga warukute kikoemasen.",
-        "en": "The sound is bad, so I can’t hear it.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "それは悪い考えだと思います。",
-        "kana": "それ は わるい かんがえ だ と おもいます。",
-        "ro": "sore wa warui kangae da to omoimasu.",
-        "en": "I think that’s a bad idea.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -837,20 +585,6 @@
         "ro": "atarashii sensei ga kimashita.",
         "en": "A new teacher arrived.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "新しいレストランへ行きました。",
-        "kana": "あたらしい れすとらん へ いきました。",
-        "ro": "atarashii resutoran e ikimashita.",
-        "en": "I went to a new restaurant.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "新しい車がほしいです。",
-        "kana": "あたらしい くるま が ほしい です。",
-        "ro": "atarashii kuruma ga hoshii desu.",
-        "en": "I want a new car.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -881,20 +615,6 @@
         "kana": "はやい じかん に ねます。",
         "ro": "hayai jikan ni nemasu.",
         "en": "I go to bed early.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼は走るのが速いです。",
-        "kana": "かれ は はしる の が はやい です。",
-        "ro": "kare wa hashiru no ga hayai desu.",
-        "en": "He runs fast.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "朝ご飯を早く食べました。",
-        "kana": "あさごはん を はやく たべました。",
-        "ro": "asagohan o hayaku tabemashita.",
-        "en": "I ate breakfast early.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -927,20 +647,6 @@
         "ro": "kanojo wa seikaku ga akarui desu.",
         "en": "She has a cheerful personality.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "明るい色のシャツを着ます。",
-        "kana": "あかるい いろ の しゃつ を きます。",
-        "ro": "akarui iro no shatsu o kimasu.",
-        "en": "I wear a brightly colored shirt.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "この道は夜でも明るいです。",
-        "kana": "この みち は よる でも あかるい です。",
-        "ro": "kono michi wa yoru demo akarui desu.",
-        "en": "This road is bright even at night.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -971,20 +677,6 @@
         "kana": "へや が あつい です。",
         "ro": "heya ga atsui desu.",
         "en": "The room is hot.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "外は暑いから、水を飲みましょう。",
-        "kana": "そと は あつい から、みず を のみましょう。",
-        "ro": "soto wa atsui kara, mizu o nomimashou.",
-        "en": "It’s hot outside, so let’s drink water.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "暑い日はプールへ行きたいです。",
-        "kana": "あつい ひ は ぷーる へ いきたい です。",
-        "ro": "atsui hi wa puuru e ikitai desu.",
-        "en": "I want to go to the pool on hot days.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1017,20 +709,6 @@
         "ro": "atatakai suupu o nomimashita.",
         "en": "I drank warm soup.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "この部屋は暖かいです。",
-        "kana": "この へや は あたたかい です。",
-        "ro": "kono heya wa atatakai desu.",
-        "en": "This room is warm.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "温かいコートを着ます。",
-        "kana": "あたたかい こーと を きます。",
-        "ro": "atatakai kooto o kimasu.",
-        "en": "I wear a warm coat.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1061,20 +739,6 @@
         "kana": "ともだち と はなす の は たのしい です。",
         "ro": "tomodachi to hanasu no wa tanoshii desu.",
         "en": "Talking with friends is fun.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "日本の旅行は楽しかったです。",
-        "kana": "にほん の りょこう は たのしかった です。",
-        "ro": "nihon no ryokou wa tanoshikatta desu.",
-        "en": "The trip to Japan was fun.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "楽しい音楽を聞きます。",
-        "kana": "たのしい おんがく を ききます。",
-        "ro": "tanoshii ongaku o kikimasu.",
-        "en": "I listen to cheerful music.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1107,20 +771,6 @@
         "ro": "ki no kage wa suzushii desu.",
         "en": "It’s cool in the shade of a tree.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "海の風が涼しいです。",
-        "kana": "うみ の かぜ が すずしい です。",
-        "ro": "umi no kaze ga suzushii desu.",
-        "en": "The sea breeze is cool.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "涼しい夜に散歩します。",
-        "kana": "すずしい よる に さんぽ します。",
-        "ro": "suzushii yoru ni sanpo shimasu.",
-        "en": "I take a walk on cool nights.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1151,20 +801,6 @@
         "kana": "せまい ところ が にがて です。",
         "ro": "semai tokoro ga nigate desu.",
         "en": "I don’t like narrow places.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このレストランは少し狭いです。",
-        "kana": "この れすとらん は すこし せまい です。",
-        "ro": "kono resutoran wa sukoshi semai desu.",
-        "en": "This restaurant is a little small.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "狭い道を歩きました。",
-        "kana": "せまい みち を あるきました。",
-        "ro": "semai michi o arukimashita.",
-        "en": "I walked on a narrow street.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1197,20 +833,6 @@
         "ro": "kono kudamono wa totemo amai desu.",
         "en": "This fruit is very sweet.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "コーヒーが甘すぎます。",
-        "kana": "こーひー が あますぎます。",
-        "ro": "koohii ga amasugimasu.",
-        "en": "The coffee is too sweet.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "甘い香りがします。",
-        "kana": "あまい かおり が します。",
-        "ro": "amai kaori ga shimasu.",
-        "en": "It has a sweet smell.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1241,20 +863,6 @@
         "kana": "ころんで あし が いたい です。",
         "ro": "koronde ashi ga itai desu.",
         "en": "I fell and my leg hurts.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "お腹が少し痛いです。",
-        "kana": "おなか が すこし いたい です。",
-        "ro": "onaka ga sukoshi itai desu.",
-        "en": "My stomach hurts a little.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "肩が痛いので休みます。",
-        "kana": "かた が いたい ので やすみます。",
-        "ro": "kata ga itai node yasumimasu.",
-        "en": "I’ll rest because my shoulder hurts.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1287,20 +895,6 @@
         "ro": "shiroi hana ga kirei desu.",
         "en": "The white flowers are beautiful.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "白いくつを買いました。",
-        "kana": "しろい くつ を かいました。",
-        "ro": "shiroi kutsu o kaimashita.",
-        "en": "I bought white shoes.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "白い犬が走っています。",
-        "kana": "しろい いぬ が はしって います。",
-        "ro": "shiroi inu ga hashitte imasu.",
-        "en": "A white dog is running.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1331,20 +925,6 @@
         "kana": "みじかい てがみ を かきました。",
         "ro": "mijikai tegami o kakimashita.",
         "en": "I wrote a short letter.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "夏休みは短いです。",
-        "kana": "なつやすみ は みじかい です。",
-        "ro": "natsuyasumi wa mijikai desu.",
-        "en": "Summer vacation is short.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "短い時間でしたが、楽しかったです。",
-        "kana": "みじかい じかん でした が、たのしかった です。",
-        "ro": "mijikai jikan deshita ga, tanoshikatta desu.",
-        "en": "It was a short time, but I had fun.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1377,20 +957,6 @@
         "ro": "haha wa wakaku miemasu.",
         "en": "My mother looks young.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "若い先生が来ました。",
-        "kana": "わかい せんせい が きました。",
-        "ro": "wakai sensei ga kimashita.",
-        "en": "A young teacher came.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼女はとても若いです。",
-        "kana": "かのじょ は とても わかい です。",
-        "ro": "kanojo wa totemo wakai desu.",
-        "en": "She is very young.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1421,20 +987,6 @@
         "kana": "にがい あじ が します。",
         "ro": "nigai aji ga shimasu.",
         "en": "It tastes bitter.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "彼は苦い顔をしました。",
-        "kana": "かれ は にがい かお を しました。",
-        "ro": "kare wa nigai kao o shimashita.",
-        "en": "He made a bitter face.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "少し苦いチョコレートです。",
-        "kana": "すこし にがい ちょこれーと です。",
-        "ro": "sukoshi nigai chokoreeto desu.",
-        "en": "It’s slightly bitter chocolate.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1467,20 +1019,6 @@
         "ro": "akai ringo o tabemashita.",
         "en": "I ate a red apple.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "赤いシャツを着ます。",
-        "kana": "あかい しゃつ を きます。",
-        "ro": "akai shatsu o kimasu.",
-        "en": "I wear a red shirt.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "赤いペンで書きました。",
-        "kana": "あかい ぺん で かきました。",
-        "ro": "akai pen de kakimashita.",
-        "en": "I wrote with a red pen.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1511,20 +1049,6 @@
         "kana": "この はこ は かるく もてます。",
         "ro": "kono hako wa karuku motemasu.",
         "en": "This box is light enough to carry.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "軽い運動をしました。",
-        "kana": "かるい うんどう を しました。",
-        "ro": "karui undou o shimashita.",
-        "en": "I did light exercise.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "軽い食事をとります。",
-        "kana": "かるい しょくじ を とります。",
-        "ro": "karui shokuji o torimasu.",
-        "en": "I have a light meal.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1557,20 +1081,6 @@
         "ro": "chikai suupaa e ikimasu.",
         "en": "I go to a nearby supermarket.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "ここは駅に近いです。",
-        "kana": "ここ は えき に ちかい です。",
-        "ro": "koko wa eki ni chikai desu.",
-        "en": "Here is close to the station.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "近い場所に友達がいます。",
-        "kana": "ちかい ばしょ に ともだち が います。",
-        "ro": "chikai basho ni tomodachi ga imasu.",
-        "en": "I have a friend nearby.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1601,20 +1111,6 @@
         "kana": "きのう は かえる の が おそかった です。",
         "ro": "kinou wa kaeru no ga osokatta desu.",
         "en": "I went home late yesterday.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "仕事が遅いです。",
-        "kana": "しごと が おそい です。",
-        "ro": "shigoto ga osoi desu.",
-        "en": "The work is slow.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "ご飯の時間が遅いです。",
-        "kana": "ごはん の じかん が おそい です。",
-        "ro": "gohan no jikan ga osoi desu.",
-        "en": "Dinner time is late.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1647,20 +1143,6 @@
         "ro": "tooi kuni e ryokou shitai desu.",
         "en": "I want to travel to a far country.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "友達の家は遠いので、バスで行きます。",
-        "kana": "ともだち の いえ は とおい ので、ばす で いきます。",
-        "ro": "tomodachi no ie wa tooi node, basu de ikimasu.",
-        "en": "My friend’s house is far, so I go by bus.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "ここから海は遠いです。",
-        "kana": "ここ から うみ は とおい です。",
-        "ro": "koko kara umi wa tooi desu.",
-        "en": "The sea is far from here.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1691,20 +1173,6 @@
         "kana": "みせ は ここ から とおくない です。",
         "ro": "mise wa koko kara tookunai desu.",
         "en": "The shop isn’t far from here.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "駅まで遠くないですよ。",
-        "kana": "えき まで とおくない です よ。",
-        "ro": "eki made tookunai desu yo.",
-        "en": "It’s not far to the station.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "公園は遠くないので歩きます。",
-        "kana": "こうえん は とおくない ので あるきます。",
-        "ro": "kouen wa tookunai node arukimasu.",
-        "en": "The park isn’t far, so I’ll walk.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1737,20 +1205,6 @@
         "ro": "kono tsukue wa totemo omoi desu.",
         "en": "This desk is very heavy.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "重いドアを開けます。",
-        "kana": "おもい どあ を あけます。",
-        "ro": "omoi doa o akemasu.",
-        "en": "I open the heavy door.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "体が重いです。",
-        "kana": "からだ が おもい です。",
-        "ro": "karada ga omoi desu.",
-        "en": "My body feels heavy.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1781,20 +1235,6 @@
         "kana": "ながい じかん まちました。",
         "ro": "nagai jikan machimashita.",
         "en": "I waited for a long time.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "長い川を見ました。",
-        "kana": "ながい かわ を みました。",
-        "ro": "nagai kawa o mimashita.",
-        "en": "I saw a long river.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "その映画は少し長いです。",
-        "kana": "その えいが は すこし ながい です。",
-        "ro": "sono eiga wa sukoshi nagai desu.",
-        "en": "That movie is a bit long.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1827,20 +1267,6 @@
         "ro": "tesuto wa muzukashikatta desu.",
         "en": "The test was difficult.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "難しい言葉を使いました。",
-        "kana": "むずかしい ことば を つかいました。",
-        "ro": "muzukashii kotoba o tsukaimashita.",
-        "en": "I used difficult words.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "この本は少し難しいです。",
-        "kana": "この ほん は すこし むずかしい です。",
-        "ro": "kono hon wa sukoshi muzukashii desu.",
-        "en": "This book is a little difficult.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1871,20 +1297,6 @@
         "kana": "あおい しゃつ を きました。",
         "ro": "aoi shatsu o kimashita.",
         "en": "I wore a blue shirt.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "青い海がきれいです。",
-        "kana": "あおい うみ が きれい です。",
-        "ro": "aoi umi ga kirei desu.",
-        "en": "The blue sea is beautiful.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "青いペンで書きます。",
-        "kana": "あおい ぺん で かきます。",
-        "ro": "aoi pen de kakimasu.",
-        "en": "I write with a blue pen.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
@@ -1917,20 +1329,6 @@
         "ro": "kare wa omoshiroi hito desu.",
         "en": "He is a funny person.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "面白い話を聞きました。",
-        "kana": "おもしろい はなし を ききました。",
-        "ro": "omoshiroi hanashi o kikimashita.",
-        "en": "I heard an interesting story.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "このゲームは面白いです。",
-        "kana": "この げーむ は おもしろい です。",
-        "ro": "kono geemu wa omoshiroi desu.",
-        "en": "This game is fun.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -1962,20 +1360,6 @@
         "ro": "yama ga takai desu.",
         "en": "The mountain is high.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "あのホテルは少し高いです。",
-        "kana": "あの ほてる は すこし たかい です。",
-        "ro": "ano hoteru wa sukoshi takai desu.",
-        "en": "That hotel is a little expensive.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "高い靴を買いました。",
-        "kana": "たかい くつ を かいました。",
-        "ro": "takai kutsu o kaimashita.",
-        "en": "I bought expensive shoes.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
   },
@@ -2006,20 +1390,6 @@
         "kana": "くろい ふく を きます。",
         "ro": "kuroi fuku o kimasu.",
         "en": "I wear black clothes.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "夜空は黒いです。",
-        "kana": "よぞら は くろい です。",
-        "ro": "yozora wa kuroi desu.",
-        "en": "The night sky is black.",
-        "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
-      },
-      {
-        "ja": "黒いペンで書きます。",
-        "kana": "くろい ぺん で かきます。",
-        "ro": "kuroi pen de kakimasu.",
-        "en": "I write with a black pen.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
     ]
