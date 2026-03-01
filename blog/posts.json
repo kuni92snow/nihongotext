@@ -81,13 +81,23 @@
 },
 {
   "slug": "station-lesson-added",
-  "date": "2026-03-07",
+  "date": "2026-02-28",
   "title": "New Content: At the Station",
   "title_ja": "新着：駅での会話レッスンを公開しました",
   "title_en": "New Content: At the Station",
   "summary_ja": "日本での移動がスムーズに！駅の場所を聞いたり、切符を買う時に使えるフレーズを音声付きで学びましょう。",
   "summary_en": "Navigate Japanese trains with confidence! Learn how to ask for directions and check fares in our new station-themed lesson.",
   "tags": ["new-content", "beginner", "transport"]
-}
+},
+  {
+    "slug": "quiz-feature-major-update",
+    "date": "2026-03-01",
+    "title": "Major Update to Quiz Feature",
+    "title_ja": "クイズ機能を大幅アップデートしました",
+    "title_en": "Major Update to Quiz Feature",
+    "summary_ja": "クイズ機能を大幅に改良しました！動詞の活用（例：『着く』→『着きました』）を自動認識して自然な空欄が作られるようになり、すべての問題に英語翻訳を追加しました。デザインもサイト全体と統一し、PC・スマホ両方でより学習しやすくなっています。",
+    "summary_en": "We’ve significantly improved the quiz feature! Blanks now naturally adapt to verb conjugations, and English translations are now provided for every question. The design has also been unified with the rest of the site for a seamless learning experience on both desktop and mobile.",
+    "tags": ["update", "quiz", "feature"]
+  }
   
 ]
