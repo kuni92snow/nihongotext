@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,7 +7,6 @@
 <link rel="icon" href="/favicon.ico" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<!-- GA4 (disable auto page_view like main page) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,773 +16,239 @@
 </script>
 
 <style>
-:root{
-  --shu:#e6462d; --shu-tint:#fff2ef;
-  --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6;
-}
-*{box-sizing:border-box}
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{ box-sizing:border-box }
 html,body{
-  margin:0;background:#fff;color:var(--ink);
+  margin:0; background:#fff; color:var(--ink);
   font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
-       "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
+        "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
 }
-a{color:inherit;text-decoration:none}
-button{cursor:pointer}
+a{ color:inherit; text-decoration:none }
+button{ cursor:pointer; font-family:inherit; }
+.wrap{ max-width:1100px; margin:0 auto; padding:0 16px; }
 
-/* ヘッダー中央揃え＋コンテンツ幅に合わせる */
-.topbar{
-  border-top:4px solid var(--shu);
-  border-bottom:1px solid var(--shu-tint);
-  background:#fff;
-  display:flex;
-  justify-content:center;
-}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-.brandbar{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  padding:14px 0;
-  width:100%;
-  max-width:1100px;
-}
+/* --- Unified Header --- */
+.site-header { background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30; }
+.site-header-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
+.logo-text { font-weight:800; font-size:32px; color:var(--shu); }
+.beta-text { font-size:20px; color:#98a1a8; margin-bottom: 5px; }
+.nav-links { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+.nav-links a { color:#333; font-weight:600; font-size:15px; }
+.nav-links a:hover { color:var(--shu); }
+.sns-nav { display:flex; align-items:center; gap:14px; font-size:20px; justify-content:center; margin-top: 5px; }
+.sns-nav a { color:var(--shu); }
 
-.btn{
-  border:1px solid var(--shu);
-  color:var(--shu);
-  background:#fff;
-  border-radius:10px;
-  padding:8px 12px;
-  font-weight:700;
-}
-.btn.primary{
-  background:var(--shu);
-  color:#fff;
-}
-select,input[type="number"]{
-  height:40px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:0 12px;
-  background:#fff;
-}
+/* --- Quiz Controls --- */
+.controls { background:#f9fafb; padding:20px; border-radius:15px; margin:20px 0; border:1px solid var(--line); display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
+.controls label { font-size:12px; color:var(--muted); display:flex; flex-direction:column; gap:4px; font-weight:bold; }
+select, input[type="number"] { height:40px; border:1px solid var(--line); border-radius:10px; padding:0 10px; background:#fff; }
 
-.controls{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  flex-wrap:wrap;
-  margin:18px 0;
-}
-.controls label{
-  font-size:13px;
-  color:var(--muted);
-  display:flex;
-  flex-direction:column;
-  gap:4px;
-}
+.btn { border:1px solid var(--shu); color:var(--shu); background:#fff; border-radius:10px; padding:10px 20px; font-weight:700; transition:0.2s; }
+.btn:hover { background:var(--shu-tint); }
+.btn.primary { background:var(--shu); color:#fff; }
+.btn.primary:hover { opacity:0.9; }
 
-.card{
-  background:var(--card);
-  border:1px solid #f1cbc6;
-  border-radius:14px;
-  padding:14px;
-}
-.choice{
-  display:block;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:10px;
-  margin:8px 0;
-  background:#fff;
-  width:100%;
-  text-align:left;
-}
-.choice.correct{border-color:#16a34a}
-.choice.wrong{border-color:#dc2626}
+/* --- Quiz Stage --- */
+.card { background:var(--card); border:1px solid #f1cbc6; border-radius:14px; padding:25px; margin-bottom:30px; }
+.badge { display:inline-block; background:#fff; border:1px solid #f1cbc6; padding:4px 12px; border-radius:999px; font-size:13px; font-weight:700; color:var(--muted); }
+.q-sentence { font-size:24px; font-weight:800; margin:20px 0; line-height:1.4; color:var(--ink); }
+.choice { width:100%; text-align:left; padding:15px; border:1px solid var(--line); border-radius:12px; background:#fff; margin-bottom:10px; font-size:16px; transition:0.2s; }
+.choice:hover:not(:disabled) { border-color:var(--shu); background:var(--shu-tint); }
+.choice.correct { border-color:#10b981; background:#ecfdf5; color:#065f46; font-weight:bold; }
+.choice.wrong { border-color:#ef4444; background:#fef2f2; color:#991b1b; }
 
-/* フッターも中央揃え＋コンテンツ幅に合わせる */
-.footer{
-  border-top:1px solid var(--shu-tint);
-  background:#fff;
-  display:flex;
-  justify-content:center;
-}
-.footer-inner{
-  padding:16px 0;
-  display:flex;
-  gap:10px;
-  align-items:center;
-  justify-content:center;
-  color:var(--muted);
-  font-size:12px;
-  width:100%;
-  max-width:1100px;
-}
+/* --- Example Panel --- */
+.ex-panel { margin-top:20px; padding-top:15px; border-top:1px dashed #f1cbc6; font-size:14px; }
+.ex-row { margin-bottom:10px; }
+.ex-label { font-weight:bold; color:var(--shu); display:block; margin-bottom:4px; }
 
-.badge{
-  display:inline-block;
-  border:1px solid var(--line);
-  border-radius:999px;
-  padding:4px 8px;
-  background:#fff;
-  font-weight:700;
-}
-.meta{color:var(--muted);font-size:13px}
-
-/* History list */
-#historyList{
-  font-size:13px;
-}
-#historyList .history-item{
-  padding:4px 0;
-  border-top:1px dashed #f1cbc6;
-}
-#historyList .history-item:first-child{
-  border-top:none;
-}
-#historyList .label{
-  font-weight:700;
-}
-
-/* 例文エリア */
-.ex-panel{
-  margin-top:8px;
-  border-top:1px dashed #f1cbc6;
-  padding-top:8px;
-  font-size:13px;
-}
-.ex-row{
-  margin-bottom:6px;
-}
-.ex-label{
-  font-weight:600;
-  margin-right:6px;
-  display:inline-flex;
-  align-items:center;
-  gap:4px;
-}
-.ex-block{
-  margin-left:22px;
-  margin-top:2px;
-}
-.ex-block div{
-  margin:1px 0;
-}
+/* --- Footer --- */
+.site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding:25px 0; margin-top:40px; }
+.footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
+.footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
 </style>
 </head>
 <body>
 
-<!-- Shared header via partials (fallback if missing) -->
-<div class="topbar"><div id="site-header" class="wrap brandbar"></div></div>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html" style="color:var(--shu)">Quiz</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+    </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
+    </nav>
+  </div>
+</header>
 
 <main class="wrap">
   <div class="controls">
     <label>Level
       <select id="levelSel">
-        <option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option>
+        <option value="N5">N5</option><option value="N4">N4</option><option value="N3">N3</option><option value="N2">N2</option><option value="N1">N1</option>
       </select>
     </label>
-
-    <label>Part
+    <label>Category
       <select id="posSel">
         <option value="verbs">Verbs</option>
         <option value="nouns">Nouns</option>
-        <option value="iadj">i-Adjectives</option>
-        <option value="naadj">na-Adjectives</option>
-        <option value="advs">Adverbs</option>
-        <option value="prt">Particles</option>
-        <option value="conj">Conjunctions</option>
-        <option value="interj">Interjections</option>
-        <option value="nums">Numerals</option>
-        <option value="pat">Patterns</option>
+        <option value="adjectives-i">i-Adjectives</option>
+        <option value="adjectives-na">na-Adjectives</option>
       </select>
     </label>
-
-    <label>Questions
-      <input id="qCount" type="number" min="5" max="30" step="1" value="10" style="width:90px">
+    <label>Count
+      <input id="qCount" type="number" value="10" min="5" max="30">
     </label>
-
-    <button id="startBtn" class="btn primary" type="button">Start</button>
-    <span id="about" class="meta" style="margin-left:auto"></span>
+    <button id="startBtn" class="btn primary">Start Quiz</button>
   </div>
 
-  <section id="stage" class="card" aria-live="polite">
+  <section id="stage" class="card">
     <div id="intro">
-      <h2 style="margin:0 0 8px">Multiple-choice Quiz (JLPT-style)</h2>
-      <p class="meta" style="margin:0 0 8px">
-        Each question shows a Japanese sentence with <strong>（　　）</strong>.
-        Choose the best word from 1–4, like the JLPT vocabulary questions.
-      </p>
-      <p class="meta" style="margin:0">
-        After answering, you can see example sentences in <strong>Japanese / Hiragana / Romaji / English</strong>
-        and toggle each with checkboxes.
-      </p>
+      <h2>JLPT Vocabulary Quiz</h2>
+      <p style="color:var(--muted)">Choose the best word to fill in the blank （　　）.</p>
     </div>
 
-    <div id="quiz" style="display:none">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
-        <div id="crumbs" class="badge">—</div>
-        <div id="score" class="badge">Score: 0</div>
+    <div id="quizArea" style="display:none">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div id="qCrumbs" class="badge">1 / 10</div>
+        <div id="qScore" class="badge">Score: 0</div>
       </div>
-      <h3 id="qtext" style="margin:12px 0 8px">—</h3>
-      <div id="subtext" class="meta" style="margin:0 0 8px">
-        （　　）に入ることばとして、いちばんよいものを １～４ からえらびなさい。
-      </div>
-      <div id="choices"></div>
-      <div id="explain" class="meta" style="display:none;margin-top:8px"></div>
-      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px;flex-wrap:wrap">
-        <button id="stopBtn" class="btn" type="button">Stop</button>
-        <button id="nextBtn" class="btn" type="button" disabled>Next</button>
-        <button id="finishBtn" class="btn primary" type="button" style="display:none">Finish</button>
+      <div id="qText" class="q-sentence">（　　）に入ることばをえらんでください。</div>
+      <div id="qChoices"></div>
+      <div id="qExplain" class="ex-panel" style="display:none"></div>
+      <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+        <button id="stopBtn" class="btn">Stop</button>
+        <button id="nextBtn" class="btn primary" disabled>Next</button>
       </div>
     </div>
 
-    <div id="result" style="display:none">
-      <h3 style="margin:0 0 8px">Result</h3>
-      <p id="resultText" style="margin:0 0 8px"></p>
-      <p id="resultDetail" class="meta" style="margin:0 0 8px"></p>
-      <button id="retryWrongBtn" class="btn primary" type="button" style="display:none;margin:0 0 8px">
-        Retry incorrect questions
-      </button>
-      <br />
-      <button id="retryBtn" class="btn" type="button">Back to intro</button>
+    <div id="resultArea" style="display:none; text-align:center;">
+      <h3>Result</h3>
+      <div id="resultSummary" style="font-size:24px; font-weight:800; margin:20px 0;"></div>
+      <button onclick="location.reload()" class="btn primary">Try Again</button>
     </div>
-  </section>
-
-  <section id="history" class="card" style="margin-top:16px">
-    <h3 style="margin:0 0 8px">Quiz History</h3>
-    <p class="meta" style="margin:0 0 8px">
-      Your last 20 quiz results on this device.
-    </p>
-    <div id="historyList" class="meta"></div>
   </section>
 </main>
 
-<!-- Shared footer -->
-<div class="footer"><div id="site-footer" class="wrap footer-inner"></div></div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav style="display:flex; gap:15px; margin-bottom:10px;">
+      <a href="/legal.html" style="color:var(--shu); font-weight:600;">Legal</a>
+      <a href="/privacy.html" style="color:var(--shu); font-weight:600;">Privacy</a>
+    </nav>
+  </div>
+</footer>
 
 <script>
-/* ===== Inject shared header/footer (same approach as main page) ===== */
-async function injectPartials(){
-  const hdr=document.getElementById('site-header');
-  const ftr=document.getElementById('site-footer');
-  try{
-    const h=await fetch('/partials/header.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    hdr.innerHTML=h;
-  }catch(_){
-    hdr.innerHTML =
-      '<a href="/" style="font-weight:800;font-size:28px;color:#e6462d">nihongotext' +
-      '<span style="color:#333">.com</span></a>' +
-      '<span style="color:#98a1a8;font-size:12px;margin-left:8px">== beta version ==</span>';
-  }
-  try{
-    const f=await fetch('/partials/footer.html',{cache:'no-store'}).then(r=>r.ok?r.text():Promise.reject());
-    ftr.innerHTML=f;
-  }catch(_){
-    ftr.innerHTML = '© 2025 nihongotext.com';
-  }
-}
+let bank = [], quiz = [], idx = 0, score = 0;
 
-/* ===== POS mapping (aligned with your main index) ===== */
-const POS = [
-  {k:'nouns', file:'nouns.json',        en:'Nouns'},
-  {k:'verbs', file:'verbs.json',        en:'Verbs'},
-  {k:'iadj',  file:'adjectives-i.json', en:'i-Adjectives'},
-  {k:'naadj', file:'adjectives-na.json',en:'na-Adjectives'},
-  {k:'advs',  file:'adverbs.json',      en:'Adverbs'},
-  {k:'prt',   file:'particles.json',    en:'Particles'},
-  {k:'conj',  file:'conjunctions.json', en:'Conjunctions'},
-  {k:'interj',file:'interjections.json',en:'Interjections'},
-  {k:'nums',  file:'numerals.json',     en:'Numerals'},
-  {k:'pat',   file:'patterns.json',     en:'Patterns'},
-];
+function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
 
-function buildPath(level, posKey){
-  const p = POS.find(x=>x.k===posKey);
-  return `/data/json/${level}/${p.file}`;
-}
+async function startQuiz() {
+  const lv = document.getElementById('levelSel').value;
+  const pos = document.getElementById('posSel').value;
+  const count = parseInt(document.getElementById('qCount').value);
 
-/* ===== Utils ===== */
-function shuffle(arr){
-  return arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
-}
-function coerceArray(json){
-  if(Array.isArray(json)) return json;
-  const keys=['items','data','entries','list','rows','result','results'];
-  for(const k of keys){
-    if(json && Array.isArray(json[k])) return json[k];
-  }
-  if(json && typeof json==='object'){
-    const vals=Object.values(json);
-    if(vals.length && vals.every(v=>typeof v==='object')) return vals;
-  }
-  return [];
-}
-function uuid(){
-  try{
-    if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
-  }catch(_){}
-  return Math.random().toString(16).slice(2) + Date.now().toString(16);
-}
-function formatDateTime(ts){
-  const d = new Date(ts);
-  if(isNaN(d)) return '';
-  return d.toLocaleString([], {year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
-}
-function escapeHtml(str){
-  return String(str||'')
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;');
-}
+  try {
+    const res = await fetch(`/data/json/${lv}/${pos}.json`);
+    const data = await res.json();
+    bank = Array.isArray(data) ? data : (data.entries || []);
+    
+    if (bank.length < 4) return alert("Not enough data.");
+    
+    // クイズ生成
+    quiz = shuffle([...bank]).slice(0, count).map(item => {
+      const correct = item.ja;
+      const distractors = shuffle(bank.filter(x => x.ja !== correct)).slice(0, 3).map(x => x.ja);
+      const options = shuffle([correct, ...distractors]);
+      
+      // 問題文（例文がある場合は活用し、ない場合はヒント形式）
+      let sentence = "（　　）";
+      if (item.examples && item.examples.length > 0) {
+        const ex = item.examples[0].ja;
+        sentence = ex.includes(correct) ? ex.replace(correct, "（　　）") : `（　　） ${ex}`;
+      }
 
-/* ===== State ===== */
-let bank=[], quiz=[], idx=0, score=0, level='N5', posKey='verbs';
-let answersLog = [];     // [{chosen, correct}, ...]
-let lastSession = null;  // {level,posKey,questions,answers,status}
-let history = [];        // summary history (localStorage)
-
-/* ===== History storage ===== */
-const HISTORY_KEY = 'nt_quiz_history_v1';
-
-function loadHistory(){
-  try{
-    const raw = localStorage.getItem(HISTORY_KEY);
-    if(!raw) return [];
-    const parsed = JSON.parse(raw);
-    if(Array.isArray(parsed)) return parsed;
-  }catch(_){}
-  return [];
-}
-function saveHistory(){
-  try{
-    localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
-  }catch(_){}
-}
-function addHistoryEntry(entry){
-  history.unshift(entry);
-  if(history.length>20) history = history.slice(0,20);
-  saveHistory();
-  renderHistory();
-}
-function renderHistory(){
-  const box = document.getElementById('historyList');
-  if(!box) return;
-  if(!history.length){
-    box.textContent = 'No quiz history yet.';
-    return;
-  }
-  box.innerHTML = '';
-  history.forEach(h=>{
-    const div = document.createElement('div');
-    div.className = 'history-item';
-    const statusLabel = (h.status === 'completed') ? 'Completed' : 'Stopped';
-    div.innerHTML =
-      `<span class="label">${formatDateTime(h.ts)}</span> — ` +
-      `Level ${h.level} / ${h.posKey} — ` +
-      `${h.correct} / ${h.answered} correct (out of ${h.total}) ` +
-      `– ${statusLabel}`;
-    box.appendChild(div);
-  });
-}
-
-/* ===== JLPT-style quiz builder =====
-   - Use a Japanese sentence with （　　） where the target word appears.
-   - Choices: 4 Japanese words (Kanji) – 1 correct + 3 distractors.
-*/
-function makeBlankSentence(example, item){
-  const targetJa   = item.ja   || '';
-  const targetKana = item.kana || '';
-  const targetRo   = item.ro   || '';
-
-  const srcJa   = example.ja   || '';
-  const srcKana = example.kana || '';
-  const srcRo   = example.ro   || '';
-
-  const BLANK = '（　　）';
-
-  let jaBlank = srcJa;
-  let kanaBlank = srcKana;
-  let roBlank = srcRo;
-
-  if(targetJa && srcJa.includes(targetJa)){
-    jaBlank = srcJa.replace(targetJa, BLANK);
-  }else if(targetKana && srcJa.includes(targetKana)){
-    jaBlank = srcJa.replace(targetKana, BLANK);
-  }else if(srcJa){
-    jaBlank = BLANK + ' ' + srcJa;
-  }
-
-  if(targetKana && srcKana.includes(targetKana)){
-    kanaBlank = srcKana.replace(targetKana, BLANK);
-  }else if(srcKana){
-    kanaBlank = BLANK + ' ' + srcKana;
-  }
-
-  if(targetRo && srcRo.includes(targetRo)){
-    roBlank = srcRo.replace(targetRo, BLANK);
-  }else if(srcRo){
-    roBlank = BLANK + ' ' + srcRo;
-  }
-
-  return {
-    ja:   jaBlank || BLANK,
-    kana: kanaBlank || '',
-    ro:   roBlank || '',
-    en:   example.en || ''
-  };
-}
-
-function generateQuizFromBank(items, count=10){
-  const pool = items.filter(x=>x && (x.en||x.ja));
-  const base = shuffle(pool).slice(0, Math.min(count, pool.length));
-  const out = [];
-
-  base.forEach(item=>{
-    const allExamples = Array.isArray(item.examples) ? item.examples.slice() : [];
-    const example = allExamples[0] || {
-      ja:   item.ja   || '',
-      kana: item.kana || '',
-      ro:   item.ro   || '',
-      en:   item.en   || ''
-    };
-
-    const sentenceBlank = makeBlankSentence(example, item);
-
-    const correctWord = item.ja || '';
-    const distractFrom = pool.filter(x=>{
-      const v = x.ja;
-      return v && v !== correctWord;
+      return { item, sentence, options, answer: options.indexOf(correct) };
     });
-    const distract = shuffle(distractFrom).slice(0,3).map(x=> x.ja || '');
-    const options = shuffle([correctWord, ...distract]);
 
-    out.push({
-      id: item.id || uuid(),
-      item,
-      sentenceBlank,      // {ja,kana,ro,en} with （　　）
-      options,
-      answer: options.indexOf(correctWord),
-      examples: allExamples.length ? allExamples : [example]
-    });
-  });
-
-  return out;
+    idx = 0; score = 0;
+    document.getElementById('intro').style.display = 'none';
+    document.getElementById('quizArea').style.display = 'block';
+    renderQuestion();
+  } catch (e) { alert("Failed to load data."); }
 }
 
-/* ===== Views ===== */
-function showIntro(){
-  document.getElementById('intro').style.display='';
-  document.getElementById('quiz').style.display='none';
-  document.getElementById('result').style.display='none';
-  document.getElementById('about').textContent='';
-}
-function showQuiz(){
-  document.getElementById('intro').style.display='none';
-  document.getElementById('quiz').style.display='';
-  document.getElementById('result').style.display='none';
-}
-function showResult(){
-  document.getElementById('intro').style.display='none';
-  document.getElementById('quiz').style.display='none';
-  document.getElementById('result').style.display='';
-}
-
-/* ===== Example panel builder ===== */
-function buildExamplesHTML(examples){
-  const renderLines = (key)=>{
-    const lines = examples.map((ex,i)=>{
-      const v = ex && ex[key];
-      if(!v) return '';
-      const label = (examples.length>1) ? (i+1)+'. ' : '';
-      return `<div>${label}${escapeHtml(v)}</div>`;
-    }).join('');
-    return lines || '<div style="color:#9ca3af">—</div>';
-  };
-
-  return `
-    <div class="ex-panel">
-      <div class="ex-row">
-        <label class="ex-label">
-          <input type="checkbox" class="ex-toggle" data-kind="ja" checked>
-          Japanese (Kanji)
-        </label>
-        <div class="ex-block" data-kind="ja">
-          ${renderLines('ja')}
-        </div>
-      </div>
-      <div class="ex-row">
-        <label class="ex-label">
-          <input type="checkbox" class="ex-toggle" data-kind="kana" checked>
-          Hiragana
-        </label>
-        <div class="ex-block" data-kind="kana">
-          ${renderLines('kana')}
-        </div>
-      </div>
-      <div class="ex-row">
-        <label class="ex-label">
-          <input type="checkbox" class="ex-toggle" data-kind="ro" checked>
-          Romaji
-        </label>
-        <div class="ex-block" data-kind="ro">
-          ${renderLines('ro')}
-        </div>
-      </div>
-      <div class="ex-row">
-        <label class="ex-label">
-          <input type="checkbox" class="ex-toggle" data-kind="en" checked>
-          English
-        </label>
-        <div class="ex-block" data-kind="en">
-          ${renderLines('en')}
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-/* ===== Rendering ===== */
-function renderQ(){
-  const total = quiz.length;
+function renderQuestion() {
   const q = quiz[idx];
-  document.getElementById('crumbs').textContent = `${idx+1} / ${total}`;
-  document.getElementById('score').textContent  = `Score: ${score}`;
-  document.getElementById('qtext').textContent  = q.sentenceBlank.ja || '（　　）';
-
-  // JLPT風の固定説明文
-  document.getElementById('subtext').textContent =
-    '（　　）に入ることばとして、いちばんよいものを １～４ からえらびなさい。';
-
-  const box = document.getElementById('choices');
-  box.innerHTML='';
-  q.options.forEach((opt,i)=>{
-    const b=document.createElement('button');
-    b.className='choice';
-    b.type='button';
-    b.textContent = `${i+1}. ${opt}`;
-    b.onclick = ()=> choose(i);
-    box.appendChild(b);
-  });
-
-  const ex = document.getElementById('explain');
-  ex.style.display='none';
-  ex.innerHTML = '';
-
+  document.getElementById('qCrumbs').textContent = `${idx + 1} / ${quiz.length}`;
+  document.getElementById('qScore').textContent = `Score: ${score}`;
+  document.getElementById('qText').textContent = q.sentence;
+  document.getElementById('qExplain').style.display = 'none';
   document.getElementById('nextBtn').disabled = true;
-  document.getElementById('finishBtn').style.display = (idx===total-1)?'':'none';
+
+  const box = document.getElementById('qChoices');
+  box.innerHTML = '';
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice';
+    btn.textContent = `${i + 1}. ${opt}`;
+    btn.onclick = () => handleAnswer(i);
+    box.appendChild(btn);
+  });
 }
 
-function choose(i){
+function handleAnswer(i) {
   const q = quiz[idx];
-  const nodes=[...document.querySelectorAll('.choice')];
-  nodes.forEach((n,j)=>{
-    n.disabled=true;
-    if(j===q.answer) n.classList.add('correct');
-    if(j===i && i!==q.answer) n.classList.add('wrong');
+  const btns = document.querySelectorAll('.choice');
+  btns.forEach((b, j) => {
+    b.disabled = true;
+    if (j === q.answer) b.classList.add('correct');
+    if (i === j && i !== q.answer) b.classList.add('wrong');
   });
 
-  answersLog[idx] = { chosen:i, correct:q.answer };
-
-  if(i===q.answer){
-    score++;
-    try{ gtag('event','quiz_correct',{level, pos:posKey, qid:q.id}); }catch(_){}
-  }else{
-    try{ gtag('event','quiz_wrong',{level, pos:posKey, qid:q.id}); }catch(_){}
+  if (i === q.answer) score++;
+  
+  // 解説（例文）表示
+  const exp = document.getElementById('qExplain');
+  if (q.item.examples && q.item.examples.length > 0) {
+    const e = q.item.examples[0];
+    exp.innerHTML = `<div class="ex-row"><span class="ex-label">Example:</span>${e.ja}<br><small>${e.en}</small></div>`;
+    exp.style.display = 'block';
   }
 
-  // 回答後に例文（日本語・ひらがな・ローマ字・英語）を表示＋チェックボックスでON/OFF
-  if(q.examples && q.examples.length){
-    const exDiv = document.getElementById('explain');
-    exDiv.innerHTML = buildExamplesHTML(q.examples);
-    exDiv.style.display = '';
-
-    exDiv.querySelectorAll('.ex-toggle').forEach(chk=>{
-      chk.addEventListener('change', ()=>{
-        const kind = chk.getAttribute('data-kind');
-        const block = exDiv.querySelector('.ex-block[data-kind="'+kind+'"]');
-        if(block) block.style.display = chk.checked ? '' : 'none';
-      });
-    });
-  }
-
-  document.getElementById('nextBtn').disabled=false;
+  document.getElementById('nextBtn').disabled = false;
+  if (idx === quiz.length - 1) document.getElementById('nextBtn').textContent = 'Finish';
 }
 
-function nextQ(){
+document.getElementById('nextBtn').onclick = () => {
   idx++;
-  if(idx>=quiz.length){
-    finishSession('completed');
-    return;
-  }
-  renderQ();
+  if (idx < quiz.length) renderQuestion();
+  else showResult();
+};
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('resultArea').style.display = 'block';
+  document.getElementById('resultSummary').textContent = `${score} / ${quiz.length} Correct!`;
 }
 
-/* ===== Finish / Stop / Retry ===== */
-function computeStats(){
-  const total = quiz.length;
-  const answered = answersLog.filter(x=>x!=null).length;
-  const correct = answersLog.filter(x=>x && x.chosen===x.correct).length;
-  return {total, answered, correct};
-}
+document.getElementById('startBtn').onclick = startQuiz;
+document.getElementById('stopBtn').onclick = () => location.reload();
 
-function finishSession(status){
-  const stats = computeStats();
-  score = stats.correct;
-
-  lastSession = {
-    level,
-    posKey,
-    questions: quiz.slice(),
-    answers: answersLog.slice(),
-    status,
-    ts: Date.now()
-  };
-
-  const statusLabel = (status==='completed') ? 'Completed' : 'Stopped early';
-  const baseText = `Level ${level} / ${posKey}: ${stats.correct} correct out of ${stats.total} questions.`;
-  const detailText = `Answered ${stats.answered} question(s). Status: ${statusLabel}.`;
-
-  document.getElementById('resultText').textContent = baseText;
-  document.getElementById('resultDetail').textContent = detailText;
-  document.getElementById('score').textContent = `Score: ${score}`;
-
-  // history entry (always uses total, not only answered)
-  addHistoryEntry({
-    id: uuid(),
-    ts: lastSession.ts,
-    level,
-    posKey,
-    total: stats.total,
-    answered: stats.answered,
-    correct: stats.correct,
-    status
-  });
-
-  // show / hide "Retry incorrect" button
-  const wrongCount = stats.total - stats.correct;
-  const btnRetryWrong = document.getElementById('retryWrongBtn');
-  if(wrongCount>0){
-    btnRetryWrong.style.display = '';
-  }else{
-    btnRetryWrong.style.display = 'none';
-  }
-
-  showResult();
-
-  try{
-    if(status==='completed'){
-      gtag('event','quiz_complete',{level, pos:posKey, total:stats.total, score:stats.correct});
-    }else{
-      gtag('event','quiz_stop',{level, pos:posKey, total:stats.total, answered:stats.answered, score:stats.correct});
-    }
-  }catch(_){}
-}
-
-function stopSession(){
-  if(!quiz.length) return;
-  if(!confirm('Stop this quiz and see the result so far?')) return;
-  finishSession('stopped');
-}
-
-function retry(){
-  showIntro();
-}
-
-/* 間違えた問題だけ再挑戦 */
-function retryWrongOnly(){
-  if(!lastSession){
-    alert('No previous session found.');
-    return;
-  }
-  const {questions, answers} = lastSession;
-  const wrongQuestions = questions.filter((q, i)=>{
-    const a = answers[i];
-    return !a || a.chosen !== a.correct;
-  });
-
-  if(!wrongQuestions.length){
-    alert('There are no incorrect or unanswered questions in the last session.');
-    return;
-  }
-
-  // 新しいクイズとしてセット（選択肢・正解は前回と同じ）
-  quiz = wrongQuestions.map(q=>Object.assign({}, q, { id: q.id || uuid() }));
-  level = lastSession.level;
-  posKey = lastSession.posKey;
-  idx = 0;
-  score = 0;
-  answersLog = [];
-  lastSession = null;
-
-  document.getElementById('about').textContent =
-    `Retrying ${quiz.length} incorrect question(s) from the last quiz.`;
-
-  showQuiz();
-  renderQ();
-}
-
-/* ===== Start flow ===== */
-async function start(){
-  level = document.getElementById('levelSel').value;
-  posKey = document.getElementById('posSel').value;
-  const qCount = Math.max(5, Math.min(30, parseInt(document.getElementById('qCount').value||'10',10)));
-  const path = buildPath(level, posKey);
-
-  document.getElementById('about').textContent = `Loading: ${level} • ${posKey}`;
-  try{
-    const res = await fetch(path,{cache:'no-store'});
-    const raw = await res.json();
-    bank = coerceArray(raw);
-  }catch(e){
-    console.error('Failed to load JSON:', e);
-    bank = [];
-  }
-
-  if(!bank.length){
-    alert('No data found. Please check /data/json/ path and files.');
-    document.getElementById('about').textContent = '';
-    return;
-  }
-  if(bank.length < 4){
-    alert('Not enough items (need at least 4) to build multiple-choice options.');
-    document.getElementById('about').textContent = '';
-    return;
-  }
-
-  quiz = generateQuizFromBank(bank, qCount);
-  idx=0;
-  score=0;
-  answersLog = [];
-  lastSession = null;
-
-  document.getElementById('about').textContent =
-    `Level ${level} • ${posKey} — ${quiz.length} question(s)`;
-
-  showQuiz();
-  renderQ();
-
-  try{ gtag('event','quiz_start',{level, pos:posKey, count:qCount}); }catch(_){}
-}
-
-/* ===== Init ===== */
-document.addEventListener('DOMContentLoaded', ()=>{
-  injectPartials();
-
-  history = loadHistory();
-  renderHistory();
-
-  document.getElementById('startBtn').onclick  = start;
-  document.getElementById('nextBtn').onclick   = nextQ;
-  document.getElementById('finishBtn').onclick = ()=>finishSession('completed');
-  document.getElementById('stopBtn').onclick   = stopSession;
-  document.getElementById('retryBtn').onclick  = retry;
-  document.getElementById('retryWrongBtn').onclick = retryWrongOnly;
-
-  showIntro();
-});
+// 初期化
+(function(){
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
