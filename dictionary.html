@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -43,19 +43,39 @@ input[type="text"]{flex:1;height:45px;border:1px solid var(--line);border-radius
 .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--muted);transition: 0.2s;}
 .chip.active{border-color:var(--shu);background:var(--shu-tint);color:var(--shu)}
 
-/* Grid & Cards */
-.grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));gap:20px;margin-bottom:40px}
-.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:18px;transition:transform 0.2s; height: fit-content;}
+/* Grid & Cards - PCでのレイアウト調整 */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(360px, 1fr));
+  gap:25px;
+  margin-bottom:40px;
+  justify-content: center;
+}
+
+/* 検索結果が1つの時に広がりすぎないように制限 */
+@media (min-width: 800px) {
+  .grid:has(> :last-child:nth-child(1)) {
+    grid-template-columns: minmax(360px, 600px);
+    justify-content: center;
+  }
+}
+
+.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:24px;transition:transform 0.2s; height: fit-content;}
 .card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.06)}
-.card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
 .tag{font-size:11px;font-weight:800;background:#fff;border:1px solid #f1cbc6;padding:2px 8px;border-radius:6px;color:var(--muted);text-transform:uppercase}
-.ja{font-size:22px;font-weight:800;color:var(--ink);display:block}
-.kana{font-size:14px;color:var(--muted);display:block;margin-bottom:4px}
-.en{font-size:16px;color:var(--ink);border-top:1px dashed #f1cbc6;padding-top:10px;margin-top:10px;display:block;font-weight:600}
+.ja{font-size:26px;font-weight:800;color:var(--ink);display:block}
+.kana{font-size:15px;color:var(--muted);display:block;margin-bottom:8px}
+
+/* Audio Player Style */
+.audio-container { margin: 15px 0; background: #fff; border-radius: 8px; padding: 5px; border: 1px solid var(--line); }
+audio { width: 100%; height: 35px; }
+
+.en{font-size:18px;color:var(--ink);border-top:1px dashed #f1cbc6;padding-top:12px;margin-top:12px;display:block;font-weight:600}
 
 /* Example Accordion */
 .example-details { margin-top: 15px; border-top: 1px solid var(--line); padding-top: 10px; }
-.example-details summary { font-size: 13px; color: var(--shu); font-weight: 800; list-style: none; display: flex; align-items: center; gap: 5px; outline: none; }
+.example-details summary { font-size: 13px; color: var(--shu); font-weight: 800; list-style: none; display: flex; align-items: center; gap: 5px; outline: none; cursor: pointer; }
 .example-details summary::before { content: '\f054'; font-family: 'Font Awesome 6 Free'; font-weight: 900; font-size: 10px; transition: 0.2s; }
 .example-details[open] summary::before { transform: rotate(90deg); }
 .example-list { margin-top: 12px; }
@@ -66,8 +86,7 @@ input[type="text"]{flex:1;height:45px;border:1px solid var(--line);border-radius
 
 /* Footer */
 .footer{border-top:1px solid var(--shu-tint);padding:30px 0;text-align:center;color:var(--muted);font-size:12px}
-
-.status-msg{margin:10px 0;font-size:14px;color:var(--muted)}
+.status-msg{margin:20px 0;font-size:14px;color:var(--muted); text-align: center;}
 </style>
 </head>
 <body>
@@ -131,7 +150,6 @@ async function fetchJson(lv, fileName) {
     const res = await fetch(`/data/json/${lv}/${fileName}`);
     if (!res.ok) return [];
     const data = await res.json();
-    // オブジェクト形式 { entries: [...] } と配列形式 [...] の両方に対応
     return Array.isArray(data) ? data : (data.entries || []);
   } catch(e) { 
     return []; 
@@ -177,7 +195,6 @@ async function performSearch() {
     return;
   }
 
-  // 初期表示の上限を設定
   const displayItems = query ? allMatches : allMatches.slice(0, 50);
   statusEl.textContent = query ? `Found ${allMatches.length} items.` : `Showing ${displayItems.length} items.`;
   
@@ -185,7 +202,17 @@ async function performSearch() {
     const card = document.createElement('div');
     card.className = 'card';
     
-    // 例文セクションの生成
+    // .mp4音声プレイヤーの生成
+    const audioUrl = `/audio/${item.id}.mp4`;
+    const audioHtml = `
+      <div class="audio-container">
+        <audio controls src="${audioUrl}">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    `;
+
+    // 例文セクション（例文は3つまで表示）
     let examplesHtml = '';
     if (item.examples && item.examples.length > 0) {
       examplesHtml = `
@@ -211,6 +238,7 @@ async function performSearch() {
       </div>
       <span class="ja">${item.ja}</span>
       <span class="kana">${item.kana || ''}</span>
+      ${audioHtml}
       <span class="en">${item.en}</span>
       ${examplesHtml}
     `;
