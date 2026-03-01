@@ -16,11 +16,11 @@
 </script>
 
 <style>
-/* --- Design Tokens --- */
+/* --- Unified Design Tokens --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{ box-sizing:border-box }
 
-/* Font Stack */
+/* Font Stack: User Specified */
 html,body{
   margin:0; background:#fff; color:var(--ink);
   font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
@@ -35,13 +35,13 @@ button{ cursor:pointer; font-family:inherit; }
 .site-header-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
 .logo-text { font-weight:800; font-size:32px; color:var(--shu); }
 .beta-text { font-size:20px; color:#98a1a8; margin-bottom: 5px; }
-.nav-links { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+.nav-links { display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; }
 .nav-links a { color:#333; font-weight:600; font-size:15px; }
 .nav-links a:hover { color:var(--shu); }
 .sns-nav { display:flex; align-items:center; gap:14px; font-size:20px; justify-content:center; margin-top: 5px; }
 .sns-nav a { color:var(--shu); }
 
-/* --- Quiz Controls --- */
+/* --- Quiz UI --- */
 .controls { background:#f9fafb; padding:20px; border-radius:15px; margin:20px 0; border:1px solid var(--line); display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
 .controls label { font-size:12px; color:var(--muted); display:flex; flex-direction:column; gap:4px; font-weight:bold; }
 select, input[type="number"] { height:40px; border:1px solid var(--line); border-radius:10px; padding:0 10px; background:#fff; }
@@ -50,11 +50,9 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
 .btn:hover { background:var(--shu-tint); }
 .btn.primary { background:var(--shu); color:#fff; }
 
-/* --- Quiz Stage --- */
 .card { background:var(--card); border:1px solid #f1cbc6; border-radius:14px; padding:25px; margin-bottom:30px; }
 .badge { display:inline-block; background:#fff; border:1px solid #f1cbc6; padding:4px 12px; border-radius:999px; font-size:13px; font-weight:700; color:var(--muted); }
 
-/* 問題文と英語翻訳のスタイル */
 .q-sentence { font-size:24px; font-weight:800; margin:20px 0 5px 0; line-height:1.4; color:var(--ink); }
 .q-translation { font-size:16px; color:var(--muted); margin-bottom:20px; font-style: italic; }
 
@@ -66,10 +64,14 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
 .ex-panel { margin-top:20px; padding-top:15px; border-top:1px dashed #f1cbc6; font-size:14px; }
 .ex-label { font-weight:bold; color:var(--shu); display:block; margin-bottom:4px; }
 
-/* --- Footer --- */
-.site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding:25px 0; margin-top:40px; }
+/* --- Unified Footer --- */
+.site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding: 25px 0; margin-top: 40px; }
 .footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
 .footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
+.footer-nav { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+.footer-nav a { color:var(--shu); font-weight:600; }
+.footer-icons { display:flex; align-items:center; justify-content:center; gap:18px; font-size:22px; }
+.footer-icons a { color:var(--shu); }
 </style>
 </head>
 <body>
@@ -83,17 +85,16 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
     <nav class="nav-links">
       <a href="/">Home</a>
       <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html" style="color:var(--shu)">Quiz</a>
       <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
       <a href="/legal.html">Legal</a>
       <a href="/privacy.html">Privacy</a>
     </nav>
-    <nav class="footer-icons">
-      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </header>
@@ -132,7 +133,6 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
       </div>
       <div id="qText" class="q-sentence"></div>
       <div id="qEnText" class="q-translation"></div>
-
       <div id="qChoices"></div>
       <div id="qExplain" class="ex-panel" style="display:none"></div>
       <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
@@ -152,9 +152,18 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
-    <nav style="display:flex; gap:15px; margin-bottom:10px;">
-      <a href="/legal.html" style="color:var(--shu); font-weight:600;">Legal</a>
-      <a href="/privacy.html" style="color:var(--shu); font-weight:600;">Privacy</a>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </footer>
@@ -164,7 +173,7 @@ let bank = [], quiz = [], idx = 0, score = 0;
 
 function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
 
-// 動的置換ロジック
+// 動的置換ロジック（活用形に対応）
 function makeBlankSentence(exText, targetWord) {
   if (exText.includes(targetWord)) return exText.replace(targetWord, "（　　）");
   const kanjiStem = targetWord.replace(/[ぁ-んァ-ン]/g, '');
@@ -197,9 +206,8 @@ async function startQuiz() {
       if (item.examples && item.examples.length > 0) {
         const ex = item.examples[0];
         sentence = makeBlankSentence(ex.ja, correct);
-        enSentence = ex.en; // 英語翻訳を取得
+        enSentence = ex.en; 
       }
-
       return { item, sentence, enSentence, options, answer: options.indexOf(correct) };
     });
 
@@ -214,11 +222,8 @@ function renderQuestion() {
   const q = quiz[idx];
   document.getElementById('qCrumbs').textContent = `${idx + 1} / ${quiz.length}`;
   document.getElementById('qScore').textContent = `Score: ${score}`;
-  
-  // 日本語と英語をセット
   document.getElementById('qText').textContent = q.sentence;
   document.getElementById('qEnText').textContent = q.enSentence; 
-
   document.getElementById('qExplain').style.display = 'none';
   document.getElementById('nextBtn').disabled = true;
 
@@ -243,14 +248,12 @@ function handleAnswer(i) {
   });
 
   if (i === q.answer) score++;
-  
   const exp = document.getElementById('qExplain');
   if (q.item.examples && q.item.examples.length > 0) {
     const e = q.item.examples[0];
     exp.innerHTML = `<div class="ex-row"><span class="ex-label">Answer:</span>${e.ja}<br><small>${e.en}</small></div>`;
     exp.style.display = 'block';
   }
-
   document.getElementById('nextBtn').disabled = false;
   if (idx === quiz.length - 1) document.getElementById('nextBtn').textContent = 'Finish';
 }
