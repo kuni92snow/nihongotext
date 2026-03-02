@@ -67,7 +67,7 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
 
 .ex-panel { margin-top:20px; padding-top:15px; border-top:1px dashed #f1cbc6; font-size:14px; }
 
-/* --- Results List Style --- */
+/* --- Results Table --- */
 .result-table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; text-align:left; background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--line); }
 .result-table th { background:#f9fafb; padding:12px; border-bottom:1px solid var(--line); color:var(--muted); }
 .result-table td { padding:12px; border-bottom:1px solid var(--line); vertical-align: top; }
@@ -217,7 +217,7 @@ async function startQuiz() {
           item, sentence, kanaSentence, enSentence, 
           options: optionsItems.map(o => ({ja: o.ja, kana: o.kana})), 
           answer: optionsItems.indexOf(item),
-          userChoice: null // ユーザーの選択を保存用
+          userChoice: null 
       };
     });
 
@@ -252,7 +252,7 @@ function renderQuestion() {
 
 function handleAnswer(i) {
   const q = quiz[idx];
-  q.userChoice = i; // 選択を記録
+  q.userChoice = i; 
   const btns = document.querySelectorAll('.choice');
   btns.forEach((b, j) => {
     b.disabled = true;
@@ -294,13 +294,14 @@ function showResult() {
     `;
     list.appendChild(row);
 
-    // Email Body Construction
     emailBody += `Q${i+1}: ${q.sentence}\n`;
     emailBody += `Result: ${isCorrect ? 'Correct' : 'Wrong'}\n`;
     emailBody += `Answer: ${q.item.ja} (${q.item.kana})\n\n`;
   });
 
-  // Email Button Setup
+  // Footer link added to email body
+  emailBody += `---\nLearn more Japanese at: https://nihongotext.com\n`;
+
   document.getElementById('emailBtn').onclick = () => {
     const subject = encodeURIComponent(`Nihongotext Quiz Results (${score}/${quiz.length})`);
     const body = encodeURIComponent(emailBody);
@@ -322,7 +323,8 @@ document.getElementById('startBtn').onclick = startQuiz;
 document.getElementById('stopBtn').onclick = () => location.reload();
 
 (function(){
-  document.getElementById('ft-year').textContent = new Date().getFullYear();
+  const el = document.getElementById('ft-year');
+  if (el) el.textContent = new Date().getFullYear();
 })();
 </script>
 </body>
