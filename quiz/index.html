@@ -44,14 +44,13 @@ button{ cursor:pointer; font-family:inherit; }
 .controls label { font-size:12px; color:var(--muted); display:flex; flex-direction:column; gap:4px; font-weight:bold; }
 select, input[type="number"] { height:40px; border:1px solid var(--line); border-radius:10px; padding:0 10px; background:#fff; }
 
-.btn { border:1px solid var(--shu); color:var(--shu); background:#fff; border-radius:10px; padding:10px 20px; font-weight:700; transition:0.2s; }
+.btn { border:1px solid var(--shu); color:var(--shu); background:#fff; border-radius:10px; padding:10px 20px; font-weight:700; transition:0.2s; display:inline-flex; align-items:center; gap:8px;}
 .btn:hover { background:var(--shu-tint); }
 .btn.primary { background:var(--shu); color:#fff; }
 
 .card { background:var(--card); border:1px solid #f1cbc6; border-radius:14px; padding:25px; margin-bottom:30px; }
 .badge { display:inline-block; background:#fff; border:1px solid #f1cbc6; padding:4px 12px; border-radius:999px; font-size:13px; font-weight:700; color:var(--muted); }
 
-/* Mode Toggle Selector */
 .display-mode-selector { display:flex; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
 .display-mode-selector label { display:flex; align-items:center; gap:4px; padding:8px 12px; cursor:pointer; font-size:13px; font-weight:700; border-right:1px solid var(--line); margin:0; }
 .display-mode-selector label:last-child { border-right:none; }
@@ -67,16 +66,19 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
 .choice.wrong { border-color:#ef4444; background:#fef2f2; color:#991b1b; }
 
 .ex-panel { margin-top:20px; padding-top:15px; border-top:1px dashed #f1cbc6; font-size:14px; }
-.ex-label { font-weight:bold; color:var(--shu); display:block; margin-bottom:4px; }
+
+/* --- Results List Style --- */
+.result-table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; text-align:left; background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--line); }
+.result-table th { background:#f9fafb; padding:12px; border-bottom:1px solid var(--line); color:var(--muted); }
+.result-table td { padding:12px; border-bottom:1px solid var(--line); vertical-align: top; }
+.res-status { font-weight:800; text-align:center; }
+.res-correct { color:#10b981; }
+.res-wrong { color:#ef4444; }
 
 /* --- Footer --- */
 .site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding: 25px 0; margin-top: 40px; }
 .footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
 .footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
-.footer-nav { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
-.footer-nav a { color:var(--shu); font-weight:600; }
-.footer-icons { display:flex; align-items:center; justify-content:center; gap:18px; font-size:22px; }
-.footer-icons a { color:var(--shu); }
 </style>
 </head>
 <body>
@@ -91,10 +93,6 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
       <a href="/quiz/index.html" style="color:var(--shu)">Quiz</a>
       <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
-    </nav>
-    <nav class="sns-nav">
-      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
     </nav>
   </div>
 </header>
@@ -149,10 +147,26 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
       </div>
     </div>
 
-    <div id="resultArea" style="display:none; text-align:center;">
-      <h3>Result</h3>
-      <div id="resultSummary" style="font-size:24px; font-weight:800; margin:20px 0;"></div>
-      <button onclick="location.reload()" class="btn primary">Try Again</button>
+    <div id="resultArea" style="display:none;">
+      <div style="text-align:center;">
+        <h3>Quiz Results</h3>
+        <div id="resultSummary" style="font-size:28px; font-weight:800; color:var(--shu); margin:10px 0;"></div>
+      </div>
+      
+      <table class="result-table">
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Question / Correct Answer</th>
+          </tr>
+        </thead>
+        <tbody id="resultList"></tbody>
+      </table>
+
+      <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+        <button id="emailBtn" class="btn primary"><i class="fa-solid fa-paper-plane"></i> Send Results to Email</button>
+        <button onclick="location.reload()" class="btn"><i class="fa-solid fa-rotate-right"></i> Try Again</button>
+      </div>
     </div>
   </section>
 </main>
@@ -160,10 +174,6 @@ select, input[type="number"] { height:40px; border:1px solid var(--line); border
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
-    <nav class="footer-icons">
-      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
-    </nav>
   </div>
 </footer>
 
@@ -192,30 +202,22 @@ async function startQuiz() {
     const res = await fetch(`/data/json/${lv}/${pos}.json`);
     const data = await res.json();
     bank = Array.isArray(data) ? data : (data.entries || []);
-    
     if (bank.length < 4) return alert("Not enough data.");
     
     quiz = shuffle([...bank]).slice(0, count).map(item => {
-      const correctItem = item;
       const distractorItems = shuffle(bank.filter(x => x.ja !== item.ja)).slice(0, 3);
-      const optionsItems = shuffle([correctItem, ...distractorItems]);
-      
-      let sentence = "（　　）";
-      let kanaSentence = "（　　）";
-      let enSentence = ""; 
+      const optionsItems = shuffle([item, ...distractorItems]);
+      let sentence = "（　　）", kanaSentence = "（　　）", enSentence = ""; 
       if (item.examples && item.examples.length > 0) {
-        const ex = item.examples[0];
-        sentence = makeBlank(ex.ja, item.ja);
-        kanaSentence = makeBlank(ex.kana, item.kana);
-        enSentence = ex.en; 
+        sentence = makeBlank(item.examples[0].ja, item.ja);
+        kanaSentence = makeBlank(item.examples[0].kana, item.kana);
+        enSentence = item.examples[0].en; 
       }
       return { 
-          item, 
-          sentence, 
-          kanaSentence, 
-          enSentence, 
+          item, sentence, kanaSentence, enSentence, 
           options: optionsItems.map(o => ({ja: o.ja, kana: o.kana})), 
-          answer: optionsItems.indexOf(correctItem) 
+          answer: optionsItems.indexOf(item),
+          userChoice: null // ユーザーの選択を保存用
       };
     });
 
@@ -229,18 +231,10 @@ async function startQuiz() {
 function renderQuestion() {
   const q = quiz[idx];
   const mode = document.querySelector('input[name="displayMode"]:checked').value;
-  
   document.getElementById('qCrumbs').textContent = `${idx + 1} / ${quiz.length}`;
   document.getElementById('qScore').textContent = `Score: ${score}`;
-  
-  // Update Question Sentence
-  if (mode === 'kana') {
-      document.getElementById('qText').textContent = q.kanaSentence;
-  } else {
-      document.getElementById('qText').textContent = q.sentence;
-  }
+  document.getElementById('qText').textContent = (mode === 'kana') ? q.kanaSentence : q.sentence;
   document.getElementById('qEnText').textContent = q.enSentence; 
-
   document.getElementById('qExplain').style.display = 'none';
   document.getElementById('nextBtn').disabled = true;
 
@@ -249,25 +243,16 @@ function renderQuestion() {
   q.options.forEach((opt, i) => {
     const btn = document.createElement('button');
     btn.className = 'choice';
-    
-    // Set Choice Text based on mode
-    let choiceText = opt.ja;
-    if (mode === 'kana') choiceText = opt.kana;
-    if (mode === 'both') choiceText = `${opt.ja} (${opt.kana})`;
-    
-    btn.textContent = `${i + 1}. ${choiceText}`;
+    let txt = (mode === 'kana') ? opt.kana : (mode === 'both' ? `${opt.ja} (${opt.kana})` : opt.ja);
+    btn.textContent = `${i + 1}. ${txt}`;
     btn.onclick = () => handleAnswer(i);
     box.appendChild(btn);
   });
 }
 
-// Re-render when mode changes
-document.getElementById('displayModeGroup').addEventListener('change', () => {
-    if (quiz.length > 0 && idx < quiz.length) renderQuestion();
-});
-
 function handleAnswer(i) {
   const q = quiz[idx];
+  q.userChoice = i; // 選択を記録
   const btns = document.querySelectorAll('.choice');
   btns.forEach((b, j) => {
     b.disabled = true;
@@ -279,12 +264,53 @@ function handleAnswer(i) {
   const exp = document.getElementById('qExplain');
   if (q.item.examples && q.item.examples.length > 0) {
     const e = q.item.examples[0];
-    exp.innerHTML = `<div class="ex-row"><span class="ex-label">Answer:</span>${e.ja}<br><small>${e.en}</small></div>`;
+    exp.innerHTML = `<div class="ex-panel" style="border-top:1px dashed #f1cbc6; padding-top:10px; margin-top:15px;"><span style="font-weight:bold; color:var(--shu);">Correct Sentence:</span><br>${e.ja}<br><small>${e.en}</small></div>`;
     exp.style.display = 'block';
   }
   document.getElementById('nextBtn').disabled = false;
-  if (idx === quiz.length - 1) document.getElementById('nextBtn').textContent = 'Finish';
+  if (idx === quiz.length - 1) document.getElementById('nextBtn').textContent = 'Finish & Show Results';
 }
+
+function showResult() {
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('resultArea').style.display = 'block';
+  document.getElementById('resultSummary').textContent = `${score} / ${quiz.length} Correct!`;
+
+  const list = document.getElementById('resultList');
+  list.innerHTML = '';
+  let emailBody = `Quiz Results from nihongotext.com\nScore: ${score} / ${quiz.length}\n\n`;
+
+  quiz.forEach((q, i) => {
+    const isCorrect = q.userChoice === q.answer;
+    const statusIcon = isCorrect ? '<span class="res-correct">✓ Correct</span>' : '<span class="res-wrong">✗ Wrong</span>';
+    
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td class="res-status">${statusIcon}</td>
+      <td>
+        <strong>Q${i+1}:</strong> ${q.sentence}<br>
+        <span style="font-size:12px; color:var(--muted);">Answer: <strong>${q.item.ja}</strong> (${q.item.kana})</span>
+      </td>
+    `;
+    list.appendChild(row);
+
+    // Email Body Construction
+    emailBody += `Q${i+1}: ${q.sentence}\n`;
+    emailBody += `Result: ${isCorrect ? 'Correct' : 'Wrong'}\n`;
+    emailBody += `Answer: ${q.item.ja} (${q.item.kana})\n\n`;
+  });
+
+  // Email Button Setup
+  document.getElementById('emailBtn').onclick = () => {
+    const subject = encodeURIComponent(`Nihongotext Quiz Results (${score}/${quiz.length})`);
+    const body = encodeURIComponent(emailBody);
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+  };
+}
+
+document.getElementById('displayModeGroup').addEventListener('change', () => {
+    if (quiz.length > 0 && idx < quiz.length) renderQuestion();
+});
 
 document.getElementById('nextBtn').onclick = () => {
   idx++;
@@ -292,18 +318,11 @@ document.getElementById('nextBtn').onclick = () => {
   else showResult();
 };
 
-function showResult() {
-  document.getElementById('quizArea').style.display = 'none';
-  document.getElementById('resultArea').style.display = 'block';
-  document.getElementById('resultSummary').textContent = `${score} / ${quiz.length} Correct!`;
-}
-
 document.getElementById('startBtn').onclick = startQuiz;
 document.getElementById('stopBtn').onclick = () => location.reload();
 
 (function(){
-  const el = document.getElementById('ft-year');
-  if (el) el.textContent = new Date().getFullYear();
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
 })();
 </script>
 </body>
