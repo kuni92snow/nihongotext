@@ -210,7 +210,7 @@
       {
         "ja": "コンビニは便利です。",
         "kana": "こんびに は べんり です。",
-        "ro": "konbini wa benri desu.",
+        "ro": "konbini wa benri です。",
         "en": "Convenience stores are convenient.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
@@ -309,7 +309,6 @@
       }
     ]
   },
-  [
   {
     "id": "n5-naadj-011",
     "ja": "大変",
@@ -345,7 +344,7 @@
     "id": "n5-naadj-012",
     "ja": "大丈夫",
     "kana": "だいじょうぶ",
-    "ro": "daijoubu",
+    "ro": "だいじょうぶ",
     "en": "okay / all right",
     "audio": "audio/n5-naadj-012.mp4",
     "examples": [
@@ -366,7 +365,7 @@
       {
         "ja": "大丈夫、心配しないでください。",
         "kana": "だいじょうぶ、しんぱい しないで ください。",
-        "ro": "daijoubu, shinpai shinaide kudasai.",
+        "ro": "だいじょうぶ, shinpai shinaide kudasai.",
         "en": "It's okay, please don't worry.",
         "audio": "If you need audio, please request it from the [Inquiry form](https://nihongotext.com/inquiry/index.html)."
       }
@@ -930,5 +929,4 @@
       }
     ]
   }
-]
 ]
