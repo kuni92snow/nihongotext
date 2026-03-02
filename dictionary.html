@@ -17,99 +17,67 @@
 </script>
 
 <style>
-/* --- Design Tokens: User Specified --- */
-:root{
-  --shu:#e6462d;
-  --shu-tint:#fff2ef; /* 統一感のためのアクセント */
-  --ink:#1f2937;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --card:#fff7f6;
-}
-
+/* --- Design Tokens --- */
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{ box-sizing:border-box }
 
-/* Font Stack: User Specified for High Quality Typography */
+/* Font Stack */
 html,body{
-  margin:0;
-  background:#fff;
-  color:var(--ink);
+  margin:0; background:#fff; color:var(--ink);
   font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
         "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
 }
-
 a{ color:inherit; text-decoration:none }
 button{ cursor:pointer; font-family:inherit; }
+.wrap{ max-width:1100px; margin:0 auto; padding:0 16px; }
 
-/* Wrapper: User Specified max-width */
-.wrap{
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 16px;
-}
-
-/* --- Header: Blog Unified --- */
+/* --- Header: Unified --- */
 .site-header { background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30; }
 .site-header-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
 .logo-text { font-weight:800; font-size:32px; color:var(--shu); }
-.beta-text { font-size:20px; line-height:1; color:#98a1a8; margin-bottom: 5px; }
-.nav-links { display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; }
+.beta-text { font-size:20px; color:#98a1a8; margin-bottom: 5px; }
+.nav-links { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
 .nav-links a { color:#333; font-weight:600; font-size:15px; }
 .nav-links a:hover { color:var(--shu); }
 .sns-nav { display:flex; align-items:center; gap:14px; font-size:20px; justify-content:center; margin-top: 5px; }
 .sns-nav a { color:var(--shu); }
 
-/* --- Controls & Layout Fixes --- */
+/* --- Search Controls --- */
 .controls{background:#f9fafb;padding:20px;border-radius:15px;margin:20px 0;border:1px solid var(--line)}
 .search-group{display:flex;gap:10px;margin-bottom:15px}
 input[type="text"]{flex:1;height:45px;border:1px solid var(--line);border-radius:10px;padding:0 15px;font-size:16px}
-
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--muted);transition: 0.2s;}
 .chip.active{border-color:var(--shu);background:var(--shu-tint);color:var(--shu)}
 
-/* Grid Adjustment: PCで中央に寄りすぎず、かつ広がすぎないバランス */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
-  gap:25px;
-  margin-bottom:40px;
-}
+/* --- Grid & Card Adjustment --- */
+.grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:25px; margin-bottom:40px; }
+@media (min-width: 1024px) { .grid:has(> :only-child) { grid-template-columns: minmax(340px, 600px); justify-content: center; } }
 
-@media (min-width: 1024px) {
-  /* 検索結果が1つの時は最大幅を制限して中央に置く（不自然さを解消） */
-  .grid:has(> :last-child:nth-child(1)) {
-    grid-template-columns: minmax(340px, 600px);
-    justify-content: center;
-  }
-}
-
-/* Card Design */
-.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:22px;transition:transform 0.2s; height: fit-content; display: flex; flex-direction: column;}
+.card{background:var(--card);border:1px solid #f1cbc6;border-radius:14px;padding:22px;transition:0.2s; height:fit-content; display:flex; flex-direction:column;}
 .card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.06)}
 .card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
 .tag{font-size:11px;font-weight:800;background:#fff;border:1px solid #f1cbc6;padding:2px 8px;border-radius:6px;color:var(--muted);text-transform:uppercase}
 .ja{font-size:26px;font-weight:800;color:var(--ink);display:block}
 .kana{font-size:15px;color:var(--muted);display:block;margin-bottom:8px}
 
-/* Audio Player */
-.audio-box { margin: 12px 0; background: #fff; border-radius: 8px; padding: 4px; border: 1px solid #eee; }
-audio { width: 100%; height: 32px; outline: none; }
+/* Audio Styling */
+.audio-box { margin: 10px 0; background: #fff; border-radius: 8px; padding: 4px; border: 1px solid #eee; }
+audio { width: 100%; height: 30px; outline: none; }
+.audio-request { font-size: 12px; color: var(--muted); margin: 10px 0; line-height: 1.4; }
+.audio-request a { color: var(--shu); text-decoration: underline; font-weight: 600; }
 
 .en{font-size:18px;color:var(--ink);border-top:1px dashed #f1cbc6;padding-top:10px;margin-top:10px;display:block;font-weight:600}
 
-/* Example Accordion */
+/* Example Styling */
 .example-details { margin-top: 15px; border-top: 1px solid var(--line); padding-top: 10px; }
-.example-details summary { font-size: 13px; color: var(--shu); font-weight: 800; list-style: none; display: flex; align-items: center; gap: 5px; outline: none; cursor:pointer;}
+.example-details summary { font-size: 13px; color: var(--shu); font-weight: 800; list-style: none; display: flex; align-items: center; gap: 5px; cursor:pointer;}
 .example-details summary::before { content: '\f054'; font-family: 'Font Awesome 6 Free'; font-weight: 900; font-size: 10px; transition: 0.2s; }
 .example-details[open] summary::before { transform: rotate(90deg); }
 .example-list { margin-top: 12px; }
-.ex-item { margin-bottom: 16px; font-size: 14px; padding-left: 10px; border-left: 3px solid var(--shu-tint); }
-.ex-ja { font-weight: 700; margin: 0 0 2px 0; color: var(--ink); }
-.ex-ro { color: var(--muted); font-size: 12px; margin: 0; font-style: italic; }
-.ex-en { color: var(--muted); margin: 2px 0 0 0; }
+.ex-item { margin-bottom: 20px; font-size: 14px; padding-left: 10px; border-left: 3px solid var(--shu-tint); }
 
-/* --- Footer: Blog Unified --- */
+/* --- Footer: Unified --- */
 .site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding: 25px 0; margin-top: 40px; }
 .footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
 .footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
@@ -130,7 +98,7 @@ audio { width: 100%; height: 32px; outline: none; }
     </a>
     <div class="beta-text">== beta version ==</div>
     <nav class="nav-links">
-　　　 <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/dictionary.html" style="color:var(--shu)">Vocabulary Tool</a>
       <a href="/quiz/index.html">Quiz</a>
       <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
@@ -139,8 +107,6 @@ audio { width: 100%; height: 32px; outline: none; }
     </nav>
     <nav class="sns-nav">
       <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank"><i class="fa-brands fa-medium"></i></a>
       <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
       <a href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
@@ -158,12 +124,8 @@ audio { width: 100%; height: 32px; outline: none; }
       <button class="chip" data-pos="verbs">Verbs</button>
       <button class="chip" data-pos="adjectives-i">i-Adj</button>
       <button class="chip" data-pos="adjectives-na">na-Adj</button>
-      <button class="chip" data-pos="adverbs">Adverbs</button>
-      <button class="chip" data-pos="particles">Particles</button>
-      <button class="chip" data-pos="numerals">Numerals</button>
     </div>
   </div>
-
   <div id="status" class="status-msg"></div>
   <div id="list" class="grid"></div>
 </main>
@@ -173,16 +135,12 @@ audio { width: 100%; height: 32px; outline: none; }
     <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
     <nav class="footer-nav">
       <a href="/">Home</a>
-      <a href="/dictionary.html">Vocabulary Tool</a>
       <a href="/blog/index.html">Blog</a>
-      <a href="/inquiry/index.html">Inquiry</a>
       <a href="/legal.html">Legal</a>
       <a href="/privacy.html">Privacy</a>
     </nav>
     <nav class="footer-icons">
       <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
       <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
       <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
@@ -190,15 +148,11 @@ audio { width: 100%; height: 32px; outline: none; }
 </footer>
 
 <script>
-const LEVELS = ['N5','N4','N3','N2','N1'];
 const POS_LIST = [
   {id:'nouns', file:'nouns.json', label:'Nouns'},
   {id:'verbs', file:'verbs.json', label:'Verbs'},
   {id:'adjectives-i', file:'adjectives-i.json', label:'i-Adjective'},
-  {id:'adjectives-na', file:'adjectives-na.json', label:'na-Adjective'},
-  {id:'adverbs', file:'adverbs.json', label:'Adverbs'},
-  {id:'particles', file:'particles.json', label:'Particles'},
-  {id:'numerals', file:'numerals.json', label:'Numerals'}
+  {id:'adjectives-na', file:'adjectives-na.json', label:'na-Adjective'}
 ];
 
 async function fetchJson(lv, fileName) {
@@ -208,6 +162,21 @@ async function fetchJson(lv, fileName) {
     const data = await res.json();
     return Array.isArray(data) ? data : (data.entries || []);
   } catch(e) { return []; }
+}
+
+/* 音声プレイヤーまたはリクエスト文を生成するヘルパー */
+function getAudioHtml(id, isExample = false, exIndex = 0) {
+  const audioId = isExample ? `${id}-ex${exIndex + 1}` : id;
+  const audioUrl = `/audio/${audioId}.mp4`;
+  
+  return `
+    <div class="audio-box">
+      <audio controls src="${audioUrl}"></audio>
+    </div>
+    <div class="audio-request">
+      If you need audio, please request it from the <a href="/inquiry/index.html">Inquiry form</a>.
+    </div>
+  `;
 }
 
 async function performSearch() {
@@ -223,14 +192,13 @@ async function performSearch() {
   let allMatches = [];
   const posToSearch = (selectedPos === 'all') ? POS_LIST : POS_LIST.filter(p => p.id === selectedPos);
 
-  for (const lv of LEVELS) {
+  for (const lv of ['N5','N4','N3','N2','N1']) {
     for (const pos of posToSearch) {
       const items = await fetchJson(lv, pos.file);
-      const matches = items.filter(item => {
+      items.filter(item => {
         if (!query) return true; 
         return (item.ja?.includes(query) || item.kana?.includes(query) || item.en?.toLowerCase().includes(query));
-      });
-      matches.forEach(item => allMatches.push({ ...item, lv, category: pos.label }));
+      }).forEach(item => allMatches.push({ ...item, lv, category: pos.label }));
     }
   }
 
@@ -243,10 +211,7 @@ async function performSearch() {
     const card = document.createElement('div');
     card.className = 'card';
     
-    // Audio Path: using .mp4 as requested
-    const audioHtml = `<div class="audio-box"><audio controls src="/audio/${item.id}.mp4"></audio></div>`;
-
-    // Examples: Strictly limit to 3 examples
+    // 例文セクション（最大3つ）
     let examplesHtml = '';
     if (item.examples && item.examples.length > 0) {
       const limitedEx = item.examples.slice(0, 3);
@@ -254,11 +219,10 @@ async function performSearch() {
         <details class="example-details">
           <summary>Show Examples (${limitedEx.length})</summary>
           <div class="example-list">
-            ${limitedEx.map(ex => `
+            ${limitedEx.map((ex, i) => `
               <div class="ex-item">
-                <p class="ex-ja">${ex.ja}</p>
-                <p class="ex-ro">${ex.ro || ''}</p>
-                <p class="ex-en">${ex.en}</p>
+                <p><strong>${ex.ja}</strong><br><em>${ex.ro || ''}</em><br>${ex.en}</p>
+                ${getAudioHtml(item.id, true, i)}
               </div>
             `).join('')}
           </div>
@@ -272,7 +236,7 @@ async function performSearch() {
       </div>
       <span class="ja">${item.ja}</span>
       <span class="kana">${item.kana || ''}</span>
-      ${audioHtml}
+      ${getAudioHtml(item.id)}
       <span class="en">${item.en}</span>
       ${examplesHtml}
     `;
@@ -294,7 +258,6 @@ document.getElementById('kw').addEventListener('input', () => {
   timer = setTimeout(performSearch, 300);
 });
 
-// Init
 (function(){
   document.getElementById('ft-year').textContent = new Date().getFullYear();
   performSearch();
