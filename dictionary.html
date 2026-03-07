@@ -17,7 +17,7 @@
 </script>
 
 <style>
-/* --- サイト共通デザイン --- */
+/* --- Design Tokens --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{ box-sizing:border-box }
 
@@ -26,15 +26,17 @@ html,body{
   font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 }
 
-/* ヘッダー (他のページと統一) */
+/* Layout */
 .wrap{ max-width:800px; margin:0 auto; padding:0 16px }
+
+/* Header (Top Bar) */
 .topbar{ border-top:4px solid var(--shu); border-bottom:1px solid var(--shu-tint); background:#fff; padding:20px 0 }
 .brand{ font-weight:900; font-size:32px; color:var(--shu); text-align:center; display:block; text-decoration:none }
 nav{ display:flex; justify-content:center; gap:15px; margin-top:10px; flex-wrap:wrap }
 nav a{ color:var(--ink); text-decoration:none; font-weight:600; font-size:14px }
 nav a:hover{ color:var(--shu) }
 
-/* 検索エリア */
+/* Search Section */
 .search-section{ padding:40px 0 }
 .search-box{
   background:#f9fafb; border:1px solid var(--line); border-radius:12px;
@@ -46,7 +48,7 @@ input#kw{
 }
 input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px var(--shu-tint) }
 
-/* 品詞チップ */
+/* POS Chips */
 .chips{ display:flex; flex-wrap:wrap; gap:8px }
 .chip{
   padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line);
@@ -55,13 +57,13 @@ input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px var(--shu-tint) }
 .chip:hover{ border-color:var(--shu); color:var(--shu) }
 .chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
 
-/* 検索結果カード */
+/* Cards List */
 #list{ display:grid; gap:16px }
 .card{
   background:var(--card); border:1px solid #ffe4e1; border-radius:12px;
   padding:20px; transition:0.2s; position:relative;
 }
-.card-head{ display:flex; gap:8px; margin-bottom:10px }
+.card-head{ display:flex; gap:8px; margin-bottom:10px; align-items: center; }
 .tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:3px 8px; border-radius:4px; text-transform:uppercase }
 .lvl-tag{ background:var(--ink); color:#fff }
 
@@ -69,24 +71,24 @@ input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px var(--shu-tint) }
 .kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
 .en{ display:block; font-size:16px; color:var(--ink); font-weight:500; margin-bottom:15px }
 
-/* 例文 */
+/* Examples */
 .example-details{ border-top:1px solid #ffe4e1; margin-top:12px; padding-top:12px }
 .example-details summary{ font-size:14px; color:var(--shu); cursor:pointer; font-weight:600; outline:none }
 .example-list{ margin-top:12px; display:grid; gap:10px }
 .ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0 }
 .ex-item strong{ color:var(--ink); display:block; margin-bottom:4px }
 
-/* 音声リンク */
+/* Audio Request Link */
 .audio-link{ font-size:13px; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:5px; margin-top:8px }
 .audio-link:hover{ color:var(--shu) }
 
-/* フッター (他のページと統一) */
+/* Footer */
 footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-align:center; color:var(--muted); font-size:14px }
 
-/* ユーティリティ */
+/* Status & Loading */
 .status-msg{ margin-bottom:15px; font-size:13px; color:var(--muted); font-weight:600 }
-.loading{ text-align:center; padding:50px; color:var(--shu); font-weight:bold }
-.no-results{ text-align:center; padding:60px; color:var(--muted) }
+.loading{ text-align:center; padding:50px; color:var(--shu); font-weight:bold; font-size:1.2rem; }
+.no-results{ text-align:center; padding:60px; color:var(--muted); border: 2px dashed var(--line); border-radius: 12px; }
 </style>
 </head>
 
@@ -107,7 +109,7 @@ footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-
   <h2 style="margin:0 0 20px 0; color:var(--ink)">Japanese Dictionary</h2>
   
   <div class="search-box">
-    <input type="text" id="kw" placeholder="Search word or English..." autocomplete="off">
+    <input type="text" id="kw" placeholder="Search by word, kana, or English..." autocomplete="off">
     <div class="chips" id="posChips">
       <span class="chip active" data-pos="all">すべて (All)</span>
       <span class="chip" data-pos="noun">名詞 (Noun)</span>
@@ -120,8 +122,8 @@ footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-
     </div>
   </div>
 
-  <div class="status-msg" id="status">Connecting to database...</div>
-  <div id="list"><div class="loading">Loading Vocabulary Data...</div></div>
+  <div class="status-msg" id="status">Checking database files...</div>
+  <div id="list"><div class="loading">Initializing...</div></div>
 </div>
 
 <footer>
@@ -132,22 +134,32 @@ footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-
 
 <script>
 let allVocab = [];
-const audioUrl = "https://nihongotext.com/inquiry/index.html";
+const audioInquiryUrl = "https://nihongotext.com/inquiry/index.html";
 
-// 1. 全レベル(N5-N1)のファイルを並列読み込み
+// 1. URLから検索キーワードを取得する機能 (kw=単語)
+function getUrlParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+// 2. data/json/ フォルダからN1-N5のファイルを読み込む
 async function loadAllData() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const statusEl = document.getElementById('status');
+  const listEl = document.getElementById('list');
   
+  // ファイルパスを data/json/ に変更
   const fetchPromises = levels.map(async (lv) => {
     try {
-      const response = await fetch(`/assets/json/${lv}_master_cleaned.json`);
-      if (!response.ok) return [];
+      const response = await fetch(`data/json/${lv}_master_cleaned.json`);
+      if (!response.ok) {
+        console.warn(`File data/json/${lv}_master_cleaned.json not found.`);
+        return [];
+      }
       const data = await response.json();
-      // 各単語にレベル情報を追加
       return data.map(item => ({ ...item, level: lv.toUpperCase() }));
     } catch (e) {
-      console.warn(`Could not load ${lv} file.`);
+      console.error(`Could not parse ${lv} JSON.`, e);
       return [];
     }
   });
@@ -156,68 +168,73 @@ async function loadAllData() {
   allVocab = results.flat();
 
   if (allVocab.length === 0) {
-    statusEl.innerText = "Error: No data found. Please check JSON files.";
-    document.getElementById('list').innerHTML = '<div class="no-results">JSON files not found in /assets/json/</div>';
+    statusEl.innerText = "Error: Database is empty.";
+    listEl.innerHTML = '<div class="no-results">No JSON files found in <b>data/json/</b> folder.<br>Please ensure the cleaned JSON files are uploaded.</div>';
     return;
   }
 
-  statusEl.innerText = `${allVocab.length} words found across all levels.`;
+  statusEl.innerText = `${allVocab.length} words loaded.`;
   
-  // URLパラメータ（?kw=...）があれば適用
-  const params = new URLSearchParams(window.location.search);
-  const initialKw = params.get('kw');
-  if (initialKw) {
-    document.getElementById('kw').value = initialKw;
+  // URLパラメータがあれば検索窓にセット
+  const urlKw = getUrlParam('kw');
+  if (urlKw) {
+    document.getElementById('kw').value = decodeURIComponent(urlKw);
   }
 
+  // 初回表示
   performSearch();
 }
 
-// 2. 検索実行
+// 3. 検索ロジック
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
   const activeChip = document.querySelector('.chip.active');
   const posFilter = activeChip ? activeChip.getAttribute('data-pos') : 'all';
 
   const filtered = allVocab.filter(item => {
+    // 品詞フィルタ
     const matchPos = (posFilter === 'all' || item.pos === posFilter);
+    
+    // キーワード検索 (日本語、かな、英語、ローマ字)
     const matchKw = !kw || 
       (item.ja && item.ja.includes(kw)) || 
       (item.kana && item.kana.includes(kw)) || 
       (item.en && item.en.toLowerCase().includes(kw)) ||
       (item.ro && item.ro.toLowerCase().includes(kw));
+    
     return matchPos && matchKw;
   });
 
   renderList(filtered);
 }
 
-// 3. HTMLレンダリング
+// 4. HTML表示の生成
 function renderList(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = '';
 
   if (data.length === 0) {
-    listEl.innerHTML = '<div class="no-results">No matches found.</div>';
+    listEl.innerHTML = '<div class="no-results">No matches found. Try a different word.</div>';
     return;
   }
 
-  // 表示件数が多い場合のブラウザ負荷軽減（最大200件程度を推奨）
-  const displayData = data.slice(0, 300);
+  // 大量表示によるフリーズ防止（最大400件）
+  const displayData = data.slice(0, 400);
 
   displayData.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
 
-    const audioLink = `<a href="${audioUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
+    const audioRequestHtml = `<a href="${audioInquiryUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
 
+    // 例文
     let exHtml = '';
     if (item.examples && item.examples.length > 0) {
       exHtml = `
         <details class="example-details">
           <summary>Examples (${item.examples.length})</summary>
           <div class="example-list">
-            ${item.examples.map(ex => `<div class="ex-item"><strong>${ex.ja}</strong>${ex.en}${audioLink}</div>`).join('')}
+            ${item.examples.map(ex => `<div class="ex-item"><strong>${ex.ja}</strong>${ex.en}${audioRequestHtml}</div>`).join('')}
           </div>
         </details>`;
     }
@@ -233,14 +250,16 @@ function renderList(data) {
       <span class="ja">${item.ja}</span>
       <span class="kana">${item.kana || ''}</span>
       <span class="en">${item.en}</span>
-      ${audioLink}
+      ${audioRequestHtml}
       ${exHtml}
     `;
     listEl.appendChild(card);
   });
 }
 
-// イベント設定
+// --- イベントリスナー ---
+
+// 品詞チップのクリック
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -249,13 +268,14 @@ document.getElementById('posChips').addEventListener('click', e => {
   }
 });
 
+// キーワード入力
 let debounce;
 document.getElementById('kw').addEventListener('input', () => {
   clearTimeout(debounce);
-  debounce = setTimeout(performSearch, 250);
+  debounce = setTimeout(performSearch, 300);
 });
 
-// 実行
+// データ読み込み開始
 loadAllData();
 </script>
 </body>
