@@ -27,7 +27,7 @@ html,body{
         "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
 }
 
-/* Layout Classes from Lesson Pages */
+/* Layout */
 .wrap{ max-width:800px; margin:0 auto; padding:0 16px }
 .topbar{ border-top:4px solid var(--shu); border-bottom:1px solid var(--shu-tint); background:#fff; padding:20px 0 }
 .brand{ font-weight:900; font-size:32px; color:var(--shu); text-align:center; display:block; text-decoration:none }
@@ -44,7 +44,7 @@ nav a:hover{ color:var(--shu) }
 .row{ display:flex; gap:0.75rem; margin-bottom:1rem }
 input{
   flex:1; padding:0.85rem 1.2rem; border:1px solid var(--line); border-radius:0.5rem;
-  font-size:1.1rem; background:#fff; outline:none; transition:0.2s;
+  font-size:1.1rem; background:#fff; outline:none; transition:0.2s; width: 100%;
 }
 input:focus{ border-color:var(--shu); box-shadow:0 0 0 3px var(--shu-tint) }
 
@@ -131,7 +131,7 @@ footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-
     </div>
   </div>
 
-  <div class="counter" id="count">Loading vocabulary...</div>
+  <div class="counter" id="count">Connecting to database...</div>
   <div id="list"></div>
 </div>
 
@@ -145,58 +145,74 @@ footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-
 let allVocab = [];
 const audioInquiryUrl = "https://nihongotext.com/inquiry/index.html";
 
-// URL Parameter Helper
 function getUrlParam(name) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
 }
 
-// Fetch all N1-N5 files and merge them
+// 修正ポイント：1つずつ読み込み、失敗しても継続する堅牢な方式
 async function initVocab() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
-  const listEl = document.getElementById('list');
   const countEl = document.getElementById('count');
+  const listEl = document.getElementById('list');
+  
+  let loadedCount = 0;
+  allVocab = [];
 
-  try {
-    // 全ファイルを並列で取得
-    const results = await Promise.all(
-      levels.map(lv => 
-        fetch(`/assets/json/${lv}_master_cleaned.json`)
-          .then(res => res.json())
-          .then(data => data.map(item => ({ ...item, level: lv.toUpperCase() }))) // 各項目にレベル情報を付与
-      )
-    );
-    
-    // 一つの配列に統合
-    allVocab = results.flat();
-    countEl.innerText = `${allVocab.length} words loaded.`;
-
-    // URLパラメータのチェック
-    const kwParam = getUrlParam('kw');
-    if (kwParam) {
-      document.getElementById('kw').value = decodeURIComponent(kwParam);
+  for (const lv of levels) {
+    try {
+      const res = await fetch(`/assets/json/${lv}_master_cleaned.json`);
+      if (res.ok) {
+        const data = await res.json();
+        // データの形式チェック（配列かどうか）
+        if (Array.isArray(data)) {
+          const itemsWithLevel = data.map(item => ({ ...item, level: lv.toUpperCase() }));
+          allVocab.push(...itemsWithLevel);
+          loadedCount += data.length;
+          countEl.innerText = `Loading... (${loadedCount} words found)`;
+        }
+      } else {
+        console.warn(`File not found: ${lv}_master_cleaned.json`);
+      }
+    } catch (err) {
+      console.error(`Error loading ${lv}:`, err);
     }
-
-    performSearch();
-  } catch (err) {
-    console.error(err);
-    countEl.innerText = "Error loading vocabulary data.";
-    listEl.innerHTML = `<div class="no-results">Sorry, could not load the dictionary data. Please check your connection.</div>`;
   }
+
+  if (allVocab.length === 0) {
+    countEl.innerText = "No database files found.";
+    listEl.innerHTML = `<div class="no-results">Error: Database files not found in /assets/json/ folder.<br><small>Please check if n5_master_cleaned.json is uploaded.</small></div>`;
+    return;
+  }
+
+  countEl.innerText = `${allVocab.length} words loaded.`;
+
+  // URLパラメータのキーワード処理を修正
+  const kwParam = getUrlParam('kw');
+  if (kwParam && kwParam !== 'null') {
+    document.getElementById('kw').value = decodeURIComponent(kwParam);
+  }
+
+  performSearch();
 }
 
 function performSearch() {
-  const kw = document.getElementById('kw').value.toLowerCase().trim();
+  const kwInput = document.getElementById('kw').value;
+  const kw = kwInput ? kwInput.toLowerCase().trim() : "";
   const activeChip = document.querySelector('.chip.active');
   const posFilter = activeChip ? activeChip.getAttribute('data-pos') : 'all';
 
   const filtered = allVocab.filter(item => {
+    // 品詞フィルタ（posフィールドが存在しない場合はマッチさせない）
     const matchPos = (posFilter === 'all' || item.pos === posFilter);
+    
+    // キーワード検索
     const matchKw = !kw || 
-      item.ja.includes(kw) || 
+      (item.ja && item.ja.includes(kw)) || 
       (item.kana && item.kana.includes(kw)) || 
       (item.en && item.en.toLowerCase().includes(kw)) ||
       (item.ro && item.ro.toLowerCase().includes(kw));
+    
     return matchPos && matchKw;
   });
 
@@ -210,10 +226,11 @@ function renderList(data) {
   countEl.innerText = `${data.length} words found`;
 
   if (data.length === 0) {
-    listEl.innerHTML = `<div class="no-results">No matches found for your search.</div>`;
+    listEl.innerHTML = `<div class="no-results">No matches found for "${document.getElementById('kw').value}".</div>`;
     return;
   }
 
+  // 表示速度向上のため、最初は100件程度に制限（必要なら後で追加読み込みも可能ですが、まずは全件表示）
   data.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
@@ -224,14 +241,14 @@ function renderList(data) {
       </a>`;
 
     let examplesHtml = '';
-    if (item.examples && item.examples.length > 0) {
+    if (item.examples && Array.isArray(item.examples) && item.examples.length > 0) {
       examplesHtml = `
         <details class="example-details">
           <summary>View Examples (${item.examples.length})</summary>
           <div class="example-list">
             ${item.examples.map(ex => `
               <div class="ex-item">
-                <p><strong>${ex.ja}</strong>${ex.en}</p>
+                <p><strong>${ex.ja || ''}</strong>${ex.en || ''}</p>
                 ${getAudioHtml()}
               </div>
             `).join('')}
@@ -243,19 +260,19 @@ function renderList(data) {
       "noun": "Noun", "verb": "Verb", "adjective-i": "Adj-i", "adjective-na": "Adj-na",
       "adverb": "Adv", "particle": "Particle", "conjunction": "Conj", "expression": "Grammar"
     };
-    const displayPos = posLabelMap[item.pos] || item.pos;
+    const displayPos = posLabelMap[item.pos] || item.pos || "Other";
 
     card.innerHTML = `
       <div class="card-head">
         <div class="badge-group">
-          <span class="tag lvl-tag">${item.level}</span>
+          <span class="tag lvl-tag">${item.level || ''}</span>
           <span class="tag">${displayPos}</span>
         </div>
         <small style="color:var(--muted)">${item.id || ''}</small>
       </div>
-      <span class="ja">${item.ja}</span>
+      <span class="ja">${item.ja || ''}</span>
       <span class="kana">${item.kana || ''}</span>
-      <span class="en">${item.en}</span>
+      <span class="en">${item.en || ''}</span>
       ${getAudioHtml()}
       ${examplesHtml}
     `;
@@ -263,7 +280,6 @@ function renderList(data) {
   });
 }
 
-// Listeners
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -278,6 +294,7 @@ document.getElementById('kw').addEventListener('input', () => {
   timer = setTimeout(performSearch, 300);
 });
 
+// 起動
 initVocab();
 </script>
 </body>
