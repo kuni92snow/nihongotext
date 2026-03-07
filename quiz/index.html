@@ -25,264 +25,246 @@ html,body{
         "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
 }
 a{ color:inherit; text-decoration:none }
-button{ cursor:pointer; font-family:inherit; }
-.wrap{ max-width:1100px; margin:0 auto; padding:0 16px; }
 
-/* --- Header --- */
-.site-header { background:#fff; border-bottom:1px solid #eee; position:relative; z-index:30; }
-.site-header-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; position:relative; }
-.logo-text { font-weight:800; font-size:32px; color:var(--shu); }
-.beta-text { font-size:20px; color:#98a1a8; margin-bottom: 5px; }
-.nav-links { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-.nav-links a { color:#333; font-weight:600; font-size:15px; }
-.nav-links a:hover { color:var(--shu); }
-.sns-nav { display:flex; align-items:center; gap:14px; font-size:20px; justify-content:center; margin-top: 5px; }
-.sns-nav a { color:var(--shu); }
+.container{ max-width:600px; margin:0 auto; padding:2rem 1.25rem }
+header{ text-align:center; margin-bottom:2rem }
+h1{ font-size:1.5rem; font-weight:800; color:var(--shu); margin:0 }
 
-/* --- Quiz UI --- */
-.controls { background:#f9fafb; padding:20px; border-radius:15px; margin:20px 0; border:1px solid var(--line); display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
-.controls label { font-size:12px; color:var(--muted); display:flex; flex-direction:column; gap:4px; font-weight:bold; }
-select, input[type="number"] { height:40px; border:1px solid var(--line); border-radius:10px; padding:0 10px; background:#fff; }
+/* Setup View */
+#setupView{ background:#f9fafb; border:1px solid var(--line); padding:2rem; border-radius:1rem; text-align:center }
+.form-group{ margin-bottom:1.5rem; text-align:left }
+label{ display:block; font-size:0.85rem; font-weight:700; margin-bottom:0.5rem; color:var(--muted) }
+select{ width:100%; padding:0.75rem; border:1px solid var(--line); border-radius:0.5rem; font-size:1rem; background:#fff }
 
-.btn { border:1px solid var(--shu); color:var(--shu); background:#fff; border-radius:10px; padding:10px 20px; font-weight:700; transition:0.2s; display:inline-flex; align-items:center; gap:8px;}
-.btn:hover { background:var(--shu-tint); }
-.btn.primary { background:var(--shu); color:#fff; }
+.btn{
+  background:var(--shu); color:#fff; border:none; padding:1rem 2rem; 
+  border-radius:0.5rem; font-size:1rem; font-weight:700; cursor:pointer; width:100%;
+}
+.btn:disabled{ opacity:0.5; cursor:not-allowed }
 
-.card { background:var(--card); border:1px solid #f1cbc6; border-radius:14px; padding:25px; margin-bottom:30px; }
-.badge { display:inline-block; background:#fff; border:1px solid #f1cbc6; padding:4px 12px; border-radius:999px; font-size:13px; font-weight:700; color:var(--muted); }
+/* Quiz View */
+#quizView{ display:none }
+.progress{ font-size:0.85rem; color:var(--muted); margin-bottom:1rem; text-align:center }
+.q-card{ background:var(--card); border:1px solid #ffe4e1; padding:2rem; border-radius:1rem; margin-bottom:1.5rem }
+.q-text{ font-size:1.25rem; font-weight:700; line-height:1.5; margin-bottom:1rem; text-align:center }
+.q-hint{ font-size:0.9rem; color:var(--muted); text-align:center; margin-bottom:1rem }
 
-.display-mode-selector { display:flex; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
-.display-mode-selector label { display:flex; align-items:center; gap:4px; padding:8px 12px; cursor:pointer; font-size:13px; font-weight:700; border-right:1px solid var(--line); margin:0; }
-.display-mode-selector label:last-child { border-right:none; }
-.display-mode-selector input { margin:0; }
-.display-mode-selector label:has(input:checked) { background:var(--shu-tint); color:var(--shu); }
+.options{ display:grid; gap:0.75rem }
+.opt-btn{
+  background:#fff; border:1px solid var(--line); padding:1rem; border-radius:0.5rem;
+  text-align:left; font-size:1rem; font-weight:600; cursor:pointer; transition:0.2s;
+}
+.opt-btn:hover{ border-color:var(--shu); background:var(--shu-tint) }
+.opt-btn.correct{ background:#d1fae5; border-color:#10b981; color:#065f46 }
+.opt-btn.wrong{ background:#fee2e2; border-color:#ef4444; color:#991b1b }
 
-.q-sentence { font-size:24px; font-weight:800; margin:20px 0 5px 0; line-height:1.4; color:var(--ink); }
-.q-translation { font-size:16px; color:var(--muted); margin-bottom:20px; font-style: italic; }
+/* Display Mode Toggle */
+.display-mode{ margin-top:1.5rem; display:flex; justify-content:center; gap:1rem }
+.radio-label{ font-size:0.8rem; color:var(--muted); cursor:pointer; display:flex; align-items:center; gap:0.3rem }
 
-.choice { width:100%; text-align:left; padding:15px; border:1px solid var(--line); border-radius:12px; background:#fff; margin-bottom:10px; font-size:16px; transition:0.2s; }
-.choice:hover:not(:disabled) { border-color:var(--shu); background:var(--shu-tint); }
-.choice.correct { border-color:#10b981; background:#ecfdf5; color:#065f46; font-weight:bold; }
-.choice.wrong { border-color:#ef4444; background:#fef2f2; color:#991b1b; }
+/* Result View */
+#resultView{ display:none; text-align:center }
+.score-circle{ width:120px; height:120px; border-radius:50%; background:var(--shu); color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto 1.5rem }
+.score-circle .num{ font-size:2rem; font-weight:800 }
 
-.ex-panel { margin-top:20px; padding-top:15px; border-top:1px dashed #f1cbc6; font-size:14px; }
+.res-table{ width:100%; border-collapse:collapse; margin-top:2rem; text-align:left; font-size:0.9rem }
+.res-table th, .res-table td{ padding:0.75rem; border-bottom:1px solid var(--line) }
+.res-status{ width:30px; font-weight:bold }
+.res-correct{ color:#10b981 }
+.res-wrong{ color:#ef4444 }
 
-/* --- Results Table --- */
-.result-table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; text-align:left; background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--line); }
-.result-table th { background:#f9fafb; padding:12px; border-bottom:1px solid var(--line); color:var(--muted); }
-.result-table td { padding:12px; border-bottom:1px solid var(--line); vertical-align: top; }
-.res-status { font-weight:800; text-align:center; }
-.res-correct { color:#10b981; }
-.res-wrong { color:#ef4444; }
-
-/* --- Footer --- */
-.site-footer { background:#fff5f4; border-top:1px solid #f0c8c3; padding: 25px 0; margin-top: 40px; }
-.footer-inner { max-width:1100px; margin:0 auto; padding:0 16px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; }
-.footer-copy { color:var(--shu); font-size:14px; font-weight:600; }
+#nextBtn{ margin-top:1.5rem; display:none }
+#emailBtn{ background:#1f2937; margin-top:1rem }
 </style>
 </head>
+
 <body>
+<div class="container">
+  <header>
+    <h1><a href="/">nihongotext.com Quiz</a></h1>
+  </header>
 
-<header class="site-header">
-  <div class="site-header-inner">
-    <a href="/"><span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span></a>
-    <div class="beta-text">== beta version ==</div>
-    <nav class="nav-links">
-      <a href="/">Home</a>
-      <a href="/dictionary.html">Vocabulary Tool</a>
-      <a href="/quiz/index.html" style="color:var(--shu)">Quiz</a>
-      <a href="/blog/index.html">Blog</a>
-      <a href="/inquiry/index.html">Inquiry</a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-  <div class="controls">
-    <label>Level
-      <select id="levelSel">
-        <option value="N5">N5</option><option value="N4">N4</option><option value="N3">N3</option><option value="N2">N2</option><option value="N1">N1</option>
+  <div id="setupView">
+    <div class="form-group">
+      <label>JLPT Level</label>
+      <select id="lv">
+        <option value="n5">N5</option>
+        <option value="n4">N4</option>
+        <option value="n3">N3</option>
+        <option value="n2">N2</option>
+        <option value="n1">N1</option>
       </select>
-    </label>
-    <label>Category
-      <select id="posSel">
-        <option value="verbs">Verbs</option>
-        <option value="nouns">Nouns</option>
-        <option value="adjectives-i">i-Adjectives</option>
-        <option value="adjectives-na">na-Adjectives</option>
+    </div>
+    <div class="form-group">
+      <label>Category</label>
+      <select id="cat">
+        <option value="noun">名詞 (Noun)</option>
+        <option value="verb">動詞 (Verb)</option>
+        <option value="adjective-i">い形容詞 (Adj-i)</option>
+        <option value="adjective-na">な形容詞 (Adj-na)</option>
+        <option value="adverb">副詞 (Adv)</option>
+        <option value="particle">助詞 (Part)</option>
+        <option value="expression">文法/表現 (Grammar)</option>
+        <option value="numeral">数詞 (Numeral)</option>
       </select>
-    </label>
-    <label>Count
-      <input id="qCount" type="number" value="10" min="5" max="30">
-    </label>
-    <button id="startBtn" class="btn primary">Start Quiz</button>
+    </div>
+    <button class="btn" id="startBtn">Start Quiz</button>
   </div>
 
-  <section id="stage" class="card">
-    <div id="intro">
-      <h2>JLPT Vocabulary Quiz</h2>
-      <p style="color:var(--muted)">Choose the best word to fill in the blank.</p>
+  <div id="quizView">
+    <div class="progress" id="progress">Question 1 / 10</div>
+    <div class="q-card">
+      <div class="q-text" id="qText"></div>
+      <div class="q-hint" id="qHint"></div>
+      <div class="options" id="options"></div>
     </div>
+    <button class="btn" id="nextBtn">Next Question</button>
 
-    <div id="quizArea" style="display:none">
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap: wrap; gap: 10px;">
-        <div style="display: flex; gap: 8px;">
-            <div id="qCrumbs" class="badge">1 / 10</div>
-            <div id="qScore" class="badge">Score: 0</div>
-        </div>
-        <div class="display-mode-selector" id="displayModeGroup">
-            <label><input type="radio" name="displayMode" value="kanji" checked> Kanji</label>
-            <label><input type="radio" name="displayMode" value="kana"> Kana</label>
-            <label><input type="radio" name="displayMode" value="both"> Both</label>
-        </div>
-      </div>
-
-      <div id="qText" class="q-sentence"></div>
-      <div id="qEnText" class="q-translation"></div>
-      <div id="qChoices"></div>
-      <div id="qExplain" class="ex-panel" style="display:none"></div>
-      <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
-        <button id="stopBtn" class="btn">Stop</button>
-        <button id="nextBtn" class="btn primary" disabled>Next</button>
-      </div>
+    <div class="display-mode" id="displayModeGroup">
+      <label class="radio-label"><input type="radio" name="mode" value="kanji" checked> Kanji</label>
+      <label class="radio-label"><input type="radio" name="mode" value="kana"> Kana</label>
     </div>
-
-    <div id="resultArea" style="display:none;">
-      <div style="text-align:center;">
-        <h3>Quiz Results</h3>
-        <div id="resultSummary" style="font-size:28px; font-weight:800; color:var(--shu); margin:10px 0;"></div>
-      </div>
-      
-      <table class="result-table">
-        <thead>
-          <tr>
-            <th>Status</th>
-            <th>Question / Correct Answer</th>
-          </tr>
-        </thead>
-        <tbody id="resultList"></tbody>
-      </table>
-
-      <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-        <button id="emailBtn" class="btn primary"><i class="fa-solid fa-paper-plane"></i> Send Results to Email</button>
-        <button onclick="location.reload()" class="btn"><i class="fa-solid fa-rotate-right"></i> Try Again</button>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
   </div>
-</footer>
+
+  <div id="resultView">
+    <h2>Result</h2>
+    <div class="score-circle">
+      <div class="num" id="scoreNum">0</div>
+      <div style="font-size:0.8rem">Score</div>
+    </div>
+    <table class="res-table">
+      <tbody id="resList"></tbody>
+    </table>
+    <button class="btn" onclick="location.reload()" style="margin-top:2rem">Try Again</button>
+    <button class="btn" id="emailBtn">Send Results by Email</button>
+  </div>
+</div>
 
 <script>
-let bank = [], quiz = [], idx = 0, score = 0;
+let allVocab = [];
+let quiz = [];
+let idx = 0;
+let score = 0;
 
-function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
+const audioInquiryUrl = "https://nihongotext.com/inquiry/index.html";
 
-function makeBlank(text, target) {
-  if (!text || !target) return "（　　）";
-  if (text.includes(target)) return text.replace(target, "（　　）");
-  const kanjiStem = target.replace(/[ぁ-んァ-ン]/g, '');
-  if (kanjiStem && text.includes(kanjiStem)) {
-    const regex = new RegExp(kanjiStem + "[ぁ-ん]*", "g");
-    return text.replace(regex, "（　　）");
-  }
-  return "（　　） " + text;
-}
-
+// 1. Fetch Master Data and Filter
 async function startQuiz() {
-  const lv = document.getElementById('levelSel').value;
-  const pos = document.getElementById('posSel').value;
-  const count = parseInt(document.getElementById('qCount').value);
+  const lv = document.getElementById('lv').value;
+  const cat = document.getElementById('cat').value;
+  const btn = document.getElementById('startBtn');
+  
+  btn.disabled = true;
+  btn.innerText = "Loading...";
 
   try {
-    const res = await fetch(`/data/json/${lv}/${pos}.json`);
+    const res = await fetch(`/assets/json/${lv}_master_cleaned.json`);
+    if(!res.ok) throw new Error("File not found");
     const data = await res.json();
-    bank = Array.isArray(data) ? data : (data.entries || []);
-    if (bank.length < 4) return alert("Not enough data.");
     
-    quiz = shuffle([...bank]).slice(0, count).map(item => {
-      const distractorItems = shuffle(bank.filter(x => x.ja !== item.ja)).slice(0, 3);
-      const optionsItems = shuffle([item, ...distractorItems]);
-      let sentence = "（　　）", kanaSentence = "（　　）", enSentence = ""; 
-      if (item.examples && item.examples.length > 0) {
-        sentence = makeBlank(item.examples[0].ja, item.ja);
-        kanaSentence = makeBlank(item.examples[0].kana, item.kana);
-        enSentence = item.examples[0].en; 
-      }
-      return { 
-          item, sentence, kanaSentence, enSentence, 
-          options: optionsItems.map(o => ({ja: o.ja, kana: o.kana})), 
-          answer: optionsItems.indexOf(item),
-          userChoice: null 
-      };
-    });
+    // Filter by selected part of speech (pos)
+    const filtered = data.filter(item => item.pos === cat);
+    
+    if (filtered.length < 4) {
+      alert("Not enough words in this category to start a quiz. Please try another category.");
+      location.reload();
+      return;
+    }
 
-    idx = 0; score = 0;
-    document.getElementById('intro').style.display = 'none';
-    document.getElementById('quizArea').style.display = 'block';
+    createQuiz(filtered);
+    
+    document.getElementById('setupView').style.display = 'none';
+    document.getElementById('quizView').style.display = 'block';
     renderQuestion();
-  } catch (e) { alert("Failed to load data."); }
+
+  } catch (err) {
+    console.error(err);
+    alert("Could not load quiz data.");
+    location.reload();
+  }
 }
 
+// 2. Build Quiz Array
+function createQuiz(list) {
+  const shuffled = [...list].sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, 10);
+  
+  quiz = selected.map(item => {
+    // Determine the question content (use example sentence if available)
+    let sentence = item.ja;
+    let hint = item.en;
+    
+    if (item.examples && item.examples.length > 0) {
+      const ex = item.examples[Math.floor(Math.random() * item.examples.length)];
+      // Replace the answer word with blanks in the example sentence
+      sentence = ex.ja.replace(item.ja, " 【 ___ 】 ");
+      hint = ex.en;
+    }
+
+    // Choices (1 correct + 3 random)
+    const others = list.filter(w => w.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
+    const options = [...others, item].sort(() => 0.5 - Math.random());
+
+    return { item, sentence, hint, options, answer: item.ja, userCorrect: false };
+  });
+}
+
+// 3. Render Question
 function renderQuestion() {
   const q = quiz[idx];
-  const mode = document.querySelector('input[name="displayMode"]:checked').value;
-  document.getElementById('qCrumbs').textContent = `${idx + 1} / ${quiz.length}`;
-  document.getElementById('qScore').textContent = `Score: ${score}`;
-  document.getElementById('qText').textContent = (mode === 'kana') ? q.kanaSentence : q.sentence;
-  document.getElementById('qEnText').textContent = q.enSentence; 
-  document.getElementById('qExplain').style.display = 'none';
-  document.getElementById('nextBtn').disabled = true;
+  const mode = document.querySelector('input[name="mode"]:checked').value;
+  
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('progress').innerText = `Question ${idx + 1} / ${quiz.length}`;
+  document.getElementById('qText').innerText = q.sentence;
+  document.getElementById('qHint').innerText = q.hint;
+  
+  const optContainer = document.getElementById('options');
+  optContainer.innerHTML = '';
 
-  const box = document.getElementById('qChoices');
-  box.innerHTML = '';
-  q.options.forEach((opt, i) => {
+  q.options.forEach(opt => {
     const btn = document.createElement('button');
-    btn.className = 'choice';
-    let txt = (mode === 'kana') ? opt.kana : (mode === 'both' ? `${opt.ja} (${opt.kana})` : opt.ja);
-    btn.textContent = `${i + 1}. ${txt}`;
-    btn.onclick = () => handleAnswer(i);
-    box.appendChild(btn);
+    btn.className = 'opt-btn';
+    // Show either ja (kanji) or kana based on display mode
+    btn.innerText = (mode === 'kana') ? (opt.kana || opt.ja) : opt.ja;
+    
+    btn.onclick = () => {
+      const allBtns = optContainer.querySelectorAll('.opt-btn');
+      allBtns.forEach(b => b.disabled = true);
+      
+      if (opt.ja === q.answer) {
+        btn.classList.add('correct');
+        score++;
+        q.userCorrect = true;
+      } else {
+        btn.classList.add('wrong');
+        // highlight the correct one
+        allBtns.forEach(b => {
+          if (b.innerText === q.answer || (mode === 'kana' && b.innerText === (q.item.kana || q.item.ja))) {
+            b.classList.add('correct');
+          }
+        });
+      }
+      document.getElementById('nextBtn').style.display = 'block';
+    };
+    optContainer.appendChild(btn);
   });
 }
 
-function handleAnswer(i) {
-  const q = quiz[idx];
-  q.userChoice = i; 
-  const btns = document.querySelectorAll('.choice');
-  btns.forEach((b, j) => {
-    b.disabled = true;
-    if (j === q.answer) b.classList.add('correct');
-    if (i === j && i !== q.answer) b.classList.add('wrong');
-  });
-
-  if (i === q.answer) score++;
-  const exp = document.getElementById('qExplain');
-  if (q.item.examples && q.item.examples.length > 0) {
-    const e = q.item.examples[0];
-    exp.innerHTML = `<div class="ex-panel" style="border-top:1px dashed #f1cbc6; padding-top:10px; margin-top:15px;"><span style="font-weight:bold; color:var(--shu);">Correct Sentence:</span><br>${e.ja}<br><small>${e.en}</small></div>`;
-    exp.style.display = 'block';
-  }
-  document.getElementById('nextBtn').disabled = false;
-  if (idx === quiz.length - 1) document.getElementById('nextBtn').textContent = 'Finish & Show Results';
-}
-
+// 4. Show Results
 function showResult() {
-  document.getElementById('quizArea').style.display = 'none';
-  document.getElementById('resultArea').style.display = 'block';
-  document.getElementById('resultSummary').textContent = `${score} / ${quiz.length} Correct!`;
+  document.getElementById('quizView').style.display = 'none';
+  document.getElementById('resultView').style.display = 'block';
+  document.getElementById('scoreNum').innerText = `${score} / ${quiz.length}`;
 
-  const list = document.getElementById('resultList');
-  list.innerHTML = '';
-  let emailBody = `Quiz Results from nihongotext.com\nScore: ${score} / ${quiz.length}\n\n`;
+  const list = document.getElementById('resList');
+  let emailBody = `My Japanese Quiz Results\nScore: ${score}/${quiz.length}\n\n`;
 
   quiz.forEach((q, i) => {
-    const isCorrect = q.userChoice === q.answer;
-    const statusIcon = isCorrect ? '<span class="res-correct">✓ Correct</span>' : '<span class="res-wrong">✗ Wrong</span>';
+    const isCorrect = q.userCorrect;
+    const statusIcon = isCorrect ? 
+      '<span class="res-status res-correct">✓</span>' : 
+      '<span class="res-status res-wrong">✗</span>';
     
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -299,7 +281,6 @@ function showResult() {
     emailBody += `Answer: ${q.item.ja} (${q.item.kana})\n\n`;
   });
 
-  // Footer link added to email body
   emailBody += `---\nLearn more Japanese at: https://nihongotext.com\n`;
 
   document.getElementById('emailBtn').onclick = () => {
@@ -309,6 +290,7 @@ function showResult() {
   };
 }
 
+// Event Listeners
 document.getElementById('displayModeGroup').addEventListener('change', () => {
     if (quiz.length > 0 && idx < quiz.length) renderQuestion();
 });
@@ -320,12 +302,6 @@ document.getElementById('nextBtn').onclick = () => {
 };
 
 document.getElementById('startBtn').onclick = startQuiz;
-document.getElementById('stopBtn').onclick = () => location.reload();
-
-(function(){
-  const el = document.getElementById('ft-year');
-  if (el) el.textContent = new Date().getFullYear();
-})();
 </script>
 </body>
 </html>
