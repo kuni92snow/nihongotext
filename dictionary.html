@@ -21,32 +21,32 @@
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{ box-sizing:border-box }
 
-/* Font Stack */
 html,body{
   margin:0; background:#fff; color:var(--ink);
   font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
         "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
 }
 
-/* Layout */
-.container{ max-width:800px; margin:0 auto; padding:2rem 1.25rem }
-header{ margin-bottom:2.5rem; text-align:center }
-h1{ font-size:1.75rem; font-weight:800; color:var(--shu); margin:0 0 0.5rem }
-.sub{ color:var(--muted); font-size:0.95rem }
+/* Layout Classes from Lesson Pages */
+.wrap{ max-width:800px; margin:0 auto; padding:0 16px }
+.topbar{ border-top:4px solid var(--shu); border-bottom:1px solid var(--shu-tint); background:#fff; padding:20px 0 }
+.brand{ font-weight:900; font-size:32px; color:var(--shu); text-align:center; display:block; text-decoration:none }
+nav{ display:flex; justify-content:center; gap:15px; margin-top:10px; flex-wrap:wrap }
+nav a{ color:var(--ink); text-decoration:none; font-weight:600; font-size:14px }
+nav a:hover{ color:var(--shu) }
 
 /* Search Area */
+.search-container{ padding:2.5rem 0 }
 .search-box{
   background:#f9fafb; border:1px solid var(--line); border-radius:1rem;
   padding:1.5rem; margin-bottom:2rem;
 }
 .row{ display:flex; gap:0.75rem; margin-bottom:1rem }
-select, input{
-  padding:0.75rem 1rem; border:1px solid var(--line); border-radius:0.5rem;
-  font-size:1rem; background:#fff; outline:none; transition:0.2s;
+input{
+  flex:1; padding:0.85rem 1.2rem; border:1px solid var(--line); border-radius:0.5rem;
+  font-size:1.1rem; background:#fff; outline:none; transition:0.2s;
 }
-select:focus, input:focus{ border-color:var(--shu); box-shadow:0 0 0 3px var(--shu-tint) }
-select{ width:120px; cursor:pointer }
-input{ flex:1 }
+input:focus{ border-color:var(--shu); box-shadow:0 0 0 3px var(--shu-tint) }
 
 /* POS Chips */
 .chips{ display:flex; flex-wrap:wrap; gap:0.5rem }
@@ -58,56 +58,64 @@ input{ flex:1 }
 .chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
 
 /* List */
-#list{ display:grid; gap:1rem }
+#list{ display:grid; gap:1.2rem }
 .card{
   background:var(--card); border:1px solid #ffe4e1; border-radius:1rem;
-  padding:1.25rem; transition:0.2s; position:relative;
+  padding:1.5rem; transition:0.2s; position:relative;
 }
-.card:hover{ border-color:var(--shu); transform:translateY(-2px); box-shadow:0 4px 12px rgba(230,70,45,0.08) }
+.card:hover{ border-color:var(--shu); transform:translateY(-2px); box-shadow:0 4px 15px rgba(230,70,45,0.08) }
 
 .card-head{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem }
+.badge-group{ display:flex; gap:0.5rem }
 .tag{ font-size:0.7rem; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:0.2rem 0.6rem; border-radius:0.4rem; text-transform:uppercase }
+.lvl-tag{ background:var(--ink); color:#fff }
 
-.ja{ display:block; font-size:1.4rem; font-weight:700; margin-bottom:0.25rem }
-.kana{ display:block; font-size:0.9rem; color:var(--muted); margin-bottom:0.75rem }
-.en{ display:block; font-size:1rem; color:var(--ink); margin-bottom:1rem }
+.ja{ display:block; font-size:1.6rem; font-weight:700; margin-bottom:0.25rem }
+.kana{ display:block; font-size:1rem; color:var(--muted); margin-bottom:0.75rem }
+.en{ display:block; font-size:1.1rem; color:var(--ink); margin-bottom:1.2rem; font-weight:500 }
 
 /* Examples */
 .example-details{ border-top:1px solid #ffe4e1; margin-top:1rem; padding-top:1rem }
-.example-details summary{ font-size:0.85rem; color:var(--shu); cursor:pointer; font-weight:600; outline:none }
-.example-list{ margin-top:0.75rem; display:grid; gap:0.75rem }
-.ex-item{ font-size:0.9rem; background:#fff; padding:0.75rem; border-radius:0.6rem; border:1px solid #fff1f0 }
-.ex-item p{ margin:0 }
-.ex-item strong{ color:var(--ink); display:block; margin-bottom:0.2rem }
-.ex-item em{ font-style:normal; color:var(--muted); display:block; font-size:0.8rem; margin-bottom:0.2rem }
+.example-details summary{ font-size:0.9rem; color:var(--shu); cursor:pointer; font-weight:600; outline:none }
+.example-list{ margin-top:1rem; display:grid; gap:0.75rem }
+.ex-item{ font-size:0.95rem; background:#fff; padding:1rem; border-radius:0.6rem; border:1px solid #fff1f0 }
+.ex-item strong{ color:var(--ink); display:block; margin-bottom:0.3rem }
 
 /* Audio Link */
-.audio-link{ font-size:0.75rem; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem; margin-top:0.5rem }
+.audio-link{ font-size:0.8rem; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem; margin-top:0.6rem }
 .audio-link:hover{ color:var(--shu) }
 
+/* Footer */
+footer{ border-top:1px solid var(--line); padding:40px 0; margin-top:60px; text-align:center; color:var(--muted); font-size:14px }
+
 /* Utility */
-.counter{ margin-bottom:1rem; font-size:0.85rem; color:var(--muted) }
-.no-results{ text-align:center; padding:3rem; color:var(--muted) }
+.counter{ margin-bottom:1rem; font-size:0.9rem; color:var(--muted); font-weight:600 }
+.no-results{ text-align:center; padding:4rem; color:var(--muted); font-size:1.1rem }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <header>
-    <h1>Vocabulary Tool</h1>
-    <p class="sub">Find words and grammar for your level.</p>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="/" class="brand">nihongotext.com</a>
+    <nav>
+      <a href="/">HOME</a>
+      <a href="/dictionary.html">DICTIONARY</a>
+      <a href="/quiz/">QUIZ</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap search-container">
+  <header style="margin-bottom: 2rem;">
+    <h2 style="color: var(--shu); margin:0;">Japanese Dictionary</h2>
+    <p style="color: var(--muted); margin:0.5rem 0 0;">Search vocabulary across N1-N5 levels.</p>
   </header>
 
   <div class="search-box">
     <div class="row">
-      <select id="lv">
-        <option value="n5">N5</option>
-        <option value="n4">N4</option>
-        <option value="n3">N3</option>
-        <option value="n2">N2</option>
-        <option value="n1">N1</option>
-      </select>
-      <input type="text" id="kw" placeholder="Search by word or English..." autocomplete="off">
+      <input type="text" id="kw" placeholder="Type a word, hiragana, or English..." autocomplete="off">
     </div>
     
     <div class="chips" id="posChips">
@@ -123,58 +131,78 @@ input{ flex:1 }
     </div>
   </div>
 
-  <div class="counter" id="count">0 words found</div>
+  <div class="counter" id="count">Loading vocabulary...</div>
   <div id="list"></div>
 </div>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 nihongotext.com - Authentic Japanese Learning Materials</p>
+  </div>
+</footer>
 
 <script>
 let allVocab = [];
 const audioInquiryUrl = "https://nihongotext.com/inquiry/index.html";
 
-// Initialize data fetching
+// URL Parameter Helper
+function getUrlParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+// Fetch all N1-N5 files and merge them
 async function initVocab() {
-  const lv = document.getElementById('lv').value;
-  // ファイル名は今回の「重複削除済み」の名前に合わせています
-  const filePath = `/assets/json/${lv}_master_cleaned.json`;
-  
+  const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const listEl = document.getElementById('list');
-  listEl.innerHTML = '<div class="no-results">Loading...</div>';
+  const countEl = document.getElementById('count');
 
   try {
-    const res = await fetch(filePath);
-    if(!res.ok) throw new Error("File not found");
-    allVocab = await res.json();
+    // 全ファイルを並列で取得
+    const results = await Promise.all(
+      levels.map(lv => 
+        fetch(`/assets/json/${lv}_master_cleaned.json`)
+          .then(res => res.json())
+          .then(data => data.map(item => ({ ...item, level: lv.toUpperCase() }))) // 各項目にレベル情報を付与
+      )
+    );
+    
+    // 一つの配列に統合
+    allVocab = results.flat();
+    countEl.innerText = `${allVocab.length} words loaded.`;
+
+    // URLパラメータのチェック
+    const kwParam = getUrlParam('kw');
+    if (kwParam) {
+      document.getElementById('kw').value = decodeURIComponent(kwParam);
+    }
+
     performSearch();
   } catch (err) {
     console.error(err);
-    listEl.innerHTML = `<div class="no-results">Could not load vocabulary for ${lv.toUpperCase()}.</div>`;
+    countEl.innerText = "Error loading vocabulary data.";
+    listEl.innerHTML = `<div class="no-results">Sorry, could not load the dictionary data. Please check your connection.</div>`;
   }
 }
 
-// Search & Filter logic
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
   const activeChip = document.querySelector('.chip.active');
   const posFilter = activeChip ? activeChip.getAttribute('data-pos') : 'all';
 
   const filtered = allVocab.filter(item => {
-    // POS Filter (using the new "pos" field)
     const matchPos = (posFilter === 'all' || item.pos === posFilter);
-    
-    // Keyword Search
     const matchKw = !kw || 
       item.ja.includes(kw) || 
       (item.kana && item.kana.includes(kw)) || 
       (item.en && item.en.toLowerCase().includes(kw)) ||
       (item.ro && item.ro.toLowerCase().includes(kw));
-    
     return matchPos && matchKw;
   });
 
   renderList(filtered);
 }
 
-// UI Rendering
 function renderList(data) {
   const listEl = document.getElementById('list');
   const countEl = document.getElementById('count');
@@ -182,7 +210,7 @@ function renderList(data) {
   countEl.innerText = `${data.length} words found`;
 
   if (data.length === 0) {
-    listEl.innerHTML = '<div class="no-results">No words matched your search.</div>';
+    listEl.innerHTML = `<div class="no-results">No matches found for your search.</div>`;
     return;
   }
 
@@ -190,26 +218,20 @@ function renderList(data) {
     const card = document.createElement('div');
     card.className = 'card';
 
-    // Audio Request Link
     const getAudioHtml = () => `
       <a href="${audioInquiryUrl}" target="_blank" class="audio-link">
-        <i class="fa-solid fa-circle-play"></i> Request Audio
+        <i class="fa-solid fa-circle-play"></i> Audio Request
       </a>`;
 
-    // Examples HTML
     let examplesHtml = '';
     if (item.examples && item.examples.length > 0) {
       examplesHtml = `
         <details class="example-details">
-          <summary>Show Examples (${item.examples.length})</summary>
+          <summary>View Examples (${item.examples.length})</summary>
           <div class="example-list">
             ${item.examples.map(ex => `
               <div class="ex-item">
-                <p>
-                  <strong>${ex.ja}</strong>
-                  ${ex.ro ? `<em>${ex.ro}</em>` : ''}
-                  ${ex.en}
-                </p>
+                <p><strong>${ex.ja}</strong>${ex.en}</p>
                 ${getAudioHtml()}
               </div>
             `).join('')}
@@ -217,17 +239,18 @@ function renderList(data) {
         </details>`;
     }
 
-    // POS label mapping (Internal key to Display label)
     const posLabelMap = {
       "noun": "Noun", "verb": "Verb", "adjective-i": "Adj-i", "adjective-na": "Adj-na",
-      "adverb": "Adv", "particle": "Particle", "conjunction": "Conj", "expression": "Grammar",
-      "numeral": "Number", "interjection": "Intj", "pronoun": "Pronoun", "interrogative": "Quest"
+      "adverb": "Adv", "particle": "Particle", "conjunction": "Conj", "expression": "Grammar"
     };
     const displayPos = posLabelMap[item.pos] || item.pos;
 
     card.innerHTML = `
       <div class="card-head">
-        <span class="tag">${displayPos}</span>
+        <div class="badge-group">
+          <span class="tag lvl-tag">${item.level}</span>
+          <span class="tag">${displayPos}</span>
+        </div>
         <small style="color:var(--muted)">${item.id || ''}</small>
       </div>
       <span class="ja">${item.ja}</span>
@@ -240,9 +263,7 @@ function renderList(data) {
   });
 }
 
-// Event Listeners
-document.getElementById('lv').addEventListener('change', initVocab);
-
+// Listeners
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -257,7 +278,6 @@ document.getElementById('kw').addEventListener('input', () => {
   timer = setTimeout(performSearch, 300);
 });
 
-// Start
 initVocab();
 </script>
 </body>
