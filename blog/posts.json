@@ -98,6 +98,16 @@
     "summary_ja": "クイズ機能を大幅に改良しました！動詞の活用（例：『着く』→『着きました』）を自動認識して自然な空欄が作られるようになり、すべての問題に英語翻訳を追加しました。デザインもサイト全体と統一し、PC・スマホ両方でより学習しやすくなっています。",
     "summary_en": "We’ve significantly improved the quiz feature! Blanks now naturally adapt to verb conjugations, and English translations are now provided for every question. The design has also been unified with the rest of the site for a seamless learning experience on both desktop and mobile.",
     "tags": ["update", "quiz", "feature"]
-  }
+  },
+  {
+  "slug": "major-update-dictionary-quiz-2026-03-08",
+  "date": "2026-03-08",
+  "title": "Major Update: Cross-Level Search & Enhanced Quiz",
+  "title_ja": "大幅更新：全レベル横断辞書と多機能クイズの公開",
+  "title_en": "Major Update: Cross-Level Search & Enhanced Quiz",
+  "summary_ja": "辞書機能をN1〜N5の全レベル横断検索にアップグレードしました。また、クイズ機能に『問題数選択』『表示モード切り替え（漢字・かな・両方）』『SNS（X, Reddit）シェア機能』を追加し、学習がより便利になりました。",
+  "summary_en": "We've upgraded our dictionary to support cross-level searches from N1 to N5! The quiz feature now includes customizable question counts, multiple display modes (Kanji/Kana/Both), and SNS sharing options for X and Reddit.",
+  "tags": ["update", "feature", "dictionary", "quiz", "JLPT"]
+}
   
 ]
