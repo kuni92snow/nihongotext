@@ -17,13 +17,14 @@
 </script>
 
 <style>
-/* --- nihongotext.com 共通スタイル (self-intro.html等と完全一致) --- */
+/* --- nihongotext.com 共通スタイル (self-intro.html と完全一致) --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
-html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
+html,body{ margin:0;background:#fff;color:var(--ink);
+  font:16px/1.65 system-ui,-apple-system,sans-serif }
 .wrap{max-width:800px;margin:0 auto;padding:0 16px}
 
-/* Header & Footer (完全コピー) */
+/* Header & Footer (self-intro.html から完全コピー) */
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
 .brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
 nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
@@ -31,15 +32,14 @@ nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
 nav a:hover{color:var(--shu)}
 footer{border-top:1px solid var(--line);padding:40px 0;margin-top:60px;text-align:center;color:var(--muted);font-size:14px}
 
-/* 検索エリアの独自スタイル */
+/* 辞書ページ独自のスタイル */
 .search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:30px 0; }
 input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; margin-bottom:15px; }
 input#kw:focus{ border-color:var(--shu); }
 .chips{ display:flex; flex-wrap:wrap; gap:8px }
-.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; color:var(--muted); cursor:pointer; user-select:none; }
+.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; color:var(--muted); cursor:pointer; user-select:none; transition: 0.2s; }
 .chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
 
-/* カードデザイン */
 #list{ display:grid; gap:16px }
 .card{ background:var(--card); border:1px solid #ffe4e1; border-radius:12px; padding:20px; position:relative; }
 .card-head{ display:flex; gap:8px; margin-bottom:10px; align-items: center; }
@@ -49,10 +49,10 @@ input#kw:focus{ border-color:var(--shu); }
 .kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
 .en{ display:block; font-size:16px; color:var(--ink); font-weight:500; margin-bottom:15px }
 
-/* 例文と音声 */
 .example-details{ border-top:1px solid #ffe4e1; margin-top:12px; padding-top:12px }
 .example-details summary{ font-size:14px; color:var(--shu); cursor:pointer; font-weight:600; }
-.ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:8px }
+.example-list{ margin-top:10px; display:grid; gap:10px; }
+.ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0 }
 .audio-link{ font-size:13px; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:5px; margin-top:8px }
 .audio-link:hover{ color:var(--shu) }
 
@@ -75,26 +75,24 @@ input#kw:focus{ border-color:var(--shu); }
 </div>
 
 <div class="wrap">
-  <div class="search-section">
-    <h2 style="margin-top:30px">Japanese Dictionary</h2>
-    
-    <div class="search-box">
-      <input type="text" id="kw" placeholder="Search word, hiragana or English..." autocomplete="off">
-      <div class="chips" id="posChips">
-        <span class="chip active" data-pos="all">すべて (All)</span>
-        <span class="chip" data-pos="noun">名詞 (Noun)</span>
-        <span class="chip" data-pos="verb">動詞 (Verb)</span>
-        <span class="chip" data-pos="adjective-i">い形容詞 (Adj-i)</span>
-        <span class="chip" data-pos="adjective-na">な形容詞 (Adj-na)</span>
-        <span class="chip" data-pos="adverb">副詞 (Adv)</span>
-        <span class="chip" data-pos="particle">助詞 (Part)</span>
-        <span class="chip" data-pos="expression">文法/表現 (Gram)</span>
-      </div>
+  <h2 style="margin-top:30px">Japanese Dictionary</h2>
+  
+  <div class="search-box">
+    <input type="text" id="kw" placeholder="Search by word, kana, or English..." autocomplete="off">
+    <div class="chips" id="posChips">
+      <span class="chip active" data-pos="all">すべて (All)</span>
+      <span class="chip" data-pos="noun">名詞 (Noun)</span>
+      <span class="chip" data-pos="verb">動詞 (Verb)</span>
+      <span class="chip" data-pos="adjective-i">い形容詞 (Adj-i)</span>
+      <span class="chip" data-pos="adjective-na">な形容詞 (Adj-na)</span>
+      <span class="chip" data-pos="adverb">副詞 (Adv)</span>
+      <span class="chip" data-pos="particle">助詞 (Part)</span>
+      <span class="chip" data-pos="expression">文法/表現 (Gram)</span>
     </div>
-
-    <div class="status-msg" id="status">Loading database...</div>
-    <div id="list"><div class="loading-box">Checking JSON files in data/json/...</div></div>
   </div>
+
+  <div class="status-msg" id="status">Updating word list...</div>
+  <div id="list"><div class="loading-box">Connecting to data/json/...</div></div>
 </div>
 
 <footer>
@@ -107,10 +105,17 @@ input#kw:focus{ border-color:var(--shu); }
 let allVocab = [];
 const audioUrl = "https://nihongotext.com/inquiry/index.html";
 
-// 1. JSON読み込み (data/json/ フォルダを使用)
+// 1. URLからパラメータ取得
+function getUrlParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+// 2. data/json フォルダから全レベルのファイルを一括取得
 async function initDictionary() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const statusEl = document.getElementById('status');
+  const listEl = document.getElementById('list');
   
   const fetches = levels.map(async lv => {
     try {
@@ -127,22 +132,23 @@ async function initDictionary() {
   allVocab = results.flat();
 
   if (allVocab.length === 0) {
-    statusEl.innerText = "Error: Database files not found.";
-    document.getElementById('list').innerHTML = '<p style="text-align:center;padding:40px;color:red">JSON files not found in <b>data/json/</b> folder.</p>';
+    statusEl.innerText = "Error: Database is empty.";
+    listEl.innerHTML = '<p style="text-align:center;padding:40px;color:red">JSON files not found in <b>data/json/</b> folder.</p>';
     return;
   }
 
-  statusEl.innerText = `${allVocab.length} words ready.`;
+  statusEl.innerText = `${allVocab.length} words found.`;
 
-  // URLパラメータの kw を自動入力
-  const params = new URLSearchParams(window.location.search);
-  const kw = params.get('kw');
-  if (kw) document.getElementById('kw').value = decodeURIComponent(kw);
+  // URLに kw があればセット
+  const kwParam = getUrlParam('kw');
+  if (kwParam) {
+    document.getElementById('kw').value = decodeURIComponent(kwParam);
+  }
 
   performSearch();
 }
 
-// 2. 検索・フィルタ
+// 3. 検索とフィルタリング
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
   const activeChip = document.querySelector('.chip.active');
@@ -158,29 +164,30 @@ function performSearch() {
     return matchPos && matchKw;
   });
 
-  render(filtered);
+  renderResults(filtered);
 }
 
-// 3. 描画
-function render(data) {
+// 4. HTML描画
+function renderResults(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = '';
 
   if (data.length === 0) {
-    listEl.innerHTML = '<p style="text-align:center;padding:40px">No matches found.</p>';
+    listEl.innerHTML = '<p style="text-align:center;padding:40px;color:var(--muted)">No matches found.</p>';
     return;
   }
 
+  // 表示件数制限 (パフォーマンスのため最大300件)
   data.slice(0, 300).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
     const audioBtn = `<a href="${audioUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
 
-    let ex = '';
+    let exHtml = '';
     if (item.examples && item.examples.length > 0) {
-      ex = `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">` +
-           item.examples.map(e => `<div class="ex-item"><strong>${e.ja}</strong>${e.en}${audioBtn}</div>`).join('') +
-           `</div></details>`;
+      exHtml = `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">` +
+               item.examples.map(ex => `<div class="ex-item"><strong>${ex.ja}</strong>${ex.en}${audioBtn}</div>`).join('') +
+               `</div></details>`;
     }
 
     const posMap = { "noun":"Noun", "verb":"Verb", "adjective-i":"Adj-i", "adjective-na":"Adj-na", "adverb":"Adv", "particle":"Part", "conjunction":"Conj", "expression":"Gram" };
@@ -194,13 +201,13 @@ function render(data) {
       <span class="ja">${item.ja}</span>
       <span class="kana">${item.kana || ''}</span>
       <span class="en">${item.en}</span>
-      ${audioBtn}${ex}
+      ${audioBtn}${exHtml}
     `;
     listEl.appendChild(card);
   });
 }
 
-// 4. イベント
+// 5. イベント設定
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -215,7 +222,7 @@ document.getElementById('kw').addEventListener('input', () => {
   timer = setTimeout(performSearch, 300);
 });
 
-// Start
+// 初期化実行
 initDictionary();
 </script>
 </body>
