@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Quiz | nihongotext.com</title>
+<title>Quiz - nihongotext.com</title>
 <link rel="icon" href="/favicon.ico" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -16,139 +16,149 @@
 </script>
 
 <style>
+/* --- self-intro (1).html と完全一致の共通スタイル --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
-*{ box-sizing:border-box }
+*{box-sizing:border-box}
+html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
 
-html,body{
-  margin:0; background:#fff; color:var(--ink);
-  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
-        "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
-}
-a{ color:inherit; text-decoration:none }
+/* Header & Footer Styles */
+.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
+.brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
+nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
+nav a{color:var(--ink);font-weight:600;font-size:14px;text-decoration:none}
+nav a:hover{color:var(--shu)}
+.footer{border-top:1px solid var(--shu-tint);padding:20px 0;text-align:center;color:var(--muted);font-size:12px}
 
-.container{ max-width:600px; margin:0 auto; padding:2rem 1.25rem }
-header{ text-align:center; margin-bottom:2rem }
-h1{ font-size:1.5rem; font-weight:800; color:var(--shu); margin:0 }
-
-/* Setup View */
-#setupView{ background:#f9fafb; border:1px solid var(--line); padding:2rem; border-radius:1rem; text-align:center }
-.form-group{ margin-bottom:1.5rem; text-align:left }
-label{ display:block; font-size:0.85rem; font-weight:700; margin-bottom:0.5rem; color:var(--muted) }
-select{ width:100%; padding:0.75rem; border:1px solid var(--line); border-radius:0.5rem; font-size:1rem; background:#fff }
+/* --- クイズ固有のスタイル --- */
+.quiz-container{ max-width:600px; margin:0 auto; padding:40px 16px }
+#setupView{ background:#f9fafb; border:1px solid var(--line); padding:30px; border-radius:12px; text-align:center }
+.form-group{ margin-bottom:20px; text-align:left }
+label{ display:block; font-size:13px; font-weight:700; margin-bottom:8px; color:var(--muted) }
+select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8px; font-size:16px; background:#fff }
 
 .btn{
-  background:var(--shu); color:#fff; border:none; padding:1rem 2rem; 
-  border-radius:0.5rem; font-size:1rem; font-weight:700; cursor:pointer; width:100%;
+  background:var(--shu); color:#fff; border:none; padding:16px; 
+  border-radius:8px; font-size:16px; font-weight:700; cursor:pointer; width:100%;
 }
 .btn:disabled{ opacity:0.5; cursor:not-allowed }
 
-/* Quiz View */
 #quizView{ display:none }
-.progress{ font-size:0.85rem; color:var(--muted); margin-bottom:1rem; text-align:center }
-.q-card{ background:var(--card); border:1px solid #ffe4e1; padding:2rem; border-radius:1rem; margin-bottom:1.5rem }
-.q-text{ font-size:1.25rem; font-weight:700; line-height:1.5; margin-bottom:1rem; text-align:center }
-.q-hint{ font-size:0.9rem; color:var(--muted); text-align:center; margin-bottom:1rem }
+.progress{ font-size:14px; color:var(--muted); margin-bottom:15px; text-align:center }
+.q-card{ background:var(--card); border:1px solid #ffe4e1; padding:30px; border-radius:12px; margin-bottom:20px }
+.q-text{ font-size:20px; font-weight:800; line-height:1.5; margin-bottom:15px; text-align:center }
+.q-hint{ font-size:15px; color:var(--muted); text-align:center; margin-bottom:15px }
 
-.options{ display:grid; gap:0.75rem }
+.options{ display:grid; gap:12px }
 .opt-btn{
-  background:#fff; border:1px solid var(--line); padding:1rem; border-radius:0.5rem;
-  text-align:left; font-size:1rem; font-weight:600; cursor:pointer; transition:0.2s;
+  background:#fff; border:1px solid var(--line); padding:15px; border-radius:8px;
+  text-align:left; font-size:16px; font-weight:600; cursor:pointer; transition:0.2s;
 }
 .opt-btn:hover{ border-color:var(--shu); background:var(--shu-tint) }
 .opt-btn.correct{ background:#d1fae5; border-color:#10b981; color:#065f46 }
 .opt-btn.wrong{ background:#fee2e2; border-color:#ef4444; color:#991b1b }
 
-/* Display Mode Toggle */
-.display-mode{ margin-top:1.5rem; display:flex; justify-content:center; gap:1rem }
-.radio-label{ font-size:0.8rem; color:var(--muted); cursor:pointer; display:flex; align-items:center; gap:0.3rem }
+.display-mode{ margin-top:20px; display:flex; justify-content:center; gap:20px }
+.radio-label{ font-size:13px; color:var(--muted); cursor:pointer; display:flex; align-items:center; gap:5px }
 
-/* Result View */
-#resultView{ display:none; text-align:center }
-.score-circle{ width:120px; height:120px; border-radius:50%; background:var(--shu); color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto 1.5rem }
-.score-circle .num{ font-size:2rem; font-weight:800 }
+#resultView{ display:none; text-align:center; padding:20px 0 }
+.score-circle{ width:100px; height:100px; border-radius:50%; background:var(--shu); color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto 20px }
+.score-circle .num{ font-size:28px; font-weight:900 }
 
-.res-table{ width:100%; border-collapse:collapse; margin-top:2rem; text-align:left; font-size:0.9rem }
-.res-table th, .res-table td{ padding:0.75rem; border-bottom:1px solid var(--line) }
-.res-status{ width:30px; font-weight:bold }
+.res-table{ width:100%; border-collapse:collapse; margin-top:30px; text-align:left; font-size:14px }
+.res-table td{ padding:12px; border-bottom:1px solid var(--line) }
+.res-status{ width:30px; font-weight:bold; text-align:center }
 .res-correct{ color:#10b981 }
 .res-wrong{ color:#ef4444 }
 
-#nextBtn{ margin-top:1.5rem; display:none }
-#emailBtn{ background:#1f2937; margin-top:1rem }
+#nextBtn{ margin-top:20px; display:none }
+#emailBtn{ background:var(--ink); margin-top:15px }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <header>
-    <h1><a href="/">nihongotext.com Quiz</a></h1>
-  </header>
 
-  <div id="setupView">
-    <div class="form-group">
-      <label>JLPT Level</label>
-      <select id="lv">
-        <option value="n5">N5</option>
-        <option value="n4">N4</option>
-        <option value="n3">N3</option>
-        <option value="n2">N2</option>
-        <option value="n1">N1</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Category</label>
-      <select id="cat">
-        <option value="noun">名詞 (Noun)</option>
-        <option value="verb">動詞 (Verb)</option>
-        <option value="adjective-i">い形容詞 (Adj-i)</option>
-        <option value="adjective-na">な形容詞 (Adj-na)</option>
-        <option value="adverb">副詞 (Adv)</option>
-        <option value="particle">助詞 (Part)</option>
-        <option value="expression">文法/表現 (Grammar)</option>
-        <option value="numeral">数詞 (Numeral)</option>
-      </select>
-    </div>
-    <button class="btn" id="startBtn">Start Quiz</button>
+<header class="topbar">
+  <div class="wrap">
+    <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
+    <nav>
+      <a href="/" style="font-weight:bold;">Home</a>
+      <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+    </nav>
   </div>
+</header>
 
-  <div id="quizView">
-    <div class="progress" id="progress">Question 1 / 10</div>
-    <div class="q-card">
-      <div class="q-text" id="qText"></div>
-      <div class="q-hint" id="qHint"></div>
-      <div class="options" id="options"></div>
+<main class="wrap">
+  <div class="quiz-container">
+    <h2 style="text-align:center; margin-bottom:30px">Japanese Vocabulary Quiz</h2>
+
+    <div id="setupView">
+      <div class="form-group">
+        <label>JLPT Level</label>
+        <select id="lv">
+          <option value="n5">N5</option>
+          <option value="n4">N4</option>
+          <option value="n3">N3</option>
+          <option value="n2">N2</option>
+          <option value="n1">N1</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <select id="cat">
+          <option value="noun">Noun (名詞)</option>
+          <option value="verb">Verb (動詞)</option>
+          <option value="adjective-i">Adj-i (い形容詞)</option>
+          <option value="adjective-na">Adj-na (な形容詞)</option>
+          <option value="adverb">Adverb (副詞)</option>
+          <option value="expression">Grammar (文法/表現)</option>
+        </select>
+      </div>
+      <button class="btn" id="startBtn" onclick="startQuiz()">Start Quiz</button>
     </div>
-    <button class="btn" id="nextBtn">Next Question</button>
 
-    <div class="display-mode" id="displayModeGroup">
-      <label class="radio-label"><input type="radio" name="mode" value="kanji" checked> Kanji</label>
-      <label class="radio-label"><input type="radio" name="mode" value="kana"> Kana</label>
+    <div id="quizView">
+      <div class="progress" id="progress">Question 1 / 10</div>
+      <div class="q-card">
+        <div class="q-text" id="qText"></div>
+        <div class="q-hint" id="qHint"></div>
+        <div class="options" id="options"></div>
+      </div>
+      <button class="btn" id="nextBtn" onclick="handleNext()">Next Question</button>
+
+      <div class="display-mode" id="displayModeGroup">
+        <label class="radio-label"><input type="radio" name="mode" value="kanji" checked onchange="refreshQuestion()"> Kanji</label>
+        <label class="radio-label"><input type="radio" name="mode" value="kana" onchange="refreshQuestion()"> Kana</label>
+      </div>
+    </div>
+
+    <div id="resultView">
+      <div class="score-circle">
+        <div class="num" id="scoreNum">0</div>
+        <div style="font-size:12px">Score</div>
+      </div>
+      <h3>Quiz Results</h3>
+      <table class="res-table">
+        <tbody id="resList"></tbody>
+      </table>
+      <button class="btn" onclick="location.reload()" style="margin-top:30px">Try Again</button>
+      <button class="btn" id="emailBtn">Email My Results</button>
     </div>
   </div>
+</main>
 
-  <div id="resultView">
-    <h2>Result</h2>
-    <div class="score-circle">
-      <div class="num" id="scoreNum">0</div>
-      <div style="font-size:0.8rem">Score</div>
-    </div>
-    <table class="res-table">
-      <tbody id="resList"></tbody>
-    </table>
-    <button class="btn" onclick="location.reload()" style="margin-top:2rem">Try Again</button>
-    <button class="btn" id="emailBtn">Send Results by Email</button>
-  </div>
-</div>
+<footer class="footer">
+  <div class="wrap">© 2026 nihongotext.com</div>
+</footer>
 
 <script>
-let allVocab = [];
-let quiz = [];
-let idx = 0;
+let quizItems = [];
+let currentIndex = 0;
 let score = 0;
 
-const audioInquiryUrl = "https://nihongotext.com/inquiry/index.html";
-
-// 1. Fetch Master Data and Filter
+// 1. データ取得とクイズ生成
 async function startQuiz() {
   const lv = document.getElementById('lv').value;
   const cat = document.getElementById('cat').value;
@@ -158,79 +168,69 @@ async function startQuiz() {
   btn.innerText = "Loading...";
 
   try {
-    const res = await fetch(`/assets/json/${lv}_master_cleaned.json`);
+    // パスを /data/json/ に修正
+    const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     if(!res.ok) throw new Error("File not found");
     const data = await res.json();
     
-    // Filter by selected part of speech (pos)
     const filtered = data.filter(item => item.pos === cat);
-    
     if (filtered.length < 4) {
-      alert("Not enough words in this category to start a quiz. Please try another category.");
+      alert("Not enough words in this category. Try another level or category!");
       location.reload();
       return;
     }
 
-    createQuiz(filtered);
-    
+    // ランダムに10問抽出
+    const shuffled = filtered.sort(() => 0.5 - Math.random());
+    quizItems = shuffled.slice(0, 10).map(item => {
+      let qText = item.ja;
+      let qHint = item.en;
+      
+      if (item.examples && item.examples.length > 0) {
+        const ex = item.examples[Math.floor(Math.random() * item.examples.length)];
+        // 出題語を伏せ字にする
+        qText = ex.ja.includes(item.ja) ? ex.ja.replace(item.ja, "【 ___ 】") : item.ja;
+        qHint = ex.en;
+      }
+
+      const others = filtered.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
+      const options = [...others, item].sort(() => 0.5 - Math.random());
+
+      return { item, qText, qHint, options, answer: item.ja, userCorrect: false };
+    });
+
     document.getElementById('setupView').style.display = 'none';
     document.getElementById('quizView').style.display = 'block';
     renderQuestion();
 
   } catch (err) {
     console.error(err);
-    alert("Could not load quiz data.");
+    alert("Error loading data. Please check if JSON files are in /data/json/");
     location.reload();
   }
 }
 
-// 2. Build Quiz Array
-function createQuiz(list) {
-  const shuffled = [...list].sort(() => 0.5 - Math.random());
-  const selected = shuffled.slice(0, 10);
-  
-  quiz = selected.map(item => {
-    // Determine the question content (use example sentence if available)
-    let sentence = item.ja;
-    let hint = item.en;
-    
-    if (item.examples && item.examples.length > 0) {
-      const ex = item.examples[Math.floor(Math.random() * item.examples.length)];
-      // Replace the answer word with blanks in the example sentence
-      sentence = ex.ja.replace(item.ja, " 【 ___ 】 ");
-      hint = ex.en;
-    }
-
-    // Choices (1 correct + 3 random)
-    const others = list.filter(w => w.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
-    const options = [...others, item].sort(() => 0.5 - Math.random());
-
-    return { item, sentence, hint, options, answer: item.ja, userCorrect: false };
-  });
-}
-
-// 3. Render Question
+// 2. 問題の表示
 function renderQuestion() {
-  const q = quiz[idx];
+  const q = quizItems[currentIndex];
   const mode = document.querySelector('input[name="mode"]:checked').value;
   
   document.getElementById('nextBtn').style.display = 'none';
-  document.getElementById('progress').innerText = `Question ${idx + 1} / ${quiz.length}`;
-  document.getElementById('qText').innerText = q.sentence;
-  document.getElementById('qHint').innerText = q.hint;
+  document.getElementById('progress').innerText = `Question ${currentIndex + 1} / ${quizItems.length}`;
+  document.getElementById('qText').innerText = q.qText;
+  document.getElementById('qHint').innerText = q.qHint;
   
-  const optContainer = document.getElementById('options');
-  optContainer.innerHTML = '';
+  const optBox = document.getElementById('options');
+  optBox.innerHTML = '';
 
   q.options.forEach(opt => {
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
-    // Show either ja (kanji) or kana based on display mode
     btn.innerText = (mode === 'kana') ? (opt.kana || opt.ja) : opt.ja;
     
     btn.onclick = () => {
-      const allBtns = optContainer.querySelectorAll('.opt-btn');
-      allBtns.forEach(b => b.disabled = true);
+      const btns = optBox.querySelectorAll('.opt-btn');
+      btns.forEach(b => b.disabled = true);
       
       if (opt.ja === q.answer) {
         btn.classList.add('correct');
@@ -238,8 +238,7 @@ function renderQuestion() {
         q.userCorrect = true;
       } else {
         btn.classList.add('wrong');
-        // highlight the correct one
-        allBtns.forEach(b => {
+        btns.forEach(b => {
           if (b.innerText === q.answer || (mode === 'kana' && b.innerText === (q.item.kana || q.item.ja))) {
             b.classList.add('correct');
           }
@@ -247,61 +246,49 @@ function renderQuestion() {
       }
       document.getElementById('nextBtn').style.display = 'block';
     };
-    optContainer.appendChild(btn);
+    optBox.appendChild(btn);
   });
 }
 
-// 4. Show Results
-function showResult() {
+function refreshQuestion() {
+  if (quizItems.length > 0) renderQuestion();
+}
+
+function handleNext() {
+  currentIndex++;
+  if (currentIndex < quizItems.length) renderQuestion();
+  else showResults();
+}
+
+// 3. 結果表示
+function showResults() {
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'block';
-  document.getElementById('scoreNum').innerText = `${score} / ${quiz.length}`;
+  document.getElementById('scoreNum').innerText = `${score}/${quizItems.length}`;
 
   const list = document.getElementById('resList');
-  let emailBody = `My Japanese Quiz Results\nScore: ${score}/${quiz.length}\n\n`;
+  let resultText = `Nihongotext Quiz Results\nScore: ${score}/${quizItems.length}\n\n`;
 
-  quiz.forEach((q, i) => {
-    const isCorrect = q.userCorrect;
-    const statusIcon = isCorrect ? 
-      '<span class="res-status res-correct">✓</span>' : 
-      '<span class="res-status res-wrong">✗</span>';
-    
+  quizItems.forEach((q, i) => {
     const row = document.createElement('tr');
+    const isOk = q.userCorrect;
     row.innerHTML = `
-      <td class="res-status">${statusIcon}</td>
+      <td class="res-status ${isOk ? 'res-correct' : 'res-wrong'}">${isOk ? '✓' : '✗'}</td>
       <td>
-        <strong>Q${i+1}:</strong> ${q.sentence}<br>
-        <span style="font-size:12px; color:var(--muted);">Answer: <strong>${q.item.ja}</strong> (${q.item.kana})</span>
+        <strong>${q.item.ja}</strong> (${q.item.kana})<br>
+        <span style="font-size:12px; color:var(--muted)">${q.item.en}</span>
       </td>
     `;
     list.appendChild(row);
-
-    emailBody += `Q${i+1}: ${q.sentence}\n`;
-    emailBody += `Result: ${isCorrect ? 'Correct' : 'Wrong'}\n`;
-    emailBody += `Answer: ${q.item.ja} (${q.item.kana})\n\n`;
+    resultText += `Q${i+1}: ${isOk ? 'Correct' : 'Wrong'} - ${q.item.ja}\n`;
   });
 
-  emailBody += `---\nLearn more Japanese at: https://nihongotext.com\n`;
-
   document.getElementById('emailBtn').onclick = () => {
-    const subject = encodeURIComponent(`Nihongotext Quiz Results (${score}/${quiz.length})`);
-    const body = encodeURIComponent(emailBody);
+    const subject = encodeURIComponent("My Quiz Results - nihongotext.com");
+    const body = encodeURIComponent(resultText + "\nTry it here: https://nihongotext.com/quiz/");
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   };
 }
-
-// Event Listeners
-document.getElementById('displayModeGroup').addEventListener('change', () => {
-    if (quiz.length > 0 && idx < quiz.length) renderQuestion();
-});
-
-document.getElementById('nextBtn').onclick = () => {
-  idx++;
-  if (idx < quiz.length) renderQuestion();
-  else showResult();
-};
-
-document.getElementById('startBtn').onclick = startQuiz;
 </script>
 </body>
 </html>
