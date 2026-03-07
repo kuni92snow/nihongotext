@@ -16,13 +16,13 @@
 </script>
 
 <style>
-/* --- self-intro (1).html と完全一致の共通スタイル --- */
+/* --- self-intro (1).html 共通スタイル --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
 html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
 .wrap{max-width:800px;margin:0 auto;padding:0 16px}
 
-/* Header & Footer Styles */
+/* Header & Footer (self-intro.html と完全一致) */
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
 .brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
 nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
@@ -30,7 +30,7 @@ nav a{color:var(--ink);font-weight:600;font-size:14px;text-decoration:none}
 nav a:hover{color:var(--shu)}
 .footer{border-top:1px solid var(--shu-tint);padding:20px 0;text-align:center;color:var(--muted);font-size:12px}
 
-/* --- クイズ固有のスタイル --- */
+/* Quiz UI */
 .quiz-container{ max-width:600px; margin:0 auto; padding:40px 16px }
 #setupView{ background:#f9fafb; border:1px solid var(--line); padding:30px; border-radius:12px; text-align:center }
 .form-group{ margin-bottom:20px; text-align:left }
@@ -41,6 +41,7 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
   background:var(--shu); color:#fff; border:none; padding:16px; 
   border-radius:8px; font-size:16px; font-weight:700; cursor:pointer; width:100%;
 }
+.btn:hover{ opacity: 0.9; }
 .btn:disabled{ opacity:0.5; cursor:not-allowed }
 
 #quizView{ display:none }
@@ -58,8 +59,8 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
 .opt-btn.correct{ background:#d1fae5; border-color:#10b981; color:#065f46 }
 .opt-btn.wrong{ background:#fee2e2; border-color:#ef4444; color:#991b1b }
 
-.display-mode{ margin-top:20px; display:flex; justify-content:center; gap:20px }
-.radio-label{ font-size:13px; color:var(--muted); cursor:pointer; display:flex; align-items:center; gap:5px }
+.display-mode{ margin-top:20px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap }
+.radio-label{ font-size:12px; color:var(--muted); cursor:pointer; display:flex; align-items:center; gap:4px }
 
 #resultView{ display:none; text-align:center; padding:20px 0 }
 .score-circle{ width:100px; height:100px; border-radius:50%; background:var(--shu); color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto 20px }
@@ -71,14 +72,19 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
 .res-correct{ color:#10b981 }
 .res-wrong{ color:#ef4444 }
 
+/* SNS Buttons */
+.sns-group{ display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
+.sns-btn{ display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; }
+.btn-x{ background:#1f2937 } 
+.btn-reddit{ background:#ff4500 }
+.btn-email{ background:var(--muted) }
 #nextBtn{ margin-top:20px; display:none }
-#emailBtn{ background:var(--ink); margin-top:15px }
 </style>
 </head>
 
 <body>
 
-<header class="topbar">
+<div class="topbar">
   <div class="wrap">
     <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
     <nav>
@@ -88,7 +94,7 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
       <a href="/inquiry/index.html">Inquiry</a>
     </nav>
   </div>
-</header>
+</div>
 
 <main class="wrap">
   <div class="quiz-container">
@@ -98,11 +104,11 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
       <div class="form-group">
         <label>JLPT Level</label>
         <select id="lv">
-          <option value="n5">N5</option>
+          <option value="n5">N5 (Beginner)</option>
           <option value="n4">N4</option>
           <option value="n3">N3</option>
           <option value="n2">N2</option>
-          <option value="n1">N1</option>
+          <option value="n1">N1 (Advanced)</option>
         </select>
       </div>
       <div class="form-group">
@@ -116,11 +122,19 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
           <option value="expression">Grammar (文法/表現)</option>
         </select>
       </div>
+      <div class="form-group">
+        <label>Number of Questions</label>
+        <select id="qCount">
+          <option value="3">3 Questions</option>
+          <option value="5" selected>5 Questions</option>
+          <option value="10">10 Questions</option>
+        </select>
+      </div>
       <button class="btn" id="startBtn" onclick="startQuiz()">Start Quiz</button>
     </div>
 
     <div id="quizView">
-      <div class="progress" id="progress">Question 1 / 10</div>
+      <div class="progress" id="progress">Question 1 / 5</div>
       <div class="q-card">
         <div class="q-text" id="qText"></div>
         <div class="q-hint" id="qHint"></div>
@@ -131,6 +145,7 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
       <div class="display-mode" id="displayModeGroup">
         <label class="radio-label"><input type="radio" name="mode" value="kanji" checked onchange="refreshQuestion()"> Kanji</label>
         <label class="radio-label"><input type="radio" name="mode" value="kana" onchange="refreshQuestion()"> Kana</label>
+        <label class="radio-label"><input type="radio" name="mode" value="both" onchange="refreshQuestion()"> Both (漢字・かな)</label>
       </div>
     </div>
 
@@ -143,8 +158,13 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
       <table class="res-table">
         <tbody id="resList"></tbody>
       </table>
-      <button class="btn" onclick="location.reload()" style="margin-top:30px">Try Again</button>
-      <button class="btn" id="emailBtn">Email My Results</button>
+      
+      <div class="sns-group">
+        <button class="btn btn-x" id="shareX"><i class="fa-brands fa-x-twitter"></i> Share on X</button>
+        <button class="btn btn-reddit" id="shareReddit"><i class="fa-brands fa-reddit-alien"></i> Post to Reddit</button>
+        <button class="btn btn-email" id="shareEmail"><i class="fa-solid fa-envelope"></i> Email Results</button>
+        <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px">Try Again</button>
+      </div>
     </div>
   </div>
 </main>
@@ -158,37 +178,34 @@ let quizItems = [];
 let currentIndex = 0;
 let score = 0;
 
-// 1. データ取得とクイズ生成
 async function startQuiz() {
   const lv = document.getElementById('lv').value;
   const cat = document.getElementById('cat').value;
+  const count = parseInt(document.getElementById('qCount').value);
   const btn = document.getElementById('startBtn');
   
   btn.disabled = true;
   btn.innerText = "Loading...";
 
   try {
-    // パスを /data/json/ に修正
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     if(!res.ok) throw new Error("File not found");
     const data = await res.json();
     
     const filtered = data.filter(item => item.pos === cat);
     if (filtered.length < 4) {
-      alert("Not enough words in this category. Try another level or category!");
+      alert("Not enough words in this category. Try another!");
       location.reload();
       return;
     }
 
-    // ランダムに10問抽出
     const shuffled = filtered.sort(() => 0.5 - Math.random());
-    quizItems = shuffled.slice(0, 10).map(item => {
+    quizItems = shuffled.slice(0, count).map(item => {
       let qText = item.ja;
       let qHint = item.en;
       
       if (item.examples && item.examples.length > 0) {
         const ex = item.examples[Math.floor(Math.random() * item.examples.length)];
-        // 出題語を伏せ字にする
         qText = ex.ja.includes(item.ja) ? ex.ja.replace(item.ja, "【 ___ 】") : item.ja;
         qHint = ex.en;
       }
@@ -205,12 +222,11 @@ async function startQuiz() {
 
   } catch (err) {
     console.error(err);
-    alert("Error loading data. Please check if JSON files are in /data/json/");
+    alert("Error loading data. Check /data/json/ folder.");
     location.reload();
   }
 }
 
-// 2. 問題の表示
 function renderQuestion() {
   const q = quizItems[currentIndex];
   const mode = document.querySelector('input[name="mode"]:checked').value;
@@ -226,7 +242,14 @@ function renderQuestion() {
   q.options.forEach(opt => {
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
-    btn.innerText = (mode === 'kana') ? (opt.kana || opt.ja) : opt.ja;
+    
+    if (mode === 'kana') {
+      btn.innerText = opt.kana || opt.ja;
+    } else if (mode === 'both') {
+      btn.innerHTML = `${opt.ja} <span style="font-size:0.8em; color:var(--muted); font-weight:normal;">(${opt.kana || opt.ja})</span>`;
+    } else {
+      btn.innerText = opt.ja;
+    }
     
     btn.onclick = () => {
       const btns = optBox.querySelectorAll('.opt-btn');
@@ -239,9 +262,7 @@ function renderQuestion() {
       } else {
         btn.classList.add('wrong');
         btns.forEach(b => {
-          if (b.innerText === q.answer || (mode === 'kana' && b.innerText === (q.item.kana || q.item.ja))) {
-            b.classList.add('correct');
-          }
+          if (b.innerText.startsWith(q.answer)) b.classList.add('correct');
         });
       }
       document.getElementById('nextBtn').style.display = 'block';
@@ -250,9 +271,7 @@ function renderQuestion() {
   });
 }
 
-function refreshQuestion() {
-  if (quizItems.length > 0) renderQuestion();
-}
+function refreshQuestion() { if (quizItems.length > 0) renderQuestion(); }
 
 function handleNext() {
   currentIndex++;
@@ -260,32 +279,40 @@ function handleNext() {
   else showResults();
 }
 
-// 3. 結果表示
 function showResults() {
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'block';
   document.getElementById('scoreNum').innerText = `${score}/${quizItems.length}`;
 
   const list = document.getElementById('resList');
-  let resultText = `Nihongotext Quiz Results\nScore: ${score}/${quizItems.length}\n\n`;
+  let summaryText = `I scored ${score}/${quizItems.length} on the nihongotext.com Japanese Quiz!`;
 
   quizItems.forEach((q, i) => {
     const row = document.createElement('tr');
     const isOk = q.userCorrect;
-    row.innerHTML = `
-      <td class="res-status ${isOk ? 'res-correct' : 'res-wrong'}">${isOk ? '✓' : '✗'}</td>
-      <td>
-        <strong>${q.item.ja}</strong> (${q.item.kana})<br>
-        <span style="font-size:12px; color:var(--muted)">${q.item.en}</span>
-      </td>
-    `;
+    row.innerHTML = `<td class="res-status ${isOk ? 'res-correct' : 'res-wrong'}">${isOk ? '✓' : '✗'}</td>
+      <td><strong>${q.item.ja}</strong> (${q.item.kana})<br><span style="font-size:12px; color:var(--muted)">${q.item.en}</span></td>`;
     list.appendChild(row);
-    resultText += `Q${i+1}: ${isOk ? 'Correct' : 'Wrong'} - ${q.item.ja}\n`;
   });
 
-  document.getElementById('emailBtn').onclick = () => {
-    const subject = encodeURIComponent("My Quiz Results - nihongotext.com");
-    const body = encodeURIComponent(resultText + "\nTry it here: https://nihongotext.com/quiz/");
+  // X (Twitter) Share
+  document.getElementById('shareX').onclick = () => {
+    const text = encodeURIComponent(summaryText + "\nTry it here: ");
+    const url = encodeURIComponent(window.location.href);
+    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+  };
+
+  // Reddit Post
+  document.getElementById('shareReddit').onclick = () => {
+    const title = encodeURIComponent(summaryText);
+    const url = encodeURIComponent(window.location.href);
+    window.open(`https://www.reddit.com/submit?title=${title}&url=${url}`, '_blank');
+  };
+
+  // Email
+  document.getElementById('shareEmail').onclick = () => {
+    const subject = encodeURIComponent("My Japanese Quiz Results");
+    const body = encodeURIComponent(summaryText + "\nCheck out the materials at nihongotext.com");
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   };
 }
