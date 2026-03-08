@@ -16,13 +16,13 @@
 </script>
 
 <style>
-/* --- self-intro (1).html 共通スタイル --- */
+/* --- 共通スタイル --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
 html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
 .wrap{max-width:800px;margin:0 auto;padding:0 16px}
 
-/* Header & Footer (self-intro.html と完全一致) */
+/* Header & Footer */
 .topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
 .brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
 nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
@@ -204,9 +204,13 @@ async function startQuiz() {
       let qText = item.ja;
       let qHint = item.en;
       
+      // 出題時の問題文を保存（後でSNS共有に使用するため）
+      let originalQText = item.ja;
+      
       if (item.examples && item.examples.length > 0) {
         const ex = item.examples[Math.floor(Math.random() * item.examples.length)];
-        qText = ex.ja.includes(item.ja) ? ex.ja.replace(item.ja, "【 ___ 】") : item.ja;
+        originalQText = ex.ja.includes(item.ja) ? ex.ja.replace(item.ja, "【 ___ 】") : item.ja;
+        qText = originalQText;
         qHint = ex.en;
       }
 
@@ -285,34 +289,42 @@ function showResults() {
   document.getElementById('scoreNum').innerText = `${score}/${quizItems.length}`;
 
   const list = document.getElementById('resList');
-  let summaryText = `I scored ${score}/${quizItems.length} on the nihongotext.com Japanese Quiz!`;
+  let summaryText = `I scored ${score}/${quizItems.length} on the nihongotext.com Japanese Quiz!\n\n`;
+  let detailText = "--- Quiz Details ---\n";
 
   quizItems.forEach((q, i) => {
     const row = document.createElement('tr');
     const isOk = q.userCorrect;
+    
+    // リスト表示（ブラウザ用）
     row.innerHTML = `<td class="res-status ${isOk ? 'res-correct' : 'res-wrong'}">${isOk ? '✓' : '✗'}</td>
-      <td><strong>${q.item.ja}</strong> (${q.item.kana})<br><span style="font-size:12px; color:var(--muted)">${q.item.en}</span></td>`;
+      <td><strong>Q${i+1}: ${q.qText}</strong><br>Answer: ${q.item.ja} (${q.item.kana})<br><span style="font-size:12px; color:var(--muted)">${q.item.en}</span></td>`;
     list.appendChild(row);
+
+    // 共有用テキスト詳細
+    detailText += `Q${i+1}: ${q.qText}\nResult: ${isOk ? '✓ Correct' : '✗ Wrong'} (Answer: ${q.item.ja})\n\n`;
   });
 
-  // X (Twitter) Share
+  const fullShareText = summaryText + detailText + "Try it here: ";
+
+  // X (Twitter) - 文字数制限のため要約のみ
   document.getElementById('shareX').onclick = () => {
-    const text = encodeURIComponent(summaryText + "\nTry it here: ");
+    const xSummary = encodeURIComponent(`I scored ${score}/${quizItems.length} on the @nihongotext Japanese Quiz!\n\nTry it here: `);
     const url = encodeURIComponent(window.location.href);
-    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+    window.open(`https://twitter.com/intent/tweet?text=${xSummary}&url=${url}`, '_blank');
   };
 
-  // Reddit Post
+  // Reddit - 詳細を含める
   document.getElementById('shareReddit').onclick = () => {
-    const title = encodeURIComponent(summaryText);
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.reddit.com/submit?title=${title}&url=${url}`, '_blank');
+    const title = encodeURIComponent(`My Japanese Quiz Results: ${score}/${quizItems.length}`);
+    const body = encodeURIComponent(fullShareText + window.location.href);
+    window.open(`https://www.reddit.com/submit?title=${title}&text=${body}`, '_blank');
   };
 
-  // Email
+  // Email - 詳細を含める
   document.getElementById('shareEmail').onclick = () => {
-    const subject = encodeURIComponent("My Japanese Quiz Results");
-    const body = encodeURIComponent(summaryText + "\nCheck out the materials at nihongotext.com");
+    const subject = encodeURIComponent(`My Japanese Quiz Results (${score}/${quizItems.length})`);
+    const body = encodeURIComponent(fullShareText + window.location.href);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
   };
 }
