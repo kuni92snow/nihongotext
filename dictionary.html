@@ -1,50 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Dictionary - nihongotext.com</title>
-<link rel="icon" href="/favicon.ico" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
-</script>
-<style>
-/* --- nihongotext.com 共通スタイル --- */
-:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
-*{box-sizing:border-box}
-html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
-.wrap{max-width:800px;margin:0 auto;padding:0 16px}
-
-/* ヘッダー・フッターのスタイルは partials から読み込まれるため、ここでは検索UIのスタイルのみ記述 */
-.dictionary-main{ padding:30px 0 }
-.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px; }
-input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; margin-bottom:15px; }
-input#kw:focus{ border-color:var(--shu); }
-.chips{ display:flex; flex-wrap:wrap; gap:8px }
-.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; color:var(--muted); cursor:pointer; user-select:none; transition:0.2s; }
-.chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
-#list{ display:grid; gap:16px }
-.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:12px; padding:20px; position:relative; }
-.tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:3px 8px; border-radius:4px; text-transform:uppercase }
-.lvl-tag{ background:var(--ink); color:#fff }
-.ja{ display:block; font-size:24px; font-weight:800; margin-bottom:4px }
-.kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
-.en{ display:block; font-size:16px; color:var(--ink); font-weight:500; margin-bottom:15px }
-.example-details{ border-top:1px solid #ffe4e1; margin-top:12px; padding-top:12px }
-.example-details summary{ font-size:14px; color:var(--shu); cursor:pointer; font-weight:600; }
-.ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:8px }
-.audio-link{ font-size:13px; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:5px; margin-top:8px }
-.audio-link:hover{ color:var(--shu) }
-</style>
-</head>
-<body>
-
-{{ partial "header.html" . }}
+---
+title: "Dictionary"
+layout: "single"
+url: "/dictionary"
+---
 
 <main class="wrap dictionary-main">
   <h2>Japanese Dictionary</h2>
@@ -64,8 +22,6 @@ input#kw:focus{ border-color:var(--shu); }
   <div id="list"></div>
 </main>
 
-{{ partial "footer.html" . }}
-
 <script>
 let allVocab = [];
 const audioUrl = "https://nihongotext.com/inquiry/index.html";
@@ -73,7 +29,8 @@ async function initDictionary() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const fetches = levels.map(async lv => {
     try {
-      const res = await fetch(`data/json/${lv}_master_cleaned.json`);
+      // パスを / から始まる絶対パスに修正しました
+      const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
       if (!res.ok) return [];
       const data = await res.json();
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
@@ -120,5 +77,3 @@ document.getElementById('posChips').addEventListener('click', e => {
 document.getElementById('kw').addEventListener('input', performSearch);
 initDictionary();
 </script>
-</body>
-</html>
