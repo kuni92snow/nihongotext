@@ -1,8 +1,47 @@
 ---
 title: "Dictionary"
-url: "/dictionary"
 layout: "single"
+url: "/dictionary"
 ---
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dictionary - nihongotext.com</title>
+<link rel="icon" href="/favicon.ico" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+</script>
+<style>
+/* --- 共通スタイル --- */
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{box-sizing:border-box}
+html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
+.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+
+/* 検索UI用 */
+.dictionary-main{ padding:30px 0 }
+.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px; }
+input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; margin-bottom:15px; }
+input#kw:focus{ border-color:var(--shu); }
+.chips{ display:flex; flex-wrap:wrap; gap:8px }
+.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; color:var(--muted); cursor:pointer; user-select:none; }
+.chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
+#list{ display:grid; gap:16px }
+.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:12px; padding:20px; }
+.tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:3px 8px; border-radius:4px; }
+.ja{ display:block; font-size:24px; font-weight:800; margin-bottom:4px }
+</style>
+</head>
+<body>
+
+{{ partial "header.html" . }}
 
 <main class="wrap dictionary-main">
   <h2>Japanese Dictionary</h2>
@@ -22,9 +61,10 @@ layout: "single"
   <div id="list"></div>
 </main>
 
+{{ partial "footer.html" . }}
+
 <script>
 let allVocab = [];
-const audioUrl = "https://nihongotext.com/inquiry/index.html";
 async function initDictionary() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const fetches = levels.map(async lv => {
@@ -56,10 +96,7 @@ function render(data) {
   data.slice(0, 300).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
-    const audioBtn = `<a href="${audioUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
-    let exHtml = item.examples && item.examples.length > 0 ? `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">` + item.examples.map(ex => `<div class="ex-item"><strong>${ex.ja}</strong>${ex.en}${audioBtn}</div>`).join('') + `</div></details>` : '';
-    const posMap = { "noun":"Noun", "verb":"Verb", "adjective-i":"Adj-i", "adjective-na":"Adj-na", "adverb":"Adv", "expression":"Gram" };
-    card.innerHTML = `<div class="card-head"><span class="tag lvl-tag">${item.level}</span><span class="tag">${posMap[item.pos] || item.pos}</span></div><span class="ja">${item.ja}</span><span class="kana">${item.kana || ''}</span><span class="en">${item.en}</span>${audioBtn}${exHtml}`;
+    card.innerHTML = `<span class="ja">${item.ja}</span><span class="en">${item.en}</span>`;
     listEl.appendChild(card);
   });
 }
@@ -73,3 +110,5 @@ document.getElementById('posChips').addEventListener('click', e => {
 document.getElementById('kw').addEventListener('input', performSearch);
 initDictionary();
 </script>
+</body>
+</html>
