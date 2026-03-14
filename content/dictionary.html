@@ -30,14 +30,25 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
 .sns-nav a:hover { color:var(--shu) }
 
-/* PC等の幅広画面でのレイアウト調整 */
+/* --- 統一フッターのスタイル --- */
+.site-footer{ border-top:1px solid var(--line); padding:40px 0; background:#f9fafb; margin-top:60px }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:500 }
+.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
+.footer-nav a{ color:var(--ink); text-decoration:none; font-size:13px; font-weight:600 }
+.footer-nav a:hover{ color:var(--shu) }
+.footer-icons{ display:flex; gap:15px }
+.footer-icons a{ color:var(--muted); font-size:18px; transition:0.2s }
+.footer-icons a:hover{ color:var(--shu) }
+
 @media (min-width: 768px) {
   .site-header-inner { flex-direction: row; justify-content: space-between; }
   .beta-text { margin-right: auto; margin-left: 10px; }
+  .footer-inner { flex-direction: row; justify-content: space-between; }
 }
 
 /* --- 辞書コンテンツのスタイル --- */
-.dictionary-main{ padding:30px 0; min-height:60vh }
+.dictionary-main{ padding:40px 0; min-height:50vh }
 .search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px }
 input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; background:#fff }
 .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:15px }
@@ -51,7 +62,6 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
 .kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
 .en{ display:block; font-size:16px; font-weight:500; margin-bottom:15px }
 .ex-item{ font-size:14px; background:#fff; padding:10px; border-radius:6px; border:1px solid #fff1f0; margin-top:8px }
-.footer{ border-top:1px solid var(--line); padding:30px 0; text-align:center; color:var(--muted); font-size:12px; margin-top:40px }
 </style>
 </head>
 <body>
@@ -95,13 +105,33 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
   <div id="list"></div>
 </main>
 
-<footer class="footer">
-  <div class="wrap">© 2026 nihongotext.com</div>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
+  </div>
 </footer>
 
 <script>
 let allVocab = [];
+
 async function initDictionary() {
+  // フッターの西暦を更新
+  const yearEl = document.getElementById('ft-year');
+  if(yearEl) yearEl.textContent = new Date().getFullYear();
+
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1']; 
   const fetches = levels.map(async lv => {
     try {
@@ -136,7 +166,7 @@ function render(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = data.length ? '' : '<p>No matches found.</p>';
   
-  // 表示数はご要望の通り 5個 に制限
+  // 表示数は5個制限
   data.slice(0, 5).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
