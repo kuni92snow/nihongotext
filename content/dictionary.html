@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Dictionary - nihongotext.com</title>
+<title>Vocabulary Tool - nihongotext.com</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
@@ -13,55 +13,66 @@
   gtag('config', 'G-9QSHWJE0HZ');
 </script>
 <style>
-/* --- 共通カラーと基本設定 --- */
+/* --- Colors & Base Styles --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
-body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
-.wrap{ max-width:1000px; margin:0 auto; padding:0 16px }
+body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
+.wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-/* --- 統一ヘッダーのスタイル --- */
-.site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:15px 0 }
-.site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:10px }
-.logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
-.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase }
-.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center }
-.nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px }
+/* --- Header (Matches index.html) --- */
+.site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
+.site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
+.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
+.nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
 .nav-links a:hover { color:var(--shu) }
 .sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
 .sns-nav a:hover { color:var(--shu) }
 
-/* --- 統一フッターのスタイル --- */
-.site-footer{ border-top:1px solid var(--line); padding:40px 0; background:#f9fafb; margin-top:60px }
+/* --- Hero Section --- */
+.hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
+.hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
+.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
+
+/* --- Main Content --- */
+.dictionary-main{ padding:50px 0; min-height:50vh; text-align: left; }
+.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:25px; margin:-40px 0 40px; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05) }
+input#kw{ width:100%; padding:16px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; background:#fff; text-align:center }
+input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px rgba(230,70,45,0.1) }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; justify-content:center }
+.chip{ padding:8px 16px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; font-weight:600; cursor:pointer; transition:0.2s; color:var(--muted) }
+.chip.active{ background:var(--shu); border-color:var(--shu); color:#fff }
+
+#list{ display:grid; gap:20px }
+.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:15px; padding:25px; transition:0.2s; position:relative }
+.card:hover{ transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.05) }
+.tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:4px 10px; border-radius:4px; text-transform:uppercase; margin-right:6px }
+.lvl-tag{ background:var(--ink); color:#fff }
+.ja{ display:block; font-size:26px; font-weight:800; margin:10px 0 4px; color:var(--ink) }
+.kana{ display:block; font-size:15px; color:var(--muted); margin-bottom:12px; font-weight:500 }
+.en{ display:block; font-size:17px; color:var(--ink); font-weight:600; margin-bottom:15px }
+
+.example-details { border-top:1px solid #ffe4e1; margin-top:15px; padding-top:15px }
+.example-details summary { font-size:14px; color:var(--shu); cursor:pointer; font-weight:700; display:flex; align-items:center; gap:5px }
+.ex-item { font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:10px }
+.ex-ja { font-weight:700; color:var(--ink) }
+
+/* --- Footer (Matches index.html) --- */
+.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
-.footer-copy{ font-size:14px; color:var(--muted); font-weight:500 }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
 .footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
-.footer-nav a{ color:var(--ink); text-decoration:none; font-size:13px; font-weight:600 }
+.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
 .footer-nav a:hover{ color:var(--shu) }
 .footer-icons{ display:flex; gap:15px }
-.footer-icons a{ color:var(--muted); font-size:18px; transition:0.2s }
+.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
 .footer-icons a:hover{ color:var(--shu) }
 
 @media (min-width: 768px) {
   .site-header-inner { flex-direction: row; justify-content: space-between; }
-  .beta-text { margin-right: auto; margin-left: 10px; }
-  .footer-inner { flex-direction: row; justify-content: space-between; }
+  .footer-inner { flex-direction: column; align-items: center; } /* Keeps it centered like index.html */
 }
-
-/* --- 辞書コンテンツのスタイル --- */
-.dictionary-main{ padding:40px 0; min-height:50vh }
-.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px }
-input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; background:#fff }
-.chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:15px }
-.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; cursor:pointer }
-.chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
-#list{ display:grid; gap:16px }
-.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:12px; padding:20px }
-.tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:3px 8px; border-radius:4px; text-transform:uppercase; margin-right:4px }
-.lvl-tag{ background:var(--ink); color:#fff }
-.ja{ display:block; font-size:24px; font-weight:800; margin-bottom:4px }
-.kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
-.en{ display:block; font-size:16px; font-weight:500; margin-bottom:15px }
-.ex-item{ font-size:14px; background:#fff; padding:10px; border-radius:6px; border:1px solid #fff1f0; margin-top:8px }
 </style>
 </head>
 <body>
@@ -80,28 +91,35 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
       <a href="/inquiry/index.html">Inquiry</a>
     </nav>
     <nav class="sns-nav">
-      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </header>
 
+<div class="hero-section">
+  <div class="wrap">
+    <h1>Vocabulary Tool</h1>
+    <p>Search over 2,900 Japanese words with example sentences.</p>
+  </div>
+</div>
+
 <main class="wrap dictionary-main">
-  <h2>Japanese Dictionary</h2>
   <div class="search-box">
-    <input type="text" id="kw" placeholder="Search word, kana, or English..." autocomplete="off">
+    <input type="text" id="kw" placeholder="Type a word, kana, or meaning..." autocomplete="off">
     <div class="chips" id="posChips">
-      <span class="chip active" data-pos="all">すべて (All)</span>
-      <span class="chip" data-pos="noun">名詞 (Noun)</span>
-      <span class="chip" data-pos="verb">動詞 (Verb)</span>
-      <span class="chip" data-pos="adjective-i">い形容詞 (Adj-i)</span>
-      <span class="chip" data-pos="adjective-na">な形容詞 (Adj-na)</span>
+      <span class="chip active" data-pos="all">All</span>
+      <span class="chip" data-pos="noun">Noun</span>
+      <span class="chip" data-pos="verb">Verb</span>
+      <span class="chip" data-pos="adjective-i">Adj-i</span>
+      <span class="chip" data-pos="adjective-na">Adj-na</span>
     </div>
   </div>
-  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:10px;">Loading database...</div>
+  
+  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:15px; font-weight:600; text-align: center;">Loading database...</div>
   <div id="list"></div>
 </main>
 
@@ -128,7 +146,6 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
 let allVocab = [];
 
 async function initDictionary() {
-  // フッターの西暦を更新
   const yearEl = document.getElementById('ft-year');
   if(yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -164,23 +181,23 @@ function performSearch() {
 
 function render(data) {
   const listEl = document.getElementById('list');
-  listEl.innerHTML = data.length ? '' : '<p>No matches found.</p>';
+  listEl.innerHTML = data.length ? '' : '<p style="text-align:center; padding:50px; color:var(--muted); font-weight:700;">No matches found.</p>';
   
-  // 表示数は5個制限
+  // Show only 5 items as per requirement
   data.slice(0, 5).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
     let exHtml = (item.examples || []).map(ex => `
       <div class="ex-item">
-        <strong>${ex.ja}</strong><br>
-        <small>${ex.kana || ''}</small><br>
-        <small><i>${ex.ro || ''}</i></small><br>
-        ${ex.en}
+        <span class="ex-ja">${ex.ja}</span><br>
+        <small style="color:var(--muted); font-weight:500;">${ex.kana || ''}</small><br>
+        <small style="color:#999;"><i>${ex.ro || ''}</i></small><br>
+        <div style="margin-top:4px; font-weight:600; color:var(--ink);">${ex.en}</div>
       </div>`).join('');
     card.innerHTML = `
       <div class="card-head"><span class="tag lvl-tag">${item.level}</span><span class="tag">${item.pos}</span></div>
       <span class="ja">${item.ja}</span><span class="kana">${item.kana || ''}</span><span class="en">${item.en}</span>
-      ${exHtml ? `<details style="margin-top:10px"><summary style="cursor:pointer; font-size:14px; color:var(--shu)">Examples</summary>${exHtml}</details>` : ''}
+      ${exHtml ? `<details class="example-details"><summary>▶ Example Sentences</summary><div class="example-list">${exHtml}</div></details>` : ''}
     `;
     listEl.appendChild(card);
   });
