@@ -43,7 +43,7 @@ url: "/dictionary"
     .ex-ro { display: block; font-size: 11px; color: #9ca3af; font-style: italic; margin-bottom: 4px; }
     .ex-en { display: block; color: var(--ink); }
     
-    .audio-link { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; }
+    .audio-link { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; transition: 0.2s; }
     .audio-link:hover { color: var(--shu); }
   </style>
 
@@ -74,12 +74,15 @@ async function initDictionary() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const fetches = levels.map(async lv => {
     try {
-      // GitHubのフォルダ構成 data/json/ に合わせて取得
+      // データの場所: data/json/... を読み込み
       const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
       if (!res.ok) return [];
       const data = await res.json();
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
-    } catch (e) { return []; }
+    } catch (e) { 
+      console.warn(`Could not load ${lv} data:`, e);
+      return []; 
+    }
   });
 
   const results = await Promise.all(fetches);
@@ -120,7 +123,6 @@ function render(data) {
     card.className = 'card';
     const audioBtn = `<a href="${audioUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
     
-    // 例文セクション（kanaとroがある場合に表示）
     let exHtml = '';
     if (item.examples && item.examples.length > 0) {
       const exItems = item.examples.map(ex => `
@@ -135,7 +137,14 @@ function render(data) {
       exHtml = `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">${exItems}</div></details>`;
     }
 
-    const posMap = { "noun": "Noun", "verb": "Verb", "adjective-i": "Adj-i", "adjective-na": "Adj-na", "adverb": "Adv", "expression": "Gram" };
+    const posMap = { 
+      "noun": "Noun", 
+      "verb": "Verb", 
+      "adjective-i": "Adj-i", 
+      "adjective-na": "Adj-na", 
+      "adverb": "Adv", 
+      "expression": "Gram" 
+    };
 
     card.innerHTML = `
       <div class="card-head">
@@ -144,24 +153,4 @@ function render(data) {
       </div>
       <span class="ja">${item.ja}</span>
       <span class="kana">${item.kana || ''}</span>
-      <span class="en">${item.en}</span>
-      ${audioBtn}
-      ${exHtml}
-    `;
-    listEl.appendChild(card);
-  });
-}
-
-document.getElementById('posChips').addEventListener('click', e => {
-  if (e.target.classList.contains('chip')) {
-    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-    e.target.classList.add('active');
-    performSearch();
-  }
-});
-
-document.getElementById('kw').addEventListener('input', performSearch);
-initDictionary();
-</script>
-
-{{ partial "footer.html" . }}
+      <span class
