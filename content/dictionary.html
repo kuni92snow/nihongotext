@@ -13,18 +13,17 @@
   gtag('config', 'G-9QSHWJE0HZ');
 </script>
 <style>
-/* --- Colors & Base Styles --- */
+/* --- Colors & Reset --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
-/* Body text alignment to center for layout consistency */
 body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
 .wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-/* --- Site Header (Centered Design) --- */
+/* --- Site Header (Centered Design Matched to index.html) --- */
 .site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
 .logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
-.logo-text{ font-weight:900; font-size:32px; color:var(--shu); }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
 .beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
@@ -32,14 +31,17 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
 .sns-nav a:hover { color:var(--shu) }
 
-/* --- Hero Section --- */
+/* --- Hero Section (Pink Background) --- */
 .hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
 .hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
 .hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-/* --- Main Content (Aligned Left inside wrap) --- */
+/* --- Main Content Area --- */
 .dictionary-main{ padding:50px 0; min-height:50vh; text-align: left; }
-.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:25px; margin:-40px 0 40px; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05) }
+.search-box{ 
+  background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:25px; 
+  margin:-40px 0 40px; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05) 
+}
 input#kw{ width:100%; padding:16px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; background:#fff; text-align:center }
 input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px rgba(230,70,45,0.1) }
 .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; justify-content:center }
@@ -60,7 +62,7 @@ input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px rgba(230,70,45,0.1
 .ex-item { font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:10px }
 .ex-ja { font-weight:700; color:var(--ink) }
 
-/* --- Site Footer (Centered Design) --- */
+/* --- Site Footer (Centered Design Matched to index.html) --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
@@ -72,7 +74,6 @@ input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px rgba(230,70,45,0.1
 .footer-icons a:hover{ color:var(--shu) }
 
 @media (min-width: 768px) {
-  /* Keep centered layout on desktop to match index.html exactly */
   .site-header-inner, .footer-inner { flex-direction: column; align-items: center; }
 }
 </style>
@@ -148,9 +149,18 @@ input#kw:focus{ border-color:var(--shu); box-shadow:0 0 0 3px rgba(230,70,45,0.1
 let allVocab = [];
 
 async function initDictionary() {
+  // 1. Update Footer Year
   const yearEl = document.getElementById('ft-year');
   if(yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // 2. Check URL for "?kw=..." and set to search input
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryKw = urlParams.get('kw');
+  if (queryKw) {
+    document.getElementById('kw').value = decodeURIComponent(queryKw);
+  }
+
+  // 3. Fetch Data
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1']; 
   const fetches = levels.map(async lv => {
     try {
@@ -160,9 +170,12 @@ async function initDictionary() {
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
     } catch (e) { return []; }
   });
+
   const results = await Promise.all(fetches);
   allVocab = results.flat();
   document.getElementById('status').innerText = `${allVocab.length} words loaded.`;
+
+  // 4. Run Initial Search
   performSearch();
 }
 
@@ -185,7 +198,7 @@ function render(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = data.length ? '' : '<p style="text-align:center; padding:50px; color:var(--muted); font-weight:700;">No matches found.</p>';
   
-  // Show 5 items
+  // Restricted to 5 items for clean look
   data.slice(0, 5).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
@@ -205,6 +218,7 @@ function render(data) {
   });
 }
 
+// Event Listeners
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -213,6 +227,8 @@ document.getElementById('posChips').addEventListener('click', e => {
   }
 });
 document.getElementById('kw').addEventListener('input', performSearch);
+
+// Initialize
 initDictionary();
 </script>
 </body>
