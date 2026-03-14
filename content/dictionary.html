@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -23,9 +23,9 @@ nav{ display:flex; justify-content:center; gap:15px; margin-top:10px }
 nav a{ color:var(--ink); font-weight:600; text-decoration:none; font-size:14px }
 .dictionary-main{ padding:30px 0; min-height:60vh }
 .search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px }
-input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none }
+input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; border:1px solid var(--line); }
 .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:15px }
-.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; cursor:pointer }
+.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; cursor:pointer; transition:0.2s }
 .chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
 #list{ display:grid; gap:16px }
 .card{ background:var(--card); border:1px solid #ffe4e1; border-radius:12px; padding:20px }
@@ -46,7 +46,7 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
 <main class="wrap dictionary-main">
   <h2>Japanese Dictionary</h2>
   <div class="search-box">
-    <input type="text" id="kw" placeholder="Search..." autocomplete="off">
+    <input type="text" id="kw" placeholder="Search word, kana, or English..." autocomplete="off">
     <div class="chips" id="posChips">
       <span class="chip active" data-pos="all">すべて (All)</span>
       <span class="chip" data-pos="noun">名詞 (Noun)</span>
@@ -55,16 +55,19 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
       <span class="chip" data-pos="adjective-na">な形容詞 (Adj-na)</span>
     </div>
   </div>
-  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:10px;">Loading database...</div>
+  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:10px;">Checking database...</div>
   <div id="list"></div>
 </main>
 <footer class="footer"><div class="wrap">© 2026 nihongotext.com</div></footer>
 <script>
 let allVocab = [];
 async function initDictionary() {
-  const fetches = ['n5'].map(async lv => {
+  const levels = ['n5']; // 必要に応じて 'n4','n3' を追加
+  const fetches = levels.map(async lv => {
     try {
+      // パスの先頭に / をつけることで、どの階層からでもルートのdataを見に行きます
       const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
+      if (!res.ok) throw new Error();
       const data = await res.json();
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
     } catch (e) { return []; }
@@ -75,18 +78,18 @@ async function initDictionary() {
   performSearch();
 }
 function performSearch() {
-  const kw = document.getElementById('kw').value.toLowerCase();
+  const kw = document.getElementById('kw').value.toLowerCase().trim();
   const posFilter = document.querySelector('.chip.active').getAttribute('data-pos');
   const filtered = allVocab.filter(item => {
     const mPos = (posFilter === 'all' || item.pos === posFilter);
-    const mKw = !kw || (item.ja.includes(kw) || item.kana.includes(kw) || item.en.toLowerCase().includes(kw));
+    const mKw = !kw || (item.ja.includes(kw) || (item.kana && item.kana.includes(kw)) || item.en.toLowerCase().includes(kw));
     return mPos && mKw;
   });
   render(filtered);
 }
 function render(data) {
   const listEl = document.getElementById('list');
-  listEl.innerHTML = data.length ? '' : '<p>No matches.</p>';
+  listEl.innerHTML = data.length ? '' : '<p>No matches found.</p>';
   data.slice(0, 300).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
@@ -96,8 +99,8 @@ function render(data) {
       </div>`).join('');
     card.innerHTML = `
       <div class="card-head"><span class="tag lvl-tag">${item.level}</span><span class="tag">${item.pos}</span></div>
-      <span class="ja">${item.ja}</span><span class="kana">${item.kana}</span><span class="en">${item.en}</span>
-      <details style="margin-top:10px"><summary style="cursor:pointer; font-size:14px; color:var(--shu)">Examples</summary>${exHtml}</details>
+      <span class="ja">${item.ja}</span><span class="kana">${item.kana || ''}</span><span class="en">${item.en}</span>
+      ${exHtml ? `<details style="margin-top:10px"><summary style="cursor:pointer; font-size:14px; color:var(--shu)">Examples</summary>${exHtml}</details>` : ''}
     `;
     listEl.appendChild(card);
   });
