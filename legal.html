@@ -1,455 +1,225 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Legal Notice (Specified Commercial Transactions) | nihongotext.com</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Legal Notice - nihongotext.com</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ');
+</script>
+<style>
+/* --- Colors & Base Styles --- */
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{box-sizing:border-box}
+body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
+.wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-  <base href="/" />
+/* --- Site Header --- */
+.site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
+.site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
+.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
+.nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
+.nav-links a:hover { color:var(--shu) }
+.sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
+.sns-nav a:hover { color:var(--shu) }
 
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512" />
-  <link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="theme-color" content="#b22222" />
-  <meta name="description" content="Legal Notice based on the Act on Specified Commercial Transactions for nihongotext.com." />
+/* Language Toggle Button */
+.lang-toggle-btn{
+  border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12px; 
+  cursor:pointer; background:#fff; display:inline-flex; align-items:center; gap:6px;
+  font-weight: 700; color: var(--muted); margin-top: 10px;
+}
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9QSHWJE0HZ');
-  </script>
+/* --- Hero Section --- */
+.hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
+.hero-section h1 { color: var(--shu); font-size: 28px; font-weight: 800; margin: 0 0 10px; line-height: 1.2; }
+.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+/* --- Legal Content --- */
+.legal-main{ padding:50px 0; min-height:50vh; text-align: left; }
+.legal-card{ 
+  background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; 
+  margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  max-width: 800px;
+}
+.legal-card h2{ color:var(--ink); font-size:18px; margin-top:25px; margin-bottom:10px; border-left:4px solid var(--shu); padding-left:12px; }
+.legal-card h2:first-of-type{ margin-top:0; }
+.legal-card p{ margin:10px 0; color:#444; font-size:15px; line-height:1.7; }
+.legal-card strong{ color:var(--ink); }
+.muted-text{ color:var(--muted); font-size:13px; margin-top:5px; }
 
-  <style>
-    :root{
-      --shu:#e6462d;
-      --ink:#1f2937;
-      --muted:#6b7280;
-      --line:#e5e7eb;
-    }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;
-      background:#fff;
-      color:var(--ink);
-      font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,
-           "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
-    }
-    a{color:inherit;text-decoration:none}
+/* --- Site Footer --- */
+.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
+.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
+.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
+.footer-nav a:hover{ color:var(--shu) }
+.footer-icons{ display:flex; gap:15px }
+.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
+.footer-icons a:hover{ color:var(--shu) }
 
-    .wrap{
-      max-width:900px;
-      margin:0 auto;
-      padding:0 16px;
-    }
-
-    /* ヘッダー・フッター共通 */
-    .topbar{
-      border-top:4px solid var(--shu);
-      border-bottom:1px solid #fee2e2;
-      background:#fff;
-    }
-    .topbar .wrap{
-      position:relative; /* トグルを右端に固定するため */
-    }
-    .site-footer{
-      border-top:1px solid #fee2e2;
-      background:#fff;
-    }
-
-    /* 言語トグル（右端固定） */
-    .lang-toggle-btn{
-      position:absolute;
-      right:16px;
-      top:50%;
-      transform:translateY(-50%);
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:4px 10px;
-      font-size:13px;
-      cursor:pointer;
-      background:#fff;
-      white-space:nowrap;
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-    }
-    .lang-toggle-btn i{
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    /* 本文 */
-    main{
-      line-height:1.8;
-      padding-top:24px;
-      padding-bottom:40px;
-    }
-    h1{
-      color:#e6462d;
-      font-size:1.8em;
-      border-bottom:2px solid #e6462d;
-      padding-bottom:6px;
-      margin:0 0 20px;
-    }
-    h2{
-      color:#333;
-      font-size:1.2em;
-      margin-top:24px;
-      margin-bottom:4px;
-    }
-    p{margin:8px 0;color:#444}
-    ul{margin-left:20px}
-    a.link{color:#e6462d;text-decoration:none}
-    a.link:hover{text-decoration:underline}
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin-top:16px;
-    }
-    th,td{
-      border:1px solid #ddd;
-      padding:8px 10px;
-      vertical-align:top;
-    }
-    th{
-      background:#fafafa;
-      text-align:left;
-      width:32%;
-    }
-    .muted{color:#666;font-size:0.9em}
-
-    /* Legal でも Learning/Learned ナビは非表示 */
-    nav[aria-label="Learning navigation"]{ display:none !important; }
-  </style>
+@media (min-width: 768px) {
+  .site-header-inner { flex-direction: row; justify-content: space-between; }
+  .footer-inner { flex-direction: column; align-items: center; }
+}
+</style>
 </head>
-
 <body>
-<header class="topbar">
-  <div class="wrap">
-    <div id="header-placeholder"></div>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/content/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html">Quiz</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+    </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
   </div>
+  <button id="langToggle" class="lang-toggle-btn">
+    <i class="fa-solid fa-globe"></i> <span>日本語</span>
+  </button>
 </header>
 
-<main class="wrap">
-  <h1 id="pageTitle">Legal Notice (Act on Specified Commercial Transactions)</h1>
-
-  <!-- 本文はここを JS で日英切り替え -->
-  <div id="legalMainInner">
-    <!-- 初期表示（英語） -->
-    <h2>Seller</h2>
-    <p><strong>nihongotext.com</strong></p>
-
-    <h2>Representative</h2>
-    <p><strong>Hirotaka Kunishima</strong></p>
-
-    <h2>Address</h2>
-    <p>Tokyo, Japan</p>
-    <p class="muted">
-      For privacy and security reasons, the full address will be provided upon request from authorities or
-      customers who have completed a purchase.
-    </p>
-
-    <h2>Email</h2>
-    <p><strong>info@nihongotext.com</strong></p>
-
-    <h2>Website</h2>
-    <p>
-      <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
-    </p>
-
-    <h2>Sales Price</h2>
-    <p>
-      The price is displayed on each product or service page.
-    </p>
-
-    <h2>Payment Methods</h2>
-    <p>
-      Payments are processed through <strong>Ko-fi</strong> (Stripe / PayPal).
-    </p>
-
-    <h2>Additional Fees</h2>
-    <p>
-      Depending on the payment method, processing fees may apply.
-    </p>
-
-    <h2>Delivery Time</h2>
-    <p>
-      Digital content will be available immediately after payment is confirmed.
-    </p>
-
-    <h2>Returns, Cancellations, Defects</h2>
-    <p>
-      Due to the nature of digital products, we do not accept returns, exchanges, or cancellations after
-      delivery. If you experience download issues or data errors, please contact us via the above email
-      for support.
-    </p>
-
-    <h2>Operating Environment</h2>
-    <p>
-      Please use an internet-connected device (PC, tablet, smartphone) capable of accessing
-      nihongotext.com and playing standard web audio where applicable.
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-      Please contact us using the inquiry form or by email.
-    </p>
-
-    <h2>Disclaimer</h2>
-    <p>
-      We strive to provide accurate information; however, we are not liable for any damages arising from
-      the use of this website or its content. Service descriptions and pricing may change without notice.
-    </p>
-
-    <p style="margin-top:20px;" class="muted">
-      Last updated: November 2025
-    </p>
+<div class="hero-section">
+  <div class="wrap">
+    <h1 id="heroTitle">Legal Notice</h1>
+    <p id="heroSub">Act on Specified Commercial Transactions</p>
   </div>
+</div>
+
+<main class="wrap legal-main">
+  <div class="legal-card" id="legalContent">
+    </div>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div id="footer-placeholder"></div>
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html" style="color:var(--shu);">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
   </div>
 </footer>
 
 <script>
-  // 本文テンプレート（日英）
-  const legalTemplates = {
-    en: `
+const legalData = {
+  en: {
+    heroTitle: "Legal Notice",
+    heroSub: "Act on Specified Commercial Transactions",
+    toggle: "日本語",
+    html: `
       <h2>Seller</h2>
       <p><strong>nihongotext.com</strong></p>
-
       <h2>Representative</h2>
       <p><strong>Hirotaka Kunishima</strong></p>
-
       <h2>Address</h2>
       <p>Tokyo, Japan</p>
-      <p class="muted">
-        For privacy and security reasons, the full address will be provided upon request from authorities or
-        customers who have completed a purchase.
-      </p>
-
+      <p class="muted-text">For privacy and security reasons, the full address will be provided upon request from authorities or customers who have completed a purchase.</p>
       <h2>Email</h2>
       <p><strong>info@nihongotext.com</strong></p>
-
       <h2>Website</h2>
-      <p>
-        <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
-      </p>
-
+      <p><a href="https://nihongotext.com/" style="color:var(--shu)">https://nihongotext.com/</a></p>
       <h2>Sales Price</h2>
-      <p>
-        The price is displayed on each product or service page.
-      </p>
-
+      <p>The price is displayed on each product or service page.</p>
       <h2>Payment Methods</h2>
-      <p>
-        Payments are processed through <strong>Ko-fi</strong> (Stripe / PayPal).
-      </p>
-
+      <p>Payments are processed through <strong>Ko-fi</strong> (Stripe / PayPal).</p>
       <h2>Additional Fees</h2>
-      <p>
-        Depending on the payment method, processing fees may apply.
-      </p>
-
+      <p>Depending on the payment method, processing fees may apply.</p>
       <h2>Delivery Time</h2>
-      <p>
-        Digital content will be available immediately after payment is confirmed.
-      </p>
-
-      <h2>Returns, Cancellations, Defects</h2>
-      <p>
-        Due to the nature of digital products, we do not accept returns, exchanges, or cancellations after
-        delivery. If you experience download issues or data errors, please contact us via the above email
-        for support.
-      </p>
-
+      <p>Digital content will be available immediately after payment is confirmed.</p>
+      <h2>Returns & Cancellations</h2>
+      <p>Due to the nature of digital products, we do not accept returns or cancellations after delivery. If you experience errors, please contact us for support.</p>
       <h2>Operating Environment</h2>
-      <p>
-        Please use an internet-connected device (PC, tablet, smartphone) capable of accessing
-        nihongotext.com and playing standard web audio where applicable.
-      </p>
-
-      <h2>Contact</h2>
-      <p>
-        Please contact us using the inquiry form or by email.
-      </p>
-
-      <h2>Disclaimer</h2>
-      <p>
-        We strive to provide accurate information; however, we are not liable for any damages arising from
-        the use of this website or its content. Service descriptions and pricing may change without notice.
-      </p>
-
-      <p style="margin-top:20px;" class="muted">
-        Last updated: November 2025
-      </p>
-    `,
-    ja: `
+      <p>A standard internet-connected device (PC, tablet, smartphone) is required.</p>
+      <p class="muted-text">Last updated: November 2025</p>
+    `
+  },
+  ja: {
+    heroTitle: "特定商取引法に基づく表記",
+    heroSub: "Legal Notice",
+    toggle: "English",
+    html: `
       <h2>販売業者</h2>
       <p><strong>nihongotext.com</strong></p>
-
       <h2>運営責任者</h2>
-      <p><strong>國島 裕貴（Hirotaka Kunishima）</strong></p>
-
+      <p><strong>國島 裕貴 (Hirotaka Kunishima)</strong></p>
       <h2>所在地</h2>
-      <p>東京都（Japan）</p>
-      <p class="muted">
-        プライバシーおよびセキュリティ保護の観点から、
-        正確な住所はご購入手続きが完了したお客様または関係当局からの要請があった場合に開示いたします。
-      </p>
-
+      <p>東京都 (Japan)</p>
+      <p class="muted-text">プライバシー保護のため、詳細な住所は購入完了後または関係当局の要請により開示いたします。</p>
       <h2>メールアドレス</h2>
       <p><strong>info@nihongotext.com</strong></p>
-
       <h2>ウェブサイト</h2>
-      <p>
-        <a class="link" href="https://nihongotext.com/">https://nihongotext.com/</a>
-      </p>
-
+      <p><a href="https://nihongotext.com/" style="color:var(--shu)">https://nihongotext.com/</a></p>
       <h2>販売価格</h2>
-      <p>
-        各商品・サービスのページに税込価格を表示します。
-      </p>
-
-      <h2>代金の支払方法</h2>
-      <p>
-        決済は <strong>Ko-fi</strong> を通じて行われ、Stripe または PayPal によるオンライン決済をご利用いただけます。
-      </p>
-
+      <p>各商品・サービスページに表示されます。</p>
+      <h2>支払方法</h2>
+      <p><strong>Ko-fi</strong> (Stripe / PayPal) を通じたオンライン決済。</p>
       <h2>商品代金以外の必要料金</h2>
-      <p>
-        決済方法によっては、決済事業者所定の手数料が発生する場合があります。
-        その場合の手数料はお客様のご負担となります。
-      </p>
-
-      <h2>引き渡し時期</h2>
-      <p>
-        デジタルコンテンツについては、決済完了後すぐにダウンロードまたは閲覧が可能です。
-      </p>
-
-      <h2>返品・キャンセル・不良品について</h2>
-      <p>
-        デジタル商品の性質上、ダウンロード・閲覧が可能となった後の返品・交換・キャンセルはお受けできません。
-        ただし、データの欠損やダウンロードエラー等がある場合は、上記メールアドレスよりご連絡ください。
-        確認のうえ、再配布等の対応を行います。
-      </p>
-
+      <p>決済方法により、所定の手数料が発生する場合があります。</p>
+      <h2>引渡時期</h2>
+      <p>決済完了後、即時にダウンロードまたは閲覧可能です。</p>
+      <h2>返品・キャンセル</h2>
+      <p>デジタルコンテンツの性質上、決済完了後の返品・返金は承っておりません。</p>
       <h2>動作環境</h2>
-      <p>
-        当サイトのコンテンツをご利用いただくには、
-        一般的なウェブブラウザを搭載したインターネット接続可能な PC／タブレット／スマートフォンが必要です。
-        音声付きコンテンツをご利用の場合は、音声再生が可能な環境をご用意ください。
-      </p>
-
-      <h2>お問い合わせ方法</h2>
-      <p>
-        お問い合わせフォームまたは上記メールアドレス宛てにご連絡ください。
-      </p>
-
-      <h2>免責事項</h2>
-      <p>
-        当サイトに掲載する情報については、正確な情報の提供に努めておりますが、
-        その内容の正確性・完全性を保証するものではありません。
-        当サイトの利用により生じた損害等について、運営者は一切の責任を負わないものとします。
-        コンテンツ内容や価格等は予告なく変更される場合があります。
-      </p>
-
-      <p style="margin-top:20px;" class="muted">
-        最終更新日：2025年11月
-      </p>
+      <p>インターネット接続可能なPC・スマートフォン等。</p>
+      <p class="muted-text">最終更新日：2025年11月</p>
     `
-  };
-
-  // タイトルと言語の切り替え + 本文切り替え
-  function applyLang(ctx){
-    let lang =
-      (ctx && ctx.lang) ||
-      localStorage.getItem('nt_lang') ||
-      localStorage.getItem('lang') ||
-      'en';
-
-    const titleEl = document.getElementById('pageTitle');
-    const mainInner = document.getElementById('legalMainInner');
-
-    if (lang === 'ja'){
-      titleEl.textContent = '特定商取引法に基づく表記';
-      document.title = '特定商取引法に基づく表記 | nihongotext.com';
-    } else {
-      titleEl.textContent = 'Legal Notice (Act on Specified Commercial Transactions)';
-      document.title = 'Legal Notice (Specified Commercial Transactions) | nihongotext.com';
-      lang = 'en';
-    }
-
-    // 本文をテンプレートで切り替え
-    const tpl = legalTemplates[lang] || legalTemplates.en;
-    if (mainInner){ mainInner.innerHTML = tpl; }
-
-    document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
-    localStorage.setItem('nt_lang', lang);
-    localStorage.setItem('lang',    lang);
   }
+};
 
-  // ヘッダー／フッター読み込み & トグル設置
-  async function loadPartialsAndToggle(){
-    try{
-      const [headerHtml, footerHtml] = await Promise.all([
-        fetch('/partials/header.html').then(r => r.text()),
-        fetch('/partials/footer.html').then(r => r.text())
-      ]);
+let currentLang = localStorage.getItem('nt_lang') || 'en';
 
-      document.getElementById('header-placeholder').innerHTML = headerHtml;
-      document.getElementById('footer-placeholder').innerHTML = footerHtml;
+function applyLang(lang) {
+  const data = legalData[lang];
+  document.getElementById('heroTitle').textContent = data.heroTitle;
+  document.getElementById('heroSub').textContent = data.heroSub;
+  document.getElementById('langToggle').querySelector('span').textContent = data.toggle;
+  document.getElementById('legalContent').innerHTML = data.html;
+  
+  document.documentElement.lang = lang;
+  document.title = (lang === 'ja' ? '特定商取引法に基づく表記' : 'Legal Notice') + ' | nihongotext.com';
+  localStorage.setItem('nt_lang', lang);
+}
 
-      // ヘッダー右端にトグルボタンを追加
-      const headerRoot =
-        document.querySelector('#header-placeholder .site-header') ||
-        document.getElementById('header-placeholder');
+document.getElementById('langToggle').addEventListener('click', () => {
+  currentLang = (currentLang === 'en' ? 'ja' : 'en');
+  applyLang(currentLang);
+});
 
-      if (headerRoot && !document.getElementById('nt-lang-toggle-legal')){
-        let currentLang =
-          localStorage.getItem('nt_lang') ||
-          localStorage.getItem('lang') ||
-          'en';
-
-        const btn = document.createElement('button');
-        btn.id = 'nt-lang-toggle-legal';
-        btn.type = 'button';
-        btn.className = 'lang-toggle-btn';
-        btn.innerHTML = '';
-
-        const syncLabel = () => {
-          btn.innerHTML =
-            `<i class="fa-solid fa-globe"></i>` +
-            `<span>${currentLang === 'en' ? '日本語' : 'English'}</span>`;
-        };
-        syncLabel();
-
-        btn.addEventListener('click', () => {
-          currentLang = (currentLang === 'en') ? 'ja' : 'en';
-          applyLang({ lang: currentLang });
-          syncLabel();
-        });
-
-        headerRoot.appendChild(btn);
-      }
-    } catch(e){
-      console.error('Failed to load partials:', e);
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    applyLang();
-    loadPartialsAndToggle();
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
+  applyLang(currentLang);
+});
 </script>
 </body>
 </html>
