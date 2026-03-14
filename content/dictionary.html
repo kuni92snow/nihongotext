@@ -23,7 +23,7 @@ nav{ display:flex; justify-content:center; gap:15px; margin-top:10px }
 nav a{ color:var(--ink); font-weight:600; text-decoration:none; font-size:14px }
 .dictionary-main{ padding:30px 0; min-height:60vh }
 .search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px }
-input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; border:1px solid var(--line); }
+input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; border:1px solid var(--line); background:#fff; }
 .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:15px }
 .chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; cursor:pointer; transition:0.2s }
 .chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
@@ -55,47 +55,58 @@ input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:
       <span class="chip" data-pos="adjective-na">な形容詞 (Adj-na)</span>
     </div>
   </div>
-  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:10px;">Checking database...</div>
+  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:10px;">Loading database...</div>
   <div id="list"></div>
 </main>
 <footer class="footer"><div class="wrap">© 2026 nihongotext.com</div></footer>
 <script>
 let allVocab = [];
 async function initDictionary() {
-  const levels = ['n5']; // 必要に応じて 'n4','n3' を追加
+  // すべてのレベルのファイルを読み込むように修正
+  const levels = ['n5', 'n4', 'n3', 'n2', 'n1']; 
   const fetches = levels.map(async lv => {
     try {
-      // パスの先頭に / をつけることで、どの階層からでもルートのdataを見に行きます
       const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
-      if (!res.ok) throw new Error();
+      if (!res.ok) return [];
       const data = await res.json();
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
     } catch (e) { return []; }
   });
+
   const results = await Promise.all(fetches);
   allVocab = results.flat();
   document.getElementById('status').innerText = `${allVocab.length} words loaded.`;
   performSearch();
 }
+
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
   const posFilter = document.querySelector('.chip.active').getAttribute('data-pos');
   const filtered = allVocab.filter(item => {
     const mPos = (posFilter === 'all' || item.pos === posFilter);
-    const mKw = !kw || (item.ja.includes(kw) || (item.kana && item.kana.includes(kw)) || item.en.toLowerCase().includes(kw));
+    const mKw = !kw || (
+      (item.ja && item.ja.includes(kw)) || 
+      (item.kana && item.kana.includes(kw)) || 
+      (item.en && item.en.toLowerCase().includes(kw))
+    );
     return mPos && mKw;
   });
   render(filtered);
 }
+
 function render(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = data.length ? '' : '<p>No matches found.</p>';
+  // 描画負荷を考慮して上位300件を表示
   data.slice(0, 300).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
     let exHtml = (item.examples || []).map(ex => `
       <div class="ex-item">
-        <strong>${ex.ja}</strong><br><small>${ex.kana || ''}</small><br><small><i>${ex.ro || ''}</i></small><br>${ex.en}
+        <strong>${ex.ja}</strong><br>
+        <small>${ex.kana || ''}</small><br>
+        <small><i>${ex.ro || ''}</i></small><br>
+        ${ex.en}
       </div>`).join('');
     card.innerHTML = `
       <div class="card-head"><span class="tag lvl-tag">${item.level}</span><span class="tag">${item.pos}</span></div>
@@ -105,6 +116,7 @@ function render(data) {
     listEl.appendChild(card);
   });
 }
+
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
