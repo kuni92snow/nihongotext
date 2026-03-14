@@ -1,393 +1,217 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | nihongotext.com</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact Us - nihongotext.com</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ');
+</script>
+<style>
+/* --- Colors & Base Styles --- */
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{box-sizing:border-box}
+body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
+.wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-  <base href="/" />
+/* --- Site Header (Matches index.html) --- */
+.site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
+.site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
+.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
+.nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
+.nav-links a:hover { color:var(--shu) }
+.sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
+.sns-nav a:hover { color:var(--shu) }
 
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="icon" type="image/png" href="/icon-512.png" sizes="512x512" />
-  <link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="theme-color" content="#b22222" />
+/* --- Hero Section --- */
+.hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
+.hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
+.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+/* --- Inquiry Form Styles --- */
+.inquiry-main{ padding:50px 0; min-height:50vh; text-align: left; }
+.form-card{ 
+  background:#fff; border:1px solid var(--line); border-radius:15px; padding:30px; 
+  margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  max-width: 600px;
+}
+label{ display:block; font-size:13px; font-weight:700; margin:15px 0 6px; color:var(--muted); text-transform:uppercase; }
+input, textarea{
+  width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; 
+  background:#fff; font:inherit; font-size: 15px; outline: none;
+}
+input:focus, textarea:focus{ border-color: var(--shu); }
+textarea{ min-height:150px; resize:vertical; }
 
-  <!-- reCAPTCHA v2 -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+.btn-row{ display:flex; gap:12px; margin-top:20px; flex-wrap:wrap; justify-content:center; }
+.btn{
+  padding:14px 24px; border-radius:8px; background:var(--shu);
+  color:#fff; border:none; cursor:pointer; font-weight:700; font-size:15px; transition: 0.2s;
+}
+.btn:hover{ opacity: 0.9; transform: translateY(-1px); }
+.btn.secondary{ background:#fff; color:var(--ink); border:1px solid var(--line) }
 
-  <style>
-    :root{ --shu:#e6462d; --border:#e5e7eb; --ink:#132c3a; --muted:#6b7280; --line:#e5e7eb; }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;
-      background:#fff;
-      color:var(--ink);
-      font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
-      line-height:1.7;
-    }
-    a{color:inherit;text-decoration:none}
-    ruby{ruby-position:over} rt{font-size:.65em;color:#6b7280;letter-spacing:0}
+.note{ font-size:12px; color:var(--muted); margin-top:15px; text-align: center; }
+.msg-ok{ color:#10b981; font-weight:700; text-align: center; margin-top: 15px; }
+.msg-ng{ color:#ef4444; font-weight:700; text-align: center; margin-top: 15px; }
 
-    .wrap{max-width:960px;margin:0 auto;padding:12px}
+/* --- Site Footer (Matches index.html) --- */
+.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
+.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
+.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
+.footer-nav a:hover{ color:var(--shu) }
+.footer-icons{ display:flex; gap:15px }
+.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
+.footer-icons a:hover{ color:var(--shu) }
 
-    /* ヘッダー/フッター＋右上トグル（privacy/legal と同じデザイン） */
-    .topbar{
-      border-top:4px solid var(--shu);
-      border-bottom:1px solid #fee2e2;
-      background:#fff;
-    }
-    .topbar .wrap{
-      position:relative; /* トグルを右端に固定するため */
-      padding:12px;
-    }
-    .site-footer{
-      border-top:1px solid #fee2e2;
-      background:#fff;
-    }
-    .site-footer .wrap{
-      padding:16px 0;
-      display:flex;
-      gap:10px;
-      align-items:center;
-      justify-content:center;
-      color:#98a1a8;
-      font-size:12px;
-    }
-
-    .lang-toggle-btn{
-      position:absolute;
-      right:16px;
-      top:50%;
-      transform:translateY(-50%);
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:4px 10px;
-      font-size:13px;
-      cursor:pointer;
-      background:#fff;
-      white-space:nowrap;
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-    }
-    .lang-toggle-btn i{
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    h1{font-size:28px;margin:16px 0}
-    .card{border:1px solid var(--border);border-radius:12px;background:#fff;padding:16px 18px 14px}
-    label{display:block;font-size:13px;color:var(--muted);margin:12px 0 6px}
-    input,textarea{
-      width:100%;padding:12px;border:1px solid var(--border);
-      border-radius:10px;background:#fff;font:inherit
-    }
-    textarea{min-height:180px;resize:vertical}
-    .row{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      margin-top:12px;
-      flex-wrap:wrap;
-      justify-content:center;   /* ★ 追加：中央揃え */
-      text-align:center;        /* ★ 追加：中身も中央寄せ */
-    }
-    .btn{
-      padding:10px 16px;border-radius:10px;background:var(--shu);
-      color:#fff;border:none;cursor:pointer
-    }
-    .btn.secondary{
-      background:#fff;color:#111827;border:1px solid var(--border)
-    }
-    .note{font-size:12px;color:var(--muted);margin-top:8px}
-    .msg-ok{color:#10b981;font-weight:700}
-    .msg-ng{color:#ef4444;font-weight:700}
-
-    /* inquiry では Learning/Learned を非表示 */
-    nav[aria-label="Learning navigation"]{ display:none !important; }
-  </style>
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
-  <script>
-    window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js',new Date());
-    gtag('config','G-9QSHWJE0HZ');
-  </script>
+@media (min-width: 768px) {
+  .site-header-inner { flex-direction: row; justify-content: space-between; }
+  .footer-inner { flex-direction: column; align-items: center; }
+}
+</style>
 </head>
-
 <body>
-<header class="topbar">
-  <div class="wrap">
-    <div id="header-placeholder"></div>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/content/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html">Quiz</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html" style="color:var(--shu);">Inquiry</a>
+    </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
   </div>
 </header>
 
-<main>
+<div class="hero-section">
   <div class="wrap">
-    <h1 id="title">Contact</h1>
+    <h1>Contact Us</h1>
+    <p>Have a question or feedback? Send us a message.</p>
+  </div>
+</div>
 
-    <section class="card" aria-labelledby="title">
-      <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
+<main class="wrap inquiry-main">
+  <div class="form-card">
+    <iframe name="submit_iframe" id="submit_iframe" style="display:none"></iframe>
 
-      <!-- Apps Script -->
-      <form id="contactForm" target="submit_iframe" method="POST"
-            action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
+    <form id="contactForm" target="submit_iframe" method="POST"
+          action="https://script.google.com/macros/s/AKfycbwclbSxz7fRO9PQwLIpbhFGVzhocuSNBx2Y8ITm0LkuJU1HCZz38vQYmyOlC1kY9Nrzcg/exec">
 
-        <label for="name" id="lbName">Name</label>
-        <input id="name" name="name" autocomplete="name" placeholder="Your name" />
+      <label for="name">Name</label>
+      <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
 
-        <label for="email" id="lbEmail">Email</label>
-        <input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required />
 
-        <label for="subject" id="lbSubject">Subject</label>
-        <input id="subject" name="subject" placeholder="What is this about?" />
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" placeholder="What is this about?" required />
 
-        <label for="message" id="lbMessage">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
 
-        <input type="hidden" id="token" name="token" />
+      <input type="hidden" id="token" name="token" />
 
-        <div class="row">
-          <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
-
+      <div class="row" style="margin-top: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+        <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
+        
+        <div class="btn-row">
           <button type="button" class="btn secondary" id="btnCancel">Cancel</button>
-          <button type="submit" class="btn" id="btnSend">Send</button>
+          <button type="submit" class="btn" id="btnSend">Send Message</button>
         </div>
+      </div>
 
-        <div class="note" id="rcNote">
-          reCAPTCHA and Google’s
-          <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Privacy Policy</a> and
-          <a href="https://policies.google.com/terms?hl=en" target="_blank" rel="noopener">Terms of Service</a> apply.
-        </div>
+      <div class="note" id="rcNote">
+        reCAPTCHA and Google’s
+        <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms?hl=en" target="_blank" rel="noopener">Terms of Service</a> apply.
+      </div>
 
-        <div class="note" id="msg" aria-live="polite"></div>
-      </form>
-    </section>
+      <div id="msg" aria-live="polite"></div>
+    </form>
   </div>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div id="footer-placeholder"></div>
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
   </div>
 </footer>
 
 <script>
-/* === 言語辞書 === */
-const dict = {
-  en:{
-    title:"Contact",
-    name:"Name",
-    email:"Email",
-    subject:"Subject",
-    message:"Message",
-    cancel:"Cancel",
-    send:"Send",
-    placeholders:{
-      name:"Your name",
-      email:"your@email.com",
-      subject:"What is this about?",
-      message:"Write your message..."
-    },
-    need:"Please check the reCAPTCHA box.",
-    sentok:"Your message has been sent. Thank you!",
-    sentng:"Failed to send. Please try again later.",
-    rcNote:`reCAPTCHA and Google’s
-      <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Privacy Policy</a>
-      and
-      <a href="https://policies.google.com/terms?hl=en" target="_blank" rel="noopener">Terms of Service</a>
-      apply.`
-  },
-  ja:{
-    title:"<ruby><rb>お問い合わせ</rb><rt>おといあわせ</rt></ruby>",
-    name:"<ruby><rb>お名前</rb><rt>おなまえ</rt></ruby> / Name",
-    email:"<ruby><rb>メール</rb><rt>めーる</rt></ruby> / Email",
-    subject:"<ruby><rb>件名</rb><rt>けんめい</rt></ruby> / Subject",
-    message:"<ruby><rb>メッセージ</rb><rt>めっせーじ</rt></ruby> / Message",
-    cancel:"キャンセル",
-    send:"送信",
-    placeholders:{
-      name:"おなまえ",
-      email:"your@email.com",
-      subject:"ご用件",
-      message:"メッセージを入力してください"
-    },
-    need:"reCAPTCHA をチェックしてください。",
-    sentok:"送信しました。ありがとうございます。",
-    sentng:"送信に失敗しました。時間をおいてお試しください。",
-    rcNote:`このフォームは reCAPTCHA によって保護されています。<br>
-      Google の
-      <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシーポリシー</a>
-      および
-      <a href="https://policies.google.com/terms?hl=ja" target="_blank" rel="noopener">利用規約</a>
-      が適用されます。`
-  }
-};
+// --- Initialize Page ---
+document.addEventListener('DOMContentLoaded', () => {
+  // Update Footer Year
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
 
-let lang =
-  localStorage.getItem('nt_lang') ||
-  localStorage.getItem('lang') ||
-  ((navigator.language||'en').startsWith('ja') ? 'ja' : 'en');
-
-let els = {};
-
-/* === 言語適用 === */
-function applyLang(ctx){
-  lang =
-    (ctx && ctx.lang) ||
-    localStorage.getItem('nt_lang') ||
-    localStorage.getItem('lang') ||
-    lang || 'en';
-
-  const t = dict[lang] || dict.en;
-
-  if (!els.title){
-    els = {
-      title: document.getElementById('title'),
-      lbName: document.getElementById('lbName'),
-      lbEmail: document.getElementById('lbEmail'),
-      lbSubject: document.getElementById('lbSubject'),
-      lbMessage: document.getElementById('lbMessage'),
-      btnCancel: document.getElementById('btnCancel'),
-      btnSend: document.getElementById('btnSend'),
-      name: document.getElementById('name'),
-      email: document.getElementById('email'),
-      subject: document.getElementById('subject'),
-      message: document.getElementById('message'),
-      msg: document.getElementById('msg'),
-      rcNote: document.getElementById('rcNote')
-    };
-  }
-
-  if (els.title)   els.title.innerHTML = t.title;
-  if (els.lbName)  els.lbName.innerHTML = t.name;
-  if (els.lbEmail) els.lbEmail.innerHTML = t.email;
-  if (els.lbSubject) els.lbSubject.innerHTML = t.subject;
-  if (els.lbMessage) els.lbMessage.innerHTML = t.message;
-  if (els.btnCancel) els.btnCancel.textContent = t.cancel;
-  if (els.btnSend)   els.btnSend.textContent   = t.send;
-  if (els.name)      els.name.placeholder      = t.placeholders.name;
-  if (els.email)     els.email.placeholder     = t.placeholders.email;
-  if (els.subject)   els.subject.placeholder   = t.placeholders.subject;
-  if (els.message)   els.message.placeholder   = t.placeholders.message;
-  if (els.rcNote)    els.rcNote.innerHTML      = t.rcNote;
-
-  const titleEl = document.querySelector('title');
-  if (titleEl){
-    titleEl.textContent =
-      (lang === 'ja') ? 'お問い合わせ | nihongotext.com' : 'Contact | nihongotext.com';
-  }
-
-  document.documentElement.lang = (lang === 'ja' ? 'ja' : 'en');
-  localStorage.setItem('nt_lang', lang);
-  localStorage.setItem('lang',    lang);
-}
-
-/* === フォーム送信 === */
-function setupForm(){
-  const form   = document.getElementById('contactForm');
+  const form = document.getElementById('contactForm');
   const iframe = document.getElementById('submit_iframe');
-  if (!form || !iframe) return;
+  const msgEl = document.getElementById('msg');
 
-  iframe.addEventListener('load',()=>{
-    const t = dict[lang] || dict.en;
-    if (!els.msg){ els.msg = document.getElementById('msg'); }
-    if (els.msg){
-      els.msg.innerHTML = t.sentok;
-      els.msg.className = 'note msg-ok';
+  // Handle Form Submission Response
+  iframe.addEventListener('load', () => {
+    if (msgEl) {
+      msgEl.innerHTML = "Your message has been sent. Thank you!";
+      msgEl.className = 'msg-ok';
     }
     form.reset();
     if (window.grecaptcha) grecaptcha.reset();
   });
 
-  form.addEventListener('submit',ev=>{
-    const t = dict[lang] || dict.en;
+  // Handle Submit Button
+  form.addEventListener('submit', (ev) => {
     const token = window.grecaptcha ? grecaptcha.getResponse() : '';
     if(!token){
       ev.preventDefault();
-      if (!els.msg){ els.msg = document.getElementById('msg'); }
-      if (els.msg){
-        els.msg.innerHTML = t.need;
-        els.msg.className = 'note msg-ng';
+      if (msgEl) {
+        msgEl.innerHTML = "Please check the reCAPTCHA box.";
+        msgEl.className = 'msg-ng';
       }
       return;
     }
     document.getElementById('token').value = token;
   });
 
-  const btnCancel = document.getElementById('btnCancel');
-  if (btnCancel){
-    btnCancel.addEventListener('click', ()=>{
-      form.reset();
-      if (window.grecaptcha) grecaptcha.reset();
-      if (!els.msg){ els.msg = document.getElementById('msg'); }
-      if (els.msg){
-        els.msg.textContent = '';
-        els.msg.className = 'note';
-      }
-    });
-  }
-}
-
-/* === ヘッダー／フッター読み込み & トグル設置 === */
-async function loadPartialsAndToggle(){
-  try{
-    const [headerHtml, footerHtml] = await Promise.all([
-      fetch('/partials/header.html').then(r => r.text()),
-      fetch('/partials/footer.html').then(r => r.text())
-    ]);
-
-    document.getElementById('header-placeholder').innerHTML = headerHtml;
-    document.getElementById('footer-placeholder').innerHTML = footerHtml;
-
-    const headerRoot =
-      document.querySelector('#header-placeholder .site-header') ||
-      document.getElementById('header-placeholder');
-
-    if (headerRoot && !document.getElementById('nt-lang-toggle-contact')){
-      let currentLang =
-        localStorage.getItem('nt_lang') ||
-        localStorage.getItem('lang') ||
-        lang || 'en';
-
-      const btn = document.createElement('button');
-      btn.id = 'nt-lang-toggle-contact';
-      btn.type = 'button';
-      btn.className = 'lang-toggle-btn';
-
-      const syncLabel = () => {
-        btn.innerHTML =
-          `<i class="fa-solid fa-globe"></i>` +
-          `<span>${currentLang === 'en' ? '日本語' : 'English'}</span>`;
-      };
-      syncLabel();
-
-      btn.addEventListener('click', () => {
-        currentLang = (currentLang === 'en') ? 'ja' : 'en';
-        applyLang({ lang: currentLang });
-        syncLabel();
-      });
-
-      headerRoot.appendChild(btn);
-    }
-  } catch(e){
-    console.error('Failed to load partials:', e);
-  }
-}
-
-/* === 初期化 === */
-document.addEventListener('DOMContentLoaded', () => {
-  applyLang();        // 言語適用（タイトル・フォーム・注記）
-  setupForm();        // フォーム送信ハンドラ
-  loadPartialsAndToggle(); // ヘッダー／フッター＋右上トグル
+  // Handle Cancel Button
+  document.getElementById('btnCancel').addEventListener('click', () => {
+    form.reset();
+    if (window.grecaptcha) grecaptcha.reset();
+    if (msgEl) msgEl.innerHTML = '';
+  });
 });
 </script>
 </body>
