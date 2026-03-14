@@ -3,103 +3,142 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Quiz - nihongotext.com</title>
-<link rel="icon" href="/favicon.ico" />
+<title>Japanese Vocabulary Quiz - nihongotext.com</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-9QSHWJE0HZ', { send_page_view:false });
+  gtag('config', 'G-9QSHWJE0HZ');
 </script>
-
 <style>
-/* --- 共通スタイル --- */
+/* --- Colors & Base Styles --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
-html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
-.wrap{max-width:800px;margin:0 auto;padding:0 16px}
+body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
+.wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-/* Header & Footer */
-.topbar{border-top:4px solid var(--shu);border-bottom:1px solid var(--shu-tint);background:#fff;padding:20px 0}
-.brand{font-weight:900;font-size:32px;color:var(--shu);text-align:center;display:block;text-decoration:none}
-nav{display:flex;justify-content:center;gap:15px;margin-top:10px;flex-wrap:wrap}
-nav a{color:var(--ink);font-weight:600;font-size:14px;text-decoration:none}
-nav a:hover{color:var(--shu)}
-.footer{border-top:1px solid var(--shu-tint);padding:20px 0;text-align:center;color:var(--muted);font-size:12px}
+/* --- Site Header --- */
+.site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
+.site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
+.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
+.nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
+.nav-links a:hover { color:var(--shu) }
+.sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
+.sns-nav a:hover { color:var(--shu) }
 
-/* Quiz UI */
-.quiz-container{ max-width:600px; margin:0 auto; padding:40px 16px }
-#setupView{ background:#f9fafb; border:1px solid var(--line); padding:30px; border-radius:12px; text-align:center }
-.form-group{ margin-bottom:20px; text-align:left }
-label{ display:block; font-size:13px; font-weight:700; margin-bottom:8px; color:var(--muted) }
-select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8px; font-size:16px; background:#fff }
+/* --- Hero Section --- */
+.hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
+.hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
+.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-.btn{
-  background:var(--shu); color:#fff; border:none; padding:16px; 
-  border-radius:8px; font-size:16px; font-weight:700; cursor:pointer; width:100%;
+/* --- Quiz Container Styles --- */
+.quiz-main { padding: 50px 0; min-height: 50vh; text-align: left; }
+.quiz-container { max-width: 600px; margin: -40px auto 0; position: relative; z-index: 10; }
+
+#setupView, .q-card, #resultView { 
+  background: #fff; border: 1px solid var(--line); padding: 35px; border-radius: 15px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;
 }
-.btn:hover{ opacity: 0.9; }
-.btn:disabled{ opacity:0.5; cursor:not-allowed }
 
-#quizView{ display:none }
-.progress{ font-size:14px; color:var(--muted); margin-bottom:15px; text-align:center }
-.q-card{ background:var(--card); border:1px solid #ffe4e1; padding:30px; border-radius:12px; margin-bottom:20px }
-.q-text{ font-size:20px; font-weight:800; line-height:1.5; margin-bottom:15px; text-align:center }
-.q-hint{ font-size:15px; color:var(--muted); text-align:center; margin-bottom:15px }
+.form-group { margin-bottom: 20px; text-align: left; }
+label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--muted); text-transform: uppercase; }
+select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 16px; background: #fff; }
 
-.options{ display:grid; gap:12px }
-.opt-btn{
-  background:#fff; border:1px solid var(--line); padding:15px; border-radius:8px;
-  text-align:left; font-size:16px; font-weight:600; cursor:pointer; transition:0.2s;
+.btn {
+  background: var(--shu); color: #fff; border: none; padding: 16px; 
+  border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; transition: 0.2s;
 }
-.opt-btn:hover{ border-color:var(--shu); background:var(--shu-tint) }
-.opt-btn.correct{ background:#d1fae5; border-color:#10b981; color:#065f46 }
-.opt-btn.wrong{ background:#fee2e2; border-color:#ef4444; color:#991b1b }
+.btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-.display-mode{ margin-top:20px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap }
-.radio-label{ font-size:12px; color:var(--muted); cursor:pointer; display:flex; align-items:center; gap:4px }
+#quizView { display: none; }
+.progress { font-size: 14px; color: var(--muted); margin-bottom: 15px; text-align: center; font-weight: 700; }
+.q-text { font-size: 24px; font-weight: 800; line-height: 1.5; margin-bottom: 15px; text-align: center; color: var(--ink); }
+.q-hint { font-size: 16px; color: var(--muted); text-align: center; margin-bottom: 20px; font-weight: 500; }
 
-#resultView{ display:none; text-align:center; padding:20px 0 }
-.score-circle{ width:100px; height:100px; border-radius:50%; background:var(--shu); color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto 20px }
-.score-circle .num{ font-size:28px; font-weight:900 }
+.options { display: grid; gap: 12px; }
+.opt-btn {
+  background: #fff; border: 1px solid var(--line); padding: 15px; border-radius: 8px;
+  text-align: left; font-size: 16px; font-weight: 600; cursor: pointer; transition: 0.2s;
+}
+.opt-btn:hover { border-color: var(--shu); background: var(--shu-tint); }
+.opt-btn.correct { background: #d1fae5; border-color: #10b981; color: #065f46; }
+.opt-btn.wrong { background: #fee2e2; border-color: #ef4444; color: #991b1b; }
 
-.res-table{ width:100%; border-collapse:collapse; margin-top:30px; text-align:left; font-size:14px }
-.res-table td{ padding:12px; border-bottom:1px solid var(--line) }
-.res-status{ width:30px; font-weight:bold; text-align:center }
-.res-correct{ color:#10b981 }
-.res-wrong{ color:#ef4444 }
+.display-mode { margin-top: 25px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.radio-label { font-size: 13px; color: var(--muted); cursor: pointer; display: flex; align-items: center; gap: 4px; font-weight: 600; }
 
-/* SNS Buttons */
-.sns-group{ display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
-.sns-btn{ display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; }
-.btn-x{ background:#1f2937 } 
-.btn-reddit{ background:#ff4500 }
-.btn-email{ background:var(--muted) }
-#nextBtn{ margin-top:20px; display:none }
+#resultView { display: none; }
+.score-circle { 
+  width: 100px; height: 100px; border-radius: 50%; background: var(--shu); color: #fff; 
+  display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto 20px;
+}
+.score-circle .num { font-size: 32px; font-weight: 900; }
+
+.res-table { width: 100%; border-collapse: collapse; margin-top: 30px; text-align: left; font-size: 14px; }
+.res-table td { padding: 12px; border-bottom: 1px solid var(--line); }
+
+.sns-group { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
+.sns-btn { display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-weight: 700; }
+.btn-x { background: #1f2937; color: #fff; border-radius: 8px; padding: 12px; }
+.btn-reddit { background: #ff4500; color: #fff; border-radius: 8px; padding: 12px; }
+
+/* --- Site Footer --- */
+.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
+.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
+.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
+.footer-nav a:hover{ color:var(--shu) }
+.footer-icons{ display:flex; gap:15px }
+.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
+.footer-icons a:hover{ color:var(--shu) }
+
+@media (min-width: 768px) {
+  .site-header-inner { flex-direction: row; justify-content: space-between; }
+  .footer-inner { flex-direction: column; align-items: center; }
+}
 </style>
 </head>
-
 <body>
 
-<div class="topbar">
-  <div class="wrap">
-    <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
-    <nav>
-      <a href="/" style="font-weight:bold;">Home</a>
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
       <a href="/content/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html" style="color:var(--shu);">Quiz</a>
       <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
     </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-section">
+  <div class="wrap">
+    <h1>Vocabulary Quiz</h1>
+    <p>Test your Japanese knowledge by level and category.</p>
   </div>
 </div>
 
-<main class="wrap">
+<main class="wrap quiz-main">
   <div class="quiz-container">
-    <h2 style="text-align:center; margin-bottom:30px">Japanese Vocabulary Quiz</h2>
-
+    
     <div id="setupView">
       <div class="form-group">
         <label>JLPT Level</label>
@@ -139,13 +178,13 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
         <div class="q-text" id="qText"></div>
         <div class="q-hint" id="qHint"></div>
         <div class="options" id="options"></div>
+        <button class="btn" id="nextBtn" onclick="handleNext()" style="display:none; margin-top:20px;">Next Question</button>
       </div>
-      <button class="btn" id="nextBtn" onclick="handleNext()">Next Question</button>
 
-      <div class="display-mode" id="displayModeGroup">
+      <div class="display-mode">
         <label class="radio-label"><input type="radio" name="mode" value="kanji" checked onchange="refreshQuestion()"> Kanji</label>
         <label class="radio-label"><input type="radio" name="mode" value="kana" onchange="refreshQuestion()"> Kana</label>
-        <label class="radio-label"><input type="radio" name="mode" value="both" onchange="refreshQuestion()"> Both (漢字・かな)</label>
+        <label class="radio-label"><input type="radio" name="mode" value="both" onchange="refreshQuestion()"> Both</label>
       </div>
     </div>
 
@@ -160,17 +199,32 @@ select{ width:100%; padding:12px; border:1px solid var(--line); border-radius:8p
       </table>
       
       <div class="sns-group">
-        <button class="btn btn-x" id="shareX"><i class="fa-brands fa-x-twitter"></i> Share on X</button>
-        <button class="btn btn-reddit" id="shareReddit"><i class="fa-brands fa-reddit-alien"></i> Post to Reddit</button>
-        <button class="btn btn-email" id="shareEmail"><i class="fa-solid fa-envelope"></i> Email Results</button>
+        <a class="sns-btn btn-x" id="shareX" href="#"><i class="fa-brands fa-x-twitter"></i> Share on X</a>
+        <a class="sns-btn btn-reddit" id="shareReddit" href="#"><i class="fa-brands fa-reddit-alien"></i> Post to Reddit</a>
         <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px">Try Again</button>
       </div>
     </div>
+
   </div>
 </main>
 
-<footer class="footer">
-  <div class="wrap">© 2026 nihongotext.com</div>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <div class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </div>
+  </div>
 </footer>
 
 <script>
@@ -204,19 +258,14 @@ async function startQuiz() {
       let qText = item.ja;
       let qHint = item.en;
       
-      // 出題時の問題文を保存（後でSNS共有に使用するため）
-      let originalQText = item.ja;
-      
       if (item.examples && item.examples.length > 0) {
         const ex = item.examples[Math.floor(Math.random() * item.examples.length)];
-        originalQText = ex.ja.includes(item.ja) ? ex.ja.replace(item.ja, "【 ___ 】") : item.ja;
-        qText = originalQText;
+        qText = ex.ja.includes(item.ja) ? ex.ja.replace(item.ja, "【 ___ 】") : item.ja;
         qHint = ex.en;
       }
 
       const others = filtered.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
       const options = [...others, item].sort(() => 0.5 - Math.random());
-
       return { item, qText, qHint, options, answer: item.ja, userCorrect: false };
     });
 
@@ -247,18 +296,13 @@ function renderQuestion() {
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
     
-    if (mode === 'kana') {
-      btn.innerText = opt.kana || opt.ja;
-    } else if (mode === 'both') {
-      btn.innerHTML = `${opt.ja} <span style="font-size:0.8em; color:var(--muted); font-weight:normal;">(${opt.kana || opt.ja})</span>`;
-    } else {
-      btn.innerText = opt.ja;
-    }
+    if (mode === 'kana') btn.innerText = opt.kana || opt.ja;
+    else if (mode === 'both') btn.innerHTML = `${opt.ja} <span style="font-size:0.8em; color:var(--muted); font-weight:normal;">(${opt.kana || opt.ja})</span>`;
+    else btn.innerText = opt.ja;
     
     btn.onclick = () => {
       const btns = optBox.querySelectorAll('.opt-btn');
       btns.forEach(b => b.disabled = true);
-      
       if (opt.ja === q.answer) {
         btn.classList.add('correct');
         score++;
@@ -287,47 +331,25 @@ function showResults() {
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'block';
   document.getElementById('scoreNum').innerText = `${score}/${quizItems.length}`;
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
 
   const list = document.getElementById('resList');
-  let summaryText = `I scored ${score}/${quizItems.length} on the nihongotext.com Japanese Quiz!\n\n`;
-  let detailText = "--- Quiz Details ---\n";
-
   quizItems.forEach((q, i) => {
     const row = document.createElement('tr');
     const isOk = q.userCorrect;
-    
-    // リスト表示（ブラウザ用）
-    row.innerHTML = `<td class="res-status ${isOk ? 'res-correct' : 'res-wrong'}">${isOk ? '✓' : '✗'}</td>
-      <td><strong>Q${i+1}: ${q.qText}</strong><br>Answer: ${q.item.ja} (${q.item.kana})<br><span style="font-size:12px; color:var(--muted)">${q.item.en}</span></td>`;
+    row.innerHTML = `<td style="font-weight:bold; color:${isOk ? '#10b981':'#ef4444'}">${isOk ? '✓' : '✗'}</td>
+      <td><strong>Q${i+1}: ${q.qText}</strong><br>Answer: ${q.item.ja} (${q.item.kana})</td>`;
     list.appendChild(row);
-
-    // 共有用テキスト詳細
-    detailText += `Q${i+1}: ${q.qText}\nResult: ${isOk ? '✓ Correct' : '✗ Wrong'} (Answer: ${q.item.ja})\n\n`;
   });
 
-  const fullShareText = summaryText + detailText + "Try it here: ";
-
-  // X (Twitter) - 文字数制限のため要約のみ
-  document.getElementById('shareX').onclick = () => {
-    const xSummary = encodeURIComponent(`I scored ${score}/${quizItems.length} on the @nihongotext Japanese Quiz!\n\nTry it here: `);
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://twitter.com/intent/tweet?text=${xSummary}&url=${url}`, '_blank');
-  };
-
-  // Reddit - 詳細を含める
-  document.getElementById('shareReddit').onclick = () => {
-    const title = encodeURIComponent(`My Japanese Quiz Results: ${score}/${quizItems.length}`);
-    const body = encodeURIComponent(fullShareText + window.location.href);
-    window.open(`https://www.reddit.com/submit?title=${title}&text=${body}`, '_blank');
-  };
-
-  // Email - 詳細を含める
-  document.getElementById('shareEmail').onclick = () => {
-    const subject = encodeURIComponent(`My Japanese Quiz Results (${score}/${quizItems.length})`);
-    const body = encodeURIComponent(fullShareText + window.location.href);
-    window.location.href = `mailto:?subject=${subject}&body=${body}`;
-  };
+  const url = window.location.href;
+  const shareText = encodeURIComponent(`I scored ${score}/${quizItems.length} on the nihongotext.com Japanese Quiz!`);
+  document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${url}`;
+  document.getElementById('shareReddit').href = `https://www.reddit.com/submit?title=${shareText}&url=${url}`;
 }
+
+// Set initial year
+document.getElementById('ft-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
