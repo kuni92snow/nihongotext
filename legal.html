@@ -19,10 +19,11 @@
 body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
 .wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-/* --- Site Header --- */
+/* --- Site Header (Centered Design Matched) --- */
 .site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
-.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
 .beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
@@ -31,11 +32,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .sns-nav a:hover { color:var(--shu) }
 
 /* Language Toggle Button */
-.lang-toggle-btn{
-  border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12px; 
-  cursor:pointer; background:#fff; display:inline-flex; align-items:center; gap:6px;
-  font-weight: 700; color: var(--muted); margin-top: 10px;
-}
+.lang-toggle-btn{ border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12px; cursor:pointer; background:#fff; display:inline-flex; align-items:center; gap:6px; font-weight:700; color:var(--muted); margin-top:10px; }
 
 /* --- Hero Section --- */
 .hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
@@ -55,7 +52,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .legal-card strong{ color:var(--ink); }
 .muted-text{ color:var(--muted); font-size:13px; margin-top:5px; }
 
-/* --- Site Footer --- */
+/* --- Site Footer (Centered Design Matched) --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
@@ -65,18 +62,13 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .footer-icons{ display:flex; gap:15px }
 .footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
 .footer-icons a:hover{ color:var(--shu) }
-
-@media (min-width: 768px) {
-  .site-header-inner { flex-direction: row; justify-content: space-between; }
-  .footer-inner { flex-direction: column; align-items: center; }
-}
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+    <a href="/" class="logo-link">
       <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
     </a>
     <div class="beta-text">== beta version ==</div>
@@ -144,24 +136,15 @@ const legalData = {
       <p><strong>Hirotaka Kunishima</strong></p>
       <h2>Address</h2>
       <p>Tokyo, Japan</p>
-      <p class="muted-text">For privacy and security reasons, the full address will be provided upon request from authorities or customers who have completed a purchase.</p>
+      <p class="muted-text">Full address provided upon request or after purchase.</p>
       <h2>Email</h2>
       <p><strong>info@nihongotext.com</strong></p>
-      <h2>Website</h2>
-      <p><a href="https://nihongotext.com/" style="color:var(--shu)">https://nihongotext.com/</a></p>
       <h2>Sales Price</h2>
-      <p>The price is displayed on each product or service page.</p>
-      <h2>Payment Methods</h2>
-      <p>Payments are processed through <strong>Ko-fi</strong> (Stripe / PayPal).</p>
-      <h2>Additional Fees</h2>
-      <p>Depending on the payment method, processing fees may apply.</p>
-      <h2>Delivery Time</h2>
-      <p>Digital content will be available immediately after payment is confirmed.</p>
-      <h2>Returns & Cancellations</h2>
-      <p>Due to the nature of digital products, we do not accept returns or cancellations after delivery. If you experience errors, please contact us for support.</p>
-      <h2>Operating Environment</h2>
-      <p>A standard internet-connected device (PC, tablet, smartphone) is required.</p>
-      <p class="muted-text">Last updated: November 2025</p>
+      <p>Displayed on each product page.</p>
+      <h2>Payment</h2>
+      <p>Payments via <strong>Ko-fi</strong> (Stripe/PayPal).</p>
+      <h2>Returns</h2>
+      <p>Due to the nature of digital goods, returns are generally not accepted.</p>
     `
   },
   ja: {
@@ -174,25 +157,16 @@ const legalData = {
       <h2>運営責任者</h2>
       <p><strong>國島 裕貴 (Hirotaka Kunishima)</strong></p>
       <h2>所在地</h2>
-      <p>東京都 (Japan)</p>
-      <p class="muted-text">プライバシー保護のため、詳細な住所は購入完了後または関係当局の要請により開示いたします。</p>
+      <p>東京都</p>
+      <p class="muted-text">詳細は請求により遅滞なく開示いたします。</p>
       <h2>メールアドレス</h2>
       <p><strong>info@nihongotext.com</strong></p>
-      <h2>ウェブサイト</h2>
-      <p><a href="https://nihongotext.com/" style="color:var(--shu)">https://nihongotext.com/</a></p>
       <h2>販売価格</h2>
-      <p>各商品・サービスページに表示されます。</p>
+      <p>各商品ページに表示。</p>
       <h2>支払方法</h2>
-      <p><strong>Ko-fi</strong> (Stripe / PayPal) を通じたオンライン決済。</p>
-      <h2>商品代金以外の必要料金</h2>
-      <p>決済方法により、所定の手数料が発生する場合があります。</p>
-      <h2>引渡時期</h2>
-      <p>決済完了後、即時にダウンロードまたは閲覧可能です。</p>
+      <p><strong>Ko-fi</strong> (Stripe/PayPal) 経由。</p>
       <h2>返品・キャンセル</h2>
-      <p>デジタルコンテンツの性質上、決済完了後の返品・返金は承っておりません。</p>
-      <h2>動作環境</h2>
-      <p>インターネット接続可能なPC・スマートフォン等。</p>
-      <p class="muted-text">最終更新日：2025年11月</p>
+      <p>デジタルコンテンツの性質上、返品・返金は承っておりません。</p>
     `
   }
 };
@@ -200,14 +174,12 @@ const legalData = {
 let currentLang = localStorage.getItem('nt_lang') || 'en';
 
 function applyLang(lang) {
-  const data = legalData[lang];
-  document.getElementById('heroTitle').textContent = data.heroTitle;
-  document.getElementById('heroSub').textContent = data.heroSub;
-  document.getElementById('langToggle').querySelector('span').textContent = data.toggle;
-  document.getElementById('legalContent').innerHTML = data.html;
-  
+  const d = legalData[lang];
+  document.getElementById('heroTitle').textContent = d.heroTitle;
+  document.getElementById('heroSub').textContent = d.heroSub;
+  document.getElementById('langToggle').querySelector('span').textContent = d.toggle;
+  document.getElementById('legalContent').innerHTML = d.html;
   document.documentElement.lang = lang;
-  document.title = (lang === 'ja' ? '特定商取引法に基づく表記' : 'Legal Notice') + ' | nihongotext.com';
   localStorage.setItem('nt_lang', lang);
 }
 
