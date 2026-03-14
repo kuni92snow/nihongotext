@@ -13,7 +13,6 @@
   gtag('config', 'G-9QSHWJE0HZ');
 </script>
 <style>
-/* --- Colors & Base Styles --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
 body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
@@ -30,33 +29,20 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
 .sns-nav a:hover { color:var(--shu) }
 
-/* Language Toggle Button */
-.lang-toggle-btn{
-  border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12px; 
-  cursor:pointer; background:#fff; display:inline-flex; align-items:center; gap:6px;
-  font-weight: 700; color: var(--muted); margin-top: 10px;
-}
+.lang-toggle-btn{ border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12px; cursor:pointer; background:#fff; display:inline-flex; align-items:center; gap:6px; font-weight:700; color:var(--muted); margin-top:10px; }
 
 /* --- Hero Section --- */
 .hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
 .hero-section h1 { color: var(--shu); font-size: 28px; font-weight: 800; margin: 0 0 10px; line-height: 1.2; }
 .hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-/* --- Privacy Content --- */
+/* --- Content --- */
 .privacy-main{ padding:50px 0; min-height:50vh; text-align: left; }
-.privacy-card{ 
-  background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; 
-  margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05);
-  max-width: 800px;
-}
+.privacy-card{ background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05); max-width: 800px; }
 .privacy-card h2{ color:var(--ink); font-size:18px; margin-top:25px; margin-bottom:10px; border-left:4px solid var(--shu); padding-left:12px; }
 .privacy-card h2:first-of-type{ margin-top:0; }
-.privacy-card p{ margin:10px 0; color:#444; font-size:15px; line-height:1.7; }
-.privacy-card ul{ margin:10px 0 10px 20px; padding:0; color:#444; font-size:15px; }
-.privacy-card li{ margin-bottom:6px; }
-.privacy-card strong{ color:var(--ink); }
-.privacy-card a{ color:var(--shu); text-decoration:underline; }
-.muted-text{ color:var(--muted); font-size:13px; margin-top:5px; }
+.privacy-card p, .privacy-card li{ margin:10px 0; color:#444; font-size:15px; line-height:1.7; }
+.privacy-card ul{ margin-left:20px; }
 
 /* --- Site Footer --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
@@ -98,9 +84,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
       <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
-  <button id="langToggle" class="lang-toggle-btn">
-    <i class="fa-solid fa-globe"></i> <span>日本語</span>
-  </button>
+  <button id="langToggle" class="lang-toggle-btn"><i class="fa-solid fa-globe"></i> <span>日本語</span></button>
 </header>
 
 <div class="hero-section">
@@ -111,8 +95,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 </div>
 
 <main class="wrap privacy-main">
-  <div class="privacy-card" id="privacyContent">
-    </div>
+  <div class="privacy-card" id="privacyContent"></div>
 </main>
 
 <footer class="site-footer">
@@ -136,98 +119,23 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 
 <script>
 const privacyData = {
-  en: {
-    heroTitle: "Privacy Policy",
-    heroSub: "How we handle your personal information",
-    toggle: "日本語",
-    html: `
-      <h2>Scope</h2>
-      <p>This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information obtained through this website.</p>
-      <h2>Operator</h2>
-      <p><strong>nihongotext.com</strong></p>
-      <h2>Representative</h2>
-      <p><strong>Hirotaka Kunishima</strong></p>
-      <h2>Contact</h2>
-      <p>Email: <strong>info@nihongotext.com</strong><br />Website: <a href="https://nihongotext.com/">https://nihongotext.com/</a></p>
-      <h2>Information We Collect</h2>
-      <p>We may collect the following types of information:</p>
-      <ul>
-        <li>Name and email address you enter on the inquiry form</li>
-        <li>Message contents you submit</li>
-        <li>Technical information such as IP address and access logs</li>
-        <li>Analytics data collected via Google Analytics</li>
-      </ul>
-      <h2>Purpose of Use</h2>
-      <p>We use collected information for the following purposes:</p>
-      <ul>
-        <li>To respond to inquiries and provide support</li>
-        <li>To maintain and improve the website and services</li>
-        <li>To analyze access for improving content and UX</li>
-        <li>To prevent unauthorized access and ensure security</li>
-      </ul>
-      <h2>Google Analytics & reCAPTCHA</h2>
-      <p>This site uses <strong>Google Analytics</strong> and <strong>reCAPTCHA</strong>. Data collection is governed by Google’s <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a>.</p>
-      <h2>Data Sharing</h2>
-      <p>We do not share personal information with third parties except when required by law or for necessary external services (such as Ko-fi payments).</p>
-      <h2>Security</h2>
-      <p>We take reasonable measures to protect personal information, but cannot guarantee absolute security on the internet.</p>
-      <p class="muted-text">Last updated: November 2025</p>
-    `
-  },
-  ja: {
-    heroTitle: "プライバシーポリシー",
-    heroSub: "個人情報の取扱いについて",
-    toggle: "English",
-    html: `
-      <h2>適用範囲</h2>
-      <p>本プライバシーポリシーは、<strong>nihongotext.com</strong>が本ウェブサイトを通じて取得する個人情報の取扱いについて定めるものです。</p>
-      <h2>運営者</h2>
-      <p><strong>nihongotext.com</strong></p>
-      <h2>代表者</h2>
-      <p><strong>國島 裕貴 (Hirotaka Kunishima)</strong></p>
-      <h2>お問い合わせ</h2>
-      <p>メール：<strong>info@nihongotext.com</strong><br />ウェブサイト：<a href="https://nihongotext.com/">https://nihongotext.com/</a></p>
-      <h2>取得する情報の種類</h2>
-      <p>当サイトでは、次のような情報を取得する場合があります。</p>
-      <ul>
-        <li>お問い合わせフォームに入力されたお名前・メールアドレス</li>
-        <li>メッセージ内容</li>
-        <li>IP アドレスやアクセスログ等の技術情報</li>
-        <li>Google アナリティクスによるアクセス解析データ</li>
-      </ul>
-      <h2>利用目的</h2>
-      <p>取得した情報は、主に以下の目的で利用します。</p>
-      <ul>
-        <li>お問い合わせへの回答およびサポートの提供</li>
-        <li>当サイトおよびサービスの運営・改善</li>
-        <li>ユーザー体験向上のためのアクセス解析</li>
-        <li>不正利用防止等のセキュリティ確保</li>
-      </ul>
-      <h2>Google アナリティクス・reCAPTCHA</h2>
-      <p>当サイトでは <strong>Google アナリティクス</strong> および <strong>reCAPTCHA</strong> を利用しています。詳細は Google の <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a> をご確認ください。</p>
-      <h2>第三者提供</h2>
-      <p>法令に基づく場合や決済サービス（Ko-fi）利用時等を除き、個人情報を第三者に提供することはありません。</p>
-      <p class="muted-text">最終更新日：2025年11月</p>
-    `
-  }
+  en: { heroTitle: "Privacy Policy", heroSub: "How we handle your personal information", toggle: "日本語", html: `<h2>Scope</h2><p>This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information.</p><h2>Operator</h2><p><strong>nihongotext.com</strong></p><h2>Contact</h2><p>Email: <strong>info@nihongotext.com</strong></p><h2>Analytics</h2><p>We use <strong>Google Analytics</strong> and <strong>reCAPTCHA</strong> to improve our service and prevent spam.</p>` },
+  ja: { heroTitle: "プライバシーポリシー", heroSub: "個人情報の取扱いについて", toggle: "English", html: `<h2>適用範囲</h2><p>本ポリシーは <strong>nihongotext.com</strong> における個人情報の扱いを定めます。</p><h2>運営者</h2><p><strong>nihongotext.com</strong></p><h2>お問い合わせ</h2><p>メール：<strong>info@nihongotext.com</strong></p><h2>ツール</h2><p>当サイトではサービス向上のため <strong>Google Analytics</strong> および <strong>reCAPTCHA</strong> を利用しています。</p>` }
 };
 
 let currentLang = localStorage.getItem('nt_lang') || 'en';
-
 function applyLang(lang) {
-  const data = privacyData[lang];
-  document.getElementById('heroTitle').textContent = data.heroTitle;
-  document.getElementById('heroSub').textContent = data.heroSub;
-  document.getElementById('langToggle').querySelector('span').textContent = data.toggle;
-  document.getElementById('privacyContent').innerHTML = data.html;
-  
+  const d = privacyData[lang];
+  document.getElementById('heroTitle').textContent = d.heroTitle;
+  document.getElementById('heroSub').textContent = d.heroSub;
+  document.getElementById('langToggle').querySelector('span').textContent = d.toggle;
+  document.getElementById('privacyContent').innerHTML = d.html;
   document.documentElement.lang = lang;
-  document.title = (lang === 'ja' ? 'プライバシーポリシー' : 'Privacy Policy') + ' | nihongotext.com';
   localStorage.setItem('nt_lang', lang);
 }
 
 document.getElementById('langToggle').addEventListener('click', () => {
-  currentLang = (currentLang === 'en' ? 'ja' : 'en');
+  currentLang = currentLang === 'en' ? 'ja' : 'en';
   applyLang(currentLang);
 });
 
