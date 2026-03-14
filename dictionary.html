@@ -20,7 +20,6 @@
 html,body{ margin:0;background:#fff;color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
 .wrap{max-width:800px;margin:0 auto;padding:0 16px}
 
-/* ヘッダー・フッターのスタイルは partials から読み込まれるため、ここでは検索UIのスタイルのみ記述 */
 .dictionary-main{ padding:30px 0 }
 .search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px; }
 input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; margin-bottom:15px; }
@@ -33,11 +32,18 @@ input#kw:focus{ border-color:var(--shu); }
 .tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:3px 8px; border-radius:4px; text-transform:uppercase }
 .lvl-tag{ background:var(--ink); color:#fff }
 .ja{ display:block; font-size:24px; font-weight:800; margin-bottom:4px }
-.kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
-.en{ display:block; font-size:16px; color:var(--ink); font-weight:500; margin-bottom:15px }
+.kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:2px }
+.ro{ display:block; font-size:13px; color:var(--muted); font-style:italic; margin-bottom:10px }
+.en{ display:block; font-size:16px; color:var(--ink); font-weight:600; margin-bottom:15px }
+
 .example-details{ border-top:1px solid #ffe4e1; margin-top:12px; padding-top:12px }
 .example-details summary{ font-size:14px; color:var(--shu); cursor:pointer; font-weight:600; }
-.ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:8px }
+.ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:8px; line-height:1.4 }
+.ex-ja{ display:block; font-weight:700; font-size:16px; margin-bottom:4px }
+.ex-kana{ display:block; font-size:13px; color:var(--muted); }
+.ex-ro{ display:block; font-size:12px; color:var(--muted); font-style:italic; margin-bottom:6px }
+.ex-en{ display:block; font-size:14px; color:var(--ink); margin-bottom:8px }
+
 .audio-link{ font-size:13px; color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:5px; margin-top:8px }
 .audio-link:hover{ color:var(--shu) }
 </style>
@@ -72,24 +78,17 @@ input#kw:focus{ border-color:var(--shu); }
   <div id="list"></div>
 </main>
 
-  <center>
-    <nav class="nav-links">
-      <a href="/" style="color:var(--shu);">Home</a>
-      <a href="/dictionary.html">Vocabulary Tool</a>
-      <a href="/quiz/index.html">Quiz</a>
-      <a href="/blog/index.html">Blog</a>
-      <a href="/inquiry/index.html">Inquiry</a>
-    </nav>
- </center>
-
 <script>
 let allVocab = [];
 const audioUrl = "https://nihongotext.com/inquiry/index.html";
+
 async function initDictionary() {
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const fetches = levels.map(async lv => {
     try {
-      const res = await fetch(`data/json/${lv}_master_cleaned.json`);
+      // 読み込むファイル名を最新の n5_final.json 等に合わせて調整してください
+      const fileName = lv === 'n5' ? 'n5_final.json' : `${lv}_master_cleaned.json`;
+      const res = await fetch(`data/json/${fileName}`);
       if (!res.ok) return [];
       const data = await res.json();
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
@@ -98,34 +97,65 @@ async function initDictionary() {
   const results = await Promise.all(fetches);
   allVocab = results.flat();
   document.getElementById('status').innerText = `${allVocab.length} words loaded.`;
-  const params = new URLSearchParams(window.location.search);
-  const kw = params.get('kw');
-  if (kw) document.getElementById('kw').value = decodeURIComponent(kw);
   performSearch();
 }
+
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
   const posFilter = document.querySelector('.chip.active').getAttribute('data-pos');
   const filtered = allVocab.filter(item => {
     const matchPos = (posFilter === 'all' || item.pos === posFilter);
-    const matchKw = !kw || item.ja.includes(kw) || item.kana.includes(kw) || item.en.toLowerCase().includes(kw);
+    const matchKw = !kw || item.ja.includes(kw) || item.kana.includes(kw) || (item.ro && item.ro.includes(kw)) || item.en.toLowerCase().includes(kw);
     return matchPos && matchKw;
   });
   render(filtered);
 }
+
 function render(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = data.length === 0 ? '<p>No matches found.</p>' : '';
+  
   data.slice(0, 300).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
+    
     const audioBtn = `<a href="${audioUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
-    let exHtml = item.examples && item.examples.length > 0 ? `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">` + item.examples.map(ex => `<div class="ex-item"><strong>${ex.ja}</strong>${ex.en}${audioBtn}</div>`).join('') + `</div></details>` : '';
+    
+    // 例文部分のHTML生成
+    let exHtml = "";
+    if (item.examples && item.examples.length > 0) {
+      exHtml = `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">`;
+      exHtml += item.examples.map(ex => `
+        <div class="ex-item">
+          <span class="ex-ja">${ex.ja}</span>
+          <span class="ex-kana">${ex.kana || ''}</span>
+          <span class="ex-ro">${ex.ro || ''}</span>
+          <span class="ex-en">${ex.en}</span>
+          ${audioBtn}
+        </div>
+      `).join('');
+      exHtml += `</div></details>`;
+    }
+
     const posMap = { "noun":"Noun", "verb":"Verb", "adjective-i":"Adj-i", "adjective-na":"Adj-na", "adverb":"Adv", "expression":"Gram" };
-    card.innerHTML = `<div class="card-head"><span class="tag lvl-tag">${item.level}</span><span class="tag">${posMap[item.pos] || item.pos}</span></div><span class="ja">${item.ja}</span><span class="kana">${item.kana || ''}</span><span class="en">${item.en}</span>${audioBtn}${exHtml}`;
+    
+    // メインカードのHTML（kanaとroの表示を追加）
+    card.innerHTML = `
+      <div class="card-head">
+        <span class="tag lvl-tag">${item.level}</span>
+        <span class="tag">${posMap[item.pos] || item.pos}</span>
+      </div>
+      <span class="ja">${item.ja}</span>
+      <span class="kana">${item.kana || ''}</span>
+      <span class="ro">${item.ro || ''}</span>
+      <span class="en">${item.en}</span>
+      ${audioBtn}
+      ${exHtml}
+    `;
     listEl.appendChild(card);
   });
 }
+
 document.getElementById('posChips').addEventListener('click', e => {
   if (e.target.classList.contains('chip')) {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -133,6 +163,7 @@ document.getElementById('posChips').addEventListener('click', e => {
     performSearch();
   }
 });
+
 document.getElementById('kw').addEventListener('input', performSearch);
 initDictionary();
 </script>
