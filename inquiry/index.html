@@ -20,10 +20,11 @@
 body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
 .wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-/* --- Site Header (Matches index.html) --- */
+/* --- Site Header (Centered Design Matched) --- */
 .site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
-.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
 .beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
@@ -39,7 +40,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 /* --- Inquiry Form Styles --- */
 .inquiry-main{ padding:50px 0; min-height:50vh; text-align: left; }
 .form-card{ 
-  background:#fff; border:1px solid var(--line); border-radius:15px; padding:30px; 
+  background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; 
   margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05);
   max-width: 600px;
 }
@@ -63,7 +64,7 @@ textarea{ min-height:150px; resize:vertical; }
 .msg-ok{ color:#10b981; font-weight:700; text-align: center; margin-top: 15px; }
 .msg-ng{ color:#ef4444; font-weight:700; text-align: center; margin-top: 15px; }
 
-/* --- Site Footer (Matches index.html) --- */
+/* --- Site Footer (Centered Design Matched) --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
@@ -73,18 +74,13 @@ textarea{ min-height:150px; resize:vertical; }
 .footer-icons{ display:flex; gap:15px }
 .footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
 .footer-icons a:hover{ color:var(--shu) }
-
-@media (min-width: 768px) {
-  .site-header-inner { flex-direction: row; justify-content: space-between; }
-  .footer-inner { flex-direction: column; align-items: center; }
-}
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+    <a href="/" class="logo-link">
       <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
     </a>
     <div class="beta-text">== beta version ==</div>
@@ -133,7 +129,7 @@ textarea{ min-height:150px; resize:vertical; }
 
       <input type="hidden" id="token" name="token" />
 
-      <div class="row" style="margin-top: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+      <div style="margin-top: 25px; display: flex; flex-direction: column; align-items: center; gap: 15px;">
         <div class="g-recaptcha" data-sitekey="6LcRKvArAAAAAFVmY21y9o_hwTszHwzp3bgRXtBV"></div>
         
         <div class="btn-row">
@@ -173,16 +169,13 @@ textarea{ min-height:150px; resize:vertical; }
 </footer>
 
 <script>
-// --- Initialize Page ---
 document.addEventListener('DOMContentLoaded', () => {
-  // Update Footer Year
   document.getElementById('ft-year').textContent = new Date().getFullYear();
 
   const form = document.getElementById('contactForm');
   const iframe = document.getElementById('submit_iframe');
   const msgEl = document.getElementById('msg');
 
-  // Handle Form Submission Response
   iframe.addEventListener('load', () => {
     if (msgEl) {
       msgEl.innerHTML = "Your message has been sent. Thank you!";
@@ -192,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.grecaptcha) grecaptcha.reset();
   });
 
-  // Handle Submit Button
   form.addEventListener('submit', (ev) => {
     const token = window.grecaptcha ? grecaptcha.getResponse() : '';
     if(!token){
@@ -206,7 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('token').value = token;
   });
 
-  // Handle Cancel Button
   document.getElementById('btnCancel').addEventListener('click', () => {
     form.reset();
     if (window.grecaptcha) grecaptcha.reset();
