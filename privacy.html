@@ -13,15 +13,17 @@
   gtag('config', 'G-9QSHWJE0HZ');
 </script>
 <style>
+/* --- Colors & Base Styles --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
 body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
 .wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
 
-/* --- Site Header --- */
+/* --- Site Header (Centered Design Matched) --- */
 .site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
-.logo-text{ font-weight:900; font-size:32px; color:var(--shu); text-decoration:none; }
+.logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
 .beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
@@ -29,6 +31,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
 .sns-nav a:hover { color:var(--shu) }
 
+/* Language Toggle Button */
 .lang-toggle-btn{ border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:12px; cursor:pointer; background:#fff; display:inline-flex; align-items:center; gap:6px; font-weight:700; color:var(--muted); margin-top:10px; }
 
 /* --- Hero Section --- */
@@ -36,15 +39,22 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .hero-section h1 { color: var(--shu); font-size: 28px; font-weight: 800; margin: 0 0 10px; line-height: 1.2; }
 .hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-/* --- Content --- */
+/* --- Privacy Content --- */
 .privacy-main{ padding:50px 0; min-height:50vh; text-align: left; }
-.privacy-card{ background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05); max-width: 800px; }
+.privacy-card{ 
+  background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; 
+  margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  max-width: 800px;
+}
 .privacy-card h2{ color:var(--ink); font-size:18px; margin-top:25px; margin-bottom:10px; border-left:4px solid var(--shu); padding-left:12px; }
 .privacy-card h2:first-of-type{ margin-top:0; }
-.privacy-card p, .privacy-card li{ margin:10px 0; color:#444; font-size:15px; line-height:1.7; }
-.privacy-card ul{ margin-left:20px; }
+.privacy-card p{ margin:10px 0; color:#444; font-size:15px; line-height:1.7; }
+.privacy-card ul{ margin:10px 0 10px 20px; padding:0; color:#444; font-size:15px; }
+.privacy-card li{ margin-bottom:6px; }
+.privacy-card strong{ color:var(--ink); }
+.privacy-card a{ color:var(--shu); text-decoration:underline; }
 
-/* --- Site Footer --- */
+/* --- Site Footer (Centered Design Matched) --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
@@ -54,18 +64,13 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .footer-icons{ display:flex; gap:15px }
 .footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
 .footer-icons a:hover{ color:var(--shu) }
-
-@media (min-width: 768px) {
-  .site-header-inner { flex-direction: row; justify-content: space-between; }
-  .footer-inner { flex-direction: column; align-items: center; }
-}
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:2px;">
+    <a href="/" class="logo-link">
       <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
     </a>
     <div class="beta-text">== beta version ==</div>
@@ -84,7 +89,9 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
       <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
-  <button id="langToggle" class="lang-toggle-btn"><i class="fa-solid fa-globe"></i> <span>日本語</span></button>
+  <button id="langToggle" class="lang-toggle-btn">
+    <i class="fa-solid fa-globe"></i> <span>日本語</span>
+  </button>
 </header>
 
 <div class="hero-section">
@@ -95,7 +102,8 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 </div>
 
 <main class="wrap privacy-main">
-  <div class="privacy-card" id="privacyContent"></div>
+  <div class="privacy-card" id="privacyContent">
+    </div>
 </main>
 
 <footer class="site-footer">
@@ -119,11 +127,44 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 
 <script>
 const privacyData = {
-  en: { heroTitle: "Privacy Policy", heroSub: "How we handle your personal information", toggle: "日本語", html: `<h2>Scope</h2><p>This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information.</p><h2>Operator</h2><p><strong>nihongotext.com</strong></p><h2>Contact</h2><p>Email: <strong>info@nihongotext.com</strong></p><h2>Analytics</h2><p>We use <strong>Google Analytics</strong> and <strong>reCAPTCHA</strong> to improve our service and prevent spam.</p>` },
-  ja: { heroTitle: "プライバシーポリシー", heroSub: "個人情報の取扱いについて", toggle: "English", html: `<h2>適用範囲</h2><p>本ポリシーは <strong>nihongotext.com</strong> における個人情報の扱いを定めます。</p><h2>運営者</h2><p><strong>nihongotext.com</strong></p><h2>お問い合わせ</h2><p>メール：<strong>info@nihongotext.com</strong></p><h2>ツール</h2><p>当サイトではサービス向上のため <strong>Google Analytics</strong> および <strong>reCAPTCHA</strong> を利用しています。</p>` }
+  en: {
+    heroTitle: "Privacy Policy",
+    heroSub: "How we handle your personal information",
+    toggle: "日本語",
+    html: `
+      <h2>Scope</h2>
+      <p>This Privacy Policy explains how <strong>nihongotext.com</strong> handles personal information.</p>
+      <h2>Information We Collect</h2>
+      <ul>
+        <li>Inquiry details (Name, Email)</li>
+        <li>Access logs and technical data</li>
+        <li>Analytics data via Google Analytics</li>
+      </ul>
+      <h2>Purpose of Use</h2>
+      <p>To provide support, improve our services, and ensure security.</p>
+    `
+  },
+  ja: {
+    heroTitle: "プライバシーポリシー",
+    heroSub: "個人情報の取扱いについて",
+    toggle: "English",
+    html: `
+      <h2>適用範囲</h2>
+      <p>本ポリシーは、<strong>nihongotext.com</strong>における個人情報の扱いを定めます。</p>
+      <h2>取得する情報</h2>
+      <ul>
+        <li>お問い合わせ内容（名前、メールアドレス）</li>
+        <li>アクセスログ等の技術的情報</li>
+        <li>アクセス解析データ</li>
+      </ul>
+      <h2>利用目的</h2>
+      <p>サポート提供、サービス改善、およびセキュリティ確保のため。</p>
+    `
+  }
 };
 
 let currentLang = localStorage.getItem('nt_lang') || 'en';
+
 function applyLang(lang) {
   const d = privacyData[lang];
   document.getElementById('heroTitle').textContent = d.heroTitle;
@@ -135,7 +176,7 @@ function applyLang(lang) {
 }
 
 document.getElementById('langToggle').addEventListener('click', () => {
-  currentLang = currentLang === 'en' ? 'ja' : 'en';
+  currentLang = (currentLang === 'en' ? 'ja' : 'en');
   applyLang(currentLang);
 });
 
