@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>At a Restaurant - nihongotext.com</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QSHWJE0HZ');
+</script>
+<style>
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{box-sizing:border-box}
+body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
+.wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
+
+/* --- Site Header --- */
+.site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
+.site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
+.logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
+.logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
+.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
+.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
+.nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
+.nav-links a:hover { color:var(--shu) }
+.sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
+.sns-nav a:hover { color:var(--shu) }
+
+/* --- Hero Section --- */
+.hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
+.hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
+.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
+
+/* --- Topic Content --- */
+.topic-main{ padding:50px 0; min-height:50vh; text-align: left; }
+.content-card{ 
+  background:#fff; border:1px solid var(--line); border-radius:15px; padding:35px; 
+  margin:-40px auto 0; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  max-width: 800px;
+}
+.hero-img{ width:100%; height:auto; border-radius:12px; margin-bottom:25px; box-shadow:0 4px 12px rgba(0,0,0,0.1) }
+.audio-player{ background:var(--shu-tint); padding:20px; border-radius:12px; margin-bottom:30px; display:flex; align-items:center; gap:15px }
+.section-title{ border-left:5px solid var(--shu); padding-left:12px; margin:40px 0 20px; font-size:22px; font-weight:800; }
+.dialogue-box{ background:var(--card); border:1px solid #f1cbc6; border-radius:12px; padding:25px; margin:20px 0 }
+.line{ margin-bottom:20px }
+.line b{ color:var(--shu); display:block; font-size:14px; margin-bottom:4px; text-transform:uppercase; letter-spacing:1px; }
+.ja{ font-size:19px; font-weight:700; display:block; color:var(--ink) }
+.ro{ color:var(--muted); font-style:italic; display:block; font-size:14px }
+.en{ display:block; margin-top:4px; font-weight:500; }
+.vocab-links{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:30px }
+.vocab-btn{ padding:8px 16px; border:1px solid var(--shu); border-radius:20px; color:var(--shu); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
+.vocab-btn:hover{ background:var(--shu); color:#fff }
+.cta-box{ background:var(--ink); color:#fff; padding:40px; text-align:center; border-radius:15px; margin-top:50px }
+.btn-primary{ background:var(--shu); color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; display:inline-block; margin-top:20px; text-decoration:none; transition:0.2s }
+
+/* --- Site Footer --- */
+.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
+.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
+.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
+.footer-nav a:hover{ color:var(--shu) }
+.footer-icons{ display:flex; gap:15px }
+.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
+.footer-icons a:hover{ color:var(--shu) }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a href="/" class="logo-link">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div class="beta-text">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/dictionary.html">Vocabulary Tool</a>
+      <a href="/quiz/index.html">Quiz</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+    </nav>
+    <nav class="sns-nav">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-section">
+  <div class="wrap">
+    <h1>At a Restaurant</h1>
+    <p>Learn how to order your favorite food in Japanese.</p>
+  </div>
+</div>
+
+<main class="wrap topic-main">
+  <div class="content-card">
+    <img src="/assets/images/restaurant.jpg" alt="Restaurant" class="hero-img">
+    <div class="audio-player">
+      <i class="fa-solid fa-circle-play" style="font-size:30px;color:var(--shu)"></i>
+      <div style="flex-grow: 1;">
+        <strong style="display: block; margin-bottom: 5px;">Listen to the pronunciation</strong>
+        <audio controls src="/assets/audio/restaurant.mp4" style="width: 100%;"></audio>
+      </div>
+    </div>
+    <h2 class="section-title">Example Dialogue</h2>
+    <div class="dialogue-box">
+      <div class="line"><b>Customer</b><span class="ja">すみません。メニューをお願いします。</span><span class="ro">Sumimasen. Menyuu o onegaishimasu.</span><span class="en">Excuse me. Menu, please.</span></div>
+      <div class="line"><b>Staff</b><span class="ja">はい、どうぞ。</span><span class="ro">Hai, douzo.</span><span class="en">Yes, here you go.</span></div>
+    </div>
+    <h2 class="section-title">Check Vocabulary</h2>
+    <div class="vocab-links">
+      <a href="/dictionary.html?kw=メニュー" class="vocab-btn">メニュー (Menu)</a>
+      <a href="/dictionary.html?kw=お願いします" class="vocab-btn">お願いします (Please)</a>
+    </div>
+    <div class="cta-box"><a href="/" class="btn-primary">Back to Lesson List</a></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+      <a href="/legal.html">Legal</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <nav class="footer-icons">
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
