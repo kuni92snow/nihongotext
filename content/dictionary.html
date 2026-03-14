@@ -1,11 +1,10 @@
----
-title: "Dictionary - nihongotext.com"
-layout: "single"
-url: "/dictionary.html"
----
-
-{{ partial "header.html" . }}
-
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dictionary - nihongotext.com</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,139 +12,105 @@ url: "/dictionary.html"
   gtag('js', new Date());
   gtag('config', 'G-9QSHWJE0HZ');
 </script>
-
+<style>
+:root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
+*{box-sizing:border-box}
+body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif }
+.wrap{ max-width:800px; margin:0 auto; padding:0 16px }
+.topbar{ border-top:4px solid var(--shu); border-bottom:1px solid var(--shu-tint); padding:20px 0 }
+.brand{ font-weight:900; font-size:32px; color:var(--shu); text-align:center; display:block; text-decoration:none }
+nav{ display:flex; justify-content:center; gap:15px; margin-top:10px }
+nav a{ color:var(--ink); font-weight:600; text-decoration:none; font-size:14px }
+.dictionary-main{ padding:30px 0; min-height:60vh }
+.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:20px; margin:20px 0 30px }
+input#kw{ width:100%; padding:14px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:15px }
+.chip{ padding:6px 14px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; cursor:pointer }
+.chip.active{ background:var(--shu); border-color:var(--shu); color:#fff; font-weight:600 }
+#list{ display:grid; gap:16px }
+.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:12px; padding:20px }
+.tag{ font-size:11px; font-weight:700; background:var(--shu-tint); color:var(--shu); padding:3px 8px; border-radius:4px; text-transform:uppercase; margin-right:4px }
+.lvl-tag{ background:var(--ink); color:#fff }
+.ja{ display:block; font-size:24px; font-weight:800; margin-bottom:4px }
+.kana{ display:block; font-size:14px; color:var(--muted); margin-bottom:10px }
+.en{ display:block; font-size:16px; color:var(--ink); font-weight:500; margin-bottom:15px }
+.ex-item{ font-size:15px; background:#fff; padding:12px; border-radius:8px; border:1px solid #fff1f0; margin-top:8px }
+.footer{ border-top:1px solid var(--shu-tint); padding:20px 0; text-align:center; color:var(--muted); font-size:12px; margin-top:40px }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a href="/" class="brand">nihongotext<span style="color:var(--ink)">.com</span></a>
+  <nav><a href="/">Home</a><a href="/dictionary.html" style="color:var(--shu)">Dictionary</a><a href="/inquiry/">Inquiry</a></nav>
+</div></div>
 <main class="wrap dictionary-main">
-  <style>
-    /* 辞書ツール専用の追加スタイル */
-    :root { --card: #fff7f6; --shu: #e6462d; --line: #e5e7eb; --muted: #6b7280; --ink: #1f2937; }
-    .dictionary-main { padding: 30px 0; max-width: 800px; margin: 0 auto; padding: 0 16px; min-height: 60vh; }
-    .search-box { background: #f9fafb; border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin: 20px 0 30px; }
-    input#kw { width: 100%; padding: 14px; border: 1px solid var(--line); border-radius: 8px; font-size: 18px; outline: none; margin-bottom: 15px; background: #fff; border: 1px solid var(--line); }
-    input#kw:focus { border-color: var(--shu); box-shadow: 0 0 0 2px #fff2ef; }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-    .chip { padding: 6px 14px; border-radius: 20px; background: #fff; border: 1px solid var(--line); font-size: 13px; color: var(--muted); cursor: pointer; transition: 0.2s; }
-    .chip.active { background: var(--shu); border-color: var(--shu); color: #fff; font-weight: 600; }
-    
-    #list { display: grid; gap: 16px; }
-    .card { background: var(--card); border: 1px solid #ffe4e1; border-radius: 12px; padding: 20px; transition: 0.2s; }
-    .tag { font-size: 11px; font-weight: 700; background: #fff2ef; color: var(--shu); padding: 3px 8px; border-radius: 4px; text-transform: uppercase; margin-right: 4px; }
-    .lvl-tag { background: var(--ink); color: #fff; }
-    .ja { display: block; font-size: 24px; font-weight: 800; margin-bottom: 4px; color: var(--ink); }
-    .kana { display: block; font-size: 14px; color: var(--muted); margin-bottom: 10px; }
-    .en { display: block; font-size: 16px; color: var(--ink); font-weight: 500; margin-bottom: 15px; }
-    
-    .example-details { border-top: 1px solid #ffe4e1; margin-top: 12px; padding-top: 12px; }
-    .example-details summary { font-size: 14px; color: var(--shu); cursor: pointer; font-weight: 600; margin-bottom: 8px; }
-    .ex-item { font-size: 15px; background: #fff; padding: 12px; border-radius: 8px; border: 1px solid #fff1f0; margin-bottom: 8px; }
-    .ex-ja { display: block; font-weight: 700; }
-    .ex-kana { display: block; font-size: 12px; color: var(--muted); }
-    .ex-ro { display: block; font-size: 11px; color: #9ca3af; font-style: italic; }
-    
-    .audio-link { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; }
-    .audio-link:hover { color: var(--shu); }
-  </style>
-
   <h2>Japanese Dictionary</h2>
-  
   <div class="search-box">
-    <input type="text" id="kw" placeholder="Search word, hiragana or English..." autocomplete="off">
+    <input type="text" id="kw" placeholder="Search..." autocomplete="off">
     <div class="chips" id="posChips">
       <span class="chip active" data-pos="all">すべて (All)</span>
       <span class="chip" data-pos="noun">名詞 (Noun)</span>
       <span class="chip" data-pos="verb">動詞 (Verb)</span>
       <span class="chip" data-pos="adjective-i">い形容詞 (Adj-i)</span>
       <span class="chip" data-pos="adjective-na">な形容詞 (Adj-na)</span>
-      <span class="chip" data-pos="adverb">副詞 (Adv)</span>
-      <span class="chip" data-pos="expression">文法/表現 (Gram)</span>
     </div>
   </div>
-
   <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:10px;">Loading database...</div>
   <div id="list"></div>
 </main>
-
+<footer class="footer"><div class="wrap">© 2026 nihongotext.com</div></footer>
 <script>
 let allVocab = [];
-const audioUrl = "https://nihongotext.com/inquiry/index.html";
-
 async function initDictionary() {
-  const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
-  const fetches = levels.map(async lv => {
+  const fetches = ['n5'].map(async lv => {
     try {
       const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
-      if (!res.ok) return [];
       const data = await res.json();
       return data.map(d => ({ ...d, level: lv.toUpperCase() }));
     } catch (e) { return []; }
   });
-
   const results = await Promise.all(fetches);
   allVocab = results.flat();
   document.getElementById('status').innerText = `${allVocab.length} words loaded.`;
-  
-  const params = new URLSearchParams(window.location.search);
-  const kw = params.get('kw');
-  if (kw) {
-    document.getElementById('kw').value = decodeURIComponent(kw);
-  }
-  
   performSearch();
 }
-
 function performSearch() {
-  const kw = document.getElementById('kw').value.toLowerCase().trim();
+  const kw = document.getElementById('kw').value.toLowerCase();
   const posFilter = document.querySelector('.chip.active').getAttribute('data-pos');
-  
   const filtered = allVocab.filter(item => {
-    const matchPos = (posFilter === 'all' || item.pos === posFilter);
-    const matchKw = !kw || 
-                   (item.ja && item.ja.includes(kw)) || 
-                   (item.kana && item.kana.includes(kw)) || 
-                   (item.en && item.en.toLowerCase().includes(kw));
-    return matchPos && matchKw;
+    const mPos = (posFilter === 'all' || item.pos === posFilter);
+    const mKw = !kw || (item.ja.includes(kw) || item.kana.includes(kw) || item.en.toLowerCase().includes(kw));
+    return mPos && mKw;
   });
-  
   render(filtered);
 }
-
 function render(data) {
   const listEl = document.getElementById('list');
-  listEl.innerHTML = data.length === 0 ? '<p>No matches found.</p>' : '';
-  
+  listEl.innerHTML = data.length ? '' : '<p>No matches.</p>';
   data.slice(0, 300).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
-    const audioBtn = `<a href="${audioUrl}" target="_blank" class="audio-link"><i class="fa-solid fa-circle-play"></i> Audio Request</a>`;
-    
-    let exHtml = '';
-    if (item.examples && item.examples.length > 0) {
-      const exItems = item.examples.map(ex => `
-        <div class="ex-item">
-          <span class="ex-ja">${ex.ja}</span>
-          ${ex.kana ? `<span class="ex-kana">${ex.kana}</span>` : ''}
-          ${ex.ro ? `<span class="ex-ro">${ex.ro}</span>` : ''}
-          <div style="margin-top:4px">${ex.en}</div>
-          ${audioBtn}
-        </div>
-      `).join('');
-      exHtml = `<details class="example-details"><summary>Examples (${item.examples.length})</summary><div class="example-list">${exItems}</div></details>`;
-    }
-
-    const posMap = { "noun": "Noun", "verb": "Verb", "adjective-i": "Adj-i", "adjective-na": "Adj-na", "adverb": "Adv", "expression": "Gram" };
-
+    let exHtml = (item.examples || []).map(ex => `
+      <div class="ex-item">
+        <strong>${ex.ja}</strong><br><small>${ex.kana || ''}</small><br><small><i>${ex.ro || ''}</i></small><br>${ex.en}
+      </div>`).join('');
     card.innerHTML = `
-      <div class="card-head">
-        <span class="tag lvl-tag">${item.level}</span>
-        <span class="tag">${posMap[item.pos] || item.pos}</span>
-      </div>
-      <span class="ja">${item.ja}</span>
-      <span class="kana">${item.kana || ''}</span>
-      <span class="en">${item.en}</span>
-      ${audioBtn}
-      ${exHtml}
+      <div class="card-head"><span class="tag lvl-tag">${item.level}</span><span class="tag">${item.pos}</span></div>
+      <span class="ja">${item.ja}</span><span class="kana">${item.kana}</span><span class="en">${item.en}</span>
+      <details style="margin-top:10px"><summary style="cursor:pointer; font-size:14px; color:var(--shu)">Examples</summary>${exHtml}</details>
     `;
     listEl.appendChild(card);
   });
 }
-
-document
+document.getElementById('posChips').addEventListener('click', e => {
+  if (e.target.classList.contains('chip')) {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    e.target.classList.add('active');
+    performSearch();
+  }
+});
+document.getElementById('kw').addEventListener('input', performSearch);
+initDictionary();
+</script>
+</body>
+</html>
