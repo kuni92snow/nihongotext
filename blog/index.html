@@ -24,7 +24,6 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
 .logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
 .logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
-.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
 .nav-links a:hover { color:var(--shu) }
@@ -55,16 +54,10 @@ input#kw{ flex: 1; padding:12px; border:1px solid var(--line); border-radius:8px
 .card .tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
 .card .tag{ font-size:12px; border:1px solid #f0d7d4; border-radius:999px; padding:3px 12px; background:#fff; font-weight: 700; color: var(--muted); }
 
-/* --- Site Footer (Centered Design Matched) --- */
+/* --- Site Footer --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
-.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
-.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
-.footer-nav a:hover{ color:var(--shu) }
-.footer-icons{ display:flex; gap:15px }
-.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
-.footer-icons a:hover{ color:var(--shu) }
 </style>
 </head>
 <body>
@@ -74,7 +67,7 @@ input#kw{ flex: 1; padding:12px; border:1px solid var(--line); border-radius:8px
     <a href="/" class="logo-link">
       <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
     </a>
-    <div class="beta-text">== beta version ==</div>
+    <div style="font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px">== beta version ==</div>
     <nav class="nav-links">
       <a href="/">Home</a>
       <a href="/content/dictionary.html">Vocabulary Tool</a>
@@ -87,7 +80,7 @@ input#kw{ flex: 1; padding:12px; border:1px solid var(--line); border-radius:8px
       <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
       <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
       <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+      <a href="https://nihongotextcom.substack.com/subscribe" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
   <button id="langToggle" class="lang-toggle-btn"><i class="fa-solid fa-globe"></i> <span>日本語</span></button>
@@ -112,18 +105,12 @@ input#kw{ flex: 1; padding:12px; border:1px solid var(--line); border-radius:8px
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
-    <nav class="footer-nav">
-      <a href="/">Home</a>
-      <a href="/inquiry/index.html">Inquiry</a>
-      <a href="/legal.html">Legal</a>
-      <a href="/privacy.html">Privacy</a>
-    </nav>
-    <nav class="footer-icons">
+    <nav class="sns-nav">
       <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
       <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
       <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
+      <a href="https://nihongotextcom.substack.com/subscribe" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </footer>
@@ -140,6 +127,12 @@ async function initBlog() {
     const res = await fetch('/blog/posts.json');
     if (res.ok) {
       allPosts = await res.json();
+      
+      // ★ 日付の新しい順（降順）に並べ替え ★
+      allPosts.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
+      });
+      
       renderPosts(allPosts);
     }
   } catch(e) {
