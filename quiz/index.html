@@ -36,7 +36,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
 .hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-/* --- Quiz Container --- */
+/* --- Quiz UI --- */
 .quiz-main { padding: 50px 0; min-height: 50vh; text-align: left; }
 .quiz-container { max-width: 600px; margin: -40px auto 0; position: relative; z-index: 10; }
 
@@ -65,11 +65,10 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 .opt-btn.correct { background: #d1fae5; border-color: #10b981; color: #065f46; }
 .opt-btn.wrong { background: #fee2e2; border-color: #ef4444; color: #991b1b; }
 
-/* Display Mode Radio Buttons */
 .display-mode { margin-top: 25px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
 .radio-label { font-size: 13px; color: var(--muted); cursor: pointer; display: flex; align-items: center; gap: 4px; font-weight: 700; }
 
-/* Result View */
+/* --- Result View --- */
 .score-circle { 
   width: 100px; height: 100px; border-radius: 50%; background: var(--shu); color: #fff; 
   display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto 20px;
@@ -78,12 +77,11 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 .res-table { width: 100%; border-collapse: collapse; margin: 30px 0; text-align: left; font-size: 14px; }
 .res-table td { padding: 12px; border-bottom: 1px solid var(--line); }
 
-/* SNS & Action Buttons */
 .sns-group { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
 .btn-x { background: #1f2937; }
 .btn-reddit { background: #ff4500; }
 .btn-email { background: var(--muted); }
-.btn-substack { background: #ff6719; border: none; } /* Substack Orange */
+.btn-substack { background: #ff6719; }
 
 /* --- Site Footer --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
@@ -125,7 +123,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 <div class="hero-section">
   <div class="wrap">
     <h1>Vocabulary Quiz</h1>
-    <p>Test your Japanese skills by JLPT level and category.</p>
+    <p>Test your Japanese knowledge. Japanese Word → English Meaning.</p>
   </div>
 </div>
 
@@ -157,7 +155,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
     <div id="quizView" style="display:none">
       <div class="progress" id="progress">Question 1 / 5</div>
       <div class="q-card">
-        <div id="qText" style="font-size:26px; font-weight:800; margin-bottom:15px; color:var(--ink);"></div>
+        <div id="qText" style="font-size:28px; font-weight:800; margin-bottom:15px;"></div>
         <div id="options" class="options"></div>
         <button id="nextBtn" class="btn" style="display:none; margin-top:20px;" onclick="handleNext()">Next Question</button>
       </div>
@@ -175,14 +173,15 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
         <div style="font-size:12px">Score</div>
       </div>
       <h3>Quiz Results</h3>
+      
       <table class="res-table">
         <tbody id="resList"></tbody>
       </table>
       
       <div class="sns-group">
-        <a class="btn btn-x" id="shareX" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Share on X</a>
+        <a class="btn btn-x" id="shareX" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Share Score</a>
         <a class="btn btn-reddit" id="shareReddit" href="#" target="_blank"><i class="fa-brands fa-reddit-alien"></i> Post to Reddit</a>
-        <a class="btn btn-email" id="shareEmail" href="#"><i class="fa-solid fa-envelope"></i> Email Results</a>
+        <a class="btn btn-email" id="shareEmail" href="#"><i class="fa-solid fa-envelope"></i> Email Details to Myself</a>
         <a class="btn btn-substack" href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i> Subscribe to Substack</a>
         <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px">Try Again</button>
       </div>
@@ -224,11 +223,12 @@ async function startQuiz() {
     const filtered = data.filter(item => item.pos === cat);
     
     if (filtered.length < 4) {
-      alert("Not enough words in this category. Try another level!");
+      alert("Not enough words. Try another level!");
       return;
     }
 
     quizItems = filtered.sort(() => 0.5 - Math.random()).slice(0, 5).map(item => {
+      // Wrong options are taken from other English meanings
       const others = filtered.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
       return {
         item: item,
@@ -248,32 +248,32 @@ function renderQuestion() {
   const mode = document.querySelector('input[name="mode"]:checked').value;
   
   document.getElementById('progress').innerText = `Question ${currentIndex + 1} / 5`;
-  document.getElementById('qText').innerText = q.item.ja;
-  document.getElementById('nextBtn').style.display = 'none';
   
+  // Set question text based on radio button
+  const qBox = document.getElementById('qText');
+  if (mode === 'kana') qBox.innerText = q.item.kana || q.item.ja;
+  else if (mode === 'both') qBox.innerHTML = `${q.item.ja} <small style="display:block; font-size:16px; color:var(--muted); font-weight:normal;">(${q.item.kana})</small>`;
+  else qBox.innerText = q.item.ja;
+
+  document.getElementById('nextBtn').style.display = 'none';
   const optBox = document.getElementById('options');
   optBox.innerHTML = '';
   
   q.options.forEach(opt => {
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
-    
-    if (mode === 'kana') btn.innerText = opt.kana || opt.ja;
-    else if (mode === 'both') btn.innerHTML = `${opt.ja} <span style="font-size:0.8em; color:var(--muted); font-weight:normal;">(${opt.kana || opt.ja})</span>`;
-    else btn.innerText = opt.ja;
+    btn.innerText = opt.en; // Options are English meanings
 
     btn.onclick = () => {
       const btns = optBox.querySelectorAll('.opt-btn');
       btns.forEach(b => b.disabled = true);
-      if (opt.ja === q.item.ja) {
+      if (opt.en === q.item.en) {
         btn.classList.add('correct');
         score++;
         q.userCorrect = true;
       } else {
         btn.classList.add('wrong');
-        btns.forEach(b => { 
-          if(b.innerText.startsWith(q.item.ja) || b.innerText.includes(`(${q.item.kana})`)) b.classList.add('correct'); 
-        });
+        btns.forEach(b => { if(b.innerText === q.item.en) b.classList.add('correct'); });
       }
       document.getElementById('nextBtn').style.display = 'block';
     };
@@ -295,22 +295,24 @@ function showResults() {
   document.getElementById('scoreNum').innerText = `${score}/5`;
 
   const list = document.getElementById('resList');
-  let summaryText = `I scored ${score}/5 on the nihongotext.com Japanese Quiz!`;
+  let emailBody = `My Japanese Quiz Results: ${score}/5\n\nDetails:\n`;
 
   quizItems.forEach((q, i) => {
-    const row = document.createElement('tr');
     const isOk = q.userCorrect;
+    const row = document.createElement('tr');
     row.innerHTML = `<td style="font-weight:bold; color:${isOk ? '#10b981':'#ef4444'}">${isOk ? '✓' : '✗'}</td>
-      <td><strong>Q${i+1}: ${q.item.ja}</strong><br>Answer: ${q.item.en}</td>`;
+      <td><strong>${q.item.ja} (${q.item.kana})</strong><br>Answer: ${q.item.en}</td>`;
     list.appendChild(row);
+
+    emailBody += `Q${i+1}: ${q.item.ja} -> Answer: ${q.item.en} (${isOk ? 'Correct' : 'Wrong'})\n`;
   });
 
   // Sharing Links
   const url = window.location.href;
-  const shareText = encodeURIComponent(summaryText + "\nTry it here: ");
-  document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${url}`;
-  document.getElementById('shareReddit').href = `https://www.reddit.com/submit?title=${shareText}&url=${url}`;
-  document.getElementById('shareEmail').href = `mailto:?subject=My Japanese Quiz Results&body=${summaryText}%0A${url}`;
+  const summary = `I scored ${score}/5 on nihongotext.com quiz!`;
+  document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(summary)}&url=${encodeURIComponent(url)}`;
+  document.getElementById('shareReddit').href = `https://www.reddit.com/submit?title=${encodeURIComponent(summary)}&url=${encodeURIComponent(url)}`;
+  document.getElementById('shareEmail').href = `mailto:?subject=Japanese Quiz Results&body=${encodeURIComponent(emailBody + "\nTry it here: " + url)}`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
