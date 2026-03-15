@@ -13,57 +13,121 @@
   gtag('config', 'G-9QSHWJE0HZ');
 </script>
 <style>
+/* --- Colors & Base Styles --- */
 :root{ --shu:#e6462d; --shu-tint:#fff2ef; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --card:#fff7f6; }
 *{box-sizing:border-box}
 body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-apple-system,sans-serif; text-align:center; }
 .wrap{ max-width:1000px; margin:0 auto; padding:0 20px }
+
+/* --- Site Header --- */
 .site-header{ border-top:4px solid var(--shu); border-bottom:1px solid var(--line); background:#fff; padding:30px 0 }
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
 .logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
 .logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
+.nav-links a:hover { color:var(--shu) }
 .sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
 .sns-nav a:hover { color:var(--shu) }
+
+/* --- Hero Section --- */
 .hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
-.hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0; }
+.hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
+.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
+
+/* --- Dictionary Layout --- */
 .dictionary-main{ padding:50px 0; min-height:50vh; text-align: left; }
-.search-box{ background:#f9fafb; border:1px solid var(--line); border-radius:12px; padding:25px; margin:-40px 0 40px; position:relative; box-shadow:0 4px 15px rgba(0,0,0,0.05) }
-input#kw{ width:100%; padding:16px; border:1px solid var(--line); border-radius:8px; font-size:18px; outline:none; text-align:center }
-.chip{ padding:8px 16px; border-radius:20px; background:#fff; border:1px solid var(--line); font-size:13px; font-weight:600; cursor:pointer; margin:4px; color:var(--muted) }
-.chip.active{ background:var(--shu); color:#fff; border-color:var(--shu) }
+.search-box{ 
+  background:#f9fafb; border:1px solid var(--line); border-radius:15px; padding:35px; 
+  margin:-40px 0 40px; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05) 
+}
+input#kw{ width:100%; padding:18px; border:1px solid var(--line); border-radius:10px; font-size:18px; outline:none; background:#fff; text-align:center; transition:0.2s; }
+input#kw:focus{ border-color:var(--shu); box-shadow: 0 0 0 4px rgba(230,70,45,0.1); }
+
+.chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; justify-content:center }
+.chip{ padding:8px 18px; border-radius:25px; background:#fff; border:1px solid var(--line); font-size:13px; font-weight:700; cursor:pointer; transition:0.2s; color:var(--muted) }
+.chip.active{ background:var(--shu); border-color:var(--shu); color:#fff }
+
 #list{ display:grid; gap:20px }
-.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:15px; padding:25px; position:relative }
-.ja{ display:block; font-size:26px; font-weight:800; color:var(--ink) }
-.audio-btn { border:none; background:none; cursor:pointer; color:var(--shu); font-size:20px; margin-left:10px; }
+.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:15px; padding:25px; transition:0.2s; position:relative }
+.card:hover{ transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.05) }
+
+.tag-row{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.tags{ display:flex; gap:6px; }
+.tag{ font-size:11px; font-weight:800; background:rgba(230,70,45,0.1); color:var(--shu); padding:4px 10px; border-radius:5px; text-transform:uppercase; }
+.lvl-tag{ background:var(--ink); color:#fff }
+
+.ja{ display:block; font-size:28px; font-weight:900; margin-bottom:4px; color:var(--ink) }
+.kana{ display:block; font-size:15px; color:var(--muted); margin-bottom:12px; font-weight:600 }
+.en{ display:block; font-size:18px; color:var(--ink); font-weight:700; margin-bottom:15px }
+
+.audio-btn { border:none; background:none; cursor:pointer; color:var(--shu); font-size:22px; padding:5px; transition:0.2s; }
+.audio-btn:hover { transform: scale(1.1); opacity:0.8; }
+
+/* Example Styles */
+.example-details { border-top:1px solid #f1cbc6; margin-top:15px; padding-top:15px }
+.example-details summary { font-size:14px; color:var(--shu); cursor:pointer; font-weight:800; display:flex; align-items:center; gap:8px; list-style:none; }
+.example-details summary::-webkit-details-marker { display:none; }
+.ex-list { margin-top:10px; display:grid; gap:12px; }
+.ex-item { font-size:15px; background:#fff; padding:15px; border-radius:10px; border:1px solid #fff1f0; }
+.ex-ja { font-weight:800; color:var(--ink); display:block; margin-bottom:2px; }
+.ex-kana { font-size:13px; color:var(--muted); display:block; margin-bottom:4px; }
+.ex-en { font-weight:600; color:var(--ink); }
+
+/* --- Site Footer --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" class="logo-link"><span class="logo-text">nihongotext</span><span style="color:#333;">.com</span></a>
-    <nav class="nav-links"><a href="/">Home</a><a href="/content/dictionary.html" style="color:var(--shu);">Vocabulary</a><a href="/quiz/index.html">Quiz</a><a href="/inquiry/index.html">Inquiry</a></nav>
+    <a href="/" class="logo-link">
+      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
+    </a>
+    <div style="font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px">== beta version ==</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/content/dictionary.html" style="color:var(--shu);">Vocabulary Tool</a>
+      <a href="/quiz/index.html">Quiz</a>
+      <a href="/blog/index.html">Blog</a>
+      <a href="/inquiry/index.html">Inquiry</a>
+    </nav>
     <nav class="sns-nav">
-      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://nihongotextcom.substack.com/subscribe" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://nihongotextcom.substack.com/subscribe" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </header>
 
-<div class="hero-section"><div class="wrap"><h1>Vocabulary Tool</h1></div></div>
+<div class="hero-section">
+  <div class="wrap">
+    <h1>Vocabulary Tool</h1>
+    <p>Search over 2,900 Japanese words with native audio.</p>
+  </div>
+</div>
 
 <main class="wrap dictionary-main">
   <div class="search-box">
-    <input type="text" id="kw" placeholder="Search a word..." autocomplete="off">
-    <div class="chips" id="posChips"><span class="chip active" data-pos="all">All</span><span class="chip" data-pos="noun">Noun</span><span class="chip" data-pos="verb">Verb</span></div>
+    <input type="text" id="kw" placeholder="Type a word, hiragana, or meaning..." autocomplete="off">
+    <div class="chips" id="posChips">
+      <span class="chip active" data-pos="all">All</span>
+      <span class="chip" data-pos="noun">Noun</span>
+      <span class="chip" data-pos="verb">Verb</span>
+      <span class="chip" data-pos="adjective-i">Adj-i</span>
+      <span class="chip" data-pos="adjective-na">Adj-na</span>
+      <span class="chip" data-pos="adverb">Adverb</span>
+      <span class="chip" data-pos="expression">Expression</span>
+      <span class="chip" data-pos="particle">Particle</span>
+    </div>
   </div>
-  <div id="status" style="font-size:13px; text-align: center; color:var(--muted);"></div>
+  
+  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:15px; font-weight:700; text-align: center;"></div>
   <div id="list"></div>
 </main>
 
@@ -71,48 +135,128 @@ input#kw{ width:100%; padding:16px; border:1px solid var(--line); border-radius:
   <div class="wrap footer-inner">
     <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
     <nav class="sns-nav">
-      <a href="https://x.com/nihongotext_com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://nihongotextcom.substack.com/subscribe" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
+      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
+      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
+      <a href="https://nihongotextcom.substack.com/subscribe" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </footer>
 
 <script>
 let allVocab = [];
-async function init() {
+
+async function initDictionary() {
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
+
   const urlParams = new URLSearchParams(window.location.search);
-  const kw = urlParams.get('kw'); if(kw) document.getElementById('kw').value = decodeURIComponent(kw);
-  const levels = ['n5','n4','n3','n2','n1'];
-  const res = await Promise.all(levels.map(async lv => {
-    try { const r = await fetch(`/data/json/${lv}_master_cleaned.json`); return r.ok ? (await r.json()).map(d=>({...d,lv:lv.toUpperCase()})) : []; } catch(e){return [];}
-  }));
-  allVocab = res.flat(); document.getElementById('status').innerText = allVocab.length + " words loaded."; performSearch();
+  const queryKw = urlParams.get('kw');
+  if (queryKw) {
+    document.getElementById('kw').value = decodeURIComponent(queryKw);
+  }
+
+  const levels = ['n5', 'n4', 'n3', 'n2', 'n1']; 
+  const fetches = levels.map(async lv => {
+    try {
+      const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
+      if (!res.ok) return [];
+      const data = await res.json();
+      return data.map(d => ({ ...d, level: lv.toUpperCase() }));
+    } catch (e) { return []; }
+  });
+
+  const results = await Promise.all(fetches);
+  allVocab = results.flat();
+  document.getElementById('status').innerText = `${allVocab.length} words loaded.`;
+
+  performSearch();
 }
+
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
-  const pos = document.querySelector('.chip.active').getAttribute('data-pos');
-  const filtered = allVocab.filter(i => (pos==='all'||i.pos===pos) && (i.ja.includes(kw)||i.kana.includes(kw)||i.en.toLowerCase().includes(kw)));
+  const posFilter = document.querySelector('.chip.active').getAttribute('data-pos');
+  const filtered = allVocab.filter(item => {
+    const mPos = (posFilter === 'all' || item.pos === posFilter);
+    const mKw = !kw || (
+      (item.ja && item.ja.includes(kw)) || 
+      (item.kana && item.kana.includes(kw)) || 
+      (item.en && item.en.toLowerCase().includes(kw))
+    );
+    return mPos && mKw;
+  });
   render(filtered);
 }
+
 function render(data) {
-  const list = document.getElementById('list'); list.innerHTML = '';
-  data.slice(0,15).forEach(i => {
-    const audioUrl = `/assets/audio/${i.audio}`;
-    const inquiry = `/inquiry/index.html?subject=${encodeURIComponent('音声依頼（'+i.ja+'）')}`;
-    const card = document.createElement('div'); card.className='card';
-    card.innerHTML = `<div><span class="ja">${i.ja}</span> <button onclick="playAudio('${audioUrl}','${inquiry}')" class="audio-btn"><i class="fa-solid fa-volume-high"></i></button></div><div style="font-size:14px; color:var(--muted)">${i.kana}</div><div style="font-weight:600; margin-top:10px">${i.en}</div>`;
-    list.appendChild(card);
+  const listEl = document.getElementById('list');
+  listEl.innerHTML = data.length ? '' : '<p style="text-align:center; padding:50px; color:var(--muted); font-weight:700;">No matches found.</p>';
+  
+  data.slice(0, 20).forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const audioPath = `/assets/audio/${item.audio}`;
+    const inquirySubject = encodeURIComponent(`音声依頼（${item.ja}）`);
+    const inquiryUrl = `/inquiry/index.html?subject=${inquirySubject}`;
+
+    // 例文の構築
+    let exHtml = "";
+    if (item.examples && item.examples.length > 0) {
+      const exItems = item.examples.map(ex => `
+        <div class="ex-item">
+          <span class="ex-ja">${ex.ja}</span>
+          <span class="ex-kana">${ex.kana || ''}</span>
+          <span class="ex-en">${ex.en}</span>
+        </div>
+      `).join('');
+      exHtml = `
+        <details class="example-details">
+          <summary><i class="fa-solid fa-circle-chevron-right"></i> Example Sentences</summary>
+          <div class="ex-list">${exItems}</div>
+        </details>
+      `;
+    }
+
+    card.innerHTML = `
+      <div class="tag-row">
+        <div class="tags">
+          <span class="tag lvl-tag">${item.level}</span>
+          <span class="tag">${item.pos}</span>
+        </div>
+        <button onclick="playAudio('${audioPath}', '${inquiryUrl}')" class="audio-btn">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+      </div>
+      <span class="ja">${item.ja}</span>
+      <span class="kana">${item.kana || ''}</span>
+      <span class="en">${item.en}</span>
+      ${exHtml}
+    `;
+    listEl.appendChild(card);
   });
 }
-function playAudio(path, fallback) {
-  const a = new Audio(path); a.play().catch(() => { if(confirm("Audio file not found. Would you like to request it?")) window.location.href = fallback; });
+
+function playAudio(path, fallbackUrl) {
+  const audio = new Audio(path);
+  audio.play().catch(() => {
+    if(confirm("Audio file not found. Would you like to request audio for this word?")) {
+      window.location.href = fallbackUrl;
+    }
+  });
 }
+
+document.getElementById('posChips').addEventListener('click', e => {
+  if (e.target.classList.contains('chip')) {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    e.target.classList.add('active');
+    performSearch();
+  }
+});
+
 document.getElementById('kw').addEventListener('input', performSearch);
-document.getElementById('posChips').addEventListener('click', e => { if(e.target.classList.contains('chip')){ document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active')); e.target.classList.add('active'); performSearch(); } });
-document.addEventListener('DOMContentLoaded', () => { document.getElementById('ft-year').textContent = new Date().getFullYear(); init(); });
+
+initDictionary();
 </script>
 </body>
 </html>
