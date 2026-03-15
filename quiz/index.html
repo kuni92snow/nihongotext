@@ -24,11 +24,11 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
 .logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
 .logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
-.nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
+.nav-links { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
 .nav-links a:hover { color:var(--shu) }
 
-/* --- Progress Indicator (Top Right) --- */
+/* --- Progress Badge --- */
 .progress-badge { 
   position: absolute; top: 10px; right: 10px; background: var(--ink); color: #fff; 
   padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; 
@@ -38,15 +38,13 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
 .hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
 
-/* --- Quiz UI --- */
+/* --- Quiz Area --- */
 .quiz-main { padding: 50px 0; min-height: 50vh; text-align: left; }
 .quiz-container { max-width: 600px; margin: -40px auto 0; position: relative; z-index: 10; }
-
 #setupView, .q-card, #resultView { 
   background: #fff; border: 1px solid var(--line); padding: 35px; border-radius: 15px; 
   box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;
 }
-
 .form-group { margin-bottom: 20px; text-align: left; }
 label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--muted); text-transform: uppercase; }
 select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 16px; }
@@ -58,23 +56,27 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 }
 .btn:hover { opacity: 0.9; }
 
-.options { display: grid; gap: 10px; margin-top: 20px; }
-.opt-btn { background: #fff; border: 1px solid var(--line); padding: 15px; border-radius: 8px; text-align: left; cursor: pointer; font-weight: 600; }
+.opt-btn { width:100%; margin-top:10px; background: #fff; border: 1px solid var(--line); padding: 15px; border-radius: 8px; text-align: left; cursor: pointer; font-weight: 600; }
 .opt-btn.correct { background: #d1fae5; border-color: #10b981; }
 .opt-btn.wrong { background: #fee2e2; border-color: #ef4444; }
 
 .res-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; font-size: 14px; }
 .res-table td { padding: 10px; border-bottom: 1px solid var(--line); }
 
-.sns-group { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
-.btn-outline { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+/* --- Small SNS Buttons --- */
+.small-sns-row { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
+.btn-small { 
+  padding: 8px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; 
+  text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 5px;
+}
+.btn-x { background: #000; }
+.btn-reddit { background: #ff4500; }
 
-/* --- Site Footer --- */
+/* --- Footer --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
-.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
 
-/* --- PDF/Print Style --- */
+/* --- PDF Print Mode --- */
 @media print {
   body > *:not(#printArea) { display: none !important; }
   #printArea { display: block !important; position: static; width: 100%; text-align: left; }
@@ -97,7 +99,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 
 <div class="hero-section">
   <div class="wrap" style="position:relative;">
-    <div class="progress-badge" id="lvProgress">Progress: --/--</div>
+    <div class="progress-badge" id="lvProgress">Remaining: --</div>
     <h1>Vocabulary Quiz</h1>
     <p>Practice words you haven't mastered yet.</p>
   </div>
@@ -109,30 +111,15 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
     <div id="setupView">
       <div class="form-group">
         <label>JLPT Level</label>
-        <select id="lv" onchange="updateProgressDisplay()">
-          <option value="n5">N5 (Beginner)</option>
-          <option value="n4">N4</option>
-          <option value="n3">N3</option>
-          <option value="n2">N2</option>
-          <option value="n1">N1</option>
-        </select>
+        <select id="lv" onchange="updateProgressDisplay()"><option value="n5">N5</option><option value="n4">N4</option><option value="n3">N3</option><option value="n2">N2</option><option value="n1">N1</option></select>
       </div>
       <div class="form-group">
         <label>Category</label>
-        <select id="cat">
-          <option value="noun">Noun</option>
-          <option value="verb">Verb</option>
-          <option value="adjective-i">Adj-i</option>
-          <option value="adjective-na">Adj-na</option>
-        </select>
+        <select id="cat"><option value="noun">Noun</option><option value="verb">Verb</option><option value="adjective-i">Adj-i</option><option value="adjective-na">Adj-na</option></select>
       </div>
       <div class="form-group">
-        <label>Number of Questions</label>
-        <select id="qCount">
-          <option value="3">3 Questions</option>
-          <option value="5" selected>5 Questions</option>
-          <option value="10">10 Questions</option>
-        </select>
+        <label>Questions</label>
+        <select id="qCount"><option value="3">3</option><option value="5" selected>5</option><option value="10">10</option></select>
       </div>
       <button class="btn" onclick="startQuiz()"><i class="fa-solid fa-play"></i> Start Quiz</button>
     </div>
@@ -141,7 +128,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
       <div class="q-card">
         <div id="progress" style="font-size:13px; color:var(--muted); font-weight:700; margin-bottom:10px;"></div>
         <div id="qText" style="font-size:28px; font-weight:800; margin-bottom:20px;"></div>
-        <div id="options" class="options"></div>
+        <div id="options"></div>
         <button id="nextBtn" class="btn" style="display:none; margin-top:20px;" onclick="handleNext()">Next Question</button>
       </div>
       <div style="margin-top:20px; display:flex; justify-content:center; gap:15px; font-size:13px; font-weight:700; color:var(--muted);">
@@ -154,37 +141,32 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
     <div id="resultView" style="display:none">
       <div class="score-circle"><div class="num" id="scoreNum">0</div><div style="font-size:11px;">Score</div></div>
       <h3>Quiz Results</h3>
-      <p style="font-size:13px; color:var(--muted);">Check words to exclude them from future quizzes.</p>
+      <table class="res-table"><tbody id="resList"></tbody></table>
       
-      <table class="res-table">
-        <tbody id="resList"></tbody>
-      </table>
-      
-      <div class="sns-group">
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
         <a class="btn" id="shareEmail" href="#"><i class="fa-solid fa-envelope"></i> Email Results to Myself</a>
-        <button class="btn btn-outline" onclick="printCheckedList()"><i class="fa-solid fa-file-pdf"></i> Export Learned List (PDF)</button>
+        <button class="btn" style="background:#fff; color:var(--ink); border:1px solid var(--line);" onclick="printCheckedList()"><i class="fa-solid fa-file-pdf"></i> Export Learned List (PDF)</button>
         <a class="btn" style="background:#ff6719;" href="https://nihongotextcom.substack.com/subscribe" target="_blank"><i class="fa-solid fa-newspaper"></i> Subscribe to Newsletter</a>
+        
+        <div class="small-sns-row">
+          <a id="shareX" class="btn-small btn-x" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> X</a>
+          <a id="shareReddit" class="btn-small btn-reddit" href="#" target="_blank"><i class="fa-brands fa-reddit-alien"></i> Reddit</a>
+        </div>
         <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px;">Try Again</button>
       </div>
     </div>
-
   </div>
 </main>
 
 <div id="printArea" style="display:none; padding:40px;">
   <h1 style="color:#e6462d;">Mastered Japanese Words</h1>
-  <p>Source: nihongotext.com</p>
   <table border="1" style="width:100%; border-collapse: collapse; margin-top:20px; text-align: left;">
     <thead><tr style="background:#f9fafb;"><th style="padding:10px;">Japanese</th><th style="padding:10px;">Reading</th><th style="padding:10px;">Meaning</th></tr></thead>
     <tbody id="printBody"></tbody>
   </table>
 </div>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
-  </div>
-</footer>
+<footer class="site-footer"><div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div></footer>
 
 <script>
 let quizItems = [];
@@ -222,21 +204,16 @@ async function startQuiz() {
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     const data = await res.json();
     const available = data.filter(item => item.pos === cat && !checkedIds.includes(item.id));
-    
-    if (available.length < qLimit) {
-      alert("Not enough unchecked words! Try another category or level.");
-      return;
-    }
+    if (available.length < qLimit) { alert("Not enough words! Check another category."); return; }
 
     quizItems = available.sort(() => 0.5 - Math.random()).slice(0, qLimit).map(item => {
       const others = data.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
       return { item, options: [...others, item].sort(() => 0.5 - Math.random()), userCorrect: false };
     });
-
     document.getElementById('setupView').style.display = 'none';
     document.getElementById('quizView').style.display = 'block';
     renderQuestion();
-  } catch(e) { alert("Data error."); }
+  } catch(e) { alert("Data load error."); }
 }
 
 function renderQuestion() {
@@ -244,7 +221,6 @@ function renderQuestion() {
   const mode = document.querySelector('input[name="mode"]:checked').value;
   document.getElementById('progress').innerText = `Question ${currentIndex + 1} / ${quizItems.length}`;
   const qBox = document.getElementById('qText');
-
   if (mode === 'kana') qBox.innerText = q.item.kana;
   else if (mode === 'both') qBox.innerHTML = `${q.item.ja} <small style="display:block; font-size:16px; color:var(--muted);">(${q.item.kana})</small>`;
   else qBox.innerText = q.item.ja;
@@ -260,15 +236,15 @@ function renderQuestion() {
     btn.onclick = () => {
       document.querySelectorAll('.opt-btn').forEach(b => b.disabled = true);
       if (opt.ja === q.item.ja) { btn.classList.add('correct'); score++; q.userCorrect = true; }
-      else { btn.classList.add('wrong'); }
+      else { btn.classList.add('wrong'); document.querySelectorAll('.opt-btn').forEach(b => { if(b.innerText === q.item.en) b.classList.add('correct'); }); }
       document.getElementById('nextBtn').style.display = 'block';
     };
     optBox.appendChild(btn);
   });
 }
 
-function refreshQuestion() { if(quizItems.length) renderQuestion(); }
 function handleNext() { currentIndex++; if(currentIndex < quizItems.length) renderQuestion(); else showResults(); }
+function refreshQuestion() { if(quizItems.length) renderQuestion(); }
 
 function showResults() {
   document.getElementById('quizView').style.display = 'none';
@@ -278,24 +254,23 @@ function showResults() {
   const list = document.getElementById('resList');
   const checkedIds = getCheckedIds();
   let emailDetails = "";
-
   quizItems.forEach((q, i) => {
     const isChecked = checkedIds.includes(q.item.id);
     const row = document.createElement('tr');
-    row.innerHTML = `
-      <td><input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleLearned('${q.item.id}')"></td>
-      <td style="color:${q.userCorrect ? '#10b981':'#ef4444'}"><strong>${q.item.ja}</strong></td>
-      <td>${q.item.en}</td>
-    `;
+    row.innerHTML = `<td><input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleLearned('${q.item.id}')"></td>
+      <td style="color:${q.userCorrect ? '#10b981':'#ef4444'}"><strong>${q.item.ja}</strong></td><td>${q.item.en}</td>`;
     list.appendChild(row);
-    emailDetails += `Q${i+1}: ${q.item.ja} (${q.item.kana}) -> ${q.item.en} [${q.userCorrect ? 'CORRECT' : 'WRONG'}]\n`;
+    emailDetails += `Q${i+1}: ${q.item.ja} -> ${q.item.en} [${q.userCorrect ? '✓' : '✗'}]\n`;
   });
 
-  // Mailto Link with extra info
   const quizUrl = window.location.href;
   const substackUrl = "https://nihongotextcom.substack.com/subscribe";
-  const body = `My Quiz Score: ${score}/${quizItems.length}\n\n${emailDetails}\n\nContinue Learning:\n${quizUrl}\n\nSubscribe for updates:\n${substackUrl}`;
-  document.getElementById('shareEmail').href = `mailto:?subject=My Japanese Quiz Results&body=${encodeURIComponent(body)}`;
+  const body = `My Quiz Score: ${score}/${quizItems.length}\n\n${emailDetails}\n\nTry the quiz again:\n${quizUrl}\n\nSubscribe for more lessons:\n${substackUrl}`;
+  document.getElementById('shareEmail').href = `mailto:?subject=Japanese Quiz Results&body=${encodeURIComponent(body)}`;
+  
+  const shareText = encodeURIComponent(`I scored ${score}/${quizItems.length} on nihongotext.com quiz!`);
+  document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${encodeURIComponent(quizUrl)}`;
+  document.getElementById('shareReddit').href = `https://www.reddit.com/submit?title=${shareText}&url=${encodeURIComponent(quizUrl)}`;
 }
 
 async function printCheckedList() {
@@ -303,14 +278,11 @@ async function printCheckedList() {
   const checkedIds = getCheckedIds();
   const printBody = document.getElementById('printBody');
   printBody.innerHTML = '';
-
-  const fetches = levels.map(lv => fetch(`/data/json/${lv}_master_cleaned.json`).then(r => r.json()));
+  const fetches = levels.map(lv => fetch(`/data/json/${lv}_master_cleaned.json`).then(r => r.ok ? r.json() : []));
   const allData = await Promise.all(fetches);
-  
   allData.flat().filter(item => checkedIds.includes(item.id)).forEach(item => {
     printBody.innerHTML += `<tr><td style="padding:10px;">${item.ja}</td><td style="padding:10px;">${item.kana}</td><td style="padding:10px;">${item.en}</td></tr>`;
   });
-
   if (!printBody.innerHTML) return alert("Please check some learned words first!");
   window.print();
 }
