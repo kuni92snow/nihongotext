@@ -35,48 +35,52 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
 .hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
-/* --- Dictionary Layout --- */
+/* --- Search UI --- */
 .dictionary-main{ padding:50px 0; min-height:50vh; text-align: left; }
 .search-box{ 
-  background:#f9fafb; border:1px solid var(--line); border-radius:15px; padding:35px; 
+  background:#f9fafb; border:1px solid var(--line); border-radius:15px; padding:40px; 
   margin:-40px 0 40px; position:relative; z-index:10; box-shadow:0 4px 15px rgba(0,0,0,0.05) 
 }
-input#kw{ width:100%; padding:18px; border:1px solid var(--line); border-radius:10px; font-size:18px; outline:none; background:#fff; text-align:center; transition:0.2s; }
+input#kw{ width:100%; padding:20px; border:1px solid var(--line); border-radius:12px; font-size:20px; outline:none; background:#fff; text-align:center; transition:0.2s; }
 input#kw:focus{ border-color:var(--shu); box-shadow: 0 0 0 4px rgba(230,70,45,0.1); }
 
-.chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; justify-content:center }
-.chip{ padding:8px 18px; border-radius:25px; background:#fff; border:1px solid var(--line); font-size:13px; font-weight:700; cursor:pointer; transition:0.2s; color:var(--muted) }
+.chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; justify-content:center }
+.chip{ padding:10px 20px; border-radius:30px; background:#fff; border:1px solid var(--line); font-size:14px; font-weight:700; cursor:pointer; transition:0.2s; color:var(--muted) }
+.chip:hover { border-color: var(--shu); color: var(--shu); }
 .chip.active{ background:var(--shu); border-color:var(--shu); color:#fff }
 
-#list{ display:grid; gap:20px }
-.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:15px; padding:25px; transition:0.2s; position:relative }
-.card:hover{ transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.05) }
+/* --- Card List --- */
+#list{ display:grid; gap:25px }
+.card{ background:var(--card); border:1px solid #ffe4e1; border-radius:15px; padding:30px; transition:0.2s; position:relative }
+.card:hover{ transform:translateY(-2px); box-shadow:0 8px 25px rgba(0,0,0,0.06) }
 
-.tag-row{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
-.tags{ display:flex; gap:6px; }
-.tag{ font-size:11px; font-weight:800; background:rgba(230,70,45,0.1); color:var(--shu); padding:4px 10px; border-radius:5px; text-transform:uppercase; }
+.card-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; }
+.tag-group{ display:flex; gap:8px; }
+.tag{ font-size:12px; font-weight:800; background:rgba(230,70,45,0.1); color:var(--shu); padding:5px 12px; border-radius:6px; text-transform:uppercase; }
 .lvl-tag{ background:var(--ink); color:#fff }
 
-.ja{ display:block; font-size:28px; font-weight:900; margin-bottom:4px; color:var(--ink) }
-.kana{ display:block; font-size:15px; color:var(--muted); margin-bottom:12px; font-weight:600 }
-.en{ display:block; font-size:18px; color:var(--ink); font-weight:700; margin-bottom:15px }
+.ja{ display:block; font-size:30px; font-weight:900; margin-bottom:5px; color:var(--ink) }
+.kana-ro{ display:block; font-size:16px; color:var(--muted); margin-bottom:15px; font-weight:600; line-height:1.4 }
+.en{ display:block; font-size:19px; color:var(--ink); font-weight:700; margin-bottom:20px }
 
-.audio-btn { border:none; background:none; cursor:pointer; color:var(--shu); font-size:22px; padding:5px; transition:0.2s; }
-.audio-btn:hover { transform: scale(1.1); opacity:0.8; }
+.audio-btn { border:none; background:none; cursor:pointer; color:var(--shu); font-size:22px; transition:0.2s; padding:8px; border-radius:50%; }
+.audio-btn:hover { background: var(--shu-tint); transform: scale(1.1); }
 
-/* Example Styles */
-.example-details { border-top:1px solid #f1cbc6; margin-top:15px; padding-top:15px }
-.example-details summary { font-size:14px; color:var(--shu); cursor:pointer; font-weight:800; display:flex; align-items:center; gap:8px; list-style:none; }
+/* --- Examples --- */
+.example-details { border-top:1px solid #f1cbc6; margin-top:20px; padding-top:20px }
+.example-details summary { font-size:15px; color:var(--shu); cursor:pointer; font-weight:800; display:flex; align-items:center; gap:10px; list-style:none; }
 .example-details summary::-webkit-details-marker { display:none; }
-.ex-list { margin-top:10px; display:grid; gap:12px; }
-.ex-item { font-size:15px; background:#fff; padding:15px; border-radius:10px; border:1px solid #fff1f0; }
-.ex-ja { font-weight:800; color:var(--ink); display:block; margin-bottom:2px; }
-.ex-kana { font-size:13px; color:var(--muted); display:block; margin-bottom:4px; }
-.ex-en { font-weight:600; color:var(--ink); }
+.ex-list { margin-top:15px; display:grid; gap:15px; }
+.ex-item { font-size:15px; background:#fff; padding:18px; border-radius:12px; border:1px solid #fff1f0; position:relative; }
 
-/* --- Site Footer --- */
-.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
-.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.ex-ja-row { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:5px; }
+.ex-ja { font-weight:800; color:var(--ink); font-size:17px; line-height:1.4; }
+.ex-kana-ro { font-size:13px; color:var(--muted); display:block; margin-bottom:8px; font-weight:600; }
+.ex-en { font-weight:700; color:var(--ink); font-size:15px; display:block; }
+
+/* --- Footer --- */
+.site-footer{ border-top:1px solid var(--line); padding:60px 0; background:#fff; margin-top:80px; text-align: center; }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:25px }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
 </style>
 </head>
@@ -84,9 +88,7 @@ input#kw:focus{ border-color:var(--shu); box-shadow: 0 0 0 4px rgba(230,70,45,0.
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" class="logo-link">
-      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
-    </a>
+    <a href="/" class="logo-link"><span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span></a>
     <div style="font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px">== beta version ==</div>
     <nav class="nav-links">
       <a href="/">Home</a>
@@ -108,13 +110,13 @@ input#kw:focus{ border-color:var(--shu); box-shadow: 0 0 0 4px rgba(230,70,45,0.
 <div class="hero-section">
   <div class="wrap">
     <h1>Vocabulary Tool</h1>
-    <p>Search over 2,900 Japanese words with native audio.</p>
+    <p>Search over 2,900 words with full Romaji and audio support.</p>
   </div>
 </div>
 
 <main class="wrap dictionary-main">
   <div class="search-box">
-    <input type="text" id="kw" placeholder="Type a word, hiragana, or meaning..." autocomplete="off">
+    <input type="text" id="kw" placeholder="Type to search (English, Kanji, or Kana)..." autocomplete="off">
     <div class="chips" id="posChips">
       <span class="chip active" data-pos="all">All</span>
       <span class="chip" data-pos="noun">Noun</span>
@@ -127,7 +129,7 @@ input#kw:focus{ border-color:var(--shu); box-shadow: 0 0 0 4px rgba(230,70,45,0.
     </div>
   </div>
   
-  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:15px; font-weight:700; text-align: center;"></div>
+  <div id="status" style="font-size:13px; color:var(--muted); margin-bottom:20px; font-weight:800; text-align: center;"></div>
   <div id="list"></div>
 </main>
 
@@ -149,12 +151,9 @@ let allVocab = [];
 
 async function initDictionary() {
   document.getElementById('ft-year').textContent = new Date().getFullYear();
-
   const urlParams = new URLSearchParams(window.location.search);
   const queryKw = urlParams.get('kw');
-  if (queryKw) {
-    document.getElementById('kw').value = decodeURIComponent(queryKw);
-  }
+  if (queryKw) document.getElementById('kw').value = decodeURIComponent(queryKw);
 
   const levels = ['n5', 'n4', 'n3', 'n2', 'n1']; 
   const fetches = levels.map(async lv => {
@@ -168,8 +167,7 @@ async function initDictionary() {
 
   const results = await Promise.all(fetches);
   allVocab = results.flat();
-  document.getElementById('status').innerText = `${allVocab.length} words loaded.`;
-
+  document.getElementById('status').innerText = `${allVocab.length.toLocaleString()} words loaded.`;
   performSearch();
 }
 
@@ -190,26 +188,34 @@ function performSearch() {
 
 function render(data) {
   const listEl = document.getElementById('list');
-  listEl.innerHTML = data.length ? '' : '<p style="text-align:center; padding:50px; color:var(--muted); font-weight:700;">No matches found.</p>';
+  listEl.innerHTML = data.length ? '' : '<p style="text-align:center; padding:50px; color:var(--muted); font-weight:800;">No matches found.</p>';
   
-  data.slice(0, 20).forEach(item => {
+  data.slice(0, 30).forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
 
-    const audioPath = `/assets/audio/${item.audio}`;
-    const inquirySubject = encodeURIComponent(`音声依頼（${item.ja}）`);
-    const inquiryUrl = `/inquiry/index.html?subject=${inquirySubject}`;
+    const mainAudio = `/assets/audio/${item.audio}`;
+    const inquiryUrl = `/inquiry/index.html?subject=${encodeURIComponent('音声依頼（' + item.ja + '）')}`;
 
-    // 例文の構築
+    // 例文セクションの構築
     let exHtml = "";
     if (item.examples && item.examples.length > 0) {
-      const exItems = item.examples.map(ex => `
-        <div class="ex-item">
-          <span class="ex-ja">${ex.ja}</span>
-          <span class="ex-kana">${ex.kana || ''}</span>
-          <span class="ex-en">${ex.en}</span>
-        </div>
-      `).join('');
+      const exItems = item.examples.map(ex => {
+        const exAudio = `/assets/audio/${ex.audio}`;
+        return `
+          <div class="ex-item">
+            <div class="ex-ja-row">
+              <span class="ex-ja">${ex.ja}</span>
+              <button onclick="playAudio('${exAudio}', '${inquiryUrl}')" class="audio-btn" style="font-size:16px;">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+            <span class="ex-kana-ro">${ex.kana} / <span style="font-style:italic;">${ex.ro}</span></span>
+            <span class="ex-en">${ex.en}</span>
+          </div>
+        `;
+      }).join('');
+      
       exHtml = `
         <details class="example-details">
           <summary><i class="fa-solid fa-circle-chevron-right"></i> Example Sentences</summary>
@@ -219,17 +225,17 @@ function render(data) {
     }
 
     card.innerHTML = `
-      <div class="tag-row">
-        <div class="tags">
+      <div class="card-head">
+        <div class="tag-group">
           <span class="tag lvl-tag">${item.level}</span>
           <span class="tag">${item.pos}</span>
         </div>
-        <button onclick="playAudio('${audioPath}', '${inquiryUrl}')" class="audio-btn">
+        <button onclick="playAudio('${mainAudio}', '${inquiryUrl}')" class="audio-btn">
           <i class="fa-solid fa-volume-high"></i>
         </button>
       </div>
       <span class="ja">${item.ja}</span>
-      <span class="kana">${item.kana || ''}</span>
+      <span class="kana-ro">${item.kana} / <span style="font-style:italic; font-weight:normal;">${item.ro}</span></span>
       <span class="en">${item.en}</span>
       ${exHtml}
     `;
@@ -240,7 +246,7 @@ function render(data) {
 function playAudio(path, fallbackUrl) {
   const audio = new Audio(path);
   audio.play().catch(() => {
-    if(confirm("Audio file not found. Would you like to request audio for this word?")) {
+    if(confirm("Audio file not found. Would you like to request audio?")) {
       window.location.href = fallbackUrl;
     }
   });
@@ -255,7 +261,6 @@ document.getElementById('posChips').addEventListener('click', e => {
 });
 
 document.getElementById('kw').addEventListener('input', performSearch);
-
 initDictionary();
 </script>
 </body>
