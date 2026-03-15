@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Vocabulary Quiz - nihongotext.com</title>
+<title>Advanced Vocabulary Quiz - nihongotext.com</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QSHWJE0HZ"></script>
 <script>
@@ -28,13 +28,16 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
 .nav-links a:hover { color:var(--shu) }
-.sns-nav a { color:var(--muted); font-size:18px; text-decoration:none; transition:0.2s }
-.sns-nav a:hover { color:var(--shu) }
+
+/* --- Progress Indicator (Top Right) --- */
+.progress-badge { 
+  position: absolute; top: 10px; right: 10px; background: var(--ink); color: #fff; 
+  padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; 
+}
 
 /* --- Hero Section --- */
 .hero-section { background: var(--shu-tint); padding: 50px 0; border-radius: 0 0 40px 40px; }
 .hero-section h1 { color: var(--shu); font-size: 32px; font-weight: 800; margin: 0 0 10px; }
-.hero-section p { color: var(--muted); margin: 0; font-weight: 500; }
 
 /* --- Quiz UI --- */
 .quiz-main { padding: 50px 0; min-height: 50vh; text-align: left; }
@@ -47,277 +50,271 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 
 .form-group { margin-bottom: 20px; text-align: left; }
 label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--muted); text-transform: uppercase; }
-select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 16px; background: #fff; }
+select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 16px; }
 
 .btn {
-  background: var(--shu); color: #fff; border: none; padding: 16px; 
-  border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; transition: 0.2s;
-  display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none;
+  background: var(--shu); color: #fff; border: none; padding: 14px; 
+  border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; 
+  display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; transition: 0.2s;
 }
-.btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn:hover { opacity: 0.9; }
 
-.options { display: grid; gap: 12px; margin-top: 20px; }
-.opt-btn {
-  background: #fff; border: 1px solid var(--line); padding: 15px; border-radius: 8px;
-  text-align: left; font-size: 16px; font-weight: 600; cursor: pointer; transition: 0.2s;
+.options { display: grid; gap: 10px; margin-top: 20px; }
+.opt-btn { background: #fff; border: 1px solid var(--line); padding: 15px; border-radius: 8px; text-align: left; cursor: pointer; font-weight: 600; }
+.opt-btn.correct { background: #d1fae5; border-color: #10b981; }
+.opt-btn.wrong { background: #fee2e2; border-color: #ef4444; }
+
+.res-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; font-size: 14px; }
+.res-table td { padding: 10px; border-bottom: 1px solid var(--line); }
+
+/* --- PDF/Print Style --- */
+@media print {
+  body * { visibility: hidden; }
+  #printArea, #printArea * { visibility: visible; }
+  #printArea { position: absolute; left: 0; top: 0; width: 100%; text-align: left; }
 }
-.opt-btn:hover { border-color: var(--shu); background: var(--shu-tint); }
-.opt-btn.correct { background: #d1fae5; border-color: #10b981; color: #065f46; }
-.opt-btn.wrong { background: #fee2e2; border-color: #ef4444; color: #991b1b; }
 
-.display-mode { margin-top: 25px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-.radio-label { font-size: 13px; color: var(--muted); cursor: pointer; display: flex; align-items: center; gap: 4px; font-weight: 700; }
-
-/* --- Result View --- */
-.score-circle { 
-  width: 100px; height: 100px; border-radius: 50%; background: var(--shu); color: #fff; 
-  display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto 20px;
-}
-.score-circle .num { font-size: 32px; font-weight: 900; }
-.res-table { width: 100%; border-collapse: collapse; margin: 30px 0; text-align: left; font-size: 14px; }
-.res-table td { padding: 12px; border-bottom: 1px solid var(--line); }
-
-.sns-group { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
-.btn-x { background: #1f2937; }
-.btn-reddit { background: #ff4500; }
-.btn-email { background: var(--muted); }
-.btn-substack { background: #ff6719; }
-
-/* --- Site Footer --- */
-.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
-.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
-.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
-.footer-nav{ display:flex; gap:20px; flex-wrap:wrap; justify-content:center }
-.footer-nav a{ color:var(--ink); text-decoration:none; font-size:14px; font-weight:700 }
-.footer-nav a:hover{ color:var(--shu) }
-.footer-icons{ display:flex; gap:15px }
-.footer-icons a{ color:var(--muted); font-size:20px; transition:0.2s }
-.footer-icons a:hover{ color:var(--shu) }
+.sns-group { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+.btn-outline { background: #fff; color: var(--ink); border: 1px solid var(--line); }
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a href="/" class="logo-link">
-      <span class="logo-text">nihongotext</span><span style="font-weight:800;font-size:32px;color:#333;">.com</span>
-    </a>
-    <div class="beta-text">== beta version ==</div>
+    <a href="/" class="logo-link"><span class="logo-text">nihongotext</span><span style="color:#333;">.com</span></a>
     <nav class="nav-links">
       <a href="/">Home</a>
-      <a href="/content/dictionary.html">Vocabulary Tool</a>
+      <a href="/content/dictionary.html">Vocabulary</a>
       <a href="/quiz/index.html" style="color:var(--shu);">Quiz</a>
-      <a href="/blog/index.html">Blog</a>
       <a href="/inquiry/index.html">Inquiry</a>
-    </nav>
-    <nav class="sns-nav">
-      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
     </nav>
   </div>
 </header>
 
 <div class="hero-section">
-  <div class="wrap">
+  <div class="wrap" style="position:relative;">
+    <div class="progress-badge" id="lvProgress">Progress: --/--</div>
     <h1>Vocabulary Quiz</h1>
-    <p>Test your Japanese knowledge. Japanese Word → English Meaning.</p>
+    <p>Practice words you haven't mastered yet.</p>
   </div>
 </div>
 
 <main class="wrap quiz-main">
   <div class="quiz-container">
+    
     <div id="setupView">
       <div class="form-group">
         <label>JLPT Level</label>
-        <select id="lv">
+        <select id="lv" onchange="updateProgressDisplay()">
           <option value="n5">N5 (Beginner)</option>
           <option value="n4">N4</option>
           <option value="n3">N3</option>
           <option value="n2">N2</option>
-          <option value="n1">N1 (Advanced)</option>
+          <option value="n1">N1</option>
         </select>
       </div>
       <div class="form-group">
         <label>Category</label>
         <select id="cat">
-          <option value="noun">Noun (名詞)</option>
-          <option value="verb">Verb (動詞)</option>
-          <option value="adjective-i">Adj-i (い形容詞)</option>
-          <option value="adjective-na">Adj-na (な形容詞)</option>
+          <option value="noun">Noun</option>
+          <option value="verb">Verb</option>
+          <option value="adjective-i">Adj-i</option>
+          <option value="adjective-na">Adj-na</option>
         </select>
       </div>
-      <button class="btn" onclick="startQuiz()">Start Quiz</button>
+      <div class="form-group">
+        <label>Number of Questions</label>
+        <select id="qCount">
+          <option value="3">3 Questions</option>
+          <option value="5" selected>5 Questions</option>
+          <option value="10">10 Questions</option>
+        </select>
+      </div>
+      <button class="btn" onclick="startQuiz()"><i class="fa-solid fa-play"></i> Start Quiz</button>
     </div>
 
     <div id="quizView" style="display:none">
-      <div class="progress" id="progress">Question 1 / 5</div>
       <div class="q-card">
-        <div id="qText" style="font-size:28px; font-weight:800; margin-bottom:15px;"></div>
+        <div id="progress" style="font-size:13px; color:var(--muted); font-weight:700; margin-bottom:10px;"></div>
+        <div id="qText" style="font-size:28px; font-weight:800; margin-bottom:20px;"></div>
         <div id="options" class="options"></div>
         <button id="nextBtn" class="btn" style="display:none; margin-top:20px;" onclick="handleNext()">Next Question</button>
       </div>
-
-      <div class="display-mode">
-        <label class="radio-label"><input type="radio" name="mode" value="kanji" checked onchange="refreshQuestion()"> Kanji</label>
-        <label class="radio-label"><input type="radio" name="mode" value="kana" onchange="refreshQuestion()"> Kana</label>
-        <label class="radio-label"><input type="radio" name="mode" value="both" onchange="refreshQuestion()"> Both</label>
+      <div style="margin-top:20px; display:flex; justify-content:center; gap:15px; font-size:13px; font-weight:700; color:var(--muted);">
+        <label><input type="radio" name="mode" value="kanji" checked onchange="refreshQuestion()"> Kanji</label>
+        <label><input type="radio" name="mode" value="kana" onchange="refreshQuestion()"> Kana</label>
+        <label><input type="radio" name="mode" value="both" onchange="refreshQuestion()"> Both</label>
       </div>
     </div>
 
     <div id="resultView" style="display:none">
-      <div class="score-circle">
-        <div class="num" id="scoreNum">0</div>
-        <div style="font-size:12px">Score</div>
-      </div>
+      <div class="score-circle"><div class="num" id="scoreNum">0</div><div style="font-size:11px;">Score</div></div>
       <h3>Quiz Results</h3>
+      <p style="font-size:13px; color:var(--muted);">Check the words you have learned to exclude them from next time.</p>
       
       <table class="res-table">
         <tbody id="resList"></tbody>
       </table>
       
       <div class="sns-group">
-        <a class="btn btn-x" id="shareX" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Share Score</a>
-        <a class="btn btn-reddit" id="shareReddit" href="#" target="_blank"><i class="fa-brands fa-reddit-alien"></i> Post to Reddit</a>
-        <a class="btn btn-email" id="shareEmail" href="#"><i class="fa-solid fa-envelope"></i> Email Details to Myself</a>
-        <a class="btn btn-substack" href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i> Subscribe to Substack</a>
-        <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px">Try Again</button>
+        <a class="btn" id="shareEmail" href="#"><i class="fa-solid fa-envelope"></i> Email Results to Myself</a>
+        <button class="btn btn-outline" onclick="printCheckedList()"><i class="fa-solid fa-file-pdf"></i> Export Learned List (PDF)</button>
+        <a class="btn" style="background:#ff6719;" href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i> Subscribe Substack</a>
+        <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px;">Try Again</button>
       </div>
     </div>
+
   </div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
-    <nav class="footer-nav">
-      <a href="/">Home</a>
-      <a href="/inquiry/index.html">Inquiry</a>
-      <a href="/legal.html">Legal</a>
-      <a href="/privacy.html">Privacy</a>
-    </nav>
-    <nav class="footer-icons">
-      <a href="https://x.com/nihongotext_com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.reddit.com/user/nihongotext_com/" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a>
-      <a href="https://medium.com/@nihongotext.com" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
-      <a href="https://ko-fi.com/nihongotext" target="_blank" rel="noopener"><i class="fa-solid fa-mug-hot"></i></a>
-      <a href="https://substack.com/@nihongotextcom" target="_blank" rel="noopener"><i class="fa-solid fa-newspaper"></i></a>
-    </nav>
-  </div>
-</footer>
+<div id="printArea" style="display:none; padding:40px;">
+  <h1 style="color:#e6462d;">Mastered Words List</h1>
+  <p>Source: nihongotext.com</p>
+  <table border="1" style="width:100%; border-collapse: collapse; margin-top:20px;">
+    <thead><tr><th style="padding:10px;">Japanese</th><th style="padding:10px;">Reading</th><th style="padding:10px;">Meaning</th></tr></thead>
+    <tbody id="printBody"></tbody>
+  </table>
+</div>
 
 <script>
+let allData = [];
 let quizItems = [];
 let currentIndex = 0;
 let score = 0;
 
-async function startQuiz() {
+// Get checked words from localStorage
+function getCheckedIds() {
+  return JSON.parse(localStorage.getItem('nt_checked_ids') || '[]');
+}
+
+// Toggle learned status
+function toggleLearned(wordId) {
+  let ids = getCheckedIds();
+  if (ids.includes(wordId)) ids = ids.filter(id => id !== wordId);
+  else ids.push(wordId);
+  localStorage.setItem('nt_checked_ids', JSON.stringify(ids));
+  updateProgressDisplay();
+}
+
+// Update the Progress UI (Top Right)
+async function updateProgressDisplay() {
   const lv = document.getElementById('lv').value;
-  const cat = document.getElementById('cat').value;
-  
   try {
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     const data = await res.json();
-    const filtered = data.filter(item => item.pos === cat);
+    const checkedIds = getCheckedIds();
+    const count = data.filter(item => !checkedIds.includes(item.id)).length;
+    document.getElementById('lvProgress').innerText = `Unchecked: ${count} / ${data.length}`;
+  } catch(e) {}
+}
+
+async function startQuiz() {
+  const lv = document.getElementById('lv').value;
+  const cat = document.getElementById('cat').value;
+  const qLimit = parseInt(document.getElementById('qCount').value);
+  const checkedIds = getCheckedIds();
+
+  try {
+    const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
+    const data = await res.json();
     
-    if (filtered.length < 4) {
-      alert("Not enough words. Try another level!");
+    // Filter: POS match AND NOT checked
+    const available = data.filter(item => item.pos === cat && !checkedIds.includes(item.id));
+    
+    if (available.length < qLimit) {
+      alert("Not enough unchecked words in this category! Reset progress or choose another.");
       return;
     }
 
-    quizItems = filtered.sort(() => 0.5 - Math.random()).slice(0, 5).map(item => {
-      // Wrong options are taken from other English meanings
-      const others = filtered.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
-      return {
-        item: item,
-        options: [...others, item].sort(() => 0.5 - Math.random()),
-        userCorrect: false
-      };
+    quizItems = available.sort(() => 0.5 - Math.random()).slice(0, qLimit).map(item => {
+      const others = data.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
+      return { item, options: [...others, item].sort(() => 0.5 - Math.random()), userCorrect: false };
     });
 
     document.getElementById('setupView').style.display = 'none';
     document.getElementById('quizView').style.display = 'block';
     renderQuestion();
-  } catch(e) { alert("Error loading quiz data."); }
+  } catch(e) { alert("Data error."); }
 }
 
 function renderQuestion() {
   const q = quizItems[currentIndex];
   const mode = document.querySelector('input[name="mode"]:checked').value;
+  document.getElementById('progress').innerText = `Question ${currentIndex + 1} / ${quizItems.length}`;
   
-  document.getElementById('progress').innerText = `Question ${currentIndex + 1} / 5`;
-  
-  // Set question text based on radio button
   const qBox = document.getElementById('qText');
-  if (mode === 'kana') qBox.innerText = q.item.kana || q.item.ja;
-  else if (mode === 'both') qBox.innerHTML = `${q.item.ja} <small style="display:block; font-size:16px; color:var(--muted); font-weight:normal;">(${q.item.kana})</small>`;
+  if (mode === 'kana') qBox.innerText = q.item.kana;
+  else if (mode === 'both') qBox.innerHTML = `${q.item.ja} <small style="display:block; font-size:16px; color:var(--muted);">(${q.item.kana})</small>`;
   else qBox.innerText = q.item.ja;
 
-  document.getElementById('nextBtn').style.display = 'none';
   const optBox = document.getElementById('options');
   optBox.innerHTML = '';
-  
+  document.getElementById('nextBtn').style.display = 'none';
+
   q.options.forEach(opt => {
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
-    btn.innerText = opt.en; // Options are English meanings
-
+    btn.innerText = opt.en;
     btn.onclick = () => {
-      const btns = optBox.querySelectorAll('.opt-btn');
-      btns.forEach(b => b.disabled = true);
-      if (opt.en === q.item.en) {
-        btn.classList.add('correct');
-        score++;
-        q.userCorrect = true;
-      } else {
-        btn.classList.add('wrong');
-        btns.forEach(b => { if(b.innerText === q.item.en) b.classList.add('correct'); });
-      }
+      document.querySelectorAll('.opt-btn').forEach(b => b.disabled = true);
+      if (opt.ja === q.item.ja) { btn.classList.add('correct'); score++; q.userCorrect = true; }
+      else { btn.classList.add('wrong'); }
       document.getElementById('nextBtn').style.display = 'block';
     };
     optBox.appendChild(btn);
   });
 }
 
-function refreshQuestion() { if (quizItems.length > 0) renderQuestion(); }
-
-function handleNext() {
-  currentIndex++;
-  if (currentIndex < 5) renderQuestion();
-  else showResults();
-}
+function refreshQuestion() { if(quizItems.length) renderQuestion(); }
+function handleNext() { currentIndex++; if(currentIndex < quizItems.length) renderQuestion(); else showResults(); }
 
 function showResults() {
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'block';
-  document.getElementById('scoreNum').innerText = `${score}/5`;
+  document.getElementById('scoreNum').innerText = `${score}/${quizItems.length}`;
 
   const list = document.getElementById('resList');
-  let emailBody = `My Japanese Quiz Results: ${score}/5\n\nDetails:\n`;
+  const checkedIds = getCheckedIds();
+  let emailText = `Quiz Results: ${score}/${quizItems.length}\n\n`;
 
-  quizItems.forEach((q, i) => {
-    const isOk = q.userCorrect;
+  quizItems.forEach(q => {
+    const isChecked = checkedIds.includes(q.item.id);
     const row = document.createElement('tr');
-    row.innerHTML = `<td style="font-weight:bold; color:${isOk ? '#10b981':'#ef4444'}">${isOk ? '✓' : '✗'}</td>
-      <td><strong>${q.item.ja} (${q.item.kana})</strong><br>Answer: ${q.item.en}</td>`;
+    row.innerHTML = `
+      <td><input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleLearned('${q.item.id}')"></td>
+      <td style="color:${q.userCorrect ? '#10b981':'#ef4444'}"><strong>${q.item.ja}</strong></td>
+      <td>${q.item.en}</td>
+    `;
     list.appendChild(row);
-
-    emailBody += `Q${i+1}: ${q.item.ja} -> Answer: ${q.item.en} (${isOk ? 'Correct' : 'Wrong'})\n`;
+    emailText += `${q.userCorrect ? '✓':'✗'} ${q.item.ja} - ${q.item.en}\n`;
   });
 
-  // Sharing Links
-  const url = window.location.href;
-  const summary = `I scored ${score}/5 on nihongotext.com quiz!`;
-  document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(summary)}&url=${encodeURIComponent(url)}`;
-  document.getElementById('shareReddit').href = `https://www.reddit.com/submit?title=${encodeURIComponent(summary)}&url=${encodeURIComponent(url)}`;
-  document.getElementById('shareEmail').href = `mailto:?subject=Japanese Quiz Results&body=${encodeURIComponent(emailBody + "\nTry it here: " + url)}`;
+  document.getElementById('shareEmail').href = `mailto:?subject=Japanese Quiz Score&body=${encodeURIComponent(emailText)}`;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('ft-year').textContent = new Date().getFullYear();
-});
+// PDF Export Function
+async function printCheckedList() {
+  const levels = ['n5','n4','n3','n2','n1'];
+  const checkedIds = getCheckedIds();
+  const printBody = document.getElementById('printBody');
+  printBody.innerHTML = '';
+
+  for (let lv of levels) {
+    try {
+      const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
+      const data = await res.json();
+      data.filter(item => checkedIds.includes(item.id)).forEach(item => {
+        printBody.innerHTML += `<tr><td style="padding:10px;">${item.ja}</td><td style="padding:10px;">${item.kana}</td><td style="padding:10px;">${item.en}</td></tr>`;
+      });
+    } catch(e) {}
+  }
+  
+  if (!printBody.innerHTML) return alert("No words checked yet!");
+  window.print();
+}
+
+document.addEventListener('DOMContentLoaded', updateProgressDisplay);
 </script>
 </body>
 </html>
