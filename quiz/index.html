@@ -28,7 +28,7 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
 .nav-links a:hover { color:var(--shu) }
 
-/* --- Progress Badge --- */
+/* --- Progress Badge (Top Right) --- */
 .progress-badge { 
   position: absolute; top: 10px; right: 10px; background: var(--ink); color: #fff; 
   padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; 
@@ -49,6 +49,11 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--muted); text-transform: uppercase; }
 select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 16px; }
 
+/* Display Styles for Remaining Count in Setup */
+.remaining-setup { 
+  font-weight: 800; font-size: 15px; color: var(--ink); margin-bottom: 15px; text-align: center;
+}
+
 .btn {
   background: var(--shu); color: #fff; border: none; padding: 14px; 
   border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; 
@@ -63,20 +68,14 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 .res-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; font-size: 14px; }
 .res-table td { padding: 10px; border-bottom: 1px solid var(--line); }
 
-/* --- Small SNS Buttons --- */
 .small-sns-row { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
-.btn-small { 
-  padding: 8px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; 
-  text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 5px;
-}
+.btn-small { padding: 8px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 5px; }
 .btn-x { background: #000; }
 .btn-reddit { background: #ff4500; }
 
-/* --- Footer --- */
 .site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
 .footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
 
-/* --- PDF Print Mode --- */
 @media print {
   body > *:not(#printArea) { display: none !important; }
   #printArea { display: block !important; position: static; width: 100%; text-align: left; }
@@ -109,18 +108,33 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
   <div class="quiz-container">
     
     <div id="setupView">
+      <div id="lvProgressSetup" class="remaining-setup"></div>
+
       <div class="form-group">
         <label>JLPT Level</label>
-        <select id="lv" onchange="updateProgressDisplay()"><option value="n5">N5</option><option value="n4">N4</option><option value="n3">N3</option><option value="n2">N2</option><option value="n1">N1</option></select>
+        <select id="lv" onchange="updateProgressDisplay()">
+          <option value="n5">N5 (Beginner)</option>
+          <option value="n4">N4</option>
+          <option value="n3">N3</option>
+          <option value="n2">N2</option>
+          <option value="n1">N1</option>
+        </select>
       </div>
       <div class="form-group">
         <label>Category</label>
-        <select id="cat"><option value="noun">Noun</option><option value="verb">Verb</option><option value="adjective-i">Adj-i</option><option value="adjective-na">Adj-na</option></select>
+        <select id="cat">
+          <option value="noun">Noun</option>
+          <option value="verb">Verb</option>
+          <option value="adjective-i">Adj-i</option>
+          <option value="adjective-na">Adj-na</option>
+        </select>
       </div>
       <div class="form-group">
         <label>Questions</label>
         <select id="qCount"><option value="3">3</option><option value="5" selected>5</option><option value="10">10</option></select>
       </div>
+
+      <div id="lvProgressButton" class="remaining-setup"></div>
       <button class="btn" onclick="startQuiz()"><i class="fa-solid fa-play"></i> Start Quiz</button>
     </div>
 
@@ -184,13 +198,22 @@ function toggleLearned(wordId) {
 }
 
 async function updateProgressDisplay() {
-  const lv = document.getElementById('lv').value;
+  const lvSelect = document.getElementById('lv');
+  const lv = lvSelect.value;
+  const lvName = lvSelect.options[lvSelect.selectedIndex].text.split(' ')[0]; // "N5", "N4" etc.
+  
   try {
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     const data = await res.json();
     const checkedIds = getCheckedIds();
     const remain = data.filter(item => !checkedIds.includes(item.id)).length;
-    document.getElementById('lvProgress').innerText = `Remaining: ${remain} / ${data.length}`;
+    
+    const progressText = `Remaining(${lvName}): ${remain} / ${data.length}`;
+
+    // Update all 3 locations
+    document.getElementById('lvProgress').innerText = progressText;
+    document.getElementById('lvProgressSetup').innerText = progressText;
+    document.getElementById('lvProgressButton').innerText = progressText;
   } catch(e) {}
 }
 
