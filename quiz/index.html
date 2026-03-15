@@ -24,7 +24,6 @@ body{ margin:0; background:#fff; color:var(--ink); font:16px/1.65 system-ui,-app
 .site-header-inner{ display:flex; flex-direction:column; align-items:center; gap:12px }
 .logo-link{ text-decoration:none; display:flex; align-items:center; gap:2px; }
 .logo-text{ font-weight:900; font-size:32px; color:var(--shu) }
-.beta-text{ font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; margin-top:-5px }
 .nav-links, .sns-nav { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:5px }
 .nav-links a { color:var(--ink); font-weight:700; text-decoration:none; font-size:14px; transition:0.2s }
 .nav-links a:hover { color:var(--shu) }
@@ -67,15 +66,19 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 .res-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; font-size: 14px; }
 .res-table td { padding: 10px; border-bottom: 1px solid var(--line); }
 
-/* --- PDF/Print Style --- */
-@media print {
-  body * { visibility: hidden; }
-  #printArea, #printArea * { visibility: visible; }
-  #printArea { position: absolute; left: 0; top: 0; width: 100%; text-align: left; }
-}
-
 .sns-group { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
 .btn-outline { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+
+/* --- Site Footer --- */
+.site-footer{ border-top:1px solid var(--line); padding:50px 0; background:#fff; margin-top:80px; text-align: center; }
+.footer-inner{ display:flex; flex-direction:column; align-items:center; gap:20px }
+.footer-copy{ font-size:14px; color:var(--muted); font-weight:600 }
+
+/* --- PDF/Print Style --- */
+@media print {
+  body > *:not(#printArea) { display: none !important; }
+  #printArea { display: block !important; position: static; width: 100%; text-align: left; }
+}
 </style>
 </head>
 <body>
@@ -151,7 +154,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
     <div id="resultView" style="display:none">
       <div class="score-circle"><div class="num" id="scoreNum">0</div><div style="font-size:11px;">Score</div></div>
       <h3>Quiz Results</h3>
-      <p style="font-size:13px; color:var(--muted);">Check the words you have learned to exclude them from next time.</p>
+      <p style="font-size:13px; color:var(--muted);">Check words to exclude them from future quizzes.</p>
       
       <table class="res-table">
         <tbody id="resList"></tbody>
@@ -160,7 +163,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
       <div class="sns-group">
         <a class="btn" id="shareEmail" href="#"><i class="fa-solid fa-envelope"></i> Email Results to Myself</a>
         <button class="btn btn-outline" onclick="printCheckedList()"><i class="fa-solid fa-file-pdf"></i> Export Learned List (PDF)</button>
-        <a class="btn" style="background:#ff6719;" href="https://substack.com/@nihongotextcom" target="_blank"><i class="fa-solid fa-newspaper"></i> Subscribe Substack</a>
+        <a class="btn" style="background:#ff6719;" href="https://nihongotextcom.substack.com/subscribe" target="_blank"><i class="fa-solid fa-newspaper"></i> Subscribe to Newsletter</a>
         <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px;">Try Again</button>
       </div>
     </div>
@@ -169,26 +172,27 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 </main>
 
 <div id="printArea" style="display:none; padding:40px;">
-  <h1 style="color:#e6462d;">Mastered Words List</h1>
+  <h1 style="color:#e6462d;">Mastered Japanese Words</h1>
   <p>Source: nihongotext.com</p>
-  <table border="1" style="width:100%; border-collapse: collapse; margin-top:20px;">
-    <thead><tr><th style="padding:10px;">Japanese</th><th style="padding:10px;">Reading</th><th style="padding:10px;">Meaning</th></tr></thead>
+  <table border="1" style="width:100%; border-collapse: collapse; margin-top:20px; text-align: left;">
+    <thead><tr style="background:#f9fafb;"><th style="padding:10px;">Japanese</th><th style="padding:10px;">Reading</th><th style="padding:10px;">Meaning</th></tr></thead>
     <tbody id="printBody"></tbody>
   </table>
 </div>
 
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-copy">© <span id="ft-year"></span> nihongotext.com</div>
+  </div>
+</footer>
+
 <script>
-let allData = [];
 let quizItems = [];
 let currentIndex = 0;
 let score = 0;
 
-// Get checked words from localStorage
-function getCheckedIds() {
-  return JSON.parse(localStorage.getItem('nt_checked_ids') || '[]');
-}
+function getCheckedIds() { return JSON.parse(localStorage.getItem('nt_checked_ids') || '[]'); }
 
-// Toggle learned status
 function toggleLearned(wordId) {
   let ids = getCheckedIds();
   if (ids.includes(wordId)) ids = ids.filter(id => id !== wordId);
@@ -197,15 +201,14 @@ function toggleLearned(wordId) {
   updateProgressDisplay();
 }
 
-// Update the Progress UI (Top Right)
 async function updateProgressDisplay() {
   const lv = document.getElementById('lv').value;
   try {
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     const data = await res.json();
     const checkedIds = getCheckedIds();
-    const count = data.filter(item => !checkedIds.includes(item.id)).length;
-    document.getElementById('lvProgress').innerText = `Unchecked: ${count} / ${data.length}`;
+    const remain = data.filter(item => !checkedIds.includes(item.id)).length;
+    document.getElementById('lvProgress').innerText = `Remaining: ${remain} / ${data.length}`;
   } catch(e) {}
 }
 
@@ -218,12 +221,10 @@ async function startQuiz() {
   try {
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
     const data = await res.json();
-    
-    // Filter: POS match AND NOT checked
     const available = data.filter(item => item.pos === cat && !checkedIds.includes(item.id));
     
     if (available.length < qLimit) {
-      alert("Not enough unchecked words in this category! Reset progress or choose another.");
+      alert("Not enough unchecked words! Try another category or level.");
       return;
     }
 
@@ -242,8 +243,8 @@ function renderQuestion() {
   const q = quizItems[currentIndex];
   const mode = document.querySelector('input[name="mode"]:checked').value;
   document.getElementById('progress').innerText = `Question ${currentIndex + 1} / ${quizItems.length}`;
-  
   const qBox = document.getElementById('qText');
+
   if (mode === 'kana') qBox.innerText = q.item.kana;
   else if (mode === 'both') qBox.innerHTML = `${q.item.ja} <small style="display:block; font-size:16px; color:var(--muted);">(${q.item.kana})</small>`;
   else qBox.innerText = q.item.ja;
@@ -276,9 +277,9 @@ function showResults() {
 
   const list = document.getElementById('resList');
   const checkedIds = getCheckedIds();
-  let emailText = `Quiz Results: ${score}/${quizItems.length}\n\n`;
+  let emailDetails = "";
 
-  quizItems.forEach(q => {
+  quizItems.forEach((q, i) => {
     const isChecked = checkedIds.includes(q.item.id);
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -287,34 +288,37 @@ function showResults() {
       <td>${q.item.en}</td>
     `;
     list.appendChild(row);
-    emailText += `${q.userCorrect ? '✓':'✗'} ${q.item.ja} - ${q.item.en}\n`;
+    emailDetails += `Q${i+1}: ${q.item.ja} (${q.item.kana}) -> ${q.item.en} [${q.userCorrect ? 'CORRECT' : 'WRONG'}]\n`;
   });
 
-  document.getElementById('shareEmail').href = `mailto:?subject=Japanese Quiz Score&body=${encodeURIComponent(emailText)}`;
+  // Mailto Link with extra info
+  const quizUrl = window.location.href;
+  const substackUrl = "https://nihongotextcom.substack.com/subscribe";
+  const body = `My Quiz Score: ${score}/${quizItems.length}\n\n${emailDetails}\n\nContinue Learning:\n${quizUrl}\n\nSubscribe for updates:\n${substackUrl}`;
+  document.getElementById('shareEmail').href = `mailto:?subject=My Japanese Quiz Results&body=${encodeURIComponent(body)}`;
 }
 
-// PDF Export Function
 async function printCheckedList() {
   const levels = ['n5','n4','n3','n2','n1'];
   const checkedIds = getCheckedIds();
   const printBody = document.getElementById('printBody');
   printBody.innerHTML = '';
 
-  for (let lv of levels) {
-    try {
-      const res = await fetch(`/data/json/${lv}_master_cleaned.json`);
-      const data = await res.json();
-      data.filter(item => checkedIds.includes(item.id)).forEach(item => {
-        printBody.innerHTML += `<tr><td style="padding:10px;">${item.ja}</td><td style="padding:10px;">${item.kana}</td><td style="padding:10px;">${item.en}</td></tr>`;
-      });
-    } catch(e) {}
-  }
+  const fetches = levels.map(lv => fetch(`/data/json/${lv}_master_cleaned.json`).then(r => r.json()));
+  const allData = await Promise.all(fetches);
   
-  if (!printBody.innerHTML) return alert("No words checked yet!");
+  allData.flat().filter(item => checkedIds.includes(item.id)).forEach(item => {
+    printBody.innerHTML += `<tr><td style="padding:10px;">${item.ja}</td><td style="padding:10px;">${item.kana}</td><td style="padding:10px;">${item.en}</td></tr>`;
+  });
+
+  if (!printBody.innerHTML) return alert("Please check some learned words first!");
   window.print();
 }
 
-document.addEventListener('DOMContentLoaded', updateProgressDisplay);
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('ft-year').textContent = new Date().getFullYear();
+  updateProgressDisplay();
+});
 </script>
 </body>
 </html>
