@@ -118,6 +118,16 @@
     "summary_ja": "本日、JLPT N5およびN4レベルの辞書データを大幅に更新しました！N4の重要語彙を網羅（約620語）しただけでなく、N5を含むすべての例文に「ひらがな」と「ローマ字」の読みを追加。初心者の方でも、漢字の読み方を気にせずスムーズに学習を進められるようになりました。さらに、文法的な使い分けが必要な項目も整理し、より実用的な内容になっています。",
     "summary_en": "We have released a major update for the JLPT N5 and N4 dictionary data! In addition to completing the N4 vocabulary (approx. 620 words), we have added furigana (hiragana) and romaji to every single example sentence in both N5 and N4. This makes it much easier for beginners to practice reading and pronunciation. We have also refined grammar entries to provide clearer distinctions for practical usage.",
     "tags": ["update", "N5", "N4", "dictionary"]
-  }
+},
+{
+  "slug": "major-update-all-levels-and-advanced-quiz-2026-03-15",
+  "date": "2026-03-15",
+  "title": "Major Update: N1-N5 Full Support & Advanced Quiz Features",
+  "title_ja": "大幅アップデート：全レベル（N1-N5）対応辞書と高機能クイズの導入",
+  "title_en": "Major Update: N1-N5 Full Support & Advanced Quiz Features",
+  "summary_ja": "辞書機能がJLPT全レベル（N1〜N5）に対応しました！さらにクイズ機能も進化し、出題数の選択や既習単語の除外、習得リストのPDF出力が可能に。音声がない単語への「音声リクエスト」ボタンも新設しています。",
+  "summary_en": "Our dictionary now covers all JLPT levels from N1 to N5! The quiz has also evolved with question count selection, mastery tracking (to exclude learned words), and PDF exports. We've also added an 'Audio Request' button for missing recordings.",
+  "tags": ["update", "feature", "dictionary", "quiz", "JLPT"]
+}
   
 ]
