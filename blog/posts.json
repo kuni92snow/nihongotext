@@ -128,6 +128,16 @@
   "summary_ja": "辞書機能がJLPT全レベル（N1〜N5）に対応しました！さらにクイズ機能も進化し、出題数の選択や既習単語の除外、習得リストのPDF出力が可能に。音声がない単語への「音声リクエスト」ボタンも新設しています。",
   "summary_en": "Our dictionary now covers all JLPT levels from N1 to N5! The quiz has also evolved with question count selection, mastery tracking (to exclude learned words), and PDF exports. We've also added an 'Audio Request' button for missing recordings.",
   "tags": ["update", "feature", "dictionary", "quiz", "JLPT"]
-}
+},
+{
+    "slug": "quiz-ui-and-print-enhancement",
+    "date": "2026-03-18",
+    "title": "Quiz UI and Print Feature Enhanced",
+    "title_ja": "クイズ画面のUI改善とプリント機能を強化しました",
+    "title_en": "Quiz UI and Print Feature Enhanced",
+    "summary_ja": "クイズにローマ字表示モードを追加し、出題数も最大20問まで選択可能になりました。結果画面には「全選択ボタン」や「TOPへ戻るボタン」を設置したほか、プリント用リストにID列を追加し、学習管理をより便利にしました。",
+    "summary_en": "Added Romaji display mode to the quiz and increased the maximum question count to 20. The results screen now features 'Select All' and 'Back to Top' buttons. Additionally, the print list now includes an ID column for better progress tracking.",
+    "tags": ["update", "feature", "quiz", "ui"]
+  }
   
 ]
