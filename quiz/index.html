@@ -62,8 +62,9 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
 .res-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; font-size: 14px; }
 .res-table td { padding: 10px; border-bottom: 1px solid var(--line); }
 
+/* --- 修正ポイント4: SNSボタンのサイズを同じにする --- */
 .small-sns-row { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
-.btn-small { padding: 8px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 5px; }
+.btn-small { flex: 1; padding: 12px; border-radius: 8px; font-size: 14px; font-weight: 700; text-decoration: none; color: #fff; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
 .btn-x { background: #000; }
 .btn-reddit { background: #ff4500; }
 
@@ -128,7 +129,13 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
       </div>
       <div class="form-group">
         <label>Questions</label>
-        <select id="qCount"><option value="3">3</option><option value="5" selected>5</option><option value="10">10</option></select>
+        <select id="qCount">
+          <option value="3">3</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
       </div>
       <div id="lvProgressButton" class="remaining-setup"></div>
       <button class="btn" onclick="startQuiz()"><i class="fa-solid fa-play"></i> Start Quiz</button>
@@ -141,9 +148,10 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
         <div id="options"></div>
         <button id="nextBtn" class="btn" style="display:none; margin-top:20px;" onclick="handleNext()">Next Question</button>
       </div>
-      <div style="margin-top:20px; display:flex; justify-content:center; gap:15px; font-size:13px; font-weight:700; color:var(--muted);">
+      <div style="margin-top:20px; display:flex; justify-content:center; gap:15px; font-size:13px; font-weight:700; color:var(--muted); flex-wrap:wrap;">
         <label><input type="radio" name="mode" value="kanji" checked onchange="refreshQuestion()"> Kanji</label>
         <label><input type="radio" name="mode" value="kana" onchange="refreshQuestion()"> Kana</label>
+        <label><input type="radio" name="mode" value="ro" onchange="refreshQuestion()"> Romaji</label>
         <label><input type="radio" name="mode" value="both" onchange="refreshQuestion()"> Both</label>
       </div>
     </div>
@@ -170,6 +178,8 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
           <a id="shareReddit" class="btn-small btn-reddit" href="#" target="_blank"><i class="fa-brands fa-reddit-alien"></i> Reddit</a>
         </div>
         <button class="btn" onclick="location.reload()" style="background:var(--ink); margin-top:10px;">Try Again</button>
+        
+        <a href="/" class="btn" style="background:var(--muted); margin-top:10px;">TOPへ戻る</a>
       </div>
     </div>
   </div>
@@ -209,12 +219,10 @@ function toggleLearned(wordId) {
   else ids.push(wordId);
   localStorage.setItem('nt_checked_ids', JSON.stringify(ids)); 
   
-  // 結果画面とセットアップ画面の両方の進捗表示を更新
   updateProgressDisplay();
   updateFinalProgress();
 }
 
-// セットアップ画面の進捗表示
 async function updateProgressDisplay() {
   const lvSelect = document.getElementById('lv'); 
   const lv = lvSelect.value;
@@ -229,7 +237,6 @@ async function updateProgressDisplay() {
   } catch(e) {}
 }
 
-// 結果画面専用の進捗表示
 async function updateFinalProgress() {
   const lv = document.getElementById('lv').value;
   const el = document.getElementById('finalProgressCount');
@@ -267,9 +274,13 @@ function renderQuestion() {
   const mode = document.querySelector('input[name="mode"]:checked').value;
   document.getElementById('progress').innerText = `Question ${currentIndex + 1} / ${quizItems.length}`;
   const qBox = document.getElementById('qText');
+  
+  // 修正ポイント1: JavaScriptで Romaji 表示に対応
   if (mode === 'kana') qBox.innerText = q.item.kana;
+  else if (mode === 'ro') qBox.innerText = q.item.ro;
   else if (mode === 'both') qBox.innerHTML = `${q.item.ja} <small style="display:block; font-size:16px; color:var(--muted);">(${q.item.kana})</small>`;
   else qBox.innerText = q.item.ja;
+
   const optBox = document.getElementById('options'); 
   optBox.innerHTML = ''; 
   document.getElementById('nextBtn').style.display = 'none';
@@ -296,7 +307,7 @@ function showResults() {
   document.getElementById('scoreNum').innerText = `${score}/${quizItems.length}`;
   
   const list = document.getElementById('resList'); 
-  list.innerHTML = ''; // リセット
+  list.innerHTML = '';
   let emailDetails = "";
   quizItems.forEach((q, i) => {
     const isChecked = getCheckedIds().includes(q.item.id); 
@@ -307,7 +318,7 @@ function showResults() {
     emailDetails += `Q${i+1}: ${q.item.ja} -> ${q.item.en} [${q.userCorrect ? '✓' : '✗'}]\n`;
   });
   
-  updateFinalProgress(); // 結果画面の進捗を更新
+  updateFinalProgress();
 
   const quizUrl = window.location.href; 
   const substackUrl = "https://nihongotextcom.substack.com/subscribe";
