@@ -126,6 +126,16 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
         <label>Category</label>
         <select id="cat"><option value="noun">Noun</option><option value="verb">Verb</option><option value="adjective-i">Adj-i</option><option value="adjective-na">Adj-na</option></select>
       </div>
+      
+      <div class="form-group">
+        <label>Word Filter</label>
+        <select id="filter">
+          <option value="unlearned" selected>Unlearned Only</option>
+          <option value="all">Include Learned (All)</option>
+          <option value="learned">Learned Only (Review)</option>
+        </select>
+      </div>
+
       <div class="form-group">
         <label>Questions</label>
         <select id="qCount">
@@ -161,7 +171,7 @@ select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radiu
       </div>
       <h3>Quiz Results</h3>
       
-      <p style="font-size:13px; color:var(--muted); margin-bottom:10px;">Check words you have learned to exclude them from future quizzes.</p>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:10px;">Check words you have learned to exclude them from future quizzes. Click the word to see details in Dictionary.</p>
       
       <button class="btn-small" style="background:var(--ink); width:auto; margin:0 auto 10px; display:block;" onclick="selectAllInResults()">
         <i class="fa-solid fa-check-double"></i> Mark all above as learned
@@ -225,14 +235,13 @@ function toggleLearned(wordId) {
   updateFinalProgress();
 }
 
-// 修正ポイント2: 全選択処理
 function selectAllInResults() {
   let ids = getCheckedIds();
   quizItems.forEach(q => {
     if (!ids.includes(q.item.id)) ids.push(q.item.id);
   });
   localStorage.setItem('nt_checked_ids', JSON.stringify(ids));
-  showResults(); // 再描画してチェック状態を更新
+  showResults(); 
 }
 
 async function updateProgressDisplay() {
@@ -265,16 +274,30 @@ async function startQuiz() {
   const lv = document.getElementById('lv').value; 
   const cat = document.getElementById('cat').value;
   const qLimit = parseInt(document.getElementById('qCount').value); 
+  const filterMode = document.getElementById('filter').value; 
   const checkedIds = getCheckedIds();
+  
   try {
     const res = await fetch(`/data/json/${lv}_master_cleaned.json`); 
     const data = await res.json();
-    const available = data.filter(item => item.pos === cat && !checkedIds.includes(item.id));
-    if (available.length < qLimit) { alert("Not enough words! Please check other categories."); return; }
+    
+    let available = data.filter(item => item.pos === cat);
+    if (filterMode === 'unlearned') {
+      available = available.filter(item => !checkedIds.includes(item.id));
+    } else if (filterMode === 'learned') {
+      available = available.filter(item => checkedIds.includes(item.id));
+    }
+
+    if (available.length < qLimit) { 
+      alert("Not enough words with current filter! Please check other settings."); 
+      return; 
+    }
+    
     quizItems = available.sort(() => 0.5 - Math.random()).slice(0, qLimit).map(item => {
       const others = data.filter(f => f.ja !== item.ja).sort(() => 0.5 - Math.random()).slice(0, 3);
       return { item, options: [...others, item].sort(() => 0.5 - Math.random()), userCorrect: false };
     });
+    
     document.getElementById('setupView').style.display = 'none'; 
     document.getElementById('quizView').style.display = 'block'; 
     renderQuestion();
@@ -323,8 +346,14 @@ function showResults() {
   quizItems.forEach((q, i) => {
     const isChecked = getCheckedIds().includes(q.item.id); 
     const row = document.createElement('tr');
+    // 修正ポイント：単語をdictionary.htmlへのリンクにする
     row.innerHTML = `<td><input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleLearned('${q.item.id}')"></td>
-      <td style="color:${q.userCorrect ? '#10b981':'#ef4444'}"><strong>${q.item.ja}</strong></td><td>${q.item.en}</td>`;
+      <td style="color:${q.userCorrect ? '#10b981':'#ef4444'}">
+        <a href="/content/dictionary.html?id=${q.item.id}" target="_blank" style="text-decoration:none; color:inherit;">
+          <strong>${q.item.ja}</strong>
+        </a>
+      </td>
+      <td>${q.item.en}</td>`;
     list.appendChild(row); 
     emailDetails += `Q${i+1}: ${q.item.ja} -> ${q.item.en} [${q.userCorrect ? '✓' : '✗'}]\n`;
   });
@@ -348,7 +377,6 @@ async function printCheckedList() {
   const fetches = levels.map(lv => fetch(`/data/json/${lv}_master_cleaned.json`).then(r => r.ok ? r.json() : []));
   const allData = await Promise.all(fetches);
   allData.flat().filter(item => checkedIds.includes(item.id)).forEach(item => {
-    // 修正ポイント1: プリント表のデータにIDを追加
     printBody.innerHTML += `<tr><td style="padding:10px;">${item.id}</td><td style="padding:10px;">${item.ja}</td><td style="padding:10px;">${item.kana}</td><td style="padding:10px;">${item.en}</td></tr>`;
   });
   if (!printBody.innerHTML) return alert("Please check some learned words first!"); 
