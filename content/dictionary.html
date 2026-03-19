@@ -174,7 +174,17 @@ async function initDictionary() {
 function performSearch() {
   const kw = document.getElementById('kw').value.toLowerCase().trim();
   const posFilter = document.querySelector('.chip.active').getAttribute('data-pos');
+  
+  // 修正ポイント1: URLからIDパラメータを取得
+  const urlParams = new URLSearchParams(window.location.search);
+  const idParam = urlParams.get('id');
+
   const filtered = allVocab.filter(item => {
+    // 修正ポイント2: IDが指定されており、かつ検索入力が空の場合はそのIDを優先
+    if (idParam && kw === "") {
+      return item.id === idParam;
+    }
+
     const mPos = (posFilter === 'all' || item.pos === posFilter);
     const mKw = !kw || (
       (item.ja && item.ja.includes(kw)) || 
@@ -190,8 +200,12 @@ function render(data) {
   const listEl = document.getElementById('list');
   listEl.innerHTML = data.length ? '' : '<p style="text-align:center; padding:50px; color:var(--muted); font-weight:800;">No matches found.</p>';
   
-  // localStorageからチェック済みのIDを取得
   const checkedIds = JSON.parse(localStorage.getItem('nt_checked_ids') || '[]');
+
+  // 修正ポイント3: ID指定で表示された場合（結果が1件でIDが一致）は、自動的に詳細を開く
+  const urlParams = new URLSearchParams(window.location.search);
+  const idParam = urlParams.get('id');
+  const isDirectLink = idParam && data.length === 1 && data[0].id === idParam;
 
   data.slice(0, 30).forEach(item => {
     const card = document.createElement('div');
@@ -200,7 +214,6 @@ function render(data) {
     const mainAudio = `/assets/audio/${item.audio}`;
     const inquiryUrl = `/inquiry/index.html?subject=${encodeURIComponent('音声依頼（' + item.ja + '）')}`;
 
-    // 既習バッジの作成
     const isLearned = checkedIds.includes(item.id);
     const learnedTag = isLearned ? `<span class="tag" style="background:#10b981; color:#fff; border:none;">LEARNED</span>` : '';
 
@@ -222,8 +235,9 @@ function render(data) {
         `;
       }).join('');
       
+      // 直リンクの場合は "open" 属性を付与
       exHtml = `
-        <details class="example-details">
+        <details class="example-details" ${isDirectLink ? 'open' : ''}>
           <summary><i class="fa-solid fa-circle-chevron-right"></i> Example Sentences</summary>
           <div class="ex-list">${exItems}</div>
         </details>
