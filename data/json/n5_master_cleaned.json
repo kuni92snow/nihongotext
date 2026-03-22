@@ -995,29 +995,29 @@
     "id": "n5-0032",
     "pos": "noun",
     "ja": "ご飯",
-    "kana": "ごめし",
-    "ro": "go meshi",
+    "kana": "ごはん",
+    "ro": "gohan",
     "en": "meal / cooked rice",
     "audio": "n5-0032.mp4",
     "examples": [
       {
         "ja": "朝ご飯を食べましたか。",
-        "kana": "あさごめしをたべましたか。",
-        "ro": "asa go meshi o tabe mashitaka .",
+        "kana": "あさごはんをたべましたか。",
+        "ro": "asa gohan wo tabe mashitaka .",
         "en": "Did you eat breakfast?",
         "audio": "n5-0032-ex1.mp4"
       },
       {
         "ja": "昼ご飯はカレーでした。",
-        "kana": "ひるごめしはかれーでした。",
-        "ro": "hiru go meshi wa karee deshita .",
+        "kana": "ひるごはんはかれーでした。",
+        "ro": "hiru gohan wa karee deshita .",
         "en": "Lunch was curry.",
         "audio": "n5-0032-ex2.mp4"
       },
       {
         "ja": "母がご飯を作っています。",
-        "kana": "ははがごめしをつくっています。",
-        "ro": "haha gago meshi o tsukutsu teimasu .",
+        "kana": "ははがごはんをつくっています。",
+        "ro": "haha ga gohan wo tsukutsu teimasu .",
         "en": "My mother is cooking a meal.",
         "audio": "n5-0032-ex3.mp4"
       }
