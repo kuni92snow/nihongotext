@@ -1,4 +1,14 @@
 [
+    {
+    "slug": "n5-master-data-refinement-2026-05-02",
+    "date": "2026-05-02",
+    "title": "N5 Dictionary Update: Detailed English Meanings Added",
+    "title_ja": "N5辞書アップデート：詳細な英語解説の追加と最適化",
+    "title_en": "N5 Dictionary Update: Detailed English Meanings Added",
+    "summary_ja": "本日、N5レベルの辞書データを大幅にブラッシュアップしました。各単語に日本特有のニュアンスを含めた詳細な英語解説（meaningフィールド）を追加し、より深い理解を助ける内容になっています。また、学習の効率化のため音声ファイルを整理し、テキストベースでの意味理解に重点を置いた構成に最適化しました。",
+    "summary_en": "Today, we significantly improved the N5 dictionary data! We added a new 'meaning' field with detailed English descriptions that cover specific Japanese nuances. To streamline the learning experience, we also optimized the data structure to focus on text-based comprehension and refined the audio asset management.",
+    "tags": ["update", "N5", "dictionary", "learning-materials"]
+  },
   {
     "slug": "launch",
     "date": "2025-11-03",
