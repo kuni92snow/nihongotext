@@ -10,19 +10,19 @@
     "examples": [
       {
         "ja": "私は毎日学校へ行きます。",
-        "kana": "わたしはまいにちがっこうへいきます。",
+        "kana": "わたし は まいにち がっこう へ いき ます。",
         "ro": "watashi wa mainichi gakkou e iki masu .",
         "en": "I go to school every day."
       },
       {
         "ja": "学校は八時に始まります。",
-        "kana": "がっこうははちときにはじまります。",
-        "ro": "gakkou wa hachi tokini hajimari masu .",
+        "kana": "がっこう は はちじ に はじまります。",
+        "ro": "gakkou wa hachiji ni hajimari masu .",
         "en": "School starts at eight o’clock."
       },
       {
         "ja": "学校で友達と遊びます。",
-        "kana": "がっこうでともだちとあそびます。",
+        "kana": "がっこう で ともだち と あそび ます。",
         "ro": "gakkou de tomodachi to asobi masu .",
         "en": "I play with my friends at school."
       }
@@ -39,19 +39,19 @@
     "examples": [
       {
         "ja": "駅はどこですか？",
-        "kana": "えきはどこですか？",
-        "ro": "eki hadokodesuka ？",
+        "kana": "えき は どこ ですか？",
+        "ro": "eki wa doko desuka ？",
         "en": "Where is the station?"
       },
       {
         "ja": "駅まで歩きます。",
-        "kana": "えきまであるきます。",
+        "kana": "えき まで あるき ます。",
         "ro": "eki made aruki masu .",
         "en": "I walk to the station."
       },
       {
         "ja": "駅で切符を買いました。",
-        "kana": "えきできっぷをかいました。",
+        "kana": "えき で きっぷ を かい ました。",
         "ro": "eki de kippu o kai mashita .",
         "en": "I bought a ticket at the station."
       }
@@ -68,20 +68,20 @@
     "examples": [
       {
         "ja": "兄は大きい会社で働いています。",
-        "kana": "あにはおおきいかいしゃではたらいています。",
-        "ro": "ani wa ookii kaisha de hatarai teimasu .",
+        "kana": "あに は おおきい かいしゃ で はたらいて います。",
+        "ro": "ani wa ookii kaisha de hataraite imasu .",
         "en": "My older brother works at a big company."
       },
       {
         "ja": "会社は駅の近くにあります。",
-        "kana": "かいしゃはえきのちかくにあります。",
-        "ro": "kaisha wa eki no chikaku niarimasu .",
+        "kana": "かいしゃ は えき の ちかく に あります。",
+        "ro": "kaisha wa eki no chikaku ni arimasu .",
         "en": "The company is near the station."
       },
       {
         "ja": "今日は会社を休みます。",
-        "kana": "こんにちはかいしゃをやすみます。",
-        "ro": "konnichiha kaisha o yasumi masu .",
+        "kana": "きょう は かいしゃ を やすみ ます。",
+        "ro": "kyou wa kaisha wo yasumi masu .",
         "en": "I will take a day off from work today."
       }
     ]
@@ -97,19 +97,19 @@
     "examples": [
       {
         "ja": "先生はやさしいです。",
-        "kana": "せんせいはやさしいです。",
-        "ro": "sensei hayasashiidesu .",
+        "kana": "せんせい は やさしい です。",
+        "ro": "sensei wa yasashii desu .",
         "en": "The teacher is kind."
       },
       {
         "ja": "新しい先生が来ました。",
-        "kana": "あたらしいせんせいがきました。",
-        "ro": "atarashii sensei ga kima shita .",
+        "kana": "あたらしい せんせい が きました。",
+        "ro": "atarashii sensei ga kimashita .",
         "en": "A new teacher arrived."
       },
       {
         "ja": "先生に質問しました。",
-        "kana": "せんせいにしつもんしました。",
+        "kana": "せんせい に しつもん しました。",
         "ro": "sensei ni shitsumon shimashita .",
         "en": "I asked the teacher a question."
       }
@@ -126,20 +126,20 @@
     "examples": [
       {
         "ja": "友達と映画を見ます。",
-        "kana": "ともだちとえいがをみます。",
-        "ro": "tomodachi to eiga o mima su .",
+        "kana": "ともだち と えいが を み ます。",
+        "ro": "tomodachi to eiga wo mi masu .",
         "en": "I watch a movie with my friend."
       },
       {
         "ja": "友達の家へ行きました。",
-        "kana": "ともだちのいえへいきました。",
+        "kana": "ともだち の いえ へ いき ました。",
         "ro": "tomodachi no ie e iki mashita .",
         "en": "I went to my friend’s house."
       },
       {
         "ja": "友達から電話がありました。",
-        "kana": "ともだちからでんわがありました。",
-        "ro": "tomodachi kara denwa gaarimashita .",
+        "kana": "ともだち から でんわ が ありました。",
+        "ro": "tomodachi kara denwa ga arimashita .",
         "en": "I got a call from my friend."
       }
     ]
@@ -155,19 +155,19 @@
     "examples": [
       {
         "ja": "日本へ旅行したいです。",
-        "kana": "にっぽんへりょこうしたいです。",
-        "ro": "nippon e ryokou shitaidesu .",
+        "kana": "にっぽん へ りょこう したい です。",
+        "ro": "nippon e ryokou shitai desu .",
         "en": "I want to travel to Japan."
       },
       {
         "ja": "日本の文化を勉強しています。",
-        "kana": "にっぽんのぶんかをべんきょうしています。",
-        "ro": "nippon no bunka o benkyou shiteimasu .",
+        "kana": "にっぽん の ぶんか を べんきょう して います。",
+        "ro": "nippon no bunka wo benkyou shite imasu .",
         "en": "I study Japanese culture."
       },
       {
         "ja": "日本の料理が好きです。",
-        "kana": "にっぽんのりょうりがすきです。",
+        "kana": "にっぽん の りょうり が すきです。",
         "ro": "nippon no ryouri ga suki desu .",
         "en": "I like Japanese food."
       }
@@ -184,20 +184,20 @@
     "examples": [
       {
         "ja": "この本はとてもおもしろいです。",
-        "kana": "このほんはとてもおもしろいです。",
-        "ro": "kono hon hatotemoomoshiroidesu .",
+        "kana": "この ほん は とても おもしろい です。",
+        "ro": "kono hon wa totemo omoshiroi desu .",
         "en": "This book is very interesting."
       },
       {
         "ja": "私は毎晩本を読みます。",
-        "kana": "わたしはまいばんほんをよみます。",
-        "ro": "watashi wa maiban hon o yomi masu .",
+        "kana": "わたし は まいばん ほん を よみ ます。",
+        "ro": "watashi wa maiban hon wo yomi masu .",
         "en": "I read a book every night."
       },
       {
         "ja": "図書館で本を借りました。",
-        "kana": "としょかんでほんをかりました。",
-        "ro": "toshokan de hon o kari mashita .",
+        "kana": "としょかん で ほん を かり ました。",
+        "ro": "toshokan de hon wo kari mashita .",
         "en": "I borrowed a book from the library."
       }
     ]
@@ -213,19 +213,19 @@
     "examples": [
       {
         "ja": "父は車を運転します。",
-        "kana": "ちちはくるまをうんてんします。",
-        "ro": "chichi wa kuruma o unten shimasu .",
+        "kana": "ちち は くるま を うんてん します。",
+        "ro": "chichi wa kuruma wo unten shimasu .",
         "en": "My father drives a car."
       },
       {
         "ja": "新しい車を買いました。",
-        "kana": "あたらしいくるまをかいました。",
-        "ro": "atarashii kuruma o kai mashita .",
+        "kana": "あたらしい くるま を かい ました。",
+        "ro": "atarashii kuruma wo kai mashita .",
         "en": "I bought a new car."
       },
       {
         "ja": "車で会社へ行きます。",
-        "kana": "くるまでかいしゃへいきます。",
+        "kana": "くるま で かいしゃ へ いき ます。",
         "ro": "kuruma de kaisha e iki masu .",
         "en": "I go to work by car."
       }
@@ -242,20 +242,20 @@
     "examples": [
       {
         "ja": "犬が庭で遊んでいます。",
-        "kana": "いぬがにわであそんでいます。",
+        "kana": "いぬ が にわ で あそんで います。",
         "ro": "inu ga niwa de asonde imasu .",
         "en": "The dog is playing in the yard."
       },
       {
         "ja": "私は犬が好きです。",
-        "kana": "わたしはいぬがすきです。",
+        "kana": "わたし は いぬ が すき です。",
         "ro": "watashi wa inu ga suki desu .",
         "en": "I like dogs."
       },
       {
         "ja": "この犬はとてもかわいいです。",
-        "kana": "このいぬはとてもかわいいです。",
-        "ro": "kono inu hatotemokawaiidesu .",
+        "kana": "この いぬ は とても かわいい です。",
+        "ro": "kono inu wa totemo kawaii desu .",
         "en": "This dog is very cute."
       }
     ]
@@ -271,20 +271,20 @@
     "examples": [
       {
         "ja": "時計を見てください。",
-        "kana": "とけいをみてください。",
-        "ro": "tokei o mite kudasai .",
+        "kana": "とけい を みて ください。",
+        "ro": "tokei wo mite kudasai .",
         "en": "Please look at the clock."
       },
       {
         "ja": "新しい時計を買いました。",
-        "kana": "あたらしいとけいをかいました。",
-        "ro": "atarashii tokei o kai mashita .",
+        "kana": "あたらしい とけい を かい ました。",
+        "ro": "atarashii tokei wo kai mashita .",
         "en": "I bought a new watch."
       },
       {
         "ja": "時計が止まりました。",
-        "kana": "とけいがどまりました。",
-        "ro": "tokei ga domari mashita .",
+        "kana": "とけい が とまり ました。",
+        "ro": "tokei ga tomari mashita .",
         "en": "The clock stopped."
       }
     ]
@@ -902,27 +902,27 @@
     "id": "n5-0032",
     "pos": "noun",
     "ja": "ご飯",
-    "kana": "ごめし",
-    "ro": "go meshi",
+    "kana": "ごはん",
+    "ro": "gohan",
     "en": "meal / cooked rice",
     "meaning": "A 'ご飯' is a Japanese word for meal / cooked rice. It is commonly used in daily Japanese conversations to refer to meal / cooked rice.",
     "examples": [
       {
         "ja": "朝ご飯を食べましたか。",
-        "kana": "あさごめしをたべましたか。",
-        "ro": "asa go meshi o tabe mashitaka .",
+        "kana": "あさごはんをたべましたか。",
+        "ro": "asa gohan wo tabe mashitaka .",
         "en": "Did you eat breakfast?"
       },
       {
         "ja": "昼ご飯はカレーでした。",
-        "kana": "ひるごめしはかれーでした。",
-        "ro": "hiru go meshi wa karee deshita .",
+        "kana": "ひる ごはん は かれー でした。",
+        "ro": "hiru gohan wa karee deshita .",
         "en": "Lunch was curry."
       },
       {
         "ja": "母がご飯を作っています。",
-        "kana": "ははがごめしをつくっています。",
-        "ro": "haha gago meshi o tsukutsu teimasu .",
+        "kana": "はは が ごはん を つくって います。",
+        "ro": "haha ga　gohan wo tsukutte imasu .",
         "en": "My mother is cooking a meal."
       }
     ]
@@ -938,20 +938,20 @@
     "examples": [
       {
         "ja": "朝ご飯に卵を食べました。",
-        "kana": "あさごめしにたまごをたべました。",
-        "ro": "asa go meshi ni tamago o tabe mashita .",
+        "kana": "あさごはん に たまご を たべました。",
+        "ro": "asa go meshi ni tamago wo tabe mashita .",
         "en": "I ate eggs for breakfast."
       },
       {
         "ja": "卵を二つください。",
-        "kana": "たまごをふたつください。",
-        "ro": "tamago o futatsu kudasai .",
+        "kana": "たまご を ふたつ ください。",
+        "ro": "tamago wo futatsu kudasai .",
         "en": "Please give me two eggs."
       },
       {
         "ja": "卵を冷蔵庫に入れてください。",
-        "kana": "たまごをれいぞうこにいれてください。",
-        "ro": "tamago o reizouko ni ire tekudasai .",
+        "kana": "たまご を れいぞうこ に いれてください。",
+        "ro": "tamago wo reizouko ni ire tekudasai .",
         "en": "Please put the eggs in the refrigerator."
       }
     ]
@@ -967,7 +967,7 @@
     "examples": [
       {
         "ja": "夕ご飯に魚を食べました。",
-        "kana": "ゆうごめしにさかなをたべました。",
+        "kana": "ゆうごはんにさかなをたべました。",
         "ro": "yuu go meshi ni sakana o tabe mashita .",
         "en": "I ate fish for dinner."
       },
@@ -7601,27 +7601,27 @@
     "id": "n5-0263",
     "pos": "noun",
     "ja": "朝ご飯",
-    "kana": "あさごめし",
-    "ro": "asa go meshi",
+    "kana": "あさごはん",
+    "ro": "asa gohan",
     "en": "breakfast",
     "meaning": "A '朝ご飯' is a Japanese word for breakfast. It is commonly used in daily Japanese conversations to refer to breakfast.",
     "examples": [
       {
         "ja": "毎朝朝ご飯を食べます。",
-        "kana": "まいあさあさごめしをたべます。",
-        "ro": "maiasa asa go meshi o tabe masu .",
+        "kana": "まいあさ あさごはん を たべます。",
+        "ro": "maiasa asa gohan wo tabe masu .",
         "en": "I eat breakfast every morning."
       },
       {
         "ja": "今日の朝ご飯はパンでした。",
-        "kana": "きょうのあさごめしはぱんでした。",
-        "ro": "kyou no asa go meshi wa pan deshita .",
+        "kana": "きょう の あさごはん は ぱん でした。",
+        "ro": "kyou no asa gohan wa pan deshita .",
         "en": "Today's breakfast was bread."
       },
       {
         "ja": "朝ご飯を食べてから学校へ行きます。",
-        "kana": "あさごめしをたべてからがっこうへいきます。",
-        "ro": "asa go meshi o tabete kara gakkou e iki masu .",
+        "kana": "あさごはん を たべて から がっこう へ いきます。",
+        "ro": "asa go meshi wo tabete kara gakkou e iki masu .",
         "en": "I go to school after eating breakfast."
       }
     ]
@@ -7630,27 +7630,27 @@
     "id": "n5-0264",
     "pos": "noun",
     "ja": "昼ご飯",
-    "kana": "ひるごめし",
-    "ro": "hiru go meshi",
+    "kana": "ひるごはん",
+    "ro": "hiru gohan",
     "en": "lunch",
     "meaning": "A '昼ご飯' is a Japanese word for lunch. It is commonly used in daily Japanese conversations to refer to lunch.",
     "examples": [
       {
         "ja": "一緒に昼ご飯を食べませんか？",
-        "kana": "いっしょにひるごめしをたべませんか？",
-        "ro": "isshoni hiru go meshi o tabe masenka ？",
+        "kana": "いっしょ に ひるごはん を たべませんか？",
+        "ro": "isshoni hiru gohan wo tabe masenka ？",
         "en": "Would you like to have lunch together?"
       },
       {
         "ja": "昼ご飯はお弁当です。",
-        "kana": "ひるごめしはおべんとうです。",
-        "ro": "hiru go meshi hao bentou desu .",
+        "kana": "ひるごはん は おべんとう です。",
+        "ro": "hiru gohan wa obentou desu .",
         "en": "Lunch is a lunch box (bento)."
       },
       {
         "ja": "十二時に昼ご飯を食べます。",
-        "kana": "じゅうにときにひるごめしをたべます。",
-        "ro": "juuni tokini hiru go meshi o tabe masu .",
+        "kana": "じゅうにじ に ひるごはん を たべます。",
+        "ro": "juuni tokini hiru gohan wo tabe masu .",
         "en": "I eat lunch at twelve o'clock."
       }
     ]
@@ -7659,27 +7659,27 @@
     "id": "n5-0265",
     "pos": "noun",
     "ja": "晩ご飯",
-    "kana": "ばんごめし",
-    "ro": "ban go meshi",
+    "kana": "ばんごはん",
+    "ro": "ban gohan",
     "en": "dinner",
     "meaning": "A '晩ご飯' is a Japanese word for dinner. It is commonly used in daily Japanese conversations to refer to dinner.",
     "examples": [
       {
         "ja": "今日の晩ご飯はカレーです。",
-        "kana": "きょうのばんごめしはかれーです。",
-        "ro": "kyou no ban go meshi wa karee desu .",
+        "kana": "きょう の ばんごはん は かれー です。",
+        "ro": "kyou no bangohan wa karee desu .",
         "en": "Today's dinner is curry."
       },
       {
         "ja": "晩ご飯を家で食べます。",
-        "kana": "ばんごめしをいえでたべます。",
-        "ro": "ban go meshi o ie de tabe masu .",
+        "kana": "ばんごはん を いえ で たべます。",
+        "ro": "ban gohan wo ie de tabe masu .",
         "en": "I eat dinner at home."
       },
       {
         "ja": "家族と一緒に晩ご飯を食べました。",
-        "kana": "かぞくといっしょにばんごめしをたべました。",
-        "ro": "kazoku to isshoni ban go meshi o tabe mashita .",
+        "kana": "かぞく と いっしょ に ばんごはん を たべました。",
+        "ro": "kazoku to isshoni ban gohan wo tabe mashita .",
         "en": "I had dinner with my family."
       }
     ]
@@ -13756,8 +13756,8 @@
     "examples": [
       {
         "ja": "一緒にご飯を食べませんか？",
-        "kana": "いっしょにごめしをたべませんか？",
-        "ro": "isshoni go meshi o tabe masenka ？",
+        "kana": "いっしょに ごはん を たべませんか？",
+        "ro": "isshoni gohan wo tabe masenka ？",
         "en": "Would you like to eat together?"
       },
       {
@@ -14394,20 +14394,20 @@
     "examples": [
       {
         "ja": "手を洗ってからご飯を食べます。",
-        "kana": "てをあらってからごめしをたべます。",
-        "ro": "te o aratsu tekarago meshi o tabe masu .",
+        "kana": "て を あらって から ごはん を たべます。",
+        "ro": "te wo arattte kara gohan wo tabe masu .",
         "en": "I eat after washing my hands."
       },
       {
         "ja": "宿題を終わらせてから遊びます。",
-        "kana": "しゅくだいをおわらせてからあそびます。",
-        "ro": "shukudai o owa rasetekara asobi masu .",
+        "kana": "しゅくだい を おわらせて から あそびます。",
+        "ro": "shukudai wo owarasete kara asobi masu .",
         "en": "I will play after finishing my homework."
       },
       {
         "ja": "シャワーを浴びてから寝ます。",
-        "kana": "しゃわーをあびてからねます。",
-        "ro": "shawaa o abi tekara nema su .",
+        "kana": "しゃわー を あびて から ねます。",
+        "ro": "shawaa wo abite kara nemasu .",
         "en": "I will sleep after taking a shower."
       }
     ]
@@ -14922,8 +14922,8 @@
       },
       {
         "ja": "テレビを見ながらご飯を食べます。",
-        "kana": "てれびをみながらごめしをたべます。",
-        "ro": "terebi o mina garago meshi o tabe masu .",
+        "kana": "てれび を みながら ごはん を たべ ます。",
+        "ro": "terebi o minagara gohan wo tabe masu .",
         "en": "I eat while watching TV."
       },
       {
@@ -15351,8 +15351,8 @@
     "examples": [
       {
         "ja": "ご飯を食べたあとで、薬を飲みます。",
-        "kana": "ごめしをたべたあとで、くすりをのみます。",
-        "ro": "go meshi o tabeta atode , kusuri o nomi masu .",
+        "kana": "ごはん を たべた あとで、くすり を のみ ます。",
+        "ro": "gohan wo tabeta atode , kusuri wo nomi masu .",
         "en": "After eating, I will take medicine."
       },
       {
@@ -15583,8 +15583,8 @@
     "examples": [
       {
         "ja": "箸でご飯を食べます。",
-        "kana": "はしでごはんをたべます。",
-        "ro": "hashi de gohan o tabemasu .",
+        "kana": "はし で ごはん を たべます。",
+        "ro": "hashi de gohan wo tabemasu .",
         "en": "I eat rice with chopsticks."
       },
       {
@@ -16888,19 +16888,19 @@
     "examples": [
       {
         "ja": "朝ご飯を食べましたか？",
-        "kana": "あさごはんをたべましたか？",
-        "ro": "asagohan o tabemashita ka ?",
+        "kana": "あさ ごはん を たべ ました か？",
+        "ro": "asagohan wo tabe mashita ka ?",
         "en": "Did you eat breakfast?"
       },
       {
         "ja": "毎朝七時に朝ご飯を食べます。",
-        "kana": "まいあさしちじにあさごはんをたべます。",
-        "ro": "maiasa shichiji ni asagohan o tabemasu .",
+        "kana": "まいあさ しちじ に あさごはん を たべ ます。",
+        "ro": "maiasa shichiji ni asagohan wo tabe masu .",
         "en": "I eat breakfast at 7 every morning."
       },
       {
         "ja": "朝ご飯はパンです。",
-        "kana": "あさごはんはぱんです。",
+        "kana": "あさごはん は ぱん です。",
         "ro": "asagohan wa pan desu .",
         "en": "Breakfast is bread."
       }
@@ -16917,19 +16917,19 @@
     "examples": [
       {
         "ja": "昼ご飯を一緒に食べましょう。",
-        "kana": "ひるごはんをいっしょにたべましょう。",
-        "ro": "hirugohan o issho ni tabemashou .",
+        "kana": "ひるごはん を いっしょに たべ ましょう。",
+        "ro": "hirugohan wo isshoni tabe mashou .",
         "en": "Let's eat lunch together."
       },
       {
         "ja": "昼ご飯は何を食べますか？",
-        "kana": "ひるごはんはなにをたべますか？",
-        "ro": "hirugohan wa nani o tabemasu ka ?",
+        "kana": "ひるごはん は なに を たべ ます か？",
+        "ro": "hirugohan wa nani wo tabe masu ka ?",
         "en": "What will you eat for lunch?"
       },
       {
         "ja": "十二時から昼ご飯です。",
-        "kana": "じゅうにじからひるごはんです。",
+        "kana": "じゅうにじ から ひるごはん です。",
         "ro": "juuniji kara hirugohan desu .",
         "en": "Lunch starts at 12 o'clock."
       }
@@ -16946,14 +16946,14 @@
     "examples": [
       {
         "ja": "晩ご飯は何ですか？",
-        "kana": "ばんごはんはなんですか？",
-        "ro": "bangohan wa nani desu ka ?",
+        "kana": "ばんごはん は なん ですか？",
+        "ro": "bangohan wa nan desu ka ?",
         "en": "What is for dinner?"
       },
       {
         "ja": "家族と一緒に晩ご飯を食べます。",
-        "kana": "かぞくといっしょにばんごはんをたべます。",
-        "ro": "kazoku to issho ni bangohan o tabemasu .",
+        "kana": "かぞく と いっしょ に ばんごはん を たべ ます。",
+        "ro": "kazoku to issho ni bangohan wo tabe masu .",
         "en": "I eat dinner with my family."
       },
       {
