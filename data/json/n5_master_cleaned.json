@@ -6,23 +6,23 @@
     "kana": "がっこう",
     "ro": "gakkou",
     "en": "school",
-    "meaning": "A '学校' is a Japanese word for school. It is a place where students go to learn from teachers and interact with peers.",
+    "meaning": "A '学校(gakkou）' is a Japanese word for school. It is a place where students go to learn from teachers and interact with peers.",
     "examples": [
       {
         "ja": "私は毎日学校へ行きます。",
-        "kana": "わたしはまいにちがっこうへいきます。",
+        "kana": "わたし は まいにち がっこう へ いき ます。",
         "ro": "watashi wa mainichi gakkou e iki masu .",
         "en": "I go to school every day."
       },
       {
         "ja": "学校は八時に始まります。",
-        "kana": "がっこうははちときにはじまります。",
-        "ro": "gakkou wa hachi tokini hajimari masu .",
+        "kana": "がっこう　は　はちじ に はじまり ます。",
+        "ro": "gakkou wa hachiji ni hajimari masu .",
         "en": "School starts at eight o’clock."
       },
       {
         "ja": "学校で友達と遊びます。",
-        "kana": "がっこうでともだちとあそびます。",
+        "kana": "がっこう で ともだち と あそび ます。",
         "ro": "gakkou de tomodachi to asobi masu .",
         "en": "I play with my friends at school."
       }
@@ -35,24 +35,24 @@
     "kana": "えき",
     "ro": "eki",
     "en": "station",
-    "meaning": "A '駅' is a Japanese word for station. While it usually refers to a train station, many large stations in Japan also function as shopping malls and social gathering spots.",
+    "meaning": "A '駅(eki)' is a Japanese word for station. While it usually refers to a train station, many large stations in Japan also function as shopping malls and social gathering spots.",
     "examples": [
       {
         "ja": "駅はどこですか？",
-        "kana": "えきはどこですか？",
-        "ro": "eki hadokodesuka ？",
+        "kana": "えき は どこ ですか？",
+        "ro": "eki wa doko desuka ？",
         "en": "Where is the station?"
       },
       {
         "ja": "駅まで歩きます。",
-        "kana": "えきまであるきます。",
+        "kana": "えき まで あるき ます。",
         "ro": "eki made aruki masu .",
         "en": "I walk to the station."
       },
       {
         "ja": "駅で切符を買いました。",
-        "kana": "えきできっぷをかいました。",
-        "ro": "eki de kippu o kai mashita .",
+        "kana": "えき で きっぷ を かい ました。",
+        "ro": "eki de kippu wo kai mashita .",
         "en": "I bought a ticket at the station."
       }
     ]
@@ -64,24 +64,24 @@
     "kana": "かいしゃ",
     "ro": "kaisha",
     "en": "company",
-    "meaning": "A '会社' is a Japanese word for company. It is commonly used in daily Japanese conversations to refer to company.",
+    "meaning": "A '会社(kaisha)' is a Japanese word for company. It is commonly used in daily Japanese conversations to refer to company.",
     "examples": [
       {
         "ja": "兄は大きい会社で働いています。",
-        "kana": "あにはおおきいかいしゃではたらいています。",
-        "ro": "ani wa ookii kaisha de hatarai teimasu .",
+        "kana": "あに は おおきい かいしゃ で はたらいて います。",
+        "ro": "ani wa ookii kaisha de hataraite imasu .",
         "en": "My older brother works at a big company."
       },
       {
         "ja": "会社は駅の近くにあります。",
-        "kana": "かいしゃはえきのちかくにあります。",
-        "ro": "kaisha wa eki no chikaku niarimasu .",
+        "kana": "かいしゃ は えき の ちかく に あります。",
+        "ro": "kaisha wa eki no chikaku ni arimasu .",
         "en": "The company is near the station."
       },
       {
         "ja": "今日は会社を休みます。",
-        "kana": "こんにちはかいしゃをやすみます。",
-        "ro": "konnichiha kaisha o yasumi masu .",
+        "kana": "きょう は かいしゃ を やすみ ます。",
+        "ro": "kyou wa kaisha wo yasumi masu .",
         "en": "I will take a day off from work today."
       }
     ]
@@ -93,23 +93,23 @@
     "kana": "せんせい",
     "ro": "sensei",
     "en": "teacher",
-    "meaning": "A '先生' is a Japanese word for teacher. It is used to address teachers, professors, and professionals like doctors or lawyers as a sign of respect.",
+    "meaning": "A '先生(sensei)' is a Japanese word for teacher. It is used to address teachers, professors, and professionals like doctors or lawyers as a sign of respect.",
     "examples": [
       {
         "ja": "先生はやさしいです。",
-        "kana": "せんせいはやさしいです。",
-        "ro": "sensei hayasashiidesu .",
+        "kana": "せんせい は やさしい です。",
+        "ro": "sensei wa yasashii desu .",
         "en": "The teacher is kind."
       },
       {
         "ja": "新しい先生が来ました。",
-        "kana": "あたらしいせんせいがきました。",
-        "ro": "atarashii sensei ga kima shita .",
+        "kana": "あたらしい せんせい が きました。",
+        "ro": "atarashii sensei ga kimashita .",
         "en": "A new teacher arrived."
       },
       {
         "ja": "先生に質問しました。",
-        "kana": "せんせいにしつもんしました。",
+        "kana": "せんせい に しつもん しました。",
         "ro": "sensei ni shitsumon shimashita .",
         "en": "I asked the teacher a question."
       }
@@ -122,24 +122,24 @@
     "kana": "ともだち",
     "ro": "tomodachi",
     "en": "friend",
-    "meaning": "A '友達' is a Japanese word for friend. It refers to a person whom one knows and with whom one has a bond of mutual affection.",
+    "meaning": "A '友達(tomodachi)' is a Japanese word for friend. It refers to a person whom one knows and with whom one has a bond of mutual affection.",
     "examples": [
       {
         "ja": "友達と映画を見ます。",
-        "kana": "ともだちとえいがをみます。",
-        "ro": "tomodachi to eiga o mima su .",
+        "kana": "ともだち と えいが を みます。",
+        "ro": "tomodachi to eiga wo mimasu .",
         "en": "I watch a movie with my friend."
       },
       {
         "ja": "友達の家へ行きました。",
-        "kana": "ともだちのいえへいきました。",
+        "kana": "ともだち の いえ へ いき ました。",
         "ro": "tomodachi no ie e iki mashita .",
         "en": "I went to my friend’s house."
       },
       {
         "ja": "友達から電話がありました。",
-        "kana": "ともだちからでんわがありました。",
-        "ro": "tomodachi kara denwa gaarimashita .",
+        "kana": "ともだち から でんわ が ありました。",
+        "ro": "tomodachi kara denwa ga arimashita .",
         "en": "I got a call from my friend."
       }
     ]
@@ -151,23 +151,23 @@
     "kana": "にっぽん",
     "ro": "nippon",
     "en": "Japan",
-    "meaning": "A '日本' is a Japanese word for japan. It is commonly used in daily Japanese conversations to refer to japan.",
+    "meaning": "A '日本(nippon)' is a Japanese word for japan. It is commonly used in daily Japanese conversations to refer to japan.",
     "examples": [
       {
         "ja": "日本へ旅行したいです。",
-        "kana": "にっぽんへりょこうしたいです。",
+        "kana": "にっぽん へ りょこう したいです。",
         "ro": "nippon e ryokou shitaidesu .",
         "en": "I want to travel to Japan."
       },
       {
         "ja": "日本の文化を勉強しています。",
-        "kana": "にっぽんのぶんかをべんきょうしています。",
-        "ro": "nippon no bunka o benkyou shiteimasu .",
+        "kana": "にっぽん の ぶんか を べんきょう しています。",
+        "ro": "nippon no bunka wo benkyou shiteimasu .",
         "en": "I study Japanese culture."
       },
       {
         "ja": "日本の料理が好きです。",
-        "kana": "にっぽんのりょうりがすきです。",
+        "kana": "にっぽん の りょうり が すき です。",
         "ro": "nippon no ryouri ga suki desu .",
         "en": "I like Japanese food."
       }
@@ -180,24 +180,24 @@
     "kana": "ほん",
     "ro": "hon",
     "en": "book",
-    "meaning": "A '本' is a Japanese word for book. It is commonly used in daily Japanese conversations to refer to book.",
+    "meaning": "A '本(hon)' is a Japanese word for book. It is commonly used in daily Japanese conversations to refer to book.",
     "examples": [
       {
         "ja": "この本はとてもおもしろいです。",
-        "kana": "このほんはとてもおもしろいです。",
-        "ro": "kono hon hatotemoomoshiroidesu .",
+        "kana": "この ほん は とても おもしろい です。",
+        "ro": "kono hon wa totemo omoshiroi desu .",
         "en": "This book is very interesting."
       },
       {
         "ja": "私は毎晩本を読みます。",
-        "kana": "わたしはまいばんほんをよみます。",
-        "ro": "watashi wa maiban hon o yomi masu .",
+        "kana": "わたし は まいばん ほん を よみ ます。",
+        "ro": "watashi wa maiban hon wo yomi masu .",
         "en": "I read a book every night."
       },
       {
         "ja": "図書館で本を借りました。",
-        "kana": "としょかんでほんをかりました。",
-        "ro": "toshokan de hon o kari mashita .",
+        "kana": "としょかん で ほん を かり ました。",
+        "ro": "toshokan de hon wo kari mashita .",
         "en": "I borrowed a book from the library."
       }
     ]
@@ -209,23 +209,23 @@
     "kana": "くるま",
     "ro": "kuruma",
     "en": "car",
-    "meaning": "A '車' is a Japanese word for car. It is commonly used in daily Japanese conversations to refer to car.",
+    "meaning": "A '車(kuruma)' is a Japanese word for car. It is commonly used in daily Japanese conversations to refer to car.",
     "examples": [
       {
         "ja": "父は車を運転します。",
-        "kana": "ちちはくるまをうんてんします。",
-        "ro": "chichi wa kuruma o unten shimasu .",
+        "kana": "ちち は くるま を うんてん します。",
+        "ro": "chichi wa kuruma wo unten shimasu .",
         "en": "My father drives a car."
       },
       {
         "ja": "新しい車を買いました。",
-        "kana": "あたらしいくるまをかいました。",
-        "ro": "atarashii kuruma o kai mashita .",
+        "kana": "あたらしい くるま を かい ました。",
+        "ro": "atarashii kuruma wo kai mashita .",
         "en": "I bought a new car."
       },
       {
         "ja": "車で会社へ行きます。",
-        "kana": "くるまでかいしゃへいきます。",
+        "kana": "くるま で かいしゃ へ いき ます。",
         "ro": "kuruma de kaisha e iki masu .",
         "en": "I go to work by car."
       }
@@ -238,24 +238,24 @@
     "kana": "いぬ",
     "ro": "inu",
     "en": "dog",
-    "meaning": "A '犬' is a Japanese word for dog. It is commonly used in daily Japanese conversations to refer to dog.",
+    "meaning": "A '犬(inu)' is a Japanese word for dog. It is commonly used in daily Japanese conversations to refer to dog.",
     "examples": [
       {
         "ja": "犬が庭で遊んでいます。",
-        "kana": "いぬがにわであそんでいます。",
+        "kana": "いぬ が にわ で あそんで います。",
         "ro": "inu ga niwa de asonde imasu .",
         "en": "The dog is playing in the yard."
       },
       {
         "ja": "私は犬が好きです。",
-        "kana": "わたしはいぬがすきです。",
+        "kana": "わたし は いぬ が すき です。",
         "ro": "watashi wa inu ga suki desu .",
         "en": "I like dogs."
       },
       {
         "ja": "この犬はとてもかわいいです。",
-        "kana": "このいぬはとてもかわいいです。",
-        "ro": "kono inu hatotemokawaiidesu .",
+        "kana": "この いぬ は とても かわいい です。",
+        "ro": "kono inu wa totemo kawaii desu .",
         "en": "This dog is very cute."
       }
     ]
@@ -267,24 +267,24 @@
     "kana": "とけい",
     "ro": "tokei",
     "en": "clock / watch",
-    "meaning": "A '時計' is a Japanese word for clock / watch. It is commonly used in daily Japanese conversations to refer to clock / watch.",
+    "meaning": "A '時計(tokei)' is a Japanese word for clock / watch. It is commonly used in daily Japanese conversations to refer to clock / watch.",
     "examples": [
       {
         "ja": "時計を見てください。",
-        "kana": "とけいをみてください。",
-        "ro": "tokei o mite kudasai .",
+        "kana": "とけい を みて ください。",
+        "ro": "tokei wo mite kudasai .",
         "en": "Please look at the clock."
       },
       {
         "ja": "新しい時計を買いました。",
-        "kana": "あたらしいとけいをかいました。",
-        "ro": "atarashii tokei o kai mashita .",
+        "kana": "あたらしい とけい を かい ました。",
+        "ro": "atarashii tokei wo kai mashita .",
         "en": "I bought a new watch."
       },
       {
         "ja": "時計が止まりました。",
-        "kana": "とけいがどまりました。",
-        "ro": "tokei ga domari mashita .",
+        "kana": "とけい が とまり ました。",
+        "ro": "tokei ga tomari mashita .",
         "en": "The clock stopped."
       }
     ]
@@ -296,24 +296,24 @@
     "kana": "いえ",
     "ro": "ie",
     "en": "house / home",
-    "meaning": "A '家' is a Japanese word for house / home. It is commonly used in daily Japanese conversations to refer to house / home.",
+    "meaning": "A '家(ie)' is a Japanese word for house / home. It is commonly used in daily Japanese conversations to refer to house / home.",
     "examples": [
       {
         "ja": "私の家は東京にあります。",
-        "kana": "わたしのいえはとうきょうにあります。",
-        "ro": "watashi no ie wa toukyou niarimasu .",
+        "kana": "わたし の いえ は とうきょう に あります。",
+        "ro": "watashi no ie wa toukyou ni arimasu .",
         "en": "My house is in Tokyo."
       },
       {
         "ja": "家で宿題をします。",
-        "kana": "いえでしゅくだいをします。",
-        "ro": "ie de shukudai woshimasu .",
+        "kana": "いえ で しゅくだい を します。",
+        "ro": "ie de shukudai wo shimasu .",
         "en": "I do my homework at home."
       },
       {
         "ja": "家族と一緒に家にいます。",
-        "kana": "かぞくといっしょにいえにいます。",
-        "ro": "kazoku to isshoni ie niimasu .",
+        "kana": "かぞく と いっしょ に いえ に います。",
+        "ro": "kazoku to issho ni ie ni imasu .",
         "en": "I’m at home with my family."
       }
     ]
@@ -325,24 +325,24 @@
     "kana": "ねこ",
     "ro": "neko",
     "en": "cat",
-    "meaning": "A '猫' is a Japanese word for cat. It is commonly used in daily Japanese conversations to refer to cat.",
+    "meaning": "A '猫(neko)' is a Japanese word for cat. It is commonly used in daily Japanese conversations to refer to cat.",
     "examples": [
       {
         "ja": "猫が窓のそばで寝ています。",
-        "kana": "ねこがまどのそばでねています。",
-        "ro": "neko ga mado nosobade nete imasu .",
+        "kana": "ねこ が まど の そば で ねて います。",
+        "ro": "neko ga mado no soba de nete imasu .",
         "en": "The cat is sleeping by the window."
       },
       {
         "ja": "この猫は人になれています。",
-        "kana": "このねこはにんになれています。",
-        "ro": "kono neko wa nin ninareteimasu .",
+        "kana": "この ねこ は ひと に なれて います。",
+        "ro": "kono neko wa hito ni narete imasu .",
         "en": "This cat is friendly with people."
       },
       {
         "ja": "猫にえさをあげました。",
-        "kana": "ねこにえさをあげました。",
-        "ro": "neko niesawoagemashita .",
+        "kana": "ねこ に えさ を あげ ました。",
+        "ro": "neko ni esa wo age mashita .",
         "en": "I fed the cat."
       }
     ]
@@ -354,23 +354,23 @@
     "kana": "びょういん",
     "ro": "byouin",
     "en": "hospital",
-    "meaning": "A '病院' is a Japanese word for hospital. It is commonly used in daily Japanese conversations to refer to hospital.",
+    "meaning": "A '病院(byouin)' is a Japanese word for hospital. It is commonly used in daily Japanese conversations to refer to hospital.",
     "examples": [
       {
         "ja": "熱があるので病院へ行きます。",
-        "kana": "ねつがあるのでびょういんへいきます。",
-        "ro": "netsu gaarunode byouin e iki masu .",
+        "kana": "ねつ が ある ので びょういん へ いき ます。",
+        "ro": "netsu ga aru node byouin e iki masu .",
         "en": "I have a fever, so I’m going to the hospital."
       },
       {
         "ja": "病院で先生に見てもらいました。",
-        "kana": "びょういんでせんせいにみてもらいました。",
-        "ro": "byouin de sensei ni mite moraimashita .",
+        "kana": "びょういん で せんせい に みて もらい ました。",
+        "ro": "byouin de sensei ni mite morai mashita .",
         "en": "A doctor examined me at the hospital."
       },
       {
         "ja": "病院は駅から遠くありません。",
-        "kana": "びょういんはえきからとおくありません。",
+        "kana": "びょういん は えき から とおく ありません。",
         "ro": "byouin wa eki kara tooku arimasen .",
         "en": "The hospital isn’t far from the station."
       }
@@ -383,24 +383,24 @@
     "kana": "これ",
     "ro": "kore",
     "en": "this",
-    "meaning": "A 'これ' is a Japanese word for this. It is commonly used in daily Japanese conversations to refer to this.",
+    "meaning": "A 'これ(kore)' is a Japanese word for this. It is commonly used in daily Japanese conversations to refer to this.",
     "examples": [
       {
         "ja": "これをください。",
-        "kana": "これをください。",
-        "ro": "korewokudasai .",
+        "kana": "これ を ください。",
+        "ro": "kore wo kudasai .",
         "en": "I'll take this, please."
       },
       {
         "ja": "これは何ですか？",
-        "kana": "これはなんですか？",
-        "ro": "koreha nande suka ？",
+        "kana": "これ は なん ですか？",
+        "ro": "kore wa nan desuka ？",
         "en": "What is this?"
       },
       {
         "ja": "これは私のかばんです。",
-        "kana": "これはわたしのかばんです。",
-        "ro": "koreha watashi nokabandesu .",
+        "kana": "これ は わたし の かばん です。",
+        "ro": "kore wa watashi no kaban desu .",
         "en": "This is my bag."
       }
     ]
@@ -412,24 +412,24 @@
     "kana": "めにゅー",
     "ro": "menyuu",
     "en": "menu",
-    "meaning": "A 'メニュー' is a Japanese word for menu. It is commonly used in daily Japanese conversations to refer to menu.",
+    "meaning": "A 'メニュー(menyuu)' is a Japanese word for menu. It is commonly used in daily Japanese conversations to refer to menu.",
     "examples": [
       {
         "ja": "メニューをお願いします。",
-        "kana": "めにゅーをおねがいします。",
-        "ro": "menyuu woo negai shimasu .",
+        "kana": "めにゅー を おねがい します。",
+        "ro": "menyuu wo onegai shimasu .",
         "en": "Menu, please."
       },
       {
         "ja": "英語のメニューはありますか？",
-        "kana": "えいごのめにゅーはありますか？",
-        "ro": "eigo no menyuu haarimasuka ？",
+        "kana": "えいご の めにゅー は ありますか？",
+        "ro": "eigo no menyuu wa arimasuka ？",
         "en": "Do you have an English menu?"
       },
       {
         "ja": "メニューを見せてください。",
-        "kana": "めにゅーをみせてください。",
-        "ro": "menyuu o mise tekudasai .",
+        "kana": "めにゅー を みせて ください。",
+        "ro": "menyuu wo misete kudasai .",
         "en": "Please show me the menu."
       }
     ]
@@ -441,24 +441,24 @@
     "kana": "ちゅうもん",
     "ro": "chuumon",
     "en": "order",
-    "meaning": "A '注文' is a Japanese word for order. It is commonly used in daily Japanese conversations to refer to order.",
+    "meaning": "A '注文(chuumon)' is a Japanese word for order. It is commonly used in daily Japanese conversations to refer to order.",
     "examples": [
       {
         "ja": "注文をお願いします。",
-        "kana": "ちゅうもんをおねがいします。",
-        "ro": "chuumon woo negai shimasu .",
+        "kana": "ちゅうもん を おねがい します。",
+        "ro": "chuumon wo onegai shimasu .",
         "en": "I'd like to order, please."
       },
       {
         "ja": "まだ注文していません。",
-        "kana": "まだちゅうもんしていません。",
+        "kana": "まだ ちゅうもん していません。",
         "ro": "mada chuumon shiteimasen .",
         "en": "I haven't ordered yet."
       },
       {
         "ja": "注文は何にしますか？",
-        "kana": "ちゅうもんはなににしますか？",
-        "ro": "chuumon wa nani nishimasuka ？",
+        "kana": "ちゅうもん は なに に しますか？",
+        "ro": "chuumon wa nani ni shimasuka ？",
         "en": "What would you like to order?"
       }
     ]
@@ -470,24 +470,24 @@
     "kana": "よやく",
     "ro": "yoyaku",
     "en": "reservation",
-    "meaning": "A '予約' is a Japanese word for reservation. It is commonly used in daily Japanese conversations to refer to reservation.",
+    "meaning": "A '予約(yoyaku)' is a Japanese word for reservation. It is commonly used in daily Japanese conversations to refer to reservation.",
     "examples": [
       {
         "ja": "ホテルの予約をしました。",
-        "kana": "ほてるのよやくをしました。",
-        "ro": "hoteru no yoyaku woshimashita .",
+        "kana": "ほてる の よやく を しました。",
+        "ro": "hoteru no yoyaku wo shimashita .",
         "en": "I made a hotel reservation."
       },
       {
         "ja": "予約はありますか？",
-        "kana": "よやくはありますか？",
-        "ro": "yoyaku haarimasuka ？",
+        "kana": "よやく は ありますか？",
+        "ro": "yoyaku wa arimasuka ？",
         "en": "Do you have a reservation?"
       },
       {
         "ja": "今夜の予約を確認してください。",
-        "kana": "こんやのよやくをかくにんしてください。",
-        "ro": "konya no yoyaku o kakuninshi tekudasai .",
+        "kana": "こんや の よやく を かくにん してください。",
+        "ro": "konya no yoyaku wo kakunin shitekudasai .",
         "en": "Please confirm tonight's reservation."
       }
     ]
@@ -499,24 +499,24 @@
     "kana": "かぎ",
     "ro": "kagi",
     "en": "key",
-    "meaning": "A '鍵' is a Japanese word for key. It is commonly used in daily Japanese conversations to refer to key.",
+    "meaning": "A '鍵(kagi)' is a Japanese word for key. It is commonly used in daily Japanese conversations to refer to key.",
     "examples": [
       {
         "ja": "部屋の鍵をなくしました。",
-        "kana": "へやのかぎをなくしました。",
-        "ro": "heya no kagi wonakushimashita .",
+        "kana": "へや の かぎ を なくし ました。",
+        "ro": "heya no kagi wo nakushi mashita .",
         "en": "I lost the room key."
       },
       {
         "ja": "これがあなたの部屋の鍵です。",
-        "kana": "これがあなたのへやのかぎです。",
-        "ro": "koregaanatano heya no kagi desu .",
+        "kana": "これ が あなた の へや の かぎ です。",
+        "ro": "kore ga anata no heya no kagi desu .",
         "en": "This is your room key."
       },
       {
         "ja": "鍵を持って出かけます。",
-        "kana": "かぎをもってでかけます。",
-        "ro": "kagi o motsu te deka kemasu .",
+        "kana": "かぎ を もって でかけます。",
+        "ro": "kagi wo motte dekakemasu .",
         "en": "I'm going out with the key."
       }
     ]
@@ -528,24 +528,24 @@
     "kana": "にもつ",
     "ro": "nimotsu",
     "en": "luggage",
-    "meaning": "A '荷物' is a Japanese word for luggage. It is commonly used in daily Japanese conversations to refer to luggage.",
+    "meaning": "A '荷物(nimotsu)' is a Japanese word for luggage. It is commonly used in daily Japanese conversations to refer to luggage.",
     "examples": [
       {
         "ja": "荷物を預けてもいいですか？",
-        "kana": "にもつをあずけてもいいですか？",
-        "ro": "nimotsu o azuke temoiidesuka ？",
+        "kana": "にもつ を あずけ ても いい ですか？",
+        "ro": "nimotsu wo azuke temo ii desuka ？",
         "en": "Can I leave my luggage?"
       },
       {
         "ja": "荷物が重いです。",
-        "kana": "にもつがおもいです。",
+        "kana": "にもつ が おもい です。",
         "ro": "nimotsu ga omoi desu .",
         "en": "The luggage is heavy."
       },
       {
         "ja": "ここに荷物を置いてください。",
-        "kana": "ここににもつをおいてください。",
-        "ro": "kokoni nimotsu o oi tekudasai .",
+        "kana": "ここ に にもつ を おいて ください。",
+        "ro": "koko ni nimotsu wo oite kudasai .",
         "en": "Please put your luggage here."
       }
     ]
@@ -557,24 +557,24 @@
     "kana": "みせ",
     "ro": "mise",
     "en": "shop / store",
-    "meaning": "A '店' is a Japanese word for shop / store. It is commonly used in daily Japanese conversations to refer to shop / store.",
+    "meaning": "A '店(mise)' is a Japanese word for shop / store. It is commonly used in daily Japanese conversations to refer to shop / store.",
     "examples": [
       {
         "ja": "この店は安いです。",
-        "kana": "このみせはやすいです。",
+        "kana": "この みせ は やすい です。",
         "ro": "kono mise wa yasui desu .",
         "en": "This shop is cheap."
       },
       {
         "ja": "駅前の店でパンを買いました。",
-        "kana": "えきまえのみせでぱんをかいました。",
-        "ro": "ekimae no mise de pan o kai mashita .",
+        "kana": "えきまえ の みせ で ぱん を かい ました。",
+        "ro": "ekimae no mise de pan wo kai mashita .",
         "en": "I bought bread at the shop in front of the station."
       },
       {
         "ja": "店は九時に開きます。",
-        "kana": "みせはくじにひらきます。",
-        "ro": "mise wa kuji ni hiraki masu .",
+        "kana": "みせ は くじ に ひらきます。",
+        "ro": "mise wa kuji ni hirakimasu .",
         "en": "The shop opens at nine."
       }
     ]
@@ -586,24 +586,24 @@
     "kana": "へや",
     "ro": "heya",
     "en": "room",
-    "meaning": "A '部屋' is a Japanese word for room. It is commonly used in daily Japanese conversations to refer to room.",
+    "meaning": "A '部屋(heya)' is a Japanese word for room. It is commonly used in daily Japanese conversations to refer to room.",
     "examples": [
       {
         "ja": "部屋を掃除します。",
-        "kana": "へやをそうじします。",
-        "ro": "heya o souji shimasu .",
+        "kana": "へや を そうじ します。",
+        "ro": "heya wo souji shimasu .",
         "en": "I clean my room."
       },
       {
         "ja": "部屋は明るくて広いです。",
-        "kana": "へやはあかるくてひろいです。",
-        "ro": "heya wa akaruku te hiroi desu .",
+        "kana": "へや は あかるくて ひろい です。",
+        "ro": "heya wa akarukute hiroi desu .",
         "en": "The room is bright and spacious."
       },
       {
         "ja": "部屋の窓を開けてください。",
-        "kana": "へやのまどをひらけてください。",
-        "ro": "heya no mado o hirake tekudasai .",
+        "kana": "へや の まど を あけて ください。",
+        "ro": "heya no mado wo akete kudasai .",
         "en": "Please open the window of the room."
       }
     ]
@@ -615,23 +615,23 @@
     "kana": "ちょうしょく",
     "ro": "choushoku",
     "en": "breakfast",
-    "meaning": "A '朝食' is a Japanese word for breakfast. It is commonly used in daily Japanese conversations to refer to breakfast.",
+    "meaning": "A '朝食(choushoku)' is a Japanese word for breakfast. It is commonly used in daily Japanese conversations to refer to breakfast.",
     "examples": [
       {
         "ja": "朝食はパンを食べます。",
-        "kana": "ちょうしょくはぱんをたべます。",
-        "ro": "choushoku wa pan o tabe masu .",
+        "kana": "ちょうしょく は ぱん を たべ ます。",
+        "ro": "choushoku wa pan wo tabe masu .",
         "en": "I eat bread for breakfast."
       },
       {
         "ja": "朝食は何時からですか？",
-        "kana": "ちょうしょくはなんじからですか？",
-        "ro": "choushoku wa nanji karadesuka ？",
+        "kana": "ちょうしょく は なんじ から ですか？",
+        "ro": "choushoku wa nanji kara desuka ？",
         "en": "From what time is breakfast?"
       },
       {
         "ja": "美味しい朝食でした。",
-        "kana": "おいしいちょうしょくでした。",
+        "kana": "おいしい ちょうしょく でした。",
         "ro": "oishii choushoku deshita .",
         "en": "It was a delicious breakfast."
       }
@@ -644,23 +644,23 @@
     "kana": "でんしゃ",
     "ro": "densha",
     "en": "train",
-    "meaning": "A '電車' is a Japanese word for train. It is commonly used in daily Japanese conversations to refer to train.",
+    "meaning": "A '電車(densha)' is a Japanese word for train. It is commonly used in daily Japanese conversations to refer to train.",
     "examples": [
       {
         "ja": "電車で学校へ行きます。",
-        "kana": "でんしゃでがっこうへいきます。",
+        "kana": "でんしゃ で がっこう へ いき ます。",
         "ro": "densha de gakkou e iki masu .",
         "en": "I go to school by train."
       },
       {
         "ja": "この電車は速いです。",
-        "kana": "このでんしゃははやいです。",
+        "kana": "この でんしゃ は はやい です。",
         "ro": "kono densha wa hayai desu .",
         "en": "This train is fast."
       },
       {
         "ja": "朝は電車が混みます。",
-        "kana": "あさはでんしゃがこみます。",
+        "kana": "あさ は でんしゃ が こみ ます。",
         "ro": "asa wa densha ga komi masu .",
         "en": "Trains get crowded in the morning."
       }
@@ -673,24 +673,24 @@
     "kana": "いくら",
     "ro": "ikura",
     "en": "how much (price)",
-    "meaning": "A 'いくら' is a Japanese word for how much (price). It is commonly used in daily Japanese conversations to refer to how much (price).",
+    "meaning": "A 'いくら(ikura)' is a Japanese word for how much (price). It is commonly used in daily Japanese conversations to refer to how much (price).",
     "examples": [
       {
         "ja": "これはいくらですか？",
-        "kana": "これはいくらですか？",
-        "ro": "korehaikuradesuka ？",
+        "kana": "これ は いくら ですか？",
+        "ro": "kore wa ikura desuka ？",
         "en": "How much is this?"
       },
       {
         "ja": "全部でいくらですか？",
-        "kana": "ぜんぶでいくらですか？",
-        "ro": "zenbu deikuradesuka ？",
+        "kana": "ぜんぶ で いくら ですか？",
+        "ro": "zenbu de ikura desuka ？",
         "en": "How much is it in total?"
       },
       {
         "ja": "あの時計はいくらですか？",
-        "kana": "あのとけいはいくらですか？",
-        "ro": "ano tokei haikuradesuka ？",
+        "kana": "あの とけい は いくら ですか？",
+        "ro": "ano tokei wa ikura desuka ？",
         "en": "How much is that watch?"
       }
     ]
@@ -702,24 +702,24 @@
     "kana": "ください",
     "ro": "kudasai",
     "en": "please give me",
-    "meaning": "A 'ください' is a Japanese word for please give me. It is commonly used in daily Japanese conversations to refer to please give me.",
+    "meaning": "A 'ください(kudasai)' is a Japanese word for please give me. It is commonly used in daily Japanese conversations to refer to please give me.",
     "examples": [
       {
         "ja": "水をください。",
-        "kana": "みずをください。",
-        "ro": "mizu wokudasai .",
+        "kana": "みず を ください。",
+        "ro": "mizu wo kudasai .",
         "en": "Water, please."
       },
       {
         "ja": "メニューをください。",
-        "kana": "めにゅーをください。",
-        "ro": "menyuu wokudasai .",
+        "kana": "めにゅー を ください。",
+        "ro": "menyuu wo kudasai .",
         "en": "The menu, please."
       },
       {
         "ja": "りんごを三つください。",
-        "kana": "りんごをみっつください。",
-        "ro": "ringowo mittsu kudasai .",
+        "kana": "りんご を みっつ ください。",
+        "ro": "ringo wo mittsu kudasai .",
         "en": "Please give me three apples."
       }
     ]
@@ -729,26 +729,26 @@
     "pos": "expression",
     "ja": "お願いします",
     "kana": "おねがいします",
-    "ro": "o negai shimasu",
+    "ro": "onegai shimasu",
     "en": "please (requesting)",
-    "meaning": "A 'お願いします' is a Japanese word for please (requesting). It is commonly used in daily Japanese conversations to refer to please (requesting).",
+    "meaning": "A 'お願いします(onegai shimasu)' is a Japanese word for please (requesting). It is commonly used in daily Japanese conversations to refer to please (requesting).",
     "examples": [
       {
         "ja": "予約をお願いします。",
-        "kana": "よやくをおねがいします。",
-        "ro": "yoyaku woo negai shimasu .",
+        "kana": "よやく を おねがい します。",
+        "ro": "yoyaku wo onegai shimasu .",
         "en": "I'd like to make a reservation, please."
       },
       {
         "ja": "タクシーをお願いします。",
-        "kana": "たくしーをおねがいします。",
-        "ro": "takushii woo negai shimasu .",
+        "kana": "たくしー を おねがい します。",
+        "ro": "takushii wo onegai shimasu .",
         "en": "A taxi, please."
       },
       {
         "ja": "これを一つお願いします。",
-        "kana": "これをひとつおねがいします。",
-        "ro": "korewo hitotsu o negai shimasu .",
+        "kana": "これ を ひとつ おねがい します。",
+        "ro": "korewo hitotsu onegai shimasu .",
         "en": "One of this, please."
       }
     ]
@@ -760,24 +760,24 @@
     "kana": "どこ",
     "ro": "doko",
     "en": "where",
-    "meaning": "A 'どこ' is a Japanese word for where. It is commonly used in daily Japanese conversations to refer to where.",
+    "meaning": "A 'どこ(doko)' is a Japanese word for where. It is commonly used in daily Japanese conversations to refer to where.",
     "examples": [
       {
         "ja": "トイレはどこですか？",
-        "kana": "といれはどこですか？",
-        "ro": "toire hadokodesuka ？",
+        "kana": "といれ は どこ ですか？",
+        "ro": "toire wa doko desuka ？",
         "en": "Where is the restroom?"
       },
       {
         "ja": "受付はどこにありますか？",
-        "kana": "うけつけはどこにありますか？",
-        "ro": "uketsuke hadokoniarimasuka ？",
+        "kana": "うけつけ は どこ に ありますか？",
+        "ro": "uketsuke wa doko ni arimasuka ？",
         "en": "Where is the reception?"
       },
       {
         "ja": "あなたの家はどこですか？",
-        "kana": "あなたのいえはどこですか？",
-        "ro": "anatano ie hadokodesuka ？",
+        "kana": "あなたの いえ は どこ ですか？",
+        "ro": "anatano ie wa doko desuka ？",
         "en": "Where is your house?"
       }
     ]
@@ -789,24 +789,24 @@
     "kana": "じてんしゃ",
     "ro": "jitensha",
     "en": "bicycle",
-    "meaning": "A '自転車' is a Japanese word for bicycle. It is a very common mode of transportation in Japan, used for commuting to school, work, or the local station.",
+    "meaning": "A '自転車(jitensha)' is a Japanese word for bicycle. It is a very common mode of transportation in Japan, used for commuting to school, work, or the local station.",
     "examples": [
       {
         "ja": "自転車で駅まで行きます。",
-        "kana": "じてんしゃでえきまでいきます。",
+        "kana": "じてんしゃ で えき まで いき ます。",
         "ro": "jitensha de eki made iki masu .",
         "en": "I go to the station by bicycle."
       },
       {
         "ja": "新しい自転車を買いました。",
-        "kana": "あたらしいじてんしゃをかいました。",
-        "ro": "atarashii jitensha o kai mashita .",
+        "kana": "あたらしい じてんしゃ を かい ました。",
+        "ro": "atarashii jitensha wo kai mashita .",
         "en": "I bought a new bicycle."
       },
       {
         "ja": "自転車の鍵をなくしました。",
-        "kana": "じてんしゃのかぎをなくしました。",
-        "ro": "jitensha no kagi wonakushimashita .",
+        "kana": "じてんしゃ の かぎ を なくし ました。",
+        "ro": "jitensha no kagi wo nakushi mashita .",
         "en": "I lost my bicycle key."
       }
     ]
@@ -818,24 +818,24 @@
     "kana": "みず",
     "ro": "mizu",
     "en": "water",
-    "meaning": "A '水' is a Japanese word for water. It is commonly used in daily Japanese conversations to refer to water.",
+    "meaning": "A '水(mizu)' is a Japanese word for water. It is commonly used in daily Japanese conversations to refer to water.",
     "examples": [
       {
         "ja": "水を一杯ください。",
-        "kana": "みずをいっぱいください。",
-        "ro": "mizu o ippai kudasai .",
+        "kana": "みず を いっぱい ください。",
+        "ro": "mizu wo ippai kudasai .",
         "en": "A glass of water, please."
       },
       {
         "ja": "運動のあとに水を飲みます。",
-        "kana": "うんどうのあとにみずをのみます。",
-        "ro": "undou noatoni mizu o nomi masu .",
+        "kana": "うんどう の あと に みず を のみ ます。",
+        "ro": "undou no ato ni mizu wo nomi masu .",
         "en": "I drink water after exercising."
       },
       {
         "ja": "水はとても冷たいです。",
-        "kana": "みずはとてもつめたいです。",
-        "ro": "mizu hatotemo tsumetai desu .",
+        "kana": "みず は とても つめたい です。",
+        "ro": "mizu wa totemo tsumetai desu .",
         "en": "The water is very cold."
       }
     ]
@@ -847,24 +847,24 @@
     "kana": "おちゃ",
     "ro": "o cha",
     "en": "tea",
-    "meaning": "A 'お茶' is a Japanese word for tea. It is commonly used in daily Japanese conversations to refer to tea.",
+    "meaning": "A 'お茶(ocha)' is a Japanese word for tea. It is commonly used in daily Japanese conversations to refer to tea.",
     "examples": [
       {
         "ja": "食後にお茶を飲みます。",
-        "kana": "しょくごにおちゃをのみます。",
-        "ro": "shokugo nio cha o nomi masu .",
+        "kana": "しょくご に おちゃ を のみ ます。",
+        "ro": "shokugo ni ocha wo nomi masu .",
         "en": "I drink tea after meals."
       },
       {
         "ja": "温かいお茶をください。",
-        "kana": "あたたかいおちゃをください。",
-        "ro": "atatakai o cha wokudasai .",
+        "kana": "あたたかい おちゃ を ください。",
+        "ro": "atatakai ocha wo kudasai .",
         "en": "Hot tea, please."
       },
       {
         "ja": "お茶はこの国で有名です。",
-        "kana": "おちゃはこのくにでゆうめいです。",
-        "ro": "o cha hakono kuni de yuumei desu .",
+        "kana": "おちゃ は この くに で ゆうめい です。",
+        "ro": "ocha wa kono kuni de yuumei desu .",
         "en": "Tea is famous in this country."
       }
     ]
@@ -874,26 +874,26 @@
     "pos": "noun",
     "ja": "コーヒー",
     "kana": "こーひー",
-    "ro": "koohii",
+    "ro": "ko-hi-",
     "en": "coffee",
-    "meaning": "A 'コーヒー' is a Japanese word for coffee. It is commonly used in daily Japanese conversations to refer to coffee.",
+    "meaning": "A 'コーヒー(ko-hi-)' is a Japanese word for coffee. It is commonly used in daily Japanese conversations to refer to coffee.",
     "examples": [
       {
         "ja": "毎朝コーヒーを飲みます。",
-        "kana": "まいあさこーひーをのみます。",
-        "ro": "maiasa koohii o nomi masu .",
+        "kana": "まいあさ こーひー を のみ ます。",
+        "ro": "maiasa ko-hi- wo nomi masu .",
         "en": "I drink coffee every morning."
       },
       {
         "ja": "コーヒーは少し苦いです。",
-        "kana": "こーひーはすこしにがいです。",
-        "ro": "koohii wa sukoshi nigai desu .",
+        "kana": "こーひー は すこし にがい です。",
+        "ro": "ko-hi- wa sukoshi nigai desu .",
         "en": "Coffee is a little bitter."
       },
       {
         "ja": "砂糖なしのコーヒーが好きです。",
-        "kana": "さとうなしのこーひーがすきです。",
-        "ro": "satou nashino koohii ga suki desu .",
+        "kana": "さとう なし の こーひー が すき です。",
+        "ro": "satou nashi no ko-hi- ga suki desu .",
         "en": "I like coffee without sugar."
       }
     ]
@@ -902,27 +902,27 @@
     "id": "n5-0032",
     "pos": "noun",
     "ja": "ご飯",
-    "kana": "ごめし",
-    "ro": "go meshi",
+    "kana": "ごはん",
+    "ro": "gohan",
     "en": "meal / cooked rice",
-    "meaning": "A 'ご飯' is a Japanese word for meal / cooked rice. It is commonly used in daily Japanese conversations to refer to meal / cooked rice.",
+    "meaning": "A 'ご飯(gohan)' is a Japanese word for meal / cooked rice. It is commonly used in daily Japanese conversations to refer to meal / cooked rice.",
     "examples": [
       {
         "ja": "朝ご飯を食べましたか。",
-        "kana": "あさごめしをたべましたか。",
-        "ro": "asa go meshi o tabe mashitaka .",
+        "kana": "あさごはん を たべ ました か?",
+        "ro": "asagohan wo tabe mashita ka?",
         "en": "Did you eat breakfast?"
       },
       {
         "ja": "昼ご飯はカレーでした。",
-        "kana": "ひるごめしはかれーでした。",
-        "ro": "hiru go meshi wa karee deshita .",
+        "kana": "ひるごはん は かれー でした。",
+        "ro": "hirugohan wa kare- deshita .",
         "en": "Lunch was curry."
       },
       {
         "ja": "母がご飯を作っています。",
-        "kana": "ははがごめしをつくっています。",
-        "ro": "haha gago meshi o tsukutsu teimasu .",
+        "kana": "はは が ごはん を つくって います。",
+        "ro": "haha ga gohan wo tsukutte imasu .",
         "en": "My mother is cooking a meal."
       }
     ]
@@ -934,24 +934,24 @@
     "kana": "たまご",
     "ro": "tamago",
     "en": "egg",
-    "meaning": "A '卵' is a Japanese word for egg. It is commonly used in daily Japanese conversations to refer to egg.",
+    "meaning": "A '卵(tamago)' is a Japanese word for egg. It is commonly used in daily Japanese conversations to refer to egg.",
     "examples": [
       {
         "ja": "朝ご飯に卵を食べました。",
-        "kana": "あさごめしにたまごをたべました。",
-        "ro": "asa go meshi ni tamago o tabe mashita .",
+        "kana": "あさごはん に たまご を たべ ました。",
+        "ro": "asagohan ni tamago wo tabe mashita .",
         "en": "I ate eggs for breakfast."
       },
       {
         "ja": "卵を二つください。",
-        "kana": "たまごをふたつください。",
-        "ro": "tamago o futatsu kudasai .",
+        "kana": "たまご を ふたつ ください。",
+        "ro": "tamago wo futatsu kudasai .",
         "en": "Please give me two eggs."
       },
       {
         "ja": "卵を冷蔵庫に入れてください。",
-        "kana": "たまごをれいぞうこにいれてください。",
-        "ro": "tamago o reizouko ni ire tekudasai .",
+        "kana": "たまご を れいぞうこ に いれて ください。",
+        "ro": "tamago wo reizouko ni irete kudasai .",
         "en": "Please put the eggs in the refrigerator."
       }
     ]
@@ -963,24 +963,24 @@
     "kana": "さかな",
     "ro": "sakana",
     "en": "fish",
-    "meaning": "A '魚' is a Japanese word for fish. It is commonly used in daily Japanese conversations to refer to fish.",
+    "meaning": "A '魚(sakana)' is a Japanese word for fish. It is commonly used in daily Japanese conversations to refer to fish.",
     "examples": [
       {
         "ja": "夕ご飯に魚を食べました。",
-        "kana": "ゆうごめしにさかなをたべました。",
-        "ro": "yuu go meshi ni sakana o tabe mashita .",
+        "kana": "ゆうごはん に さかな を たべ ました。",
+        "ro": "yuugohan ni sakana wo tabe mashita .",
         "en": "I ate fish for dinner."
       },
       {
         "ja": "魚は体にいいです。",
-        "kana": "さかなはからだにいいです。",
-        "ro": "sakana wa karada niiidesu .",
+        "kana": "さかな は からだ に いい です。",
+        "ro": "sakana wa karada ni ii desu .",
         "en": "Fish is good for your health."
       },
       {
         "ja": "市場で新しい魚を買いました。",
-        "kana": "しじょうであたらしいさかなをかいました。",
-        "ro": "shijou de atarashii sakana o kai mashita .",
+        "kana": "いちば で あたらしい さかな を かい ました。",
+        "ro": "ichiba de atarashii sakana wo kai mashita .",
         "en": "I bought fresh fish at the market."
       }
     ]
@@ -992,24 +992,24 @@
     "kana": "にく",
     "ro": "niku",
     "en": "meat",
-    "meaning": "A '肉' is a Japanese word for meat. It is commonly used in daily Japanese conversations to refer to meat.",
+    "meaning": "A '肉(niku)' is a Japanese word for meat. It is commonly used in daily Japanese conversations to refer to meat.",
     "examples": [
       {
         "ja": "私は肉が好きです。",
-        "kana": "わたしはにくがすきです。",
+        "kana": "わたし は にく が すき です。",
         "ro": "watashi wa niku ga suki desu .",
         "en": "I like meat."
       },
       {
         "ja": "肉を焼いて食べます。",
-        "kana": "にくをやいてたべます。",
-        "ro": "niku o yai te tabe masu .",
+        "kana": "にく を やいて たべ ます。",
+        "ro": "niku wo yaite tabe masu .",
         "en": "I grill and eat meat."
       },
       {
         "ja": "スーパーで牛肉を買いました。",
-        "kana": "すーぱーでぎゅうにくをかいました。",
-        "ro": "suupaa de gyuuniku o kai mashita .",
+        "kana": "すーぱー で ぎゅうにく を かい ました。",
+        "ro": "su-pa- de gyu-niku wo kai mashita .",
         "en": "I bought beef at the supermarket."
       }
     ]
@@ -1021,24 +1021,24 @@
     "kana": "やさい",
     "ro": "yasai",
     "en": "vegetable",
-    "meaning": "A '野菜' is a Japanese word for vegetable. It is commonly used in daily Japanese conversations to refer to vegetable.",
+    "meaning": "A '野菜(yasai)' is a Japanese word for vegetable. It is commonly used in daily Japanese conversations to refer to vegetable.",
     "examples": [
       {
         "ja": "毎日野菜を食べます。",
-        "kana": "まいにちやさいをたべます。",
-        "ro": "mainichi yasai o tabe masu .",
+        "kana": "まいにち やさい を たべ ます。",
+        "ro": "mainichi yasai wo tabe masu .",
         "en": "I eat vegetables every day."
       },
       {
         "ja": "この野菜はとても新鮮です。",
-        "kana": "このやさいはとてもしんせんです。",
-        "ro": "kono yasai hatotemo shinsen desu .",
+        "kana": "この やさい は とても しんせん です。",
+        "ro": "kono yasai wa totemo shinsen desu .",
         "en": "These vegetables are very fresh."
       },
       {
         "ja": "野菜スープを作りました。",
-        "kana": "やさいすーぷをつくりました。",
-        "ro": "yasai suupu o tsukuri mashita .",
+        "kana": "やさい すーぷ を つくり ました。",
+        "ro": "yasai su-pu wo tsukuri mashita .",
         "en": "I made vegetable soup."
       }
     ]
@@ -1050,23 +1050,23 @@
     "kana": "くだもの",
     "ro": "kudamono",
     "en": "fruit",
-    "meaning": "A '果物' is a Japanese word for fruit. It is commonly used in daily Japanese conversations to refer to fruit.",
+    "meaning": "A '果物(kudamono)' is a Japanese word for fruit. It is commonly used in daily Japanese conversations to refer to fruit.",
     "examples": [
       {
         "ja": "果物が好きです。",
-        "kana": "くだものがすきです。",
+        "kana": "くだもの が すき です。",
         "ro": "kudamono ga suki desu .",
         "en": "I like fruit."
       },
       {
         "ja": "朝に果物を食べます。",
-        "kana": "あさにくだものをたべます。",
-        "ro": "asa ni kudamono o tabe masu .",
+        "kana": "あさ に くだもの を たべ ます。",
+        "ro": "asa ni kudamono wo tabe masu .",
         "en": "I eat fruit in the morning."
       },
       {
         "ja": "この果物は甘いです。",
-        "kana": "このくだものはあまいです。",
+        "kana": "この くだもの は あまい です。",
         "ro": "kono kudamono wa amai desu .",
         "en": "This fruit is sweet."
       }
@@ -1079,24 +1079,24 @@
     "kana": "あめ",
     "ro": "ame",
     "en": "rain",
-    "meaning": "A '雨' is a Japanese word for rain. It is commonly used in daily Japanese conversations to refer to rain.",
+    "meaning": "A '雨(ame)' is a Japanese word for rain. It is commonly used in daily Japanese conversations to refer to rain.",
     "examples": [
       {
         "ja": "今日は雨が降っています。",
-        "kana": "こんにちはあめがふっています。",
-        "ro": "konnichiha ame ga futsu teimasu .",
+        "kana": "きょう は あめ が ふって います。",
+        "ro": "kyou wa ame ga futte imasu .",
         "en": "It’s raining today."
       },
       {
         "ja": "雨の日は外に出ません。",
-        "kana": "あめのにちはそとにでません。",
-        "ro": "ame no nichi wa soto ni dema sen .",
+        "kana": "あめ の ひ は そと に でません。",
+        "ro": "ame no hi wa soto ni demasen .",
         "en": "I don’t go outside on rainy days."
       },
       {
         "ja": "明日は雨かもしれません。",
-        "kana": "あしたはあめかもしれません。",
-        "ro": "ashita wa ame kamoshiremasen .",
+        "kana": "あした は あめ かも しれません。",
+        "ro": "ashita wa ame kamo shiremasen .",
         "en": "It might rain tomorrow."
       }
     ]
@@ -1108,24 +1108,24 @@
     "kana": "ゆき",
     "ro": "yuki",
     "en": "snow",
-    "meaning": "A '雪' is a Japanese word for snow. It is commonly used in daily Japanese conversations to refer to snow.",
+    "meaning": "A '雪(yuki)' is a Japanese word for snow. It is commonly used in daily Japanese conversations to refer to snow.",
     "examples": [
       {
         "ja": "昨日は雪が降りました。",
-        "kana": "きのうはゆきがおりました。",
-        "ro": "kinou wa yuki ga ori mashita .",
+        "kana": "きのう は ゆき が ふりました。",
+        "ro": "kinou wa yuki ga furi mashita .",
         "en": "It snowed yesterday."
       },
       {
         "ja": "雪で道が白くなりました。",
-        "kana": "ゆきでみちがしろくなりました。",
+        "kana": "ゆき で みち が しろく なりました。",
         "ro": "yuki de michi ga shiroku narimashita .",
         "en": "The roads turned white with snow."
       },
       {
         "ja": "雪がきれいですね。",
-        "kana": "ゆきがきれいですね。",
-        "ro": "yuki gakireidesune .",
+        "kana": "ゆき が きれい ですね。",
+        "ro": "yuki ga kirei desune .",
         "en": "The snow is beautiful, isn’t it?"
       }
     ]
@@ -1137,24 +1137,24 @@
     "kana": "かぜ",
     "ro": "kaze",
     "en": "wind",
-    "meaning": "A '風' is a Japanese word for wind. It is commonly used in daily Japanese conversations to refer to wind.",
+    "meaning": "A '風(kaze)' is a Japanese word for wind. It is commonly used in daily Japanese conversations to refer to wind.",
     "examples": [
       {
         "ja": "今日は風が強いです。",
-        "kana": "こんにちはかぜがつよいです。",
-        "ro": "konnichiha kaze ga tsuyoi desu .",
+        "kana": "きょう は かぜ が つよい です。",
+        "ro": "kyou wa kaze ga tsuyoi desu .",
         "en": "It’s windy today."
       },
       {
         "ja": "風が気持ちいいです。",
-        "kana": "かぜがきもちいいです。",
+        "kana": "かぜ が きもちいい です。",
         "ro": "kaze ga kimochii idesu .",
         "en": "The wind feels nice."
       },
       {
         "ja": "海から風が吹いています。",
-        "kana": "うみからかぜがふいています。",
-        "ro": "umi kara kaze ga fui teimasu .",
+        "kana": "うみ から かぜ が ふいて います。",
+        "ro": "umi kara kaze ga fuite imasu .",
         "en": "The wind is blowing from the sea."
       }
     ]
@@ -1166,24 +1166,24 @@
     "kana": "そら",
     "ro": "sora",
     "en": "sky",
-    "meaning": "A '空' is a Japanese word for sky. It is commonly used in daily Japanese conversations to refer to sky.",
+    "meaning": "A '空(sora)' is a Japanese word for sky. It is commonly used in daily Japanese conversations to refer to sky.",
     "examples": [
       {
         "ja": "空が青いです。",
-        "kana": "そらがあおいです。",
+        "kana": "そら が あおい です。",
         "ro": "sora ga aoi desu .",
         "en": "The sky is blue."
       },
       {
         "ja": "夕方の空がきれいです。",
-        "kana": "ゆうがたのそらがきれいです。",
-        "ro": "yuugata no sora gakireidesu .",
+        "kana": "ゆうがた の そら が きれい です。",
+        "ro": "yuugata no sora ga kirei desu .",
         "en": "The evening sky is beautiful."
       },
       {
         "ja": "空に雲がありません。",
-        "kana": "そらにくもがありません。",
-        "ro": "sora ni kumo gaarimasen .",
+        "kana": "そら に くも が ありません。",
+        "ro": "sora ni kumo ga arimasen .",
         "en": "There are no clouds in the sky."
       }
     ]
@@ -1195,24 +1195,24 @@
     "kana": "ほし",
     "ro": "hoshi",
     "en": "star",
-    "meaning": "A '星' is a Japanese word for star. It is commonly used in daily Japanese conversations to refer to star.",
+    "meaning": "A '星(hoshi)' is a Japanese word for star. It is commonly used in daily Japanese conversations to refer to star.",
     "examples": [
       {
         "ja": "夜空にたくさんの星が見えます。",
-        "kana": "よぞらにたくさんのほしがみえます。",
-        "ro": "yozora nitakusanno hoshi ga mie masu .",
+        "kana": "よぞらに たくさん の ほし が みえ ます。",
+        "ro": "yozora ni takusan no hoshi ga mie masu .",
         "en": "Many stars can be seen in the night sky."
       },
       {
         "ja": "星がとてもきれいです。",
-        "kana": "ほしがとてもきれいです。",
-        "ro": "hoshi gatotemokireidesu .",
+        "kana": "ほし が とても きれい です。",
+        "ro": "hoshi ga totemo kirei desu .",
         "en": "The stars are very beautiful."
       },
       {
         "ja": "流れ星を見ました。",
-        "kana": "ながれぼしをみました。",
-        "ro": "nagareboshi o mima shita .",
+        "kana": "ながれぼし を み ました。",
+        "ro": "nagareboshi wo mi mashita .",
         "en": "I saw a shooting star."
       }
     ]
@@ -1224,24 +1224,24 @@
     "kana": "やま",
     "ro": "yama",
     "en": "mountain",
-    "meaning": "A '山' is a Japanese word for mountain. It is commonly used in daily Japanese conversations to refer to mountain.",
+    "meaning": "A '山(yama)' is a Japanese word for mountain. It is commonly used in daily Japanese conversations to refer to mountain.",
     "examples": [
       {
         "ja": "山に登りました。",
-        "kana": "やまにのぼりました。",
+        "kana": "やま に のぼり ました。",
         "ro": "yama ni nobori mashita .",
         "en": "I climbed a mountain."
       },
       {
         "ja": "この山は高いです。",
-        "kana": "このやまはたかいです。",
+        "kana": "この やま は たかい です。",
         "ro": "kono yama wa takai desu .",
         "en": "This mountain is high."
       },
       {
         "ja": "山の空気はきれいです。",
-        "kana": "やまのくうきはきれいです。",
-        "ro": "yama no kuuki hakireidesu .",
+        "kana": "やま の くうき は きれい です。",
+        "ro": "yama no ku-ki wa kirei desu .",
         "en": "The air in the mountains is clean."
       }
     ]
@@ -1253,24 +1253,24 @@
     "kana": "かわ",
     "ro": "kawa",
     "en": "river",
-    "meaning": "A '川' is a Japanese word for river. It is commonly used in daily Japanese conversations to refer to river.",
+    "meaning": "A '川(kawa)' is a Japanese word for river. It is commonly used in daily Japanese conversations to refer to river.",
     "examples": [
       {
         "ja": "川で魚を見ました。",
-        "kana": "かわでさかなをみました。",
-        "ro": "kawa de sakana o mima shita .",
+        "kana": "かわ で さかな を み ました。",
+        "ro": "kawa de sakana wo mi mashita .",
         "en": "I saw fish in the river."
       },
       {
         "ja": "川の水はきれいです。",
-        "kana": "かわのみずはきれいです。",
-        "ro": "kawa no mizu hakireidesu .",
+        "kana": "かわ の みず は きれい です。",
+        "ro": "kawa no mizu wa kirei desu .",
         "en": "The river water is clean."
       },
       {
         "ja": "子どもたちが川で遊んでいます。",
-        "kana": "こどもたちがかわであそんでいます。",
-        "ro": "kodomo tachiga kawa de asonde imasu .",
+        "kana": "こどもたち が かわ で あそんで います。",
+        "ro": "kodomotachi ga kawa de asonde imasu .",
         "en": "Children are playing in the river."
       }
     ]
@@ -1282,23 +1282,23 @@
     "kana": "うみ",
     "ro": "umi",
     "en": "sea",
-    "meaning": "A '海' is a Japanese word for sea. It is commonly used in daily Japanese conversations to refer to sea.",
+    "meaning": "A '海(umi)' is a Japanese word for sea. It is commonly used in daily Japanese conversations to refer to sea.",
     "examples": [
       {
         "ja": "夏に海へ行きました。",
-        "kana": "なつにうみへいきました。",
+        "kana": "なつ に うみ へ いき ました。",
         "ro": "natsu ni umi e iki mashita .",
         "en": "I went to the sea in summer."
       },
       {
         "ja": "海の水は青いです。",
-        "kana": "うみのみずはあおいです。",
+        "kana": "うみ の みず は あおい です。",
         "ro": "umi no mizu wa aoi desu .",
         "en": "The sea water is blue."
       },
       {
         "ja": "海で泳ぎました。",
-        "kana": "うみでおよぎました。",
+        "kana": "うみ で およぎ ました。",
         "ro": "umi de oyogi mashita .",
         "en": "I swam in the sea."
       }
@@ -1311,23 +1311,23 @@
     "kana": "みち",
     "ro": "michi",
     "en": "road / street",
-    "meaning": "A '道' is a Japanese word for road / street. It is commonly used in daily Japanese conversations to refer to road / street.",
+    "meaning": "A '道(michi)' is a Japanese word for road / street. It is commonly used in daily Japanese conversations to refer to road / street.",
     "examples": [
       {
         "ja": "この道をまっすぐ行きます。",
-        "kana": "このみちをまっすぐいきます。",
-        "ro": "kono michi womassugu iki masu .",
+        "kana": "この みち を まっすぐ いき ます。",
+        "ro": "kono michi wo massugu iki masu .",
         "en": "Go straight along this road."
       },
       {
         "ja": "道に花がたくさん咲いています。",
-        "kana": "みちにはながたくさんさいています。",
-        "ro": "michi ni hana gatakusan sai teimasu .",
+        "kana": "みち に はな が たくさん さいて います。",
+        "ro": "michi ni hana ga takusan saite imasu .",
         "en": "Many flowers are blooming along the road."
       },
       {
         "ja": "道が広くなりました。",
-        "kana": "みちがひろくなりました。",
+        "kana": "みち が ひろく なりました。",
         "ro": "michi ga hiroku narimashita .",
         "en": "The road has become wider."
       }
@@ -1340,23 +1340,23 @@
     "kana": "はし",
     "ro": "hashi",
     "en": "bridge",
-    "meaning": "A '橋' is a Japanese word for bridge. It is commonly used in daily Japanese conversations to refer to bridge.",
+    "meaning": "A '橋(hashi)' is a Japanese word for bridge. It is commonly used in daily Japanese conversations to refer to bridge.",
     "examples": [
       {
         "ja": "川に橋があります。",
-        "kana": "かわにはしがあります。",
-        "ro": "kawa ni hashi gaarimasu .",
+        "kana": "かわ に はし が あります。",
+        "ro": "kawa ni hashi ga arimasu .",
         "en": "There is a bridge over the river."
       },
       {
         "ja": "橋を渡って学校へ行きます。",
-        "kana": "はしをわたってがっこうへいきます。",
-        "ro": "hashi o watatsu te gakkou e iki masu .",
+        "kana": "はし を わたって がっこう へ いき ます。",
+        "ro": "hashi wo watatte gakkou e iki masu .",
         "en": "I cross the bridge to go to school."
       },
       {
         "ja": "この橋は古いです。",
-        "kana": "このはしはふるいです。",
+        "kana": "この はし は ふるい です。",
         "ro": "kono hashi wa furui desu .",
         "en": "This bridge is old."
       }
@@ -1369,24 +1369,24 @@
     "kana": "ばす",
     "ro": "basu",
     "en": "bus",
-    "meaning": "A 'バス' is a Japanese word for bus. It is commonly used in daily Japanese conversations to refer to bus.",
+    "meaning": "A 'バス(basu)' is a Japanese word for bus. It is commonly used in daily Japanese conversations to refer to bus.",
     "examples": [
       {
         "ja": "駅までバスで行きます。",
-        "kana": "えきまでばすでいきます。",
+        "kana": "えき まで ばす で いき ます。",
         "ro": "eki made basu de iki masu .",
         "en": "I go to the station by bus."
       },
       {
         "ja": "バスが遅れています。",
-        "kana": "ばすがおくれています。",
-        "ro": "basu ga okure teimasu .",
+        "kana": "ばす が おくれて います。",
+        "ro": "basu ga okurete imasu .",
         "en": "The bus is delayed."
       },
       {
         "ja": "次のバスは十分後に来ます。",
-        "kana": "つぎのばすはじゅうぶんのちにきます。",
-        "ro": "tsugino basu wa juubun nochini kima su .",
+        "kana": "つぎ の ばす は じゅっぷんご に きます。",
+        "ro": "tsugino basu wa juppungo ni kimasu .",
         "en": "The next bus comes in ten minutes."
       }
     ]
@@ -1398,23 +1398,23 @@
     "kana": "でんき",
     "ro": "denki",
     "en": "electricity / light",
-    "meaning": "A '電気' is a Japanese word for electricity / light. It is commonly used in daily Japanese conversations to refer to electricity / light.",
+    "meaning": "A '電気(denki)' is a Japanese word for electricity / light. It is commonly used in daily Japanese conversations to refer to electricity / light.",
     "examples": [
       {
         "ja": "電気をつけてください。",
-        "kana": "でんきをつけてください。",
-        "ro": "denki wotsuketekudasai .",
+        "kana": "でんき を つけて ください。",
+        "ro": "denki wo tsukete kudasai .",
         "en": "Please turn on the light."
       },
       {
         "ja": "夜は電気を消します。",
-        "kana": "よるはでんきをけします。",
-        "ro": "yoru wa denki o keshi masu .",
+        "kana": "よる は でんき を けし ます。",
+        "ro": "yoru wa denki wo keshi masu .",
         "en": "I turn off the light at night."
       },
       {
         "ja": "この部屋の電気は明るいです。",
-        "kana": "このへやのでんきはあかるいです。",
+        "kana": "この へや の でんき は あかるい です。",
         "ro": "kono heya no denki wa akarui desu .",
         "en": "The light in this room is bright."
       }
@@ -1427,24 +1427,24 @@
     "kana": "でんわ",
     "ro": "denwa",
     "en": "telephone / call",
-    "meaning": "A '電話' is a Japanese word for telephone / call. It is commonly used in daily Japanese conversations to refer to telephone / call.",
+    "meaning": "A '電話(denwa)' is a Japanese word for telephone / call. It is commonly used in daily Japanese conversations to refer to telephone / call.",
     "examples": [
       {
         "ja": "友達に電話をかけました。",
-        "kana": "ともだちにでんわをかけました。",
-        "ro": "tomodachi ni denwa wokakemashita .",
+        "kana": "ともだち に でんわ を かけました。",
+        "ro": "tomodachi ni denwa wo kakemashita .",
         "en": "I called my friend."
       },
       {
         "ja": "母から電話がありました。",
-        "kana": "ははからでんわがありました。",
-        "ro": "haha kara denwa gaarimashita .",
+        "kana": "はは から でんわ が ありました。",
+        "ro": "haha kara denwa ga arimashita .",
         "en": "I got a phone call from my mother."
       },
       {
-        "ja": "電話の番号を知っていますか。",
-        "kana": "でんわのばんごうをしっていますか。",
-        "ro": "denwa no bangou o shitte imasuka .",
+        "ja": "電話番号を知っていますか。",
+        "kana": "でんわばんごう を しって いますか。",
+        "ro": "denwabangou wo shitte imasuka .",
         "en": "Do you know the phone number?"
       }
     ]
