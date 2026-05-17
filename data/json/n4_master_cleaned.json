@@ -6,28 +6,19 @@
     "kana": "〜ことにする",
     "ro": "~ kotonisuru",
     "en": "decide to / make a decision to",
-    "audio": "n4-0001.mp4",
+    "meaning": "Used when the speaker makes a personal decision or a conscious choice to take a specific action. It emphasizes the person's own will.",
     "examples": [
       {
         "ja": "留学することにしました。",
         "kana": "りゅうがくすることにしました。",
         "ro": "ryuugaku surukotonishimashita .",
-        "en": "I decided to study abroad.",
-        "audio": "n4-0001-ex1.mp4"
+        "en": "I decided to study abroad."
       },
       {
         "ja": "運動を始めることにしました。",
         "kana": "うんどうをはじめることにしました。",
         "ro": "undou o hajime rukotonishimashita .",
-        "en": "I decided to start exercising.",
-        "audio": "n4-0001-ex2.mp4"
-      },
-      {
-        "ja": "コーヒーをやめることにしました。",
-        "kana": "こーひーをやめることにしました。",
-        "ro": "koohii woyamerukotonishimashita .",
-        "en": "I decided to stop drinking coffee.",
-        "audio": "n4-0001-ex3.mp4"
+        "en": "I decided to start exercising."
       }
     ]
   },
@@ -38,28 +29,13 @@
     "kana": "〜ことになる",
     "ro": "~ kotoninaru",
     "en": "it is decided that / turns out that",
-    "audio": "n4-0002.mp4",
+    "meaning": "Indicates that a decision or outcome has been reached, often due to external factors, rules, or someone else's choice, rather than the speaker's direct will.",
     "examples": [
       {
         "ja": "東京へ行くことになりました。",
         "kana": "とうきょうへいくことになりました。",
         "ro": "toukyou e iku kotoninarimashita .",
-        "en": "It has been decided that I will go to Tokyo.",
-        "audio": "n4-0002-ex1.mp4"
-      },
-      {
-        "ja": "来月引っ越すことになりました。",
-        "kana": "らいげつひっこすことになりました。",
-        "ro": "raigetsu hikkosu kotoninarimashita .",
-        "en": "It’s been decided that we will move next month.",
-        "audio": "n4-0002-ex2.mp4"
-      },
-      {
-        "ja": "彼が結婚することになりました。",
-        "kana": "かれがけっこんすることになりました。",
-        "ro": "kare ga kekkon surukotoninarimashita .",
-        "en": "It turns out that he is getting married.",
-        "audio": "n4-0002-ex3.mp4"
+        "en": "It has been decided that I will go to Tokyo."
       }
     ]
   },
@@ -70,28 +46,13 @@
     "kana": "〜そうだ（でんぶん）",
     "ro": "~ souda ( denbun )",
     "en": "I heard that / it is said that",
-    "audio": "n4-0003.mp4",
+    "meaning": "Used to report information obtained from another source. Unlike the 'look like' version, this always attaches to the dictionary form or past tense.",
     "examples": [
       {
         "ja": "彼は結婚したそうです。",
         "kana": "かれはけっこんしたそうです。",
         "ro": "kareha kekkon shitasoudesu .",
-        "en": "I heard that he got married.",
-        "audio": "n4-0003-ex1.mp4"
-      },
-      {
-        "ja": "明日は寒いそうです。",
-        "kana": "あしたはさむいそうです。",
-        "ro": "ashita wa samui soudesu .",
-        "en": "I heard that tomorrow will be cold.",
-        "audio": "n4-0003-ex2.mp4"
-      },
-      {
-        "ja": "先生は病気だそうです。",
-        "kana": "せんせいはびょうきだそうです。",
-        "ro": "sensei wa byouki dasoudesu .",
-        "en": "I heard that the teacher is sick.",
-        "audio": "n4-0003-ex3.mp4"
+        "en": "I heard that he got married."
       }
     ]
   },
@@ -102,28 +63,13 @@
     "kana": "〜たことがある",
     "ro": "~ takotogaaru",
     "en": "have done / have experienced",
-    "audio": "n4-0004.mp4",
+    "meaning": "Describes a past experience that has happened at least once. It is not used for recent, routine, or everyday actions.",
     "examples": [
       {
         "ja": "京都へ行ったことがあります。",
         "kana": "きょうとへいったことがあります。",
         "ro": "kyouto e itta kotogaarimasu .",
-        "en": "I have been to Kyoto.",
-        "audio": "n4-0004-ex1.mp4"
-      },
-      {
-        "ja": "寿司を食べたことがあります。",
-        "kana": "すしをたべたことがあります。",
-        "ro": "sushi o tabeta kotogaarimasu .",
-        "en": "I have eaten sushi before.",
-        "audio": "n4-0004-ex2.mp4"
-      },
-      {
-        "ja": "雪を見たことがありません。",
-        "kana": "ゆきをみたことがありません。",
-        "ro": "yuki o mita kotogaarimasen .",
-        "en": "I have never seen snow.",
-        "audio": "n4-0004-ex3.mp4"
+        "en": "I have been to Kyoto."
       }
     ]
   },
@@ -133,29 +79,14 @@
     "ja": "〜ために",
     "kana": "〜ために",
     "ro": "~ tameni",
-    "en": "in order to / for the purpose of / because of",
-    "audio": "n4-0005.mp4",
+    "en": "in order to / for the purpose of",
+    "meaning": "Expresses a purpose or benefit. When used with a verb, it indicates a strong intention to achieve a specific goal.",
     "examples": [
       {
         "ja": "試験に合格するために一生懸命勉強します。",
         "kana": "しけんにごうかくするためにいっしょうけんめいべんきょうします。",
         "ro": "shiken ni goukaku surutameni isshoukenmei benkyou shimasu .",
-        "en": "I study hard in order to pass the exam.",
-        "audio": "n4-0005-ex1.mp4"
-      },
-      {
-        "ja": "彼は日本語を勉強するために日本へ来ました。",
-        "kana": "かれはにほんごをべんきょうするためににっぽんへきました。",
-        "ro": "kareha nihongo o benkyou surutameni nippon e kima shita .",
-        "en": "He came to Japan to study Japanese.",
-        "audio": "n4-0005-ex2.mp4"
-      },
-      {
-        "ja": "健康のために運動します。",
-        "kana": "けんこうのためにうんどうします。",
-        "ro": "kenkou notameni undou shimasu .",
-        "en": "I exercise for my health.",
-        "audio": "n4-0005-ex3.mp4"
+        "en": "I study hard in order to pass the exam."
       }
     ]
   },
@@ -165,29 +96,14 @@
     "ja": "〜てある",
     "kana": "〜てある",
     "ro": "~ tearu",
-    "en": "something is done / has been done (intentionally)",
-    "audio": "n4-0006.mp4",
+    "en": "something has been done (intentionally)",
+    "meaning": "Describes a state that exists as a result of an intentional action performed by someone in the past, usually with a purpose in mind.",
     "examples": [
       {
         "ja": "まどが開けてあります。",
         "kana": "まどがひらけてあります。",
         "ro": "madoga hirake tearimasu .",
-        "en": "The window is open (by someone).",
-        "audio": "n4-0006-ex1.mp4"
-      },
-      {
-        "ja": "電気がつけてあります。",
-        "kana": "でんきがつけてあります。",
-        "ro": "denki gatsuketearimasu .",
-        "en": "The light is on (someone turned it on).",
-        "audio": "n4-0006-ex2.mp4"
-      },
-      {
-        "ja": "いすが並べてあります。",
-        "kana": "いすがなべてあります。",
-        "ro": "isuga nabete arimasu .",
-        "en": "The chairs are arranged.",
-        "audio": "n4-0006-ex3.mp4"
+        "en": "The window is open (someone opened it for a reason)."
       }
     ]
   },
@@ -198,28 +114,13 @@
     "kana": "〜ているところ",
     "ro": "~ teirutokoro",
     "en": "in the middle of doing something",
-    "audio": "n4-0007.mp4",
+    "meaning": "Emphasizes the specific moment of an action currently in progress. It gives a sense of 'at this very moment.'",
     "examples": [
       {
         "ja": "今勉強しているところです。",
         "kana": "いまべんきょうしているところです。",
         "ro": "ima benkyou shiteirutokorodesu .",
-        "en": "I’m studying now.",
-        "audio": "n4-0007-ex1.mp4"
-      },
-      {
-        "ja": "今電話しているところです。",
-        "kana": "いまでんわしているところです。",
-        "ro": "ima denwa shiteirutokorodesu .",
-        "en": "She’s talking on the phone right now.",
-        "audio": "n4-0007-ex2.mp4"
-      },
-      {
-        "ja": "昼ごはんを食べているところです。",
-        "kana": "ひるごはんをたべているところです。",
-        "ro": "hiru gohanwo tabete irutokorodesu .",
-        "en": "He’s eating lunch.",
-        "audio": "n4-0007-ex3.mp4"
+        "en": "I’m studying right now."
       }
     ]
   },
@@ -229,29 +130,14 @@
     "ja": "〜ておく",
     "kana": "〜ておく",
     "ro": "~ teoku",
-    "en": "to do something in advance / to prepare",
-    "audio": "n4-0008.mp4",
+    "en": "to do in advance / to prepare",
+    "meaning": "Indicates that an action is performed beforehand as preparation for the future, or to maintain a certain state.",
     "examples": [
       {
         "ja": "チケットを買っておきます。",
         "kana": "ちけっとをかっておきます。",
         "ro": "chiketto o katsu teokimasu .",
-        "en": "I’ll buy tickets in advance.",
-        "audio": "n4-0008-ex1.mp4"
-      },
-      {
-        "ja": "お客さんが来る前に晩ごはんを作っておきます。",
-        "kana": "おきゃくさんがくるまえにばんごはんをつくっておきます。",
-        "ro": "o kyaku sanga kuru mae ni ban gohanwo tsukutsu teokimasu .",
-        "en": "I’ll prepare dinner before guests come.",
-        "audio": "n4-0008-ex2.mp4"
-      },
-      {
-        "ja": "出かける前にスマホを充電しておきます。",
-        "kana": "でかけるまえにすまほをじゅうでんしておきます。",
-        "ro": "deka keru mae ni sumaho o juuden shiteokimasu .",
-        "en": "I’ll charge my phone before I go out.",
-        "audio": "n4-0008-ex3.mp4"
+        "en": "I’ll buy tickets in advance."
       }
     ]
   },
@@ -261,29 +147,14 @@
     "ja": "〜ておく（完了）",
     "kana": "〜ておく（かんりょう）",
     "ro": "~ teoku ( kanryou )",
-    "en": "to finish doing something / complete in advance",
-    "audio": "n4-0009.mp4",
+    "en": "to finish doing something in advance",
+    "meaning": "Similar to standard 'teoku', but focuses on the completion of a necessary task before another event starts.",
     "examples": [
       {
         "ja": "宿題をしておきました。",
         "kana": "しゅくだいをしておきました。",
         "ro": "shukudai woshiteokimashita .",
-        "en": "I’ve already done my homework.",
-        "audio": "n4-0009-ex1.mp4"
-      },
-      {
-        "ja": "部屋を掃除しておきました。",
-        "kana": "へやをそうじしておきました。",
-        "ro": "heya o souji shiteokimashita .",
-        "en": "I’ve cleaned the room.",
-        "audio": "n4-0009-ex2.mp4"
-      },
-      {
-        "ja": "電気を消しておきました。",
-        "kana": "でんきをけしておきました。",
-        "ro": "denki o keshi teokimashita .",
-        "en": "I’ve turned off the lights.",
-        "audio": "n4-0009-ex3.mp4"
+        "en": "I’ve already finished my homework (in preparation)."
       }
     ]
   },
@@ -293,29 +164,14 @@
     "ja": "〜ておく（準備）",
     "kana": "〜ておく（じゅんび）",
     "ro": "~ teoku ( junbi )",
-    "en": "to do something beforehand / for preparation",
-    "audio": "n4-0010.mp4",
+    "en": "to do beforehand for preparation",
+    "meaning": "Emphasizes the preparatory nature of the action before guests arrive or a specific event occurs.",
     "examples": [
-      {
-        "ja": "切符を買っておきます。",
-        "kana": "きっぷをかっておきます。",
-        "ro": "kippu o katsu teokimasu .",
-        "en": "I’ll prepare the tickets in advance.",
-        "audio": "n4-0010-ex1.mp4"
-      },
       {
         "ja": "テストの前に勉強しておきます。",
         "kana": "てすとのまえにべんきょうしておきます。",
         "ro": "tesuto no mae ni benkyou shiteokimasu .",
-        "en": "I’ll study before the test.",
-        "audio": "n4-0010-ex2.mp4"
-      },
-      {
-        "ja": "お客さんが来る前に家を掃除しておきます。",
-        "kana": "おきゃくさんがくるまえにいえをそうじしておきます。",
-        "ro": "o kyaku sanga kuru mae ni ie o souji shiteokimasu .",
-        "en": "I’ll clean the house before guests come.",
-        "audio": "n4-0010-ex3.mp4"
+        "en": "I’ll study before the test."
       }
     ]
   },
@@ -325,29 +181,14 @@
     "ja": "〜てしまう",
     "kana": "〜てしまう",
     "ro": "~ teshimau",
-    "en": "to do something completely / to regretfully do",
-    "audio": "n4-0011.mp4",
+    "en": "to finish completely / regretfully do",
+    "meaning": "Has two main nuances: 1) completing an action entirely, or 2) performing an action accidentally with a sense of regret or surprise.",
     "examples": [
       {
         "ja": "財布を忘れてしまいました。",
         "kana": "さいふをわすれてしまいました。",
         "ro": "saifu o wasure teshimaimashita .",
-        "en": "I accidentally forgot my wallet.",
-        "audio": "n4-0011-ex1.mp4"
-      },
-      {
-        "ja": "宿題を全部やってしまいました。",
-        "kana": "しゅくだいをぜんぶやってしまいました。",
-        "ro": "shukudai o zenbu yatteshimaimashita .",
-        "en": "I finished all the homework.",
-        "audio": "n4-0011-ex2.mp4"
-      },
-      {
-        "ja": "スマホを壊してしまった！",
-        "kana": "すまほをこわしてしまった！",
-        "ro": "sumaho o kowashi teshimatta !",
-        "en": "I broke my phone!",
-        "audio": "n4-0011-ex3.mp4"
+        "en": "I accidentally forgot my wallet."
       }
     ]
   },
@@ -358,28 +199,13 @@
     "kana": "〜てはいけない",
     "ro": "~ tehaikenai",
     "en": "must not / not allowed to",
-    "audio": "n4-0012.mp4",
+    "meaning": "Used to state a prohibition or forbid someone from doing something. Often used in rules and regulations.",
     "examples": [
       {
         "ja": "ここでたばこを吸ってはいけません。",
         "kana": "ここでたばこをすってはいけません。",
         "ro": "kokodetabakowo sutsu tehaikemasen .",
-        "en": "You must not smoke here.",
-        "audio": "n4-0012-ex1.mp4"
-      },
-      {
-        "ja": "遅れてはいけません。",
-        "kana": "おくれてはいけません。",
-        "ro": "okure tehaikemasen .",
-        "en": "You must not be late.",
-        "audio": "n4-0012-ex2.mp4"
-      },
-      {
-        "ja": "このルールを忘れてはいけません。",
-        "kana": "このるーるをわすれてはいけません。",
-        "ro": "kono ruuru o wasure tehaikemasen .",
-        "en": "You must not forget this rule.",
-        "audio": "n4-0012-ex3.mp4"
+        "en": "You must not smoke here."
       }
     ]
   },
@@ -389,29 +215,14 @@
     "ja": "〜てみる",
     "kana": "〜てみる",
     "ro": "~ temiru",
-    "en": "try doing / give something a try",
-    "audio": "n4-0013.mp4",
+    "en": "try doing / give a try",
+    "meaning": "Used when someone does something to see what it's like or to see the result, without being certain of the outcome.",
     "examples": [
       {
         "ja": "すしを食べてみます。",
         "kana": "すしをたべてみます。",
         "ro": "sushiwo tabete mimasu .",
-        "en": "I’ll try eating sushi.",
-        "audio": "n4-0013-ex1.mp4"
-      },
-      {
-        "ja": "このアプリを使ってみます。",
-        "kana": "このあぷりをつかってみます。",
-        "ro": "kono apuri o tsukatte mimasu .",
-        "en": "I’ll try using this app.",
-        "audio": "n4-0013-ex2.mp4"
-      },
-      {
-        "ja": "先生に聞いてみます。",
-        "kana": "せんせいにきいてみます。",
-        "ro": "sensei ni kii temimasu .",
-        "en": "I’ll try asking the teacher.",
-        "audio": "n4-0013-ex3.mp4"
+        "en": "I’ll try eating sushi."
       }
     ]
   },
@@ -422,28 +233,13 @@
     "kana": "〜てもいい",
     "ro": "~ temoii",
     "en": "may / it’s okay to / permission",
-    "audio": "n4-0014.mp4",
+    "meaning": "Used to give or ask for permission to do an action.",
     "examples": [
       {
         "ja": "もう帰ってもいいです。",
         "kana": "もうかえってもいいです。",
         "ro": "mou kaetsu temoiidesu .",
-        "en": "You may go home now.",
-        "audio": "n4-0014-ex1.mp4"
-      },
-      {
-        "ja": "このペンを使ってもいいですか？",
-        "kana": "このぺんをつかってもいいですか？",
-        "ro": "kono pen o tsukatte moiidesuka ？",
-        "en": "Can I use this pen?",
-        "audio": "n4-0014-ex2.mp4"
-      },
-      {
-        "ja": "ここで食べてもいいです。",
-        "kana": "ここでたべてもいいです。",
-        "ro": "kokode tabete moiidesu .",
-        "en": "It’s okay to eat here.",
-        "audio": "n4-0014-ex3.mp4"
+        "en": "You may go home now."
       }
     ]
   },
@@ -453,29 +249,14 @@
     "ja": "〜ところだ",
     "kana": "〜ところだ",
     "ro": "~ tokoroda",
-    "en": "about to / in the middle of / just finished",
-    "audio": "n4-0015.mp4",
+    "en": "about to / middle of / just finished",
+    "meaning": "A noun-based expression that points to a specific point in time relative to an action (start, progress, or end).",
     "examples": [
-      {
-        "ja": "今から晩ごはんを食べるところです。",
-        "kana": "いまからばんごはんをたべるところです。",
-        "ro": "imaka ra ban gohanwo tabe rutokorodesu .",
-        "en": "I’m about to eat dinner.",
-        "audio": "n4-0015-ex1.mp4"
-      },
-      {
-        "ja": "今勉強しているところです。",
-        "kana": "いまべんきょうしているところです。",
-        "ro": "ima benkyou shiteirutokorodesu .",
-        "en": "I’m studying right now.",
-        "audio": "n4-0015-ex2.mp4"
-      },
       {
         "ja": "今お風呂に入ったところです。",
         "kana": "いまおふろにいっったところです。",
         "ro": "ima o furo ni itsutsu tatokorodesu .",
-        "en": "I just finished taking a bath.",
-        "audio": "n4-0015-ex3.mp4"
+        "en": "I just finished taking a bath."
       }
     ]
   },
@@ -486,28 +267,13 @@
     "kana": "〜なければならない",
     "ro": "~ nakerebanaranai",
     "en": "must / have to / need to",
-    "audio": "n4-0016.mp4",
+    "meaning": "Expresses obligation or necessity. It implies that there is no other choice but to do the action.",
     "examples": [
       {
         "ja": "明日学校へ行かなければなりません。",
         "kana": "あしたがっこうへいかなければなりません。",
         "ro": "ashita gakkou e ika nakerebanarimasen .",
-        "en": "I must go to school tomorrow.",
-        "audio": "n4-0016-ex1.mp4"
-      },
-      {
-        "ja": "今日この宿題を終わらせなければなりません。",
-        "kana": "きょうこのしゅくだいをおわらせなければなりません。",
-        "ro": "kyou kono shukudai o owa rasenakerebanarimasen .",
-        "en": "I have to finish this homework today.",
-        "audio": "n4-0016-ex2.mp4"
-      },
-      {
-        "ja": "電車の中ではマスクをしなければなりません。",
-        "kana": "でんしゃのなかではますくをしなければなりません。",
-        "ro": "densha no naka deha masuku woshinakerebanarimasen .",
-        "en": "You have to wear a mask on the train.",
-        "audio": "n4-0016-ex3.mp4"
+        "en": "I must go to school tomorrow."
       }
     ]
   },
@@ -518,28 +284,13 @@
     "kana": "〜のに",
     "ro": "~ noni",
     "en": "although / even though",
-    "audio": "n4-0017.mp4",
+    "meaning": "Used when the result is contrary to expectation, often carrying a nuance of surprise, regret, or complaint.",
     "examples": [
-      {
-        "ja": "雨なのに外で遊んでいます。",
-        "kana": "あめなのにそとであそんでいます。",
-        "ro": "ame nanoni soto de asonde imasu .",
-        "en": "Even though it’s raining, he’s playing outside.",
-        "audio": "n4-0017-ex1.mp4"
-      },
       {
         "ja": "疲れているのに勉強しています。",
         "kana": "つかれているのにべんきょうしています。",
         "ro": "tsukare teirunoni benkyou shiteimasu .",
-        "en": "Even though she’s tired, she’s studying.",
-        "audio": "n4-0017-ex2.mp4"
-      },
-      {
-        "ja": "日曜日なのに働かなければなりません。",
-        "kana": "にちようびなのにはたらかなければなりません。",
-        "ro": "nichiyoubi nanoni hataraka nakerebanarimasen .",
-        "en": "Even though it’s Sunday, I have to work.",
-        "audio": "n4-0017-ex3.mp4"
+        "en": "Even though she’s tired, she’s studying."
       }
     ]
   },
@@ -550,28 +301,13 @@
     "kana": "〜のように",
     "ro": "~ noyouni",
     "en": "like / as if / similar to",
-    "audio": "n4-0018.mp4",
+    "meaning": "Used to describe something by comparing it to another person or object that shares similar characteristics.",
     "examples": [
       {
         "ja": "彼は風のように走ります。",
         "kana": "かれはかぜのようにはしります。",
         "ro": "kareha kaze noyouni hashiri masu .",
-        "en": "He runs like the wind.",
-        "audio": "n4-0018-ex1.mp4"
-      },
-      {
-        "ja": "この花はバラのようです。",
-        "kana": "このはなはばらのようです。",
-        "ro": "kono hana wa bara noyoudesu .",
-        "en": "This flower is like a rose.",
-        "audio": "n4-0018-ex2.mp4"
-      },
-      {
-        "ja": "彼は父のように話します。",
-        "kana": "かれはちちのようにはなします。",
-        "ro": "kareha chichi noyouni hanashi masu .",
-        "en": "He talks like his father.",
-        "audio": "n4-0018-ex3.mp4"
+        "en": "He runs like the wind."
       }
     ]
   },
@@ -581,29 +317,14 @@
     "ja": "〜ば",
     "kana": "〜ば",
     "ro": "~ ba",
-    "en": "if / when (conditional form)",
-    "audio": "n4-0019.mp4",
+    "en": "if / when (conditional)",
+    "meaning": "A conditional form focusing on the necessary prerequisite for a certain result to occur.",
     "examples": [
-      {
-        "ja": "雨が降れば出かけません。",
-        "kana": "あめがふればでかけません。",
-        "ro": "ame ga fure ba deka kemasen .",
-        "en": "If it rains, I won’t go out.",
-        "audio": "n4-0019-ex1.mp4"
-      },
-      {
-        "ja": "一生懸命勉強すれば合格できます。",
-        "kana": "いっしょうけんめいべんきょうすればごうかくできます。",
-        "ro": "isshoukenmei benkyou sureba goukaku dekimasu .",
-        "en": "If you study hard, you will pass the exam.",
-        "audio": "n4-0019-ex2.mp4"
-      },
       {
         "ja": "早く行けば席が取れます。",
         "kana": "はやくいけばせきがとれます。",
         "ro": "hayaku ike ba seki ga tore masu .",
-        "en": "If you go early, you can get a seat.",
-        "audio": "n4-0019-ex3.mp4"
+        "en": "If you go early, you can get a seat."
       }
     ]
   },
@@ -614,28 +335,13 @@
     "kana": "〜ほうがいい",
     "ro": "~ hougaii",
     "en": "had better / should",
-    "audio": "n4-0020.mp4",
+    "meaning": "Used to give advice or suggestions. In the past tense form (ta + hou ga ii), it strongly suggests a specific choice.",
     "examples": [
-      {
-        "ja": "病院へ行ったほうがいいです。",
-        "kana": "びょういんへいったほうがいいです。",
-        "ro": "byouin e itta hougaiidesu .",
-        "en": "You should go to the hospital.",
-        "audio": "n4-0020-ex1.mp4"
-      },
       {
         "ja": "早く寝たほうがいいです。",
         "kana": "はやくねたほうがいいです。",
         "ro": "hayaku neta hougaiidesu .",
-        "en": "You should sleep early.",
-        "audio": "n4-0020-ex2.mp4"
-      },
-      {
-        "ja": "食べすぎないほうがいいです。",
-        "kana": "たべすぎないほうがいいです。",
-        "ro": "tabe suginaihougaiidesu .",
-        "en": "You shouldn’t eat too much.",
-        "audio": "n4-0020-ex3.mp4"
+        "en": "You should sleep early."
       }
     ]
   },
@@ -645,29 +351,14 @@
     "ja": "〜みたい",
     "kana": "〜みたい",
     "ro": "~ mitai",
-    "en": "seems like / looks like / resembles",
-    "audio": "n4-0021.mp4",
+    "en": "seems like / looks like",
+    "meaning": "Expresses a subjective judgment or resemblance based on appearance or circumstances. More casual than 'you desu.'",
     "examples": [
       {
         "ja": "雨が降るみたいです。",
         "kana": "あめがふるみたいです。",
         "ro": "ame ga furu mitaidesu .",
-        "en": "It seems like it will rain.",
-        "audio": "n4-0021-ex1.mp4"
-      },
-      {
-        "ja": "彼は疲れているみたいです。",
-        "kana": "かれはつかれているみたいです。",
-        "ro": "kareha tsukare teirumitaidesu .",
-        "en": "He looks tired.",
-        "audio": "n4-0021-ex2.mp4"
-      },
-      {
-        "ja": "彼女は今日うれしそうみたいです。",
-        "kana": "かのじょはきょううれしそうみたいです。",
-        "ro": "kanojo wa kyou ureshisoumitaidesu .",
-        "en": "She seems happy today.",
-        "audio": "n4-0021-ex3.mp4"
+        "en": "It seems like it will rain."
       }
     ]
   },
@@ -676,30 +367,15 @@
     "pos": "expression",
     "ja": "〜やすい / 〜にくい",
     "kana": "〜やすい / 〜にくい",
-    "ro": "~ yasui  /  ~ nikui",
+    "ro": "~ yasui / ~ nikui",
     "en": "easy to / hard to",
-    "audio": "n4-0022.mp4",
+    "meaning": "Attaches to the stem of a verb to describe the ease or difficulty of performing that action.",
     "examples": [
-      {
-        "ja": "このペンは使いやすいです。",
-        "kana": "このぺんはつかいやすいです。",
-        "ro": "kono pen wa tsukai yasuidesu .",
-        "en": "This pen is easy to use.",
-        "audio": "n4-0022-ex1.mp4"
-      },
       {
         "ja": "この漢字は読みにくいです。",
         "kana": "このかんじはよみにくいです。",
         "ro": "kono kanji wa yomi nikuidesu .",
-        "en": "This kanji is hard to read.",
-        "audio": "n4-0022-ex2.mp4"
-      },
-      {
-        "ja": "このコップは割れやすいです。",
-        "kana": "このこっぷはわれやすいです。",
-        "ro": "kono koppu wa ware yasuidesu .",
-        "en": "This cup is easy to break.",
-        "audio": "n4-0022-ex3.mp4"
+        "en": "This kanji is hard to read."
       }
     ]
   },
@@ -709,29 +385,14 @@
     "ja": "〜ようと思う",
     "kana": "〜ようとおもう",
     "ro": "~ youto omou",
-    "en": "to think of doing / to intend to do",
-    "audio": "n4-0023.mp4",
+    "en": "think of doing / intend to",
+    "meaning": "Used to express the speaker's intention or a plan they are considering in their mind.",
     "examples": [
-      {
-        "ja": "留学しようと思っています。",
-        "kana": "りゅうがくしようとおもっています。",
-        "ro": "ryuugaku shiyouto omotte imasu .",
-        "en": "I’m thinking of studying abroad.",
-        "audio": "n4-0023-ex1.mp4"
-      },
-      {
-        "ja": "新しい車を買おうと思います。",
-        "kana": "あたらしいくるまをかおうとおもいます。",
-        "ro": "atarashii kuruma o kao uto omoi masu .",
-        "en": "I intend to buy a new car.",
-        "audio": "n4-0023-ex2.mp4"
-      },
       {
         "ja": "走ろうと思います。",
         "kana": "はしろうとおもいます。",
         "ro": "hashiro uto omoi masu .",
-        "en": "I think I’ll start running.",
-        "audio": "n4-0023-ex3.mp4"
+        "en": "I think I’ll start running."
       }
     ]
   },
@@ -741,29 +402,14 @@
     "ja": "〜ように",
     "kana": "〜ように",
     "ro": "~ youni",
-    "en": "so that / in order that / (used for wishes or instructions)",
-    "audio": "n4-0024.mp4",
+    "en": "so that / in order that",
+    "meaning": "Indicates a desired state or goal. Often used when the result is somewhat beyond the direct control of the actor.",
     "examples": [
       {
         "ja": "みんなに聞こえるように話してください。",
         "kana": "みんなにきこえるようにはなしてください。",
         "ro": "minnani kiko eruyouni hanashi tekudasai .",
-        "en": "Please speak so that everyone can hear.",
-        "audio": "n4-0024-ex1.mp4"
-      },
-      {
-        "ja": "試験に合格するように祈りました。",
-        "kana": "しけんにごうかくするようにいのりました。",
-        "ro": "shiken ni goukaku suruyouni inori mashita .",
-        "en": "I prayed so that I would pass the exam.",
-        "audio": "n4-0024-ex2.mp4"
-      },
-      {
-        "ja": "読みやすいようにきれいに書いてください。",
-        "kana": "よみやすいようにきれいにかいてください。",
-        "ro": "yomi yasuiyounikireini kai tekudasai .",
-        "en": "Please write neatly so that it’s easy to read.",
-        "audio": "n4-0024-ex3.mp4"
+        "en": "Please speak so that everyone can hear."
       }
     ]
   },
@@ -773,29 +419,14 @@
     "ja": "〜ようにする",
     "kana": "〜ようにする",
     "ro": "~ younisuru",
-    "en": "to try to / to make an effort to",
-    "audio": "n4-0025.mp4",
+    "en": "try to / make an effort to",
+    "meaning": "Indicates that the speaker is consciously making an effort to form a habit or behave in a certain way.",
     "examples": [
       {
         "ja": "毎晩早く寝るようにしています。",
         "kana": "まいばんはやくねるようにしています。",
         "ro": "maiban hayaku neru younishiteimasu .",
-        "en": "I try to sleep early every night.",
-        "audio": "n4-0025-ex1.mp4"
-      },
-      {
-        "ja": "宿題を忘れないようにしてください。",
-        "kana": "しゅくだいをわすれないようにしてください。",
-        "ro": "shukudai o wasure naiyounishitekudasai .",
-        "en": "Try not to forget your homework.",
-        "audio": "n4-0025-ex2.mp4"
-      },
-      {
-        "ja": "毎日運動するようにしています。",
-        "kana": "まいにちうんどうするようにしています。",
-        "ro": "mainichi undou suruyounishiteimasu .",
-        "en": "I make sure to exercise every day.",
-        "audio": "n4-0025-ex3.mp4"
+        "en": "I try to sleep early every night."
       }
     ]
   },
@@ -805,29 +436,14 @@
     "ja": "〜ようになる",
     "kana": "〜ようになる",
     "ro": "~ youninaru",
-    "en": "to reach the point that / to become able to",
-    "audio": "n4-0026.mp4",
+    "en": "become able to / reach the point",
+    "meaning": "Describes a change in ability or situation where something that didn't happen before has now become possible or a habit.",
     "examples": [
       {
         "ja": "日本語が話せるようになりました。",
-        "kana": "にほんごがはなせるようになりました。",
+        "kana": "にほんごが話せるようになりました。",
         "ro": "nihongo ga hanase ruyouninarimashita .",
-        "en": "I’ve become able to speak Japanese.",
-        "audio": "n4-0026-ex1.mp4"
-      },
-      {
-        "ja": "早く起きるようになりました。",
-        "kana": "はやくおきるようになりました。",
-        "ro": "hayaku oki ruyouninarimashita .",
-        "en": "I’ve come to wake up early.",
-        "audio": "n4-0026-ex2.mp4"
-      },
-      {
-        "ja": "毎日運動するようになりました。",
-        "kana": "まいにちうんどうするようになりました。",
-        "ro": "mainichi undou suruyouninarimashita .",
-        "en": "I’ve started to exercise every day.",
-        "audio": "n4-0026-ex3.mp4"
+        "en": "I’ve become able to speak Japanese."
       }
     ]
   },
@@ -837,29 +453,14 @@
     "ja": "〜ように言う",
     "kana": "〜ようにいう",
     "ro": "~ youni iu",
-    "en": "to tell someone to do / to advise to",
-    "audio": "n4-0027.mp4",
+    "en": "tell someone to do / advise",
+    "meaning": "An indirect way to report a request, command, or advice given to someone else.",
     "examples": [
-      {
-        "ja": "先生は学生に毎日勉強するように言いました。",
-        "kana": "せんせいはがくせいにまいにちべんきょうするようにいいました。",
-        "ro": "sensei wa gakusei ni mainichi benkyou suruyouni ii mashita .",
-        "en": "The teacher told the students to study every day.",
-        "audio": "n4-0027-ex1.mp4"
-      },
       {
         "ja": "彼に遅れないように言いました。",
         "kana": "かれにおくれないようにいいました。",
         "ro": "kare ni okure naiyouni ii mashita .",
-        "en": "I told him not to be late.",
-        "audio": "n4-0027-ex2.mp4"
-      },
-      {
-        "ja": "母は私に部屋をそうじするように言いました。",
-        "kana": "はははわたしにへやをそうじするようにいいました。",
-        "ro": "haha wa watashi ni heya wosoujisuruyouni ii mashita .",
-        "en": "Mother told me to clean my room.",
-        "audio": "n4-0027-ex3.mp4"
+        "en": "I told him not to be late."
       }
     ]
   },
@@ -869,29 +470,14 @@
     "ja": "〜ように言われる",
     "kana": "〜ようにいわれる",
     "ro": "~ youni iwa reru",
-    "en": "to be told to do / passive of ように言う",
-    "audio": "n4-0028.mp4",
+    "en": "be told to do (passive)",
+    "meaning": "The passive form of 'youni iu', used when the speaker is the one who received the instruction or request.",
     "examples": [
       {
         "ja": "早く来るように言われました。",
         "kana": "はやくくるようにいわれました。",
         "ro": "hayaku kuru youni iwa remashita .",
-        "en": "I was told to come early.",
-        "audio": "n4-0028-ex1.mp4"
-      },
-      {
-        "ja": "遅れないように言われました。",
-        "kana": "おくれないようにいわれました。",
-        "ro": "okure naiyouni iwa remashita .",
-        "en": "I was told not to be late.",
-        "audio": "n4-0028-ex2.mp4"
-      },
-      {
-        "ja": "薬を飲むように言われました。",
-        "kana": "くすりをのむようにいわれました。",
-        "ro": "kusuri o nomu youni iwa remashita .",
-        "en": "I was told to take medicine.",
-        "audio": "n4-0028-ex3.mp4"
+        "en": "I was told to come early."
       }
     ]
   },
@@ -901,29 +487,14 @@
     "ja": "〜らしい",
     "kana": "〜らしい",
     "ro": "~ rashii",
-    "en": "seems like / I heard that / typical of",
-    "audio": "n4-0029.mp4",
+    "en": "seems like / typical of",
+    "meaning": "Expresses a judgment based on something heard or observed, or describes something as having the true essence of its category.",
     "examples": [
       {
         "ja": "彼は忙しいらしいです。",
         "kana": "かれはいそがしいらしいです。",
         "ro": "kareha isogashii rashiidesu .",
-        "en": "It seems that he is busy.",
-        "audio": "n4-0029-ex1.mp4"
-      },
-      {
-        "ja": "彼女は留学するらしいです。",
-        "kana": "かのじょはりゅうがくするらしいです。",
-        "ro": "kanojo wa ryuugaku sururashiidesu .",
-        "en": "I heard that she’s going abroad.",
-        "audio": "n4-0029-ex2.mp4"
-      },
-      {
-        "ja": "このレストランは有名らしいです。",
-        "kana": "このれすとらんはゆうめいらしいです。",
-        "ro": "kono resutoran wa yuumei rashiidesu .",
-        "en": "It seems that this restaurant is famous.",
-        "audio": "n4-0029-ex3.mp4"
+        "en": "It seems that he is busy."
       }
     ]
   },
@@ -933,29 +504,14 @@
     "ja": "ああ",
     "kana": "ああ",
     "ro": "aa",
-    "en": "Ah / Oh — shows realization, relief, or emotion",
-    "audio": "n4-0030.mp4",
+    "en": "Ah / Oh",
+    "meaning": "An exclamation showing realization, relief, or a response to an emotion or realization.",
     "examples": [
       {
         "ja": "ああ、分かりました。",
         "kana": "ああ、わかりました。",
         "ro": "aa , waka rimashita .",
-        "en": "Ah, I see.",
-        "audio": "n4-0030-ex1.mp4"
-      },
-      {
-        "ja": "ああ、そういうことか。",
-        "kana": "ああ、そういうことか。",
-        "ro": "aa , souiukotoka .",
-        "en": "Ah, that’s how it is.",
-        "audio": "n4-0030-ex2.mp4"
-      },
-      {
-        "ja": "ああ、もう朝か。",
-        "kana": "ああ、もうあさか。",
-        "ro": "aa , mou asa ka .",
-        "en": "Ah, it’s already morning.",
-        "audio": "n4-0030-ex3.mp4"
+        "en": "Ah, I see."
       }
     ]
   },
